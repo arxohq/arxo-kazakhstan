@@ -1,0 +1,2876 @@
+{
+  "$comment": "Stratum praesentationis Latinum pacti kz.constitution.president (DECISION-0070). Hoc tabularium in CLIR non ingreditur et a solo strato praesentationis legitur (verbalize --labels, MCP, pons mensae operariae). Versio ex notis Russicis authenticis (ru-KZ) eiusdem pacti ducta est; status omnium notarum est 'translation', id est versio operosa a formalizatore facta, non editio officialis. Clavis est nomen locale declarationis.",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "AcceptCredentials": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 12. Praeses litteras fidei et revocatorias capitum legationum probatarum civitatium externarum et capitum institutorum internationalium accipit"
+      }
+    ],
+    "AddressThePeople": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 1. Praeses nuntios ad populum Kazachstaniae de statu rerum in civitate et de viis praecipuis rationis internae et externae adfert"
+      }
+    ],
+    "AdoptEmergencyMeasure": [
+      {
+        "status": "translation",
+        "text": "Articulus 46. Periculo ordini constitutionali imminente et consultationibus requisitis factis Praeses mensuras status necessitatis inducit, Kurultai statim certiore facto"
+      }
+    ],
+    "AdoptMartialMeasure": [
+      {
+        "status": "translation",
+        "text": "Articulus 46. Impetu illato vel periculo externo imminente Praeses statum belli inducit"
+      }
+    ],
+    "AdvisoryBody": [
+      {
+        "status": "translation",
+        "text": "collegium consultivum vel aliud a Praeside constitutum"
+      }
+    ],
+    "AdvisoryBodyFormationPower": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 21. Praeses Consilium Securitatis, alia collegia consultiva atque Consilium Iudiciale Supremum constituit"
+      }
+    ],
+    "AdvisoryBodyKind": [
+      {
+        "status": "translation",
+        "text": "genus collegii a Praeside secundum subnumerum 21 constituti"
+      }
+    ],
+    "AppointHighCommand": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 9. Praeses summum imperium Copiarum Armatarum in munera nominat"
+      }
+    ],
+    "AppointMissionHead": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 7. Praeses capita legationum Rei Publicae Kazachstaniae nominat"
+      }
+    ],
+    "AppointSubordinateBodyHead": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 6. Praeses rectores magistratuum publicorum sibi subiectorum in munera nominat"
+      }
+    ],
+    "AppointToPresidentialOffice": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 5. Praeses in munera nominat Moderatorem Curiae Constitutionalis, Moderatorem Curiae Supremae, Moderatorem Argentariae Nationalis, Procuratorem Generalem, Moderatorem Comitatus Securitatis Nationalis, Moderatorem Commissionis Electoralis Centralis, Moderatorem Camerae Rationum Supremae, Moderatorem Consilii Iudicialis Supremi, Praefectum Officii Custodiae Publicae et Commissarium pro iuribus hominis"
+      }
+    ],
+    "AppointWithConsent": [
+      {
+        "status": "translation",
+        "text": "Articulus 46. Praeses personas munere publico fungentes nominat, quarum nominatio consentiente Kurultai fit"
+      }
+    ],
+    "Appointment": [
+      {
+        "status": "translation",
+        "text": "nominatio a Praeside facta"
+      }
+    ],
+    "AppointmentWithKurultaiConsentPower": [
+      {
+        "status": "translation",
+        "text": "Articulus 46. Praeses personas munere publico fungentes nominat, quarum nominatio consentiente Kurultai fit"
+      }
+    ],
+    "AsylumDecisionPower": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 15. Praeses de asylo politico concedendo decernit"
+      }
+    ],
+    "AsylumMatter": [
+      {
+        "status": "translation",
+        "text": "quaestio de asylo politico concedendo"
+      }
+    ],
+    "AwardEstablishment": [
+      {
+        "status": "translation",
+        "text": "institutio praemii publici vel tituli honorarii"
+      }
+    ],
+    "AwardEstablishmentPower": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 13. Praeses praemia publica et titulos honorarios instituit"
+      }
+    ],
+    "CallReferendum": [
+      {
+        "status": "translation",
+        "text": "Articulus 46. Praeses de referendo populari faciendo decernit"
+      }
+    ],
+    "Candidate": [
+      {
+        "status": "translation",
+        "text": "candidatus ad munus Praesidis"
+      }
+    ],
+    "CannotAssumeByCertifiedRefusal": [
+      {
+        "status": "translation",
+        "text": "Articulus 51, numerus 1. Recusatio personae comprobata significat potestates suscipi non posse"
+      }
+    ],
+    "CannotAssumeByHealthOrPersonalReasons": [
+      {
+        "status": "translation",
+        "text": "Articulus 51, numerus 1. Potestates suscipi non possunt propter valetudinem vel alias causas personales"
+      }
+    ],
+    "CentralElectionCommissionChair": [
+      {
+        "status": "translation",
+        "text": "Moderator Commissionis Electoralis Centralis"
+      }
+    ],
+    "ChargeRejectedAtStage": [
+      {
+        "status": "translation",
+        "text": "Articulus 50, numerus 3. Accusatio uno ex gradibus cognitionis eius reiecta est"
+      }
+    ],
+    "ChargeRejectedByExpiredPeriod": [
+      {
+        "status": "translation",
+        "text": "Articulus 50, numerus 3. Decretum ultimum intra duos menses ab accusatione inlata non latum accusationem reiectam esse efficit"
+      }
+    ],
+    "ChargeRejectedByLateDecision": [
+      {
+        "status": "translation",
+        "text": "Articulus 50, numerus 3. Decretum ultimum post bimestrem terminum latum accusationem reiectam esse efficit"
+      }
+    ],
+    "CitizenshipDecisionPower": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 15. Praeses de iure civitatis Rei Publicae Kazachstaniae decernit"
+      }
+    ],
+    "CitizenshipMatter": [
+      {
+        "status": "translation",
+        "text": "quaestio de iure civitatis Rei Publicae Kazachstaniae"
+      }
+    ],
+    "ClassRank": [
+      {
+        "status": "translation",
+        "text": "gradus classicus"
+      }
+    ],
+    "ConferDistinction": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 14. Praeses praemia publica tribuit, titulos honorarios, summos militares aliosque gradus, gradus classicos, gradus diplomaticos et classes peritiae confert"
+      }
+    ],
+    "ConferredPower": [
+      {
+        "status": "translation",
+        "text": "potestas Praesidis Constitutione vel lege constituta"
+      }
+    ],
+    "ConferredPowerExercise": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 22. Praeses ceteras potestates secundum Constitutionem et leges Rei Publicae Kazachstaniae exercet"
+      }
+    ],
+    "ConstitutionalCourtChair": [
+      {
+        "status": "translation",
+        "text": "Moderator Curiae Constitutionalis"
+      }
+    ],
+    "ConstitutionalPetition": [
+      {
+        "status": "translation",
+        "text": "petitio ad Curiam Constitutionalem"
+      }
+    ],
+    "ConstitutionalReviewPetitionPower": [
+      {
+        "status": "translation",
+        "text": "Articulus 46. Praesidi licet Curiam Constitutionalem adire"
+      }
+    ],
+    "Credentials": [
+      {
+        "status": "translation",
+        "text": "litterae fidei vel revocatoriae capitis legationis aut instituti internationalis"
+      }
+    ],
+    "CredentialsAcceptancePower": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 12. Praeses litteras fidei et revocatorias capitum legationum probatarum civitatium externarum et capitum institutorum internationalium accipit"
+      }
+    ],
+    "DecideCitizenshipMatter": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 15. Praeses de iure civitatis Rei Publicae Kazachstaniae decernit"
+      }
+    ],
+    "DiplomaticRank": [
+      {
+        "status": "translation",
+        "text": "gradus diplomaticus"
+      }
+    ],
+    "DissolutionBarrierEmergencyOrMartialLaw": [
+      {
+        "status": "translation",
+        "text": "Articulus 62, numerus 3. Kurultai statu necessitatis vel statu belli vigente dissolvi non potest"
+      }
+    ],
+    "DissolutionBarrierLastSixMonths": [
+      {
+        "status": "translation",
+        "text": "Articulus 62, numerus 3. Kurultai sex mensibus ultimis potestatum Praesidis dissolvi non potest"
+      }
+    ],
+    "DissolutionBarrierSuccessionPresident": [
+      {
+        "status": "translation",
+        "text": "Articulus 62, numerus 3. Kurultai dissolvi non potest in casu numero 3 articuli 51 Constitutionis constituto"
+      }
+    ],
+    "DissolutionBarrierWithinYearAfterPrior": [
+      {
+        "status": "translation",
+        "text": "Articulus 62, numerus 3. Kurultai intra unum annum post dissolutionem priorem dissolvi non potest"
+      }
+    ],
+    "DissolutionFinalPeriodReached": [
+      {
+        "status": "translation",
+        "text": "Articulus 62, numerus 3. Dies quo quaestio de dissolutione deliberatur in sex menses ultimos potestatum Praesidis incidit"
+      }
+    ],
+    "DissolutionIntervalAfterPriorNotElapsed": [
+      {
+        "status": "translation",
+        "text": "Articulus 62, numerus 3. A die dissolutionis prioris Kurultai unus annus nondum praeteriit"
+      }
+    ],
+    "DissolveKurultai": [
+      {
+        "status": "translation",
+        "text": "Articulus 62, numerus 2. Praesidi licet Kurultai dissolvere, si consensus candidato ab eo proposito iterum negatus est"
+      }
+    ],
+    "Distinction": [
+      {
+        "status": "translation",
+        "text": "praemium, titulus, gradus vel classis peritiae a Praeside tributa"
+      }
+    ],
+    "DistinctionConferralPower": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 14. Praeses praemia publica tribuit, titulos honorarios, summos militares aliosque gradus, gradus classicos, gradus diplomaticos et classes peritiae confert"
+      }
+    ],
+    "DistinctionKind": [
+      {
+        "status": "translation",
+        "text": "genus insignis a Praeside tributi"
+      }
+    ],
+    "EarlyElectionAnnouncedWithinSevenDays": [
+      {
+        "status": "translation",
+        "text": "Articulus 51, numerus 2. Intra septem dies a die dimissionis ante tempus vel mortis Praesidis Kurultai electiones faciendas denuntiat"
+      }
+    ],
+    "EarlyElectionConductDue": [
+      {
+        "status": "translation",
+        "text": "Articulus 51, numerus 2. Electiones intra duos menses a die decreti Kurultai de eis faciendis fiunt"
+      }
+    ],
+    "EarlyElectionConductedInPeriod": [
+      {
+        "status": "translation",
+        "text": "Articulus 51, numerus 2. Electiones non serius quam die exeuntis bimestris termini factae intra terminum factae sunt"
+      }
+    ],
+    "EarlyElectionConductedInTime": [
+      {
+        "status": "translation",
+        "text": "Articulus 51, numerus 2. Electiones intra duos menses a die decreti Kurultai eius rei fiunt"
+      }
+    ],
+    "ElectedInRepeatVote": [
+      {
+        "status": "translation",
+        "text": "Articulus 43, numerus 4. In suffragio iterato electus habetur candidatus qui plura suffragia eorum qui suffragium tulerunt accepit"
+      }
+    ],
+    "Election": [
+      {
+        "status": "translation",
+        "text": "electiones Praesidis"
+      }
+    ],
+    "EmergencyMeasure": [
+      {
+        "status": "translation",
+        "text": "mensura status necessitatis vel status belli"
+      }
+    ],
+    "EmergencyPower": [
+      {
+        "status": "translation",
+        "text": "Articulus 46. Periculo ordini constitutionali imminente et consultationibus requisitis factis Praeses mensuras status necessitatis inducit, Kurultai statim certiore facto"
+      }
+    ],
+    "EstablishPresidentialBody": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 21. Praeses Consilium Securitatis, alia collegia consultiva atque Consilium Iudiciale Supremum constituit"
+      }
+    ],
+    "EstablishStateAward": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 13. Praeses praemia publica et titulos honorarios instituit"
+      }
+    ],
+    "ExPresidentAfterHealthRelease": [
+      {
+        "status": "translation",
+        "text": "Articulus 44, numerus 3. Praeses propter valetudinem a munere dimissus titulum ex-Praesidis habet"
+      }
+    ],
+    "ExPresidentAfterNewPresident": [
+      {
+        "status": "translation",
+        "text": "Articulus 44, numerus 3. Praeses cuius potestates Praeside noviter electo munus ineunte finitae sunt titulum ex-Praesidis habet"
+      }
+    ],
+    "ExPresidentAfterResignation": [
+      {
+        "status": "translation",
+        "text": "Articulus 44, numerus 3. Praeses qui sua sponte abdicavit titulum ex-Praesidis habet"
+      }
+    ],
+    "ExerciseConferredPower": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 22. Praeses ceteras potestates secundum Constitutionem et leges Rei Publicae Kazachstaniae exercet"
+      }
+    ],
+    "FormPresidentialAdministration": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 20. Praeses Administrationem Praesidis Rei Publicae Kazachstaniae constituit"
+      }
+    ],
+    "FormStateGuardService": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 19. Praeses Officium Custodiae Publicae sibi subiectum constituit"
+      }
+    ],
+    "FormerPresidentImmunityForActsInOffice": [
+      {
+        "status": "translation",
+        "text": "Articulus 48. Immunitas ex-Praesidis pro actis in potestatibus gerendis commissis"
+      }
+    ],
+    "GovernmentInitiatedActCountersignature": [
+      {
+        "status": "translation",
+        "text": "Articulus 47, numerus 3. Actus Praesidis incohante Gubernio editus a Primo Ministro subscriptione confirmatur"
+      }
+    ],
+    "GrantPardon": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 16. Praeses veniam dat"
+      }
+    ],
+    "GrantPoliticalAsylum": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 15. Praeses de asylo politico concedendo decernit"
+      }
+    ],
+    "HealthRemoval": [
+      {
+        "status": "translation",
+        "text": "cognitio quaestionis de Praeside ante tempus propter valetudinem a munere dimittendo"
+      }
+    ],
+    "HealthRemovalThreshold": [
+      {
+        "status": "translation",
+        "text": "Articulus 50, numerus 2. De dimissione ante tempus decernitur maiore parte non minus tribus ex quattuor partibus suffragiorum totius numeri deputatorum, responso commissionis et responso Curiae Constitutionalis adhibitis"
+      }
+    ],
+    "HighCommandAppointmentPower": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 9. Praeses summum imperium Copiarum Armatarum in munera nominat"
+      }
+    ],
+    "HighCommandReleasePower": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 9. Praeses summum imperium Copiarum Armatarum muneribus dimittit"
+      }
+    ],
+    "HigherMilitaryRank": [
+      {
+        "status": "translation",
+        "text": "summus gradus militaris"
+      }
+    ],
+    "HoldPresidentLiableForTreason": [
+      {
+        "status": "translation",
+        "text": "Articulus 48, numerus 1. Exceptio immunitatis propter perduellionem"
+      }
+    ],
+    "HonoraryTitle": [
+      {
+        "status": "translation",
+        "text": "titulus honorarius"
+      }
+    ],
+    "HumanRightsCommissioner": [
+      {
+        "status": "translation",
+        "text": "Commissarius pro iuribus hominis in Re Publica Kazachstania"
+      }
+    ],
+    "Impeachment": [
+      {
+        "status": "translation",
+        "text": "iudicium de Praeside a munere removendo"
+      }
+    ],
+    "ImpeachmentBarredDuringDissolutionConsideration": [
+      {
+        "status": "translation",
+        "text": "Articulus 50, numerus 4. Quaestio de Praeside a munere removendo moveri non potest, dum ipse de potestatibus Kurultai ante tempus finiendis deliberat"
+      }
+    ],
+    "ImpeachmentFinalDecisionDue": [
+      {
+        "status": "translation",
+        "text": "Articulus 50, numerus 3. Decretum ultimum intra duos menses ab accusatione inlata fertur"
+      }
+    ],
+    "ImpeachmentFinalDecisionTimely": [
+      {
+        "status": "translation",
+        "text": "Articulus 50, numerus 3. Decretum non serius quam die exeuntis bimestris termini latum intra terminum latum est"
+      }
+    ],
+    "ImpeachmentFinalStage": [
+      {
+        "status": "translation",
+        "text": "Articulus 50. Decretum ultimum de Praeside removendo maiore parte non minus tribus ex quattuor partibus suffragiorum totius numeri deputatorum Kurultai fertur"
+      }
+    ],
+    "ImpeachmentInitiativeThreshold": [
+      {
+        "status": "translation",
+        "text": "Articulus 50. Quaestio de Praeside removendo movetur incohantibus non minus quam tertia parte deputatorum Kurultai neque moveri potest, dum quaestio de dissolutione deliberatur"
+      }
+    ],
+    "ImpeachmentInvestigationStage": [
+      {
+        "status": "translation",
+        "text": "Articulus 50. Inquisitio accusationis maiore parte suffragiorum totius numeri deputatorum Kurultai mandatur"
+      }
+    ],
+    "ImpeachmentQuestionDecision": [
+      {
+        "status": "translation",
+        "text": "Articulus 50, numerus 3. De accusatione inferenda eiusque inquisitione maiore parte suffragiorum totius numeri deputatorum Kurultai decernitur"
+      }
+    ],
+    "InternationalTreaty": [
+      {
+        "status": "translation",
+        "text": "pactum internationale Rei Publicae Kazachstaniae"
+      }
+    ],
+    "Kurultai": [
+      {
+        "status": "translation",
+        "text": "Kurultai Rei Publicae Kazachstaniae"
+      }
+    ],
+    "KurultaiDissolutionPower": [
+      {
+        "status": "translation",
+        "text": "Articulus 62, numerus 2. Praesidi licet Kurultai dissolvere, si consensus candidato ab eo proposito iterum negatus est"
+      }
+    ],
+    "Law": [
+      {
+        "status": "translation",
+        "text": "lex Praesidi exhibita"
+      }
+    ],
+    "LawCountersignatureBeforePresidentialSignature": [
+      {
+        "status": "translation",
+        "text": "Articulus 47, numerus 3. Lex prius subscriptionibus Moderatoris Kurultai et Primi Ministri confirmatur"
+      }
+    ],
+    "MajorityReachedInElection": [
+      {
+        "status": "translation",
+        "text": "Articulus 43, numerus 4. In electionibus aliquis candidatorum plus quam quinquaginta ex centum suffragiorum accepit"
+      }
+    ],
+    "MartialPower": [
+      {
+        "status": "translation",
+        "text": "Articulus 46. Impetu illato vel periculo externo imminente Praeses statum belli inducit"
+      }
+    ],
+    "MissionHead": [
+      {
+        "status": "translation",
+        "text": "caput legationis Rei Publicae Kazachstaniae"
+      }
+    ],
+    "MissionHeadAppointmentPower": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 7. Praeses capita legationum Rei Publicae Kazachstaniae nominat"
+      }
+    ],
+    "MissionHeadRecallPower": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 7. Praeses capita legationum Rei Publicae Kazachstaniae revocat"
+      }
+    ],
+    "NationalBankChair": [
+      {
+        "status": "translation",
+        "text": "Moderator Argentariae Nationalis"
+      }
+    ],
+    "NationalSecurityCommitteeChair": [
+      {
+        "status": "translation",
+        "text": "Moderator Comitatus Securitatis Nationalis"
+      }
+    ],
+    "NoDissolutionInEmergency": [
+      {
+        "status": "translation",
+        "text": "Articulus 62, numerus 3. Kurultai statu necessitatis vel statu belli vigente dissolvi non potest"
+      }
+    ],
+    "NoDissolutionInLastSixMonths": [
+      {
+        "status": "translation",
+        "text": "Articulus 62, numerus 3. Kurultai sex mensibus ultimis potestatum Praesidis dissolvi non potest"
+      }
+    ],
+    "NoDissolutionUnderSuccessionPresident": [
+      {
+        "status": "translation",
+        "text": "Articulus 62, numerus 3. Kurultai dissolvi non potest in casu numero 3 articuli 51 Constitutionis constituto"
+      }
+    ],
+    "NoDissolutionWithinYearAfterPrior": [
+      {
+        "status": "translation",
+        "text": "Articulus 62, numerus 3. Kurultai intra unum annum post dissolutionem priorem dissolvi non potest"
+      }
+    ],
+    "NoSecondPresidentialElection": [
+      {
+        "status": "translation",
+        "text": "Articulus 43, numerus 1. Eadem persona plus quam semel Praeses eligi non potest"
+      }
+    ],
+    "OfficeRelease": [
+      {
+        "status": "translation",
+        "text": "dimissio a munere"
+      }
+    ],
+    "OnePresidentialElectionImmunity": [
+      {
+        "status": "translation",
+        "text": "Articulus 43, numerus 1. Eadem persona plus quam semel Praeses eligi non potest"
+      }
+    ],
+    "OrganiseSubordinateBody": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 6. Praeses magistratus publicos sibi proxime subiectos et rationem sibi reddentes constituit, tollit et reformat"
+      }
+    ],
+    "OtherRank": [
+      {
+        "status": "translation",
+        "text": "alius gradus"
+      }
+    ],
+    "PardonMatter": [
+      {
+        "status": "translation",
+        "text": "petitio veniae"
+      }
+    ],
+    "PardonPower": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 16. Praeses veniam dat"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "persona physica"
+      }
+    ],
+    "PetitionConstitutionalCourt": [
+      {
+        "status": "translation",
+        "text": "Articulus 46. Praesidi licet Curiam Constitutionalem adire"
+      }
+    ],
+    "PowersTerminatedByDeath": [
+      {
+        "status": "translation",
+        "text": "Articulus 44, numerus 3. Potestates Praesidis morte Praesidis finiuntur"
+      }
+    ],
+    "PowersTerminatedByHealthRelease": [
+      {
+        "status": "translation",
+        "text": "Articulus 44, numerus 3. Potestates Praesidis dimissione ante tempus finiuntur, cum officia sua propter valetudinem perpetuo gerere non potest"
+      }
+    ],
+    "PowersTerminatedByNewPresident": [
+      {
+        "status": "translation",
+        "text": "Articulus 44, numerus 3. Potestates Praesidis finiuntur eo momento quo Praeses noviter electus munus init"
+      }
+    ],
+    "PowersTerminatedByRemoval": [
+      {
+        "status": "translation",
+        "text": "Articulus 44, numerus 3. Potestates Praesidis remotione eius a munere finiuntur"
+      }
+    ],
+    "PowersTerminatedByResignation": [
+      {
+        "status": "translation",
+        "text": "Articulus 44, numerus 3. Potestates Praesidis dimissione ante tempus propter abdicationem voluntariam finiuntur"
+      }
+    ],
+    "President": [
+      {
+        "status": "translation",
+        "text": "Praeses Rei Publicae Kazachstaniae"
+      }
+    ],
+    "PresidentEnsuresCoordinatedStatePower": [
+      {
+        "status": "translation",
+        "text": "Articulus 42. Praeses munus concors partium potestatis publicae praestat"
+      }
+    ],
+    "PresidentGuaranteesUnityConstitutionAndRights": [
+      {
+        "status": "translation",
+        "text": "Articulus 42. Praeses signum et sponsor est unitatis populi et potestatis publicae, firmitatis Constitutionis, iurium et libertatum"
+      }
+    ],
+    "PresidentIsCommanderInChief": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 9. Praeses Summus Imperator Copiarum Armatarum Rei Publicae Kazachstaniae est"
+      }
+    ],
+    "PresidentIsHeadOfState": [
+      {
+        "status": "translation",
+        "text": "Articulus 42. Praeses caput civitatis est"
+      }
+    ],
+    "PresidentReleasedFromOfficeForHealth": [
+      {
+        "status": "translation",
+        "text": "Articulus 50, numerus 2. Hic Praeses ante tempus propter valetudinem a munere dimissus est"
+      }
+    ],
+    "PresidentialAct": [
+      {
+        "status": "translation",
+        "text": "actus Praesidis"
+      }
+    ],
+    "PresidentialActBindingNationwide": [
+      {
+        "status": "translation",
+        "text": "Articulus 47, numerus 1. Decreta et mandata ex Constitutione et legibus edita in tota civitate obligant"
+      }
+    ],
+    "PresidentialAddress": [
+      {
+        "status": "translation",
+        "text": "nuntius Praesidis ad populum Kazachstaniae"
+      }
+    ],
+    "PresidentialAddressPower": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 1. Praeses nuntios ad populum Kazachstaniae de statu rerum in civitate et de viis praecipuis rationis internae et externae adfert"
+      }
+    ],
+    "PresidentialAdministrationFormationPower": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 20. Praeses Administrationem Praesidis Rei Publicae Kazachstaniae constituit"
+      }
+    ],
+    "PresidentialCandidateEligibility": [
+      {
+        "status": "translation",
+        "text": "Articulus 43, numerus 2. Praeses eligi potest civis Rei Publicae nativus, non minor quadraginta annis, lingua publica libere utens, quindecim annis proximis in Kazachstania habitans, educatione superiore praeditus et non minus quinque annos operis expertus"
+      }
+    ],
+    "PresidentialElectionMajority": [
+      {
+        "status": "translation",
+        "text": "Articulus 43, numerus 4. Electus habetur candidatus qui plus quam quinquaginta ex centum suffragiorum eorum qui suffragium tulerunt accepit"
+      }
+    ],
+    "PresidentialImmunityForActsInOffice": [
+      {
+        "status": "translation",
+        "text": "Articulus 48. Immunitas Praesidis pro actis in potestatibus gerendis commissis"
+      }
+    ],
+    "PresidentialOffice": [
+      {
+        "status": "translation",
+        "text": "munus in quod Praeses per se nominat"
+      }
+    ],
+    "PresidentialOfficeAppointmentPower": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 5. Praeses in munera nominat Moderatorem Curiae Constitutionalis, Moderatorem Curiae Supremae, Moderatorem Argentariae Nationalis, Procuratorem Generalem, Moderatorem Comitatus Securitatis Nationalis, Moderatorem Commissionis Electoralis Centralis, Moderatorem Camerae Rationum Supremae, Moderatorem Consilii Iudicialis Supremi, Praefectum Officii Custodiae Publicae et Commissarium pro iuribus hominis"
+      }
+    ],
+    "PresidentialOfficeIncompatibility/alt/1": [
+      {
+        "status": "translation",
+        "text": "Articulus 45, numerus 1. Incompatibilitates muneris Praesidis"
+      }
+    ],
+    "PresidentialOfficeIncompatibility/alt/2": [
+      {
+        "status": "translation",
+        "text": "Articulus 45, numerus 1. Incompatibilitates muneris Praesidis"
+      }
+    ],
+    "PresidentialOfficeIncompatibility/alt/3": [
+      {
+        "status": "translation",
+        "text": "Articulus 45, numerus 1. Incompatibilitates muneris Praesidis"
+      }
+    ],
+    "PresidentialOfficeIncompatibility/alt/4": [
+      {
+        "status": "translation",
+        "text": "Articulus 45, numerus 1. Incompatibilitates muneris Praesidis"
+      }
+    ],
+    "PresidentialOfficeReleasePower": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 5. Praeses personas in indice subnumeri 5 nominatas muneribus dimittit"
+      }
+    ],
+    "PresidentialOfficialImmunityFormer": [
+      {
+        "status": "translation",
+        "text": "Articulus 48. Immunitas ex-Praesidis pro actis in potestatibus gerendis commissis"
+      }
+    ],
+    "PresidentialOfficialImmunityInOffice": [
+      {
+        "status": "translation",
+        "text": "Articulus 48. Immunitas Praesidis pro actis in potestatibus gerendis commissis"
+      }
+    ],
+    "PresidentialRelativePositionProhibited": [
+      {
+        "status": "translation",
+        "text": "Articulus 45, numerus 2. Propinqui Praesidis munera enumerata non gerunt"
+      }
+    ],
+    "PresidentialReturnPower": [
+      {
+        "status": "translation",
+        "text": "Articulus 46. Praesidi licet legem cum obiectionibus suis ad Kurultai remittere"
+      }
+    ],
+    "PresidentialSignatureDue": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 3. Lex intra unum mensem a die quo a Kurultai exhibita est subscribitur"
+      }
+    ],
+    "PresidentialSignaturePower": [
+      {
+        "status": "translation",
+        "text": "Articulus 46. Praeses legem a Kurultai exhibitam subscribit"
+      }
+    ],
+    "PresidentialSignatureTimely": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 3. Subscriptio vel remissio legis non serius quam die exeuntis menstrui termini facta intra terminum facta est"
+      }
+    ],
+    "PresidentialTermExpiry": [
+      {
+        "status": "translation",
+        "text": "Articulus 43, numerus 1 et articulus 44, numerus 1. Terminus potestatum Praesidis septem anni sunt a die quo munus iureiurando dato iniit"
+      }
+    ],
+    "PresidentialVacancy": [
+      {
+        "status": "translation",
+        "text": "vacatio muneris Praesidis ante tempus facta"
+      }
+    ],
+    "PriorOfficeRelinquished": [
+      {
+        "status": "translation",
+        "text": "Articulus 51, numerus 1. Persona quae potestates Praesidis suscepit potestates Vice-Praesidis, Moderatoris Kurultai vel Primi Ministri respective deponit"
+      }
+    ],
+    "ProsecutorGeneral": [
+      {
+        "status": "translation",
+        "text": "Procurator Generalis"
+      }
+    ],
+    "ProvidePresidentialSupportAndProtection": [
+      {
+        "status": "translation",
+        "text": "Articulus 48, numerus 2. Sustentatio, ministerium et custodia Praesidis eiusque familiae sumptu civitatis"
+      }
+    ],
+    "QualificationClass": [
+      {
+        "status": "translation",
+        "text": "classis peritiae"
+      }
+    ],
+    "RatificationInstrument": [
+      {
+        "status": "translation",
+        "text": "instrumentum ratihabitionis"
+      }
+    ],
+    "RatificationInstrumentPower": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 12. Praeses instrumenta ratihabitionis subscribit"
+      }
+    ],
+    "RecallMissionHead": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 7. Praeses capita legationum Rei Publicae Kazachstaniae revocat"
+      }
+    ],
+    "ReferendumPower": [
+      {
+        "status": "translation",
+        "text": "Articulus 46. Praeses de referendo populari faciendo decernit"
+      }
+    ],
+    "RefusalCertifiedByConstitutionalCourt": [
+      {
+        "status": "translation",
+        "text": "Articulus 51, numerus 1. Curia Constitutionalis comprobat personam ipsam sua sponte libellum recusationis potestatum Praesidis suscipiendarum tulisse"
+      }
+    ],
+    "RegularElectionCoincidesWithKurultaiElection": [
+      {
+        "status": "translation",
+        "text": "Articulus 43, numerus 3. Electiones ordinariae Praesidis in diem electionum novi conventus Kurultai incidunt"
+      }
+    ],
+    "RegularElectionOnKurultaiElectionDay": [
+      {
+        "status": "translation",
+        "text": "Articulus 43, numerus 3. Electiones ordinariae Praesidis cum electionibus novi conventus Kurultai tempore concurrere non possunt"
+      }
+    ],
+    "RegularElectionScheduledInTime": [
+      {
+        "status": "translation",
+        "text": "Articulus 43, numerus 3. Electiones ordinariae Praesidis non serius quam duobus mensibus ante exitum termini potestatum eius fiunt"
+      }
+    ],
+    "RegularElectionTooLate": [
+      {
+        "status": "translation",
+        "text": "Articulus 43, numerus 3. Electiones ordinariae serius quam duobus mensibus ante exitum termini potestatum Praesidis indictae sunt"
+      }
+    ],
+    "RegularOathDue": [
+      {
+        "status": "translation",
+        "text": "Articulus 44, numerus 2. Iusiurandum intra unum mensem a die exitus electionum publicati datur"
+      }
+    ],
+    "RegularOathTimely": [
+      {
+        "status": "translation",
+        "text": "Articulus 44, numerus 2. Iusiurandum non serius quam die exeuntis menstrui termini datum intra terminum datum est"
+      }
+    ],
+    "RejectedChargeTerminatesInitiators": [
+      {
+        "status": "translation",
+        "text": "Articulus 50, numerus 3. Accusatio quolibet gradu reiecta finem ante tempus potestatum deputatorum Kurultai qui hanc quaestionem incohaverunt affert"
+      }
+    ],
+    "ReleaseFromPresidentialOffice": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 5. Praeses personas in indice subnumeri 5 nominatas muneribus dimittit"
+      }
+    ],
+    "ReleaseHighCommand": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 9. Praeses summum imperium Copiarum Armatarum muneribus dimittit"
+      }
+    ],
+    "ReleaseSubordinateBodyHead": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 6. Praeses rectores magistratuum publicorum sibi subiectorum muneribus dimittit"
+      }
+    ],
+    "RemovedFromOfficeByImpeachment": [
+      {
+        "status": "translation",
+        "text": "Articulus 50, numerus 3. Praeses decreto Kurultai propter accusationem perduellionis a munere remotus est"
+      }
+    ],
+    "RepeatVoteRequired": [
+      {
+        "status": "translation",
+        "text": "Articulus 43, numerus 4. Si nullus candidatorum plus quam quinquaginta ex centum suffragiorum accepit, suffragium iteratum fit"
+      }
+    ],
+    "ReturnLawWithObjections": [
+      {
+        "status": "translation",
+        "text": "Articulus 46. Praesidi licet legem cum obiectionibus suis ad Kurultai remittere"
+      }
+    ],
+    "SignInternationalTreaty": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 12. Praeses nomine Rei Publicae Kazachstaniae de pactis internationalibus agit eaque subscribit"
+      }
+    ],
+    "SignLaw": [
+      {
+        "status": "translation",
+        "text": "Articulus 46. Praeses legem a Kurultai exhibitam subscribit"
+      }
+    ],
+    "SignRatificationInstrument": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 12. Praeses instrumenta ratihabitionis subscribit"
+      }
+    ],
+    "StateAuthority": [
+      {
+        "status": "translation",
+        "text": "magistratus publicus vel persona munere publico fungens"
+      }
+    ],
+    "StateAward": [
+      {
+        "status": "translation",
+        "text": "praemium publicum"
+      }
+    ],
+    "StateBodyAct": [
+      {
+        "status": "translation",
+        "text": "actus de magistratu publico constituendo, tollendo vel reformando"
+      }
+    ],
+    "StateBodyAction": [
+      {
+        "status": "translation",
+        "text": "actio Praesidis de magistratu publico sibi subiecto"
+      }
+    ],
+    "StateGuardServiceFormationPower": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 19. Praeses Officium Custodiae Publicae sibi subiectum constituit"
+      }
+    ],
+    "StateGuardServiceHead": [
+      {
+        "status": "translation",
+        "text": "Praefectus Officii Custodiae Publicae Rei Publicae Kazachstaniae"
+      }
+    ],
+    "StateSupportForPresidentAndFamily": [
+      {
+        "status": "translation",
+        "text": "Articulus 48, numerus 2. Sustentatio, ministerium et custodia Praesidis eiusque familiae sumptu civitatis"
+      }
+    ],
+    "SubordinateBodyHeadAppointmentPower": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 6. Praeses rectores magistratuum publicorum sibi subiectorum in munera nominat"
+      }
+    ],
+    "SubordinateBodyHeadReleasePower": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 6. Praeses rectores magistratuum publicorum sibi subiectorum muneribus dimittit"
+      }
+    ],
+    "SubordinateBodyOrganisationPower": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 6. Praeses magistratus publicos sibi proxime subiectos et rationem sibi reddentes constituit, tollit et reformat"
+      }
+    ],
+    "SuccessionOathDeadline": [
+      {
+        "status": "translation",
+        "text": "Articulus 44, numerus 2. Iusiurandum intra unum mensem a die potestatum Praesidis susceptarum datur"
+      }
+    ],
+    "SuccessionRefusal": [
+      {
+        "status": "translation",
+        "text": "recusatio potestatum Praesidis suscipiendarum"
+      }
+    ],
+    "SuccessionToKurultaiChair": [
+      {
+        "status": "translation",
+        "text": "Articulus 51, numerus 1. Vice-Praeside impedito potestates Praesidis ad Moderatorem Kurultai transeunt"
+      }
+    ],
+    "SuccessionToPrimeMinister": [
+      {
+        "status": "translation",
+        "text": "Articulus 51, numerus 1. Moderatore Kurultai impedito potestates Praesidis ad Primum Ministrum transeunt"
+      }
+    ],
+    "SuccessionToVicePresident": [
+      {
+        "status": "translation",
+        "text": "Articulus 51, numerus 1. Potestates Praesidis ad Vice-Praesidem transeunt"
+      }
+    ],
+    "SuccessorCannotDissolveKurultai": [
+      {
+        "status": "translation",
+        "text": "Articulus 51, numerus 3. Personae quae potestates Praesidis suscepit non licet Kurultai dissolvere"
+      }
+    ],
+    "SuccessorCannotInitiateAmendment": [
+      {
+        "status": "translation",
+        "text": "Articulus 51, numerus 3. Personae quae potestates Praesidis suscepit non licet mutationes et additamenta Constitutionis incohare"
+      }
+    ],
+    "SupremeAuditChamberChair": [
+      {
+        "status": "translation",
+        "text": "Moderator Camerae Rationum Supremae"
+      }
+    ],
+    "SupremeCourtChair": [
+      {
+        "status": "translation",
+        "text": "Moderator Curiae Supremae"
+      }
+    ],
+    "SupremeJudicialCouncilChair": [
+      {
+        "status": "translation",
+        "text": "Moderator Consilii Iudicialis Supremi"
+      }
+    ],
+    "TemporaryLegislativeDecree": [
+      {
+        "status": "translation",
+        "text": "Articulus 47, numerus 2. Kurultai ad tempus absente decretum vim legis habere potest"
+      }
+    ],
+    "TreasonLiabilityPower": [
+      {
+        "status": "translation",
+        "text": "Articulus 48, numerus 1. Exceptio immunitatis propter perduellionem"
+      }
+    ],
+    "TreatySignaturePower": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, subnumerus 12. Praeses nomine Rei Publicae Kazachstaniae de pactis internationalibus agit eaque subscribit"
+      }
+    ],
+    "VacancyByDeath": [
+      {
+        "status": "translation",
+        "text": "Articulus 51, numerus 1. Mors Praesidis vacationem muneris aperit"
+      }
+    ],
+    "VacancyByHealthIncapacity": [
+      {
+        "status": "translation",
+        "text": "Articulus 51, numerus 1. Dimissio ante tempus, cum Praeses officia sua propter valetudinem perpetuo gerere non potest, vacationem muneris aperit"
+      }
+    ],
+    "VacancyByRemovalFromOffice": [
+      {
+        "status": "translation",
+        "text": "Articulus 51, numerus 1. Remotio Praesidis a munere vacationem muneris aperit"
+      }
+    ],
+    "VacancyByVoluntaryResignation": [
+      {
+        "status": "translation",
+        "text": "Articulus 51, numerus 1. Dimissio a munere ante tempus propter abdicationem voluntariam vacationem muneris aperit"
+      }
+    ],
+    "VicePresident": [
+      {
+        "status": "translation",
+        "text": "Vice-Praeses Rei Publicae Kazachstaniae"
+      }
+    ],
+    "VicePresidentAppointmentWithKurultaiConsent": [
+      {
+        "status": "translation",
+        "text": "Articulus 49, numerus 1. Vice-Praeses a Praeside consentiente maiore parte Kurultai nominatur"
+      }
+    ],
+    "VicePresidentRepresentationByInstruction": [
+      {
+        "status": "translation",
+        "text": "Articulus 49, numerus 3. Vice-Praeses Praesidem eius mandato repraesentat"
+      }
+    ],
+    "VicePresidentialOfficeIncompatibility/alt/1": [
+      {
+        "status": "translation",
+        "text": "Articulus 49, numerus 2. Incompatibilitates muneris Vice-Praesidis"
+      }
+    ],
+    "VicePresidentialOfficeIncompatibility/alt/2": [
+      {
+        "status": "translation",
+        "text": "Articulus 49, numerus 2. Incompatibilitates muneris Vice-Praesidis"
+      }
+    ],
+    "VicePresidentialOfficeIncompatibility/alt/3": [
+      {
+        "status": "translation",
+        "text": "Articulus 49, numerus 2. Incompatibilitates muneris Vice-Praesidis"
+      }
+    ],
+    "VicePresidentialOfficeIncompatibility/alt/4": [
+      {
+        "status": "translation",
+        "text": "Articulus 49, numerus 2. Incompatibilitates muneris Vice-Praesidis"
+      }
+    ],
+    "act_countersigned_by_prime_minister": [
+      {
+        "status": "translation",
+        "text": "actus subscriptione Primi Ministri confirmatus est"
+      }
+    ],
+    "address_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses nuntium ad populum Kazachstaniae adfert"
+      }
+    ],
+    "advisory_body": [
+      {
+        "status": "translation",
+        "text": "collegium a Praeside secundum subnumerum 21 constitutum eiusque genus"
+      }
+    ],
+    "age_years": [
+      {
+        "status": "translation",
+        "text": "aetas personae annis expletis"
+      }
+    ],
+    "aggression_or_immediate_external_threat": [
+      {
+        "status": "translation",
+        "text": "adest impetus in Rem Publicam illatus vel periculum externum imminens"
+      }
+    ],
+    "appointment_effective": [
+      {
+        "status": "translation",
+        "text": "nominatio facta est"
+      }
+    ],
+    "appointment_requires_kurultai_consent": [
+      {
+        "status": "translation",
+        "text": "nominatio consentiente Kurultai fit"
+      }
+    ],
+    "asylum_decision_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses de asylo politico concedendo decernit"
+      }
+    ],
+    "asylum_matter": [
+      {
+        "status": "translation",
+        "text": "quaestio de asylo politico concedendo res iudicii est"
+      }
+    ],
+    "asylum_matter_decided": [
+      {
+        "status": "translation",
+        "text": "quaestio de asylo politico concedendo decreta est"
+      }
+    ],
+    "award_established": [
+      {
+        "status": "translation",
+        "text": "praemium publicum vel titulus honorarius institutum est"
+      }
+    ],
+    "award_establishment": [
+      {
+        "status": "translation",
+        "text": "institutio praemii publici vel tituli honorarii res iudicii est"
+      }
+    ],
+    "award_establishment_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses praemium publicum vel titulum honorarium instituit"
+      }
+    ],
+    "body_formation_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses collegium format vel constituit"
+      }
+    ],
+    "body_head_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses rectorem magistratus sibi subiecti nominat"
+      }
+    ],
+    "body_head_appointment_effective": [
+      {
+        "status": "translation",
+        "text": "nominatio rectoris magistratus Praesidi subiecti facta est"
+      }
+    ],
+    "body_head_release_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses rectorem magistratus sibi subiecti munere dimittit"
+      }
+    ],
+    "body_head_release_effective": [
+      {
+        "status": "translation",
+        "text": "dimissio rectoris magistratus Praesidi subiecti facta est"
+      }
+    ],
+    "body_subordinate_to_president": [
+      {
+        "status": "translation",
+        "text": "magistratus publicus Praesidi proxime subiectus est eique rationem reddit"
+      }
+    ],
+    "candidate_person": [
+      {
+        "status": "translation",
+        "text": "candidatus est haec persona"
+      }
+    ],
+    "cannot_assume_presidential_powers": [
+      {
+        "status": "translation",
+        "text": "persona potestates Praesidis suscipere non potest"
+      }
+    ],
+    "charge_presented_on": [
+      {
+        "status": "translation",
+        "text": "dies quo Praesidi accusatio perduellionis inlata est"
+      }
+    ],
+    "citizen_by_birth": [
+      {
+        "status": "translation",
+        "text": "persona civis Rei Publicae nativus est"
+      }
+    ],
+    "citizenship_decision_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses de iure civitatis Rei Publicae Kazachstaniae decernit"
+      }
+    ],
+    "citizenship_matter": [
+      {
+        "status": "translation",
+        "text": "quaestio de iure civitatis res iudicii est"
+      }
+    ],
+    "citizenship_matter_decided": [
+      {
+        "status": "translation",
+        "text": "quaestio de iure civitatis decreta est"
+      }
+    ],
+    "close_relative_of_president": [
+      {
+        "status": "translation",
+        "text": "persona propinquus Praesidis est"
+      }
+    ],
+    "coincides_with_kurultai_election": [
+      {
+        "status": "translation",
+        "text": "electiones ordinariae Praesidis cum electionibus novi conventus Kurultai tempore concurrunt"
+      }
+    ],
+    "commission_conclusion_issued": [
+      {
+        "status": "translation",
+        "text": "commissio responsum dedit"
+      }
+    ],
+    "conferrable_distinction_kind": [
+      {
+        "status": "translation",
+        "text": "genus insignis in indice articuli 46 subnumeri 14 continetur"
+      }
+    ],
+    "conferred_power_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses potestatem Constitutione vel lege constitutam exercet"
+      }
+    ],
+    "conferred_power_exercised": [
+      {
+        "status": "translation",
+        "text": "potestas Constitutione vel lege constituta exercita est"
+      }
+    ],
+    "constitutional_court_certified_refusal": [
+      {
+        "status": "translation",
+        "text": "Curia Constitutionalis recusationem voluntariam esse comprobavit"
+      }
+    ],
+    "constitutional_court_procedure_confirmed": [
+      {
+        "status": "translation",
+        "text": "Curia Constitutionalis ordinem statutum observatum esse confirmavit"
+      }
+    ],
+    "constitutional_court_procedure_confirmed_for_release": [
+      {
+        "status": "translation",
+        "text": "Curia Constitutionalis responsum de ordinibus constitutionalibus statutis observatis dedit"
+      }
+    ],
+    "constitutional_petition": [
+      {
+        "status": "translation",
+        "text": "petitio Praesidis ad Curiam Constitutionalem res iudicii est"
+      }
+    ],
+    "constitutional_review_petition_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses Curiam Constitutionalem adit"
+      }
+    ],
+    "constitutional_review_requested": [
+      {
+        "status": "translation",
+        "text": "custodia constitutionalis a Praeside incohata est"
+      }
+    ],
+    "credentials": [
+      {
+        "status": "translation",
+        "text": "litterae fidei vel revocatoriae res iudicii sunt"
+      }
+    ],
+    "credentials_acceptance_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses litteras fidei vel revocatorias accipit"
+      }
+    ],
+    "credentials_accepted": [
+      {
+        "status": "translation",
+        "text": "litterae fidei vel revocatoriae acceptae sunt"
+      }
+    ],
+    "deputy_powers_terminated": [
+      {
+        "status": "translation",
+        "text": "potestates deputati Kurultai ante tempus finitae sunt"
+      }
+    ],
+    "diplomatic_mission_head": [
+      {
+        "status": "translation",
+        "text": "caput legationis res iudicii est"
+      }
+    ],
+    "dissolution_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses Kurultai dissolvit"
+      }
+    ],
+    "dissolution_considered_on": [
+      {
+        "status": "translation",
+        "text": "dies quo quaestio de Kurultai dissolvendo movetur"
+      }
+    ],
+    "dissolution_final_period": [
+      {
+        "status": "translation",
+        "text": "tempus tutum ante exitum potestatum Praesidis: sex menses"
+      }
+    ],
+    "dissolution_interval_after_prior": [
+      {
+        "status": "translation",
+        "text": "tempus quo Kurultai post dissolutionem priorem non dissolvitur: unus annus"
+      }
+    ],
+    "dissolution_question_under_consideration": [
+      {
+        "status": "translation",
+        "text": "Praeses de potestatibus Kurultai ante tempus finiendis deliberat"
+      }
+    ],
+    "distinction_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses praemium tribuit vel titulum, gradum aut classem peritiae confert"
+      }
+    ],
+    "distinction_conferred": [
+      {
+        "status": "translation",
+        "text": "insigne tributum est"
+      }
+    ],
+    "distinction_kind": [
+      {
+        "status": "translation",
+        "text": "genus insignis tributi"
+      }
+    ],
+    "early_election_announced_timely": [
+      {
+        "status": "translation",
+        "text": "electiones extraordinariae intra terminum constitutionalem denuntiatae sunt"
+      }
+    ],
+    "early_election_announcement_day": [
+      {
+        "status": "translation",
+        "text": "dies quo electiones extraordinariae Praesidis denuntiatae sunt"
+      }
+    ],
+    "early_election_announcement_days": [
+      {
+        "status": "translation",
+        "text": "terminus electionum extraordinariarum denuntiandarum: septem dies"
+      }
+    ],
+    "early_election_conduct_due_on": [
+      {
+        "status": "translation",
+        "text": "dies exeuntis bimestris termini electionum faciendarum"
+      }
+    ],
+    "early_election_conduct_period": [
+      {
+        "status": "translation",
+        "text": "terminus electionum extraordinariarum Praesidis faciendarum: duo menses"
+      }
+    ],
+    "early_election_conducted_in_period": [
+      {
+        "status": "translation",
+        "text": "electiones extraordinariae intra bimestrem terminum factae sunt"
+      }
+    ],
+    "early_election_conducted_timely": [
+      {
+        "status": "translation",
+        "text": "electiones extraordinariae intra terminum constitutionalem factae sunt"
+      }
+    ],
+    "early_election_day": [
+      {
+        "status": "translation",
+        "text": "dies quo electiones extraordinariae Praesidis fiunt"
+      }
+    ],
+    "elected_president": [
+      {
+        "status": "translation",
+        "text": "persona Praeses electa habetur"
+      }
+    ],
+    "election_results_published_on": [
+      {
+        "status": "translation",
+        "text": "dies quo exitus electionum Praesidis publicatus est"
+      }
+    ],
+    "eligible_presidential_candidate": [
+      {
+        "status": "translation",
+        "text": "persona requisitis candidati ad munus Praesidis congruit"
+      }
+    ],
+    "emergency_consultations_completed": [
+      {
+        "status": "translation",
+        "text": "consultationes ante statum necessitatis inducendum requisitae factae sunt"
+      }
+    ],
+    "emergency_measure": [
+      {
+        "status": "translation",
+        "text": "mensura a Praeside in statu necessitatis vel statu belli suscepta"
+      }
+    ],
+    "emergency_measure_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses mensuras status necessitatis inducit"
+      }
+    ],
+    "emergency_measure_in_force": [
+      {
+        "status": "translation",
+        "text": "mensurae status necessitatis legitime inductae sunt"
+      }
+    ],
+    "emergency_or_martial_law_active": [
+      {
+        "status": "translation",
+        "text": "status necessitatis vel status belli viget"
+      }
+    ],
+    "ex_president": [
+      {
+        "status": "translation",
+        "text": "persona titulum ex-Praesidis Rei Publicae Kazachstaniae habet"
+      }
+    ],
+    "final_decision_day": [
+      {
+        "status": "translation",
+        "text": "dies quo Kurultai decretum ultimum de accusatione tulit"
+      }
+    ],
+    "final_decision_not_taken": [
+      {
+        "status": "translation",
+        "text": "decretum ultimum de accusatione non latum est"
+      }
+    ],
+    "final_impeachment_votes": [
+      {
+        "status": "translation",
+        "text": "numerus suffragiorum in decreto ultimo de remotione latorum"
+      }
+    ],
+    "fluent_in_state_language": [
+      {
+        "status": "translation",
+        "text": "persona lingua publica libere utitur"
+      }
+    ],
+    "former_president": [
+      {
+        "status": "translation",
+        "text": "persona Praeses Rei Publicae praeteritus est"
+      }
+    ],
+    "government_initiated_act_ready": [
+      {
+        "status": "translation",
+        "text": "actus incohante Gubernio editus rite perfectus est"
+      }
+    ],
+    "government_initiated_presidential_act": [
+      {
+        "status": "translation",
+        "text": "actus incohante Gubernio editus est"
+      }
+    ],
+    "health_removal_case": [
+      {
+        "status": "translation",
+        "text": "quaestio de Praeside ante tempus propter valetudinem dimittendo deliberatur"
+      }
+    ],
+    "health_removal_denominator": [
+      {
+        "status": "translation",
+        "text": "denominator partis suffragiorum ad dimissionem propter valetudinem requisitae"
+      }
+    ],
+    "health_removal_numerator": [
+      {
+        "status": "translation",
+        "text": "numerator partis suffragiorum ad dimissionem propter valetudinem requisitae"
+      }
+    ],
+    "health_removal_target": [
+      {
+        "status": "translation",
+        "text": "quaestio de dimissione ante tempus propter valetudinem ad hunc Praesidem pertinet"
+      }
+    ],
+    "health_removal_votes": [
+      {
+        "status": "translation",
+        "text": "numerus suffragiorum deputatorum Kurultai pro dimissione ante tempus propter valetudinem latorum"
+      }
+    ],
+    "high_command_appointment": [
+      {
+        "status": "translation",
+        "text": "nominatio ad summum imperium Copiarum Armatarum pertinet"
+      }
+    ],
+    "high_command_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses in munus summi imperii Copiarum Armatarum nominat"
+      }
+    ],
+    "high_command_appointment_effective": [
+      {
+        "status": "translation",
+        "text": "nominatio in munus summi imperii facta est"
+      }
+    ],
+    "high_command_release": [
+      {
+        "status": "translation",
+        "text": "dimissio ad summum imperium Copiarum Armatarum pertinet"
+      }
+    ],
+    "high_command_release_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses munere summi imperii Copiarum Armatarum dimittit"
+      }
+    ],
+    "high_command_release_effective": [
+      {
+        "status": "translation",
+        "text": "dimissio a munere summi imperii facta est"
+      }
+    ],
+    "higher_education": [
+      {
+        "status": "translation",
+        "text": "persona educatione superiore praedita est"
+      }
+    ],
+    "immediate_constitutional_threat": [
+      {
+        "status": "translation",
+        "text": "adest periculum imminens ordini constitutionali, ordini iuridico vel securitati"
+      }
+    ],
+    "impeachment_case": [
+      {
+        "status": "translation",
+        "text": "iudicium est iudicium de Praeside a munere removendo"
+      }
+    ],
+    "impeachment_charge_rejected": [
+      {
+        "status": "translation",
+        "text": "accusatio perduellionis contra Praesidem inlata reiecta est"
+      }
+    ],
+    "impeachment_final_decision_due_on": [
+      {
+        "status": "translation",
+        "text": "dies exeuntis bimestris termini decreti ultimi"
+      }
+    ],
+    "impeachment_final_decision_period": [
+      {
+        "status": "translation",
+        "text": "terminus decreti ultimi de accusatione ferendi: duo menses"
+      }
+    ],
+    "impeachment_final_decision_timely": [
+      {
+        "status": "translation",
+        "text": "decretum ultimum intra bimestrem terminum latum est"
+      }
+    ],
+    "impeachment_final_denominator": [
+      {
+        "status": "translation",
+        "text": "denominator limitis remotionis: quattuor"
+      }
+    ],
+    "impeachment_final_numerator": [
+      {
+        "status": "translation",
+        "text": "numerator limitis remotionis: tres"
+      }
+    ],
+    "impeachment_initiating_deputy": [
+      {
+        "status": "translation",
+        "text": "deputatus Kurultai quaestionem de accusatione incohavit"
+      }
+    ],
+    "impeachment_initiating_votes": [
+      {
+        "status": "translation",
+        "text": "numerus deputatorum Kurultai qui remotionem incohaverunt"
+      }
+    ],
+    "impeachment_initiative_denominator": [
+      {
+        "status": "translation",
+        "text": "denominator limitis incohandae remotionis: tres"
+      }
+    ],
+    "impeachment_initiative_numerator": [
+      {
+        "status": "translation",
+        "text": "numerator limitis incohandae remotionis: unum"
+      }
+    ],
+    "impeachment_initiative_valid": [
+      {
+        "status": "translation",
+        "text": "remotio a legitimo numero deputatorum incohata est"
+      }
+    ],
+    "impeachment_investigation_denominator": [
+      {
+        "status": "translation",
+        "text": "denominator limitis decreti de inquisitione: duo"
+      }
+    ],
+    "impeachment_investigation_numerator": [
+      {
+        "status": "translation",
+        "text": "numerator limitis decreti de inquisitione: unum"
+      }
+    ],
+    "impeachment_investigation_valid": [
+      {
+        "status": "translation",
+        "text": "inquisitio accusationis legitime mandata est"
+      }
+    ],
+    "impeachment_may_not_be_initiated": [
+      {
+        "status": "translation",
+        "text": "quaestio de Praeside removendo moveri non potest"
+      }
+    ],
+    "impeachment_question_approved": [
+      {
+        "status": "translation",
+        "text": "Kurultai de accusatione inferenda eiusque inquisitione decrevit"
+      }
+    ],
+    "impeachment_question_denominator": [
+      {
+        "status": "translation",
+        "text": "denominator partis suffragiorum ad decretum de accusatione requisitae"
+      }
+    ],
+    "impeachment_question_numerator": [
+      {
+        "status": "translation",
+        "text": "numerator partis suffragiorum ad decretum de accusatione requisitae"
+      }
+    ],
+    "impeachment_question_votes": [
+      {
+        "status": "translation",
+        "text": "numerus suffragiorum deputatorum Kurultai de accusatione inferenda eiusque inquisitione latorum"
+      }
+    ],
+    "impeachment_rejected_at_stage": [
+      {
+        "status": "translation",
+        "text": "accusatio a Kurultai uno ex gradibus reiecta est"
+      }
+    ],
+    "impeachment_reviewed_on": [
+      {
+        "status": "translation",
+        "text": "dies quo status causae de accusatione examinatur"
+      }
+    ],
+    "impeachment_target": [
+      {
+        "status": "translation",
+        "text": "accusatio perduellionis huic Praesidi inlata est"
+      }
+    ],
+    "in_final_period_of_presidential_term": [
+      {
+        "status": "translation",
+        "text": "quaestio de dissolutione sex mensibus ultimis potestatum Praesidis mota est"
+      }
+    ],
+    "international_treaty": [
+      {
+        "status": "translation",
+        "text": "pactum internationale res iudicii est"
+      }
+    ],
+    "investigation_approved_votes": [
+      {
+        "status": "translation",
+        "text": "numerus suffragiorum pro inquisitione accusationis mandanda latorum"
+      }
+    ],
+    "kurultai": [
+      {
+        "status": "translation",
+        "text": "collegium est Kurultai"
+      }
+    ],
+    "kurultai_dissolved": [
+      {
+        "status": "translation",
+        "text": "dissolutio Kurultai facta est"
+      }
+    ],
+    "kurultai_election_day": [
+      {
+        "status": "translation",
+        "text": "dies quo electiones novi conventus Kurultai fiunt"
+      }
+    ],
+    "kurultai_immediately_informed": [
+      {
+        "status": "translation",
+        "text": "nuntius de mensuris susceptis statim ad Kurultai perlatus est"
+      }
+    ],
+    "kurultai_majority_consent": [
+      {
+        "status": "translation",
+        "text": "Kurultai nominationi maiore parte suffragiorum consensit"
+      }
+    ],
+    "kurultai_majority_consent_to_vice_president": [
+      {
+        "status": "translation",
+        "text": "Kurultai nominationi Vice-Praesidis consensit"
+      }
+    ],
+    "kurultai_seat_count": [
+      {
+        "status": "translation",
+        "text": "totus numerus deputatorum Kurultai: centum quadraginta quinque"
+      }
+    ],
+    "law_countersigned_by_kurultai_chair": [
+      {
+        "status": "translation",
+        "text": "lex subscriptione Moderatoris Kurultai confirmata est"
+      }
+    ],
+    "law_countersigned_by_prime_minister": [
+      {
+        "status": "translation",
+        "text": "lex subscriptione Primi Ministri confirmata est"
+      }
+    ],
+    "law_presented": [
+      {
+        "status": "translation",
+        "text": "lex Praesidi ad subscribendum exhibita est"
+      }
+    ],
+    "law_presented_on": [
+      {
+        "status": "translation",
+        "text": "dies quo lex a Kurultai Praesidi exhibita est"
+      }
+    ],
+    "law_ready_for_presidential_signature": [
+      {
+        "status": "translation",
+        "text": "lex a Praeside subscribenda parata est"
+      }
+    ],
+    "law_returned_with_objections": [
+      {
+        "status": "translation",
+        "text": "lex cum obiectionibus ad Kurultai remissa est"
+      }
+    ],
+    "law_signed": [
+      {
+        "status": "translation",
+        "text": "lex a Praeside subscripta est"
+      }
+    ],
+    "majority_reached_in_election": [
+      {
+        "status": "translation",
+        "text": "in electionibus aliquis plus quam quinquaginta ex centum suffragiorum accepit"
+      }
+    ],
+    "martial_measure_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses statum belli inducit"
+      }
+    ],
+    "martial_measure_in_force": [
+      {
+        "status": "translation",
+        "text": "status belli legitime inductus est"
+      }
+    ],
+    "medical_commission_formed": [
+      {
+        "status": "translation",
+        "text": "Kurultai commissionem ex deputatis et peritis in partibus medicinae idoneis constituit"
+      }
+    ],
+    "mission_head_appointed": [
+      {
+        "status": "translation",
+        "text": "caput legationis nominatum est"
+      }
+    ],
+    "mission_head_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses caput legationis nominat"
+      }
+    ],
+    "mission_head_recall_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses caput legationis revocat"
+      }
+    ],
+    "mission_head_recalled": [
+      {
+        "status": "translation",
+        "text": "caput legationis revocatum est"
+      }
+    ],
+    "new_president_assumed_office": [
+      {
+        "status": "translation",
+        "text": "Praeses noviter electus munus iniit"
+      }
+    ],
+    "no_candidate_reached_majority": [
+      {
+        "status": "translation",
+        "text": "nullus candidatorum plus quam quinquaginta ex centum suffragiorum accepit"
+      }
+    ],
+    "office_appointment": [
+      {
+        "status": "translation",
+        "text": "nominatio in munus articulo nominatum fit"
+      }
+    ],
+    "office_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses in munus ex indice subnumeri 5 nominat"
+      }
+    ],
+    "office_appointment_effective": [
+      {
+        "status": "translation",
+        "text": "nominatio in munus facta est"
+      }
+    ],
+    "office_release": [
+      {
+        "status": "translation",
+        "text": "dimissio a munere articulo nominato fit"
+      }
+    ],
+    "office_release_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses munere ex indice subnumeri 5 dimittit"
+      }
+    ],
+    "office_release_effective": [
+      {
+        "status": "translation",
+        "text": "dimissio a munere facta est"
+      }
+    ],
+    "pardon_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses veniam dat"
+      }
+    ],
+    "pardon_granted": [
+      {
+        "status": "translation",
+        "text": "venia data est"
+      }
+    ],
+    "pardon_matter": [
+      {
+        "status": "translation",
+        "text": "petitio veniae res iudicii est"
+      }
+    ],
+    "participating_voters": [
+      {
+        "status": "translation",
+        "text": "numerus suffragatorum qui suffragium tulerunt"
+      }
+    ],
+    "persistent_health_incapacity": [
+      {
+        "status": "translation",
+        "text": "Praeses officia sua propter valetudinem perpetuo gerere non potest"
+      }
+    ],
+    "power_conferred_by_constitution_or_law": [
+      {
+        "status": "translation",
+        "text": "potestas Praesidis Constitutione vel lege Rei Publicae Kazachstaniae constituta est"
+      }
+    ],
+    "president": [
+      {
+        "status": "translation",
+        "text": "persona Praeses Rei Publicae est"
+      }
+    ],
+    "president_assumed_office_on": [
+      {
+        "status": "translation",
+        "text": "dies quo Praeses munus iniit"
+      }
+    ],
+    "president_conducts_business": [
+      {
+        "status": "translation",
+        "text": "Praeses negotiationem quaestuosam exercet"
+      }
+    ],
+    "president_died": [
+      {
+        "status": "translation",
+        "text": "Praeses mortuus est"
+      }
+    ],
+    "president_ensures_coordinated_state_power": [
+      {
+        "status": "translation",
+        "text": "Praeses munus concors partium potestatis publicae praestat"
+      }
+    ],
+    "president_experience_years": [
+      {
+        "status": "translation",
+        "text": "experientia operis requisita: quinque anni"
+      }
+    ],
+    "president_guarantees_unity_constitution_and_rights": [
+      {
+        "status": "translation",
+        "text": "Praeses sponsor est unitatis populi, firmitatis Constitutionis, iurium et libertatum hominis"
+      }
+    ],
+    "president_held_criminally_or_administratively_liable": [
+      {
+        "status": "translation",
+        "text": "Praeses ad responsabilitatem criminalem vel administrativam vocatus est"
+      }
+    ],
+    "president_holds_other_paid_office": [
+      {
+        "status": "translation",
+        "text": "Praeses aliud munus stipendio auctum gerit"
+      }
+    ],
+    "president_holds_representative_mandate": [
+      {
+        "status": "translation",
+        "text": "Praeses deputatus collegii repraesentantis est"
+      }
+    ],
+    "president_is_commander_in_chief": [
+      {
+        "status": "translation",
+        "text": "Praeses Summus Imperator Copiarum Armatarum Rei Publicae Kazachstaniae est"
+      }
+    ],
+    "president_is_head_of_state": [
+      {
+        "status": "translation",
+        "text": "Praeses caput civitatis et summa persona munere publico fungens Rei Publicae est"
+      }
+    ],
+    "president_minimum_age": [
+      {
+        "status": "translation",
+        "text": "aetas minima Praesidis: quadraginta anni"
+      }
+    ],
+    "president_party_member": [
+      {
+        "status": "translation",
+        "text": "Praeses factionis politicae membrum est"
+      }
+    ],
+    "president_released_for_health": [
+      {
+        "status": "translation",
+        "text": "Praeses ante tempus propter valetudinem a munere dimissus est"
+      }
+    ],
+    "president_released_from_office_for_health": [
+      {
+        "status": "translation",
+        "text": "hic Praeses ante tempus propter valetudinem a munere dimissus est"
+      }
+    ],
+    "president_removed_by_impeachment": [
+      {
+        "status": "translation",
+        "text": "Praeses a munere remotus est"
+      }
+    ],
+    "president_removed_from_office": [
+      {
+        "status": "translation",
+        "text": "Praeses a munere remotus est"
+      }
+    ],
+    "president_residence_years": [
+      {
+        "status": "translation",
+        "text": "terminus habitationis in Kazachstania requisitus: quindecim anni"
+      }
+    ],
+    "president_resigned": [
+      {
+        "status": "translation",
+        "text": "Praeses propter abdicationem voluntariam a munere dimissus est"
+      }
+    ],
+    "president_term": [
+      {
+        "status": "translation",
+        "text": "terminus potestatum Praesidis: septem anni"
+      }
+    ],
+    "president_term_expires_on": [
+      {
+        "status": "translation",
+        "text": "dies quo terminus potestatum Praesidis exit"
+      }
+    ],
+    "presidential_act": [
+      {
+        "status": "translation",
+        "text": "actus ab hoc Praeside editus est"
+      }
+    ],
+    "presidential_act_based_on_constitution_and_law": [
+      {
+        "status": "translation",
+        "text": "actus ex Constitutione et legibus earumque exsequendarum causa editus est"
+      }
+    ],
+    "presidential_act_binding_nationwide": [
+      {
+        "status": "translation",
+        "text": "actus Praesidis in toto territorio Rei Publicae obligat"
+      }
+    ],
+    "presidential_address": [
+      {
+        "status": "translation",
+        "text": "nuntius Praesidis res iudicii est"
+      }
+    ],
+    "presidential_address_delivered": [
+      {
+        "status": "translation",
+        "text": "nuntius Praesidis ad populum Kazachstaniae latus est"
+      }
+    ],
+    "presidential_administration": [
+      {
+        "status": "translation",
+        "text": "Administratio Praesidis res iudicii est"
+      }
+    ],
+    "presidential_administration_formed": [
+      {
+        "status": "translation",
+        "text": "Administratio Praesidis Rei Publicae Kazachstaniae constituta est"
+      }
+    ],
+    "presidential_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses nominationem facit"
+      }
+    ],
+    "presidential_appointment_office": [
+      {
+        "status": "translation",
+        "text": "munus in indice articuli 46 subnumeri 5 continetur"
+      }
+    ],
+    "presidential_body_established": [
+      {
+        "status": "translation",
+        "text": "Consilium Securitatis, aliud collegium consultivum vel Consilium Iudiciale Supremum constitutum est"
+      }
+    ],
+    "presidential_conduct_in_office": [
+      {
+        "status": "translation",
+        "text": "factum a Praeside officia gerente commissum est"
+      }
+    ],
+    "presidential_election_attempt": [
+      {
+        "status": "translation",
+        "text": "candidatus electionibus Praesidis interest"
+      }
+    ],
+    "presidential_election_held": [
+      {
+        "status": "translation",
+        "text": "electiones Praesidis factae sunt"
+      }
+    ],
+    "presidential_election_majority_denominator": [
+      {
+        "status": "translation",
+        "text": "denominator limitis electionis Praesidis: duo"
+      }
+    ],
+    "presidential_election_majority_numerator": [
+      {
+        "status": "translation",
+        "text": "numerator limitis electionis Praesidis: unum"
+      }
+    ],
+    "presidential_family_support_case": [
+      {
+        "status": "translation",
+        "text": "agitur de sustentatione Praesidis praeteriti eiusque familiae"
+      }
+    ],
+    "presidential_instruction_to_vice_president": [
+      {
+        "status": "translation",
+        "text": "Praeses Vice-Praesidi mandavit ut se repraesentaret"
+      }
+    ],
+    "presidential_liability_attempt": [
+      {
+        "status": "translation",
+        "text": "temptatum est ut Praeses ad responsabilitatem vocaretur"
+      }
+    ],
+    "presidential_office_incompatible": [
+      {
+        "status": "translation",
+        "text": "munus Praesidis cum munere vel negotiatione gesta incompatibile est"
+      }
+    ],
+    "presidential_powers_assumed_by": [
+      {
+        "status": "translation",
+        "text": "potestates Praesidis ad hanc personam transierunt"
+      }
+    ],
+    "presidential_powers_terminated": [
+      {
+        "status": "translation",
+        "text": "potestates Praesidis finitae sunt"
+      }
+    ],
+    "presidential_relative_position_prohibited": [
+      {
+        "status": "translation",
+        "text": "propinquo Praesidis tale munus gerere non licet"
+      }
+    ],
+    "presidential_return_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses legem cum obiectionibus remittit"
+      }
+    ],
+    "presidential_signature_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses legem exhibitam subscribit"
+      }
+    ],
+    "presidential_signature_day": [
+      {
+        "status": "translation",
+        "text": "dies quo Praeses legem subscripsit vel remisit"
+      }
+    ],
+    "presidential_signature_due_on": [
+      {
+        "status": "translation",
+        "text": "dies exeuntis menstrui termini legis subscribendae"
+      }
+    ],
+    "presidential_signature_period": [
+      {
+        "status": "translation",
+        "text": "terminus legis a Kurultai exhibitae subscribendae: unus mensis"
+      }
+    ],
+    "presidential_signature_timely": [
+      {
+        "status": "translation",
+        "text": "lex intra menstruum terminum subscripta vel remissa est"
+      }
+    ],
+    "presidential_vacancy": [
+      {
+        "status": "translation",
+        "text": "munus Praesidis ante tempus vacavit"
+      }
+    ],
+    "presidential_vote": [
+      {
+        "status": "translation",
+        "text": "numerus suffragiorum pro candidato latorum"
+      }
+    ],
+    "previously_elected_president": [
+      {
+        "status": "translation",
+        "text": "persona antea Praeses Rei Publicae electa est"
+      }
+    ],
+    "prior_dissolution_on": [
+      {
+        "status": "translation",
+        "text": "dies dissolutionis prioris Kurultai"
+      }
+    ],
+    "prior_office_relinquished": [
+      {
+        "status": "translation",
+        "text": "persona munus prius deposuit"
+      }
+    ],
+    "ratification_instrument": [
+      {
+        "status": "translation",
+        "text": "instrumentum ratihabitionis res iudicii est"
+      }
+    ],
+    "ratification_instrument_signed": [
+      {
+        "status": "translation",
+        "text": "instrumentum ratihabitionis subscriptum est"
+      }
+    ],
+    "ratification_signature_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses instrumentum ratihabitionis subscribit"
+      }
+    ],
+    "referendum_called": [
+      {
+        "status": "translation",
+        "text": "referendum populare indictum est"
+      }
+    ],
+    "referendum_decision_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses de referendo faciendo decernit"
+      }
+    ],
+    "refusal_statement_filed": [
+      {
+        "status": "translation",
+        "text": "persona libellum recusationis potestatum Praesidis suscipiendarum ad Curiam Constitutionalem tulit"
+      }
+    ],
+    "refused_to_assume_presidential_powers": [
+      {
+        "status": "translation",
+        "text": "persona potestates Praesidis suscipere recusavit"
+      }
+    ],
+    "regular_election_lead_period": [
+      {
+        "status": "translation",
+        "text": "tempus quo electiones ordinariae exitum potestatum antecedunt: duo menses"
+      }
+    ],
+    "regular_election_scheduled_in_time": [
+      {
+        "status": "translation",
+        "text": "electiones ordinariae non serius quam duobus mensibus ante exitum termini potestatum Praesidis indictae sunt"
+      }
+    ],
+    "regular_oath_due_on": [
+      {
+        "status": "translation",
+        "text": "dies exeuntis termini iurisiurandi dandi"
+      }
+    ],
+    "regular_oath_period": [
+      {
+        "status": "translation",
+        "text": "terminus iurisiurandi dandi: unus mensis"
+      }
+    ],
+    "regular_oath_taken_on": [
+      {
+        "status": "translation",
+        "text": "dies quo iusiurandum datum est"
+      }
+    ],
+    "regular_oath_timely": [
+      {
+        "status": "translation",
+        "text": "iusiurandum intra terminum constitutionalem datum est"
+      }
+    ],
+    "regular_presidential_election_date_inadmissible": [
+      {
+        "status": "translation",
+        "text": "dies electionum ordinariarum Praesidis non licet"
+      }
+    ],
+    "regular_presidential_election_day": [
+      {
+        "status": "translation",
+        "text": "dies quo electiones ordinariae Praesidis fiunt"
+      }
+    ],
+    "relative_holds_political_office_or_quasistate_leadership": [
+      {
+        "status": "translation",
+        "text": "propinquus munus publicum politicum gerit vel instituto sectoris quasi publici praeest"
+      }
+    ],
+    "repeat_vote_ballot": [
+      {
+        "status": "translation",
+        "text": "suffragium iteratum factum est"
+      }
+    ],
+    "repeat_vote_participant": [
+      {
+        "status": "translation",
+        "text": "candidatus suffragio iterato interest"
+      }
+    ],
+    "repeat_vote_required": [
+      {
+        "status": "translation",
+        "text": "suffragium iteratum fit"
+      }
+    ],
+    "repeat_vote_votes": [
+      {
+        "status": "translation",
+        "text": "numerus suffragiorum pro candidato in suffragio iterato latorum"
+      }
+    ],
+    "repeated_refusal_of_presidential_nominee": [
+      {
+        "status": "translation",
+        "text": "Kurultai consensum candidato a Praeside proposito iterum negavit"
+      }
+    ],
+    "required_consultations_completed": [
+      {
+        "status": "translation",
+        "text": "consultationes ante Kurultai dissolvendum requisitae factae sunt"
+      }
+    ],
+    "resides_last_years": [
+      {
+        "status": "translation",
+        "text": "numerus annorum proximorum habitationis in Kazachstania"
+      }
+    ],
+    "state_authority": [
+      {
+        "status": "translation",
+        "text": "subiectum est magistratus publicus vel persona munere publico fungens"
+      }
+    ],
+    "state_body_act": [
+      {
+        "status": "translation",
+        "text": "actus de magistratu publico constituendo, tollendo vel reformando"
+      }
+    ],
+    "state_body_act_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses magistratum publicum constituit, tollit vel reformat"
+      }
+    ],
+    "state_body_act_effective": [
+      {
+        "status": "translation",
+        "text": "constitutio, sublatio vel reformatio magistratus publici facta est"
+      }
+    ],
+    "state_guard_service": [
+      {
+        "status": "translation",
+        "text": "Officium Custodiae Publicae res iudicii est"
+      }
+    ],
+    "state_guard_service_formed": [
+      {
+        "status": "translation",
+        "text": "Officium Custodiae Publicae Praesidi subiectum constitutum est"
+      }
+    ],
+    "state_service_or_elected_years": [
+      {
+        "status": "translation",
+        "text": "experientia operis in ministerio publico vel in muneribus publicis electivis"
+      }
+    ],
+    "state_support_provided": [
+      {
+        "status": "translation",
+        "text": "sustentatio et custodia a civitate praestitae sunt"
+      }
+    ],
+    "state_treason_by_president": [
+      {
+        "status": "translation",
+        "text": "perduellio a Praeside commissa est"
+      }
+    ],
+    "subordinate_body_head_appointment": [
+      {
+        "status": "translation",
+        "text": "nominatio ad rectorem magistratus Praesidi subiecti pertinet"
+      }
+    ],
+    "subordinate_body_head_release": [
+      {
+        "status": "translation",
+        "text": "dimissio ad rectorem magistratus Praesidi subiecti pertinet"
+      }
+    ],
+    "succession_event": [
+      {
+        "status": "translation",
+        "text": "persona potestates Praesidis in se suscepit"
+      }
+    ],
+    "succession_oath_date": [
+      {
+        "status": "translation",
+        "text": "dies potestatum susceptarum et dies iurisiurandi dati"
+      }
+    ],
+    "succession_oath_days": [
+      {
+        "status": "translation",
+        "text": "terminus iurisiurandi ab eo qui potestates Praesidis suscepit dandi: septem dies"
+      }
+    ],
+    "succession_oath_timely": [
+      {
+        "status": "translation",
+        "text": "iusiurandum in munere subeundo intra terminum datum est"
+      }
+    ],
+    "succession_president_in_office": [
+      {
+        "status": "translation",
+        "text": "potestates Praesidis exercet persona quae eas in successionem suscepit"
+      }
+    ],
+    "successor_amendment_initiative_attempt": [
+      {
+        "status": "translation",
+        "text": "persona quae potestates suscepit mutationem Constitutionis incohat"
+      }
+    ],
+    "successor_amendment_initiative_barred": [
+      {
+        "status": "translation",
+        "text": "personae quae potestates suscepit mutationem Constitutionis incohare prohibetur"
+      }
+    ],
+    "successor_dissolution_attempt": [
+      {
+        "status": "translation",
+        "text": "persona quae potestates suscepit Kurultai dissolvit"
+      }
+    ],
+    "successor_dissolution_barred": [
+      {
+        "status": "translation",
+        "text": "personae quae potestates suscepit Kurultai dissolvere prohibetur"
+      }
+    ],
+    "supreme_court_charge_supported": [
+      {
+        "status": "translation",
+        "text": "Curia Suprema accusationem fundatam esse confirmavit"
+      }
+    ],
+    "temporary_decree_has_force_of_law": [
+      {
+        "status": "translation",
+        "text": "actus Praesidis temporarius vim legis habet"
+      }
+    ],
+    "temporary_kurultai_absence_after_early_termination": [
+      {
+        "status": "translation",
+        "text": "Kurultai abest, quod potestates eius ante tempus finitae sunt"
+      }
+    ],
+    "temporary_legislative_decree": [
+      {
+        "status": "translation",
+        "text": "actus est actus normativus iuridicus Praesidis temporarius"
+      }
+    ],
+    "treaty_signature_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses nomine Rei Publicae Kazachstaniae de pacto internationali agit idque subscribit"
+      }
+    ],
+    "treaty_signed_on_behalf_of_republic": [
+      {
+        "status": "translation",
+        "text": "pactum internationale nomine Rei Publicae Kazachstaniae subscriptum est"
+      }
+    ],
+    "unable_by_health_or_personal_reasons": [
+      {
+        "status": "translation",
+        "text": "persona potestates suscipere non potest propter valetudinem vel alias causas personales"
+      }
+    ],
+    "vacancy_by_death": [
+      {
+        "status": "translation",
+        "text": "munus vacavit morte Praesidis"
+      }
+    ],
+    "vacancy_by_health_incapacity": [
+      {
+        "status": "translation",
+        "text": "munus vacavit, quod Praeses officia propter valetudinem perpetuo gerere non potest"
+      }
+    ],
+    "vacancy_by_removal_from_office": [
+      {
+        "status": "translation",
+        "text": "munus vacavit remotione Praesidis"
+      }
+    ],
+    "vacancy_by_voluntary_resignation": [
+      {
+        "status": "translation",
+        "text": "munus vacavit abdicatione voluntaria Praesidis"
+      }
+    ],
+    "vacancy_day": [
+      {
+        "status": "translation",
+        "text": "dies quo munus Praesidis vacavit"
+      }
+    ],
+    "vacancy_kurultai_chair": [
+      {
+        "status": "translation",
+        "text": "persona munus Moderatoris Kurultai eo tempore quo munus vacavit gerit"
+      }
+    ],
+    "vacancy_prime_minister": [
+      {
+        "status": "translation",
+        "text": "persona munus Primi Ministri eo tempore quo munus vacavit gerit"
+      }
+    ],
+    "vacancy_vice_president": [
+      {
+        "status": "translation",
+        "text": "persona munus Vice-Praesidis eo tempore quo munus vacavit gerit"
+      }
+    ],
+    "vice_president": [
+      {
+        "status": "translation",
+        "text": "persona Vice-Praeses Rei Publicae est"
+      }
+    ],
+    "vice_president_appointed": [
+      {
+        "status": "translation",
+        "text": "Vice-Praeses nominatus est"
+      }
+    ],
+    "vice_president_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses Vice-Praesidem nominat"
+      }
+    ],
+    "vice_president_conducts_business": [
+      {
+        "status": "translation",
+        "text": "Vice-Praeses negotiationem quaestuosam exercet"
+      }
+    ],
+    "vice_president_holds_other_paid_office": [
+      {
+        "status": "translation",
+        "text": "Vice-Praeses aliud munus stipendio auctum gerit"
+      }
+    ],
+    "vice_president_holds_representative_mandate": [
+      {
+        "status": "translation",
+        "text": "Vice-Praeses deputatus collegii repraesentantis est"
+      }
+    ],
+    "vice_president_party_member": [
+      {
+        "status": "translation",
+        "text": "Vice-Praeses factionis politicae membrum est"
+      }
+    ],
+    "vice_president_representation_action": [
+      {
+        "status": "translation",
+        "text": "Vice-Praeses nomine Praesidis agit"
+      }
+    ],
+    "vice_president_representation_authorized": [
+      {
+        "status": "translation",
+        "text": "repraesentatio a Vice-Praeside facta legitima est"
+      }
+    ],
+    "vice_presidential_office_incompatible": [
+      {
+        "status": "translation",
+        "text": "munus Vice-Praesidis cum munere vel negotiatione gesta incompatibile est"
+      }
+    ],
+    "within_period_after_prior_dissolution": [
+      {
+        "status": "translation",
+        "text": "a die dissolutionis prioris Kurultai unus annus nondum praeteriit"
+      }
+    ]
+  },
+  "language": "la",
+  "package": "kz.constitution.president"
+}

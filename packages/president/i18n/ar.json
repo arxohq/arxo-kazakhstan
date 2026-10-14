@@ -1,0 +1,2876 @@
+{
+  "$comment": "طبقة عرض عربية لحزم دستور جمهورية كازاخستان (DECISION-0070). الملف خارج CLIR ولا يقرأه المصرف، وإنما تقرأه طبقة العرض وحدها (verbalize --labels وخادم MCP وسطح المكتب). مصدر الترجمة هو تسمية العقدة الروسية ru-KZ في CLIR، ومصطلحاتها موافقة لحزمة law.verb.ar؛ والحالة translation أي ترجمة عمل غير رسمية لا نص رسمي. المفتاح هو الاسم المحلي للعقدة. النص غير مشكول.",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "AcceptCredentials": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 12. يتسلم الرئيس أوراق اعتماد رؤساء البعثات الدبلوماسية للدول الأجنبية ورؤساء المنظمات الدولية المعتمدين وأوراق استدعائهم"
+      }
+    ],
+    "AddressThePeople": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 1. يوجه الرئيس إلى شعب كازاخستان رسائل عن حال البلاد وعن الاتجاهات الأساسية للسياسة الداخلية والخارجية"
+      }
+    ],
+    "AdoptEmergencyMeasure": [
+      {
+        "status": "translation",
+        "text": "المادة 46. عند وجود خطر مباشر على النظام الدستوري وبعد المشاورات المطلوبة يقرر الرئيس تدابير حالة الطوارئ مع إبلاغ القورولتاي فورا"
+      }
+    ],
+    "AdoptMartialMeasure": [
+      {
+        "status": "translation",
+        "text": "المادة 46. في حال العدوان أو الخطر الخارجي المباشر يعلن الرئيس الأحكام العرفية"
+      }
+    ],
+    "AdvisoryBody": [
+      {
+        "status": "translation",
+        "text": "جهاز استشاري أو جهاز آخر ينشئه الرئيس"
+      }
+    ],
+    "AdvisoryBodyFormationPower": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 21. ينشئ الرئيس مجلس الأمن وسائر الأجهزة الاستشارية وكذلك المجلس الأعلى للقضاء"
+      }
+    ],
+    "AdvisoryBodyKind": [
+      {
+        "status": "translation",
+        "text": "نوع الجهاز الذي ينشئه الرئيس بموجب البند 21"
+      }
+    ],
+    "AppointHighCommand": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 9. يعين الرئيس القيادة العليا للقوات المسلحة"
+      }
+    ],
+    "AppointMissionHead": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 7. يعين الرئيس رؤساء البعثات الدبلوماسية لجمهورية كازاخستان"
+      }
+    ],
+    "AppointSubordinateBodyHead": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 6. يعين الرئيس رؤساء أجهزة الدولة التابعة له"
+      }
+    ],
+    "AppointToPresidentialOffice": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 5. يعين الرئيس رئيس المحكمة الدستورية ورئيس المحكمة العليا ورئيس البنك الوطني والمدعي العام ورئيس لجنة الأمن القومي ورئيس اللجنة المركزية للانتخابات ورئيس ديوان المحاسبة الأعلى ورئيس المجلس الأعلى للقضاء ورئيس جهاز الحرس الحكومي ومفوض حقوق الإنسان"
+      }
+    ],
+    "AppointWithConsent": [
+      {
+        "status": "translation",
+        "text": "المادة 46. يعين الرئيس الموظفين الذين يجري تعيينهم بموافقة القورولتاي"
+      }
+    ],
+    "Appointment": [
+      {
+        "status": "translation",
+        "text": "تعيين يجريه الرئيس"
+      }
+    ],
+    "AppointmentWithKurultaiConsentPower": [
+      {
+        "status": "translation",
+        "text": "المادة 46. يعين الرئيس الموظفين الذين يجري تعيينهم بموافقة القورولتاي"
+      }
+    ],
+    "AsylumDecisionPower": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 15. يفصل الرئيس في مسائل منح اللجوء السياسي"
+      }
+    ],
+    "AsylumMatter": [
+      {
+        "status": "translation",
+        "text": "مسألة منح اللجوء السياسي"
+      }
+    ],
+    "AwardEstablishment": [
+      {
+        "status": "translation",
+        "text": "إنشاء وسام دولة أو لقب فخري"
+      }
+    ],
+    "AwardEstablishmentPower": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 13. ينشئ الرئيس أوسمة الدولة والألقاب الفخرية"
+      }
+    ],
+    "CallReferendum": [
+      {
+        "status": "translation",
+        "text": "المادة 46. يصدر الرئيس قرارا بإجراء استفتاء شعبي"
+      }
+    ],
+    "Candidate": [
+      {
+        "status": "translation",
+        "text": "مترشح لرئاسة الجمهورية"
+      }
+    ],
+    "CannotAssumeByCertifiedRefusal": [
+      {
+        "status": "translation",
+        "text": "المادة 51 الفقرة 1. إثبات امتناع الشخص يعني استحالة تولي الصلاحيات"
+      }
+    ],
+    "CannotAssumeByHealthOrPersonalReasons": [
+      {
+        "status": "translation",
+        "text": "المادة 51 الفقرة 1. استحالة تولي الصلاحيات لأسباب صحية أو لأسباب شخصية أخرى"
+      }
+    ],
+    "CentralElectionCommissionChair": [
+      {
+        "status": "translation",
+        "text": "رئيس اللجنة المركزية للانتخابات"
+      }
+    ],
+    "ChargeRejectedAtStage": [
+      {
+        "status": "translation",
+        "text": "المادة 50 الفقرة 3. رفض الاتهام في إحدى مراحل نظره"
+      }
+    ],
+    "ChargeRejectedByExpiredPeriod": [
+      {
+        "status": "translation",
+        "text": "المادة 50 الفقرة 3. عدم صدور قرار نهائي خلال شهرين من توجيه الاتهام يعد الاتهام مرفوضا"
+      }
+    ],
+    "ChargeRejectedByLateDecision": [
+      {
+        "status": "translation",
+        "text": "المادة 50 الفقرة 3. صدور القرار النهائي بعد مضي مدة الشهرين يعد الاتهام مرفوضا"
+      }
+    ],
+    "CitizenshipDecisionPower": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 15. يفصل الرئيس في مسائل جنسية جمهورية كازاخستان"
+      }
+    ],
+    "CitizenshipMatter": [
+      {
+        "status": "translation",
+        "text": "مسألة جنسية جمهورية كازاخستان"
+      }
+    ],
+    "ClassRank": [
+      {
+        "status": "translation",
+        "text": "رتبة فئوية"
+      }
+    ],
+    "ConferDistinction": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 14. يمنح الرئيس أوسمة الدولة والألقاب الفخرية والرتب العسكرية العليا وسائر الرتب والرتب الفئوية والرتب الدبلوماسية والدرجات التأهيلية"
+      }
+    ],
+    "ConferredPower": [
+      {
+        "status": "translation",
+        "text": "صلاحية للرئيس مقررة في الدستور أو في القانون"
+      }
+    ],
+    "ConferredPowerExercise": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 22. يمارس الرئيس صلاحيات أخرى وفقا لدستور جمهورية كازاخستان وقوانينها"
+      }
+    ],
+    "ConstitutionalCourtChair": [
+      {
+        "status": "translation",
+        "text": "رئيس المحكمة الدستورية"
+      }
+    ],
+    "ConstitutionalPetition": [
+      {
+        "status": "translation",
+        "text": "مخاطبة المحكمة الدستورية"
+      }
+    ],
+    "ConstitutionalReviewPetitionPower": [
+      {
+        "status": "translation",
+        "text": "المادة 46. للرئيس أن يخاطب المحكمة الدستورية"
+      }
+    ],
+    "Credentials": [
+      {
+        "status": "translation",
+        "text": "أوراق اعتماد أو استدعاء رئيس بعثة دبلوماسية أو منظمة دولية"
+      }
+    ],
+    "CredentialsAcceptancePower": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 12. يتسلم الرئيس أوراق اعتماد رؤساء البعثات الدبلوماسية للدول الأجنبية ورؤساء المنظمات الدولية المعتمدين وأوراق استدعائهم"
+      }
+    ],
+    "DecideCitizenshipMatter": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 15. يفصل الرئيس في مسائل جنسية جمهورية كازاخستان"
+      }
+    ],
+    "DiplomaticRank": [
+      {
+        "status": "translation",
+        "text": "رتبة دبلوماسية"
+      }
+    ],
+    "DissolutionBarrierEmergencyOrMartialLaw": [
+      {
+        "status": "translation",
+        "text": "المادة 62 الفقرة 3. لا يجوز حل القورولتاي في مدة حالة الطوارئ أو الأحكام العرفية"
+      }
+    ],
+    "DissolutionBarrierLastSixMonths": [
+      {
+        "status": "translation",
+        "text": "المادة 62 الفقرة 3. لا يجوز حل القورولتاي في الأشهر الستة الأخيرة من صلاحيات الرئيس"
+      }
+    ],
+    "DissolutionBarrierSuccessionPresident": [
+      {
+        "status": "translation",
+        "text": "المادة 62 الفقرة 3. لا يجوز حل القورولتاي في الحالة المقررة في الفقرة 3 من المادة 51 من الدستور"
+      }
+    ],
+    "DissolutionBarrierWithinYearAfterPrior": [
+      {
+        "status": "translation",
+        "text": "المادة 62 الفقرة 3. لا يجوز حل القورولتاي خلال سنة واحدة من الحل السابق"
+      }
+    ],
+    "DissolutionFinalPeriodReached": [
+      {
+        "status": "translation",
+        "text": "المادة 62 الفقرة 3. يوم نظر مسألة الحل يقع في الأشهر الستة الأخيرة من صلاحيات الرئيس"
+      }
+    ],
+    "DissolutionIntervalAfterPriorNotElapsed": [
+      {
+        "status": "translation",
+        "text": "المادة 62 الفقرة 3. لم تمض سنة واحدة على يوم الحل السابق للقورولتاي"
+      }
+    ],
+    "DissolveKurultai": [
+      {
+        "status": "translation",
+        "text": "المادة 62 الفقرة 2. للرئيس حل القورولتاي عند تكرار رفض الموافقة على المرشح الذي اقترحه"
+      }
+    ],
+    "Distinction": [
+      {
+        "status": "translation",
+        "text": "وسام أو لقب أو رتبة أو درجة تأهيلية يمنحها الرئيس"
+      }
+    ],
+    "DistinctionConferralPower": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 14. يمنح الرئيس أوسمة الدولة والألقاب الفخرية والرتب العسكرية العليا وسائر الرتب والرتب الفئوية والرتب الدبلوماسية والدرجات التأهيلية"
+      }
+    ],
+    "DistinctionKind": [
+      {
+        "status": "translation",
+        "text": "نوع التكريم الذي يمنحه الرئيس"
+      }
+    ],
+    "EarlyElectionAnnouncedWithinSevenDays": [
+      {
+        "status": "translation",
+        "text": "المادة 51 الفقرة 2. يعلن القورولتاي إجراء الانتخابات خلال سبعة أيام من يوم الإعفاء المبكر من المنصب أو من يوم وفاة الرئيس"
+      }
+    ],
+    "EarlyElectionConductDue": [
+      {
+        "status": "translation",
+        "text": "المادة 51 الفقرة 2. تجرى الانتخابات خلال شهرين من يوم اتخاذ القورولتاي قرار إجرائها"
+      }
+    ],
+    "EarlyElectionConductedInPeriod": [
+      {
+        "status": "translation",
+        "text": "المادة 51 الفقرة 2. الانتخابات التي تجرى في موعد لا يجاوز يوم انتهاء مدة الشهرين تعد قد جرت في الميعاد"
+      }
+    ],
+    "EarlyElectionConductedInTime": [
+      {
+        "status": "translation",
+        "text": "المادة 51 الفقرة 2. تجرى الانتخابات خلال شهرين من يوم اتخاذ القورولتاي القرار المتعلق بها"
+      }
+    ],
+    "ElectedInRepeatVote": [
+      {
+        "status": "translation",
+        "text": "المادة 43 الفقرة 4. في الاقتراع المعاد يعد فائزا المترشح الحائز أكبر عدد من أصوات الناخبين المشاركين في الاقتراع"
+      }
+    ],
+    "Election": [
+      {
+        "status": "translation",
+        "text": "انتخابات رئيس الجمهورية"
+      }
+    ],
+    "EmergencyMeasure": [
+      {
+        "status": "translation",
+        "text": "تدبير من تدابير حالة الطوارئ أو الأحكام العرفية"
+      }
+    ],
+    "EmergencyPower": [
+      {
+        "status": "translation",
+        "text": "المادة 46. عند وجود خطر مباشر على النظام الدستوري وبعد المشاورات المطلوبة يقرر الرئيس تدابير حالة الطوارئ مع إبلاغ القورولتاي فورا"
+      }
+    ],
+    "EstablishPresidentialBody": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 21. ينشئ الرئيس مجلس الأمن وسائر الأجهزة الاستشارية وكذلك المجلس الأعلى للقضاء"
+      }
+    ],
+    "EstablishStateAward": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 13. ينشئ الرئيس أوسمة الدولة والألقاب الفخرية"
+      }
+    ],
+    "ExPresidentAfterHealthRelease": [
+      {
+        "status": "translation",
+        "text": "المادة 44 الفقرة 3. الرئيس المعفى من المنصب لأسباب صحية يحمل لقب الرئيس السابق"
+      }
+    ],
+    "ExPresidentAfterNewPresident": [
+      {
+        "status": "translation",
+        "text": "المادة 44 الفقرة 3. الرئيس الذي انتهت صلاحياته بتولي الرئيس المنتخب الجديد منصبه يحمل لقب الرئيس السابق"
+      }
+    ],
+    "ExPresidentAfterResignation": [
+      {
+        "status": "translation",
+        "text": "المادة 44 الفقرة 3. الرئيس الذي استقال طوعا يحمل لقب الرئيس السابق"
+      }
+    ],
+    "ExerciseConferredPower": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 22. يمارس الرئيس صلاحيات أخرى وفقا لدستور جمهورية كازاخستان وقوانينها"
+      }
+    ],
+    "FormPresidentialAdministration": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 20. يشكل الرئيس إدارة رئيس جمهورية كازاخستان"
+      }
+    ],
+    "FormStateGuardService": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 19. يشكل الرئيس جهاز الحرس الحكومي التابع له"
+      }
+    ],
+    "FormerPresidentImmunityForActsInOffice": [
+      {
+        "status": "translation",
+        "text": "المادة 48. حصانة الرئيس السابق عن الأفعال المرتكبة أثناء ممارسة صلاحياته"
+      }
+    ],
+    "GovernmentInitiatedActCountersignature": [
+      {
+        "status": "translation",
+        "text": "المادة 47 الفقرة 3. يوقع رئيس الوزراء بالعطف على صك الرئيس الصادر بمبادرة من الحكومة"
+      }
+    ],
+    "GrantPardon": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 16. يمارس الرئيس حق العفو"
+      }
+    ],
+    "GrantPoliticalAsylum": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 15. يفصل الرئيس في مسائل منح اللجوء السياسي"
+      }
+    ],
+    "HealthRemoval": [
+      {
+        "status": "translation",
+        "text": "نظر مسألة الإعفاء المبكر للرئيس من المنصب لأسباب صحية"
+      }
+    ],
+    "HealthRemovalThreshold": [
+      {
+        "status": "translation",
+        "text": "المادة 50 الفقرة 2. يتخذ قرار الإعفاء المبكر بأغلبية لا تقل عن ثلاثة أرباع أصوات مجموع النواب استنادا إلى رأي اللجنة ورأي المحكمة الدستورية"
+      }
+    ],
+    "HighCommandAppointmentPower": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 9. يعين الرئيس القيادة العليا للقوات المسلحة"
+      }
+    ],
+    "HighCommandReleasePower": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 9. يعفي الرئيس القيادة العليا للقوات المسلحة من مناصبها"
+      }
+    ],
+    "HigherMilitaryRank": [
+      {
+        "status": "translation",
+        "text": "رتبة عسكرية عليا"
+      }
+    ],
+    "HoldPresidentLiableForTreason": [
+      {
+        "status": "translation",
+        "text": "المادة 48 الفقرة 1. استثناء الحصانة في حالة الخيانة العظمى"
+      }
+    ],
+    "HonoraryTitle": [
+      {
+        "status": "translation",
+        "text": "لقب فخري"
+      }
+    ],
+    "HumanRightsCommissioner": [
+      {
+        "status": "translation",
+        "text": "مفوض حقوق الإنسان في جمهورية كازاخستان"
+      }
+    ],
+    "Impeachment": [
+      {
+        "status": "translation",
+        "text": "إجراءات عزل الرئيس من المنصب"
+      }
+    ],
+    "ImpeachmentBarredDuringDissolutionConsideration": [
+      {
+        "status": "translation",
+        "text": "المادة 50 الفقرة 4. لا يجوز طرح مسألة عزل الرئيس من المنصب في مدة نظره مسألة الإنهاء المبكر لصلاحيات القورولتاي"
+      }
+    ],
+    "ImpeachmentFinalDecisionDue": [
+      {
+        "status": "translation",
+        "text": "المادة 50 الفقرة 3. يتخذ القرار النهائي خلال شهرين من لحظة توجيه الاتهام"
+      }
+    ],
+    "ImpeachmentFinalDecisionTimely": [
+      {
+        "status": "translation",
+        "text": "المادة 50 الفقرة 3. القرار المتخذ في موعد لا يجاوز يوم انتهاء مدة الشهرين يعد متخذا في الميعاد"
+      }
+    ],
+    "ImpeachmentFinalStage": [
+      {
+        "status": "translation",
+        "text": "المادة 50. يتخذ القرار النهائي بعزل الرئيس بأغلبية لا تقل عن ثلاثة أرباع أصوات مجموع نواب القورولتاي"
+      }
+    ],
+    "ImpeachmentInitiativeThreshold": [
+      {
+        "status": "translation",
+        "text": "المادة 50. تثار مسألة عزل الرئيس بمبادرة ثلث نواب القورولتاي على الأقل ولا يجوز إثارتها أثناء نظر مسألة الحل"
+      }
+    ],
+    "ImpeachmentInvestigationStage": [
+      {
+        "status": "translation",
+        "text": "المادة 50. يعهد بالتحقيق في الاتهام بأغلبية أصوات مجموع نواب القورولتاي"
+      }
+    ],
+    "ImpeachmentQuestionDecision": [
+      {
+        "status": "translation",
+        "text": "المادة 50 الفقرة 3. يتخذ القرار في مسألة توجيه الاتهام والتحقيق فيه بأغلبية أصوات مجموع نواب القورولتاي"
+      }
+    ],
+    "InternationalTreaty": [
+      {
+        "status": "translation",
+        "text": "معاهدة دولية لجمهورية كازاخستان"
+      }
+    ],
+    "Kurultai": [
+      {
+        "status": "translation",
+        "text": "قورولتاي جمهورية كازاخستان"
+      }
+    ],
+    "KurultaiDissolutionPower": [
+      {
+        "status": "translation",
+        "text": "المادة 62 الفقرة 2. للرئيس حل القورولتاي عند تكرار رفض الموافقة على المرشح الذي اقترحه"
+      }
+    ],
+    "Law": [
+      {
+        "status": "translation",
+        "text": "قانون معروض على الرئيس"
+      }
+    ],
+    "LawCountersignatureBeforePresidentialSignature": [
+      {
+        "status": "translation",
+        "text": "المادة 47 الفقرة 3. يوقع على القانون تمهيديا بالعطف رئيس القورولتاي ورئيس الوزراء"
+      }
+    ],
+    "MajorityReachedInElection": [
+      {
+        "status": "translation",
+        "text": "المادة 43 الفقرة 4. حاز أحد المترشحين في الانتخابات أكثر من خمسين في المائة من الأصوات"
+      }
+    ],
+    "MartialPower": [
+      {
+        "status": "translation",
+        "text": "المادة 46. في حال العدوان أو الخطر الخارجي المباشر يعلن الرئيس الأحكام العرفية"
+      }
+    ],
+    "MissionHead": [
+      {
+        "status": "translation",
+        "text": "رئيس بعثة دبلوماسية لجمهورية كازاخستان"
+      }
+    ],
+    "MissionHeadAppointmentPower": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 7. يعين الرئيس رؤساء البعثات الدبلوماسية لجمهورية كازاخستان"
+      }
+    ],
+    "MissionHeadRecallPower": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 7. يستدعي الرئيس رؤساء البعثات الدبلوماسية لجمهورية كازاخستان"
+      }
+    ],
+    "NationalBankChair": [
+      {
+        "status": "translation",
+        "text": "رئيس البنك الوطني"
+      }
+    ],
+    "NationalSecurityCommitteeChair": [
+      {
+        "status": "translation",
+        "text": "رئيس لجنة الأمن القومي"
+      }
+    ],
+    "NoDissolutionInEmergency": [
+      {
+        "status": "translation",
+        "text": "المادة 62 الفقرة 3. لا يجوز حل القورولتاي في مدة حالة الطوارئ أو الأحكام العرفية"
+      }
+    ],
+    "NoDissolutionInLastSixMonths": [
+      {
+        "status": "translation",
+        "text": "المادة 62 الفقرة 3. لا يجوز حل القورولتاي في الأشهر الستة الأخيرة من صلاحيات الرئيس"
+      }
+    ],
+    "NoDissolutionUnderSuccessionPresident": [
+      {
+        "status": "translation",
+        "text": "المادة 62 الفقرة 3. لا يجوز حل القورولتاي في الحالة المقررة في الفقرة 3 من المادة 51 من الدستور"
+      }
+    ],
+    "NoDissolutionWithinYearAfterPrior": [
+      {
+        "status": "translation",
+        "text": "المادة 62 الفقرة 3. لا يجوز حل القورولتاي خلال سنة واحدة من الحل السابق"
+      }
+    ],
+    "NoSecondPresidentialElection": [
+      {
+        "status": "translation",
+        "text": "المادة 43 الفقرة 1. لا يجوز انتخاب الشخص الواحد رئيسا أكثر من مرة واحدة"
+      }
+    ],
+    "OfficeRelease": [
+      {
+        "status": "translation",
+        "text": "الإعفاء من المنصب"
+      }
+    ],
+    "OnePresidentialElectionImmunity": [
+      {
+        "status": "translation",
+        "text": "المادة 43 الفقرة 1. لا يجوز انتخاب الشخص الواحد رئيسا أكثر من مرة واحدة"
+      }
+    ],
+    "OrganiseSubordinateBody": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 6. ينشئ الرئيس أجهزة الدولة التابعة له مباشرة والمسؤولة أمامه ويلغيها ويعيد تنظيمها"
+      }
+    ],
+    "OtherRank": [
+      {
+        "status": "translation",
+        "text": "رتبة أخرى"
+      }
+    ],
+    "PardonMatter": [
+      {
+        "status": "translation",
+        "text": "طلب عفو"
+      }
+    ],
+    "PardonPower": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 16. يمارس الرئيس حق العفو"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "شخص طبيعي"
+      }
+    ],
+    "PetitionConstitutionalCourt": [
+      {
+        "status": "translation",
+        "text": "المادة 46. للرئيس أن يخاطب المحكمة الدستورية"
+      }
+    ],
+    "PowersTerminatedByDeath": [
+      {
+        "status": "translation",
+        "text": "المادة 44 الفقرة 3. تنتهي صلاحيات الرئيس في حال وفاته"
+      }
+    ],
+    "PowersTerminatedByHealthRelease": [
+      {
+        "status": "translation",
+        "text": "المادة 44 الفقرة 3. تنتهي صلاحيات الرئيس في حال الإعفاء المبكر من المنصب لعجز مستقر عن أداء الواجبات لأسباب صحية"
+      }
+    ],
+    "PowersTerminatedByNewPresident": [
+      {
+        "status": "translation",
+        "text": "المادة 44 الفقرة 3. تنتهي صلاحيات الرئيس من لحظة تولي الرئيس المنتخب الجديد منصبه"
+      }
+    ],
+    "PowersTerminatedByRemoval": [
+      {
+        "status": "translation",
+        "text": "المادة 44 الفقرة 3. تنتهي صلاحيات الرئيس في حال عزله من المنصب"
+      }
+    ],
+    "PowersTerminatedByResignation": [
+      {
+        "status": "translation",
+        "text": "المادة 44 الفقرة 3. تنتهي صلاحيات الرئيس في حال الإعفاء المبكر من المنصب بسبب الاستقالة الطوعية"
+      }
+    ],
+    "President": [
+      {
+        "status": "translation",
+        "text": "رئيس جمهورية كازاخستان"
+      }
+    ],
+    "PresidentEnsuresCoordinatedStatePower": [
+      {
+        "status": "translation",
+        "text": "المادة 42. يكفل الرئيس التسيير المتناسق لفروع سلطة الدولة"
+      }
+    ],
+    "PresidentGuaranteesUnityConstitutionAndRights": [
+      {
+        "status": "translation",
+        "text": "المادة 42. الرئيس رمز وحدة الشعب وسلطة الدولة وثبات الدستور والحقوق والحريات وضامنها"
+      }
+    ],
+    "PresidentIsCommanderInChief": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 9. الرئيس هو القائد الأعلى للقوات المسلحة لجمهورية كازاخستان"
+      }
+    ],
+    "PresidentIsHeadOfState": [
+      {
+        "status": "translation",
+        "text": "المادة 42. الرئيس رئيس الدولة"
+      }
+    ],
+    "PresidentReleasedFromOfficeForHealth": [
+      {
+        "status": "translation",
+        "text": "المادة 50 الفقرة 2. أعفي هذا الرئيس من المنصب مبكرا لأسباب صحية"
+      }
+    ],
+    "PresidentialAct": [
+      {
+        "status": "translation",
+        "text": "صك صادر عن الرئيس"
+      }
+    ],
+    "PresidentialActBindingNationwide": [
+      {
+        "status": "translation",
+        "text": "المادة 47 الفقرة 1. المراسيم والأوامر الصادرة استنادا إلى الدستور والقوانين ملزمة في جميع أنحاء البلاد"
+      }
+    ],
+    "PresidentialAddress": [
+      {
+        "status": "translation",
+        "text": "رسالة الرئيس إلى شعب كازاخستان"
+      }
+    ],
+    "PresidentialAddressPower": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 1. يوجه الرئيس إلى شعب كازاخستان رسائل عن حال البلاد وعن الاتجاهات الأساسية للسياسة الداخلية والخارجية"
+      }
+    ],
+    "PresidentialAdministrationFormationPower": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 20. يشكل الرئيس إدارة رئيس جمهورية كازاخستان"
+      }
+    ],
+    "PresidentialCandidateEligibility": [
+      {
+        "status": "translation",
+        "text": "المادة 43 الفقرة 2. يجوز أن ينتخب رئيسا مواطن الجمهورية بالميلاد الذي لا يقل عمره عن أربعين سنة ويتقن لغة الدولة ويقيم في كازاخستان الخمس عشرة سنة الأخيرة وله تعليم عال وخبرة عمل لا تقل عن خمس سنوات"
+      }
+    ],
+    "PresidentialElectionMajority": [
+      {
+        "status": "translation",
+        "text": "المادة 43 الفقرة 4. يعد فائزا المترشح الحائز أكثر من خمسين في المائة من أصوات الناخبين المشاركين في الاقتراع"
+      }
+    ],
+    "PresidentialImmunityForActsInOffice": [
+      {
+        "status": "translation",
+        "text": "المادة 48. حصانة الرئيس عن الأفعال المرتكبة أثناء ممارسة صلاحياته"
+      }
+    ],
+    "PresidentialOffice": [
+      {
+        "status": "translation",
+        "text": "منصب يجري الرئيس التعيين فيه باستقلال"
+      }
+    ],
+    "PresidentialOfficeAppointmentPower": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 5. يعين الرئيس رئيس المحكمة الدستورية ورئيس المحكمة العليا ورئيس البنك الوطني والمدعي العام ورئيس لجنة الأمن القومي ورئيس اللجنة المركزية للانتخابات ورئيس ديوان المحاسبة الأعلى ورئيس المجلس الأعلى للقضاء ورئيس جهاز الحرس الحكومي ومفوض حقوق الإنسان"
+      }
+    ],
+    "PresidentialOfficeIncompatibility/alt/1": [
+      {
+        "status": "translation",
+        "text": "المادة 45 الفقرة 1. حالات عدم الجمع في منصب الرئيس"
+      }
+    ],
+    "PresidentialOfficeIncompatibility/alt/2": [
+      {
+        "status": "translation",
+        "text": "المادة 45 الفقرة 1. حالات عدم الجمع في منصب الرئيس"
+      }
+    ],
+    "PresidentialOfficeIncompatibility/alt/3": [
+      {
+        "status": "translation",
+        "text": "المادة 45 الفقرة 1. حالات عدم الجمع في منصب الرئيس"
+      }
+    ],
+    "PresidentialOfficeIncompatibility/alt/4": [
+      {
+        "status": "translation",
+        "text": "المادة 45 الفقرة 1. حالات عدم الجمع في منصب الرئيس"
+      }
+    ],
+    "PresidentialOfficeReleasePower": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 5. يعفي الرئيس من مناصبهم الأشخاص المسمين في قائمة البند 5"
+      }
+    ],
+    "PresidentialOfficialImmunityFormer": [
+      {
+        "status": "translation",
+        "text": "المادة 48. حصانة الرئيس السابق عن الأفعال المرتكبة أثناء ممارسة صلاحياته"
+      }
+    ],
+    "PresidentialOfficialImmunityInOffice": [
+      {
+        "status": "translation",
+        "text": "المادة 48. حصانة الرئيس عن الأفعال المرتكبة أثناء ممارسة صلاحياته"
+      }
+    ],
+    "PresidentialRelativePositionProhibited": [
+      {
+        "status": "translation",
+        "text": "المادة 45 الفقرة 2. لا يشغل أقارب الرئيس المقربون المناصب المعددة"
+      }
+    ],
+    "PresidentialReturnPower": [
+      {
+        "status": "translation",
+        "text": "المادة 46. للرئيس أن يعيد القانون إلى القورولتاي مشفوعا باعتراضاته"
+      }
+    ],
+    "PresidentialSignatureDue": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 3. يوقع على القانون خلال شهر واحد من يوم عرض القورولتاي له"
+      }
+    ],
+    "PresidentialSignaturePower": [
+      {
+        "status": "translation",
+        "text": "المادة 46. يوقع الرئيس على القانون الذي يعرضه القورولتاي"
+      }
+    ],
+    "PresidentialSignatureTimely": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 3. التوقيع على القانون أو رده في موعد لا يجاوز يوم انتهاء مدة الشهر يعد في الميعاد"
+      }
+    ],
+    "PresidentialTermExpiry": [
+      {
+        "status": "translation",
+        "text": "المادة 43 الفقرة 1 والمادة 44 الفقرة 1. مدة صلاحيات الرئيس سبع سنوات من يوم توليه المنصب بأداء اليمين"
+      }
+    ],
+    "PresidentialVacancy": [
+      {
+        "status": "translation",
+        "text": "خلو منصب الرئيس مبكرا"
+      }
+    ],
+    "PriorOfficeRelinquished": [
+      {
+        "status": "translation",
+        "text": "المادة 51 الفقرة 1. من يتولى صلاحيات الرئيس يتخلى عن صلاحياته بوصفه نائبا للرئيس أو رئيسا للقورولتاي أو رئيسا للوزراء بحسب الأحوال"
+      }
+    ],
+    "ProsecutorGeneral": [
+      {
+        "status": "translation",
+        "text": "المدعي العام"
+      }
+    ],
+    "ProvidePresidentialSupportAndProtection": [
+      {
+        "status": "translation",
+        "text": "المادة 48 الفقرة 2. تكفل الدولة على نفقتها إعالة الرئيس وأسرته وخدمتهما وحمايتهما"
+      }
+    ],
+    "QualificationClass": [
+      {
+        "status": "translation",
+        "text": "درجة تأهيلية"
+      }
+    ],
+    "RatificationInstrument": [
+      {
+        "status": "translation",
+        "text": "وثيقة تصديق"
+      }
+    ],
+    "RatificationInstrumentPower": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 12. يوقع الرئيس وثائق التصديق"
+      }
+    ],
+    "RecallMissionHead": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 7. يستدعي الرئيس رؤساء البعثات الدبلوماسية لجمهورية كازاخستان"
+      }
+    ],
+    "ReferendumPower": [
+      {
+        "status": "translation",
+        "text": "المادة 46. يصدر الرئيس قرارا بإجراء استفتاء شعبي"
+      }
+    ],
+    "RefusalCertifiedByConstitutionalCourt": [
+      {
+        "status": "translation",
+        "text": "المادة 51 الفقرة 1. تثبت المحكمة الدستورية أن الشخص قدم بنفسه وطواعية طلب الامتناع عن تولي صلاحيات الرئيس"
+      }
+    ],
+    "RegularElectionCoincidesWithKurultaiElection": [
+      {
+        "status": "translation",
+        "text": "المادة 43 الفقرة 3. تقع الانتخابات الدورية للرئيس في يوم انتخاب تشكيلة جديدة للقورولتاي"
+      }
+    ],
+    "RegularElectionOnKurultaiElectionDay": [
+      {
+        "status": "translation",
+        "text": "المادة 43 الفقرة 3. لا يجوز أن تتزامن الانتخابات الدورية للرئيس مع انتخاب تشكيلة جديدة للقورولتاي"
+      }
+    ],
+    "RegularElectionScheduledInTime": [
+      {
+        "status": "translation",
+        "text": "المادة 43 الفقرة 3. تجرى الانتخابات الدورية للرئيس قبل انتهاء مدة صلاحياته بشهرين على الأقل"
+      }
+    ],
+    "RegularElectionTooLate": [
+      {
+        "status": "translation",
+        "text": "المادة 43 الفقرة 3. حددت الانتخابات الدورية في موعد يقل عن شهرين قبل انتهاء مدة صلاحيات الرئيس"
+      }
+    ],
+    "RegularOathDue": [
+      {
+        "status": "translation",
+        "text": "المادة 44 الفقرة 2. تؤدى اليمين خلال شهر واحد من يوم نشر نتائج الانتخابات"
+      }
+    ],
+    "RegularOathTimely": [
+      {
+        "status": "translation",
+        "text": "المادة 44 الفقرة 2. اليمين التي تؤدى في موعد لا يجاوز يوم انتهاء مدة الشهر تعد في الميعاد"
+      }
+    ],
+    "RejectedChargeTerminatesInitiators": [
+      {
+        "status": "translation",
+        "text": "المادة 50 الفقرة 3. رفض الاتهام في أي مرحلة يرتب الإنهاء المبكر لصلاحيات نواب القورولتاي الذين بادروا بنظر هذه المسألة"
+      }
+    ],
+    "ReleaseFromPresidentialOffice": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 5. يعفي الرئيس من مناصبهم الأشخاص المسمين في قائمة البند 5"
+      }
+    ],
+    "ReleaseHighCommand": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 9. يعفي الرئيس القيادة العليا للقوات المسلحة من مناصبها"
+      }
+    ],
+    "ReleaseSubordinateBodyHead": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 6. يعفي الرئيس رؤساء أجهزة الدولة التابعة له من مناصبهم"
+      }
+    ],
+    "RemovedFromOfficeByImpeachment": [
+      {
+        "status": "translation",
+        "text": "المادة 50 الفقرة 3. عزل الرئيس من المنصب بقرار من القورولتاي على أساس اتهام بالخيانة العظمى"
+      }
+    ],
+    "RepeatVoteRequired": [
+      {
+        "status": "translation",
+        "text": "المادة 43 الفقرة 4. إذا لم يحز أي من المترشحين أكثر من خمسين في المائة من الأصوات أجري اقتراع معاد"
+      }
+    ],
+    "ReturnLawWithObjections": [
+      {
+        "status": "translation",
+        "text": "المادة 46. للرئيس أن يعيد القانون إلى القورولتاي مشفوعا باعتراضاته"
+      }
+    ],
+    "SignInternationalTreaty": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 12. يتفاوض الرئيس ويوقع المعاهدات الدولية باسم جمهورية كازاخستان"
+      }
+    ],
+    "SignLaw": [
+      {
+        "status": "translation",
+        "text": "المادة 46. يوقع الرئيس على القانون الذي يعرضه القورولتاي"
+      }
+    ],
+    "SignRatificationInstrument": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 12. يوقع الرئيس وثائق التصديق"
+      }
+    ],
+    "StateAuthority": [
+      {
+        "status": "translation",
+        "text": "جهاز الدولة أو الموظف العام"
+      }
+    ],
+    "StateAward": [
+      {
+        "status": "translation",
+        "text": "وسام دولة"
+      }
+    ],
+    "StateBodyAct": [
+      {
+        "status": "translation",
+        "text": "صك بإنشاء جهاز دولة أو إلغائه أو إعادة تنظيمه"
+      }
+    ],
+    "StateBodyAction": [
+      {
+        "status": "translation",
+        "text": "تصرف الرئيس تجاه جهاز دولة تابع له"
+      }
+    ],
+    "StateGuardServiceFormationPower": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 19. يشكل الرئيس جهاز الحرس الحكومي التابع له"
+      }
+    ],
+    "StateGuardServiceHead": [
+      {
+        "status": "translation",
+        "text": "رئيس جهاز الحرس الحكومي في جمهورية كازاخستان"
+      }
+    ],
+    "StateSupportForPresidentAndFamily": [
+      {
+        "status": "translation",
+        "text": "المادة 48 الفقرة 2. تكفل الدولة على نفقتها إعالة الرئيس وأسرته وخدمتهما وحمايتهما"
+      }
+    ],
+    "SubordinateBodyHeadAppointmentPower": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 6. يعين الرئيس رؤساء أجهزة الدولة التابعة له"
+      }
+    ],
+    "SubordinateBodyHeadReleasePower": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 6. يعفي الرئيس رؤساء أجهزة الدولة التابعة له من مناصبهم"
+      }
+    ],
+    "SubordinateBodyOrganisationPower": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 6. ينشئ الرئيس أجهزة الدولة التابعة له مباشرة والمسؤولة أمامه ويلغيها ويعيد تنظيمها"
+      }
+    ],
+    "SuccessionOathDeadline": [
+      {
+        "status": "translation",
+        "text": "المادة 44 الفقرة 2. تؤدى اليمين خلال شهر واحد من يوم تولي صلاحيات الرئيس"
+      }
+    ],
+    "SuccessionRefusal": [
+      {
+        "status": "translation",
+        "text": "الامتناع عن تولي صلاحيات الرئيس"
+      }
+    ],
+    "SuccessionToKurultaiChair": [
+      {
+        "status": "translation",
+        "text": "المادة 51 الفقرة 1. عند تعذر ذلك على نائب الرئيس تنتقل صلاحيات الرئيس إلى رئيس القورولتاي"
+      }
+    ],
+    "SuccessionToPrimeMinister": [
+      {
+        "status": "translation",
+        "text": "المادة 51 الفقرة 1. عند تعذر ذلك على رئيس القورولتاي تنتقل صلاحيات الرئيس إلى رئيس الوزراء"
+      }
+    ],
+    "SuccessionToVicePresident": [
+      {
+        "status": "translation",
+        "text": "المادة 51 الفقرة 1. تنتقل صلاحيات الرئيس إلى نائب الرئيس"
+      }
+    ],
+    "SuccessorCannotDissolveKurultai": [
+      {
+        "status": "translation",
+        "text": "المادة 51 الفقرة 3. لا يجوز لمن تولى صلاحيات الرئيس حل القورولتاي"
+      }
+    ],
+    "SuccessorCannotInitiateAmendment": [
+      {
+        "status": "translation",
+        "text": "المادة 51 الفقرة 3. لا يجوز لمن تولى صلاحيات الرئيس المبادرة بتعديل الدستور أو الإضافة إليه"
+      }
+    ],
+    "SupremeAuditChamberChair": [
+      {
+        "status": "translation",
+        "text": "رئيس ديوان المحاسبة الأعلى"
+      }
+    ],
+    "SupremeCourtChair": [
+      {
+        "status": "translation",
+        "text": "رئيس المحكمة العليا"
+      }
+    ],
+    "SupremeJudicialCouncilChair": [
+      {
+        "status": "translation",
+        "text": "رئيس المجلس الأعلى للقضاء"
+      }
+    ],
+    "TemporaryLegislativeDecree": [
+      {
+        "status": "translation",
+        "text": "المادة 47 الفقرة 2. في مدة الغياب المؤقت للقورولتاي يجوز أن تكون للمرسوم قوة القانون"
+      }
+    ],
+    "TreasonLiabilityPower": [
+      {
+        "status": "translation",
+        "text": "المادة 48 الفقرة 1. استثناء الحصانة في حالة الخيانة العظمى"
+      }
+    ],
+    "TreatySignaturePower": [
+      {
+        "status": "translation",
+        "text": "المادة 46 البند 12. يتفاوض الرئيس ويوقع المعاهدات الدولية باسم جمهورية كازاخستان"
+      }
+    ],
+    "VacancyByDeath": [
+      {
+        "status": "translation",
+        "text": "المادة 51 الفقرة 1. وفاة الرئيس تفتح باب الحلول محله"
+      }
+    ],
+    "VacancyByHealthIncapacity": [
+      {
+        "status": "translation",
+        "text": "المادة 51 الفقرة 1. الإعفاء المبكر لعجز مستقر عن أداء الواجبات لأسباب صحية يفتح باب الحلول محله"
+      }
+    ],
+    "VacancyByRemovalFromOffice": [
+      {
+        "status": "translation",
+        "text": "المادة 51 الفقرة 1. عزل الرئيس من المنصب يفتح باب الحلول محله"
+      }
+    ],
+    "VacancyByVoluntaryResignation": [
+      {
+        "status": "translation",
+        "text": "المادة 51 الفقرة 1. الإعفاء المبكر من المنصب بسبب الاستقالة الطوعية يفتح باب الحلول محله"
+      }
+    ],
+    "VicePresident": [
+      {
+        "status": "translation",
+        "text": "نائب رئيس جمهورية كازاخستان"
+      }
+    ],
+    "VicePresidentAppointmentWithKurultaiConsent": [
+      {
+        "status": "translation",
+        "text": "المادة 49 الفقرة 1. يعين الرئيس نائب الرئيس بموافقة أغلبية القورولتاي"
+      }
+    ],
+    "VicePresidentRepresentationByInstruction": [
+      {
+        "status": "translation",
+        "text": "المادة 49 الفقرة 3. ينوب نائب الرئيس عن الرئيس بتكليف منه"
+      }
+    ],
+    "VicePresidentialOfficeIncompatibility/alt/1": [
+      {
+        "status": "translation",
+        "text": "المادة 49 الفقرة 2. حالات عدم الجمع في منصب نائب الرئيس"
+      }
+    ],
+    "VicePresidentialOfficeIncompatibility/alt/2": [
+      {
+        "status": "translation",
+        "text": "المادة 49 الفقرة 2. حالات عدم الجمع في منصب نائب الرئيس"
+      }
+    ],
+    "VicePresidentialOfficeIncompatibility/alt/3": [
+      {
+        "status": "translation",
+        "text": "المادة 49 الفقرة 2. حالات عدم الجمع في منصب نائب الرئيس"
+      }
+    ],
+    "VicePresidentialOfficeIncompatibility/alt/4": [
+      {
+        "status": "translation",
+        "text": "المادة 49 الفقرة 2. حالات عدم الجمع في منصب نائب الرئيس"
+      }
+    ],
+    "act_countersigned_by_prime_minister": [
+      {
+        "status": "translation",
+        "text": "وقع رئيس الوزراء بالعطف على الصك"
+      }
+    ],
+    "address_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يوجه رسالة إلى شعب كازاخستان"
+      }
+    ],
+    "advisory_body": [
+      {
+        "status": "translation",
+        "text": "الجهاز الذي ينشئه الرئيس بموجب البند 21 ونوعه"
+      }
+    ],
+    "age_years": [
+      {
+        "status": "translation",
+        "text": "عمر الشخص بالسنين التامة"
+      }
+    ],
+    "aggression_or_immediate_external_threat": [
+      {
+        "status": "translation",
+        "text": "وقع عدوان على الجمهورية أو خطر خارجي مباشر"
+      }
+    ],
+    "appointment_effective": [
+      {
+        "status": "translation",
+        "text": "تم التعيين"
+      }
+    ],
+    "appointment_requires_kurultai_consent": [
+      {
+        "status": "translation",
+        "text": "يجري التعيين بموافقة القورولتاي"
+      }
+    ],
+    "asylum_decision_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يفصل في مسألة منح اللجوء السياسي"
+      }
+    ],
+    "asylum_matter": [
+      {
+        "status": "translation",
+        "text": "مسألة منح اللجوء السياسي بوصفها موضوع القضية"
+      }
+    ],
+    "asylum_matter_decided": [
+      {
+        "status": "translation",
+        "text": "فصل في مسألة منح اللجوء السياسي"
+      }
+    ],
+    "award_established": [
+      {
+        "status": "translation",
+        "text": "أنشئ وسام الدولة أو اللقب الفخري"
+      }
+    ],
+    "award_establishment": [
+      {
+        "status": "translation",
+        "text": "إنشاء وسام دولة أو لقب فخري بوصفه موضوع القضية"
+      }
+    ],
+    "award_establishment_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس ينشئ وسام دولة أو لقبا فخريا"
+      }
+    ],
+    "body_formation_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يشكل جهازا أو ينشئه"
+      }
+    ],
+    "body_head_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يعين رئيس جهاز تابع له"
+      }
+    ],
+    "body_head_appointment_effective": [
+      {
+        "status": "translation",
+        "text": "تم تعيين رئيس الجهاز التابع للرئيس"
+      }
+    ],
+    "body_head_release_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يعفي رئيس جهاز تابع له من منصبه"
+      }
+    ],
+    "body_head_release_effective": [
+      {
+        "status": "translation",
+        "text": "تم إعفاء رئيس الجهاز التابع للرئيس"
+      }
+    ],
+    "body_subordinate_to_president": [
+      {
+        "status": "translation",
+        "text": "جهاز الدولة تابع مباشرة للرئيس ومسؤول أمامه"
+      }
+    ],
+    "candidate_person": [
+      {
+        "status": "translation",
+        "text": "المترشح هو هذا الشخص"
+      }
+    ],
+    "cannot_assume_presidential_powers": [
+      {
+        "status": "translation",
+        "text": "لا يستطيع الشخص تولي صلاحيات الرئيس"
+      }
+    ],
+    "charge_presented_on": [
+      {
+        "status": "translation",
+        "text": "يوم توجيه الاتهام بالخيانة العظمى إلى الرئيس"
+      }
+    ],
+    "citizen_by_birth": [
+      {
+        "status": "translation",
+        "text": "الشخص من مواطني الجمهورية بالميلاد"
+      }
+    ],
+    "citizenship_decision_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يفصل في مسألة جنسية جمهورية كازاخستان"
+      }
+    ],
+    "citizenship_matter": [
+      {
+        "status": "translation",
+        "text": "مسألة الجنسية بوصفها موضوع القضية"
+      }
+    ],
+    "citizenship_matter_decided": [
+      {
+        "status": "translation",
+        "text": "فصل في مسألة الجنسية"
+      }
+    ],
+    "close_relative_of_president": [
+      {
+        "status": "translation",
+        "text": "الشخص من أقارب الرئيس المقربين"
+      }
+    ],
+    "coincides_with_kurultai_election": [
+      {
+        "status": "translation",
+        "text": "الانتخابات الدورية للرئيس تتزامن مع انتخاب تشكيلة جديدة للقورولتاي"
+      }
+    ],
+    "commission_conclusion_issued": [
+      {
+        "status": "translation",
+        "text": "أصدرت اللجنة رأيها"
+      }
+    ],
+    "conferrable_distinction_kind": [
+      {
+        "status": "translation",
+        "text": "نوع التكريم مدرج في قائمة المادة 46 البند 14"
+      }
+    ],
+    "conferred_power_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يمارس صلاحية مقررة في الدستور أو في القانون"
+      }
+    ],
+    "conferred_power_exercised": [
+      {
+        "status": "translation",
+        "text": "مورست الصلاحية المقررة في الدستور أو في القانون"
+      }
+    ],
+    "constitutional_court_certified_refusal": [
+      {
+        "status": "translation",
+        "text": "أثبتت المحكمة الدستورية طوعية الامتناع"
+      }
+    ],
+    "constitutional_court_procedure_confirmed": [
+      {
+        "status": "translation",
+        "text": "أكدت المحكمة الدستورية مراعاة الإجراء المقرر"
+      }
+    ],
+    "constitutional_court_procedure_confirmed_for_release": [
+      {
+        "status": "translation",
+        "text": "أصدرت المحكمة الدستورية رأيا بمراعاة الإجراءات الدستورية المقررة"
+      }
+    ],
+    "constitutional_petition": [
+      {
+        "status": "translation",
+        "text": "مخاطبة الرئيس للمحكمة الدستورية بوصفها موضوع القضية"
+      }
+    ],
+    "constitutional_review_petition_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يخاطب المحكمة الدستورية"
+      }
+    ],
+    "constitutional_review_requested": [
+      {
+        "status": "translation",
+        "text": "الرقابة الدستورية أثيرت بمبادرة من الرئيس"
+      }
+    ],
+    "credentials": [
+      {
+        "status": "translation",
+        "text": "أوراق الاعتماد أو الاستدعاء بوصفها موضوع القضية"
+      }
+    ],
+    "credentials_acceptance_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يتسلم أوراق الاعتماد أو الاستدعاء"
+      }
+    ],
+    "credentials_accepted": [
+      {
+        "status": "translation",
+        "text": "تسلمت أوراق الاعتماد أو الاستدعاء"
+      }
+    ],
+    "deputy_powers_terminated": [
+      {
+        "status": "translation",
+        "text": "أنهيت صلاحيات نائب القورولتاي مبكرا"
+      }
+    ],
+    "diplomatic_mission_head": [
+      {
+        "status": "translation",
+        "text": "رئيس البعثة الدبلوماسية بوصفه موضوع القضية"
+      }
+    ],
+    "dissolution_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يحل القورولتاي"
+      }
+    ],
+    "dissolution_considered_on": [
+      {
+        "status": "translation",
+        "text": "اليوم الذي تطرح فيه مسألة حل القورولتاي"
+      }
+    ],
+    "dissolution_final_period": [
+      {
+        "status": "translation",
+        "text": "المدة المحمية قبل انتهاء صلاحيات الرئيس ستة أشهر"
+      }
+    ],
+    "dissolution_interval_after_prior": [
+      {
+        "status": "translation",
+        "text": "المدة التي لا يحل فيها القورولتاي بعد الحل السابق سنة واحدة"
+      }
+    ],
+    "dissolution_question_under_consideration": [
+      {
+        "status": "translation",
+        "text": "الرئيس ينظر مسألة الإنهاء المبكر لصلاحيات القورولتاي"
+      }
+    ],
+    "distinction_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يمنح وساما أو لقبا أو رتبة أو درجة تأهيلية"
+      }
+    ],
+    "distinction_conferred": [
+      {
+        "status": "translation",
+        "text": "منح التكريم"
+      }
+    ],
+    "distinction_kind": [
+      {
+        "status": "translation",
+        "text": "نوع التكريم الممنوح"
+      }
+    ],
+    "early_election_announced_timely": [
+      {
+        "status": "translation",
+        "text": "أعلنت الانتخابات الاستثنائية في الميعاد الدستوري"
+      }
+    ],
+    "early_election_announcement_day": [
+      {
+        "status": "translation",
+        "text": "يوم إعلان الانتخابات الاستثنائية للرئيس"
+      }
+    ],
+    "early_election_announcement_days": [
+      {
+        "status": "translation",
+        "text": "ميعاد إعلان الانتخابات الاستثنائية سبعة أيام"
+      }
+    ],
+    "early_election_conduct_due_on": [
+      {
+        "status": "translation",
+        "text": "يوم انتهاء مدة الشهرين المقررة لإجراء الانتخابات"
+      }
+    ],
+    "early_election_conduct_period": [
+      {
+        "status": "translation",
+        "text": "ميعاد إجراء الانتخابات الاستثنائية للرئيس شهران"
+      }
+    ],
+    "early_election_conducted_in_period": [
+      {
+        "status": "translation",
+        "text": "أجريت الانتخابات الاستثنائية في حدود مدة الشهرين"
+      }
+    ],
+    "early_election_conducted_timely": [
+      {
+        "status": "translation",
+        "text": "أجريت الانتخابات الاستثنائية في الميعاد الدستوري"
+      }
+    ],
+    "early_election_day": [
+      {
+        "status": "translation",
+        "text": "يوم إجراء الانتخابات الاستثنائية للرئيس"
+      }
+    ],
+    "elected_president": [
+      {
+        "status": "translation",
+        "text": "يعد الشخص منتخبا رئيسا"
+      }
+    ],
+    "election_results_published_on": [
+      {
+        "status": "translation",
+        "text": "يوم نشر نتائج انتخابات الرئيس"
+      }
+    ],
+    "eligible_presidential_candidate": [
+      {
+        "status": "translation",
+        "text": "الشخص مستوف لشروط المترشح لرئاسة الجمهورية"
+      }
+    ],
+    "emergency_consultations_completed": [
+      {
+        "status": "translation",
+        "text": "أجريت المشاورات المطلوبة قبل إعلان حالة الطوارئ"
+      }
+    ],
+    "emergency_measure": [
+      {
+        "status": "translation",
+        "text": "تدبير يتخذه الرئيس في ظل حالة الطوارئ أو الأحكام العرفية"
+      }
+    ],
+    "emergency_measure_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يقرر تدابير حالة الطوارئ"
+      }
+    ],
+    "emergency_measure_in_force": [
+      {
+        "status": "translation",
+        "text": "قررت تدابير حالة الطوارئ بصورة مشروعة"
+      }
+    ],
+    "emergency_or_martial_law_active": [
+      {
+        "status": "translation",
+        "text": "حالة الطوارئ أو الأحكام العرفية سارية"
+      }
+    ],
+    "ex_president": [
+      {
+        "status": "translation",
+        "text": "الشخص يحمل لقب الرئيس السابق لجمهورية كازاخستان"
+      }
+    ],
+    "final_decision_day": [
+      {
+        "status": "translation",
+        "text": "يوم اتخاذ القورولتاي القرار النهائي في الاتهام"
+      }
+    ],
+    "final_decision_not_taken": [
+      {
+        "status": "translation",
+        "text": "لم يتخذ القرار النهائي في الاتهام"
+      }
+    ],
+    "final_impeachment_votes": [
+      {
+        "status": "translation",
+        "text": "عدد الأصوات عند القرار النهائي بالعزل"
+      }
+    ],
+    "fluent_in_state_language": [
+      {
+        "status": "translation",
+        "text": "الشخص يتقن لغة الدولة"
+      }
+    ],
+    "former_president": [
+      {
+        "status": "translation",
+        "text": "الشخص رئيس سابق للجمهورية"
+      }
+    ],
+    "government_initiated_act_ready": [
+      {
+        "status": "translation",
+        "text": "الصك الصادر بمبادرة من الحكومة مستوف للشكل الواجب"
+      }
+    ],
+    "government_initiated_presidential_act": [
+      {
+        "status": "translation",
+        "text": "صدر الصك بمبادرة من الحكومة"
+      }
+    ],
+    "health_removal_case": [
+      {
+        "status": "translation",
+        "text": "تنظر مسألة الإعفاء المبكر للرئيس لأسباب صحية"
+      }
+    ],
+    "health_removal_denominator": [
+      {
+        "status": "translation",
+        "text": "مقام نسبة الأصوات اللازمة للإعفاء لأسباب صحية"
+      }
+    ],
+    "health_removal_numerator": [
+      {
+        "status": "translation",
+        "text": "بسط نسبة الأصوات اللازمة للإعفاء لأسباب صحية"
+      }
+    ],
+    "health_removal_target": [
+      {
+        "status": "translation",
+        "text": "مسألة الإعفاء المبكر لأسباب صحية تتعلق بهذا الرئيس"
+      }
+    ],
+    "health_removal_votes": [
+      {
+        "status": "translation",
+        "text": "عدد أصوات نواب القورولتاي المؤيدة للإعفاء المبكر لأسباب صحية"
+      }
+    ],
+    "high_command_appointment": [
+      {
+        "status": "translation",
+        "text": "التعيين يتعلق بالقيادة العليا للقوات المسلحة"
+      }
+    ],
+    "high_command_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يعين في منصب من مناصب القيادة العليا للقوات المسلحة"
+      }
+    ],
+    "high_command_appointment_effective": [
+      {
+        "status": "translation",
+        "text": "تم التعيين في منصب القيادة العليا"
+      }
+    ],
+    "high_command_release": [
+      {
+        "status": "translation",
+        "text": "الإعفاء يتعلق بالقيادة العليا للقوات المسلحة"
+      }
+    ],
+    "high_command_release_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يعفي من منصب من مناصب القيادة العليا للقوات المسلحة"
+      }
+    ],
+    "high_command_release_effective": [
+      {
+        "status": "translation",
+        "text": "تم الإعفاء من منصب القيادة العليا"
+      }
+    ],
+    "higher_education": [
+      {
+        "status": "translation",
+        "text": "للشخص تعليم عال"
+      }
+    ],
+    "immediate_constitutional_threat": [
+      {
+        "status": "translation",
+        "text": "يوجد خطر مباشر على النظام الدستوري أو النظام القانوني أو الأمن"
+      }
+    ],
+    "impeachment_case": [
+      {
+        "status": "translation",
+        "text": "الإجراءات هي إجراءات عزل الرئيس من المنصب"
+      }
+    ],
+    "impeachment_charge_rejected": [
+      {
+        "status": "translation",
+        "text": "رفض اتهام الرئيس بالخيانة العظمى"
+      }
+    ],
+    "impeachment_final_decision_due_on": [
+      {
+        "status": "translation",
+        "text": "يوم انتهاء مدة الشهرين المقررة للقرار النهائي"
+      }
+    ],
+    "impeachment_final_decision_period": [
+      {
+        "status": "translation",
+        "text": "ميعاد اتخاذ القرار النهائي في الاتهام شهران"
+      }
+    ],
+    "impeachment_final_decision_timely": [
+      {
+        "status": "translation",
+        "text": "اتخذ القرار النهائي في حدود مدة الشهرين"
+      }
+    ],
+    "impeachment_final_denominator": [
+      {
+        "status": "translation",
+        "text": "مقام عتبة العزل ثلاثة أرباع"
+      }
+    ],
+    "impeachment_final_numerator": [
+      {
+        "status": "translation",
+        "text": "بسط عتبة العزل ثلاثة أرباع"
+      }
+    ],
+    "impeachment_initiating_deputy": [
+      {
+        "status": "translation",
+        "text": "نائب القورولتاي بادر بنظر مسألة الاتهام"
+      }
+    ],
+    "impeachment_initiating_votes": [
+      {
+        "status": "translation",
+        "text": "عدد نواب القورولتاي الذين بادروا بالعزل"
+      }
+    ],
+    "impeachment_initiative_denominator": [
+      {
+        "status": "translation",
+        "text": "مقام عتبة المبادرة بالعزل الثلث"
+      }
+    ],
+    "impeachment_initiative_numerator": [
+      {
+        "status": "translation",
+        "text": "بسط عتبة المبادرة بالعزل الثلث"
+      }
+    ],
+    "impeachment_initiative_valid": [
+      {
+        "status": "translation",
+        "text": "قدمت المبادرة بالعزل من العدد المخول من النواب"
+      }
+    ],
+    "impeachment_investigation_denominator": [
+      {
+        "status": "translation",
+        "text": "مقام عتبة قرار التحقيق النصف"
+      }
+    ],
+    "impeachment_investigation_numerator": [
+      {
+        "status": "translation",
+        "text": "بسط عتبة قرار التحقيق النصف"
+      }
+    ],
+    "impeachment_investigation_valid": [
+      {
+        "status": "translation",
+        "text": "عهد بالتحقيق في الاتهام بصورة مشروعة"
+      }
+    ],
+    "impeachment_may_not_be_initiated": [
+      {
+        "status": "translation",
+        "text": "لا يجوز طرح مسألة عزل الرئيس"
+      }
+    ],
+    "impeachment_question_approved": [
+      {
+        "status": "translation",
+        "text": "اتخذ القورولتاي قرارا في مسألة توجيه الاتهام والتحقيق فيه"
+      }
+    ],
+    "impeachment_question_denominator": [
+      {
+        "status": "translation",
+        "text": "مقام نسبة الأصوات اللازمة للقرار في مسألة الاتهام"
+      }
+    ],
+    "impeachment_question_numerator": [
+      {
+        "status": "translation",
+        "text": "بسط نسبة الأصوات اللازمة للقرار في مسألة الاتهام"
+      }
+    ],
+    "impeachment_question_votes": [
+      {
+        "status": "translation",
+        "text": "عدد أصوات نواب القورولتاي في مسألة توجيه الاتهام والتحقيق فيه"
+      }
+    ],
+    "impeachment_rejected_at_stage": [
+      {
+        "status": "translation",
+        "text": "رفض القورولتاي الاتهام في إحدى المراحل"
+      }
+    ],
+    "impeachment_reviewed_on": [
+      {
+        "status": "translation",
+        "text": "اليوم الذي تفحص فيه حال دعوى الاتهام"
+      }
+    ],
+    "impeachment_target": [
+      {
+        "status": "translation",
+        "text": "وجه الاتهام بالخيانة العظمى إلى هذا الرئيس"
+      }
+    ],
+    "in_final_period_of_presidential_term": [
+      {
+        "status": "translation",
+        "text": "طرحت مسألة الحل في الأشهر الستة الأخيرة من صلاحيات الرئيس"
+      }
+    ],
+    "international_treaty": [
+      {
+        "status": "translation",
+        "text": "المعاهدة الدولية بوصفها موضوع القضية"
+      }
+    ],
+    "investigation_approved_votes": [
+      {
+        "status": "translation",
+        "text": "عدد الأصوات المؤيدة للعهد بالتحقيق في الاتهام"
+      }
+    ],
+    "kurultai": [
+      {
+        "status": "translation",
+        "text": "الجهاز هو القورولتاي"
+      }
+    ],
+    "kurultai_dissolved": [
+      {
+        "status": "translation",
+        "text": "حل القورولتاي"
+      }
+    ],
+    "kurultai_election_day": [
+      {
+        "status": "translation",
+        "text": "يوم إجراء انتخاب تشكيلة جديدة للقورولتاي"
+      }
+    ],
+    "kurultai_immediately_informed": [
+      {
+        "status": "translation",
+        "text": "أبلغ القورولتاي فورا بالتدابير المتخذة"
+      }
+    ],
+    "kurultai_majority_consent": [
+      {
+        "status": "translation",
+        "text": "وافق القورولتاي على التعيين بأغلبية الأصوات"
+      }
+    ],
+    "kurultai_majority_consent_to_vice_president": [
+      {
+        "status": "translation",
+        "text": "وافق القورولتاي على تعيين نائب الرئيس"
+      }
+    ],
+    "kurultai_seat_count": [
+      {
+        "status": "translation",
+        "text": "مجموع نواب القورولتاي مائة وخمسة وأربعون"
+      }
+    ],
+    "law_countersigned_by_kurultai_chair": [
+      {
+        "status": "translation",
+        "text": "وقع رئيس القورولتاي بالعطف على القانون"
+      }
+    ],
+    "law_countersigned_by_prime_minister": [
+      {
+        "status": "translation",
+        "text": "وقع رئيس الوزراء بالعطف على القانون"
+      }
+    ],
+    "law_presented": [
+      {
+        "status": "translation",
+        "text": "عرض القانون على الرئيس للتوقيع"
+      }
+    ],
+    "law_presented_on": [
+      {
+        "status": "translation",
+        "text": "يوم عرض القورولتاي القانون على الرئيس"
+      }
+    ],
+    "law_ready_for_presidential_signature": [
+      {
+        "status": "translation",
+        "text": "القانون جاهز لتوقيع الرئيس"
+      }
+    ],
+    "law_returned_with_objections": [
+      {
+        "status": "translation",
+        "text": "رد القانون إلى القورولتاي مشفوعا بالاعتراضات"
+      }
+    ],
+    "law_signed": [
+      {
+        "status": "translation",
+        "text": "وقع الرئيس على القانون"
+      }
+    ],
+    "majority_reached_in_election": [
+      {
+        "status": "translation",
+        "text": "حاز أحدهم في الانتخابات أكثر من خمسين في المائة من الأصوات"
+      }
+    ],
+    "martial_measure_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يعلن الأحكام العرفية"
+      }
+    ],
+    "martial_measure_in_force": [
+      {
+        "status": "translation",
+        "text": "أعلنت الأحكام العرفية بصورة مشروعة"
+      }
+    ],
+    "medical_commission_formed": [
+      {
+        "status": "translation",
+        "text": "شكل القورولتاي لجنة من النواب ومن المختصين في المجالات الطبية ذات الصلة"
+      }
+    ],
+    "mission_head_appointed": [
+      {
+        "status": "translation",
+        "text": "عين رئيس البعثة الدبلوماسية"
+      }
+    ],
+    "mission_head_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يعين رئيس البعثة الدبلوماسية"
+      }
+    ],
+    "mission_head_recall_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يستدعي رئيس البعثة الدبلوماسية"
+      }
+    ],
+    "mission_head_recalled": [
+      {
+        "status": "translation",
+        "text": "استدعي رئيس البعثة الدبلوماسية"
+      }
+    ],
+    "new_president_assumed_office": [
+      {
+        "status": "translation",
+        "text": "تولى الرئيس المنتخب الجديد منصبه"
+      }
+    ],
+    "no_candidate_reached_majority": [
+      {
+        "status": "translation",
+        "text": "لم يحز أي من المترشحين أكثر من خمسين في المائة من الأصوات"
+      }
+    ],
+    "office_appointment": [
+      {
+        "status": "translation",
+        "text": "يجري التعيين في منصب مما سمته المادة"
+      }
+    ],
+    "office_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يعين في منصب من قائمة البند 5"
+      }
+    ],
+    "office_appointment_effective": [
+      {
+        "status": "translation",
+        "text": "تم التعيين في المنصب"
+      }
+    ],
+    "office_release": [
+      {
+        "status": "translation",
+        "text": "يجري الإعفاء من منصب مما سمته المادة"
+      }
+    ],
+    "office_release_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يعفي من منصب من قائمة البند 5"
+      }
+    ],
+    "office_release_effective": [
+      {
+        "status": "translation",
+        "text": "تم الإعفاء من المنصب"
+      }
+    ],
+    "pardon_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يمارس حق العفو"
+      }
+    ],
+    "pardon_granted": [
+      {
+        "status": "translation",
+        "text": "مورس حق العفو"
+      }
+    ],
+    "pardon_matter": [
+      {
+        "status": "translation",
+        "text": "طلب العفو بوصفه موضوع القضية"
+      }
+    ],
+    "participating_voters": [
+      {
+        "status": "translation",
+        "text": "عدد الناخبين المشاركين في الاقتراع"
+      }
+    ],
+    "persistent_health_incapacity": [
+      {
+        "status": "translation",
+        "text": "عجز الرئيس المستقر عن أداء واجباته لأسباب صحية"
+      }
+    ],
+    "power_conferred_by_constitution_or_law": [
+      {
+        "status": "translation",
+        "text": "صلاحية الرئيس مقررة في دستور جمهورية كازاخستان أو في قانونها"
+      }
+    ],
+    "president": [
+      {
+        "status": "translation",
+        "text": "الشخص رئيس الجمهورية"
+      }
+    ],
+    "president_assumed_office_on": [
+      {
+        "status": "translation",
+        "text": "يوم تولي الرئيس منصبه"
+      }
+    ],
+    "president_conducts_business": [
+      {
+        "status": "translation",
+        "text": "الرئيس يمارس نشاطا رياديا"
+      }
+    ],
+    "president_died": [
+      {
+        "status": "translation",
+        "text": "توفي الرئيس"
+      }
+    ],
+    "president_ensures_coordinated_state_power": [
+      {
+        "status": "translation",
+        "text": "الرئيس يكفل التسيير المتناسق لفروع سلطة الدولة"
+      }
+    ],
+    "president_experience_years": [
+      {
+        "status": "translation",
+        "text": "خبرة العمل المطلوبة خمس سنوات"
+      }
+    ],
+    "president_guarantees_unity_constitution_and_rights": [
+      {
+        "status": "translation",
+        "text": "الرئيس ضامن وحدة الشعب وثبات الدستور وحقوق الإنسان وحرياته"
+      }
+    ],
+    "president_held_criminally_or_administratively_liable": [
+      {
+        "status": "translation",
+        "text": "حوسب الرئيس جنائيا أو إداريا"
+      }
+    ],
+    "president_holds_other_paid_office": [
+      {
+        "status": "translation",
+        "text": "الرئيس يشغل منصبا آخر بأجر"
+      }
+    ],
+    "president_holds_representative_mandate": [
+      {
+        "status": "translation",
+        "text": "الرئيس نائب في جهاز تمثيلي"
+      }
+    ],
+    "president_is_commander_in_chief": [
+      {
+        "status": "translation",
+        "text": "الرئيس هو القائد الأعلى للقوات المسلحة لجمهورية كازاخستان"
+      }
+    ],
+    "president_is_head_of_state": [
+      {
+        "status": "translation",
+        "text": "الرئيس رئيس الدولة والموظف الأعلى في الجمهورية"
+      }
+    ],
+    "president_minimum_age": [
+      {
+        "status": "translation",
+        "text": "الحد الأدنى لسن الرئيس أربعون سنة"
+      }
+    ],
+    "president_party_member": [
+      {
+        "status": "translation",
+        "text": "الرئيس عضو في حزب سياسي"
+      }
+    ],
+    "president_released_for_health": [
+      {
+        "status": "translation",
+        "text": "أعفي الرئيس من المنصب مبكرا لأسباب صحية"
+      }
+    ],
+    "president_released_from_office_for_health": [
+      {
+        "status": "translation",
+        "text": "أعفي هذا الرئيس من المنصب مبكرا لأسباب صحية"
+      }
+    ],
+    "president_removed_by_impeachment": [
+      {
+        "status": "translation",
+        "text": "عزل الرئيس من المنصب"
+      }
+    ],
+    "president_removed_from_office": [
+      {
+        "status": "translation",
+        "text": "عزل الرئيس من المنصب"
+      }
+    ],
+    "president_residence_years": [
+      {
+        "status": "translation",
+        "text": "مدة الإقامة المطلوبة في كازاخستان خمس عشرة سنة"
+      }
+    ],
+    "president_resigned": [
+      {
+        "status": "translation",
+        "text": "أعفي الرئيس من المنصب بسبب الاستقالة الطوعية"
+      }
+    ],
+    "president_term": [
+      {
+        "status": "translation",
+        "text": "مدة صلاحيات الرئيس سبع سنوات"
+      }
+    ],
+    "president_term_expires_on": [
+      {
+        "status": "translation",
+        "text": "يوم انتهاء مدة صلاحيات الرئيس"
+      }
+    ],
+    "presidential_act": [
+      {
+        "status": "translation",
+        "text": "أصدر هذا الرئيس الصك"
+      }
+    ],
+    "presidential_act_based_on_constitution_and_law": [
+      {
+        "status": "translation",
+        "text": "صدر الصك استنادا إلى الدستور والقوانين وتنفيذا لهما"
+      }
+    ],
+    "presidential_act_binding_nationwide": [
+      {
+        "status": "translation",
+        "text": "صك الرئيس ملزم في جميع أنحاء إقليم الجمهورية"
+      }
+    ],
+    "presidential_address": [
+      {
+        "status": "translation",
+        "text": "رسالة الرئيس بوصفها موضوع القضية"
+      }
+    ],
+    "presidential_address_delivered": [
+      {
+        "status": "translation",
+        "text": "وجهت رسالة الرئيس إلى شعب كازاخستان"
+      }
+    ],
+    "presidential_administration": [
+      {
+        "status": "translation",
+        "text": "إدارة رئيس الجمهورية بوصفها موضوع القضية"
+      }
+    ],
+    "presidential_administration_formed": [
+      {
+        "status": "translation",
+        "text": "شكلت إدارة رئيس جمهورية كازاخستان"
+      }
+    ],
+    "presidential_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يجري التعيين"
+      }
+    ],
+    "presidential_appointment_office": [
+      {
+        "status": "translation",
+        "text": "المنصب مدرج في قائمة المادة 46 البند 5"
+      }
+    ],
+    "presidential_body_established": [
+      {
+        "status": "translation",
+        "text": "أنشئ مجلس الأمن أو جهاز استشاري آخر أو المجلس الأعلى للقضاء"
+      }
+    ],
+    "presidential_conduct_in_office": [
+      {
+        "status": "translation",
+        "text": "ارتكب الرئيس الفعل أثناء أداء واجباته"
+      }
+    ],
+    "presidential_election_attempt": [
+      {
+        "status": "translation",
+        "text": "المترشح يشارك في انتخابات رئيس الجمهورية"
+      }
+    ],
+    "presidential_election_held": [
+      {
+        "status": "translation",
+        "text": "أجريت انتخابات رئيس الجمهورية"
+      }
+    ],
+    "presidential_election_majority_denominator": [
+      {
+        "status": "translation",
+        "text": "مقام عتبة انتخاب الرئيس النصف"
+      }
+    ],
+    "presidential_election_majority_numerator": [
+      {
+        "status": "translation",
+        "text": "بسط عتبة انتخاب الرئيس النصف"
+      }
+    ],
+    "presidential_family_support_case": [
+      {
+        "status": "translation",
+        "text": "الأمر يتعلق بإعالة الرئيس السابق وأسرته"
+      }
+    ],
+    "presidential_instruction_to_vice_president": [
+      {
+        "status": "translation",
+        "text": "كلف الرئيس نائبه بأن ينوب عنه"
+      }
+    ],
+    "presidential_liability_attempt": [
+      {
+        "status": "translation",
+        "text": "جرت محاولة لمساءلة الرئيس"
+      }
+    ],
+    "presidential_office_incompatible": [
+      {
+        "status": "translation",
+        "text": "منصب الرئيس لا يجتمع مع المنصب المشغول أو النشاط الممارس"
+      }
+    ],
+    "presidential_powers_assumed_by": [
+      {
+        "status": "translation",
+        "text": "انتقلت صلاحيات الرئيس إلى هذا الشخص"
+      }
+    ],
+    "presidential_powers_terminated": [
+      {
+        "status": "translation",
+        "text": "انتهت صلاحيات الرئيس"
+      }
+    ],
+    "presidential_relative_position_prohibited": [
+      {
+        "status": "translation",
+        "text": "لا يجوز أن يشغل قريب الرئيس مثل هذا المنصب"
+      }
+    ],
+    "presidential_return_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يرد القانون مشفوعا باعتراضاته"
+      }
+    ],
+    "presidential_signature_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يوقع على القانون المعروض"
+      }
+    ],
+    "presidential_signature_day": [
+      {
+        "status": "translation",
+        "text": "يوم توقيع الرئيس على القانون أو رده"
+      }
+    ],
+    "presidential_signature_due_on": [
+      {
+        "status": "translation",
+        "text": "يوم انتهاء مدة الشهر المقررة للتوقيع على القانون"
+      }
+    ],
+    "presidential_signature_period": [
+      {
+        "status": "translation",
+        "text": "ميعاد التوقيع على القانون الذي يعرضه القورولتاي شهر واحد"
+      }
+    ],
+    "presidential_signature_timely": [
+      {
+        "status": "translation",
+        "text": "وقع على القانون أو رد في حدود مدة الشهر"
+      }
+    ],
+    "presidential_vacancy": [
+      {
+        "status": "translation",
+        "text": "خلا منصب الرئيس مبكرا"
+      }
+    ],
+    "presidential_vote": [
+      {
+        "status": "translation",
+        "text": "عدد الأصوات التي نالها المترشح"
+      }
+    ],
+    "previously_elected_president": [
+      {
+        "status": "translation",
+        "text": "سبق انتخاب الشخص رئيسا للجمهورية"
+      }
+    ],
+    "prior_dissolution_on": [
+      {
+        "status": "translation",
+        "text": "يوم الحل السابق للقورولتاي"
+      }
+    ],
+    "prior_office_relinquished": [
+      {
+        "status": "translation",
+        "text": "تخلى الشخص عن منصبه السابق"
+      }
+    ],
+    "ratification_instrument": [
+      {
+        "status": "translation",
+        "text": "وثيقة التصديق بوصفها موضوع القضية"
+      }
+    ],
+    "ratification_instrument_signed": [
+      {
+        "status": "translation",
+        "text": "وقعت وثيقة التصديق"
+      }
+    ],
+    "ratification_signature_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يوقع وثيقة التصديق"
+      }
+    ],
+    "referendum_called": [
+      {
+        "status": "translation",
+        "text": "دعي إلى استفتاء شعبي"
+      }
+    ],
+    "referendum_decision_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يصدر قرارا بإجراء استفتاء"
+      }
+    ],
+    "refusal_statement_filed": [
+      {
+        "status": "translation",
+        "text": "قدم الشخص إلى المحكمة الدستورية طلب الامتناع عن تولي صلاحيات الرئيس"
+      }
+    ],
+    "refused_to_assume_presidential_powers": [
+      {
+        "status": "translation",
+        "text": "امتنع الشخص عن تولي صلاحيات الرئيس"
+      }
+    ],
+    "regular_election_lead_period": [
+      {
+        "status": "translation",
+        "text": "المدة التي تسبق بها الانتخابات الدورية انتهاء الصلاحيات شهران"
+      }
+    ],
+    "regular_election_scheduled_in_time": [
+      {
+        "status": "translation",
+        "text": "حددت الانتخابات الدورية في موعد لا يقل عن شهرين قبل انتهاء مدة صلاحيات الرئيس"
+      }
+    ],
+    "regular_oath_due_on": [
+      {
+        "status": "translation",
+        "text": "يوم انتهاء ميعاد أداء اليمين"
+      }
+    ],
+    "regular_oath_period": [
+      {
+        "status": "translation",
+        "text": "ميعاد أداء اليمين شهر واحد"
+      }
+    ],
+    "regular_oath_taken_on": [
+      {
+        "status": "translation",
+        "text": "يوم أداء اليمين"
+      }
+    ],
+    "regular_oath_timely": [
+      {
+        "status": "translation",
+        "text": "أديت اليمين في الميعاد الدستوري"
+      }
+    ],
+    "regular_presidential_election_date_inadmissible": [
+      {
+        "status": "translation",
+        "text": "تاريخ الانتخابات الدورية للرئيس غير جائز"
+      }
+    ],
+    "regular_presidential_election_day": [
+      {
+        "status": "translation",
+        "text": "يوم إجراء الانتخابات الدورية للرئيس"
+      }
+    ],
+    "relative_holds_political_office_or_quasistate_leadership": [
+      {
+        "status": "translation",
+        "text": "القريب يشغل منصبا سياسيا في الدولة أو يرأس منظمة من القطاع شبه الحكومي"
+      }
+    ],
+    "repeat_vote_ballot": [
+      {
+        "status": "translation",
+        "text": "أجري الاقتراع المعاد"
+      }
+    ],
+    "repeat_vote_participant": [
+      {
+        "status": "translation",
+        "text": "المترشح يشارك في الاقتراع المعاد"
+      }
+    ],
+    "repeat_vote_required": [
+      {
+        "status": "translation",
+        "text": "يجرى اقتراع معاد"
+      }
+    ],
+    "repeat_vote_votes": [
+      {
+        "status": "translation",
+        "text": "عدد الأصوات التي نالها المترشح في الاقتراع المعاد"
+      }
+    ],
+    "repeated_refusal_of_presidential_nominee": [
+      {
+        "status": "translation",
+        "text": "رفض القورولتاي مجددا الموافقة على المرشح الذي اقترحه الرئيس"
+      }
+    ],
+    "required_consultations_completed": [
+      {
+        "status": "translation",
+        "text": "أجريت المشاورات المطلوبة قبل حل القورولتاي"
+      }
+    ],
+    "resides_last_years": [
+      {
+        "status": "translation",
+        "text": "عدد سنوات الإقامة الأخيرة في كازاخستان"
+      }
+    ],
+    "state_authority": [
+      {
+        "status": "translation",
+        "text": "الكيان جهاز دولة أو موظف عام"
+      }
+    ],
+    "state_body_act": [
+      {
+        "status": "translation",
+        "text": "صك بإنشاء جهاز دولة أو إلغائه أو إعادة تنظيمه"
+      }
+    ],
+    "state_body_act_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس ينشئ جهاز دولة أو يلغيه أو يعيد تنظيمه"
+      }
+    ],
+    "state_body_act_effective": [
+      {
+        "status": "translation",
+        "text": "تم إنشاء جهاز الدولة أو إلغاؤه أو إعادة تنظيمه"
+      }
+    ],
+    "state_guard_service": [
+      {
+        "status": "translation",
+        "text": "جهاز الحرس الحكومي بوصفه موضوع القضية"
+      }
+    ],
+    "state_guard_service_formed": [
+      {
+        "status": "translation",
+        "text": "شكل جهاز الحرس الحكومي التابع للرئيس"
+      }
+    ],
+    "state_service_or_elected_years": [
+      {
+        "status": "translation",
+        "text": "خبرة العمل في الخدمة العامة أو في المناصب الحكومية الانتخابية"
+      }
+    ],
+    "state_support_provided": [
+      {
+        "status": "translation",
+        "text": "كفلت الدولة الإعالة والحماية"
+      }
+    ],
+    "state_treason_by_president": [
+      {
+        "status": "translation",
+        "text": "ارتكب الرئيس خيانة عظمى"
+      }
+    ],
+    "subordinate_body_head_appointment": [
+      {
+        "status": "translation",
+        "text": "التعيين يتعلق برئيس جهاز تابع للرئيس"
+      }
+    ],
+    "subordinate_body_head_release": [
+      {
+        "status": "translation",
+        "text": "الإعفاء يتعلق برئيس جهاز تابع للرئيس"
+      }
+    ],
+    "succession_event": [
+      {
+        "status": "translation",
+        "text": "تولى الشخص صلاحيات الرئيس"
+      }
+    ],
+    "succession_oath_date": [
+      {
+        "status": "translation",
+        "text": "يوم تولي الصلاحيات ويوم أداء اليمين"
+      }
+    ],
+    "succession_oath_days": [
+      {
+        "status": "translation",
+        "text": "ميعاد أداء اليمين لمن تولى صلاحيات الرئيس سبعة أيام"
+      }
+    ],
+    "succession_oath_timely": [
+      {
+        "status": "translation",
+        "text": "أديت اليمين عند الحلول في المنصب في الميعاد"
+      }
+    ],
+    "succession_president_in_office": [
+      {
+        "status": "translation",
+        "text": "يمارس صلاحيات الرئيس من تولاها على سبيل الحلول"
+      }
+    ],
+    "successor_amendment_initiative_attempt": [
+      {
+        "status": "translation",
+        "text": "من تولى الصلاحيات يبادر بتعديل الدستور"
+      }
+    ],
+    "successor_amendment_initiative_barred": [
+      {
+        "status": "translation",
+        "text": "يحظر على من تولى الصلاحيات المبادرة بتعديل الدستور"
+      }
+    ],
+    "successor_dissolution_attempt": [
+      {
+        "status": "translation",
+        "text": "من تولى الصلاحيات يحل القورولتاي"
+      }
+    ],
+    "successor_dissolution_barred": [
+      {
+        "status": "translation",
+        "text": "يحظر على من تولى الصلاحيات حل القورولتاي"
+      }
+    ],
+    "supreme_court_charge_supported": [
+      {
+        "status": "translation",
+        "text": "أكدت المحكمة العليا وجاهة الاتهام"
+      }
+    ],
+    "temporary_decree_has_force_of_law": [
+      {
+        "status": "translation",
+        "text": "صك الرئيس المؤقت له قوة القانون"
+      }
+    ],
+    "temporary_kurultai_absence_after_early_termination": [
+      {
+        "status": "translation",
+        "text": "القورولتاي غائب بسبب الإنهاء المبكر لصلاحياته"
+      }
+    ],
+    "temporary_legislative_decree": [
+      {
+        "status": "translation",
+        "text": "الصك صك قانوني معياري مؤقت صادر عن الرئيس"
+      }
+    ],
+    "treaty_signature_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يتفاوض ويوقع المعاهدة الدولية باسم جمهورية كازاخستان"
+      }
+    ],
+    "treaty_signed_on_behalf_of_republic": [
+      {
+        "status": "translation",
+        "text": "وقعت المعاهدة الدولية باسم جمهورية كازاخستان"
+      }
+    ],
+    "unable_by_health_or_personal_reasons": [
+      {
+        "status": "translation",
+        "text": "لا يستطيع الشخص تولي الصلاحيات لأسباب صحية أو لأسباب شخصية أخرى"
+      }
+    ],
+    "vacancy_by_death": [
+      {
+        "status": "translation",
+        "text": "خلا المنصب بسبب وفاة الرئيس"
+      }
+    ],
+    "vacancy_by_health_incapacity": [
+      {
+        "status": "translation",
+        "text": "خلا المنصب بسبب عجز الرئيس المستقر لأسباب صحية"
+      }
+    ],
+    "vacancy_by_removal_from_office": [
+      {
+        "status": "translation",
+        "text": "خلا المنصب بسبب عزل الرئيس"
+      }
+    ],
+    "vacancy_by_voluntary_resignation": [
+      {
+        "status": "translation",
+        "text": "خلا المنصب بسبب استقالة الرئيس الطوعية"
+      }
+    ],
+    "vacancy_day": [
+      {
+        "status": "translation",
+        "text": "يوم خلو منصب الرئيس"
+      }
+    ],
+    "vacancy_kurultai_chair": [
+      {
+        "status": "translation",
+        "text": "الشخص يشغل منصب رئيس القورولتاي لحظة خلو المنصب"
+      }
+    ],
+    "vacancy_prime_minister": [
+      {
+        "status": "translation",
+        "text": "الشخص يشغل منصب رئيس الوزراء لحظة خلو المنصب"
+      }
+    ],
+    "vacancy_vice_president": [
+      {
+        "status": "translation",
+        "text": "الشخص يشغل منصب نائب الرئيس لحظة خلو المنصب"
+      }
+    ],
+    "vice_president": [
+      {
+        "status": "translation",
+        "text": "الشخص نائب رئيس الجمهورية"
+      }
+    ],
+    "vice_president_appointed": [
+      {
+        "status": "translation",
+        "text": "عين نائب الرئيس"
+      }
+    ],
+    "vice_president_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يعين نائب الرئيس"
+      }
+    ],
+    "vice_president_conducts_business": [
+      {
+        "status": "translation",
+        "text": "نائب الرئيس يمارس نشاطا رياديا"
+      }
+    ],
+    "vice_president_holds_other_paid_office": [
+      {
+        "status": "translation",
+        "text": "نائب الرئيس يشغل منصبا آخر بأجر"
+      }
+    ],
+    "vice_president_holds_representative_mandate": [
+      {
+        "status": "translation",
+        "text": "نائب الرئيس نائب في جهاز تمثيلي"
+      }
+    ],
+    "vice_president_party_member": [
+      {
+        "status": "translation",
+        "text": "نائب الرئيس عضو في حزب سياسي"
+      }
+    ],
+    "vice_president_representation_action": [
+      {
+        "status": "translation",
+        "text": "نائب الرئيس يتصرف باسم الرئيس"
+      }
+    ],
+    "vice_president_representation_authorized": [
+      {
+        "status": "translation",
+        "text": "نيابة نائب الرئيس مشروعة"
+      }
+    ],
+    "vice_presidential_office_incompatible": [
+      {
+        "status": "translation",
+        "text": "منصب نائب الرئيس لا يجتمع مع المنصب المشغول أو النشاط الممارس"
+      }
+    ],
+    "within_period_after_prior_dissolution": [
+      {
+        "status": "translation",
+        "text": "لم تمض سنة واحدة على يوم الحل السابق للقورولتاي"
+      }
+    ]
+  },
+  "language": "ar",
+  "package": "kz.constitution.president"
+}

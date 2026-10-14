@@ -1,0 +1,1398 @@
+// Конституция РК 1995, раздел III (ст. 40–48): Президент.
+//
+// ОТДЕЛЬНЫЙ ПАКЕТ, А НЕ СЛОЙ В kz.constitution.president (DECISION-0026,
+// вариант «в»). Основание — институт другой, а не текст:
+//   - преемство 1995 идёт по цепочке Председатель Сената → Председатель
+//     Мажилиса → Премьер-Министр; в 2026 полномочия принимает
+//     Вице-Президент, которого в 1995 нет вовсе;
+//   - отрешение 1995 распределено между двумя Палатами (Мажилис выдвигает,
+//     Сенат расследует, совместное заседание решает); в 2026 весь процесс
+//     идёт в однопалатном Курултае.
+// Держать это одними предикатами значило бы утверждать тождество органов,
+// которого нет. Цена решения названа прямо: `impact-editions` берёт ОДИН
+// ir.json и две даты, поэтому по разделу III diff исходов между редакциями
+// из коробки не считается — сравнение идёт через audit-world
+// kz-constitution-linked и отдельные сценарии.
+//
+// Числа сверены с закреплённым текстом ст. 41, 42, 47 (см.
+// corpus/laws/sources/constitution/constitution-1995-ru.txt); ни одно не
+// взято из редакции 2026 и ни одно не восстановлено по памяти.
+//
+// РАСХОЖДЕНИЯ С РЕДАКЦИЕЙ 2026, найденные чтением:
+//   1) у кандидата 1995 НЕТ ценза стажа государственной службы; 2026 ст. 43
+//      добавил пять лет — кандидат без стажа избираем до 01.07.2026 и
+//      неизбираем после;
+//   2) присяга преемника в 1995 приносится в течение ОДНОГО МЕСЯЦА; в 2026
+//      срок сжат до семи дней;
+//   3) ст. 41 п. 5 — конституционный порог избрания (более пятидесяти
+//      процентов) и повторное голосование записаны в самой Конституции 1995;
+//   4) ст. 47 п. 2 — отклонение обвинения в государственной измене влечёт
+//      досрочное прекращение полномочий депутатов-инициаторов: санкция за
+//      неудавшийся импичмент, которой в 2026 нет;
+//   5) ст. 48 п. 2 — преемник не вправе инициировать изменения Конституции.
+//
+// ОБЪЯВЛЕННАЯ ГРАНИЦА (DECISION-0012). Ст. 40 (статус главы государства) и
+// перечень полномочий ст. 44 в части, не имеющей конституционного условия
+// («награждает», «ведёт переговоры», «формирует Администрацию»), записаны
+// фактами: у них нет антецедента, и придуманный антецедент был бы авторской
+// нормой. Полномочия с названным Конституцией условием — согласие Палаты,
+// консультации, срок — выражены правилами.
+
+language "law.core" version "0.2";
+package kz.constitution1995.president version "0.1.0";
+namespace "urn:kz:constitution1995:president";
+
+entity Person {
+    label ru-KZ official "физическое лицо";
+}
+
+entity StateAuthority {
+    label ru-KZ official "государственный орган либо должностное лицо";
+}
+entity Candidate {
+    label ru-KZ official "кандидат в Президенты";
+}
+entity President {
+    label ru-KZ official "Президент Республики Казахстан (редакция 1995)";
+}
+entity Senate {
+    label ru-KZ official "Сенат Парламента";
+}
+entity Mazhilis {
+    label ru-KZ official "Мажилис Парламента";
+}
+entity Parliament {
+    label ru-KZ official "Парламент Республики Казахстан";
+}
+entity Election {
+    label ru-KZ official "выборы Президента";
+}
+entity Law {
+    label ru-KZ official "закон, представленный Президенту";
+}
+entity Appointment {
+    label ru-KZ official "назначение, производимое Президентом";
+}
+entity ConstitutionalPetition {
+    label ru-KZ official "обращение в Конституционный Суд";
+}
+entity EmergencyMeasure {
+    label ru-KZ official "мера чрезвычайного либо военного положения";
+}
+entity Impeachment {
+    label ru-KZ official "производство об отрешении Президента от должности либо освобождении по состоянию здоровья";
+}
+entity PresidentialAct {
+    label ru-KZ official "акт Президента";
+}
+entity Referendum {
+    label ru-KZ official "республиканский референдум";
+}
+entity SuccessionEvent {
+    label ru-KZ official "случай перехода полномочий Президента";
+}
+entity GovernmentDecision {
+    label ru-KZ official "решение Президента по структуре и составу Правительства";
+}
+
+// --- Конституционные числа редакции 1995 (ст. 41, 42, 47) ---------------
+
+relation president_term_years_1995(years: Integer) kind institutional {
+    key(years);
+    label ru-KZ official "срок полномочий Президента — семь лет";
+}
+relation president_minimum_age_1995(years: Integer) kind institutional {
+    key(years);
+    label ru-KZ official "минимальный возраст Президента — сорок лет";
+}
+relation president_residence_years_1995(years: Integer) kind institutional {
+    key(years);
+    label ru-KZ official "требуемый срок проживания в Казахстане — пятнадцать лет";
+}
+relation election_majority_percent_1995(percent: Integer) kind institutional {
+    key(percent);
+    label ru-KZ official "порог избрания Президента — более пятидесяти процентов голосов";
+}
+relation succession_oath_months_1995(months: Integer) kind institutional {
+    key(months);
+    label ru-KZ official "срок принесения присяги при переходе полномочий — один месяц";
+}
+relation law_signature_months_1995(months: Integer) kind institutional {
+    key(months);
+    label ru-KZ official "срок подписания представленного закона — один месяц";
+}
+relation impeachment_initiative_numerator_1995(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "числитель порога инициативы отрешения — одна треть";
+}
+relation impeachment_initiative_denominator_1995(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "знаменатель порога инициативы отрешения — одна треть";
+}
+relation impeachment_final_numerator_1995(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "числитель порога отрешения — три четверти";
+}
+relation impeachment_final_denominator_1995(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "знаменатель порога отрешения — три четверти";
+}
+relation impeachment_deadline_months_1995(months: Integer) kind institutional {
+    key(months);
+    label ru-KZ official "срок принятия окончательного решения об отрешении — два месяца";
+}
+relation incapacity_release_numerator_1995(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "числитель порога освобождения по состоянию здоровья — три четверти";
+}
+relation incapacity_release_denominator_1995(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "знаменатель порога освобождения по состоянию здоровья — три четверти";
+}
+
+// --- Ст. 40. Статус (адресуемые факты, вывода нет) ----------------------
+
+pub relation president_is_head_of_state_1995() kind institutional {
+    label ru-KZ official "Президент — глава государства, высшее должностное лицо Республики";
+}
+pub relation president_is_symbol_and_guarantor_of_unity_1995() kind institutional {
+    label ru-KZ official "Президент — символ и гарант единства народа и государственной власти";
+}
+pub relation president_ensures_concerted_branch_functioning_1995() kind institutional {
+    label ru-KZ official "Президент обеспечивает согласованное функционирование ветвей государственной власти";
+}
+
+// --- Ст. 41. Выборы -----------------------------------------------------
+
+relation candidate_person(candidate: Candidate, person: Person) kind empirical {
+    label ru-KZ official "кандидат является данным лицом";
+}
+relation citizen_by_birth(person: Person) kind empirical {
+    label ru-KZ official "лицо является гражданином Республики по рождению";
+}
+relation age_years(person: Person, years: Integer) kind empirical {
+    label ru-KZ official "возраст лица в полных годах";
+}
+relation resides_last_years(person: Person, years: Integer) kind empirical {
+    label ru-KZ official "число последних лет проживания в Казахстане";
+}
+relation higher_education(person: Person) kind empirical {
+    label ru-KZ official "лицо имеет высшее образование";
+}
+relation fluent_in_state_language(person: Person) kind empirical {
+    label ru-KZ official "лицо свободно владеет государственным языком";
+}
+relation eligible_presidential_candidate_1995(candidate: Candidate) kind institutional {
+    label ru-KZ official "лицо отвечает требованиям к кандидату в Президенты";
+}
+
+relation presidential_election(election: Election) kind empirical {
+    label ru-KZ official "событие является выборами Президента";
+}
+relation presidential_vote(election: Election, person: Person, votes: Integer) kind empirical {
+    label ru-KZ official "число голосов, поданных за кандидата";
+}
+relation participating_voters(election: Election, voters: Integer) kind empirical {
+    label ru-KZ official "число избирателей, принявших участие в голосовании";
+}
+relation runoff_ballot(election: Election) kind empirical {
+    label ru-KZ official "голосование является повторным";
+}
+relation highest_vote_in_runoff(election: Election, person: Person) kind empirical {
+    label ru-KZ official "кандидат набрал большее число голосов при повторном голосовании";
+}
+relation previously_elected_president(person: Person) kind empirical {
+    label ru-KZ official "лицо ранее избиралось Президентом Республики";
+}
+relation elected_president_1995(person: Person) kind institutional {
+    label ru-KZ official "лицо считается избранным Президентом";
+}
+relation runoff_required_1995(election: Election) kind institutional {
+    label ru-KZ official "проводится повторное голосование";
+}
+relation no_candidate_reached_majority(election: Election) kind empirical {
+    label ru-KZ official "ни один кандидат не набрал более половины голосов";
+}
+
+relation regular_election_on_first_december_sunday(election: Election) kind empirical {
+    label ru-KZ official "очередные выборы назначены на первое воскресенье декабря";
+}
+relation coincides_with_parliament_election(election: Election) kind empirical {
+    label ru-KZ official "выборы Президента совпадают по срокам с выборами нового состава Парламента";
+}
+relation regular_election_date_admissible_1995(election: Election) kind institutional {
+    label ru-KZ official "срок очередных выборов Президента допустим";
+}
+
+// --- Ст. 42. Присяга, прекращение полномочий, однократность -------------
+
+relation oath_taken(person: Person) kind empirical {
+    label ru-KZ official "лицо принесло присягу народу Казахстана";
+}
+relation president_assumed_office_1995(person: Person) kind institutional {
+    label ru-KZ official "лицо вступило в должность Президента";
+}
+relation succession_event(occasion: SuccessionEvent, person: Person) kind empirical {
+    label ru-KZ official "полномочия Президента переходят к данному лицу";
+}
+relation succession_oath_within_one_month(occasion: SuccessionEvent) kind empirical {
+    label ru-KZ official "присяга принесена в течение месяца со дня принятия полномочий";
+}
+relation succession_oath_timely_1995(occasion: SuccessionEvent) kind institutional {
+    label ru-KZ official "присяга при переходе полномочий принесена в срок";
+}
+relation new_president_assumed_office(person: Person) kind empirical {
+    label ru-KZ official "новый Президент вступил в должность";
+}
+relation early_release_or_removal(person: Person) kind empirical {
+    label ru-KZ official "Президент досрочно освобождён либо отрешён от должности";
+}
+relation president_deceased(person: Person) kind empirical {
+    label ru-KZ official "Президент умер";
+}
+relation presidential_powers_terminated_1995(person: Person) kind institutional {
+    label ru-KZ official "полномочия Президента прекращены";
+}
+relation removed_from_office(person: Person) kind empirical {
+    label ru-KZ official "лицо отрешено от должности Президента";
+}
+relation former_president_title_held_1995(person: Person) kind institutional {
+    label ru-KZ official "за бывшим Президентом сохраняется звание Президента Республики";
+}
+relation repeated_election_attempt(person: Person) kind empirical {
+    label ru-KZ official "предпринята попытка повторного избрания лица Президентом";
+}
+relation repeated_election_prohibited_1995(person: Person) kind institutional {
+    label ru-KZ official "повторное избрание одного и того же лица Президентом не допускается";
+}
+
+// --- Ст. 43. Несовместимости --------------------------------------------
+
+relation president(authority: President) kind empirical {
+    label ru-KZ official "лицо является Президентом Республики";
+}
+relation president_person(authority: President, person: Person) kind empirical {
+    label ru-KZ official "Президент является данным физическим лицом";
+}
+relation president_holds_representative_mandate(authority: President) kind empirical {
+    label ru-KZ official "Президент является депутатом представительного органа";
+}
+relation president_holds_other_paid_office(authority: President) kind empirical {
+    label ru-KZ official "Президент занимает иную оплачиваемую должность";
+}
+relation president_conducts_business(authority: President) kind empirical {
+    label ru-KZ official "Президент осуществляет предпринимательскую деятельность";
+}
+relation president_party_member(authority: President) kind empirical {
+    label ru-KZ official "Президент состоит в политической партии";
+}
+relation presidential_office_incompatible_1995(authority: President) kind institutional {
+    label ru-KZ official "должность Президента несовместима с занимаемой должностью либо деятельностью";
+}
+relation close_relative_of_president(person: Person, authority: President) kind empirical {
+    label ru-KZ official "лицо является близким родственником Президента";
+}
+relation relative_holds_political_office_or_quasistate_leadership(person: Person) kind empirical {
+    label ru-KZ official "родственник занимает политическую государственную должность либо руководит организацией квазигосударственного сектора";
+}
+relation presidential_relative_position_prohibited_1995(person: Person) kind institutional {
+    label ru-KZ official "занятие родственником Президента такой должности не допускается";
+}
+
+// --- Ст. 44. Полномочия с конституционным условием -----------------------
+
+relation law_presented(law: Law, authority: President) kind empirical {
+    label ru-KZ official "закон представлен Президенту на подпись";
+}
+relation presidential_signature_attempt(authority: President, law: Law) kind empirical {
+    label ru-KZ official "Президент подписывает представленный закон";
+}
+relation presidential_return_attempt(authority: President, law: Law) kind empirical {
+    label ru-KZ official "Президент возвращает закон для повторного обсуждения";
+}
+relation signature_within_one_month(law: Law) kind empirical {
+    label ru-KZ official "закон подписан в месячный срок";
+}
+relation law_signed_1995(law: Law) kind institutional {
+    label ru-KZ official "закон подписан Президентом";
+}
+relation law_returned_for_reconsideration_1995(law: Law) kind institutional {
+    label ru-KZ official "закон возвращён для повторного обсуждения и голосования";
+}
+
+// `appointment_candidate` СНЯТО 02.09.2026: ни одна норма редакции 1995 не различает назначаемое лицо: нормы говорят о назначении и о согласии Палаты
+relation appointment_requires_mazhilis_consent(appointment: Appointment) kind empirical {
+    label ru-KZ official "назначение производится с согласия Мажилиса";
+}
+relation mazhilis_consent_given(appointment: Appointment) kind empirical {
+    label ru-KZ official "Мажилис дал согласие на назначение";
+}
+relation fraction_consultations_completed(appointment: Appointment) kind empirical {
+    label ru-KZ official "проведены консультации с фракциями политических партий";
+}
+relation appointment_requires_senate_consent(appointment: Appointment) kind empirical {
+    label ru-KZ official "назначение производится с согласия Сената";
+}
+relation senate_consent_given(appointment: Appointment) kind empirical {
+    label ru-KZ official "Сенат дал согласие на назначение";
+}
+relation presidential_appointment_attempt(authority: President, appointment: Appointment) kind empirical {
+    label ru-KZ official "Президент производит назначение";
+}
+relation appointment_effective_1995(appointment: Appointment) kind institutional {
+    label ru-KZ official "назначение состоялось";
+}
+
+relation referendum_proposal(referendum: Referendum) kind empirical {
+    label ru-KZ official "заявлено предложение о проведении республиканского референдума";
+}
+relation referendum_decision_attempt(authority: President, referendum: Referendum) kind empirical {
+    label ru-KZ official "Президент принимает решение о проведении референдума";
+}
+relation referendum_called_1995(referendum: Referendum) kind institutional {
+    label ru-KZ official "республиканский референдум назначен";
+}
+relation constitutional_petition(petition: ConstitutionalPetition) kind empirical {
+    label ru-KZ official "обращение направлено в Конституционный Суд";
+}
+relation constitutional_review_petition_attempt(authority: President, petition: ConstitutionalPetition) kind empirical {
+    label ru-KZ official "Президент обращается в Конституционный Суд";
+}
+relation petition_protects_rights_or_security(petition: ConstitutionalPetition) kind empirical {
+    label ru-KZ official "обращение направлено на защиту прав и свобод человека либо безопасности государства";
+}
+relation constitutional_review_requested_1995(petition: ConstitutionalPetition) kind institutional {
+    label ru-KZ official "конституционный контроль инициирован правомерно";
+}
+
+relation serious_and_immediate_threat() kind empirical {
+    label ru-KZ official "налицо серьёзная и непосредственная угроза безопасности, конституционному строю либо общественному порядку";
+}
+relation constitutional_organs_functioning_disrupted() kind empirical {
+    label ru-KZ official "нарушено нормальное функционирование конституционных органов";
+}
+relation emergency_consultations_with_pm_and_chairs_completed() kind empirical {
+    label ru-KZ official "проведены консультации с Премьер-Министром и председателями Палат Парламента";
+}
+relation parliament_immediately_informed() kind empirical {
+    label ru-KZ official "Парламент незамедлительно проинформирован о принятых мерах";
+}
+relation emergency_measure(measure: EmergencyMeasure) kind empirical {
+    label ru-KZ official "мера является мерой чрезвычайного положения";
+}
+relation emergency_measure_attempt(authority: President, measure: EmergencyMeasure) kind empirical {
+    label ru-KZ official "Президент вводит меры чрезвычайного положения";
+}
+relation emergency_measure_in_force_1995(measure: EmergencyMeasure) kind institutional {
+    label ru-KZ official "меры чрезвычайного положения введены правомерно";
+}
+relation aggression_or_immediate_external_threat() kind empirical {
+    label ru-KZ official "налицо агрессия против Республики либо непосредственная внешняя угроза";
+}
+relation martial_measure_attempt(authority: President, measure: EmergencyMeasure) kind empirical {
+    label ru-KZ official "Президент вводит военное положение";
+}
+relation martial_measure_in_force_1995(measure: EmergencyMeasure) kind institutional {
+    label ru-KZ official "военное положение введено правомерно";
+}
+
+// Полномочия без конституционного условия — адресуемые факты.
+pub relation president_addresses_annual_message_1995() kind institutional {
+    label ru-KZ official "Президент обращается с ежегодным посланием о положении в стране";
+}
+pub relation president_is_supreme_commander_1995() kind institutional {
+    label ru-KZ official "Президент — Верховный Главнокомандующий Вооружёнными Силами";
+}
+pub relation president_decides_citizenship_and_asylum_1995() kind institutional {
+    label ru-KZ official "Президент решает вопросы гражданства и предоставления политического убежища";
+}
+pub relation president_exercises_pardon_1995() kind institutional {
+    label ru-KZ official "Президент осуществляет помилование граждан";
+}
+pub relation president_forms_state_guard_service_1995() kind institutional {
+    label ru-KZ official "Президент образует Службу государственной охраны";
+}
+pub relation president_forms_security_council_and_assembly_1995() kind institutional {
+    label ru-KZ official "Президент образует Совет Безопасности и Ассамблею народа Казахстана";
+}
+
+// Ст. 44 подпункты 3 и 7, деонтический слой 13.09.2026. Текст 1995 называет
+// у ЭТИХ действий собственное условие действительности — консультации с
+// фракциями, представление Премьер-Министра, пятилетний срок назначения, —
+// и условие это отдельный факт дела, а не повторение посылки. Вакуумный
+// `valid_when` редакции 2026 (27 полномочий из 31 читают предикат, уже
+// стоящий посылкой) здесь НЕ воспроизводится: где условие не отделимо от
+// посылки, полномочие не заводится вовсе.
+relation pm_nomination_attempt(authority: President, appointment: Appointment) kind empirical {
+    label ru-KZ official "Президент вносит кандидатуру Премьер-Министра на рассмотрение Мажилиса";
+}
+relation pm_nomination_submitted_1995(appointment: Appointment) kind institutional {
+    label ru-KZ official "кандидатура Премьер-Министра внесена правомерно";
+}
+relation government_structure_decision(act_item: GovernmentDecision) kind empirical {
+    label ru-KZ official "решение определяет структуру Правительства";
+}
+relation prime_minister_structure_submission(act_item: GovernmentDecision) kind empirical {
+    label ru-KZ official "имеется представление Премьер-Министра о структуре Правительства";
+}
+relation government_structure_decision_attempt(authority: President, act_item: GovernmentDecision) kind empirical {
+    label ru-KZ official "Президент определяет структуру Правительства";
+}
+relation government_structure_determined_1995(act_item: GovernmentDecision) kind institutional {
+    label ru-KZ official "структура Правительства определена";
+}
+relation government_member_appointment(appointment: Appointment) kind empirical {
+    label ru-KZ official "назначение производится на должность члена Правительства";
+}
+relation pm_submission_after_mazhilis_consultations(appointment: Appointment) kind empirical {
+    label ru-KZ official "имеется представление Премьер-Министра, внесённое после консультаций с Мажилисом Парламента";
+}
+relation five_year_office_appointment(appointment: Appointment) kind empirical {
+    label ru-KZ official "назначение производится на должность Председателя либо члена Центральной избирательной комиссии либо Высшей аудиторской палаты";
+}
+relation appointment_term_is_five_years(appointment: Appointment) kind empirical {
+    label ru-KZ official "назначение произведено сроком на пять лет";
+}
+
+// --- Ст. 45. Акты Президента --------------------------------------------
+
+relation presidential_act(act: PresidentialAct, authority: President) kind empirical {
+    label ru-KZ official "акт издан данным Президентом";
+}
+relation presidential_act_based_on_constitution_and_law(act: PresidentialAct) kind empirical {
+    label ru-KZ official "акт издан на основе и во исполнение Конституции и законов";
+}
+relation presidential_act_binding_nationwide_1995(act: PresidentialAct) kind institutional {
+    label ru-KZ official "акт Президента обязателен на всей территории Республики";
+}
+relation act_initiated_by_government(act: PresidentialAct) kind empirical {
+    label ru-KZ official "акт издан по инициативе Правительства";
+}
+relation act_countersigned_by_pm_or_chamber_chair(act: PresidentialAct) kind empirical {
+    label ru-KZ official "акт скреплён подписью Премьер-Министра либо председателя Палаты Парламента";
+}
+relation countersignatory_bears_legal_responsibility_1995(act: PresidentialAct) kind institutional {
+    label ru-KZ official "скрепивший акт несёт юридическую ответственность за его законность";
+}
+
+// --- Ст. 46. Неприкосновенность ------------------------------------------
+
+relation state_authority(authority: StateAuthority) kind empirical {
+    label ru-KZ official "субъект является государственным органом либо должностным лицом";
+}
+relation former_president(person: Person) kind empirical {
+    label ru-KZ official "лицо является бывшим Президентом Республики";
+}
+relation presidential_inviolability_infringement(person: Person) kind institutional {
+    label ru-KZ official "нарушена неприкосновенность Президента";
+}
+relation state_funded_protection_provided(person: Person) kind empirical {
+    label ru-KZ official "бывшему Президенту обеспечена охрана за счёт государства";
+}
+
+// --- Ст. 47. Досрочное освобождение и отрешение --------------------------
+
+relation incapacity_case(impeachment: Impeachment) kind empirical {
+    label ru-KZ official "производство является производством об освобождении Президента по состоянию здоровья";
+}
+relation medical_commission_conclusion(impeachment: Impeachment) kind empirical {
+    label ru-KZ official "имеется заключение медицинской комиссии";
+}
+relation constitutional_court_procedure_confirmed(impeachment: Impeachment) kind empirical {
+    label ru-KZ official "Конституционный Суд подтвердил соблюдение установленных конституционных процедур";
+}
+relation senate_total_deputies(impeachment: Impeachment, total: Integer) kind empirical {
+    label ru-KZ official "общее число депутатов Сената";
+}
+relation mazhilis_total_deputies(impeachment: Impeachment, total: Integer) kind empirical {
+    label ru-KZ official "общее число депутатов Мажилиса";
+}
+relation senate_release_votes(impeachment: Impeachment, votes: Integer) kind empirical {
+    label ru-KZ official "число голосов Сената, поданных за освобождение по состоянию здоровья";
+}
+relation mazhilis_release_votes(impeachment: Impeachment, votes: Integer) kind empirical {
+    label ru-KZ official "число голосов Мажилиса, поданных за освобождение по состоянию здоровья";
+}
+relation president_released_for_incapacity_1995(impeachment: Impeachment) kind institutional {
+    label ru-KZ official "Президент досрочно освобождён от должности по состоянию здоровья";
+}
+
+relation impeachment_case(impeachment: Impeachment) kind empirical {
+    label ru-KZ official "производство является производством об отрешении Президента от должности";
+}
+relation treason_charge(impeachment: Impeachment) kind empirical {
+    label ru-KZ official "Президенту предъявлено обвинение в государственной измене";
+}
+relation mazhilis_initiating_votes(impeachment: Impeachment, votes: Integer) kind empirical {
+    label ru-KZ official "число депутатов Мажилиса, инициировавших отрешение";
+}
+relation mazhilis_accusation_votes(impeachment: Impeachment, votes: Integer) kind empirical {
+    label ru-KZ official "число голосов Мажилиса, поданных за выдвижение обвинения";
+}
+relation senate_investigation_votes(impeachment: Impeachment, votes: Integer) kind empirical {
+    label ru-KZ official "число голосов Сената, поданных за возложение расследования";
+}
+// Канал суждения §47.3 (DECISION-0194, выбор сделан при касании пакета
+// 12.09.2026). Обоснованность обвинения Конституция не вычисляет и не отдаёт
+// автору дела: она НАЗЫВАЕТ ОРГАН — «при наличии заключения Верховного Суда
+// об обоснованности обвинения». Плоским эмпирическим фактом это означало бы,
+// что содержание оценки целиком пришло из дела, а доказательство лишь
+// повторило сказанное ему (строка линта `evaluative-fact-without-producer`).
+// Читатель `ImpeachmentFinalStage` строгий, поэтому канал доходит до ответа:
+// без заключения — REQUIRES_JUDGMENT, с ответом (`origin adjudicated`) —
+// обычный вывод.
+external judgment relation supreme_court_charge_supported(impeachment: Impeachment) {
+    authority SupremeCourt;
+    label ru-KZ official "Верховный Суд дал заключение об обоснованности обвинения";
+}
+relation senate_final_votes(impeachment: Impeachment, votes: Integer) kind empirical {
+    label ru-KZ official "число голосов Сената при окончательном решении";
+}
+relation mazhilis_final_votes(impeachment: Impeachment, votes: Integer) kind empirical {
+    label ru-KZ official "число голосов Мажилиса при окончательном решении";
+}
+relation final_decision_within_two_months(impeachment: Impeachment) kind empirical {
+    label ru-KZ official "окончательное решение принято в двухмесячный срок";
+}
+relation impeachment_charge_brought_1995(impeachment: Impeachment) kind institutional {
+    label ru-KZ official "решение о выдвижении обвинения принято большинством от общего числа депутатов Мажилиса";
+}
+relation pm_appointment_consultations_completed_1995(appointment: Appointment) kind institutional {
+    label ru-KZ official "кандидатура Премьер-Министра внесена после консультаций с фракциями политических партий";
+}
+relation impeachment_initiative_valid_1995(impeachment: Impeachment) kind institutional {
+    label ru-KZ official "инициатива об отрешении заявлена управомоченным числом депутатов";
+}
+relation impeachment_investigation_valid_1995(impeachment: Impeachment) kind institutional {
+    label ru-KZ official "расследование обвинения возложено правомерно";
+}
+relation president_removed_by_impeachment_1995(impeachment: Impeachment) kind institutional {
+    label ru-KZ official "Президент отрешён от должности";
+}
+relation charge_rejected(impeachment: Impeachment) kind empirical {
+    label ru-KZ official "обвинение отклонено";
+}
+relation initiating_mazhilis_deputies_powers_terminated_1995(impeachment: Impeachment) kind institutional {
+    label ru-KZ official "полномочия инициировавших обвинение депутатов Мажилиса прекращаются";
+}
+relation parliament_dissolution_under_consideration() kind empirical {
+    label ru-KZ official "рассматривается вопрос о роспуске Парламента либо Мажилиса";
+}
+relation impeachment_may_not_be_initiated_1995(impeachment: Impeachment) kind institutional {
+    label ru-KZ official "вопрос об отрешении Президента не может быть возбуждён";
+}
+
+// Ст. 47 пункты 2 и 3, деонтический слой 13.09.2026. Пункт 2 читается как
+// ИММУНИТЕТ с единственным исключением: «несёт ответственность за действия,
+// совершённые при исполнении своих обязанностей, ТОЛЬКО в случае
+// государственной измены». Блокируемое правовое изменение названо текстом —
+// привлечение к ответственности за должностные действия; исключение названо
+// тем же пунктом и потому выражено полномочием с приоритетом, а не
+// переписыванием иммунитета. Пункт 3 — второй барьер: он блокирует
+// возбуждение вопроса об отрешении, пока Президент рассматривает вопрос о
+// роспуске Парламента.
+relation mazhilis_chamber(house: Mazhilis) kind empirical {
+    label ru-KZ official "орган является Мажилисом Парламента";
+}
+relation presidential_liability_attempt(authority: StateAuthority, person: Person) kind empirical {
+    label ru-KZ official "государственный орган привлекает Президента к ответственности за действия, совершённые при исполнении обязанностей";
+}
+relation state_treason_by_president_1995(person: Person) kind empirical {
+    label ru-KZ official "действия Президента образуют государственную измену";
+}
+relation president_held_liable_for_acts_in_office_1995(person: Person) kind institutional {
+    label ru-KZ official "Президент привлечён к ответственности за действия, совершённые при исполнении обязанностей";
+}
+relation impeachment_initiation_attempt(house: Mazhilis, impeachment: Impeachment) kind empirical {
+    label ru-KZ official "Мажилис возбуждает вопрос об отрешении Президента от должности";
+}
+relation impeachment_initiated_1995(impeachment: Impeachment) kind institutional {
+    label ru-KZ official "вопрос об отрешении Президента возбуждён";
+}
+
+// --- Ст. 48. Преемство ---------------------------------------------------
+
+relation presidential_vacancy(occasion: SuccessionEvent) kind empirical {
+    label ru-KZ official "наступило досрочное освобождение, отрешение либо смерть Президента";
+}
+relation senate_chair(person: Person) kind empirical {
+    label ru-KZ official "лицо является Председателем Сената";
+}
+relation mazhilis_chair(person: Person) kind empirical {
+    label ru-KZ official "лицо является Председателем Мажилиса";
+}
+relation prime_minister(person: Person) kind empirical {
+    label ru-KZ official "лицо является Премьер-Министром";
+}
+relation senate_chair_unable(occasion: SuccessionEvent) kind empirical {
+    label ru-KZ official "Председатель Сената не может принять на себя полномочия Президента";
+}
+relation mazhilis_chair_unable(occasion: SuccessionEvent) kind empirical {
+    label ru-KZ official "Председатель Мажилиса не может принять на себя полномочия Президента";
+}
+relation assumes_presidential_powers_1995(occasion: SuccessionEvent, person: Person) kind institutional {
+    label ru-KZ official "лицо принимает на себя полномочия Президента";
+}
+relation acting_president(person: Person) kind empirical {
+    label ru-KZ official "лицо исполняет обязанности Президента";
+}
+relation constitutional_amendment_initiative_attempt(person: Person) kind empirical {
+    label ru-KZ official "исполняющий обязанности Президента инициирует изменение Конституции";
+}
+relation acting_president_amendment_initiative_prohibited_1995(person: Person) kind institutional {
+    label ru-KZ official "исполняющему обязанности Президента запрещено инициировать изменение Конституции";
+}
+
+// =========================================================================
+// Конституционные числа. Каждое сверено с закреплённым текстом; ни одно не
+// перенесено из редакции 2026.
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART41_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART41_KK")
+assert president_term_years_1995(7);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART41_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART41_KK")
+assert president_minimum_age_1995(40);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART41_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART41_KK")
+assert president_residence_years_1995(15);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART41_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART41_KK")
+assert election_majority_percent_1995(50);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART42_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART42_KK")
+assert succession_oath_months_1995(1);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_KK")
+assert law_signature_months_1995(1);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_KK")
+assert impeachment_initiative_numerator_1995(1);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_KK")
+assert impeachment_initiative_denominator_1995(3);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_KK")
+assert impeachment_final_numerator_1995(3);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_KK")
+assert impeachment_final_denominator_1995(4);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_KK")
+assert impeachment_deadline_months_1995(2);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_KK")
+assert incapacity_release_numerator_1995(3);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_KK")
+assert incapacity_release_denominator_1995(4);
+
+// --- Ст. 40. Статус: конститутивные факты, не правила --------------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART40_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART40_KK")
+assert president_is_head_of_state_1995();
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART40_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART40_KK")
+assert president_is_symbol_and_guarantor_of_unity_1995();
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART40_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART40_KK")
+assert president_ensures_concerted_branch_functioning_1995();
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_KK")
+assert president_addresses_annual_message_1995();
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_KK")
+assert president_is_supreme_commander_1995();
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_KK")
+assert president_decides_citizenship_and_asylum_1995();
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_KK")
+assert president_exercises_pardon_1995();
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_KK")
+assert president_forms_state_guard_service_1995();
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_KK")
+assert president_forms_security_council_and_assembly_1995();
+
+// --- Ст. 41. Выборы ------------------------------------------------------
+
+// РАСХОЖДЕНИЕ 1. Ценз стажа государственной службы в 1995 ОТСУТСТВУЕТ; 2026
+// ст. 43 ввёл пять лет. Кандидат без стажа избираем до 01.07.2026 и
+// неизбираем после — это расхождение исхода, а не редактуры.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART41_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART41_KK")
+rule PresidentialCandidateEligibility1995(
+    candidate: Candidate,
+    person: Person,
+    age: Integer,
+    residence: Integer,
+) strict {
+    when candidate_person(candidate, person)
+        and citizen_by_birth(person)
+        and age_years(person, age)
+        and resides_last_years(person, residence)
+        and higher_education(person)
+        and fluent_in_state_language(person)
+        and (age >= 40)
+        and (residence >= 15);
+    then eligible_presidential_candidate_1995(candidate);
+    label ru-KZ official "Статья 41 пункт 2 (ред. 1995). Президентом может быть избран гражданин по рождению не моложе сорока лет, владеющий государственным языком, проживающий в Казахстане пятнадцать лет и имеющий высшее образование";
+}
+
+// Ст. 41 п. 5: порог избрания записан в самой Конституции 1995.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART41_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART41_KK")
+rule ElectedByAbsoluteMajority1995(
+    election: Election,
+    person: Person,
+    votes: Integer,
+    voters: Integer,
+) strict {
+    when presidential_election(election)
+        and presidential_vote(election, person, votes)
+        and participating_voters(election, voters)
+        and (votes * 2 > voters);
+    then elected_president_1995(person);
+    label ru-KZ official "Статья 41 пункт 5 (ред. 1995). Избранным считается кандидат, набравший более пятидесяти процентов голосов принявших участие в голосовании";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART41_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART41_KK")
+rule RunoffRequired1995(election: Election) strict {
+    when presidential_election(election);
+    when no_candidate_reached_majority(election);
+    then runoff_required_1995(election);
+    label ru-KZ official "Статья 41 пункт 5 (ред. 1995). Если ни один кандидат не набрал указанного числа голосов, проводится повторное голосование";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART41_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART41_KK")
+rule ElectedInRunoff1995(election: Election, person: Person) strict {
+    when runoff_ballot(election);
+    when highest_vote_in_runoff(election, person);
+    then elected_president_1995(person);
+    label ru-KZ official "Статья 41 пункт 5 (ред. 1995). В повторном голосовании избранным считается кандидат, набравший большее число голосов";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART41_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART41_KK")
+rule RegularElectionDateAdmissible1995(election: Election) strict {
+    when regular_election_on_first_december_sunday(election);
+    when not coincides_with_parliament_election(election);
+    then regular_election_date_admissible_1995(election);
+    label ru-KZ official "Статья 41 пункт 3 (ред. 1995). Очередные выборы проводятся в первое воскресенье декабря и не могут совпадать по срокам с выборами нового состава Парламента";
+}
+
+// --- Ст. 42. Присяга, прекращение полномочий, однократность --------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART42_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART42_KK")
+rule PresidentAssumesOfficeOnOath1995(person: Person) strict {
+    when oath_taken(person);
+    then president_assumed_office_1995(person);
+    label ru-KZ official "Статья 42 пункт 1 (ред. 1995). Президент вступает в должность с момента принесения народу присяги";
+}
+
+// РАСХОЖДЕНИЕ 2. Присяга преемника в 1995 — в течение ОДНОГО МЕСЯЦА; 2026
+// сжал срок до семи дней.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART42_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART42_KK")
+rule SuccessionOathTimely1995(occasion: SuccessionEvent, person: Person) strict {
+    when succession_event(occasion, person);
+    when succession_oath_within_one_month(occasion);
+    then succession_oath_timely_1995(occasion);
+    label ru-KZ official "Статья 42 пункт 2 (ред. 1995). Лицом, принявшим полномочия Президента, присяга приносится в течение одного месяца";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART42_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART42_KK")
+rule PresidentialPowersTerminated1995(person: Person) strict {
+    when new_president_assumed_office(person)
+        or early_release_or_removal(person)
+        or president_deceased(person);
+    then presidential_powers_terminated_1995(person);
+    label ru-KZ official "Статья 42 пункт 3 (ред. 1995). Полномочия прекращаются с вступлением в должность вновь избранного Президента, при досрочном освобождении, отрешении либо кончине";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART42_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART42_KK")
+rule FormerPresidentTitle1995(person: Person) strict {
+    when presidential_powers_terminated_1995(person);
+    when not removed_from_office(person);
+    then former_president_title_held_1995(person);
+    label ru-KZ official "Статья 42 пункт 3 (ред. 1995). Все бывшие Президенты, кроме отрешённых от должности, имеют звание экс-Президента";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART42_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART42_KK")
+rule RepeatedElectionProhibited1995(person: Person) strict {
+    when previously_elected_president(person);
+    when repeated_election_attempt(person);
+    then repeated_election_prohibited_1995(person);
+    label ru-KZ official "Статья 42 пункт 5 (ред. 1995). Одно и то же лицо не может быть избрано Президентом более одного раза";
+}
+
+// --- Ст. 43. Несовместимости ---------------------------------------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART43_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART43_KK")
+rule PresidentialOfficeIncompatible1995(authority: President) strict {
+    when president_holds_representative_mandate(authority)
+        or president_holds_other_paid_office(authority)
+        or president_conducts_business(authority)
+        or president_party_member(authority);
+    then presidential_office_incompatible_1995(authority);
+    label ru-KZ official "Статья 43 пункты 1 и 3 (ред. 1995). Президент не вправе быть депутатом, занимать иные оплачиваемые должности, вести предпринимательскую деятельность и состоять в политической партии";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART43_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART43_KK")
+rule PresidentialRelativePositionProhibited1995(person: Person, authority: President) strict {
+    when close_relative_of_president(person, authority);
+    when relative_holds_political_office_or_quasistate_leadership(person);
+    then presidential_relative_position_prohibited_1995(person);
+    label ru-KZ official "Статья 43 пункт 4 (ред. 1995). Близкие родственники Президента не вправе занимать должности политических государственных служащих и руководителей квазигосударственного сектора";
+}
+
+// --- Ст. 44. Полномочия с конституционным условием ------------------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_KK")
+rule LawSigningPower1995(authority: President, law: Law) strict {
+    when president(authority);
+    when law_presented(law, authority);
+    then power SignPresentedLaw1995 {
+        holder authority;
+        exercise presidential_signature_attempt(authority, law);
+        valid_when signature_within_one_month(law);
+        effect law_signed_1995(law);
+    };
+    label ru-KZ official "Статья 44 подпункт 2 (ред. 1995). Президент подписывает представленный Парламентом закон в течение одного месяца";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_KK")
+rule LawReturnPower1995(authority: President, law: Law) strict {
+    when president(authority);
+    when law_presented(law, authority);
+    then power ReturnLawForReconsideration1995 {
+        holder authority;
+        exercise presidential_return_attempt(authority, law);
+        valid_when signature_within_one_month(law);
+        effect law_returned_for_reconsideration_1995(law);
+    };
+    label ru-KZ official "Статья 44 подпункт 2 (ред. 1995). Президент возвращает закон или отдельные его статьи для повторного обсуждения и голосования";
+}
+
+// Ст. 44 подпункт 3: назначение Премьер-Министра — согласие МАЖИЛИСА после
+// консультаций с фракциями. В 2026 согласие даёт однопалатный Курултай:
+// орган другой, поэтому и предикат другой.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_KK")
+rule MazhilisConsentAppointmentPower1995(authority: President, appointment: Appointment) strict {
+    when president(authority);
+    when appointment_requires_mazhilis_consent(appointment);
+    then power AppointWithMazhilisConsent1995 {
+        holder authority;
+        exercise presidential_appointment_attempt(authority, appointment);
+        valid_when mazhilis_consent_given(appointment);
+        effect appointment_effective_1995(appointment);
+    };
+    label ru-KZ official "Статья 44 подпункт 3 (ред. 1995). С согласия Мажилиса Президент назначает Премьер-Министра";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_KK")
+rule SenateConsentAppointmentPower1995(authority: President, appointment: Appointment) strict {
+    when president(authority);
+    when appointment_requires_senate_consent(appointment);
+    then power AppointWithSenateConsent1995 {
+        holder authority;
+        exercise presidential_appointment_attempt(authority, appointment);
+        valid_when senate_consent_given(appointment);
+        effect appointment_effective_1995(appointment);
+    };
+    label ru-KZ official "Статья 44 подпункт 4 (ред. 1995). С согласия Сената назначаются Председатель Конституционного Суда, Председатель Национального Банка, Председатель Высшего Судебного Совета, Генеральный Прокурор и Председатель КНБ";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_KK")
+rule ReferendumPower1995(authority: President, referendum: Referendum) strict {
+    when president(authority);
+    when referendum_proposal(referendum);
+    then power CallReferendum1995 {
+        holder authority;
+        exercise referendum_decision_attempt(authority, referendum);
+        valid_when president(authority);
+        effect referendum_called_1995(referendum);
+    };
+    label ru-KZ official "Статья 44 подпункт 10 (ред. 1995). Президент принимает решение о проведении республиканского референдума";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_KK")
+rule ConstitutionalReviewPetitionPower1995(
+    authority: President,
+    petition: ConstitutionalPetition,
+) strict {
+    when president(authority);
+    when constitutional_petition(petition);
+    then power PetitionConstitutionalCourt1995 {
+        holder authority;
+        exercise constitutional_review_petition_attempt(authority, petition);
+        valid_when petition_protects_rights_or_security(petition);
+        effect constitutional_review_requested_1995(petition);
+    };
+    label ru-KZ official "Статья 44 подпункт 10-1 (ред. 1995). Президент направляет обращение в Конституционный Суд о рассмотрении вступившего в силу акта на соответствие Конституции";
+}
+
+// Ст. 44 подпункт 16: чрезвычайное положение. Конституция 1995 называет ЧЕТЫРЕ
+// условия — серьёзная и непосредственная угроза, нарушенное функционирование
+// конституционных органов, официальные консультации с Премьер-Министром и
+// председателями Палат, незамедлительное информирование Парламента.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_KK")
+rule EmergencyPower1995(authority: President, measure: EmergencyMeasure) strict {
+    when president(authority);
+    when emergency_measure(measure);
+    when serious_and_immediate_threat();
+    when constitutional_organs_functioning_disrupted();
+    when emergency_consultations_with_pm_and_chairs_completed();
+    then power AdoptEmergencyMeasure1995 {
+        holder authority;
+        exercise emergency_measure_attempt(authority, measure);
+        valid_when parliament_immediately_informed();
+        effect emergency_measure_in_force_1995(measure);
+    };
+    label ru-KZ official "Статья 44 подпункт 16 (ред. 1995). Президент вводит чрезвычайное положение после официальных консультаций с Премьер-Министром и председателями Палат с незамедлительным информированием Парламента";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_KK")
+rule MartialPower1995(authority: President, measure: EmergencyMeasure) strict {
+    when president(authority);
+    when emergency_measure(measure);
+    when aggression_or_immediate_external_threat();
+    then power AdoptMartialMeasure1995 {
+        holder authority;
+        exercise martial_measure_attempt(authority, measure);
+        valid_when parliament_immediately_informed();
+        effect martial_measure_in_force_1995(measure);
+    };
+    label ru-KZ official "Статья 44 подпункт 17 (ред. 1995). В случае агрессии либо непосредственной внешней угрозы Президент вводит военное положение и незамедлительно информирует Парламент";
+}
+
+// Ст. 44 подпункт 3: внесение кандидатуры Премьер-Министра. Условие
+// действительности — консультации с фракциями; они отдельный факт дела, и
+// пара «действительно / недействительно» здесь выразима.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_KK")
+rule PrimeMinisterNominationPower1995(authority: President, appointment: Appointment) strict {
+    when president(authority);
+    when appointment_requires_mazhilis_consent(appointment);
+    then power NominatePrimeMinister1995 {
+        holder authority;
+        exercise pm_nomination_attempt(authority, appointment);
+        valid_when fraction_consultations_completed(appointment);
+        effect pm_nomination_submitted_1995(appointment);
+    };
+    label ru-KZ official "Статья 44 подпункт 3 (ред. 1995). После консультаций с фракциями политических партий, представленных в Мажилисе, Президент вносит на рассмотрение Мажилиса кандидатуру Премьер-Министра";
+}
+
+// Ст. 44 подпункт 3: структура Правительства определяется ПО ПРЕДСТАВЛЕНИЮ
+// Премьер-Министра — представление и есть условие действительности.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_KK")
+rule GovernmentStructurePower1995(authority: President, act_item: GovernmentDecision) strict {
+    when president(authority);
+    when government_structure_decision(act_item);
+    then power DetermineGovernmentStructure1995 {
+        holder authority;
+        exercise government_structure_decision_attempt(authority, act_item);
+        valid_when prime_minister_structure_submission(act_item);
+        effect government_structure_determined_1995(act_item);
+    };
+    label ru-KZ official "Статья 44 подпункт 3 (ред. 1995). По представлению Премьер-Министра Президент определяет структуру Правительства";
+}
+
+// Ст. 44 подпункт 3: члены Правительства назначаются по представлению
+// Премьер-Министра, ВНЕСЁННОМУ ПОСЛЕ КОНСУЛЬТАЦИЙ С МАЖИЛИСОМ. Оговорка
+// «самостоятельно назначает министров иностранных дел, обороны, внутренних
+// дел» условия не содержит и полномочием не заводится.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_KK")
+rule GovernmentMemberAppointmentPower1995(authority: President, appointment: Appointment) strict {
+    when president(authority);
+    when government_member_appointment(appointment);
+    then power AppointGovernmentMember1995 {
+        holder authority;
+        exercise presidential_appointment_attempt(authority, appointment);
+        valid_when pm_submission_after_mazhilis_consultations(appointment);
+        effect appointment_effective_1995(appointment);
+    };
+    label ru-KZ official "Статья 44 подпункт 3 (ред. 1995). По представлению Премьер-Министра, внесённому после консультаций с Мажилисом Парламента, Президент назначает на должности членов Правительства";
+}
+
+// Ст. 44 подпункт 7: СРОК назначения назван самой Конституцией — пять лет.
+// Это условие действительности, а не свойство должности: назначение на иной
+// срок конституционного основания не имеет.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_KK")
+rule FiveYearOfficeAppointmentPower1995(authority: President, appointment: Appointment) strict {
+    when president(authority);
+    when five_year_office_appointment(appointment);
+    then power AppointForFiveYearTerm1995 {
+        holder authority;
+        exercise presidential_appointment_attempt(authority, appointment);
+        valid_when appointment_term_is_five_years(appointment);
+        effect appointment_effective_1995(appointment);
+    };
+    label ru-KZ official "Статья 44 подпункт 7 (ред. 1995). Президент назначает на должности сроком на пять лет Председателя и двух членов Центральной избирательной комиссии, Председателя и двух членов Высшей аудиторской палаты";
+}
+
+// --- Ст. 45. Акты Президента ---------------------------------------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART45_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART45_KK")
+rule PresidentialActBinding1995(act: PresidentialAct, authority: President) strict {
+    when presidential_act(act, authority);
+    when presidential_act_based_on_constitution_and_law(act);
+    then presidential_act_binding_nationwide_1995(act);
+    label ru-KZ official "Статья 45 пункт 1 (ред. 1995). Президент на основе и во исполнение Конституции и законов издаёт указы и распоряжения, обязательные на всей территории Республики";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART45_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART45_KK")
+rule CountersignatureResponsibility1995(act: PresidentialAct) strict {
+    when act_initiated_by_government(act);
+    when act_countersigned_by_pm_or_chamber_chair(act);
+    then countersignatory_bears_legal_responsibility_1995(act);
+    label ru-KZ official "Статья 45 пункт 3 (ред. 1995). Скрепивший акт Председатель Палаты либо Премьер-Министр несёт юридическую ответственность за его законность";
+}
+
+// --- Ст. 46. Неприкосновенность -------------------------------------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART46_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART46_KK")
+rule PresidentialInviolabilityImmunity1995(person: Person, authority: President) strict {
+    when president(authority);
+    when president_person(authority, person);
+    then immunity PresidentialInviolability1995 {
+        holder person;
+        protected_effect presidential_inviolability_infringement(person);
+    };
+    label ru-KZ official "Статья 46 пункт 1 (ред. 1995). Президент, его честь и достоинство неприкосновенны";
+}
+
+// Ст. 46 п. 3 прямо распространяет иммунитет на экс-Президентов — это
+// самостоятельная норма, а не толкование.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART46_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART46_KK")
+rule FormerPresidentInviolabilityImmunity1995(person: Person) strict {
+    when former_president(person);
+    then immunity FormerPresidentialInviolability1995 {
+        holder person;
+        protected_effect presidential_inviolability_infringement(person);
+    };
+    label ru-KZ official "Статья 46 пункт 3 (ред. 1995). Положения о неприкосновенности распространяются на экс-Президентов Республики";
+}
+
+// --- Ст. 47. Досрочное освобождение и отрешение ---------------------------
+//
+// ИНСТИТУТ РАЗЛИЧАЕТСЯ. Процедура 1995 распределена между двумя Палатами и
+// требует квалифицированного большинства В КАЖДОЙ из них; в 2026 весь
+// процесс идёт в однопалатном Курултае. Поэтому три четверти считаются
+// дважды — по Сенату и по Мажилису отдельно, а не от одного общего числа.
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_KK")
+rule PresidentReleasedForIncapacity1995(
+    process: Impeachment,
+    senate_votes: Integer,
+    senate_total: Integer,
+    mazhilis_votes: Integer,
+    mazhilis_total: Integer,
+) strict {
+    when incapacity_case(process)
+        and medical_commission_conclusion(process)
+        and constitutional_court_procedure_confirmed(process)
+        and senate_release_votes(process, senate_votes)
+        and senate_total_deputies(process, senate_total)
+        and mazhilis_release_votes(process, mazhilis_votes)
+        and mazhilis_total_deputies(process, mazhilis_total)
+        and (senate_votes * 4 >= senate_total * 3)
+        and (mazhilis_votes * 4 >= mazhilis_total * 3);
+    then president_released_for_incapacity_1995(process);
+    label ru-KZ official "Статья 47 пункт 1 (ред. 1995). Решение о досрочном освобождении по болезни принимается большинством не менее трёх четвертей от общего числа депутатов каждой из Палат";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_KK")
+rule ImpeachmentInitiativeThreshold1995(
+    process: Impeachment,
+    votes: Integer,
+    total: Integer,
+) strict {
+    when impeachment_case(process)
+        and treason_charge(process)
+        and mazhilis_initiating_votes(process, votes)
+        and mazhilis_total_deputies(process, total)
+        and (votes * 3 >= total);
+    then impeachment_initiative_valid_1995(process);
+    label ru-KZ official "Статья 47 пункт 2 (ред. 1995). Решение о выдвижении обвинения принимается по инициативе не менее чем одной трети депутатов Мажилиса";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_RU")
+// Три нормы редакции 1995, чьи предикаты были ОБЪЯВЛЕНЫ и не читались ни одним
+// правилом: большинство Мажилиса при выдвижении обвинения (ст. 47 п. 2 — порогов
+// там ДВА, инициатива одной трети и решение большинством, а выражен был только
+// первый), консультации с фракциями перед внесением кандидатуры
+// Премьер-Министра (ст. 44 подпункт 3) и обеспечение экс-Президента за счёт
+// государства (ст. 46 пункты 2 и 3).
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_KK")
+rule ImpeachmentChargeBroughtByMazhilisMajority1995(
+    impeachment: Impeachment,
+    votes: Integer,
+    total: Integer,
+) strict {
+    when impeachment_initiative_valid_1995(impeachment)
+        and mazhilis_accusation_votes(impeachment, votes)
+        and mazhilis_total_deputies(impeachment, total)
+        and (votes * 2 > total);
+    then impeachment_charge_brought_1995(impeachment);
+    label ru-KZ official "Статья 47 пункт 2 (ред. 1995). Решение о выдвижении обвинения принимается большинством от общего числа депутатов Мажилиса";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART44_KK")
+rule PrimeMinisterNomineeAfterFractionConsultations1995(appointment: Appointment) strict {
+    when appointment_requires_mazhilis_consent(appointment);
+    when fraction_consultations_completed(appointment);
+    then pm_appointment_consultations_completed_1995(appointment);
+    label ru-KZ official "Статья 44 подпункт 3) (ред. 1995). Кандидатура Премьер-Министра вносится на рассмотрение Мажилиса после консультаций с фракциями политических партий";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART46_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART46_KK")
+rule FormerPresidentStateProvisionDuty1995(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when former_president(person);
+    then duty ProvideStateFundedProtection1995 {
+        bearer authority;
+        beneficiary person;
+        goal maintenance {
+            condition state_funded_protection_provided(person);
+            window [@1995-09-05, @2026-07-01);
+            completeness_policy StateProtectionCompleteness;
+        }
+    };
+    label ru-KZ official "Статья 46 пункты 2 и 3 (ред. 1995). Обеспечение, обслуживание и охрана Президента и его семьи осуществляются за счёт государства; положения статьи распространяются на экс-Президентов";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_KK")
+rule ImpeachmentInvestigationValid1995(
+    process: Impeachment,
+    votes: Integer,
+    total: Integer,
+) strict {
+    when impeachment_initiative_valid_1995(process)
+        and senate_investigation_votes(process, votes)
+        and senate_total_deputies(process, total)
+        and (votes * 2 > total);
+    then impeachment_investigation_valid_1995(process);
+    label ru-KZ official "Статья 47 пункт 2 (ред. 1995). Расследование обвинения организуется Сенатом, результаты передаются большинством голосов от общего числа его депутатов";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_KK")
+rule PresidentRemovedByImpeachment1995(
+    process: Impeachment,
+    senate_votes: Integer,
+    senate_total: Integer,
+    mazhilis_votes: Integer,
+    mazhilis_total: Integer,
+) strict {
+    when impeachment_investigation_valid_1995(process)
+        and supreme_court_charge_supported(process)
+        and constitutional_court_procedure_confirmed(process)
+        and final_decision_within_two_months(process)
+        and senate_final_votes(process, senate_votes)
+        and senate_total_deputies(process, senate_total)
+        and mazhilis_final_votes(process, mazhilis_votes)
+        and mazhilis_total_deputies(process, mazhilis_total)
+        and (senate_votes * 4 >= senate_total * 3)
+        and (mazhilis_votes * 4 >= mazhilis_total * 3);
+    then president_removed_by_impeachment_1995(process);
+    label ru-KZ official "Статья 47 пункт 2 (ред. 1995). Окончательное решение принимается большинством не менее трёх четвертей голосов депутатов каждой из Палат при заключениях Верховного и Конституционного Судов";
+}
+
+// РАСХОЖДЕНИЕ 4. Санкция за неудавшийся импичмент: отклонение обвинения на
+// любой стадии прекращает полномочия депутатов-инициаторов.
+//
+// ИСПРАВЛЕНО 28.08.2026. Здесь стояло «в редакции 2026 такой нормы нет», и это
+// неверно: ст. 50.3 Конституции 2026 несёт то же последствие дословно
+// («…влечет за собой досрочное прекращение полномочий депутатов Курултая,
+// инициировавших рассмотрение данного вопроса»). Утверждение держалось на том,
+// что норма не была формализована в пакете 2026, а не на тексте; оно
+// продержалось до тех пор, пока ст. 50.3 не заформализовали целиком
+// (RejectedChargeTerminatesInitiators). Расхождение настоящее и остаётся, но
+// оно в ПАЛАТЕ: 1995 прекращает полномочия депутатов Мажилиса — палаты,
+// которой в 2026 нет вовсе, — а 2026 депутатов однопалатного Курултая.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_KK")
+rule RejectedChargeTerminatesInitiators1995(process: Impeachment) strict {
+    when impeachment_case(process);
+    when treason_charge(process);
+    when charge_rejected(process);
+    then initiating_mazhilis_deputies_powers_terminated_1995(process);
+    label ru-KZ official "Статья 47 пункт 2 (ред. 1995). Отклонение обвинения на любой стадии влечёт досрочное прекращение полномочий инициировавших его депутатов Мажилиса";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_KK")
+rule ImpeachmentBarredDuringDissolution1995(process: Impeachment) strict {
+    when impeachment_case(process);
+    when parliament_dissolution_under_consideration();
+    then impeachment_may_not_be_initiated_1995(process);
+    label ru-KZ official "Статья 47 пункт 3 (ред. 1995). Вопрос об отрешении не может быть возбуждён в период рассмотрения Президентом вопроса о досрочном прекращении полномочий Парламента или Мажилиса";
+}
+
+// Ст. 47 п. 2, сторона иммунитета. Неприкосновенность ст. 46 защищает честь
+// и достоинство; ответственность за ДОЛЖНОСТНЫЕ действия закрыта отдельной
+// нормой ст. 47 п. 2, и закрыта не абсолютно.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_KK")
+rule OfficialActsImmunity1995(authority: President, person: Person) strict {
+    when president(authority);
+    when president_person(authority, person);
+    then immunity PresidentialLiabilityOnlyForTreason1995 {
+        holder person;
+        protected_effect president_held_liable_for_acts_in_office_1995(person);
+    };
+    label ru-KZ official "Статья 47 пункт 2 (ред. 1995). Президент несёт ответственность за действия, совершённые при исполнении своих обязанностей, только в случае государственной измены";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_KK")
+rule TreasonLiabilityPower1995(authority: StateAuthority, head: President, person: Person) strict {
+    when state_authority(authority);
+    when president(head);
+    when president_person(head, person);
+    then power HoldPresidentLiableForTreason1995 {
+        holder authority;
+        exercise presidential_liability_attempt(authority, person);
+        valid_when state_treason_by_president_1995(person);
+        effect president_held_liable_for_acts_in_office_1995(person);
+    };
+    label ru-KZ official "Статья 47 пункт 2 (ред. 1995). За государственную измену Президент может быть отрешён от должности Парламентом";
+}
+
+// Исключение вытесняет иммунитет, а не наоборот: измена названа тем же
+// пунктом, что и защита.
+priority TreasonExceptionOverOfficialImmunity1995: TreasonLiabilityPower1995 > OfficialActsImmunity1995 reason constitutional_exception;
+
+// Ст. 47 п. 2, инициатива Мажилиса: условие действительности — управомоченное
+// число инициаторов (не менее одной трети), уже выводимое `ImpeachmentInitiativeThreshold1995`.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_KK")
+rule ImpeachmentInitiationPower1995(house: Mazhilis, process: Impeachment) strict {
+    when mazhilis_chamber(house);
+    when impeachment_case(process);
+    then power InitiateImpeachment1995 {
+        holder house;
+        exercise impeachment_initiation_attempt(house, process);
+        valid_when impeachment_initiative_valid_1995(process);
+        effect impeachment_initiated_1995(process);
+    };
+    label ru-KZ official "Статья 47 пункт 2 (ред. 1995). Решение о выдвижении обвинения и его расследовании принимается по инициативе не менее чем одной трети депутатов Мажилиса";
+}
+
+// Ст. 47 п. 3, сторона барьера: пока Президент рассматривает вопрос о роспуске
+// Парламента либо Мажилиса, возбуждение вопроса об отрешении заблокировано.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART47_KK")
+rule ImpeachmentBarrierDuringDissolutionReview1995(authority: President, process: Impeachment) strict {
+    when president(authority);
+    when impeachment_case(process);
+    when parliament_dissolution_under_consideration();
+    then immunity NoImpeachmentDuringDissolutionReview1995 {
+        holder authority;
+        protected_effect impeachment_initiated_1995(process);
+    };
+    label ru-KZ official "Статья 47 пункт 3 (ред. 1995). Вопрос об отрешении Президента от должности не может быть возбуждён в период рассмотрения им вопроса о досрочном прекращении полномочий Парламента Республики или Мажилиса Парламента";
+}
+
+priority DissolutionReviewBarrierOverImpeachment1995: ImpeachmentBarrierDuringDissolutionReview1995 > ImpeachmentInitiationPower1995 reason lex_specialis;
+
+// --- Ст. 48. Преемство ----------------------------------------------------
+//
+// ИНСТИТУТ РАЗЛИЧАЕТСЯ, и это несущее основание отдельного пакета: цепочка
+// 1995 — Председатель Сената → Председатель Мажилиса → Премьер-Министр. В
+// 2026 полномочия принимает Вице-Президент, должности которого в 1995 нет.
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART48_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART48_KK")
+rule SenateChairAssumesPowers1995(occasion: SuccessionEvent, person: Person) strict {
+    when presidential_vacancy(occasion);
+    when senate_chair(person);
+    when not senate_chair_unable(occasion);
+    then assumes_presidential_powers_1995(occasion, person);
+    label ru-KZ official "Статья 48 пункт 1 (ред. 1995). Полномочия Президента на оставшийся срок переходят к Председателю Сената Парламента";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART48_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART48_KK")
+rule MazhilisChairAssumesPowers1995(occasion: SuccessionEvent, person: Person) strict {
+    when presidential_vacancy(occasion);
+    when senate_chair_unable(occasion);
+    when mazhilis_chair(person);
+    when not mazhilis_chair_unable(occasion);
+    then assumes_presidential_powers_1995(occasion, person);
+    label ru-KZ official "Статья 48 пункт 1 (ред. 1995). При невозможности Председателя Сената полномочия переходят к Председателю Мажилиса";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART48_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART48_KK")
+rule PrimeMinisterAssumesPowers1995(occasion: SuccessionEvent, person: Person) strict {
+    when presidential_vacancy(occasion);
+    when senate_chair_unable(occasion);
+    when mazhilis_chair_unable(occasion);
+    when prime_minister(person);
+    then assumes_presidential_powers_1995(occasion, person);
+    label ru-KZ official "Статья 48 пункт 1 (ред. 1995). При невозможности Председателя Мажилиса полномочия переходят к Премьер-Министру Республики";
+}
+
+// РАСХОЖДЕНИЕ 5. Преемник лишён учредительной инициативы: норма ограничивает
+// именно принявшего полномочия, а не Президента вообще.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART48_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART48_KK")
+rule ActingPresidentCannotInitiateAmendment1995(person: Person) strict {
+    when acting_president(person);
+    when constitutional_amendment_initiative_attempt(person);
+    then acting_president_amendment_initiative_prohibited_1995(person);
+    label ru-KZ official "Статья 48 пункт 2 (ред. 1995). Лицо, принявшее полномочия Президента, не вправе инициировать изменения и дополнения в Конституцию";
+}

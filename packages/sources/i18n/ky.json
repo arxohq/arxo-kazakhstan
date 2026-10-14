@@ -1,0 +1,716 @@
+{
+  "$comment": "Кыргыз тилиндеги көрсөтүү катмары (DECISION-0070). Бул файл CLIR'ге кирбейт жана презентациялык катмар менен гана окулат (verbalize --labels, MCP, жумуш үстөлү). Котормо Казакстан Республикасынын Конституциясын ресмилештирүүнүн орусча (ru-KZ) белгилеринен жасалган жумушчу котормо (`translation`) — расмий басылма эмес; терминология Кыргыз Республикасынын Конституциясынын кыргызча редакциясы (corpus/laws/kg/constitution) жана law.verb.ky пакети боюнча сверкаланган. Ачкыч — жарыялоонун жергиликтүү аты.",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "Association": [
+      {
+        "status": "translation",
+        "text": "Коомдук бирикме"
+      }
+    ],
+    "AssociationUnlawfulInterferenceProhibited/alt/1": [
+      {
+        "status": "translation",
+        "text": "6-берене, 2-пункт. Мыйзамсыз өз ара кийлигишүүгө тыюу салынат"
+      }
+    ],
+    "AssociationUnlawfulInterferenceProhibited/alt/2": [
+      {
+        "status": "translation",
+        "text": "6-берене, 2-пункт. Мыйзамсыз өз ара кийлигишүүгө тыюу салынат"
+      }
+    ],
+    "AssociationUnlawfulInterferenceProhibited1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "5-берене, 2-пункт (1995-ж. ред.). Мамлекеттин жана бирикмелердин мыйзамсыз өз ара кийлигишүүсүнө жол берилбейт"
+      }
+    ],
+    "AssociationUnlawfulInterferenceProhibited1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "5-берене, 2-пункт (1995-ж. ред.). Мамлекеттин жана бирикмелердин мыйзамсыз өз ара кийлигишүүсүнө жол берилбейт"
+      }
+    ],
+    "AssociationWithProhibitedGoalProhibited": [
+      {
+        "status": "translation",
+        "text": "6-берене, 3-пункт. Түздөн-түз тыюу салынган максаттары же аракеттери бар бирикмелерге тыюу салынат"
+      }
+    ],
+    "AssociationWithProhibitedGoalProhibited1995": [
+      {
+        "status": "translation",
+        "text": "5-берене, 3-пункт (1995-ж. ред.). Тыюу салынган максаттары бар бирикмелерге тыюу салынат"
+      }
+    ],
+    "AuthorityUsurpationProhibited": [
+      {
+        "status": "translation",
+        "text": "4-берене, 3-пункт. Бийликти ээлеп алууга тыюу салынат"
+      }
+    ],
+    "AuthorityUsurpationProhibited1995": [
+      {
+        "status": "translation",
+        "text": "3-берене, 3-пункт (1995-ж. ред.). Бийликти ээлеп алууга тыюу салынат"
+      }
+    ],
+    "ConductForbiddenByStatute1995": [
+      {
+        "status": "translation",
+        "text": "4-берене, 3-пункт (1995-ж. ред.). Республиканын мыйзамынын ченеминен чыгарылган корутунду"
+      }
+    ],
+    "ConductPermittedByTreaty1995": [
+      {
+        "status": "translation",
+        "text": "4-берене, 3-пункт (1995-ж. ред.). Ратификацияланган эл аралык келишимдин ченеминен чыгарылган корутунду"
+      }
+    ],
+    "ConstitutionalActor": [
+      {
+        "status": "translation",
+        "text": "Конституциялык мамилелердин катышуучусу"
+      }
+    ],
+    "ForeignAssetDisclosureRequired": [
+      {
+        "status": "translation",
+        "text": "6-берене, 5-пункт. Чет өлкөлүк акча каражаттары жана активдер жөнүндө маалымат ачык болууга тийиш"
+      }
+    ],
+    "ForeignPartyActivityOrFinancingProhibited/alt/1": [
+      {
+        "status": "translation",
+        "text": "6-берене, 4-пункт. Партиялардын жана кесиптик бирликтердин чет өлкөлүк ишмердүүлүгүнө жана каржылоосуна тыюу салынат"
+      }
+    ],
+    "ForeignPartyActivityOrFinancingProhibited/alt/2": [
+      {
+        "status": "translation",
+        "text": "6-берене, 4-пункт. Партиялардын жана кесиптик бирликтердин чет өлкөлүк ишмердүүлүгүнө жана каржылоосуна тыюу салынат"
+      }
+    ],
+    "ForeignPartyActivityOrFinancingProhibited1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "5-берене, 4-пункт (1995-ж. ред.). Чет өлкөлүк адамдар тарабынан ишмердүүлүккө жана каржылоого тыюу салынат"
+      }
+    ],
+    "ForeignPartyActivityOrFinancingProhibited1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "5-берене, 4-пункт (1995-ж. ред.). Чет өлкөлүк адамдар тарабынан ишмердүүлүккө жана каржылоого тыюу салынат"
+      }
+    ],
+    "ForeignReligiousActivityRequiresAgreement1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "5-берене, 5-пункт (1995-ж. ред.). Чет өлкөлүк диний бирикмелердин ишмердүүлүгү жана жетекчилердин чет өлкөлүк борборлор тарабынан дайындалышы тиешелүү мамлекеттик органдар менен макулдашуу боюнча жүзөгө ашырылат"
+      }
+    ],
+    "ForeignReligiousActivityRequiresAgreement1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "5-берене, 5-пункт (1995-ж. ред.). Чет өлкөлүк диний бирикмелердин ишмердүүлүгү жана жетекчилердин чет өлкөлүк борборлор тарабынан дайындалышы тиешелүү мамлекеттик органдар менен макулдашуу боюнча жүзөгө ашырылат"
+      }
+    ],
+    "ForeignReligiousBody": [
+      {
+        "status": "translation",
+        "text": "Чет өлкөлүк диний бирикме"
+      }
+    ],
+    "IncreasedLiabilityNoRetroactivity": [
+      {
+        "status": "translation",
+        "text": "5-берене, 5-пункт. Жоопкерчиликти күчөтүү өткөн мезгилге карата колдонулбайт"
+      }
+    ],
+    "IncreasedLiabilityNoRetroactivity1995": [
+      {
+        "status": "translation",
+        "text": "77-берене, 3-пункт, 5-пунктча (1995-ж. ред.). Жоопкерчиликти күчөтүү өткөн мезгилге карата колдонулбайт"
+      }
+    ],
+    "KZ_CONSTITUTION_1995": [
+      {
+        "status": "translation",
+        "text": "Казакстан Республикасынын Конституциясы (1995)"
+      }
+    ],
+    "KZ_CONSTITUTION_1995_KK": [
+      {
+        "status": "translation",
+        "text": "Колдонуусу токтотулган казакча топтоштурулган редакция"
+      }
+    ],
+    "KZ_CONSTITUTION_1995_RU": [
+      {
+        "status": "translation",
+        "text": "Колдонуусу токтотулган консолидацияланган орусча редакция"
+      }
+    ],
+    "KZ_CONSTITUTION_2026": [
+      {
+        "status": "translation",
+        "text": "Казакстан Республикасынын Конституциясы"
+      }
+    ],
+    "KZ_CONSTITUTION_2026_KK": [
+      {
+        "status": "translation",
+        "text": "Казакча түп нуска редакция"
+      }
+    ],
+    "KZ_CONSTITUTION_2026_RU": [
+      {
+        "status": "translation",
+        "text": "Орусча аутенттик редакция"
+      }
+    ],
+    "LandHolding": [
+      {
+        "status": "translation",
+        "text": "Жер участогу"
+      }
+    ],
+    "LegalAct": [
+      {
+        "status": "translation",
+        "text": "Ченемдик укуктук акт"
+      }
+    ],
+    "MitigatingLawAppliesToPriorOffence": [
+      {
+        "status": "translation",
+        "text": "5-берене, 5-пункт. Жокко чыгарган же жеңилдеткен мыйзам мурда жасалган жосунга колдонулат"
+      }
+    ],
+    "MitigatingLawAppliesToPriorOffence1995": [
+      {
+        "status": "translation",
+        "text": "77-берене, 3-пункт, 5-пунктча (1995-ж. ред.). Жеңилдеткен мыйзам мурда жасалган укук бузууга колдонулат"
+      }
+    ],
+    "NewDutiesAndWorsePositionNoRetroactivity": [
+      {
+        "status": "translation",
+        "text": "5-берене, 5-пункт. Жаңы милдеттер жана абалдын начарлашы өткөн мезгилге карата колдонулбайт"
+      }
+    ],
+    "NewDutiesAndWorsePositionNoRetroactivity1995": [
+      {
+        "status": "translation",
+        "text": "77-берене, 3-пункт, 5-пунктча (1995-ж. ред.). Жаңы милдеттер жана абалдын начарлашы өткөн мезгилге карата колдонулбайт"
+      }
+    ],
+    "OfficialPublicationRequiredForApplication": [
+      {
+        "status": "translation",
+        "text": "5-берене, 4-пункт. Расмий жарыялоо колдонуунун шарты катары"
+      }
+    ],
+    "OfficialPublicationRequiredForApplication1995": [
+      {
+        "status": "translation",
+        "text": "4-берене, 4-пункт (1995-ж. ред.). Расмий жарыялоо колдонуунун шарты катары"
+      }
+    ],
+    "PrivateLandHoldingWithinStatutoryLimits": [
+      {
+        "status": "translation",
+        "text": "8-берене, 3-пункт. Жерге жеке менчикке мыйзамдуу негиздерде, шарттарда жана чектерде жол берилет"
+      }
+    ],
+    "PrivateLandHoldingWithinStatutoryLimits1995": [
+      {
+        "status": "translation",
+        "text": "6-берене, 3-пункт (1995-ж. ред.). Жерге жеке менчикке мыйзамдуу негиздерде, шарттарда жана чектерде жол берилет"
+      }
+    ],
+    "PropertyUse": [
+      {
+        "status": "translation",
+        "text": "Менчикти пайдалануу"
+      }
+    ],
+    "PropertyUseConstitutionallyCompliant": [
+      {
+        "status": "translation",
+        "text": "8-берене, 2-пункт. Менчикти пайдалануунун конституциялык шарттары"
+      }
+    ],
+    "PropertyUseConstitutionallyCompliant1995": [
+      {
+        "status": "translation",
+        "text": "6-берене, 2-пункт (1995-ж. ред.). Менчикти пайдалануу коомдук игиликке кызмат кылууга тийиш"
+      }
+    ],
+    "RatifiedTreatyOverStatuteInInference1995": [
+      {
+        "status": "translation",
+        "text": "4-берене, 3-пункт (1995-ж. ред.). Корутундулар карама-каршы келгенде мыйзамдан эмес, ратификацияланган эл аралык келишимден чыгарылган корутунду колдонулат"
+      }
+    ],
+    "RatifiedTreatyPrevailsOverStatute1995": [
+      {
+        "status": "translation",
+        "text": "4-берене, 3-пункт (1995-ж. ред.). Республика ратификациялаган эл аралык келишимдер анын мыйзамдарынан артыкчылыкка ээ"
+      }
+    ],
+    "RegulatedConduct": [
+      {
+        "status": "translation",
+        "text": "Жол берилиши боюнча келишим менен мыйзам карама-каршы келген жүрүм-турум"
+      }
+    ],
+    "ReligiousActivity": [
+      {
+        "status": "translation",
+        "text": "Диний уюмдун ишмердүүлүгү"
+      }
+    ],
+    "ReligiousRestriction": [
+      {
+        "status": "translation",
+        "text": "Диний уюмдун ишмердүүлүгүн чектөө"
+      }
+    ],
+    "ReligiousRestrictionRequiresLawAndConstitutionalGoal": [
+      {
+        "status": "translation",
+        "text": "7-берене, 2-пункт. Диний ишмердүүлүктү чектөө мыйзамды жана конституциялык максатты талап кылат"
+      }
+    ],
+    "RuleApplication": [
+      {
+        "status": "translation",
+        "text": "Ченемди колдонуу"
+      }
+    ],
+    "Statute": [
+      {
+        "status": "translation",
+        "text": "Республиканын мыйзамы"
+      }
+    ],
+    "Treaty": [
+      {
+        "status": "translation",
+        "text": "Эл аралык келишим"
+      }
+    ],
+    "agreed_with_state_bodies": [
+      {
+        "status": "translation",
+        "text": "ишмердүүлүк тиешелүү мамлекеттик органдар менен макулдашылган"
+      }
+    ],
+    "association_activity_prohibited": [
+      {
+        "status": "translation",
+        "text": "коомдук бирикмени түзүүгө жана анын ишмердүүлүгүнө тыюу салынат"
+      }
+    ],
+    "association_has_prohibited_constitutional_goal": [
+      {
+        "status": "translation",
+        "text": "коомдук бирикменин максаттары же аракеттери конституциялык түзүлүштүн негиздерин күч менен өзгөртүүгө, Республиканын бүтүндүгүн же коомдук тартипти бузууга, улуттук коопсуздукту солгундатууга же араздашууну тутандырууга багытталган"
+      }
+    ],
+    "astana_special_financial_regime_1995": [
+      {
+        "status": "translation",
+        "text": "Астана шаарынын чектеринде финансы чөйрөсүндө өзгөчө укуктук режим белгилениши мүмкүн (1995-ж. ред.)"
+      }
+    ],
+    "authority_usurpation_attempt": [
+      {
+        "status": "translation",
+        "text": "Республикада бийликти ээлеп алууга аракет жасалган"
+      }
+    ],
+    "authority_usurpation_prohibited": [
+      {
+        "status": "translation",
+        "text": "бийликти ээлеп алууга тыюу салынат жана мыйзам боюнча жоопкерчиликке тартылат"
+      }
+    ],
+    "capital_is_astana_1995": [
+      {
+        "status": "translation",
+        "text": "Казакстандын борбору Астана шаары болуп саналат (1995-ж. ред.)"
+      }
+    ],
+    "conduct_admissible_1995": [
+      {
+        "status": "translation",
+        "text": "жүрүм-турумга жол берилет (келишим менен мыйзамдын карама-каршылыгы, 1995-ж. ред.)"
+      }
+    ],
+    "constitutional_activity_principles_declared": [
+      {
+        "status": "translation",
+        "text": "Республиканын ишмердүүлүгүнүн негизги принциптери Конституция менен белгиленген"
+      }
+    ],
+    "environmental_requirements_observed": [
+      {
+        "status": "translation",
+        "text": "курчап турган чөйрөнү коргоо жаатында белгиленген талаптар сакталган"
+      }
+    ],
+    "foreign_asset_disclosure_required": [
+      {
+        "status": "translation",
+        "text": "чет өлкөлүк булактардан алынган акча каражаттарынын жана активдердин кыймылы жөнүндө маалымат ачык жана жеткиликтүү болууга тийиш"
+      }
+    ],
+    "foreign_asset_information_disclosed": [
+      {
+        "status": "translation",
+        "text": "чет өлкөлүк булактардан алынган акча каражаттарынын жана активдердин кыймылы жөнүндө маалымат ачык жана жеткиликтүү"
+      }
+    ],
+    "foreign_centre_appoints_leader": [
+      {
+        "status": "translation",
+        "text": "диний бирикменин жетекчилери чет өлкөлүк диний борбор тарабынан дайындалат"
+      }
+    ],
+    "foreign_financing_of_party_or_union": [
+      {
+        "status": "translation",
+        "text": "саясий партия же кесиптик бирлик чет өлкөлүк адамдар, мамлекеттер же эл аралык уюмдар тарабынан каржыланат"
+      }
+    ],
+    "foreign_party_or_union_activity": [
+      {
+        "status": "translation",
+        "text": "ишмердүүлүктү башка мамлекеттин саясий партиясы же кесиптик бирлиги, же болбосо диний негиздеги саясий партия жүргүзөт"
+      }
+    ],
+    "foreign_religious_activity_admissible_1995": [
+      {
+        "status": "translation",
+        "text": "чет өлкөлүк диний бирикменин ишмердүүлүгүнө жол берилет (1995-ж. ред.)"
+      }
+    ],
+    "foreign_religious_body_activity": [
+      {
+        "status": "translation",
+        "text": "Республиканын аймагында чет өлкөлүк диний бирикме иш жүргүзөт"
+      }
+    ],
+    "fundamental_principles_declared_1995": [
+      {
+        "status": "translation",
+        "text": "Республиканын ишмердүүлүгүнүн негизги принциптери Конституция менен белгиленген (1995-ж. ред.)"
+      }
+    ],
+    "human_capital_education_science_innovation_strategic_direction": [
+      {
+        "status": "translation",
+        "text": "адам капиталын, билим берүүнү, илимди жана инновацияларды өнүктүрүү мамлекеттин ишмердүүлүгүнүн стратегиялык багыты деп таанылат"
+      }
+    ],
+    "human_life_rights_freedoms_highest_state_values": [
+      {
+        "status": "translation",
+        "text": "мамлекеттин жогорку баалуулуктары — адам, анын өмүрү, укуктары жана эркиндиктери"
+      }
+    ],
+    "kazakhstan_democratic_secular_legal_social_state": [
+      {
+        "status": "translation",
+        "text": "Казакстан Республикасы — демократиялык, светтик, укуктук жана социалдык мамлекет"
+      }
+    ],
+    "kazakhstan_democratic_secular_legal_social_state_1995": [
+      {
+        "status": "translation",
+        "text": "Республика өзүн демократиялык, светтик, укуктук жана социалдык мамлекет катары ырастайт (1995-ж. ред.)"
+      }
+    ],
+    "law_creates_or_increases_liability": [
+      {
+        "status": "translation",
+        "text": "мыйзам жоопкерчиликти белгилейт же күчөтөт"
+      }
+    ],
+    "law_imposes_new_citizen_duties_or_worsens_position": [
+      {
+        "status": "translation",
+        "text": "мыйзам жарандарга жаңы милдеттерди жүктөйт же алардын абалын начарлатат"
+      }
+    ],
+    "legal_act_affects_citizen_rights_or_duties": [
+      {
+        "status": "translation",
+        "text": "ченемдик укуктук акт жарандардын укуктарына, эркиндиктерине жана милдеттерине тиешелүү"
+      }
+    ],
+    "legal_act_application_condition_satisfied": [
+      {
+        "status": "translation",
+        "text": "ченемдик укуктук актыны колдонуунун милдеттүү шарты сакталган"
+      }
+    ],
+    "legal_act_officially_published": [
+      {
+        "status": "translation",
+        "text": "ченемдик укуктук акт расмий жарыяланган"
+      }
+    ],
+    "new_law_applies_to_prior_offence": [
+      {
+        "status": "translation",
+        "text": "мурда жасалган укук бузууга жаңы мыйзам колдонулат"
+      }
+    ],
+    "new_law_cancels_or_mitigates_liability": [
+      {
+        "status": "translation",
+        "text": "жаңы мыйзам мурда жасалган укук бузуу үчүн жоопкерчиликти жокко чыгарат же жеңилдетет"
+      }
+    ],
+    "nonprofit_receives_foreign_assets": [
+      {
+        "status": "translation",
+        "text": "коммерциялык эмес уюм чет мамлекеттерден, эл аралык жана чет өлкөлүк юридикалык жактардан, чет өлкөлүк жарандардан жана жарандыгы жок адамдардан акча каражаттарын жана активдерди алат"
+      }
+    ],
+    "party_or_union_activity_prohibited": [
+      {
+        "status": "translation",
+        "text": "саясий партиянын же кесиптик бирликтин ишмердүүлүгүнө жол берилбейт"
+      }
+    ],
+    "peaceful_cooperative_foreign_policy_1995": [
+      {
+        "status": "translation",
+        "text": "Республика мамлекеттер ортосунда кызматташуу жана ынак кошуналык мамиле саясатын жүргүзөт (1995-ж. ред.)"
+      }
+    ],
+    "peaceful_cooperative_foreign_policy_declared": [
+      {
+        "status": "translation",
+        "text": "Республика кызыкдар мамлекеттер менен тынчтык жана кызматташуу тышкы саясатын жүргүзөт"
+      }
+    ],
+    "private_land_basis_conditions_limits_established_by_law": [
+      {
+        "status": "translation",
+        "text": "жерге жеке менчиктин негиздери, шарттары жана чектери мыйзам менен белгиленген"
+      }
+    ],
+    "private_land_holding": [
+      {
+        "status": "translation",
+        "text": "жер жеке менчикте турат"
+      }
+    ],
+    "private_land_holding_constitutionally_allowed": [
+      {
+        "status": "translation",
+        "text": "жердин жеке менчикте болушу конституциялык жактан жол берилет"
+      }
+    ],
+    "property_use": [
+      {
+        "status": "translation",
+        "text": "менчикти пайдалануу орун алган"
+      }
+    ],
+    "property_use_constitutionally_compliant": [
+      {
+        "status": "translation",
+        "text": "менчикти пайдалануу конституциялык шарттарга жооп берет"
+      }
+    ],
+    "property_use_serves_public_and_state_interests": [
+      {
+        "status": "translation",
+        "text": "менчикти пайдалануу коомдун жана мамлекеттин кызыкчылыктарына жооп берет"
+      }
+    ],
+    "property_use_serves_public_good": [
+      {
+        "status": "translation",
+        "text": "менчикти пайдалануу коомдук игиликке кызмат кылат (1995-ж. ред.)"
+      }
+    ],
+    "protected_rights_not_infringed": [
+      {
+        "status": "translation",
+        "text": "башка адамдардын мыйзам менен корголуучу укуктары жана кызыкчылыктары кемсинтилген эмес"
+      }
+    ],
+    "religious_activity": [
+      {
+        "status": "translation",
+        "text": "ишмердүүлүк диний уюмдун ишмердүүлүгү болуп саналат"
+      }
+    ],
+    "religious_restriction_constitutionally_authorized": [
+      {
+        "status": "translation",
+        "text": "диний уюмдун ишмердүүлүгүн чектөө конституциялык жактан жол берилет"
+      }
+    ],
+    "religious_restriction_established_by_law": [
+      {
+        "status": "translation",
+        "text": "чектөө мыйзам менен белгиленген"
+      }
+    ],
+    "religious_restriction_has_constitutional_goal": [
+      {
+        "status": "translation",
+        "text": "чектөө конституциялык түзүлүштүн негиздерин, адамдын жана жарандын укуктары менен эркиндиктерин коргоо, улуттук коопсуздукту камсыз кылуу, коомдук тартипти, жарандардын ден соолугун жана коомдун адеп-ахлагын сактоо максатында киргизилген"
+      }
+    ],
+    "renounces_first_use_of_armed_force_1995": [
+      {
+        "status": "translation",
+        "text": "Республика куралдуу күчтү биринчи болуп колдонуудан баш тартат (1995-ж. ред.)"
+      }
+    ],
+    "republic_names_equivalent_1995": [
+      {
+        "status": "translation",
+        "text": "«Казакстан Республикасы» жана «Казакстан» аталыштары бирдей маанилүү (1995-ж. ред.)"
+      }
+    ],
+    "restriction_of_religious_activity": [
+      {
+        "status": "translation",
+        "text": "чектөө диний уюмдун ишмердүүлүгүнө тиешелүү"
+      }
+    ],
+    "retroactive_application_attempt": [
+      {
+        "status": "translation",
+        "text": "мыйзам ал колдонууга киргизилгенге чейин пайда болгон мамилелерге колдонулат"
+      }
+    ],
+    "retroactive_application_prohibited": [
+      {
+        "status": "translation",
+        "text": "мыйзам өткөн мезгилге карата колдонулбайт"
+      }
+    ],
+    "rule_reads_statute": [
+      {
+        "status": "translation",
+        "text": "ченем Республиканын ушул мыйзамынан чыгарылган"
+      }
+    ],
+    "rule_reads_treaty": [
+      {
+        "status": "translation",
+        "text": "ченем ушул эл аралык келишимден чыгарылган"
+      }
+    ],
+    "russian_used_officially_1995": [
+      {
+        "status": "translation",
+        "text": "мамлекеттик уюмдарда жана жергиликтүү өз алдынча башкаруу органдарында казак тили менен катар орус тили расмий түрдө колдонулат (1995-ж. ред.)"
+      }
+    ],
+    "sovereignty_covers_whole_territory_1995": [
+      {
+        "status": "translation",
+        "text": "Республиканын эгемендиги анын бүткүл аймагына жайылат (1995-ж. ред.)"
+      }
+    ],
+    "state_anthem_established": [
+      {
+        "status": "translation",
+        "text": "Мамлекеттик Гимн белгиленген"
+      }
+    ],
+    "state_cares_for_language_development_1995": [
+      {
+        "status": "translation",
+        "text": "мамлекет Казакстан элинин тилдерин үйрөнүү жана өнүктүрүү үчүн шарттарды түзүүгө камкордук көрөт (1995-ж. ред.)"
+      }
+    ],
+    "state_emblem_established": [
+      {
+        "status": "translation",
+        "text": "Мамлекеттик Герб белгиленген"
+      }
+    ],
+    "state_flag_established": [
+      {
+        "status": "translation",
+        "text": "Мамлекеттик Туу белгиленген"
+      }
+    ],
+    "state_language_is_kazakh_1995": [
+      {
+        "status": "translation",
+        "text": "мамлекеттик тил казак тили болуп саналат (1995-ж. ред.)"
+      }
+    ],
+    "state_symbols_established_1995": [
+      {
+        "status": "translation",
+        "text": "Республиканын мамлекеттик символдору бар — Туу, Герб жана Гимн (1995-ж. ред.)"
+      }
+    ],
+    "statute_norm_forbids": [
+      {
+        "status": "translation",
+        "text": "Республиканын мыйзамынын ченеми бул жүрүм-турумга тыюу салат"
+      }
+    ],
+    "treaty_conflicts_with_statute": [
+      {
+        "status": "translation",
+        "text": "эл аралык келишим менен Республиканын мыйзамы карама-каршы келет"
+      }
+    ],
+    "treaty_norm_permits": [
+      {
+        "status": "translation",
+        "text": "ратификацияланган эл аралык келишимдин ченеми бул жүрүм-турумга жол берет"
+      }
+    ],
+    "treaty_prevails_over_statute": [
+      {
+        "status": "translation",
+        "text": "эл аралык келишим Республиканын мыйзамынан артыкчылыкка ээ (1995-ж. ред.)"
+      }
+    ],
+    "treaty_ratified_by_republic": [
+      {
+        "status": "translation",
+        "text": "эл аралык келишим Республика тарабынан ратификацияланган"
+      }
+    ],
+    "unitary_state_presidential_form_1995": [
+      {
+        "status": "translation",
+        "text": "Республика башкаруунун президенттик формасындагы унитардык мамлекет болуп саналат (1995-ж. ред.)"
+      }
+    ],
+    "unlawful_association_interference_with_state": [
+      {
+        "status": "translation",
+        "text": "коомдук бирикменин мамлекеттин иштерине мыйзамсыз кийлигишүүсү орун алган"
+      }
+    ],
+    "unlawful_state_interference_with_association": [
+      {
+        "status": "translation",
+        "text": "мамлекеттин коомдук бирикменин иштерине мыйзамсыз кийлигишүүсү орун алган"
+      }
+    ]
+  },
+  "language": "ky",
+  "package": "kz.constitution.sources"
+}

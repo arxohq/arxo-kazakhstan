@@ -1,0 +1,2606 @@
+{
+  "$comment": "English display overlay for the labels (§218) of this package of the Constitution of the Republic of Kazakhstan (DECISION-0070). The file is not compiled into the CLIR and is read only by the presentation layer (verbalize --labels, the MCP resource law://<package>/verbalized/en, the workbench). The translation is a working one made by the formaliser from the Russian labels of the package, checked against the authentic Russian and Kazakh texts of the Constitution; it is not an official publication, hence the status \"translation\" for every entry. Spelling is British. A key is the local name of the declaration (the part of the node id after \"#\").",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "AccessToAffectingDocumentsDuty": [
+      {
+        "status": "translation",
+        "text": "Article 21, paragraph 3. State bodies, associations, officials and the mass media are obliged to afford everyone the opportunity to acquaint himself with the documents affecting his rights and interests"
+      }
+    ],
+    "AdultChildParentCareDuty": [
+      {
+        "status": "translation",
+        "text": "Article 30, paragraph 4. Adult children fit for work are obliged to care for their parents who are unfit for work"
+      }
+    ],
+    "AdultChildParentCareDuty1995": [
+      {
+        "status": "translation",
+        "text": "Article 27, paragraph 3 (1995 version). Adult children fit for work are obliged to care for their parents who are unfit for work"
+      }
+    ],
+    "AffordableStateHousingDuty1995": [
+      {
+        "status": "translation",
+        "text": "Article 25, paragraph 2 (1995 version). The categories specified by statute are provided with housing at an affordable price from the state housing funds"
+      }
+    ],
+    "AnnualPaidLeaveDuty1995": [
+      {
+        "status": "translation",
+        "text": "Article 24, paragraph 4 (1995 version). Those working under an employment contract are guaranteed paid annual leave"
+      }
+    ],
+    "ArrestRequiresCourtDecisionAndAppeal": [
+      {
+        "status": "translation",
+        "text": "Article 18, paragraph 2. Detention in custody is permissible only by a decision of a court, with a right of appeal being granted"
+      }
+    ],
+    "ArrestRequiresCourtSanctionAndAppeal1995": [
+      {
+        "status": "translation",
+        "text": "Article 16, paragraph 2 (1995 version). Arrest and detention in custody only with the sanction of a court and with a right of appeal"
+      }
+    ],
+    "Assembly": [
+      {
+        "status": "translation",
+        "text": "peaceful assembly"
+      }
+    ],
+    "AssemblyRestrictionRequiresLawAndGoal": [
+      {
+        "status": "translation",
+        "text": "Article 34. A restriction on peaceful assemblies requires a statute and a constitutional aim"
+      }
+    ],
+    "AssemblyRestrictionRequiresLawAndGoal1995": [
+      {
+        "status": "translation",
+        "text": "Article 32 (1995 version). A restriction on the right of assembly is permissible by statute for the constitutional aims listed"
+      }
+    ],
+    "Association": [
+      {
+        "status": "translation",
+        "text": "association of citizens"
+      }
+    ],
+    "CandidateDisqualification/alt/1": [
+      {
+        "status": "translation",
+        "text": "Article 35, paragraph 3. Closed list of grounds of ineligibility for election"
+      }
+    ],
+    "CandidateDisqualification/alt/2": [
+      {
+        "status": "translation",
+        "text": "Article 35, paragraph 3. Closed list of grounds of ineligibility for election"
+      }
+    ],
+    "CandidateDisqualification/alt/3": [
+      {
+        "status": "translation",
+        "text": "Article 35, paragraph 3. Closed list of grounds of ineligibility for election"
+      }
+    ],
+    "CandidateDisqualification1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "Article 33, paragraph 3 (1995 version). Persons declared incapable by a court and persons held in places of deprivation of liberty do not have the right to be elected"
+      }
+    ],
+    "CandidateDisqualification1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "Article 33, paragraph 3 (1995 version). Persons declared incapable by a court and persons held in places of deprivation of liberty do not have the right to be elected"
+      }
+    ],
+    "CareForChild": [
+      {
+        "status": "translation",
+        "text": "Article 30, paragraph 3. The care of children and their upbringing are the natural right and the duty of parents"
+      }
+    ],
+    "CareForChild1995": [
+      {
+        "status": "translation",
+        "text": "Article 27, paragraph 2 (1995 version). The care of children and their upbringing are the natural right and the duty of parents"
+      }
+    ],
+    "CareForIncapacitatedParent": [
+      {
+        "status": "translation",
+        "text": "Article 30, paragraph 4. Adult children fit for work are obliged to care for their parents who are unfit for work"
+      }
+    ],
+    "CareForIncapacitatedParent1995": [
+      {
+        "status": "translation",
+        "text": "Article 27, paragraph 3 (1995 version). Adult children fit for work are obliged to care for their parents who are unfit for work"
+      }
+    ],
+    "CensorshipImmunity": [
+      {
+        "status": "translation",
+        "text": "Article 23, paragraph 5. Censorship is prohibited"
+      }
+    ],
+    "CensorshipImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Article 20, paragraph 1 (1995 version). Censorship is prohibited"
+      }
+    ],
+    "CensorshipProhibition": [
+      {
+        "status": "translation",
+        "text": "Article 23, paragraph 5. Censorship is prohibited"
+      }
+    ],
+    "Child": [
+      {
+        "status": "translation",
+        "text": "child"
+      }
+    ],
+    "ChooseOccupationFreely": [
+      {
+        "status": "translation",
+        "text": "Article 27, paragraph 1. The right to work and to the free choice of occupation and profession"
+      }
+    ],
+    "ChooseOccupationFreely1995": [
+      {
+        "status": "translation",
+        "text": "Article 24, paragraph 1 (1995 version). The right to freedom of labour and to the free choice of occupation and profession"
+      }
+    ],
+    "CitizenAccessToAffectingDocumentsDuty1995": [
+      {
+        "status": "translation",
+        "text": "Article 18, paragraph 3 (1995 version). Every citizen is afforded the opportunity to acquaint himself with the documents affecting him"
+      }
+    ],
+    "CitizenNonExtraditionImmunity": [
+      {
+        "status": "translation",
+        "text": "Article 14, paragraph 1. A citizen of the Republic of Kazakhstan may not be extradited to a foreign state"
+      }
+    ],
+    "CitizenNonExtraditionImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Article 11, paragraph 1 (1995 version). A citizen of the Republic may not be extradited to a foreign state"
+      }
+    ],
+    "CitizenReturnImmunity": [
+      {
+        "status": "translation",
+        "text": "Article 24, paragraph 2. A citizen has the right to return to Kazakhstan without hindrance"
+      }
+    ],
+    "CitizenReturnImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Article 21, paragraph 2 (1995 version). Citizens have the right to return to the Republic without hindrance"
+      }
+    ],
+    "CitizenshipDeprivationPower": [
+      {
+        "status": "translation",
+        "text": "Article 13, paragraph 2. Deprivation of citizenship is permissible only by a decision of a court for terrorist crimes or other grave harm to the national interests of the Republic"
+      }
+    ],
+    "CitizenshipDeprivationPower1995": [
+      {
+        "status": "translation",
+        "text": "Article 10, paragraph 2 (1995 version). Deprivation of citizenship only by a decision of a court for terrorist crimes or other grave harm to vital interests"
+      }
+    ],
+    "CivilServiceRequirement": [
+      {
+        "status": "translation",
+        "text": "requirement imposed on those entering the civil service"
+      }
+    ],
+    "CivilServiceRequirementMustReflectOfficialDuties": [
+      {
+        "status": "translation",
+        "text": "Article 35, paragraph 4. The requirements for a civil servant are limited by the nature of the official duties"
+      }
+    ],
+    "CivilServiceRequirementMustReflectOfficialDuties1995": [
+      {
+        "status": "translation",
+        "text": "Article 33, paragraph 4 (1995 version). The requirements for a candidate for a civil service position are determined solely by the nature of the official duties"
+      }
+    ],
+    "CompensateUnlawfulStateHarm": [
+      {
+        "status": "translation",
+        "text": "Article 15, paragraph 6. The state makes good the harm caused by unlawful acts of its bodies"
+      }
+    ],
+    "CompensatedExpropriationOnly": [
+      {
+        "status": "translation",
+        "text": "Article 29, paragraph 3. The compulsory expropriation of property for state needs is permissible only on condition of equivalent compensation"
+      }
+    ],
+    "CompensatedExpropriationOnly1995": [
+      {
+        "status": "translation",
+        "text": "Article 26, paragraph 3 (1995 version). Compulsory expropriation only upon equivalent compensation"
+      }
+    ],
+    "ConductEnterprise": [
+      {
+        "status": "translation",
+        "text": "Article 29, paragraph 4. The Republic of Kazakhstan guarantees the right to freedom of entrepreneurial activity"
+      }
+    ],
+    "ConductEnterprise1995": [
+      {
+        "status": "translation",
+        "text": "Article 26, paragraph 4 (1995 version). The right to freedom of entrepreneurial activity"
+      }
+    ],
+    "ConstitutionComplianceDuty": [
+      {
+        "status": "translation",
+        "text": "Article 36, paragraph 1. Everyone is obliged to observe the Constitution and the legislation of the Republic and to respect the rights, freedoms, honour and dignity of other persons"
+      }
+    ],
+    "ConstitutionComplianceDuty1995": [
+      {
+        "status": "translation",
+        "text": "Article 34, paragraph 1 (1995 version). Everyone is obliged to observe the Constitution and the legislation and to respect the rights and dignity of other persons"
+      }
+    ],
+    "ContinuedDetentionBarredWithoutCourtDecision": [
+      {
+        "status": "translation",
+        "text": "Article 18, paragraph 2. Detention beyond the period laid down by statute is prohibited so long as there is no decision of a court"
+      }
+    ],
+    "ContinuedDetentionBarredWithoutCourtDecision/unless/0": [
+      {
+        "status": "translation",
+        "text": "Article 18, paragraph 2. Detention beyond the period laid down by statute is prohibited so long as there is no decision of a court"
+      }
+    ],
+    "ContinuedDetentionProhibition": [
+      {
+        "status": "translation",
+        "text": "Article 18, paragraph 2. Without a decision of a court, a person may not be detained beyond the periods provided for by statute"
+      }
+    ],
+    "CoreRight": [
+      {
+        "status": "translation",
+        "text": "right or freedom whose restriction the Constitution of 2026 does not permit"
+      }
+    ],
+    "CoreRight1995": [
+      {
+        "status": "translation",
+        "text": "right or freedom whose restriction the Constitution of 1995 did not permit"
+      }
+    ],
+    "CoreRightsRestrictionImmunity": [
+      {
+        "status": "translation",
+        "text": "Article 41, paragraph 3. The non-restrictable core of rights"
+      }
+    ],
+    "CoreRightsRestrictionImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Article 39, paragraph 3 (1995 version). In no case are the rights under Articles 11, 13–15, Article 16, paragraph 1, Articles 17, 19, 22 and Article 26, paragraph 2 subject to restriction"
+      }
+    ],
+    "CounselFromDetentionDuty": [
+      {
+        "status": "translation",
+        "text": "Article 18, paragraph 4. A detained person, a suspect and an accused have the right to the assistance of an advocate from the moment of detention"
+      }
+    ],
+    "CounselFromDetentionDuty1995": [
+      {
+        "status": "translation",
+        "text": "Article 16, paragraph 3 (1995 version). The right to the assistance of an advocate from the moment of detention, arrest or the bringing of a charge"
+      }
+    ],
+    "CourtOrderRequiredForContinuedDetention": [
+      {
+        "status": "translation",
+        "text": "Article 18, paragraph 2. Without a decision of a court, a person may not be detained beyond the periods provided for by statute"
+      }
+    ],
+    "DeathPenaltyImmunity": [
+      {
+        "status": "translation",
+        "text": "Article 17, paragraph 3. The death penalty is prohibited"
+      }
+    ],
+    "DeathPenaltyImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Article 15, paragraph 2 (1995 version). The death penalty is prohibited"
+      }
+    ],
+    "DeathPenaltyProhibition": [
+      {
+        "status": "translation",
+        "text": "Article 17, paragraph 3. The death penalty is prohibited"
+      }
+    ],
+    "DeclareNationalIdentity": [
+      {
+        "status": "translation",
+        "text": "Article 22, paragraph 1. Everyone has the right to determine and to state, or not to state, his national affiliation"
+      }
+    ],
+    "DeclareNationalPartyReligiousIdentity1995": [
+      {
+        "status": "translation",
+        "text": "Article 19, paragraph 1 (1995 version). Everyone has the right to determine and to state, or not to state, his national, party and religious affiliation"
+      }
+    ],
+    "DefenceDuty": [
+      {
+        "status": "translation",
+        "text": "Article 39, paragraph 1. The defence of the Republic of Kazakhstan is the sacred duty and obligation of every citizen of it"
+      }
+    ],
+    "DefenceDuty1995": [
+      {
+        "status": "translation",
+        "text": "Article 36 (1995 version). The defence of the Republic is the sacred duty and obligation of every citizen of it"
+      }
+    ],
+    "DefendKazakhstan": [
+      {
+        "status": "translation",
+        "text": "Article 39, paragraph 1. The defence of the Republic of Kazakhstan is the sacred duty and obligation of every citizen of it"
+      }
+    ],
+    "DefendKazakhstan1995": [
+      {
+        "status": "translation",
+        "text": "Article 36 (1995 version). The defence of the Republic is the sacred duty and obligation of every citizen of it"
+      }
+    ],
+    "DepriveCitizenship": [
+      {
+        "status": "translation",
+        "text": "Article 13, paragraph 2. Deprivation of citizenship is permissible only by a decision of a court for terrorist crimes or other grave harm to the national interests of the Republic"
+      }
+    ],
+    "DepriveCitizenship1995": [
+      {
+        "status": "translation",
+        "text": "Article 10, paragraph 2 (1995 version). Deprivation of citizenship only by a decision of a court for terrorist crimes or other grave harm to vital interests"
+      }
+    ],
+    "Detention": [
+      {
+        "status": "translation",
+        "text": "detention, arrest or holding in custody"
+      }
+    ],
+    "DetentionBeyond72HoursImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Article 16, paragraph 2 (1995 version). Without the sanction of a court, detention for not more than seventy-two hours"
+      }
+    ],
+    "DetentionBeyondStatutoryLimitImmunity": [
+      {
+        "status": "translation",
+        "text": "Article 18, paragraph 2. Without a decision of a court, a person may not be detained beyond the periods provided for by statute"
+      }
+    ],
+    "DignityImmunity": [
+      {
+        "status": "translation",
+        "text": "Article 20, paragraph 1. The honour and dignity of the individual are inviolable and are protected by law"
+      }
+    ],
+    "DignityImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Article 17, paragraph 1 (1995 version). The dignity of the individual is inviolable"
+      }
+    ],
+    "DignityInfringementProhibition": [
+      {
+        "status": "translation",
+        "text": "Article 20, paragraph 1. The honour and dignity of the individual are inviolable and are protected by law"
+      }
+    ],
+    "DignityInviolable": [
+      {
+        "status": "translation",
+        "text": "Article 20, paragraph 1. The honour and dignity of the individual are inviolable and are protected by law"
+      }
+    ],
+    "DignityInviolable1995": [
+      {
+        "status": "translation",
+        "text": "Article 17, paragraph 1 (1995 version). The dignity of the individual is inviolable"
+      }
+    ],
+    "DiscriminationProhibition": [
+      {
+        "status": "translation",
+        "text": "Article 16, paragraph 2. No one may be subjected to discrimination on the grounds listed or on any other grounds"
+      }
+    ],
+    "Document": [
+      {
+        "status": "translation",
+        "text": "document affecting the rights and interests of a person"
+      }
+    ],
+    "EducationInstitution": [
+      {
+        "status": "translation",
+        "text": "educational organisation"
+      }
+    ],
+    "EducationStandardsCompliance": [
+      {
+        "status": "translation",
+        "text": "Article 33, paragraph 4. The activity of educational institutions conforms to the generally binding standards"
+      }
+    ],
+    "EducationStandardsCompliance1995": [
+      {
+        "status": "translation",
+        "text": "Article 30, paragraph 4 (1995 version). The activity of any educational institution must conform to the generally binding standards"
+      }
+    ],
+    "EqualityImmunity": [
+      {
+        "status": "translation",
+        "text": "Article 16, paragraph 2. No one may be subjected to discrimination on the grounds of origin, status, sex, race, nationality, language, attitude to religion, convictions, place of residence or any other circumstances"
+      }
+    ],
+    "EqualityImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Article 14 (1995 version). All are equal before the law and the court; discrimination is not permitted"
+      }
+    ],
+    "ExerciseFreedomOfConscience": [
+      {
+        "status": "translation",
+        "text": "Article 25, paragraph 1. Everyone has the right to freedom of conscience"
+      }
+    ],
+    "ExerciseFreedomOfConscience1995": [
+      {
+        "status": "translation",
+        "text": "Article 22, paragraph 1 (1995 version). Everyone has the right to freedom of conscience"
+      }
+    ],
+    "ExitKazakhstan": [
+      {
+        "status": "translation",
+        "text": "Article 24, paragraph 2. Everyone has the right to leave the territory of the Republic of Kazakhstan"
+      }
+    ],
+    "ExitKazakhstan1995": [
+      {
+        "status": "translation",
+        "text": "Article 21, paragraph 2 (1995 version). Everyone has the right to leave the territory of the Republic"
+      }
+    ],
+    "ExitKazakhstanLiberty": [
+      {
+        "status": "translation",
+        "text": "Article 24, paragraph 2. Everyone has the right to leave the territory of the Republic of Kazakhstan"
+      }
+    ],
+    "ExitKazakhstanLiberty1995": [
+      {
+        "status": "translation",
+        "text": "Article 21, paragraph 2 (1995 version). Everyone has the right to leave the territory of the Republic"
+      }
+    ],
+    "ExtraditeUnderTreaty": [
+      {
+        "status": "translation",
+        "text": "Article 14, paragraph 1. The extradition of a citizen is permissible where it is provided for by an international treaty of the Republic"
+      }
+    ],
+    "ExtraditeUnderTreaty1995": [
+      {
+        "status": "translation",
+        "text": "Article 11, paragraph 1 (1995 version). Extradition is permissible where it is provided for by an international treaty of the Republic"
+      }
+    ],
+    "ForcedLabourBarredWithoutBasis": [
+      {
+        "status": "translation",
+        "text": "Article 27, paragraph 1. Compulsion to labour is prohibited so long as there is no judicial act finding the person guilty and no state of emergency or martial law"
+      }
+    ],
+    "ForcedLabourBarredWithoutBasis/unless/0": [
+      {
+        "status": "translation",
+        "text": "Article 27, paragraph 1. Compulsion to labour is prohibited so long as there is no judicial act finding the person guilty and no state of emergency or martial law"
+      }
+    ],
+    "ForcedLabourOnJudicialOrEmergencyBasis": [
+      {
+        "status": "translation",
+        "text": "Article 27, paragraph 1. Forced labour is permissible on the basis of a judicial act finding the person guilty, or in conditions of a state of emergency or martial law"
+      }
+    ],
+    "ForcedLabourOnlyOnJudicialOrEmergencyBasis1995": [
+      {
+        "status": "translation",
+        "text": "Article 24, paragraph 1 (1995 version). Forced labour is permissible only under a judicial act or in conditions of a state of emergency or martial law"
+      }
+    ],
+    "ForcedLabourProhibition": [
+      {
+        "status": "translation",
+        "text": "Article 27, paragraph 1. Forced labour outside the grounds named in the Constitution is not permitted"
+      }
+    ],
+    "ForeignCitizenshipNotRecognized": [
+      {
+        "status": "translation",
+        "text": "Article 13, paragraph 3. A citizen of the Republic of Kazakhstan may not hold dual or multiple citizenship"
+      }
+    ],
+    "ForeignCitizenshipNotRecognized1995": [
+      {
+        "status": "translation",
+        "text": "Article 10, paragraph 3 (1995 version). The citizenship of another state is not recognised for a citizen of the Republic"
+      }
+    ],
+    "ForeignCitizenshipTerminatesCitizenship": [
+      {
+        "status": "translation",
+        "text": "Article 13, paragraph 3. Holding another citizenship is a ground for the termination of the citizenship of the Republic of Kazakhstan"
+      }
+    ],
+    "ForeignerEnjoysCitizenRightsOnlyWhereProvided": [
+      {
+        "status": "translation",
+        "text": "Article 15, paragraph 4. Foreigners and stateless persons enjoy the rights of citizens in the cases provided for by the Constitution, the statutes and treaties"
+      }
+    ],
+    "ForeignerEnjoysCitizenRightsUnlessOtherwise1995": [
+      {
+        "status": "translation",
+        "text": "Article 12, paragraph 4 (1995 version). Foreigners and stateless persons enjoy the rights of citizens unless otherwise provided"
+      }
+    ],
+    "FreeCompetitiveHigherEducationDuty1995": [
+      {
+        "status": "translation",
+        "text": "Article 30, paragraph 2 (1995 version). The right to receive, on a competitive basis, free higher education at a state higher education institution"
+      }
+    ],
+    "FreeLegalAidDuty1995": [
+      {
+        "status": "translation",
+        "text": "Article 13, paragraph 3 (1995 version). In the cases provided for by statute, legal assistance is provided free of charge"
+      }
+    ],
+    "FreeSecondaryEducationDuty": [
+      {
+        "status": "translation",
+        "text": "Article 33, paragraph 1. Free secondary education at a state educational institution"
+      }
+    ],
+    "FreeSecondaryEducationDuty1995": [
+      {
+        "status": "translation",
+        "text": "Article 30, paragraph 1 (1995 version). Citizens are guaranteed free secondary education in state educational institutions"
+      }
+    ],
+    "FreedomOfAssociation": [
+      {
+        "status": "translation",
+        "text": "Article 26, paragraph 1. Freedom of association"
+      }
+    ],
+    "FreedomOfAssociation1995": [
+      {
+        "status": "translation",
+        "text": "Article 23, paragraph 1 (1995 version). Citizens have the right to freedom of association"
+      }
+    ],
+    "FreedomOfConscienceLiberty": [
+      {
+        "status": "translation",
+        "text": "Article 25, paragraph 1. Everyone has the right to freedom of conscience"
+      }
+    ],
+    "FreedomOfConscienceLiberty1995": [
+      {
+        "status": "translation",
+        "text": "Article 22, paragraph 1 (1995 version). Everyone has the right to freedom of conscience"
+      }
+    ],
+    "FreedomOfEnterpriseLiberty": [
+      {
+        "status": "translation",
+        "text": "Article 29, paragraph 4. The Republic of Kazakhstan guarantees the right to freedom of entrepreneurial activity"
+      }
+    ],
+    "FreedomOfEnterpriseLiberty1995": [
+      {
+        "status": "translation",
+        "text": "Article 26, paragraph 4 (1995 version). The right to freedom of entrepreneurial activity"
+      }
+    ],
+    "FreedomOfLabourLiberty": [
+      {
+        "status": "translation",
+        "text": "Article 27, paragraph 1. The right to work and to the free choice of occupation and profession"
+      }
+    ],
+    "FreedomOfLabourLiberty1995": [
+      {
+        "status": "translation",
+        "text": "Article 24, paragraph 1 (1995 version). The right to freedom of labour and to the free choice of occupation and profession"
+      }
+    ],
+    "FreedomOfMovement": [
+      {
+        "status": "translation",
+        "text": "Article 24, paragraph 1. Freedom of movement of a person lawfully present in Kazakhstan"
+      }
+    ],
+    "FreedomOfMovement1995": [
+      {
+        "status": "translation",
+        "text": "Article 21, paragraph 1 (1995 version). Freedom of movement and of choice of residence for a person lawfully present in the Republic"
+      }
+    ],
+    "GuaranteeAnnualPaidLeave1995": [
+      {
+        "status": "translation",
+        "text": "Article 24, paragraph 4 (1995 version). Those working under an employment contract are guaranteed paid annual leave"
+      }
+    ],
+    "GuaranteedFreeMedicalCareDuty1995": [
+      {
+        "status": "translation",
+        "text": "Article 29, paragraph 2 (1995 version). Citizens have the right to receive free of charge the guaranteed volume of medical care"
+      }
+    ],
+    "HeritageProtectionDuty": [
+      {
+        "status": "translation",
+        "text": "Article 40. Citizens of the Republic are obliged to care for the preservation of the historical and cultural heritage"
+      }
+    ],
+    "HeritageProtectionDuty1995": [
+      {
+        "status": "translation",
+        "text": "Article 37 (1995 version). Citizens are obliged to care for the preservation of the historical and cultural heritage"
+      }
+    ],
+    "HomeEntryProhibition": [
+      {
+        "status": "translation",
+        "text": "Article 28, paragraph 1. The home is inviolable; entry into it, its inspection and search are permissible only in the cases and in the manner laid down by statute"
+      }
+    ],
+    "HomeImmunity": [
+      {
+        "status": "translation",
+        "text": "Article 28, paragraph 1. The home is inviolable; entry into it is permissible only in the cases and in the manner laid down by statute"
+      }
+    ],
+    "HomeImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Article 25, paragraph 1 (1995 version). The home is inviolable; deprivation of a home only by a decision of a court"
+      }
+    ],
+    "HomeInviolability": [
+      {
+        "status": "translation",
+        "text": "Article 28, paragraph 1. The home is inviolable; entry into it is permissible only in the cases and in the manner laid down by statute"
+      }
+    ],
+    "HomeInviolability1995": [
+      {
+        "status": "translation",
+        "text": "Article 25, paragraph 1 (1995 version). The home is inviolable; deprivation of a home only by a decision of a court"
+      }
+    ],
+    "HousingNeed": [
+      {
+        "status": "translation",
+        "text": "need for housing"
+      }
+    ],
+    "InterethnicAccordViolationUnconstitutional": [
+      {
+        "status": "translation",
+        "text": "Article 41, paragraph 2. Actions capable of disturbing inter-ethnic and inter-confessional accord are found unconstitutional"
+      }
+    ],
+    "InterethnicAccordViolationUnconstitutional1995": [
+      {
+        "status": "translation",
+        "text": "Article 39, paragraph 2 (1995 version). Any actions capable of disturbing inter-ethnic and inter-confessional accord are found unconstitutional"
+      }
+    ],
+    "JoinAssociation": [
+      {
+        "status": "translation",
+        "text": "Article 26, paragraph 1. Freedom of association"
+      }
+    ],
+    "JoinAssociation1995": [
+      {
+        "status": "translation",
+        "text": "Article 23, paragraph 1 (1995 version). Citizens have the right to freedom of association"
+      }
+    ],
+    "LabourDisputeLiberty": [
+      {
+        "status": "translation",
+        "text": "Article 27, paragraph 3. The right to individual and collective labour disputes, using the means of their resolution laid down by statute, is recognised"
+      }
+    ],
+    "LegalAidCase": [
+      {
+        "status": "translation",
+        "text": "case of the provision of legal assistance"
+      }
+    ],
+    "Legislature": [
+      {
+        "status": "translation",
+        "text": "legislative body"
+      }
+    ],
+    "MoveWithinKazakhstan": [
+      {
+        "status": "translation",
+        "text": "Article 24, paragraph 1. Freedom of movement of a person lawfully present in Kazakhstan"
+      }
+    ],
+    "MoveWithinKazakhstan1995": [
+      {
+        "status": "translation",
+        "text": "Article 21, paragraph 1 (1995 version). Freedom of movement and of choice of residence for a person lawfully present in the Republic"
+      }
+    ],
+    "MovementRestriction": [
+      {
+        "status": "translation",
+        "text": "restriction of freedom of movement"
+      }
+    ],
+    "NationalIdentityLiberty": [
+      {
+        "status": "translation",
+        "text": "Article 22, paragraph 1. Everyone has the right to determine and to state, or not to state, his national affiliation"
+      }
+    ],
+    "NationalPartyAndReligiousIdentityLiberty1995": [
+      {
+        "status": "translation",
+        "text": "Article 19, paragraph 1 (1995 version). Everyone has the right to determine and to state, or not to state, his national, party and religious affiliation"
+      }
+    ],
+    "NativeLanguageAndCultureLiberty": [
+      {
+        "status": "translation",
+        "text": "Article 22, paragraph 2. The right to use one's native language and culture and freely to choose the language of communication, upbringing, education and creative work"
+      }
+    ],
+    "NativeLanguageAndCultureLiberty1995": [
+      {
+        "status": "translation",
+        "text": "Article 19, paragraph 2 (1995 version). The right to use one's native language and culture and freely to choose the language of communication"
+      }
+    ],
+    "NatureProtectionDuty": [
+      {
+        "status": "translation",
+        "text": "Article 37, paragraph 1. Citizens of the Republic are obliged to preserve nature and to treat natural resources with care"
+      }
+    ],
+    "NatureProtectionDuty1995": [
+      {
+        "status": "translation",
+        "text": "Article 38 (1995 version). Citizens are obliged to preserve nature and to treat natural resources with care"
+      }
+    ],
+    "NoCensorship": [
+      {
+        "status": "translation",
+        "text": "Article 23, paragraph 5. Censorship is prohibited"
+      }
+    ],
+    "NoCensorship1995": [
+      {
+        "status": "translation",
+        "text": "Article 20, paragraph 1 (1995 version). Censorship is prohibited"
+      }
+    ],
+    "NoDeathPenalty": [
+      {
+        "status": "translation",
+        "text": "Article 17, paragraph 3. The death penalty is prohibited"
+      }
+    ],
+    "NoDeathPenalty1995": [
+      {
+        "status": "translation",
+        "text": "Article 15, paragraph 2 (1995 version). The death penalty is prohibited"
+      }
+    ],
+    "NoDiscrimination": [
+      {
+        "status": "translation",
+        "text": "Article 16, paragraph 2. No one may be subjected to discrimination on the grounds of origin, status, sex, race, nationality, language, attitude to religion, convictions, place of residence or any other circumstances"
+      }
+    ],
+    "NoDiscrimination1995": [
+      {
+        "status": "translation",
+        "text": "Article 14 (1995 version). All are equal before the law and the court; discrimination is not permitted"
+      }
+    ],
+    "NoTorture": [
+      {
+        "status": "translation",
+        "text": "Article 20, paragraph 2. No one is to be subjected to torture, violence or other cruel or degrading treatment or punishment"
+      }
+    ],
+    "NoTorture1995": [
+      {
+        "status": "translation",
+        "text": "Article 17, paragraph 2 (1995 version). No one is to be subjected to torture or cruel treatment"
+      }
+    ],
+    "NonDerogableCore": [
+      {
+        "status": "translation",
+        "text": "Article 41, paragraph 3. The non-restrictable core of rights"
+      }
+    ],
+    "NonDerogableCore1995": [
+      {
+        "status": "translation",
+        "text": "Article 39, paragraph 3 (1995 version). In no case are the rights under Articles 11, 13–15, Article 16, paragraph 1, Articles 17, 19, 22 and Article 26, paragraph 2 subject to restriction"
+      }
+    ],
+    "NonExtradition": [
+      {
+        "status": "translation",
+        "text": "Article 14, paragraph 1. A citizen of the Republic of Kazakhstan may not be extradited to a foreign state"
+      }
+    ],
+    "NonExtradition1995": [
+      {
+        "status": "translation",
+        "text": "Article 11, paragraph 1 (1995 version). A citizen of the Republic may not be extradited to a foreign state"
+      }
+    ],
+    "Official": [
+      {
+        "status": "translation",
+        "text": "official"
+      }
+    ],
+    "OfficialConcealmentLiability": [
+      {
+        "status": "translation",
+        "text": "Article 37, paragraph 3. The concealment by officials of facts and circumstances threatening the life and health of people or the environment entails liability"
+      }
+    ],
+    "OfficialConcealmentLiability1995": [
+      {
+        "status": "translation",
+        "text": "Article 31, paragraph 2 (1995 version). The concealment by officials of facts threatening the life and health of people entails liability"
+      }
+    ],
+    "Parent": [
+      {
+        "status": "translation",
+        "text": "parent"
+      }
+    ],
+    "ParentCareDuty": [
+      {
+        "status": "translation",
+        "text": "Article 30, paragraph 3. The care of children and their upbringing are the natural right and the duty of parents"
+      }
+    ],
+    "ParentCareDuty1995": [
+      {
+        "status": "translation",
+        "text": "Article 27, paragraph 2 (1995 version). The care of children and their upbringing are the natural right and the duty of parents"
+      }
+    ],
+    "ParticipateInPeacefulAssembly": [
+      {
+        "status": "translation",
+        "text": "Article 34. The right of citizens to peaceful assembly"
+      }
+    ],
+    "ParticipateInStateGovernance": [
+      {
+        "status": "translation",
+        "text": "Article 35, paragraph 1. The right to take part in the management of the affairs of the state"
+      }
+    ],
+    "ParticipateInStateGovernance1995": [
+      {
+        "status": "translation",
+        "text": "Article 33, paragraph 1 (1995 version). The right to take part in the management of the affairs of the state and to apply to state bodies"
+      }
+    ],
+    "ParticipateInUnarmedAssembly1995": [
+      {
+        "status": "translation",
+        "text": "Article 32 (1995 version). Citizens have the right to assemble peacefully and without weapons and to hold meetings, rallies, demonstrations, marches and pickets"
+      }
+    ],
+    "PayLawfulTaxes": [
+      {
+        "status": "translation",
+        "text": "Article 38. The payment of lawfully established taxes, fees and other obligatory payments is the duty and obligation of everyone"
+      }
+    ],
+    "PayLawfulTaxes1995": [
+      {
+        "status": "translation",
+        "text": "Article 35 (1995 version). The payment of lawfully established taxes, fees and other obligatory payments is the duty and obligation of everyone"
+      }
+    ],
+    "PeacefulAssemblyLiberty": [
+      {
+        "status": "translation",
+        "text": "Article 34. The right of citizens to peaceful assembly"
+      }
+    ],
+    "PeacefulAssemblyLiberty1995": [
+      {
+        "status": "translation",
+        "text": "Article 32 (1995 version). Citizens have the right to assemble peacefully and without weapons and to hold meetings, rallies, demonstrations, marches and pickets"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "natural person"
+      }
+    ],
+    "PoliticalMotiveRestrictionProhibited": [
+      {
+        "status": "translation",
+        "text": "Article 41, paragraph 3. The restriction of the rights and freedoms of citizens on political grounds is not permitted"
+      }
+    ],
+    "PoliticalMotiveRestrictionProhibited1995": [
+      {
+        "status": "translation",
+        "text": "Article 39, paragraph 3 (1995 version). Any form of restriction of the rights and freedoms of citizens on political grounds is not permitted"
+      }
+    ],
+    "PreserveHeritage": [
+      {
+        "status": "translation",
+        "text": "Article 40. Citizens of the Republic are obliged to care for the preservation of the historical and cultural heritage"
+      }
+    ],
+    "PreserveHeritage1995": [
+      {
+        "status": "translation",
+        "text": "Article 37 (1995 version). Citizens are obliged to care for the preservation of the historical and cultural heritage"
+      }
+    ],
+    "PresumptionOfInnocence/R2": [
+      {
+        "status": "translation",
+        "text": "Article 19, paragraph 1. Everyone is presumed innocent until his guilt is established by a judgment of a court that has come into legal force"
+      }
+    ],
+    "PrimaryAndBasicEducationCompulsory": [
+      {
+        "status": "translation",
+        "text": "Article 33, paragraph 1. Primary and basic secondary education is compulsory"
+      }
+    ],
+    "PrivacyImmunity": [
+      {
+        "status": "translation",
+        "text": "Article 21, paragraph 1. The right to the inviolability of private life, to personal and family secrets and to the protection of personal data is guaranteed by law"
+      }
+    ],
+    "PrivacyImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Article 18, paragraph 1 (1995 version). Inviolability of private life, personal and family secrets"
+      }
+    ],
+    "PrivacyInterferenceProhibition": [
+      {
+        "status": "translation",
+        "text": "Article 21, paragraphs 1 and 2. The inviolability of private life and the secrecy of communications are protected by law; a restriction is permissible only in the cases and in the manner laid down by statute"
+      }
+    ],
+    "PrivacyProtection": [
+      {
+        "status": "translation",
+        "text": "Article 21, paragraph 1. The right to the inviolability of private life, to personal and family secrets and to the protection of personal data is guaranteed by law"
+      }
+    ],
+    "PrivacyProtection1995": [
+      {
+        "status": "translation",
+        "text": "Article 18, paragraph 1 (1995 version). Inviolability of private life, personal and family secrets"
+      }
+    ],
+    "ProhibitedPropaganda": [
+      {
+        "status": "translation",
+        "text": "Article 23, paragraph 6. Propaganda for the violent change of the foundations of the constitutional order, for encroachments on territorial integrity, for war or discord, and calls to such actions, are not permitted"
+      }
+    ],
+    "ProhibitedPropaganda1995": [
+      {
+        "status": "translation",
+        "text": "Article 20, paragraph 3 (1995 version). Propaganda for or agitation in favour of the violent change of the constitutional order and the other matters listed are not permitted"
+      }
+    ],
+    "PropertyImmunity": [
+      {
+        "status": "translation",
+        "text": "Article 29, paragraph 3. The compulsory expropriation of property for state needs is permissible only on condition of equivalent compensation"
+      }
+    ],
+    "PropertyImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Article 26, paragraph 3 (1995 version). Compulsory expropriation only upon equivalent compensation"
+      }
+    ],
+    "ProtectAndPatroniseAbroad": [
+      {
+        "status": "translation",
+        "text": "Article 14, paragraph 2. The Republic of Kazakhstan guarantees its citizens protection beyond its borders"
+      }
+    ],
+    "ProtectAndPatroniseAbroad1995": [
+      {
+        "status": "translation",
+        "text": "Article 11, paragraph 2 (1995 version). The Republic guarantees its citizens protection and patronage beyond its borders"
+      }
+    ],
+    "ProtectNature": [
+      {
+        "status": "translation",
+        "text": "Article 37, paragraph 1. Citizens of the Republic are obliged to preserve nature and to treat natural resources with care"
+      }
+    ],
+    "ProtectNature1995": [
+      {
+        "status": "translation",
+        "text": "Article 38 (1995 version). Citizens are obliged to preserve nature and to treat natural resources with care"
+      }
+    ],
+    "ProtectionAndPatronageAbroadDuty": [
+      {
+        "status": "translation",
+        "text": "Article 14, paragraph 2. The Republic of Kazakhstan guarantees its citizens protection beyond its borders"
+      }
+    ],
+    "ProtectionAndPatronageAbroadDuty1995": [
+      {
+        "status": "translation",
+        "text": "Article 11, paragraph 2 (1995 version). The Republic guarantees its citizens protection and patronage beyond its borders"
+      }
+    ],
+    "ProvideAccess": [
+      {
+        "status": "translation",
+        "text": "Article 21, paragraph 3. State bodies, associations, officials and the mass media are obliged to afford everyone the opportunity to acquaint himself with the documents affecting his rights and interests"
+      }
+    ],
+    "ProvideAffordableStateHousing1995": [
+      {
+        "status": "translation",
+        "text": "Article 25, paragraph 2 (1995 version). The categories specified by statute are provided with housing at an affordable price from the state housing funds"
+      }
+    ],
+    "ProvideCitizenAccess1995": [
+      {
+        "status": "translation",
+        "text": "Article 18, paragraph 3 (1995 version). Every citizen is afforded the opportunity to acquaint himself with the documents affecting him"
+      }
+    ],
+    "ProvideCounselAccess": [
+      {
+        "status": "translation",
+        "text": "Article 18, paragraph 4. A detained person, a suspect and an accused have the right to the assistance of an advocate from the moment of detention"
+      }
+    ],
+    "ProvideCounselAccess1995": [
+      {
+        "status": "translation",
+        "text": "Article 16, paragraph 3 (1995 version). The right to the assistance of an advocate from the moment of detention, arrest or the bringing of a charge"
+      }
+    ],
+    "ProvideFreeHigherEducation1995": [
+      {
+        "status": "translation",
+        "text": "Article 30, paragraph 2 (1995 version). The right to receive, on a competitive basis, free higher education at a state higher education institution"
+      }
+    ],
+    "ProvideFreeLegalAid1995": [
+      {
+        "status": "translation",
+        "text": "Article 13, paragraph 3 (1995 version). In the cases provided for by statute, legal assistance is provided free of charge"
+      }
+    ],
+    "ProvideFreeSecondaryEducation": [
+      {
+        "status": "translation",
+        "text": "Article 33, paragraph 1. Free secondary education at a state educational institution"
+      }
+    ],
+    "ProvideFreeSecondaryEducation1995": [
+      {
+        "status": "translation",
+        "text": "Article 30, paragraph 1 (1995 version). Citizens are guaranteed free secondary education in state educational institutions"
+      }
+    ],
+    "ProvideGuaranteedFreeMedicalCare1995": [
+      {
+        "status": "translation",
+        "text": "Article 29, paragraph 2 (1995 version). Citizens have the right to receive free of charge the guaranteed volume of medical care"
+      }
+    ],
+    "ProvideSocialSecurity": [
+      {
+        "status": "translation",
+        "text": "Article 31, paragraph 1. Social security on a lawful ground"
+      }
+    ],
+    "ProvideSocialSecurity1995": [
+      {
+        "status": "translation",
+        "text": "Article 28, paragraph 1 (1995 version). A minimum wage and pension and social security on lawful grounds are guaranteed"
+      }
+    ],
+    "ProvideStatutoryHousing": [
+      {
+        "status": "translation",
+        "text": "Article 28, paragraph 2. The categories of citizens specified by statute who are in need of housing are provided with it in accordance with the norms laid down by statute"
+      }
+    ],
+    "ProvideUnemploymentProtection1995": [
+      {
+        "status": "translation",
+        "text": "Article 24, paragraph 2 (1995 version). The right to social protection against unemployment"
+      }
+    ],
+    "ProvideUnpaidMedicalCare": [
+      {
+        "status": "translation",
+        "text": "Article 32, paragraph 2. Citizens of the Republic of Kazakhstan have the right to receive the medical care laid down by statute without paying for it"
+      }
+    ],
+    "RefrainFromBlockingReturn": [
+      {
+        "status": "translation",
+        "text": "Article 24, paragraph 2. Citizens of the Republic of Kazakhstan have the right to return to the Republic of Kazakhstan without hindrance"
+      }
+    ],
+    "RefrainFromCensorship": [
+      {
+        "status": "translation",
+        "text": "Article 23, paragraph 5. Censorship is prohibited"
+      }
+    ],
+    "RefrainFromDeathPenalty": [
+      {
+        "status": "translation",
+        "text": "Article 17, paragraph 3. The death penalty is prohibited"
+      }
+    ],
+    "RefrainFromDetentionBeyondStatutoryPeriod": [
+      {
+        "status": "translation",
+        "text": "Article 18, paragraph 2. Without a decision of a court, a person may not be detained beyond the periods provided for by statute"
+      }
+    ],
+    "RefrainFromDignityInfringement": [
+      {
+        "status": "translation",
+        "text": "Article 20, paragraph 1. The honour and dignity of the individual are inviolable and are protected by law"
+      }
+    ],
+    "RefrainFromDiscrimination": [
+      {
+        "status": "translation",
+        "text": "Article 16, paragraph 2. No one may be subjected to discrimination on the grounds listed or on any other grounds"
+      }
+    ],
+    "RefrainFromForcedLabour": [
+      {
+        "status": "translation",
+        "text": "Article 27, paragraph 1. Forced labour outside the grounds named in the Constitution is not permitted"
+      }
+    ],
+    "RefrainFromPrivacyInterference": [
+      {
+        "status": "translation",
+        "text": "Article 21, paragraphs 1 and 2. The inviolability of private life and the secrecy of communications are protected by law; a restriction is permissible only in the cases and in the manner laid down by statute"
+      }
+    ],
+    "RefrainFromTorture": [
+      {
+        "status": "translation",
+        "text": "Article 20, paragraph 2. No one is to be subjected to torture, violence or other cruel or degrading treatment or punishment"
+      }
+    ],
+    "RefrainFromUncompensatedExpropriation": [
+      {
+        "status": "translation",
+        "text": "Article 29, paragraph 3. The compulsory expropriation of property for state needs is permissible only on condition of equivalent compensation"
+      }
+    ],
+    "RefrainFromUnlawfulHomeEntry": [
+      {
+        "status": "translation",
+        "text": "Article 28, paragraph 1. The home is inviolable; entry into it, its inspection and search are permissible only in the cases and in the manner laid down by statute"
+      }
+    ],
+    "ResolveLabourDispute": [
+      {
+        "status": "translation",
+        "text": "Article 27, paragraph 3. The right to individual and collective labour disputes, using the means of their resolution laid down by statute, is recognised"
+      }
+    ],
+    "RespectConstitutionAndLaw": [
+      {
+        "status": "translation",
+        "text": "Article 36, paragraph 1. Everyone is obliged to observe the Constitution and the legislation of the Republic and to respect the rights, freedoms, honour and dignity of other persons"
+      }
+    ],
+    "RespectConstitutionAndLaw1995": [
+      {
+        "status": "translation",
+        "text": "Article 34, paragraph 1 (1995 version). Everyone is obliged to observe the Constitution and the legislation and to respect the rights and dignity of other persons"
+      }
+    ],
+    "RespectStateSymbols": [
+      {
+        "status": "translation",
+        "text": "Article 36, paragraph 2. Everyone is obliged to respect the state symbols of the Republic of Kazakhstan"
+      }
+    ],
+    "RespectStateSymbols1995": [
+      {
+        "status": "translation",
+        "text": "Article 34, paragraph 2 (1995 version). Everyone is obliged to respect the state symbols of the Republic"
+      }
+    ],
+    "RestrictDerogableRight": [
+      {
+        "status": "translation",
+        "text": "Article 41, paragraph 1. Rights and freedoms may be restricted only by statutes and only to the extent necessary to protect the constitutional order, rights and freedoms, national security, public order, health and morals"
+      }
+    ],
+    "RestrictedOfficePoliticalMembershipIncompatible": [
+      {
+        "status": "translation",
+        "text": "Article 26, paragraph 2. Party and trade union membership is incompatible with the positions listed"
+      }
+    ],
+    "RestrictedOfficePoliticalMembershipIncompatible1995": [
+      {
+        "status": "translation",
+        "text": "Article 23, paragraph 2 (1995 version). The officials listed must not be members of parties or trade unions"
+      }
+    ],
+    "Restriction": [
+      {
+        "status": "translation",
+        "text": "restriction of rights and freedoms introduced by statute"
+      }
+    ],
+    "ReturnBlockProhibition": [
+      {
+        "status": "translation",
+        "text": "Article 24, paragraph 2. Citizens of the Republic of Kazakhstan have the right to return to the Republic of Kazakhstan without hindrance"
+      }
+    ],
+    "ReturnToKazakhstan": [
+      {
+        "status": "translation",
+        "text": "Article 24, paragraph 2. Citizens of the Republic of Kazakhstan have the right to return to the Republic of Kazakhstan without hindrance"
+      }
+    ],
+    "ReturnToKazakhstanLiberty": [
+      {
+        "status": "translation",
+        "text": "Article 24, paragraph 2. Citizens of the Republic of Kazakhstan have the right to return to the Republic of Kazakhstan without hindrance"
+      }
+    ],
+    "RightToStrikeLiberty1995": [
+      {
+        "status": "translation",
+        "text": "Article 24, paragraph 3 (1995 version). The right to labour disputes, including the right to strike, is recognised"
+      }
+    ],
+    "RightsExerciseBoundary": [
+      {
+        "status": "translation",
+        "text": "Article 15, paragraph 5. The exercise of rights is limited by the rights of others and by the constitutional aims"
+      }
+    ],
+    "RightsExerciseBoundary1995": [
+      {
+        "status": "translation",
+        "text": "Article 12, paragraph 5 (1995 version). The exercise of rights must not violate the rights of others or encroach on the constitutional order and public morals"
+      }
+    ],
+    "RightsLimitationPower": [
+      {
+        "status": "translation",
+        "text": "Article 41, paragraph 1. Rights and freedoms may be restricted only by statutes and only to the extent necessary to protect the constitutional order, rights and freedoms, national security, public order, health and morals"
+      }
+    ],
+    "SecondaryEducationCompulsory1995": [
+      {
+        "status": "translation",
+        "text": "Article 30, paragraph 1 (1995 version). Secondary education is compulsory"
+      }
+    ],
+    "SeventyTwoHourDetentionLimit1995": [
+      {
+        "status": "translation",
+        "text": "Article 16, paragraph 2 (1995 version). Without the sanction of a court, detention for not more than seventy-two hours"
+      }
+    ],
+    "SocialSecurityDuty": [
+      {
+        "status": "translation",
+        "text": "Article 31, paragraph 1. Social security on a lawful ground"
+      }
+    ],
+    "SocialSecurityDuty1995": [
+      {
+        "status": "translation",
+        "text": "Article 28, paragraph 1 (1995 version). A minimum wage and pension and social security on lawful grounds are guaranteed"
+      }
+    ],
+    "StateAct": [
+      {
+        "status": "translation",
+        "text": "act of a state body"
+      }
+    ],
+    "StateAuthority": [
+      {
+        "status": "translation",
+        "text": "state body or official"
+      }
+    ],
+    "StateCompensationForUnlawfulHarm": [
+      {
+        "status": "translation",
+        "text": "Article 15, paragraph 6. The state makes good the harm caused by unlawful acts of its bodies"
+      }
+    ],
+    "StateGovernanceParticipationLiberty": [
+      {
+        "status": "translation",
+        "text": "Article 35, paragraph 1. The right to take part in the management of the affairs of the state"
+      }
+    ],
+    "StateGovernanceParticipationLiberty1995": [
+      {
+        "status": "translation",
+        "text": "Article 33, paragraph 1 (1995 version). The right to take part in the management of the affairs of the state and to apply to state bodies"
+      }
+    ],
+    "StateSymbolsRespectDuty": [
+      {
+        "status": "translation",
+        "text": "Article 36, paragraph 2. Everyone is obliged to respect the state symbols of the Republic of Kazakhstan"
+      }
+    ],
+    "StateSymbolsRespectDuty1995": [
+      {
+        "status": "translation",
+        "text": "Article 34, paragraph 2 (1995 version). Everyone is obliged to respect the state symbols of the Republic"
+      }
+    ],
+    "StatutoryHousingProvisionDuty": [
+      {
+        "status": "translation",
+        "text": "Article 28, paragraph 2. The categories of citizens specified by statute who are in need of housing are provided with it in accordance with the norms laid down by statute"
+      }
+    ],
+    "StatutoryMovementRestriction": [
+      {
+        "status": "translation",
+        "text": "Article 24. A restriction on movement or on leaving the country is permissible only by statute"
+      }
+    ],
+    "StatutoryMovementRestriction1995": [
+      {
+        "status": "translation",
+        "text": "Article 21, paragraph 1 (1995 version). A restriction on movement is permissible only in the cases stipulated by statute"
+      }
+    ],
+    "Strike": [
+      {
+        "status": "translation",
+        "text": "strike"
+      }
+    ],
+    "Strike1995": [
+      {
+        "status": "translation",
+        "text": "Article 24, paragraph 3 (1995 version). The right to labour disputes, including the right to strike, is recognised"
+      }
+    ],
+    "TaxPaymentDuty": [
+      {
+        "status": "translation",
+        "text": "Article 38. The payment of lawfully established taxes, fees and other obligatory payments is the duty and obligation of everyone"
+      }
+    ],
+    "TaxPaymentDuty1995": [
+      {
+        "status": "translation",
+        "text": "Article 35 (1995 version). The payment of lawfully established taxes, fees and other obligatory payments is the duty and obligation of everyone"
+      }
+    ],
+    "TortureImmunity": [
+      {
+        "status": "translation",
+        "text": "Article 20, paragraph 2. No one is to be subjected to torture, violence or other cruel or degrading treatment or punishment"
+      }
+    ],
+    "TortureImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Article 17, paragraph 2 (1995 version). No one is to be subjected to torture or cruel treatment"
+      }
+    ],
+    "TortureProhibition": [
+      {
+        "status": "translation",
+        "text": "Article 20, paragraph 2. No one is to be subjected to torture, violence or other cruel or degrading treatment or punishment"
+      }
+    ],
+    "TreatyExtraditionPower": [
+      {
+        "status": "translation",
+        "text": "Article 14, paragraph 1. The extradition of a citizen is permissible where it is provided for by an international treaty of the Republic"
+      }
+    ],
+    "TreatyExtraditionPower1995": [
+      {
+        "status": "translation",
+        "text": "Article 11, paragraph 1 (1995 version). Extradition is permissible where it is provided for by an international treaty of the Republic"
+      }
+    ],
+    "UncompensatedExpropriationProhibition": [
+      {
+        "status": "translation",
+        "text": "Article 29, paragraph 3. The compulsory expropriation of property for state needs is permissible only on condition of equivalent compensation"
+      }
+    ],
+    "UnemploymentProtectionDuty1995": [
+      {
+        "status": "translation",
+        "text": "Article 24, paragraph 2 (1995 version). The right to social protection against unemployment"
+      }
+    ],
+    "UnfairCompetitionProhibited": [
+      {
+        "status": "translation",
+        "text": "Article 29, paragraph 4. Unfair competition is prohibited"
+      }
+    ],
+    "UnfairCompetitionProhibited1995": [
+      {
+        "status": "translation",
+        "text": "Article 26, paragraph 4 (1995 version). Unfair competition is prohibited"
+      }
+    ],
+    "UnobstructedReturnToKazakhstan": [
+      {
+        "status": "translation",
+        "text": "Article 24, paragraph 2. A citizen has the right to return to Kazakhstan without hindrance"
+      }
+    ],
+    "UnobstructedReturnToKazakhstan1995": [
+      {
+        "status": "translation",
+        "text": "Article 21, paragraph 2 (1995 version). Citizens have the right to return to the Republic without hindrance"
+      }
+    ],
+    "UnpaidMedicalCareDuty": [
+      {
+        "status": "translation",
+        "text": "Article 32, paragraph 2. Citizens of the Republic of Kazakhstan have the right to receive the medical care laid down by statute without paying for it"
+      }
+    ],
+    "UseNativeLanguageAndCulture": [
+      {
+        "status": "translation",
+        "text": "Article 22, paragraph 2. The right to use one's native language and culture and freely to choose the language of communication, upbringing, education and creative work"
+      }
+    ],
+    "UseNativeLanguageAndCulture1995": [
+      {
+        "status": "translation",
+        "text": "Article 19, paragraph 2 (1995 version). The right to use one's native language and culture and freely to choose the language of communication"
+      }
+    ],
+    "VotingAndReferendumDisqualification/alt/1": [
+      {
+        "status": "translation",
+        "text": "Article 35, paragraph 3. Closed list of grounds for exclusion from voting and from a referendum"
+      }
+    ],
+    "VotingAndReferendumDisqualification/alt/2": [
+      {
+        "status": "translation",
+        "text": "Article 35, paragraph 3. Closed list of grounds for exclusion from voting and from a referendum"
+      }
+    ],
+    "VotingAndReferendumDisqualification1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "Article 33, paragraph 3 (1995 version). Persons declared incapable by a court and persons held in places of deprivation of liberty do not have the right to vote or to take part in a referendum"
+      }
+    ],
+    "VotingAndReferendumDisqualification1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "Article 33, paragraph 3 (1995 version). Persons declared incapable by a court and persons held in places of deprivation of liberty do not have the right to vote or to take part in a referendum"
+      }
+    ],
+    "abroad": [
+      {
+        "status": "translation",
+        "text": "the person is outside the territory of the Republic"
+      }
+    ],
+    "access_provided": [
+      {
+        "status": "translation",
+        "text": "the person is afforded access to the documents affecting him"
+      }
+    ],
+    "accused": [
+      {
+        "status": "translation",
+        "text": "the person is accused of committing a crime"
+      }
+    ],
+    "action_harms_interethnic_or_interconfessional_accord": [
+      {
+        "status": "translation",
+        "text": "the act harms inter-ethnic and inter-confessional accord"
+      }
+    ],
+    "action_unconstitutional": [
+      {
+        "status": "translation",
+        "text": "the act is constitutionally impermissible"
+      }
+    ],
+    "adult_capable_child_of": [
+      {
+        "status": "translation",
+        "text": "adult child fit for work of this parent"
+      }
+    ],
+    "affordable_state_housing_provided": [
+      {
+        "status": "translation",
+        "text": "the person has been provided with housing from the state housing funds at an affordable price"
+      }
+    ],
+    "annual_paid_leave_provided": [
+      {
+        "status": "translation",
+        "text": "the person has been granted paid annual leave"
+      }
+    ],
+    "appeal_right_granted": [
+      {
+        "status": "translation",
+        "text": "the detained person is granted the right of appeal"
+      }
+    ],
+    "arrest_constitutionally_admissible": [
+      {
+        "status": "translation",
+        "text": "the arrest or detention in custody is constitutionally admissible"
+      }
+    ],
+    "arrest_or_custody": [
+      {
+        "status": "translation",
+        "text": "arrest or detention in custody has been applied"
+      }
+    ],
+    "assembly_participation_action": [
+      {
+        "status": "translation",
+        "text": "the person takes part in an assembly"
+      }
+    ],
+    "assembly_restriction": [
+      {
+        "status": "translation",
+        "text": "the restriction concerns this assembly"
+      }
+    ],
+    "assembly_restriction_constitutionally_valid": [
+      {
+        "status": "translation",
+        "text": "the restriction of the right of peaceful assembly is constitutionally admissible"
+      }
+    ],
+    "assembly_restriction_established_by_law": [
+      {
+        "status": "translation",
+        "text": "the restriction of the right of peaceful assembly is established by statute"
+      }
+    ],
+    "assembly_restriction_has_constitutional_goal": [
+      {
+        "status": "translation",
+        "text": "the restriction of the right of peaceful assembly pursues a constitutional aim"
+      }
+    ],
+    "association": [
+      {
+        "status": "translation",
+        "text": "the association is an association of citizens"
+      }
+    ],
+    "association_membership_action": [
+      {
+        "status": "translation",
+        "text": "the person is a member of an association"
+      }
+    ],
+    "censorship_attempt": [
+      {
+        "status": "translation",
+        "text": "a state body is exercising censorship"
+      }
+    ],
+    "censorship_imposed": [
+      {
+        "status": "translation",
+        "text": "censorship has been applied"
+      }
+    ],
+    "child_care_provided": [
+      {
+        "status": "translation",
+        "text": "the parents care for the child and bring him up"
+      }
+    ],
+    "citizen": [
+      {
+        "status": "translation",
+        "text": "the person is a citizen of the Republic of Kazakhstan"
+      }
+    ],
+    "citizen_access_provided": [
+      {
+        "status": "translation",
+        "text": "the citizen is afforded access to the documents affecting him"
+      }
+    ],
+    "citizenship_deprivation_decision": [
+      {
+        "status": "translation",
+        "text": "a state body is taking a decision on deprivation of citizenship"
+      }
+    ],
+    "citizenship_deprived": [
+      {
+        "status": "translation",
+        "text": "the person has been deprived of the citizenship of the Republic"
+      }
+    ],
+    "civil_service_requirement": [
+      {
+        "status": "translation",
+        "text": "the requirement is imposed on those entering the civil service"
+      }
+    ],
+    "civil_service_requirement_admissible": [
+      {
+        "status": "translation",
+        "text": "the requirement for those entering the civil service is constitutionally admissible"
+      }
+    ],
+    "collective_labour_dispute": [
+      {
+        "status": "translation",
+        "text": "there is a collective labour dispute"
+      }
+    ],
+    "compulsory_education_applies": [
+      {
+        "status": "translation",
+        "text": "education at this level is compulsory"
+      }
+    ],
+    "concealed_life_threatening_facts": [
+      {
+        "status": "translation",
+        "text": "the official concealed facts and circumstances threatening the life and health of people"
+      }
+    ],
+    "conscience_action": [
+      {
+        "status": "translation",
+        "text": "the person exercises freedom of conscience"
+      }
+    ],
+    "constitution_or_law_violated": [
+      {
+        "status": "translation",
+        "text": "the person has violated the Constitution or the statutes of the Republic"
+      }
+    ],
+    "constitutional_health_guarantee": [
+      {
+        "status": "translation",
+        "text": "the Constitution guarantees the protection of health"
+      }
+    ],
+    "constitutional_health_guarantee_1995": [
+      {
+        "status": "translation",
+        "text": "the Constitution of 1995 guaranteed the protection of health"
+      }
+    ],
+    "constitutional_labor_guarantee": [
+      {
+        "status": "translation",
+        "text": "the Constitution guarantees conditions of work, remuneration and rest"
+      }
+    ],
+    "constitutional_marriage_protection": [
+      {
+        "status": "translation",
+        "text": "the Constitution protects marriage, the family, motherhood, fatherhood and childhood"
+      }
+    ],
+    "constitutional_marriage_protection_1995": [
+      {
+        "status": "translation",
+        "text": "the Constitution of 1995 protected marriage, the family, motherhood, fatherhood and childhood"
+      }
+    ],
+    "constitutional_personal_data_guarantee": [
+      {
+        "status": "translation",
+        "text": "the Constitution guarantees the protection of personal data"
+      }
+    ],
+    "constitutional_personal_data_guarantee_1995": [
+      {
+        "status": "translation",
+        "text": "the Constitution of 1995 guaranteed the protection of personal data"
+      }
+    ],
+    "continued_detention_attempt": [
+      {
+        "status": "translation",
+        "text": "a state body is continuing to hold the person in custody"
+      }
+    ],
+    "continued_detention_barred": [
+      {
+        "status": "translation",
+        "text": "detention beyond the period laid down by statute is prohibited: there is no decision of a court"
+      }
+    ],
+    "corruption_offence_confirmed_by_court": [
+      {
+        "status": "translation",
+        "text": "a court has confirmed that the person committed a corruption offence"
+      }
+    ],
+    "counsel_access_provided": [
+      {
+        "status": "translation",
+        "text": "the detained person is afforded access to an advocate"
+      }
+    ],
+    "court_declared_incapable": [
+      {
+        "status": "translation",
+        "text": "the person has been declared incapable by a court"
+      }
+    ],
+    "court_ordered_citizenship_deprivation": [
+      {
+        "status": "translation",
+        "text": "the deprivation of citizenship was effected by a decision of a court"
+      }
+    ],
+    "court_sanction_obtained": [
+      {
+        "status": "translation",
+        "text": "the sanction of a court has been obtained"
+      }
+    ],
+    "death_penalty_attempt": [
+      {
+        "status": "translation",
+        "text": "a state body is imposing the death penalty"
+      }
+    ],
+    "death_penalty_imposed": [
+      {
+        "status": "translation",
+        "text": "the death penalty has been imposed"
+      }
+    ],
+    "defence_duty_unperformed": [
+      {
+        "status": "translation",
+        "text": "the citizen has not performed the duty of defending the Republic"
+      }
+    ],
+    "derogable_right_target": [
+      {
+        "status": "translation",
+        "text": "the right being restricted admits of restriction"
+      }
+    ],
+    "detention_exceeds_72_hours": [
+      {
+        "status": "translation",
+        "text": "the period of detention has exceeded seventy-two hours"
+      }
+    ],
+    "detention_exceeds_statutory_period": [
+      {
+        "status": "translation",
+        "text": "the period of detention has exceeded the limit laid down by statute"
+      }
+    ],
+    "detention_has_court_decision": [
+      {
+        "status": "translation",
+        "text": "there is a decision of a court extending the detention"
+      }
+    ],
+    "detention_of": [
+      {
+        "status": "translation",
+        "text": "the detention concerns this person"
+      }
+    ],
+    "detention_without_court_sanction": [
+      {
+        "status": "translation",
+        "text": "the detention was effected without the sanction of a court"
+      }
+    ],
+    "detention_without_court_sanction_limit_hours_1995": [
+      {
+        "status": "translation",
+        "text": "the maximum period of detention without the sanction of a court is seventy-two hours (1995 version)"
+      }
+    ],
+    "different_regime_established_for_foreigners": [
+      {
+        "status": "translation",
+        "text": "a different regime has been established for foreigners by statute or by treaty"
+      }
+    ],
+    "dignity_infringed": [
+      {
+        "status": "translation",
+        "text": "the dignity of the person has been infringed"
+      }
+    ],
+    "dignity_infringement_attempt": [
+      {
+        "status": "translation",
+        "text": "a state body is encroaching on the dignity of the person"
+      }
+    ],
+    "discriminated": [
+      {
+        "status": "translation",
+        "text": "the person has been subjected to discrimination"
+      }
+    ],
+    "discriminatory_treatment_attempt": [
+      {
+        "status": "translation",
+        "text": "a state body is applying a difference in treatment"
+      }
+    ],
+    "document_affects": [
+      {
+        "status": "translation",
+        "text": "the document affects the rights and interests of the person"
+      }
+    ],
+    "education_institution": [
+      {
+        "status": "translation",
+        "text": "the organisation is an educational organisation"
+      }
+    ],
+    "education_institution_constitutionally_compliant": [
+      {
+        "status": "translation",
+        "text": "the activity of the educational organisation is constitutionally admissible"
+      }
+    ],
+    "education_standards_met": [
+      {
+        "status": "translation",
+        "text": "the educational organisation complies with the generally binding standards"
+      }
+    ],
+    "electoral_candidate_ineligible": [
+      {
+        "status": "translation",
+        "text": "the person does not have the right to be elected"
+      }
+    ],
+    "employed_under_labour_contract": [
+      {
+        "status": "translation",
+        "text": "the person works under an employment contract"
+      }
+    ],
+    "enjoys_citizen_rights_and_duties": [
+      {
+        "status": "translation",
+        "text": "the person enjoys the rights and bears the duties on an equal footing with citizens"
+      }
+    ],
+    "entrepreneurial_action": [
+      {
+        "status": "translation",
+        "text": "the person carries on entrepreneurial activity"
+      }
+    ],
+    "exit_action": [
+      {
+        "status": "translation",
+        "text": "the person leaves the territory of the Republic"
+      }
+    ],
+    "exit_kazakhstan_action_1995": [
+      {
+        "status": "translation",
+        "text": "the person leaves the territory of the Republic (1995 version)"
+      }
+    ],
+    "extradited": [
+      {
+        "status": "translation",
+        "text": "the person has been extradited to a foreign state"
+      }
+    ],
+    "extradition_decision": [
+      {
+        "status": "translation",
+        "text": "a state body is taking a decision on the extradition of the person"
+      }
+    ],
+    "final_conviction": [
+      {
+        "status": "translation",
+        "text": "a conviction against the person has come into legal force"
+      }
+    ],
+    "forced_labour_attempt": [
+      {
+        "status": "translation",
+        "text": "a state body is applying forced labour"
+      }
+    ],
+    "forced_labour_barred": [
+      {
+        "status": "translation",
+        "text": "compulsion to labour is prohibited: none of the grounds named in the Constitution is present"
+      }
+    ],
+    "forced_labour_constitutionally_admissible": [
+      {
+        "status": "translation",
+        "text": "the forced labour is constitutionally admissible"
+      }
+    ],
+    "foreign_citizenship_is_termination_ground": [
+      {
+        "status": "translation",
+        "text": "holding another citizenship is a ground for the termination of the citizenship of the Republic"
+      }
+    ],
+    "foreign_citizenship_not_recognized": [
+      {
+        "status": "translation",
+        "text": "the citizenship of another state is not recognised for a citizen of the Republic"
+      }
+    ],
+    "foreigner_or_stateless": [
+      {
+        "status": "translation",
+        "text": "the person is a foreigner or a stateless person"
+      }
+    ],
+    "free_higher_education_provided": [
+      {
+        "status": "translation",
+        "text": "the person is provided with free higher education at a state educational institution"
+      }
+    ],
+    "free_legal_aid_provided": [
+      {
+        "status": "translation",
+        "text": "the person has been provided with free legal assistance"
+      }
+    ],
+    "free_secondary_education_eligible": [
+      {
+        "status": "translation",
+        "text": "the person has the right to free secondary education"
+      }
+    ],
+    "free_secondary_education_provided": [
+      {
+        "status": "translation",
+        "text": "the person is provided with free secondary education"
+      }
+    ],
+    "guaranteed_free_medical_care_provided": [
+      {
+        "status": "translation",
+        "text": "the person has been provided with the guaranteed volume of free medical care"
+      }
+    ],
+    "heritage_harmed": [
+      {
+        "status": "translation",
+        "text": "the person has caused harm to the historical and cultural heritage"
+      }
+    ],
+    "higher_education_competition_won": [
+      {
+        "status": "translation",
+        "text": "the person has obtained, on a competitive basis, the right to free higher education"
+      }
+    ],
+    "holds_foreign_citizenship": [
+      {
+        "status": "translation",
+        "text": "the person holds the citizenship of another state"
+      }
+    ],
+    "home_unlawfully_entered": [
+      {
+        "status": "translation",
+        "text": "the inviolability of the home has been infringed"
+      }
+    ],
+    "identity_declaration_action": [
+      {
+        "status": "translation",
+        "text": "the person determines and states his national, party and religious affiliation"
+      }
+    ],
+    "imprisoned_by_court_sentence": [
+      {
+        "status": "translation",
+        "text": "the person is held in a place of deprivation of liberty under a sentence of a court"
+      }
+    ],
+    "innocent": [
+      {
+        "status": "translation",
+        "text": "the person is presumed innocent"
+      }
+    ],
+    "judicial_act_or_emergency_basis": [
+      {
+        "status": "translation",
+        "text": "the forced labour was applied under a sentence of a court or in conditions of a state of emergency or martial law"
+      }
+    ],
+    "labour_action": [
+      {
+        "status": "translation",
+        "text": "the person exercises freedom of labour"
+      }
+    ],
+    "labour_dispute": [
+      {
+        "status": "translation",
+        "text": "the person is party to an individual or collective labour dispute"
+      }
+    ],
+    "labour_dispute_action": [
+      {
+        "status": "translation",
+        "text": "the person uses the means of resolving a labour dispute laid down by statute"
+      }
+    ],
+    "lawful_social_security_ground": [
+      {
+        "status": "translation",
+        "text": "a ground for social security laid down by statute is present"
+      }
+    ],
+    "lawful_tax_unpaid": [
+      {
+        "status": "translation",
+        "text": "the person has not paid the lawfully established taxes, fees and other obligatory payments"
+      }
+    ],
+    "lawfully_in_kazakhstan": [
+      {
+        "status": "translation",
+        "text": "the person is in Kazakhstan on a lawful basis"
+      }
+    ],
+    "legal_aid_case": [
+      {
+        "status": "translation",
+        "text": "case of the provision of legal assistance to this person"
+      }
+    ],
+    "legislature": [
+      {
+        "status": "translation",
+        "text": "the body is a legislative body"
+      }
+    ],
+    "movement_action": [
+      {
+        "status": "translation",
+        "text": "the person exercises freedom of movement"
+      }
+    ],
+    "movement_restriction": [
+      {
+        "status": "translation",
+        "text": "the restriction of freedom of movement concerns this person"
+      }
+    ],
+    "movement_restriction_constitutionally_valid": [
+      {
+        "status": "translation",
+        "text": "the restriction of freedom of movement is constitutionally admissible"
+      }
+    ],
+    "movement_restriction_established_by_law": [
+      {
+        "status": "translation",
+        "text": "the restriction of freedom of movement is established by statute"
+      }
+    ],
+    "native_language_and_culture_action": [
+      {
+        "status": "translation",
+        "text": "the person uses his native language and culture"
+      }
+    ],
+    "nature_harmed": [
+      {
+        "status": "translation",
+        "text": "the person has caused harm to nature"
+      }
+    ],
+    "official": [
+      {
+        "status": "translation",
+        "text": "the person is an official"
+      }
+    ],
+    "official_liability_arises": [
+      {
+        "status": "translation",
+        "text": "the official bears liability under the law"
+      }
+    ],
+    "parent_care_provided": [
+      {
+        "status": "translation",
+        "text": "the adult children care for their parents who are unfit for work"
+      }
+    ],
+    "parent_incapacitated": [
+      {
+        "status": "translation",
+        "text": "the parent is unfit for work"
+      }
+    ],
+    "parent_of": [
+      {
+        "status": "translation",
+        "text": "the person is the parent of this child"
+      }
+    ],
+    "peaceful_assembly": [
+      {
+        "status": "translation",
+        "text": "the person takes part in a peaceful assembly"
+      }
+    ],
+    "person": [
+      {
+        "status": "translation",
+        "text": "the subject is a natural person"
+      }
+    ],
+    "political_party_or_union_membership": [
+      {
+        "status": "translation",
+        "text": "the person is a member of a political party or of a trade union"
+      }
+    ],
+    "primary_or_basic_secondary_education": [
+      {
+        "status": "translation",
+        "text": "the person is receiving primary or basic secondary education"
+      }
+    ],
+    "privacy_unlawfully_interfered": [
+      {
+        "status": "translation",
+        "text": "the inviolability of private life has been infringed"
+      }
+    ],
+    "propaganda_constitutionally_prohibited": [
+      {
+        "status": "translation",
+        "text": "such propaganda is constitutionally prohibited"
+      }
+    ],
+    "propaganda_of_prohibited_content": [
+      {
+        "status": "translation",
+        "text": "the person carries on propaganda for the violent change of the constitutional order, for war, or for social, racial, national, religious, class or clan superiority"
+      }
+    ],
+    "property_uncompensatedly_expropriated": [
+      {
+        "status": "translation",
+        "text": "the property has been expropriated without equivalent compensation"
+      }
+    ],
+    "proportionality_confirmed": [
+      {
+        "status": "translation",
+        "text": "the proportionality of the restriction has been confirmed"
+      }
+    ],
+    "proportionality_disproved": [
+      {
+        "status": "translation",
+        "text": "the proportionality of the restriction has been disproved"
+      }
+    ],
+    "protection_and_patronage_provided": [
+      {
+        "status": "translation",
+        "text": "the citizen is afforded the protection and patronage of the state beyond the borders of the Republic"
+      }
+    ],
+    "requirement_only_reflects_official_duties": [
+      {
+        "status": "translation",
+        "text": "the requirement is determined by the nature of the official duties"
+      }
+    ],
+    "restricted_office_membership_incompatible": [
+      {
+        "status": "translation",
+        "text": "membership of a party or trade union is incompatible with the position held"
+      }
+    ],
+    "restricted_political_officeholder": [
+      {
+        "status": "translation",
+        "text": "the person holds a position for which membership of a party or trade union is restricted"
+      }
+    ],
+    "restriction_affects": [
+      {
+        "status": "translation",
+        "text": "the restriction affects this person"
+      }
+    ],
+    "restriction_attempt": [
+      {
+        "status": "translation",
+        "text": "the legislative body is introducing a restriction"
+      }
+    ],
+    "restriction_constitutionally_justified": [
+      {
+        "status": "translation",
+        "text": "the restriction is constitutionally justified"
+      }
+    ],
+    "restriction_enacted_by_law": [
+      {
+        "status": "translation",
+        "text": "the restriction is established by statute"
+      }
+    ],
+    "restriction_has_constitutional_goal": [
+      {
+        "status": "translation",
+        "text": "the restriction pursues a constitutionally recognised aim"
+      }
+    ],
+    "restriction_has_legal_effect": [
+      {
+        "status": "translation",
+        "text": "the restriction has legal effect"
+      }
+    ],
+    "restriction_on_political_grounds": [
+      {
+        "status": "translation",
+        "text": "the restriction has been introduced on political grounds"
+      }
+    ],
+    "restriction_prohibited": [
+      {
+        "status": "translation",
+        "text": "the introduction of such a restriction is not permitted"
+      }
+    ],
+    "restriction_targets": [
+      {
+        "status": "translation",
+        "text": "the restriction is directed at this right or freedom"
+      }
+    ],
+    "restriction_targets_1995": [
+      {
+        "status": "translation",
+        "text": "the restriction is directed at this right or freedom (1995 version)"
+      }
+    ],
+    "return_block_attempt": [
+      {
+        "status": "translation",
+        "text": "a state body is obstructing the citizen's return"
+      }
+    ],
+    "return_blocked": [
+      {
+        "status": "translation",
+        "text": "the citizen's return to the Republic is restricted"
+      }
+    ],
+    "return_to_kazakhstan_action": [
+      {
+        "status": "translation",
+        "text": "the citizen returns to the Republic"
+      }
+    ],
+    "rights_exercise_constitutionally_limited": [
+      {
+        "status": "translation",
+        "text": "the exercise of rights and freedoms is subject to a constitutional limit"
+      }
+    ],
+    "rights_exercise_harms_others_or_constitutional_order": [
+      {
+        "status": "translation",
+        "text": "the exercise of rights violates the rights of others or encroaches on the constitutional order"
+      }
+    ],
+    "rights_exercise_harms_others_order_or_morality": [
+      {
+        "status": "translation",
+        "text": "the exercise of rights violates the rights of others or encroaches on the constitutional order or on public morals"
+      }
+    ],
+    "russian_used_officially_in_state_bodies": [
+      {
+        "status": "translation",
+        "text": "in state organisations and local self-government bodies the Russian language is officially used on an equal footing with Kazakh"
+      }
+    ],
+    "secondary_education_stage": [
+      {
+        "status": "translation",
+        "text": "the person is receiving secondary education"
+      }
+    ],
+    "social_security_provided": [
+      {
+        "status": "translation",
+        "text": "the person has been provided with social security"
+      }
+    ],
+    "state_authority": [
+      {
+        "status": "translation",
+        "text": "the subject is a state body or an official"
+      }
+    ],
+    "state_governance_participation_action": [
+      {
+        "status": "translation",
+        "text": "the citizen takes part in the management of the affairs of the state"
+      }
+    ],
+    "state_harm_compensated": [
+      {
+        "status": "translation",
+        "text": "the harm caused has been made good by the state"
+      }
+    ],
+    "state_language_is_kazakh": [
+      {
+        "status": "translation",
+        "text": "the state language of the Republic of Kazakhstan is Kazakh"
+      }
+    ],
+    "state_symbols_disrespected": [
+      {
+        "status": "translation",
+        "text": "the person shows no respect for the state symbols"
+      }
+    ],
+    "statutory_free_legal_aid_ground": [
+      {
+        "status": "translation",
+        "text": "a ground for free legal assistance provided for by statute is present"
+      }
+    ],
+    "statutory_housing_need": [
+      {
+        "status": "translation",
+        "text": "the person is classified by statute as being in need of housing"
+      }
+    ],
+    "strike_action": [
+      {
+        "status": "translation",
+        "text": "the person takes part in a strike"
+      }
+    ],
+    "terrorism_or_grave_national_harm": [
+      {
+        "status": "translation",
+        "text": "the person has committed a terrorist crime or caused other grave harm to the vital interests of the Republic"
+      }
+    ],
+    "terrorism_or_grave_vital_interest_harm": [
+      {
+        "status": "translation",
+        "text": "the person has committed a terrorist crime or caused other grave harm to the vital interests of the Republic"
+      }
+    ],
+    "torture_attempt": [
+      {
+        "status": "translation",
+        "text": "a state body is applying torture or cruel treatment"
+      }
+    ],
+    "tortured": [
+      {
+        "status": "translation",
+        "text": "the person has been subjected to torture or to cruel, inhuman or degrading treatment"
+      }
+    ],
+    "treaty_allows_extradition": [
+      {
+        "status": "translation",
+        "text": "extradition is permitted by an international treaty of the Republic"
+      }
+    ],
+    "unarmed_peaceful_assembly": [
+      {
+        "status": "translation",
+        "text": "the assembly is peaceful and is held without weapons"
+      }
+    ],
+    "uncompensated_expropriation_attempt": [
+      {
+        "status": "translation",
+        "text": "a state body is expropriating property without equivalent compensation"
+      }
+    ],
+    "unemployment_social_protection_ground": [
+      {
+        "status": "translation",
+        "text": "a ground for social protection against unemployment is present"
+      }
+    ],
+    "unemployment_social_protection_provided": [
+      {
+        "status": "translation",
+        "text": "the person has been provided with social protection against unemployment"
+      }
+    ],
+    "unexpunged_conviction": [
+      {
+        "status": "translation",
+        "text": "the person has an unexpunged or unspent conviction"
+      }
+    ],
+    "unfair_competition": [
+      {
+        "status": "translation",
+        "text": "the activity is directed at unfair competition"
+      }
+    ],
+    "unfair_competition_prohibited": [
+      {
+        "status": "translation",
+        "text": "unfair competition is prohibited"
+      }
+    ],
+    "unlawful_continued_detention": [
+      {
+        "status": "translation",
+        "text": "the continued detention in custody is unlawful"
+      }
+    ],
+    "unlawful_home_entry_attempt": [
+      {
+        "status": "translation",
+        "text": "a state body is entering the person's home"
+      }
+    ],
+    "unlawful_privacy_interference_attempt": [
+      {
+        "status": "translation",
+        "text": "a state body is interfering in the private life of the person"
+      }
+    ],
+    "unlawful_state_action_harmed": [
+      {
+        "status": "translation",
+        "text": "harm has been caused to the person by unlawful acts of state bodies"
+      }
+    ],
+    "voting_or_referendum_ineligible": [
+      {
+        "status": "translation",
+        "text": "the person does not have the right to vote or to take part in a referendum"
+      }
+    ]
+  },
+  "language": "en",
+  "package": "kz.constitution.rights"
+}

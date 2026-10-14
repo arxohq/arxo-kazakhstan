@@ -1,0 +1,674 @@
+{
+  "$comment": "English display overlay for the labels (§218) of this package of the Constitution of the Republic of Kazakhstan (DECISION-0070). The file is not compiled into the CLIR and is read only by the presentation layer (verbalize --labels, the MCP resource law://<package>/verbalized/en, the workbench). The translation is a working one made by the formaliser from the Russian labels of the package, checked against the authentic Russian and Kazakh texts of the Constitution; it is not an official publication, hence the status \"translation\" for every entry. Spelling is British. A key is the local name of the declaration (the part of the node id after \"#\").",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "Amendment": [
+      {
+        "status": "translation",
+        "text": "amendment or addition to the Constitution"
+      }
+    ],
+    "AmendmentMayBeSubmitted1995": [
+      {
+        "status": "translation",
+        "text": "Article 91, paragraph 3 (1995 version). Without a positive conclusion of the Constitutional Court, amendments are submitted neither to a referendum nor to Parliament"
+      }
+    ],
+    "AmendmentMayBeSubmitted1995/unless/0": [
+      {
+        "status": "translation",
+        "text": "Article 91, paragraph 3 (1995 version). Without a positive conclusion of the Constitutional Court, amendments are submitted neither to a referendum nor to Parliament"
+      }
+    ],
+    "AmendmentReferendumDoubleThreshold": [
+      {
+        "status": "translation",
+        "text": "Article 92, paragraph 3. The amendment is adopted if more than half of those taking part voted for it in not less than two-thirds of the regions, the cities of republican significance and the capital"
+      }
+    ],
+    "AmendmentViolatesEntrenchedCore1995": [
+      {
+        "status": "translation",
+        "text": "Article 91, paragraph 2 (1995 version). The independence, unitary character and territorial integrity of the Republic, its form of government, the fundamental principles, the seven-year term of the President and the single election of the President are unalterable"
+      }
+    ],
+    "Constitution1995InForceOnPublication": [
+      {
+        "status": "translation",
+        "text": "Article 90, paragraph 1 (1995 version). The Constitution comes into force on the day the results of the referendum are officially published, with the simultaneous termination of the previously adopted Constitution"
+      }
+    ],
+    "ConstitutionEdition": [
+      {
+        "status": "translation",
+        "text": "version of the Constitution"
+      }
+    ],
+    "ConstitutionalConclusion": [
+      {
+        "status": "translation",
+        "text": "conclusion of the Constitutional Court on the conformity of an amendment to the requirements of the Constitution"
+      }
+    ],
+    "EffectiveDateAppointmentTwoMonths": [
+      {
+        "status": "translation",
+        "text": "Article 95. A transitional appointment whose time limit runs from the day the Constitution comes into force is made within two months"
+      }
+    ],
+    "EntrenchmentConclusion": [
+      {
+        "status": "translation",
+        "text": "Article 93. The conclusion of the Constitutional Court is positive if the amendment conforms to the requirements of Article 2, paragraph 7 and Article 43, paragraph 5"
+      }
+    ],
+    "EntrenchmentConclusion1995": [
+      {
+        "status": "translation",
+        "text": "Article 91, paragraph 3 (1995 version). Amendments are submitted to a referendum or to Parliament where there is a conclusion of the Constitutional Court that they conform to the requirements of paragraph 2"
+      }
+    ],
+    "ExistingActsContinueIfCompatible": [
+      {
+        "status": "translation",
+        "text": "Article 96, paragraph 1. Statutes and other regulatory legal acts in force on the day the Constitution comes into force apply in so far as they do not contradict it"
+      }
+    ],
+    "ExistingActsContinueIfCompatible/unless/0": [
+      {
+        "status": "translation",
+        "text": "Article 96, paragraph 1. Statutes and other regulatory legal acts in force on the day the Constitution comes into force apply in so far as they do not contradict it"
+      }
+    ],
+    "FirstKurultaiElectionTransition": [
+      {
+        "status": "translation",
+        "text": "Article 95, paragraph 1. Elections to the Kurultai are called within one month and held within two months of the day the Constitution comes into force"
+      }
+    ],
+    "FirstSessionAppointmentTwoMonths": [
+      {
+        "status": "translation",
+        "text": "Article 95, paragraphs 2–4. Transitional appointments are made within two months of the day the first session of the Kurultai of the first convocation opens"
+      }
+    ],
+    "IncumbentContinuity": [
+      {
+        "status": "translation",
+        "text": "Article 95. Until the new compositions are formed, the incumbent office-holders retain their powers"
+      }
+    ],
+    "KurultaiElection": [
+      {
+        "status": "translation",
+        "text": "elections to the Kurultai"
+      }
+    ],
+    "LegalAct": [
+      {
+        "status": "translation",
+        "text": "a statute or another regulatory legal act"
+      }
+    ],
+    "ListIsNotASubjectReading": [
+      {
+        "status": "translation",
+        "text": "reading A of Article 91, paragraph 2: the list protects subjects but not itself"
+      }
+    ],
+    "ListItselfEntrenchedReading": [
+      {
+        "status": "translation",
+        "text": "reading B of Article 91, paragraph 2: the unalterability of the list is a fundamental principle"
+      }
+    ],
+    "NarrowingAmendmentFilter1995": [
+      {
+        "status": "translation",
+        "text": "a narrowing amendment may be submitted where the court has given its conclusion, provided the narrowing is not held to be an encroachment on the core"
+      }
+    ],
+    "NarrowingAmendmentFilter1995/unless/0": [
+      {
+        "status": "translation",
+        "text": "a narrowing amendment may be submitted where the court has given its conclusion, provided the narrowing is not held to be an encroachment on the core"
+      }
+    ],
+    "NarrowingOutsideCore1995": [
+      {
+        "status": "translation",
+        "text": "reading A: the list in paragraph 2 is not itself a protected subject, and narrowing it is an ordinary amendment"
+      }
+    ],
+    "NarrowingTouchesCore1995": [
+      {
+        "status": "translation",
+        "text": "reading B: the unalterability of the list in paragraph 2 is a fundamental principle, and narrowing it encroaches on the core"
+      }
+    ],
+    "NewConstitutionInForceFromJulyFirst": [
+      {
+        "status": "translation",
+        "text": "Article 94, paragraph 1. The Constitution comes into force on 1 July 2026"
+      }
+    ],
+    "OldActsApplyIfCompatible1995": [
+      {
+        "status": "translation",
+        "text": "Article 92, paragraph 4 (1995 version). The legislation in force at the moment the Constitution comes into force applies in so far as it does not contradict it"
+      }
+    ],
+    "OldConstitutionRepealedSimultaneously": [
+      {
+        "status": "translation",
+        "text": "Article 94, paragraph 1. The previously adopted Constitution ceases to have effect simultaneously with the coming into force of the new one"
+      }
+    ],
+    "ParliamentaryAmendmentFourFifths1995": [
+      {
+        "status": "translation",
+        "text": "Article 91, paragraph 1 (1995 version). If the President declines Parliament's proposal for a referendum, Parliament may, by a majority of not less than four-fifths of the total number of the deputies of each of the Chambers, adopt a statute introducing amendments to the Constitution"
+      }
+    ],
+    "ParliamentaryAmendmentLaw": [
+      {
+        "status": "translation",
+        "text": "statute of Parliament on amendments and additions to the Constitution (1995 version)"
+      }
+    ],
+    "PositiveConclusionRequiredForReferendum": [
+      {
+        "status": "translation",
+        "text": "Article 93. The amendment is submitted to a national referendum where there is a positive conclusion of the Constitutional Court"
+      }
+    ],
+    "Referendum": [
+      {
+        "status": "translation",
+        "text": "national referendum"
+      }
+    ],
+    "ReferendumTurnoutMoreThanHalf": [
+      {
+        "status": "translation",
+        "text": "Article 92, paragraph 2. The national referendum has taken place if more than half of the citizens entitled to take part in it have voted"
+      }
+    ],
+    "TransitionalAppointment": [
+      {
+        "status": "translation",
+        "text": "appointment made in the transitional period"
+      }
+    ],
+    "amendment_approved_by_referendum": [
+      {
+        "status": "translation",
+        "text": "the amendments and additions to the Constitution have been adopted by referendum"
+      }
+    ],
+    "amendment_may_be_submitted_1995": [
+      {
+        "status": "translation",
+        "text": "the amendment may be submitted to a referendum (1995 version)"
+      }
+    ],
+    "amendment_may_be_submitted_to_referendum": [
+      {
+        "status": "translation",
+        "text": "the amendment may be submitted to a national referendum"
+      }
+    ],
+    "amendment_mazhilis_total": [
+      {
+        "status": "translation",
+        "text": "the total number of the deputies of the Mazhilis (1995 version)"
+      }
+    ],
+    "amendment_mazhilis_votes": [
+      {
+        "status": "translation",
+        "text": "the number of votes of the deputies of the Mazhilis cast for the amendment (1995 version)"
+      }
+    ],
+    "amendment_narrows_entrenched_list_1995": [
+      {
+        "status": "translation",
+        "text": "the content of the amendment: to remove a subject from the list in Article 91, paragraph 2"
+      }
+    ],
+    "amendment_referendum_declined_by_president": [
+      {
+        "status": "translation",
+        "text": "the President has declined the proposal to submit the amendment to a referendum (1995 version)"
+      }
+    ],
+    "amendment_senate_total": [
+      {
+        "status": "translation",
+        "text": "the total number of the deputies of the Senate (1995 version)"
+      }
+    ],
+    "amendment_senate_votes": [
+      {
+        "status": "translation",
+        "text": "the number of votes of the deputies of the Senate cast for the amendment (1995 version)"
+      }
+    ],
+    "amendment_touches_subject": [
+      {
+        "status": "translation",
+        "text": "the amendment touches the subject named"
+      }
+    ],
+    "amendment_violates_entrenched_core_1995": [
+      {
+        "status": "translation",
+        "text": "the amendment infringes the unalterable core of the Constitution of 1995"
+      }
+    ],
+    "appointment_completed_within_two_months": [
+      {
+        "status": "translation",
+        "text": "the appointment was made within two months"
+      }
+    ],
+    "approving_regions_cities_and_capital": [
+      {
+        "status": "translation",
+        "text": "the number of regions, cities of republican significance and the capital in which the amendment was approved"
+      }
+    ],
+    "cabinet_becomes_government_1995": [
+      {
+        "status": "translation",
+        "text": "the Cabinet of Ministers acquires the status of the Government of the Republic (1995 version)"
+      }
+    ],
+    "conclusion_confirms_article_91_paragraph_2": [
+      {
+        "status": "translation",
+        "text": "the conclusion confirms the conformity of the amendment to Article 91, paragraph 2 (1995 version)"
+      }
+    ],
+    "conclusion_for_amendment": [
+      {
+        "status": "translation",
+        "text": "a conclusion of the Constitutional Court has been given on this amendment"
+      }
+    ],
+    "conforms_article_2_paragraph_7": [
+      {
+        "status": "translation",
+        "text": "the amendment conforms to the requirements of Article 2, paragraph 7 of the Constitution"
+      }
+    ],
+    "conforms_article_43_paragraph_5": [
+      {
+        "status": "translation",
+        "text": "the amendment conforms to the requirements of Article 43, paragraph 5 of the Constitution"
+      }
+    ],
+    "constitution_1995": [
+      {
+        "status": "translation",
+        "text": "the Constitution of 1995"
+      }
+    ],
+    "constitution_1995_in_force": [
+      {
+        "status": "translation",
+        "text": "the Constitution of 1995 is in force"
+      }
+    ],
+    "constitution_1995_referendum_results_published": [
+      {
+        "status": "translation",
+        "text": "the results of the republican referendum of 1995 have been published"
+      }
+    ],
+    "constitution_2026": [
+      {
+        "status": "translation",
+        "text": "the Constitution of 2026"
+      }
+    ],
+    "constitution_ceases_date": [
+      {
+        "status": "translation",
+        "text": "the day on which the version of the Constitution ceases to have effect"
+      }
+    ],
+    "constitution_day_is_state_holiday_1995": [
+      {
+        "status": "translation",
+        "text": "the day on which the Constitution was adopted by referendum is declared Constitution Day"
+      }
+    ],
+    "constitution_effective_date": [
+      {
+        "status": "translation",
+        "text": "the day on which the version of the Constitution comes into force"
+      }
+    ],
+    "constitution_in_force": [
+      {
+        "status": "translation",
+        "text": "the version of the Constitution is in force"
+      }
+    ],
+    "constitution_repealed": [
+      {
+        "status": "translation",
+        "text": "the version of the Constitution has ceased to have effect"
+      }
+    ],
+    "constitutional_council_acts_until_court_1995": [
+      {
+        "status": "translation",
+        "text": "the Constitutional Council acts until the Constitutional Court is formed (1995 version)"
+      }
+    ],
+    "constitutional_court_positive_conclusion": [
+      {
+        "status": "translation",
+        "text": "the conclusion of the Constitutional Court on the conformity of the amendment is positive"
+      }
+    ],
+    "constitutional_court_positive_conclusion_1995": [
+      {
+        "status": "translation",
+        "text": "the conclusion on the conformity of the amendment to the unalterable core is positive (1995 version)"
+      }
+    ],
+    "continuity_preserved": [
+      {
+        "status": "translation",
+        "text": "the continuity of the exercise of powers is preserved"
+      }
+    ],
+    "contrary_to_1995_constitution": [
+      {
+        "status": "translation",
+        "text": "the act contradicts the Constitution of 1995"
+      }
+    ],
+    "contrary_to_2026_constitution": [
+      {
+        "status": "translation",
+        "text": "the act contradicts the Constitution of 2026"
+      }
+    ],
+    "current_date": [
+      {
+        "status": "translation",
+        "text": "the date as at which the question is put"
+      }
+    ],
+    "deadline_from_effective_date": [
+      {
+        "status": "translation",
+        "text": "the time limit for the appointment runs from the day the Constitution comes into force"
+      }
+    ],
+    "deadline_from_first_session": [
+      {
+        "status": "translation",
+        "text": "the time limit for the appointment runs from the day the first session of the Kurultai of the first convocation opens"
+      }
+    ],
+    "edition_1995": [
+      {
+        "status": "translation",
+        "text": "the object is the 1995 version of the Constitution"
+      }
+    ],
+    "edition_2026": [
+      {
+        "status": "translation",
+        "text": "the object is the 2026 version of the Constitution"
+      }
+    ],
+    "election_announced_within_one_month": [
+      {
+        "status": "translation",
+        "text": "the elections were called within one month of the day the Constitution came into force"
+      }
+    ],
+    "election_held_within_two_months": [
+      {
+        "status": "translation",
+        "text": "the elections were held within two months of the day the Constitution came into force"
+      }
+    ],
+    "eligible_referendum_citizens": [
+      {
+        "status": "translation",
+        "text": "the number of citizens entitled to take part in the national referendum"
+      }
+    ],
+    "existing_justice_bodies_continue_1995": [
+      {
+        "status": "translation",
+        "text": "the existing bodies of justice retain their powers until new ones are formed (1995 version)"
+      }
+    ],
+    "first_constitutional_council_composition_1995": [
+      {
+        "status": "translation",
+        "text": "the first composition of the Constitutional Council was formed under the transitional provisions (1995 version)"
+      }
+    ],
+    "first_kurultai_election": [
+      {
+        "status": "translation",
+        "text": "the elections are elections to the Kurultai of the first convocation"
+      }
+    ],
+    "first_kurultai_transition_timely": [
+      {
+        "status": "translation",
+        "text": "the transition to the Kurultai of the first convocation was made within the constitutional time limits"
+      }
+    ],
+    "first_senate_split_term_1995": [
+      {
+        "status": "translation",
+        "text": "half of the deputies of the Senate of the first convocation were elected for a shortened term (1995 version)"
+      }
+    ],
+    "incumbent_continues_until_successor": [
+      {
+        "status": "translation",
+        "text": "the incumbent office-holder retains their powers until the new composition is formed"
+      }
+    ],
+    "language_conditions_duty_declared_1995": [
+      {
+        "status": "translation",
+        "text": "the state is obliged to create conditions for the study and development of the languages of the people of Kazakhstan (1995 version)"
+      }
+    ],
+    "narrowing_amendment_passes_filter_1995": [
+      {
+        "status": "translation",
+        "text": "an amendment narrowing the list in paragraph 2 passes the filter of Article 91, paragraph 3"
+      }
+    ],
+    "narrowing_deemed_outside_core_1995": [
+      {
+        "status": "translation",
+        "text": "the narrowing of the list is held not to touch the protected subjects of paragraph 2"
+      }
+    ],
+    "old_act_applicable": [
+      {
+        "status": "translation",
+        "text": "the act applies in so far as it does not contradict the Constitution"
+      }
+    ],
+    "old_act_applicable_1995": [
+      {
+        "status": "translation",
+        "text": "the act applies in so far as it does not contradict the Constitution of 1995"
+      }
+    ],
+    "old_act_predating_1995": [
+      {
+        "status": "translation",
+        "text": "the act was in force before the Constitution of 1995 came into force"
+      }
+    ],
+    "old_legal_act": [
+      {
+        "status": "translation",
+        "text": "the act was in force on the day the Constitution came into force"
+      }
+    ],
+    "parliamentary_amendment_adopted_1995": [
+      {
+        "status": "translation",
+        "text": "the statute on amendments to the Constitution has been adopted by Parliament by a qualified majority (1995 version)"
+      }
+    ],
+    "parliamentary_amendment_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "the denominator of the parliamentary threshold for an amendment is four-fifths (1995 version)"
+      }
+    ],
+    "parliamentary_amendment_law": [
+      {
+        "status": "translation",
+        "text": "a statute of Parliament introduces these amendments to the Constitution (1995 version)"
+      }
+    ],
+    "parliamentary_amendment_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "the numerator of the parliamentary threshold for an amendment is four-fifths (1995 version)"
+      }
+    ],
+    "protected_locator": [
+      {
+        "status": "translation",
+        "text": "a provision of the Constitution belonging to the unalterable core"
+      }
+    ],
+    "protected_subject_1995": [
+      {
+        "status": "translation",
+        "text": "a subject belonging to the unalterable core of the Constitution of 1995"
+      }
+    ],
+    "referendum_approval_denominator": [
+      {
+        "status": "translation",
+        "text": "the denominator of the approval threshold for an amendment is one half"
+      }
+    ],
+    "referendum_approval_numerator": [
+      {
+        "status": "translation",
+        "text": "the numerator of the approval threshold for an amendment is one half"
+      }
+    ],
+    "referendum_for_amendment": [
+      {
+        "status": "translation",
+        "text": "the referendum is held on this amendment to the Constitution"
+      }
+    ],
+    "referendum_held": [
+      {
+        "status": "translation",
+        "text": "the national referendum is deemed to have taken place"
+      }
+    ],
+    "referendum_participants": [
+      {
+        "status": "translation",
+        "text": "the number of citizens who took part in the voting"
+      }
+    ],
+    "referendum_territory_denominator": [
+      {
+        "status": "translation",
+        "text": "the denominator of the territorial threshold is two-thirds"
+      }
+    ],
+    "referendum_territory_numerator": [
+      {
+        "status": "translation",
+        "text": "the numerator of the territorial threshold is two-thirds"
+      }
+    ],
+    "referendum_turnout_denominator": [
+      {
+        "status": "translation",
+        "text": "the denominator of the referendum turnout threshold is one half"
+      }
+    ],
+    "referendum_turnout_numerator": [
+      {
+        "status": "translation",
+        "text": "the numerator of the referendum turnout threshold is one half"
+      }
+    ],
+    "seven_year_term_applies_from_post_2005_election_1995": [
+      {
+        "status": "translation",
+        "text": "the seven-year term of office of the President applies to a person elected after 2005 (1995 version)"
+      }
+    ],
+    "single_election_rule_applies_prospectively_1995": [
+      {
+        "status": "translation",
+        "text": "the rule on a single election applies prospectively (1995 version)"
+      }
+    ],
+    "total_regions_cities_and_capital": [
+      {
+        "status": "translation",
+        "text": "the total number of the regions, the cities of republican significance and the capital"
+      }
+    ],
+    "transitional_appointment": [
+      {
+        "status": "translation",
+        "text": "the appointment is one of the transitional appointments"
+      }
+    ],
+    "transitional_appointment_timely": [
+      {
+        "status": "translation",
+        "text": "the transitional appointment was made in time"
+      }
+    ],
+    "transitional_constitutional_law_years_1995": [
+      {
+        "status": "translation",
+        "text": "the time limit for adopting the transitional constitutional statutes is one year (1995 version)"
+      }
+    ],
+    "transitional_other_law_years_1995": [
+      {
+        "status": "translation",
+        "text": "the time limit for adopting the other transitional statutes named is two years (1995 version)"
+      }
+    ],
+    "vice_president_powers_preserved_1995": [
+      {
+        "status": "translation",
+        "text": "the powers of the Vice-President are preserved in the transitional period (1995 version)"
+      }
+    ],
+    "votes_for_amendment": [
+      {
+        "status": "translation",
+        "text": "the number of votes cast for the amendments and additions"
+      }
+    ]
+  },
+  "language": "en",
+  "package": "kz.constitution.amendment"
+}

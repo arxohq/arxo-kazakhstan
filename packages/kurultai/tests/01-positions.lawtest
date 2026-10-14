@@ -1,0 +1,119 @@
+language "law.core" version "0.2";
+package kz.constitution.kurultai version "0.1.0";
+namespace "urn:kz:constitution:kurultai";
+
+// ПОЗИЦИИ §§122–137 ПАКЕТА КУРУЛТАЯ.
+//
+// В пакете ровно один норм-шаблон — иммунитет депутата ст. 55 п. 3
+// (`DeputyPersonalImmunity`, §128). Набор наблюдает обе его стороны:
+// защита действует, пока нет ни одного из трёх оснований, и снимается
+// каждым из них порознь.
+//
+// ГРАНИЦА, ИЗМЕРЕННАЯ ЗДЕСЬ, А НЕ ПРЕДПОЛОЖЕННАЯ: задержание депутата
+// выводит ПРАВИЛО (`DeputyDetentionException` → литерал `deputy_detained`),
+// а не осуществление полномочия. Блокировка эффекта §128 живёт только в
+// материализации эффекта power §127, поэтому issue EFFECT_BLOCKED_BY_IMMUNITY
+// в этом пакете не появляется ни в одном деле: атаковать иммунитет здесь
+// нечем. Наблюдаемая пара — сама позиция и отсутствие/наличие факта
+// задержания.
+
+// --- ст. 55 п. 3: защита действует -------------------------------------
+
+// Депутат, задержание которого пытаются произвести, но ни одного из трёх
+// оснований нет: позиция ACTIVE, задержания нет.
+test "urn:query:kzck-1" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+        assert "k1-1": deputy(entity_ref("urn:kz:constitution:kurultai:test:deputy1")) { origin case_input; }
+        assert "k1-2": deputy_detention_attempt(entity_ref("urn:kz:constitution:kurultai:test:deputy1")) { origin case_input; }
+    }
+    evaluate positions();
+    expect issues_within(info);
+    expect position(DeputyPersonalImmunity, ACTIVE);
+
+    evaluate truth(deputy_detained(entity_ref("urn:kz:constitution:kurultai:test:deputy1")));
+    expect truth_status == NEITHER;
+}
+
+// Без попытки задержания позиция всё равно есть: иммунитет §128 создаётся
+// статусом носителя, а не нападением на него.
+test "urn:query:kzck-2" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+        assert "k2-1": deputy(entity_ref("urn:kz:constitution:kurultai:test:deputy2")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(DeputyPersonalImmunity, ACTIVE);
+}
+
+// Лицо депутатом не является — позиции нет вовсе.
+test "urn:query:kzck-3" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+        assert "k3-1": deputy_detention_attempt(entity_ref("urn:kz:constitution:kurultai:test:person1")) { origin case_input; }
+    }
+    evaluate positions();
+    expect not position(DeputyPersonalImmunity, ACTIVE);
+}
+
+// --- ст. 55 п. 3: три основания снимают защиту порознь -------------------
+
+// Основание первое — задержание на месте преступления.
+test "urn:query:kzck-4" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+        assert "k4-1": deputy(entity_ref("urn:kz:constitution:kurultai:test:deputy3")) { origin case_input; }
+        assert "k4-2": deputy_detention_attempt(entity_ref("urn:kz:constitution:kurultai:test:deputy3")) { origin case_input; }
+        assert "k4-3": caught_at_crime_scene(entity_ref("urn:kz:constitution:kurultai:test:deputy3")) { origin case_input; }
+    }
+    evaluate positions();
+    expect not position(DeputyPersonalImmunity, ACTIVE);
+
+    evaluate truth(deputy_detained(entity_ref("urn:kz:constitution:kurultai:test:deputy3")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// Основание второе — тяжкое или особо тяжкое преступление.
+test "urn:query:kzck-5" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+        assert "k5-1": deputy(entity_ref("urn:kz:constitution:kurultai:test:deputy4")) { origin case_input; }
+        assert "k5-2": deputy_detention_attempt(entity_ref("urn:kz:constitution:kurultai:test:deputy4")) { origin case_input; }
+        assert "k5-3": grave_or_especially_grave_offence(entity_ref("urn:kz:constitution:kurultai:test:deputy4")) { origin case_input; }
+    }
+    evaluate positions();
+    expect not position(DeputyPersonalImmunity, ACTIVE);
+
+    evaluate truth(deputy_detained(entity_ref("urn:kz:constitution:kurultai:test:deputy4")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// Основание третье — согласие Курултая.
+test "urn:query:kzck-6" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+        assert "k6-1": deputy(entity_ref("urn:kz:constitution:kurultai:test:deputy5")) { origin case_input; }
+        assert "k6-2": deputy_detention_attempt(entity_ref("urn:kz:constitution:kurultai:test:deputy5")) { origin case_input; }
+        assert "k6-3": kurultai_consent_to_prosecution(entity_ref("urn:kz:constitution:kurultai:test:deputy5")) { origin case_input; }
+    }
+    evaluate positions();
+    expect not position(DeputyPersonalImmunity, ACTIVE);
+
+    evaluate truth(deputy_detained(entity_ref("urn:kz:constitution:kurultai:test:deputy5")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// Основание есть, а попытки задержания нет: защита снята, но задержания
+// тоже нет — снятие иммунитета само по себе ничего не создаёт.
+test "urn:query:kzck-7" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+        assert "k7-1": deputy(entity_ref("urn:kz:constitution:kurultai:test:deputy6")) { origin case_input; }
+        assert "k7-2": caught_at_crime_scene(entity_ref("urn:kz:constitution:kurultai:test:deputy6")) { origin case_input; }
+    }
+    evaluate positions();
+    expect not position(DeputyPersonalImmunity, ACTIVE);
+
+    evaluate truth(deputy_detained(entity_ref("urn:kz:constitution:kurultai:test:deputy6")));
+    expect truth_status == NEITHER;
+}

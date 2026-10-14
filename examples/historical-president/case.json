@@ -1,0 +1,118 @@
+{
+  "assertions": [
+    {
+      "contentHash": "sha256:da109be1f8cc021e1562275f4e0179cec164122130ced748577d7169cab0a993",
+      "evidence": [],
+      "id": "urn:kz:constitution1995:president#a1-1",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:kz:constitution1995:president:test:president1",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution1995:president#president"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution1995:president"
+    },
+    {
+      "contentHash": "sha256:14666c60ebf741c16fdc94297a14bf89761ba7e41865f730d3fb6cc697cdd97e",
+      "evidence": [],
+      "id": "urn:kz:constitution1995:president#a1-2",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:kz:constitution1995:president:test:president1",
+            "kind": "entity_ref"
+          },
+          {
+            "id": "urn:kz:constitution1995:president:test:person1",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution1995:president#president_person"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution1995:president"
+    },
+    {
+      "contentHash": "sha256:b1ca24dd29616cb7956dd6842184cc49aa2f99aa3e10214e5b9c6dd5fe49b126",
+      "evidence": [],
+      "id": "urn:kz:constitution1995:president#a1-3",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:kz:constitution1995:president:test:law1",
+            "kind": "entity_ref"
+          },
+          {
+            "id": "urn:kz:constitution1995:president:test:president1",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution1995:president#law_presented"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution1995:president"
+    },
+    {
+      "contentHash": "sha256:a9302c902a2b61cbfe748e9e2b6b8b4c5ede07647b05c91e6e608748f99e48ac",
+      "evidence": [],
+      "id": "urn:kz:constitution1995:president#a1-4",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:kz:constitution1995:president:test:law1",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution1995:president#signature_within_one_month"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution1995:president"
+    },
+    {
+      "contentHash": "sha256:d63a42583e05fa38a33082ebe152e2415e96357b449ac541858411038a5ee3f7",
+      "evidence": [],
+      "id": "urn:kz:constitution1995:president#a1-5",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:kz:constitution1995:president:test:president1",
+            "kind": "entity_ref"
+          },
+          {
+            "id": "urn:kz:constitution1995:president:test:law1",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution1995:president#presidential_signature_attempt"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution1995:president"
+    }
+  ],
+  "context": {
+    "decisionTime": "2020-01-01T12:00:00+06:00",
+    "knowledgeTime": "2020-01-01T12:00:00+06:00",
+    "legalTime": "2020-01-01",
+    "timezone": "Asia/Almaty"
+  },
+  "options": {}
+}

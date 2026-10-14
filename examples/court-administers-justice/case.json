@@ -1,0 +1,76 @@
+{
+  "assertions": [
+    {
+      "contentHash": "sha256:ae20fd6f0ec3299853f81292805b481ba47173f350799afe4217d93b42dfca0e",
+      "evidence": [],
+      "id": "urn:kz:constitution:court#c2-1",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:kz:constitution:court:test:judge1",
+            "kind": "entity_ref"
+          },
+          {
+            "id": "urn:kz:constitution:court:test:case2",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:court#justice_act"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:court"
+    },
+    {
+      "contentHash": "sha256:741088f342493085af78fe2a94b000464ca61fea585dfbf26a99b7fbad0b59bd",
+      "evidence": [],
+      "id": "urn:kz:constitution:court#c2-2",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:kz:constitution:court:test:court1",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:court#court"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:court"
+    },
+    {
+      "contentHash": "sha256:e795811b37e83ebc40995f75874411410c72eaa028aae12ff02dc792e0bc17ec",
+      "evidence": [],
+      "id": "urn:kz:constitution:court#c2-3",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:kz:constitution:court:test:court1",
+            "kind": "entity_ref"
+          },
+          {
+            "id": "urn:kz:constitution:court:test:case2",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:court#court_handles"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:court"
+    }
+  ],
+  "context": {
+    "decisionTime": "2026-09-01T12:00:00+05:00",
+    "knowledgeTime": "2026-09-01T12:00:00+05:00",
+    "legalTime": "2026-09-01",
+    "timezone": "Asia/Almaty"
+  },
+  "options": {}
+}

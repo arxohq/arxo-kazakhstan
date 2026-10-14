@@ -1,0 +1,382 @@
+language "law.core" version "0.2";
+package kz.constitution.rights version "0.1.0";
+namespace "urn:kz:constitution:rights";
+
+// НАБЛЮДЕНИЕ ДЕОНТИЧЕСКОГО СЛОЯ, ЧАСТЬ 1: обязанности редакции 2026.
+//
+// До этих сценариев 98 шаблонов норм пакета не наблюдал никто: `[tests]` в
+// манифесте не было, а ворота оставались зелёными — понижение пакета не
+// спрашивает, выводится ли хоть одна позиция. Здесь каждая обязанность
+// редакции 2026 (27 шаблонов: 16 с целью, 11 десахаренных запретов —
+// последние в файле 03) предъявляется делом и своим статусом §134.
+//
+// ЧИТАТЬ ВМЕСТЕ С ГРАНИЦАМИ, КОТОРЫЕ ЗДЕСЬ ЗАКРЕПЛЕНЫ СТОРОЖАМИ:
+//
+// 1) Цель ПОДДЕРЖАНИЯ §137 с открытым окном [@2026-07-01, infinity) не
+//    бывает SATISFIED: закрытие требует completeness path по всему окну, а
+//    окно не кончается. Соблюдённое дело даёт ACTIVE, а не SATISFIED.
+// 2) Шесть обязанностей государства (ст. 15 п. 6, 18 п. 4, 21 п. 3, 28 п. 2,
+//    31 п. 1, 33 п. 1) до 13.09.2026 стояли целью ДОСТИЖЕНИЯ §136 с окном
+//    [@2026-07-01, infinity) и не могли стать VIOLATED никогда: §136 требует
+//    закрытого окна, а срок исполнения Конституция не назначает. Переведены в
+//    ПОДДЕРЖАНИЕ §137 (обязанность без назначенного срока — поддерживать
+//    состояние исполнения): установленное неисполнение даёт VIOLATED в окне,
+//    исполненное дело — ACTIVE, не SATISFIED.
+// 3) `completeness_policy <Имя>` у восьми целей поддержания ссылается на
+//    StableId, которого в программе НЕТ: узла `completeness_policy` в CLIR
+//    не существует, оценщик поле не читает (единственные чтения
+//    `completenessPolicy` — `lawref/verbalize.py:1080` и
+//    `law-verbalize/src/render.rs:1266`, то есть словесное изложение).
+//    Поэтому SATISFIED не достигается и предъявлением «политики»: путь
+//    замыкания ищется по §70-замыканиям предиката условия, а не по имени.
+
+// --- Ст. 36–40: продолжающиеся обязанности человека и гражданина ---------
+
+test "urn:query:kzcr-duty-maintenance-active-1" {
+    given {
+        context {
+            decision_time @2026-09-01T12:00:00+05:00;
+            knowledge_time @2026-09-01T12:00:00+05:00;
+            legal_time @2026-09-01;
+            timezone "Asia/Qyzylorda";
+        }
+
+        assert person(entity_ref("urn:kz:constitution:rights:case:person:1")) { id "d01-a1"; origin case_input; }
+        assert citizen(entity_ref("urn:kz:constitution:rights:case:person:1")) { id "d01-a2"; origin case_input; }
+    }
+
+    // Ст. 36, 37, 38, 39, 40 и ст. 34: дело не несёт ни одного контрпримера,
+    // поэтому все шесть обязанностей поддержания ACTIVE — и ни одна не
+    // SATISFIED: молчание дела не есть исполнение (§137).
+    evaluate positions();
+    expect evaluation_status == COMPUTED;
+    expect result_kind == NORM_POSITION;
+    expect issues_within(info);
+
+    expect position(RespectConstitutionAndLaw, ACTIVE);
+    expect position(ProtectNature, ACTIVE);
+    expect position(PayLawfulTaxes, ACTIVE);
+    expect position(DefendKazakhstan, ACTIVE);
+    expect position(PreserveHeritage, ACTIVE);
+    expect position(RespectStateSymbols, ACTIVE);
+
+    expect not position(RespectConstitutionAndLaw, SATISFIED);
+    expect not position(PayLawfulTaxes, SATISFIED);
+    expect not position(RespectConstitutionAndLaw, VIOLATED);
+    expect not position(PayLawfulTaxes, VIOLATED);
+}
+
+test "urn:query:kzcr-duty-maintenance-violated-1" {
+    given {
+        context {
+            decision_time @2026-09-01T12:00:00+05:00;
+            knowledge_time @2026-09-01T12:00:00+05:00;
+            legal_time @2026-09-01;
+            timezone "Asia/Qyzylorda";
+        }
+
+        assert person(entity_ref("urn:kz:constitution:rights:case:person:2")) { id "d02-a1"; origin case_input; }
+        assert citizen(entity_ref("urn:kz:constitution:rights:case:person:2")) { id "d02-a2"; origin case_input; }
+
+        // §137: контрпример УСТАНОВЛЕН делом. Отсутствие факта отрицанием не
+        // является, поэтому каждый контрпример подан явно.
+        assert constitution_or_law_violated(entity_ref("urn:kz:constitution:rights:case:person:2")) { id "d02-a3"; origin case_input; }
+        assert nature_harmed(entity_ref("urn:kz:constitution:rights:case:person:2")) { id "d02-a4"; origin case_input; }
+        assert lawful_tax_unpaid(entity_ref("urn:kz:constitution:rights:case:person:2")) { id "d02-a5"; origin case_input; }
+        assert defence_duty_unperformed(entity_ref("urn:kz:constitution:rights:case:person:2")) { id "d02-a6"; origin case_input; }
+        assert heritage_harmed(entity_ref("urn:kz:constitution:rights:case:person:2")) { id "d02-a7"; origin case_input; }
+        assert state_symbols_disrespected(entity_ref("urn:kz:constitution:rights:case:person:2")) { id "d02-a8"; origin case_input; }
+    }
+
+    // Ст. 38: неуплата законно установленного налога установлена → VIOLATED.
+    evaluate positions();
+    expect issues_within(info);
+
+    expect position(RespectConstitutionAndLaw, VIOLATED);
+    expect position(ProtectNature, VIOLATED);
+    expect position(PayLawfulTaxes, VIOLATED);
+    expect position(DefendKazakhstan, VIOLATED);
+    expect position(PreserveHeritage, VIOLATED);
+    expect position(RespectStateSymbols, VIOLATED);
+
+    expect not position(PayLawfulTaxes, ACTIVE);
+    expect not position(PayLawfulTaxes, SATISFIED);
+}
+
+// --- Ст. 30 п. 3 и ст. 30 п. 2: забота в семье ---------------------------
+
+test "urn:query:kzcr-duty-family-active-1" {
+    given {
+        context {
+            decision_time @2026-09-01T12:00:00+05:00;
+            knowledge_time @2026-09-01T12:00:00+05:00;
+            legal_time @2026-09-01;
+            timezone "Asia/Qyzylorda";
+        }
+
+        assert parent_of(entity_ref("urn:kz:constitution:rights:case:parent:1"),
+                         entity_ref("urn:kz:constitution:rights:case:child:1")) { id "d03-a1"; origin case_input; }
+        assert adult_capable_child_of(entity_ref("urn:kz:constitution:rights:case:child:2"),
+                                      entity_ref("urn:kz:constitution:rights:case:parent:2")) { id "d03-a2"; origin case_input; }
+        assert parent_incapacitated(entity_ref("urn:kz:constitution:rights:case:parent:2")) { id "d03-a3"; origin case_input; }
+
+        // Забота ОКАЗАНА. §137: положительное условие поддержания в открытом
+        // окне даёт ACTIVE, а не SATISFIED — окно не закрыто, закрывать
+        // нечем. Сторож ниже это и фиксирует.
+        assert child_care_provided(entity_ref("urn:kz:constitution:rights:case:parent:1"),
+                                   entity_ref("urn:kz:constitution:rights:case:child:1")) { id "d03-a4"; origin case_input; }
+    }
+
+    evaluate positions();
+    expect issues_within(info);
+
+    expect position(CareForChild, ACTIVE);
+    expect position(CareForIncapacitatedParent, ACTIVE);
+    expect not position(CareForChild, SATISFIED);
+    expect not position(CareForChild, VIOLATED);
+}
+
+test "urn:query:kzcr-duty-family-violated-1" {
+    given {
+        context {
+            decision_time @2026-09-01T12:00:00+05:00;
+            knowledge_time @2026-09-01T12:00:00+05:00;
+            legal_time @2026-09-01;
+            timezone "Asia/Qyzylorda";
+        }
+
+        assert parent_of(entity_ref("urn:kz:constitution:rights:case:parent:3"),
+                         entity_ref("urn:kz:constitution:rights:case:child:3")) { id "d04-a1"; origin case_input; }
+        assert adult_capable_child_of(entity_ref("urn:kz:constitution:rights:case:child:4"),
+                                      entity_ref("urn:kz:constitution:rights:case:parent:4")) { id "d04-a2"; origin case_input; }
+        assert parent_incapacitated(entity_ref("urn:kz:constitution:rights:case:parent:4")) { id "d04-a3"; origin case_input; }
+
+        // §137: контрпример у ПОЛОЖИТЕЛЬНОГО условия — явное отрицание факта.
+        assert not child_care_provided(entity_ref("urn:kz:constitution:rights:case:parent:3"),
+                                       entity_ref("urn:kz:constitution:rights:case:child:3")) { id "d04-a4"; origin case_input; }
+        assert not parent_care_provided(entity_ref("urn:kz:constitution:rights:case:child:4"),
+                                        entity_ref("urn:kz:constitution:rights:case:parent:4")) { id "d04-a5"; origin case_input; }
+    }
+
+    evaluate positions();
+    expect issues_within(info);
+
+    expect position(CareForChild, VIOLATED);
+    expect position(CareForIncapacitatedParent, VIOLATED);
+    expect not position(CareForChild, ACTIVE);
+}
+
+// --- Ст. 14 п. 2 и ст. 32: обязанности органа с целью поддержания --------
+
+test "urn:query:kzcr-duty-authority-maintenance-1" {
+    given {
+        context {
+            decision_time @2026-09-01T12:00:00+05:00;
+            knowledge_time @2026-09-01T12:00:00+05:00;
+            legal_time @2026-09-01;
+            timezone "Asia/Qyzylorda";
+        }
+
+        assert state_authority(entity_ref("urn:kz:constitution:rights:case:authority:1")) { id "d05-a1"; origin case_input; }
+        assert person(entity_ref("urn:kz:constitution:rights:case:person:3")) { id "d05-a2"; origin case_input; }
+        assert citizen(entity_ref("urn:kz:constitution:rights:case:person:3")) { id "d05-a3"; origin case_input; }
+        assert abroad(entity_ref("urn:kz:constitution:rights:case:person:3")) { id "d05-a4"; origin case_input; }
+    }
+
+    // Ст. 14 п. 2: защита и покровительство гражданину за пределами Республики;
+    // ст. 32: гарантированный объём бесплатной медицинской помощи.
+    evaluate positions();
+    expect issues_within(info);
+
+    expect position(ProtectAndPatroniseAbroad, ACTIVE);
+    expect position(ProvideUnpaidMedicalCare, ACTIVE);
+}
+
+test "urn:query:kzcr-duty-authority-maintenance-violated-1" {
+    given {
+        context {
+            decision_time @2026-09-01T12:00:00+05:00;
+            knowledge_time @2026-09-01T12:00:00+05:00;
+            legal_time @2026-09-01;
+            timezone "Asia/Qyzylorda";
+        }
+
+        assert state_authority(entity_ref("urn:kz:constitution:rights:case:authority:2")) { id "d06-a1"; origin case_input; }
+        assert person(entity_ref("urn:kz:constitution:rights:case:person:4")) { id "d06-a2"; origin case_input; }
+        assert citizen(entity_ref("urn:kz:constitution:rights:case:person:4")) { id "d06-a3"; origin case_input; }
+        assert abroad(entity_ref("urn:kz:constitution:rights:case:person:4")) { id "d06-a4"; origin case_input; }
+
+        assert not protection_and_patronage_provided(entity_ref("urn:kz:constitution:rights:case:authority:2"),
+                                                     entity_ref("urn:kz:constitution:rights:case:person:4")) { id "d06-a5"; origin case_input; }
+        assert not guaranteed_free_medical_care_provided(entity_ref("urn:kz:constitution:rights:case:authority:2"),
+                                                         entity_ref("urn:kz:constitution:rights:case:person:4")) { id "d06-a6"; origin case_input; }
+    }
+
+    evaluate positions();
+    expect issues_within(info);
+
+    expect position(ProtectAndPatroniseAbroad, VIOLATED);
+    expect position(ProvideUnpaidMedicalCare, VIOLATED);
+}
+
+// --- Обязанности с целью ДОСТИЖЕНИЯ: ст. 15.6, 21.3, 18.3, 28.2, 31, 33 --
+
+test "urn:query:kzcr-duty-achievement-active-1" {
+    given {
+        context {
+            decision_time @2026-09-01T12:00:00+05:00;
+            knowledge_time @2026-09-01T12:00:00+05:00;
+            legal_time @2026-09-01;
+            timezone "Asia/Qyzylorda";
+        }
+
+        assert state_authority(entity_ref("urn:kz:constitution:rights:case:authority:3")) { id "d07-a1"; origin case_input; }
+        assert person(entity_ref("urn:kz:constitution:rights:case:person:5")) { id "d07-a2"; origin case_input; }
+        assert citizen(entity_ref("urn:kz:constitution:rights:case:person:5")) { id "d07-a3"; origin case_input; }
+
+        // Ст. 15 п. 6: вред от незаконных действий органа установлен делом.
+        assert unlawful_state_action_harmed(entity_ref("urn:kz:constitution:rights:case:authority:3"),
+                                            entity_ref("urn:kz:constitution:rights:case:person:5")) { id "d07-a4"; origin case_input; }
+        // Ст. 21 п. 3: документ затрагивает права лица.
+        assert document_affects(entity_ref("urn:kz:constitution:rights:case:document:1"),
+                                entity_ref("urn:kz:constitution:rights:case:person:5")) { id "d07-a5"; origin case_input; }
+        // Ст. 18 п. 3: помощь адвоката с момента задержания.
+        assert detention_of(entity_ref("urn:kz:constitution:rights:case:detention:1"),
+                            entity_ref("urn:kz:constitution:rights:case:person:5")) { id "d07-a6"; origin case_input; }
+        // Ст. 31: основание социального обеспечения.
+        assert lawful_social_security_ground(entity_ref("urn:kz:constitution:rights:case:person:5")) { id "d07-a7"; origin case_input; }
+        // Ст. 33 п. 1: право на бесплатное среднее образование.
+        assert free_secondary_education_eligible(entity_ref("urn:kz:constitution:rights:case:person:5")) { id "d07-a8"; origin case_input; }
+        // Ст. 28 п. 2: нуждаемость в жилище, установленная законом.
+        assert statutory_housing_need(entity_ref("urn:kz:constitution:rights:case:housing:1"),
+                                      entity_ref("urn:kz:constitution:rights:case:person:5")) { id "d07-a9"; origin case_input; }
+    }
+
+    evaluate positions();
+    expect issues_within(info);
+
+    expect position(CompensateUnlawfulStateHarm, ACTIVE);
+    expect position(ProvideAccess, ACTIVE);
+    expect position(ProvideCounselAccess, ACTIVE);
+    expect position(ProvideSocialSecurity, ACTIVE);
+    expect position(ProvideFreeSecondaryEducation, ACTIVE);
+    expect position(ProvideStatutoryHousing, ACTIVE);
+}
+
+test "urn:query:kzcr-state-duty-maintained-active-1" {
+    given {
+        context {
+            decision_time @2026-09-01T12:00:00+05:00;
+            knowledge_time @2026-09-01T12:00:00+05:00;
+            legal_time @2026-09-01;
+            timezone "Asia/Qyzylorda";
+        }
+
+        assert state_authority(entity_ref("urn:kz:constitution:rights:case:authority:4")) { id "d08-a1"; origin case_input; }
+        assert person(entity_ref("urn:kz:constitution:rights:case:person:6")) { id "d08-a2"; origin case_input; }
+        assert citizen(entity_ref("urn:kz:constitution:rights:case:person:6")) { id "d08-a3"; origin case_input; }
+
+        assert unlawful_state_action_harmed(entity_ref("urn:kz:constitution:rights:case:authority:4"),
+                                            entity_ref("urn:kz:constitution:rights:case:person:6")) { id "d08-a4"; origin case_input; }
+        assert document_affects(entity_ref("urn:kz:constitution:rights:case:document:2"),
+                                entity_ref("urn:kz:constitution:rights:case:person:6")) { id "d08-a5"; origin case_input; }
+        assert detention_of(entity_ref("urn:kz:constitution:rights:case:detention:2"),
+                            entity_ref("urn:kz:constitution:rights:case:person:6")) { id "d08-a6"; origin case_input; }
+        assert lawful_social_security_ground(entity_ref("urn:kz:constitution:rights:case:person:6")) { id "d08-a7"; origin case_input; }
+        assert free_secondary_education_eligible(entity_ref("urn:kz:constitution:rights:case:person:6")) { id "d08-a8"; origin case_input; }
+        assert statutory_housing_need(entity_ref("urn:kz:constitution:rights:case:housing:2"),
+                                      entity_ref("urn:kz:constitution:rights:case:person:6")) { id "d08-a9"; origin case_input; }
+
+        // §137: исполнение УСТАНОВЛЕНО в окне → ACTIVE (SATISFIED недостижим при открытом окне).
+        assert state_harm_compensated(entity_ref("urn:kz:constitution:rights:case:authority:4"),
+                                      entity_ref("urn:kz:constitution:rights:case:person:6")) { id "d08-a10"; origin case_input; }
+        assert access_provided(entity_ref("urn:kz:constitution:rights:case:document:2"),
+                               entity_ref("urn:kz:constitution:rights:case:person:6")) { id "d08-a11"; origin case_input; }
+        assert counsel_access_provided(entity_ref("urn:kz:constitution:rights:case:detention:2"),
+                                       entity_ref("urn:kz:constitution:rights:case:person:6")) { id "d08-a12"; origin case_input; }
+        assert social_security_provided(entity_ref("urn:kz:constitution:rights:case:authority:4"),
+                                        entity_ref("urn:kz:constitution:rights:case:person:6")) { id "d08-a13"; origin case_input; }
+        assert free_secondary_education_provided(entity_ref("urn:kz:constitution:rights:case:authority:4"),
+                                                 entity_ref("urn:kz:constitution:rights:case:person:6")) { id "d08-a14"; origin case_input; }
+        assert affordable_state_housing_provided(entity_ref("urn:kz:constitution:rights:case:housing:2"),
+                                                 entity_ref("urn:kz:constitution:rights:case:person:6")) { id "d08-a15"; origin case_input; }
+    }
+
+    evaluate positions();
+    expect issues_within(info);
+
+    expect position(CompensateUnlawfulStateHarm, ACTIVE);
+    expect position(ProvideAccess, ACTIVE);
+    expect position(ProvideCounselAccess, ACTIVE);
+    expect position(ProvideSocialSecurity, ACTIVE);
+    expect position(ProvideFreeSecondaryEducation, ACTIVE);
+    expect position(ProvideStatutoryHousing, ACTIVE);
+    expect not position(ProvideAccess, SATISFIED);
+    expect not position(ProvideAccess, VIOLATED);
+}
+
+test "urn:query:kzcr-state-duty-counterexample-violated-1" {
+    given {
+        context {
+            decision_time @2026-09-01T12:00:00+05:00;
+            knowledge_time @2026-09-01T12:00:00+05:00;
+            legal_time @2026-09-01;
+            timezone "Asia/Qyzylorda";
+        }
+
+        assert state_authority(entity_ref("urn:kz:constitution:rights:case:authority:5")) { id "d09-a1"; origin case_input; }
+        assert person(entity_ref("urn:kz:constitution:rights:case:person:7")) { id "d09-a2"; origin case_input; }
+
+        assert unlawful_state_action_harmed(entity_ref("urn:kz:constitution:rights:case:authority:5"),
+                                            entity_ref("urn:kz:constitution:rights:case:person:7")) { id "d09-a3"; origin case_input; }
+        assert document_affects(entity_ref("urn:kz:constitution:rights:case:document:3"),
+                                entity_ref("urn:kz:constitution:rights:case:person:7")) { id "d09-a4"; origin case_input; }
+
+        // ЯВНОЕ НЕИСПОЛНЕНИЕ §136.3 предъявлено делом.
+        assert not state_harm_compensated(entity_ref("urn:kz:constitution:rights:case:authority:5"),
+                                          entity_ref("urn:kz:constitution:rights:case:person:7")) { id "d09-a5"; origin case_input; }
+        assert not access_provided(entity_ref("urn:kz:constitution:rights:case:document:3"),
+                                   entity_ref("urn:kz:constitution:rights:case:person:7")) { id "d09-a6"; origin case_input; }
+    }
+
+    // §137: обязанность поддержания нарушена контрпримером в окне —
+    // установленное неисполнение (FALSE_ONLY) даёт VIOLATED. До 13.09.2026
+    // обе нормы стояли достижением с открытым окном и оставались ACTIVE
+    // при том же деле (нарушение было недостижимо).
+    evaluate positions();
+    expect issues_within(info);
+
+    expect position(CompensateUnlawfulStateHarm, VIOLATED);
+    expect position(ProvideAccess, VIOLATED);
+    expect not position(CompensateUnlawfulStateHarm, ACTIVE);
+    expect not position(ProvideAccess, ACTIVE);
+}
+
+// --- Граница носителя §190: обязанность органа без факта статуса ---------
+
+test "urn:query:kzcr-duty-bearer-must-be-bound-1" {
+    given {
+        context {
+            decision_time @2026-09-01T12:00:00+05:00;
+            knowledge_time @2026-09-01T12:00:00+05:00;
+            legal_time @2026-09-01;
+            timezone "Asia/Qyzylorda";
+        }
+
+        // Документ затрагивает лицо, но СТАТУС ОРГАНА делом не установлен.
+        assert person(entity_ref("urn:kz:constitution:rights:case:person:8")) { id "d10-a1"; origin case_input; }
+        assert document_affects(entity_ref("urn:kz:constitution:rights:case:document:4"),
+                                entity_ref("urn:kz:constitution:rights:case:person:8")) { id "d10-a2"; origin case_input; }
+    }
+
+    // §190: носитель связывается ТЕЛОМ правила. Без `state_authority(a)`
+    // посылка не выведена, позиции нет вовсе — и это правильный ответ, а не
+    // позиция с выдуманным носителем (шапка `rights.law` описывает ровно ту
+    // ошибку, которую этот сторож не даёт вернуть).
+    evaluate positions();
+    expect issues_within(info);
+
+    expect not position(ProvideAccess, ACTIVE);
+    expect not position(ProvideAccess, PENDING);
+    expect position(RespectConstitutionAndLaw, ACTIVE);
+}

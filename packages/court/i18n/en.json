@@ -1,0 +1,2318 @@
+{
+  "$comment": "English display overlay for the labels (§218) of this package of the Constitution of the Republic of Kazakhstan (DECISION-0070). The file is not compiled into the CLIR and is read only by the presentation layer (verbalize --labels, the MCP resource law://<package>/verbalized/en, the workbench). The translation is a working one made by the formaliser from the Russian labels of the package, checked against the authentic Russian and Kazakh texts of the Constitution; it is not an official publication, hence the status \"translation\" for every entry. Spelling is British. A key is the local name of the declaration (the part of the node id after \"#\").",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "Advocate": [
+      {
+        "status": "translation",
+        "text": "advocate or other provider of legal assistance"
+      }
+    ],
+    "Akim": [
+      {
+        "status": "translation",
+        "text": "akim — the head of a local executive body"
+      }
+    ],
+    "AkimCandidateAtLeastTwoAndMajority": [
+      {
+        "status": "translation",
+        "text": "Article 89. An akim is appointed where not less than two candidatures are submitted to the maslikhat and the consent of a majority of the deputies taking part in the vote is obtained"
+      }
+    ],
+    "AkimNoConfidence": [
+      {
+        "status": "translation",
+        "text": "Article 89. On the initiative of not less than one-fifth of the deputies, a maslikhat may, by a majority of votes, pass a vote of no confidence in the akim"
+      }
+    ],
+    "AkimNoConfidenceExpressed1995": [
+      {
+        "status": "translation",
+        "text": "Article 87, paragraph 5 (1995 version). A maslikhat may, by a majority of the votes of the total number of its deputies, express no confidence in the akim"
+      }
+    ],
+    "AkimNoConfidenceInitiativeValid1995": [
+      {
+        "status": "translation",
+        "text": "Article 87, paragraph 5 (1995 version). The question of a vote of no confidence in an akim is raised on the initiative of not less than one-fifth of the total number of the deputies of the maslikhat"
+      }
+    ],
+    "Candidate": [
+      {
+        "status": "translation",
+        "text": "candidate for a judicial or other office named"
+      }
+    ],
+    "Case": [
+      {
+        "status": "translation",
+        "text": "court case"
+      }
+    ],
+    "ConstitutionConformingInterpretationRequired": [
+      {
+        "status": "translation",
+        "text": "Article 75, paragraph 2. An act found constitutional on the interpretation of the Constitutional Court is to be applied on that interpretation"
+      }
+    ],
+    "ConstitutionConformingInterpretationRequired1995": [
+      {
+        "status": "translation",
+        "text": "Article 74, paragraphs 2 and 3 (1995 version). The interpretation on which the norm was found constitutional is generally binding from the day the decision is taken"
+      }
+    ],
+    "ConstitutionalCourt": [
+      {
+        "status": "translation",
+        "text": "Constitutional Court of the Republic of Kazakhstan"
+      }
+    ],
+    "ConstitutionalCourtReferralRequired1995": [
+      {
+        "status": "translation",
+        "text": "Article 78 (1995 version). The court is obliged to apply to the Constitutional Court with a submission to find the act unconstitutional"
+      }
+    ],
+    "ConstitutionalJudge": [
+      {
+        "status": "translation",
+        "text": "judge of the Constitutional Court"
+      }
+    ],
+    "ConstitutionalJudgeImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Article 71, paragraph 5 (1995 version). Judges of the Constitutional Court may not be arrested or held criminally liable without the consent of Parliament, except where detained at the scene of a crime and in the case of grave crimes"
+      }
+    ],
+    "ConstitutionalJudgeIncompatible1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "Article 71, paragraph 4 (1995 version). The office of a judge of the Constitutional Court is incompatible with a deputy's mandate, with another paid position and with entrepreneurial activity"
+      }
+    ],
+    "ConstitutionalJudgeIncompatible1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "Article 71, paragraph 4 (1995 version). The office of a judge of the Constitutional Court is incompatible with a deputy's mandate, with another paid position and with entrepreneurial activity"
+      }
+    ],
+    "ConstitutionalJudgeIncompatible1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "Article 71, paragraph 4 (1995 version). The office of a judge of the Constitutional Court is incompatible with a deputy's mandate, with another paid position and with entrepreneurial activity"
+      }
+    ],
+    "ConstitutionalJudgeInviolability1995": [
+      {
+        "status": "translation",
+        "text": "Article 71, paragraph 5 (1995 version). Judges of the Constitutional Court may not be arrested or held criminally liable without the consent of Parliament, except where detained at the scene of a crime and in the case of grave crimes"
+      }
+    ],
+    "ConstitutionalJudgeOneTerm": [
+      {
+        "status": "translation",
+        "text": "Article 72, paragraph 2. One and the same person may not be appointed a judge of the Constitutional Court more than once"
+      }
+    ],
+    "ConstitutionalJudgeReappointmentProhibited1995": [
+      {
+        "status": "translation",
+        "text": "Article 71, paragraph 1 (1995 version). One and the same person may not be appointed a judge of the Constitutional Court more than once"
+      }
+    ],
+    "ConstitutionalJudgeTermExpiry": [
+      {
+        "status": "translation",
+        "text": "Article 72. The term of office of a judge of the Constitutional Court is eight years from the day of appointment"
+      }
+    ],
+    "ConstitutionalPetitionInstitutionalApplicants/alt/1": [
+      {
+        "status": "translation",
+        "text": "Article 73, paragraph 1. The Constitutional Court considers applications of the President, the Chair of the Kurultai, not less than one-fifth of the deputies of the Kurultai, the Prime Minister and the Prosecutor General"
+      }
+    ],
+    "ConstitutionalPetitionInstitutionalApplicants/alt/2": [
+      {
+        "status": "translation",
+        "text": "Article 73, paragraph 1. The Constitutional Court considers applications of the President, the Chair of the Kurultai, not less than one-fifth of the deputies of the Kurultai, the Prime Minister and the Prosecutor General"
+      }
+    ],
+    "ConstitutionalPetitionInstitutionalApplicants/alt/3": [
+      {
+        "status": "translation",
+        "text": "Article 73, paragraph 1. The Constitutional Court considers applications of the President, the Chair of the Kurultai, not less than one-fifth of the deputies of the Kurultai, the Prime Minister and the Prosecutor General"
+      }
+    ],
+    "ConstitutionalPetitionInstitutionalApplicants/alt/4": [
+      {
+        "status": "translation",
+        "text": "Article 73, paragraph 1. The Constitutional Court considers applications of the President, the Chair of the Kurultai, not less than one-fifth of the deputies of the Kurultai, the Prime Minister and the Prosecutor General"
+      }
+    ],
+    "ConstitutionalPetitionRightsApplicants/alt/1": [
+      {
+        "status": "translation",
+        "text": "Article 73, paragraphs 2–3. The Constitutional Court considers applications of citizens, of the Commissioner for Human Rights and of the courts on questions of constitutional rights and freedoms"
+      }
+    ],
+    "ConstitutionalPetitionRightsApplicants/alt/2": [
+      {
+        "status": "translation",
+        "text": "Article 73, paragraphs 2–3. The Constitutional Court considers applications of citizens, of the Commissioner for Human Rights and of the courts on questions of constitutional rights and freedoms"
+      }
+    ],
+    "ConstitutionalPetitionRightsApplicants/alt/3": [
+      {
+        "status": "translation",
+        "text": "Article 73, paragraphs 2–3. The Constitutional Court considers applications of citizens, of the Commissioner for Human Rights and of the courts on questions of constitutional rights and freedoms"
+      }
+    ],
+    "ConstitutionalPetitionRightsApplicants/alt/4": [
+      {
+        "status": "translation",
+        "text": "Article 73, paragraphs 2–3. The Constitutional Court considers applications of citizens, of the Commissioner for Human Rights and of the courts on questions of constitutional rights and freedoms"
+      }
+    ],
+    "ConstitutionalReviewCompetence": [
+      {
+        "status": "translation",
+        "text": "Article 72, paragraph 1. The Constitutional Court is an independent state body exercising constitutional review and ensuring the supremacy of the Constitution throughout the territory of the country"
+      }
+    ],
+    "ConvictionOnConfessionAloneImpermissible1995": [
+      {
+        "status": "translation",
+        "text": "Article 77, paragraph 3, sub-paragraph 9 (1995 version). No one may be convicted solely on the basis of his own confession"
+      }
+    ],
+    "Court": [
+      {
+        "status": "translation",
+        "text": "court"
+      }
+    ],
+    "CourtRefersRightsInfringingActToConstitutionalCourt": [
+      {
+        "status": "translation",
+        "text": "Article 79. Where the court finds that an act to be applied infringes constitutional rights, it is obliged to apply to the Constitutional Court"
+      }
+    ],
+    "CourtRulingBinding1995": [
+      {
+        "status": "translation",
+        "text": "Article 76, paragraph 3 (1995 version). The decisions, sentences and other rulings of the courts are binding throughout the territory of the Republic"
+      }
+    ],
+    "CourtSuspendsRightsInfringingActProceeding": [
+      {
+        "status": "translation",
+        "text": "Article 79. Where the court finds that an act to be applied infringes constitutional rights, it is obliged to stay the proceedings in the case"
+      }
+    ],
+    "CriminalAnalogyProhibited1995": [
+      {
+        "status": "translation",
+        "text": "Article 77, paragraph 3, sub-paragraph 10 (1995 version). The application of criminal law by analogy is not permitted"
+      }
+    ],
+    "DeputyElectionDisputeSuspendsRegistration": [
+      {
+        "status": "translation",
+        "text": "Article 74, paragraph 1. Where an application concerning an electoral dispute is made to the Constitutional Court, the registration of the elected deputies of the Kurultai is suspended"
+      }
+    ],
+    "DetermineJudgeRequirements": [
+      {
+        "status": "translation",
+        "text": "Article 80, paragraph 3. The requirements for judges of the courts of the Republic of Kazakhstan are determined by a constitutional statute"
+      }
+    ],
+    "DoubtResolvedForAccused1995": [
+      {
+        "status": "translation",
+        "text": "Article 77, paragraph 3, sub-paragraph 8 (1995 version). Any doubts as to a person's guilt are construed in favour of the accused"
+      }
+    ],
+    "EligibleMaslikhatDeputy1995": [
+      {
+        "status": "translation",
+        "text": "Article 86, paragraph 3 (1995 version). A citizen who has attained the age of twenty may be elected a deputy of a maslikhat; a citizen may be a deputy of one maslikhat only"
+      }
+    ],
+    "EstablishJudicialCollegia": [
+      {
+        "status": "translation",
+        "text": "Article 83, paragraph 3. Judicial collegia may be created in the courts in accordance with a constitutional statute"
+      }
+    ],
+    "HearingRightViolated1995": [
+      {
+        "status": "translation",
+        "text": "Article 77, paragraph 3, sub-paragraph 4 (1995 version). Everyone has the right to be heard in court"
+      }
+    ],
+    "InaugurationSuspendedOnElectionPetition1995": [
+      {
+        "status": "translation",
+        "text": "Article 73, paragraph 1 (1995 version). Where an application concerns the correctness of an election, the taking of office by the President, the registration of deputies or the summing-up of the results of a referendum is suspended"
+      }
+    ],
+    "InterferenceWithJusticeLiability1995": [
+      {
+        "status": "translation",
+        "text": "Article 77, paragraph 2 (1995 version). Interference in the activity of a court in the administration of justice is impermissible and entails liability under the law"
+      }
+    ],
+    "Judge": [
+      {
+        "status": "translation",
+        "text": "judge"
+      }
+    ],
+    "JudgeDetentionConstitutionalException": [
+      {
+        "status": "translation",
+        "text": "Article 80, paragraph 2. The detention of a judge is permissible where he is detained at the scene of a crime, where a grave or especially grave crime has been committed, or where the required consent has been given"
+      }
+    ],
+    "JudgeDetentionGroundConsent": [
+      {
+        "status": "translation",
+        "text": "Article 80, paragraph 2. The required consent is a ground lifting the protection of a judge"
+      }
+    ],
+    "JudgeDetentionGroundGraveOffence": [
+      {
+        "status": "translation",
+        "text": "Article 80, paragraph 2. The commission of a grave or especially grave crime is a ground lifting the protection of a judge"
+      }
+    ],
+    "JudgeDetentionGroundInTheAct": [
+      {
+        "status": "translation",
+        "text": "Article 80, paragraph 2. Detention at the scene of a crime is a ground lifting the protection of a judge"
+      }
+    ],
+    "JudgeDetentionImmunity": [
+      {
+        "status": "translation",
+        "text": "Article 80, paragraph 2. A judge may not be detained without the required consent, except where detained at the scene of a crime or where a grave or especially grave crime has been committed"
+      }
+    ],
+    "JudgeImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Article 79, paragraph 2 (1995 version). A judge may not be arrested or held criminally liable without the consent of the President given on the conclusion of the Supreme Judicial Council, or without the consent of the Senate"
+      }
+    ],
+    "JudgeInviolabilityApplies": [
+      {
+        "status": "translation",
+        "text": "Article 80, paragraph 2. The protection of a judge against detention operates so long as none of the three grounds named is present"
+      }
+    ],
+    "JudgeInviolabilityApplies/unless/0": [
+      {
+        "status": "translation",
+        "text": "Article 80, paragraph 2. The protection of a judge against detention operates so long as none of the three grounds named is present"
+      }
+    ],
+    "JudgeOfficeIncompatible1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "Article 79, paragraph 4 (1995 version). The office of a judge is incompatible with a deputy's mandate, with another paid position and with entrepreneurial activity"
+      }
+    ],
+    "JudgeOfficeIncompatible1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "Article 79, paragraph 4 (1995 version). The office of a judge is incompatible with a deputy's mandate, with another paid position and with entrepreneurial activity"
+      }
+    ],
+    "JudgeOfficeIncompatible1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "Article 79, paragraph 4 (1995 version). The office of a judge is incompatible with a deputy's mandate, with another paid position and with entrepreneurial activity"
+      }
+    ],
+    "JudgePersonalImmunity": [
+      {
+        "status": "translation",
+        "text": "Article 80, paragraph 2. A judge may not be detained without the required consent, except where detained at the scene of a crime or where a grave or especially grave crime has been committed"
+      }
+    ],
+    "JudgeRequirementsDelegated": [
+      {
+        "status": "translation",
+        "text": "Article 80, paragraph 3. The requirements for judges of the courts of the Republic of Kazakhstan are determined by a constitutional statute"
+      }
+    ],
+    "JudicialCollegiaDelegated": [
+      {
+        "status": "translation",
+        "text": "Article 83, paragraph 3. Judicial collegia may be created in the courts in accordance with a constitutional statute"
+      }
+    ],
+    "JudicialDecisionBindingNationwide": [
+      {
+        "status": "translation",
+        "text": "Article 77, paragraph 3. The decisions, sentences and other rulings of the courts are binding throughout the territory of Kazakhstan"
+      }
+    ],
+    "JudicialIndependence": [
+      {
+        "status": "translation",
+        "text": "Article 78, paragraph 1. In administering justice a judge is independent and subject only to the Constitution and the statute"
+      }
+    ],
+    "JudicialInterferenceUnlawful": [
+      {
+        "status": "translation",
+        "text": "Article 78, paragraph 2. Any interference in the activity of a court in the administration of justice is impermissible"
+      }
+    ],
+    "JudicialInviolability1995": [
+      {
+        "status": "translation",
+        "text": "Article 79, paragraph 2 (1995 version). A judge may not be arrested or held criminally liable without the consent of the President given on the conclusion of the Supreme Judicial Council, or without the consent of the Senate"
+      }
+    ],
+    "JudicialPowerCoversCase1995": [
+      {
+        "status": "translation",
+        "text": "Article 76, paragraph 2 (1995 version). The judicial power extends to all cases and disputes arising under the Constitution, the statutes and international treaties"
+      }
+    ],
+    "JudicialPowerCoversLegalApplicationCases": [
+      {
+        "status": "translation",
+        "text": "Article 77, paragraph 2. The judicial power covers cases and disputes arising from the application of norms of law"
+      }
+    ],
+    "JurisdictionChangeProhibited1995": [
+      {
+        "status": "translation",
+        "text": "Article 77, paragraph 3, sub-paragraph 3 (1995 version). No one may, without his consent, have the jurisdiction laid down for him by statute changed"
+      }
+    ],
+    "JusticeByCourtOnly1995": [
+      {
+        "status": "translation",
+        "text": "Article 75, paragraph 1 (1995 version). Justice in the Republic of Kazakhstan is administered by the court alone"
+      }
+    ],
+    "JusticeOnlyByCourt": [
+      {
+        "status": "translation",
+        "text": "Article 76, paragraph 1. Justice in the Republic of Kazakhstan is administered by the court alone"
+      }
+    ],
+    "LegalAct": [
+      {
+        "status": "translation",
+        "text": "regulatory legal act or judicial decision"
+      }
+    ],
+    "LegalAid": [
+      {
+        "status": "translation",
+        "text": "case of the provision of legal assistance"
+      }
+    ],
+    "LegalAidByAuthorizedProvider": [
+      {
+        "status": "translation",
+        "text": "Article 86. Legal assistance is provided by advocates and other persons in accordance with the statute"
+      }
+    ],
+    "LocalCourtAppointment1995": [
+      {
+        "status": "translation",
+        "text": "Article 82, paragraph 2 (1995 version). The chairs and the judges of the local and other courts are appointed by the President on the recommendation of the Supreme Judicial Council"
+      }
+    ],
+    "LocalDecision": [
+      {
+        "status": "translation",
+        "text": "ruling of a maslikhat or of a body of local self-government"
+      }
+    ],
+    "LocalExecutiveBodyResponsibility": [
+      {
+        "status": "translation",
+        "text": "Article 87. The local executive body is responsible for the state of affairs in its territory"
+      }
+    ],
+    "LocalFinancialDecisionWithAkimOpinion": [
+      {
+        "status": "translation",
+        "text": "Article 90. A ruling reducing local revenue or increasing expenditure is adopted only where there is a positive opinion of the akim"
+      }
+    ],
+    "LocalRepresentativeBodyResponsibility": [
+      {
+        "status": "translation",
+        "text": "Article 87. The local representative body is responsible for the state of affairs in its territory"
+      }
+    ],
+    "LocalSelfGovernmentAutonomy": [
+      {
+        "status": "translation",
+        "text": "Article 91. The autonomy of the bodies of local self-government in deciding matters of local significance is guaranteed"
+      }
+    ],
+    "Maslikhat": [
+      {
+        "status": "translation",
+        "text": "maslikhat — a local representative body"
+      }
+    ],
+    "MaslikhatCandidateEligibility": [
+      {
+        "status": "translation",
+        "text": "Article 88. A citizen of the Republic who has attained the age of twenty and is not a deputy of another maslikhat may be a deputy of a maslikhat"
+      }
+    ],
+    "MaslikhatDeputy": [
+      {
+        "status": "translation",
+        "text": "deputy of a maslikhat"
+      }
+    ],
+    "MaslikhatFiscalRulingRequiresAkimOpinion1995": [
+      {
+        "status": "translation",
+        "text": "Article 88, paragraph 2 (1995 version). Draft rulings of maslikhats reducing local revenue or increasing expenditure are introduced only where there is a positive opinion of the akim"
+      }
+    ],
+    "MaslikhatPowersTerminated1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "Article 86, paragraph 5 (1995 version). The powers of a maslikhat are terminated early by the President after consultations with the Prime Minister and the Chairs of the Chambers of Parliament, or upon self-dissolution"
+      }
+    ],
+    "MaslikhatPowersTerminated1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "Article 86, paragraph 5 (1995 version). The powers of a maslikhat are terminated early by the President after consultations with the Prime Minister and the Chairs of the Chambers of Parliament, or upon self-dissolution"
+      }
+    ],
+    "MaslikhatRulingAnnullable1995": [
+      {
+        "status": "translation",
+        "text": "Article 88, paragraph 3 (1995 version). Rulings of maslikhats that do not conform to the Constitution and the legislation may be set aside by judicial procedure"
+      }
+    ],
+    "MaslikhatTermExpiry": [
+      {
+        "status": "translation",
+        "text": "Article 88, paragraph 2. Maslikhats are elected for a term of five years"
+      }
+    ],
+    "Mazhilis1995": [
+      {
+        "status": "translation",
+        "text": "Mazhilis of Parliament (1995 version)"
+      }
+    ],
+    "NonCourtJusticeProhibition": [
+      {
+        "status": "translation",
+        "text": "Article 76, paragraph 1. Justice in the Republic of Kazakhstan is administered by the court alone"
+      }
+    ],
+    "Ombudsman": [
+      {
+        "status": "translation",
+        "text": "Commissioner for Human Rights"
+      }
+    ],
+    "OmbudsmanAppointmentByPresident": [
+      {
+        "status": "translation",
+        "text": "Article 85, paragraph 2. The Commissioner for Human Rights is appointed by the President"
+      }
+    ],
+    "OmbudsmanCoerciveMeasureException": [
+      {
+        "status": "translation",
+        "text": "Article 85, paragraph 4. Constitutional exceptions to the immunity of the Commissioner"
+      }
+    ],
+    "OmbudsmanCoerciveMeasureImmunity": [
+      {
+        "status": "translation",
+        "text": "Article 85, paragraph 4. Immunity of the Commissioner from coercive measures without the consent of the President"
+      }
+    ],
+    "OmbudsmanCoerciveMeasureImmunityRule": [
+      {
+        "status": "translation",
+        "text": "Article 85, paragraph 4. Immunity of the Commissioner from coercive measures without the consent of the President"
+      }
+    ],
+    "OmbudsmanImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Article 83-1, paragraph 3 (1995 version). The Commissioner for Human Rights may not be arrested or held criminally liable without the consent of the Senate"
+      }
+    ],
+    "OmbudsmanIndependent": [
+      {
+        "status": "translation",
+        "text": "Article 85, paragraph 3. The Commissioner is independent and not accountable"
+      }
+    ],
+    "OmbudsmanInviolability1995": [
+      {
+        "status": "translation",
+        "text": "Article 83-1, paragraph 3 (1995 version). The Commissioner for Human Rights may not be arrested or held criminally liable without the consent of the Senate"
+      }
+    ],
+    "OmbudsmanInviolabilityApplies": [
+      {
+        "status": "translation",
+        "text": "Article 85, paragraph 4. The protection of the Commissioner against coercive measures operates so long as none of the three grounds named is present"
+      }
+    ],
+    "OmbudsmanInviolabilityApplies/unless/0": [
+      {
+        "status": "translation",
+        "text": "Article 85, paragraph 4. The protection of the Commissioner against coercive measures operates so long as none of the three grounds named is present"
+      }
+    ],
+    "OmbudsmanMeasureGroundConsent": [
+      {
+        "status": "translation",
+        "text": "Article 85, paragraph 4. The consent of the President is a ground lifting the protection of the Commissioner"
+      }
+    ],
+    "OmbudsmanMeasureGroundGraveOffence": [
+      {
+        "status": "translation",
+        "text": "Article 85, paragraph 4. The commission of a grave or especially grave crime is a ground lifting the protection of the Commissioner"
+      }
+    ],
+    "OmbudsmanMeasureGroundInTheAct": [
+      {
+        "status": "translation",
+        "text": "Article 85, paragraph 4. Detention at the scene of a crime is a ground lifting the protection of the Commissioner"
+      }
+    ],
+    "OmbudsmanRightsAssistance": [
+      {
+        "status": "translation",
+        "text": "Article 85, paragraph 1. Assistance in the restoration and advancement of rights and freedoms"
+      }
+    ],
+    "Parliament": [
+      {
+        "status": "translation",
+        "text": "Parliament of the Republic of Kazakhstan"
+      }
+    ],
+    "Parliament1995": [
+      {
+        "status": "translation",
+        "text": "Parliament of the Republic of Kazakhstan (1995 version)"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "natural person"
+      }
+    ],
+    "Petition": [
+      {
+        "status": "translation",
+        "text": "application to the Constitutional Court"
+      }
+    ],
+    "PetitionAdmissible1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "Article 72 (1995 version). The Constitutional Court considers applications of the President, the Chair of the Senate, the Chair of the Mazhilis, not less than one-fifth of the deputies of Parliament, the Prime Minister, citizens, the Prosecutor General and the Commissioner for Human Rights"
+      }
+    ],
+    "PetitionAdmissible1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "Article 72 (1995 version). The Constitutional Court considers applications of the President, the Chair of the Senate, the Chair of the Mazhilis, not less than one-fifth of the deputies of Parliament, the Prime Minister, citizens, the Prosecutor General and the Commissioner for Human Rights"
+      }
+    ],
+    "PetitionAdmissible1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "Article 72 (1995 version). The Constitutional Court considers applications of the President, the Chair of the Senate, the Chair of the Mazhilis, not less than one-fifth of the deputies of Parliament, the Prime Minister, citizens, the Prosecutor General and the Commissioner for Human Rights"
+      }
+    ],
+    "PetitionAdmissible1995/alt/4": [
+      {
+        "status": "translation",
+        "text": "Article 72 (1995 version). The Constitutional Court considers applications of the President, the Chair of the Senate, the Chair of the Mazhilis, not less than one-fifth of the deputies of Parliament, the Prime Minister, citizens, the Prosecutor General and the Commissioner for Human Rights"
+      }
+    ],
+    "PetitionAdmissible1995/alt/5": [
+      {
+        "status": "translation",
+        "text": "Article 72 (1995 version). The Constitutional Court considers applications of the President, the Chair of the Senate, the Chair of the Mazhilis, not less than one-fifth of the deputies of Parliament, the Prime Minister, citizens, the Prosecutor General and the Commissioner for Human Rights"
+      }
+    ],
+    "PetitionAdmissible1995/alt/6": [
+      {
+        "status": "translation",
+        "text": "Article 72 (1995 version). The Constitutional Court considers applications of the President, the Chair of the Senate, the Chair of the Mazhilis, not less than one-fifth of the deputies of Parliament, the Prime Minister, citizens, the Prosecutor General and the Commissioner for Human Rights"
+      }
+    ],
+    "PetitionAdmissible1995/alt/7": [
+      {
+        "status": "translation",
+        "text": "Article 72 (1995 version). The Constitutional Court considers applications of the President, the Chair of the Senate, the Chair of the Mazhilis, not less than one-fifth of the deputies of Parliament, the Prime Minister, citizens, the Prosecutor General and the Commissioner for Human Rights"
+      }
+    ],
+    "PetitionAdmissible1995/alt/8": [
+      {
+        "status": "translation",
+        "text": "Article 72 (1995 version). The Constitutional Court considers applications of the President, the Chair of the Senate, the Chair of the Mazhilis, not less than one-fifth of the deputies of Parliament, the Prime Minister, citizens, the Prosecutor General and the Commissioner for Human Rights"
+      }
+    ],
+    "PreRatificationReviewSuspendsDeadline": [
+      {
+        "status": "translation",
+        "text": "Article 74, paragraph 2. Where an application is made to the Constitutional Court, the running of the time limit for ratifying the treaty is suspended"
+      }
+    ],
+    "PreSignatureReviewSuspendsDeadline": [
+      {
+        "status": "translation",
+        "text": "Article 74, paragraph 2. Where an application is made to the Constitutional Court, the running of the time limit for signing the act is suspended"
+      }
+    ],
+    "PresidentialElectionDisputeSuspendsInauguration": [
+      {
+        "status": "translation",
+        "text": "Article 74, paragraph 1. Where an application concerning an electoral dispute is made to the Constitutional Court, the taking of office by the President is suspended"
+      }
+    ],
+    "ProceedingSuspendedOnRightsInfringement1995": [
+      {
+        "status": "translation",
+        "text": "Article 78 (1995 version). Where the court finds that an act to be applied infringes constitutional rights, it is obliged to stay the proceedings in the case"
+      }
+    ],
+    "ProsecutorGeneral": [
+      {
+        "status": "translation",
+        "text": "Prosecutor General of the Republic of Kazakhstan"
+      }
+    ],
+    "ProsecutorGeneralImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Article 83, paragraph 3 (1995 version). The Prosecutor General may not be arrested or held criminally liable without the consent of the Senate"
+      }
+    ],
+    "ProsecutorGeneralInviolability1995": [
+      {
+        "status": "translation",
+        "text": "Article 83, paragraph 3 (1995 version). The Prosecutor General may not be arrested or held criminally liable without the consent of the Senate"
+      }
+    ],
+    "ProsecutorGeneralOneTerm": [
+      {
+        "status": "translation",
+        "text": "Article 84, paragraph 3. One and the same person may not be appointed Prosecutor General more than once"
+      }
+    ],
+    "ProsecutorGeneralTermExpiry": [
+      {
+        "status": "translation",
+        "text": "Article 84. The term of office of the Prosecutor General is six years from the day of appointment"
+      }
+    ],
+    "RatificationDeadlineSuspended1995": [
+      {
+        "status": "translation",
+        "text": "Article 73, paragraph 2 (1995 version). Where an application concerns an international treaty, the running of the time limit for ratification is suspended"
+      }
+    ],
+    "ReferendumDisputeSuspendsResults": [
+      {
+        "status": "translation",
+        "text": "Article 74, paragraph 1. Where an application concerning a referendum is made to the Constitutional Court, the summing-up of its results is suspended"
+      }
+    ],
+    "RefrainFromNonCourtJustice": [
+      {
+        "status": "translation",
+        "text": "Article 76, paragraph 1. Justice in the Republic of Kazakhstan is administered by the court alone"
+      }
+    ],
+    "RegionalAkimAppointmentValid1995": [
+      {
+        "status": "translation",
+        "text": "Article 87, paragraph 4 (1995 version). Akims of regions are appointed with the consent of the deputies of the maslikhats; the President proposes not less than two candidatures"
+      }
+    ],
+    "RegionalAkimPowersEndWithNewPresident1995": [
+      {
+        "status": "translation",
+        "text": "Article 87, paragraph 5 (1995 version). The powers of the akims of the regions, the cities of republican significance and the capital terminate when the newly elected President takes office"
+      }
+    ],
+    "RepeatedLiabilityProhibited1995": [
+      {
+        "status": "translation",
+        "text": "Article 77, paragraph 3, sub-paragraph 2 (1995 version). No one may be subjected twice to criminal or administrative liability for one and the same offence"
+      }
+    ],
+    "Senate1995": [
+      {
+        "status": "translation",
+        "text": "Senate of Parliament (1995 version)"
+      }
+    ],
+    "SignatureDeadlineSuspended1995": [
+      {
+        "status": "translation",
+        "text": "Article 73, paragraph 2 (1995 version). Where an application concerns an adopted statute, the running of the time limit for signature is suspended"
+      }
+    ],
+    "SpecialCourtProhibited1995": [
+      {
+        "status": "translation",
+        "text": "Article 75, paragraph 4 (1995 version). The establishment of special and extraordinary courts under any name whatsoever is not permitted"
+      }
+    ],
+    "SpecialCourtsProhibited": [
+      {
+        "status": "translation",
+        "text": "Article 76, paragraph 4. The establishment of special and extraordinary courts under any name whatsoever is not permitted"
+      }
+    ],
+    "StateOrgan": [
+      {
+        "status": "translation",
+        "text": "state body"
+      }
+    ],
+    "SupremeCourt": [
+      {
+        "status": "translation",
+        "text": "Supreme Court of the Republic of Kazakhstan"
+      }
+    ],
+    "SupremeCourtAppointmentBySenate1995": [
+      {
+        "status": "translation",
+        "text": "Article 82, paragraph 1 (1995 version). The Chair and the judges of the Supreme Court are elected by the Senate on a submission of the President based on the recommendation of the Supreme Judicial Council"
+      }
+    ],
+    "SupremeCourtChairOneTerm": [
+      {
+        "status": "translation",
+        "text": "Article 83, paragraph 1. One and the same person may not be appointed Chair of the Supreme Court more than once"
+      }
+    ],
+    "SupremeCourtChairTermExpiry": [
+      {
+        "status": "translation",
+        "text": "Article 83. The term of office of the Chair of the Supreme Court is six years from the day of appointment"
+      }
+    ],
+    "SupremeCourtExplainsPracticeWhenAuthorizedByLaw": [
+      {
+        "status": "translation",
+        "text": "Article 82. The Supreme Court gives explanations on questions of judicial practice in the cases provided for by statute"
+      }
+    ],
+    "SupremeCourtHearsCasesAssignedByLaw": [
+      {
+        "status": "translation",
+        "text": "Article 82. The Supreme Court hears the cases assigned to its jurisdiction by statute"
+      }
+    ],
+    "Treaty": [
+      {
+        "status": "translation",
+        "text": "international treaty of the Republic"
+      }
+    ],
+    "UnconstitutionalActCeasesOnDecision": [
+      {
+        "status": "translation",
+        "text": "Article 75, paragraph 2. An act found unconstitutional ceases to have effect from the day the Constitutional Court takes its decision"
+      }
+    ],
+    "UnconstitutionalActCeasesOnSpecifiedDate": [
+      {
+        "status": "translation",
+        "text": "Article 75, paragraph 2. An act found unconstitutional ceases to have effect from the date fixed by the Constitutional Court"
+      }
+    ],
+    "UnconstitutionalActCeasesToApply1995": [
+      {
+        "status": "translation",
+        "text": "Article 74, paragraph 2 (1995 version). Acts found unconstitutional are repealed and are not to be applied from the day the Constitutional Court takes its decision or from the date it fixes"
+      }
+    ],
+    "UnconstitutionalActMayNotBeSigned1995": [
+      {
+        "status": "translation",
+        "text": "Article 74, paragraph 1 (1995 version). Statutes found not to conform to the Constitution may not be signed"
+      }
+    ],
+    "UnconstitutionalTreatyMayNotBeRatified1995": [
+      {
+        "status": "translation",
+        "text": "Article 74, paragraph 1 (1995 version). International treaties found not to conform to the Constitution may not be ratified or brought into effect"
+      }
+    ],
+    "UnlawfulEvidenceHasNoForce1995": [
+      {
+        "status": "translation",
+        "text": "Article 77, paragraph 3, sub-paragraph 9 (1995 version). Evidence obtained unlawfully has no legal force"
+      }
+    ],
+    "act_ceased_to_apply": [
+      {
+        "status": "translation",
+        "text": "the act has lost its force and is not to be applied"
+      }
+    ],
+    "act_ceased_to_apply_1995": [
+      {
+        "status": "translation",
+        "text": "the act has lost its force and is not to be applied (1995 version)"
+      }
+    ],
+    "act_infringes_constitutional_rights": [
+      {
+        "status": "translation",
+        "text": "the act infringes the rights and freedoms enshrined in the Constitution"
+      }
+    ],
+    "act_may_not_be_signed_1995": [
+      {
+        "status": "translation",
+        "text": "the act may not be signed (1995 version)"
+      }
+    ],
+    "age_years": [
+      {
+        "status": "translation",
+        "text": "the age of the person in completed years"
+      }
+    ],
+    "aid_provider_authorized_by_law": [
+      {
+        "status": "translation",
+        "text": "the subject is authorised by statute to provide legal assistance"
+      }
+    ],
+    "akim_appointment_valid_1995": [
+      {
+        "status": "translation",
+        "text": "the appointment of the akim has taken effect (1995 version)"
+      }
+    ],
+    "akim_candidate_consented": [
+      {
+        "status": "translation",
+        "text": "the maslikhat has consented to the appointment of the candidate as akim"
+      }
+    ],
+    "akim_candidate_minimum": [
+      {
+        "status": "translation",
+        "text": "the minimum number of candidatures for akim submitted is two"
+      }
+    ],
+    "akim_candidate_set": [
+      {
+        "status": "translation",
+        "text": "the number of candidatures for akim submitted to the maslikhat"
+      }
+    ],
+    "akim_candidate_vote": [
+      {
+        "status": "translation",
+        "text": "the number of votes of the deputies of the maslikhat cast for the candidate for akim"
+      }
+    ],
+    "akim_consent_denominator": [
+      {
+        "status": "translation",
+        "text": "the denominator of the threshold for the maslikhat's consent to the appointment of an akim is one half"
+      }
+    ],
+    "akim_consent_numerator": [
+      {
+        "status": "translation",
+        "text": "the numerator of the threshold for the maslikhat's consent to the appointment of an akim is one half"
+      }
+    ],
+    "akim_no_confidence": [
+      {
+        "status": "translation",
+        "text": "the maslikhat has passed a vote of no confidence in the akim"
+      }
+    ],
+    "akim_no_confidence_denominator": [
+      {
+        "status": "translation",
+        "text": "the denominator of the threshold for expressing no confidence in an akim is one half"
+      }
+    ],
+    "akim_no_confidence_expressed_1995": [
+      {
+        "status": "translation",
+        "text": "a vote of no confidence in the akim has been passed by the maslikhat (1995 version)"
+      }
+    ],
+    "akim_no_confidence_initiating_votes": [
+      {
+        "status": "translation",
+        "text": "the number of deputies of the maslikhat who initiated the vote of no confidence in the akim"
+      }
+    ],
+    "akim_no_confidence_initiative_denominator": [
+      {
+        "status": "translation",
+        "text": "the denominator of the threshold for initiating a vote of no confidence in an akim is one fifth"
+      }
+    ],
+    "akim_no_confidence_initiative_numerator": [
+      {
+        "status": "translation",
+        "text": "the numerator of the threshold for initiating a vote of no confidence in an akim is one fifth"
+      }
+    ],
+    "akim_no_confidence_initiative_valid_1995": [
+      {
+        "status": "translation",
+        "text": "the initiative for a vote of no confidence in the akim has been brought by the required number of deputies (1995 version)"
+      }
+    ],
+    "akim_no_confidence_numerator": [
+      {
+        "status": "translation",
+        "text": "the numerator of the threshold for expressing no confidence in an akim is one half"
+      }
+    ],
+    "akim_no_confidence_votes": [
+      {
+        "status": "translation",
+        "text": "the number of votes cast for a vote of no confidence in the akim"
+      }
+    ],
+    "akim_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "the powers of the akim have been terminated (1995 version)"
+      }
+    ],
+    "akim_responsible_for_territorial_affairs": [
+      {
+        "status": "translation",
+        "text": "the akim is responsible for the state of affairs in the territory concerned"
+      }
+    ],
+    "already_member_of_other_maslikhat": [
+      {
+        "status": "translation",
+        "text": "the person is already a deputy of another maslikhat"
+      }
+    ],
+    "analogy_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "the application of criminal law by analogy is not permitted (1995 version)"
+      }
+    ],
+    "applicable_act": [
+      {
+        "status": "translation",
+        "text": "this act is to be applied in the case"
+      }
+    ],
+    "assessment_date": [
+      {
+        "status": "translation",
+        "text": "the day as at which the operation of the act is assessed"
+      }
+    ],
+    "case_assigned_by_law_to_supreme_court": [
+      {
+        "status": "translation",
+        "text": "the case is assigned by statute to the Supreme Court"
+      }
+    ],
+    "citizen": [
+      {
+        "status": "translation",
+        "text": "the person is a citizen of the Republic of Kazakhstan"
+      }
+    ],
+    "constitutional_court": [
+      {
+        "status": "translation",
+        "text": "the body is the Constitutional Court"
+      }
+    ],
+    "constitutional_court_decisions_final_1995": [
+      {
+        "status": "translation",
+        "text": "the decisions of the Constitutional Court are final and not subject to appeal (1995 version)"
+      }
+    ],
+    "constitutional_court_referral_required_1995": [
+      {
+        "status": "translation",
+        "text": "the court is obliged to apply to the Constitutional Court (1995 version)"
+      }
+    ],
+    "constitutional_judge": [
+      {
+        "status": "translation",
+        "text": "the person is a judge of the Constitutional Court"
+      }
+    ],
+    "constitutional_judge_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "an appointment of a judge of the Constitutional Court is being made"
+      }
+    ],
+    "constitutional_judge_arrest_attempt": [
+      {
+        "status": "translation",
+        "text": "an attempt has been made to arrest the judge of the Constitutional Court"
+      }
+    ],
+    "constitutional_judge_business": [
+      {
+        "status": "translation",
+        "text": "the judge of the Constitutional Court engages in entrepreneurial activity"
+      }
+    ],
+    "constitutional_judge_count": [
+      {
+        "status": "translation",
+        "text": "the number of judges of the Constitutional Court is eleven"
+      }
+    ],
+    "constitutional_judge_deputy_mandate": [
+      {
+        "status": "translation",
+        "text": "the judge of the Constitutional Court is a deputy of a representative body"
+      }
+    ],
+    "constitutional_judge_immunity_infringed_1995": [
+      {
+        "status": "translation",
+        "text": "the inviolability of the judge of the Constitutional Court has been infringed (1995 version)"
+      }
+    ],
+    "constitutional_judge_office_incompatible_1995": [
+      {
+        "status": "translation",
+        "text": "the office of a judge of the Constitutional Court is incompatible with the position held or the activity carried on (1995 version)"
+      }
+    ],
+    "constitutional_judge_paid_office": [
+      {
+        "status": "translation",
+        "text": "the judge of the Constitutional Court holds another paid position"
+      }
+    ],
+    "constitutional_judge_permitted_activity": [
+      {
+        "status": "translation",
+        "text": "the occupation is permitted teaching, research or creative work"
+      }
+    ],
+    "constitutional_judge_reappointment_prohibited": [
+      {
+        "status": "translation",
+        "text": "reappointment as a judge of the Constitutional Court is not permitted"
+      }
+    ],
+    "constitutional_judge_term": [
+      {
+        "status": "translation",
+        "text": "the term of office of a judge of the Constitutional Court is eight years"
+      }
+    ],
+    "constitutional_judge_term_expires_on": [
+      {
+        "status": "translation",
+        "text": "the day on which the powers of the judge of the Constitutional Court end"
+      }
+    ],
+    "constitutional_judge_term_started_on": [
+      {
+        "status": "translation",
+        "text": "the day on which the powers of the judge of the Constitutional Court began"
+      }
+    ],
+    "constitutional_judges_appointed_by_mazhilis_1995": [
+      {
+        "status": "translation",
+        "text": "the number of judges of the Constitutional Court appointed by the Mazhilis is three (1995 version)"
+      }
+    ],
+    "constitutional_judges_appointed_by_president_1995": [
+      {
+        "status": "translation",
+        "text": "the number of judges of the Constitutional Court appointed by the President is four (1995 version)"
+      }
+    ],
+    "constitutional_judges_appointed_by_senate_1995": [
+      {
+        "status": "translation",
+        "text": "the number of judges of the Constitutional Court appointed by the Senate is three (1995 version)"
+      }
+    ],
+    "constitutional_law": [
+      {
+        "status": "translation",
+        "text": "constitutional statute of the Republic of Kazakhstan"
+      }
+    ],
+    "constitutional_law_adopted": [
+      {
+        "status": "translation",
+        "text": "the constitutional statute has been adopted"
+      }
+    ],
+    "constitutional_referral_required": [
+      {
+        "status": "translation",
+        "text": "the court is obliged to apply to the Constitutional Court"
+      }
+    ],
+    "constitutional_review_exercised": [
+      {
+        "status": "translation",
+        "text": "the body exercises constitutional review and ensures the supremacy of the Constitution"
+      }
+    ],
+    "conviction_impermissible_1995": [
+      {
+        "status": "translation",
+        "text": "such a conviction is impermissible (1995 version)"
+      }
+    ],
+    "conviction_only_on_own_confession": [
+      {
+        "status": "translation",
+        "text": "the conviction is based solely on the accused's own confession"
+      }
+    ],
+    "council_recommendation": [
+      {
+        "status": "translation",
+        "text": "there is a recommendation of the Supreme Judicial Council"
+      }
+    ],
+    "court": [
+      {
+        "status": "translation",
+        "text": "the body is a court"
+      }
+    ],
+    "court_finds_act_infringing_rights": [
+      {
+        "status": "translation",
+        "text": "the court has found that the act to be applied infringes constitutional rights"
+      }
+    ],
+    "court_handles": [
+      {
+        "status": "translation",
+        "text": "the case is heard by this court"
+      }
+    ],
+    "court_ruling_binding_1995": [
+      {
+        "status": "translation",
+        "text": "the decision of the court is binding throughout the territory of the Republic (1995 version)"
+      }
+    ],
+    "court_ruling_issued": [
+      {
+        "status": "translation",
+        "text": "the court has issued a decision in the case"
+      }
+    ],
+    "court_specified_termination_date": [
+      {
+        "status": "translation",
+        "text": "the day from which the court fixed the termination of the operation of the act"
+      }
+    ],
+    "courts_financed_from_republican_budget": [
+      {
+        "status": "translation",
+        "text": "the courts are financed from the republican budget"
+      }
+    ],
+    "courts_financed_from_republican_budget_1995": [
+      {
+        "status": "translation",
+        "text": "the courts are financed from the republican budget (1995 version)"
+      }
+    ],
+    "criminal_law_applied_by_analogy": [
+      {
+        "status": "translation",
+        "text": "criminal law has been applied by analogy"
+      }
+    ],
+    "decision_date": [
+      {
+        "status": "translation",
+        "text": "the day on which the Constitutional Court took its decision"
+      }
+    ],
+    "declared_constitutional_in_interpretation": [
+      {
+        "status": "translation",
+        "text": "the act has been found constitutional on the interpretation given by the Court"
+      }
+    ],
+    "declared_constitutional_in_interpretation_1995": [
+      {
+        "status": "translation",
+        "text": "the act has been found to conform to the Constitution on that interpretation (1995 version)"
+      }
+    ],
+    "declared_unconstitutional": [
+      {
+        "status": "translation",
+        "text": "the act has been found unconstitutional"
+      }
+    ],
+    "declared_unconstitutional_1995": [
+      {
+        "status": "translation",
+        "text": "the act has been found unconstitutional (1995 version)"
+      }
+    ],
+    "deputy_registration_suspended": [
+      {
+        "status": "translation",
+        "text": "the registration of the elected deputy is suspended pending the decision of the Constitutional Court"
+      }
+    ],
+    "doubt_about_guilt": [
+      {
+        "status": "translation",
+        "text": "there are doubts as to the person's guilt"
+      }
+    ],
+    "doubt_resolved_for_accused_1995": [
+      {
+        "status": "translation",
+        "text": "doubts as to guilt are construed in favour of the accused (1995 version)"
+      }
+    ],
+    "election_dispute_petition": [
+      {
+        "status": "translation",
+        "text": "the application challenges the correctness of an election"
+      }
+    ],
+    "election_dispute_petition_1995": [
+      {
+        "status": "translation",
+        "text": "the application challenges the correctness of an election (1995 version)"
+      }
+    ],
+    "eligible_maslikhat_candidate": [
+      {
+        "status": "translation",
+        "text": "the person meets the requirements for a deputy of a maslikhat"
+      }
+    ],
+    "eligible_maslikhat_deputy_1995": [
+      {
+        "status": "translation",
+        "text": "the person meets the requirements for a deputy of a maslikhat (1995 version)"
+      }
+    ],
+    "evidence_obtained_unlawfully": [
+      {
+        "status": "translation",
+        "text": "the evidence was obtained unlawfully"
+      }
+    ],
+    "evidence_without_legal_force_1995": [
+      {
+        "status": "translation",
+        "text": "the evidence has no legal force (1995 version)"
+      }
+    ],
+    "hearing_right_violated_1995": [
+      {
+        "status": "translation",
+        "text": "the right to be heard in court has been violated (1995 version)"
+      }
+    ],
+    "inauguration_suspended_1995": [
+      {
+        "status": "translation",
+        "text": "the taking of office is suspended pending the decision of the Constitutional Court (1995 version)"
+      }
+    ],
+    "interference_liability_arises_1995": [
+      {
+        "status": "translation",
+        "text": "interference in the administration of justice entails liability under the law (1995 version)"
+      }
+    ],
+    "interference_unlawful": [
+      {
+        "status": "translation",
+        "text": "interference in the administration of justice is impermissible"
+      }
+    ],
+    "interference_with_justice": [
+      {
+        "status": "translation",
+        "text": "there has been interference in the administration of justice in the case"
+      }
+    ],
+    "judge": [
+      {
+        "status": "translation",
+        "text": "the person is a judge"
+      }
+    ],
+    "judge_applies_law": [
+      {
+        "status": "translation",
+        "text": "the judge applies a statute in the case"
+      }
+    ],
+    "judge_arrest_attempt": [
+      {
+        "status": "translation",
+        "text": "an attempt has been made to arrest the judge"
+      }
+    ],
+    "judge_business": [
+      {
+        "status": "translation",
+        "text": "the judge engages in entrepreneurial activity"
+      }
+    ],
+    "judge_caught_at_crime_scene": [
+      {
+        "status": "translation",
+        "text": "the judge was detained at the scene of a crime"
+      }
+    ],
+    "judge_caught_in_act_or_grave_crime": [
+      {
+        "status": "translation",
+        "text": "the judge of the Constitutional Court was detained at the scene of a crime or has committed a grave crime"
+      }
+    ],
+    "judge_deputy_mandate": [
+      {
+        "status": "translation",
+        "text": "the judge is a deputy of a representative body"
+      }
+    ],
+    "judge_detained": [
+      {
+        "status": "translation",
+        "text": "the judge has been detained"
+      }
+    ],
+    "judge_detention_attempt": [
+      {
+        "status": "translation",
+        "text": "an attempt has been made to detain the judge"
+      }
+    ],
+    "judge_detention_ground": [
+      {
+        "status": "translation",
+        "text": "a ground on which the detention of a judge is permissible is present"
+      }
+    ],
+    "judge_grave_or_especially_grave_offence": [
+      {
+        "status": "translation",
+        "text": "the judge has committed a grave or especially grave crime"
+      }
+    ],
+    "judge_immunity_infringed_1995": [
+      {
+        "status": "translation",
+        "text": "the inviolability of the judge has been infringed (1995 version)"
+      }
+    ],
+    "judge_independent_and_subject_only_to_law": [
+      {
+        "status": "translation",
+        "text": "in administering justice the judge is independent and subject only to the Constitution and the statute"
+      }
+    ],
+    "judge_inviolability_applies": [
+      {
+        "status": "translation",
+        "text": "the protection of the judge against detention operates"
+      }
+    ],
+    "judge_office_incompatible_1995": [
+      {
+        "status": "translation",
+        "text": "the office of a judge is incompatible with the position held or the activity carried on (1995 version)"
+      }
+    ],
+    "judge_paid_office": [
+      {
+        "status": "translation",
+        "text": "the judge holds another paid position"
+      }
+    ],
+    "judge_permitted_activity": [
+      {
+        "status": "translation",
+        "text": "the occupation is permitted teaching, research or creative work"
+      }
+    ],
+    "judge_requirements_determined": [
+      {
+        "status": "translation",
+        "text": "the requirements for judges of the courts of the Republic of Kazakhstan have been determined"
+      }
+    ],
+    "judicial_collegia_established": [
+      {
+        "status": "translation",
+        "text": "judicial collegia have been created in the courts"
+      }
+    ],
+    "judicial_decision": [
+      {
+        "status": "translation",
+        "text": "the act is a decision of this court"
+      }
+    ],
+    "judicial_decision_binding_nationwide": [
+      {
+        "status": "translation",
+        "text": "the decision of the court is binding throughout the territory of the Republic"
+      }
+    ],
+    "judicial_interference": [
+      {
+        "status": "translation",
+        "text": "there is interference in the activity of the judge in the administration of justice"
+      }
+    ],
+    "judicial_power_covers_case_1995": [
+      {
+        "status": "translation",
+        "text": "the case falls within the judicial power (1995 version)"
+      }
+    ],
+    "judicial_practice_explanation_authorized_by_law": [
+      {
+        "status": "translation",
+        "text": "the giving of explanations on questions of judicial practice is assigned to the Supreme Court by statute"
+      }
+    ],
+    "jurisdiction_change_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "a change of the jurisdiction of a case without the consent of the person is not permitted (1995 version)"
+      }
+    ],
+    "jurisdiction_changed_without_consent": [
+      {
+        "status": "translation",
+        "text": "the jurisdiction of the case has been changed without the consent of the person"
+      }
+    ],
+    "justice_act": [
+      {
+        "status": "translation",
+        "text": "the subject administers justice"
+      }
+    ],
+    "justice_by_court_only_1995": [
+      {
+        "status": "translation",
+        "text": "justice is administered by the court alone (1995 version)"
+      }
+    ],
+    "justice_lawful": [
+      {
+        "status": "translation",
+        "text": "justice has been administered lawfully"
+      }
+    ],
+    "legal_aid": [
+      {
+        "status": "translation",
+        "text": "legal assistance is provided to this person"
+      }
+    ],
+    "legal_aid_constitutionally_provided": [
+      {
+        "status": "translation",
+        "text": "the legal assistance has been provided in the constitutional manner"
+      }
+    ],
+    "legal_aid_provider": [
+      {
+        "status": "translation",
+        "text": "legal assistance is provided by this subject"
+      }
+    ],
+    "legal_application_case": [
+      {
+        "status": "translation",
+        "text": "a statute is applied in the case"
+      }
+    ],
+    "local_court_appointment": [
+      {
+        "status": "translation",
+        "text": "an appointment to the office of judge of a local court is being made"
+      }
+    ],
+    "local_court_appointment_valid_1995": [
+      {
+        "status": "translation",
+        "text": "the appointment of the judge of the local court has taken effect (1995 version)"
+      }
+    ],
+    "local_decision_admissible": [
+      {
+        "status": "translation",
+        "text": "the ruling of the maslikhat is binding in the territory concerned"
+      }
+    ],
+    "local_executive_body": [
+      {
+        "status": "translation",
+        "text": "the body is a local executive body"
+      }
+    ],
+    "local_representative_body": [
+      {
+        "status": "translation",
+        "text": "the body is a maslikhat"
+      }
+    ],
+    "local_revenue_reducing_or_spending_increasing": [
+      {
+        "status": "translation",
+        "text": "the ruling provides for a reduction of local revenue or an increase of expenditure"
+      }
+    ],
+    "local_self_government_action": [
+      {
+        "status": "translation",
+        "text": "the act was adopted by a body of local self-government"
+      }
+    ],
+    "local_self_government_autonomy": [
+      {
+        "status": "translation",
+        "text": "the autonomy of local self-government in deciding matters of local significance is guaranteed"
+      }
+    ],
+    "local_self_government_autonomy_guaranteed_1995": [
+      {
+        "status": "translation",
+        "text": "the autonomy of the bodies of local self-government is guaranteed (1995 version)"
+      }
+    ],
+    "local_self_government_recognized_1995": [
+      {
+        "status": "translation",
+        "text": "local self-government is recognised in the Republic (1995 version)"
+      }
+    ],
+    "local_state_administration_established_1995": [
+      {
+        "status": "translation",
+        "text": "local state administration is exercised by the local representative and executive bodies (1995 version)"
+      }
+    ],
+    "maslikhat_candidate": [
+      {
+        "status": "translation",
+        "text": "the candidate for deputy of the maslikhat is this person"
+      }
+    ],
+    "maslikhat_decision_admissible_1995": [
+      {
+        "status": "translation",
+        "text": "the ruling of the maslikhat is binding in the territory concerned (1995 version)"
+      }
+    ],
+    "maslikhat_deputy_minimum_age": [
+      {
+        "status": "translation",
+        "text": "the minimum age for a deputy of a maslikhat is twenty years"
+      }
+    ],
+    "maslikhat_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "the powers of the maslikhat have been terminated (1995 version)"
+      }
+    ],
+    "maslikhat_responsible_for_territorial_affairs": [
+      {
+        "status": "translation",
+        "text": "the maslikhat is responsible for the state of affairs in the territory concerned"
+      }
+    ],
+    "maslikhat_ruling": [
+      {
+        "status": "translation",
+        "text": "the act is a ruling of a maslikhat"
+      }
+    ],
+    "maslikhat_self_dissolution": [
+      {
+        "status": "translation",
+        "text": "the maslikhat has taken a decision on self-dissolution"
+      }
+    ],
+    "maslikhat_term": [
+      {
+        "status": "translation",
+        "text": "the term of office of a maslikhat is five years"
+      }
+    ],
+    "maslikhat_term_expires_on": [
+      {
+        "status": "translation",
+        "text": "the day on which the powers of the maslikhat end"
+      }
+    ],
+    "maslikhat_term_started_on": [
+      {
+        "status": "translation",
+        "text": "the day on which the powers of the maslikhat began"
+      }
+    ],
+    "new_president_assumed_office_1995": [
+      {
+        "status": "translation",
+        "text": "the new President has taken office (1995 version)"
+      }
+    ],
+    "non_court_justice_attempt": [
+      {
+        "status": "translation",
+        "text": "justice is being administered outside a court"
+      }
+    ],
+    "ombudsman": [
+      {
+        "status": "translation",
+        "text": "the person is the Commissioner for Human Rights"
+      }
+    ],
+    "ombudsman_appointed": [
+      {
+        "status": "translation",
+        "text": "the Commissioner for Human Rights has been appointed"
+      }
+    ],
+    "ombudsman_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "an appointment of the Commissioner for Human Rights is being made"
+      }
+    ],
+    "ombudsman_arrest_attempt": [
+      {
+        "status": "translation",
+        "text": "an attempt has been made to arrest the Commissioner"
+      }
+    ],
+    "ombudsman_assistance_authorized": [
+      {
+        "status": "translation",
+        "text": "the assistance of the Commissioner is lawful"
+      }
+    ],
+    "ombudsman_caught_at_crime_scene": [
+      {
+        "status": "translation",
+        "text": "the Commissioner was detained at the scene of a crime"
+      }
+    ],
+    "ombudsman_caught_in_act_or_grave_crime": [
+      {
+        "status": "translation",
+        "text": "the Commissioner was detained at the scene of a crime or has committed a grave crime"
+      }
+    ],
+    "ombudsman_coercive_measure_applied": [
+      {
+        "status": "translation",
+        "text": "the coercive measure has been applied to the Commissioner"
+      }
+    ],
+    "ombudsman_coercive_measure_attempt": [
+      {
+        "status": "translation",
+        "text": "a coercive measure is being applied to the Commissioner"
+      }
+    ],
+    "ombudsman_grave_or_especially_grave_offence": [
+      {
+        "status": "translation",
+        "text": "the Commissioner has committed a grave or especially grave crime"
+      }
+    ],
+    "ombudsman_immunity_infringed_1995": [
+      {
+        "status": "translation",
+        "text": "the inviolability of the Commissioner has been infringed (1995 version)"
+      }
+    ],
+    "ombudsman_independent_1995": [
+      {
+        "status": "translation",
+        "text": "the Commissioner for Human Rights is independent (1995 version)"
+      }
+    ],
+    "ombudsman_independent_and_unaccountable": [
+      {
+        "status": "translation",
+        "text": "the Commissioner is independent and not accountable to state bodies"
+      }
+    ],
+    "ombudsman_inviolability_applies": [
+      {
+        "status": "translation",
+        "text": "the protection of the Commissioner against coercive measures operates"
+      }
+    ],
+    "ombudsman_measure_ground": [
+      {
+        "status": "translation",
+        "text": "a ground on which a coercive measure against the Commissioner is permissible is present"
+      }
+    ],
+    "ombudsman_rights_assistance": [
+      {
+        "status": "translation",
+        "text": "the Commissioner assists the person in the restoration of his rights"
+      }
+    ],
+    "ordinary_judge_caught_in_act_or_grave_crime": [
+      {
+        "status": "translation",
+        "text": "the judge was detained at the scene of a crime or has committed a grave crime"
+      }
+    ],
+    "parliament_consent_for_judge": [
+      {
+        "status": "translation",
+        "text": "the consent of the representative body to the appointment of the judge has been obtained"
+      }
+    ],
+    "participating_maslikhat_deputies": [
+      {
+        "status": "translation",
+        "text": "the number of deputies of the maslikhat who took part in the vote"
+      }
+    ],
+    "petition_admissible": [
+      {
+        "status": "translation",
+        "text": "the application to the Constitutional Court has been accepted for consideration"
+      }
+    ],
+    "petition_admissible_1995": [
+      {
+        "status": "translation",
+        "text": "the application to the Constitutional Court has been accepted for consideration (1995 version)"
+      }
+    ],
+    "petition_by_citizen_affecting_constitutional_rights": [
+      {
+        "status": "translation",
+        "text": "the application was made by a citizen on a question of his constitutional rights and freedoms"
+      }
+    ],
+    "petition_by_court_under_article_79": [
+      {
+        "status": "translation",
+        "text": "the application was made by a court under Article 79 of the Constitution"
+      }
+    ],
+    "petition_by_kurultai_chair": [
+      {
+        "status": "translation",
+        "text": "the application was made by the Chair of the Kurultai"
+      }
+    ],
+    "petition_by_mazhilis_chair_1995": [
+      {
+        "status": "translation",
+        "text": "the application was made by the Chair of the Mazhilis (1995 version)"
+      }
+    ],
+    "petition_by_ombudsman_affecting_rights": [
+      {
+        "status": "translation",
+        "text": "the application was made by the Commissioner for Human Rights on a question of rights and freedoms"
+      }
+    ],
+    "petition_by_one_fifth_of_deputies": [
+      {
+        "status": "translation",
+        "text": "the application was made by not less than one-fifth of the deputies of the Kurultai"
+      }
+    ],
+    "petition_by_one_fifth_of_parliament_1995": [
+      {
+        "status": "translation",
+        "text": "the application was made by not less than one-fifth of the deputies of Parliament (1995 version)"
+      }
+    ],
+    "petition_by_president": [
+      {
+        "status": "translation",
+        "text": "the application was made by the President of the Republic"
+      }
+    ],
+    "petition_by_prime_minister": [
+      {
+        "status": "translation",
+        "text": "the application was made by the Prime Minister"
+      }
+    ],
+    "petition_by_prosecutor_general": [
+      {
+        "status": "translation",
+        "text": "the application was made by the Prosecutor General"
+      }
+    ],
+    "petition_by_senate_chair_1995": [
+      {
+        "status": "translation",
+        "text": "the application was made by the Chair of the Senate (1995 version)"
+      }
+    ],
+    "petition_to_constitutional_court": [
+      {
+        "status": "translation",
+        "text": "the application has been sent to the Constitutional Court"
+      }
+    ],
+    "positive_akim_opinion": [
+      {
+        "status": "translation",
+        "text": "there is a positive opinion of the akim on the ruling"
+      }
+    ],
+    "pre_ratification_petition_1995": [
+      {
+        "status": "translation",
+        "text": "the application was made before the treaty was ratified (1995 version)"
+      }
+    ],
+    "pre_ratification_treaty_petition": [
+      {
+        "status": "translation",
+        "text": "the application was made before the international treaty was ratified"
+      }
+    ],
+    "pre_signature_law_petition": [
+      {
+        "status": "translation",
+        "text": "the application was made before the statute was signed by the President"
+      }
+    ],
+    "pre_signature_petition_1995": [
+      {
+        "status": "translation",
+        "text": "the application was made before the act was signed (1995 version)"
+      }
+    ],
+    "presidential_appointment_of_ombudsman": [
+      {
+        "status": "translation",
+        "text": "the Commissioner is appointed by the President of the Republic"
+      }
+    ],
+    "presidential_consent_on_council_conclusion": [
+      {
+        "status": "translation",
+        "text": "a decision of the President on the conclusion of the Supreme Judicial Council has been obtained"
+      }
+    ],
+    "presidential_consent_to_ombudsman_measure": [
+      {
+        "status": "translation",
+        "text": "the consent of the President to the application of a measure to the Commissioner has been obtained"
+      }
+    ],
+    "presidential_inauguration_suspended": [
+      {
+        "status": "translation",
+        "text": "the taking of office by the President is suspended pending the decision of the Constitutional Court"
+      }
+    ],
+    "presidential_maslikhat_termination": [
+      {
+        "status": "translation",
+        "text": "the President has terminated the powers of the maslikhat"
+      }
+    ],
+    "presidential_submission_on_council_recommendation": [
+      {
+        "status": "translation",
+        "text": "the President has made a submission on the recommendation of the Supreme Judicial Council"
+      }
+    ],
+    "previously_appointed_constitutional_judge": [
+      {
+        "status": "translation",
+        "text": "the person has previously been appointed a judge of the Constitutional Court"
+      }
+    ],
+    "prior_prosecutor_general_term": [
+      {
+        "status": "translation",
+        "text": "the person has previously held the office of Prosecutor General"
+      }
+    ],
+    "prior_supreme_court_chair_term": [
+      {
+        "status": "translation",
+        "text": "the person has previously held the office of Chair of the Supreme Court"
+      }
+    ],
+    "proceeding_suspended": [
+      {
+        "status": "translation",
+        "text": "the proceedings in the case have been stayed"
+      }
+    ],
+    "proceeding_suspended_1995": [
+      {
+        "status": "translation",
+        "text": "the proceedings in the case have been stayed (1995 version)"
+      }
+    ],
+    "prosecutor_caught_in_act_or_grave_crime": [
+      {
+        "status": "translation",
+        "text": "the Prosecutor General was detained at the scene of a crime or has committed a grave crime"
+      }
+    ],
+    "prosecutor_general_arrest_attempt": [
+      {
+        "status": "translation",
+        "text": "an attempt has been made to arrest the Prosecutor General"
+      }
+    ],
+    "prosecutor_general_reappointment_attempt": [
+      {
+        "status": "translation",
+        "text": "an attempt has been made to reappoint the person Prosecutor General"
+      }
+    ],
+    "prosecutor_general_reappointment_prohibited": [
+      {
+        "status": "translation",
+        "text": "reappointment as Prosecutor General is not permitted"
+      }
+    ],
+    "prosecutor_general_term": [
+      {
+        "status": "translation",
+        "text": "the term of office of the Prosecutor General is six years"
+      }
+    ],
+    "prosecutor_general_term_expires_on": [
+      {
+        "status": "translation",
+        "text": "the day on which the powers of the Prosecutor General end"
+      }
+    ],
+    "prosecutor_general_term_started_on": [
+      {
+        "status": "translation",
+        "text": "the day on which the powers of the Prosecutor General began"
+      }
+    ],
+    "prosecutor_general_term_years_1995": [
+      {
+        "status": "translation",
+        "text": "the term of office of the Prosecutor General is five years (1995 version)"
+      }
+    ],
+    "prosecutor_immunity_infringed_1995": [
+      {
+        "status": "translation",
+        "text": "the inviolability of the Prosecutor General has been infringed (1995 version)"
+      }
+    ],
+    "ratification_deadline_suspended": [
+      {
+        "status": "translation",
+        "text": "the running of the time limit for ratifying the international treaty is suspended"
+      }
+    ],
+    "ratification_deadline_suspended_1995": [
+      {
+        "status": "translation",
+        "text": "the running of the time limit for ratifying the treaty is suspended (1995 version)"
+      }
+    ],
+    "referendum_results_suspended": [
+      {
+        "status": "translation",
+        "text": "the results of the referendum are not summed up pending the decision of the Constitutional Court"
+      }
+    ],
+    "regional_akim": [
+      {
+        "status": "translation",
+        "text": "the akim is the akim of a region, of a city of republican significance or of the capital"
+      }
+    ],
+    "regional_akim_appointment": [
+      {
+        "status": "translation",
+        "text": "an appointment of an akim is being made"
+      }
+    ],
+    "repeated_liability_for_same_offence": [
+      {
+        "status": "translation",
+        "text": "the person is being held liable a second time for one and the same offence"
+      }
+    ],
+    "repeated_liability_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "being held liable a second time for one and the same offence is not permitted (1995 version)"
+      }
+    ],
+    "required_constitutional_interpretation_applied": [
+      {
+        "status": "translation",
+        "text": "the act is applied only on the interpretation on which it was found constitutional"
+      }
+    ],
+    "required_constitutional_interpretation_applied_1995": [
+      {
+        "status": "translation",
+        "text": "the interpretation on which the act was found constitutional is binding in its application (1995 version)"
+      }
+    ],
+    "required_judge_detention_consent": [
+      {
+        "status": "translation",
+        "text": "the consent required for the detention of a judge has been obtained"
+      }
+    ],
+    "right_to_be_heard_denied": [
+      {
+        "status": "translation",
+        "text": "the person has been denied the right to be heard in court"
+      }
+    ],
+    "rights_restoration_case": [
+      {
+        "status": "translation",
+        "text": "the person has applied for the restoration of infringed rights"
+      }
+    ],
+    "ruling_annullable_in_court_1995": [
+      {
+        "status": "translation",
+        "text": "the ruling may be set aside by judicial procedure (1995 version)"
+      }
+    ],
+    "ruling_contrary_to_constitution_or_law": [
+      {
+        "status": "translation",
+        "text": "the ruling contradicts the Constitution or the legislation"
+      }
+    ],
+    "senate_consent_for_judge": [
+      {
+        "status": "translation",
+        "text": "the Senate has consented to the appointment of the judge"
+      }
+    ],
+    "senate_consent_for_ombudsman": [
+      {
+        "status": "translation",
+        "text": "the Senate has consented to the appointment of the Commissioner"
+      }
+    ],
+    "senate_consent_for_prosecutor": [
+      {
+        "status": "translation",
+        "text": "the Senate has consented to the arrest of the Prosecutor General"
+      }
+    ],
+    "senate_elected": [
+      {
+        "status": "translation",
+        "text": "the candidate has been elected by the Senate (1995 version)"
+      }
+    ],
+    "signature_deadline_suspended": [
+      {
+        "status": "translation",
+        "text": "the running of the time limit for signing the statute is suspended"
+      }
+    ],
+    "signature_deadline_suspended_1995": [
+      {
+        "status": "translation",
+        "text": "the running of the time limit for signing the act is suspended (1995 version)"
+      }
+    ],
+    "special_court_prohibited": [
+      {
+        "status": "translation",
+        "text": "the establishment of special and extraordinary courts is not permitted"
+      }
+    ],
+    "special_court_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "the establishment of special and extraordinary courts is not permitted (1995 version)"
+      }
+    ],
+    "special_or_emergency_court": [
+      {
+        "status": "translation",
+        "text": "the court is a special or an extraordinary court"
+      }
+    ],
+    "supreme_court": [
+      {
+        "status": "translation",
+        "text": "the body is the Supreme Court"
+      }
+    ],
+    "supreme_court_appointment": [
+      {
+        "status": "translation",
+        "text": "an appointment to the office of judge of the Supreme Court is being made"
+      }
+    ],
+    "supreme_court_appointment_valid_1995": [
+      {
+        "status": "translation",
+        "text": "the appointment of the judge of the Supreme Court has taken effect (1995 version)"
+      }
+    ],
+    "supreme_court_case_authorized": [
+      {
+        "status": "translation",
+        "text": "the Supreme Court is competent to hear the case"
+      }
+    ],
+    "supreme_court_chair_reappointment_attempt": [
+      {
+        "status": "translation",
+        "text": "an attempt has been made to reappoint the person Chair of the Supreme Court"
+      }
+    ],
+    "supreme_court_chair_reappointment_prohibited": [
+      {
+        "status": "translation",
+        "text": "reappointment as Chair of the Supreme Court is not permitted"
+      }
+    ],
+    "supreme_court_chair_term": [
+      {
+        "status": "translation",
+        "text": "the term of office of the Chair of the Supreme Court is six years"
+      }
+    ],
+    "supreme_court_chair_term_expires_on": [
+      {
+        "status": "translation",
+        "text": "the day on which the powers of the Chair of the Supreme Court end"
+      }
+    ],
+    "supreme_court_chair_term_started_on": [
+      {
+        "status": "translation",
+        "text": "the day on which the powers of the Chair of the Supreme Court began"
+      }
+    ],
+    "supreme_court_explanation_authorized": [
+      {
+        "status": "translation",
+        "text": "the Supreme Court is competent to give explanations on questions of judicial practice"
+      }
+    ],
+    "supreme_court_is_highest_judicial_body_1995": [
+      {
+        "status": "translation",
+        "text": "the Supreme Court is the highest judicial body for civil, criminal and other cases (1995 version)"
+      }
+    ],
+    "termination_consultations_completed": [
+      {
+        "status": "translation",
+        "text": "the consultations required for the termination of the powers of the maslikhat have been held"
+      }
+    ],
+    "total_maslikhat_deputies": [
+      {
+        "status": "translation",
+        "text": "the total number of the deputies of the maslikhat"
+      }
+    ],
+    "treaty_declared_unconstitutional_1995": [
+      {
+        "status": "translation",
+        "text": "the international treaty has been found unconstitutional (1995 version)"
+      }
+    ],
+    "treaty_may_not_be_ratified_1995": [
+      {
+        "status": "translation",
+        "text": "the international treaty may not be ratified (1995 version)"
+      }
+    ],
+    "within_judicial_power": [
+      {
+        "status": "translation",
+        "text": "the case falls within the judicial power"
+      }
+    ],
+    "within_statutory_local_power": [
+      {
+        "status": "translation",
+        "text": "the ruling was adopted within the competence laid down by statute"
+      }
+    ]
+  },
+  "language": "en",
+  "package": "kz.constitution.court"
+}

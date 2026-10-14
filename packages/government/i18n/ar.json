@@ -1,0 +1,914 @@
+{
+  "$comment": "طبقة عرض عربية لحزم دستور جمهورية كازاخستان (DECISION-0070). الملف خارج CLIR ولا يقرأه المصرف، وإنما تقرأه طبقة العرض وحدها (verbalize --labels وخادم MCP وسطح المكتب). مصدر الترجمة هو تسمية العقدة الروسية ru-KZ في CLIR، ومصطلحاتها موافقة لحزمة law.verb.ar؛ والحالة translation أي ترجمة عمل غير رسمية لا نص رسمي. المفتاح هو الاسم المحلي للعقدة. النص غير مشكول.",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "AcceptedResignationTerminatesGovernment": [
+      {
+        "status": "translation",
+        "text": "المادة 69 الفقرة 5. قبول الاستقالة يعني انتهاء صلاحيات الحكومة"
+      }
+    ],
+    "Bill": [
+      {
+        "status": "translation",
+        "text": "مشروع قانون"
+      }
+    ],
+    "Government": [
+      {
+        "status": "translation",
+        "text": "حكومة جمهورية كازاخستان"
+      }
+    ],
+    "GovernmentAccountableToKurultai": [
+      {
+        "status": "translation",
+        "text": "المادة 63. الحكومة مسؤولة أمام القورولتاي"
+      }
+    ],
+    "GovernmentAccountableToParliament1995": [
+      {
+        "status": "translation",
+        "text": "المادة 64 الفقرة 2 (طبعة 1995). الحكومة مسؤولة أمام البرلمان"
+      }
+    ],
+    "GovernmentAccountableToPresident": [
+      {
+        "status": "translation",
+        "text": "المادة 63. الحكومة مسؤولة أمام الرئيس"
+      }
+    ],
+    "GovernmentAccountableToPresidentAndParliament1995": [
+      {
+        "status": "translation",
+        "text": "المادة 64 الفقرة 2 (طبعة 1995). الحكومة مسؤولة أمام رئيس الجمهورية"
+      }
+    ],
+    "GovernmentAct": [
+      {
+        "status": "translation",
+        "text": "صك صادر عن الحكومة"
+      }
+    ],
+    "GovernmentActBinding": [
+      {
+        "status": "translation",
+        "text": "المادة 68 الفقرتان 1 و3. قرار الحكومة في المسائل الداخلة في اختصاصها ملزم في جميع أنحاء إقليم الجمهورية ما لم يخالف الدستور والقوانين وصكوك الرئيس"
+      }
+    ],
+    "GovernmentActBinding/unless/0": [
+      {
+        "status": "translation",
+        "text": "المادة 68 الفقرتان 1 و3. قرار الحكومة في المسائل الداخلة في اختصاصها ملزم في جميع أنحاء إقليم الجمهورية ما لم يخالف الدستور والقوانين وصكوك الرئيس"
+      }
+    ],
+    "GovernmentActBinding1995": [
+      {
+        "status": "translation",
+        "text": "المادة 69 الفقرتان 1 و3 (طبعة 1995). قرارات الحكومة ملزمة في جميع أنحاء إقليم الجمهورية ولا يجوز أن تخالف الدستور والصكوك التشريعية وصكوك الرئيس"
+      }
+    ],
+    "GovernmentDevelopsForeignPolicyMeasures": [
+      {
+        "status": "translation",
+        "text": "المادة 65 الفقرة 5. تضع الحكومة تدابير السياسة الخارجية"
+      }
+    ],
+    "GovernmentDevelopsStatePolicy": [
+      {
+        "status": "translation",
+        "text": "المادة 65 الفقرة 1. تضع الحكومة الاتجاهات الأساسية لسياسة الدولة"
+      }
+    ],
+    "GovernmentDevelopsStatePolicy1995": [
+      {
+        "status": "translation",
+        "text": "المادة 66 البند 1 (طبعة 1995). تضع الحكومة الاتجاهات الأساسية للسياسة الاجتماعية والاقتصادية وللقدرة الدفاعية والأمن وتنظم تنفيذها"
+      }
+    ],
+    "GovernmentDirectsExecutiveBodies": [
+      {
+        "status": "translation",
+        "text": "المادة 65 الفقرة 6. توجه الحكومة نشاط الأجهزة التنفيذية"
+      }
+    ],
+    "GovernmentEnsuresBudgetExecution": [
+      {
+        "status": "translation",
+        "text": "المادة 65 الفقرة 2. تكفل الحكومة تنفيذ الموازنة الجمهورية"
+      }
+    ],
+    "GovernmentExercisesExecutivePower": [
+      {
+        "status": "translation",
+        "text": "المادة 63. تمارس الحكومة السلطة التنفيذية"
+      }
+    ],
+    "GovernmentExercisesExecutivePower1995": [
+      {
+        "status": "translation",
+        "text": "المادة 64 الفقرة 1 (طبعة 1995). تمارس الحكومة السلطة التنفيذية وترأس منظومة الأجهزة التنفيذية"
+      }
+    ],
+    "GovernmentFormedByPresident": [
+      {
+        "status": "translation",
+        "text": "المادة 64 الفقرة 1. ينشئ رئيس جمهورية كازاخستان الحكومة بالأوضاع المقررة في الدستور"
+      }
+    ],
+    "GovernmentHeadsExecutiveSystem": [
+      {
+        "status": "translation",
+        "text": "المادة 63. ترأس الحكومة منظومة الأجهزة التنفيذية"
+      }
+    ],
+    "GovernmentIntroducesBillsAndExecutesLaws": [
+      {
+        "status": "translation",
+        "text": "المادة 65 الفقرة 3. تقدم الحكومة مشروعات القوانين وتكفل تنفيذ القوانين"
+      }
+    ],
+    "GovernmentManagesStateProperty": [
+      {
+        "status": "translation",
+        "text": "المادة 65 الفقرة 4. تنظم الحكومة إدارة أموال الدولة"
+      }
+    ],
+    "GovernmentMayCancelExecutiveActs1995": [
+      {
+        "status": "translation",
+        "text": "المادة 66 البند 7 (طبعة 1995). تلغي الحكومة صكوك الوزارات وسائر الأجهزة التنفيذية أو توقف نفاذها"
+      }
+    ],
+    "GovernmentMayCancelExecutiveBodyActs": [
+      {
+        "status": "translation",
+        "text": "المادة 65 الفقرة 6. للحكومة أن تلغي صكوك الأجهزة التنفيذية أو توقف نفاذها"
+      }
+    ],
+    "GovernmentMember": [
+      {
+        "status": "translation",
+        "text": "عضو الحكومة"
+      }
+    ],
+    "GovernmentMemberBoardConflict": [
+      {
+        "status": "translation",
+        "text": "المادة 67 الفقرة 2. لا يجوز لعضو الحكومة أن يكون عضوا في جهاز إدارة منظمة تجارية أو في مجلس رقابتها إلا حيث يكون ذلك من واجبات وظيفته"
+      }
+    ],
+    "GovernmentMemberBoardConflict/unless/0": [
+      {
+        "status": "translation",
+        "text": "المادة 67 الفقرة 2. لا يجوز لعضو الحكومة أن يكون عضوا في جهاز إدارة منظمة تجارية أو في مجلس رقابتها إلا حيث يكون ذلك من واجبات وظيفته"
+      }
+    ],
+    "GovernmentMemberBusinessConflict": [
+      {
+        "status": "translation",
+        "text": "المادة 67 الفقرة 2. لا يجوز لعضو الحكومة ممارسة نشاط ريادي"
+      }
+    ],
+    "GovernmentMemberIncompatible1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "المادة 68 الفقرة 2 (طبعة 1995). لا يجوز لأعضاء الحكومة أن يكونوا نوابا ولا أن يشغلوا مناصب أخرى بأجر عدا التدريس والبحث وسائر الأنشطة الإبداعية ولا أن يمارسوا نشاطا رياديا"
+      }
+    ],
+    "GovernmentMemberIncompatible1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "المادة 68 الفقرة 2 (طبعة 1995). لا يجوز لأعضاء الحكومة أن يكونوا نوابا ولا أن يشغلوا مناصب أخرى بأجر عدا التدريس والبحث وسائر الأنشطة الإبداعية ولا أن يمارسوا نشاطا رياديا"
+      }
+    ],
+    "GovernmentMemberIncompatible1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "المادة 68 الفقرة 2 (طبعة 1995). لا يجوز لأعضاء الحكومة أن يكونوا نوابا ولا أن يشغلوا مناصب أخرى بأجر عدا التدريس والبحث وسائر الأنشطة الإبداعية ولا أن يمارسوا نشاطا رياديا"
+      }
+    ],
+    "GovernmentMemberPaidPositionConflict": [
+      {
+        "status": "translation",
+        "text": "المادة 67 الفقرة 2. لا يجوز لعضو الحكومة أن يشغل مناصب أخرى بأجر عدا التدريس والبحث والنشاط الإبداعي"
+      }
+    ],
+    "GovernmentMemberPaidPositionConflict/unless/0": [
+      {
+        "status": "translation",
+        "text": "المادة 67 الفقرة 2. لا يجوز لعضو الحكومة أن يشغل مناصب أخرى بأجر عدا التدريس والبحث والنشاط الإبداعي"
+      }
+    ],
+    "GovernmentMemberRepresentativeMandateConflict": [
+      {
+        "status": "translation",
+        "text": "المادة 67 الفقرة 2. لا يجوز لعضو الحكومة أن يكون نائبا في جهاز تمثيلي"
+      }
+    ],
+    "GovernmentOathToPeopleAndPresident1995": [
+      {
+        "status": "translation",
+        "text": "المادة 65 الفقرة 3 (طبعة 1995). يؤدي أعضاء الحكومة اليمين أمام شعب كازاخستان ورئيسها"
+      }
+    ],
+    "GovernmentSetsUnifiedPublicPaySystemWithPresident": [
+      {
+        "status": "translation",
+        "text": "المادة 65 الفقرة 7. تقر الحكومة بالاتفاق مع الرئيس منظومة موحدة لتمويل الأجهزة العامة وأجور العاملين فيها"
+      }
+    ],
+    "GovernmentStructureProposalTenDays": [
+      {
+        "status": "translation",
+        "text": "المادة 64 الفقرة 2. تقدم إلى الرئيس مقترحات هيكل الحكومة وتشكيلها خلال عشرة أيام من تعيين رئيس الوزراء"
+      }
+    ],
+    "GovernmentStructureProposalTenDays1995": [
+      {
+        "status": "translation",
+        "text": "المادة 65 الفقرة 2 (طبعة 1995). يقدم رئيس الوزراء مقترحات هيكل الحكومة وتشكيلها خلال عشرة أيام من تعيينه"
+      }
+    ],
+    "GovernmentSubmitsBudget1995": [
+      {
+        "status": "translation",
+        "text": "المادة 66 البند 2 (طبعة 1995). تعرض الحكومة على البرلمان الموازنة الجمهورية وتقرير تنفيذها"
+      }
+    ],
+    "GovernmentSubmitsBudgetAndReport": [
+      {
+        "status": "translation",
+        "text": "المادة 65 الفقرة 2. تعرض الحكومة الموازنة الجمهورية وتقرير تنفيذها"
+      }
+    ],
+    "Kurultai": [
+      {
+        "status": "translation",
+        "text": "قورولتاي جمهورية كازاخستان"
+      }
+    ],
+    "Mazhilis": [
+      {
+        "status": "translation",
+        "text": "مجلس النواب في البرلمان (طبعة 1995)"
+      }
+    ],
+    "MemberAccountableToChambers1995": [
+      {
+        "status": "translation",
+        "text": "المادة 64 الفقرة 3 (طبعة 1995). يكون أعضاء الحكومة مسؤولين أمام مجلسي البرلمان في الحالة المقررة في البند 6) من المادة 57 من الدستور"
+      }
+    ],
+    "MemberPersonallyResponsible1995": [
+      {
+        "status": "translation",
+        "text": "المادة 68 الفقرة 1 (طبعة 1995). أعضاء الحكومة مستقلون في اتخاذ قراراتهم ويتحملون مسؤولية شخصية أمام رئيس الوزراء"
+      }
+    ],
+    "NoConfidenceRequiresResignation": [
+      {
+        "status": "translation",
+        "text": "المادة 69 الفقرة 3. عند حجب القورولتاي الثقة تعلن الحكومة استقالتها أمام الرئيس"
+      }
+    ],
+    "NoConfidenceRequiresResignation1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "المادة 70 الفقرة 3 (طبعة 1995). تعلن الحكومة استقالتها أمام الرئيس عند حجب مجلس النواب أو البرلمان الثقة عنها"
+      }
+    ],
+    "NoConfidenceRequiresResignation1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "المادة 70 الفقرة 3 (طبعة 1995). تعلن الحكومة استقالتها أمام الرئيس عند حجب مجلس النواب أو البرلمان الثقة عنها"
+      }
+    ],
+    "Parliament": [
+      {
+        "status": "translation",
+        "text": "برلمان جمهورية كازاخستان (طبعة 1995)"
+      }
+    ],
+    "PeoplesCouncil": [
+      {
+        "status": "translation",
+        "text": "مجلس شعب كازاخستان"
+      }
+    ],
+    "PeoplesCouncilConstitutionalStatus": [
+      {
+        "status": "translation",
+        "text": "المادة 70 الفقرة 1. مجلس شعب كازاخستان جهاز استشاري أعلى"
+      }
+    ],
+    "PeoplesCouncilLegislativeInitiative": [
+      {
+        "status": "translation",
+        "text": "المادة 71 البند 2). يقدم مجلس شعب كازاخستان إلى القورولتاي مشروعات القوانين"
+      }
+    ],
+    "PeoplesCouncilMembersAreCitizens": [
+      {
+        "status": "translation",
+        "text": "المادة 70 الفقرة 2. يشكل مجلس الشعب من مواطني كازاخستان"
+      }
+    ],
+    "PeoplesCouncilReferendumInitiative": [
+      {
+        "status": "translation",
+        "text": "المادة 71 البند 3). يبادر مجلس شعب كازاخستان بالدعوة إلى استفتاء شعبي"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "شخص طبيعي"
+      }
+    ],
+    "PolicyDisagreementRequiresResignation": [
+      {
+        "status": "translation",
+        "text": "المادة 67 الفقرة 1. عضو الحكومة الذي لا يوافق على السياسة المتبعة يقدم استقالته أو يعفى من منصبه"
+      }
+    ],
+    "PolicyDisagreementRequiresResignation1995": [
+      {
+        "status": "translation",
+        "text": "المادة 68 الفقرة 1 (طبعة 1995). عضو الحكومة الذي لا يوافق على السياسة المتبعة أو لا ينفذها يقدم استقالته أو يعفى من منصبه"
+      }
+    ],
+    "President": [
+      {
+        "status": "translation",
+        "text": "رئيس جمهورية كازاخستان"
+      }
+    ],
+    "PresidentialMemberRelease1995": [
+      {
+        "status": "translation",
+        "text": "المادة 70 الفقرة 7 (طبعة 1995). للرئيس أن يعفي أي عضو من أعضاء الحكومة من منصبه"
+      }
+    ],
+    "PresidentialOwnInitiativeTermination1995": [
+      {
+        "status": "translation",
+        "text": "المادة 70 الفقرة 7 (طبعة 1995). للرئيس أن يقرر بمبادرة منه إنهاء صلاحيات الحكومة"
+      }
+    ],
+    "PrimeMinister": [
+      {
+        "status": "translation",
+        "text": "رئيس وزراء جمهورية كازاخستان"
+      }
+    ],
+    "PrimeMinisterDirectsGovernment": [
+      {
+        "status": "translation",
+        "text": "المادة 66. ينظم رئيس الوزراء نشاط الحكومة ويوجهه"
+      }
+    ],
+    "PrimeMinisterDirectsGovernment1995": [
+      {
+        "status": "translation",
+        "text": "المادة 67 البند 1 (طبعة 1995). ينظم رئيس الوزراء نشاط الحكومة ويوجهه ويتحمل مسؤولية شخصية عن عملها"
+      }
+    ],
+    "PrimeMinisterOrderBinding1995": [
+      {
+        "status": "translation",
+        "text": "المادة 69 الفقرتان 2 و3 (طبعة 1995). أوامر رئيس الوزراء ملزمة في جميع أنحاء إقليم الجمهورية ولا يجوز أن تخالف الدستور وصكوك الرئيس"
+      }
+    ],
+    "PrimeMinisterPersonallyResponsible": [
+      {
+        "status": "translation",
+        "text": "المادة 66. يتحمل رئيس الوزراء مسؤولية شخصية عن عمل الحكومة"
+      }
+    ],
+    "PrimeMinisterReleaseTerminatesGovernment1995": [
+      {
+        "status": "translation",
+        "text": "المادة 70 الفقرة 7 (طبعة 1995). إعفاء رئيس الوزراء من منصبه يعني انتهاء صلاحيات الحكومة كلها"
+      }
+    ],
+    "PrimeMinisterReportsToPresidentAndKurultai": [
+      {
+        "status": "translation",
+        "text": "المادة 66. يعرض رئيس الوزراء على الرئيس والقورولتاي الاتجاهات الأساسية لعمل الحكومة وأهم قراراتها"
+      }
+    ],
+    "PrimeMinisterResignationTerminatesWholeGovernment": [
+      {
+        "status": "translation",
+        "text": "المادة 69 الفقرة 5. قبول استقالة رئيس الوزراء يعني انتهاء صلاحيات الحكومة كلها"
+      }
+    ],
+    "PrimeMinisterSignsGovernmentResolutions": [
+      {
+        "status": "translation",
+        "text": "المادة 66. يوقع رئيس الوزراء قرارات الحكومة"
+      }
+    ],
+    "RelinquishPowersBeforeNewKurultai": [
+      {
+        "status": "translation",
+        "text": "المادة 69 الفقرة 1. تتخلى الحكومة عن صلاحياتها أمام القورولتاي المنتخب حديثا"
+      }
+    ],
+    "RelinquishPowersBeforeNewMazhilis1995": [
+      {
+        "status": "translation",
+        "text": "المادة 70 الفقرة 1 (طبعة 1995). تتخلى الحكومة عن صلاحياتها أمام مجلس النواب المنتخب حديثا في البرلمان"
+      }
+    ],
+    "ResignationDecisionTenDays": [
+      {
+        "status": "translation",
+        "text": "المادة 69 الفقرة 4. ينظر الرئيس في قبول الاستقالة أو رفضها خلال عشرة أيام"
+      }
+    ],
+    "bill_introduced_to_kurultai": [
+      {
+        "status": "translation",
+        "text": "قدم مشروع القانون إلى القورولتاي على سبيل المبادرة التشريعية"
+      }
+    ],
+    "citizen": [
+      {
+        "status": "translation",
+        "text": "الشخص من مواطني جمهورية كازاخستان"
+      }
+    ],
+    "commercial_board_membership": [
+      {
+        "status": "translation",
+        "text": "عضو الحكومة عضو في جهاز إدارة منظمة تجارية"
+      }
+    ],
+    "contradicts_constitution_law_or_presidential_act": [
+      {
+        "status": "translation",
+        "text": "الصك يخالف الدستور أو القوانين أو صكوك الرئيس"
+      }
+    ],
+    "entrepreneurial_activity": [
+      {
+        "status": "translation",
+        "text": "عضو الحكومة يمارس نشاطا رياديا"
+      }
+    ],
+    "government": [
+      {
+        "status": "translation",
+        "text": "الجهاز هو حكومة الجمهورية"
+      }
+    ],
+    "government_accountable_to_kurultai": [
+      {
+        "status": "translation",
+        "text": "الحكومة مسؤولة أمام القورولتاي"
+      }
+    ],
+    "government_accountable_to_parliament_1995": [
+      {
+        "status": "translation",
+        "text": "الحكومة مسؤولة أمام البرلمان (طبعة 1995)"
+      }
+    ],
+    "government_accountable_to_president": [
+      {
+        "status": "translation",
+        "text": "الحكومة مسؤولة أمام الرئيس"
+      }
+    ],
+    "government_accountable_to_president_1995": [
+      {
+        "status": "translation",
+        "text": "الحكومة مسؤولة أمام الرئيس (طبعة 1995)"
+      }
+    ],
+    "government_act": [
+      {
+        "status": "translation",
+        "text": "اتخذت الحكومة الصك"
+      }
+    ],
+    "government_act_1995": [
+      {
+        "status": "translation",
+        "text": "اتخذت الحكومة الصك (طبعة 1995)"
+      }
+    ],
+    "government_act_binding": [
+      {
+        "status": "translation",
+        "text": "صك الحكومة ملزم في جميع أنحاء إقليم الجمهورية"
+      }
+    ],
+    "government_act_binding_1995": [
+      {
+        "status": "translation",
+        "text": "قرار الحكومة ملزم في جميع أنحاء إقليم الجمهورية (طبعة 1995)"
+      }
+    ],
+    "government_develops_foreign_policy_measures": [
+      {
+        "status": "translation",
+        "text": "الحكومة تضع تدابير تنفيذ السياسة الخارجية"
+      }
+    ],
+    "government_develops_state_policy": [
+      {
+        "status": "translation",
+        "text": "الحكومة تضع الاتجاهات الأساسية لسياسة الدولة"
+      }
+    ],
+    "government_directs_executive_bodies": [
+      {
+        "status": "translation",
+        "text": "الحكومة توجه نشاط الأجهزة التنفيذية"
+      }
+    ],
+    "government_ensures_budget_execution": [
+      {
+        "status": "translation",
+        "text": "الحكومة تكفل تنفيذ الموازنة الجمهورية"
+      }
+    ],
+    "government_exercises_executive_power": [
+      {
+        "status": "translation",
+        "text": "الحكومة تمارس السلطة التنفيذية في الجمهورية"
+      }
+    ],
+    "government_formed_by_president": [
+      {
+        "status": "translation",
+        "text": "ينشئ رئيس الجمهورية الحكومة"
+      }
+    ],
+    "government_heads_executive_system": [
+      {
+        "status": "translation",
+        "text": "الحكومة ترأس منظومة الأجهزة التنفيذية"
+      }
+    ],
+    "government_introduces_bills_and_executes_laws": [
+      {
+        "status": "translation",
+        "text": "الحكومة تقدم مشروعات القوانين وتكفل تنفيذ القوانين"
+      }
+    ],
+    "government_manages_state_property": [
+      {
+        "status": "translation",
+        "text": "الحكومة تدير أموال الدولة"
+      }
+    ],
+    "government_may_cancel_executive_body_acts": [
+      {
+        "status": "translation",
+        "text": "للحكومة أن تلغي صكوك الأجهزة التنفيذية"
+      }
+    ],
+    "government_membership_incompatible": [
+      {
+        "status": "translation",
+        "text": "العضوية في الحكومة لا تجتمع مع المنصب المشغول أو النشاط الممارس"
+      }
+    ],
+    "government_no_confidence": [
+      {
+        "status": "translation",
+        "text": "حجب القورولتاي الثقة عن الحكومة"
+      }
+    ],
+    "government_oath_to_people_and_president_1995": [
+      {
+        "status": "translation",
+        "text": "على عضو الحكومة أن يؤدي اليمين أمام الشعب والرئيس (طبعة 1995)"
+      }
+    ],
+    "government_policy_disagreement": [
+      {
+        "status": "translation",
+        "text": "عضو الحكومة لا يوافق على السياسة التي تتبعها الحكومة"
+      }
+    ],
+    "government_powers_relinquished": [
+      {
+        "status": "translation",
+        "text": "تتخلى الحكومة عن صلاحياتها أمام القورولتاي المنتخب حديثا"
+      }
+    ],
+    "government_powers_terminated": [
+      {
+        "status": "translation",
+        "text": "انتهت صلاحيات الحكومة"
+      }
+    ],
+    "government_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "انتهت صلاحيات الحكومة (طبعة 1995)"
+      }
+    ],
+    "government_proposal_date": [
+      {
+        "status": "translation",
+        "text": "يوم تقديم مقترح هيكل الحكومة وتشكيلها"
+      }
+    ],
+    "government_proposal_deadline_days": [
+      {
+        "status": "translation",
+        "text": "ميعاد تقديم مقترح هيكل الحكومة وتشكيلها عشرة أيام"
+      }
+    ],
+    "government_proposal_timely": [
+      {
+        "status": "translation",
+        "text": "قدم مقترح هيكل الحكومة وتشكيلها في الميعاد"
+      }
+    ],
+    "government_sets_unified_public_pay_system_with_president": [
+      {
+        "status": "translation",
+        "text": "تقر الحكومة بالاتفاق مع الرئيس منظومة موحدة للأجور في أجهزة الدولة"
+      }
+    ],
+    "government_structure_proposal": [
+      {
+        "status": "translation",
+        "text": "قدم رئيس الوزراء مقترح هيكل الحكومة وتشكيلها"
+      }
+    ],
+    "government_submits_budget_and_report": [
+      {
+        "status": "translation",
+        "text": "الحكومة تعرض الموازنة الجمهورية وتقرير تنفيذها"
+      }
+    ],
+    "mazhilis_no_confidence": [
+      {
+        "status": "translation",
+        "text": "حجب مجلس النواب الثقة عن الحكومة (طبعة 1995)"
+      }
+    ],
+    "member_accountable_to_chambers_1995": [
+      {
+        "status": "translation",
+        "text": "أعضاء الحكومة مسؤولون أمام مجلسي البرلمان (طبعة 1995)"
+      }
+    ],
+    "member_decides_within_competence": [
+      {
+        "status": "translation",
+        "text": "عضو الحكومة يتخذ القرار في حدود اختصاصه"
+      }
+    ],
+    "member_of_government": [
+      {
+        "status": "translation",
+        "text": "الشخص عضو في تشكيل الحكومة"
+      }
+    ],
+    "member_personally_responsible_1995": [
+      {
+        "status": "translation",
+        "text": "عضو الحكومة يتحمل مسؤولية شخصية عن نشاط الأجهزة التابعة له (طبعة 1995)"
+      }
+    ],
+    "member_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "انتهت صلاحيات عضو الحكومة (طبعة 1995)"
+      }
+    ],
+    "member_resignation_submitted": [
+      {
+        "status": "translation",
+        "text": "على عضو الحكومة أن يقدم طلب استقالته"
+      }
+    ],
+    "minister_report_obligation_triggered": [
+      {
+        "status": "translation",
+        "text": "تحقق سبب مساءلة عضو الحكومة أمام مجلس البرلمان (طبعة 1995)"
+      }
+    ],
+    "new_kurultai_elected": [
+      {
+        "status": "translation",
+        "text": "انتخبت تشكيلة جديدة للقورولتاي"
+      }
+    ],
+    "new_mazhilis_elected": [
+      {
+        "status": "translation",
+        "text": "انتخبت تشكيلة جديدة لمجلس النواب (طبعة 1995)"
+      }
+    ],
+    "no_confidence_resignation_declared": [
+      {
+        "status": "translation",
+        "text": "على الحكومة أن تعلن استقالتها عند حجب الثقة"
+      }
+    ],
+    "oath_taken_by_member": [
+      {
+        "status": "translation",
+        "text": "أدى عضو الحكومة اليمين"
+      }
+    ],
+    "official_duty_exception": [
+      {
+        "status": "translation",
+        "text": "المشاركة في جهاز منظمة تجارية داخلة في واجبات الوظيفة"
+      }
+    ],
+    "paid_external_position": [
+      {
+        "status": "translation",
+        "text": "عضو الحكومة يشغل منصبا آخر بأجر"
+      }
+    ],
+    "parliament_no_confidence": [
+      {
+        "status": "translation",
+        "text": "حجب البرلمان الثقة عن الحكومة (طبعة 1995)"
+      }
+    ],
+    "peoples_council": [
+      {
+        "status": "translation",
+        "text": "الجهاز هو مجلس شعب كازاخستان"
+      }
+    ],
+    "peoples_council_bill": [
+      {
+        "status": "translation",
+        "text": "قدم مجلس الشعب مشروع قانون"
+      }
+    ],
+    "peoples_council_highest_consultative_body": [
+      {
+        "status": "translation",
+        "text": "مجلس الشعب هو الجهاز الاستشاري الأعلى"
+      }
+    ],
+    "peoples_council_member": [
+      {
+        "status": "translation",
+        "text": "الشخص عضو في تشكيل مجلس الشعب"
+      }
+    ],
+    "peoples_council_membership_constitutionally_valid": [
+      {
+        "status": "translation",
+        "text": "العضوية في مجلس الشعب مستوفية للشروط الدستورية"
+      }
+    ],
+    "peoples_council_referendum_initiative": [
+      {
+        "status": "translation",
+        "text": "بادر مجلس الشعب بالدعوة إلى إجراء استفتاء"
+      }
+    ],
+    "permitted_teaching_science_or_creative_work": [
+      {
+        "status": "translation",
+        "text": "الاشتغال داخل في التدريس أو البحث أو سائر الأنشطة الإبداعية المأذون فيها"
+      }
+    ],
+    "president": [
+      {
+        "status": "translation",
+        "text": "الشخص رئيس الجمهورية"
+      }
+    ],
+    "presidential_member_release": [
+      {
+        "status": "translation",
+        "text": "أعفى الرئيس عضو الحكومة من منصبه (طبعة 1995)"
+      }
+    ],
+    "presidential_own_initiative_termination": [
+      {
+        "status": "translation",
+        "text": "أنهى الرئيس بمبادرة منه صلاحيات الحكومة (طبعة 1995)"
+      }
+    ],
+    "presidential_resignation_decision": [
+      {
+        "status": "translation",
+        "text": "يوم اتخاذ الرئيس قراره في الاستقالة المعلنة"
+      }
+    ],
+    "prime_minister": [
+      {
+        "status": "translation",
+        "text": "الشخص رئيس الوزراء"
+      }
+    ],
+    "prime_minister_appointment_date": [
+      {
+        "status": "translation",
+        "text": "يوم تعيين رئيس الوزراء"
+      }
+    ],
+    "prime_minister_directs_government": [
+      {
+        "status": "translation",
+        "text": "رئيس الوزراء ينظم نشاط الحكومة ويوجهه"
+      }
+    ],
+    "prime_minister_order": [
+      {
+        "status": "translation",
+        "text": "الصك أمر صادر عن رئيس الوزراء"
+      }
+    ],
+    "prime_minister_order_binding_1995": [
+      {
+        "status": "translation",
+        "text": "أمر رئيس الوزراء ملزم في جميع أنحاء إقليم الجمهورية (طبعة 1995)"
+      }
+    ],
+    "prime_minister_personally_responsible": [
+      {
+        "status": "translation",
+        "text": "رئيس الوزراء يتحمل مسؤولية شخصية عن نشاط الحكومة"
+      }
+    ],
+    "prime_minister_released": [
+      {
+        "status": "translation",
+        "text": "أعفي رئيس الوزراء من منصبه (طبعة 1995)"
+      }
+    ],
+    "prime_minister_reports_to_president_and_kurultai": [
+      {
+        "status": "translation",
+        "text": "رئيس الوزراء يعرض على الرئيس والقورولتاي الاتجاهات الأساسية لنشاط الحكومة"
+      }
+    ],
+    "prime_minister_resignation_accepted": [
+      {
+        "status": "translation",
+        "text": "قبلت استقالة رئيس الوزراء"
+      }
+    ],
+    "prime_minister_signs_government_resolutions": [
+      {
+        "status": "translation",
+        "text": "رئيس الوزراء يوقع قرارات الحكومة"
+      }
+    ],
+    "referendum_initiative_valid": [
+      {
+        "status": "translation",
+        "text": "المبادرة بالاستفتاء صادرة عن جهة مخولة"
+      }
+    ],
+    "representative_body_deputy": [
+      {
+        "status": "translation",
+        "text": "عضو الحكومة نائب في جهاز تمثيلي"
+      }
+    ],
+    "resignation_accepted": [
+      {
+        "status": "translation",
+        "text": "قبل الرئيس استقالة الحكومة"
+      }
+    ],
+    "resignation_decision_deadline_days": [
+      {
+        "status": "translation",
+        "text": "ميعاد البت في الاستقالة المعلنة عشرة أيام"
+      }
+    ],
+    "resignation_decision_timely": [
+      {
+        "status": "translation",
+        "text": "اتخذ القرار في الاستقالة في الميعاد المقرر"
+      }
+    ],
+    "voluntary_resignation_declared": [
+      {
+        "status": "translation",
+        "text": "اليوم الذي أعلنت فيه الحكومة استقالتها بقرار منها"
+      }
+    ],
+    "within_government_competence": [
+      {
+        "status": "translation",
+        "text": "اتخذ الصك في حدود اختصاص الحكومة"
+      }
+    ]
+  },
+  "language": "ar",
+  "package": "kz.constitution.government"
+}

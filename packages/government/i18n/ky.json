@@ -1,0 +1,914 @@
+{
+  "$comment": "Кыргыз тилиндеги көрсөтүү катмары (DECISION-0070). Бул файл CLIR'ге кирбейт жана презентациялык катмар менен гана окулат (verbalize --labels, MCP, жумуш үстөлү). Котормо Казакстан Республикасынын Конституциясын ресмилештирүүнүн орусча (ru-KZ) белгилеринен жасалган жумушчу котормо (`translation`) — расмий басылма эмес; терминология Кыргыз Республикасынын Конституциясынын кыргызча редакциясы (corpus/laws/kg/constitution) жана law.verb.ky пакети боюнча сверкаланган. Ачкыч — жарыялоонун жергиликтүү аты.",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "AcceptedResignationTerminatesGovernment": [
+      {
+        "status": "translation",
+        "text": "69-берене, 5-пункт. Отставканы кабыл алуу Өкмөттүн ыйгарым укуктарынын токтотулушун билдирет"
+      }
+    ],
+    "Bill": [
+      {
+        "status": "translation",
+        "text": "мыйзам долбоору"
+      }
+    ],
+    "Government": [
+      {
+        "status": "translation",
+        "text": "Казакстан Республикасынын Өкмөтү"
+      }
+    ],
+    "GovernmentAccountableToKurultai": [
+      {
+        "status": "translation",
+        "text": "63-берене. Өкмөт Курултайга отчёттуу"
+      }
+    ],
+    "GovernmentAccountableToParliament1995": [
+      {
+        "status": "translation",
+        "text": "64-берене, 2-пункт (1995-ж. ред.). Өкмөт Парламенттин алдында жоопкерчиликтүү"
+      }
+    ],
+    "GovernmentAccountableToPresident": [
+      {
+        "status": "translation",
+        "text": "63-берене. Өкмөт Президентке отчёттуу"
+      }
+    ],
+    "GovernmentAccountableToPresidentAndParliament1995": [
+      {
+        "status": "translation",
+        "text": "64-берене, 2-пункт (1995-ж. ред.). Өкмөт Республиканын Президентинин алдында жоопкерчиликтүү"
+      }
+    ],
+    "GovernmentAct": [
+      {
+        "status": "translation",
+        "text": "Өкмөттүн актысы"
+      }
+    ],
+    "GovernmentActBinding": [
+      {
+        "status": "translation",
+        "text": "68-берене, 1 жана 3-пункттар. Өкмөттүн өз компетенциясына кирген маселелер боюнча токтому, эгерде ал Конституцияга, мыйзамдарга жана Президенттин актыларына каршы келбесе, Республиканын бүткүл аумагында милдеттүү"
+      }
+    ],
+    "GovernmentActBinding/unless/0": [
+      {
+        "status": "translation",
+        "text": "68-берене, 1 жана 3-пункттар. Өкмөттүн өз компетенциясына кирген маселелер боюнча токтому, эгерде ал Конституцияга, мыйзамдарга жана Президенттин актыларына каршы келбесе, Республиканын бүткүл аумагында милдеттүү"
+      }
+    ],
+    "GovernmentActBinding1995": [
+      {
+        "status": "translation",
+        "text": "69-берене, 1 жана 3-пункттар (1995-ж. ред.). Өкмөттүн токтомдору Республиканын бүткүл аумагында милдеттүү жана Конституцияга, мыйзам актыларына жана Президенттин актыларына каршы келбөөгө тийиш"
+      }
+    ],
+    "GovernmentDevelopsForeignPolicyMeasures": [
+      {
+        "status": "translation",
+        "text": "65-берене, 5-пункт. Өкмөт тышкы саясаттын чараларын иштеп чыгат"
+      }
+    ],
+    "GovernmentDevelopsStatePolicy": [
+      {
+        "status": "translation",
+        "text": "65-берене, 1-пункт. Өкмөт мамлекеттик саясаттын негизги багыттарын иштеп чыгат"
+      }
+    ],
+    "GovernmentDevelopsStatePolicy1995": [
+      {
+        "status": "translation",
+        "text": "66-берене, 1-пунктча (1995-ж. ред.). Өкмөт социалдык-экономикалык саясаттын, коргонуу жөндөмдүүлүгүнүн жана коопсуздуктун негизги багыттарын иштеп чыгат жана аларды жүзөгө ашырууну уюштурат"
+      }
+    ],
+    "GovernmentDirectsExecutiveBodies": [
+      {
+        "status": "translation",
+        "text": "65-берене, 6-пункт. Өкмөт аткаруу органдарынын ишине жетекчилик кылат"
+      }
+    ],
+    "GovernmentEnsuresBudgetExecution": [
+      {
+        "status": "translation",
+        "text": "65-берене, 2-пункт. Өкмөт республикалык бюджеттин аткарылышын камсыз кылат"
+      }
+    ],
+    "GovernmentExercisesExecutivePower": [
+      {
+        "status": "translation",
+        "text": "63-берене. Өкмөт аткаруу бийлигин жүзөгө ашырат"
+      }
+    ],
+    "GovernmentExercisesExecutivePower1995": [
+      {
+        "status": "translation",
+        "text": "64-берене, 1-пункт (1995-ж. ред.). Өкмөт аткаруу бийлигин жүзөгө ашырат жана аткаруу органдарынын системасын жетектейт"
+      }
+    ],
+    "GovernmentFormedByPresident": [
+      {
+        "status": "translation",
+        "text": "64-берене, 1-пункт. Өкмөт Конституцияда каралган тартипте Казакстан Республикасынын Президенти тарабынан түзүлөт"
+      }
+    ],
+    "GovernmentHeadsExecutiveSystem": [
+      {
+        "status": "translation",
+        "text": "63-берене. Өкмөт аткаруу органдарынын системасын жетектейт"
+      }
+    ],
+    "GovernmentIntroducesBillsAndExecutesLaws": [
+      {
+        "status": "translation",
+        "text": "65-берене, 3-пункт. Өкмөт мыйзам долбоорлорун киргизет жана мыйзамдардын аткарылышын камсыз кылат"
+      }
+    ],
+    "GovernmentManagesStateProperty": [
+      {
+        "status": "translation",
+        "text": "65-берене, 4-пункт. Өкмөт мамлекеттик менчикти башкарууну уюштурат"
+      }
+    ],
+    "GovernmentMayCancelExecutiveActs1995": [
+      {
+        "status": "translation",
+        "text": "66-берене, 7-пунктча (1995-ж. ред.). Өкмөт министрликтердин жана башка аткаруу органдарынын актыларынын күчүн жокко чыгарат же токтотуп турат"
+      }
+    ],
+    "GovernmentMayCancelExecutiveBodyActs": [
+      {
+        "status": "translation",
+        "text": "65-берене, 6-пункт. Өкмөт аткаруу органдарынын актыларынын күчүн жокко чыгарууга же токтотуп турууга укуктуу"
+      }
+    ],
+    "GovernmentMember": [
+      {
+        "status": "translation",
+        "text": "Өкмөттүн мүчөсү"
+      }
+    ],
+    "GovernmentMemberBoardConflict": [
+      {
+        "status": "translation",
+        "text": "67-берене, 2-пункт. Өкмөттүн мүчөсү, бул анын кызматтык милдети болгон учурлардан тышкары, коммерциялык уюмдун жетектөөчү органына же байкоочу кеңешине кирүүгө укуксуз"
+      }
+    ],
+    "GovernmentMemberBoardConflict/unless/0": [
+      {
+        "status": "translation",
+        "text": "67-берене, 2-пункт. Өкмөттүн мүчөсү, бул анын кызматтык милдети болгон учурлардан тышкары, коммерциялык уюмдун жетектөөчү органына же байкоочу кеңешине кирүүгө укуксуз"
+      }
+    ],
+    "GovernmentMemberBusinessConflict": [
+      {
+        "status": "translation",
+        "text": "67-берене, 2-пункт. Өкмөттүн мүчөсү ишкердик ишмердүүлүк жүргүзүүгө укуксуз"
+      }
+    ],
+    "GovernmentMemberIncompatible1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "68-берене, 2-пункт (1995-ж. ред.). Өкмөттүн мүчөлөрү депутат болууга, окутуучулук, илимий же башка чыгармачылык иштен тышкары, башка акы төлөнүүчү кызматтарды ээлөөгө жана ишкердик ишмердүүлүк жүргүзүүгө укуксуз"
+      }
+    ],
+    "GovernmentMemberIncompatible1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "68-берене, 2-пункт (1995-ж. ред.). Өкмөттүн мүчөлөрү депутат болууга, окутуучулук, илимий же башка чыгармачылык иштен тышкары, башка акы төлөнүүчү кызматтарды ээлөөгө жана ишкердик ишмердүүлүк жүргүзүүгө укуксуз"
+      }
+    ],
+    "GovernmentMemberIncompatible1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "68-берене, 2-пункт (1995-ж. ред.). Өкмөттүн мүчөлөрү депутат болууга, окутуучулук, илимий же башка чыгармачылык иштен тышкары, башка акы төлөнүүчү кызматтарды ээлөөгө жана ишкердик ишмердүүлүк жүргүзүүгө укуксуз"
+      }
+    ],
+    "GovernmentMemberPaidPositionConflict": [
+      {
+        "status": "translation",
+        "text": "67-берене, 2-пункт. Өкмөттүн мүчөсү окутуучулук, илимий жана чыгармачылык ишмердүүлүктөн тышкары, башка акы төлөнүүчү кызматтарды ээлөөгө укуксуз"
+      }
+    ],
+    "GovernmentMemberPaidPositionConflict/unless/0": [
+      {
+        "status": "translation",
+        "text": "67-берене, 2-пункт. Өкмөттүн мүчөсү окутуучулук, илимий жана чыгармачылык ишмердүүлүктөн тышкары, башка акы төлөнүүчү кызматтарды ээлөөгө укуксуз"
+      }
+    ],
+    "GovernmentMemberRepresentativeMandateConflict": [
+      {
+        "status": "translation",
+        "text": "67-берене, 2-пункт. Өкмөттүн мүчөсү өкүлчүлүктүү органдын депутаты болууга укуксуз"
+      }
+    ],
+    "GovernmentOathToPeopleAndPresident1995": [
+      {
+        "status": "translation",
+        "text": "65-берене, 3-пункт (1995-ж. ред.). Өкмөттүн мүчөлөрү элге жана Казакстандын Президентине ант беришет"
+      }
+    ],
+    "GovernmentSetsUnifiedPublicPaySystemWithPresident": [
+      {
+        "status": "translation",
+        "text": "65-берене, 7-пункт. Өкмөт Президент менен макулдашуу боюнча публикалык органдарды каржылоонун жана эмгегине акы төлөөнүн бирдиктүү системасын бекитет"
+      }
+    ],
+    "GovernmentStructureProposalTenDays": [
+      {
+        "status": "translation",
+        "text": "64-берене, 2-пункт. Өкмөттүн түзүмү жана курамы жөнүндө сунуштар Премьер-Министр дайындалгандан кийин он күндүк мөөнөттө Президентке киргизилет"
+      }
+    ],
+    "GovernmentStructureProposalTenDays1995": [
+      {
+        "status": "translation",
+        "text": "65-берене, 2-пункт (1995-ж. ред.). Өкмөттүн түзүмү жана курамы жөнүндө сунуштарды Премьер-Министр дайындалгандан кийин он күндүк мөөнөттө киргизет"
+      }
+    ],
+    "GovernmentSubmitsBudget1995": [
+      {
+        "status": "translation",
+        "text": "66-берене, 2-пунктча (1995-ж. ред.). Өкмөт Парламентке республикалык бюджетти жана анын аткарылышы жөнүндө отчётту берет"
+      }
+    ],
+    "GovernmentSubmitsBudgetAndReport": [
+      {
+        "status": "translation",
+        "text": "65-берене, 2-пункт. Өкмөт республикалык бюджетти жана анын аткарылышы жөнүндө отчётту берет"
+      }
+    ],
+    "Kurultai": [
+      {
+        "status": "translation",
+        "text": "Казакстан Республикасынын Курултайы"
+      }
+    ],
+    "Mazhilis": [
+      {
+        "status": "translation",
+        "text": "Парламенттин Мажилиси (1995-жылдагы редакция)"
+      }
+    ],
+    "MemberAccountableToChambers1995": [
+      {
+        "status": "translation",
+        "text": "64-берене, 3-пункт (1995-ж. ред.). Өкмөттүн мүчөлөрү Конституциянын 57-беренесинин 6) пунктчасында каралган учурда Парламенттин Палаталарына отчёттуу"
+      }
+    ],
+    "MemberPersonallyResponsible1995": [
+      {
+        "status": "translation",
+        "text": "68-берене, 1-пункт (1995-ж. ред.). Өкмөттүн мүчөлөрү чечим кабыл алууда өз алдынча жана Премьер-Министрдин алдында жеке жоопкерчилик тартышат"
+      }
+    ],
+    "NoConfidenceRequiresResignation": [
+      {
+        "status": "translation",
+        "text": "69-берене, 3-пункт. Курултай ишенбестик билдиргенде Өкмөт Президентке отставкасы жөнүндө арыз берет"
+      }
+    ],
+    "NoConfidenceRequiresResignation1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "70-берене, 3-пункт (1995-ж. ред.). Мажилис же Парламент ишенбестик билдиргенде Өкмөт Президентке отставкасы жөнүндө арыз берет"
+      }
+    ],
+    "NoConfidenceRequiresResignation1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "70-берене, 3-пункт (1995-ж. ред.). Мажилис же Парламент ишенбестик билдиргенде Өкмөт Президентке отставкасы жөнүндө арыз берет"
+      }
+    ],
+    "Parliament": [
+      {
+        "status": "translation",
+        "text": "Казакстан Республикасынын Парламенти (1995-жылдагы редакция)"
+      }
+    ],
+    "PeoplesCouncil": [
+      {
+        "status": "translation",
+        "text": "Қазақстан Халық Кеңесі — Казакстандын Эл Кеңеши"
+      }
+    ],
+    "PeoplesCouncilConstitutionalStatus": [
+      {
+        "status": "translation",
+        "text": "70-берене, 1-пункт. Казакстандын Эл Кеңеши — жогорку консультациялык орган"
+      }
+    ],
+    "PeoplesCouncilLegislativeInitiative": [
+      {
+        "status": "translation",
+        "text": "71-берене, 2)-пунктча. Қазақстан Халық Кеңесі Курултайга мыйзам долбоорлорун киргизет"
+      }
+    ],
+    "PeoplesCouncilMembersAreCitizens": [
+      {
+        "status": "translation",
+        "text": "70-берене, 2-пункт. Эл Кеңешинин курамы Казакстандын жарандарынан түзүлөт"
+      }
+    ],
+    "PeoplesCouncilReferendumInitiative": [
+      {
+        "status": "translation",
+        "text": "71-берене, 3)-пунктча. Қазақстан Халық Кеңесі жалпы элдик референдумду дайындоо жөнүндө демилге көтөрөт"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "жеке адам"
+      }
+    ],
+    "PolicyDisagreementRequiresResignation": [
+      {
+        "status": "translation",
+        "text": "67-берене, 1-пункт. Жүргүзүлүп жаткан саясат менен макул болбогон Өкмөттүн мүчөсү отставкага кетет же кызматынан бошотулууга тийиш"
+      }
+    ],
+    "PolicyDisagreementRequiresResignation1995": [
+      {
+        "status": "translation",
+        "text": "68-берене, 1-пункт (1995-ж. ред.). Жүргүзүлүп жаткан саясат менен макул болбогон же аны жүргүзбөгөн Өкмөттүн мүчөсү отставкага кетет же бошотулууга тийиш"
+      }
+    ],
+    "President": [
+      {
+        "status": "translation",
+        "text": "Казакстан Республикасынын Президенти"
+      }
+    ],
+    "PresidentialMemberRelease1995": [
+      {
+        "status": "translation",
+        "text": "70-берене, 7-пункт (1995-ж. ред.). Президент Өкмөттүн каалаган мүчөсүн кызматынан бошотууга укуктуу"
+      }
+    ],
+    "PresidentialOwnInitiativeTermination1995": [
+      {
+        "status": "translation",
+        "text": "70-берене, 7-пункт (1995-ж. ред.). Президент өз демилгеси боюнча Өкмөттүн ыйгарым укуктарын токтотуу жөнүндө чечим кабыл алууга укуктуу"
+      }
+    ],
+    "PrimeMinister": [
+      {
+        "status": "translation",
+        "text": "Казакстан Республикасынын Премьер-Министри"
+      }
+    ],
+    "PrimeMinisterDirectsGovernment": [
+      {
+        "status": "translation",
+        "text": "66-берене. Премьер-Министр Өкмөттүн ишин уюштурат жана ага жетекчилик кылат"
+      }
+    ],
+    "PrimeMinisterDirectsGovernment1995": [
+      {
+        "status": "translation",
+        "text": "67-берене, 1-пунктча (1995-ж. ред.). Премьер-Министр Өкмөттүн ишин уюштурат жана ага жетекчилик кылат, анын иши үчүн жеке жоопкерчилик тартат"
+      }
+    ],
+    "PrimeMinisterOrderBinding1995": [
+      {
+        "status": "translation",
+        "text": "69-берене, 2 жана 3-пункттар (1995-ж. ред.). Премьер-Министрдин буйруктары Республиканын бүткүл аумагында милдеттүү жана Конституцияга жана Президенттин актыларына каршы келбөөгө тийиш"
+      }
+    ],
+    "PrimeMinisterPersonallyResponsible": [
+      {
+        "status": "translation",
+        "text": "66-берене. Премьер-Министр Өкмөттүн иши үчүн жеке жоопкерчилик тартат"
+      }
+    ],
+    "PrimeMinisterReleaseTerminatesGovernment1995": [
+      {
+        "status": "translation",
+        "text": "70-берене, 7-пункт (1995-ж. ред.). Премьер-Министрди кызматынан бошотуу бүткүл Өкмөттүн ыйгарым укуктарынын токтотулушун билдирет"
+      }
+    ],
+    "PrimeMinisterReportsToPresidentAndKurultai": [
+      {
+        "status": "translation",
+        "text": "66-берене. Премьер-Министр Президентке жана Курултайга Өкмөттүн негизги багыттары жана эң маанилүү чечимдери жөнүндө баяндайт"
+      }
+    ],
+    "PrimeMinisterResignationTerminatesWholeGovernment": [
+      {
+        "status": "translation",
+        "text": "69-берене, 5-пункт. Премьер-Министрдин отставкасын кабыл алуу бүткүл Өкмөттүн ыйгарым укуктарынын токтотулушун билдирет"
+      }
+    ],
+    "PrimeMinisterSignsGovernmentResolutions": [
+      {
+        "status": "translation",
+        "text": "66-берене. Премьер-Министр Өкмөттүн токтомдоруна кол коёт"
+      }
+    ],
+    "RelinquishPowersBeforeNewKurultai": [
+      {
+        "status": "translation",
+        "text": "69-берене, 1-пункт. Өкмөт жаңыдан шайланган Курултайдын алдында өз ыйгарым укуктарын тапшырат"
+      }
+    ],
+    "RelinquishPowersBeforeNewMazhilis1995": [
+      {
+        "status": "translation",
+        "text": "70-берене, 1-пункт (1995-ж. ред.). Өкмөт жаңыдан шайланган Парламенттин Мажилисинин алдында өз ыйгарым укуктарын тапшырат"
+      }
+    ],
+    "ResignationDecisionTenDays": [
+      {
+        "status": "translation",
+        "text": "69-берене, 4-пункт. Президент отставканы кабыл алуу же четке кагуу маселесин он күндүк мөөнөттө карайт"
+      }
+    ],
+    "bill_introduced_to_kurultai": [
+      {
+        "status": "translation",
+        "text": "мыйзам долбоору мыйзам чыгаруу демилгеси тартибинде Курултайга киргизилген"
+      }
+    ],
+    "citizen": [
+      {
+        "status": "translation",
+        "text": "адам Казакстан Республикасынын жараны болуп саналат"
+      }
+    ],
+    "commercial_board_membership": [
+      {
+        "status": "translation",
+        "text": "Өкмөттүн мүчөсү коммерциялык уюмдун жетектөөчү органына кирет"
+      }
+    ],
+    "contradicts_constitution_law_or_presidential_act": [
+      {
+        "status": "translation",
+        "text": "акт Конституцияга, мыйзамдарга же Президенттин актыларына каршы келет"
+      }
+    ],
+    "entrepreneurial_activity": [
+      {
+        "status": "translation",
+        "text": "Өкмөттүн мүчөсү ишкердик ишмердүүлүк менен алектенет"
+      }
+    ],
+    "government": [
+      {
+        "status": "translation",
+        "text": "орган Республиканын Өкмөтү болуп саналат"
+      }
+    ],
+    "government_accountable_to_kurultai": [
+      {
+        "status": "translation",
+        "text": "Өкмөт Курултайга отчёттуу"
+      }
+    ],
+    "government_accountable_to_parliament_1995": [
+      {
+        "status": "translation",
+        "text": "Өкмөт Парламенттин алдында жоопкерчиликтүү (1995-жылдагы редакция)"
+      }
+    ],
+    "government_accountable_to_president": [
+      {
+        "status": "translation",
+        "text": "Өкмөт Президенттин алдында жоопкерчиликтүү"
+      }
+    ],
+    "government_accountable_to_president_1995": [
+      {
+        "status": "translation",
+        "text": "Өкмөт Президенттин алдында жоопкерчиликтүү (1995-жылдагы редакция)"
+      }
+    ],
+    "government_act": [
+      {
+        "status": "translation",
+        "text": "акт Өкмөт тарабынан кабыл алынган"
+      }
+    ],
+    "government_act_1995": [
+      {
+        "status": "translation",
+        "text": "акт Өкмөт тарабынан кабыл алынган (1995-жылдагы редакция)"
+      }
+    ],
+    "government_act_binding": [
+      {
+        "status": "translation",
+        "text": "Өкмөттүн актысы Республиканын бүткүл аумагында милдеттүү"
+      }
+    ],
+    "government_act_binding_1995": [
+      {
+        "status": "translation",
+        "text": "Өкмөттүн токтому Республиканын бүткүл аумагында милдеттүү (1995-жылдагы редакция)"
+      }
+    ],
+    "government_develops_foreign_policy_measures": [
+      {
+        "status": "translation",
+        "text": "Өкмөт тышкы саясатты жүргүзүү боюнча чараларды иштеп чыгат"
+      }
+    ],
+    "government_develops_state_policy": [
+      {
+        "status": "translation",
+        "text": "Өкмөт мамлекеттик саясаттын негизги багыттарын иштеп чыгат"
+      }
+    ],
+    "government_directs_executive_bodies": [
+      {
+        "status": "translation",
+        "text": "Өкмөт аткаруу органдарынын ишине жетекчилик кылат"
+      }
+    ],
+    "government_ensures_budget_execution": [
+      {
+        "status": "translation",
+        "text": "Өкмөт республикалык бюджеттин аткарылышын камсыз кылат"
+      }
+    ],
+    "government_exercises_executive_power": [
+      {
+        "status": "translation",
+        "text": "Өкмөт Республиканын аткаруу бийлигин жүзөгө ашырат"
+      }
+    ],
+    "government_formed_by_president": [
+      {
+        "status": "translation",
+        "text": "Өкмөт Республиканын Президенти тарабынан түзүлөт"
+      }
+    ],
+    "government_heads_executive_system": [
+      {
+        "status": "translation",
+        "text": "Өкмөт аткаруу органдарынын системасын жетектейт"
+      }
+    ],
+    "government_introduces_bills_and_executes_laws": [
+      {
+        "status": "translation",
+        "text": "Өкмөт мыйзам долбоорлорун киргизет жана мыйзамдардын аткарылышын камсыз кылат"
+      }
+    ],
+    "government_manages_state_property": [
+      {
+        "status": "translation",
+        "text": "Өкмөт мамлекеттик менчикти башкарат"
+      }
+    ],
+    "government_may_cancel_executive_body_acts": [
+      {
+        "status": "translation",
+        "text": "Өкмөт аткаруу органдарынын актыларынын күчүн жокко чыгарууга укуктуу"
+      }
+    ],
+    "government_membership_incompatible": [
+      {
+        "status": "translation",
+        "text": "Өкмөттүн курамында болуу ээлеген кызмат же ишмердүүлүк менен айкалышпайт"
+      }
+    ],
+    "government_no_confidence": [
+      {
+        "status": "translation",
+        "text": "Курултай Өкмөткө ишенбестик билдирди"
+      }
+    ],
+    "government_oath_to_people_and_president_1995": [
+      {
+        "status": "translation",
+        "text": "Өкмөттүн мүчөсү элге жана Президентке ант берүүгө милдеттүү (1995-жылдагы редакция)"
+      }
+    ],
+    "government_policy_disagreement": [
+      {
+        "status": "translation",
+        "text": "Өкмөттүн мүчөсү Өкмөт жүргүзүп жаткан саясат менен макул эмес"
+      }
+    ],
+    "government_powers_relinquished": [
+      {
+        "status": "translation",
+        "text": "Өкмөт жаңыдан шайланган Курултайдын алдында ыйгарым укуктарын тапшырат"
+      }
+    ],
+    "government_powers_terminated": [
+      {
+        "status": "translation",
+        "text": "Өкмөттүн ыйгарым укуктары токтотулган"
+      }
+    ],
+    "government_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "Өкмөттүн ыйгарым укуктары токтотулган (1995-жылдагы редакция)"
+      }
+    ],
+    "government_proposal_date": [
+      {
+        "status": "translation",
+        "text": "Өкмөттүн түзүмү жана курамы жөнүндө сунуш киргизилген күн"
+      }
+    ],
+    "government_proposal_deadline_days": [
+      {
+        "status": "translation",
+        "text": "Өкмөттүн түзүмү жана курамы жөнүндө сунушту киргизүү мөөнөтү — он күн"
+      }
+    ],
+    "government_proposal_timely": [
+      {
+        "status": "translation",
+        "text": "Өкмөттүн түзүмү жана курамы жөнүндө сунуш мөөнөтүндө киргизилген"
+      }
+    ],
+    "government_sets_unified_public_pay_system_with_president": [
+      {
+        "status": "translation",
+        "text": "Өкмөт Президент менен макулдашуу боюнча мамлекеттик органдарда эмгекке акы төлөөнүн бирдиктүү системасын бекитет"
+      }
+    ],
+    "government_structure_proposal": [
+      {
+        "status": "translation",
+        "text": "Премьер-Министр Өкмөттүн түзүмү жана курамы жөнүндө сунуш киргизди"
+      }
+    ],
+    "government_submits_budget_and_report": [
+      {
+        "status": "translation",
+        "text": "Өкмөт республикалык бюджетти жана анын аткарылышы жөнүндө отчётту берет"
+      }
+    ],
+    "mazhilis_no_confidence": [
+      {
+        "status": "translation",
+        "text": "Мажилис Өкмөткө ишенбестик билдирди (1995-жылдагы редакция)"
+      }
+    ],
+    "member_accountable_to_chambers_1995": [
+      {
+        "status": "translation",
+        "text": "Өкмөттүн мүчөлөрү Парламенттин Палаталарына отчёттуу (1995-жылдагы редакция)"
+      }
+    ],
+    "member_decides_within_competence": [
+      {
+        "status": "translation",
+        "text": "Өкмөттүн мүчөсү өз компетенциясынын чегинде чечим кабыл алат"
+      }
+    ],
+    "member_of_government": [
+      {
+        "status": "translation",
+        "text": "адам Өкмөттүн курамына кирет"
+      }
+    ],
+    "member_personally_responsible_1995": [
+      {
+        "status": "translation",
+        "text": "Өкмөттүн мүчөсү баш ийген органдардын ишмердүүлүгү үчүн жеке жоопкерчилик тартат (1995-жылдагы редакция)"
+      }
+    ],
+    "member_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "Өкмөттүн мүчөсүнүн ыйгарым укуктары токтотулган (1995-жылдагы редакция)"
+      }
+    ],
+    "member_resignation_submitted": [
+      {
+        "status": "translation",
+        "text": "Өкмөттүн мүчөсү отставка жөнүндө арыз берүүгө милдеттүү"
+      }
+    ],
+    "minister_report_obligation_triggered": [
+      {
+        "status": "translation",
+        "text": "Өкмөттүн мүчөсүнүн Парламенттин Палатасынын алдында отчёт берүүсү үчүн негиз келип чыкты (1995-жылдагы редакция)"
+      }
+    ],
+    "new_kurultai_elected": [
+      {
+        "status": "translation",
+        "text": "Курултайдын жаңы курамы шайланды"
+      }
+    ],
+    "new_mazhilis_elected": [
+      {
+        "status": "translation",
+        "text": "Мажилистин жаңы курамы шайланды (1995-жылдагы редакция)"
+      }
+    ],
+    "no_confidence_resignation_declared": [
+      {
+        "status": "translation",
+        "text": "ишенбестик билдирилгенде Өкмөт отставка жөнүндө арыз берүүгө милдеттүү"
+      }
+    ],
+    "oath_taken_by_member": [
+      {
+        "status": "translation",
+        "text": "Өкмөттүн мүчөсү ант берди"
+      }
+    ],
+    "official_duty_exception": [
+      {
+        "status": "translation",
+        "text": "коммерциялык уюмдун органына катышуу кызматтык милдеттерге кирет"
+      }
+    ],
+    "paid_external_position": [
+      {
+        "status": "translation",
+        "text": "Өкмөттүн мүчөсү башка акы төлөнүүчү кызматты ээлейт"
+      }
+    ],
+    "parliament_no_confidence": [
+      {
+        "status": "translation",
+        "text": "Парламент Өкмөткө ишенбестик билдирди (1995-жылдагы редакция)"
+      }
+    ],
+    "peoples_council": [
+      {
+        "status": "translation",
+        "text": "орган Қазақстан Халық Кеңесі болуп саналат"
+      }
+    ],
+    "peoples_council_bill": [
+      {
+        "status": "translation",
+        "text": "Эл Кеңеши мыйзам долбоорун киргизди"
+      }
+    ],
+    "peoples_council_highest_consultative_body": [
+      {
+        "status": "translation",
+        "text": "Эл Кеңеши жогорку консультативдик-кеңеш берүүчү орган болуп саналат"
+      }
+    ],
+    "peoples_council_member": [
+      {
+        "status": "translation",
+        "text": "адам Эл Кеңешинин курамына кирет"
+      }
+    ],
+    "peoples_council_membership_constitutionally_valid": [
+      {
+        "status": "translation",
+        "text": "Эл Кеңешинин курамында болуу конституциялык талаптарга жооп берет"
+      }
+    ],
+    "peoples_council_referendum_initiative": [
+      {
+        "status": "translation",
+        "text": "Эл Кеңеши референдум өткөрүү жөнүндө демилге көтөрдү"
+      }
+    ],
+    "permitted_teaching_science_or_creative_work": [
+      {
+        "status": "translation",
+        "text": "иш уруксат берилген окутуучулук, илимий же башка чыгармачылык ишмердүүлүккө кирет"
+      }
+    ],
+    "president": [
+      {
+        "status": "translation",
+        "text": "адам Республиканын Президенти болуп саналат"
+      }
+    ],
+    "presidential_member_release": [
+      {
+        "status": "translation",
+        "text": "Президент Өкмөттүн мүчөсүн кызматынан бошотту (1995-жылдагы редакция)"
+      }
+    ],
+    "presidential_own_initiative_termination": [
+      {
+        "status": "translation",
+        "text": "Президент өз демилгеси боюнча Өкмөттүн ыйгарым укуктарын токтотту (1995-жылдагы редакция)"
+      }
+    ],
+    "presidential_resignation_decision": [
+      {
+        "status": "translation",
+        "text": "Президент арызданган отставка боюнча чечим кабыл алган күн"
+      }
+    ],
+    "prime_minister": [
+      {
+        "status": "translation",
+        "text": "адам Премьер-Министр болуп саналат"
+      }
+    ],
+    "prime_minister_appointment_date": [
+      {
+        "status": "translation",
+        "text": "Премьер-Министр дайындалган күн"
+      }
+    ],
+    "prime_minister_directs_government": [
+      {
+        "status": "translation",
+        "text": "Премьер-Министр Өкмөттүн ишин уюштурат жана ага жетекчилик кылат"
+      }
+    ],
+    "prime_minister_order": [
+      {
+        "status": "translation",
+        "text": "акт Премьер-Министрдин буйругу болуп саналат"
+      }
+    ],
+    "prime_minister_order_binding_1995": [
+      {
+        "status": "translation",
+        "text": "Премьер-Министрдин буйругу Республиканын бүткүл аумагында милдеттүү (1995-жылдагы редакция)"
+      }
+    ],
+    "prime_minister_personally_responsible": [
+      {
+        "status": "translation",
+        "text": "Премьер-Министр Өкмөттүн ишмердүүлүгү үчүн жеке жоопкерчилик тартат"
+      }
+    ],
+    "prime_minister_released": [
+      {
+        "status": "translation",
+        "text": "Премьер-Министр кызматынан бошотулган (1995-жылдагы редакция)"
+      }
+    ],
+    "prime_minister_reports_to_president_and_kurultai": [
+      {
+        "status": "translation",
+        "text": "Премьер-Министр Президентке жана Курултайга Өкмөттүн ишинин негизги багыттары жөнүндө баяндайт"
+      }
+    ],
+    "prime_minister_resignation_accepted": [
+      {
+        "status": "translation",
+        "text": "Премьер-Министрдин отставкасы кабыл алынды"
+      }
+    ],
+    "prime_minister_signs_government_resolutions": [
+      {
+        "status": "translation",
+        "text": "Премьер-Министр Өкмөттүн токтомдоруна кол коёт"
+      }
+    ],
+    "referendum_initiative_valid": [
+      {
+        "status": "translation",
+        "text": "референдум жөнүндө демилге ыйгарым укуктуу субъект тарабынан көтөрүлгөн"
+      }
+    ],
+    "representative_body_deputy": [
+      {
+        "status": "translation",
+        "text": "Өкмөттүн мүчөсү өкүлчүлүктүү органдын депутаты болуп саналат"
+      }
+    ],
+    "resignation_accepted": [
+      {
+        "status": "translation",
+        "text": "Өкмөттүн отставкасы Президент тарабынан кабыл алынган"
+      }
+    ],
+    "resignation_decision_deadline_days": [
+      {
+        "status": "translation",
+        "text": "арызданган отставка боюнча чечим кабыл алуу мөөнөтү — он күн"
+      }
+    ],
+    "resignation_decision_timely": [
+      {
+        "status": "translation",
+        "text": "отставка боюнча чечим белгиленген мөөнөттө кабыл алынган"
+      }
+    ],
+    "voluntary_resignation_declared": [
+      {
+        "status": "translation",
+        "text": "Өкмөт өз чечими боюнча отставка жөнүндө арыз берген күн"
+      }
+    ],
+    "within_government_competence": [
+      {
+        "status": "translation",
+        "text": "акт Өкмөттүн компетенциясынын чегинде кабыл алынган"
+      }
+    ]
+  },
+  "language": "ky",
+  "package": "kz.constitution.government"
+}

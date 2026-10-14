@@ -1,0 +1,1262 @@
+{
+  "$comment": "English display overlay for the labels (§218) of this package of the Constitution of the Republic of Kazakhstan (DECISION-0070). The file is not compiled into the CLIR and is read only by the presentation layer (verbalize --labels, the MCP resource law://<package>/verbalized/en, the workbench). The translation is a working one made by the formaliser from the Russian labels of the package, checked against the authentic Russian and Kazakh texts of the Constitution; it is not an official publication, hence the status \"translation\" for every entry. Spelling is British. A key is the local name of the declaration (the part of the node id after \"#\").",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "ActingPresidentCannotInitiateAmendment1995": [
+      {
+        "status": "translation",
+        "text": "Article 48, paragraph 2 (1995 version). A person who has assumed the powers of the President may not initiate amendments and additions to the Constitution"
+      }
+    ],
+    "AdoptEmergencyMeasure1995": [
+      {
+        "status": "translation",
+        "text": "Article 44, sub-paragraph 16 (1995 version). The President introduces a state of emergency after official consultations with the Prime Minister and the Chairs of the Chambers, informing Parliament without delay"
+      }
+    ],
+    "AdoptMartialMeasure1995": [
+      {
+        "status": "translation",
+        "text": "Article 44, sub-paragraph 17 (1995 version). In the event of aggression or an immediate external threat, the President introduces martial law and informs Parliament without delay"
+      }
+    ],
+    "AppointWithMazhilisConsent1995": [
+      {
+        "status": "translation",
+        "text": "Article 44, sub-paragraph 3 (1995 version). With the consent of the Mazhilis, the President appoints the Prime Minister"
+      }
+    ],
+    "AppointWithSenateConsent1995": [
+      {
+        "status": "translation",
+        "text": "Article 44, sub-paragraph 4 (1995 version). With the consent of the Senate are appointed the Chair of the Constitutional Court, the Chair of the National Bank, the Chair of the Supreme Judicial Council, the Prosecutor General and the Chair of the National Security Committee"
+      }
+    ],
+    "Appointment": [
+      {
+        "status": "translation",
+        "text": "appointment made by the President"
+      }
+    ],
+    "CallReferendum1995": [
+      {
+        "status": "translation",
+        "text": "Article 44, sub-paragraph 10 (1995 version). The President takes a decision to hold a republican referendum"
+      }
+    ],
+    "Candidate": [
+      {
+        "status": "translation",
+        "text": "candidate for President"
+      }
+    ],
+    "ConstitutionalPetition": [
+      {
+        "status": "translation",
+        "text": "application to the Constitutional Court"
+      }
+    ],
+    "ConstitutionalReviewPetitionPower1995": [
+      {
+        "status": "translation",
+        "text": "Article 44, sub-paragraph 10-1 (1995 version). The President applies to the Constitutional Court to review an act that has come into force for conformity with the Constitution"
+      }
+    ],
+    "CountersignatureResponsibility1995": [
+      {
+        "status": "translation",
+        "text": "Article 45, paragraph 3 (1995 version). The Chair of a Chamber or the Prime Minister who countersigns the act bears legal responsibility for its lawfulness"
+      }
+    ],
+    "ElectedByAbsoluteMajority1995": [
+      {
+        "status": "translation",
+        "text": "Article 41, paragraph 5 (1995 version). The candidate obtaining more than fifty per cent of the votes of those taking part in the voting is deemed elected"
+      }
+    ],
+    "ElectedInRunoff1995": [
+      {
+        "status": "translation",
+        "text": "Article 41, paragraph 5 (1995 version). In a second ballot the candidate obtaining the greater number of votes is deemed elected"
+      }
+    ],
+    "Election": [
+      {
+        "status": "translation",
+        "text": "election of the President"
+      }
+    ],
+    "EmergencyMeasure": [
+      {
+        "status": "translation",
+        "text": "measure of a state of emergency or of martial law"
+      }
+    ],
+    "EmergencyPower1995": [
+      {
+        "status": "translation",
+        "text": "Article 44, sub-paragraph 16 (1995 version). The President introduces a state of emergency after official consultations with the Prime Minister and the Chairs of the Chambers, informing Parliament without delay"
+      }
+    ],
+    "FormerPresidentInviolabilityImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Article 46, paragraph 3 (1995 version). The provisions on inviolability extend to the ex-Presidents of the Republic"
+      }
+    ],
+    "FormerPresidentStateProvisionDuty1995": [
+      {
+        "status": "translation",
+        "text": "Article 46, paragraphs 2 and 3 (1995 version). The provision, servicing and protection of the President and his family are at the expense of the state; the provisions of the article extend to the ex-Presidents"
+      }
+    ],
+    "FormerPresidentTitle1995": [
+      {
+        "status": "translation",
+        "text": "Article 42, paragraph 3 (1995 version). All former Presidents, apart from those removed from office, hold the title of ex-President"
+      }
+    ],
+    "FormerPresidentialInviolability1995": [
+      {
+        "status": "translation",
+        "text": "Article 46, paragraph 3 (1995 version). The provisions on inviolability extend to the ex-Presidents of the Republic"
+      }
+    ],
+    "Impeachment": [
+      {
+        "status": "translation",
+        "text": "proceedings for the removal of the President from office or for his release on grounds of health"
+      }
+    ],
+    "ImpeachmentBarredDuringDissolution1995": [
+      {
+        "status": "translation",
+        "text": "Article 47, paragraph 3 (1995 version). The question of removal from office may not be raised while the President is considering the question of the early termination of the powers of Parliament or of the Mazhilis"
+      }
+    ],
+    "ImpeachmentChargeBroughtByMazhilisMajority1995": [
+      {
+        "status": "translation",
+        "text": "Article 47, paragraph 2 (1995 version). The decision to bring the charge is taken by a majority of the total number of the deputies of the Mazhilis"
+      }
+    ],
+    "ImpeachmentInitiativeThreshold1995": [
+      {
+        "status": "translation",
+        "text": "Article 47, paragraph 2 (1995 version). The decision to bring the charge is taken on the initiative of not less than one-third of the deputies of the Mazhilis"
+      }
+    ],
+    "ImpeachmentInvestigationValid1995": [
+      {
+        "status": "translation",
+        "text": "Article 47, paragraph 2 (1995 version). The investigation of the charge is organised by the Senate, and its results are transmitted by a majority of the votes of the total number of its deputies"
+      }
+    ],
+    "Law": [
+      {
+        "status": "translation",
+        "text": "statute submitted to the President"
+      }
+    ],
+    "LawReturnPower1995": [
+      {
+        "status": "translation",
+        "text": "Article 44, sub-paragraph 2 (1995 version). The President returns a statute, or particular articles of it, for reconsideration and a further vote"
+      }
+    ],
+    "LawSigningPower1995": [
+      {
+        "status": "translation",
+        "text": "Article 44, sub-paragraph 2 (1995 version). The President signs a statute submitted by Parliament within one month"
+      }
+    ],
+    "MartialPower1995": [
+      {
+        "status": "translation",
+        "text": "Article 44, sub-paragraph 17 (1995 version). In the event of aggression or an immediate external threat, the President introduces martial law and informs Parliament without delay"
+      }
+    ],
+    "Mazhilis": [
+      {
+        "status": "translation",
+        "text": "Mazhilis of Parliament"
+      }
+    ],
+    "MazhilisChairAssumesPowers1995": [
+      {
+        "status": "translation",
+        "text": "Article 48, paragraph 1 (1995 version). Where the Chair of the Senate is unable to act, the powers pass to the Chair of the Mazhilis"
+      }
+    ],
+    "MazhilisConsentAppointmentPower1995": [
+      {
+        "status": "translation",
+        "text": "Article 44, sub-paragraph 3 (1995 version). With the consent of the Mazhilis, the President appoints the Prime Minister"
+      }
+    ],
+    "Parliament": [
+      {
+        "status": "translation",
+        "text": "Parliament of the Republic of Kazakhstan"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "natural person"
+      }
+    ],
+    "PetitionConstitutionalCourt1995": [
+      {
+        "status": "translation",
+        "text": "Article 44, sub-paragraph 10-1 (1995 version). The President applies to the Constitutional Court to review an act that has come into force for conformity with the Constitution"
+      }
+    ],
+    "President": [
+      {
+        "status": "translation",
+        "text": "President of the Republic of Kazakhstan (1995 version)"
+      }
+    ],
+    "PresidentAssumesOfficeOnOath1995": [
+      {
+        "status": "translation",
+        "text": "Article 42, paragraph 1 (1995 version). The President takes office from the moment he takes the oath to the people"
+      }
+    ],
+    "PresidentReleasedForIncapacity1995": [
+      {
+        "status": "translation",
+        "text": "Article 47, paragraph 1 (1995 version). The decision on early release from office on grounds of illness is taken by a majority of not less than three-quarters of the total number of the deputies of each of the Chambers"
+      }
+    ],
+    "PresidentRemovedByImpeachment1995": [
+      {
+        "status": "translation",
+        "text": "Article 47, paragraph 2 (1995 version). The final decision is taken by a majority of not less than three-quarters of the votes of the deputies of each of the Chambers, given the conclusions of the Supreme Court and of the Constitutional Court"
+      }
+    ],
+    "PresidentialAct": [
+      {
+        "status": "translation",
+        "text": "act of the President"
+      }
+    ],
+    "PresidentialActBinding1995": [
+      {
+        "status": "translation",
+        "text": "Article 45, paragraph 1 (1995 version). On the basis of and in pursuance of the Constitution and the statutes, the President issues decrees and orders that are binding throughout the territory of the Republic"
+      }
+    ],
+    "PresidentialCandidateEligibility1995": [
+      {
+        "status": "translation",
+        "text": "Article 41, paragraph 2 (1995 version). A citizen by birth of not less than forty years of age, having a command of the state language, having resided in Kazakhstan for fifteen years and holding higher education may be elected President"
+      }
+    ],
+    "PresidentialInviolability1995": [
+      {
+        "status": "translation",
+        "text": "Article 46, paragraph 1 (1995 version). The President, his honour and dignity are inviolable"
+      }
+    ],
+    "PresidentialInviolabilityImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Article 46, paragraph 1 (1995 version). The President, his honour and dignity are inviolable"
+      }
+    ],
+    "PresidentialOfficeIncompatible1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "Article 43, paragraphs 1 and 3 (1995 version). The President may not be a deputy, hold other paid positions, engage in entrepreneurial activity or be a member of a political party"
+      }
+    ],
+    "PresidentialOfficeIncompatible1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "Article 43, paragraphs 1 and 3 (1995 version). The President may not be a deputy, hold other paid positions, engage in entrepreneurial activity or be a member of a political party"
+      }
+    ],
+    "PresidentialOfficeIncompatible1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "Article 43, paragraphs 1 and 3 (1995 version). The President may not be a deputy, hold other paid positions, engage in entrepreneurial activity or be a member of a political party"
+      }
+    ],
+    "PresidentialOfficeIncompatible1995/alt/4": [
+      {
+        "status": "translation",
+        "text": "Article 43, paragraphs 1 and 3 (1995 version). The President may not be a deputy, hold other paid positions, engage in entrepreneurial activity or be a member of a political party"
+      }
+    ],
+    "PresidentialPowersTerminated1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "Article 42, paragraph 3 (1995 version). The powers terminate when the newly elected President takes office, and upon early release from office, removal from office or death"
+      }
+    ],
+    "PresidentialPowersTerminated1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "Article 42, paragraph 3 (1995 version). The powers terminate when the newly elected President takes office, and upon early release from office, removal from office or death"
+      }
+    ],
+    "PresidentialPowersTerminated1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "Article 42, paragraph 3 (1995 version). The powers terminate when the newly elected President takes office, and upon early release from office, removal from office or death"
+      }
+    ],
+    "PresidentialRelativePositionProhibited1995": [
+      {
+        "status": "translation",
+        "text": "Article 43, paragraph 4 (1995 version). Close relatives of the President may not hold positions of political civil servants or of heads of the quasi-state sector"
+      }
+    ],
+    "PrimeMinisterAssumesPowers1995": [
+      {
+        "status": "translation",
+        "text": "Article 48, paragraph 1 (1995 version). Where the Chair of the Mazhilis is unable to act, the powers pass to the Prime Minister of the Republic"
+      }
+    ],
+    "PrimeMinisterNomineeAfterFractionConsultations1995": [
+      {
+        "status": "translation",
+        "text": "Article 44, sub-paragraph 3) (1995 version). The candidature for Prime Minister is submitted to the Mazhilis after consultations with the factions of the political parties"
+      }
+    ],
+    "ProvideStateFundedProtection1995": [
+      {
+        "status": "translation",
+        "text": "Article 46, paragraphs 2 and 3 (1995 version). The provision, servicing and protection of the President and his family are at the expense of the state; the provisions of the article extend to the ex-Presidents"
+      }
+    ],
+    "Referendum": [
+      {
+        "status": "translation",
+        "text": "republican referendum"
+      }
+    ],
+    "ReferendumPower1995": [
+      {
+        "status": "translation",
+        "text": "Article 44, sub-paragraph 10 (1995 version). The President takes a decision to hold a republican referendum"
+      }
+    ],
+    "RegularElectionDateAdmissible1995": [
+      {
+        "status": "translation",
+        "text": "Article 41, paragraph 3 (1995 version). Regular elections are held on the first Sunday of December and may not coincide in time with the elections of a new composition of Parliament"
+      }
+    ],
+    "RejectedChargeTerminatesInitiators1995": [
+      {
+        "status": "translation",
+        "text": "Article 47, paragraph 2 (1995 version). The rejection of the charge at any stage entails the early termination of the powers of the deputies of the Mazhilis who initiated it"
+      }
+    ],
+    "RepeatedElectionProhibited1995": [
+      {
+        "status": "translation",
+        "text": "Article 42, paragraph 5 (1995 version). One and the same person may not be elected President more than once"
+      }
+    ],
+    "ReturnLawForReconsideration1995": [
+      {
+        "status": "translation",
+        "text": "Article 44, sub-paragraph 2 (1995 version). The President returns a statute, or particular articles of it, for reconsideration and a further vote"
+      }
+    ],
+    "RunoffRequired1995": [
+      {
+        "status": "translation",
+        "text": "Article 41, paragraph 5 (1995 version). If no candidate has obtained the required number of votes, a second ballot is held"
+      }
+    ],
+    "Senate": [
+      {
+        "status": "translation",
+        "text": "Senate of Parliament"
+      }
+    ],
+    "SenateChairAssumesPowers1995": [
+      {
+        "status": "translation",
+        "text": "Article 48, paragraph 1 (1995 version). The powers of the President pass for the remainder of the term to the Chair of the Senate of Parliament"
+      }
+    ],
+    "SenateConsentAppointmentPower1995": [
+      {
+        "status": "translation",
+        "text": "Article 44, sub-paragraph 4 (1995 version). With the consent of the Senate are appointed the Chair of the Constitutional Court, the Chair of the National Bank, the Chair of the Supreme Judicial Council, the Prosecutor General and the Chair of the National Security Committee"
+      }
+    ],
+    "SignPresentedLaw1995": [
+      {
+        "status": "translation",
+        "text": "Article 44, sub-paragraph 2 (1995 version). The President signs a statute submitted by Parliament within one month"
+      }
+    ],
+    "StateAuthority": [
+      {
+        "status": "translation",
+        "text": "state body or official"
+      }
+    ],
+    "SuccessionEvent": [
+      {
+        "status": "translation",
+        "text": "case of the transfer of the powers of the President"
+      }
+    ],
+    "SuccessionOathTimely1995": [
+      {
+        "status": "translation",
+        "text": "Article 42, paragraph 2 (1995 version). The person assuming the powers of the President takes the oath within one month"
+      }
+    ],
+    "act_countersigned_by_pm_or_chamber_chair": [
+      {
+        "status": "translation",
+        "text": "the act is countersigned by the Prime Minister or by the Chair of a Chamber of Parliament"
+      }
+    ],
+    "act_initiated_by_government": [
+      {
+        "status": "translation",
+        "text": "the act was issued on the initiative of the Government"
+      }
+    ],
+    "acting_president": [
+      {
+        "status": "translation",
+        "text": "the person is acting President"
+      }
+    ],
+    "acting_president_amendment_initiative_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "the acting President is prohibited from initiating an amendment of the Constitution"
+      }
+    ],
+    "age_years": [
+      {
+        "status": "translation",
+        "text": "the age of the person in completed years"
+      }
+    ],
+    "aggression_or_immediate_external_threat": [
+      {
+        "status": "translation",
+        "text": "there is aggression against the Republic or an immediate external threat"
+      }
+    ],
+    "appointment_effective_1995": [
+      {
+        "status": "translation",
+        "text": "the appointment has taken effect"
+      }
+    ],
+    "appointment_requires_mazhilis_consent": [
+      {
+        "status": "translation",
+        "text": "the appointment is made with the consent of the Mazhilis"
+      }
+    ],
+    "appointment_requires_senate_consent": [
+      {
+        "status": "translation",
+        "text": "the appointment is made with the consent of the Senate"
+      }
+    ],
+    "assumes_presidential_powers_1995": [
+      {
+        "status": "translation",
+        "text": "the person assumes the powers of the President"
+      }
+    ],
+    "candidate_person": [
+      {
+        "status": "translation",
+        "text": "the candidate is this person"
+      }
+    ],
+    "charge_rejected": [
+      {
+        "status": "translation",
+        "text": "the charge has been rejected"
+      }
+    ],
+    "citizen_by_birth": [
+      {
+        "status": "translation",
+        "text": "the person is a citizen of the Republic by birth"
+      }
+    ],
+    "close_relative_of_president": [
+      {
+        "status": "translation",
+        "text": "the person is a close relative of the President"
+      }
+    ],
+    "coincides_with_parliament_election": [
+      {
+        "status": "translation",
+        "text": "the election of the President coincides in time with the elections of a new composition of Parliament"
+      }
+    ],
+    "constitutional_amendment_initiative_attempt": [
+      {
+        "status": "translation",
+        "text": "the acting President initiates an amendment of the Constitution"
+      }
+    ],
+    "constitutional_court_procedure_confirmed": [
+      {
+        "status": "translation",
+        "text": "the Constitutional Court has confirmed that the constitutional procedures laid down have been observed"
+      }
+    ],
+    "constitutional_organs_functioning_disrupted": [
+      {
+        "status": "translation",
+        "text": "the normal functioning of the constitutional organs has been disrupted"
+      }
+    ],
+    "constitutional_petition": [
+      {
+        "status": "translation",
+        "text": "the application has been sent to the Constitutional Court"
+      }
+    ],
+    "constitutional_review_petition_attempt": [
+      {
+        "status": "translation",
+        "text": "the President applies to the Constitutional Court"
+      }
+    ],
+    "constitutional_review_requested_1995": [
+      {
+        "status": "translation",
+        "text": "constitutional review has been lawfully initiated"
+      }
+    ],
+    "countersignatory_bears_legal_responsibility_1995": [
+      {
+        "status": "translation",
+        "text": "the person countersigning the act bears legal responsibility for its lawfulness"
+      }
+    ],
+    "early_release_or_removal": [
+      {
+        "status": "translation",
+        "text": "the President has been released from office early or removed from office"
+      }
+    ],
+    "elected_president_1995": [
+      {
+        "status": "translation",
+        "text": "the person is deemed elected President"
+      }
+    ],
+    "election_majority_percent_1995": [
+      {
+        "status": "translation",
+        "text": "the threshold for the election of the President is more than fifty per cent of the votes"
+      }
+    ],
+    "eligible_presidential_candidate_1995": [
+      {
+        "status": "translation",
+        "text": "the person meets the requirements for a candidate for President"
+      }
+    ],
+    "emergency_consultations_with_pm_and_chairs_completed": [
+      {
+        "status": "translation",
+        "text": "consultations with the Prime Minister and the Chairs of the Chambers of Parliament have been held"
+      }
+    ],
+    "emergency_measure": [
+      {
+        "status": "translation",
+        "text": "the measure is a measure of a state of emergency"
+      }
+    ],
+    "emergency_measure_attempt": [
+      {
+        "status": "translation",
+        "text": "the President introduces measures of a state of emergency"
+      }
+    ],
+    "emergency_measure_in_force_1995": [
+      {
+        "status": "translation",
+        "text": "the measures of a state of emergency have been lawfully introduced"
+      }
+    ],
+    "final_decision_within_two_months": [
+      {
+        "status": "translation",
+        "text": "the final decision was taken within the two-month time limit"
+      }
+    ],
+    "fluent_in_state_language": [
+      {
+        "status": "translation",
+        "text": "the person has a fluent command of the state language"
+      }
+    ],
+    "former_president": [
+      {
+        "status": "translation",
+        "text": "the person is a former President of the Republic"
+      }
+    ],
+    "former_president_title_held_1995": [
+      {
+        "status": "translation",
+        "text": "the former President retains the title of President of the Republic"
+      }
+    ],
+    "fraction_consultations_completed": [
+      {
+        "status": "translation",
+        "text": "consultations with the factions of the political parties have been held"
+      }
+    ],
+    "higher_education": [
+      {
+        "status": "translation",
+        "text": "the person holds higher education"
+      }
+    ],
+    "highest_vote_in_runoff": [
+      {
+        "status": "translation",
+        "text": "the candidate obtained the greater number of votes in the second ballot"
+      }
+    ],
+    "impeachment_case": [
+      {
+        "status": "translation",
+        "text": "the proceedings are proceedings for the removal of the President from office"
+      }
+    ],
+    "impeachment_charge_brought_1995": [
+      {
+        "status": "translation",
+        "text": "the decision to bring the charge was taken by a majority of the total number of the deputies of the Mazhilis"
+      }
+    ],
+    "impeachment_deadline_months_1995": [
+      {
+        "status": "translation",
+        "text": "the time limit for taking the final decision on removal from office is two months"
+      }
+    ],
+    "impeachment_final_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "the denominator of the threshold for removal from office is three-quarters"
+      }
+    ],
+    "impeachment_final_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "the numerator of the threshold for removal from office is three-quarters"
+      }
+    ],
+    "impeachment_initiative_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "the denominator of the threshold for initiating removal from office is one third"
+      }
+    ],
+    "impeachment_initiative_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "the numerator of the threshold for initiating removal from office is one third"
+      }
+    ],
+    "impeachment_initiative_valid_1995": [
+      {
+        "status": "translation",
+        "text": "the initiative for removal from office has been brought by the required number of deputies"
+      }
+    ],
+    "impeachment_investigation_valid_1995": [
+      {
+        "status": "translation",
+        "text": "the investigation of the charge has been lawfully entrusted"
+      }
+    ],
+    "impeachment_may_not_be_initiated_1995": [
+      {
+        "status": "translation",
+        "text": "the question of the removal of the President from office may not be raised"
+      }
+    ],
+    "incapacity_case": [
+      {
+        "status": "translation",
+        "text": "the proceedings are proceedings for the release of the President on grounds of health"
+      }
+    ],
+    "incapacity_release_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "the denominator of the threshold for release on grounds of health is three-quarters"
+      }
+    ],
+    "incapacity_release_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "the numerator of the threshold for release on grounds of health is three-quarters"
+      }
+    ],
+    "initiating_mazhilis_deputies_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "the powers of the deputies of the Mazhilis who initiated the charge are terminated"
+      }
+    ],
+    "law_presented": [
+      {
+        "status": "translation",
+        "text": "the statute has been submitted to the President for signature"
+      }
+    ],
+    "law_returned_for_reconsideration_1995": [
+      {
+        "status": "translation",
+        "text": "the statute has been returned for reconsideration and a further vote"
+      }
+    ],
+    "law_signature_months_1995": [
+      {
+        "status": "translation",
+        "text": "the time limit for signing a statute submitted is one month"
+      }
+    ],
+    "law_signed_1995": [
+      {
+        "status": "translation",
+        "text": "the statute has been signed by the President"
+      }
+    ],
+    "martial_measure_attempt": [
+      {
+        "status": "translation",
+        "text": "the President introduces martial law"
+      }
+    ],
+    "martial_measure_in_force_1995": [
+      {
+        "status": "translation",
+        "text": "martial law has been lawfully introduced"
+      }
+    ],
+    "mazhilis_accusation_votes": [
+      {
+        "status": "translation",
+        "text": "the number of votes of the Mazhilis cast for bringing the charge"
+      }
+    ],
+    "mazhilis_chair": [
+      {
+        "status": "translation",
+        "text": "the person is the Chair of the Mazhilis"
+      }
+    ],
+    "mazhilis_chair_unable": [
+      {
+        "status": "translation",
+        "text": "the Chair of the Mazhilis cannot assume the powers of the President"
+      }
+    ],
+    "mazhilis_consent_given": [
+      {
+        "status": "translation",
+        "text": "the Mazhilis has consented to the appointment"
+      }
+    ],
+    "mazhilis_final_votes": [
+      {
+        "status": "translation",
+        "text": "the number of votes of the Mazhilis on the final decision"
+      }
+    ],
+    "mazhilis_initiating_votes": [
+      {
+        "status": "translation",
+        "text": "the number of deputies of the Mazhilis who initiated the removal from office"
+      }
+    ],
+    "mazhilis_release_votes": [
+      {
+        "status": "translation",
+        "text": "the number of votes of the Mazhilis cast for release on grounds of health"
+      }
+    ],
+    "mazhilis_total_deputies": [
+      {
+        "status": "translation",
+        "text": "the total number of the deputies of the Mazhilis"
+      }
+    ],
+    "medical_commission_conclusion": [
+      {
+        "status": "translation",
+        "text": "there is a conclusion of a medical commission"
+      }
+    ],
+    "new_president_assumed_office": [
+      {
+        "status": "translation",
+        "text": "the new President has taken office"
+      }
+    ],
+    "no_candidate_reached_majority": [
+      {
+        "status": "translation",
+        "text": "no candidate obtained more than half of the votes"
+      }
+    ],
+    "oath_taken": [
+      {
+        "status": "translation",
+        "text": "the person has taken the oath to the people of Kazakhstan"
+      }
+    ],
+    "parliament_dissolution_under_consideration": [
+      {
+        "status": "translation",
+        "text": "the question of the dissolution of Parliament or of the Mazhilis is under consideration"
+      }
+    ],
+    "parliament_immediately_informed": [
+      {
+        "status": "translation",
+        "text": "Parliament has been informed of the measures taken without delay"
+      }
+    ],
+    "participating_voters": [
+      {
+        "status": "translation",
+        "text": "the number of voters who took part in the voting"
+      }
+    ],
+    "petition_protects_rights_or_security": [
+      {
+        "status": "translation",
+        "text": "the application is directed at protecting human rights and freedoms or the security of the state"
+      }
+    ],
+    "pm_appointment_consultations_completed_1995": [
+      {
+        "status": "translation",
+        "text": "the candidature for Prime Minister was submitted after consultations with the factions of the political parties"
+      }
+    ],
+    "president": [
+      {
+        "status": "translation",
+        "text": "the person is the President of the Republic"
+      }
+    ],
+    "president_addresses_annual_message_1995": [
+      {
+        "status": "translation",
+        "text": "the President delivers an annual message on the state of the country"
+      }
+    ],
+    "president_assumed_office_1995": [
+      {
+        "status": "translation",
+        "text": "the person has taken office as President"
+      }
+    ],
+    "president_conducts_business": [
+      {
+        "status": "translation",
+        "text": "the President engages in entrepreneurial activity"
+      }
+    ],
+    "president_deceased": [
+      {
+        "status": "translation",
+        "text": "the President has died"
+      }
+    ],
+    "president_decides_citizenship_and_asylum_1995": [
+      {
+        "status": "translation",
+        "text": "the President decides questions of citizenship and of the granting of political asylum"
+      }
+    ],
+    "president_ensures_concerted_branch_functioning_1995": [
+      {
+        "status": "translation",
+        "text": "the President ensures the concerted functioning of the branches of state power"
+      }
+    ],
+    "president_exercises_pardon_1995": [
+      {
+        "status": "translation",
+        "text": "the President exercises the pardon of citizens"
+      }
+    ],
+    "president_forms_security_council_and_assembly_1995": [
+      {
+        "status": "translation",
+        "text": "the President forms the Security Council and the Assembly of the People of Kazakhstan"
+      }
+    ],
+    "president_forms_state_guard_service_1995": [
+      {
+        "status": "translation",
+        "text": "the President forms the State Guard Service"
+      }
+    ],
+    "president_holds_other_paid_office": [
+      {
+        "status": "translation",
+        "text": "the President holds another paid position"
+      }
+    ],
+    "president_holds_representative_mandate": [
+      {
+        "status": "translation",
+        "text": "the President is a deputy of a representative body"
+      }
+    ],
+    "president_is_head_of_state_1995": [
+      {
+        "status": "translation",
+        "text": "the President is the head of state and the highest official of the Republic"
+      }
+    ],
+    "president_is_supreme_commander_1995": [
+      {
+        "status": "translation",
+        "text": "the President is the Supreme Commander-in-Chief of the Armed Forces"
+      }
+    ],
+    "president_is_symbol_and_guarantor_of_unity_1995": [
+      {
+        "status": "translation",
+        "text": "the President is the symbol and guarantor of the unity of the people and of state power"
+      }
+    ],
+    "president_minimum_age_1995": [
+      {
+        "status": "translation",
+        "text": "the minimum age for the President is forty years"
+      }
+    ],
+    "president_party_member": [
+      {
+        "status": "translation",
+        "text": "the President is a member of a political party"
+      }
+    ],
+    "president_person": [
+      {
+        "status": "translation",
+        "text": "the President is this natural person"
+      }
+    ],
+    "president_released_for_incapacity_1995": [
+      {
+        "status": "translation",
+        "text": "the President has been released from office early on grounds of health"
+      }
+    ],
+    "president_removed_by_impeachment_1995": [
+      {
+        "status": "translation",
+        "text": "the President has been removed from office"
+      }
+    ],
+    "president_residence_years_1995": [
+      {
+        "status": "translation",
+        "text": "the required period of residence in Kazakhstan is fifteen years"
+      }
+    ],
+    "president_term_years_1995": [
+      {
+        "status": "translation",
+        "text": "the term of office of the President is seven years"
+      }
+    ],
+    "presidential_act": [
+      {
+        "status": "translation",
+        "text": "the act was issued by this President"
+      }
+    ],
+    "presidential_act_based_on_constitution_and_law": [
+      {
+        "status": "translation",
+        "text": "the act was issued on the basis of and in pursuance of the Constitution and the statutes"
+      }
+    ],
+    "presidential_act_binding_nationwide_1995": [
+      {
+        "status": "translation",
+        "text": "the act of the President is binding throughout the territory of the Republic"
+      }
+    ],
+    "presidential_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "the President makes an appointment"
+      }
+    ],
+    "presidential_election": [
+      {
+        "status": "translation",
+        "text": "the event is an election of the President"
+      }
+    ],
+    "presidential_inviolability_infringement": [
+      {
+        "status": "translation",
+        "text": "the inviolability of the President has been infringed"
+      }
+    ],
+    "presidential_office_incompatible_1995": [
+      {
+        "status": "translation",
+        "text": "the office of President is incompatible with the position held or the activity carried on"
+      }
+    ],
+    "presidential_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "the powers of the President have been terminated"
+      }
+    ],
+    "presidential_relative_position_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "the holding of such a position by a relative of the President is not permitted"
+      }
+    ],
+    "presidential_return_attempt": [
+      {
+        "status": "translation",
+        "text": "the President returns the statute for reconsideration"
+      }
+    ],
+    "presidential_signature_attempt": [
+      {
+        "status": "translation",
+        "text": "the President signs the statute submitted to him"
+      }
+    ],
+    "presidential_vacancy": [
+      {
+        "status": "translation",
+        "text": "an early release from office, a removal from office or the death of the President has occurred"
+      }
+    ],
+    "presidential_vote": [
+      {
+        "status": "translation",
+        "text": "the number of votes cast for the candidate"
+      }
+    ],
+    "previously_elected_president": [
+      {
+        "status": "translation",
+        "text": "the person has previously been elected President of the Republic"
+      }
+    ],
+    "prime_minister": [
+      {
+        "status": "translation",
+        "text": "the person is the Prime Minister"
+      }
+    ],
+    "referendum_called_1995": [
+      {
+        "status": "translation",
+        "text": "the republican referendum has been called"
+      }
+    ],
+    "referendum_decision_attempt": [
+      {
+        "status": "translation",
+        "text": "the President takes a decision to hold a referendum"
+      }
+    ],
+    "referendum_proposal": [
+      {
+        "status": "translation",
+        "text": "a proposal to hold a republican referendum has been made"
+      }
+    ],
+    "regular_election_date_admissible_1995": [
+      {
+        "status": "translation",
+        "text": "the date of the regular election of the President is admissible"
+      }
+    ],
+    "regular_election_on_first_december_sunday": [
+      {
+        "status": "translation",
+        "text": "the regular elections have been called for the first Sunday of December"
+      }
+    ],
+    "relative_holds_political_office_or_quasistate_leadership": [
+      {
+        "status": "translation",
+        "text": "the relative holds a political state position or heads an organisation of the quasi-state sector"
+      }
+    ],
+    "removed_from_office": [
+      {
+        "status": "translation",
+        "text": "the person has been removed from the office of President"
+      }
+    ],
+    "repeated_election_attempt": [
+      {
+        "status": "translation",
+        "text": "an attempt has been made to elect the person President again"
+      }
+    ],
+    "repeated_election_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "the repeated election of one and the same person as President is not permitted"
+      }
+    ],
+    "resides_last_years": [
+      {
+        "status": "translation",
+        "text": "the number of the last years of residence in Kazakhstan"
+      }
+    ],
+    "runoff_ballot": [
+      {
+        "status": "translation",
+        "text": "the ballot is a second ballot"
+      }
+    ],
+    "runoff_required_1995": [
+      {
+        "status": "translation",
+        "text": "a second ballot is held"
+      }
+    ],
+    "senate_chair": [
+      {
+        "status": "translation",
+        "text": "the person is the Chair of the Senate"
+      }
+    ],
+    "senate_chair_unable": [
+      {
+        "status": "translation",
+        "text": "the Chair of the Senate cannot assume the powers of the President"
+      }
+    ],
+    "senate_consent_given": [
+      {
+        "status": "translation",
+        "text": "the Senate has consented to the appointment"
+      }
+    ],
+    "senate_final_votes": [
+      {
+        "status": "translation",
+        "text": "the number of votes of the Senate on the final decision"
+      }
+    ],
+    "senate_investigation_votes": [
+      {
+        "status": "translation",
+        "text": "the number of votes of the Senate cast for entrusting the investigation"
+      }
+    ],
+    "senate_release_votes": [
+      {
+        "status": "translation",
+        "text": "the number of votes of the Senate cast for release on grounds of health"
+      }
+    ],
+    "senate_total_deputies": [
+      {
+        "status": "translation",
+        "text": "the total number of the deputies of the Senate"
+      }
+    ],
+    "serious_and_immediate_threat": [
+      {
+        "status": "translation",
+        "text": "there is a serious and immediate threat to security, to the constitutional order or to public order"
+      }
+    ],
+    "signature_within_one_month": [
+      {
+        "status": "translation",
+        "text": "the statute was signed within the one-month time limit"
+      }
+    ],
+    "state_authority": [
+      {
+        "status": "translation",
+        "text": "the subject is a state body or an official"
+      }
+    ],
+    "state_funded_protection_provided": [
+      {
+        "status": "translation",
+        "text": "the former President is provided with protection at the expense of the state"
+      }
+    ],
+    "succession_event": [
+      {
+        "status": "translation",
+        "text": "the powers of the President pass to this person"
+      }
+    ],
+    "succession_oath_months_1995": [
+      {
+        "status": "translation",
+        "text": "the time limit for taking the oath upon the transfer of powers is one month"
+      }
+    ],
+    "succession_oath_timely_1995": [
+      {
+        "status": "translation",
+        "text": "the oath upon the transfer of powers was taken in time"
+      }
+    ],
+    "succession_oath_within_one_month": [
+      {
+        "status": "translation",
+        "text": "the oath was taken within one month of the day the powers were assumed"
+      }
+    ],
+    "supreme_court_charge_supported": [
+      {
+        "status": "translation",
+        "text": "the Supreme Court has confirmed that the charge is well-founded"
+      }
+    ],
+    "treason_charge": [
+      {
+        "status": "translation",
+        "text": "the President has been charged with high treason"
+      }
+    ]
+  },
+  "language": "en",
+  "package": "kz.constitution1995.president"
+}

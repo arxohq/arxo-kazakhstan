@@ -1,0 +1,57 @@
+# Манифест §10 — маркер корня пакета (DECISION-0033). Нормативны заголовки §22
+# в самих .law; манифест обязан с ними совпадать (LDC-E1109, lawc check).
+[package]
+name = "kz.constitution.rights"
+version = "0.1.0"
+language = "0.2"
+namespace = "urn:kz:constitution:rights"
+
+# Каталожная метадата (DECISION-0051; docs/PACKAGE-METADATA.ru.md). НЕ семантика:
+# в CLIR не понижается, в semantic hash §209 не входит.
+# Выводимые поля (jurisdiction, instrument, sourceFidelity) НЕ объявлены
+# намеренно: пакета нет в реестре LOWERED_ACTS `corpus/gen_kz_clir.py`, по
+# которому ворота ci/check_package_metadata.py находят CLIR, и сверить
+# заявленное с source-декларациями им не с чем. Объявить их значило бы
+# получить поля, которые никто не проверяет.
+[metadata]
+title = "Конституция РК 2026: права, свободы и обязанности (раздел II)"
+# legalStatus: `in_force` — подпакет раздела действующей Конституции 2026 года.
+legalStatus = "in_force"
+
+# Рукописные сценарии пакета (§267): наблюдение деонтического слоя. До них
+# 98 шаблонов норм раздела II не наблюдал никто — `[tests]` в манифесте не
+# было, и ворота оставались зелёными, потому что понижение пакета не
+# спрашивает, выводится ли хоть одна позиция. Каждый шаблон редакции 2026
+# (54) предъявлен делом и своим статусом §134; редакция 1995 — выборочно,
+# включая пару «30.06.2026 / 01.07.2026».
+# `regression = false`: в учёт покрытия регрессии корпуса не входят.
+[[tests]]
+family = "kz.constitution.rights#positions-duties"
+regression = false
+suites = ["tests/01-duties-positions.lawtest"]
+world = ["kz.constitution.rights"]
+concat = ["kz.constitution.sources"]
+
+[[tests]]
+family = "kz.constitution.rights#positions-liberties-immunities"
+regression = false
+suites = ["tests/02-liberties-immunities-positions.lawtest"]
+world = ["kz.constitution.rights"]
+concat = ["kz.constitution.sources"]
+
+[[tests]]
+family = "kz.constitution.rights#positions-prohibitions-powers"
+regression = false
+suites = ["tests/03-prohibitions-powers-positions.lawtest"]
+world = ["kz.constitution.rights"]
+concat = ["kz.constitution.sources"]
+
+[[tests]]
+family = "kz.constitution.rights#positions-editions-1995"
+regression = false
+suites = ["tests/04-editions-1995-positions.lawtest"]
+world = ["kz.constitution.rights"]
+concat = ["kz.constitution.sources"]
+
+[authoring]
+local_imports = "explicit"

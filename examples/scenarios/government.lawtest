@@ -1,0 +1,42 @@
+language "law.core" version "0.2";
+package kz.constitution.government version "0.1.0";
+namespace "urn:kz:constitution:government";
+
+// Reader fixtures derived from retained source rules; facts are fictional.
+
+test "government-business-conflict" {
+ given {
+  context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+  assert "government-business-conflict-0": member_of_government(entity_ref("urn:demo:kz:member"), entity_ref("urn:demo:kz:government")) { origin case_input; }
+  assert "government-business-conflict-1": entrepreneurial_activity(entity_ref("urn:demo:kz:member")) { origin case_input; }
+ }
+ evaluate truth(government_membership_incompatible(entity_ref("urn:demo:kz:member")));
+ expect truth_status == TRUE_ONLY;
+}
+
+test "government-teaching-exception" {
+ given {
+  context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+  assert "government-teaching-exception-0": member_of_government(entity_ref("urn:demo:kz:member"), entity_ref("urn:demo:kz:government")) { origin case_input; }
+  assert "government-teaching-exception-1": paid_external_position(entity_ref("urn:demo:kz:member")) { origin case_input; }
+  assert "government-teaching-exception-2": permitted_teaching_science_or_creative_work(entity_ref("urn:demo:kz:member")) { origin case_input; }
+ }
+ evaluate truth(government_membership_incompatible(entity_ref("urn:demo:kz:member")));
+ expect truth_status == NEITHER;
+}
+
+// These queries distinguish missing evidence from contradictory evidence.
+test "fact-missing" {
+ given { context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; } }
+ evaluate truth(entrepreneurial_activity(entity_ref("urn:demo:kz:member")));
+ expect truth_status == NEITHER;
+}
+test "fact-conflict" {
+ given {
+  context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+  assert "conflict-positive": entrepreneurial_activity(entity_ref("urn:demo:kz:member")) { origin case_input; }
+  assert "conflict-negative": not entrepreneurial_activity(entity_ref("urn:demo:kz:member")) { origin case_input; }
+ }
+ evaluate truth(entrepreneurial_activity(entity_ref("urn:demo:kz:member")));
+ expect truth_status == BOTH;
+}

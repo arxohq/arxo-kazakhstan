@@ -1,0 +1,1090 @@
+[
+  {
+    "model": "sources",
+    "nativeLowerExitCode": 0,
+    "nativeLowerSha256": "sha256:9383ae769e7d9474a681a68ce57196c5dd575a5fc4f7a23bffb58378923f46fa",
+    "retainedPackageSha256": "sha256:9383ae769e7d9474a681a68ce57196c5dd575a5fc4f7a23bffb58378923f46fa",
+    "bytesIdentical": true
+  },
+  {
+    "model": "rights",
+    "nativeLowerExitCode": 0,
+    "nativeLowerSha256": "sha256:9250a68ea993d3520c853f17263be910bc9f92c266f6be9c33b939b3483544ed",
+    "retainedPackageSha256": "sha256:9250a68ea993d3520c853f17263be910bc9f92c266f6be9c33b939b3483544ed",
+    "bytesIdentical": true
+  },
+  {
+    "suite": "packages/rights/tests/01-duties-positions.lawtest",
+    "world": "rights",
+    "exitCode": 0,
+    "report": {
+      "command": "test",
+      "failed": 0,
+      "input": "packages/rights/tests/01-duties-positions.lawtest",
+      "ok": true,
+      "passed": 10,
+      "properties": [],
+      "propertiesFailed": 0,
+      "propertiesTotal": 0,
+      "tests": [
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/rights/tests/01-duties-positions.lawtest",
+          "title": "urn:query:kzcr-duty-maintenance-active-1"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/rights/tests/01-duties-positions.lawtest",
+          "title": "urn:query:kzcr-duty-maintenance-violated-1"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/rights/tests/01-duties-positions.lawtest",
+          "title": "urn:query:kzcr-duty-family-active-1"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/rights/tests/01-duties-positions.lawtest",
+          "title": "urn:query:kzcr-duty-family-violated-1"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/rights/tests/01-duties-positions.lawtest",
+          "title": "urn:query:kzcr-duty-authority-maintenance-1"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/rights/tests/01-duties-positions.lawtest",
+          "title": "urn:query:kzcr-duty-authority-maintenance-violated-1"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/rights/tests/01-duties-positions.lawtest",
+          "title": "urn:query:kzcr-duty-achievement-active-1"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/rights/tests/01-duties-positions.lawtest",
+          "title": "urn:query:kzcr-state-duty-maintained-active-1"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/rights/tests/01-duties-positions.lawtest",
+          "title": "urn:query:kzcr-state-duty-counterexample-violated-1"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/rights/tests/01-duties-positions.lawtest",
+          "title": "urn:query:kzcr-duty-bearer-must-be-bound-1"
+        }
+      ],
+      "total": 10
+    }
+  },
+  {
+    "suite": "packages/rights/tests/02-liberties-immunities-positions.lawtest",
+    "world": "rights",
+    "exitCode": 0,
+    "report": {
+      "command": "test",
+      "failed": 0,
+      "input": "packages/rights/tests/02-liberties-immunities-positions.lawtest",
+      "ok": true,
+      "passed": 7,
+      "properties": [],
+      "propertiesFailed": 0,
+      "propertiesTotal": 0,
+      "tests": [
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/rights/tests/02-liberties-immunities-positions.lawtest",
+          "title": "urn:query:kzcr-liberty-active-1"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/rights/tests/02-liberties-immunities-positions.lawtest",
+          "title": "urn:query:kzcr-liberty-window-not-open-1"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/rights/tests/02-liberties-immunities-positions.lawtest",
+          "title": "urn:query:kzcr-immunity-active-1"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/rights/tests/02-liberties-immunities-positions.lawtest",
+          "title": "urn:query:kzcr-immunity-detention-1"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/rights/tests/02-liberties-immunities-positions.lawtest",
+          "title": "urn:query:kzcr-immunity-detention-1/2"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/rights/tests/02-liberties-immunities-positions.lawtest",
+          "title": "urn:query:kzcr-immunity-core-rights-1"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/rights/tests/02-liberties-immunities-positions.lawtest",
+          "title": "urn:query:kzcr-immunity-core-rights-1/2"
+        }
+      ],
+      "total": 7
+    }
+  },
+  {
+    "suite": "packages/rights/tests/03-prohibitions-powers-positions.lawtest",
+    "world": "rights",
+    "exitCode": 1,
+    "report": {
+      "command": "test",
+      "failed": 2,
+      "input": "packages/rights/tests/03-prohibitions-powers-positions.lawtest",
+      "ok": false,
+      "passed": 9,
+      "properties": [],
+      "propertiesFailed": 0,
+      "propertiesTotal": 0,
+      "tests": [
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/rights/tests/03-prohibitions-powers-positions.lawtest",
+          "title": "urn:query:kzcr-prohibition-active-1"
+        },
+        {
+          "failures": [
+            "position(urn:kz:constitution:rights#RefrainFromTorture, ACTIVE): in the document absent",
+            "position(urn:kz:constitution:rights#RefrainFromCensorship, ACTIVE): in the document absent",
+            "position(urn:kz:constitution:rights#RefrainFromDiscrimination, ACTIVE): in the document absent",
+            "not position(urn:kz:constitution:rights#RefrainFromTorture, VIOLATED): in the document present",
+            "not position(urn:kz:constitution:rights#RefrainFromCensorship, VIOLATED): in the document present",
+            "not position(urn:kz:constitution:rights#RefrainFromDiscrimination, VIOLATED): in the document present"
+          ],
+          "passed": false,
+          "test": "packages/rights/tests/03-prohibitions-powers-positions.lawtest",
+          "title": "urn:query:kzcr-prohibition-never-violated-1"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/rights/tests/03-prohibitions-powers-positions.lawtest",
+          "title": "urn:query:kzcr-prohibition-forced-labour-defeated-1"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/rights/tests/03-prohibitions-powers-positions.lawtest",
+          "title": "urn:query:kzcr-power-available-1"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/rights/tests/03-prohibitions-powers-positions.lawtest",
+          "title": "urn:query:kzcr-power-not-created-without-ground-1"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/rights/tests/03-prohibitions-powers-positions.lawtest",
+          "title": "urn:query:kzcr-power-effect-materialises-1"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/rights/tests/03-prohibitions-powers-positions.lawtest",
+          "title": "urn:query:kzcr-power-effect-blocked-by-twin-immunity-1"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/rights/tests/03-prohibitions-powers-positions.lawtest",
+          "title": "urn:query:kzcr-prohibition-1995-active-1"
+        },
+        {
+          "failures": [
+            "position(urn:kz:constitution:rights#RefrainFromTorture1995, ACTIVE): in the document absent",
+            "position(urn:kz:constitution:rights#RefrainFromCensorship1995, ACTIVE): in the document absent",
+            "position(urn:kz:constitution:rights#RefrainFromForcedLabour1995, ACTIVE): in the document absent",
+            "not position(urn:kz:constitution:rights#RefrainFromTorture1995, VIOLATED): in the document present",
+            "not position(urn:kz:constitution:rights#RefrainFromCensorship1995, VIOLATED): in the document present",
+            "not position(urn:kz:constitution:rights#RefrainFromForcedLabour1995, VIOLATED): in the document present"
+          ],
+          "passed": false,
+          "test": "packages/rights/tests/03-prohibitions-powers-positions.lawtest",
+          "title": "urn:query:kzcr-prohibition-1995-never-violated-1"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/rights/tests/03-prohibitions-powers-positions.lawtest",
+          "title": "urn:query:kzcr-prohibition-1995-forced-labour-defeated-1"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/rights/tests/03-prohibitions-powers-positions.lawtest",
+          "title": "urn:query:kzcr-prohibition-1995-absent-in-2026-1"
+        }
+      ],
+      "total": 11
+    }
+  },
+  {
+    "suite": "packages/rights/tests/04-editions-1995-positions.lawtest",
+    "world": "rights",
+    "exitCode": 0,
+    "report": {
+      "command": "test",
+      "failed": 0,
+      "input": "packages/rights/tests/04-editions-1995-positions.lawtest",
+      "ok": true,
+      "passed": 5,
+      "properties": [],
+      "propertiesFailed": 0,
+      "propertiesTotal": 0,
+      "tests": [
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/rights/tests/04-editions-1995-positions.lawtest",
+          "title": "urn:query:kzcr-edition-pair-before-1"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/rights/tests/04-editions-1995-positions.lawtest",
+          "title": "urn:query:kzcr-edition-pair-after-1"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/rights/tests/04-editions-1995-positions.lawtest",
+          "title": "urn:query:kzcr-edition-1995-lost-content-1"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/rights/tests/04-editions-1995-positions.lawtest",
+          "title": "urn:query:kzcr-edition-1995-72-hours-1"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/rights/tests/04-editions-1995-positions.lawtest",
+          "title": "urn:query:kzcr-edition-1995-violation-1"
+        }
+      ],
+      "total": 5
+    }
+  },
+  {
+    "model": "president",
+    "nativeLowerExitCode": 0,
+    "nativeLowerSha256": "sha256:29ce41ec2827c6f3f009545d7e1eb584a0797fad0a1a3574ca9b84363218feac",
+    "retainedPackageSha256": "sha256:29ce41ec2827c6f3f009545d7e1eb584a0797fad0a1a3574ca9b84363218feac",
+    "bytesIdentical": true
+  },
+  {
+    "suite": "packages/president/tests/01-positions.lawtest",
+    "world": "president",
+    "exitCode": 0,
+    "report": {
+      "command": "test",
+      "failed": 0,
+      "input": "packages/president/tests/01-positions.lawtest",
+      "ok": true,
+      "passed": 32,
+      "properties": [],
+      "propertiesFailed": 0,
+      "propertiesTotal": 0,
+      "tests": [
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/president/tests/01-positions.lawtest",
+          "title": "urn:query:kzcp-1"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/president/tests/01-positions.lawtest",
+          "title": "urn:query:kzcp-2"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/president/tests/01-positions.lawtest",
+          "title": "urn:query:kzcp-3"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/president/tests/01-positions.lawtest",
+          "title": "urn:query:kzcp-4"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/president/tests/01-positions.lawtest",
+          "title": "urn:query:kzcp-5"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/president/tests/01-positions.lawtest",
+          "title": "urn:query:kzcp-6"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/president/tests/01-positions.lawtest",
+          "title": "urn:query:kzcp-7"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/president/tests/01-positions.lawtest",
+          "title": "urn:query:kzcp-8"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/president/tests/01-positions.lawtest",
+          "title": "urn:query:kzcp-9"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/president/tests/01-positions.lawtest",
+          "title": "urn:query:kzcp-10"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/president/tests/01-positions.lawtest",
+          "title": "urn:query:kzcp-11"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/president/tests/01-positions.lawtest",
+          "title": "urn:query:kzcp-12"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/president/tests/01-positions.lawtest",
+          "title": "urn:query:kzcp-13"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/president/tests/01-positions.lawtest",
+          "title": "urn:query:kzcp-14"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/president/tests/01-positions.lawtest",
+          "title": "urn:query:kzcp-15"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/president/tests/01-positions.lawtest",
+          "title": "urn:query:kzcp-16"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/president/tests/01-positions.lawtest",
+          "title": "urn:query:kzcp-17"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/president/tests/01-positions.lawtest",
+          "title": "urn:query:kzcp-18"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/president/tests/01-positions.lawtest",
+          "title": "urn:query:kzcp-19"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/president/tests/01-positions.lawtest",
+          "title": "urn:query:kzcp-20"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/president/tests/01-positions.lawtest",
+          "title": "urn:query:kzcp-21"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/president/tests/01-positions.lawtest",
+          "title": "urn:query:kzcp-22"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/president/tests/01-positions.lawtest",
+          "title": "urn:query:kzcp-23"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/president/tests/01-positions.lawtest",
+          "title": "urn:query:kzcp-24"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/president/tests/01-positions.lawtest",
+          "title": "urn:query:kzcp-25"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/president/tests/01-positions.lawtest",
+          "title": "urn:query:kzcp-26"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/president/tests/01-positions.lawtest",
+          "title": "urn:query:kzcp-27"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/president/tests/01-positions.lawtest",
+          "title": "urn:query:kzcp-28"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/president/tests/01-positions.lawtest",
+          "title": "urn:query:kzcp-29"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/president/tests/01-positions.lawtest",
+          "title": "urn:query:kzcp-30"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/president/tests/01-positions.lawtest",
+          "title": "urn:query:kzcp-31"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/president/tests/01-positions.lawtest",
+          "title": "urn:query:kzcp-32"
+        }
+      ],
+      "total": 32
+    }
+  },
+  {
+    "model": "kurultai",
+    "nativeLowerExitCode": 0,
+    "nativeLowerSha256": "sha256:ab722fc36c909a5373b5f26c56cc727469a021a84926d04e97cc6a16cf344e59",
+    "retainedPackageSha256": "sha256:ab722fc36c909a5373b5f26c56cc727469a021a84926d04e97cc6a16cf344e59",
+    "bytesIdentical": true
+  },
+  {
+    "suite": "packages/kurultai/tests/01-positions.lawtest",
+    "world": "kurultai",
+    "exitCode": 0,
+    "report": {
+      "command": "test",
+      "failed": 0,
+      "input": "packages/kurultai/tests/01-positions.lawtest",
+      "ok": true,
+      "passed": 7,
+      "properties": [],
+      "propertiesFailed": 0,
+      "propertiesTotal": 0,
+      "tests": [
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/kurultai/tests/01-positions.lawtest",
+          "title": "urn:query:kzck-1"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/kurultai/tests/01-positions.lawtest",
+          "title": "urn:query:kzck-2"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/kurultai/tests/01-positions.lawtest",
+          "title": "urn:query:kzck-3"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/kurultai/tests/01-positions.lawtest",
+          "title": "urn:query:kzck-4"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/kurultai/tests/01-positions.lawtest",
+          "title": "urn:query:kzck-5"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/kurultai/tests/01-positions.lawtest",
+          "title": "urn:query:kzck-6"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/kurultai/tests/01-positions.lawtest",
+          "title": "urn:query:kzck-7"
+        }
+      ],
+      "total": 7
+    }
+  },
+  {
+    "model": "government",
+    "nativeLowerExitCode": 0,
+    "nativeLowerSha256": "sha256:fb931008104e0bdae0919ff1121fa9a22678989613cd9290b7fe59e95a5f1f20",
+    "retainedPackageSha256": "sha256:fb931008104e0bdae0919ff1121fa9a22678989613cd9290b7fe59e95a5f1f20",
+    "bytesIdentical": true
+  },
+  {
+    "model": "court",
+    "nativeLowerExitCode": 0,
+    "nativeLowerSha256": "sha256:24add4ad8c6625840c3e7d4926323baa2db4990f9761709688cb0bc5656e2ed6",
+    "retainedPackageSha256": "sha256:24add4ad8c6625840c3e7d4926323baa2db4990f9761709688cb0bc5656e2ed6",
+    "bytesIdentical": true
+  },
+  {
+    "suite": "packages/court/tests/01-positions.lawtest",
+    "world": "court",
+    "exitCode": 1,
+    "report": {
+      "command": "test",
+      "failed": 1,
+      "input": "packages/court/tests/01-positions.lawtest",
+      "ok": false,
+      "passed": 21,
+      "properties": [],
+      "propertiesFailed": 0,
+      "propertiesTotal": 0,
+      "tests": [
+        {
+          "failures": [
+            "position(urn:kz:constitution:court#RefrainFromNonCourtJustice, ACTIVE): in the document absent",
+            "not position(urn:kz:constitution:court#RefrainFromNonCourtJustice, VIOLATED): in the document present"
+          ],
+          "passed": false,
+          "test": "packages/court/tests/01-positions.lawtest",
+          "title": "urn:query:kzcc-1"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/court/tests/01-positions.lawtest",
+          "title": "urn:query:kzcc-2"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/court/tests/01-positions.lawtest",
+          "title": "urn:query:kzcc-3"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/court/tests/01-positions.lawtest",
+          "title": "urn:query:kzcc-4"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/court/tests/01-positions.lawtest",
+          "title": "urn:query:kzcc-5"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/court/tests/01-positions.lawtest",
+          "title": "urn:query:kzcc-6"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/court/tests/01-positions.lawtest",
+          "title": "urn:query:kzcc-7"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/court/tests/01-positions.lawtest",
+          "title": "urn:query:kzcc-8"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/court/tests/01-positions.lawtest",
+          "title": "urn:query:kzcc-9"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/court/tests/01-positions.lawtest",
+          "title": "urn:query:kzcc-10"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/court/tests/01-positions.lawtest",
+          "title": "urn:query:kzcc-11"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/court/tests/01-positions.lawtest",
+          "title": "urn:query:kzcc-12"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/court/tests/01-positions.lawtest",
+          "title": "urn:query:kzcc-13"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/court/tests/01-positions.lawtest",
+          "title": "urn:query:kzcc-14"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/court/tests/01-positions.lawtest",
+          "title": "urn:query:kzcc-15"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/court/tests/01-positions.lawtest",
+          "title": "urn:query:kzcc-16"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/court/tests/01-positions.lawtest",
+          "title": "urn:query:kzcc-17"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/court/tests/01-positions.lawtest",
+          "title": "urn:query:kzcc-18"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/court/tests/01-positions.lawtest",
+          "title": "urn:query:kzcc-19"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/court/tests/01-positions.lawtest",
+          "title": "urn:query:kzcc-20"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/court/tests/01-positions.lawtest",
+          "title": "urn:query:kzcc-21"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "packages/court/tests/01-positions.lawtest",
+          "title": "urn:query:kzcc-22"
+        }
+      ],
+      "total": 22
+    }
+  },
+  {
+    "model": "amendment",
+    "nativeLowerExitCode": 0,
+    "nativeLowerSha256": "sha256:352adfe37226bbdae7312a67a622670ee1a3edd4c8154b0f9e3024b8d8160ecd",
+    "retainedPackageSha256": "sha256:352adfe37226bbdae7312a67a622670ee1a3edd4c8154b0f9e3024b8d8160ecd",
+    "bytesIdentical": true
+  },
+  {
+    "model": "president1995",
+    "nativeLowerExitCode": 0,
+    "nativeLowerSha256": "sha256:eefc477e25d6c5dad3097039439eeb023b66206caa3587f785aebecc216c7561",
+    "retainedPackageSha256": "sha256:eefc477e25d6c5dad3097039439eeb023b66206caa3587f785aebecc216c7561",
+    "bytesIdentical": true
+  },
+  {
+    "suite": "historical/president-1995/tests/01-positions.lawtest",
+    "world": "president1995",
+    "exitCode": 0,
+    "report": {
+      "command": "test",
+      "failed": 0,
+      "input": "historical/president-1995/tests/01-positions.lawtest",
+      "ok": true,
+      "passed": 28,
+      "properties": [],
+      "propertiesFailed": 0,
+      "propertiesTotal": 0,
+      "tests": [
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/president-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzp95-1"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/president-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzp95-2"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/president-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzp95-3"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/president-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzp95-4"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/president-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzp95-5"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/president-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzp95-6"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/president-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzp95-7"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/president-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzp95-8"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/president-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzp95-9"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/president-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzp95-10"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/president-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzp95-11"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/president-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzp95-12"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/president-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzp95-13"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/president-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzp95-14"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/president-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzp95-15"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/president-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzp95-16"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/president-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzp95-17"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/president-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzp95-18"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/president-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzp95-19"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/president-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzp95-20"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/president-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzp95-21"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/president-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzp95-22"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/president-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzp95-23"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/president-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzp95-24"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/president-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzp95-25"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/president-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzp95-26"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/president-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzp95-27"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/president-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzp95-28"
+        }
+      ],
+      "total": 28
+    }
+  },
+  {
+    "model": "parliament1995",
+    "nativeLowerExitCode": 0,
+    "nativeLowerSha256": "sha256:486349323066d0d8f9eb4dc255cc123f14e80d334c013d73c930eba533435551",
+    "retainedPackageSha256": "sha256:486349323066d0d8f9eb4dc255cc123f14e80d334c013d73c930eba533435551",
+    "bytesIdentical": true
+  },
+  {
+    "suite": "historical/parliament-1995/tests/01-positions.lawtest",
+    "world": "parliament1995",
+    "exitCode": 0,
+    "report": {
+      "command": "test",
+      "failed": 0,
+      "input": "historical/parliament-1995/tests/01-positions.lawtest",
+      "ok": true,
+      "passed": 19,
+      "properties": [],
+      "propertiesFailed": 0,
+      "propertiesTotal": 0,
+      "tests": [
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/parliament-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzq95-1"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/parliament-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzq95-2"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/parliament-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzq95-3"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/parliament-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzq95-4"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/parliament-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzq95-5"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/parliament-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzq95-6"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/parliament-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzq95-7"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/parliament-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzq95-8"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/parliament-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzq95-9"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/parliament-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzq95-10"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/parliament-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzq95-11"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/parliament-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzq95-12"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/parliament-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzq95-13"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/parliament-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzq95-14"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/parliament-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzq95-15"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/parliament-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzq95-16"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/parliament-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzq95-17"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/parliament-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzq95-18"
+        },
+        {
+          "failures": [],
+          "passed": true,
+          "test": "historical/parliament-1995/tests/01-positions.lawtest",
+          "title": "urn:query:kzq95-19"
+        }
+      ],
+      "total": 19
+    }
+  }
+]

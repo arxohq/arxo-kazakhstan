@@ -1,0 +1,716 @@
+{
+  "$comment": "Қозоғистон Республикаси Конституциясининг kz.constitution.sources пакети учун ўзбек тилидаги (кирилл ёзуви) белгилар қатлами — §218 (DECISION-0070). Бу қатлам CLIR таркибига кирмайди ва фақат тақдимот босқичида ўқилади (verbalize --labels, MCP ресурслари, иш столи). Таржима пакетнинг ru-KZ белгиларидан қилинган ишчи таржима (`translation`) бўлиб, Конституциянинг расмий ўзбекча матни эмас; ҳуқуқий куч ru-KZ ва kk-KZ манбаларидадир. Калит — эълоннинг маҳаллий номи.",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "Association": [
+      {
+        "status": "translation",
+        "text": "Жамоат бирлашмаси"
+      }
+    ],
+    "AssociationUnlawfulInterferenceProhibited/alt/1": [
+      {
+        "status": "translation",
+        "text": "6-модда 2-банд. Ўзаро қонунга хилоф аралашув тақиқланади"
+      }
+    ],
+    "AssociationUnlawfulInterferenceProhibited/alt/2": [
+      {
+        "status": "translation",
+        "text": "6-модда 2-банд. Ўзаро қонунга хилоф аралашув тақиқланади"
+      }
+    ],
+    "AssociationUnlawfulInterferenceProhibited1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "5-модда 2-банд (1995 йилги таҳрир). Давлат ва бирлашмаларнинг ўзаро қонунга хилоф аралашувига йўл қўйилмайди"
+      }
+    ],
+    "AssociationUnlawfulInterferenceProhibited1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "5-модда 2-банд (1995 йилги таҳрир). Давлат ва бирлашмаларнинг ўзаро қонунга хилоф аралашувига йўл қўйилмайди"
+      }
+    ],
+    "AssociationWithProhibitedGoalProhibited": [
+      {
+        "status": "translation",
+        "text": "6-модда 3-банд. Мақсадлари ёки ҳаракатлари бевосита тақиқланган бирлашмалар тақиқланади"
+      }
+    ],
+    "AssociationWithProhibitedGoalProhibited1995": [
+      {
+        "status": "translation",
+        "text": "5-модда 3-банд (1995 йилги таҳрир). Мақсадлари тақиқланган бирлашмалар тақиқланади"
+      }
+    ],
+    "AuthorityUsurpationProhibited": [
+      {
+        "status": "translation",
+        "text": "4-модда 3-банд. Ҳокимиятни эгаллаб олиш тақиқланади"
+      }
+    ],
+    "AuthorityUsurpationProhibited1995": [
+      {
+        "status": "translation",
+        "text": "3-модда 3-банд (1995 йилги таҳрир). Ҳокимиятни эгаллаб олиш тақиқланади"
+      }
+    ],
+    "ConductForbiddenByStatute1995": [
+      {
+        "status": "translation",
+        "text": "4-модда 3-банд (1995 йилги таҳрир). Республика қонуни нормасидан келиб чиқадиган хулоса"
+      }
+    ],
+    "ConductPermittedByTreaty1995": [
+      {
+        "status": "translation",
+        "text": "4-модда 3-банд (1995 йилги таҳрир). Ратификация қилинган халқаро шартнома нормасидан келиб чиқадиган хулоса"
+      }
+    ],
+    "ConstitutionalActor": [
+      {
+        "status": "translation",
+        "text": "Конституциявий муносабатлар иштирокчиси"
+      }
+    ],
+    "ForeignAssetDisclosureRequired": [
+      {
+        "status": "translation",
+        "text": "6-модда 5-банд. Чет эл пул маблағлари ва активлари тўғрисидаги ахборот очиқ бўлиши шарт"
+      }
+    ],
+    "ForeignPartyActivityOrFinancingProhibited/alt/1": [
+      {
+        "status": "translation",
+        "text": "6-модда 4-банд. Партиялар ва касаба уюшмаларининг чет эл фаолияти ҳамда чет элдан молиялаштирилиши тақиқланади"
+      }
+    ],
+    "ForeignPartyActivityOrFinancingProhibited/alt/2": [
+      {
+        "status": "translation",
+        "text": "6-модда 4-банд. Партиялар ва касаба уюшмаларининг чет эл фаолияти ҳамда чет элдан молиялаштирилиши тақиқланади"
+      }
+    ],
+    "ForeignPartyActivityOrFinancingProhibited1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "5-модда 4-банд (1995 йилги таҳрир). Чет эл шахслари томонидан фаолият юритиш ва молиялаштириш тақиқланади"
+      }
+    ],
+    "ForeignPartyActivityOrFinancingProhibited1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "5-модда 4-банд (1995 йилги таҳрир). Чет эл шахслари томонидан фаолият юритиш ва молиялаштириш тақиқланади"
+      }
+    ],
+    "ForeignReligiousActivityRequiresAgreement1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "5-модда 5-банд (1995 йилги таҳрир). Чет эл диний бирлашмаларининг фаолияти ва раҳбарларнинг чет эл марказлари томонидан тайинланиши тегишли давлат органлари билан келишилган ҳолда амалга оширилади"
+      }
+    ],
+    "ForeignReligiousActivityRequiresAgreement1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "5-модда 5-банд (1995 йилги таҳрир). Чет эл диний бирлашмаларининг фаолияти ва раҳбарларнинг чет эл марказлари томонидан тайинланиши тегишли давлат органлари билан келишилган ҳолда амалга оширилади"
+      }
+    ],
+    "ForeignReligiousBody": [
+      {
+        "status": "translation",
+        "text": "Чет эл диний бирлашмаси"
+      }
+    ],
+    "IncreasedLiabilityNoRetroactivity": [
+      {
+        "status": "translation",
+        "text": "5-модда 5-банд. Жавобгарликнинг кучайтирилиши орқага қайтиш кучига эга эмас"
+      }
+    ],
+    "IncreasedLiabilityNoRetroactivity1995": [
+      {
+        "status": "translation",
+        "text": "77-модда 3-банд 5-кичик банд (1995 йилги таҳрир). Жавобгарликнинг кучайтирилиши орқага қайтиш кучига эга эмас"
+      }
+    ],
+    "KZ_CONSTITUTION_1995": [
+      {
+        "status": "translation",
+        "text": "Қозоғистон Республикасининг Конституцияси (1995)"
+      }
+    ],
+    "KZ_CONSTITUTION_1995_KK": [
+      {
+        "status": "translation",
+        "text": "Амал қилиши тугатилган қозоқча жамланма таҳрир"
+      }
+    ],
+    "KZ_CONSTITUTION_1995_RU": [
+      {
+        "status": "translation",
+        "text": "Амал қилиши тугатилган русча жамланма таҳрир"
+      }
+    ],
+    "KZ_CONSTITUTION_2026": [
+      {
+        "status": "translation",
+        "text": "Қозоғистон Республикасининг Конституцияси"
+      }
+    ],
+    "KZ_CONSTITUTION_2026_KK": [
+      {
+        "status": "translation",
+        "text": "Қозоқча аутентик таҳрир"
+      }
+    ],
+    "KZ_CONSTITUTION_2026_RU": [
+      {
+        "status": "translation",
+        "text": "Русча аутентик таҳрир"
+      }
+    ],
+    "LandHolding": [
+      {
+        "status": "translation",
+        "text": "Ер участкаси"
+      }
+    ],
+    "LegalAct": [
+      {
+        "status": "translation",
+        "text": "Норматив-ҳуқуқий ҳужжат"
+      }
+    ],
+    "MitigatingLawAppliesToPriorOffence": [
+      {
+        "status": "translation",
+        "text": "5-модда 5-банд. Жавобгарликни бекор қилувчи ёки енгиллаштирувчи қонун илгари содир этилган қилмишга нисбатан қўлланилади"
+      }
+    ],
+    "MitigatingLawAppliesToPriorOffence1995": [
+      {
+        "status": "translation",
+        "text": "77-модда 3-банд 5-кичик банд (1995 йилги таҳрир). Енгиллаштирувчи қонун илгари содир этилган ҳуқуқбузарликка нисбатан қўлланилади"
+      }
+    ],
+    "NewDutiesAndWorsePositionNoRetroactivity": [
+      {
+        "status": "translation",
+        "text": "5-модда 5-банд. Янги мажбуриятлар ва аҳволнинг ёмонлаштирилиши орқага қайтиш кучига эга эмас"
+      }
+    ],
+    "NewDutiesAndWorsePositionNoRetroactivity1995": [
+      {
+        "status": "translation",
+        "text": "77-модда 3-банд 5-кичик банд (1995 йилги таҳрир). Янги мажбуриятлар ва аҳволнинг ёмонлаштирилиши орқага қайтиш кучига эга эмас"
+      }
+    ],
+    "OfficialPublicationRequiredForApplication": [
+      {
+        "status": "translation",
+        "text": "5-модда 4-банд. Расмий эълон қилиниш — қўлланиш шарти"
+      }
+    ],
+    "OfficialPublicationRequiredForApplication1995": [
+      {
+        "status": "translation",
+        "text": "4-модда 4-банд (1995 йилги таҳрир). Расмий эълон қилиниш — қўлланиш шарти"
+      }
+    ],
+    "PrivateLandHoldingWithinStatutoryLimits": [
+      {
+        "status": "translation",
+        "text": "8-модда 3-банд. Ерга хусусий мулк ҳуқуқига қонуний асослар, шартлар ва доирада йўл қўйилади"
+      }
+    ],
+    "PrivateLandHoldingWithinStatutoryLimits1995": [
+      {
+        "status": "translation",
+        "text": "6-модда 3-банд (1995 йилги таҳрир). Ерга хусусий мулк ҳуқуқига қонуний асослар, шартлар ва доирада йўл қўйилади"
+      }
+    ],
+    "PropertyUse": [
+      {
+        "status": "translation",
+        "text": "Мулкдан фойдаланиш"
+      }
+    ],
+    "PropertyUseConstitutionallyCompliant": [
+      {
+        "status": "translation",
+        "text": "8-модда 2-банд. Мулкдан фойдаланишнинг конституциявий шартлари"
+      }
+    ],
+    "PropertyUseConstitutionallyCompliant1995": [
+      {
+        "status": "translation",
+        "text": "6-модда 2-банд (1995 йилги таҳрир). Мулкдан фойдаланиш жамият манфаатига хизмат қилиши керак"
+      }
+    ],
+    "RatifiedTreatyOverStatuteInInference1995": [
+      {
+        "status": "translation",
+        "text": "4-модда 3-банд (1995 йилги таҳрир). Хулосалар зид келганда қонундан эмас, ратификация қилинган халқаро шартномадан келиб чиқадиган хулоса амал қилади"
+      }
+    ],
+    "RatifiedTreatyPrevailsOverStatute1995": [
+      {
+        "status": "translation",
+        "text": "4-модда 3-банд (1995 йилги таҳрир). Республика ратификация қилган халқаро шартномалар унинг қонунларидан устун туради"
+      }
+    ],
+    "RegulatedConduct": [
+      {
+        "status": "translation",
+        "text": "Йўл қўйилиши тўғрисида шартнома ва қонун ихтилоф қиладиган хатти-ҳаракат"
+      }
+    ],
+    "ReligiousActivity": [
+      {
+        "status": "translation",
+        "text": "Диний ташкилотнинг фаолияти"
+      }
+    ],
+    "ReligiousRestriction": [
+      {
+        "status": "translation",
+        "text": "Диний ташкилот фаолиятини чеклаш"
+      }
+    ],
+    "ReligiousRestrictionRequiresLawAndConstitutionalGoal": [
+      {
+        "status": "translation",
+        "text": "7-модда 2-банд. Диний фаолиятни чеклаш қонунни ва конституциявий мақсадни талаб қилади"
+      }
+    ],
+    "RuleApplication": [
+      {
+        "status": "translation",
+        "text": "Норманинг қўлланиши"
+      }
+    ],
+    "Statute": [
+      {
+        "status": "translation",
+        "text": "Республика қонуни"
+      }
+    ],
+    "Treaty": [
+      {
+        "status": "translation",
+        "text": "Халқаро шартнома"
+      }
+    ],
+    "agreed_with_state_bodies": [
+      {
+        "status": "translation",
+        "text": "фаолият тегишли давлат органлари билан келишилган"
+      }
+    ],
+    "association_activity_prohibited": [
+      {
+        "status": "translation",
+        "text": "жамоат бирлашмасини тузиш ва унинг фаолияти тақиқланади"
+      }
+    ],
+    "association_has_prohibited_constitutional_goal": [
+      {
+        "status": "translation",
+        "text": "жамоат бирлашмасининг мақсадлари ёки ҳаракатлари конституциявий тузум асосларини зўрлик билан ўзгартиришга, Республиканинг яхлитлигини ёки жамоат тартибини бузишга, миллий хавфсизликка путур етказишга ёхуд адоват қўзғатишга қаратилган"
+      }
+    ],
+    "astana_special_financial_regime_1995": [
+      {
+        "status": "translation",
+        "text": "Остона шаҳри доирасида молия соҳасида алоҳида ҳуқуқий режим белгиланиши мумкин (1995 йилги таҳрир)"
+      }
+    ],
+    "authority_usurpation_attempt": [
+      {
+        "status": "translation",
+        "text": "Республикада ҳокимиятни эгаллаб олишга уриниб кўрилган"
+      }
+    ],
+    "authority_usurpation_prohibited": [
+      {
+        "status": "translation",
+        "text": "ҳокимиятни эгаллаб олиш тақиқланади ва қонун бўйича таъқиб қилинади"
+      }
+    ],
+    "capital_is_astana_1995": [
+      {
+        "status": "translation",
+        "text": "Қозоғистоннинг пойтахти Остона шаҳридир (1995 йилги таҳрир)"
+      }
+    ],
+    "conduct_admissible_1995": [
+      {
+        "status": "translation",
+        "text": "хатти-ҳаракатга йўл қўйилади (шартнома ва қонун ихтилофи, 1995 йилги таҳрир)"
+      }
+    ],
+    "constitutional_activity_principles_declared": [
+      {
+        "status": "translation",
+        "text": "Республика фаолиятининг асосий принциплари Конституция билан белгиланган"
+      }
+    ],
+    "environmental_requirements_observed": [
+      {
+        "status": "translation",
+        "text": "атроф-муҳитни муҳофаза қилиш соҳасидаги белгиланган талаблар бажарилган"
+      }
+    ],
+    "foreign_asset_disclosure_required": [
+      {
+        "status": "translation",
+        "text": "чет эл манбаларидан олинган пул маблағлари ва активларнинг ҳаракати тўғрисидаги ахборот очиқ ва фойдаланиш мумкин бўлиши шарт"
+      }
+    ],
+    "foreign_asset_information_disclosed": [
+      {
+        "status": "translation",
+        "text": "чет эл манбаларидан олинган пул маблағлари ва активларнинг ҳаракати тўғрисидаги ахборот очиқ ва фойдаланиш мумкин"
+      }
+    ],
+    "foreign_centre_appoints_leader": [
+      {
+        "status": "translation",
+        "text": "диний бирлашманинг раҳбарлари чет эл диний маркази томонидан тайинланади"
+      }
+    ],
+    "foreign_financing_of_party_or_union": [
+      {
+        "status": "translation",
+        "text": "сиёсий партия ёки касаба уюшмаси чет эл шахслари, давлатлари ёки халқаро ташкилотлари томонидан молиялаштирилади"
+      }
+    ],
+    "foreign_party_or_union_activity": [
+      {
+        "status": "translation",
+        "text": "фаолиятни бошқа давлатнинг сиёсий партияси ёки касаба уюшмаси ёхуд диний асосдаги сиёсий партия юритади"
+      }
+    ],
+    "foreign_religious_activity_admissible_1995": [
+      {
+        "status": "translation",
+        "text": "чет эл диний бирлашмасининг фаолиятига йўл қўйилади (1995 йилги таҳрир)"
+      }
+    ],
+    "foreign_religious_body_activity": [
+      {
+        "status": "translation",
+        "text": "Республика ҳудудида чет эл диний бирлашмаси фаолият юритади"
+      }
+    ],
+    "fundamental_principles_declared_1995": [
+      {
+        "status": "translation",
+        "text": "Республика фаолиятининг асосий принциплари Конституция билан белгиланган (1995 йилги таҳрир)"
+      }
+    ],
+    "human_capital_education_science_innovation_strategic_direction": [
+      {
+        "status": "translation",
+        "text": "инсон капитали, таълим, фан ва инновацияларни ривожлантириш давлат фаолиятининг стратегик йўналиши деб эътироф этилган"
+      }
+    ],
+    "human_life_rights_freedoms_highest_state_values": [
+      {
+        "status": "translation",
+        "text": "давлатнинг олий қадриятлари — инсон, унинг ҳаёти, ҳуқуқ ва эркинликлари"
+      }
+    ],
+    "kazakhstan_democratic_secular_legal_social_state": [
+      {
+        "status": "translation",
+        "text": "Қозоғистон Республикаси — демократик, дунёвий, ҳуқуқий ва ижтимоий давлат"
+      }
+    ],
+    "kazakhstan_democratic_secular_legal_social_state_1995": [
+      {
+        "status": "translation",
+        "text": "Республика ўзини демократик, дунёвий, ҳуқуқий ва ижтимоий давлат деб эълон қилади (1995 йилги таҳрир)"
+      }
+    ],
+    "law_creates_or_increases_liability": [
+      {
+        "status": "translation",
+        "text": "қонун жавобгарликни белгилайди ёки кучайтиради"
+      }
+    ],
+    "law_imposes_new_citizen_duties_or_worsens_position": [
+      {
+        "status": "translation",
+        "text": "қонун фуқароларга янги мажбуриятлар юклайди ёки уларнинг аҳволини ёмонлаштиради"
+      }
+    ],
+    "legal_act_affects_citizen_rights_or_duties": [
+      {
+        "status": "translation",
+        "text": "норматив-ҳуқуқий ҳужжат фуқароларнинг ҳуқуқлари, эркинликлари ва мажбуриятларига дахлдор"
+      }
+    ],
+    "legal_act_application_condition_satisfied": [
+      {
+        "status": "translation",
+        "text": "норматив-ҳуқуқий ҳужжатни қўллашнинг мажбурий шарти бажарилган"
+      }
+    ],
+    "legal_act_officially_published": [
+      {
+        "status": "translation",
+        "text": "норматив-ҳуқуқий ҳужжат расмий эълон қилинган"
+      }
+    ],
+    "new_law_applies_to_prior_offence": [
+      {
+        "status": "translation",
+        "text": "илгари содир этилган ҳуқуқбузарликка янги қонун қўлланилади"
+      }
+    ],
+    "new_law_cancels_or_mitigates_liability": [
+      {
+        "status": "translation",
+        "text": "янги қонун илгари содир этилган ҳуқуқбузарлик учун жавобгарликни бекор қилади ёки енгиллаштиради"
+      }
+    ],
+    "nonprofit_receives_foreign_assets": [
+      {
+        "status": "translation",
+        "text": "нотижорат ташкилот чет давлатлардан, халқаро ва чет эл юридик шахсларидан, чет эл фуқароларидан ва фуқаролиги бўлмаган шахслардан пул маблағлари ва активлар олади"
+      }
+    ],
+    "party_or_union_activity_prohibited": [
+      {
+        "status": "translation",
+        "text": "сиёсий партия ёки касаба уюшмасининг фаолиятига йўл қўйилмайди"
+      }
+    ],
+    "peaceful_cooperative_foreign_policy_1995": [
+      {
+        "status": "translation",
+        "text": "Республика давлатлар ўртасида ҳамкорлик ва яхши қўшничилик муносабатлари сиёсатини олиб боради (1995 йилги таҳрир)"
+      }
+    ],
+    "peaceful_cooperative_foreign_policy_declared": [
+      {
+        "status": "translation",
+        "text": "Республика манфаатдор давлатлар билан тинчлик ва ҳамкорликнинг ташқи сиёсатини олиб боради"
+      }
+    ],
+    "private_land_basis_conditions_limits_established_by_law": [
+      {
+        "status": "translation",
+        "text": "ерга хусусий мулк ҳуқуқининг асослари, шартлари ва доираси қонун билан белгиланган"
+      }
+    ],
+    "private_land_holding": [
+      {
+        "status": "translation",
+        "text": "ер хусусий мулкда турибди"
+      }
+    ],
+    "private_land_holding_constitutionally_allowed": [
+      {
+        "status": "translation",
+        "text": "ернинг хусусий мулкда бўлишига конституциявий йўл қўйилади"
+      }
+    ],
+    "property_use": [
+      {
+        "status": "translation",
+        "text": "мулкдан фойдаланиш ўрин олган"
+      }
+    ],
+    "property_use_constitutionally_compliant": [
+      {
+        "status": "translation",
+        "text": "мулкдан фойдаланиш конституциявий шартларга жавоб беради"
+      }
+    ],
+    "property_use_serves_public_and_state_interests": [
+      {
+        "status": "translation",
+        "text": "мулкдан фойдаланиш жамият ва давлат манфаатларига жавоб беради"
+      }
+    ],
+    "property_use_serves_public_good": [
+      {
+        "status": "translation",
+        "text": "мулкдан фойдаланиш жамият манфаатига хизмат қилади (1995 йилги таҳрир)"
+      }
+    ],
+    "protected_rights_not_infringed": [
+      {
+        "status": "translation",
+        "text": "бошқа шахсларнинг қонун билан қўриқланадиган ҳуқуқ ва манфаатлари камситилмаган"
+      }
+    ],
+    "religious_activity": [
+      {
+        "status": "translation",
+        "text": "фаолият диний ташкилотнинг фаолиятидир"
+      }
+    ],
+    "religious_restriction_constitutionally_authorized": [
+      {
+        "status": "translation",
+        "text": "диний ташкилот фаолиятининг чекланишига конституциявий йўл қўйилади"
+      }
+    ],
+    "religious_restriction_established_by_law": [
+      {
+        "status": "translation",
+        "text": "чеклаш қонун билан белгиланган"
+      }
+    ],
+    "religious_restriction_has_constitutional_goal": [
+      {
+        "status": "translation",
+        "text": "чеклаш конституциявий тузум асосларини, инсон ва фуқаронинг ҳуқуқ ва эркинликларини ҳимоя қилиш, миллий хавфсизликни таъминлаш, жамоат тартибини, фуқаролар саломатлигини ва жамият ахлоқини муҳофаза қилиш мақсадида киритилган"
+      }
+    ],
+    "renounces_first_use_of_armed_force_1995": [
+      {
+        "status": "translation",
+        "text": "Республика биринчи бўлиб қуролли куч ишлатишдан бош тортади (1995 йилги таҳрир)"
+      }
+    ],
+    "republic_names_equivalent_1995": [
+      {
+        "status": "translation",
+        "text": "«Қозоғистон Республикаси» ва «Қозоғистон» номлари тенг маънолидир (1995 йилги таҳрир)"
+      }
+    ],
+    "restriction_of_religious_activity": [
+      {
+        "status": "translation",
+        "text": "чеклаш диний ташкилотнинг фаолиятига тааллуқли"
+      }
+    ],
+    "retroactive_application_attempt": [
+      {
+        "status": "translation",
+        "text": "қонун унинг амалга киритилишидан илгари юзага келган муносабатларга нисбатан қўлланилади"
+      }
+    ],
+    "retroactive_application_prohibited": [
+      {
+        "status": "translation",
+        "text": "қонун орқага қайтиш кучига эга эмас"
+      }
+    ],
+    "rule_reads_statute": [
+      {
+        "status": "translation",
+        "text": "норма Республиканинг ушбу қонунидан келтириб чиқарилган"
+      }
+    ],
+    "rule_reads_treaty": [
+      {
+        "status": "translation",
+        "text": "норма ушбу халқаро шартномадан келтириб чиқарилган"
+      }
+    ],
+    "russian_used_officially_1995": [
+      {
+        "status": "translation",
+        "text": "давлат ташкилотларида ва маҳаллий ўзини ўзи бошқариш органларида қозоқ тили билан баробар рус тили ҳам расмий қўлланилади (1995 йилги таҳрир)"
+      }
+    ],
+    "sovereignty_covers_whole_territory_1995": [
+      {
+        "status": "translation",
+        "text": "Республиканинг суверенитети унинг бутун ҳудудига тааллуқлидир (1995 йилги таҳрир)"
+      }
+    ],
+    "state_anthem_established": [
+      {
+        "status": "translation",
+        "text": "Давлат мадҳияси таъсис этилган"
+      }
+    ],
+    "state_cares_for_language_development_1995": [
+      {
+        "status": "translation",
+        "text": "давлат Қозоғистон халқи тилларини ўрганиш ва ривожлантириш учун шароит яратиш ҳақида ғамхўрлик қилади (1995 йилги таҳрир)"
+      }
+    ],
+    "state_emblem_established": [
+      {
+        "status": "translation",
+        "text": "Давлат герби таъсис этилган"
+      }
+    ],
+    "state_flag_established": [
+      {
+        "status": "translation",
+        "text": "Давлат байроғи таъсис этилган"
+      }
+    ],
+    "state_language_is_kazakh_1995": [
+      {
+        "status": "translation",
+        "text": "давлат тили қозоқ тилидир (1995 йилги таҳрир)"
+      }
+    ],
+    "state_symbols_established_1995": [
+      {
+        "status": "translation",
+        "text": "Республиканинг давлат рамзлари — Байроқ, Герб ва Мадҳия мавжуд (1995 йилги таҳрир)"
+      }
+    ],
+    "statute_norm_forbids": [
+      {
+        "status": "translation",
+        "text": "Республика қонунининг нормаси ушбу хатти-ҳаракатни тақиқлайди"
+      }
+    ],
+    "treaty_conflicts_with_statute": [
+      {
+        "status": "translation",
+        "text": "халқаро шартнома ва Республика қонуни ихтилоф қилади"
+      }
+    ],
+    "treaty_norm_permits": [
+      {
+        "status": "translation",
+        "text": "ратификация қилинган халқаро шартноманинг нормаси ушбу хатти-ҳаракатга йўл қўяди"
+      }
+    ],
+    "treaty_prevails_over_statute": [
+      {
+        "status": "translation",
+        "text": "халқаро шартнома Республика қонунидан устун туради (1995 йилги таҳрир)"
+      }
+    ],
+    "treaty_ratified_by_republic": [
+      {
+        "status": "translation",
+        "text": "халқаро шартнома Республика томонидан ратификация қилинган"
+      }
+    ],
+    "unitary_state_presidential_form_1995": [
+      {
+        "status": "translation",
+        "text": "Республика президентлик бошқаруви шаклига эга унитар давлатдир (1995 йилги таҳрир)"
+      }
+    ],
+    "unlawful_association_interference_with_state": [
+      {
+        "status": "translation",
+        "text": "жамоат бирлашмасининг давлат ишларига қонунга хилоф аралашуви ўрин олган"
+      }
+    ],
+    "unlawful_state_interference_with_association": [
+      {
+        "status": "translation",
+        "text": "давлатнинг жамоат бирлашмаси ишларига қонунга хилоф аралашуви ўрин олган"
+      }
+    ]
+  },
+  "language": "uz",
+  "package": "kz.constitution.sources"
+}

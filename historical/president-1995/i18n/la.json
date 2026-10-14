@@ -1,0 +1,1262 @@
+{
+  "$comment": "Stratum praesentationis Latinum pacti kz.constitution1995.president (DECISION-0070). Hoc tabularium in CLIR non ingreditur et a solo strato praesentationis legitur (verbalize --labels, MCP, pons mensae operariae). Versio ex notis Russicis authenticis (ru-KZ) eiusdem pacti ducta est; status omnium notarum est 'translation', id est versio operosa a formalizatore facta, non editio officialis. Clavis est nomen locale declarationis.",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "ActingPresidentCannotInitiateAmendment1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 48, numerus 2 (recensio anni 1995). Personae quae potestates Praesidis suscepit non licet mutationes et additamenta Constitutionis incohare"
+      }
+    ],
+    "AdoptEmergencyMeasure1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 44, subnumerus 16 (recensio anni 1995). Praeses statum necessitatis inducit post consultationes officiales cum Primo Ministro et Moderatoribus Camerarum, Parlamento statim certiore facto"
+      }
+    ],
+    "AdoptMartialMeasure1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 44, subnumerus 17 (recensio anni 1995). Impetu illato vel periculo externo imminente Praeses statum belli inducit et Parlamentum statim certius facit"
+      }
+    ],
+    "AppointWithMazhilisConsent1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 44, subnumerus 3 (recensio anni 1995). Consentiente Mazhilis Praeses Primum Ministrum nominat"
+      }
+    ],
+    "AppointWithSenateConsent1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 44, subnumerus 4 (recensio anni 1995). Consentiente Senatu nominantur Moderator Curiae Constitutionalis, Moderator Argentariae Nationalis, Moderator Consilii Iudicialis Supremi, Procurator Generalis et Moderator Comitatus Securitatis Nationalis"
+      }
+    ],
+    "Appointment": [
+      {
+        "status": "translation",
+        "text": "nominatio a Praeside facta"
+      }
+    ],
+    "CallReferendum1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 44, subnumerus 10 (recensio anni 1995). Praeses de referendo rei publicae faciendo decernit"
+      }
+    ],
+    "Candidate": [
+      {
+        "status": "translation",
+        "text": "candidatus ad munus Praesidis"
+      }
+    ],
+    "ConstitutionalPetition": [
+      {
+        "status": "translation",
+        "text": "petitio ad Curiam Constitutionalem"
+      }
+    ],
+    "ConstitutionalReviewPetitionPower1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 44, subnumerus 10-1 (recensio anni 1995). Praeses petitionem ad Curiam Constitutionalem mittit ut actus iam vigens ad Constitutionem examinetur"
+      }
+    ],
+    "CountersignatureResponsibility1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 45, numerus 3 (recensio anni 1995). Moderator Camerae vel Primus Minister qui actum subscriptione confirmavit de legitimitate eius iure respondet"
+      }
+    ],
+    "ElectedByAbsoluteMajority1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 41, numerus 5 (recensio anni 1995). Electus habetur candidatus qui plus quam quinquaginta ex centum suffragiorum eorum qui suffragium tulerunt accepit"
+      }
+    ],
+    "ElectedInRunoff1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 41, numerus 5 (recensio anni 1995). In suffragio iterato electus habetur candidatus qui plura suffragia accepit"
+      }
+    ],
+    "Election": [
+      {
+        "status": "translation",
+        "text": "electiones Praesidis"
+      }
+    ],
+    "EmergencyMeasure": [
+      {
+        "status": "translation",
+        "text": "mensura status necessitatis vel status belli"
+      }
+    ],
+    "EmergencyPower1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 44, subnumerus 16 (recensio anni 1995). Praeses statum necessitatis inducit post consultationes officiales cum Primo Ministro et Moderatoribus Camerarum, Parlamento statim certiore facto"
+      }
+    ],
+    "FormerPresidentInviolabilityImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, numerus 3 (recensio anni 1995). Dispositiones de inviolabilitate ad ex-Praesides Rei Publicae pertinent"
+      }
+    ],
+    "FormerPresidentStateProvisionDuty1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, numeri 2 et 3 (recensio anni 1995). Sustentatio, ministerium et custodia Praesidis eiusque familiae sumptu civitatis praestantur; dispositiones articuli ad ex-Praesides pertinent"
+      }
+    ],
+    "FormerPresidentTitle1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 42, numerus 3 (recensio anni 1995). Omnes Praesides praeteriti praeter eos qui a munere remoti sunt titulum ex-Praesidis habent"
+      }
+    ],
+    "FormerPresidentialInviolability1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, numerus 3 (recensio anni 1995). Dispositiones de inviolabilitate ad ex-Praesides Rei Publicae pertinent"
+      }
+    ],
+    "Impeachment": [
+      {
+        "status": "translation",
+        "text": "iudicium de Praeside a munere removendo vel propter valetudinem dimittendo"
+      }
+    ],
+    "ImpeachmentBarredDuringDissolution1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 47, numerus 3 (recensio anni 1995). Quaestio de remotione moveri non potest, dum Praeses de potestatibus Parlamenti vel Mazhilis ante tempus finiendis deliberat"
+      }
+    ],
+    "ImpeachmentChargeBroughtByMazhilisMajority1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 47, numerus 2 (recensio anni 1995). De accusatione ferenda maiore parte totius numeri deputatorum Mazhilis decernitur"
+      }
+    ],
+    "ImpeachmentInitiativeThreshold1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 47, numerus 2 (recensio anni 1995). De accusatione ferenda decernitur incohantibus non minus quam tertia parte deputatorum Mazhilis"
+      }
+    ],
+    "ImpeachmentInvestigationValid1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 47, numerus 2 (recensio anni 1995). Inquisitio accusationis Senatui mandatur, exitus maiore parte suffragiorum totius numeri deputatorum eius traduntur"
+      }
+    ],
+    "Law": [
+      {
+        "status": "translation",
+        "text": "lex Praesidi exhibita"
+      }
+    ],
+    "LawReturnPower1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 44, subnumerus 2 (recensio anni 1995). Praeses legem vel singulos eius articulos ad iteratam deliberationem et suffragium remittit"
+      }
+    ],
+    "LawSigningPower1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 44, subnumerus 2 (recensio anni 1995). Praeses legem a Parlamento exhibitam intra unum mensem subscribit"
+      }
+    ],
+    "MartialPower1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 44, subnumerus 17 (recensio anni 1995). Impetu illato vel periculo externo imminente Praeses statum belli inducit et Parlamentum statim certius facit"
+      }
+    ],
+    "Mazhilis": [
+      {
+        "status": "translation",
+        "text": "Mazhilis Parlamenti"
+      }
+    ],
+    "MazhilisChairAssumesPowers1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 48, numerus 1 (recensio anni 1995). Moderatore Senatus impedito potestates ad Moderatorem Mazhilis transeunt"
+      }
+    ],
+    "MazhilisConsentAppointmentPower1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 44, subnumerus 3 (recensio anni 1995). Consentiente Mazhilis Praeses Primum Ministrum nominat"
+      }
+    ],
+    "Parliament": [
+      {
+        "status": "translation",
+        "text": "Parlamentum Rei Publicae Kazachstaniae"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "persona physica"
+      }
+    ],
+    "PetitionConstitutionalCourt1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 44, subnumerus 10-1 (recensio anni 1995). Praeses petitionem ad Curiam Constitutionalem mittit ut actus iam vigens ad Constitutionem examinetur"
+      }
+    ],
+    "President": [
+      {
+        "status": "translation",
+        "text": "Praeses Rei Publicae Kazachstaniae (recensio anni 1995)"
+      }
+    ],
+    "PresidentAssumesOfficeOnOath1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 42, numerus 1 (recensio anni 1995). Praeses munus init eo momento quo populo iusiurandum dat"
+      }
+    ],
+    "PresidentReleasedForIncapacity1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 47, numerus 1 (recensio anni 1995). De dimissione ante tempus propter morbum decernitur maiore parte non minus tribus ex quattuor partibus totius numeri deputatorum utriusque Camerae"
+      }
+    ],
+    "PresidentRemovedByImpeachment1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 47, numerus 2 (recensio anni 1995). Decretum ultimum maiore parte non minus tribus ex quattuor partibus suffragiorum deputatorum utriusque Camerae fertur, responsis Curiae Supremae et Curiae Constitutionalis adhibitis"
+      }
+    ],
+    "PresidentialAct": [
+      {
+        "status": "translation",
+        "text": "actus Praesidis"
+      }
+    ],
+    "PresidentialActBinding1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 45, numerus 1 (recensio anni 1995). Praeses ex Constitutione et legibus earumque exsequendarum causa decreta et mandata edit, quae in toto territorio Rei Publicae obligant"
+      }
+    ],
+    "PresidentialCandidateEligibility1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 41, numerus 2 (recensio anni 1995). Praeses eligi potest civis nativus non minor quadraginta annis, lingua publica utens, quindecim annos in Kazachstania habitans et educatione superiore praeditus"
+      }
+    ],
+    "PresidentialInviolability1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, numerus 1 (recensio anni 1995). Praeses, eius honos et dignitas inviolabiles sunt"
+      }
+    ],
+    "PresidentialInviolabilityImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, numerus 1 (recensio anni 1995). Praeses, eius honos et dignitas inviolabiles sunt"
+      }
+    ],
+    "PresidentialOfficeIncompatible1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "Articulus 43, numeri 1 et 3 (recensio anni 1995). Praesidi non licet deputatum esse, alia munera stipendio aucta gerere, negotiationem quaestuosam exercere neque factionis politicae membrum esse"
+      }
+    ],
+    "PresidentialOfficeIncompatible1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "Articulus 43, numeri 1 et 3 (recensio anni 1995). Praesidi non licet deputatum esse, alia munera stipendio aucta gerere, negotiationem quaestuosam exercere neque factionis politicae membrum esse"
+      }
+    ],
+    "PresidentialOfficeIncompatible1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "Articulus 43, numeri 1 et 3 (recensio anni 1995). Praesidi non licet deputatum esse, alia munera stipendio aucta gerere, negotiationem quaestuosam exercere neque factionis politicae membrum esse"
+      }
+    ],
+    "PresidentialOfficeIncompatible1995/alt/4": [
+      {
+        "status": "translation",
+        "text": "Articulus 43, numeri 1 et 3 (recensio anni 1995). Praesidi non licet deputatum esse, alia munera stipendio aucta gerere, negotiationem quaestuosam exercere neque factionis politicae membrum esse"
+      }
+    ],
+    "PresidentialPowersTerminated1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "Articulus 42, numerus 3 (recensio anni 1995). Potestates finiuntur Praeside noviter electo munus ineunte, dimissione ante tempus, remotione vel morte"
+      }
+    ],
+    "PresidentialPowersTerminated1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "Articulus 42, numerus 3 (recensio anni 1995). Potestates finiuntur Praeside noviter electo munus ineunte, dimissione ante tempus, remotione vel morte"
+      }
+    ],
+    "PresidentialPowersTerminated1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "Articulus 42, numerus 3 (recensio anni 1995). Potestates finiuntur Praeside noviter electo munus ineunte, dimissione ante tempus, remotione vel morte"
+      }
+    ],
+    "PresidentialRelativePositionProhibited1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 43, numerus 4 (recensio anni 1995). Propinquis Praesidis non licet munera ministrorum publicorum politicorum neque rectorum sectoris quasi publici gerere"
+      }
+    ],
+    "PrimeMinisterAssumesPowers1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 48, numerus 1 (recensio anni 1995). Moderatore Mazhilis impedito potestates ad Primum Ministrum Rei Publicae transeunt"
+      }
+    ],
+    "PrimeMinisterNomineeAfterFractionConsultations1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 44, subnumerus 3) (recensio anni 1995). Candidatus ad munus Primi Ministri Mazhilis deliberandus post consultationes cum coetibus factionum politicarum infertur"
+      }
+    ],
+    "ProvideStateFundedProtection1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 46, numeri 2 et 3 (recensio anni 1995). Sustentatio, ministerium et custodia Praesidis eiusque familiae sumptu civitatis praestantur; dispositiones articuli ad ex-Praesides pertinent"
+      }
+    ],
+    "Referendum": [
+      {
+        "status": "translation",
+        "text": "referendum rei publicae"
+      }
+    ],
+    "ReferendumPower1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 44, subnumerus 10 (recensio anni 1995). Praeses de referendo rei publicae faciendo decernit"
+      }
+    ],
+    "RegularElectionDateAdmissible1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 41, numerus 3 (recensio anni 1995). Electiones ordinariae primo die dominico mensis Decembris fiunt neque cum electionibus novi ordinis Parlamenti tempore concurrere possunt"
+      }
+    ],
+    "RejectedChargeTerminatesInitiators1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 47, numerus 2 (recensio anni 1995). Accusatio quolibet gradu reiecta finem ante tempus potestatum deputatorum Mazhilis qui eam incohaverunt affert"
+      }
+    ],
+    "RepeatedElectionProhibited1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 42, numerus 5 (recensio anni 1995). Eadem persona plus quam semel Praeses eligi non potest"
+      }
+    ],
+    "ReturnLawForReconsideration1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 44, subnumerus 2 (recensio anni 1995). Praeses legem vel singulos eius articulos ad iteratam deliberationem et suffragium remittit"
+      }
+    ],
+    "RunoffRequired1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 41, numerus 5 (recensio anni 1995). Si nullus candidatus numerum suffragiorum dictum accepit, suffragium iteratum fit"
+      }
+    ],
+    "Senate": [
+      {
+        "status": "translation",
+        "text": "Senatus Parlamenti"
+      }
+    ],
+    "SenateChairAssumesPowers1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 48, numerus 1 (recensio anni 1995). Potestates Praesidis in tempus reliquum ad Moderatorem Senatus Parlamenti transeunt"
+      }
+    ],
+    "SenateConsentAppointmentPower1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 44, subnumerus 4 (recensio anni 1995). Consentiente Senatu nominantur Moderator Curiae Constitutionalis, Moderator Argentariae Nationalis, Moderator Consilii Iudicialis Supremi, Procurator Generalis et Moderator Comitatus Securitatis Nationalis"
+      }
+    ],
+    "SignPresentedLaw1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 44, subnumerus 2 (recensio anni 1995). Praeses legem a Parlamento exhibitam intra unum mensem subscribit"
+      }
+    ],
+    "StateAuthority": [
+      {
+        "status": "translation",
+        "text": "magistratus publicus vel persona munere publico fungens"
+      }
+    ],
+    "SuccessionEvent": [
+      {
+        "status": "translation",
+        "text": "casus quo potestates Praesidis transeunt"
+      }
+    ],
+    "SuccessionOathTimely1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 42, numerus 2 (recensio anni 1995). Persona quae potestates Praesidis suscepit iusiurandum intra unum mensem dat"
+      }
+    ],
+    "act_countersigned_by_pm_or_chamber_chair": [
+      {
+        "status": "translation",
+        "text": "actus subscriptione Primi Ministri vel Moderatoris Camerae Parlamenti confirmatus est"
+      }
+    ],
+    "act_initiated_by_government": [
+      {
+        "status": "translation",
+        "text": "actus incohante Gubernio editus est"
+      }
+    ],
+    "acting_president": [
+      {
+        "status": "translation",
+        "text": "persona vices Praesidis gerit"
+      }
+    ],
+    "acting_president_amendment_initiative_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "ei qui vices Praesidis gerit mutationem Constitutionis incohare prohibetur"
+      }
+    ],
+    "age_years": [
+      {
+        "status": "translation",
+        "text": "aetas personae annis expletis"
+      }
+    ],
+    "aggression_or_immediate_external_threat": [
+      {
+        "status": "translation",
+        "text": "adest impetus in Rem Publicam illatus vel periculum externum imminens"
+      }
+    ],
+    "appointment_effective_1995": [
+      {
+        "status": "translation",
+        "text": "nominatio facta est"
+      }
+    ],
+    "appointment_requires_mazhilis_consent": [
+      {
+        "status": "translation",
+        "text": "nominatio consentiente Mazhilis fit"
+      }
+    ],
+    "appointment_requires_senate_consent": [
+      {
+        "status": "translation",
+        "text": "nominatio consentiente Senatu fit"
+      }
+    ],
+    "assumes_presidential_powers_1995": [
+      {
+        "status": "translation",
+        "text": "persona potestates Praesidis in se suscipit"
+      }
+    ],
+    "candidate_person": [
+      {
+        "status": "translation",
+        "text": "candidatus est haec persona"
+      }
+    ],
+    "charge_rejected": [
+      {
+        "status": "translation",
+        "text": "accusatio reiecta est"
+      }
+    ],
+    "citizen_by_birth": [
+      {
+        "status": "translation",
+        "text": "persona civis Rei Publicae nativus est"
+      }
+    ],
+    "close_relative_of_president": [
+      {
+        "status": "translation",
+        "text": "persona propinquus Praesidis est"
+      }
+    ],
+    "coincides_with_parliament_election": [
+      {
+        "status": "translation",
+        "text": "electiones Praesidis cum electionibus novi ordinis Parlamenti tempore concurrunt"
+      }
+    ],
+    "constitutional_amendment_initiative_attempt": [
+      {
+        "status": "translation",
+        "text": "is qui vices Praesidis gerit mutationem Constitutionis incohat"
+      }
+    ],
+    "constitutional_court_procedure_confirmed": [
+      {
+        "status": "translation",
+        "text": "Curia Constitutionalis confirmavit ordines constitutionales statutos observatos esse"
+      }
+    ],
+    "constitutional_organs_functioning_disrupted": [
+      {
+        "status": "translation",
+        "text": "munus ordinarium collegiorum constitutionalium turbatum est"
+      }
+    ],
+    "constitutional_petition": [
+      {
+        "status": "translation",
+        "text": "petitio ad Curiam Constitutionalem missa est"
+      }
+    ],
+    "constitutional_review_petition_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses Curiam Constitutionalem adit"
+      }
+    ],
+    "constitutional_review_requested_1995": [
+      {
+        "status": "translation",
+        "text": "custodia constitutionalis legitime incohata est"
+      }
+    ],
+    "countersignatory_bears_legal_responsibility_1995": [
+      {
+        "status": "translation",
+        "text": "qui actum subscriptione confirmavit de legitimitate eius iure respondet"
+      }
+    ],
+    "early_release_or_removal": [
+      {
+        "status": "translation",
+        "text": "Praeses ante tempus dimissus vel a munere remotus est"
+      }
+    ],
+    "elected_president_1995": [
+      {
+        "status": "translation",
+        "text": "persona Praeses electa habetur"
+      }
+    ],
+    "election_majority_percent_1995": [
+      {
+        "status": "translation",
+        "text": "limes electionis Praesidis: plus quam quinquaginta ex centum suffragiorum"
+      }
+    ],
+    "eligible_presidential_candidate_1995": [
+      {
+        "status": "translation",
+        "text": "persona requisitis candidati ad munus Praesidis congruit"
+      }
+    ],
+    "emergency_consultations_with_pm_and_chairs_completed": [
+      {
+        "status": "translation",
+        "text": "consultationes cum Primo Ministro et Moderatoribus Camerarum Parlamenti factae sunt"
+      }
+    ],
+    "emergency_measure": [
+      {
+        "status": "translation",
+        "text": "mensura est mensura status necessitatis"
+      }
+    ],
+    "emergency_measure_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses mensuras status necessitatis inducit"
+      }
+    ],
+    "emergency_measure_in_force_1995": [
+      {
+        "status": "translation",
+        "text": "mensurae status necessitatis legitime inductae sunt"
+      }
+    ],
+    "final_decision_within_two_months": [
+      {
+        "status": "translation",
+        "text": "decretum ultimum intra duos menses latum est"
+      }
+    ],
+    "fluent_in_state_language": [
+      {
+        "status": "translation",
+        "text": "persona lingua publica libere utitur"
+      }
+    ],
+    "former_president": [
+      {
+        "status": "translation",
+        "text": "persona Praeses Rei Publicae praeteritus est"
+      }
+    ],
+    "former_president_title_held_1995": [
+      {
+        "status": "translation",
+        "text": "Praesidi praeterito titulus Praesidis Rei Publicae servatur"
+      }
+    ],
+    "fraction_consultations_completed": [
+      {
+        "status": "translation",
+        "text": "consultationes cum coetibus factionum politicarum factae sunt"
+      }
+    ],
+    "higher_education": [
+      {
+        "status": "translation",
+        "text": "persona educatione superiore praedita est"
+      }
+    ],
+    "highest_vote_in_runoff": [
+      {
+        "status": "translation",
+        "text": "candidatus in suffragio iterato plura suffragia accepit"
+      }
+    ],
+    "impeachment_case": [
+      {
+        "status": "translation",
+        "text": "iudicium est iudicium de Praeside a munere removendo"
+      }
+    ],
+    "impeachment_charge_brought_1995": [
+      {
+        "status": "translation",
+        "text": "de accusatione ferenda maiore parte totius numeri deputatorum Mazhilis decretum est"
+      }
+    ],
+    "impeachment_deadline_months_1995": [
+      {
+        "status": "translation",
+        "text": "terminus decreti ultimi de remotione ferendi: duo menses"
+      }
+    ],
+    "impeachment_final_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "denominator limitis remotionis: quattuor"
+      }
+    ],
+    "impeachment_final_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "numerator limitis remotionis: tres"
+      }
+    ],
+    "impeachment_initiative_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "denominator limitis incohandae remotionis: tres"
+      }
+    ],
+    "impeachment_initiative_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "numerator limitis incohandae remotionis: unum"
+      }
+    ],
+    "impeachment_initiative_valid_1995": [
+      {
+        "status": "translation",
+        "text": "remotio a legitimo numero deputatorum incohata est"
+      }
+    ],
+    "impeachment_investigation_valid_1995": [
+      {
+        "status": "translation",
+        "text": "inquisitio accusationis legitime mandata est"
+      }
+    ],
+    "impeachment_may_not_be_initiated_1995": [
+      {
+        "status": "translation",
+        "text": "quaestio de Praeside removendo moveri non potest"
+      }
+    ],
+    "incapacity_case": [
+      {
+        "status": "translation",
+        "text": "iudicium est iudicium de Praeside propter valetudinem dimittendo"
+      }
+    ],
+    "incapacity_release_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "denominator limitis dimissionis propter valetudinem: quattuor"
+      }
+    ],
+    "incapacity_release_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "numerator limitis dimissionis propter valetudinem: tres"
+      }
+    ],
+    "initiating_mazhilis_deputies_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "potestates deputatorum Mazhilis qui accusationem incohaverunt finiuntur"
+      }
+    ],
+    "law_presented": [
+      {
+        "status": "translation",
+        "text": "lex Praesidi ad subscribendum exhibita est"
+      }
+    ],
+    "law_returned_for_reconsideration_1995": [
+      {
+        "status": "translation",
+        "text": "lex ad iteratam deliberationem et suffragium remissa est"
+      }
+    ],
+    "law_signature_months_1995": [
+      {
+        "status": "translation",
+        "text": "terminus legis exhibitae subscribendae: unus mensis"
+      }
+    ],
+    "law_signed_1995": [
+      {
+        "status": "translation",
+        "text": "lex a Praeside subscripta est"
+      }
+    ],
+    "martial_measure_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses statum belli inducit"
+      }
+    ],
+    "martial_measure_in_force_1995": [
+      {
+        "status": "translation",
+        "text": "status belli legitime inductus est"
+      }
+    ],
+    "mazhilis_accusation_votes": [
+      {
+        "status": "translation",
+        "text": "numerus suffragiorum Mazhilis pro accusatione ferenda latorum"
+      }
+    ],
+    "mazhilis_chair": [
+      {
+        "status": "translation",
+        "text": "persona Moderator Mazhilis est"
+      }
+    ],
+    "mazhilis_chair_unable": [
+      {
+        "status": "translation",
+        "text": "Moderator Mazhilis potestates Praesidis suscipere non potest"
+      }
+    ],
+    "mazhilis_consent_given": [
+      {
+        "status": "translation",
+        "text": "Mazhilis nominationi consensit"
+      }
+    ],
+    "mazhilis_final_votes": [
+      {
+        "status": "translation",
+        "text": "numerus suffragiorum Mazhilis in decreto ultimo latorum"
+      }
+    ],
+    "mazhilis_initiating_votes": [
+      {
+        "status": "translation",
+        "text": "numerus deputatorum Mazhilis qui remotionem incohaverunt"
+      }
+    ],
+    "mazhilis_release_votes": [
+      {
+        "status": "translation",
+        "text": "numerus suffragiorum Mazhilis pro dimissione propter valetudinem latorum"
+      }
+    ],
+    "mazhilis_total_deputies": [
+      {
+        "status": "translation",
+        "text": "totus numerus deputatorum Mazhilis"
+      }
+    ],
+    "medical_commission_conclusion": [
+      {
+        "status": "translation",
+        "text": "responsum commissionis medicae adest"
+      }
+    ],
+    "new_president_assumed_office": [
+      {
+        "status": "translation",
+        "text": "novus Praeses munus iniit"
+      }
+    ],
+    "no_candidate_reached_majority": [
+      {
+        "status": "translation",
+        "text": "nullus candidatus plus quam dimidiam partem suffragiorum accepit"
+      }
+    ],
+    "oath_taken": [
+      {
+        "status": "translation",
+        "text": "persona populo Kazachstaniae iusiurandum dedit"
+      }
+    ],
+    "parliament_dissolution_under_consideration": [
+      {
+        "status": "translation",
+        "text": "quaestio de Parlamento vel Mazhilis dissolvendo deliberatur"
+      }
+    ],
+    "parliament_immediately_informed": [
+      {
+        "status": "translation",
+        "text": "Parlamentum de mensuris susceptis statim certius factum est"
+      }
+    ],
+    "participating_voters": [
+      {
+        "status": "translation",
+        "text": "numerus suffragatorum qui suffragium tulerunt"
+      }
+    ],
+    "petition_protects_rights_or_security": [
+      {
+        "status": "translation",
+        "text": "petitio ad iura et libertates hominis vel securitatem civitatis tuendam spectat"
+      }
+    ],
+    "pm_appointment_consultations_completed_1995": [
+      {
+        "status": "translation",
+        "text": "candidatus ad munus Primi Ministri post consultationes cum coetibus factionum politicarum inlatus est"
+      }
+    ],
+    "president": [
+      {
+        "status": "translation",
+        "text": "persona Praeses Rei Publicae est"
+      }
+    ],
+    "president_addresses_annual_message_1995": [
+      {
+        "status": "translation",
+        "text": "Praeses nuntium annuum de statu rerum in civitate adfert"
+      }
+    ],
+    "president_assumed_office_1995": [
+      {
+        "status": "translation",
+        "text": "persona munus Praesidis iniit"
+      }
+    ],
+    "president_conducts_business": [
+      {
+        "status": "translation",
+        "text": "Praeses negotiationem quaestuosam exercet"
+      }
+    ],
+    "president_deceased": [
+      {
+        "status": "translation",
+        "text": "Praeses mortuus est"
+      }
+    ],
+    "president_decides_citizenship_and_asylum_1995": [
+      {
+        "status": "translation",
+        "text": "Praeses de iure civitatis et asylo politico concedendo decernit"
+      }
+    ],
+    "president_ensures_concerted_branch_functioning_1995": [
+      {
+        "status": "translation",
+        "text": "Praeses munus concors partium potestatis publicae praestat"
+      }
+    ],
+    "president_exercises_pardon_1995": [
+      {
+        "status": "translation",
+        "text": "Praeses civibus veniam dat"
+      }
+    ],
+    "president_forms_security_council_and_assembly_1995": [
+      {
+        "status": "translation",
+        "text": "Praeses Consilium Securitatis et Conventum Populi Kazachstaniae constituit"
+      }
+    ],
+    "president_forms_state_guard_service_1995": [
+      {
+        "status": "translation",
+        "text": "Praeses Officium Custodiae Publicae constituit"
+      }
+    ],
+    "president_holds_other_paid_office": [
+      {
+        "status": "translation",
+        "text": "Praeses aliud munus stipendio auctum gerit"
+      }
+    ],
+    "president_holds_representative_mandate": [
+      {
+        "status": "translation",
+        "text": "Praeses deputatus collegii repraesentantis est"
+      }
+    ],
+    "president_is_head_of_state_1995": [
+      {
+        "status": "translation",
+        "text": "Praeses caput civitatis et summa persona munere publico fungens Rei Publicae est"
+      }
+    ],
+    "president_is_supreme_commander_1995": [
+      {
+        "status": "translation",
+        "text": "Praeses Summus Imperator Copiarum Armatarum est"
+      }
+    ],
+    "president_is_symbol_and_guarantor_of_unity_1995": [
+      {
+        "status": "translation",
+        "text": "Praeses signum et sponsor unitatis populi et potestatis publicae est"
+      }
+    ],
+    "president_minimum_age_1995": [
+      {
+        "status": "translation",
+        "text": "aetas minima Praesidis: quadraginta anni"
+      }
+    ],
+    "president_party_member": [
+      {
+        "status": "translation",
+        "text": "Praeses factionis politicae membrum est"
+      }
+    ],
+    "president_person": [
+      {
+        "status": "translation",
+        "text": "Praeses est haec persona physica"
+      }
+    ],
+    "president_released_for_incapacity_1995": [
+      {
+        "status": "translation",
+        "text": "Praeses ante tempus propter valetudinem a munere dimissus est"
+      }
+    ],
+    "president_removed_by_impeachment_1995": [
+      {
+        "status": "translation",
+        "text": "Praeses a munere remotus est"
+      }
+    ],
+    "president_residence_years_1995": [
+      {
+        "status": "translation",
+        "text": "terminus habitationis in Kazachstania requisitus: quindecim anni"
+      }
+    ],
+    "president_term_years_1995": [
+      {
+        "status": "translation",
+        "text": "terminus potestatum Praesidis: septem anni"
+      }
+    ],
+    "presidential_act": [
+      {
+        "status": "translation",
+        "text": "actus ab hoc Praeside editus est"
+      }
+    ],
+    "presidential_act_based_on_constitution_and_law": [
+      {
+        "status": "translation",
+        "text": "actus ex Constitutione et legibus earumque exsequendarum causa editus est"
+      }
+    ],
+    "presidential_act_binding_nationwide_1995": [
+      {
+        "status": "translation",
+        "text": "actus Praesidis in toto territorio Rei Publicae obligat"
+      }
+    ],
+    "presidential_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses nominationem facit"
+      }
+    ],
+    "presidential_election": [
+      {
+        "status": "translation",
+        "text": "eventus est electiones Praesidis"
+      }
+    ],
+    "presidential_inviolability_infringement": [
+      {
+        "status": "translation",
+        "text": "inviolabilitas Praesidis violata est"
+      }
+    ],
+    "presidential_office_incompatible_1995": [
+      {
+        "status": "translation",
+        "text": "munus Praesidis cum munere vel negotiatione gesta incompatibile est"
+      }
+    ],
+    "presidential_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "potestates Praesidis finitae sunt"
+      }
+    ],
+    "presidential_relative_position_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "propinquo Praesidis tale munus gerere non licet"
+      }
+    ],
+    "presidential_return_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses legem ad iteratam deliberationem remittit"
+      }
+    ],
+    "presidential_signature_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses legem exhibitam subscribit"
+      }
+    ],
+    "presidential_vacancy": [
+      {
+        "status": "translation",
+        "text": "dimissio ante tempus, remotio vel mors Praesidis accidit"
+      }
+    ],
+    "presidential_vote": [
+      {
+        "status": "translation",
+        "text": "numerus suffragiorum pro candidato latorum"
+      }
+    ],
+    "previously_elected_president": [
+      {
+        "status": "translation",
+        "text": "persona antea Praeses Rei Publicae electa est"
+      }
+    ],
+    "prime_minister": [
+      {
+        "status": "translation",
+        "text": "persona Primus Minister est"
+      }
+    ],
+    "referendum_called_1995": [
+      {
+        "status": "translation",
+        "text": "referendum rei publicae indictum est"
+      }
+    ],
+    "referendum_decision_attempt": [
+      {
+        "status": "translation",
+        "text": "Praeses de referendo faciendo decernit"
+      }
+    ],
+    "referendum_proposal": [
+      {
+        "status": "translation",
+        "text": "propositum de referendo rei publicae faciendo denuntiatum est"
+      }
+    ],
+    "regular_election_date_admissible_1995": [
+      {
+        "status": "translation",
+        "text": "tempus electionum ordinariarum Praesidis licet"
+      }
+    ],
+    "regular_election_on_first_december_sunday": [
+      {
+        "status": "translation",
+        "text": "electiones ordinariae in primum diem dominicum mensis Decembris indictae sunt"
+      }
+    ],
+    "relative_holds_political_office_or_quasistate_leadership": [
+      {
+        "status": "translation",
+        "text": "propinquus munus publicum politicum gerit vel instituto sectoris quasi publici praeest"
+      }
+    ],
+    "removed_from_office": [
+      {
+        "status": "translation",
+        "text": "persona a munere Praesidis remota est"
+      }
+    ],
+    "repeated_election_attempt": [
+      {
+        "status": "translation",
+        "text": "temptatum est ut persona iterum Praeses eligeretur"
+      }
+    ],
+    "repeated_election_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "eandem personam iterum Praesidem eligi non licet"
+      }
+    ],
+    "resides_last_years": [
+      {
+        "status": "translation",
+        "text": "numerus annorum proximorum habitationis in Kazachstania"
+      }
+    ],
+    "runoff_ballot": [
+      {
+        "status": "translation",
+        "text": "suffragium est suffragium iteratum"
+      }
+    ],
+    "runoff_required_1995": [
+      {
+        "status": "translation",
+        "text": "suffragium iteratum fit"
+      }
+    ],
+    "senate_chair": [
+      {
+        "status": "translation",
+        "text": "persona Moderator Senatus est"
+      }
+    ],
+    "senate_chair_unable": [
+      {
+        "status": "translation",
+        "text": "Moderator Senatus potestates Praesidis suscipere non potest"
+      }
+    ],
+    "senate_consent_given": [
+      {
+        "status": "translation",
+        "text": "Senatus nominationi consensit"
+      }
+    ],
+    "senate_final_votes": [
+      {
+        "status": "translation",
+        "text": "numerus suffragiorum Senatus in decreto ultimo latorum"
+      }
+    ],
+    "senate_investigation_votes": [
+      {
+        "status": "translation",
+        "text": "numerus suffragiorum Senatus pro inquisitione mandanda latorum"
+      }
+    ],
+    "senate_release_votes": [
+      {
+        "status": "translation",
+        "text": "numerus suffragiorum Senatus pro dimissione propter valetudinem latorum"
+      }
+    ],
+    "senate_total_deputies": [
+      {
+        "status": "translation",
+        "text": "totus numerus deputatorum Senatus"
+      }
+    ],
+    "serious_and_immediate_threat": [
+      {
+        "status": "translation",
+        "text": "adest periculum grave et imminens securitati, ordini constitutionali vel ordini publico"
+      }
+    ],
+    "signature_within_one_month": [
+      {
+        "status": "translation",
+        "text": "lex intra mensem subscripta est"
+      }
+    ],
+    "state_authority": [
+      {
+        "status": "translation",
+        "text": "subiectum est magistratus publicus vel persona munere publico fungens"
+      }
+    ],
+    "state_funded_protection_provided": [
+      {
+        "status": "translation",
+        "text": "Praesidi praeterito custodia sumptu civitatis praestita est"
+      }
+    ],
+    "succession_event": [
+      {
+        "status": "translation",
+        "text": "potestates Praesidis ad hanc personam transeunt"
+      }
+    ],
+    "succession_oath_months_1995": [
+      {
+        "status": "translation",
+        "text": "terminus iurisiurandi in potestatibus transeuntibus dandi: unus mensis"
+      }
+    ],
+    "succession_oath_timely_1995": [
+      {
+        "status": "translation",
+        "text": "iusiurandum in potestatibus transeuntibus intra terminum datum est"
+      }
+    ],
+    "succession_oath_within_one_month": [
+      {
+        "status": "translation",
+        "text": "iusiurandum intra mensem a die potestatum susceptarum datum est"
+      }
+    ],
+    "supreme_court_charge_supported": [
+      {
+        "status": "translation",
+        "text": "Curia Suprema accusationem fundatam esse confirmavit"
+      }
+    ],
+    "treason_charge": [
+      {
+        "status": "translation",
+        "text": "Praesidi accusatio perduellionis inlata est"
+      }
+    ]
+  },
+  "language": "la",
+  "package": "kz.constitution1995.president"
+}

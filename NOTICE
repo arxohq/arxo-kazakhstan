@@ -1,0 +1,12 @@
+Arxo Corpus. Formalizations and code: Apache-2.0.
+Source texts retain their publishers' terms; see each package's declarations.
+
+Kazakhstan Constitution consumer export, 14 October 2026.
+The 2026 and historical 1995 Russian/Kazakh texts are retained copies from
+Akorda and Adilet. Official legal text, portal presentation/editorial apparatus,
+and Arxo formalization are different materials. The Arxo Apache-2.0 license
+applies to model/delivery code; it does not claim authorship or exclusive rights
+in the official texts. HTML witnesses are retained as obtained; their layout,
+portal scripts and editorial notes are not part of the executable legal rules.
+Extracted text witnesses are PINNED_UNOFFICIAL_COPY. English explanations and
+model outputs are unofficial. See source declarations and provenance notes.

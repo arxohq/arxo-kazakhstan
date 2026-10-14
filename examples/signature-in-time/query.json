@@ -1,0 +1,15 @@
+{
+  "kind": "truth",
+  "literal": {
+    "args": [
+      {
+        "id": "urn:kz:constitution:president:test:law1",
+        "kind": "entity_ref"
+      }
+    ],
+    "kind": "literal",
+    "polarity": "positive",
+    "predicate": "urn:kz:constitution:president#law_signed"
+  },
+  "queryId": "urn:kz:constitution:president#test/urn%3Aquery%3Akzcp-1/query/1"
+}

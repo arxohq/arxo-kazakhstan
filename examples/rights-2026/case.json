@@ -1,0 +1,129 @@
+{
+  "assertions": [
+    {
+      "contentHash": "sha256:18a9063c25a832455c5101ad3dd926780528d3caa705f8a0748724310d91fac5",
+      "evidence": [],
+      "id": "urn:kz:constitution:rights#l01-a1",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:kz:constitution:rights:case:person:11",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:rights#person"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:rights"
+    },
+    {
+      "contentHash": "sha256:ae0928f7c3417d2c02c8ccfd38ab3b90ccba275942bc88e3cb01dd3783a4c663",
+      "evidence": [],
+      "id": "urn:kz:constitution:rights#l01-a2",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:kz:constitution:rights:case:person:11",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:rights#citizen"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:rights"
+    },
+    {
+      "contentHash": "sha256:e9670fabcb29a4217d5e14ca9ea26f3480e0f045da06946eca28de1482b4eec3",
+      "evidence": [],
+      "id": "urn:kz:constitution:rights#l01-a3",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:kz:constitution:rights:case:person:11",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:rights#lawfully_in_kazakhstan"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:rights"
+    },
+    {
+      "contentHash": "sha256:adb2a7f15275963b1f95a0d9f5618e3d586290d68c915c8e4bb0c26e9ea61e39",
+      "evidence": [],
+      "id": "urn:kz:constitution:rights#l01-a4",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:kz:constitution:rights:case:association:1",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:rights#association"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:rights"
+    },
+    {
+      "contentHash": "sha256:85854e9c422e979a691627653e1a13b16517ebf829969ecba0c5e3c7a55b8be5",
+      "evidence": [],
+      "id": "urn:kz:constitution:rights#l01-a5",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:kz:constitution:rights:case:assembly:1",
+            "kind": "entity_ref"
+          },
+          {
+            "id": "urn:kz:constitution:rights:case:person:11",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:rights#peaceful_assembly"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:rights"
+    },
+    {
+      "contentHash": "sha256:9d0612471b6ec2564c0bf0b0d535c50fbe2b0ded38afb98f7e115fc5fbb21631",
+      "evidence": [],
+      "id": "urn:kz:constitution:rights#l01-a6",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:kz:constitution:rights:case:person:11",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:rights#labour_dispute"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:rights"
+    }
+  ],
+  "context": {
+    "decisionTime": "2026-09-01T12:00:00+05:00",
+    "knowledgeTime": "2026-09-01T12:00:00+05:00",
+    "legalTime": "2026-09-01",
+    "timezone": "Asia/Qyzylorda"
+  },
+  "options": {}
+}

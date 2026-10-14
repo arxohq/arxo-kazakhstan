@@ -1,0 +1,1640 @@
+{
+  "$comment": "哈萨克斯坦共和国宪法程序包的中文（简体）标签叠加层（DECISION-0070）。本文件不参与编译，也不进入 CLIR 规范字节，仅由展示层读取（lawref verbalize --labels、MCP 资源 law://<程序包>/verbalized/zh、工作台）。译文由形式化人员依据各节点的俄文标签（ru-KZ）译出，术语参照宪法学通用汉语表述，状态为 translation（工作译文），并非官方译本。键为声明的本地名称。",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "ActContradictingConstitutionInvalid1995": [
+      {
+        "status": "translation",
+        "text": "第六十二条第七款（1995年版）。共和国法律、议会及其各院的决议不得与宪法相抵触"
+      }
+    ],
+    "AddressToPresidentValid1995": [
+      {
+        "status": "translation",
+        "text": "第五十七条第六项（1995年版）。请求总统免去政府成员职务的决定，以该院议员总数不少于三分之二的多数通过"
+      }
+    ],
+    "Appointment": [
+      {
+        "status": "translation",
+        "text": "经议会某院同意作出的任命"
+      }
+    ],
+    "ApprovedLawPresentedToPresident1995": [
+      {
+        "status": "translation",
+        "text": "第六十一条第四款（1995年版）。经参议院议员总数过半数赞成的法律，应当在十日内提请总统签署"
+      }
+    ],
+    "Bill": [
+      {
+        "status": "translation",
+        "text": "法律草案"
+      }
+    ],
+    "BillAdoptedWithoutVoteOnConfidence1995": [
+      {
+        "status": "translation",
+        "text": "第六十一条第七款（1995年版）。不信任案的提议未获两院各自议员总数过半数赞成的，法律草案视为未经表决即获通过"
+      }
+    ],
+    "BudgetReportRejectionIsNoConfidence1995": [
+      {
+        "status": "translation",
+        "text": "第五十三条第二项（1995年版）。不批准政府关于共和国预算执行情况的报告，即为对政府通过不信任案"
+      }
+    ],
+    "Chamber": [
+      {
+        "status": "translation",
+        "text": "议会某院——参议院或者马日利斯"
+      }
+    ],
+    "ChamberChair": [
+      {
+        "status": "translation",
+        "text": "议会某院议长"
+      }
+    ],
+    "Committee": [
+      {
+        "status": "translation",
+        "text": "议会某院的常设委员会"
+      }
+    ],
+    "CommitteeCountAdmissible1995": [
+      {
+        "status": "translation",
+        "text": "第六十条第一款（1995年版）。每院常设委员会的数目不超过七个"
+      }
+    ],
+    "ConfidenceQuestion": [
+      {
+        "status": "translation",
+        "text": "对政府的信任问题"
+      }
+    ],
+    "ConfidenceRightExhausted1995": [
+      {
+        "status": "translation",
+        "text": "第六十一条第七款（1995年版）。政府每年行使该项权利不得超过两次"
+      }
+    ],
+    "ConstitutionalAmendmentAdopted1995": [
+      {
+        "status": "translation",
+        "text": "第六十二条第三款（1995年版）。宪法的修改和补充，以两院各自议员总数不少于四分之三的多数作出"
+      }
+    ],
+    "ConstitutionalLawAdopted1995": [
+      {
+        "status": "translation",
+        "text": "第六十二条第四款（1995年版）。宪法性法律以两院各自议员总数不少于三分之二的多数通过"
+      }
+    ],
+    "ConstitutionalLawObjectionOverridden1995": [
+      {
+        "status": "translation",
+        "text": "第五十三条第一之二项（1995年版）。总统对宪法性法律提出的异议，以两院各自议员总数四分之三的多数予以推翻"
+      }
+    ],
+    "Deputy": [
+      {
+        "status": "translation",
+        "text": "议会议员"
+      }
+    ],
+    "DeputyImmunityFromArrest1995": [
+      {
+        "status": "translation",
+        "text": "第五十二条第四款（1995年版）。未经本院同意不得逮捕议员或者追究其刑事责任，当场抓获和重罪的除外"
+      }
+    ],
+    "DeputyIncompatibilityTerminatesPowers1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "第五十二条第三款（1995年版）。违反兼职禁令的，导致议员职权终止"
+      }
+    ],
+    "DeputyIncompatibilityTerminatesPowers1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "第五十二条第三款（1995年版）。违反兼职禁令的，导致议员职权终止"
+      }
+    ],
+    "DeputyIncompatibilityTerminatesPowers1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "第五十二条第三款（1995年版）。违反兼职禁令的，导致议员职权终止"
+      }
+    ],
+    "DeputyInviolability1995": [
+      {
+        "status": "translation",
+        "text": "第五十二条第四款（1995年版）。未经本院同意不得逮捕议员或者追究其刑事责任，当场抓获和重罪的除外"
+      }
+    ],
+    "DeputyMandateForfeited1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "第五十二条第五款（1995年版）。议员迁往哈萨克斯坦境外定居、有罪判决生效以及丧失国籍的，丧失其资格"
+      }
+    ],
+    "DeputyMandateForfeited1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "第五十二条第五款（1995年版）。议员迁往哈萨克斯坦境外定居、有罪判决生效以及丧失国籍的，丧失其资格"
+      }
+    ],
+    "DeputyMandateForfeited1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "第五十二条第五款（1995年版）。议员迁往哈萨克斯坦境外定居、有罪判决生效以及丧失国籍的，丧失其资格"
+      }
+    ],
+    "DeputyPaidOfficeTerminatesPowers1995": [
+      {
+        "status": "translation",
+        "text": "第五十二条第三款（1995年版）。担任教学、科研或者其他创作活动以外的其他有报酬职务的，议员职权终止"
+      }
+    ],
+    "DeputyPowersTerminatedOnGeneralGrounds1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "第五十二条第五款（1995年版）。职权因辞职、死亡或者经法院宣告无行为能力、死亡、下落不明而终止"
+      }
+    ],
+    "DeputyPowersTerminatedOnGeneralGrounds1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "第五十二条第五款（1995年版）。职权因辞职、死亡或者经法院宣告无行为能力、死亡、下落不明而终止"
+      }
+    ],
+    "DeputyPowersTerminatedOnGeneralGrounds1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "第五十二条第五款（1995年版）。职权因辞职、死亡或者经法院宣告无行为能力、死亡、下落不明而终止"
+      }
+    ],
+    "DeputySanctionForAbsenceOrDelegation1995": [
+      {
+        "status": "translation",
+        "text": "第五十二条第二款（1995年版）。无正当理由缺席超过三次的，适用法律规定的处分措施"
+      }
+    ],
+    "DeputyVoteDelegationSanction1995": [
+      {
+        "status": "translation",
+        "text": "第五十二条第二款（1995年版）。转让表决权的，适用法律规定的处分措施"
+      }
+    ],
+    "Dissolution": [
+      {
+        "status": "translation",
+        "text": "议会或者马日利斯的解散"
+      }
+    ],
+    "DissolutionAdmissible1995": [
+      {
+        "status": "translation",
+        "text": "第六十三条（1995年版）。总统在与两院议长和总理协商后，可以在受保护期间之外解散议会或者马日利斯"
+      }
+    ],
+    "DissolutionBarred1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "第六十三条第二款（1995年版）。在紧急状态或者战争状态期间、总统职权的最后六个月内以及上次解散后一年之内，不得解散议会和马日利斯"
+      }
+    ],
+    "DissolutionBarred1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "第六十三条第二款（1995年版）。在紧急状态或者战争状态期间、总统职权的最后六个月内以及上次解散后一年之内，不得解散议会和马日利斯"
+      }
+    ],
+    "DissolutionBarred1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "第六十三条第二款（1995年版）。在紧急状态或者战争状态期间、总统职权的最后六个月内以及上次解散后一年之内，不得解散议会和马日利斯"
+      }
+    ],
+    "DualChamberMembershipProhibited1995": [
+      {
+        "status": "translation",
+        "text": "第五十条第四款（1995年版）。议会议员不得同时为两院的成员"
+      }
+    ],
+    "EligibleMazhilisDeputy1995": [
+      {
+        "status": "translation",
+        "text": "第五十一条第四款（1995年版）。年满二十五周岁、具有共和国国籍并在共和国最近居住十年的人，可以担任马日利斯议员"
+      }
+    ],
+    "EligibleSenator1995": [
+      {
+        "status": "translation",
+        "text": "第五十一条第四款（1995年版）。年满三十周岁、具有高等教育学历、工作年限不少于五年、在相应地区居住不少于三年并在共和国最近居住十年的人，可以担任参议院议员"
+      }
+    ],
+    "ExtraordinaryAgendaLimited1995": [
+      {
+        "status": "translation",
+        "text": "第五十九条第四款（1995年版）。临时会议只能审议其召集事由所涉事项"
+      }
+    ],
+    "ExtraordinarySessionByChairs1995": [
+      {
+        "status": "translation",
+        "text": "第五十九条第四款（1995年版）。临时会议可以经两院议长提议召集"
+      }
+    ],
+    "ExtraordinarySessionByThird1995": [
+      {
+        "status": "translation",
+        "text": "第五十九条第四款（1995年版）。临时会议可以经不少于议会议员总数三分之一的提议召集"
+      }
+    ],
+    "FirstSessionThirtyDaysComputed1995": [
+      {
+        "status": "translation",
+        "text": "第五十九条第二款（1995年版）。议会第一次会议应当自选举结果公布之日起三十日内召集"
+      }
+    ],
+    "FirstSessionTimely1995": [
+      {
+        "status": "translation",
+        "text": "第五十九条第二款（1995年版）。议会第一次会议由总统自选举结果公布之日起三十日内召集"
+      }
+    ],
+    "FiscalBillRequiresGovernmentOpinion1995": [
+      {
+        "status": "translation",
+        "text": "第六十一条第六款（1995年版）。减少收入或者增加支出的草案，仅在政府作出肯定性结论后方可提出"
+      }
+    ],
+    "Government": [
+      {
+        "status": "translation",
+        "text": "哈萨克斯坦共和国政府"
+      }
+    ],
+    "GovernmentNoConfidence1995": [
+      {
+        "status": "translation",
+        "text": "第五十六条第二款（1995年版）。马日利斯有权以议员总数过半数对政府通过不信任案"
+      }
+    ],
+    "LawInForceAfterPresidentialSignature1995": [
+      {
+        "status": "translation",
+        "text": "第六十二条第二款（1995年版）。共和国法律经共和国总统签署后生效"
+      }
+    ],
+    "LegislativeInitiativeValid1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "第六十一条第一款（1995年版）。立法动议权属于总统、议会议员和政府，并且只能在马日利斯行使"
+      }
+    ],
+    "LegislativeInitiativeValid1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "第六十一条第一款（1995年版）。立法动议权属于总统、议会议员和政府，并且只能在马日利斯行使"
+      }
+    ],
+    "LegislativeInitiativeValid1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "第六十一条第一款（1995年版）。立法动议权属于总统、议会议员和政府，并且只能在马日利斯行使"
+      }
+    ],
+    "MazhilisChairElected1995": [
+      {
+        "status": "translation",
+        "text": "第五十八条第一款（1995年版）。马日利斯议长人选由本院议员提名；以议员总数过半数选出"
+      }
+    ],
+    "MazhilisConfirmsEarlierVersion1995": [
+      {
+        "status": "translation",
+        "text": "第六十一条第五款（1995年版）。马日利斯在重新表决中以三分之二的多数确认原决定的，法律提请总统签署"
+      }
+    ],
+    "MazhilisConsentToPrimeMinister1995": [
+      {
+        "status": "translation",
+        "text": "第五十六条第一款第二项（1995年版）。马日利斯以本院议员总数过半数就任命总理向总统表示同意"
+      }
+    ],
+    "MazhilisDeputyPartyMandateForfeited1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "第五十二条第五款（1995年版）。马日利斯议员退出或者被开除出其据以当选名单的政党，以及该党停止活动的，丧失其资格"
+      }
+    ],
+    "MazhilisDeputyPartyMandateForfeited1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "第五十二条第五款（1995年版）。马日利斯议员退出或者被开除出其据以当选名单的政党，以及该党停止活动的，丧失其资格"
+      }
+    ],
+    "MazhilisSeatFromChamberMembership1995": [
+      {
+        "status": "translation",
+        "text": "第五十条第三款（1995年版）。列入马日利斯组成的议员占有马日利斯席位"
+      }
+    ],
+    "MinisterHearingInitiativeValid1995": [
+      {
+        "status": "translation",
+        "text": "第五十七条第六项（1995年版）。经本院议员总数不少于三分之一的动议，该院有权听取政府成员的报告"
+      }
+    ],
+    "MinisterReleaseRequired1995": [
+      {
+        "status": "translation",
+        "text": "第五十七条第六项（1995年版）。在此情形下，共和国总统免去该政府成员的职务"
+      }
+    ],
+    "NoConfidenceMotion": [
+      {
+        "status": "translation",
+        "text": "对政府的不信任案动议或者听取政府成员报告的动议"
+      }
+    ],
+    "NoConfidenceMotionValid1995": [
+      {
+        "status": "translation",
+        "text": "第五十六条第二款（1995年版）。不信任案经不少于马日利斯议员总数五分之一的动议提出"
+      }
+    ],
+    "Objection": [
+      {
+        "status": "translation",
+        "text": "总统对法律提出的异议"
+      }
+    ],
+    "ObjectionsAcceptedOnMissedDeadline1995": [
+      {
+        "status": "translation",
+        "text": "第五十四条第二款第二项（1995年版）。未遵守一个月期限的，视为接受总统的异议"
+      }
+    ],
+    "OrdinaryLawObjectionOverridden1995": [
+      {
+        "status": "translation",
+        "text": "第五十四条第二款第二项（1995年版）。总统对法律提出的异议，以两院各自议员总数三分之二的多数予以推翻"
+      }
+    ],
+    "Parliament": [
+      {
+        "status": "translation",
+        "text": "哈萨克斯坦共和国议会（1995年版）"
+      }
+    ],
+    "ParliamentPowersActive1995": [
+      {
+        "status": "translation",
+        "text": "第四十九条第二款（1995年版）。议会的职权自第一次会议开幕时开始，至新一届议会第一次会议开始时终止"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "自然人"
+      }
+    ],
+    "PresidentialFiscalBillExempt1995": [
+      {
+        "status": "translation",
+        "text": "第六十一条第六款（1995年版）。总统动议提出的法律草案无需政府的结论"
+      }
+    ],
+    "ReadingRequirementMet1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "第六十二条第六款（1995年版）。宪法修改案和宪法性法律草案必须进行不少于两读"
+      }
+    ],
+    "ReadingRequirementMet1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "第六十二条第六款（1995年版）。宪法修改案和宪法性法律草案必须进行不少于两读"
+      }
+    ],
+    "Referendum": [
+      {
+        "status": "translation",
+        "text": "共和国全民公决"
+      }
+    ],
+    "RejectedBillReturnedToInitiator1995": [
+      {
+        "status": "translation",
+        "text": "第六十一条第四款（1995年版）。被马日利斯否决的法律草案视为未通过，退回提案人"
+      }
+    ],
+    "SenateActsForParliament1995": [
+      {
+        "status": "translation",
+        "text": "第五十五条第五项（1995年版）。在马日利斯暂时缺位期间，参议院行使议会通过法律的职能"
+      }
+    ],
+    "SenateChairElected1995": [
+      {
+        "status": "translation",
+        "text": "第五十八条第一款（1995年版）。参议院议长人选由总统提名；以本院议员总数过半数无记名投票选出"
+      }
+    ],
+    "SenateConsentAppointment1995": [
+      {
+        "status": "translation",
+        "text": "第五十五条第二项（1995年版）。参议院对任命宪法法院院长、国家银行行长、最高司法委员会主席、总检察长和国家安全委员会主席表示同意"
+      }
+    ],
+    "SenateSeatFromChamberMembership1995": [
+      {
+        "status": "translation",
+        "text": "第五十条第二款（1995年版）。列入参议院组成的议员占有参议院席位"
+      }
+    ],
+    "SenateSilencePresentsLaw1995": [
+      {
+        "status": "translation",
+        "text": "第六十一条第四款（1995年版）。参议院在六十日内未作出决定的，法律提请总统签署"
+      }
+    ],
+    "Session": [
+      {
+        "status": "translation",
+        "text": "议会会期"
+      }
+    ],
+    "SingleMandateDeputyRecalled1995": [
+      {
+        "status": "translation",
+        "text": "第五十二条第五款（1995年版）。在单一选区当选的议员被选民罢免的，丧失其资格"
+      }
+    ],
+    "Sitting": [
+      {
+        "status": "translation",
+        "text": "两院联席会议或者分别举行的会议"
+      }
+    ],
+    "SittingQuorate1995": [
+      {
+        "status": "translation",
+        "text": "第五十九条第五款（1995年版）。两院会议须有两院各自议员总数不少于三分之二出席方可举行"
+      }
+    ],
+    "Statute": [
+      {
+        "status": "translation",
+        "text": "议会的法律或者其他文件"
+      }
+    ],
+    "act_contradicts_constitution": [
+      {
+        "status": "translation",
+        "text": "该文件与宪法相抵触"
+      }
+    ],
+    "act_in_force_1995": [
+      {
+        "status": "translation",
+        "text": "议会文件有效"
+      }
+    ],
+    "act_invalid_1995": [
+      {
+        "status": "translation",
+        "text": "议会文件无效"
+      }
+    ],
+    "act_signed_by_president": [
+      {
+        "status": "translation",
+        "text": "该文件已由共和国总统签署"
+      }
+    ],
+    "address_supporting_votes": [
+      {
+        "status": "translation",
+        "text": "对请求总统免去政府成员职务投赞成票的票数"
+      }
+    ],
+    "address_to_president_valid_1995": [
+      {
+        "status": "translation",
+        "text": "请求总统免去政府成员职务的决定已依法通过"
+      }
+    ],
+    "age_years": [
+      {
+        "status": "translation",
+        "text": "该人的周岁年龄"
+      }
+    ],
+    "amendment_majority_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "宪法修改议会门槛的分母为四分之三"
+      }
+    ],
+    "amendment_majority_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "宪法修改议会门槛的分子为四分之三"
+      }
+    ],
+    "appointment_effective_1995": [
+      {
+        "status": "translation",
+        "text": "任命已经作出"
+      }
+    ],
+    "appointment_requires_senate_consent": [
+      {
+        "status": "translation",
+        "text": "该项任命经参议院同意作出"
+      }
+    ],
+    "arrest_or_prosecution_attempt": [
+      {
+        "status": "translation",
+        "text": "已实施逮捕议员或者追究其刑事责任的行为"
+      }
+    ],
+    "bill_admissible_1995": [
+      {
+        "status": "translation",
+        "text": "该法律草案可以审议"
+      }
+    ],
+    "bill_adopted_without_vote_1995": [
+      {
+        "status": "translation",
+        "text": "法律草案视为未经表决即获通过"
+      }
+    ],
+    "bill_returned_to_initiator_1995": [
+      {
+        "status": "translation",
+        "text": "被否决的法律草案退回提案人"
+      }
+    ],
+    "budget_report_rejected": [
+      {
+        "status": "translation",
+        "text": "政府关于共和国预算执行情况的报告未获批准"
+      }
+    ],
+    "candidate_deputy": [
+      {
+        "status": "translation",
+        "text": "议员资格属于该人"
+      }
+    ],
+    "caught_in_the_act_or_grave_crime": [
+      {
+        "status": "translation",
+        "text": "议员在犯罪现场被当场抓获或者实施了重罪"
+      }
+    ],
+    "chair_candidate": [
+      {
+        "status": "translation",
+        "text": "该院议长职务由该人担任"
+      }
+    ],
+    "chair_chamber_total": [
+      {
+        "status": "translation",
+        "text": "选举议长时该院的议员总数"
+      }
+    ],
+    "chair_elected_1995": [
+      {
+        "status": "translation",
+        "text": "该候选人已当选该院议长"
+      }
+    ],
+    "chair_election_votes": [
+      {
+        "status": "translation",
+        "text": "对该院议长候选人投赞成票的票数"
+      }
+    ],
+    "chair_of_mazhilis": [
+      {
+        "status": "translation",
+        "text": "该人是马日利斯议长"
+      }
+    ],
+    "chair_of_senate": [
+      {
+        "status": "translation",
+        "text": "该人是参议院议长"
+      }
+    ],
+    "chamber_consent_given": [
+      {
+        "status": "translation",
+        "text": "该院已同意追究该议员的责任"
+      }
+    ],
+    "citizen": [
+      {
+        "status": "translation",
+        "text": "该人是哈萨克斯坦共和国公民"
+      }
+    ],
+    "citizenship_lost": [
+      {
+        "status": "translation",
+        "text": "该议员已丧失哈萨克斯坦共和国国籍"
+      }
+    ],
+    "committee_count_admissible_1995": [
+      {
+        "status": "translation",
+        "text": "该院常设委员会的数目符合规定"
+      }
+    ],
+    "conciliation_version": [
+      {
+        "status": "translation",
+        "text": "法律草案按协调委员会的文本审议"
+      }
+    ],
+    "confidence_question": [
+      {
+        "status": "translation",
+        "text": "总理已提出对政府的信任问题"
+      }
+    ],
+    "confidence_right_exhausted_1995": [
+      {
+        "status": "translation",
+        "text": "政府本年度提出信任问题的权利已经用尽"
+      }
+    ],
+    "confidence_uses_per_year_1995": [
+      {
+        "status": "translation",
+        "text": "政府提出信任问题的年度上限为两次"
+      }
+    ],
+    "confidence_uses_this_year": [
+      {
+        "status": "translation",
+        "text": "本年度政府已提出信任问题的次数"
+      }
+    ],
+    "confidence_vote_after_48_hours": [
+      {
+        "status": "translation",
+        "text": "信任问题的表决已在满四十八小时后举行"
+      }
+    ],
+    "confidence_vote_wait_hours_1995": [
+      {
+        "status": "translation",
+        "text": "自提出信任问题至表决的期限为四十八小时"
+      }
+    ],
+    "constitutional_amendment_adopted_1995": [
+      {
+        "status": "translation",
+        "text": "宪法的修改和补充已由议会通过"
+      }
+    ],
+    "constitutional_amendment_bill": [
+      {
+        "status": "translation",
+        "text": "该法律草案对宪法作出修改和补充"
+      }
+    ],
+    "constitutional_court_judges_per_chamber_1995": [
+      {
+        "status": "translation",
+        "text": "每院自行任命的宪法法院法官人数为三名"
+      }
+    ],
+    "constitutional_law_adopted_1995": [
+      {
+        "status": "translation",
+        "text": "宪法性法律已由议会通过"
+      }
+    ],
+    "constitutional_law_bill": [
+      {
+        "status": "translation",
+        "text": "该法律草案为宪法性法律草案"
+      }
+    ],
+    "constitutional_law_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "宪法性法律通过门槛的分母为三分之二"
+      }
+    ],
+    "constitutional_law_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "宪法性法律通过门槛的分子为三分之二"
+      }
+    ],
+    "court_declared_incapable_dead_or_missing": [
+      {
+        "status": "translation",
+        "text": "该议员经法院宣告无行为能力、死亡或者下落不明"
+      }
+    ],
+    "criminal_conviction_in_force": [
+      {
+        "status": "translation",
+        "text": "对该议员的有罪判决已经生效"
+      }
+    ],
+    "deputy": [
+      {
+        "status": "translation",
+        "text": "该人是议会议员"
+      }
+    ],
+    "deputy_conducts_business": [
+      {
+        "status": "translation",
+        "text": "该议员从事经营活动"
+      }
+    ],
+    "deputy_deceased": [
+      {
+        "status": "translation",
+        "text": "该议员已死亡"
+      }
+    ],
+    "deputy_holds_other_paid_office": [
+      {
+        "status": "translation",
+        "text": "该议员担任其他有报酬职务"
+      }
+    ],
+    "deputy_holds_other_representative_mandate": [
+      {
+        "status": "translation",
+        "text": "该议员是其他代表机关的议员"
+      }
+    ],
+    "deputy_immunity_infringed_1995": [
+      {
+        "status": "translation",
+        "text": "议员的不可侵犯性已受侵害"
+      }
+    ],
+    "deputy_in_commercial_governing_body": [
+      {
+        "status": "translation",
+        "text": "该议员担任商业组织的领导机关或者监事会成员"
+      }
+    ],
+    "deputy_mandate_forfeited_1995": [
+      {
+        "status": "translation",
+        "text": "该议员丧失其资格"
+      }
+    ],
+    "deputy_member_of_both_chambers": [
+      {
+        "status": "translation",
+        "text": "该人同时为两院的议员"
+      }
+    ],
+    "deputy_of": [
+      {
+        "status": "translation",
+        "text": "该议员列入该院组成"
+      }
+    ],
+    "deputy_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "该议员的职权已终止"
+      }
+    ],
+    "deputy_residence_years_1995": [
+      {
+        "status": "translation",
+        "text": "议员在哈萨克斯坦所需的居住年限为十年"
+      }
+    ],
+    "deputy_sanction_applies_1995": [
+      {
+        "status": "translation",
+        "text": "可以对该议员适用法律规定的处分措施"
+      }
+    ],
+    "dissolution_admissible_1995": [
+      {
+        "status": "translation",
+        "text": "可以解散议会"
+      }
+    ],
+    "dissolution_attempt": [
+      {
+        "status": "translation",
+        "text": "已实施解散议会或者马日利斯的行为"
+      }
+    ],
+    "dissolution_barred_1995": [
+      {
+        "status": "translation",
+        "text": "不得解散议会"
+      }
+    ],
+    "dissolution_consultations_completed": [
+      {
+        "status": "translation",
+        "text": "已与两院议长和总理进行协商"
+      }
+    ],
+    "dissolution_cooldown_years_1995": [
+      {
+        "status": "translation",
+        "text": "上次解散后不得解散议会的期间为一年"
+      }
+    ],
+    "dissolution_protected_months_1995": [
+      {
+        "status": "translation",
+        "text": "总统职权届满前的受保护期间为六个月"
+      }
+    ],
+    "dual_membership_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "不允许同时为两院的议员"
+      }
+    ],
+    "elected_in_single_mandate_district": [
+      {
+        "status": "translation",
+        "text": "该议员在单一选区当选"
+      }
+    ],
+    "elected_on_party_list": [
+      {
+        "status": "translation",
+        "text": "该议员依政党名单当选"
+      }
+    ],
+    "election_results_published": [
+      {
+        "status": "translation",
+        "text": "选举结果公布之日"
+      }
+    ],
+    "eligible_mazhilis_deputy_1995": [
+      {
+        "status": "translation",
+        "text": "该人符合马日利斯议员的条件"
+      }
+    ],
+    "eligible_senator_1995": [
+      {
+        "status": "translation",
+        "text": "该人符合参议院议员的条件"
+      }
+    ],
+    "emergency_or_martial_law_active": [
+      {
+        "status": "translation",
+        "text": "紧急状态或者战争状态正在实施"
+      }
+    ],
+    "extraordinary_agenda_limited_1995": [
+      {
+        "status": "translation",
+        "text": "临时会议仅审议其召集事由所涉事项"
+      }
+    ],
+    "extraordinary_session_request": [
+      {
+        "status": "translation",
+        "text": "已提出召集临时会议的要求"
+      }
+    ],
+    "extraordinary_session_valid_1995": [
+      {
+        "status": "translation",
+        "text": "临时会议的召集符合法定要求"
+      }
+    ],
+    "first_session_convened": [
+      {
+        "status": "translation",
+        "text": "议会第一次会议召集之日"
+      }
+    ],
+    "first_session_convocation_days_1995": [
+      {
+        "status": "translation",
+        "text": "召集第一次会议的期限为选举结果公布之日起三十日"
+      }
+    ],
+    "first_session_opened": [
+      {
+        "status": "translation",
+        "text": "议会第一次会议已经开幕"
+      }
+    ],
+    "first_session_timely_1995": [
+      {
+        "status": "translation",
+        "text": "第一次会议已在宪法规定的期限内召集"
+      }
+    ],
+    "first_session_within_thirty_days": [
+      {
+        "status": "translation",
+        "text": "第一次会议已在三十日期限内召集"
+      }
+    ],
+    "fluent_in_state_language": [
+      {
+        "status": "translation",
+        "text": "该人熟练掌握国语"
+      }
+    ],
+    "government_no_confidence_1995": [
+      {
+        "status": "translation",
+        "text": "已对政府通过不信任案"
+      }
+    ],
+    "hearing_chamber_total": [
+      {
+        "status": "translation",
+        "text": "提出听取报告动议时该院的议员总数"
+      }
+    ],
+    "hearing_initiating_votes": [
+      {
+        "status": "translation",
+        "text": "提出听取报告动议的议员人数"
+      }
+    ],
+    "hearing_initiative_valid_1995": [
+      {
+        "status": "translation",
+        "text": "听取报告的动议由法定人数的议员提出"
+      }
+    ],
+    "higher_education": [
+      {
+        "status": "translation",
+        "text": "该人具有高等教育学历"
+      }
+    ],
+    "introduced_in_mazhilis": [
+      {
+        "status": "translation",
+        "text": "法律草案已提交马日利斯"
+      }
+    ],
+    "joint_or_separate_sitting": [
+      {
+        "status": "translation",
+        "text": "该会议为两院联席会议或者分别举行的会议"
+      }
+    ],
+    "last_six_months_of_presidential_term": [
+      {
+        "status": "translation",
+        "text": "正处于总统职权的最后六个月"
+      }
+    ],
+    "left_or_expelled_from_party": [
+      {
+        "status": "translation",
+        "text": "该议员已退出或者被开除出其据以当选的政党"
+      }
+    ],
+    "legislative_initiative_by_deputy": [
+      {
+        "status": "translation",
+        "text": "法律草案由议会议员提出"
+      }
+    ],
+    "legislative_initiative_by_government": [
+      {
+        "status": "translation",
+        "text": "法律草案由政府提出"
+      }
+    ],
+    "legislative_initiative_by_president": [
+      {
+        "status": "translation",
+        "text": "法律草案由共和国总统提出"
+      }
+    ],
+    "legislative_initiative_valid_1995": [
+      {
+        "status": "translation",
+        "text": "立法动议权由有权主体行使"
+      }
+    ],
+    "mazhilis": [
+      {
+        "status": "translation",
+        "text": "该院为马日利斯"
+      }
+    ],
+    "mazhilis_absent_after_early_termination": [
+      {
+        "status": "translation",
+        "text": "因马日利斯职权提前终止而缺位"
+      }
+    ],
+    "mazhilis_adopted": [
+      {
+        "status": "translation",
+        "text": "马日利斯已通过该法律草案"
+      }
+    ],
+    "mazhilis_confirmed_earlier_version_1995": [
+      {
+        "status": "translation",
+        "text": "马日利斯已确认该法律草案先前通过的文本"
+      }
+    ],
+    "mazhilis_consent_total": [
+      {
+        "status": "translation",
+        "text": "表示同意时马日利斯的议员总数"
+      }
+    ],
+    "mazhilis_consent_votes": [
+      {
+        "status": "translation",
+        "text": "马日利斯对同意任命投赞成票的票数"
+      }
+    ],
+    "mazhilis_deputy_minimum_age_1995": [
+      {
+        "status": "translation",
+        "text": "马日利斯议员的最低年龄为二十五周岁"
+      }
+    ],
+    "mazhilis_present": [
+      {
+        "status": "translation",
+        "text": "出席的马日利斯议员人数"
+      }
+    ],
+    "mazhilis_rejected_bill": [
+      {
+        "status": "translation",
+        "text": "马日利斯已否决该法律草案"
+      }
+    ],
+    "mazhilis_repeat_votes": [
+      {
+        "status": "translation",
+        "text": "重新表决时马日利斯的票数"
+      }
+    ],
+    "mazhilis_seats": [
+      {
+        "status": "translation",
+        "text": "会议上马日利斯议员席位总数"
+      }
+    ],
+    "mazhilis_seats_1995": [
+      {
+        "status": "translation",
+        "text": "马日利斯议员人数为九十八名"
+      }
+    ],
+    "mazhilis_term_years_1995": [
+      {
+        "status": "translation",
+        "text": "马日利斯议员的任期为五年"
+      }
+    ],
+    "mazhilis_total_deputies": [
+      {
+        "status": "translation",
+        "text": "马日利斯议员总数"
+      }
+    ],
+    "mazhilis_votes": [
+      {
+        "status": "translation",
+        "text": "马日利斯议员对法律草案投赞成票的票数"
+      }
+    ],
+    "minimum_readings_1995": [
+      {
+        "status": "translation",
+        "text": "法律草案的最低审议读次为两读"
+      }
+    ],
+    "minister_failed_to_execute_laws": [
+      {
+        "status": "translation",
+        "text": "已认定政府成员未执行共和国法律"
+      }
+    ],
+    "minister_release_required_1995": [
+      {
+        "status": "translation",
+        "text": "总统免去政府成员的职务"
+      }
+    ],
+    "minister_report_hearing": [
+      {
+        "status": "translation",
+        "text": "正在听取政府成员的报告"
+      }
+    ],
+    "motion_initiating_deputies": [
+      {
+        "status": "translation",
+        "text": "提出不信任案动议的议员人数"
+      }
+    ],
+    "motion_mazhilis_total": [
+      {
+        "status": "translation",
+        "text": "提出不信任案动议时该院的议员总数"
+      }
+    ],
+    "motion_supporting_votes": [
+      {
+        "status": "translation",
+        "text": "对政府不信任案投赞成票的票数"
+      }
+    ],
+    "new_convocation_first_session_started": [
+      {
+        "status": "translation",
+        "text": "新一届议会第一次会议已经开幕"
+      }
+    ],
+    "no_confidence_expressed_1995": [
+      {
+        "status": "translation",
+        "text": "不批准报告即为对政府通过不信任案"
+      }
+    ],
+    "no_confidence_failed_in_both_chambers": [
+      {
+        "status": "translation",
+        "text": "不信任案在两院均未获得多数"
+      }
+    ],
+    "no_confidence_initiative_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "不信任案动议门槛的分母为五分之一"
+      }
+    ],
+    "no_confidence_initiative_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "不信任案动议门槛的分子为五分之一"
+      }
+    ],
+    "no_confidence_motion": [
+      {
+        "status": "translation",
+        "text": "不信任案动议系针对该政府提出"
+      }
+    ],
+    "no_confidence_motion_valid_1995": [
+      {
+        "status": "translation",
+        "text": "不信任案动议由法定人数的议员提出"
+      }
+    ],
+    "nominated_by_deputies": [
+      {
+        "status": "translation",
+        "text": "议长人选由该院议员提名"
+      }
+    ],
+    "nominated_by_president": [
+      {
+        "status": "translation",
+        "text": "议长人选由共和国总统提名"
+      }
+    ],
+    "objection_mazhilis_total": [
+      {
+        "status": "translation",
+        "text": "推翻异议时马日利斯的议员总数"
+      }
+    ],
+    "objection_mazhilis_votes": [
+      {
+        "status": "translation",
+        "text": "推翻异议时马日利斯的票数"
+      }
+    ],
+    "objection_on_constitutional_law": [
+      {
+        "status": "translation",
+        "text": "异议系针对宪法性法律提出"
+      }
+    ],
+    "objection_overridden_1995": [
+      {
+        "status": "translation",
+        "text": "总统的异议已被议会推翻"
+      }
+    ],
+    "objection_reconsidered_within_one_month": [
+      {
+        "status": "translation",
+        "text": "已在一个月期限内进行重新审议"
+      }
+    ],
+    "objection_senate_total": [
+      {
+        "status": "translation",
+        "text": "推翻异议时参议院的议员总数"
+      }
+    ],
+    "objection_senate_votes": [
+      {
+        "status": "translation",
+        "text": "推翻异议时参议院的票数"
+      }
+    ],
+    "objections_accepted_1995": [
+      {
+        "status": "translation",
+        "text": "总统的异议视为被接受"
+      }
+    ],
+    "office_is_teaching_research_or_creative": [
+      {
+        "status": "translation",
+        "text": "该项活动属于准许从事的教学、科研或者创作活动"
+      }
+    ],
+    "parliament": [
+      {
+        "status": "translation",
+        "text": "该机关是共和国议会"
+      }
+    ],
+    "parliament_has_two_chambers_1995": [
+      {
+        "status": "translation",
+        "text": "议会由参议院和马日利斯两院组成"
+      }
+    ],
+    "parliament_is_supreme_representative_body_1995": [
+      {
+        "status": "translation",
+        "text": "议会是行使立法职能的最高代表机关"
+      }
+    ],
+    "parliament_powers_active_1995": [
+      {
+        "status": "translation",
+        "text": "议会本届的职权正在行使"
+      }
+    ],
+    "parliament_regulates_listed_subjects_1995": [
+      {
+        "status": "translation",
+        "text": "议会有权就宪法所列事项制定法律"
+      }
+    ],
+    "parliament_total_deputies": [
+      {
+        "status": "translation",
+        "text": "议会议员总数"
+      }
+    ],
+    "parliamentary_act": [
+      {
+        "status": "translation",
+        "text": "该文件由议会通过"
+      }
+    ],
+    "party_ceased_activity": [
+      {
+        "status": "translation",
+        "text": "该议员据以当选的政党已停止活动"
+      }
+    ],
+    "permanent_departure_from_kazakhstan": [
+      {
+        "status": "translation",
+        "text": "该议员已迁往哈萨克斯坦境外定居"
+      }
+    ],
+    "pm_consent_given_1995": [
+      {
+        "status": "translation",
+        "text": "马日利斯已同意任命总理"
+      }
+    ],
+    "pm_consent_request": [
+      {
+        "status": "translation",
+        "text": "已提出关于同意任命总理的提请"
+      }
+    ],
+    "positive_government_opinion": [
+      {
+        "status": "translation",
+        "text": "政府已就该法律草案作出肯定性结论"
+      }
+    ],
+    "presentation_to_president_days_1995": [
+      {
+        "status": "translation",
+        "text": "将通过的法律提请签署的期限为十日"
+      }
+    ],
+    "presented_to_president_1995": [
+      {
+        "status": "translation",
+        "text": "法律已提请总统签署"
+      }
+    ],
+    "presidential_objection": [
+      {
+        "status": "translation",
+        "text": "总统已对该法律提出异议"
+      }
+    ],
+    "presidential_proposal": [
+      {
+        "status": "translation",
+        "text": "总统已确定该法律草案的优先审议地位"
+      }
+    ],
+    "priority_bill_months_1995": [
+      {
+        "status": "translation",
+        "text": "优先法律草案优先审议的期限为两个月"
+      }
+    ],
+    "quorum_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "会议法定人数的分母为三分之二"
+      }
+    ],
+    "quorum_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "会议法定人数的分子为三分之二"
+      }
+    ],
+    "reading_requirement_met_1995": [
+      {
+        "status": "translation",
+        "text": "读次数目的要求已经满足"
+      }
+    ],
+    "readings_held": [
+      {
+        "status": "translation",
+        "text": "该法律草案已进行的读次数"
+      }
+    ],
+    "recalled_by_voters": [
+      {
+        "status": "translation",
+        "text": "该议员已被选民罢免"
+      }
+    ],
+    "reduces_revenue_or_increases_expenditure": [
+      {
+        "status": "translation",
+        "text": "法律草案规定减少国家收入或者增加支出"
+      }
+    ],
+    "request_by_chamber_chairs": [
+      {
+        "status": "translation",
+        "text": "该要求由两院议长提出"
+      }
+    ],
+    "request_initiating_votes": [
+      {
+        "status": "translation",
+        "text": "提出召集临时会议动议的议员人数"
+      }
+    ],
+    "resides_in_kazakhstan_years": [
+      {
+        "status": "translation",
+        "text": "在哈萨克斯坦最近连续居住的年数"
+      }
+    ],
+    "resides_in_region_years": [
+      {
+        "status": "translation",
+        "text": "在相应州或者市最近连续居住的年数"
+      }
+    ],
+    "resignation_submitted": [
+      {
+        "status": "translation",
+        "text": "该议员已提出辞职"
+      }
+    ],
+    "seeks_mazhilis_seat": [
+      {
+        "status": "translation",
+        "text": "该人竞逐马日利斯议员资格"
+      }
+    ],
+    "seeks_senate_seat": [
+      {
+        "status": "translation",
+        "text": "该人竞逐参议院议员资格"
+      }
+    ],
+    "senate": [
+      {
+        "status": "translation",
+        "text": "该院为参议院"
+      }
+    ],
+    "senate_appointed_by_president_1995": [
+      {
+        "status": "translation",
+        "text": "由总统任命的参议院议员人数为十名"
+      }
+    ],
+    "senate_appointed_on_assembly_proposal_1995": [
+      {
+        "status": "translation",
+        "text": "依哈萨克斯坦人民大会提名任命的参议院议员人数为五名"
+      }
+    ],
+    "senate_approved": [
+      {
+        "status": "translation",
+        "text": "参议院已通过该法律草案"
+      }
+    ],
+    "senate_consent_given": [
+      {
+        "status": "translation",
+        "text": "参议院已同意该项任命"
+      }
+    ],
+    "senate_exercises_parliament_functions_1995": [
+      {
+        "status": "translation",
+        "text": "参议院行使议会通过法律的职能"
+      }
+    ],
+    "senate_present": [
+      {
+        "status": "translation",
+        "text": "出席的参议院议员人数"
+      }
+    ],
+    "senate_review_days_1995": [
+      {
+        "status": "translation",
+        "text": "参议院审议法律草案的期限为六十日"
+      }
+    ],
+    "senate_review_days_elapsed": [
+      {
+        "status": "translation",
+        "text": "参议院审议法律草案的期限已经届满"
+      }
+    ],
+    "senate_rotation_years_1995": [
+      {
+        "status": "translation",
+        "text": "参议院半数议员改选的周期为三年"
+      }
+    ],
+    "senate_seats": [
+      {
+        "status": "translation",
+        "text": "会议上参议院议员席位总数"
+      }
+    ],
+    "senate_term_years_1995": [
+      {
+        "status": "translation",
+        "text": "参议院议员的任期为六年"
+      }
+    ],
+    "senate_took_no_decision": [
+      {
+        "status": "translation",
+        "text": "参议院未就该法律草案作出决定"
+      }
+    ],
+    "senate_total_deputies": [
+      {
+        "status": "translation",
+        "text": "参议院议员总数"
+      }
+    ],
+    "senate_votes": [
+      {
+        "status": "translation",
+        "text": "参议院议员对法律草案投赞成票的票数"
+      }
+    ],
+    "senator_minimum_age_1995": [
+      {
+        "status": "translation",
+        "text": "参议院议员的最低年龄为三十周岁"
+      }
+    ],
+    "senator_regional_residence_years_1995": [
+      {
+        "status": "translation",
+        "text": "参议院议员在相应地区所需的居住年限为三年"
+      }
+    ],
+    "senator_work_experience_years_1995": [
+      {
+        "status": "translation",
+        "text": "参议院议员所需的工作年限为五年"
+      }
+    ],
+    "sitting_quorate_1995": [
+      {
+        "status": "translation",
+        "text": "两院会议有效"
+      }
+    ],
+    "standing_committees": [
+      {
+        "status": "translation",
+        "text": "该院常设委员会的数目"
+      }
+    ],
+    "standing_committees_max_1995": [
+      {
+        "status": "translation",
+        "text": "该院常设委员会的最高数目为七个"
+      }
+    ],
+    "unexcused_absences": [
+      {
+        "status": "translation",
+        "text": "议员无正当理由缺席会议的次数"
+      }
+    ],
+    "unexcused_absences_limit_1995": [
+      {
+        "status": "translation",
+        "text": "因缺席适用处分措施的门槛为超过三次"
+      }
+    ],
+    "veto_override_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "推翻总统异议门槛的分母为三分之二"
+      }
+    ],
+    "veto_override_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "推翻总统异议门槛的分子为三分之二"
+      }
+    ],
+    "vote_delegated": [
+      {
+        "status": "translation",
+        "text": "该议员已将表决权转让他人"
+      }
+    ],
+    "within_one_year_after_prior_dissolution": [
+      {
+        "status": "translation",
+        "text": "自上次解散之日起未满一年"
+      }
+    ],
+    "work_experience_years": [
+      {
+        "status": "translation",
+        "text": "该人的工作年限"
+      }
+    ]
+  },
+  "language": "zh",
+  "package": "kz.constitution1995.parliament"
+}

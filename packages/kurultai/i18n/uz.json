@@ -1,0 +1,1052 @@
+{
+  "$comment": "Қозоғистон Республикаси Конституциясининг kz.constitution.kurultai пакети учун ўзбек тилидаги (кирилл ёзуви) белгилар қатлами — §218 (DECISION-0070). Бу қатлам CLIR таркибига кирмайди ва фақат тақдимот босқичида ўқилади (verbalize --labels, MCP ресурслари, иш столи). Таржима пакетнинг ru-KZ белгиларидан қилинган ишчи таржима (`translation`) бўлиб, Конституциянинг расмий ўзбекча матни эмас; ҳуқуқий куч ru-KZ ва kk-KZ манбаларидадир. Калит — эълоннинг маҳаллий номи.",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "Bill": [
+      {
+        "status": "translation",
+        "text": "қонун лойиҳаси"
+      }
+    ],
+    "Candidate": [
+      {
+        "status": "translation",
+        "text": "номзод"
+      }
+    ],
+    "Commission": [
+      {
+        "status": "translation",
+        "text": "Қурултой комиссияси"
+      }
+    ],
+    "CommissionEstablished": [
+      {
+        "status": "translation",
+        "text": "59-модда 1-банд. Қурултой комиссиялар тузади"
+      }
+    ],
+    "Committee": [
+      {
+        "status": "translation",
+        "text": "Қурултойнинг доимий қўмитаси"
+      }
+    ],
+    "ConstitutionalEarlyTermination": [
+      {
+        "status": "translation",
+        "text": "52-модда 3-банд. Ваколатларнинг муддатидан илгари тугатилиши Конституцияда назарда тутилган асос ва тартибни талаб қилади"
+      }
+    ],
+    "ConstitutionalLawTwoThirds": [
+      {
+        "status": "translation",
+        "text": "61-модда 3-банд. Конституциявий қонунлар Қурултой депутатларининг умумий сонидан камида учдан икки қисм овоз кўпчилиги билан қабул қилинади"
+      }
+    ],
+    "ConstitutionalVetoOverride": [
+      {
+        "status": "translation",
+        "text": "56-модда 2) кичик банд. Президентнинг конституциявий қонун юзасидан эътирозлари депутатларнинг умумий сонидан тўртдан уч қисм овоз кўпчилиги билан енгиб ўтилади"
+      }
+    ],
+    "Deputy": [
+      {
+        "status": "translation",
+        "text": "Қурултой депутати"
+      }
+    ],
+    "DeputyCandidateEligibility": [
+      {
+        "status": "translation",
+        "text": "54-модда 3-банд. Йигирма беш ёшга тўлган ва сўнгги ўн йил давомида Қозоғистонда доимий яшаб келаётган Республика фуқароси Қурултой депутати бўлиши мумкин"
+      }
+    ],
+    "DeputyDetentionException": [
+      {
+        "status": "translation",
+        "text": "55-модда 3-банд. Депутатни ушлаб туришга у жиноят содир этилаётган жойда ушланганида, оғир ва ўта оғир жиноятлар содир этганида ёхуд Қурултойнинг розилиги билан йўл қўйилади"
+      }
+    ],
+    "DeputyDetentionGroundConsent": [
+      {
+        "status": "translation",
+        "text": "55-модда 3-банд. Қурултойнинг розилиги — депутат ҳимоясини бекор қиладиган асос"
+      }
+    ],
+    "DeputyDetentionGroundGraveOffence": [
+      {
+        "status": "translation",
+        "text": "55-модда 3-банд. Оғир ёки ўта оғир жиноят содир этиш — депутат ҳимоясини бекор қиладиган асос"
+      }
+    ],
+    "DeputyDetentionGroundInTheAct": [
+      {
+        "status": "translation",
+        "text": "55-модда 3-банд. Жиноят содир этилаётган жойда ушлаш — депутат ҳимоясини бекор қиладиган асос"
+      }
+    ],
+    "DeputyImmunity": [
+      {
+        "status": "translation",
+        "text": "55-модда 3-банд. Қурултой депутати, жиноят содир этилаётган жойда ушлаш ва оғир ҳамда ўта оғир жиноятлар содир этишдан ташқари, Қурултойнинг розилигисиз ушлаб турилиши мумкин эмас"
+      }
+    ],
+    "DeputyInviolabilityApplies": [
+      {
+        "status": "translation",
+        "text": "55-модда 3-банд. Депутатнинг ушлаб туришдан ҳимояси номи келтирилган уч асосдан бирортаси бўлмаган пайтгача амал қилади"
+      }
+    ],
+    "DeputyInviolabilityApplies/unless/0": [
+      {
+        "status": "translation",
+        "text": "55-модда 3-банд. Депутатнинг ушлаб туришдан ҳимояси номи келтирилган уч асосдан бирортаси бўлмаган пайтгача амал қилади"
+      }
+    ],
+    "DeputyPersonalImmunity": [
+      {
+        "status": "translation",
+        "text": "55-модда 3-банд. Қурултой депутати, жиноят содир этилаётган жойда ушлаш ва оғир ҳамда ўта оғир жиноятлар содир этишдан ташқари, Қурултойнинг розилигисиз ушлаб турилиши мумкин эмас"
+      }
+    ],
+    "DeputyTermExpiry": [
+      {
+        "status": "translation",
+        "text": "53-модда 2-банд. Қурултой депутатларининг ваколат муддати — беш йил"
+      }
+    ],
+    "FinancialBillWithGovernmentOpinion": [
+      {
+        "status": "translation",
+        "text": "60-модда 6-банд. Даромадларни камайтирувчи ёки харажатларни оширувчи қонун лойиҳаси фақат Ҳукуматнинг ижобий хулосаси бўлганида киритилади"
+      }
+    ],
+    "FirstSessionThirtyDays": [
+      {
+        "status": "translation",
+        "text": "58-модда 2-банд. Қурултойнинг биринчи сессияси сайлов якунлари эълон қилинган кундан эътиборан ўттиз кундан кечиктирмай чақирилади"
+      }
+    ],
+    "Government": [
+      {
+        "status": "translation",
+        "text": "Қозоғистон Республикасининг Ҳукумати"
+      }
+    ],
+    "GovernmentMember": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат аъзоси"
+      }
+    ],
+    "GovernmentMemberDismissalRequest": [
+      {
+        "status": "translation",
+        "text": "56-модда 17) кичик банд. Депутатларнинг камида учдан бир қисми ташаббуси билан Қурултой камида учдан икки қисм овоз билан Президентга Ҳукумат аъзосини лавозимидан озод қилиш тўғрисида мурожаат этиш ҳақида қарор қабул қилади"
+      }
+    ],
+    "GovernmentNoConfidence": [
+      {
+        "status": "translation",
+        "text": "56-модда 13) кичик банд. Депутатларнинг камида бешдан бир қисми ташаббуси билан Қурултой депутатларнинг умумий сонидан овозлар кўпчилиги билан Ҳукуматга ишончсизлик вотумини билдиради"
+      }
+    ],
+    "Kurultai": [
+      {
+        "status": "translation",
+        "text": "Қозоғистон Республикасининг Қурултойи"
+      }
+    ],
+    "KurultaiChair": [
+      {
+        "status": "translation",
+        "text": "Қурултой Раиси"
+      }
+    ],
+    "KurultaiChairElection": [
+      {
+        "status": "translation",
+        "text": "57-модда 1-банд. Раисни депутатларнинг умумий сонидан кўпчилик билан яширин овоз бериш йўли билан сайлаш"
+      }
+    ],
+    "KurultaiChairMayConveneAndPreside": [
+      {
+        "status": "translation",
+        "text": "57-модда 3-банд. Раис мажлисларни чақиради ва уларда раислик қилади"
+      }
+    ],
+    "KurultaiChairMayDirectAgendaPreparation": [
+      {
+        "status": "translation",
+        "text": "57-модда 3-банд. Раис Қурултой масалаларини тайёрлашга умумий раҳбарликни амалга оширади"
+      }
+    ],
+    "KurultaiChairMayEnforceRules": [
+      {
+        "status": "translation",
+        "text": "57-модда 3-банд. Раис Қурултой Регламентига риоя этилишини таъминлайди"
+      }
+    ],
+    "KurultaiChairMayIssueOrders": [
+      {
+        "status": "translation",
+        "text": "57-модда 5-банд. Раис ўз ваколат доирасидаги масалалар бўйича фармойишлар чиқаради"
+      }
+    ],
+    "KurultaiChairMaySignActs": [
+      {
+        "status": "translation",
+        "text": "57-модда 3-банд. Раис Қурултой ҳужжатларини имзолайди"
+      }
+    ],
+    "KurultaiChairRemovalOrResignation": [
+      {
+        "status": "translation",
+        "text": "57-модда 2-банд. Раисни чақириб олиш ёки унинг истеъфоси депутатларнинг умумий сонидан кўпчилик билан амалга оширилади"
+      }
+    ],
+    "KurultaiPowersEndAtNewConvocation": [
+      {
+        "status": "translation",
+        "text": "52-модда 2-банд. Ваколатлар янги чақириқнинг биринчи сессияси иши бошланиши билан тугайди"
+      }
+    ],
+    "KurultaiPowersStartAtFirstSession": [
+      {
+        "status": "translation",
+        "text": "52-модда 2-банд. Қурултойнинг ваколатлари биринчи сессия очилиши билан бошланади"
+      }
+    ],
+    "KurultaiResolution": [
+      {
+        "status": "translation",
+        "text": "Қурултойнинг ёки унинг ишчи органининг қарори"
+      }
+    ],
+    "Law": [
+      {
+        "status": "translation",
+        "text": "қонун ёки конституциявий қонун"
+      }
+    ],
+    "LawPresentedWithinTenDays": [
+      {
+        "status": "translation",
+        "text": "60-модда 5-банд. Қурултой қабул қилган қонун ўн кун ичида Президентга имзолашга тақдим этилади"
+      }
+    ],
+    "MissedReconsiderationAcceptsObjection": [
+      {
+        "status": "translation",
+        "text": "56-модда 2) кичик банд. Такроран муҳокама қилишнинг бир ойлик муддатига риоя этилмаслиги Президент эътирозларининг қабул қилинишини англатади"
+      }
+    ],
+    "OrdinaryLawMajority": [
+      {
+        "status": "translation",
+        "text": "61-модда 4-банд. Қонунлар Қурултой депутатларининг умумий сонидан овозлар кўпчилиги билан қабул қилинади"
+      }
+    ],
+    "OrdinaryVetoOverride": [
+      {
+        "status": "translation",
+        "text": "56-модда 2) кичик банд. Президентнинг қонун юзасидан эътирозлари депутатларнинг умумий сонидан учдан икки қисм овоз кўпчилиги билан енгиб ўтилади"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "жисмоний шахс"
+      }
+    ],
+    "PresidentialFinancialBillException": [
+      {
+        "status": "translation",
+        "text": "60-модда 6-банд. Президент киритадиган қонун лойиҳалари учун Ҳукуматнинг хулосаси талаб қилинмайди"
+      }
+    ],
+    "PriorityBillDue": [
+      {
+        "status": "translation",
+        "text": "60-модда 2-банд. Устувор қонун лойиҳаси икки ой ичида қабул қилиниши керак"
+      }
+    ],
+    "PriorityBillTwoMonths": [
+      {
+        "status": "translation",
+        "text": "60-модда 2-банд. Икки ойлик муддат тугайдиган кундан кечиктирмай қабул қилинган устувор қонун лойиҳаси ўз вақтида қабул қилинган"
+      }
+    ],
+    "RepeatedAbsenceSanction": [
+      {
+        "status": "translation",
+        "text": "55-модда 1-банд. Депутатнинг узрли сабабларсиз уч мартадан кўп қатнашмаслиги қонунда белгиланган ундирув чораларини қўллашга олиб келади"
+      }
+    ],
+    "RepeatedChairRefusalAllowsDissolution": [
+      {
+        "status": "translation",
+        "text": "57-модда 1-банд. Раисни сайлашдан такроран бош тортиш Президентга Қурултойни тарқатиб юбориш ҳуқуқини беради"
+      }
+    ],
+    "Report": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат аъзосининг Қурултой олдидаги ҳисоботи"
+      }
+    ],
+    "Session": [
+      {
+        "status": "translation",
+        "text": "Қурултой сессияси"
+      }
+    ],
+    "SessionQuorumTwoThirds": [
+      {
+        "status": "translation",
+        "text": "58-модда 5-банд. Қурултой мажлиси депутатларнинг умумий сонидан камида учдан икки қисми ҳозир бўлганида ваколатлидир"
+      }
+    ],
+    "StandingCommitteeEstablished": [
+      {
+        "status": "translation",
+        "text": "59-модда 1-банд. Қурултой доимий қўмиталар тузади, уларнинг сони конституциявий қонун билан белгиланади"
+      }
+    ],
+    "TrustVoteTimingAndAnnualCap": [
+      {
+        "status": "translation",
+        "text": "60-модда 7-банд. Ишонч масаласи бўйича овоз бериш масала қўйилган пайтдан эътиборан қирқ саккиз соат ўтмасдан ўтказилмайди ва бу ваколат йилига икки мартадан ортиқ ишлатилмайди"
+      }
+    ],
+    "WorkingBodyResolutionWithinCompetence": [
+      {
+        "status": "translation",
+        "text": "59-модда 2-банд. Қўмиталар ва комиссиялар ўз ваколат доирасида қарорлар чиқаради"
+      }
+    ],
+    "absence_sanction_threshold": [
+      {
+        "status": "translation",
+        "text": "қатнашмаганлик учун ундирув чораларини қўллаш бўсағаси — уч мартадан кўп"
+      }
+    ],
+    "age_years": [
+      {
+        "status": "translation",
+        "text": "шахснинг тўлган йиллардаги ёши"
+      }
+    ],
+    "annual_prior_trust_uses": [
+      {
+        "status": "translation",
+        "text": "Ҳукуматнинг шу йилда ишонч масаласига мурожаат этган ҳолларининг сони"
+      }
+    ],
+    "bill_passed": [
+      {
+        "status": "translation",
+        "text": "қонун лойиҳаси Қурултой томонидан қабул қилинган"
+      }
+    ],
+    "candidate_person": [
+      {
+        "status": "translation",
+        "text": "номзод мазкур шахсдир"
+      }
+    ],
+    "caught_at_crime_scene": [
+      {
+        "status": "translation",
+        "text": "депутат жиноят содир этилаётган жойда ушланган"
+      }
+    ],
+    "chair_candidate": [
+      {
+        "status": "translation",
+        "text": "шахс Қурултой Раиси лавозимига номзод қилиб кўрсатилган"
+      }
+    ],
+    "chair_candidate_elected": [
+      {
+        "status": "translation",
+        "text": "номзод Қурултой Раиси этиб сайланган"
+      }
+    ],
+    "chair_candidate_fluent_in_state_language": [
+      {
+        "status": "translation",
+        "text": "Раисликка номзод давлат тилини эркин билади"
+      }
+    ],
+    "chair_candidate_is_deputy": [
+      {
+        "status": "translation",
+        "text": "Раисликка номзод Қурултой депутатидир"
+      }
+    ],
+    "chair_may_convene_and_preside": [
+      {
+        "status": "translation",
+        "text": "Раис Қурултой мажлисларини чақиради ва уларда раислик қилади"
+      }
+    ],
+    "chair_may_direct_agenda_preparation": [
+      {
+        "status": "translation",
+        "text": "Раис киритиладиган масалаларни тайёрлашга умумий раҳбарликни амалга оширади"
+      }
+    ],
+    "chair_may_enforce_rules": [
+      {
+        "status": "translation",
+        "text": "Раис Қурултой регламентига риоя этилишини таъминлайди"
+      }
+    ],
+    "chair_may_issue_orders": [
+      {
+        "status": "translation",
+        "text": "Раис ўз ваколат доирасидаги масалалар бўйича фармойишлар чиқаради"
+      }
+    ],
+    "chair_may_sign_kurultai_acts": [
+      {
+        "status": "translation",
+        "text": "Раис Қурултой чиқарадиган ҳужжатларни имзолайди"
+      }
+    ],
+    "chair_removal_votes": [
+      {
+        "status": "translation",
+        "text": "Раисни чақириб олиш ёки унинг истеъфосини қабул қилиш учун берилган овозларнинг сони"
+      }
+    ],
+    "chair_removed_or_resignation_accepted": [
+      {
+        "status": "translation",
+        "text": "Раис лавозимидан чақириб олинган ёки унинг истеъфоси қабул қилинган"
+      }
+    ],
+    "chair_secret_ballot_votes": [
+      {
+        "status": "translation",
+        "text": "яширин овоз бериш йўли билан номзод учун берилган овозларнинг сони"
+      }
+    ],
+    "citizen": [
+      {
+        "status": "translation",
+        "text": "шахс Қозоғистон Республикасининг фуқаросидир"
+      }
+    ],
+    "commission_established": [
+      {
+        "status": "translation",
+        "text": "Қурултой комиссияси қонуний равишда тузилган"
+      }
+    ],
+    "commission_formed": [
+      {
+        "status": "translation",
+        "text": "Қурултой комиссия тузди"
+      }
+    ],
+    "constitutional_bill": [
+      {
+        "status": "translation",
+        "text": "қонун лойиҳаси конституциявий қонун лойиҳасидир"
+      }
+    ],
+    "constitutional_early_termination_ground": [
+      {
+        "status": "translation",
+        "text": "Қурултой ваколатларини муддатидан илгари тугатишнинг конституциявий асоси мавжуд"
+      }
+    ],
+    "constitutional_law": [
+      {
+        "status": "translation",
+        "text": "ҳужжат конституциявий қонундир"
+      }
+    ],
+    "constitutional_law_denominator": [
+      {
+        "status": "translation",
+        "text": "конституциявий қонунни қабул қилиш бўсағасининг махражи — учдан икки"
+      }
+    ],
+    "constitutional_law_numerator": [
+      {
+        "status": "translation",
+        "text": "конституциявий қонунни қабул қилиш бўсағасининг сурати — учдан икки"
+      }
+    ],
+    "constitutional_veto_override_denominator": [
+      {
+        "status": "translation",
+        "text": "конституциявий қонун юзасидаги эътирозларни енгиб ўтиш бўсағасининг махражи — тўртдан уч"
+      }
+    ],
+    "constitutional_veto_override_numerator": [
+      {
+        "status": "translation",
+        "text": "конституциявий қонун юзасидаги эътирозларни енгиб ўтиш бўсағасининг сурати — тўртдан уч"
+      }
+    ],
+    "deputies_present": [
+      {
+        "status": "translation",
+        "text": "мажлисда ҳозир бўлган депутатларнинг сони"
+      }
+    ],
+    "deputy": [
+      {
+        "status": "translation",
+        "text": "шахс Қурултой депутатидир"
+      }
+    ],
+    "deputy_detained": [
+      {
+        "status": "translation",
+        "text": "депутат ушлаб турилган"
+      }
+    ],
+    "deputy_detention_attempt": [
+      {
+        "status": "translation",
+        "text": "депутатни ушлаб туришга уриниб кўрилган"
+      }
+    ],
+    "deputy_detention_ground": [
+      {
+        "status": "translation",
+        "text": "депутатни ушлаб туришга йўл қўйиладиган асос мавжуд"
+      }
+    ],
+    "deputy_inviolability_applies": [
+      {
+        "status": "translation",
+        "text": "депутатнинг ушлаб туришдан ҳимояси амал қилади"
+      }
+    ],
+    "deputy_minimum_age": [
+      {
+        "status": "translation",
+        "text": "Қурултой депутатининг энг кам ёши — йигирма беш"
+      }
+    ],
+    "deputy_residence_years": [
+      {
+        "status": "translation",
+        "text": "депутатнинг доимий яшаши талаб қилинадиган муддат — ўн йил"
+      }
+    ],
+    "deputy_term": [
+      {
+        "status": "translation",
+        "text": "Қурултой депутатининг ваколат муддати — беш йил"
+      }
+    ],
+    "deputy_term_expires_on": [
+      {
+        "status": "translation",
+        "text": "депутат ваколатларининг тугаш куни"
+      }
+    ],
+    "deputy_term_started_on": [
+      {
+        "status": "translation",
+        "text": "депутат ваколатларининг бошланиш куни"
+      }
+    ],
+    "disciplinary_measure_applicable": [
+      {
+        "status": "translation",
+        "text": "депутатга қонунда белгиланган ундирув чоралари қўлланилиши мумкин"
+      }
+    ],
+    "election_results_published": [
+      {
+        "status": "translation",
+        "text": "депутатлар сайлови якунлари эълон қилинган кун"
+      }
+    ],
+    "eligible_deputy_candidate": [
+      {
+        "status": "translation",
+        "text": "шахс Қурултой депутатига қўйиладиган талабларга жавоб беради"
+      }
+    ],
+    "financial_bill_admissible": [
+      {
+        "status": "translation",
+        "text": "молиявий тусдаги қонун лойиҳасини киритишга йўл қўйилади"
+      }
+    ],
+    "first_session_deadline_days": [
+      {
+        "status": "translation",
+        "text": "биринчи сессияни чақириш муддати — сайлов якунлари эълон қилинган кундан эътиборан ўттиз кун"
+      }
+    ],
+    "first_session_of_kurultai": [
+      {
+        "status": "translation",
+        "text": "сессия Қурултойнинг мазкур чақириғидаги биринчи сессиясидир"
+      }
+    ],
+    "first_session_opened": [
+      {
+        "status": "translation",
+        "text": "Қурултойнинг биринчи сессияси очилган кун"
+      }
+    ],
+    "first_session_timely": [
+      {
+        "status": "translation",
+        "text": "биринчи сессия конституциявий муддатда чақирилган"
+      }
+    ],
+    "government": [
+      {
+        "status": "translation",
+        "text": "орган Республика Ҳукуматидир"
+      }
+    ],
+    "government_no_confidence": [
+      {
+        "status": "translation",
+        "text": "Қурултой Ҳукуматга ишончсизлик вотумини билдирди"
+      }
+    ],
+    "grave_or_especially_grave_offence": [
+      {
+        "status": "translation",
+        "text": "депутат томонидан оғир ёки ўта оғир жиноят содир этилган"
+      }
+    ],
+    "introduced_by_president": [
+      {
+        "status": "translation",
+        "text": "қонун лойиҳаси Президентнинг қонунчилик ташаббуси тартибида киритилган"
+      }
+    ],
+    "kurultai_body": [
+      {
+        "status": "translation",
+        "text": "орган Қурултойдир"
+      }
+    ],
+    "kurultai_chair": [
+      {
+        "status": "translation",
+        "text": "шахс Қурултой Раисидир"
+      }
+    ],
+    "kurultai_chair_vote_denominator": [
+      {
+        "status": "translation",
+        "text": "Раисни сайлаш бўсағасининг махражи — иккидан бир"
+      }
+    ],
+    "kurultai_chair_vote_numerator": [
+      {
+        "status": "translation",
+        "text": "Раисни сайлаш бўсағасининг сурати — иккидан бир"
+      }
+    ],
+    "kurultai_consent_to_prosecution": [
+      {
+        "status": "translation",
+        "text": "Қурултой депутатни жавобгарликка тортишга розилик берди"
+      }
+    ],
+    "kurultai_dissolution_authorized": [
+      {
+        "status": "translation",
+        "text": "Қурултойни тарқатиб юборишга йўл қўйилади"
+      }
+    ],
+    "kurultai_early_termination_authorized": [
+      {
+        "status": "translation",
+        "text": "Қурултой ваколатларини муддатидан илгари тугатишга йўл қўйилади"
+      }
+    ],
+    "kurultai_powers_ended": [
+      {
+        "status": "translation",
+        "text": "мазкур чақириқ Қурултойининг ваколатлари тугатилган"
+      }
+    ],
+    "kurultai_powers_started": [
+      {
+        "status": "translation",
+        "text": "мазкур чақириқ Қурултойининг ваколатлари бошланган"
+      }
+    ],
+    "kurultai_seat_count": [
+      {
+        "status": "translation",
+        "text": "Қурултой депутатларининг умумий сони — бир юз қирқ беш"
+      }
+    ],
+    "law_adopted": [
+      {
+        "status": "translation",
+        "text": "қонун Қурултой томонидан қабул қилинган кун"
+      }
+    ],
+    "law_nonperformance_established": [
+      {
+        "status": "translation",
+        "text": "ҳисобот якунлари бўйича Ҳукумат аъзоси томонидан Республика қонунларининг бажарилмагани аниқланган"
+      }
+    ],
+    "law_presented_timely": [
+      {
+        "status": "translation",
+        "text": "қонун имзолашга конституциявий муддатда тақдим этилган"
+      }
+    ],
+    "law_presented_to_president": [
+      {
+        "status": "translation",
+        "text": "қонун Президентга имзолашга тақдим этилган кун"
+      }
+    ],
+    "law_submission_deadline_days": [
+      {
+        "status": "translation",
+        "text": "қабул қилинган қонунни имзолашга тақдим этиш муддати — ўн кун"
+      }
+    ],
+    "member_dismissal_decision_denominator": [
+      {
+        "status": "translation",
+        "text": "лавозимидан озод қилиш тўғрисида мурожаат этиш бўсағасининг махражи — учдан икки"
+      }
+    ],
+    "member_dismissal_decision_numerator": [
+      {
+        "status": "translation",
+        "text": "лавозимидан озод қилиш тўғрисида мурожаат этиш бўсағасининг сурати — учдан икки"
+      }
+    ],
+    "member_dismissal_initiative_denominator": [
+      {
+        "status": "translation",
+        "text": "ҳисоботни эшитиш ташаббуси бўсағасининг махражи — учдан бир"
+      }
+    ],
+    "member_dismissal_initiative_numerator": [
+      {
+        "status": "translation",
+        "text": "ҳисоботни эшитиш ташаббуси бўсағасининг сурати — учдан бир"
+      }
+    ],
+    "new_convocation_first_session_started": [
+      {
+        "status": "translation",
+        "text": "янги чақириқ Қурултойининг биринчи сессияси очилди"
+      }
+    ],
+    "no_confidence_decision_denominator": [
+      {
+        "status": "translation",
+        "text": "ишончсизлик вотумини билдириш бўсағасининг махражи — иккидан бир"
+      }
+    ],
+    "no_confidence_decision_numerator": [
+      {
+        "status": "translation",
+        "text": "ишончсизлик вотумини билдириш бўсағасининг сурати — иккидан бир"
+      }
+    ],
+    "no_confidence_initiating_votes": [
+      {
+        "status": "translation",
+        "text": "ишончсизлик вотуми масаласини ташаббус қилган депутатларнинг сони"
+      }
+    ],
+    "no_confidence_initiative_denominator": [
+      {
+        "status": "translation",
+        "text": "ишончсизлик вотуми ташаббуси бўсағасининг махражи — бешдан бир"
+      }
+    ],
+    "no_confidence_initiative_numerator": [
+      {
+        "status": "translation",
+        "text": "ишончсизлик вотуми ташаббуси бўсағасининг сурати — бешдан бир"
+      }
+    ],
+    "no_confidence_votes": [
+      {
+        "status": "translation",
+        "text": "Ҳукуматга ишончсизлик вотуми учун берилган овозларнинг сони"
+      }
+    ],
+    "ordinary_bill": [
+      {
+        "status": "translation",
+        "text": "қонун лойиҳаси оддий қонун лойиҳасидир"
+      }
+    ],
+    "ordinary_law": [
+      {
+        "status": "translation",
+        "text": "ҳужжат оддий қонундир"
+      }
+    ],
+    "ordinary_law_denominator": [
+      {
+        "status": "translation",
+        "text": "қонунни қабул қилиш бўсағасининг махражи — иккидан бир"
+      }
+    ],
+    "ordinary_law_numerator": [
+      {
+        "status": "translation",
+        "text": "қонунни қабул қилиш бўсағасининг сурати — иккидан бир"
+      }
+    ],
+    "ordinary_veto_override_denominator": [
+      {
+        "status": "translation",
+        "text": "қонун юзасидаги эътирозларни енгиб ўтиш бўсағасининг махражи — учдан икки"
+      }
+    ],
+    "ordinary_veto_override_numerator": [
+      {
+        "status": "translation",
+        "text": "қонун юзасидаги эътирозларни енгиб ўтиш бўсағасининг сурати — учдан икки"
+      }
+    ],
+    "override_votes": [
+      {
+        "status": "translation",
+        "text": "Президент эътирозларини енгиб ўтишда берилган овозларнинг сони"
+      }
+    ],
+    "permanent_committee_formed": [
+      {
+        "status": "translation",
+        "text": "Қурултой доимий қўмита тузди"
+      }
+    ],
+    "positive_government_opinion": [
+      {
+        "status": "translation",
+        "text": "қонун лойиҳаси бўйича Ҳукуматнинг ижобий хулосаси мавжуд"
+      }
+    ],
+    "president_nominated_chair": [
+      {
+        "status": "translation",
+        "text": "Раисликка номзод Республика Президенти томонидан кўрсатилган"
+      }
+    ],
+    "president_objected_to_law": [
+      {
+        "status": "translation",
+        "text": "Президент қонун юзасидан эътирозларини билдирди"
+      }
+    ],
+    "presidential_dismissal_request": [
+      {
+        "status": "translation",
+        "text": "Қурултой Президентга Ҳукумат аъзосини лавозимидан озод қилиш тўғрисида мурожаат этади"
+      }
+    ],
+    "presidential_objection_accepted": [
+      {
+        "status": "translation",
+        "text": "Президентнинг эътирозлари қабул қилинган ҳисобланади"
+      }
+    ],
+    "presidential_objection_overridden": [
+      {
+        "status": "translation",
+        "text": "Президентнинг эътирозлари Қурултой томонидан енгиб ўтилган"
+      }
+    ],
+    "priority_bill": [
+      {
+        "status": "translation",
+        "text": "устувор деб топилган қонун лойиҳаси киритилган кун"
+      }
+    ],
+    "priority_bill_adopted": [
+      {
+        "status": "translation",
+        "text": "устувор қонун лойиҳаси қабул қилинган кун"
+      }
+    ],
+    "priority_bill_due_on": [
+      {
+        "status": "translation",
+        "text": "устувор қонун лойиҳаси бўйича икки ойлик муддат тугайдиган кун"
+      }
+    ],
+    "priority_bill_period": [
+      {
+        "status": "translation",
+        "text": "устувор қонун лойиҳасини биринчи навбатда қабул қилиш муддати — икки ой"
+      }
+    ],
+    "priority_bill_timely": [
+      {
+        "status": "translation",
+        "text": "устувор қонун лойиҳаси конституциявий муддатда қабул қилинган"
+      }
+    ],
+    "reconsideration_deadline_missed": [
+      {
+        "status": "translation",
+        "text": "такроран муҳокама қилишнинг бир ойлик муддати ўтказиб юборилган"
+      }
+    ],
+    "reconsideration_within_one_month": [
+      {
+        "status": "translation",
+        "text": "такроран муҳокама қилиш ва овоз бериш бир ойлик муддатда ўтказилган"
+      }
+    ],
+    "repeated_refusal_to_elect_chair": [
+      {
+        "status": "translation",
+        "text": "Қурултой Раисни сайлашдан такроран бош тортди"
+      }
+    ],
+    "report_dismissal_votes": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат аъзосини лавозимидан озод қилиш тўғрисида мурожаат этиш учун берилган овозларнинг сони"
+      }
+    ],
+    "report_initiating_votes": [
+      {
+        "status": "translation",
+        "text": "ҳисоботни эшитишни ташаббус қилган депутатларнинг сони"
+      }
+    ],
+    "report_of_member": [
+      {
+        "status": "translation",
+        "text": "ҳисобот мазкур Ҳукумат аъзоси томонидан тақдим этилган"
+      }
+    ],
+    "resides_last_years": [
+      {
+        "status": "translation",
+        "text": "Қозоғистонда доимий яшашнинг сўнгги йиллари сони"
+      }
+    ],
+    "resolution_within_body_competence": [
+      {
+        "status": "translation",
+        "text": "қарор органнинг ваколат доирасидаги масалалар бўйича қабул қилинган"
+      }
+    ],
+    "revenue_reducing_or_expenditure_increasing": [
+      {
+        "status": "translation",
+        "text": "қонун лойиҳаси давлат даромадларининг камайишини ёки харажатларнинг ошишини назарда тутади"
+      }
+    ],
+    "session_opened": [
+      {
+        "status": "translation",
+        "text": "Қурултой сессияси очилган"
+      }
+    ],
+    "session_quorate": [
+      {
+        "status": "translation",
+        "text": "Қурултой мажлиси ваколатли"
+      }
+    ],
+    "session_quorum_denominator": [
+      {
+        "status": "translation",
+        "text": "мажлис кворумининг махражи — учдан икки"
+      }
+    ],
+    "session_quorum_numerator": [
+      {
+        "status": "translation",
+        "text": "мажлис кворумининг сурати — учдан икки"
+      }
+    ],
+    "standing_committee_established": [
+      {
+        "status": "translation",
+        "text": "Қурултойнинг доимий қўмитаси қонуний равишда тузилган"
+      }
+    ],
+    "trust_power_annual_limit": [
+      {
+        "status": "translation",
+        "text": "Ҳукуматнинг ишонч масаласига мурожаат этиш чегараси — йилига икки марта"
+      }
+    ],
+    "trust_question_on_rejected_government_bill": [
+      {
+        "status": "translation",
+        "text": "Бош вазир Ҳукумат киритган қонун лойиҳасининг қабул қилинмагани муносабати билан ишонч масаласини қўйди"
+      }
+    ],
+    "trust_question_raised_at": [
+      {
+        "status": "translation",
+        "text": "Ҳукуматга ишонч масаласи қўйилган пайт"
+      }
+    ],
+    "trust_vote_held_at": [
+      {
+        "status": "translation",
+        "text": "ишонч масаласи бўйича овоз бериш пайти"
+      }
+    ],
+    "trust_vote_timing_valid": [
+      {
+        "status": "translation",
+        "text": "ишонч масаласини қўйиш муддатларига риоя этилган"
+      }
+    ],
+    "trust_vote_wait_hours": [
+      {
+        "status": "translation",
+        "text": "ишонч масаласини қўйиш билан овоз бериш ўртасидаги муддат — қирқ саккиз соат"
+      }
+    ],
+    "unexcused_absences": [
+      {
+        "status": "translation",
+        "text": "депутатнинг мажлисларда узрли сабабларсиз қатнашмаган ҳоллари сони"
+      }
+    ],
+    "votes_for_bill": [
+      {
+        "status": "translation",
+        "text": "қонун лойиҳаси учун берилган овозларнинг сони"
+      }
+    ],
+    "working_body_resolution": [
+      {
+        "status": "translation",
+        "text": "ҳужжат қўмита ёки комиссиянинг қароридир"
+      }
+    ],
+    "working_body_resolution_authorized": [
+      {
+        "status": "translation",
+        "text": "қўмита ёки комиссия мазкур қарорни чиқаришга ҳақли"
+      }
+    ]
+  },
+  "language": "uz",
+  "package": "kz.constitution.kurultai"
+}

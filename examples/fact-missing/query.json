@@ -1,0 +1,15 @@
+{
+  "kind": "truth",
+  "literal": {
+    "args": [
+      {
+        "id": "urn:demo:kz:member",
+        "kind": "entity_ref"
+      }
+    ],
+    "kind": "literal",
+    "polarity": "positive",
+    "predicate": "urn:kz:constitution:government#entrepreneurial_activity"
+  },
+  "queryId": "urn:kz:constitution:government#test/fact-missing/query/0"
+}

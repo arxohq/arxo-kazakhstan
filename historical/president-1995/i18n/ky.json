@@ -1,0 +1,1262 @@
+{
+  "$comment": "Кыргыз тилиндеги көрсөтүү катмары (DECISION-0070). Бул файл CLIR'ге кирбейт жана презентациялык катмар менен гана окулат (verbalize --labels, MCP, жумуш үстөлү). Котормо Казакстан Республикасынын Конституциясын ресмилештирүүнүн орусча (ru-KZ) белгилеринен жасалган жумушчу котормо (`translation`) — расмий басылма эмес; терминология Кыргыз Республикасынын Конституциясынын кыргызча редакциясы (corpus/laws/kg/constitution) жана law.verb.ky пакети боюнча сверкаланган. Ачкыч — жарыялоонун жергиликтүү аты.",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "ActingPresidentCannotInitiateAmendment1995": [
+      {
+        "status": "translation",
+        "text": "48-берене, 2-пункт (1995-ж. ред.). Президенттин ыйгарым укуктарын кабыл алган адам Конституцияга өзгөртүүлөрдү жана толуктоолорду киргизүүнү демилгелөөгө укуксуз"
+      }
+    ],
+    "AdoptEmergencyMeasure1995": [
+      {
+        "status": "translation",
+        "text": "44-берене, 16-пунктча (1995-ж. ред.). Президент Премьер-Министр жана Палаталардын төрагалары менен расмий консультациялардан кийин өзгөчө абалды киргизет жана Парламентке токтоосуз кабарлайт"
+      }
+    ],
+    "AdoptMartialMeasure1995": [
+      {
+        "status": "translation",
+        "text": "44-берене, 17-пунктча (1995-ж. ред.). Агрессия же тикелей тышкы коркунуч болгон учурда Президент согуштук абалды киргизет жана Парламентке токтоосуз кабарлайт"
+      }
+    ],
+    "AppointWithMazhilisConsent1995": [
+      {
+        "status": "translation",
+        "text": "44-берене, 3-пунктча (1995-ж. ред.). Мажилистин макулдугу менен Президент Премьер-Министрди дайындайт"
+      }
+    ],
+    "AppointWithSenateConsent1995": [
+      {
+        "status": "translation",
+        "text": "44-берене, 4-пунктча (1995-ж. ред.). Сенаттын макулдугу менен Конституциялык Соттун Төрагасы, Улуттук Банктын Төрагасы, Жогорку Сот Кеңешинин Төрагасы, Башкы Прокурор жана УКК Төрагасы дайындалат"
+      }
+    ],
+    "Appointment": [
+      {
+        "status": "translation",
+        "text": "Президент тарабынан жүргүзүлүүчү дайындоо"
+      }
+    ],
+    "CallReferendum1995": [
+      {
+        "status": "translation",
+        "text": "44-берене, 10-пунктча (1995-ж. ред.). Президент республикалык референдум өткөрүү жөнүндө чечим кабыл алат"
+      }
+    ],
+    "Candidate": [
+      {
+        "status": "translation",
+        "text": "Президенттикке талапкер"
+      }
+    ],
+    "ConstitutionalPetition": [
+      {
+        "status": "translation",
+        "text": "Конституциялык Сотко кайрылуу"
+      }
+    ],
+    "ConstitutionalReviewPetitionPower1995": [
+      {
+        "status": "translation",
+        "text": "44-берене, 10-1-пунктча (1995-ж. ред.). Президент күчүнө кирген актынын Конституцияга ылайыктуулугун кароо жөнүндө Конституциялык Сотко кайрылуу жиберет"
+      }
+    ],
+    "CountersignatureResponsibility1995": [
+      {
+        "status": "translation",
+        "text": "45-берене, 3-пункт (1995-ж. ред.). Актыны бекемдеген Палатанын Төрагасы же Премьер-Министр анын мыйзамдуулугу үчүн юридикалык жоопкерчилик тартат"
+      }
+    ],
+    "ElectedByAbsoluteMajority1995": [
+      {
+        "status": "translation",
+        "text": "41-берене, 5-пункт (1995-ж. ред.). Добуш берүүгө катышкандардын элүү пайыздан ашык добушун алган талапкер шайланды деп эсептелет"
+      }
+    ],
+    "ElectedInRunoff1995": [
+      {
+        "status": "translation",
+        "text": "41-берене, 5-пункт (1995-ж. ред.). Кайра добуш берүүдө көбүрөөк добуш алган талапкер шайланды деп эсептелет"
+      }
+    ],
+    "Election": [
+      {
+        "status": "translation",
+        "text": "Президентти шайлоо"
+      }
+    ],
+    "EmergencyMeasure": [
+      {
+        "status": "translation",
+        "text": "өзгөчө же согуштук абалдын чарасы"
+      }
+    ],
+    "EmergencyPower1995": [
+      {
+        "status": "translation",
+        "text": "44-берене, 16-пунктча (1995-ж. ред.). Президент Премьер-Министр жана Палаталардын төрагалары менен расмий консультациялардан кийин өзгөчө абалды киргизет жана Парламентке токтоосуз кабарлайт"
+      }
+    ],
+    "FormerPresidentInviolabilityImmunity1995": [
+      {
+        "status": "translation",
+        "text": "46-берене, 3-пункт (1995-ж. ред.). Кол тийбестик жөнүндө жоболор Республиканын экс-Президенттерине жайылтылат"
+      }
+    ],
+    "FormerPresidentStateProvisionDuty1995": [
+      {
+        "status": "translation",
+        "text": "46-берене, 2- жана 3-пункттар (1995-ж. ред.). Президентти жана анын үй-бүлөсүн камсыз кылуу, тейлөө жана коргоо мамлекеттин эсебинен жүзөгө ашырылат; берененин жоболору экс-Президенттерге жайылтылат"
+      }
+    ],
+    "FormerPresidentTitle1995": [
+      {
+        "status": "translation",
+        "text": "42-берене, 3-пункт (1995-ж. ред.). Кызматтан четтетилгендерден башка бардык мурдагы Президенттер экс-Президент наамына ээ"
+      }
+    ],
+    "FormerPresidentialInviolability1995": [
+      {
+        "status": "translation",
+        "text": "46-берене, 3-пункт (1995-ж. ред.). Кол тийбестик жөнүндө жоболор Республиканын экс-Президенттерине жайылтылат"
+      }
+    ],
+    "Impeachment": [
+      {
+        "status": "translation",
+        "text": "Президентти кызматтан четтетүү же ден соолугуна байланыштуу бошотуу боюнча иш жүргүзүү"
+      }
+    ],
+    "ImpeachmentBarredDuringDissolution1995": [
+      {
+        "status": "translation",
+        "text": "47-берене, 3-пункт (1995-ж. ред.). Президент Парламенттин же Мажилистин ыйгарым укуктарын мөөнөтүнөн мурда токтотуу маселесин караган мезгилде четтетүү маселеси козголушу мүмкүн эмес"
+      }
+    ],
+    "ImpeachmentChargeBroughtByMazhilisMajority1995": [
+      {
+        "status": "translation",
+        "text": "47-берене, 2-пункт (1995-ж. ред.). Айып коюу жөнүндө чечим Мажилис депутаттарынын жалпы санынын көпчүлүгү менен кабыл алынат"
+      }
+    ],
+    "ImpeachmentInitiativeThreshold1995": [
+      {
+        "status": "translation",
+        "text": "47-берене, 2-пункт (1995-ж. ред.). Айып коюу жөнүндө чечим Мажилис депутаттарынын кеминде үчтөн биринин демилгеси боюнча кабыл алынат"
+      }
+    ],
+    "ImpeachmentInvestigationValid1995": [
+      {
+        "status": "translation",
+        "text": "47-берене, 2-пункт (1995-ж. ред.). Айыпты иликтөөнү Сенат уюштурат, натыйжалары анын депутаттарынын жалпы санынын көпчүлүк добушу менен берилет"
+      }
+    ],
+    "Law": [
+      {
+        "status": "translation",
+        "text": "Президентке берилген мыйзам"
+      }
+    ],
+    "LawReturnPower1995": [
+      {
+        "status": "translation",
+        "text": "44-берене, 2-пунктча (1995-ж. ред.). Президент мыйзамды же анын айрым беренелерин кайра талкуулоо жана добуш берүү үчүн кайтарат"
+      }
+    ],
+    "LawSigningPower1995": [
+      {
+        "status": "translation",
+        "text": "44-берене, 2-пунктча (1995-ж. ред.). Президент Парламент берген мыйзамга бир айдын ичинде кол коёт"
+      }
+    ],
+    "MartialPower1995": [
+      {
+        "status": "translation",
+        "text": "44-берене, 17-пунктча (1995-ж. ред.). Агрессия же тикелей тышкы коркунуч болгон учурда Президент согуштук абалды киргизет жана Парламентке токтоосуз кабарлайт"
+      }
+    ],
+    "Mazhilis": [
+      {
+        "status": "translation",
+        "text": "Парламенттин Мажилиси"
+      }
+    ],
+    "MazhilisChairAssumesPowers1995": [
+      {
+        "status": "translation",
+        "text": "48-берене, 1-пункт (1995-ж. ред.). Сенаттын Төрагасы мүмкүн болбогон учурда ыйгарым укуктар Мажилистин Төрагасына өтөт"
+      }
+    ],
+    "MazhilisConsentAppointmentPower1995": [
+      {
+        "status": "translation",
+        "text": "44-берене, 3-пунктча (1995-ж. ред.). Мажилистин макулдугу менен Президент Премьер-Министрди дайындайт"
+      }
+    ],
+    "Parliament": [
+      {
+        "status": "translation",
+        "text": "Казакстан Республикасынын Парламенти"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "жеке адам"
+      }
+    ],
+    "PetitionConstitutionalCourt1995": [
+      {
+        "status": "translation",
+        "text": "44-берене, 10-1-пунктча (1995-ж. ред.). Президент күчүнө кирген актынын Конституцияга ылайыктуулугун кароо жөнүндө Конституциялык Сотко кайрылуу жиберет"
+      }
+    ],
+    "President": [
+      {
+        "status": "translation",
+        "text": "Казакстан Республикасынын Президенти (1995-жылдагы редакция)"
+      }
+    ],
+    "PresidentAssumesOfficeOnOath1995": [
+      {
+        "status": "translation",
+        "text": "42-берене, 1-пункт (1995-ж. ред.). Президент элге ант берген учурдан тартып кызматка киришет"
+      }
+    ],
+    "PresidentReleasedForIncapacity1995": [
+      {
+        "status": "translation",
+        "text": "47-берене, 1-пункт (1995-ж. ред.). Оорусуна байланыштуу мөөнөтүнөн мурда бошотуу жөнүндө чечим ар бир Палатанын депутаттарынын жалпы санынын кеминде төрттөн үч көпчүлүгү менен кабыл алынат"
+      }
+    ],
+    "PresidentRemovedByImpeachment1995": [
+      {
+        "status": "translation",
+        "text": "47-берене, 2-пункт (1995-ж. ред.). Жогорку жана Конституциялык Соттордун корутундулары болгондо акыркы чечим ар бир Палатанын депутаттарынын кеминде төрттөн үч көпчүлүк добушу менен кабыл алынат"
+      }
+    ],
+    "PresidentialAct": [
+      {
+        "status": "translation",
+        "text": "Президенттин актысы"
+      }
+    ],
+    "PresidentialActBinding1995": [
+      {
+        "status": "translation",
+        "text": "45-берене, 1-пункт (1995-ж. ред.). Президент Конституциянын жана мыйзамдардын негизинде жана аларды аткаруу үчүн Республиканын бүткүл аймагында милдеттүү болгон жарлыктарды жана буйруктарды чыгарат"
+      }
+    ],
+    "PresidentialCandidateEligibility1995": [
+      {
+        "status": "translation",
+        "text": "41-берене, 2-пункт (1995-ж. ред.). Кырк жаштан кем эмес, мамлекеттик тилди билген, Казакстанда он беш жыл жашаган жана жогорку билими бар, туулганынан жаран болгон адам Президент болуп шайлана алат"
+      }
+    ],
+    "PresidentialInviolability1995": [
+      {
+        "status": "translation",
+        "text": "46-берене, 1-пункт (1995-ж. ред.). Президентке, анын ар-намысына жана кадыр-баркына кол тийбейт"
+      }
+    ],
+    "PresidentialInviolabilityImmunity1995": [
+      {
+        "status": "translation",
+        "text": "46-берене, 1-пункт (1995-ж. ред.). Президентке, анын ар-намысына жана кадыр-баркына кол тийбейт"
+      }
+    ],
+    "PresidentialOfficeIncompatible1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "43-берене, 1- жана 3-пункттар (1995-ж. ред.). Президент депутат болууга, башка акы төлөнүүчү кызматтарды ээлөөгө, ишкердик ишмердүүлүк жүргүзүүгө жана саясий партияда болууга укуксуз"
+      }
+    ],
+    "PresidentialOfficeIncompatible1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "43-берене, 1- жана 3-пункттар (1995-ж. ред.). Президент депутат болууга, башка акы төлөнүүчү кызматтарды ээлөөгө, ишкердик ишмердүүлүк жүргүзүүгө жана саясий партияда болууга укуксуз"
+      }
+    ],
+    "PresidentialOfficeIncompatible1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "43-берене, 1- жана 3-пункттар (1995-ж. ред.). Президент депутат болууга, башка акы төлөнүүчү кызматтарды ээлөөгө, ишкердик ишмердүүлүк жүргүзүүгө жана саясий партияда болууга укуксуз"
+      }
+    ],
+    "PresidentialOfficeIncompatible1995/alt/4": [
+      {
+        "status": "translation",
+        "text": "43-берене, 1- жана 3-пункттар (1995-ж. ред.). Президент депутат болууга, башка акы төлөнүүчү кызматтарды ээлөөгө, ишкердик ишмердүүлүк жүргүзүүгө жана саясий партияда болууга укуксуз"
+      }
+    ],
+    "PresidentialPowersTerminated1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "42-берене, 3-пункт (1995-ж. ред.). Ыйгарым укуктар жаңы шайланган Президент кызматка киришүү менен, мөөнөтүнөн мурда бошотулганда, четтетилгенде же каза болгондо токтотулат"
+      }
+    ],
+    "PresidentialPowersTerminated1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "42-берене, 3-пункт (1995-ж. ред.). Ыйгарым укуктар жаңы шайланган Президент кызматка киришүү менен, мөөнөтүнөн мурда бошотулганда, четтетилгенде же каза болгондо токтотулат"
+      }
+    ],
+    "PresidentialPowersTerminated1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "42-берене, 3-пункт (1995-ж. ред.). Ыйгарым укуктар жаңы шайланган Президент кызматка киришүү менен, мөөнөтүнөн мурда бошотулганда, четтетилгенде же каза болгондо токтотулат"
+      }
+    ],
+    "PresidentialRelativePositionProhibited1995": [
+      {
+        "status": "translation",
+        "text": "43-берене, 4-пункт (1995-ж. ред.). Президенттин жакын туугандары саясий мамлекеттик кызматчылардын жана квазимамлекеттик сектордун жетекчилеринин кызматтарын ээлөөгө укуксуз"
+      }
+    ],
+    "PrimeMinisterAssumesPowers1995": [
+      {
+        "status": "translation",
+        "text": "48-берене, 1-пункт (1995-ж. ред.). Мажилистин Төрагасы мүмкүн болбогон учурда ыйгарым укуктар Республиканын Премьер-Министрине өтөт"
+      }
+    ],
+    "PrimeMinisterNomineeAfterFractionConsultations1995": [
+      {
+        "status": "translation",
+        "text": "44-берене, 3) пунктча (1995-ж. ред.). Премьер-Министрдин талапкерлиги саясий партиялардын фракциялары менен консультациялардан кийин Мажилистин кароосуна киргизилет"
+      }
+    ],
+    "ProvideStateFundedProtection1995": [
+      {
+        "status": "translation",
+        "text": "46-берене, 2- жана 3-пункттар (1995-ж. ред.). Президентти жана анын үй-бүлөсүн камсыз кылуу, тейлөө жана коргоо мамлекеттин эсебинен жүзөгө ашырылат; берененин жоболору экс-Президенттерге жайылтылат"
+      }
+    ],
+    "Referendum": [
+      {
+        "status": "translation",
+        "text": "республикалык референдум"
+      }
+    ],
+    "ReferendumPower1995": [
+      {
+        "status": "translation",
+        "text": "44-берене, 10-пунктча (1995-ж. ред.). Президент республикалык референдум өткөрүү жөнүндө чечим кабыл алат"
+      }
+    ],
+    "RegularElectionDateAdmissible1995": [
+      {
+        "status": "translation",
+        "text": "41-берене, 3-пункт (1995-ж. ред.). Кезектеги шайлоо декабрдын биринчи жекшембисинде өткөрүлөт жана Парламенттин жаңы курамын шайлоо менен мөөнөтү боюнча дал келиши мүмкүн эмес"
+      }
+    ],
+    "RejectedChargeTerminatesInitiators1995": [
+      {
+        "status": "translation",
+        "text": "47-берене, 2-пункт (1995-ж. ред.). Айыптын кайсы гана стадияда четке кагылышы аны демилгелеген Мажилис депутаттарынын ыйгарым укуктарын мөөнөтүнөн мурда токтотууга алып келет"
+      }
+    ],
+    "RepeatedElectionProhibited1995": [
+      {
+        "status": "translation",
+        "text": "42-берене, 5-пункт (1995-ж. ред.). Бир эле адам бир жолудан ашык Президент болуп шайлана албайт"
+      }
+    ],
+    "ReturnLawForReconsideration1995": [
+      {
+        "status": "translation",
+        "text": "44-берене, 2-пунктча (1995-ж. ред.). Президент мыйзамды же анын айрым беренелерин кайра талкуулоо жана добуш берүү үчүн кайтарат"
+      }
+    ],
+    "RunoffRequired1995": [
+      {
+        "status": "translation",
+        "text": "41-берене, 5-пункт (1995-ж. ред.). Эгерде эч бир талапкер көрсөтүлгөн сандагы добушту албаса, кайра добуш берүү өткөрүлөт"
+      }
+    ],
+    "Senate": [
+      {
+        "status": "translation",
+        "text": "Парламенттин Сенаты"
+      }
+    ],
+    "SenateChairAssumesPowers1995": [
+      {
+        "status": "translation",
+        "text": "48-берене, 1-пункт (1995-ж. ред.). Президенттин калган мөөнөткө ыйгарым укуктары Парламенттин Сенатынын Төрагасына өтөт"
+      }
+    ],
+    "SenateConsentAppointmentPower1995": [
+      {
+        "status": "translation",
+        "text": "44-берене, 4-пунктча (1995-ж. ред.). Сенаттын макулдугу менен Конституциялык Соттун Төрагасы, Улуттук Банктын Төрагасы, Жогорку Сот Кеңешинин Төрагасы, Башкы Прокурор жана УКК Төрагасы дайындалат"
+      }
+    ],
+    "SignPresentedLaw1995": [
+      {
+        "status": "translation",
+        "text": "44-берене, 2-пунктча (1995-ж. ред.). Президент Парламент берген мыйзамга бир айдын ичинде кол коёт"
+      }
+    ],
+    "StateAuthority": [
+      {
+        "status": "translation",
+        "text": "мамлекеттик орган же кызмат адамы"
+      }
+    ],
+    "SuccessionEvent": [
+      {
+        "status": "translation",
+        "text": "Президенттин ыйгарым укуктары өтүүчү учур"
+      }
+    ],
+    "SuccessionOathTimely1995": [
+      {
+        "status": "translation",
+        "text": "42-берене, 2-пункт (1995-ж. ред.). Президенттин ыйгарым укуктарын кабыл алган адам бир айдын ичинде ант берет"
+      }
+    ],
+    "act_countersigned_by_pm_or_chamber_chair": [
+      {
+        "status": "translation",
+        "text": "акт Премьер-Министрдин же Парламенттин Палатасынын төрагасынын колу менен бекемделген"
+      }
+    ],
+    "act_initiated_by_government": [
+      {
+        "status": "translation",
+        "text": "акт Өкмөттүн демилгеси боюнча чыгарылган"
+      }
+    ],
+    "acting_president": [
+      {
+        "status": "translation",
+        "text": "адам Президенттин милдетин аткарат"
+      }
+    ],
+    "acting_president_amendment_initiative_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "Президенттин милдетин аткаруучуга Конституцияны өзгөртүүнү демилгелөөгө тыюу салынат"
+      }
+    ],
+    "age_years": [
+      {
+        "status": "translation",
+        "text": "адамдын толук жылдардагы жашы"
+      }
+    ],
+    "aggression_or_immediate_external_threat": [
+      {
+        "status": "translation",
+        "text": "Республикага каршы агрессия же тикелей тышкы коркунуч бар"
+      }
+    ],
+    "appointment_effective_1995": [
+      {
+        "status": "translation",
+        "text": "дайындоо болуп өттү"
+      }
+    ],
+    "appointment_requires_mazhilis_consent": [
+      {
+        "status": "translation",
+        "text": "дайындоо Мажилистин макулдугу менен жүргүзүлөт"
+      }
+    ],
+    "appointment_requires_senate_consent": [
+      {
+        "status": "translation",
+        "text": "дайындоо Сенаттын макулдугу менен жүргүзүлөт"
+      }
+    ],
+    "assumes_presidential_powers_1995": [
+      {
+        "status": "translation",
+        "text": "адам Президенттин ыйгарым укуктарын өзүнө кабыл алат"
+      }
+    ],
+    "candidate_person": [
+      {
+        "status": "translation",
+        "text": "талапкер ушул адам болуп саналат"
+      }
+    ],
+    "charge_rejected": [
+      {
+        "status": "translation",
+        "text": "айып четке кагылды"
+      }
+    ],
+    "citizen_by_birth": [
+      {
+        "status": "translation",
+        "text": "адам туулганынан Республиканын жараны болуп саналат"
+      }
+    ],
+    "close_relative_of_president": [
+      {
+        "status": "translation",
+        "text": "адам Президенттин жакын тууганы болуп саналат"
+      }
+    ],
+    "coincides_with_parliament_election": [
+      {
+        "status": "translation",
+        "text": "Президентти шайлоо Парламенттин жаңы курамын шайлоо менен мөөнөтү боюнча дал келет"
+      }
+    ],
+    "constitutional_amendment_initiative_attempt": [
+      {
+        "status": "translation",
+        "text": "Президенттин милдетин аткаруучу Конституцияны өзгөртүүнү демилгелейт"
+      }
+    ],
+    "constitutional_court_procedure_confirmed": [
+      {
+        "status": "translation",
+        "text": "Конституциялык Сот белгиленген конституциялык жол-жоболордун сакталышын тастыктады"
+      }
+    ],
+    "constitutional_organs_functioning_disrupted": [
+      {
+        "status": "translation",
+        "text": "конституциялык органдардын кадимки иштеши бузулган"
+      }
+    ],
+    "constitutional_petition": [
+      {
+        "status": "translation",
+        "text": "кайрылуу Конституциялык Сотко жиберилген"
+      }
+    ],
+    "constitutional_review_petition_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент Конституциялык Сотко кайрылат"
+      }
+    ],
+    "constitutional_review_requested_1995": [
+      {
+        "status": "translation",
+        "text": "конституциялык көзөмөл укук ченемдүү демилгеленген"
+      }
+    ],
+    "countersignatory_bears_legal_responsibility_1995": [
+      {
+        "status": "translation",
+        "text": "актыны бекемдеген адам анын мыйзамдуулугу үчүн юридикалык жоопкерчилик тартат"
+      }
+    ],
+    "early_release_or_removal": [
+      {
+        "status": "translation",
+        "text": "Президент мөөнөтүнөн мурда бошотулган же кызматтан четтетилген"
+      }
+    ],
+    "elected_president_1995": [
+      {
+        "status": "translation",
+        "text": "адам Президент болуп шайланды деп эсептелет"
+      }
+    ],
+    "election_majority_percent_1995": [
+      {
+        "status": "translation",
+        "text": "Президент болуп шайлануунун порогу — добуштардын элүү пайызынан ашыгы"
+      }
+    ],
+    "eligible_presidential_candidate_1995": [
+      {
+        "status": "translation",
+        "text": "адам Президенттикке талапкерге коюлган талаптарга жооп берет"
+      }
+    ],
+    "emergency_consultations_with_pm_and_chairs_completed": [
+      {
+        "status": "translation",
+        "text": "Премьер-Министр жана Парламенттин Палаталарынын төрагалары менен консультациялар өткөрүлдү"
+      }
+    ],
+    "emergency_measure": [
+      {
+        "status": "translation",
+        "text": "чара өзгөчө абалдын чарасы болуп саналат"
+      }
+    ],
+    "emergency_measure_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент өзгөчө абалдын чараларын киргизет"
+      }
+    ],
+    "emergency_measure_in_force_1995": [
+      {
+        "status": "translation",
+        "text": "өзгөчө абалдын чаралары укук ченемдүү киргизилген"
+      }
+    ],
+    "final_decision_within_two_months": [
+      {
+        "status": "translation",
+        "text": "акыркы чечим эки айлык мөөнөттө кабыл алынган"
+      }
+    ],
+    "fluent_in_state_language": [
+      {
+        "status": "translation",
+        "text": "адам мамлекеттик тилди эркин билет"
+      }
+    ],
+    "former_president": [
+      {
+        "status": "translation",
+        "text": "адам Республиканын мурдагы Президенти болуп саналат"
+      }
+    ],
+    "former_president_title_held_1995": [
+      {
+        "status": "translation",
+        "text": "мурдагы Президентке Республиканын Президенти наамы сакталат"
+      }
+    ],
+    "fraction_consultations_completed": [
+      {
+        "status": "translation",
+        "text": "саясий партиялардын фракциялары менен консультациялар өткөрүлдү"
+      }
+    ],
+    "higher_education": [
+      {
+        "status": "translation",
+        "text": "адамдын жогорку билими бар"
+      }
+    ],
+    "highest_vote_in_runoff": [
+      {
+        "status": "translation",
+        "text": "кайра добуш берүүдө талапкер көбүрөөк добуш алды"
+      }
+    ],
+    "impeachment_case": [
+      {
+        "status": "translation",
+        "text": "өндүрүш Президентти кызматтан четтетүү жөнүндө өндүрүш болуп саналат"
+      }
+    ],
+    "impeachment_charge_brought_1995": [
+      {
+        "status": "translation",
+        "text": "айыптоо коюу жөнүндө чечим Мажилис депутаттарынын жалпы санынын көпчүлүгү менен кабыл алынган"
+      }
+    ],
+    "impeachment_deadline_months_1995": [
+      {
+        "status": "translation",
+        "text": "кызматтан четтетүү жөнүндө акыркы чечимди кабыл алуу мөөнөтү — эки ай"
+      }
+    ],
+    "impeachment_final_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "четтетүү босогосунун бөлүмү — төрттөн үч"
+      }
+    ],
+    "impeachment_final_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "четтетүү босогосунун алымы — төрттөн үч"
+      }
+    ],
+    "impeachment_initiative_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "четтетүү демилгесинин босогосунун бөлүмү — үчтөн бир"
+      }
+    ],
+    "impeachment_initiative_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "четтетүү демилгесинин босогосунун алымы — үчтөн бир"
+      }
+    ],
+    "impeachment_initiative_valid_1995": [
+      {
+        "status": "translation",
+        "text": "четтетүү жөнүндө демилге ыйгарым укуктуу депутаттардын саны тарабынан коюлган"
+      }
+    ],
+    "impeachment_investigation_valid_1995": [
+      {
+        "status": "translation",
+        "text": "айыптоону иликтөө укук ченемдүү жүктөлгөн"
+      }
+    ],
+    "impeachment_may_not_be_initiated_1995": [
+      {
+        "status": "translation",
+        "text": "Президентти кызматтан четтетүү маселеси козголушу мүмкүн эмес"
+      }
+    ],
+    "incapacity_case": [
+      {
+        "status": "translation",
+        "text": "өндүрүш Президентти ден соолугунун абалы боюнча кызматтан бошотуу жөнүндө өндүрүш болуп саналат"
+      }
+    ],
+    "incapacity_release_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "ден соолугунун абалы боюнча бошотуу босогосунун бөлүмү — төрттөн үч"
+      }
+    ],
+    "incapacity_release_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "ден соолугунун абалы боюнча бошотуу босогосунун алымы — төрттөн үч"
+      }
+    ],
+    "initiating_mazhilis_deputies_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "айыптоону демилгелеген Мажилис депутаттарынын ыйгарым укуктары токтотулат"
+      }
+    ],
+    "law_presented": [
+      {
+        "status": "translation",
+        "text": "мыйзам Президентке кол коюуга берилген"
+      }
+    ],
+    "law_returned_for_reconsideration_1995": [
+      {
+        "status": "translation",
+        "text": "мыйзам кайра талкуулоо жана добуш берүү үчүн кайтарылган"
+      }
+    ],
+    "law_signature_months_1995": [
+      {
+        "status": "translation",
+        "text": "берилген мыйзамга кол коюу мөөнөтү — бир ай"
+      }
+    ],
+    "law_signed_1995": [
+      {
+        "status": "translation",
+        "text": "мыйзамга Президент кол койгон"
+      }
+    ],
+    "martial_measure_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент согуштук абалды киргизет"
+      }
+    ],
+    "martial_measure_in_force_1995": [
+      {
+        "status": "translation",
+        "text": "согуштук абал укук ченемдүү киргизилген"
+      }
+    ],
+    "mazhilis_accusation_votes": [
+      {
+        "status": "translation",
+        "text": "айыптоо коюу үчүн берилген Мажилистин добуштарынын саны"
+      }
+    ],
+    "mazhilis_chair": [
+      {
+        "status": "translation",
+        "text": "адам Мажилистин Төрагасы болуп саналат"
+      }
+    ],
+    "mazhilis_chair_unable": [
+      {
+        "status": "translation",
+        "text": "Мажилистин Төрагасы Президенттин ыйгарым укуктарын өзүнө кабыл ала албайт"
+      }
+    ],
+    "mazhilis_consent_given": [
+      {
+        "status": "translation",
+        "text": "Мажилис дайындоого макулдук берди"
+      }
+    ],
+    "mazhilis_final_votes": [
+      {
+        "status": "translation",
+        "text": "акыркы чечим кабыл алынганда Мажилистин добуштарынын саны"
+      }
+    ],
+    "mazhilis_initiating_votes": [
+      {
+        "status": "translation",
+        "text": "четтетүүнү демилгелеген Мажилис депутаттарынын саны"
+      }
+    ],
+    "mazhilis_release_votes": [
+      {
+        "status": "translation",
+        "text": "ден соолугунун абалы боюнча бошотуу үчүн берилген Мажилистин добуштарынын саны"
+      }
+    ],
+    "mazhilis_total_deputies": [
+      {
+        "status": "translation",
+        "text": "Мажилис депутаттарынын жалпы саны"
+      }
+    ],
+    "medical_commission_conclusion": [
+      {
+        "status": "translation",
+        "text": "медициналык комиссиянын корутундусу бар"
+      }
+    ],
+    "new_president_assumed_office": [
+      {
+        "status": "translation",
+        "text": "жаңы Президент кызматка киришти"
+      }
+    ],
+    "no_candidate_reached_majority": [
+      {
+        "status": "translation",
+        "text": "бир дагы талапкер добуштардын жарымынан көбүн ала алган жок"
+      }
+    ],
+    "oath_taken": [
+      {
+        "status": "translation",
+        "text": "адам Казакстан элине ант берди"
+      }
+    ],
+    "parliament_dissolution_under_consideration": [
+      {
+        "status": "translation",
+        "text": "Парламентти же Мажилисти таркатуу маселеси каралып жатат"
+      }
+    ],
+    "parliament_immediately_informed": [
+      {
+        "status": "translation",
+        "text": "Парламент көрүлгөн чаралар жөнүндө токтоосуз маалымдалган"
+      }
+    ],
+    "participating_voters": [
+      {
+        "status": "translation",
+        "text": "добуш берүүгө катышкан шайлоочулардын саны"
+      }
+    ],
+    "petition_protects_rights_or_security": [
+      {
+        "status": "translation",
+        "text": "кайрылуу адамдын укуктарын жана эркиндиктерин же мамлекеттин коопсуздугун коргоого багытталган"
+      }
+    ],
+    "pm_appointment_consultations_completed_1995": [
+      {
+        "status": "translation",
+        "text": "Премьер-Министрдин талапкерлиги саясий партиялардын фракциялары менен консультациялардан кийин киргизилген"
+      }
+    ],
+    "president": [
+      {
+        "status": "translation",
+        "text": "адам Республиканын Президенти болуп саналат"
+      }
+    ],
+    "president_addresses_annual_message_1995": [
+      {
+        "status": "translation",
+        "text": "Президент өлкөдөгү абал жөнүндө жыл сайынкы кайрылуу менен кайрылат"
+      }
+    ],
+    "president_assumed_office_1995": [
+      {
+        "status": "translation",
+        "text": "адам Президенттин кызматына киришти"
+      }
+    ],
+    "president_conducts_business": [
+      {
+        "status": "translation",
+        "text": "Президент ишкердик ишмердүүлүктү жүзөгө ашырат"
+      }
+    ],
+    "president_deceased": [
+      {
+        "status": "translation",
+        "text": "Президент каза болду"
+      }
+    ],
+    "president_decides_citizenship_and_asylum_1995": [
+      {
+        "status": "translation",
+        "text": "Президент жарандык жана саясий баш паанек берүү маселелерин чечет"
+      }
+    ],
+    "president_ensures_concerted_branch_functioning_1995": [
+      {
+        "status": "translation",
+        "text": "Президент мамлекеттик бийликтин бутактарынын макулдашылган иштешин камсыз кылат"
+      }
+    ],
+    "president_exercises_pardon_1995": [
+      {
+        "status": "translation",
+        "text": "Президент жарандарды кечирим кылууну жүзөгө ашырат"
+      }
+    ],
+    "president_forms_security_council_and_assembly_1995": [
+      {
+        "status": "translation",
+        "text": "Президент Коопсуздук Кеңешин жана Казакстан элинин Ассамблеясын түзөт"
+      }
+    ],
+    "president_forms_state_guard_service_1995": [
+      {
+        "status": "translation",
+        "text": "Президент Мамлекеттик кайтаруу кызматын түзөт"
+      }
+    ],
+    "president_holds_other_paid_office": [
+      {
+        "status": "translation",
+        "text": "Президент башка акы төлөнүүчү кызматты ээлейт"
+      }
+    ],
+    "president_holds_representative_mandate": [
+      {
+        "status": "translation",
+        "text": "Президент өкүлчүлүктүү органдын депутаты болуп саналат"
+      }
+    ],
+    "president_is_head_of_state_1995": [
+      {
+        "status": "translation",
+        "text": "Президент — мамлекеттин башчысы, Республиканын жогорку кызмат адамы"
+      }
+    ],
+    "president_is_supreme_commander_1995": [
+      {
+        "status": "translation",
+        "text": "Президент — Куралдуу Күчтөрдүн Жогорку Башкы Колбашчысы"
+      }
+    ],
+    "president_is_symbol_and_guarantor_of_unity_1995": [
+      {
+        "status": "translation",
+        "text": "Президент — элдин жана мамлекеттик бийликтин биримдигинин символу жана кепилдиги"
+      }
+    ],
+    "president_minimum_age_1995": [
+      {
+        "status": "translation",
+        "text": "Президенттин минималдуу жашы — кырк жаш"
+      }
+    ],
+    "president_party_member": [
+      {
+        "status": "translation",
+        "text": "Президент саясий партияда турат"
+      }
+    ],
+    "president_person": [
+      {
+        "status": "translation",
+        "text": "Президент ушул жеке адам болуп саналат"
+      }
+    ],
+    "president_released_for_incapacity_1995": [
+      {
+        "status": "translation",
+        "text": "Президент ден соолугунун абалы боюнча кызматтан мөөнөтүнөн мурда бошотулган"
+      }
+    ],
+    "president_removed_by_impeachment_1995": [
+      {
+        "status": "translation",
+        "text": "Президент кызматтан четтетилген"
+      }
+    ],
+    "president_residence_years_1995": [
+      {
+        "status": "translation",
+        "text": "Казакстанда жашоонун талап кылынган мөөнөтү — он беш жыл"
+      }
+    ],
+    "president_term_years_1995": [
+      {
+        "status": "translation",
+        "text": "Президенттин ыйгарым укуктарынын мөөнөтү — жети жыл"
+      }
+    ],
+    "presidential_act": [
+      {
+        "status": "translation",
+        "text": "акт ушул Президент тарабынан чыгарылган"
+      }
+    ],
+    "presidential_act_based_on_constitution_and_law": [
+      {
+        "status": "translation",
+        "text": "акт Конституциянын жана мыйзамдардын негизинде жана аларды аткаруу үчүн чыгарылган"
+      }
+    ],
+    "presidential_act_binding_nationwide_1995": [
+      {
+        "status": "translation",
+        "text": "Президенттин акты Республиканын бүткүл аймагында милдеттүү"
+      }
+    ],
+    "presidential_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент дайындоо жүргүзөт"
+      }
+    ],
+    "presidential_election": [
+      {
+        "status": "translation",
+        "text": "окуя Президенттин шайлоосу болуп саналат"
+      }
+    ],
+    "presidential_inviolability_infringement": [
+      {
+        "status": "translation",
+        "text": "Президенттин кол тийбестиги бузулган"
+      }
+    ],
+    "presidential_office_incompatible_1995": [
+      {
+        "status": "translation",
+        "text": "Президенттин кызматы ээленген кызмат же ишмердүүлүк менен айкалышпайт"
+      }
+    ],
+    "presidential_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "Президенттин ыйгарым укуктары токтотулган"
+      }
+    ],
+    "presidential_relative_position_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "Президенттин туугандарынын мындай кызматты ээлешине жол берилбейт"
+      }
+    ],
+    "presidential_return_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент мыйзамды кайра талкуулоо үчүн кайтарат"
+      }
+    ],
+    "presidential_signature_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент берилген мыйзамга кол коёт"
+      }
+    ],
+    "presidential_vacancy": [
+      {
+        "status": "translation",
+        "text": "Президенттин мөөнөтүнөн мурда бошотулушу, четтетилиши же өлүмү келип чыкты"
+      }
+    ],
+    "presidential_vote": [
+      {
+        "status": "translation",
+        "text": "талапкер үчүн берилген добуштардын саны"
+      }
+    ],
+    "previously_elected_president": [
+      {
+        "status": "translation",
+        "text": "адам мурда Республиканын Президенти болуп шайланган"
+      }
+    ],
+    "prime_minister": [
+      {
+        "status": "translation",
+        "text": "адам Премьер-Министр болуп саналат"
+      }
+    ],
+    "referendum_called_1995": [
+      {
+        "status": "translation",
+        "text": "республикалык референдум дайындалды"
+      }
+    ],
+    "referendum_decision_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент референдум өткөрүү жөнүндө чечим кабыл алат"
+      }
+    ],
+    "referendum_proposal": [
+      {
+        "status": "translation",
+        "text": "республикалык референдум өткөрүү жөнүндө сунуш коюлган"
+      }
+    ],
+    "regular_election_date_admissible_1995": [
+      {
+        "status": "translation",
+        "text": "Президенттин кезектеги шайлоосунун мөөнөтү жол берилет"
+      }
+    ],
+    "regular_election_on_first_december_sunday": [
+      {
+        "status": "translation",
+        "text": "кезектеги шайлоо декабрдын биринчи жекшембисине дайындалган"
+      }
+    ],
+    "relative_holds_political_office_or_quasistate_leadership": [
+      {
+        "status": "translation",
+        "text": "тууганы саясий мамлекеттик кызматты ээлейт же квазимамлекеттик сектордун уюмун жетектейт"
+      }
+    ],
+    "removed_from_office": [
+      {
+        "status": "translation",
+        "text": "адам Президенттин кызматынан четтетилген"
+      }
+    ],
+    "repeated_election_attempt": [
+      {
+        "status": "translation",
+        "text": "адамды кайрадан Президент кылып шайлоо аракети жасалган"
+      }
+    ],
+    "repeated_election_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "бир эле адамды кайрадан Президент кылып шайлоого жол берилбейт"
+      }
+    ],
+    "resides_last_years": [
+      {
+        "status": "translation",
+        "text": "Казакстанда жашаган акыркы жылдардын саны"
+      }
+    ],
+    "runoff_ballot": [
+      {
+        "status": "translation",
+        "text": "добуш берүү кайталанма болуп саналат"
+      }
+    ],
+    "runoff_required_1995": [
+      {
+        "status": "translation",
+        "text": "кайра добуш берүү өткөрүлөт"
+      }
+    ],
+    "senate_chair": [
+      {
+        "status": "translation",
+        "text": "адам Сенаттын Төрагасы болуп саналат"
+      }
+    ],
+    "senate_chair_unable": [
+      {
+        "status": "translation",
+        "text": "Сенаттын Төрагасы Президенттин ыйгарым укуктарын өзүнө кабыл ала албайт"
+      }
+    ],
+    "senate_consent_given": [
+      {
+        "status": "translation",
+        "text": "Сенат дайындоого макулдук берди"
+      }
+    ],
+    "senate_final_votes": [
+      {
+        "status": "translation",
+        "text": "акыркы чечим кабыл алынганда Сенаттын добуштарынын саны"
+      }
+    ],
+    "senate_investigation_votes": [
+      {
+        "status": "translation",
+        "text": "иликтөөнү жүктөө үчүн берилген Сенаттын добуштарынын саны"
+      }
+    ],
+    "senate_release_votes": [
+      {
+        "status": "translation",
+        "text": "ден соолугунун абалы боюнча бошотуу үчүн берилген Сенаттын добуштарынын саны"
+      }
+    ],
+    "senate_total_deputies": [
+      {
+        "status": "translation",
+        "text": "Сенат депутаттарынын жалпы саны"
+      }
+    ],
+    "serious_and_immediate_threat": [
+      {
+        "status": "translation",
+        "text": "коопсуздукка, конституциялык түзүлүшкө же коомдук тартипке олуттуу жана түздөн-түз коркунуч бар"
+      }
+    ],
+    "signature_within_one_month": [
+      {
+        "status": "translation",
+        "text": "мыйзамга бир айлык мөөнөттө кол коюлган"
+      }
+    ],
+    "state_authority": [
+      {
+        "status": "translation",
+        "text": "субъект мамлекеттик орган же кызмат адамы болуп саналат"
+      }
+    ],
+    "state_funded_protection_provided": [
+      {
+        "status": "translation",
+        "text": "мурдагы Президентке мамлекеттин эсебинен кайтаруу камсыз кылынган"
+      }
+    ],
+    "succession_event": [
+      {
+        "status": "translation",
+        "text": "Президенттин ыйгарым укуктары ушул адамга өтөт"
+      }
+    ],
+    "succession_oath_months_1995": [
+      {
+        "status": "translation",
+        "text": "ыйгарым укуктар өткөндө ант берүү мөөнөтү — бир ай"
+      }
+    ],
+    "succession_oath_timely_1995": [
+      {
+        "status": "translation",
+        "text": "ыйгарым укуктар өткөндө ант мөөнөтүндө берилген"
+      }
+    ],
+    "succession_oath_within_one_month": [
+      {
+        "status": "translation",
+        "text": "ант ыйгарым укуктарды кабыл алган күндөн тартып бир айдын ичинде берилген"
+      }
+    ],
+    "supreme_court_charge_supported": [
+      {
+        "status": "translation",
+        "text": "Жогорку Сот айыптоонун негиздүүлүгүн ырастады"
+      }
+    ],
+    "treason_charge": [
+      {
+        "status": "translation",
+        "text": "Президентке мамлекеттик чыккынчылык кылгандыгы жөнүндө айыптоо коюлган"
+      }
+    ]
+  },
+  "language": "ky",
+  "package": "kz.constitution1995.president"
+}

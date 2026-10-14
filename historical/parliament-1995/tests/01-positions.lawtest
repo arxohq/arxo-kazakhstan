@@ -1,0 +1,393 @@
+language "law.core" version "0.2";
+package kz.constitution1995.parliament version "0.1.0";
+namespace "urn:kz:constitution1995:parliament";
+
+// ПОЗИЦИИ §§122–137 РАЗДЕЛА IV «ПАРЛАМЕНТ» РЕДАКЦИИ 1995 ГОДА (13.09.2026).
+//
+// В пакете 11 норм-шаблонов: семь полномочий §127 и четыре иммунитета §128.
+// Набор наблюдает каждый.
+//
+// У КАЖДОГО ПОЛНОМОЧИЯ УСЛОВИЕ ДЕЙСТВИТЕЛЬНОСТИ — ОТДЕЛЬНЫЙ ФАКТ ДЕЛА:
+// консультации перед роспуском, согласие Палаты на привлечение депутата,
+// представление Президента по должности, предложение Президента об
+// использовании Вооружённых Сил и о внесении изменений в Конституцию,
+// управомоченная инициатива одной пятой депутатов. Вакуумный `valid_when`,
+// повторяющий посылку, в пакете не заведён ни разу: у такого полномочия пара
+// «действительно / недействительно» невыразима.
+//
+// ЧТО ЗДЕСЬ ПОЯВИЛОСЬ ВПЕРВЫЕ. До этого изменения `DeputyInviolability1995`
+// был в пакете НЕАТАКУЕМ: защищённый эффект `deputy_immunity_infringed_1995`
+// не производился ничем, и issue EFFECT_BLOCKED_BY_IMMUNITY не появлялся ни в
+// одном деле. Полномочие ст. 52 п. 4 даёт иммунитету противника, и обе
+// стороны нормы стали наблюдаемы.
+//
+// ПРОЕКЦИЯ РЕДАКЦИЙ. Мир склеен с `kz.constitution.sources` (`concat` в
+// law.toml): редакция KZ_CONSTITUTION_1995 объявлена там как in_force
+// [@1995-09-05, @2026-07-01). Дела ведутся на @2020-01-01; последнее дело
+// проверяет обратное — на @2026-09-01 узлы редакции 1995 исключены условием
+// 3 §92 и ни одной позиции нет.
+
+// ─────────────────────────────────────────────────────────────────────────
+// Ст. 63. Роспуск Парламента: полномочие и три барьера.
+// ─────────────────────────────────────────────────────────────────────────
+
+// Консультации проведены, защищённого периода нет: роспуск состоялся.
+test "urn:query:kzq95-1" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "b1-1": president_1995(entity_ref("urn:kz:constitution1995:parliament:test:president1")) { origin case_input; }
+        assert "b1-2": parliament(entity_ref("urn:kz:constitution1995:parliament:test:parliament1")) { origin case_input; }
+        assert "b1-3": dissolution_of(entity_ref("urn:kz:constitution1995:parliament:test:dissolution1"), entity_ref("urn:kz:constitution1995:parliament:test:parliament1")) { origin case_input; }
+        assert "b1-4": dissolution_consultations_completed(entity_ref("urn:kz:constitution1995:parliament:test:dissolution1")) { origin case_input; }
+        assert "b1-5": dissolution_attempt(entity_ref("urn:kz:constitution1995:parliament:test:dissolution1")) { origin case_input; }
+    }
+    evaluate positions();
+    expect issues_within(info);
+    expect position(DissolveParliament1995, ACTIVE);
+    expect not position(NoDissolutionInEmergency1995, ACTIVE);
+    expect not position(NoDissolutionInLastSixMonths1995, ACTIVE);
+    expect not position(NoDissolutionWithinYearAfterPrior1995, ACTIVE);
+
+    evaluate truth(parliament_dissolved_1995(entity_ref("urn:kz:constitution1995:parliament:test:parliament1")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// Консультаций не было: полномочие остаётся, осуществление недействительно.
+test "urn:query:kzq95-2" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "b2-1": president_1995(entity_ref("urn:kz:constitution1995:parliament:test:president1")) { origin case_input; }
+        assert "b2-2": parliament(entity_ref("urn:kz:constitution1995:parliament:test:parliament2")) { origin case_input; }
+        assert "b2-3": dissolution_of(entity_ref("urn:kz:constitution1995:parliament:test:dissolution2"), entity_ref("urn:kz:constitution1995:parliament:test:parliament2")) { origin case_input; }
+        assert "b2-4": dissolution_attempt(entity_ref("urn:kz:constitution1995:parliament:test:dissolution2")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(DissolveParliament1995, ACTIVE);
+    expect issue(POWER_INVALID_EXERCISE);
+
+    evaluate truth(parliament_dissolved_1995(entity_ref("urn:kz:constitution1995:parliament:test:parliament2")));
+    expect truth_status == NEITHER;
+}
+
+// Основание первое — чрезвычайное либо военное положение. Консультации
+// проведены, и роспуск всё равно заблокирован.
+test "urn:query:kzq95-3" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "b3-1": president_1995(entity_ref("urn:kz:constitution1995:parliament:test:president1")) { origin case_input; }
+        assert "b3-2": parliament(entity_ref("urn:kz:constitution1995:parliament:test:parliament3")) { origin case_input; }
+        assert "b3-3": dissolution_of(entity_ref("urn:kz:constitution1995:parliament:test:dissolution3"), entity_ref("urn:kz:constitution1995:parliament:test:parliament3")) { origin case_input; }
+        assert "b3-4": dissolution_consultations_completed(entity_ref("urn:kz:constitution1995:parliament:test:dissolution3")) { origin case_input; }
+        assert "b3-5": emergency_or_martial_law_active() { origin case_input; }
+        assert "b3-6": dissolution_attempt(entity_ref("urn:kz:constitution1995:parliament:test:dissolution3")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(NoDissolutionInEmergency1995, ACTIVE);
+    expect issue(EFFECT_BLOCKED_BY_IMMUNITY);
+
+    evaluate truth(parliament_dissolved_1995(entity_ref("urn:kz:constitution1995:parliament:test:parliament3")));
+    expect truth_status == NEITHER;
+}
+
+// Основание второе — последние шесть месяцев полномочий Президента.
+test "urn:query:kzq95-4" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "b4-1": president_1995(entity_ref("urn:kz:constitution1995:parliament:test:president1")) { origin case_input; }
+        assert "b4-2": parliament(entity_ref("urn:kz:constitution1995:parliament:test:parliament4")) { origin case_input; }
+        assert "b4-3": dissolution_of(entity_ref("urn:kz:constitution1995:parliament:test:dissolution4"), entity_ref("urn:kz:constitution1995:parliament:test:parliament4")) { origin case_input; }
+        assert "b4-4": dissolution_consultations_completed(entity_ref("urn:kz:constitution1995:parliament:test:dissolution4")) { origin case_input; }
+        assert "b4-5": last_six_months_of_presidential_term() { origin case_input; }
+        assert "b4-6": dissolution_attempt(entity_ref("urn:kz:constitution1995:parliament:test:dissolution4")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(NoDissolutionInLastSixMonths1995, ACTIVE);
+    expect not position(NoDissolutionInEmergency1995, ACTIVE);
+    expect issue(EFFECT_BLOCKED_BY_IMMUNITY);
+
+    evaluate truth(parliament_dissolved_1995(entity_ref("urn:kz:constitution1995:parliament:test:parliament4")));
+    expect truth_status == NEITHER;
+}
+
+// Основание третье — год после предыдущего роспуска.
+test "urn:query:kzq95-5" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "b5-1": president_1995(entity_ref("urn:kz:constitution1995:parliament:test:president1")) { origin case_input; }
+        assert "b5-2": parliament(entity_ref("urn:kz:constitution1995:parliament:test:parliament5")) { origin case_input; }
+        assert "b5-3": dissolution_of(entity_ref("urn:kz:constitution1995:parliament:test:dissolution5"), entity_ref("urn:kz:constitution1995:parliament:test:parliament5")) { origin case_input; }
+        assert "b5-4": dissolution_consultations_completed(entity_ref("urn:kz:constitution1995:parliament:test:dissolution5")) { origin case_input; }
+        assert "b5-5": within_one_year_after_prior_dissolution() { origin case_input; }
+        assert "b5-6": dissolution_attempt(entity_ref("urn:kz:constitution1995:parliament:test:dissolution5")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(NoDissolutionWithinYearAfterPrior1995, ACTIVE);
+    expect issue(EFFECT_BLOCKED_BY_IMMUNITY);
+
+    evaluate truth(parliament_dissolved_1995(entity_ref("urn:kz:constitution1995:parliament:test:parliament5")));
+    expect truth_status == NEITHER;
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// Ст. 52 п. 4. Неприкосновенность депутата и полномочие, ей противостоящее.
+// ─────────────────────────────────────────────────────────────────────────
+
+// Согласия Палаты нет, исключений нет: защита держит, эффекта нет.
+//
+// ГРАНИЦА, ИЗМЕРЕННАЯ ЗДЕСЬ. Ожидать EFFECT_BLOCKED_BY_IMMUNITY в этом деле
+// НЕЛЬЗЯ, и это свойство нормы ст. 52 п. 4, а не пробел набора: посылки
+// иммунитета в точности отрицают условие действительности полномочия, так
+// что действительное осуществление и защита не сосуществуют. Эффект здесь не
+// блокируется — он не доходит до материализации, потому что осуществление
+// недействительно. Блокировка §128 наблюдается у трёх барьеров ст. 63
+// (дела kzq95-3, kzq95-4, kzq95-5), где полномочие осуществлено ДЕЙСТВИТЕЛЬНО.
+test "urn:query:kzq95-6" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "b6-1": deputy(entity_ref("urn:kz:constitution1995:parliament:test:deputy1")) { origin case_input; }
+        assert "b6-2": state_authority(entity_ref("urn:kz:constitution1995:parliament:test:authority1")) { origin case_input; }
+        assert "b6-3": arrest_or_prosecution_attempt(entity_ref("urn:kz:constitution1995:parliament:test:deputy1")) { origin case_input; }
+        assert "b6-4": not chamber_consent_given(entity_ref("urn:kz:constitution1995:parliament:test:deputy1")) { origin case_input; }
+        assert "b6-5": not caught_in_the_act_or_grave_crime(entity_ref("urn:kz:constitution1995:parliament:test:deputy1")) { origin case_input; }
+        assert "b6-6": deputy_prosecution_attempt(entity_ref("urn:kz:constitution1995:parliament:test:authority1"), entity_ref("urn:kz:constitution1995:parliament:test:deputy1")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(DeputyInviolability1995, ACTIVE);
+    expect position(ProsecuteDeputy1995, ACTIVE);
+    expect issue(POWER_INVALID_EXERCISE);
+
+    evaluate truth(deputy_immunity_infringed_1995(entity_ref("urn:kz:constitution1995:parliament:test:deputy1")));
+    expect truth_status == NEITHER;
+}
+
+// Палата дала согласие: иммунитета нет, осуществление действительно.
+test "urn:query:kzq95-7" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "b7-1": deputy(entity_ref("urn:kz:constitution1995:parliament:test:deputy2")) { origin case_input; }
+        assert "b7-2": state_authority(entity_ref("urn:kz:constitution1995:parliament:test:authority1")) { origin case_input; }
+        assert "b7-3": arrest_or_prosecution_attempt(entity_ref("urn:kz:constitution1995:parliament:test:deputy2")) { origin case_input; }
+        assert "b7-4": chamber_consent_given(entity_ref("urn:kz:constitution1995:parliament:test:deputy2")) { origin case_input; }
+        assert "b7-5": not caught_in_the_act_or_grave_crime(entity_ref("urn:kz:constitution1995:parliament:test:deputy2")) { origin case_input; }
+        assert "b7-6": deputy_prosecution_attempt(entity_ref("urn:kz:constitution1995:parliament:test:authority1"), entity_ref("urn:kz:constitution1995:parliament:test:deputy2")) { origin case_input; }
+    }
+    evaluate positions();
+    expect not position(DeputyInviolability1995, ACTIVE);
+    expect position(ProsecuteDeputy1995, ACTIVE);
+
+    evaluate truth(deputy_immunity_infringed_1995(entity_ref("urn:kz:constitution1995:parliament:test:deputy2")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// Ст. 55 подп. 1 и 1-1. Ведение Сената: представление Президента.
+// ─────────────────────────────────────────────────────────────────────────
+
+test "urn:query:kzq95-8" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "b8-1": senate(entity_ref("urn:kz:constitution1995:parliament:test:senate1")) { origin case_input; }
+        assert "b8-2": supreme_court_office_appointment(entity_ref("urn:kz:constitution1995:parliament:test:appointment1")) { origin case_input; }
+        assert "b8-3": presidential_submission_for_office(entity_ref("urn:kz:constitution1995:parliament:test:appointment1")) { origin case_input; }
+        assert "b8-4": senate_election_attempt(entity_ref("urn:kz:constitution1995:parliament:test:senate1"), entity_ref("urn:kz:constitution1995:parliament:test:appointment1")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(ElectSupremeCourtJudge1995, ACTIVE);
+
+    evaluate truth(appointment_effective_1995(entity_ref("urn:kz:constitution1995:parliament:test:appointment1")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// Без представления Президента избрание конституционного основания не имеет.
+test "urn:query:kzq95-9" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "b9-1": senate(entity_ref("urn:kz:constitution1995:parliament:test:senate1")) { origin case_input; }
+        assert "b9-2": supreme_court_office_appointment(entity_ref("urn:kz:constitution1995:parliament:test:appointment2")) { origin case_input; }
+        assert "b9-3": senate_election_attempt(entity_ref("urn:kz:constitution1995:parliament:test:senate1"), entity_ref("urn:kz:constitution1995:parliament:test:appointment2")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(ElectSupremeCourtJudge1995, ACTIVE);
+    expect issue(POWER_INVALID_EXERCISE);
+
+    evaluate truth(appointment_effective_1995(entity_ref("urn:kz:constitution1995:parliament:test:appointment2")));
+    expect truth_status == NEITHER;
+}
+
+test "urn:query:kzq95-10" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "b10-1": senate(entity_ref("urn:kz:constitution1995:parliament:test:senate1")) { origin case_input; }
+        assert "b10-2": ombudsman_office_appointment(entity_ref("urn:kz:constitution1995:parliament:test:appointment3")) { origin case_input; }
+        assert "b10-3": presidential_submission_for_office(entity_ref("urn:kz:constitution1995:parliament:test:appointment3")) { origin case_input; }
+        assert "b10-4": senate_election_attempt(entity_ref("urn:kz:constitution1995:parliament:test:senate1"), entity_ref("urn:kz:constitution1995:parliament:test:appointment3")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(ElectOmbudsman1995, ACTIVE);
+
+    evaluate truth(appointment_effective_1995(entity_ref("urn:kz:constitution1995:parliament:test:appointment3")));
+    expect truth_status == TRUE_ONLY;
+}
+
+test "urn:query:kzq95-11" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "b11-1": senate(entity_ref("urn:kz:constitution1995:parliament:test:senate1")) { origin case_input; }
+        assert "b11-2": ombudsman_office_appointment(entity_ref("urn:kz:constitution1995:parliament:test:appointment4")) { origin case_input; }
+        assert "b11-3": senate_election_attempt(entity_ref("urn:kz:constitution1995:parliament:test:senate1"), entity_ref("urn:kz:constitution1995:parliament:test:appointment4")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(ElectOmbudsman1995, ACTIVE);
+    expect issue(POWER_INVALID_EXERCISE);
+
+    evaluate truth(appointment_effective_1995(entity_ref("urn:kz:constitution1995:parliament:test:appointment4")));
+    expect truth_status == NEITHER;
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// Ст. 53 подп. 1 и 5. Совместное заседание Палат: предложение Президента.
+// ─────────────────────────────────────────────────────────────────────────
+
+test "urn:query:kzq95-12" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "b12-1": parliament(entity_ref("urn:kz:constitution1995:parliament:test:parliament1")) { origin case_input; }
+        assert "b12-2": armed_forces_deployment(entity_ref("urn:kz:constitution1995:parliament:test:deployment1")) { origin case_input; }
+        assert "b12-3": presidential_armed_forces_proposal(entity_ref("urn:kz:constitution1995:parliament:test:deployment1")) { origin case_input; }
+        assert "b12-4": armed_forces_deployment_attempt(entity_ref("urn:kz:constitution1995:parliament:test:parliament1"), entity_ref("urn:kz:constitution1995:parliament:test:deployment1")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(DecideArmedForcesDeployment1995, ACTIVE);
+
+    evaluate truth(armed_forces_deployment_decided_1995(entity_ref("urn:kz:constitution1995:parliament:test:deployment1")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// Без предложения Президента Парламент решить этот вопрос не вправе.
+test "urn:query:kzq95-13" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "b13-1": parliament(entity_ref("urn:kz:constitution1995:parliament:test:parliament1")) { origin case_input; }
+        assert "b13-2": armed_forces_deployment(entity_ref("urn:kz:constitution1995:parliament:test:deployment2")) { origin case_input; }
+        assert "b13-3": armed_forces_deployment_attempt(entity_ref("urn:kz:constitution1995:parliament:test:parliament1"), entity_ref("urn:kz:constitution1995:parliament:test:deployment2")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(DecideArmedForcesDeployment1995, ACTIVE);
+    expect issue(POWER_INVALID_EXERCISE);
+
+    evaluate truth(armed_forces_deployment_decided_1995(entity_ref("urn:kz:constitution1995:parliament:test:deployment2")));
+    expect truth_status == NEITHER;
+}
+
+// Учредительная инициатива принадлежит Президенту: без его предложения
+// внесение изменений в Конституцию недействительно.
+test "urn:query:kzq95-14" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "b14-1": parliament(entity_ref("urn:kz:constitution1995:parliament:test:parliament1")) { origin case_input; }
+        assert "b14-2": constitutional_amendment_bill(entity_ref("urn:kz:constitution1995:parliament:test:bill1")) { origin case_input; }
+        assert "b14-3": presidential_amendment_proposal(entity_ref("urn:kz:constitution1995:parliament:test:bill1")) { origin case_input; }
+        assert "b14-4": amendment_adoption_attempt(entity_ref("urn:kz:constitution1995:parliament:test:parliament1"), entity_ref("urn:kz:constitution1995:parliament:test:bill1")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(IntroduceConstitutionalAmendment1995, ACTIVE);
+
+    evaluate truth(constitutional_amendment_introduced_1995(entity_ref("urn:kz:constitution1995:parliament:test:bill1")));
+    expect truth_status == TRUE_ONLY;
+}
+
+test "urn:query:kzq95-15" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "b15-1": parliament(entity_ref("urn:kz:constitution1995:parliament:test:parliament1")) { origin case_input; }
+        assert "b15-2": constitutional_amendment_bill(entity_ref("urn:kz:constitution1995:parliament:test:bill2")) { origin case_input; }
+        assert "b15-3": amendment_adoption_attempt(entity_ref("urn:kz:constitution1995:parliament:test:parliament1"), entity_ref("urn:kz:constitution1995:parliament:test:bill2")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(IntroduceConstitutionalAmendment1995, ACTIVE);
+    expect issue(POWER_INVALID_EXERCISE);
+
+    evaluate truth(constitutional_amendment_introduced_1995(entity_ref("urn:kz:constitution1995:parliament:test:bill2")));
+    expect truth_status == NEITHER;
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// Ст. 56 п. 2. Вотум недоверия: инициатива не менее одной пятой.
+// ─────────────────────────────────────────────────────────────────────────
+
+test "urn:query:kzq95-16" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "b16-1": mazhilis(entity_ref("urn:kz:constitution1995:parliament:test:mazhilis1")) { origin case_input; }
+        assert "b16-2": no_confidence_motion(entity_ref("urn:kz:constitution1995:parliament:test:motion1"), entity_ref("urn:kz:constitution1995:parliament:test:government1")) { origin case_input; }
+        assert "b16-3": motion_initiating_deputies(entity_ref("urn:kz:constitution1995:parliament:test:motion1"), 25) { origin case_input; }
+        assert "b16-4": motion_mazhilis_total(entity_ref("urn:kz:constitution1995:parliament:test:motion1"), 98) { origin case_input; }
+        assert "b16-5": no_confidence_vote_attempt(entity_ref("urn:kz:constitution1995:parliament:test:mazhilis1"), entity_ref("urn:kz:constitution1995:parliament:test:motion1")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(ExpressNoConfidence1995, ACTIVE);
+
+    evaluate truth(government_no_confidence_declared_1995(entity_ref("urn:kz:constitution1995:parliament:test:motion1")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// Инициаторов меньше одной пятой: осуществление недействительно.
+test "urn:query:kzq95-17" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "b17-1": mazhilis(entity_ref("urn:kz:constitution1995:parliament:test:mazhilis1")) { origin case_input; }
+        assert "b17-2": no_confidence_motion(entity_ref("urn:kz:constitution1995:parliament:test:motion2"), entity_ref("urn:kz:constitution1995:parliament:test:government1")) { origin case_input; }
+        assert "b17-3": motion_initiating_deputies(entity_ref("urn:kz:constitution1995:parliament:test:motion2"), 5) { origin case_input; }
+        assert "b17-4": motion_mazhilis_total(entity_ref("urn:kz:constitution1995:parliament:test:motion2"), 98) { origin case_input; }
+        assert "b17-5": no_confidence_vote_attempt(entity_ref("urn:kz:constitution1995:parliament:test:mazhilis1"), entity_ref("urn:kz:constitution1995:parliament:test:motion2")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(ExpressNoConfidence1995, ACTIVE);
+    expect issue(POWER_INVALID_EXERCISE);
+
+    evaluate truth(government_no_confidence_declared_1995(entity_ref("urn:kz:constitution1995:parliament:test:motion2")));
+    expect truth_status == NEITHER;
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// Проекция редакций §92: те же факты на дате действия редакции 2026.
+// ─────────────────────────────────────────────────────────────────────────
+
+// Дело kzq95-3 слово в слово, но legal_time @2026-09-01: узлы редакции 1995
+// исключены условием 3 §92, ни полномочия, ни барьера нет.
+test "urn:query:kzq95-18" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+06:00; knowledge_time @2026-09-01T12:00:00+06:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+        assert "b18-1": president_1995(entity_ref("urn:kz:constitution1995:parliament:test:president1")) { origin case_input; }
+        assert "b18-2": parliament(entity_ref("urn:kz:constitution1995:parliament:test:parliament3")) { origin case_input; }
+        assert "b18-3": dissolution_of(entity_ref("urn:kz:constitution1995:parliament:test:dissolution3"), entity_ref("urn:kz:constitution1995:parliament:test:parliament3")) { origin case_input; }
+        assert "b18-4": dissolution_consultations_completed(entity_ref("urn:kz:constitution1995:parliament:test:dissolution3")) { origin case_input; }
+        assert "b18-5": emergency_or_martial_law_active() { origin case_input; }
+        assert "b18-6": dissolution_attempt(entity_ref("urn:kz:constitution1995:parliament:test:dissolution3")) { origin case_input; }
+    }
+    evaluate positions();
+    expect not position(DissolveParliament1995, ACTIVE);
+    expect not position(NoDissolutionInEmergency1995, ACTIVE);
+
+    evaluate truth(parliament_dissolved_1995(entity_ref("urn:kz:constitution1995:parliament:test:parliament3")));
+    expect truth_status == NEITHER;
+}
+
+// То же для неприкосновенности депутата: дело kzq95-6 на дате 2026.
+test "urn:query:kzq95-19" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+06:00; knowledge_time @2026-09-01T12:00:00+06:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+        assert "b19-1": deputy(entity_ref("urn:kz:constitution1995:parliament:test:deputy1")) { origin case_input; }
+        assert "b19-2": state_authority(entity_ref("urn:kz:constitution1995:parliament:test:authority1")) { origin case_input; }
+        assert "b19-3": arrest_or_prosecution_attempt(entity_ref("urn:kz:constitution1995:parliament:test:deputy1")) { origin case_input; }
+        assert "b19-4": not chamber_consent_given(entity_ref("urn:kz:constitution1995:parliament:test:deputy1")) { origin case_input; }
+        assert "b19-5": not caught_in_the_act_or_grave_crime(entity_ref("urn:kz:constitution1995:parliament:test:deputy1")) { origin case_input; }
+        assert "b19-6": deputy_prosecution_attempt(entity_ref("urn:kz:constitution1995:parliament:test:authority1"), entity_ref("urn:kz:constitution1995:parliament:test:deputy1")) { origin case_input; }
+    }
+    evaluate positions();
+    expect not position(DeputyInviolability1995, ACTIVE);
+    expect not position(ProsecuteDeputy1995, ACTIVE);
+
+    evaluate truth(deputy_immunity_infringed_1995(entity_ref("urn:kz:constitution1995:parliament:test:deputy1")));
+    expect truth_status == NEITHER;
+}

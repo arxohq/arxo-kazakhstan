@@ -1,0 +1,914 @@
+{
+  "$comment": "English display overlay for the labels (§218) of this package of the Constitution of the Republic of Kazakhstan (DECISION-0070). The file is not compiled into the CLIR and is read only by the presentation layer (verbalize --labels, the MCP resource law://<package>/verbalized/en, the workbench). The translation is a working one made by the formaliser from the Russian labels of the package, checked against the authentic Russian and Kazakh texts of the Constitution; it is not an official publication, hence the status \"translation\" for every entry. Spelling is British. A key is the local name of the declaration (the part of the node id after \"#\").",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "AcceptedResignationTerminatesGovernment": [
+      {
+        "status": "translation",
+        "text": "Article 69, paragraph 5. Acceptance of the resignation means the termination of the powers of the Government"
+      }
+    ],
+    "Bill": [
+      {
+        "status": "translation",
+        "text": "bill"
+      }
+    ],
+    "Government": [
+      {
+        "status": "translation",
+        "text": "Government of the Republic of Kazakhstan"
+      }
+    ],
+    "GovernmentAccountableToKurultai": [
+      {
+        "status": "translation",
+        "text": "Article 63. The Government is accountable to the Kurultai"
+      }
+    ],
+    "GovernmentAccountableToParliament1995": [
+      {
+        "status": "translation",
+        "text": "Article 64, paragraph 2 (1995 version). The Government is responsible to Parliament"
+      }
+    ],
+    "GovernmentAccountableToPresident": [
+      {
+        "status": "translation",
+        "text": "Article 63. The Government is accountable to the President"
+      }
+    ],
+    "GovernmentAccountableToPresidentAndParliament1995": [
+      {
+        "status": "translation",
+        "text": "Article 64, paragraph 2 (1995 version). The Government is responsible to the President of the Republic"
+      }
+    ],
+    "GovernmentAct": [
+      {
+        "status": "translation",
+        "text": "act of the Government"
+      }
+    ],
+    "GovernmentActBinding": [
+      {
+        "status": "translation",
+        "text": "Article 68, paragraphs 1 and 3. A resolution of the Government on matters within its competence is binding throughout the territory of the Republic, provided it does not contradict the Constitution, statutes or acts of the President"
+      }
+    ],
+    "GovernmentActBinding/unless/0": [
+      {
+        "status": "translation",
+        "text": "Article 68, paragraphs 1 and 3. A resolution of the Government on matters within its competence is binding throughout the territory of the Republic, provided it does not contradict the Constitution, statutes or acts of the President"
+      }
+    ],
+    "GovernmentActBinding1995": [
+      {
+        "status": "translation",
+        "text": "Article 69, paragraphs 1 and 3 (1995 version). Resolutions of the Government are binding throughout the territory of the Republic and must not contradict the Constitution, legislative acts or acts of the President"
+      }
+    ],
+    "GovernmentDevelopsForeignPolicyMeasures": [
+      {
+        "status": "translation",
+        "text": "Article 65, paragraph 5. The Government works out foreign policy measures"
+      }
+    ],
+    "GovernmentDevelopsStatePolicy": [
+      {
+        "status": "translation",
+        "text": "Article 65, paragraph 1. The Government develops the main directions of state policy"
+      }
+    ],
+    "GovernmentDevelopsStatePolicy1995": [
+      {
+        "status": "translation",
+        "text": "Article 66, sub-paragraph 1 (1995 version). The Government develops the main directions of social and economic policy, of defence capability and security, and organises their implementation"
+      }
+    ],
+    "GovernmentDirectsExecutiveBodies": [
+      {
+        "status": "translation",
+        "text": "Article 65, paragraph 6. The Government directs the activity of the executive bodies"
+      }
+    ],
+    "GovernmentEnsuresBudgetExecution": [
+      {
+        "status": "translation",
+        "text": "Article 65, paragraph 2. The Government ensures the execution of the republican budget"
+      }
+    ],
+    "GovernmentExercisesExecutivePower": [
+      {
+        "status": "translation",
+        "text": "Article 63. The Government exercises the executive power"
+      }
+    ],
+    "GovernmentExercisesExecutivePower1995": [
+      {
+        "status": "translation",
+        "text": "Article 64, paragraph 1 (1995 version). The Government exercises the executive power and heads the system of executive bodies"
+      }
+    ],
+    "GovernmentFormedByPresident": [
+      {
+        "status": "translation",
+        "text": "Article 64, paragraph 1. The Government is formed by the President of the Republic of Kazakhstan in the manner provided for by the Constitution"
+      }
+    ],
+    "GovernmentHeadsExecutiveSystem": [
+      {
+        "status": "translation",
+        "text": "Article 63. The Government heads the system of executive bodies"
+      }
+    ],
+    "GovernmentIntroducesBillsAndExecutesLaws": [
+      {
+        "status": "translation",
+        "text": "Article 65, paragraph 3. The Government introduces bills and ensures the execution of statutes"
+      }
+    ],
+    "GovernmentManagesStateProperty": [
+      {
+        "status": "translation",
+        "text": "Article 65, paragraph 4. The Government organises the management of state property"
+      }
+    ],
+    "GovernmentMayCancelExecutiveActs1995": [
+      {
+        "status": "translation",
+        "text": "Article 66, sub-paragraph 7 (1995 version). The Government repeals or suspends the operation of acts of ministries and other executive bodies"
+      }
+    ],
+    "GovernmentMayCancelExecutiveBodyActs": [
+      {
+        "status": "translation",
+        "text": "Article 65, paragraph 6. The Government may repeal or suspend acts of executive bodies"
+      }
+    ],
+    "GovernmentMember": [
+      {
+        "status": "translation",
+        "text": "member of the Government"
+      }
+    ],
+    "GovernmentMemberBoardConflict": [
+      {
+        "status": "translation",
+        "text": "Article 67, paragraph 2. A member of the Government may not sit on the governing body or supervisory board of a commercial organisation, except where this is part of his official duties"
+      }
+    ],
+    "GovernmentMemberBoardConflict/unless/0": [
+      {
+        "status": "translation",
+        "text": "Article 67, paragraph 2. A member of the Government may not sit on the governing body or supervisory board of a commercial organisation, except where this is part of his official duties"
+      }
+    ],
+    "GovernmentMemberBusinessConflict": [
+      {
+        "status": "translation",
+        "text": "Article 67, paragraph 2. A member of the Government may not engage in entrepreneurial activity"
+      }
+    ],
+    "GovernmentMemberIncompatible1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "Article 68, paragraph 2 (1995 version). Members of the Government may not be deputies, hold other paid positions apart from teaching, research or other creative work, or engage in entrepreneurial activity"
+      }
+    ],
+    "GovernmentMemberIncompatible1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "Article 68, paragraph 2 (1995 version). Members of the Government may not be deputies, hold other paid positions apart from teaching, research or other creative work, or engage in entrepreneurial activity"
+      }
+    ],
+    "GovernmentMemberIncompatible1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "Article 68, paragraph 2 (1995 version). Members of the Government may not be deputies, hold other paid positions apart from teaching, research or other creative work, or engage in entrepreneurial activity"
+      }
+    ],
+    "GovernmentMemberPaidPositionConflict": [
+      {
+        "status": "translation",
+        "text": "Article 67, paragraph 2. A member of the Government may not hold other paid positions, apart from teaching, research and other creative work"
+      }
+    ],
+    "GovernmentMemberPaidPositionConflict/unless/0": [
+      {
+        "status": "translation",
+        "text": "Article 67, paragraph 2. A member of the Government may not hold other paid positions, apart from teaching, research and other creative work"
+      }
+    ],
+    "GovernmentMemberRepresentativeMandateConflict": [
+      {
+        "status": "translation",
+        "text": "Article 67, paragraph 2. A member of the Government may not be a deputy of a representative body"
+      }
+    ],
+    "GovernmentOathToPeopleAndPresident1995": [
+      {
+        "status": "translation",
+        "text": "Article 65, paragraph 3 (1995 version). Members of the Government take an oath to the people and the President of Kazakhstan"
+      }
+    ],
+    "GovernmentSetsUnifiedPublicPaySystemWithPresident": [
+      {
+        "status": "translation",
+        "text": "Article 65, paragraph 7. The Government, in agreement with the President, approves a unified system of funding and remuneration of public bodies"
+      }
+    ],
+    "GovernmentStructureProposalTenDays": [
+      {
+        "status": "translation",
+        "text": "Article 64, paragraph 2. Proposals on the structure and composition of the Government are submitted to the President within ten days of the appointment of the Prime Minister"
+      }
+    ],
+    "GovernmentStructureProposalTenDays1995": [
+      {
+        "status": "translation",
+        "text": "Article 65, paragraph 2 (1995 version). Proposals on the structure and composition of the Government are submitted by the Prime Minister within ten days of his appointment"
+      }
+    ],
+    "GovernmentSubmitsBudget1995": [
+      {
+        "status": "translation",
+        "text": "Article 66, sub-paragraph 2 (1995 version). The Government submits to Parliament the republican budget and a report on its execution"
+      }
+    ],
+    "GovernmentSubmitsBudgetAndReport": [
+      {
+        "status": "translation",
+        "text": "Article 65, paragraph 2. The Government submits the republican budget and a report on its execution"
+      }
+    ],
+    "Kurultai": [
+      {
+        "status": "translation",
+        "text": "Kurultai of the Republic of Kazakhstan"
+      }
+    ],
+    "Mazhilis": [
+      {
+        "status": "translation",
+        "text": "Mazhilis of Parliament (1995 version)"
+      }
+    ],
+    "MemberAccountableToChambers1995": [
+      {
+        "status": "translation",
+        "text": "Article 64, paragraph 3 (1995 version). Members of the Government are accountable to the Chambers of Parliament in the case provided for by Article 57, sub-paragraph 6) of the Constitution"
+      }
+    ],
+    "MemberPersonallyResponsible1995": [
+      {
+        "status": "translation",
+        "text": "Article 68, paragraph 1 (1995 version). Members of the Government are independent in taking decisions and bear personal responsibility to the Prime Minister"
+      }
+    ],
+    "NoConfidenceRequiresResignation": [
+      {
+        "status": "translation",
+        "text": "Article 69, paragraph 3. Upon a vote of no confidence by the Kurultai, the Government tenders its resignation to the President"
+      }
+    ],
+    "NoConfidenceRequiresResignation1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "Article 70, paragraph 3 (1995 version). The Government tenders its resignation to the President where the Mazhilis or Parliament passes a vote of no confidence"
+      }
+    ],
+    "NoConfidenceRequiresResignation1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "Article 70, paragraph 3 (1995 version). The Government tenders its resignation to the President where the Mazhilis or Parliament passes a vote of no confidence"
+      }
+    ],
+    "Parliament": [
+      {
+        "status": "translation",
+        "text": "Parliament of the Republic of Kazakhstan (1995 version)"
+      }
+    ],
+    "PeoplesCouncil": [
+      {
+        "status": "translation",
+        "text": "Qazaqstan Halyq Keńesi — the People's Council of Kazakhstan"
+      }
+    ],
+    "PeoplesCouncilConstitutionalStatus": [
+      {
+        "status": "translation",
+        "text": "Article 70, paragraph 1. The People's Council of Kazakhstan is the highest consultative body"
+      }
+    ],
+    "PeoplesCouncilLegislativeInitiative": [
+      {
+        "status": "translation",
+        "text": "Article 71, sub-paragraph 2). The People's Council of Kazakhstan submits bills to the Kurultai"
+      }
+    ],
+    "PeoplesCouncilMembersAreCitizens": [
+      {
+        "status": "translation",
+        "text": "Article 70, paragraph 2. The composition of the People's Council is formed from citizens of Kazakhstan"
+      }
+    ],
+    "PeoplesCouncilReferendumInitiative": [
+      {
+        "status": "translation",
+        "text": "Article 71, sub-paragraph 3). The People's Council of Kazakhstan puts forward an initiative to call a national referendum"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "natural person"
+      }
+    ],
+    "PolicyDisagreementRequiresResignation": [
+      {
+        "status": "translation",
+        "text": "Article 67, paragraph 1. A member of the Government who disagrees with the policy pursued tenders his resignation or is subject to release from office"
+      }
+    ],
+    "PolicyDisagreementRequiresResignation1995": [
+      {
+        "status": "translation",
+        "text": "Article 68, paragraph 1 (1995 version). A member of the Government who disagrees with the policy pursued, or who does not pursue it, tenders his resignation or is subject to release from office"
+      }
+    ],
+    "President": [
+      {
+        "status": "translation",
+        "text": "President of the Republic of Kazakhstan"
+      }
+    ],
+    "PresidentialMemberRelease1995": [
+      {
+        "status": "translation",
+        "text": "Article 70, paragraph 7 (1995 version). The President may release any member of the Government from office"
+      }
+    ],
+    "PresidentialOwnInitiativeTermination1995": [
+      {
+        "status": "translation",
+        "text": "Article 70, paragraph 7 (1995 version). The President may, on his own initiative, decide to terminate the powers of the Government"
+      }
+    ],
+    "PrimeMinister": [
+      {
+        "status": "translation",
+        "text": "Prime Minister of the Republic of Kazakhstan"
+      }
+    ],
+    "PrimeMinisterDirectsGovernment": [
+      {
+        "status": "translation",
+        "text": "Article 66. The Prime Minister organises and directs the activity of the Government"
+      }
+    ],
+    "PrimeMinisterDirectsGovernment1995": [
+      {
+        "status": "translation",
+        "text": "Article 67, sub-paragraph 1 (1995 version). The Prime Minister organises and directs the activity of the Government and bears personal responsibility for its work"
+      }
+    ],
+    "PrimeMinisterOrderBinding1995": [
+      {
+        "status": "translation",
+        "text": "Article 69, paragraphs 2 and 3 (1995 version). Orders of the Prime Minister are binding throughout the territory of the Republic and must not contradict the Constitution or acts of the President"
+      }
+    ],
+    "PrimeMinisterPersonallyResponsible": [
+      {
+        "status": "translation",
+        "text": "Article 66. The Prime Minister bears personal responsibility for the work of the Government"
+      }
+    ],
+    "PrimeMinisterReleaseTerminatesGovernment1995": [
+      {
+        "status": "translation",
+        "text": "Article 70, paragraph 7 (1995 version). The release of the Prime Minister from office means the termination of the powers of the whole Government"
+      }
+    ],
+    "PrimeMinisterReportsToPresidentAndKurultai": [
+      {
+        "status": "translation",
+        "text": "Article 66. The Prime Minister reports to the President and to the Kurultai on the main directions and the most important decisions of the Government"
+      }
+    ],
+    "PrimeMinisterResignationTerminatesWholeGovernment": [
+      {
+        "status": "translation",
+        "text": "Article 69, paragraph 5. Acceptance of the resignation of the Prime Minister means the termination of the powers of the whole Government"
+      }
+    ],
+    "PrimeMinisterSignsGovernmentResolutions": [
+      {
+        "status": "translation",
+        "text": "Article 66. The Prime Minister signs the resolutions of the Government"
+      }
+    ],
+    "RelinquishPowersBeforeNewKurultai": [
+      {
+        "status": "translation",
+        "text": "Article 69, paragraph 1. The Government relinquishes its powers before the newly elected Kurultai"
+      }
+    ],
+    "RelinquishPowersBeforeNewMazhilis1995": [
+      {
+        "status": "translation",
+        "text": "Article 70, paragraph 1 (1995 version). The Government relinquishes its powers before the newly elected Mazhilis of Parliament"
+      }
+    ],
+    "ResignationDecisionTenDays": [
+      {
+        "status": "translation",
+        "text": "Article 69, paragraph 4. The President considers the question of accepting or rejecting the resignation within ten days"
+      }
+    ],
+    "bill_introduced_to_kurultai": [
+      {
+        "status": "translation",
+        "text": "the bill has been introduced in the Kurultai by way of legislative initiative"
+      }
+    ],
+    "citizen": [
+      {
+        "status": "translation",
+        "text": "the person is a citizen of the Republic of Kazakhstan"
+      }
+    ],
+    "commercial_board_membership": [
+      {
+        "status": "translation",
+        "text": "the member of the Government sits on the governing body of a commercial organisation"
+      }
+    ],
+    "contradicts_constitution_law_or_presidential_act": [
+      {
+        "status": "translation",
+        "text": "the act contradicts the Constitution, statutes or acts of the President"
+      }
+    ],
+    "entrepreneurial_activity": [
+      {
+        "status": "translation",
+        "text": "the member of the Government engages in entrepreneurial activity"
+      }
+    ],
+    "government": [
+      {
+        "status": "translation",
+        "text": "the body is the Government of the Republic"
+      }
+    ],
+    "government_accountable_to_kurultai": [
+      {
+        "status": "translation",
+        "text": "the Government is accountable to the Kurultai"
+      }
+    ],
+    "government_accountable_to_parliament_1995": [
+      {
+        "status": "translation",
+        "text": "the Government is responsible to Parliament (1995 version)"
+      }
+    ],
+    "government_accountable_to_president": [
+      {
+        "status": "translation",
+        "text": "the Government is responsible to the President"
+      }
+    ],
+    "government_accountable_to_president_1995": [
+      {
+        "status": "translation",
+        "text": "the Government is responsible to the President (1995 version)"
+      }
+    ],
+    "government_act": [
+      {
+        "status": "translation",
+        "text": "the act was adopted by the Government"
+      }
+    ],
+    "government_act_1995": [
+      {
+        "status": "translation",
+        "text": "the act was adopted by the Government (1995 version)"
+      }
+    ],
+    "government_act_binding": [
+      {
+        "status": "translation",
+        "text": "the act of the Government is binding throughout the territory of the Republic"
+      }
+    ],
+    "government_act_binding_1995": [
+      {
+        "status": "translation",
+        "text": "the resolution of the Government is binding throughout the territory of the Republic (1995 version)"
+      }
+    ],
+    "government_develops_foreign_policy_measures": [
+      {
+        "status": "translation",
+        "text": "the Government develops measures for the conduct of foreign policy"
+      }
+    ],
+    "government_develops_state_policy": [
+      {
+        "status": "translation",
+        "text": "the Government develops the main directions of state policy"
+      }
+    ],
+    "government_directs_executive_bodies": [
+      {
+        "status": "translation",
+        "text": "the Government directs the activity of the executive bodies"
+      }
+    ],
+    "government_ensures_budget_execution": [
+      {
+        "status": "translation",
+        "text": "the Government ensures the execution of the republican budget"
+      }
+    ],
+    "government_exercises_executive_power": [
+      {
+        "status": "translation",
+        "text": "the Government exercises the executive power of the Republic"
+      }
+    ],
+    "government_formed_by_president": [
+      {
+        "status": "translation",
+        "text": "the Government is formed by the President of the Republic"
+      }
+    ],
+    "government_heads_executive_system": [
+      {
+        "status": "translation",
+        "text": "the Government heads the system of executive bodies"
+      }
+    ],
+    "government_introduces_bills_and_executes_laws": [
+      {
+        "status": "translation",
+        "text": "the Government introduces bills and ensures the execution of statutes"
+      }
+    ],
+    "government_manages_state_property": [
+      {
+        "status": "translation",
+        "text": "the Government manages state property"
+      }
+    ],
+    "government_may_cancel_executive_body_acts": [
+      {
+        "status": "translation",
+        "text": "the Government may repeal acts of executive bodies"
+      }
+    ],
+    "government_membership_incompatible": [
+      {
+        "status": "translation",
+        "text": "membership of the Government is incompatible with the position held or the activity carried on"
+      }
+    ],
+    "government_no_confidence": [
+      {
+        "status": "translation",
+        "text": "the Kurultai has passed a vote of no confidence in the Government"
+      }
+    ],
+    "government_oath_to_people_and_president_1995": [
+      {
+        "status": "translation",
+        "text": "a member of the Government is obliged to take an oath to the people and the President (1995 version)"
+      }
+    ],
+    "government_policy_disagreement": [
+      {
+        "status": "translation",
+        "text": "the member of the Government disagrees with the policy pursued by the Government"
+      }
+    ],
+    "government_powers_relinquished": [
+      {
+        "status": "translation",
+        "text": "the Government relinquishes its powers before the newly elected Kurultai"
+      }
+    ],
+    "government_powers_terminated": [
+      {
+        "status": "translation",
+        "text": "the powers of the Government have been terminated"
+      }
+    ],
+    "government_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "the powers of the Government have been terminated (1995 version)"
+      }
+    ],
+    "government_proposal_date": [
+      {
+        "status": "translation",
+        "text": "the day on which the proposal on the structure and composition of the Government was submitted"
+      }
+    ],
+    "government_proposal_deadline_days": [
+      {
+        "status": "translation",
+        "text": "the time limit for submitting the proposal on the structure and composition of the Government is ten days"
+      }
+    ],
+    "government_proposal_timely": [
+      {
+        "status": "translation",
+        "text": "the proposal on the structure and composition of the Government was submitted in time"
+      }
+    ],
+    "government_sets_unified_public_pay_system_with_president": [
+      {
+        "status": "translation",
+        "text": "the Government, in agreement with the President, approves a unified system of remuneration in state bodies"
+      }
+    ],
+    "government_structure_proposal": [
+      {
+        "status": "translation",
+        "text": "the Prime Minister has submitted a proposal on the structure and composition of the Government"
+      }
+    ],
+    "government_submits_budget_and_report": [
+      {
+        "status": "translation",
+        "text": "the Government submits the republican budget and a report on its execution"
+      }
+    ],
+    "mazhilis_no_confidence": [
+      {
+        "status": "translation",
+        "text": "the Mazhilis has passed a vote of no confidence in the Government (1995 version)"
+      }
+    ],
+    "member_accountable_to_chambers_1995": [
+      {
+        "status": "translation",
+        "text": "members of the Government are accountable to the Chambers of Parliament (1995 version)"
+      }
+    ],
+    "member_decides_within_competence": [
+      {
+        "status": "translation",
+        "text": "the member of the Government takes a decision within his competence"
+      }
+    ],
+    "member_of_government": [
+      {
+        "status": "translation",
+        "text": "the person is a member of the Government"
+      }
+    ],
+    "member_personally_responsible_1995": [
+      {
+        "status": "translation",
+        "text": "the member of the Government is personally responsible for the activity of the bodies subordinate to him (1995 version)"
+      }
+    ],
+    "member_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "the powers of the member of the Government have been terminated (1995 version)"
+      }
+    ],
+    "member_resignation_submitted": [
+      {
+        "status": "translation",
+        "text": "the member of the Government is obliged to tender his resignation"
+      }
+    ],
+    "minister_report_obligation_triggered": [
+      {
+        "status": "translation",
+        "text": "a ground has arisen for a member of the Government to report to a Chamber of Parliament (1995 version)"
+      }
+    ],
+    "new_kurultai_elected": [
+      {
+        "status": "translation",
+        "text": "a new composition of the Kurultai has been elected"
+      }
+    ],
+    "new_mazhilis_elected": [
+      {
+        "status": "translation",
+        "text": "a new composition of the Mazhilis has been elected (1995 version)"
+      }
+    ],
+    "no_confidence_resignation_declared": [
+      {
+        "status": "translation",
+        "text": "the Government is obliged to tender its resignation upon a vote of no confidence"
+      }
+    ],
+    "oath_taken_by_member": [
+      {
+        "status": "translation",
+        "text": "the member of the Government has taken the oath"
+      }
+    ],
+    "official_duty_exception": [
+      {
+        "status": "translation",
+        "text": "sitting on a body of a commercial organisation is part of the official duties"
+      }
+    ],
+    "paid_external_position": [
+      {
+        "status": "translation",
+        "text": "the member of the Government holds another paid position"
+      }
+    ],
+    "parliament_no_confidence": [
+      {
+        "status": "translation",
+        "text": "Parliament has passed a vote of no confidence in the Government (1995 version)"
+      }
+    ],
+    "peoples_council": [
+      {
+        "status": "translation",
+        "text": "the body is the People's Council of Kazakhstan"
+      }
+    ],
+    "peoples_council_bill": [
+      {
+        "status": "translation",
+        "text": "the People's Council has introduced a bill"
+      }
+    ],
+    "peoples_council_highest_consultative_body": [
+      {
+        "status": "translation",
+        "text": "the People's Council is the highest consultative and advisory body"
+      }
+    ],
+    "peoples_council_member": [
+      {
+        "status": "translation",
+        "text": "the person is a member of the People's Council"
+      }
+    ],
+    "peoples_council_membership_constitutionally_valid": [
+      {
+        "status": "translation",
+        "text": "membership of the People's Council meets the constitutional requirements"
+      }
+    ],
+    "peoples_council_referendum_initiative": [
+      {
+        "status": "translation",
+        "text": "the People's Council has come forward with an initiative to hold a referendum"
+      }
+    ],
+    "permitted_teaching_science_or_creative_work": [
+      {
+        "status": "translation",
+        "text": "the occupation is permitted teaching, research or other creative work"
+      }
+    ],
+    "president": [
+      {
+        "status": "translation",
+        "text": "the person is the President of the Republic"
+      }
+    ],
+    "presidential_member_release": [
+      {
+        "status": "translation",
+        "text": "the President has released a member of the Government from office (1995 version)"
+      }
+    ],
+    "presidential_own_initiative_termination": [
+      {
+        "status": "translation",
+        "text": "the President has, on his own initiative, terminated the powers of the Government (1995 version)"
+      }
+    ],
+    "presidential_resignation_decision": [
+      {
+        "status": "translation",
+        "text": "the day on which the President took a decision on the resignation tendered"
+      }
+    ],
+    "prime_minister": [
+      {
+        "status": "translation",
+        "text": "the person is the Prime Minister"
+      }
+    ],
+    "prime_minister_appointment_date": [
+      {
+        "status": "translation",
+        "text": "the day of the appointment of the Prime Minister"
+      }
+    ],
+    "prime_minister_directs_government": [
+      {
+        "status": "translation",
+        "text": "the Prime Minister organises and directs the activity of the Government"
+      }
+    ],
+    "prime_minister_order": [
+      {
+        "status": "translation",
+        "text": "the act is an order of the Prime Minister"
+      }
+    ],
+    "prime_minister_order_binding_1995": [
+      {
+        "status": "translation",
+        "text": "the order of the Prime Minister is binding throughout the territory of the Republic (1995 version)"
+      }
+    ],
+    "prime_minister_personally_responsible": [
+      {
+        "status": "translation",
+        "text": "the Prime Minister is personally responsible for the activity of the Government"
+      }
+    ],
+    "prime_minister_released": [
+      {
+        "status": "translation",
+        "text": "the Prime Minister has been released from office (1995 version)"
+      }
+    ],
+    "prime_minister_reports_to_president_and_kurultai": [
+      {
+        "status": "translation",
+        "text": "the Prime Minister reports to the President and to the Kurultai on the main directions of the Government's activity"
+      }
+    ],
+    "prime_minister_resignation_accepted": [
+      {
+        "status": "translation",
+        "text": "the resignation of the Prime Minister has been accepted"
+      }
+    ],
+    "prime_minister_signs_government_resolutions": [
+      {
+        "status": "translation",
+        "text": "the Prime Minister signs the resolutions of the Government"
+      }
+    ],
+    "referendum_initiative_valid": [
+      {
+        "status": "translation",
+        "text": "the referendum initiative has been put forward by an entitled subject"
+      }
+    ],
+    "representative_body_deputy": [
+      {
+        "status": "translation",
+        "text": "the member of the Government is a deputy of a representative body"
+      }
+    ],
+    "resignation_accepted": [
+      {
+        "status": "translation",
+        "text": "the resignation of the Government has been accepted by the President"
+      }
+    ],
+    "resignation_decision_deadline_days": [
+      {
+        "status": "translation",
+        "text": "the time limit for taking a decision on the resignation tendered is ten days"
+      }
+    ],
+    "resignation_decision_timely": [
+      {
+        "status": "translation",
+        "text": "the decision on the resignation was taken within the time limit laid down"
+      }
+    ],
+    "voluntary_resignation_declared": [
+      {
+        "status": "translation",
+        "text": "the day on which the Government tendered its resignation on its own decision"
+      }
+    ],
+    "within_government_competence": [
+      {
+        "status": "translation",
+        "text": "the act was adopted within the competence of the Government"
+      }
+    ]
+  },
+  "language": "en",
+  "package": "kz.constitution.government"
+}

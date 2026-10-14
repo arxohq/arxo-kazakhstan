@@ -1,0 +1,49 @@
+{
+  "assertions": [
+    {
+      "contentHash": "sha256:515d14b568b9582d878303ebfa381111bf094c956e77366ad4eaac4f51f8db1b",
+      "evidence": [],
+      "id": "urn:kz:constitution:rights#e01-a1",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:kz:constitution:rights:case:person:31",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:rights#person"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:rights"
+    },
+    {
+      "contentHash": "sha256:777c62b876c54eda888a94de4e74614f87e5889dee6d178d920b6c19cf1ff26f",
+      "evidence": [],
+      "id": "urn:kz:constitution:rights#e01-a2",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:kz:constitution:rights:case:person:31",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:rights#citizen"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:rights"
+    }
+  ],
+  "context": {
+    "decisionTime": "2026-06-30T12:00:00+05:00",
+    "knowledgeTime": "2026-06-30T12:00:00+05:00",
+    "legalTime": "2026-06-30",
+    "timezone": "Asia/Qyzylorda"
+  },
+  "options": {}
+}

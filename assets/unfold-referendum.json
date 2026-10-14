@@ -1,0 +1,221 @@
+{
+  "anchors": [],
+  "label": "изменения и дополнения в Конституцию приняты референдумом",
+  "name": "amendment_approved_by_referendum",
+  "package": "amendment",
+  "predicate": "urn:kz:constitution:amendment#amendment_approved_by_referendum",
+  "producers": [
+    {
+      "anchors": [
+        {
+          "id": "urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART92_RU",
+          "locator": "article/92",
+          "quote": [
+            "Статья 92"
+          ]
+        },
+        {
+          "id": "urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART92_KK",
+          "locator": "article/92",
+          "quote": [
+            "92-бап"
+          ]
+        }
+      ],
+      "headPolarity": "positive",
+      "label": "Статья 92 пункт 3. Поправка принята, если за неё проголосовало более половины участвовавших не менее чем в двух третях областей, городов республиканского значения и столицы",
+      "name": "AmendmentReferendumDoubleThreshold",
+      "package": "amendment",
+      "premises": [
+        {
+          "anchors": [],
+          "label": "числитель территориального порога — две трети",
+          "name": "referendum_territory_numerator",
+          "package": "amendment",
+          "polarity": "positive",
+          "predicate": "urn:kz:constitution:amendment#referendum_territory_numerator",
+          "producers": [],
+          "relationKind": "institutional",
+          "truncated": false
+        },
+        {
+          "anchors": [],
+          "label": "всенародный референдум считается состоявшимся",
+          "name": "referendum_held",
+          "package": "amendment",
+          "polarity": "positive",
+          "predicate": "urn:kz:constitution:amendment#referendum_held",
+          "producers": [
+            {
+              "anchors": [
+                {
+                  "id": "urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART92_RU",
+                  "locator": "article/92",
+                  "quote": [
+                    "Статья 92"
+                  ]
+                }
+              ],
+              "headPolarity": "positive",
+              "label": "Статья 92 пункт 2. Всенародный референдум состоялся, если в голосовании приняло участие более половины граждан, имеющих право участвовать в нём",
+              "name": "ReferendumTurnoutMoreThanHalf",
+              "package": "amendment",
+              "premises": [
+                {
+                  "anchors": [],
+                  "label": "знаменатель порога явки референдума — одна вторая",
+                  "name": "referendum_turnout_denominator",
+                  "package": "amendment",
+                  "polarity": "positive",
+                  "predicate": "urn:kz:constitution:amendment#referendum_turnout_denominator",
+                  "producers": [],
+                  "relationKind": "institutional",
+                  "truncated": false
+                },
+                {
+                  "anchors": [],
+                  "label": "число граждан, принявших участие в голосовании",
+                  "name": "referendum_participants",
+                  "package": "amendment",
+                  "polarity": "positive",
+                  "predicate": "urn:kz:constitution:amendment#referendum_participants",
+                  "producers": [],
+                  "relationKind": "empirical",
+                  "truncated": false
+                },
+                {
+                  "anchors": [],
+                  "label": "число граждан, имеющих право участвовать во всенародном референдуме",
+                  "name": "eligible_referendum_citizens",
+                  "package": "amendment",
+                  "polarity": "positive",
+                  "predicate": "urn:kz:constitution:amendment#eligible_referendum_citizens",
+                  "producers": [],
+                  "relationKind": "empirical",
+                  "truncated": false
+                },
+                {
+                  "anchors": [],
+                  "label": "числитель порога явки референдума — одна вторая",
+                  "name": "referendum_turnout_numerator",
+                  "package": "amendment",
+                  "polarity": "positive",
+                  "predicate": "urn:kz:constitution:amendment#referendum_turnout_numerator",
+                  "producers": [],
+                  "relationKind": "institutional",
+                  "truncated": false
+                },
+                {
+                  "opaque": "comparison",
+                  "text": "{\"kind\":\"comparison\",\"left\":{\"kind\":\"binary\",\"left\":{\"kind\":\"var\",\"var\":\"v2\"},\"op\":\"mul\",\"right\":{\"kind\":\"var\",\"var\":\"v4\"}},\"op\":\"gt\",\"right\":{\"kind\":\"binary\",\""
+                }
+              ],
+              "rule": "urn:kz:constitution:amendment#ReferendumTurnoutMoreThanHalf",
+              "strength": "strict"
+            }
+          ],
+          "relationKind": "institutional"
+        },
+        {
+          "anchors": [],
+          "label": "знаменатель порога одобрения поправки — одна вторая",
+          "name": "referendum_approval_denominator",
+          "package": "amendment",
+          "polarity": "positive",
+          "predicate": "urn:kz:constitution:amendment#referendum_approval_denominator",
+          "producers": [],
+          "relationKind": "institutional",
+          "truncated": false
+        },
+        {
+          "anchors": [],
+          "label": "знаменатель территориального порога — две трети",
+          "name": "referendum_territory_denominator",
+          "package": "amendment",
+          "polarity": "positive",
+          "predicate": "urn:kz:constitution:amendment#referendum_territory_denominator",
+          "producers": [],
+          "relationKind": "institutional",
+          "truncated": false
+        },
+        {
+          "anchors": [],
+          "label": "число голосов, поданных за изменения и дополнения",
+          "name": "votes_for_amendment",
+          "package": "amendment",
+          "polarity": "positive",
+          "predicate": "urn:kz:constitution:amendment#votes_for_amendment",
+          "producers": [],
+          "relationKind": "empirical",
+          "truncated": false
+        },
+        {
+          "anchors": [],
+          "label": "число областей, городов республиканского значения и столицы, где поправка одобрена",
+          "name": "approving_regions_cities_and_capital",
+          "package": "amendment",
+          "polarity": "positive",
+          "predicate": "urn:kz:constitution:amendment#approving_regions_cities_and_capital",
+          "producers": [],
+          "relationKind": "empirical",
+          "truncated": false
+        },
+        {
+          "anchors": [],
+          "label": "референдум проводится по данному изменению Конституции",
+          "name": "referendum_for_amendment",
+          "package": "amendment",
+          "polarity": "positive",
+          "predicate": "urn:kz:constitution:amendment#referendum_for_amendment",
+          "producers": [],
+          "relationKind": "empirical",
+          "truncated": false
+        },
+        {
+          "opaque": "comparison",
+          "text": "{\"kind\":\"comparison\",\"left\":{\"kind\":\"binary\",\"left\":{\"kind\":\"var\",\"var\":\"v4\"},\"op\":\"mul\",\"right\":{\"kind\":\"var\",\"var\":\"v9\"}},\"op\":\"ge\",\"right\":{\"kind\":\"binary\",\""
+        },
+        {
+          "anchors": [],
+          "label": "число граждан, принявших участие в голосовании",
+          "name": "referendum_participants",
+          "package": "amendment",
+          "polarity": "positive",
+          "predicate": "urn:kz:constitution:amendment#referendum_participants",
+          "producers": [],
+          "relationKind": "empirical",
+          "truncated": false
+        },
+        {
+          "anchors": [],
+          "label": "числитель порога одобрения поправки — одна вторая",
+          "name": "referendum_approval_numerator",
+          "package": "amendment",
+          "polarity": "positive",
+          "predicate": "urn:kz:constitution:amendment#referendum_approval_numerator",
+          "producers": [],
+          "relationKind": "institutional",
+          "truncated": false
+        },
+        {
+          "anchors": [],
+          "label": "общее число областей, городов республиканского значения и столицы",
+          "name": "total_regions_cities_and_capital",
+          "package": "amendment",
+          "polarity": "positive",
+          "predicate": "urn:kz:constitution:amendment#total_regions_cities_and_capital",
+          "producers": [],
+          "relationKind": "empirical",
+          "truncated": false
+        },
+        {
+          "opaque": "comparison",
+          "text": "{\"kind\":\"comparison\",\"left\":{\"kind\":\"binary\",\"left\":{\"kind\":\"var\",\"var\":\"v2\"},\"op\":\"mul\",\"right\":{\"kind\":\"var\",\"var\":\"v7\"}},\"op\":\"gt\",\"right\":{\"kind\":\"binary\",\""
+        }
+      ],
+      "rule": "urn:kz:constitution:amendment#AmendmentReferendumDoubleThreshold",
+      "strength": "strict"
+    }
+  ],
+  "relationKind": "institutional"
+}

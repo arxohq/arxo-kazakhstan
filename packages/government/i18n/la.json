@@ -1,0 +1,914 @@
+{
+  "$comment": "Stratum praesentationis Latinum pacti kz.constitution.government (DECISION-0070). Hoc tabularium in CLIR non ingreditur et a solo strato praesentationis legitur (verbalize --labels, MCP, pons mensae operariae). Versio ex notis Russicis authenticis (ru-KZ) eiusdem pacti ducta est; status omnium notarum est 'translation', id est versio operosa a formalizatore facta, non editio officialis. Clavis est nomen locale declarationis.",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "AcceptedResignationTerminatesGovernment": [
+      {
+        "status": "translation",
+        "text": "Articulus 69, numerus 5. Abdicatio accepta finem potestatum Gubernii significat"
+      }
+    ],
+    "Bill": [
+      {
+        "status": "translation",
+        "text": "rogatio legis"
+      }
+    ],
+    "Government": [
+      {
+        "status": "translation",
+        "text": "Gubernium Rei Publicae Kazachstaniae"
+      }
+    ],
+    "GovernmentAccountableToKurultai": [
+      {
+        "status": "translation",
+        "text": "Articulus 63. Gubernium Kurultai rationem reddit"
+      }
+    ],
+    "GovernmentAccountableToParliament1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 64, numerus 2 (recensio anni 1995). Gubernium Parlamento obnoxium est"
+      }
+    ],
+    "GovernmentAccountableToPresident": [
+      {
+        "status": "translation",
+        "text": "Articulus 63. Gubernium Praesidi rationem reddit"
+      }
+    ],
+    "GovernmentAccountableToPresidentAndParliament1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 64, numerus 2 (recensio anni 1995). Gubernium Praesidi Rei Publicae obnoxium est"
+      }
+    ],
+    "GovernmentAct": [
+      {
+        "status": "translation",
+        "text": "actus Gubernii"
+      }
+    ],
+    "GovernmentActBinding": [
+      {
+        "status": "translation",
+        "text": "Articulus 68, numeri 1 et 3. Constitutum Gubernii de rebus competentiae eius in toto territorio Rei Publicae obligat, nisi Constitutioni, legibus et actibus Praesidis repugnat"
+      }
+    ],
+    "GovernmentActBinding/unless/0": [
+      {
+        "status": "translation",
+        "text": "Articulus 68, numeri 1 et 3. Constitutum Gubernii de rebus competentiae eius in toto territorio Rei Publicae obligat, nisi Constitutioni, legibus et actibus Praesidis repugnat"
+      }
+    ],
+    "GovernmentActBinding1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 69, numeri 1 et 3 (recensio anni 1995). Constituta Gubernii in toto territorio Rei Publicae obligant neque Constitutioni, actibus legislativis et actibus Praesidis repugnare debent"
+      }
+    ],
+    "GovernmentDevelopsForeignPolicyMeasures": [
+      {
+        "status": "translation",
+        "text": "Articulus 65, numerus 5. Gubernium mensuras rationis externae elaborat"
+      }
+    ],
+    "GovernmentDevelopsStatePolicy": [
+      {
+        "status": "translation",
+        "text": "Articulus 65, numerus 1. Gubernium vias praecipuas rationis publicae elaborat"
+      }
+    ],
+    "GovernmentDevelopsStatePolicy1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 66, subnumerus 1 (recensio anni 1995). Gubernium vias praecipuas rationis socialis et oeconomicae, defensionis et securitatis elaborat earumque exsecutionem ordinat"
+      }
+    ],
+    "GovernmentDirectsExecutiveBodies": [
+      {
+        "status": "translation",
+        "text": "Articulus 65, numerus 6. Gubernium negotiationem collegiorum exsecutivorum regit"
+      }
+    ],
+    "GovernmentEnsuresBudgetExecution": [
+      {
+        "status": "translation",
+        "text": "Articulus 65, numerus 2. Gubernium exsecutionem aerarii rei publicae praestat"
+      }
+    ],
+    "GovernmentExercisesExecutivePower": [
+      {
+        "status": "translation",
+        "text": "Articulus 63. Gubernium potestatem exsecutivam exercet"
+      }
+    ],
+    "GovernmentExercisesExecutivePower1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 64, numerus 1 (recensio anni 1995). Gubernium potestatem exsecutivam exercet et systemati collegiorum exsecutivorum praeest"
+      }
+    ],
+    "GovernmentFormedByPresident": [
+      {
+        "status": "translation",
+        "text": "Articulus 64, numerus 1. Gubernium a Praeside Rei Publicae Kazachstaniae ratione Constitutione praevisa constituitur"
+      }
+    ],
+    "GovernmentHeadsExecutiveSystem": [
+      {
+        "status": "translation",
+        "text": "Articulus 63. Gubernium systemati collegiorum exsecutivorum praeest"
+      }
+    ],
+    "GovernmentIntroducesBillsAndExecutesLaws": [
+      {
+        "status": "translation",
+        "text": "Articulus 65, numerus 3. Gubernium rogationes legum infert et exsecutionem legum praestat"
+      }
+    ],
+    "GovernmentManagesStateProperty": [
+      {
+        "status": "translation",
+        "text": "Articulus 65, numerus 4. Gubernium administrationem proprietatis publicae ordinat"
+      }
+    ],
+    "GovernmentMayCancelExecutiveActs1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 66, subnumerus 7 (recensio anni 1995). Gubernium actus ministeriorum ceterorumque collegiorum exsecutivorum tollit vel suspendit"
+      }
+    ],
+    "GovernmentMayCancelExecutiveBodyActs": [
+      {
+        "status": "translation",
+        "text": "Articulus 65, numerus 6. Gubernium actus collegiorum exsecutivorum tollere vel suspendere potest"
+      }
+    ],
+    "GovernmentMember": [
+      {
+        "status": "translation",
+        "text": "membrum Gubernii"
+      }
+    ],
+    "GovernmentMemberBoardConflict": [
+      {
+        "status": "translation",
+        "text": "Articulus 67, numerus 2. Membro Gubernii non licet in collegium rectorum vel consilium curatorum instituti quaestuosi ingredi, nisi hoc officium eius muneris est"
+      }
+    ],
+    "GovernmentMemberBoardConflict/unless/0": [
+      {
+        "status": "translation",
+        "text": "Articulus 67, numerus 2. Membro Gubernii non licet in collegium rectorum vel consilium curatorum instituti quaestuosi ingredi, nisi hoc officium eius muneris est"
+      }
+    ],
+    "GovernmentMemberBusinessConflict": [
+      {
+        "status": "translation",
+        "text": "Articulus 67, numerus 2. Membro Gubernii non licet negotiationem quaestuosam exercere"
+      }
+    ],
+    "GovernmentMemberIncompatible1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "Articulus 68, numerus 2 (recensio anni 1995). Membris Gubernii non licet deputatos esse, alia munera stipendio aucta praeter docendi, scientiae vel alterius artis gerere, neque negotiationem quaestuosam exercere"
+      }
+    ],
+    "GovernmentMemberIncompatible1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "Articulus 68, numerus 2 (recensio anni 1995). Membris Gubernii non licet deputatos esse, alia munera stipendio aucta praeter docendi, scientiae vel alterius artis gerere, neque negotiationem quaestuosam exercere"
+      }
+    ],
+    "GovernmentMemberIncompatible1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "Articulus 68, numerus 2 (recensio anni 1995). Membris Gubernii non licet deputatos esse, alia munera stipendio aucta praeter docendi, scientiae vel alterius artis gerere, neque negotiationem quaestuosam exercere"
+      }
+    ],
+    "GovernmentMemberPaidPositionConflict": [
+      {
+        "status": "translation",
+        "text": "Articulus 67, numerus 2. Membro Gubernii non licet alia munera stipendio aucta gerere praeter negotiationem docendi, scientiae et artis"
+      }
+    ],
+    "GovernmentMemberPaidPositionConflict/unless/0": [
+      {
+        "status": "translation",
+        "text": "Articulus 67, numerus 2. Membro Gubernii non licet alia munera stipendio aucta gerere praeter negotiationem docendi, scientiae et artis"
+      }
+    ],
+    "GovernmentMemberRepresentativeMandateConflict": [
+      {
+        "status": "translation",
+        "text": "Articulus 67, numerus 2. Membro Gubernii non licet deputatum collegii repraesentantis esse"
+      }
+    ],
+    "GovernmentOathToPeopleAndPresident1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 65, numerus 3 (recensio anni 1995). Membra Gubernii populo et Praesidi Kazachstaniae iusiurandum dant"
+      }
+    ],
+    "GovernmentSetsUnifiedPublicPaySystemWithPresident": [
+      {
+        "status": "translation",
+        "text": "Articulus 65, numerus 7. Gubernium consentiente Praeside unum systema pecuniae suppeditandae et mercedis collegiorum publicorum confirmat"
+      }
+    ],
+    "GovernmentStructureProposalTenDays": [
+      {
+        "status": "translation",
+        "text": "Articulus 64, numerus 2. Proposita de structura et ordine Gubernii Praesidi intra decem dies post Primum Ministrum nominatum inferuntur"
+      }
+    ],
+    "GovernmentStructureProposalTenDays1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 65, numerus 2 (recensio anni 1995). Proposita de structura et ordine Gubernii a Primo Ministro intra decem dies post nominationem inferuntur"
+      }
+    ],
+    "GovernmentSubmitsBudget1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 66, subnumerus 2 (recensio anni 1995). Gubernium Parlamento aerarium rei publicae et rationem exsecutionis eius exhibet"
+      }
+    ],
+    "GovernmentSubmitsBudgetAndReport": [
+      {
+        "status": "translation",
+        "text": "Articulus 65, numerus 2. Gubernium aerarium rei publicae et rationem exsecutionis eius exhibet"
+      }
+    ],
+    "Kurultai": [
+      {
+        "status": "translation",
+        "text": "Kurultai Rei Publicae Kazachstaniae"
+      }
+    ],
+    "Mazhilis": [
+      {
+        "status": "translation",
+        "text": "Mazhilis Parlamenti (recensio anni 1995)"
+      }
+    ],
+    "MemberAccountableToChambers1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 64, numerus 3 (recensio anni 1995). Membra Gubernii Cameris Parlamenti rationem reddunt in casu subnumero 6) articuli 57 Constitutionis praeviso"
+      }
+    ],
+    "MemberPersonallyResponsible1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 68, numerus 1 (recensio anni 1995). Membra Gubernii in decernendo sui iuris sunt et Primo Ministro personaliter respondent"
+      }
+    ],
+    "NoConfidenceRequiresResignation": [
+      {
+        "status": "translation",
+        "text": "Articulus 69, numerus 3. Kurultai fidem abrogante Gubernium Praesidi abdicationem suam denuntiat"
+      }
+    ],
+    "NoConfidenceRequiresResignation1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "Articulus 70, numerus 3 (recensio anni 1995). Gubernium Praesidi abdicationem denuntiat, cum Mazhilis vel Parlamentum fidem abrogavit"
+      }
+    ],
+    "NoConfidenceRequiresResignation1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "Articulus 70, numerus 3 (recensio anni 1995). Gubernium Praesidi abdicationem denuntiat, cum Mazhilis vel Parlamentum fidem abrogavit"
+      }
+    ],
+    "Parliament": [
+      {
+        "status": "translation",
+        "text": "Parlamentum Rei Publicae Kazachstaniae (recensio anni 1995)"
+      }
+    ],
+    "PeoplesCouncil": [
+      {
+        "status": "translation",
+        "text": "Qazaqstan Halyq Kenesi — Consilium Populi Kazachstaniae"
+      }
+    ],
+    "PeoplesCouncilConstitutionalStatus": [
+      {
+        "status": "translation",
+        "text": "Articulus 70, numerus 1. Consilium Populi Kazachstaniae collegium consultivum summum est"
+      }
+    ],
+    "PeoplesCouncilLegislativeInitiative": [
+      {
+        "status": "translation",
+        "text": "Articulus 71, subnumerus 2). Consilium Populi Kazachstaniae rogationes legum in Kurultai infert"
+      }
+    ],
+    "PeoplesCouncilMembersAreCitizens": [
+      {
+        "status": "translation",
+        "text": "Articulus 70, numerus 2. Ordo Consilii Populi ex civibus Kazachstaniae constituitur"
+      }
+    ],
+    "PeoplesCouncilReferendumInitiative": [
+      {
+        "status": "translation",
+        "text": "Articulus 71, subnumerus 3). Consilium Populi Kazachstaniae incohat ut referendum universi populi indicatur"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "persona physica"
+      }
+    ],
+    "PolicyDisagreementRequiresResignation": [
+      {
+        "status": "translation",
+        "text": "Articulus 67, numerus 1. Membrum Gubernii rationi actae non consentiens abdicat vel a munere dimittendum est"
+      }
+    ],
+    "PolicyDisagreementRequiresResignation1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 68, numerus 1 (recensio anni 1995). Membrum Gubernii rationi actae non consentiens vel eam non exsequens abdicat vel dimittendum est"
+      }
+    ],
+    "President": [
+      {
+        "status": "translation",
+        "text": "Praeses Rei Publicae Kazachstaniae"
+      }
+    ],
+    "PresidentialMemberRelease1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 70, numerus 7 (recensio anni 1995). Praesidi licet quodlibet membrum Gubernii a munere dimittere"
+      }
+    ],
+    "PresidentialOwnInitiativeTermination1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 70, numerus 7 (recensio anni 1995). Praesidi licet sua sponte de potestatibus Gubernii finiendis decernere"
+      }
+    ],
+    "PrimeMinister": [
+      {
+        "status": "translation",
+        "text": "Primus Minister Rei Publicae Kazachstaniae"
+      }
+    ],
+    "PrimeMinisterDirectsGovernment": [
+      {
+        "status": "translation",
+        "text": "Articulus 66. Primus Minister negotiationem Gubernii ordinat et regit"
+      }
+    ],
+    "PrimeMinisterDirectsGovernment1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 67, subnumerus 1 (recensio anni 1995). Primus Minister negotiationem Gubernii ordinat et regit atque de opere eius personaliter respondet"
+      }
+    ],
+    "PrimeMinisterOrderBinding1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 69, numeri 2 et 3 (recensio anni 1995). Mandata Primi Ministri in toto territorio Rei Publicae obligant neque Constitutioni et actibus Praesidis repugnare debent"
+      }
+    ],
+    "PrimeMinisterPersonallyResponsible": [
+      {
+        "status": "translation",
+        "text": "Articulus 66. Primus Minister de opere Gubernii personaliter respondet"
+      }
+    ],
+    "PrimeMinisterReleaseTerminatesGovernment1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 70, numerus 7 (recensio anni 1995). Primus Minister a munere dimissus finem potestatum totius Gubernii significat"
+      }
+    ],
+    "PrimeMinisterReportsToPresidentAndKurultai": [
+      {
+        "status": "translation",
+        "text": "Articulus 66. Primus Minister Praesidi et Kurultai de viis praecipuis et decretis gravissimis Gubernii refert"
+      }
+    ],
+    "PrimeMinisterResignationTerminatesWholeGovernment": [
+      {
+        "status": "translation",
+        "text": "Articulus 69, numerus 5. Abdicatio Primi Ministri accepta finem potestatum totius Gubernii significat"
+      }
+    ],
+    "PrimeMinisterSignsGovernmentResolutions": [
+      {
+        "status": "translation",
+        "text": "Articulus 66. Primus Minister constituta Gubernii subscribit"
+      }
+    ],
+    "RelinquishPowersBeforeNewKurultai": [
+      {
+        "status": "translation",
+        "text": "Articulus 69, numerus 1. Gubernium potestates suas coram Kurultai noviter electo deponit"
+      }
+    ],
+    "RelinquishPowersBeforeNewMazhilis1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 70, numerus 1 (recensio anni 1995). Gubernium potestates suas coram Mazhilis Parlamenti noviter electo deponit"
+      }
+    ],
+    "ResignationDecisionTenDays": [
+      {
+        "status": "translation",
+        "text": "Articulus 69, numerus 4. Praeses de abdicatione accipienda vel reicienda intra decem dies deliberat"
+      }
+    ],
+    "bill_introduced_to_kurultai": [
+      {
+        "status": "translation",
+        "text": "rogatio legis in Kurultai iure incohandi legem inlata est"
+      }
+    ],
+    "citizen": [
+      {
+        "status": "translation",
+        "text": "persona civis Rei Publicae Kazachstaniae est"
+      }
+    ],
+    "commercial_board_membership": [
+      {
+        "status": "translation",
+        "text": "membrum Gubernii in collegium rectorum instituti quaestuosi ingreditur"
+      }
+    ],
+    "contradicts_constitution_law_or_presidential_act": [
+      {
+        "status": "translation",
+        "text": "actus Constitutioni, legibus vel actibus Praesidis repugnat"
+      }
+    ],
+    "entrepreneurial_activity": [
+      {
+        "status": "translation",
+        "text": "membrum Gubernii negotiationem quaestuosam exercet"
+      }
+    ],
+    "government": [
+      {
+        "status": "translation",
+        "text": "collegium est Gubernium Rei Publicae"
+      }
+    ],
+    "government_accountable_to_kurultai": [
+      {
+        "status": "translation",
+        "text": "Gubernium Kurultai rationem reddit"
+      }
+    ],
+    "government_accountable_to_parliament_1995": [
+      {
+        "status": "translation",
+        "text": "Gubernium Parlamento obnoxium est (recensio anni 1995)"
+      }
+    ],
+    "government_accountable_to_president": [
+      {
+        "status": "translation",
+        "text": "Gubernium Praesidi obnoxium est"
+      }
+    ],
+    "government_accountable_to_president_1995": [
+      {
+        "status": "translation",
+        "text": "Gubernium Praesidi obnoxium est (recensio anni 1995)"
+      }
+    ],
+    "government_act": [
+      {
+        "status": "translation",
+        "text": "actus a Gubernio latus est"
+      }
+    ],
+    "government_act_1995": [
+      {
+        "status": "translation",
+        "text": "actus a Gubernio latus est (recensio anni 1995)"
+      }
+    ],
+    "government_act_binding": [
+      {
+        "status": "translation",
+        "text": "actus Gubernii in toto territorio Rei Publicae obligat"
+      }
+    ],
+    "government_act_binding_1995": [
+      {
+        "status": "translation",
+        "text": "constitutum Gubernii in toto territorio Rei Publicae obligat (recensio anni 1995)"
+      }
+    ],
+    "government_develops_foreign_policy_measures": [
+      {
+        "status": "translation",
+        "text": "Gubernium mensuras ad rationem externam agendam elaborat"
+      }
+    ],
+    "government_develops_state_policy": [
+      {
+        "status": "translation",
+        "text": "Gubernium vias praecipuas rationis publicae elaborat"
+      }
+    ],
+    "government_directs_executive_bodies": [
+      {
+        "status": "translation",
+        "text": "Gubernium negotiationem collegiorum exsecutivorum regit"
+      }
+    ],
+    "government_ensures_budget_execution": [
+      {
+        "status": "translation",
+        "text": "Gubernium exsecutionem aerarii rei publicae praestat"
+      }
+    ],
+    "government_exercises_executive_power": [
+      {
+        "status": "translation",
+        "text": "Gubernium potestatem exsecutivam Rei Publicae exercet"
+      }
+    ],
+    "government_formed_by_president": [
+      {
+        "status": "translation",
+        "text": "Gubernium a Praeside Rei Publicae constituitur"
+      }
+    ],
+    "government_heads_executive_system": [
+      {
+        "status": "translation",
+        "text": "Gubernium systemati collegiorum exsecutivorum praeest"
+      }
+    ],
+    "government_introduces_bills_and_executes_laws": [
+      {
+        "status": "translation",
+        "text": "Gubernium rogationes legum infert et exsecutionem legum praestat"
+      }
+    ],
+    "government_manages_state_property": [
+      {
+        "status": "translation",
+        "text": "Gubernium proprietatem publicam administrat"
+      }
+    ],
+    "government_may_cancel_executive_body_acts": [
+      {
+        "status": "translation",
+        "text": "Gubernio licet actus collegiorum exsecutivorum tollere"
+      }
+    ],
+    "government_membership_incompatible": [
+      {
+        "status": "translation",
+        "text": "membrum Gubernii cum munere vel negotiatione gesta incompatibile est"
+      }
+    ],
+    "government_no_confidence": [
+      {
+        "status": "translation",
+        "text": "Kurultai Gubernio fidem abrogavit"
+      }
+    ],
+    "government_oath_to_people_and_president_1995": [
+      {
+        "status": "translation",
+        "text": "membrum Gubernii populo et Praesidi iusiurandum dare tenetur (recensio anni 1995)"
+      }
+    ],
+    "government_policy_disagreement": [
+      {
+        "status": "translation",
+        "text": "membrum Gubernii rationi a Gubernio actae non consentit"
+      }
+    ],
+    "government_powers_relinquished": [
+      {
+        "status": "translation",
+        "text": "Gubernium potestates coram Kurultai noviter electo deponit"
+      }
+    ],
+    "government_powers_terminated": [
+      {
+        "status": "translation",
+        "text": "potestates Gubernii finitae sunt"
+      }
+    ],
+    "government_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "potestates Gubernii finitae sunt (recensio anni 1995)"
+      }
+    ],
+    "government_proposal_date": [
+      {
+        "status": "translation",
+        "text": "dies quo propositum de structura et ordine Gubernii inlatum est"
+      }
+    ],
+    "government_proposal_deadline_days": [
+      {
+        "status": "translation",
+        "text": "terminus propositi de structura et ordine Gubernii inferendi: decem dies"
+      }
+    ],
+    "government_proposal_timely": [
+      {
+        "status": "translation",
+        "text": "propositum de structura et ordine Gubernii intra terminum inlatum est"
+      }
+    ],
+    "government_sets_unified_public_pay_system_with_president": [
+      {
+        "status": "translation",
+        "text": "Gubernium consentiente Praeside unum systema mercedis in magistratibus publicis confirmat"
+      }
+    ],
+    "government_structure_proposal": [
+      {
+        "status": "translation",
+        "text": "Primus Minister propositum de structura et ordine Gubernii intulit"
+      }
+    ],
+    "government_submits_budget_and_report": [
+      {
+        "status": "translation",
+        "text": "Gubernium aerarium rei publicae et rationem exsecutionis eius exhibet"
+      }
+    ],
+    "mazhilis_no_confidence": [
+      {
+        "status": "translation",
+        "text": "Mazhilis Gubernio fidem abrogavit (recensio anni 1995)"
+      }
+    ],
+    "member_accountable_to_chambers_1995": [
+      {
+        "status": "translation",
+        "text": "membra Gubernii Cameris Parlamenti rationem reddunt (recensio anni 1995)"
+      }
+    ],
+    "member_decides_within_competence": [
+      {
+        "status": "translation",
+        "text": "membrum Gubernii intra fines competentiae suae decernit"
+      }
+    ],
+    "member_of_government": [
+      {
+        "status": "translation",
+        "text": "persona in ordinem Gubernii ingreditur"
+      }
+    ],
+    "member_personally_responsible_1995": [
+      {
+        "status": "translation",
+        "text": "membrum Gubernii de negotiatione collegiorum subiectorum personaliter respondet (recensio anni 1995)"
+      }
+    ],
+    "member_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "potestates membri Gubernii finitae sunt (recensio anni 1995)"
+      }
+    ],
+    "member_resignation_submitted": [
+      {
+        "status": "translation",
+        "text": "membrum Gubernii libellum abdicationis dare tenetur"
+      }
+    ],
+    "minister_report_obligation_triggered": [
+      {
+        "status": "translation",
+        "text": "causa orta est ut membrum Gubernii Camerae Parlamenti rationem reddat (recensio anni 1995)"
+      }
+    ],
+    "new_kurultai_elected": [
+      {
+        "status": "translation",
+        "text": "novus ordo Kurultai electus est"
+      }
+    ],
+    "new_mazhilis_elected": [
+      {
+        "status": "translation",
+        "text": "novus ordo Mazhilis electus est (recensio anni 1995)"
+      }
+    ],
+    "no_confidence_resignation_declared": [
+      {
+        "status": "translation",
+        "text": "Gubernium fide abrogata abdicationem denuntiare tenetur"
+      }
+    ],
+    "oath_taken_by_member": [
+      {
+        "status": "translation",
+        "text": "membrum Gubernii iusiurandum dedit"
+      }
+    ],
+    "official_duty_exception": [
+      {
+        "status": "translation",
+        "text": "participatio in collegio instituti quaestuosi ad officia muneris pertinet"
+      }
+    ],
+    "paid_external_position": [
+      {
+        "status": "translation",
+        "text": "membrum Gubernii aliud munus stipendio auctum gerit"
+      }
+    ],
+    "parliament_no_confidence": [
+      {
+        "status": "translation",
+        "text": "Parlamentum Gubernio fidem abrogavit (recensio anni 1995)"
+      }
+    ],
+    "peoples_council": [
+      {
+        "status": "translation",
+        "text": "collegium est Consilium Populi Kazachstaniae"
+      }
+    ],
+    "peoples_council_bill": [
+      {
+        "status": "translation",
+        "text": "Consilium Populi rogationem legis intulit"
+      }
+    ],
+    "peoples_council_highest_consultative_body": [
+      {
+        "status": "translation",
+        "text": "Consilium Populi collegium consultivum et deliberativum summum est"
+      }
+    ],
+    "peoples_council_member": [
+      {
+        "status": "translation",
+        "text": "persona in ordinem Consilii Populi ingreditur"
+      }
+    ],
+    "peoples_council_membership_constitutionally_valid": [
+      {
+        "status": "translation",
+        "text": "membrum Consilii Populi requisitis constitutionalibus congruit"
+      }
+    ],
+    "peoples_council_referendum_initiative": [
+      {
+        "status": "translation",
+        "text": "Consilium Populi de referendo faciendo incohavit"
+      }
+    ],
+    "permitted_teaching_science_or_creative_work": [
+      {
+        "status": "translation",
+        "text": "occupatio ad negotiationem docendi, scientiae vel alterius artis permissam pertinet"
+      }
+    ],
+    "president": [
+      {
+        "status": "translation",
+        "text": "persona Praeses Rei Publicae est"
+      }
+    ],
+    "presidential_member_release": [
+      {
+        "status": "translation",
+        "text": "Praeses membrum Gubernii a munere dimisit (recensio anni 1995)"
+      }
+    ],
+    "presidential_own_initiative_termination": [
+      {
+        "status": "translation",
+        "text": "Praeses sua sponte potestates Gubernii finivit (recensio anni 1995)"
+      }
+    ],
+    "presidential_resignation_decision": [
+      {
+        "status": "translation",
+        "text": "dies quo Praeses de abdicatione denuntiata decrevit"
+      }
+    ],
+    "prime_minister": [
+      {
+        "status": "translation",
+        "text": "persona Primus Minister est"
+      }
+    ],
+    "prime_minister_appointment_date": [
+      {
+        "status": "translation",
+        "text": "dies quo Primus Minister nominatus est"
+      }
+    ],
+    "prime_minister_directs_government": [
+      {
+        "status": "translation",
+        "text": "Primus Minister negotiationem Gubernii ordinat et regit"
+      }
+    ],
+    "prime_minister_order": [
+      {
+        "status": "translation",
+        "text": "actus est mandatum Primi Ministri"
+      }
+    ],
+    "prime_minister_order_binding_1995": [
+      {
+        "status": "translation",
+        "text": "mandatum Primi Ministri in toto territorio Rei Publicae obligat (recensio anni 1995)"
+      }
+    ],
+    "prime_minister_personally_responsible": [
+      {
+        "status": "translation",
+        "text": "Primus Minister de negotiatione Gubernii personaliter respondet"
+      }
+    ],
+    "prime_minister_released": [
+      {
+        "status": "translation",
+        "text": "Primus Minister a munere dimissus est (recensio anni 1995)"
+      }
+    ],
+    "prime_minister_reports_to_president_and_kurultai": [
+      {
+        "status": "translation",
+        "text": "Primus Minister Praesidi et Kurultai de viis praecipuis negotiationis Gubernii refert"
+      }
+    ],
+    "prime_minister_resignation_accepted": [
+      {
+        "status": "translation",
+        "text": "abdicatio Primi Ministri accepta est"
+      }
+    ],
+    "prime_minister_signs_government_resolutions": [
+      {
+        "status": "translation",
+        "text": "Primus Minister constituta Gubernii subscribit"
+      }
+    ],
+    "referendum_initiative_valid": [
+      {
+        "status": "translation",
+        "text": "incohatio de referendo a subiecto potestatem habente denuntiata est"
+      }
+    ],
+    "representative_body_deputy": [
+      {
+        "status": "translation",
+        "text": "membrum Gubernii deputatus collegii repraesentantis est"
+      }
+    ],
+    "resignation_accepted": [
+      {
+        "status": "translation",
+        "text": "abdicatio Gubernii a Praeside accepta est"
+      }
+    ],
+    "resignation_decision_deadline_days": [
+      {
+        "status": "translation",
+        "text": "terminus de abdicatione denuntiata decernendi: decem dies"
+      }
+    ],
+    "resignation_decision_timely": [
+      {
+        "status": "translation",
+        "text": "de abdicatione intra terminum statutum decretum est"
+      }
+    ],
+    "voluntary_resignation_declared": [
+      {
+        "status": "translation",
+        "text": "dies quo Gubernium suo consilio abdicationem denuntiavit"
+      }
+    ],
+    "within_government_competence": [
+      {
+        "status": "translation",
+        "text": "actus intra fines competentiae Gubernii latus est"
+      }
+    ]
+  },
+  "language": "la",
+  "package": "kz.constitution.government"
+}

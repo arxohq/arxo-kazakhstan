@@ -1,0 +1,168 @@
+{
+  "assertions": [
+    {
+      "contentHash": "sha256:c84f10fac4bd3ba26263e52011fdfd042cf055fbc0fde51bc7942bbcb4669e6f",
+      "evidence": [],
+      "id": "urn:kz:constitution:amendment#referendum-half-turnout-0",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:demo:kz:referendum",
+            "kind": "entity_ref"
+          },
+          {
+            "id": "urn:demo:kz:amendment",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:amendment#referendum_for_amendment"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:amendment"
+    },
+    {
+      "contentHash": "sha256:d08a17f51cb8125d913ffcfe5a1a29a4c980910c64d530b7e1a51599ea6115e7",
+      "evidence": [],
+      "id": "urn:kz:constitution:amendment#referendum-half-turnout-1",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:demo:kz:referendum",
+            "kind": "entity_ref"
+          },
+          {
+            "kind": "value",
+            "type": {
+              "name": "urn:law:std#Integer"
+            },
+            "value": 10
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:amendment#eligible_referendum_citizens"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:amendment"
+    },
+    {
+      "contentHash": "sha256:e4edbadfd742a3351e910826fbffc7b02e499e9ac29805898c068c9e12d796ac",
+      "evidence": [],
+      "id": "urn:kz:constitution:amendment#referendum-half-turnout-2",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:demo:kz:referendum",
+            "kind": "entity_ref"
+          },
+          {
+            "kind": "value",
+            "type": {
+              "name": "urn:law:std#Integer"
+            },
+            "value": 5
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:amendment#referendum_participants"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:amendment"
+    },
+    {
+      "contentHash": "sha256:40d3780017e84f158fc497f4e52207eb1510f808b36c723b0c4ad71b88f2d530",
+      "evidence": [],
+      "id": "urn:kz:constitution:amendment#referendum-half-turnout-3",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:demo:kz:referendum",
+            "kind": "entity_ref"
+          },
+          {
+            "kind": "value",
+            "type": {
+              "name": "urn:law:std#Integer"
+            },
+            "value": 4
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:amendment#votes_for_amendment"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:amendment"
+    },
+    {
+      "contentHash": "sha256:dbdd79cfc75b08c980bdefb5064f010d7ba3664fc669058eebb2f93d9d283158",
+      "evidence": [],
+      "id": "urn:kz:constitution:amendment#referendum-half-turnout-4",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:demo:kz:referendum",
+            "kind": "entity_ref"
+          },
+          {
+            "kind": "value",
+            "type": {
+              "name": "urn:law:std#Integer"
+            },
+            "value": 14
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:amendment#approving_regions_cities_and_capital"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:amendment"
+    },
+    {
+      "contentHash": "sha256:5319a521bb835e7dce31009821a6fcf579052023d524a1c6716503211aedc1d6",
+      "evidence": [],
+      "id": "urn:kz:constitution:amendment#referendum-half-turnout-5",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:demo:kz:referendum",
+            "kind": "entity_ref"
+          },
+          {
+            "kind": "value",
+            "type": {
+              "name": "urn:law:std#Integer"
+            },
+            "value": 21
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:amendment#total_regions_cities_and_capital"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:amendment"
+    }
+  ],
+  "context": {
+    "decisionTime": "2026-09-01T12:00:00+05:00",
+    "knowledgeTime": "2026-09-01T12:00:00+05:00",
+    "legalTime": "2026-09-01",
+    "timezone": "Asia/Almaty"
+  },
+  "options": {
+    "selectedInterpretations": [
+      "urn:kz:constitution:amendment#ListItselfEntrenchedReading"
+    ]
+  }
+}

@@ -1,0 +1,914 @@
+{
+  "$comment": "哈萨克斯坦共和国宪法程序包的中文（简体）标签叠加层（DECISION-0070）。本文件不参与编译，也不进入 CLIR 规范字节，仅由展示层读取（lawref verbalize --labels、MCP 资源 law://<程序包>/verbalized/zh、工作台）。译文由形式化人员依据各节点的俄文标签（ru-KZ）译出，术语参照宪法学通用汉语表述，状态为 translation（工作译文），并非官方译本。键为声明的本地名称。",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "AcceptedResignationTerminatesGovernment": [
+      {
+        "status": "translation",
+        "text": "第六十九条第五款。辞职获得接受即意味着政府职权终止"
+      }
+    ],
+    "Bill": [
+      {
+        "status": "translation",
+        "text": "法律草案"
+      }
+    ],
+    "Government": [
+      {
+        "status": "translation",
+        "text": "哈萨克斯坦共和国政府"
+      }
+    ],
+    "GovernmentAccountableToKurultai": [
+      {
+        "status": "translation",
+        "text": "第六十三条。政府对库鲁尔泰负责"
+      }
+    ],
+    "GovernmentAccountableToParliament1995": [
+      {
+        "status": "translation",
+        "text": "第六十四条第二款（1995年版）。政府对议会负责"
+      }
+    ],
+    "GovernmentAccountableToPresident": [
+      {
+        "status": "translation",
+        "text": "第六十三条。政府对总统负责"
+      }
+    ],
+    "GovernmentAccountableToPresidentAndParliament1995": [
+      {
+        "status": "translation",
+        "text": "第六十四条第二款（1995年版）。政府对共和国总统负责"
+      }
+    ],
+    "GovernmentAct": [
+      {
+        "status": "translation",
+        "text": "政府文件"
+      }
+    ],
+    "GovernmentActBinding": [
+      {
+        "status": "translation",
+        "text": "第六十八条第一款和第三款。政府就其职权范围内事项作出的决议，在不与宪法、法律和总统文件相抵触时，在共和国全境具有约束力"
+      }
+    ],
+    "GovernmentActBinding/unless/0": [
+      {
+        "status": "translation",
+        "text": "第六十八条第一款和第三款。政府就其职权范围内事项作出的决议，在不与宪法、法律和总统文件相抵触时，在共和国全境具有约束力"
+      }
+    ],
+    "GovernmentActBinding1995": [
+      {
+        "status": "translation",
+        "text": "第六十九条第一款和第三款（1995年版）。政府决议在共和国全境具有约束力，并不得与宪法、立法文件和总统文件相抵触"
+      }
+    ],
+    "GovernmentDevelopsForeignPolicyMeasures": [
+      {
+        "status": "translation",
+        "text": "第六十五条第五款。政府拟订对外政策措施"
+      }
+    ],
+    "GovernmentDevelopsStatePolicy": [
+      {
+        "status": "translation",
+        "text": "第六十五条第一款。政府制定国家政策的基本方向"
+      }
+    ],
+    "GovernmentDevelopsStatePolicy1995": [
+      {
+        "status": "translation",
+        "text": "第六十六条第一项（1995年版）。政府制定社会经济政策、国防能力和安全的基本方向并组织实施"
+      }
+    ],
+    "GovernmentDirectsExecutiveBodies": [
+      {
+        "status": "translation",
+        "text": "第六十五条第六款。政府领导执行机关的活动"
+      }
+    ],
+    "GovernmentEnsuresBudgetExecution": [
+      {
+        "status": "translation",
+        "text": "第六十五条第二款。政府保障共和国预算的执行"
+      }
+    ],
+    "GovernmentExercisesExecutivePower": [
+      {
+        "status": "translation",
+        "text": "第六十三条。政府行使行政权"
+      }
+    ],
+    "GovernmentExercisesExecutivePower1995": [
+      {
+        "status": "translation",
+        "text": "第六十四条第一款（1995年版）。政府行使行政权并领导执行机关体系"
+      }
+    ],
+    "GovernmentFormedByPresident": [
+      {
+        "status": "translation",
+        "text": "第六十四条第一款。政府由哈萨克斯坦共和国总统按宪法规定的程序组成"
+      }
+    ],
+    "GovernmentHeadsExecutiveSystem": [
+      {
+        "status": "translation",
+        "text": "第六十三条。政府领导执行机关体系"
+      }
+    ],
+    "GovernmentIntroducesBillsAndExecutesLaws": [
+      {
+        "status": "translation",
+        "text": "第六十五条第三款。政府提出法律草案并保障法律的执行"
+      }
+    ],
+    "GovernmentManagesStateProperty": [
+      {
+        "status": "translation",
+        "text": "第六十五条第四款。政府组织国有财产的管理"
+      }
+    ],
+    "GovernmentMayCancelExecutiveActs1995": [
+      {
+        "status": "translation",
+        "text": "第六十六条第七项（1995年版）。政府撤销或者中止各部和其他执行机关文件的效力"
+      }
+    ],
+    "GovernmentMayCancelExecutiveBodyActs": [
+      {
+        "status": "translation",
+        "text": "第六十五条第六款。政府可以撤销或者中止执行机关文件的效力"
+      }
+    ],
+    "GovernmentMember": [
+      {
+        "status": "translation",
+        "text": "政府成员"
+      }
+    ],
+    "GovernmentMemberBoardConflict": [
+      {
+        "status": "translation",
+        "text": "第六十七条第二款。政府成员不得担任商业组织领导机关或者监事会的成员，属于其职务义务的除外"
+      }
+    ],
+    "GovernmentMemberBoardConflict/unless/0": [
+      {
+        "status": "translation",
+        "text": "第六十七条第二款。政府成员不得担任商业组织领导机关或者监事会的成员，属于其职务义务的除外"
+      }
+    ],
+    "GovernmentMemberBusinessConflict": [
+      {
+        "status": "translation",
+        "text": "第六十七条第二款。政府成员不得从事经营活动"
+      }
+    ],
+    "GovernmentMemberIncompatible1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "第六十八条第二款（1995年版）。政府成员不得担任议员，不得担任教学、科研或者其他创作活动以外的其他有报酬职务，并不得从事经营活动"
+      }
+    ],
+    "GovernmentMemberIncompatible1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "第六十八条第二款（1995年版）。政府成员不得担任议员，不得担任教学、科研或者其他创作活动以外的其他有报酬职务，并不得从事经营活动"
+      }
+    ],
+    "GovernmentMemberIncompatible1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "第六十八条第二款（1995年版）。政府成员不得担任议员，不得担任教学、科研或者其他创作活动以外的其他有报酬职务，并不得从事经营活动"
+      }
+    ],
+    "GovernmentMemberPaidPositionConflict": [
+      {
+        "status": "translation",
+        "text": "第六十七条第二款。政府成员不得担任教学、科研和创作活动以外的其他有报酬职务"
+      }
+    ],
+    "GovernmentMemberPaidPositionConflict/unless/0": [
+      {
+        "status": "translation",
+        "text": "第六十七条第二款。政府成员不得担任教学、科研和创作活动以外的其他有报酬职务"
+      }
+    ],
+    "GovernmentMemberRepresentativeMandateConflict": [
+      {
+        "status": "translation",
+        "text": "第六十七条第二款。政府成员不得担任代表机关的议员"
+      }
+    ],
+    "GovernmentOathToPeopleAndPresident1995": [
+      {
+        "status": "translation",
+        "text": "第六十五条第三款（1995年版）。政府成员向哈萨克斯坦人民和总统宣誓"
+      }
+    ],
+    "GovernmentSetsUnifiedPublicPaySystemWithPresident": [
+      {
+        "status": "translation",
+        "text": "第六十五条第七款。政府经与总统协商一致，核准公共机关统一的经费保障和薪酬制度"
+      }
+    ],
+    "GovernmentStructureProposalTenDays": [
+      {
+        "status": "translation",
+        "text": "第六十四条第二款。关于政府结构和组成的建议，应当在总理任命后十日内提请总统"
+      }
+    ],
+    "GovernmentStructureProposalTenDays1995": [
+      {
+        "status": "translation",
+        "text": "第六十五条第二款（1995年版）。关于政府结构和组成的建议，由总理在其任命后十日内提出"
+      }
+    ],
+    "GovernmentSubmitsBudget1995": [
+      {
+        "status": "translation",
+        "text": "第六十六条第二项（1995年版）。政府向议会提交共和国预算及其执行情况报告"
+      }
+    ],
+    "GovernmentSubmitsBudgetAndReport": [
+      {
+        "status": "translation",
+        "text": "第六十五条第二款。政府提交共和国预算及其执行情况报告"
+      }
+    ],
+    "Kurultai": [
+      {
+        "status": "translation",
+        "text": "哈萨克斯坦共和国库鲁尔泰"
+      }
+    ],
+    "Mazhilis": [
+      {
+        "status": "translation",
+        "text": "议会马日利斯（1995年版）"
+      }
+    ],
+    "MemberAccountableToChambers1995": [
+      {
+        "status": "translation",
+        "text": "第六十四条第三款（1995年版）。在宪法第五十七条第六项规定的情形下，政府成员对议会各院负责"
+      }
+    ],
+    "MemberPersonallyResponsible1995": [
+      {
+        "status": "translation",
+        "text": "第六十八条第一款（1995年版）。政府成员独立作出决定，并对总理承担个人责任"
+      }
+    ],
+    "NoConfidenceRequiresResignation": [
+      {
+        "status": "translation",
+        "text": "第六十九条第三款。库鲁尔泰通过不信任案的，政府应当向总统提出辞职"
+      }
+    ],
+    "NoConfidenceRequiresResignation1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "第七十条第三款（1995年版）。马日利斯或者议会通过不信任案的，政府应当向总统提出辞职"
+      }
+    ],
+    "NoConfidenceRequiresResignation1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "第七十条第三款（1995年版）。马日利斯或者议会通过不信任案的，政府应当向总统提出辞职"
+      }
+    ],
+    "Parliament": [
+      {
+        "status": "translation",
+        "text": "哈萨克斯坦共和国议会（1995年版）"
+      }
+    ],
+    "PeoplesCouncil": [
+      {
+        "status": "translation",
+        "text": "哈萨克斯坦人民委员会（Қазақстан Халық Кеңесі）"
+      }
+    ],
+    "PeoplesCouncilConstitutionalStatus": [
+      {
+        "status": "translation",
+        "text": "第七十条第一款。哈萨克斯坦人民委员会为最高咨询机关"
+      }
+    ],
+    "PeoplesCouncilLegislativeInitiative": [
+      {
+        "status": "translation",
+        "text": "第七十一条第二项。哈萨克斯坦人民委员会向库鲁尔泰提出法律草案"
+      }
+    ],
+    "PeoplesCouncilMembersAreCitizens": [
+      {
+        "status": "translation",
+        "text": "第七十条第二款。人民委员会由哈萨克斯坦公民组成"
+      }
+    ],
+    "PeoplesCouncilReferendumInitiative": [
+      {
+        "status": "translation",
+        "text": "第七十一条第三项。哈萨克斯坦人民委员会提出举行全民公决的动议"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "自然人"
+      }
+    ],
+    "PolicyDisagreementRequiresResignation": [
+      {
+        "status": "translation",
+        "text": "第六十七条第一款。政府成员不赞同所奉行政策的，应当辞职或者被免去职务"
+      }
+    ],
+    "PolicyDisagreementRequiresResignation1995": [
+      {
+        "status": "translation",
+        "text": "第六十八条第一款（1995年版）。政府成员不赞同所奉行政策或者不予执行的，应当辞职或者被免去职务"
+      }
+    ],
+    "President": [
+      {
+        "status": "translation",
+        "text": "哈萨克斯坦共和国总统"
+      }
+    ],
+    "PresidentialMemberRelease1995": [
+      {
+        "status": "translation",
+        "text": "第七十条第七款（1995年版）。总统有权免去任何政府成员的职务"
+      }
+    ],
+    "PresidentialOwnInitiativeTermination1995": [
+      {
+        "status": "translation",
+        "text": "第七十条第七款（1995年版）。总统有权自行决定终止政府的职权"
+      }
+    ],
+    "PrimeMinister": [
+      {
+        "status": "translation",
+        "text": "哈萨克斯坦共和国总理"
+      }
+    ],
+    "PrimeMinisterDirectsGovernment": [
+      {
+        "status": "translation",
+        "text": "第六十六条。总理组织并领导政府的活动"
+      }
+    ],
+    "PrimeMinisterDirectsGovernment1995": [
+      {
+        "status": "translation",
+        "text": "第六十七条第一项（1995年版）。总理组织并领导政府的活动，对政府工作承担个人责任"
+      }
+    ],
+    "PrimeMinisterOrderBinding1995": [
+      {
+        "status": "translation",
+        "text": "第六十九条第二款和第三款（1995年版）。总理的命令在共和国全境具有约束力，并不得与宪法和总统文件相抵触"
+      }
+    ],
+    "PrimeMinisterPersonallyResponsible": [
+      {
+        "status": "translation",
+        "text": "第六十六条。总理对政府工作承担个人责任"
+      }
+    ],
+    "PrimeMinisterReleaseTerminatesGovernment1995": [
+      {
+        "status": "translation",
+        "text": "第七十条第七款（1995年版）。免去总理职务即意味着全体政府职权终止"
+      }
+    ],
+    "PrimeMinisterReportsToPresidentAndKurultai": [
+      {
+        "status": "translation",
+        "text": "第六十六条。总理就政府活动的基本方向和最重要决定向总统和库鲁尔泰报告"
+      }
+    ],
+    "PrimeMinisterResignationTerminatesWholeGovernment": [
+      {
+        "status": "translation",
+        "text": "第六十九条第五款。接受总理辞职即意味着全体政府职权终止"
+      }
+    ],
+    "PrimeMinisterSignsGovernmentResolutions": [
+      {
+        "status": "translation",
+        "text": "第六十六条。总理签署政府决议"
+      }
+    ],
+    "RelinquishPowersBeforeNewKurultai": [
+      {
+        "status": "translation",
+        "text": "第六十九条第一款。政府在新当选的库鲁尔泰面前辞去职权"
+      }
+    ],
+    "RelinquishPowersBeforeNewMazhilis1995": [
+      {
+        "status": "translation",
+        "text": "第七十条第一款（1995年版）。政府在新当选的议会马日利斯面前辞去职权"
+      }
+    ],
+    "ResignationDecisionTenDays": [
+      {
+        "status": "translation",
+        "text": "第六十九条第四款。总统在十日内就接受或者驳回辞职作出审议"
+      }
+    ],
+    "bill_introduced_to_kurultai": [
+      {
+        "status": "translation",
+        "text": "法律草案已依立法动议权提交库鲁尔泰"
+      }
+    ],
+    "citizen": [
+      {
+        "status": "translation",
+        "text": "该人是哈萨克斯坦共和国公民"
+      }
+    ],
+    "commercial_board_membership": [
+      {
+        "status": "translation",
+        "text": "政府成员担任商业组织领导机关的成员"
+      }
+    ],
+    "contradicts_constitution_law_or_presidential_act": [
+      {
+        "status": "translation",
+        "text": "该文件与宪法、法律或者总统文件相抵触"
+      }
+    ],
+    "entrepreneurial_activity": [
+      {
+        "status": "translation",
+        "text": "政府成员从事经营活动"
+      }
+    ],
+    "government": [
+      {
+        "status": "translation",
+        "text": "该机关是共和国政府"
+      }
+    ],
+    "government_accountable_to_kurultai": [
+      {
+        "status": "translation",
+        "text": "政府对库鲁尔泰负责"
+      }
+    ],
+    "government_accountable_to_parliament_1995": [
+      {
+        "status": "translation",
+        "text": "政府对议会负责（1995年版）"
+      }
+    ],
+    "government_accountable_to_president": [
+      {
+        "status": "translation",
+        "text": "政府对总统负责"
+      }
+    ],
+    "government_accountable_to_president_1995": [
+      {
+        "status": "translation",
+        "text": "政府对总统负责（1995年版）"
+      }
+    ],
+    "government_act": [
+      {
+        "status": "translation",
+        "text": "该文件由政府作出"
+      }
+    ],
+    "government_act_1995": [
+      {
+        "status": "translation",
+        "text": "该文件由政府作出（1995年版）"
+      }
+    ],
+    "government_act_binding": [
+      {
+        "status": "translation",
+        "text": "政府文件在共和国全境具有约束力"
+      }
+    ],
+    "government_act_binding_1995": [
+      {
+        "status": "translation",
+        "text": "政府决议在共和国全境具有约束力（1995年版）"
+      }
+    ],
+    "government_develops_foreign_policy_measures": [
+      {
+        "status": "translation",
+        "text": "政府拟订推行对外政策的措施"
+      }
+    ],
+    "government_develops_state_policy": [
+      {
+        "status": "translation",
+        "text": "政府制定国家政策的基本方向"
+      }
+    ],
+    "government_directs_executive_bodies": [
+      {
+        "status": "translation",
+        "text": "政府领导执行机关的活动"
+      }
+    ],
+    "government_ensures_budget_execution": [
+      {
+        "status": "translation",
+        "text": "政府保障共和国预算的执行"
+      }
+    ],
+    "government_exercises_executive_power": [
+      {
+        "status": "translation",
+        "text": "政府行使共和国行政权"
+      }
+    ],
+    "government_formed_by_president": [
+      {
+        "status": "translation",
+        "text": "政府由共和国总统组成"
+      }
+    ],
+    "government_heads_executive_system": [
+      {
+        "status": "translation",
+        "text": "政府领导执行机关体系"
+      }
+    ],
+    "government_introduces_bills_and_executes_laws": [
+      {
+        "status": "translation",
+        "text": "政府提出法律草案并保障法律的执行"
+      }
+    ],
+    "government_manages_state_property": [
+      {
+        "status": "translation",
+        "text": "政府管理国有财产"
+      }
+    ],
+    "government_may_cancel_executive_body_acts": [
+      {
+        "status": "translation",
+        "text": "政府有权撤销执行机关的文件"
+      }
+    ],
+    "government_membership_incompatible": [
+      {
+        "status": "translation",
+        "text": "担任政府成员与其所任职务或者所从事活动不相容"
+      }
+    ],
+    "government_no_confidence": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰对政府通过不信任案"
+      }
+    ],
+    "government_oath_to_people_and_president_1995": [
+      {
+        "status": "translation",
+        "text": "政府成员应当向人民和总统宣誓（1995年版）"
+      }
+    ],
+    "government_policy_disagreement": [
+      {
+        "status": "translation",
+        "text": "政府成员不赞同政府所奉行的政策"
+      }
+    ],
+    "government_powers_relinquished": [
+      {
+        "status": "translation",
+        "text": "政府在新当选的库鲁尔泰面前辞去职权"
+      }
+    ],
+    "government_powers_terminated": [
+      {
+        "status": "translation",
+        "text": "政府职权已终止"
+      }
+    ],
+    "government_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "政府职权已终止（1995年版）"
+      }
+    ],
+    "government_proposal_date": [
+      {
+        "status": "translation",
+        "text": "提出政府结构和组成建议之日"
+      }
+    ],
+    "government_proposal_deadline_days": [
+      {
+        "status": "translation",
+        "text": "提出政府结构和组成建议的期限为十日"
+      }
+    ],
+    "government_proposal_timely": [
+      {
+        "status": "translation",
+        "text": "关于政府结构和组成的建议已按期提出"
+      }
+    ],
+    "government_sets_unified_public_pay_system_with_president": [
+      {
+        "status": "translation",
+        "text": "政府经与总统协商一致核准国家机关统一的薪酬制度"
+      }
+    ],
+    "government_structure_proposal": [
+      {
+        "status": "translation",
+        "text": "总理已提出关于政府结构和组成的建议"
+      }
+    ],
+    "government_submits_budget_and_report": [
+      {
+        "status": "translation",
+        "text": "政府提交共和国预算及其执行情况报告"
+      }
+    ],
+    "mazhilis_no_confidence": [
+      {
+        "status": "translation",
+        "text": "马日利斯对政府通过不信任案（1995年版）"
+      }
+    ],
+    "member_accountable_to_chambers_1995": [
+      {
+        "status": "translation",
+        "text": "政府成员对议会各院负责（1995年版）"
+      }
+    ],
+    "member_decides_within_competence": [
+      {
+        "status": "translation",
+        "text": "政府成员在其职权范围内作出决定"
+      }
+    ],
+    "member_of_government": [
+      {
+        "status": "translation",
+        "text": "该人为政府组成人员"
+      }
+    ],
+    "member_personally_responsible_1995": [
+      {
+        "status": "translation",
+        "text": "政府成员对所属机关的活动承担个人责任（1995年版）"
+      }
+    ],
+    "member_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "政府成员的职权已终止（1995年版）"
+      }
+    ],
+    "member_resignation_submitted": [
+      {
+        "status": "translation",
+        "text": "政府成员应当提出辞职申请"
+      }
+    ],
+    "minister_report_obligation_triggered": [
+      {
+        "status": "translation",
+        "text": "政府成员向议会某院作出报告的事由已经发生（1995年版）"
+      }
+    ],
+    "new_kurultai_elected": [
+      {
+        "status": "translation",
+        "text": "新一届库鲁尔泰已经选出"
+      }
+    ],
+    "new_mazhilis_elected": [
+      {
+        "status": "translation",
+        "text": "新一届马日利斯已经选出（1995年版）"
+      }
+    ],
+    "no_confidence_resignation_declared": [
+      {
+        "status": "translation",
+        "text": "通过不信任案时政府应当提出辞职"
+      }
+    ],
+    "oath_taken_by_member": [
+      {
+        "status": "translation",
+        "text": "政府成员已宣誓"
+      }
+    ],
+    "official_duty_exception": [
+      {
+        "status": "translation",
+        "text": "参加商业组织机关属于其职务义务"
+      }
+    ],
+    "paid_external_position": [
+      {
+        "status": "translation",
+        "text": "政府成员担任其他有报酬职务"
+      }
+    ],
+    "parliament_no_confidence": [
+      {
+        "status": "translation",
+        "text": "议会对政府通过不信任案（1995年版）"
+      }
+    ],
+    "peoples_council": [
+      {
+        "status": "translation",
+        "text": "该机关是哈萨克斯坦人民委员会"
+      }
+    ],
+    "peoples_council_bill": [
+      {
+        "status": "translation",
+        "text": "人民委员会已提出法律草案"
+      }
+    ],
+    "peoples_council_highest_consultative_body": [
+      {
+        "status": "translation",
+        "text": "人民委员会是最高咨询协商机关"
+      }
+    ],
+    "peoples_council_member": [
+      {
+        "status": "translation",
+        "text": "该人为人民委员会组成人员"
+      }
+    ],
+    "peoples_council_membership_constitutionally_valid": [
+      {
+        "status": "translation",
+        "text": "人民委员会的组成人员资格符合宪法要求"
+      }
+    ],
+    "peoples_council_referendum_initiative": [
+      {
+        "status": "translation",
+        "text": "人民委员会已提出举行全民公决的动议"
+      }
+    ],
+    "permitted_teaching_science_or_creative_work": [
+      {
+        "status": "translation",
+        "text": "该项活动属于准许从事的教学、科研或者其他创作活动"
+      }
+    ],
+    "president": [
+      {
+        "status": "translation",
+        "text": "该人是共和国总统"
+      }
+    ],
+    "presidential_member_release": [
+      {
+        "status": "translation",
+        "text": "总统已免去政府成员的职务（1995年版）"
+      }
+    ],
+    "presidential_own_initiative_termination": [
+      {
+        "status": "translation",
+        "text": "总统自行决定终止了政府的职权（1995年版）"
+      }
+    ],
+    "presidential_resignation_decision": [
+      {
+        "status": "translation",
+        "text": "总统就所提出的辞职作出决定之日"
+      }
+    ],
+    "prime_minister": [
+      {
+        "status": "translation",
+        "text": "该人是总理"
+      }
+    ],
+    "prime_minister_appointment_date": [
+      {
+        "status": "translation",
+        "text": "总理受任命之日"
+      }
+    ],
+    "prime_minister_directs_government": [
+      {
+        "status": "translation",
+        "text": "总理组织并领导政府的活动"
+      }
+    ],
+    "prime_minister_order": [
+      {
+        "status": "translation",
+        "text": "该文件是总理的命令"
+      }
+    ],
+    "prime_minister_order_binding_1995": [
+      {
+        "status": "translation",
+        "text": "总理的命令在共和国全境具有约束力（1995年版）"
+      }
+    ],
+    "prime_minister_personally_responsible": [
+      {
+        "status": "translation",
+        "text": "总理对政府的活动承担个人责任"
+      }
+    ],
+    "prime_minister_released": [
+      {
+        "status": "translation",
+        "text": "总理已被免去职务（1995年版）"
+      }
+    ],
+    "prime_minister_reports_to_president_and_kurultai": [
+      {
+        "status": "translation",
+        "text": "总理就政府活动的基本方向向总统和库鲁尔泰报告"
+      }
+    ],
+    "prime_minister_resignation_accepted": [
+      {
+        "status": "translation",
+        "text": "总理的辞职已被接受"
+      }
+    ],
+    "prime_minister_signs_government_resolutions": [
+      {
+        "status": "translation",
+        "text": "总理签署政府决议"
+      }
+    ],
+    "referendum_initiative_valid": [
+      {
+        "status": "translation",
+        "text": "全民公决动议由有权主体提出"
+      }
+    ],
+    "representative_body_deputy": [
+      {
+        "status": "translation",
+        "text": "政府成员是代表机关的议员"
+      }
+    ],
+    "resignation_accepted": [
+      {
+        "status": "translation",
+        "text": "政府的辞职已经总统接受"
+      }
+    ],
+    "resignation_decision_deadline_days": [
+      {
+        "status": "translation",
+        "text": "就所提出的辞职作出决定的期限为十日"
+      }
+    ],
+    "resignation_decision_timely": [
+      {
+        "status": "translation",
+        "text": "已在规定期限内就辞职作出决定"
+      }
+    ],
+    "voluntary_resignation_declared": [
+      {
+        "status": "translation",
+        "text": "政府自行决定提出辞职之日"
+      }
+    ],
+    "within_government_competence": [
+      {
+        "status": "translation",
+        "text": "该文件系在政府职权范围内作出"
+      }
+    ]
+  },
+  "language": "zh",
+  "package": "kz.constitution.government"
+}

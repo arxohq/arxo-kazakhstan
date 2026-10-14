@@ -1,0 +1,625 @@
+[
+  {
+    "name": "rights-2026",
+    "world": "rights",
+    "owner": "rights",
+    "title": "Twelve liberties in the 2026 edition",
+    "sourceSuite": "packages/rights/tests/02-liberties-immunities-positions.lawtest",
+    "sourceTest": "urn:query:kzcr-liberty-active-1",
+    "queryStep": 0,
+    "expectations": [
+      {
+        "field": "evaluation_status",
+        "op": "eq",
+        "value": "COMPUTED"
+      },
+      {
+        "field": "result_kind",
+        "op": "eq",
+        "value": "NORM_POSITION"
+      },
+      {
+        "allowed": [],
+        "negated": false,
+        "observation": "issues_within",
+        "value": "info"
+      },
+      {
+        "negated": false,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution:rights#MoveWithinKazakhstan"
+      },
+      {
+        "negated": false,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution:rights#ExitKazakhstan"
+      },
+      {
+        "negated": false,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution:rights#ReturnToKazakhstan"
+      },
+      {
+        "negated": false,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution:rights#JoinAssociation"
+      },
+      {
+        "negated": false,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution:rights#ParticipateInPeacefulAssembly"
+      },
+      {
+        "negated": false,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution:rights#ParticipateInStateGovernance"
+      },
+      {
+        "negated": false,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution:rights#DeclareNationalIdentity"
+      },
+      {
+        "negated": false,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution:rights#UseNativeLanguageAndCulture"
+      },
+      {
+        "negated": false,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution:rights#ExerciseFreedomOfConscience"
+      },
+      {
+        "negated": false,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution:rights#ChooseOccupationFreely"
+      },
+      {
+        "negated": false,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution:rights#ResolveLabourDispute"
+      },
+      {
+        "negated": false,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution:rights#ConductEnterprise"
+      }
+    ],
+    "legalTime": "2026-09-01",
+    "evaluationStatus": "COMPUTED",
+    "resultKind": "NORM_POSITION",
+    "truthStatus": null,
+    "resultHash": "sha256:23bc6c4b617e41668af2a53fa05a0c8fd9c0cff353b2b5537b73b4799cc2fdf5"
+  },
+  {
+    "name": "edition-before",
+    "world": "rights",
+    "owner": "rights",
+    "title": "30 June 2026: the historical rights edition",
+    "sourceSuite": "packages/rights/tests/04-editions-1995-positions.lawtest",
+    "sourceTest": "urn:query:kzcr-edition-pair-before-1",
+    "queryStep": 0,
+    "expectations": [
+      {
+        "allowed": [],
+        "negated": false,
+        "observation": "issues_within",
+        "value": "info"
+      },
+      {
+        "negated": false,
+        "observation": "issue",
+        "value": "EDITION_NOT_APPLICABLE"
+      },
+      {
+        "negated": false,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution:rights#PayLawfulTaxes1995"
+      },
+      {
+        "negated": false,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution:rights#RespectConstitutionAndLaw1995"
+      },
+      {
+        "negated": false,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution:rights#DefendKazakhstan1995"
+      },
+      {
+        "negated": false,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution:rights#ChooseOccupationFreely1995"
+      },
+      {
+        "negated": false,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution:rights#ExitKazakhstan1995"
+      },
+      {
+        "negated": false,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution:rights#ParticipateInStateGovernance1995"
+      },
+      {
+        "negated": true,
+        "observation": "position",
+        "status": "PENDING",
+        "value": "urn:kz:constitution:rights#PayLawfulTaxes"
+      },
+      {
+        "negated": true,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution:rights#PayLawfulTaxes"
+      },
+      {
+        "negated": true,
+        "observation": "position",
+        "status": "CREATED",
+        "value": "urn:kz:constitution:rights#ChooseOccupationFreely"
+      },
+      {
+        "negated": true,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution:rights#ChooseOccupationFreely"
+      }
+    ],
+    "legalTime": "2026-06-30",
+    "evaluationStatus": "COMPUTED",
+    "resultKind": "NORM_POSITION",
+    "truthStatus": null,
+    "resultHash": "sha256:4efcd58543d81582f69fc03fd6a88771088d65bf2d69310255a955576bdc8138"
+  },
+  {
+    "name": "edition-after",
+    "world": "rights",
+    "owner": "rights",
+    "title": "1 July 2026: the new rights edition",
+    "sourceSuite": "packages/rights/tests/04-editions-1995-positions.lawtest",
+    "sourceTest": "urn:query:kzcr-edition-pair-after-1",
+    "queryStep": 0,
+    "expectations": [
+      {
+        "allowed": [],
+        "negated": false,
+        "observation": "issues_within",
+        "value": "info"
+      },
+      {
+        "negated": false,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution:rights#PayLawfulTaxes"
+      },
+      {
+        "negated": false,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution:rights#RespectConstitutionAndLaw"
+      },
+      {
+        "negated": false,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution:rights#DefendKazakhstan"
+      },
+      {
+        "negated": false,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution:rights#ChooseOccupationFreely"
+      },
+      {
+        "negated": false,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution:rights#ExitKazakhstan"
+      },
+      {
+        "negated": false,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution:rights#ParticipateInStateGovernance"
+      },
+      {
+        "negated": false,
+        "observation": "issue",
+        "value": "EDITION_NOT_APPLICABLE"
+      },
+      {
+        "negated": true,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution:rights#PayLawfulTaxes1995"
+      },
+      {
+        "negated": true,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution:rights#ChooseOccupationFreely1995"
+      },
+      {
+        "negated": true,
+        "observation": "position",
+        "status": "EXPIRED",
+        "value": "urn:kz:constitution:rights#ChooseOccupationFreely1995"
+      }
+    ],
+    "legalTime": "2026-07-01",
+    "evaluationStatus": "COMPUTED",
+    "resultKind": "NORM_POSITION",
+    "truthStatus": null,
+    "resultHash": "sha256:6d0d4f1a46026079f2760b64f6f83717f5636151123673500df96558ae331b60"
+  },
+  {
+    "name": "signature-in-time",
+    "world": "president",
+    "owner": "president",
+    "title": "Presidential signature within one calendar month",
+    "sourceSuite": "packages/president/tests/01-positions.lawtest",
+    "sourceTest": "urn:query:kzcp-1",
+    "queryStep": 1,
+    "expectations": [
+      {
+        "field": "truth_status",
+        "op": "eq",
+        "value": "TRUE_ONLY"
+      }
+    ],
+    "legalTime": "2026-09-01",
+    "evaluationStatus": "COMPUTED",
+    "resultKind": "PROPOSITION",
+    "truthStatus": "TRUE_ONLY",
+    "resultHash": "sha256:6bf6b6d131e599afb2cadc7b89878e91682211d052d538113fa9841aab3bd482"
+  },
+  {
+    "name": "signature-late",
+    "world": "president",
+    "owner": "president",
+    "title": "Signature after the calendar-month deadline",
+    "sourceSuite": "packages/president/tests/01-positions.lawtest",
+    "sourceTest": "urn:query:kzcp-2",
+    "queryStep": 1,
+    "expectations": [
+      {
+        "field": "truth_status",
+        "op": "eq",
+        "value": "NEITHER"
+      },
+      {
+        "negated": false,
+        "observation": "issue",
+        "value": "POWER_INVALID_EXERCISE"
+      }
+    ],
+    "legalTime": "2026-09-20",
+    "evaluationStatus": "COMPUTED",
+    "resultKind": "PROPOSITION",
+    "truthStatus": "NEITHER",
+    "resultHash": "sha256:1b9d7533c558dac29031ea9e51e79dd21ae3802d600035ee308e50a0d6d124a5"
+  },
+  {
+    "name": "deputy-immunity",
+    "world": "kurultai",
+    "owner": "kurultai",
+    "title": "Deputy immunity without an exception",
+    "sourceSuite": "packages/kurultai/tests/01-positions.lawtest",
+    "sourceTest": "urn:query:kzck-2",
+    "queryStep": 0,
+    "expectations": [
+      {
+        "negated": false,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution:kurultai#DeputyPersonalImmunity"
+      }
+    ],
+    "legalTime": "2026-09-01",
+    "evaluationStatus": "COMPUTED",
+    "resultKind": "NORM_POSITION",
+    "truthStatus": null,
+    "resultHash": "sha256:5dd0c7e3ac1fa092afb0e4d6cf58558345d64db2c2aa6857b4a56e6120aefcdf"
+  },
+  {
+    "name": "deputy-caught-at-scene",
+    "world": "kurultai",
+    "owner": "kurultai",
+    "title": "Caught at the crime scene: the immunity exception",
+    "sourceSuite": "packages/kurultai/tests/01-positions.lawtest",
+    "sourceTest": "urn:query:kzck-4",
+    "queryStep": 0,
+    "expectations": [
+      {
+        "negated": true,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution:kurultai#DeputyPersonalImmunity"
+      }
+    ],
+    "legalTime": "2026-09-01",
+    "evaluationStatus": "COMPUTED",
+    "resultKind": "NORM_POSITION",
+    "truthStatus": null,
+    "resultHash": "sha256:fe9f1a93efdf48d2ee953c24087cf69e18d081c4813e4bc6dfa6de782d681b99"
+  },
+  {
+    "name": "court-administers-justice",
+    "world": "court",
+    "owner": "court",
+    "title": "A court handles the case",
+    "sourceSuite": "packages/court/tests/01-positions.lawtest",
+    "sourceTest": "urn:query:kzcc-2",
+    "queryStep": 1,
+    "expectations": [
+      {
+        "field": "truth_status",
+        "op": "eq",
+        "value": "TRUE_ONLY"
+      }
+    ],
+    "legalTime": "2026-09-01",
+    "evaluationStatus": "COMPUTED",
+    "resultKind": "PROPOSITION",
+    "truthStatus": "TRUE_ONLY",
+    "resultHash": "sha256:e0848989751417f674554355b5cc41fe4e7be40438b73fdc20998d798d9d8346"
+  },
+  {
+    "name": "historical-president",
+    "world": "president1995",
+    "owner": "president1995",
+    "title": "Historical presidential powers",
+    "sourceSuite": "historical/president-1995/tests/01-positions.lawtest",
+    "sourceTest": "urn:query:kzp95-1",
+    "queryStep": 0,
+    "expectations": [
+      {
+        "allowed": [],
+        "negated": false,
+        "observation": "issues_within",
+        "value": "info"
+      },
+      {
+        "negated": false,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution1995:president#SignPresentedLaw1995"
+      },
+      {
+        "negated": false,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution1995:president#ReturnLawForReconsideration1995"
+      },
+      {
+        "negated": false,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution1995:president#PresidentialInviolability1995"
+      },
+      {
+        "negated": false,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution1995:president#PresidentialLiabilityOnlyForTreason1995"
+      }
+    ],
+    "legalTime": "2020-01-01",
+    "evaluationStatus": "COMPUTED",
+    "resultKind": "NORM_POSITION",
+    "truthStatus": null,
+    "resultHash": "sha256:daa7a85db7763e07539ea70d5cf709fd77e847cba296e436c827fba047a3800d"
+  },
+  {
+    "name": "historical-parliament",
+    "world": "constitution-1995",
+    "owner": "constitution-1995",
+    "title": "Historical bicameral parliamentary powers",
+    "sourceSuite": "examples/scenarios/historical-parliament.lawtest",
+    "sourceTest": "urn:query:kzq95-1",
+    "queryStep": 0,
+    "expectations": [
+      {
+        "allowed": [],
+        "negated": false,
+        "observation": "issues_within",
+        "value": "info"
+      },
+      {
+        "negated": false,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution1995:parliament#DissolveParliament1995"
+      },
+      {
+        "negated": true,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution1995:parliament#NoDissolutionInEmergency1995"
+      },
+      {
+        "negated": true,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution1995:parliament#NoDissolutionInLastSixMonths1995"
+      },
+      {
+        "negated": true,
+        "observation": "position",
+        "status": "ACTIVE",
+        "value": "urn:kz:constitution1995:parliament#NoDissolutionWithinYearAfterPrior1995"
+      }
+    ],
+    "legalTime": "2020-01-01",
+    "evaluationStatus": "COMPUTED",
+    "resultKind": "NORM_POSITION",
+    "truthStatus": null,
+    "resultHash": "sha256:9a9bf2b4b46dac24b660ca2676a9e575a86ad36fa8ef89fc75cbd59d66ac25fc"
+  },
+  {
+    "name": "referendum-passes",
+    "world": "constitution-2026",
+    "owner": "amendment",
+    "title": "Turnout above half, approval above half, territories at two thirds",
+    "sourceSuite": "examples/scenarios/amendment.lawtest",
+    "sourceTest": "referendum-passes",
+    "queryStep": 0,
+    "expectations": [
+      {
+        "field": "truth_status",
+        "op": "eq",
+        "value": "TRUE_ONLY"
+      }
+    ],
+    "legalTime": "2026-09-01",
+    "evaluationStatus": "COMPUTED",
+    "resultKind": "PROPOSITION",
+    "truthStatus": "TRUE_ONLY",
+    "resultHash": "sha256:f37d74e13b9012df3f10ee877590dc5a36f9f782f4c138a1c9397294a4a9662f"
+  },
+  {
+    "name": "referendum-half-turnout",
+    "world": "amendment",
+    "owner": "amendment",
+    "title": "Exactly half turnout does not establish the referendum",
+    "sourceSuite": "examples/scenarios/amendment.lawtest",
+    "sourceTest": "referendum-half-turnout",
+    "queryStep": 0,
+    "expectations": [
+      {
+        "field": "truth_status",
+        "op": "eq",
+        "value": "NEITHER"
+      }
+    ],
+    "legalTime": "2026-09-01",
+    "evaluationStatus": "COMPUTED",
+    "resultKind": "PROPOSITION",
+    "truthStatus": "NEITHER",
+    "resultHash": "sha256:e6137b962d332a7c510b17695d2156d424899d93499005b8f9f5de770ccc9a93"
+  },
+  {
+    "name": "government-business-conflict",
+    "world": "government",
+    "owner": "government",
+    "title": "Government membership and entrepreneurial activity",
+    "sourceSuite": "examples/scenarios/government.lawtest",
+    "sourceTest": "government-business-conflict",
+    "queryStep": 0,
+    "expectations": [
+      {
+        "field": "truth_status",
+        "op": "eq",
+        "value": "TRUE_ONLY"
+      }
+    ],
+    "legalTime": "2026-09-01",
+    "evaluationStatus": "COMPUTED",
+    "resultKind": "PROPOSITION",
+    "truthStatus": "TRUE_ONLY",
+    "resultHash": "sha256:95be8a16bc679bf80cfa200d63c9c98ee147a9c378e14e29fe13d5030d4807c9"
+  },
+  {
+    "name": "government-teaching-exception",
+    "world": "government",
+    "owner": "government",
+    "title": "Permitted teaching defeats the paid-position conflict",
+    "sourceSuite": "examples/scenarios/government.lawtest",
+    "sourceTest": "government-teaching-exception",
+    "queryStep": 0,
+    "expectations": [
+      {
+        "field": "truth_status",
+        "op": "eq",
+        "value": "NEITHER"
+      }
+    ],
+    "legalTime": "2026-09-01",
+    "evaluationStatus": "COMPUTED",
+    "resultKind": "PROPOSITION",
+    "truthStatus": "NEITHER",
+    "resultHash": "sha256:39b376f85a3ea6fa4f9274cf685e688431d0b5f4ae44f4653128c98702aec711"
+  },
+  {
+    "name": "fact-missing",
+    "world": "government",
+    "owner": "government",
+    "title": "Missing entrepreneurial-activity evidence",
+    "sourceSuite": "examples/scenarios/government.lawtest",
+    "sourceTest": "fact-missing",
+    "queryStep": 0,
+    "expectations": [
+      {
+        "field": "truth_status",
+        "op": "eq",
+        "value": "NEITHER"
+      }
+    ],
+    "legalTime": "2026-09-01",
+    "evaluationStatus": "COMPUTED",
+    "resultKind": "PROPOSITION",
+    "truthStatus": "NEITHER",
+    "resultHash": "sha256:4cca817641fce0702dbbdee3145085c8c54f9db67908e2e60a47065bb038b193"
+  },
+  {
+    "name": "fact-conflict",
+    "world": "government",
+    "owner": "government",
+    "title": "Explicit positive and negative entrepreneurial-activity evidence",
+    "sourceSuite": "examples/scenarios/government.lawtest",
+    "sourceTest": "fact-conflict",
+    "queryStep": 0,
+    "expectations": [
+      {
+        "field": "truth_status",
+        "op": "eq",
+        "value": "BOTH"
+      }
+    ],
+    "legalTime": "2026-09-01",
+    "evaluationStatus": "COMPUTED",
+    "resultKind": "PROPOSITION",
+    "truthStatus": "BOTH",
+    "resultHash": "sha256:334c02b2f588a38db9bcfd720ee788e2c9b44694ca3f37496260db9120b23c9d"
+  },
+  {
+    "name": "official-publication-required",
+    "world": "sources",
+    "owner": "sources",
+    "title": "Official publication required before applying a rights-affecting act",
+    "sourceSuite": "examples/scenarios/sources.lawtest",
+    "sourceTest": "official-publication-required",
+    "queryStep": 0,
+    "expectations": [
+      {
+        "field": "truth_status",
+        "op": "eq",
+        "value": "TRUE_ONLY"
+      }
+    ],
+    "legalTime": "2026-09-01",
+    "evaluationStatus": "COMPUTED",
+    "resultKind": "PROPOSITION",
+    "truthStatus": "TRUE_ONLY",
+    "resultHash": "sha256:80ab750529ab54bbc1cb56f3cf4b112311eddb54da8a4cb3c53709cc6ab0fd64"
+  }
+]

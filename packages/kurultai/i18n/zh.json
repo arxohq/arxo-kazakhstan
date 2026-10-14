@@ -1,0 +1,1052 @@
+{
+  "$comment": "哈萨克斯坦共和国宪法程序包的中文（简体）标签叠加层（DECISION-0070）。本文件不参与编译，也不进入 CLIR 规范字节，仅由展示层读取（lawref verbalize --labels、MCP 资源 law://<程序包>/verbalized/zh、工作台）。译文由形式化人员依据各节点的俄文标签（ru-KZ）译出，术语参照宪法学通用汉语表述，状态为 translation（工作译文），并非官方译本。键为声明的本地名称。",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "Bill": [
+      {
+        "status": "translation",
+        "text": "法律草案"
+      }
+    ],
+    "Candidate": [
+      {
+        "status": "translation",
+        "text": "候选人"
+      }
+    ],
+    "Commission": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰的委员会"
+      }
+    ],
+    "CommissionEstablished": [
+      {
+        "status": "translation",
+        "text": "第五十九条第一款。库鲁尔泰设立委员会"
+      }
+    ],
+    "Committee": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰的常设委员会"
+      }
+    ],
+    "ConstitutionalEarlyTermination": [
+      {
+        "status": "translation",
+        "text": "第五十二条第三款。提前终止职权须有宪法规定的根据并依宪法规定的程序进行"
+      }
+    ],
+    "ConstitutionalLawTwoThirds": [
+      {
+        "status": "translation",
+        "text": "第六十一条第三款。宪法性法律以库鲁尔泰议员总数不少于三分之二的多数通过"
+      }
+    ],
+    "ConstitutionalVetoOverride": [
+      {
+        "status": "translation",
+        "text": "第五十六条第二项。总统对宪法性法律提出的异议，以议员总数四分之三的多数予以推翻"
+      }
+    ],
+    "Deputy": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰议员"
+      }
+    ],
+    "DeputyCandidateEligibility": [
+      {
+        "status": "translation",
+        "text": "第五十四条第三款。年满二十五周岁、最近十年在哈萨克斯坦常住的共和国公民，可以担任库鲁尔泰议员"
+      }
+    ],
+    "DeputyDetentionException": [
+      {
+        "status": "translation",
+        "text": "第五十五条第三款。当场抓获、实施重罪和特别重罪或者经库鲁尔泰同意的，允许拘留议员"
+      }
+    ],
+    "DeputyDetentionGroundConsent": [
+      {
+        "status": "translation",
+        "text": "第五十五条第三款。库鲁尔泰的同意为解除议员保护的根据"
+      }
+    ],
+    "DeputyDetentionGroundGraveOffence": [
+      {
+        "status": "translation",
+        "text": "第五十五条第三款。实施重罪或者特别重罪为解除议员保护的根据"
+      }
+    ],
+    "DeputyDetentionGroundInTheAct": [
+      {
+        "status": "translation",
+        "text": "第五十五条第三款。犯罪现场当场抓获为解除议员保护的根据"
+      }
+    ],
+    "DeputyImmunity": [
+      {
+        "status": "translation",
+        "text": "第五十五条第三款。未经库鲁尔泰同意不得拘留库鲁尔泰议员，当场抓获以及实施重罪和特别重罪的除外"
+      }
+    ],
+    "DeputyInviolabilityApplies": [
+      {
+        "status": "translation",
+        "text": "第五十五条第三款。三项所列根据均不存在时，议员免受拘留的保护持续有效"
+      }
+    ],
+    "DeputyInviolabilityApplies/unless/0": [
+      {
+        "status": "translation",
+        "text": "第五十五条第三款。三项所列根据均不存在时，议员免受拘留的保护持续有效"
+      }
+    ],
+    "DeputyPersonalImmunity": [
+      {
+        "status": "translation",
+        "text": "第五十五条第三款。未经库鲁尔泰同意不得拘留库鲁尔泰议员，当场抓获以及实施重罪和特别重罪的除外"
+      }
+    ],
+    "DeputyTermExpiry": [
+      {
+        "status": "translation",
+        "text": "第五十三条第二款。库鲁尔泰议员的任期为五年"
+      }
+    ],
+    "FinancialBillWithGovernmentOpinion": [
+      {
+        "status": "translation",
+        "text": "第六十条第六款。减少收入或者增加支出的法律草案，仅在政府作出肯定性结论后方可提出"
+      }
+    ],
+    "FirstSessionThirtyDays": [
+      {
+        "status": "translation",
+        "text": "第五十八条第二款。库鲁尔泰第一次会议应当自选举结果公布之日起三十日内召集"
+      }
+    ],
+    "Government": [
+      {
+        "status": "translation",
+        "text": "哈萨克斯坦共和国政府"
+      }
+    ],
+    "GovernmentMember": [
+      {
+        "status": "translation",
+        "text": "政府成员"
+      }
+    ],
+    "GovernmentMemberDismissalRequest": [
+      {
+        "status": "translation",
+        "text": "第五十六条第十七项。经不少于三分之一议员动议，库鲁尔泰以不少于三分之二的多数作出决定，请求总统免去政府成员的职务"
+      }
+    ],
+    "GovernmentNoConfidence": [
+      {
+        "status": "translation",
+        "text": "第五十六条第十三项。经不少于五分之一议员动议，库鲁尔泰以议员总数过半数通过对政府的不信任案"
+      }
+    ],
+    "Kurultai": [
+      {
+        "status": "translation",
+        "text": "哈萨克斯坦共和国库鲁尔泰"
+      }
+    ],
+    "KurultaiChair": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰主席"
+      }
+    ],
+    "KurultaiChairElection": [
+      {
+        "status": "translation",
+        "text": "第五十七条第一款。主席由议员总数过半数以无记名投票方式选举产生"
+      }
+    ],
+    "KurultaiChairMayConveneAndPreside": [
+      {
+        "status": "translation",
+        "text": "第五十七条第三款。主席召集会议并主持会议"
+      }
+    ],
+    "KurultaiChairMayDirectAgendaPreparation": [
+      {
+        "status": "translation",
+        "text": "第五十七条第三款。主席对库鲁尔泰审议事项的准备工作实行总的领导"
+      }
+    ],
+    "KurultaiChairMayEnforceRules": [
+      {
+        "status": "translation",
+        "text": "第五十七条第三款。主席保障库鲁尔泰议事规则的遵守"
+      }
+    ],
+    "KurultaiChairMayIssueOrders": [
+      {
+        "status": "translation",
+        "text": "第五十七条第五款。主席就其职权范围内的事项发布命令"
+      }
+    ],
+    "KurultaiChairMaySignActs": [
+      {
+        "status": "translation",
+        "text": "第五十七条第三款。主席签署库鲁尔泰的文件"
+      }
+    ],
+    "KurultaiChairRemovalOrResignation": [
+      {
+        "status": "translation",
+        "text": "第五十七条第二款。以议员总数过半数罢免主席或者接受其辞职"
+      }
+    ],
+    "KurultaiPowersEndAtNewConvocation": [
+      {
+        "status": "translation",
+        "text": "第五十二条第二款。职权自新一届第一次会议开始工作时终止"
+      }
+    ],
+    "KurultaiPowersStartAtFirstSession": [
+      {
+        "status": "translation",
+        "text": "第五十二条第二款。库鲁尔泰的职权自第一次会议开幕时开始"
+      }
+    ],
+    "KurultaiResolution": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰或者其工作机关的决议"
+      }
+    ],
+    "Law": [
+      {
+        "status": "translation",
+        "text": "法律或者宪法性法律"
+      }
+    ],
+    "LawPresentedWithinTenDays": [
+      {
+        "status": "translation",
+        "text": "第六十条第五款。库鲁尔泰通过的法律应当在十日内提请总统签署"
+      }
+    ],
+    "MissedReconsiderationAcceptsObjection": [
+      {
+        "status": "translation",
+        "text": "第五十六条第二项。未在一个月内重新审议的，视为接受总统的异议"
+      }
+    ],
+    "OrdinaryLawMajority": [
+      {
+        "status": "translation",
+        "text": "第六十一条第四款。法律以库鲁尔泰议员总数过半数通过"
+      }
+    ],
+    "OrdinaryVetoOverride": [
+      {
+        "status": "translation",
+        "text": "第五十六条第二项。总统对法律提出的异议，以议员总数三分之二的多数予以推翻"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "自然人"
+      }
+    ],
+    "PresidentialFinancialBillException": [
+      {
+        "status": "translation",
+        "text": "第六十条第六款。总统提出的法律草案，无需政府的结论"
+      }
+    ],
+    "PriorityBillDue": [
+      {
+        "status": "translation",
+        "text": "第六十条第二款。优先法律草案应当在两个月内通过"
+      }
+    ],
+    "PriorityBillTwoMonths": [
+      {
+        "status": "translation",
+        "text": "第六十条第二款。优先法律草案不迟于两个月期限届满之日通过的，即为按期通过"
+      }
+    ],
+    "RepeatedAbsenceSanction": [
+      {
+        "status": "translation",
+        "text": "第五十五条第一款。议员无正当理由缺席超过三次的，适用法律规定的处分措施"
+      }
+    ],
+    "RepeatedChairRefusalAllowsDissolution": [
+      {
+        "status": "translation",
+        "text": "第五十七条第一款。再次拒绝选举主席的，总统有权解散库鲁尔泰"
+      }
+    ],
+    "Report": [
+      {
+        "status": "translation",
+        "text": "政府成员向库鲁尔泰所作的报告"
+      }
+    ],
+    "Session": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰会期"
+      }
+    ],
+    "SessionQuorumTwoThirds": [
+      {
+        "status": "translation",
+        "text": "第五十八条第五款。库鲁尔泰会议有不少于议员总数三分之二出席的，方为有效"
+      }
+    ],
+    "StandingCommitteeEstablished": [
+      {
+        "status": "translation",
+        "text": "第五十九条第一款。库鲁尔泰设立常设委员会，其数目由宪法性法律确定"
+      }
+    ],
+    "TrustVoteTimingAndAnnualCap": [
+      {
+        "status": "translation",
+        "text": "第六十条第七款。信任问题的表决自提出该问题之时起满四十八小时后方可举行，且该项职权每年行使不得超过两次"
+      }
+    ],
+    "WorkingBodyResolutionWithinCompetence": [
+      {
+        "status": "translation",
+        "text": "第五十九条第二款。委员会在其职权范围内作出决议"
+      }
+    ],
+    "absence_sanction_threshold": [
+      {
+        "status": "translation",
+        "text": "因缺席适用处分措施的门槛为超过三次"
+      }
+    ],
+    "age_years": [
+      {
+        "status": "translation",
+        "text": "该人的周岁年龄"
+      }
+    ],
+    "annual_prior_trust_uses": [
+      {
+        "status": "translation",
+        "text": "本年度政府已提出信任问题的次数"
+      }
+    ],
+    "bill_passed": [
+      {
+        "status": "translation",
+        "text": "法律草案已由库鲁尔泰通过"
+      }
+    ],
+    "candidate_person": [
+      {
+        "status": "translation",
+        "text": "候选人即为该人"
+      }
+    ],
+    "caught_at_crime_scene": [
+      {
+        "status": "translation",
+        "text": "议员在犯罪现场被当场抓获"
+      }
+    ],
+    "chair_candidate": [
+      {
+        "status": "translation",
+        "text": "该人被提名为库鲁尔泰主席候选人"
+      }
+    ],
+    "chair_candidate_elected": [
+      {
+        "status": "translation",
+        "text": "该候选人已当选库鲁尔泰主席"
+      }
+    ],
+    "chair_candidate_fluent_in_state_language": [
+      {
+        "status": "translation",
+        "text": "主席候选人熟练掌握国语"
+      }
+    ],
+    "chair_candidate_is_deputy": [
+      {
+        "status": "translation",
+        "text": "主席候选人是库鲁尔泰议员"
+      }
+    ],
+    "chair_may_convene_and_preside": [
+      {
+        "status": "translation",
+        "text": "主席召集库鲁尔泰会议并主持会议"
+      }
+    ],
+    "chair_may_direct_agenda_preparation": [
+      {
+        "status": "translation",
+        "text": "主席对所提交事项的准备工作实行总的领导"
+      }
+    ],
+    "chair_may_enforce_rules": [
+      {
+        "status": "translation",
+        "text": "主席保障库鲁尔泰议事规则的遵守"
+      }
+    ],
+    "chair_may_issue_orders": [
+      {
+        "status": "translation",
+        "text": "主席就其职权范围内的事项发布命令"
+      }
+    ],
+    "chair_may_sign_kurultai_acts": [
+      {
+        "status": "translation",
+        "text": "主席签署库鲁尔泰发布的文件"
+      }
+    ],
+    "chair_removal_votes": [
+      {
+        "status": "translation",
+        "text": "对罢免主席或者接受其辞职投赞成票的票数"
+      }
+    ],
+    "chair_removed_or_resignation_accepted": [
+      {
+        "status": "translation",
+        "text": "主席已被罢免或者其辞职已被接受"
+      }
+    ],
+    "chair_secret_ballot_votes": [
+      {
+        "status": "translation",
+        "text": "无记名投票中对该候选人投赞成票的票数"
+      }
+    ],
+    "citizen": [
+      {
+        "status": "translation",
+        "text": "该人是哈萨克斯坦共和国公民"
+      }
+    ],
+    "commission_established": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰的委员会依法设立"
+      }
+    ],
+    "commission_formed": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰已设立委员会"
+      }
+    ],
+    "constitutional_bill": [
+      {
+        "status": "translation",
+        "text": "该法律草案为宪法性法律草案"
+      }
+    ],
+    "constitutional_early_termination_ground": [
+      {
+        "status": "translation",
+        "text": "存在提前终止库鲁尔泰职权的宪法根据"
+      }
+    ],
+    "constitutional_law": [
+      {
+        "status": "translation",
+        "text": "该文件为宪法性法律"
+      }
+    ],
+    "constitutional_law_denominator": [
+      {
+        "status": "translation",
+        "text": "宪法性法律通过门槛的分母为三分之二"
+      }
+    ],
+    "constitutional_law_numerator": [
+      {
+        "status": "translation",
+        "text": "宪法性法律通过门槛的分子为三分之二"
+      }
+    ],
+    "constitutional_veto_override_denominator": [
+      {
+        "status": "translation",
+        "text": "推翻宪法性法律异议门槛的分母为四分之三"
+      }
+    ],
+    "constitutional_veto_override_numerator": [
+      {
+        "status": "translation",
+        "text": "推翻宪法性法律异议门槛的分子为四分之三"
+      }
+    ],
+    "deputies_present": [
+      {
+        "status": "translation",
+        "text": "出席会议的议员人数"
+      }
+    ],
+    "deputy": [
+      {
+        "status": "translation",
+        "text": "该人是库鲁尔泰议员"
+      }
+    ],
+    "deputy_detained": [
+      {
+        "status": "translation",
+        "text": "议员已被拘留"
+      }
+    ],
+    "deputy_detention_attempt": [
+      {
+        "status": "translation",
+        "text": "已实施拘留议员的行为"
+      }
+    ],
+    "deputy_detention_ground": [
+      {
+        "status": "translation",
+        "text": "存在允许拘留议员的根据"
+      }
+    ],
+    "deputy_inviolability_applies": [
+      {
+        "status": "translation",
+        "text": "议员免受拘留的保护有效"
+      }
+    ],
+    "deputy_minimum_age": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰议员的最低年龄为二十五周岁"
+      }
+    ],
+    "deputy_residence_years": [
+      {
+        "status": "translation",
+        "text": "议员所需常住年限为十年"
+      }
+    ],
+    "deputy_term": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰议员的任期为五年"
+      }
+    ],
+    "deputy_term_expires_on": [
+      {
+        "status": "translation",
+        "text": "议员职权终止之日"
+      }
+    ],
+    "deputy_term_started_on": [
+      {
+        "status": "translation",
+        "text": "议员职权开始之日"
+      }
+    ],
+    "disciplinary_measure_applicable": [
+      {
+        "status": "translation",
+        "text": "可以对该议员适用法律规定的处分措施"
+      }
+    ],
+    "election_results_published": [
+      {
+        "status": "translation",
+        "text": "议员选举结果公布之日"
+      }
+    ],
+    "eligible_deputy_candidate": [
+      {
+        "status": "translation",
+        "text": "该人符合库鲁尔泰议员的条件"
+      }
+    ],
+    "financial_bill_admissible": [
+      {
+        "status": "translation",
+        "text": "该财政性法律草案可以提出"
+      }
+    ],
+    "first_session_deadline_days": [
+      {
+        "status": "translation",
+        "text": "召集第一次会议的期限为选举结果公布之日起三十日"
+      }
+    ],
+    "first_session_of_kurultai": [
+      {
+        "status": "translation",
+        "text": "该会期为库鲁尔泰本届的第一次会议"
+      }
+    ],
+    "first_session_opened": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰第一次会议开幕之日"
+      }
+    ],
+    "first_session_timely": [
+      {
+        "status": "translation",
+        "text": "第一次会议已在宪法规定的期限内召集"
+      }
+    ],
+    "government": [
+      {
+        "status": "translation",
+        "text": "该机关是共和国政府"
+      }
+    ],
+    "government_no_confidence": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰对政府通过不信任案"
+      }
+    ],
+    "grave_or_especially_grave_offence": [
+      {
+        "status": "translation",
+        "text": "议员实施了重罪或者特别重罪"
+      }
+    ],
+    "introduced_by_president": [
+      {
+        "status": "translation",
+        "text": "法律草案系依总统的立法动议权提出"
+      }
+    ],
+    "kurultai_body": [
+      {
+        "status": "translation",
+        "text": "该机关是库鲁尔泰"
+      }
+    ],
+    "kurultai_chair": [
+      {
+        "status": "translation",
+        "text": "该人是库鲁尔泰主席"
+      }
+    ],
+    "kurultai_chair_vote_denominator": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰主席选举门槛的分母为二分之一"
+      }
+    ],
+    "kurultai_chair_vote_numerator": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰主席选举门槛的分子为二分之一"
+      }
+    ],
+    "kurultai_consent_to_prosecution": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰已同意追究该议员的责任"
+      }
+    ],
+    "kurultai_dissolution_authorized": [
+      {
+        "status": "translation",
+        "text": "可以解散库鲁尔泰"
+      }
+    ],
+    "kurultai_early_termination_authorized": [
+      {
+        "status": "translation",
+        "text": "可以提前终止库鲁尔泰的职权"
+      }
+    ],
+    "kurultai_powers_ended": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰本届的职权已终止"
+      }
+    ],
+    "kurultai_powers_started": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰本届的职权已开始"
+      }
+    ],
+    "kurultai_seat_count": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰议员总数为一百四十五人"
+      }
+    ],
+    "law_adopted": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰通过法律之日"
+      }
+    ],
+    "law_nonperformance_established": [
+      {
+        "status": "translation",
+        "text": "依报告认定政府成员未执行共和国法律"
+      }
+    ],
+    "law_presented_timely": [
+      {
+        "status": "translation",
+        "text": "法律已在宪法规定的期限内提请签署"
+      }
+    ],
+    "law_presented_to_president": [
+      {
+        "status": "translation",
+        "text": "将法律提请总统签署之日"
+      }
+    ],
+    "law_submission_deadline_days": [
+      {
+        "status": "translation",
+        "text": "将通过的法律提请签署的期限为十日"
+      }
+    ],
+    "member_dismissal_decision_denominator": [
+      {
+        "status": "translation",
+        "text": "请求免职决定门槛的分母为三分之二"
+      }
+    ],
+    "member_dismissal_decision_numerator": [
+      {
+        "status": "translation",
+        "text": "请求免职决定门槛的分子为三分之二"
+      }
+    ],
+    "member_dismissal_initiative_denominator": [
+      {
+        "status": "translation",
+        "text": "听取报告动议门槛的分母为三分之一"
+      }
+    ],
+    "member_dismissal_initiative_numerator": [
+      {
+        "status": "translation",
+        "text": "听取报告动议门槛的分子为三分之一"
+      }
+    ],
+    "new_convocation_first_session_started": [
+      {
+        "status": "translation",
+        "text": "新一届库鲁尔泰第一次会议已经开幕"
+      }
+    ],
+    "no_confidence_decision_denominator": [
+      {
+        "status": "translation",
+        "text": "通过不信任案门槛的分母为二分之一"
+      }
+    ],
+    "no_confidence_decision_numerator": [
+      {
+        "status": "translation",
+        "text": "通过不信任案门槛的分子为二分之一"
+      }
+    ],
+    "no_confidence_initiating_votes": [
+      {
+        "status": "translation",
+        "text": "提出不信任案问题的议员人数"
+      }
+    ],
+    "no_confidence_initiative_denominator": [
+      {
+        "status": "translation",
+        "text": "不信任案动议门槛的分母为五分之一"
+      }
+    ],
+    "no_confidence_initiative_numerator": [
+      {
+        "status": "translation",
+        "text": "不信任案动议门槛的分子为五分之一"
+      }
+    ],
+    "no_confidence_votes": [
+      {
+        "status": "translation",
+        "text": "对政府不信任案投赞成票的票数"
+      }
+    ],
+    "ordinary_bill": [
+      {
+        "status": "translation",
+        "text": "该法律草案为普通法律草案"
+      }
+    ],
+    "ordinary_law": [
+      {
+        "status": "translation",
+        "text": "该文件为普通法律"
+      }
+    ],
+    "ordinary_law_denominator": [
+      {
+        "status": "translation",
+        "text": "法律通过门槛的分母为二分之一"
+      }
+    ],
+    "ordinary_law_numerator": [
+      {
+        "status": "translation",
+        "text": "法律通过门槛的分子为二分之一"
+      }
+    ],
+    "ordinary_veto_override_denominator": [
+      {
+        "status": "translation",
+        "text": "推翻法律异议门槛的分母为三分之二"
+      }
+    ],
+    "ordinary_veto_override_numerator": [
+      {
+        "status": "translation",
+        "text": "推翻法律异议门槛的分子为三分之二"
+      }
+    ],
+    "override_votes": [
+      {
+        "status": "translation",
+        "text": "推翻总统异议时所投的票数"
+      }
+    ],
+    "permanent_committee_formed": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰已设立常设委员会"
+      }
+    ],
+    "positive_government_opinion": [
+      {
+        "status": "translation",
+        "text": "政府已就该法律草案作出肯定性结论"
+      }
+    ],
+    "president_nominated_chair": [
+      {
+        "status": "translation",
+        "text": "主席人选由共和国总统提名"
+      }
+    ],
+    "president_objected_to_law": [
+      {
+        "status": "translation",
+        "text": "总统已对该法律提出异议"
+      }
+    ],
+    "presidential_dismissal_request": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰请求总统免去政府成员的职务"
+      }
+    ],
+    "presidential_objection_accepted": [
+      {
+        "status": "translation",
+        "text": "总统的异议视为被接受"
+      }
+    ],
+    "presidential_objection_overridden": [
+      {
+        "status": "translation",
+        "text": "总统的异议已被库鲁尔泰推翻"
+      }
+    ],
+    "priority_bill": [
+      {
+        "status": "translation",
+        "text": "被认定为优先的法律草案的提出之日"
+      }
+    ],
+    "priority_bill_adopted": [
+      {
+        "status": "translation",
+        "text": "优先法律草案的通过之日"
+      }
+    ],
+    "priority_bill_due_on": [
+      {
+        "status": "translation",
+        "text": "优先法律草案两个月期限届满之日"
+      }
+    ],
+    "priority_bill_period": [
+      {
+        "status": "translation",
+        "text": "优先法律草案优先通过的期限为两个月"
+      }
+    ],
+    "priority_bill_timely": [
+      {
+        "status": "translation",
+        "text": "优先法律草案已在宪法规定的期限内通过"
+      }
+    ],
+    "reconsideration_deadline_missed": [
+      {
+        "status": "translation",
+        "text": "重新审议的一个月期限已经届满"
+      }
+    ],
+    "reconsideration_within_one_month": [
+      {
+        "status": "translation",
+        "text": "已在一个月内进行重新审议和表决"
+      }
+    ],
+    "repeated_refusal_to_elect_chair": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰再次拒绝选举主席"
+      }
+    ],
+    "report_dismissal_votes": [
+      {
+        "status": "translation",
+        "text": "对请求免去政府成员职务投赞成票的票数"
+      }
+    ],
+    "report_initiating_votes": [
+      {
+        "status": "translation",
+        "text": "提出听取报告动议的议员人数"
+      }
+    ],
+    "report_of_member": [
+      {
+        "status": "translation",
+        "text": "该报告由该政府成员提出"
+      }
+    ],
+    "resides_last_years": [
+      {
+        "status": "translation",
+        "text": "在哈萨克斯坦最近连续常住的年数"
+      }
+    ],
+    "resolution_within_body_competence": [
+      {
+        "status": "translation",
+        "text": "该决议系就该机关职权范围内的事项作出"
+      }
+    ],
+    "revenue_reducing_or_expenditure_increasing": [
+      {
+        "status": "translation",
+        "text": "法律草案规定减少国家收入或者增加支出"
+      }
+    ],
+    "session_opened": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰会期已开幕"
+      }
+    ],
+    "session_quorate": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰会议有效"
+      }
+    ],
+    "session_quorum_denominator": [
+      {
+        "status": "translation",
+        "text": "会议法定人数的分母为三分之二"
+      }
+    ],
+    "session_quorum_numerator": [
+      {
+        "status": "translation",
+        "text": "会议法定人数的分子为三分之二"
+      }
+    ],
+    "standing_committee_established": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰的常设委员会依法设立"
+      }
+    ],
+    "trust_power_annual_limit": [
+      {
+        "status": "translation",
+        "text": "政府提出信任问题的年度上限为两次"
+      }
+    ],
+    "trust_question_on_rejected_government_bill": [
+      {
+        "status": "translation",
+        "text": "总理因政府提出的法律草案未获通过而提出信任问题"
+      }
+    ],
+    "trust_question_raised_at": [
+      {
+        "status": "translation",
+        "text": "向政府提出信任问题的时点"
+      }
+    ],
+    "trust_vote_held_at": [
+      {
+        "status": "translation",
+        "text": "就信任问题进行表决的时点"
+      }
+    ],
+    "trust_vote_timing_valid": [
+      {
+        "status": "translation",
+        "text": "提出信任问题的期限要求已经遵守"
+      }
+    ],
+    "trust_vote_wait_hours": [
+      {
+        "status": "translation",
+        "text": "自提出信任问题至表决的期限为四十八小时"
+      }
+    ],
+    "unexcused_absences": [
+      {
+        "status": "translation",
+        "text": "议员无正当理由缺席会议的次数"
+      }
+    ],
+    "votes_for_bill": [
+      {
+        "status": "translation",
+        "text": "对法律草案投赞成票的票数"
+      }
+    ],
+    "working_body_resolution": [
+      {
+        "status": "translation",
+        "text": "该文件为委员会的决议"
+      }
+    ],
+    "working_body_resolution_authorized": [
+      {
+        "status": "translation",
+        "text": "委员会有权作出该项决议"
+      }
+    ]
+  },
+  "language": "zh",
+  "package": "kz.constitution.kurultai"
+}

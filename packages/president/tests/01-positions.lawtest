@@ -1,0 +1,766 @@
+language "law.core" version "0.2";
+package kz.constitution.president version "0.1.0";
+namespace "urn:kz:constitution:president";
+
+// ПОЗИЦИИ §§122–137 РАЗДЕЛА III «ПРЕЗИДЕНТ».
+//
+// В пакете 39 норм-шаблонов: 31 полномочие §127, семь иммунитетов §128 и одна
+// обязанность §136/§138. Набор наблюдает каждый.
+//
+// ЧТО НАБЛЮДАЕМО У ПОЛНОМОЧИЯ. §127 различает три состояния: позиция без
+// осуществления, осуществление при выполненном `valid_when` (эффект наступает)
+// и осуществление при невыполненном (issue POWER_INVALID_EXERCISE, событие
+// сохранено, эффекта нет). Третье состояние ВЫРАЗИМО ДАЛЕКО НЕ У ВСЕХ:
+// у 27 полномочий из 31 `valid_when` читает предикат, который УЖЕ стоит
+// посылкой создающего правила (чаще всего сам `president(president)`), и
+// недействительное осуществление там невозможно по построению — где
+// полномочие есть, там условие действительности выполнено всегда. Это
+// измерено по CLIR, а не предположено. Наблюдаемая пара у таких полномочий —
+// наличие и отсутствие осуществления.
+//
+// Раздельная пара «действительно / недействительно» есть ровно у четырёх:
+// SignLaw и ReturnLawWithObjections (`presidential_signature_timely`),
+// AppointWithConsent (`kurultai_majority_consent`) и AdoptMartialMeasure
+// (`kurultai_immediately_informed`). Все четыре проверены с обеих сторон.
+
+// Политика счёта сроков §86 (LDC-E1333: inline-запись в контексте дела в 0.2
+// удалена — политика объявляется файлом и предъявляется по имени). Значения
+// повторяют профиль KZ_CONSTITUTION_TERMS регрессии Конституции:
+// `no_roll` + `include_end` не спрашивают снимок календаря §85.
+deadline policy KZ_CONSTITUTION_TERMS {
+    start_count same_day;
+    include_end true;
+    roll no_roll;
+    month_end last_day_of_month;
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// Ст. 46 подп. 3. Подписание закона и возвращение с возражениями.
+// ─────────────────────────────────────────────────────────────────────────
+
+// Закон представлен 1 августа, подписан 15 августа — срок одного месяца
+// соблюдён, эффект наступает.
+test "urn:query:kzcp-1" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; deadline_policy KZ_CONSTITUTION_TERMS; }
+        assert "p1-1": president(entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+        assert "p1-2": law_presented(entity_ref("urn:kz:constitution:president:test:law1"), entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+        assert "p1-3": law_presented_on(entity_ref("urn:kz:constitution:president:test:law1"), @2026-08-01) { origin case_input; }
+        assert "p1-4": presidential_signature_day(entity_ref("urn:kz:constitution:president:test:law1"), @2026-08-15) { origin case_input; }
+        assert "p1-5": presidential_signature_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:law1")) { origin case_input; }
+    }
+    evaluate positions();
+    expect issues_within(info);
+    expect position(SignLaw, ACTIVE);
+    expect position(ReturnLawWithObjections, ACTIVE);
+
+    evaluate truth(law_signed(entity_ref("urn:kz:constitution:president:test:law1")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// Тот же закон подписан 15 сентября — позже срока. Полномочие остаётся,
+// эффекта нет, осуществление помечено недействительным.
+test "urn:query:kzcp-2" {
+    given {
+        context { decision_time @2026-09-20T12:00:00+05:00; knowledge_time @2026-09-20T12:00:00+05:00; legal_time @2026-09-20; timezone "Asia/Almaty"; deadline_policy KZ_CONSTITUTION_TERMS; }
+        assert "p2-1": president(entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+        assert "p2-2": law_presented(entity_ref("urn:kz:constitution:president:test:law2"), entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+        assert "p2-3": law_presented_on(entity_ref("urn:kz:constitution:president:test:law2"), @2026-08-01) { origin case_input; }
+        assert "p2-4": presidential_signature_day(entity_ref("urn:kz:constitution:president:test:law2"), @2026-09-15) { origin case_input; }
+        assert "p2-5": presidential_signature_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:law2")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(SignLaw, ACTIVE);
+
+    evaluate truth(law_signed(entity_ref("urn:kz:constitution:president:test:law2")));
+    expect truth_status == NEITHER;
+    expect issue(POWER_INVALID_EXERCISE);
+}
+
+// Возвращение закона с возражениями в срок.
+test "urn:query:kzcp-3" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; deadline_policy KZ_CONSTITUTION_TERMS; }
+        assert "p3-1": president(entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+        assert "p3-2": law_presented(entity_ref("urn:kz:constitution:president:test:law3"), entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+        assert "p3-3": law_presented_on(entity_ref("urn:kz:constitution:president:test:law3"), @2026-08-01) { origin case_input; }
+        assert "p3-4": presidential_signature_day(entity_ref("urn:kz:constitution:president:test:law3"), @2026-08-20) { origin case_input; }
+        assert "p3-5": presidential_return_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:law3")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(ReturnLawWithObjections, ACTIVE);
+
+    evaluate truth(law_returned_with_objections(entity_ref("urn:kz:constitution:president:test:law3")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// Возвращение за пределами срока: эффекта нет.
+test "urn:query:kzcp-4" {
+    given {
+        context { decision_time @2026-09-20T12:00:00+05:00; knowledge_time @2026-09-20T12:00:00+05:00; legal_time @2026-09-20; timezone "Asia/Almaty"; deadline_policy KZ_CONSTITUTION_TERMS; }
+        assert "p4-1": president(entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+        assert "p4-2": law_presented(entity_ref("urn:kz:constitution:president:test:law4"), entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+        assert "p4-3": law_presented_on(entity_ref("urn:kz:constitution:president:test:law4"), @2026-08-01) { origin case_input; }
+        assert "p4-4": presidential_signature_day(entity_ref("urn:kz:constitution:president:test:law4"), @2026-09-15) { origin case_input; }
+        assert "p4-5": presidential_return_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:law4")) { origin case_input; }
+    }
+    evaluate truth(law_returned_with_objections(entity_ref("urn:kz:constitution:president:test:law4")));
+    expect truth_status == NEITHER;
+    expect issue(POWER_INVALID_EXERCISE);
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// Ст. 46. Назначение с согласия Курултая.
+// ─────────────────────────────────────────────────────────────────────────
+
+test "urn:query:kzcp-5" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; deadline_policy KZ_CONSTITUTION_TERMS; }
+        assert "p5-1": president(entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+        assert "p5-2": appointment_requires_kurultai_consent(entity_ref("urn:kz:constitution:president:test:appointment1")) { origin case_input; }
+        assert "p5-3": kurultai_majority_consent(entity_ref("urn:kz:constitution:president:test:appointment1")) { origin case_input; }
+        assert "p5-4": presidential_appointment_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:appointment1")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(AppointWithConsent, ACTIVE);
+
+    evaluate truth(appointment_effective(entity_ref("urn:kz:constitution:president:test:appointment1")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// Согласия Курултая нет: полномочие есть, назначение силы не имеет.
+test "urn:query:kzcp-6" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; deadline_policy KZ_CONSTITUTION_TERMS; }
+        assert "p6-1": president(entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+        assert "p6-2": appointment_requires_kurultai_consent(entity_ref("urn:kz:constitution:president:test:appointment2")) { origin case_input; }
+        assert "p6-3": presidential_appointment_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:appointment2")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(AppointWithConsent, ACTIVE);
+
+    evaluate truth(appointment_effective(entity_ref("urn:kz:constitution:president:test:appointment2")));
+    expect truth_status == NEITHER;
+    expect issue(POWER_INVALID_EXERCISE);
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// Ст. 62. Роспуск Курултая и четыре защищённых периода (§128).
+// ─────────────────────────────────────────────────────────────────────────
+
+// Полномочие создано, попытки роспуска нет.
+test "urn:query:kzcp-7" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; deadline_policy KZ_CONSTITUTION_TERMS; }
+        assert "p7-1": president(entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+        assert "p7-2": kurultai(entity_ref("urn:kz:constitution:president:test:kurultai1")) { origin case_input; }
+        assert "p7-3": repeated_refusal_of_presidential_nominee(entity_ref("urn:kz:constitution:president:test:kurultai1")) { origin case_input; }
+        assert "p7-4": required_consultations_completed(entity_ref("urn:kz:constitution:president:test:kurultai1")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(DissolveKurultai, ACTIVE);
+    expect not position(NoDissolutionInEmergency, ACTIVE);
+
+    evaluate truth(kurultai_dissolved(entity_ref("urn:kz:constitution:president:test:kurultai1")));
+    expect truth_status == NEITHER;
+}
+
+// Роспуск при отсутствии защищённого периода: эффект наступает.
+test "urn:query:kzcp-8" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; deadline_policy KZ_CONSTITUTION_TERMS; }
+        assert "p8-1": president(entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+        assert "p8-2": kurultai(entity_ref("urn:kz:constitution:president:test:kurultai2")) { origin case_input; }
+        assert "p8-3": repeated_refusal_of_presidential_nominee(entity_ref("urn:kz:constitution:president:test:kurultai2")) { origin case_input; }
+        assert "p8-4": required_consultations_completed(entity_ref("urn:kz:constitution:president:test:kurultai2")) { origin case_input; }
+        assert "p8-5": dissolution_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:kurultai2")) { origin case_input; }
+    }
+    evaluate truth(kurultai_dissolved(entity_ref("urn:kz:constitution:president:test:kurultai2")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// Основание первое: чрезвычайное или военное положение. Иммунитет побеждает
+// полномочие по `priority` — эффект заблокирован именно им.
+test "urn:query:kzcp-9" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; deadline_policy KZ_CONSTITUTION_TERMS; }
+        assert "p9-1": president(entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+        assert "p9-2": kurultai(entity_ref("urn:kz:constitution:president:test:kurultai3")) { origin case_input; }
+        assert "p9-3": repeated_refusal_of_presidential_nominee(entity_ref("urn:kz:constitution:president:test:kurultai3")) { origin case_input; }
+        assert "p9-4": required_consultations_completed(entity_ref("urn:kz:constitution:president:test:kurultai3")) { origin case_input; }
+        assert "p9-5": dissolution_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:kurultai3")) { origin case_input; }
+        assert "p9-6": emergency_or_martial_law_active() { origin case_input; }
+    }
+    evaluate positions();
+    expect position(NoDissolutionInEmergency, ACTIVE);
+
+    evaluate truth(kurultai_dissolved(entity_ref("urn:kz:constitution:president:test:kurultai3")));
+    expect truth_status == NEITHER;
+    expect issue(EFFECT_BLOCKED_BY_IMMUNITY);
+}
+
+// Основание второе: последние шесть месяцев полномочий Президента. Срок семи
+// лет отсчитывается от 1 января 2020 года, истекает 1 января 2027-го, вопрос
+// о роспуске рассматривается 1 сентября 2026-го — внутри шести месяцев.
+test "urn:query:kzcp-10" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; deadline_policy KZ_CONSTITUTION_TERMS; }
+        assert "p10-1": president(entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+        assert "p10-2": kurultai(entity_ref("urn:kz:constitution:president:test:kurultai4")) { origin case_input; }
+        assert "p10-3": repeated_refusal_of_presidential_nominee(entity_ref("urn:kz:constitution:president:test:kurultai4")) { origin case_input; }
+        assert "p10-4": required_consultations_completed(entity_ref("urn:kz:constitution:president:test:kurultai4")) { origin case_input; }
+        assert "p10-5": dissolution_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:kurultai4")) { origin case_input; }
+        assert "p10-6": president_assumed_office_on(entity_ref("urn:kz:constitution:president:test:president1"), @2020-01-01) { origin case_input; }
+        assert "p10-7": dissolution_considered_on(@2026-09-01) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(NoDissolutionInLastSixMonths, ACTIVE);
+
+    evaluate truth(kurultai_dissolved(entity_ref("urn:kz:constitution:president:test:kurultai4")));
+    expect truth_status == NEITHER;
+    expect issue(EFFECT_BLOCKED_BY_IMMUNITY);
+}
+
+// Парная сторона того же основания: срок истекает 1 января 2030 года —
+// защищённого периода нет, роспуск наступает.
+test "urn:query:kzcp-11" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; deadline_policy KZ_CONSTITUTION_TERMS; }
+        assert "p11-1": president(entity_ref("urn:kz:constitution:president:test:president2")) { origin case_input; }
+        assert "p11-2": kurultai(entity_ref("urn:kz:constitution:president:test:kurultai5")) { origin case_input; }
+        assert "p11-3": repeated_refusal_of_presidential_nominee(entity_ref("urn:kz:constitution:president:test:kurultai5")) { origin case_input; }
+        assert "p11-4": required_consultations_completed(entity_ref("urn:kz:constitution:president:test:kurultai5")) { origin case_input; }
+        assert "p11-5": dissolution_attempt(entity_ref("urn:kz:constitution:president:test:president2"), entity_ref("urn:kz:constitution:president:test:kurultai5")) { origin case_input; }
+        assert "p11-6": president_assumed_office_on(entity_ref("urn:kz:constitution:president:test:president2"), @2023-01-01) { origin case_input; }
+        assert "p11-7": dissolution_considered_on(@2026-09-01) { origin case_input; }
+    }
+    evaluate positions();
+    expect not position(NoDissolutionInLastSixMonths, ACTIVE);
+
+    evaluate truth(kurultai_dissolved(entity_ref("urn:kz:constitution:president:test:kurultai5")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// Основание третье: год после предыдущего роспуска не истёк.
+test "urn:query:kzcp-12" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; deadline_policy KZ_CONSTITUTION_TERMS; }
+        assert "p12-1": president(entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+        assert "p12-2": kurultai(entity_ref("urn:kz:constitution:president:test:kurultai6")) { origin case_input; }
+        assert "p12-3": repeated_refusal_of_presidential_nominee(entity_ref("urn:kz:constitution:president:test:kurultai6")) { origin case_input; }
+        assert "p12-4": required_consultations_completed(entity_ref("urn:kz:constitution:president:test:kurultai6")) { origin case_input; }
+        assert "p12-5": dissolution_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:kurultai6")) { origin case_input; }
+        assert "p12-6": prior_dissolution_on(@2026-03-01) { origin case_input; }
+        assert "p12-7": dissolution_considered_on(@2026-09-01) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(NoDissolutionWithinYearAfterPrior, ACTIVE);
+
+    evaluate truth(kurultai_dissolved(entity_ref("urn:kz:constitution:president:test:kurultai6")));
+    expect truth_status == NEITHER;
+    expect issue(EFFECT_BLOCKED_BY_IMMUNITY);
+}
+
+// Парная сторона: год после предыдущего роспуска истёк.
+test "urn:query:kzcp-13" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; deadline_policy KZ_CONSTITUTION_TERMS; }
+        assert "p13-1": president(entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+        assert "p13-2": kurultai(entity_ref("urn:kz:constitution:president:test:kurultai7")) { origin case_input; }
+        assert "p13-3": repeated_refusal_of_presidential_nominee(entity_ref("urn:kz:constitution:president:test:kurultai7")) { origin case_input; }
+        assert "p13-4": required_consultations_completed(entity_ref("urn:kz:constitution:president:test:kurultai7")) { origin case_input; }
+        assert "p13-5": dissolution_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:kurultai7")) { origin case_input; }
+        assert "p13-6": prior_dissolution_on(@2024-03-01) { origin case_input; }
+        assert "p13-7": dissolution_considered_on(@2026-09-01) { origin case_input; }
+    }
+    evaluate positions();
+    expect not position(NoDissolutionWithinYearAfterPrior, ACTIVE);
+
+    evaluate truth(kurultai_dissolved(entity_ref("urn:kz:constitution:president:test:kurultai7")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// Основание четвёртое: полномочия принял преемник (ст. 51 п. 3).
+test "urn:query:kzcp-14" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; deadline_policy KZ_CONSTITUTION_TERMS; }
+        assert "p14-1": president(entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+        assert "p14-2": kurultai(entity_ref("urn:kz:constitution:president:test:kurultai8")) { origin case_input; }
+        assert "p14-3": repeated_refusal_of_presidential_nominee(entity_ref("urn:kz:constitution:president:test:kurultai8")) { origin case_input; }
+        assert "p14-4": required_consultations_completed(entity_ref("urn:kz:constitution:president:test:kurultai8")) { origin case_input; }
+        assert "p14-5": dissolution_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:kurultai8")) { origin case_input; }
+        assert "p14-6": succession_president_in_office() { origin case_input; }
+    }
+    evaluate positions();
+    expect position(NoDissolutionUnderSuccessionPresident, ACTIVE);
+
+    evaluate truth(kurultai_dissolved(entity_ref("urn:kz:constitution:president:test:kurultai8")));
+    expect truth_status == NEITHER;
+    expect issue(EFFECT_BLOCKED_BY_IMMUNITY);
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// Ст. 46. Референдум и обращение в Конституционный Суд.
+// ─────────────────────────────────────────────────────────────────────────
+
+test "urn:query:kzcp-15" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; deadline_policy KZ_CONSTITUTION_TERMS; }
+        assert "p15-1": president(entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+        assert "p15-2": constitutional_petition(entity_ref("urn:kz:constitution:president:test:petition1")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(CallReferendum, ACTIVE);
+    expect position(PetitionConstitutionalCourt, ACTIVE);
+
+    evaluate truth(referendum_called());
+    expect truth_status == NEITHER;
+
+    evaluate truth(constitutional_review_requested(entity_ref("urn:kz:constitution:president:test:petition1")));
+    expect truth_status == NEITHER;
+}
+
+test "urn:query:kzcp-16" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; deadline_policy KZ_CONSTITUTION_TERMS; }
+        assert "p16-1": president(entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+        assert "p16-2": constitutional_petition(entity_ref("urn:kz:constitution:president:test:petition1")) { origin case_input; }
+        assert "p16-3": referendum_decision_attempt(entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+        assert "p16-4": constitutional_review_petition_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:petition1")) { origin case_input; }
+    }
+    evaluate truth(referendum_called());
+    expect truth_status == TRUE_ONLY;
+
+    evaluate truth(constitutional_review_requested(entity_ref("urn:kz:constitution:president:test:petition1")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// Ст. 46. Чрезвычайное и военное положение.
+// ─────────────────────────────────────────────────────────────────────────
+
+test "urn:query:kzcp-17" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; deadline_policy KZ_CONSTITUTION_TERMS; }
+        assert "p17-1": president(entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+        assert "p17-2": emergency_measure(entity_ref("urn:kz:constitution:president:test:measure1")) { origin case_input; }
+        assert "p17-3": immediate_constitutional_threat() { origin case_input; }
+        assert "p17-4": emergency_consultations_completed() { origin case_input; }
+    }
+    evaluate positions();
+    expect position(AdoptEmergencyMeasure, ACTIVE);
+
+    evaluate truth(emergency_measure_in_force(entity_ref("urn:kz:constitution:president:test:measure1")));
+    expect truth_status == NEITHER;
+}
+
+test "urn:query:kzcp-18" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; deadline_policy KZ_CONSTITUTION_TERMS; }
+        assert "p18-1": president(entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+        assert "p18-2": emergency_measure(entity_ref("urn:kz:constitution:president:test:measure2")) { origin case_input; }
+        assert "p18-3": immediate_constitutional_threat() { origin case_input; }
+        assert "p18-4": emergency_consultations_completed() { origin case_input; }
+        assert "p18-5": emergency_measure_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:measure2")) { origin case_input; }
+    }
+    evaluate truth(emergency_measure_in_force(entity_ref("urn:kz:constitution:president:test:measure2")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// Военное положение с незамедлительным информированием Курултая.
+test "urn:query:kzcp-19" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; deadline_policy KZ_CONSTITUTION_TERMS; }
+        assert "p19-1": president(entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+        assert "p19-2": emergency_measure(entity_ref("urn:kz:constitution:president:test:measure3")) { origin case_input; }
+        assert "p19-3": aggression_or_immediate_external_threat() { origin case_input; }
+        assert "p19-4": kurultai_immediately_informed() { origin case_input; }
+        assert "p19-5": martial_measure_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:measure3")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(AdoptMartialMeasure, ACTIVE);
+
+    evaluate truth(martial_measure_in_force(entity_ref("urn:kz:constitution:president:test:measure3")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// Курултай не информирован: осуществление недействительно, меры нет.
+test "urn:query:kzcp-20" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; deadline_policy KZ_CONSTITUTION_TERMS; }
+        assert "p20-1": president(entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+        assert "p20-2": emergency_measure(entity_ref("urn:kz:constitution:president:test:measure4")) { origin case_input; }
+        assert "p20-3": aggression_or_immediate_external_threat() { origin case_input; }
+        assert "p20-4": martial_measure_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:measure4")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(AdoptMartialMeasure, ACTIVE);
+
+    evaluate truth(martial_measure_in_force(entity_ref("urn:kz:constitution:president:test:measure4")));
+    expect truth_status == NEITHER;
+    expect issue(POWER_INVALID_EXERCISE);
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// Ст. 48. Иммунитет Президента и экс-Президента, исключение измены,
+// обязанность обеспечения.
+// ─────────────────────────────────────────────────────────────────────────
+
+test "urn:query:kzcp-21" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; deadline_policy KZ_CONSTITUTION_TERMS; }
+        assert "p21-1": presidential_conduct_in_office(entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(PresidentialImmunityForActsInOffice, ACTIVE);
+    expect not position(HoldPresidentLiableForTreason, ACTIVE);
+
+    evaluate truth(president_held_criminally_or_administratively_liable(entity_ref("urn:kz:constitution:president:test:president1")));
+    expect truth_status == NEITHER;
+}
+
+// Государственная измена: полномочие органа побеждает иммунитет по
+// `priority`, и ответственность наступает. Иммунитет при этом остаётся
+// ACTIVE — побеждён он в фазе материализации эффекта §127, а не снят.
+test "urn:query:kzcp-22" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; deadline_policy KZ_CONSTITUTION_TERMS; }
+        assert "p22-1": presidential_conduct_in_office(entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+        assert "p22-2": state_authority(entity_ref("urn:kz:constitution:president:test:authority1")) { origin case_input; }
+        assert "p22-3": state_treason_by_president(entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+        assert "p22-4": presidential_liability_attempt(entity_ref("urn:kz:constitution:president:test:authority1"), entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(HoldPresidentLiableForTreason, ACTIVE);
+    expect position(PresidentialImmunityForActsInOffice, ACTIVE);
+
+    evaluate truth(president_held_criminally_or_administratively_liable(entity_ref("urn:kz:constitution:president:test:president1")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// Иммунитет экс-Президента: звание выводится из прекращения полномочий
+// добровольной отставкой.
+test "urn:query:kzcp-23" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; deadline_policy KZ_CONSTITUTION_TERMS; }
+        assert "p23-1": former_president(entity_ref("urn:kz:constitution:president:test:president3")) { origin case_input; }
+        assert "p23-2": president_resigned(entity_ref("urn:kz:constitution:president:test:president3")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(FormerPresidentImmunityForActsInOffice, ACTIVE);
+
+    evaluate truth(president_held_criminally_or_administratively_liable(entity_ref("urn:kz:constitution:president:test:president3")));
+    expect truth_status == NEITHER;
+}
+
+// Та же измена бьёт и иммунитет экс-Президента.
+test "urn:query:kzcp-24" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; deadline_policy KZ_CONSTITUTION_TERMS; }
+        assert "p24-1": former_president(entity_ref("urn:kz:constitution:president:test:president3")) { origin case_input; }
+        assert "p24-2": president_resigned(entity_ref("urn:kz:constitution:president:test:president3")) { origin case_input; }
+        assert "p24-3": state_authority(entity_ref("urn:kz:constitution:president:test:authority1")) { origin case_input; }
+        assert "p24-4": state_treason_by_president(entity_ref("urn:kz:constitution:president:test:president3")) { origin case_input; }
+        assert "p24-5": presidential_liability_attempt(entity_ref("urn:kz:constitution:president:test:authority1"), entity_ref("urn:kz:constitution:president:test:president3")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(FormerPresidentImmunityForActsInOffice, ACTIVE);
+
+    evaluate truth(president_held_criminally_or_administratively_liable(entity_ref("urn:kz:constitution:president:test:president3")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// Обязанность ст. 48 п. 2: обеспечение предоставлено.
+test "urn:query:kzcp-25" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; deadline_policy KZ_CONSTITUTION_TERMS; }
+        assert "p25-1": state_authority(entity_ref("urn:kz:constitution:president:test:authority1")) { origin case_input; }
+        assert "p25-2": presidential_family_support_case(entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+        assert "p25-3": state_support_provided(entity_ref("urn:kz:constitution:president:test:authority1"), entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(ProvidePresidentialSupportAndProtection, SATISFIED);
+}
+
+// Обеспечение не предоставлено. ГРАНИЦА МОДЕЛИРОВАНИЯ, ИЗМЕРЕННАЯ ЗДЕСЬ:
+// цель достижения объявлена с ОТКРЫТЫМ окном `[@2026-07-01, infinity)`, и
+// такая обязанность не получает VIOLATED НИКОГДА — окно не закрывается, срок
+// не наступает. Сторож фиксирует и ACTIVE, и отсутствие VIOLATED; если норма
+// однажды получит срок, тест обязан упасть.
+test "urn:query:kzcp-26" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; deadline_policy KZ_CONSTITUTION_TERMS; }
+        assert "p26-1": state_authority(entity_ref("urn:kz:constitution:president:test:authority1")) { origin case_input; }
+        assert "p26-2": presidential_family_support_case(entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+        assert "p26-3": not state_support_provided(entity_ref("urn:kz:constitution:president:test:authority1"), entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(ProvidePresidentialSupportAndProtection, ACTIVE);
+    expect not position(ProvidePresidentialSupportAndProtection, VIOLATED);
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// Ст. 43 п. 1. Одно и то же лицо не избирается Президентом дважды (§128).
+// ─────────────────────────────────────────────────────────────────────────
+
+test "urn:query:kzcp-27" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; deadline_policy KZ_CONSTITUTION_TERMS; }
+        assert "p27-1": previously_elected_president(entity_ref("urn:kz:constitution:president:test:person1")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(NoSecondPresidentialElection, ACTIVE);
+
+    evaluate truth(elected_president(entity_ref("urn:kz:constitution:president:test:person1")));
+    expect truth_status == NEITHER;
+}
+
+// ГРАНИЦА, ИЗМЕРЕННАЯ ЗДЕСЬ, А НЕ ПРЕДПОЛОЖЕННАЯ: защищаемый эффект
+// `elected_president` выводит СТРОГОЕ ПРАВИЛО подсчёта голосов
+// (`PresidentialElectionMajority`), а не осуществление полномочия §127.
+// Блокировка §128 живёт только в материализации эффекта power, поэтому лицо,
+// уже бывшее Президентом, всё равно числится избранным. Иммунитет ACTIVE, а
+// запрета он не производит — это дефект моделирования нормы, а не свойство
+// набора; тест закрепляет измеренное поведение.
+test "urn:query:kzcp-28" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; deadline_policy KZ_CONSTITUTION_TERMS; }
+        assert "p28-1": previously_elected_president(entity_ref("urn:kz:constitution:president:test:person1")) { origin case_input; }
+        assert "p28-2": presidential_election_attempt(entity_ref("urn:kz:constitution:president:test:election1"), entity_ref("urn:kz:constitution:president:test:person1")) { origin case_input; }
+        assert "p28-3": presidential_vote(entity_ref("urn:kz:constitution:president:test:election1"), entity_ref("urn:kz:constitution:president:test:person1"), 60) { origin case_input; }
+        assert "p28-4": participating_voters(entity_ref("urn:kz:constitution:president:test:election1"), 100) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(NoSecondPresidentialElection, ACTIVE);
+
+    evaluate truth(elected_president(entity_ref("urn:kz:constitution:president:test:person1")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// Ст. 46 подп. 1, 5, 6, 7, 9, 12–16, 19–22. Двадцать два полномочия, у
+// которых `valid_when` повторяет посылку. Пара у каждого — осуществление
+// есть / осуществления нет.
+// ─────────────────────────────────────────────────────────────────────────
+
+// Ни одного осуществления: все двадцать две позиции созданы, эффектов нет.
+test "urn:query:kzcp-29" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; deadline_policy KZ_CONSTITUTION_TERMS; }
+        assert "p29-1": president(entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+        assert "p29-2": presidential_address(entity_ref("urn:kz:constitution:president:test:address1")) { origin case_input; }
+        assert "p29-3": office_appointment(entity_ref("urn:kz:constitution:president:test:appointment3"), ProsecutorGeneral) { origin case_input; }
+        assert "p29-4": office_release(entity_ref("urn:kz:constitution:president:test:release1"), ProsecutorGeneral) { origin case_input; }
+        assert "p29-5": state_body_act(entity_ref("urn:kz:constitution:president:test:bodyact1"), Establish) { origin case_input; }
+        assert "p29-6": body_subordinate_to_president(entity_ref("urn:kz:constitution:president:test:bodyact1")) { origin case_input; }
+        assert "p29-7": subordinate_body_head_appointment(entity_ref("urn:kz:constitution:president:test:appointment4"), entity_ref("urn:kz:constitution:president:test:bodyact1")) { origin case_input; }
+        assert "p29-8": subordinate_body_head_release(entity_ref("urn:kz:constitution:president:test:release2"), entity_ref("urn:kz:constitution:president:test:bodyact1")) { origin case_input; }
+        assert "p29-9": diplomatic_mission_head(entity_ref("urn:kz:constitution:president:test:missionhead1")) { origin case_input; }
+        assert "p29-10": high_command_appointment(entity_ref("urn:kz:constitution:president:test:appointment5")) { origin case_input; }
+        assert "p29-11": high_command_release(entity_ref("urn:kz:constitution:president:test:release3")) { origin case_input; }
+        assert "p29-12": international_treaty(entity_ref("urn:kz:constitution:president:test:treaty1")) { origin case_input; }
+        assert "p29-13": ratification_instrument(entity_ref("urn:kz:constitution:president:test:instrument1")) { origin case_input; }
+        assert "p29-14": credentials(entity_ref("urn:kz:constitution:president:test:credentials1")) { origin case_input; }
+        assert "p29-15": award_establishment(entity_ref("urn:kz:constitution:president:test:award1")) { origin case_input; }
+        assert "p29-16": distinction_kind(entity_ref("urn:kz:constitution:president:test:distinction1"), HonoraryTitle) { origin case_input; }
+        assert "p29-17": citizenship_matter(entity_ref("urn:kz:constitution:president:test:citizenship1")) { origin case_input; }
+        assert "p29-18": asylum_matter(entity_ref("urn:kz:constitution:president:test:asylum1")) { origin case_input; }
+        assert "p29-19": pardon_matter(entity_ref("urn:kz:constitution:president:test:pardon1")) { origin case_input; }
+        assert "p29-20": power_conferred_by_constitution_or_law(entity_ref("urn:kz:constitution:president:test:conferred1")) { origin case_input; }
+        assert "p29-21": state_guard_service(entity_ref("urn:kz:constitution:president:test:guard1")) { origin case_input; }
+        assert "p29-22": presidential_administration(entity_ref("urn:kz:constitution:president:test:admin1")) { origin case_input; }
+        assert "p29-23": advisory_body(entity_ref("urn:kz:constitution:president:test:council1"), SecurityCouncil) { origin case_input; }
+    }
+    evaluate positions();
+    expect issues_within(info);
+    expect position(AddressThePeople, ACTIVE);
+    expect position(AppointToPresidentialOffice, ACTIVE);
+    expect position(ReleaseFromPresidentialOffice, ACTIVE);
+    expect position(OrganiseSubordinateBody, ACTIVE);
+    expect position(AppointSubordinateBodyHead, ACTIVE);
+    expect position(ReleaseSubordinateBodyHead, ACTIVE);
+    expect position(AppointMissionHead, ACTIVE);
+    expect position(RecallMissionHead, ACTIVE);
+    expect position(AppointHighCommand, ACTIVE);
+    expect position(ReleaseHighCommand, ACTIVE);
+    expect position(SignInternationalTreaty, ACTIVE);
+    expect position(SignRatificationInstrument, ACTIVE);
+    expect position(AcceptCredentials, ACTIVE);
+    expect position(EstablishStateAward, ACTIVE);
+    expect position(ConferDistinction, ACTIVE);
+    expect position(DecideCitizenshipMatter, ACTIVE);
+    expect position(GrantPoliticalAsylum, ACTIVE);
+    expect position(GrantPardon, ACTIVE);
+    expect position(ExerciseConferredPower, ACTIVE);
+    expect position(FormStateGuardService, ACTIVE);
+    expect position(FormPresidentialAdministration, ACTIVE);
+    expect position(EstablishPresidentialBody, ACTIVE);
+
+    evaluate truth(presidential_address_delivered(entity_ref("urn:kz:constitution:president:test:address1")));
+    expect truth_status == NEITHER;
+
+    evaluate truth(pardon_granted(entity_ref("urn:kz:constitution:president:test:pardon1")));
+    expect truth_status == NEITHER;
+
+    evaluate truth(presidential_body_established(entity_ref("urn:kz:constitution:president:test:council1")));
+    expect truth_status == NEITHER;
+}
+
+// Те же двадцать два полномочия осуществлены: эффект наступает у каждого.
+test "urn:query:kzcp-30" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; deadline_policy KZ_CONSTITUTION_TERMS; }
+        assert "p30-1": president(entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+        assert "p30-2": presidential_address(entity_ref("urn:kz:constitution:president:test:address1")) { origin case_input; }
+        assert "p30-3": address_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:address1")) { origin case_input; }
+        assert "p30-4": office_appointment(entity_ref("urn:kz:constitution:president:test:appointment3"), ProsecutorGeneral) { origin case_input; }
+        assert "p30-5": office_appointment_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:appointment3")) { origin case_input; }
+        assert "p30-6": office_release(entity_ref("urn:kz:constitution:president:test:release1"), ProsecutorGeneral) { origin case_input; }
+        assert "p30-7": office_release_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:release1")) { origin case_input; }
+        assert "p30-8": state_body_act(entity_ref("urn:kz:constitution:president:test:bodyact1"), Establish) { origin case_input; }
+        assert "p30-9": body_subordinate_to_president(entity_ref("urn:kz:constitution:president:test:bodyact1")) { origin case_input; }
+        assert "p30-10": state_body_act_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:bodyact1")) { origin case_input; }
+        assert "p30-11": subordinate_body_head_appointment(entity_ref("urn:kz:constitution:president:test:appointment4"), entity_ref("urn:kz:constitution:president:test:bodyact1")) { origin case_input; }
+        assert "p30-12": body_head_appointment_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:appointment4")) { origin case_input; }
+        assert "p30-13": subordinate_body_head_release(entity_ref("urn:kz:constitution:president:test:release2"), entity_ref("urn:kz:constitution:president:test:bodyact1")) { origin case_input; }
+        assert "p30-14": body_head_release_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:release2")) { origin case_input; }
+        assert "p30-15": diplomatic_mission_head(entity_ref("urn:kz:constitution:president:test:missionhead1")) { origin case_input; }
+        assert "p30-16": mission_head_appointment_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:missionhead1")) { origin case_input; }
+        assert "p30-17": mission_head_recall_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:missionhead1")) { origin case_input; }
+        assert "p30-18": high_command_appointment(entity_ref("urn:kz:constitution:president:test:appointment5")) { origin case_input; }
+        assert "p30-19": high_command_appointment_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:appointment5")) { origin case_input; }
+        assert "p30-20": high_command_release(entity_ref("urn:kz:constitution:president:test:release3")) { origin case_input; }
+        assert "p30-21": high_command_release_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:release3")) { origin case_input; }
+        assert "p30-22": international_treaty(entity_ref("urn:kz:constitution:president:test:treaty1")) { origin case_input; }
+        assert "p30-23": treaty_signature_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:treaty1")) { origin case_input; }
+        assert "p30-24": ratification_instrument(entity_ref("urn:kz:constitution:president:test:instrument1")) { origin case_input; }
+        assert "p30-25": ratification_signature_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:instrument1")) { origin case_input; }
+        assert "p30-26": credentials(entity_ref("urn:kz:constitution:president:test:credentials1")) { origin case_input; }
+        assert "p30-27": credentials_acceptance_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:credentials1")) { origin case_input; }
+        assert "p30-28": award_establishment(entity_ref("urn:kz:constitution:president:test:award1")) { origin case_input; }
+        assert "p30-29": award_establishment_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:award1")) { origin case_input; }
+        assert "p30-30": distinction_kind(entity_ref("urn:kz:constitution:president:test:distinction1"), HonoraryTitle) { origin case_input; }
+        assert "p30-31": distinction_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:distinction1")) { origin case_input; }
+        assert "p30-32": citizenship_matter(entity_ref("urn:kz:constitution:president:test:citizenship1")) { origin case_input; }
+        assert "p30-33": citizenship_decision_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:citizenship1")) { origin case_input; }
+        assert "p30-34": asylum_matter(entity_ref("urn:kz:constitution:president:test:asylum1")) { origin case_input; }
+        assert "p30-35": asylum_decision_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:asylum1")) { origin case_input; }
+        assert "p30-36": pardon_matter(entity_ref("urn:kz:constitution:president:test:pardon1")) { origin case_input; }
+        assert "p30-37": pardon_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:pardon1")) { origin case_input; }
+        assert "p30-38": power_conferred_by_constitution_or_law(entity_ref("urn:kz:constitution:president:test:conferred1")) { origin case_input; }
+        assert "p30-39": conferred_power_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:conferred1")) { origin case_input; }
+        assert "p30-40": state_guard_service(entity_ref("urn:kz:constitution:president:test:guard1")) { origin case_input; }
+        assert "p30-41": body_formation_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:guard1")) { origin case_input; }
+        assert "p30-42": presidential_administration(entity_ref("urn:kz:constitution:president:test:admin1")) { origin case_input; }
+        assert "p30-43": body_formation_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:admin1")) { origin case_input; }
+        assert "p30-44": advisory_body(entity_ref("urn:kz:constitution:president:test:council1"), SecurityCouncil) { origin case_input; }
+        assert "p30-45": body_formation_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:council1")) { origin case_input; }
+    }
+    evaluate truth(presidential_address_delivered(entity_ref("urn:kz:constitution:president:test:address1")));
+    expect truth_status == TRUE_ONLY;
+
+    evaluate truth(office_appointment_effective(entity_ref("urn:kz:constitution:president:test:appointment3")));
+    expect truth_status == TRUE_ONLY;
+
+    evaluate truth(office_release_effective(entity_ref("urn:kz:constitution:president:test:release1")));
+    expect truth_status == TRUE_ONLY;
+
+    evaluate truth(state_body_act_effective(entity_ref("urn:kz:constitution:president:test:bodyact1")));
+    expect truth_status == TRUE_ONLY;
+
+    evaluate truth(body_head_appointment_effective(entity_ref("urn:kz:constitution:president:test:appointment4")));
+    expect truth_status == TRUE_ONLY;
+
+    evaluate truth(body_head_release_effective(entity_ref("urn:kz:constitution:president:test:release2")));
+    expect truth_status == TRUE_ONLY;
+
+    evaluate truth(mission_head_appointed(entity_ref("urn:kz:constitution:president:test:missionhead1")));
+    expect truth_status == TRUE_ONLY;
+
+    evaluate truth(mission_head_recalled(entity_ref("urn:kz:constitution:president:test:missionhead1")));
+    expect truth_status == TRUE_ONLY;
+
+    evaluate truth(high_command_appointment_effective(entity_ref("urn:kz:constitution:president:test:appointment5")));
+    expect truth_status == TRUE_ONLY;
+
+    evaluate truth(high_command_release_effective(entity_ref("urn:kz:constitution:president:test:release3")));
+    expect truth_status == TRUE_ONLY;
+
+    evaluate truth(treaty_signed_on_behalf_of_republic(entity_ref("urn:kz:constitution:president:test:treaty1")));
+    expect truth_status == TRUE_ONLY;
+
+    evaluate truth(ratification_instrument_signed(entity_ref("urn:kz:constitution:president:test:instrument1")));
+    expect truth_status == TRUE_ONLY;
+
+    evaluate truth(credentials_accepted(entity_ref("urn:kz:constitution:president:test:credentials1")));
+    expect truth_status == TRUE_ONLY;
+
+    evaluate truth(award_established(entity_ref("urn:kz:constitution:president:test:award1")));
+    expect truth_status == TRUE_ONLY;
+
+    evaluate truth(distinction_conferred(entity_ref("urn:kz:constitution:president:test:distinction1")));
+    expect truth_status == TRUE_ONLY;
+
+    evaluate truth(citizenship_matter_decided(entity_ref("urn:kz:constitution:president:test:citizenship1")));
+    expect truth_status == TRUE_ONLY;
+
+    evaluate truth(asylum_matter_decided(entity_ref("urn:kz:constitution:president:test:asylum1")));
+    expect truth_status == TRUE_ONLY;
+
+    evaluate truth(pardon_granted(entity_ref("urn:kz:constitution:president:test:pardon1")));
+    expect truth_status == TRUE_ONLY;
+
+    evaluate truth(conferred_power_exercised(entity_ref("urn:kz:constitution:president:test:conferred1")));
+    expect truth_status == TRUE_ONLY;
+
+    evaluate truth(state_guard_service_formed(entity_ref("urn:kz:constitution:president:test:guard1")));
+    expect truth_status == TRUE_ONLY;
+
+    evaluate truth(presidential_administration_formed(entity_ref("urn:kz:constitution:president:test:admin1")));
+    expect truth_status == TRUE_ONLY;
+
+    evaluate truth(presidential_body_established(entity_ref("urn:kz:constitution:president:test:council1")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// Перечни подп. 5 и 14 закрыты: должность и вид отличия вне перечня
+// полномочия не создают вовсе.
+test "urn:query:kzcp-31" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; deadline_policy KZ_CONSTITUTION_TERMS; }
+        assert "p31-1": president(entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+        assert "p31-2": office_appointment(entity_ref("urn:kz:constitution:president:test:appointment6"), entity_ref("urn:kz:constitution:president:test:office-outside-list")) { origin case_input; }
+        assert "p31-3": office_appointment_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:appointment6")) { origin case_input; }
+        assert "p31-4": distinction_kind(entity_ref("urn:kz:constitution:president:test:distinction2"), entity_ref("urn:kz:constitution:president:test:kind-outside-list")) { origin case_input; }
+        assert "p31-5": distinction_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:distinction2")) { origin case_input; }
+    }
+    evaluate positions();
+    expect not position(AppointToPresidentialOffice, ACTIVE);
+    expect not position(ConferDistinction, ACTIVE);
+
+    evaluate truth(office_appointment_effective(entity_ref("urn:kz:constitution:president:test:appointment6")));
+    expect truth_status == NEITHER;
+
+    evaluate truth(distinction_conferred(entity_ref("urn:kz:constitution:president:test:distinction2")));
+    expect truth_status == NEITHER;
+}
+
+// Орган Президенту не подчинён: ни одно из трёх полномочий подп. 6 не
+// создаётся, и акт силы не имеет.
+test "urn:query:kzcp-32" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; deadline_policy KZ_CONSTITUTION_TERMS; }
+        assert "p32-1": president(entity_ref("urn:kz:constitution:president:test:president1")) { origin case_input; }
+        assert "p32-2": state_body_act(entity_ref("urn:kz:constitution:president:test:bodyact2"), Abolish) { origin case_input; }
+        assert "p32-3": state_body_act_attempt(entity_ref("urn:kz:constitution:president:test:president1"), entity_ref("urn:kz:constitution:president:test:bodyact2")) { origin case_input; }
+        assert "p32-4": subordinate_body_head_appointment(entity_ref("urn:kz:constitution:president:test:appointment7"), entity_ref("urn:kz:constitution:president:test:bodyact2")) { origin case_input; }
+        assert "p32-5": subordinate_body_head_release(entity_ref("urn:kz:constitution:president:test:release4"), entity_ref("urn:kz:constitution:president:test:bodyact2")) { origin case_input; }
+    }
+    evaluate positions();
+    expect not position(OrganiseSubordinateBody, ACTIVE);
+    expect not position(AppointSubordinateBodyHead, ACTIVE);
+    expect not position(ReleaseSubordinateBodyHead, ACTIVE);
+
+    evaluate truth(state_body_act_effective(entity_ref("urn:kz:constitution:president:test:bodyact2")));
+    expect truth_status == NEITHER;
+}

@@ -1,0 +1,674 @@
+{
+  "$comment": "Кыргыз тилиндеги көрсөтүү катмары (DECISION-0070). Бул файл CLIR'ге кирбейт жана презентациялык катмар менен гана окулат (verbalize --labels, MCP, жумуш үстөлү). Котормо Казакстан Республикасынын Конституциясын ресмилештирүүнүн орусча (ru-KZ) белгилеринен жасалган жумушчу котормо (`translation`) — расмий басылма эмес; терминология Кыргыз Республикасынын Конституциясынын кыргызча редакциясы (corpus/laws/kg/constitution) жана law.verb.ky пакети боюнча сверкаланган. Ачкыч — жарыялоонун жергиликтүү аты.",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "Amendment": [
+      {
+        "status": "translation",
+        "text": "Конституцияга өзгөртүү же толуктоо"
+      }
+    ],
+    "AmendmentMayBeSubmitted1995": [
+      {
+        "status": "translation",
+        "text": "91-берене, 3-пункт (1995-ж. ред.). Конституциялык Соттун оң корутундусу болмоюнча өзгөртүүлөр референдумга жана Парламентке коюлбайт"
+      }
+    ],
+    "AmendmentMayBeSubmitted1995/unless/0": [
+      {
+        "status": "translation",
+        "text": "91-берене, 3-пункт (1995-ж. ред.). Конституциялык Соттун оң корутундусу болмоюнча өзгөртүүлөр референдумга жана Парламентке коюлбайт"
+      }
+    ],
+    "AmendmentReferendumDoubleThreshold": [
+      {
+        "status": "translation",
+        "text": "92-берене, 3-пункт. Түзөтүү, эгерде ал үчүн областтардын, республикалык маанидеги шаарлардын жана борбордун кеминде үчтөн экисинде катышкандардын жарымынан көбү добуш берсе, кабыл алынган болуп эсептелет"
+      }
+    ],
+    "AmendmentViolatesEntrenchedCore1995": [
+      {
+        "status": "translation",
+        "text": "91-берене, 2-пункт (1995-ж. ред.). Көз карандысыздык, унитардуулук, аймактык бүтүндүк, башкаруу формасы, негиз салуучу принциптер, Президенттин жети жылдык мөөнөтү жана анын бир жолу гана шайланышы өзгөрүлгүс болуп саналат"
+      }
+    ],
+    "Constitution1995InForceOnPublication": [
+      {
+        "status": "translation",
+        "text": "90-берене, 1-пункт (1995-ж. ред.). Конституция референдумдун жыйынтыктары расмий жарыяланган күндөн тартып күчүнө кирет, ошону менен бир убакта мурда кабыл алынган Конституциянын күчү токтотулат"
+      }
+    ],
+    "ConstitutionEdition": [
+      {
+        "status": "translation",
+        "text": "Конституциянын редакциясы"
+      }
+    ],
+    "ConstitutionalConclusion": [
+      {
+        "status": "translation",
+        "text": "түзөтүүнүн Конституциянын талаптарына ылайыктыгы жөнүндө Конституциялык Соттун корутундусу"
+      }
+    ],
+    "EffectiveDateAppointmentTwoMonths": [
+      {
+        "status": "translation",
+        "text": "95-берене. Мөөнөтү Конституция күчүнө кирген күндөн тартып эсептелген өткөөл дайындоо эки айдын ичинде жүргүзүлөт"
+      }
+    ],
+    "EntrenchmentConclusion": [
+      {
+        "status": "translation",
+        "text": "93-берене. Түзөтүү 2-берененин 7-пунктунун жана 43-берененин 5-пунктунун талаптарына ылайык келсе, Конституциялык Соттун корутундусу оң болот"
+      }
+    ],
+    "EntrenchmentConclusion1995": [
+      {
+        "status": "translation",
+        "text": "91-берене, 3-пункт (1995-ж. ред.). Өзгөртүүлөр Конституциялык Соттун алардын 2-пункттун талаптарына ылайыктыгы жөнүндө корутундусу болгондо референдумга же Парламенттин кароосуна коюлат"
+      }
+    ],
+    "ExistingActsContinueIfCompatible": [
+      {
+        "status": "translation",
+        "text": "96-берене, 1-пункт. Конституция күчүнө кирген күнү колдонулуп келген мыйзамдар жана башка ченемдик укуктук актылар ага карама-каршы келбеген бөлүгүндө колдонулат"
+      }
+    ],
+    "ExistingActsContinueIfCompatible/unless/0": [
+      {
+        "status": "translation",
+        "text": "96-берене, 1-пункт. Конституция күчүнө кирген күнү колдонулуп келген мыйзамдар жана башка ченемдик укуктук актылар ага карама-каршы келбеген бөлүгүндө колдонулат"
+      }
+    ],
+    "FirstKurultaiElectionTransition": [
+      {
+        "status": "translation",
+        "text": "95-берене, 1-пункт. Курултайга шайлоо Конституция күчүнө кирген күндөн тартып бир айдын ичинде жарыяланат жана эки айдын ичинде өткөрүлөт"
+      }
+    ],
+    "FirstSessionAppointmentTwoMonths": [
+      {
+        "status": "translation",
+        "text": "95-берене, 2–4-пункттар. Өткөөл дайындоолор биринчи чакырылыштагы Курултайдын биринчи сессиясы ачылган күндөн тартып эки айдын ичинде жүргүзүлөт"
+      }
+    ],
+    "IncumbentContinuity": [
+      {
+        "status": "translation",
+        "text": "95-берене. Жаңы курамдар түзүлгөнгө чейин иштеп жаткан кызмат адамдары өз ыйгарым укуктарын сактап калышат"
+      }
+    ],
+    "KurultaiElection": [
+      {
+        "status": "translation",
+        "text": "Курултайга шайлоо"
+      }
+    ],
+    "LegalAct": [
+      {
+        "status": "translation",
+        "text": "мыйзам же болбосо башка ченемдик укуктук акт"
+      }
+    ],
+    "ListIsNotASubjectReading": [
+      {
+        "status": "translation",
+        "text": "91-берененин 2-пунктунун А окулушу: тизме предметтерди коргойт, бирок өзүн эмес"
+      }
+    ],
+    "ListItselfEntrenchedReading": [
+      {
+        "status": "translation",
+        "text": "91-берененин 2-пунктунун Б окулушу: тизменин өзгөрүлгүстүгү — негиз салуучу принцип"
+      }
+    ],
+    "NarrowingAmendmentFilter1995": [
+      {
+        "status": "translation",
+        "text": "тарытуучу түзөтүү, эгерде тарытуу өзөккө кол салуу деп таанылбаса, соттун корутундусу болгондо коюлушу мүмкүн"
+      }
+    ],
+    "NarrowingAmendmentFilter1995/unless/0": [
+      {
+        "status": "translation",
+        "text": "тарытуучу түзөтүү, эгерде тарытуу өзөккө кол салуу деп таанылбаса, соттун корутундусу болгондо коюлушу мүмкүн"
+      }
+    ],
+    "NarrowingOutsideCore1995": [
+      {
+        "status": "translation",
+        "text": "А окулушу: 2-пункттун тизмеси өзү корголгон предмет эмес, аны тарытуу — кадимки түзөтүү"
+      }
+    ],
+    "NarrowingTouchesCore1995": [
+      {
+        "status": "translation",
+        "text": "Б окулушу: 2-пункттун тизмесинин өзгөрүлгүстүгү — негиз салуучу принцип, аны тарытуу өзөккө кол салат"
+      }
+    ],
+    "NewConstitutionInForceFromJulyFirst": [
+      {
+        "status": "translation",
+        "text": "94-берене, 1-пункт. Конституция 2026-жылдын 1-июлунан тартып күчүнө кирет"
+      }
+    ],
+    "OldActsApplyIfCompatible1995": [
+      {
+        "status": "translation",
+        "text": "92-берене, 4-пункт (1995-ж. ред.). Конституция күчүнө кирген учурда колдонулуп жаткан мыйзамдар ага карама-каршы келбеген бөлүгүндө колдонулат"
+      }
+    ],
+    "OldConstitutionRepealedSimultaneously": [
+      {
+        "status": "translation",
+        "text": "94-берене, 1-пункт. Мурда кабыл алынган Конституциянын күчү жаңысы күчүнө кирүү менен бир убакта токтотулат"
+      }
+    ],
+    "ParliamentaryAmendmentFourFifths1995": [
+      {
+        "status": "translation",
+        "text": "91-берене, 1-пункт (1995-ж. ред.). Эгерде Президент Парламенттин референдум жөнүндө сунушун четке какса, Парламент ар бир Палатанын депутаттарынын жалпы санынын кеминде бештен төрт добушунун көпчүлүгү менен Конституцияга өзгөртүүлөрдү киргизүү жөнүндө мыйзамды кабыл алууга укуктуу"
+      }
+    ],
+    "ParliamentaryAmendmentLaw": [
+      {
+        "status": "translation",
+        "text": "Конституцияга өзгөртүүлөр жана толуктоолор жөнүндө Парламенттин мыйзамы (1995-жылдагы редакция)"
+      }
+    ],
+    "PositiveConclusionRequiredForReferendum": [
+      {
+        "status": "translation",
+        "text": "93-берене. Түзөтүү Конституциялык Соттун оң корутундусу болгондо жалпы элдик референдумга коюлат"
+      }
+    ],
+    "Referendum": [
+      {
+        "status": "translation",
+        "text": "жалпы элдик референдум"
+      }
+    ],
+    "ReferendumTurnoutMoreThanHalf": [
+      {
+        "status": "translation",
+        "text": "92-берене, 2-пункт. Жалпы элдик референдум, эгерде добуш берүүгө ага катышууга укуктуу жарандардын жарымынан көбү катышса, өттү деп эсептелет"
+      }
+    ],
+    "TransitionalAppointment": [
+      {
+        "status": "translation",
+        "text": "өткөөл мезгилде жүргүзүлүүчү дайындоо"
+      }
+    ],
+    "amendment_approved_by_referendum": [
+      {
+        "status": "translation",
+        "text": "Конституцияга өзгөртүүлөр жана толуктоолор референдум менен кабыл алынды"
+      }
+    ],
+    "amendment_may_be_submitted_1995": [
+      {
+        "status": "translation",
+        "text": "түзөтүү референдумга коюлушу мүмкүн (1995-жылдагы редакция)"
+      }
+    ],
+    "amendment_may_be_submitted_to_referendum": [
+      {
+        "status": "translation",
+        "text": "түзөтүү жалпы элдик референдумга коюлушу мүмкүн"
+      }
+    ],
+    "amendment_mazhilis_total": [
+      {
+        "status": "translation",
+        "text": "Мажилис депутаттарынын жалпы саны (1995-жылдагы редакция)"
+      }
+    ],
+    "amendment_mazhilis_votes": [
+      {
+        "status": "translation",
+        "text": "түзөтүү үчүн берилген Мажилис депутаттарынын добуштарынын саны (1995-жылдагы редакция)"
+      }
+    ],
+    "amendment_narrows_entrenched_list_1995": [
+      {
+        "status": "translation",
+        "text": "түзөтүүнүн мазмуну: 91-берененин 2-пунктунун тизмесинен предметти чыгаруу"
+      }
+    ],
+    "amendment_referendum_declined_by_president": [
+      {
+        "status": "translation",
+        "text": "Президент түзөтүүнү референдумга коюу жөнүндө сунушту четке какты (1995-жылдагы редакция)"
+      }
+    ],
+    "amendment_senate_total": [
+      {
+        "status": "translation",
+        "text": "Сенат депутаттарынын жалпы саны (1995-жылдагы редакция)"
+      }
+    ],
+    "amendment_senate_votes": [
+      {
+        "status": "translation",
+        "text": "түзөтүү үчүн берилген Сенат депутаттарынын добуштарынын саны (1995-жылдагы редакция)"
+      }
+    ],
+    "amendment_touches_subject": [
+      {
+        "status": "translation",
+        "text": "түзөтүү аталган предметти козгойт"
+      }
+    ],
+    "amendment_violates_entrenched_core_1995": [
+      {
+        "status": "translation",
+        "text": "түзөтүү 1995-жылдагы Конституциянын өзгөрүлгүс өзөгүн бузат"
+      }
+    ],
+    "appointment_completed_within_two_months": [
+      {
+        "status": "translation",
+        "text": "дайындоо эки айдын ичинде жүргүзүлдү"
+      }
+    ],
+    "approving_regions_cities_and_capital": [
+      {
+        "status": "translation",
+        "text": "түзөтүү жактырылган областтардын, республикалык маанидеги шаарлардын жана борбордун саны"
+      }
+    ],
+    "cabinet_becomes_government_1995": [
+      {
+        "status": "translation",
+        "text": "Министрлер Кабинети Республиканын Өкмөтүнүн статусуна ээ болот (1995-жылдагы редакция)"
+      }
+    ],
+    "conclusion_confirms_article_91_paragraph_2": [
+      {
+        "status": "translation",
+        "text": "корутунду түзөтүүнүн 91-берененин 2-пунктуна ылайыктыгын ырастайт (1995-жылдагы редакция)"
+      }
+    ],
+    "conclusion_for_amendment": [
+      {
+        "status": "translation",
+        "text": "Конституциялык Соттун корутундусу ушул түзөтүү боюнча берилген"
+      }
+    ],
+    "conforms_article_2_paragraph_7": [
+      {
+        "status": "translation",
+        "text": "түзөтүү Конституциянын 2-беренесинин 7-пунктунун талаптарына ылайык келет"
+      }
+    ],
+    "conforms_article_43_paragraph_5": [
+      {
+        "status": "translation",
+        "text": "түзөтүү Конституциянын 43-беренесинин 5-пунктунун талаптарына ылайык келет"
+      }
+    ],
+    "constitution_1995": [
+      {
+        "status": "translation",
+        "text": "1995-жылдагы Конституция"
+      }
+    ],
+    "constitution_1995_in_force": [
+      {
+        "status": "translation",
+        "text": "1995-жылдагы Конституция колдонулат"
+      }
+    ],
+    "constitution_1995_referendum_results_published": [
+      {
+        "status": "translation",
+        "text": "1995-жылдагы республикалык референдумдун жыйынтыктары жарыяланды"
+      }
+    ],
+    "constitution_2026": [
+      {
+        "status": "translation",
+        "text": "2026-жылдагы Конституция"
+      }
+    ],
+    "constitution_ceases_date": [
+      {
+        "status": "translation",
+        "text": "Конституциянын редакциясынын күчү токтотулган күн"
+      }
+    ],
+    "constitution_day_is_state_holiday_1995": [
+      {
+        "status": "translation",
+        "text": "Конституция референдумда кабыл алынган күн Конституция күнү деп жарыяланды"
+      }
+    ],
+    "constitution_effective_date": [
+      {
+        "status": "translation",
+        "text": "Конституциянын редакциясы күчүнө кирген күн"
+      }
+    ],
+    "constitution_in_force": [
+      {
+        "status": "translation",
+        "text": "Конституциянын редакциясы колдонулат"
+      }
+    ],
+    "constitution_repealed": [
+      {
+        "status": "translation",
+        "text": "Конституциянын редакциясынын күчү токтотулган"
+      }
+    ],
+    "constitutional_council_acts_until_court_1995": [
+      {
+        "status": "translation",
+        "text": "Конституциялык Кеңеш Конституциялык Сот түзүлгөнгө чейин иштейт (1995-жылдагы редакция)"
+      }
+    ],
+    "constitutional_court_positive_conclusion": [
+      {
+        "status": "translation",
+        "text": "түзөтүүнүн ылайыктыгы жөнүндө Конституциялык Соттун корутундусу оң"
+      }
+    ],
+    "constitutional_court_positive_conclusion_1995": [
+      {
+        "status": "translation",
+        "text": "түзөтүүнүн өзгөрүлгүс өзөккө ылайыктыгы жөнүндө корутунду оң (1995-жылдагы редакция)"
+      }
+    ],
+    "continuity_preserved": [
+      {
+        "status": "translation",
+        "text": "ыйгарым укуктарды жүзөгө ашыруунун үзгүлтүксүздүгү сакталган"
+      }
+    ],
+    "contrary_to_1995_constitution": [
+      {
+        "status": "translation",
+        "text": "акт 1995-жылдагы Конституцияга карама-каршы келет"
+      }
+    ],
+    "contrary_to_2026_constitution": [
+      {
+        "status": "translation",
+        "text": "акт 2026-жылдагы Конституцияга карама-каршы келет"
+      }
+    ],
+    "current_date": [
+      {
+        "status": "translation",
+        "text": "суроо коюлган күн"
+      }
+    ],
+    "deadline_from_effective_date": [
+      {
+        "status": "translation",
+        "text": "дайындоонун мөөнөтү Конституция күчүнө кирген күндөн тартып эсептелет"
+      }
+    ],
+    "deadline_from_first_session": [
+      {
+        "status": "translation",
+        "text": "дайындоонун мөөнөтү биринчи чакырылыштагы Курултайдын биринчи сессиясы ачылган күндөн тартып эсептелет"
+      }
+    ],
+    "edition_1995": [
+      {
+        "status": "translation",
+        "text": "объект 1995-жылдагы Конституциянын редакциясы болуп саналат"
+      }
+    ],
+    "edition_2026": [
+      {
+        "status": "translation",
+        "text": "объект 2026-жылдагы Конституциянын редакциясы болуп саналат"
+      }
+    ],
+    "election_announced_within_one_month": [
+      {
+        "status": "translation",
+        "text": "шайлоо Конституция күчүнө кирген күндөн тартып бир айдын ичинде жарыяланды"
+      }
+    ],
+    "election_held_within_two_months": [
+      {
+        "status": "translation",
+        "text": "шайлоо Конституция күчүнө кирген күндөн тартып эки айдын ичинде өткөрүлдү"
+      }
+    ],
+    "eligible_referendum_citizens": [
+      {
+        "status": "translation",
+        "text": "жалпы элдик референдумга катышууга укуктуу жарандардын саны"
+      }
+    ],
+    "existing_justice_bodies_continue_1995": [
+      {
+        "status": "translation",
+        "text": "колдонуудагы сот адилеттиги органдары жаңылары түзүлгөнгө чейин ыйгарым укуктарын сактайт (1995-жылдагы редакция)"
+      }
+    ],
+    "first_constitutional_council_composition_1995": [
+      {
+        "status": "translation",
+        "text": "Конституциялык Кеңештин биринчи курамы өткөөл жоболордун тартибинде түзүлгөн (1995-жылдагы редакция)"
+      }
+    ],
+    "first_kurultai_election": [
+      {
+        "status": "translation",
+        "text": "шайлоо биринчи чакырылыштагы Курултайдын шайлоосу болуп саналат"
+      }
+    ],
+    "first_kurultai_transition_timely": [
+      {
+        "status": "translation",
+        "text": "биринчи чакырылыштагы Курултайга өтүү конституциялык мөөнөттөрдө жүргүзүлгөн"
+      }
+    ],
+    "first_senate_split_term_1995": [
+      {
+        "status": "translation",
+        "text": "биринчи чакырылыштагы Сенат депутаттарынын жарымы кыскартылган мөөнөткө шайланган (1995-жылдагы редакция)"
+      }
+    ],
+    "incumbent_continues_until_successor": [
+      {
+        "status": "translation",
+        "text": "иштеп жаткан кызмат адамы жаңы курам түзүлгөнгө чейин ыйгарым укуктарын сактайт"
+      }
+    ],
+    "language_conditions_duty_declared_1995": [
+      {
+        "status": "translation",
+        "text": "мамлекет Казакстан элинин тилдерин үйрөнүү жана өнүктүрүү үчүн шарттарды түзүүгө милдеттүү (1995-жылдагы редакция)"
+      }
+    ],
+    "narrowing_amendment_passes_filter_1995": [
+      {
+        "status": "translation",
+        "text": "2-пункттун тизмесин тарытуучу түзөтүү 91-берененин 3-пунктунун чыпкасынан өтөт"
+      }
+    ],
+    "narrowing_deemed_outside_core_1995": [
+      {
+        "status": "translation",
+        "text": "тизмени тарытуу 2-пункттун корголгон предметтерине тиешеси жок деп таанылган"
+      }
+    ],
+    "old_act_applicable": [
+      {
+        "status": "translation",
+        "text": "акт Конституцияга карама-каршы келбеген бөлүгүндө колдонулат"
+      }
+    ],
+    "old_act_applicable_1995": [
+      {
+        "status": "translation",
+        "text": "акт 1995-жылдагы Конституцияга карама-каршы келбеген бөлүгүндө колдонулат"
+      }
+    ],
+    "old_act_predating_1995": [
+      {
+        "status": "translation",
+        "text": "акт 1995-жылдагы Конституция күчүнө киргенге чейин колдонулган"
+      }
+    ],
+    "old_legal_act": [
+      {
+        "status": "translation",
+        "text": "акт Конституция күчүнө кирген күнү колдонулган"
+      }
+    ],
+    "parliamentary_amendment_adopted_1995": [
+      {
+        "status": "translation",
+        "text": "Конституцияга өзгөртүүлөр жөнүндө мыйзам Парламент тарабынан квалификациялуу көпчүлүк менен кабыл алынган (1995-жылдагы редакция)"
+      }
+    ],
+    "parliamentary_amendment_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "түзөтүүнүн парламенттик порогунун бөлүмү — бештен төрт (1995-жылдагы редакция)"
+      }
+    ],
+    "parliamentary_amendment_law": [
+      {
+        "status": "translation",
+        "text": "Парламенттин мыйзамы Конституцияга ушул өзгөртүүлөрдү киргизет (1995-жылдагы редакция)"
+      }
+    ],
+    "parliamentary_amendment_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "түзөтүүнүн парламенттик порогунун алымы — бештен төрт (1995-жылдагы редакция)"
+      }
+    ],
+    "protected_locator": [
+      {
+        "status": "translation",
+        "text": "өзгөрүлгүс өзөккө таандык кылынган Конституциянын жобосу"
+      }
+    ],
+    "protected_subject_1995": [
+      {
+        "status": "translation",
+        "text": "1995-жылдагы Конституциянын өзгөрүлгүс өзөгүнө таандык кылынган предмет"
+      }
+    ],
+    "referendum_approval_denominator": [
+      {
+        "status": "translation",
+        "text": "түзөтүүнү жактыруу порогунун бөлүмү — экиден бир"
+      }
+    ],
+    "referendum_approval_numerator": [
+      {
+        "status": "translation",
+        "text": "түзөтүүнү жактыруу порогунун алымы — экиден бир"
+      }
+    ],
+    "referendum_for_amendment": [
+      {
+        "status": "translation",
+        "text": "референдум Конституцияга ушул өзгөртүү боюнча өткөрүлөт"
+      }
+    ],
+    "referendum_held": [
+      {
+        "status": "translation",
+        "text": "жалпы элдик референдум өттү деп эсептелет"
+      }
+    ],
+    "referendum_participants": [
+      {
+        "status": "translation",
+        "text": "добуш берүүгө катышкан жарандардын саны"
+      }
+    ],
+    "referendum_territory_denominator": [
+      {
+        "status": "translation",
+        "text": "аймактык порогдун бөлүмү — үчтөн эки"
+      }
+    ],
+    "referendum_territory_numerator": [
+      {
+        "status": "translation",
+        "text": "аймактык порогдун алымы — үчтөн эки"
+      }
+    ],
+    "referendum_turnout_denominator": [
+      {
+        "status": "translation",
+        "text": "референдумга катышуу порогунун бөлүмү — экиден бир"
+      }
+    ],
+    "referendum_turnout_numerator": [
+      {
+        "status": "translation",
+        "text": "референдумга катышуу порогунун алымы — экиден бир"
+      }
+    ],
+    "seven_year_term_applies_from_post_2005_election_1995": [
+      {
+        "status": "translation",
+        "text": "Президенттин ыйгарым укуктарынын жети жылдык мөөнөтү 2005-жылдан кийин шайланган адамга колдонулат (1995-жылдагы редакция)"
+      }
+    ],
+    "single_election_rule_applies_prospectively_1995": [
+      {
+        "status": "translation",
+        "text": "бир жолу гана шайлануу жөнүндө эреже келечекке карата колдонулат (1995-жылдагы редакция)"
+      }
+    ],
+    "total_regions_cities_and_capital": [
+      {
+        "status": "translation",
+        "text": "областтардын, республикалык маанидеги шаарлардын жана борбордун жалпы саны"
+      }
+    ],
+    "transitional_appointment": [
+      {
+        "status": "translation",
+        "text": "дайындоо өткөөл дайындоолорго таандык"
+      }
+    ],
+    "transitional_appointment_timely": [
+      {
+        "status": "translation",
+        "text": "өткөөл дайындоо мөөнөтүндө жүргүзүлгөн"
+      }
+    ],
+    "transitional_constitutional_law_years_1995": [
+      {
+        "status": "translation",
+        "text": "өткөөл мезгилдин конституциялык мыйзамдарын кабыл алуу мөөнөтү — бир жыл (1995-жылдагы редакция)"
+      }
+    ],
+    "transitional_other_law_years_1995": [
+      {
+        "status": "translation",
+        "text": "өткөөл мезгилдин башка аталган мыйзамдарын кабыл алуу мөөнөтү — эки жыл (1995-жылдагы редакция)"
+      }
+    ],
+    "vice_president_powers_preserved_1995": [
+      {
+        "status": "translation",
+        "text": "Вице-Президенттин ыйгарым укуктары өткөөл мезгилде сакталат (1995-жылдагы редакция)"
+      }
+    ],
+    "votes_for_amendment": [
+      {
+        "status": "translation",
+        "text": "өзгөртүүлөр жана толуктоолор үчүн берилген добуштардын саны"
+      }
+    ]
+  },
+  "language": "ky",
+  "package": "kz.constitution.amendment"
+}

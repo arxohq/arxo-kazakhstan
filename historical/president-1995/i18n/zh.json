@@ -1,0 +1,1262 @@
+{
+  "$comment": "哈萨克斯坦共和国宪法程序包的中文（简体）标签叠加层（DECISION-0070）。本文件不参与编译，也不进入 CLIR 规范字节，仅由展示层读取（lawref verbalize --labels、MCP 资源 law://<程序包>/verbalized/zh、工作台）。译文由形式化人员依据各节点的俄文标签（ru-KZ）译出，术语参照宪法学通用汉语表述，状态为 translation（工作译文），并非官方译本。键为声明的本地名称。",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "ActingPresidentCannotInitiateAmendment1995": [
+      {
+        "status": "translation",
+        "text": "第四十八条第二款（1995年版）。接受总统职权的人无权提起宪法的修改和补充"
+      }
+    ],
+    "AdoptEmergencyMeasure1995": [
+      {
+        "status": "translation",
+        "text": "第四十四条第十六项（1995年版）。总统在与总理和议会两院议长正式协商后宣布紧急状态，并立即通报议会"
+      }
+    ],
+    "AdoptMartialMeasure1995": [
+      {
+        "status": "translation",
+        "text": "第四十四条第十七项（1995年版）。发生侵略或者面临直接外部威胁时，总统宣布战争状态并立即通报议会"
+      }
+    ],
+    "AppointWithMazhilisConsent1995": [
+      {
+        "status": "translation",
+        "text": "第四十四条第三项（1995年版）。总统经马日利斯同意任命总理"
+      }
+    ],
+    "AppointWithSenateConsent1995": [
+      {
+        "status": "translation",
+        "text": "第四十四条第四项（1995年版）。宪法法院院长、国家银行行长、最高司法委员会主席、总检察长和国家安全委员会主席，经参议院同意任命"
+      }
+    ],
+    "Appointment": [
+      {
+        "status": "translation",
+        "text": "由总统作出的任命"
+      }
+    ],
+    "CallReferendum1995": [
+      {
+        "status": "translation",
+        "text": "第四十四条第十项（1995年版）。总统就举行共和国全民公决作出决定"
+      }
+    ],
+    "Candidate": [
+      {
+        "status": "translation",
+        "text": "总统候选人"
+      }
+    ],
+    "ConstitutionalPetition": [
+      {
+        "status": "translation",
+        "text": "向宪法法院提出的申请"
+      }
+    ],
+    "ConstitutionalReviewPetitionPower1995": [
+      {
+        "status": "translation",
+        "text": "第四十四条第十之一项（1995年版）。总统就已生效文件是否符合宪法向宪法法院提出审查申请"
+      }
+    ],
+    "CountersignatureResponsibility1995": [
+      {
+        "status": "translation",
+        "text": "第四十五条第三款（1995年版）。副署该文件的议会某院议长或者总理，对其合法性承担法律责任"
+      }
+    ],
+    "ElectedByAbsoluteMajority1995": [
+      {
+        "status": "translation",
+        "text": "第四十一条第五款（1995年版）。获得参加投票者百分之五十以上选票的候选人，视为当选"
+      }
+    ],
+    "ElectedInRunoff1995": [
+      {
+        "status": "translation",
+        "text": "第四十一条第五款（1995年版）。在重新投票中获得票数较多的候选人视为当选"
+      }
+    ],
+    "Election": [
+      {
+        "status": "translation",
+        "text": "总统选举"
+      }
+    ],
+    "EmergencyMeasure": [
+      {
+        "status": "translation",
+        "text": "紧急状态或者战争状态措施"
+      }
+    ],
+    "EmergencyPower1995": [
+      {
+        "status": "translation",
+        "text": "第四十四条第十六项（1995年版）。总统在与总理和议会两院议长正式协商后宣布紧急状态，并立即通报议会"
+      }
+    ],
+    "FormerPresidentInviolabilityImmunity1995": [
+      {
+        "status": "translation",
+        "text": "第四十六条第三款（1995年版）。关于不可侵犯性的规定适用于共和国前总统"
+      }
+    ],
+    "FormerPresidentStateProvisionDuty1995": [
+      {
+        "status": "translation",
+        "text": "第四十六条第二款和第三款（1995年版）。总统及其家属的保障、服务和警卫由国家承担费用；本条规定适用于前总统"
+      }
+    ],
+    "FormerPresidentTitle1995": [
+      {
+        "status": "translation",
+        "text": "第四十二条第三款（1995年版）。除被罢免者外，所有卸任总统均享有前总统称号"
+      }
+    ],
+    "FormerPresidentialInviolability1995": [
+      {
+        "status": "translation",
+        "text": "第四十六条第三款（1995年版）。关于不可侵犯性的规定适用于共和国前总统"
+      }
+    ],
+    "Impeachment": [
+      {
+        "status": "translation",
+        "text": "罢免总统职务或者因健康状况解除其职务的程序"
+      }
+    ],
+    "ImpeachmentBarredDuringDissolution1995": [
+      {
+        "status": "translation",
+        "text": "第四十七条第三款（1995年版）。在总统审议提前终止议会或者马日利斯职权问题期间，不得提出罢免问题"
+      }
+    ],
+    "ImpeachmentChargeBroughtByMazhilisMajority1995": [
+      {
+        "status": "translation",
+        "text": "第四十七条第二款（1995年版）。提出指控的决定由马日利斯议员总数的多数作出"
+      }
+    ],
+    "ImpeachmentInitiativeThreshold1995": [
+      {
+        "status": "translation",
+        "text": "第四十七条第二款（1995年版）。提出指控的决定经不少于三分之一马日利斯议员动议作出"
+      }
+    ],
+    "ImpeachmentInvestigationValid1995": [
+      {
+        "status": "translation",
+        "text": "第四十七条第二款（1995年版）。指控的调查由参议院组织，其结果经参议院议员总数的多数票移送"
+      }
+    ],
+    "Law": [
+      {
+        "status": "translation",
+        "text": "提请总统签署的法律"
+      }
+    ],
+    "LawReturnPower1995": [
+      {
+        "status": "translation",
+        "text": "第四十四条第二项（1995年版）。总统将法律或者其个别条文退回重新审议和表决"
+      }
+    ],
+    "LawSigningPower1995": [
+      {
+        "status": "translation",
+        "text": "第四十四条第二项（1995年版）。总统在一个月内签署议会提交的法律"
+      }
+    ],
+    "MartialPower1995": [
+      {
+        "status": "translation",
+        "text": "第四十四条第十七项（1995年版）。发生侵略或者面临直接外部威胁时，总统宣布战争状态并立即通报议会"
+      }
+    ],
+    "Mazhilis": [
+      {
+        "status": "translation",
+        "text": "议会马日利斯"
+      }
+    ],
+    "MazhilisChairAssumesPowers1995": [
+      {
+        "status": "translation",
+        "text": "第四十八条第一款（1995年版）。参议院议长不能承接的，职权转由马日利斯议长承接"
+      }
+    ],
+    "MazhilisConsentAppointmentPower1995": [
+      {
+        "status": "translation",
+        "text": "第四十四条第三项（1995年版）。总统经马日利斯同意任命总理"
+      }
+    ],
+    "Parliament": [
+      {
+        "status": "translation",
+        "text": "哈萨克斯坦共和国议会"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "自然人"
+      }
+    ],
+    "PetitionConstitutionalCourt1995": [
+      {
+        "status": "translation",
+        "text": "第四十四条第十之一项（1995年版）。总统就已生效文件是否符合宪法向宪法法院提出审查申请"
+      }
+    ],
+    "President": [
+      {
+        "status": "translation",
+        "text": "哈萨克斯坦共和国总统（1995年版）"
+      }
+    ],
+    "PresidentAssumesOfficeOnOath1995": [
+      {
+        "status": "translation",
+        "text": "第四十二条第一款（1995年版）。总统自向人民宣誓之时起就职"
+      }
+    ],
+    "PresidentReleasedForIncapacity1995": [
+      {
+        "status": "translation",
+        "text": "第四十七条第一款（1995年版）。因病提前解除职务的决定，由两院各自议员总数不少于四分之三的多数作出"
+      }
+    ],
+    "PresidentRemovedByImpeachment1995": [
+      {
+        "status": "translation",
+        "text": "第四十七条第二款（1995年版）。在最高法院和宪法法院作出结论的前提下，最终决定由两院各自议员不少于四分之三的多数票作出"
+      }
+    ],
+    "PresidentialAct": [
+      {
+        "status": "translation",
+        "text": "总统文件"
+      }
+    ],
+    "PresidentialActBinding1995": [
+      {
+        "status": "translation",
+        "text": "第四十五条第一款（1995年版）。总统根据宪法和法律并为执行宪法和法律发布命令和指令，在共和国全境具有约束力"
+      }
+    ],
+    "PresidentialCandidateEligibility1995": [
+      {
+        "status": "translation",
+        "text": "第四十一条第二款（1995年版）。年满四十周岁、掌握国语、在哈萨克斯坦居住十五年并具有高等教育学历的出生取得国籍的公民，可以当选总统"
+      }
+    ],
+    "PresidentialInviolability1995": [
+      {
+        "status": "translation",
+        "text": "第四十六条第一款（1995年版）。总统及其荣誉和尊严不可侵犯"
+      }
+    ],
+    "PresidentialInviolabilityImmunity1995": [
+      {
+        "status": "translation",
+        "text": "第四十六条第一款（1995年版）。总统及其荣誉和尊严不可侵犯"
+      }
+    ],
+    "PresidentialOfficeIncompatible1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "第四十三条第一款和第三款（1995年版）。总统不得担任议员、担任其他有报酬职务、从事经营活动，也不得加入政党"
+      }
+    ],
+    "PresidentialOfficeIncompatible1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "第四十三条第一款和第三款（1995年版）。总统不得担任议员、担任其他有报酬职务、从事经营活动，也不得加入政党"
+      }
+    ],
+    "PresidentialOfficeIncompatible1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "第四十三条第一款和第三款（1995年版）。总统不得担任议员、担任其他有报酬职务、从事经营活动，也不得加入政党"
+      }
+    ],
+    "PresidentialOfficeIncompatible1995/alt/4": [
+      {
+        "status": "translation",
+        "text": "第四十三条第一款和第三款（1995年版）。总统不得担任议员、担任其他有报酬职务、从事经营活动，也不得加入政党"
+      }
+    ],
+    "PresidentialPowersTerminated1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "第四十二条第三款（1995年版）。职权因新当选总统就职、提前解除职务、被罢免或者去世而终止"
+      }
+    ],
+    "PresidentialPowersTerminated1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "第四十二条第三款（1995年版）。职权因新当选总统就职、提前解除职务、被罢免或者去世而终止"
+      }
+    ],
+    "PresidentialPowersTerminated1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "第四十二条第三款（1995年版）。职权因新当选总统就职、提前解除职务、被罢免或者去世而终止"
+      }
+    ],
+    "PresidentialRelativePositionProhibited1995": [
+      {
+        "status": "translation",
+        "text": "第四十三条第四款（1995年版）。总统的近亲属不得担任政治性国家公职和准国有部门组织的领导职务"
+      }
+    ],
+    "PrimeMinisterAssumesPowers1995": [
+      {
+        "status": "translation",
+        "text": "第四十八条第一款（1995年版）。马日利斯议长不能承接的，职权转由共和国总理承接"
+      }
+    ],
+    "PrimeMinisterNomineeAfterFractionConsultations1995": [
+      {
+        "status": "translation",
+        "text": "第四十四条第三项（1995年版）。总理人选在与各政党党团协商后提交马日利斯审议"
+      }
+    ],
+    "ProvideStateFundedProtection1995": [
+      {
+        "status": "translation",
+        "text": "第四十六条第二款和第三款（1995年版）。总统及其家属的保障、服务和警卫由国家承担费用；本条规定适用于前总统"
+      }
+    ],
+    "Referendum": [
+      {
+        "status": "translation",
+        "text": "共和国全民公决"
+      }
+    ],
+    "ReferendumPower1995": [
+      {
+        "status": "translation",
+        "text": "第四十四条第十项（1995年版）。总统就举行共和国全民公决作出决定"
+      }
+    ],
+    "RegularElectionDateAdmissible1995": [
+      {
+        "status": "translation",
+        "text": "第四十一条第三款（1995年版）。例行选举于十二月第一个星期日举行，其时间不得与新一届议会选举相重合"
+      }
+    ],
+    "RejectedChargeTerminatesInitiators1995": [
+      {
+        "status": "translation",
+        "text": "第四十七条第二款（1995年版）。指控在任何阶段被驳回的，提出该指控的马日利斯议员的职权提前终止"
+      }
+    ],
+    "RepeatedElectionProhibited1995": [
+      {
+        "status": "translation",
+        "text": "第四十二条第五款（1995年版）。同一人当选总统不得超过一次"
+      }
+    ],
+    "ReturnLawForReconsideration1995": [
+      {
+        "status": "translation",
+        "text": "第四十四条第二项（1995年版）。总统将法律或者其个别条文退回重新审议和表决"
+      }
+    ],
+    "RunoffRequired1995": [
+      {
+        "status": "translation",
+        "text": "第四十一条第五款（1995年版）。无候选人获得上述票数的，举行重新投票"
+      }
+    ],
+    "Senate": [
+      {
+        "status": "translation",
+        "text": "议会参议院"
+      }
+    ],
+    "SenateChairAssumesPowers1995": [
+      {
+        "status": "translation",
+        "text": "第四十八条第一款（1995年版）。总统剩余任期内的职权转由议会参议院议长承接"
+      }
+    ],
+    "SenateConsentAppointmentPower1995": [
+      {
+        "status": "translation",
+        "text": "第四十四条第四项（1995年版）。宪法法院院长、国家银行行长、最高司法委员会主席、总检察长和国家安全委员会主席，经参议院同意任命"
+      }
+    ],
+    "SignPresentedLaw1995": [
+      {
+        "status": "translation",
+        "text": "第四十四条第二项（1995年版）。总统在一个月内签署议会提交的法律"
+      }
+    ],
+    "StateAuthority": [
+      {
+        "status": "translation",
+        "text": "国家机关或者公职人员"
+      }
+    ],
+    "SuccessionEvent": [
+      {
+        "status": "translation",
+        "text": "总统职权转移的情形"
+      }
+    ],
+    "SuccessionOathTimely1995": [
+      {
+        "status": "translation",
+        "text": "第四十二条第二款（1995年版）。接受总统职权的人应当在一个月内宣誓"
+      }
+    ],
+    "act_countersigned_by_pm_or_chamber_chair": [
+      {
+        "status": "translation",
+        "text": "该文件经总理或者议会某院议长副署"
+      }
+    ],
+    "act_initiated_by_government": [
+      {
+        "status": "translation",
+        "text": "该文件依政府的动议发布"
+      }
+    ],
+    "acting_president": [
+      {
+        "status": "translation",
+        "text": "该人代行总统职务"
+      }
+    ],
+    "acting_president_amendment_initiative_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "代行总统职务的人不得提起宪法修改"
+      }
+    ],
+    "age_years": [
+      {
+        "status": "translation",
+        "text": "该人的周岁年龄"
+      }
+    ],
+    "aggression_or_immediate_external_threat": [
+      {
+        "status": "translation",
+        "text": "存在对共和国的侵略或者直接的外部威胁"
+      }
+    ],
+    "appointment_effective_1995": [
+      {
+        "status": "translation",
+        "text": "任命已经作出"
+      }
+    ],
+    "appointment_requires_mazhilis_consent": [
+      {
+        "status": "translation",
+        "text": "该项任命经马日利斯同意作出"
+      }
+    ],
+    "appointment_requires_senate_consent": [
+      {
+        "status": "translation",
+        "text": "该项任命经参议院同意作出"
+      }
+    ],
+    "assumes_presidential_powers_1995": [
+      {
+        "status": "translation",
+        "text": "该人承接总统职权"
+      }
+    ],
+    "candidate_person": [
+      {
+        "status": "translation",
+        "text": "候选人即为该人"
+      }
+    ],
+    "charge_rejected": [
+      {
+        "status": "translation",
+        "text": "指控已被驳回"
+      }
+    ],
+    "citizen_by_birth": [
+      {
+        "status": "translation",
+        "text": "该人为出生取得共和国国籍的公民"
+      }
+    ],
+    "close_relative_of_president": [
+      {
+        "status": "translation",
+        "text": "该人为总统的近亲属"
+      }
+    ],
+    "coincides_with_parliament_election": [
+      {
+        "status": "translation",
+        "text": "总统选举与新一届议会选举时间相重合"
+      }
+    ],
+    "constitutional_amendment_initiative_attempt": [
+      {
+        "status": "translation",
+        "text": "代行总统职务的人提起宪法修改"
+      }
+    ],
+    "constitutional_court_procedure_confirmed": [
+      {
+        "status": "translation",
+        "text": "宪法法院确认既定宪法程序已经遵守"
+      }
+    ],
+    "constitutional_organs_functioning_disrupted": [
+      {
+        "status": "translation",
+        "text": "宪法机关的正常运作已受破坏"
+      }
+    ],
+    "constitutional_petition": [
+      {
+        "status": "translation",
+        "text": "已向宪法法院提出申请"
+      }
+    ],
+    "constitutional_review_petition_attempt": [
+      {
+        "status": "translation",
+        "text": "总统向宪法法院提出申请"
+      }
+    ],
+    "constitutional_review_requested_1995": [
+      {
+        "status": "translation",
+        "text": "宪法监督的启动符合法定要求"
+      }
+    ],
+    "countersignatory_bears_legal_responsibility_1995": [
+      {
+        "status": "translation",
+        "text": "副署人对该文件的合法性承担法律责任"
+      }
+    ],
+    "early_release_or_removal": [
+      {
+        "status": "translation",
+        "text": "总统已被提前解除职务或者被罢免"
+      }
+    ],
+    "elected_president_1995": [
+      {
+        "status": "translation",
+        "text": "该人视为当选总统"
+      }
+    ],
+    "election_majority_percent_1995": [
+      {
+        "status": "translation",
+        "text": "总统当选门槛为百分之五十以上的选票"
+      }
+    ],
+    "eligible_presidential_candidate_1995": [
+      {
+        "status": "translation",
+        "text": "该人符合总统候选人的条件"
+      }
+    ],
+    "emergency_consultations_with_pm_and_chairs_completed": [
+      {
+        "status": "translation",
+        "text": "已与总理和议会两院议长进行协商"
+      }
+    ],
+    "emergency_measure": [
+      {
+        "status": "translation",
+        "text": "该措施为紧急状态措施"
+      }
+    ],
+    "emergency_measure_attempt": [
+      {
+        "status": "translation",
+        "text": "总统采取紧急状态措施"
+      }
+    ],
+    "emergency_measure_in_force_1995": [
+      {
+        "status": "translation",
+        "text": "紧急状态措施的实施符合法定要求"
+      }
+    ],
+    "final_decision_within_two_months": [
+      {
+        "status": "translation",
+        "text": "最终决定已在两个月期限内作出"
+      }
+    ],
+    "fluent_in_state_language": [
+      {
+        "status": "translation",
+        "text": "该人熟练掌握国语"
+      }
+    ],
+    "former_president": [
+      {
+        "status": "translation",
+        "text": "该人为共和国前总统"
+      }
+    ],
+    "former_president_title_held_1995": [
+      {
+        "status": "translation",
+        "text": "前总统保留共和国总统的称号"
+      }
+    ],
+    "fraction_consultations_completed": [
+      {
+        "status": "translation",
+        "text": "已与各政党党团进行协商"
+      }
+    ],
+    "higher_education": [
+      {
+        "status": "translation",
+        "text": "该人具有高等教育学历"
+      }
+    ],
+    "highest_vote_in_runoff": [
+      {
+        "status": "translation",
+        "text": "该候选人在重新投票中获得票数较多"
+      }
+    ],
+    "impeachment_case": [
+      {
+        "status": "translation",
+        "text": "该程序为罢免总统职务的程序"
+      }
+    ],
+    "impeachment_charge_brought_1995": [
+      {
+        "status": "translation",
+        "text": "提出指控的决定已由马日利斯议员总数的多数作出"
+      }
+    ],
+    "impeachment_deadline_months_1995": [
+      {
+        "status": "translation",
+        "text": "作出罢免最终决定的期限为两个月"
+      }
+    ],
+    "impeachment_final_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "罢免门槛的分母为四分之三"
+      }
+    ],
+    "impeachment_final_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "罢免门槛的分子为四分之三"
+      }
+    ],
+    "impeachment_initiative_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "罢免动议门槛的分母为三分之一"
+      }
+    ],
+    "impeachment_initiative_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "罢免动议门槛的分子为三分之一"
+      }
+    ],
+    "impeachment_initiative_valid_1995": [
+      {
+        "status": "translation",
+        "text": "罢免动议由法定人数的议员提出"
+      }
+    ],
+    "impeachment_investigation_valid_1995": [
+      {
+        "status": "translation",
+        "text": "指控的调查已依法定程序交付"
+      }
+    ],
+    "impeachment_may_not_be_initiated_1995": [
+      {
+        "status": "translation",
+        "text": "不得提出罢免总统的问题"
+      }
+    ],
+    "incapacity_case": [
+      {
+        "status": "translation",
+        "text": "该程序为因健康状况解除总统职务的程序"
+      }
+    ],
+    "incapacity_release_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "因健康状况解除职务门槛的分母为四分之三"
+      }
+    ],
+    "incapacity_release_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "因健康状况解除职务门槛的分子为四分之三"
+      }
+    ],
+    "initiating_mazhilis_deputies_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "提出指控的马日利斯议员的职权终止"
+      }
+    ],
+    "law_presented": [
+      {
+        "status": "translation",
+        "text": "法律已提请总统签署"
+      }
+    ],
+    "law_returned_for_reconsideration_1995": [
+      {
+        "status": "translation",
+        "text": "法律已被退回重新审议和表决"
+      }
+    ],
+    "law_signature_months_1995": [
+      {
+        "status": "translation",
+        "text": "签署所提交法律的期限为一个月"
+      }
+    ],
+    "law_signed_1995": [
+      {
+        "status": "translation",
+        "text": "法律已由总统签署"
+      }
+    ],
+    "martial_measure_attempt": [
+      {
+        "status": "translation",
+        "text": "总统宣布战争状态"
+      }
+    ],
+    "martial_measure_in_force_1995": [
+      {
+        "status": "translation",
+        "text": "战争状态的宣布符合法定要求"
+      }
+    ],
+    "mazhilis_accusation_votes": [
+      {
+        "status": "translation",
+        "text": "马日利斯对提出指控投赞成票的票数"
+      }
+    ],
+    "mazhilis_chair": [
+      {
+        "status": "translation",
+        "text": "该人是马日利斯议长"
+      }
+    ],
+    "mazhilis_chair_unable": [
+      {
+        "status": "translation",
+        "text": "马日利斯议长不能承接总统职权"
+      }
+    ],
+    "mazhilis_consent_given": [
+      {
+        "status": "translation",
+        "text": "马日利斯已同意该项任命"
+      }
+    ],
+    "mazhilis_final_votes": [
+      {
+        "status": "translation",
+        "text": "作出最终决定时马日利斯的票数"
+      }
+    ],
+    "mazhilis_initiating_votes": [
+      {
+        "status": "translation",
+        "text": "提出罢免动议的马日利斯议员人数"
+      }
+    ],
+    "mazhilis_release_votes": [
+      {
+        "status": "translation",
+        "text": "马日利斯对因健康状况解除职务投赞成票的票数"
+      }
+    ],
+    "mazhilis_total_deputies": [
+      {
+        "status": "translation",
+        "text": "马日利斯议员总数"
+      }
+    ],
+    "medical_commission_conclusion": [
+      {
+        "status": "translation",
+        "text": "已有医疗委员会的结论"
+      }
+    ],
+    "new_president_assumed_office": [
+      {
+        "status": "translation",
+        "text": "新总统已经就职"
+      }
+    ],
+    "no_candidate_reached_majority": [
+      {
+        "status": "translation",
+        "text": "无候选人获得半数以上选票"
+      }
+    ],
+    "oath_taken": [
+      {
+        "status": "translation",
+        "text": "该人已向哈萨克斯坦人民宣誓"
+      }
+    ],
+    "parliament_dissolution_under_consideration": [
+      {
+        "status": "translation",
+        "text": "正在审议解散议会或者马日利斯的问题"
+      }
+    ],
+    "parliament_immediately_informed": [
+      {
+        "status": "translation",
+        "text": "已立即将所采取的措施通报议会"
+      }
+    ],
+    "participating_voters": [
+      {
+        "status": "translation",
+        "text": "参加投票的选民人数"
+      }
+    ],
+    "petition_protects_rights_or_security": [
+      {
+        "status": "translation",
+        "text": "该申请旨在保护人的权利和自由或者国家安全"
+      }
+    ],
+    "pm_appointment_consultations_completed_1995": [
+      {
+        "status": "translation",
+        "text": "总理人选已在与各政党党团协商后提出"
+      }
+    ],
+    "president": [
+      {
+        "status": "translation",
+        "text": "该人是共和国总统"
+      }
+    ],
+    "president_addresses_annual_message_1995": [
+      {
+        "status": "translation",
+        "text": "总统就国内形势发表年度国情咨文"
+      }
+    ],
+    "president_assumed_office_1995": [
+      {
+        "status": "translation",
+        "text": "该人已就任总统职务"
+      }
+    ],
+    "president_conducts_business": [
+      {
+        "status": "translation",
+        "text": "总统从事经营活动"
+      }
+    ],
+    "president_deceased": [
+      {
+        "status": "translation",
+        "text": "总统已去世"
+      }
+    ],
+    "president_decides_citizenship_and_asylum_1995": [
+      {
+        "status": "translation",
+        "text": "总统决定国籍和给予政治庇护事项"
+      }
+    ],
+    "president_ensures_concerted_branch_functioning_1995": [
+      {
+        "status": "translation",
+        "text": "总统保障国家权力各分支的协调运作"
+      }
+    ],
+    "president_exercises_pardon_1995": [
+      {
+        "status": "translation",
+        "text": "总统对公民行使赦免权"
+      }
+    ],
+    "president_forms_security_council_and_assembly_1995": [
+      {
+        "status": "translation",
+        "text": "总统组建安全会议和哈萨克斯坦人民大会"
+      }
+    ],
+    "president_forms_state_guard_service_1995": [
+      {
+        "status": "translation",
+        "text": "总统组建国家警卫局"
+      }
+    ],
+    "president_holds_other_paid_office": [
+      {
+        "status": "translation",
+        "text": "总统担任其他有报酬职务"
+      }
+    ],
+    "president_holds_representative_mandate": [
+      {
+        "status": "translation",
+        "text": "总统是代表机关的议员"
+      }
+    ],
+    "president_is_head_of_state_1995": [
+      {
+        "status": "translation",
+        "text": "总统是国家元首、共和国最高公职人员"
+      }
+    ],
+    "president_is_supreme_commander_1995": [
+      {
+        "status": "translation",
+        "text": "总统是武装力量最高统帅"
+      }
+    ],
+    "president_is_symbol_and_guarantor_of_unity_1995": [
+      {
+        "status": "translation",
+        "text": "总统是人民和国家权力统一的象征和保障者"
+      }
+    ],
+    "president_minimum_age_1995": [
+      {
+        "status": "translation",
+        "text": "总统的最低年龄为四十周岁"
+      }
+    ],
+    "president_party_member": [
+      {
+        "status": "translation",
+        "text": "总统是政党成员"
+      }
+    ],
+    "president_person": [
+      {
+        "status": "translation",
+        "text": "该总统即为该自然人"
+      }
+    ],
+    "president_released_for_incapacity_1995": [
+      {
+        "status": "translation",
+        "text": "总统已因健康状况被提前解除职务"
+      }
+    ],
+    "president_removed_by_impeachment_1995": [
+      {
+        "status": "translation",
+        "text": "总统已被罢免职务"
+      }
+    ],
+    "president_residence_years_1995": [
+      {
+        "status": "translation",
+        "text": "在哈萨克斯坦所需的居住年限为十五年"
+      }
+    ],
+    "president_term_years_1995": [
+      {
+        "status": "translation",
+        "text": "总统的任期为七年"
+      }
+    ],
+    "presidential_act": [
+      {
+        "status": "translation",
+        "text": "该文件由该总统发布"
+      }
+    ],
+    "presidential_act_based_on_constitution_and_law": [
+      {
+        "status": "translation",
+        "text": "该文件系根据宪法和法律并为执行宪法和法律而发布"
+      }
+    ],
+    "presidential_act_binding_nationwide_1995": [
+      {
+        "status": "translation",
+        "text": "总统文件在共和国全境具有约束力"
+      }
+    ],
+    "presidential_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "总统作出任命"
+      }
+    ],
+    "presidential_election": [
+      {
+        "status": "translation",
+        "text": "该事件为总统选举"
+      }
+    ],
+    "presidential_inviolability_infringement": [
+      {
+        "status": "translation",
+        "text": "总统的不可侵犯性已受侵害"
+      }
+    ],
+    "presidential_office_incompatible_1995": [
+      {
+        "status": "translation",
+        "text": "总统职务与所任职务或者所从事活动不相容"
+      }
+    ],
+    "presidential_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "总统的职权已终止"
+      }
+    ],
+    "presidential_relative_position_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "总统的亲属不得担任该项职务"
+      }
+    ],
+    "presidential_return_attempt": [
+      {
+        "status": "translation",
+        "text": "总统将法律退回重新审议"
+      }
+    ],
+    "presidential_signature_attempt": [
+      {
+        "status": "translation",
+        "text": "总统签署所提交的法律"
+      }
+    ],
+    "presidential_vacancy": [
+      {
+        "status": "translation",
+        "text": "已发生总统被提前解除职务、被罢免或者死亡的情形"
+      }
+    ],
+    "presidential_vote": [
+      {
+        "status": "translation",
+        "text": "对该候选人投的票数"
+      }
+    ],
+    "previously_elected_president": [
+      {
+        "status": "translation",
+        "text": "该人此前曾当选共和国总统"
+      }
+    ],
+    "prime_minister": [
+      {
+        "status": "translation",
+        "text": "该人是总理"
+      }
+    ],
+    "referendum_called_1995": [
+      {
+        "status": "translation",
+        "text": "共和国全民公决已经确定举行"
+      }
+    ],
+    "referendum_decision_attempt": [
+      {
+        "status": "translation",
+        "text": "总统就举行全民公决作出决定"
+      }
+    ],
+    "referendum_proposal": [
+      {
+        "status": "translation",
+        "text": "已提出举行共和国全民公决的建议"
+      }
+    ],
+    "regular_election_date_admissible_1995": [
+      {
+        "status": "translation",
+        "text": "总统例行选举的时间可以接受"
+      }
+    ],
+    "regular_election_on_first_december_sunday": [
+      {
+        "status": "translation",
+        "text": "例行选举定于十二月第一个星期日举行"
+      }
+    ],
+    "relative_holds_political_office_or_quasistate_leadership": [
+      {
+        "status": "translation",
+        "text": "该亲属担任政治性国家公职或者领导准国有部门组织"
+      }
+    ],
+    "removed_from_office": [
+      {
+        "status": "translation",
+        "text": "该人已被罢免总统职务"
+      }
+    ],
+    "repeated_election_attempt": [
+      {
+        "status": "translation",
+        "text": "已发生再次当选总统的情形"
+      }
+    ],
+    "repeated_election_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "同一人再次当选总统不被允许"
+      }
+    ],
+    "resides_last_years": [
+      {
+        "status": "translation",
+        "text": "在哈萨克斯坦最近连续居住的年数"
+      }
+    ],
+    "runoff_ballot": [
+      {
+        "status": "translation",
+        "text": "该投票为重新投票"
+      }
+    ],
+    "runoff_required_1995": [
+      {
+        "status": "translation",
+        "text": "举行重新投票"
+      }
+    ],
+    "senate_chair": [
+      {
+        "status": "translation",
+        "text": "该人是参议院议长"
+      }
+    ],
+    "senate_chair_unable": [
+      {
+        "status": "translation",
+        "text": "参议院议长不能承接总统职权"
+      }
+    ],
+    "senate_consent_given": [
+      {
+        "status": "translation",
+        "text": "参议院已同意该项任命"
+      }
+    ],
+    "senate_final_votes": [
+      {
+        "status": "translation",
+        "text": "作出最终决定时参议院的票数"
+      }
+    ],
+    "senate_investigation_votes": [
+      {
+        "status": "translation",
+        "text": "参议院对交付调查投赞成票的票数"
+      }
+    ],
+    "senate_release_votes": [
+      {
+        "status": "translation",
+        "text": "参议院对因健康状况解除职务投赞成票的票数"
+      }
+    ],
+    "senate_total_deputies": [
+      {
+        "status": "translation",
+        "text": "参议院议员总数"
+      }
+    ],
+    "serious_and_immediate_threat": [
+      {
+        "status": "translation",
+        "text": "存在对安全、宪法制度或者公共秩序的严重而直接的威胁"
+      }
+    ],
+    "signature_within_one_month": [
+      {
+        "status": "translation",
+        "text": "法律已在一个月期限内签署"
+      }
+    ],
+    "state_authority": [
+      {
+        "status": "translation",
+        "text": "该主体是国家机关或者公职人员"
+      }
+    ],
+    "state_funded_protection_provided": [
+      {
+        "status": "translation",
+        "text": "已为前总统提供由国家承担费用的警卫"
+      }
+    ],
+    "succession_event": [
+      {
+        "status": "translation",
+        "text": "总统职权转移至该人"
+      }
+    ],
+    "succession_oath_months_1995": [
+      {
+        "status": "translation",
+        "text": "职权转移时宣誓的期限为一个月"
+      }
+    ],
+    "succession_oath_timely_1995": [
+      {
+        "status": "translation",
+        "text": "职权转移时的宣誓已按期完成"
+      }
+    ],
+    "succession_oath_within_one_month": [
+      {
+        "status": "translation",
+        "text": "已自接受职权之日起一个月内宣誓"
+      }
+    ],
+    "supreme_court_charge_supported": [
+      {
+        "status": "translation",
+        "text": "最高法院确认指控成立"
+      }
+    ],
+    "treason_charge": [
+      {
+        "status": "translation",
+        "text": "总统被指控犯有叛国罪"
+      }
+    ]
+  },
+  "language": "zh",
+  "package": "kz.constitution1995.president"
+}

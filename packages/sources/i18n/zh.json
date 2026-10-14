@@ -1,0 +1,716 @@
+{
+  "$comment": "哈萨克斯坦共和国宪法程序包的中文（简体）标签叠加层（DECISION-0070）。本文件不参与编译，也不进入 CLIR 规范字节，仅由展示层读取（lawref verbalize --labels、MCP 资源 law://<程序包>/verbalized/zh、工作台）。译文由形式化人员依据各节点的俄文标签（ru-KZ）译出，术语参照宪法学通用汉语表述，状态为 translation（工作译文），并非官方译本。键为声明的本地名称。",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "Association": [
+      {
+        "status": "translation",
+        "text": "社会团体"
+      }
+    ],
+    "AssociationUnlawfulInterferenceProhibited/alt/1": [
+      {
+        "status": "translation",
+        "text": "第六条第二款。禁止非法相互干预"
+      }
+    ],
+    "AssociationUnlawfulInterferenceProhibited/alt/2": [
+      {
+        "status": "translation",
+        "text": "第六条第二款。禁止非法相互干预"
+      }
+    ],
+    "AssociationUnlawfulInterferenceProhibited1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "第五条第二款（1995年版）。不允许国家与社会团体相互非法干预"
+      }
+    ],
+    "AssociationUnlawfulInterferenceProhibited1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "第五条第二款（1995年版）。不允许国家与社会团体相互非法干预"
+      }
+    ],
+    "AssociationWithProhibitedGoalProhibited": [
+      {
+        "status": "translation",
+        "text": "第六条第三款。禁止目的或者行为属于明文禁止之列的社会团体"
+      }
+    ],
+    "AssociationWithProhibitedGoalProhibited1995": [
+      {
+        "status": "translation",
+        "text": "第五条第三款（1995年版）。禁止目的属于禁止之列的社会团体"
+      }
+    ],
+    "AuthorityUsurpationProhibited": [
+      {
+        "status": "translation",
+        "text": "第四条第三款。禁止篡夺权力"
+      }
+    ],
+    "AuthorityUsurpationProhibited1995": [
+      {
+        "status": "translation",
+        "text": "第三条第三款（1995年版）。禁止篡夺权力"
+      }
+    ],
+    "ConductForbiddenByStatute1995": [
+      {
+        "status": "translation",
+        "text": "第四条第三款（1995年版）。依共和国法律规范作出的推论"
+      }
+    ],
+    "ConductPermittedByTreaty1995": [
+      {
+        "status": "translation",
+        "text": "第四条第三款（1995年版）。依经批准的国际条约规范作出的推论"
+      }
+    ],
+    "ConstitutionalActor": [
+      {
+        "status": "translation",
+        "text": "宪法关系参加人"
+      }
+    ],
+    "ForeignAssetDisclosureRequired": [
+      {
+        "status": "translation",
+        "text": "第六条第五款。境外资金和资产的信息应当公开"
+      }
+    ],
+    "ForeignPartyActivityOrFinancingProhibited/alt/1": [
+      {
+        "status": "translation",
+        "text": "第六条第四款。禁止外国对政党和工会的活动与资助"
+      }
+    ],
+    "ForeignPartyActivityOrFinancingProhibited/alt/2": [
+      {
+        "status": "translation",
+        "text": "第六条第四款。禁止外国对政党和工会的活动与资助"
+      }
+    ],
+    "ForeignPartyActivityOrFinancingProhibited1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "第五条第四款（1995年版）。禁止外国人从事活动和提供资助"
+      }
+    ],
+    "ForeignPartyActivityOrFinancingProhibited1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "第五条第四款（1995年版）。禁止外国人从事活动和提供资助"
+      }
+    ],
+    "ForeignReligiousActivityRequiresAgreement1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "第五条第五款（1995年版）。外国宗教团体的活动以及由外国中心任命其负责人，须经相应国家机关同意"
+      }
+    ],
+    "ForeignReligiousActivityRequiresAgreement1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "第五条第五款（1995年版）。外国宗教团体的活动以及由外国中心任命其负责人，须经相应国家机关同意"
+      }
+    ],
+    "ForeignReligiousBody": [
+      {
+        "status": "translation",
+        "text": "外国宗教团体"
+      }
+    ],
+    "IncreasedLiabilityNoRetroactivity": [
+      {
+        "status": "translation",
+        "text": "第五条第五款。加重责任的法律没有溯及力"
+      }
+    ],
+    "IncreasedLiabilityNoRetroactivity1995": [
+      {
+        "status": "translation",
+        "text": "第七十七条第三款第五项（1995年版）。加重责任的法律没有溯及力"
+      }
+    ],
+    "KZ_CONSTITUTION_1995": [
+      {
+        "status": "translation",
+        "text": "哈萨克斯坦共和国宪法（1995年）"
+      }
+    ],
+    "KZ_CONSTITUTION_1995_KK": [
+      {
+        "status": "translation",
+        "text": "已失效的哈萨克文汇编版本"
+      }
+    ],
+    "KZ_CONSTITUTION_1995_RU": [
+      {
+        "status": "translation",
+        "text": "已失效的俄文汇编版本"
+      }
+    ],
+    "KZ_CONSTITUTION_2026": [
+      {
+        "status": "translation",
+        "text": "哈萨克斯坦共和国宪法"
+      }
+    ],
+    "KZ_CONSTITUTION_2026_KK": [
+      {
+        "status": "translation",
+        "text": "哈萨克文作准版本"
+      }
+    ],
+    "KZ_CONSTITUTION_2026_RU": [
+      {
+        "status": "translation",
+        "text": "俄文作准版本"
+      }
+    ],
+    "LandHolding": [
+      {
+        "status": "translation",
+        "text": "土地"
+      }
+    ],
+    "LegalAct": [
+      {
+        "status": "translation",
+        "text": "规范性法律文件"
+      }
+    ],
+    "MitigatingLawAppliesToPriorOffence": [
+      {
+        "status": "translation",
+        "text": "第五条第五款。废止或者减轻责任的法律适用于此前实施的行为"
+      }
+    ],
+    "MitigatingLawAppliesToPriorOffence1995": [
+      {
+        "status": "translation",
+        "text": "第七十七条第三款第五项（1995年版）。减轻责任的法律适用于此前实施的违法行为"
+      }
+    ],
+    "NewDutiesAndWorsePositionNoRetroactivity": [
+      {
+        "status": "translation",
+        "text": "第五条第五款。设定新义务或者使地位恶化的法律没有溯及力"
+      }
+    ],
+    "NewDutiesAndWorsePositionNoRetroactivity1995": [
+      {
+        "status": "translation",
+        "text": "第七十七条第三款第五项（1995年版）。设定新义务或者使地位恶化的法律没有溯及力"
+      }
+    ],
+    "OfficialPublicationRequiredForApplication": [
+      {
+        "status": "translation",
+        "text": "第五条第四款。正式公布为适用之条件"
+      }
+    ],
+    "OfficialPublicationRequiredForApplication1995": [
+      {
+        "status": "translation",
+        "text": "第四条第四款（1995年版）。正式公布为适用之条件"
+      }
+    ],
+    "PrivateLandHoldingWithinStatutoryLimits": [
+      {
+        "status": "translation",
+        "text": "第八条第三款。土地私有权以法律规定的根据、条件和限度为限"
+      }
+    ],
+    "PrivateLandHoldingWithinStatutoryLimits1995": [
+      {
+        "status": "translation",
+        "text": "第六条第三款（1995年版）。土地私有权以法律规定的根据、条件和限度为限"
+      }
+    ],
+    "PropertyUse": [
+      {
+        "status": "translation",
+        "text": "所有权的行使"
+      }
+    ],
+    "PropertyUseConstitutionallyCompliant": [
+      {
+        "status": "translation",
+        "text": "第八条第二款。行使所有权的宪法条件"
+      }
+    ],
+    "PropertyUseConstitutionallyCompliant1995": [
+      {
+        "status": "translation",
+        "text": "第六条第二款（1995年版）。行使所有权应当有利于公共福祉"
+      }
+    ],
+    "RatifiedTreatyOverStatuteInInference1995": [
+      {
+        "status": "translation",
+        "text": "第四条第三款（1995年版）。推论相抵触时，适用依经批准的国际条约作出的推论，而不适用依法律作出的推论"
+      }
+    ],
+    "RatifiedTreatyPrevailsOverStatute1995": [
+      {
+        "status": "translation",
+        "text": "第四条第三款（1995年版）。共和国批准的国际条约优先于共和国法律"
+      }
+    ],
+    "RegulatedConduct": [
+      {
+        "status": "translation",
+        "text": "条约与法律对其许可性存在分歧的行为"
+      }
+    ],
+    "ReligiousActivity": [
+      {
+        "status": "translation",
+        "text": "宗教组织的活动"
+      }
+    ],
+    "ReligiousRestriction": [
+      {
+        "status": "translation",
+        "text": "对宗教组织活动的限制"
+      }
+    ],
+    "ReligiousRestrictionRequiresLawAndConstitutionalGoal": [
+      {
+        "status": "translation",
+        "text": "第七条第二款。限制宗教活动须有法律依据和宪法目的"
+      }
+    ],
+    "RuleApplication": [
+      {
+        "status": "translation",
+        "text": "规范的适用"
+      }
+    ],
+    "Statute": [
+      {
+        "status": "translation",
+        "text": "共和国法律"
+      }
+    ],
+    "Treaty": [
+      {
+        "status": "translation",
+        "text": "国际条约"
+      }
+    ],
+    "agreed_with_state_bodies": [
+      {
+        "status": "translation",
+        "text": "活动已经相应国家机关同意"
+      }
+    ],
+    "association_activity_prohibited": [
+      {
+        "status": "translation",
+        "text": "禁止设立社会团体并禁止其活动"
+      }
+    ],
+    "association_has_prohibited_constitutional_goal": [
+      {
+        "status": "translation",
+        "text": "社会团体的目的或者行为旨在以暴力改变宪法制度基础、破坏共和国完整或者公共秩序、损害国家安全或者煽动仇恨"
+      }
+    ],
+    "astana_special_financial_regime_1995": [
+      {
+        "status": "translation",
+        "text": "阿斯塔纳市范围内可以设立金融领域的特别法律制度（1995年版）"
+      }
+    ],
+    "authority_usurpation_attempt": [
+      {
+        "status": "translation",
+        "text": "已发生在共和国篡夺权力的企图"
+      }
+    ],
+    "authority_usurpation_prohibited": [
+      {
+        "status": "translation",
+        "text": "篡夺权力为法律所禁止并依法追究"
+      }
+    ],
+    "capital_is_astana_1995": [
+      {
+        "status": "translation",
+        "text": "哈萨克斯坦的首都为阿斯塔纳市（1995年版）"
+      }
+    ],
+    "conduct_admissible_1995": [
+      {
+        "status": "translation",
+        "text": "该行为可以实施（条约与法律之争，1995年版）"
+      }
+    ],
+    "constitutional_activity_principles_declared": [
+      {
+        "status": "translation",
+        "text": "共和国活动的根本原则由宪法确定"
+      }
+    ],
+    "environmental_requirements_observed": [
+      {
+        "status": "translation",
+        "text": "已遵守环境保护领域的既定要求"
+      }
+    ],
+    "foreign_asset_disclosure_required": [
+      {
+        "status": "translation",
+        "text": "自境外来源取得的资金和资产的流动信息应当公开并可供查阅"
+      }
+    ],
+    "foreign_asset_information_disclosed": [
+      {
+        "status": "translation",
+        "text": "自境外来源取得的资金和资产的流动信息已公开并可供查阅"
+      }
+    ],
+    "foreign_centre_appoints_leader": [
+      {
+        "status": "translation",
+        "text": "宗教团体的负责人由外国宗教中心任命"
+      }
+    ],
+    "foreign_financing_of_party_or_union": [
+      {
+        "status": "translation",
+        "text": "政党或者工会接受外国人、外国或者国际组织的资助"
+      }
+    ],
+    "foreign_party_or_union_activity": [
+      {
+        "status": "translation",
+        "text": "从事活动者为他国政党或者工会，或者为宗教性政党"
+      }
+    ],
+    "foreign_religious_activity_admissible_1995": [
+      {
+        "status": "translation",
+        "text": "外国宗教团体的活动可以进行（1995年版）"
+      }
+    ],
+    "foreign_religious_body_activity": [
+      {
+        "status": "translation",
+        "text": "外国宗教团体在共和国境内从事活动"
+      }
+    ],
+    "fundamental_principles_declared_1995": [
+      {
+        "status": "translation",
+        "text": "共和国活动的根本原则由宪法确定（1995年版）"
+      }
+    ],
+    "human_capital_education_science_innovation_strategic_direction": [
+      {
+        "status": "translation",
+        "text": "人力资本、教育、科学和创新的发展被确认为国家活动的战略方向"
+      }
+    ],
+    "human_life_rights_freedoms_highest_state_values": [
+      {
+        "status": "translation",
+        "text": "国家的最高价值是人、人的生命、权利和自由"
+      }
+    ],
+    "kazakhstan_democratic_secular_legal_social_state": [
+      {
+        "status": "translation",
+        "text": "哈萨克斯坦共和国是民主、世俗、法治和社会国家"
+      }
+    ],
+    "kazakhstan_democratic_secular_legal_social_state_1995": [
+      {
+        "status": "translation",
+        "text": "共和国确认自己为民主、世俗、法治和社会国家（1995年版）"
+      }
+    ],
+    "law_creates_or_increases_liability": [
+      {
+        "status": "translation",
+        "text": "法律设定或者加重责任"
+      }
+    ],
+    "law_imposes_new_citizen_duties_or_worsens_position": [
+      {
+        "status": "translation",
+        "text": "法律为公民设定新义务或者使其地位恶化"
+      }
+    ],
+    "legal_act_affects_citizen_rights_or_duties": [
+      {
+        "status": "translation",
+        "text": "规范性法律文件涉及公民的权利、自由和义务"
+      }
+    ],
+    "legal_act_application_condition_satisfied": [
+      {
+        "status": "translation",
+        "text": "规范性法律文件适用的必备条件已经满足"
+      }
+    ],
+    "legal_act_officially_published": [
+      {
+        "status": "translation",
+        "text": "规范性法律文件已正式公布"
+      }
+    ],
+    "new_law_applies_to_prior_offence": [
+      {
+        "status": "translation",
+        "text": "对此前实施的违法行为适用新法律"
+      }
+    ],
+    "new_law_cancels_or_mitigates_liability": [
+      {
+        "status": "translation",
+        "text": "新法律废止或者减轻此前实施的违法行为的责任"
+      }
+    ],
+    "nonprofit_receives_foreign_assets": [
+      {
+        "status": "translation",
+        "text": "非营利组织自外国、国际和外国法人、外国公民和无国籍人取得资金和资产"
+      }
+    ],
+    "party_or_union_activity_prohibited": [
+      {
+        "status": "translation",
+        "text": "不允许政党或者工会从事活动"
+      }
+    ],
+    "peaceful_cooperative_foreign_policy_1995": [
+      {
+        "status": "translation",
+        "text": "共和国奉行国家间合作与睦邻关系的政策（1995年版）"
+      }
+    ],
+    "peaceful_cooperative_foreign_policy_declared": [
+      {
+        "status": "translation",
+        "text": "共和国奉行与有关国家和平合作的对外政策"
+      }
+    ],
+    "private_land_basis_conditions_limits_established_by_law": [
+      {
+        "status": "translation",
+        "text": "土地私有权的根据、条件和限度由法律规定"
+      }
+    ],
+    "private_land_holding": [
+      {
+        "status": "translation",
+        "text": "土地属于私人所有"
+      }
+    ],
+    "private_land_holding_constitutionally_allowed": [
+      {
+        "status": "translation",
+        "text": "土地属于私人所有在宪法上可以允许"
+      }
+    ],
+    "property_use": [
+      {
+        "status": "translation",
+        "text": "存在所有权的行使"
+      }
+    ],
+    "property_use_constitutionally_compliant": [
+      {
+        "status": "translation",
+        "text": "所有权的行使符合宪法条件"
+      }
+    ],
+    "property_use_serves_public_and_state_interests": [
+      {
+        "status": "translation",
+        "text": "所有权的行使符合社会和国家利益"
+      }
+    ],
+    "property_use_serves_public_good": [
+      {
+        "status": "translation",
+        "text": "所有权的行使有利于公共福祉（1995年版）"
+      }
+    ],
+    "protected_rights_not_infringed": [
+      {
+        "status": "translation",
+        "text": "未侵害他人受法律保护的权利和利益"
+      }
+    ],
+    "religious_activity": [
+      {
+        "status": "translation",
+        "text": "该活动属于宗教组织的活动"
+      }
+    ],
+    "religious_restriction_constitutionally_authorized": [
+      {
+        "status": "translation",
+        "text": "对宗教组织活动的限制在宪法上可以允许"
+      }
+    ],
+    "religious_restriction_established_by_law": [
+      {
+        "status": "translation",
+        "text": "该限制由法律设定"
+      }
+    ],
+    "religious_restriction_has_constitutional_goal": [
+      {
+        "status": "translation",
+        "text": "该限制系为保护宪法制度基础、人和公民的权利和自由，保障国家安全，维护公共秩序、公民健康和社会道德而设"
+      }
+    ],
+    "renounces_first_use_of_armed_force_1995": [
+      {
+        "status": "translation",
+        "text": "共和国放弃首先使用武力（1995年版）"
+      }
+    ],
+    "republic_names_equivalent_1995": [
+      {
+        "status": "translation",
+        "text": "“哈萨克斯坦共和国”与“哈萨克斯坦”名称等同（1995年版）"
+      }
+    ],
+    "restriction_of_religious_activity": [
+      {
+        "status": "translation",
+        "text": "该限制针对宗教组织的活动"
+      }
+    ],
+    "retroactive_application_attempt": [
+      {
+        "status": "translation",
+        "text": "法律适用于其施行前发生的关系"
+      }
+    ],
+    "retroactive_application_prohibited": [
+      {
+        "status": "translation",
+        "text": "法律没有溯及力"
+      }
+    ],
+    "rule_reads_statute": [
+      {
+        "status": "translation",
+        "text": "规范系依该共和国法律推出"
+      }
+    ],
+    "rule_reads_treaty": [
+      {
+        "status": "translation",
+        "text": "规范系依该国际条约推出"
+      }
+    ],
+    "russian_used_officially_1995": [
+      {
+        "status": "translation",
+        "text": "在国家组织和地方自治机关中，俄语与哈萨克语同等地正式使用（1995年版）"
+      }
+    ],
+    "sovereignty_covers_whole_territory_1995": [
+      {
+        "status": "translation",
+        "text": "共和国的主权及于其全部领土（1995年版）"
+      }
+    ],
+    "state_anthem_established": [
+      {
+        "status": "translation",
+        "text": "已确立国歌"
+      }
+    ],
+    "state_cares_for_language_development_1995": [
+      {
+        "status": "translation",
+        "text": "国家关心为哈萨克斯坦人民各民族语言的学习和发展创造条件（1995年版）"
+      }
+    ],
+    "state_emblem_established": [
+      {
+        "status": "translation",
+        "text": "已确立国徽"
+      }
+    ],
+    "state_flag_established": [
+      {
+        "status": "translation",
+        "text": "已确立国旗"
+      }
+    ],
+    "state_language_is_kazakh_1995": [
+      {
+        "status": "translation",
+        "text": "国语为哈萨克语（1995年版）"
+      }
+    ],
+    "state_symbols_established_1995": [
+      {
+        "status": "translation",
+        "text": "共和国设有国家标志——国旗、国徽和国歌（1995年版）"
+      }
+    ],
+    "statute_norm_forbids": [
+      {
+        "status": "translation",
+        "text": "共和国法律规范禁止该行为"
+      }
+    ],
+    "treaty_conflicts_with_statute": [
+      {
+        "status": "translation",
+        "text": "国际条约与共和国法律相抵触"
+      }
+    ],
+    "treaty_norm_permits": [
+      {
+        "status": "translation",
+        "text": "经批准的国际条约规范允许该行为"
+      }
+    ],
+    "treaty_prevails_over_statute": [
+      {
+        "status": "translation",
+        "text": "国际条约优先于共和国法律（1995年版）"
+      }
+    ],
+    "treaty_ratified_by_republic": [
+      {
+        "status": "translation",
+        "text": "国际条约已经共和国批准"
+      }
+    ],
+    "unitary_state_presidential_form_1995": [
+      {
+        "status": "translation",
+        "text": "共和国是实行总统制的单一制国家（1995年版）"
+      }
+    ],
+    "unlawful_association_interference_with_state": [
+      {
+        "status": "translation",
+        "text": "存在社会团体对国家事务的非法干预"
+      }
+    ],
+    "unlawful_state_interference_with_association": [
+      {
+        "status": "translation",
+        "text": "存在国家对社会团体事务的非法干预"
+      }
+    ]
+  },
+  "language": "zh",
+  "package": "kz.constitution.sources"
+}

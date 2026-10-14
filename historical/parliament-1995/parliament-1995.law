@@ -1,0 +1,1848 @@
+// Конституция РК 1995, раздел IV (ст. 49–63): Парламент.
+//
+// ОТДЕЛЬНЫЙ ПАКЕТ (DECISION-0026, вариант «в»). Основание — институт другой:
+// Парламент 1995 ДВУХПАЛАТНЫЙ (Сенат и Мажилис), и почти каждый порог здесь
+// считается «от общего числа депутатов КАЖДОЙ из Палат». Курултай редакции
+// 2026 однопалатен, поэтому те же три четверти в нём — одно число, а здесь
+// два независимых условия. Свести их в один предикат значило бы утверждать
+// тождество органов, которого нет.
+//
+// Числа сверены с закреплённым текстом ст. 50–63. Ни одно не перенесено из
+// редакции 2026 и ни одно не восстановлено по памяти.
+//
+// ОБЪЯВЛЕННАЯ ГРАНИЦА (DECISION-0012). Перечни ведения (ст. 53, 55, 56, 57)
+// выражены правилами ТОЛЬКО там, где Конституция называет условие —
+// большинство, инициативу, срок, представление. Пункты вида «решает вопросы
+// войны и мира», «формирует координационные и рабочие органы» записаны
+// фактами: у них нет антецедента, и придуманный антецедент был бы авторской
+// нормой. Ст. 61 п. 3 (перечень предметов законодательного регулирования)
+// оставлен адресуемым фактом по той же причине: он делит предметы, а не
+// выводит последствие.
+
+language "law.core" version "0.2";
+package kz.constitution1995.parliament version "0.1.0";
+namespace "urn:kz:constitution1995:parliament";
+
+entity Person {
+    label ru-KZ official "физическое лицо";
+}
+entity Deputy {
+    label ru-KZ official "депутат Парламента";
+}
+entity Chamber {
+    label ru-KZ official "Палата Парламента — Сенат либо Мажилис";
+}
+entity Parliament {
+    label ru-KZ official "Парламент Республики Казахстан (редакция 1995)";
+}
+entity Bill {
+    label ru-KZ official "законопроект";
+}
+entity Statute {
+    label ru-KZ official "закон либо иной акт Парламента";
+}
+entity Objection {
+    label ru-KZ official "возражение Президента по закону";
+}
+entity Appointment {
+    label ru-KZ official "назначение, производимое с согласия Палаты";
+}
+entity Government {
+    label ru-KZ official "Правительство Республики Казахстан";
+}
+entity NoConfidenceMotion {
+    label ru-KZ official "инициатива о вотуме недоверия Правительству либо о заслушивании отчёта члена Правительства";
+}
+entity Dissolution {
+    label ru-KZ official "роспуск Парламента либо Мажилиса";
+}
+entity Session {
+    label ru-KZ official "сессия Парламента";
+}
+entity Sitting {
+    label ru-KZ official "совместное либо раздельное заседание Палат";
+}
+entity Committee {
+    label ru-KZ official "постоянный комитет Палаты";
+}
+entity ChamberChair {
+    label ru-KZ official "Председатель Палаты Парламента";
+}
+entity Referendum {
+    label ru-KZ official "республиканский референдум";
+}
+entity ConfidenceQuestion {
+    label ru-KZ official "вопрос о доверии Правительству";
+}
+
+// --- Конституционные числа редакции 1995 ---------------------------------
+
+relation mazhilis_seats_1995(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "число депутатов Мажилиса — девяносто восемь";
+}
+relation senate_appointed_by_president_1995(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "число депутатов Сената, назначаемых Президентом, — десять";
+}
+relation senate_appointed_on_assembly_proposal_1995(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "число депутатов Сената, назначаемых по предложению Ассамблеи народа Казахстана, — пять";
+}
+relation senate_term_years_1995(years: Integer) kind institutional {
+    key(years);
+    label ru-KZ official "срок полномочий депутата Сената — шесть лет";
+}
+relation mazhilis_term_years_1995(years: Integer) kind institutional {
+    key(years);
+    label ru-KZ official "срок полномочий депутата Мажилиса — пять лет";
+}
+relation senate_rotation_years_1995(years: Integer) kind institutional {
+    key(years);
+    label ru-KZ official "периодичность обновления половины депутатов Сената — три года";
+}
+relation deputy_residence_years_1995(years: Integer) kind institutional {
+    key(years);
+    label ru-KZ official "требуемый срок проживания депутата в Казахстане — десять лет";
+}
+relation senator_minimum_age_1995(years: Integer) kind institutional {
+    key(years);
+    label ru-KZ official "минимальный возраст депутата Сената — тридцать лет";
+}
+relation senator_work_experience_years_1995(years: Integer) kind institutional {
+    key(years);
+    label ru-KZ official "требуемый стаж работы депутата Сената — пять лет";
+}
+relation senator_regional_residence_years_1995(years: Integer) kind institutional {
+    key(years);
+    label ru-KZ official "требуемый срок проживания депутата Сената в регионе — три года";
+}
+relation mazhilis_deputy_minimum_age_1995(years: Integer) kind institutional {
+    key(years);
+    label ru-KZ official "минимальный возраст депутата Мажилиса — двадцать пять лет";
+}
+relation first_session_convocation_days_1995(days: Integer) kind institutional {
+    key(days);
+    label ru-KZ official "срок созыва первой сессии — тридцать дней со дня опубликования итогов выборов";
+}
+relation senate_review_days_1995(days: Integer) kind institutional {
+    key(days);
+    label ru-KZ official "срок рассмотрения законопроекта Сенатом — шестьдесят дней";
+}
+relation presentation_to_president_days_1995(days: Integer) kind institutional {
+    key(days);
+    label ru-KZ official "срок представления принятого закона на подпись — десять дней";
+}
+relation priority_bill_months_1995(months: Integer) kind institutional {
+    key(months);
+    label ru-KZ official "срок первоочередного рассмотрения приоритетного законопроекта — два месяца";
+}
+relation confidence_vote_wait_hours_1995(hours: Integer) kind institutional {
+    key(hours);
+    label ru-KZ official "срок между постановкой вопроса о доверии и голосованием — сорок восемь часов";
+}
+relation confidence_uses_per_year_1995(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "предел обращения Правительства к вопросу о доверии — два раза в год";
+}
+relation standing_committees_max_1995(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "предельное число постоянных комитетов Палаты — семь";
+}
+relation constitutional_court_judges_per_chamber_1995(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "число судей Конституционного Суда, назначаемых каждой Палатой самостоятельно, — трое";
+}
+relation unexcused_absences_limit_1995(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "порог применения мер взыскания за отсутствие — более трёх раз";
+}
+relation quorum_numerator_1995(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "числитель кворума заседания — две трети";
+}
+relation quorum_denominator_1995(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "знаменатель кворума заседания — две трети";
+}
+relation amendment_majority_numerator_1995(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "числитель парламентского порога изменения Конституции — три четверти";
+}
+relation amendment_majority_denominator_1995(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "знаменатель парламентского порога изменения Конституции — три четверти";
+}
+relation constitutional_law_numerator_1995(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "числитель порога принятия конституционного закона — две трети";
+}
+relation constitutional_law_denominator_1995(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "знаменатель порога принятия конституционного закона — две трети";
+}
+relation veto_override_numerator_1995(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "числитель порога преодоления возражений Президента — две трети";
+}
+relation veto_override_denominator_1995(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "знаменатель порога преодоления возражений Президента — две трети";
+}
+relation no_confidence_initiative_numerator_1995(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "числитель порога инициативы о вотуме недоверия — одна пятая";
+}
+relation no_confidence_initiative_denominator_1995(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "знаменатель порога инициативы о вотуме недоверия — одна пятая";
+}
+relation minimum_readings_1995(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "минимальное число чтений законопроекта — два";
+}
+relation dissolution_protected_months_1995(months: Integer) kind institutional {
+    key(months);
+    label ru-KZ official "защищённый период перед окончанием полномочий Президента — шесть месяцев";
+}
+relation dissolution_cooldown_years_1995(years: Integer) kind institutional {
+    key(years);
+    label ru-KZ official "срок, в течение которого Парламент не распускается после предыдущего роспуска, — один год";
+}
+
+// --- Ст. 49–50. Состав и полномочия --------------------------------------
+
+pub relation parliament_is_supreme_representative_body_1995() kind institutional {
+    label ru-KZ official "Парламент — высший представительный орган, осуществляющий законодательные функции";
+}
+pub relation parliament_has_two_chambers_1995() kind institutional {
+    label ru-KZ official "Парламент состоит из двух Палат — Сената и Мажилиса";
+}
+
+relation parliament(body: Parliament) kind empirical {
+    label ru-KZ official "орган является Парламентом Республики";
+}
+relation senate(chamber: Chamber) kind empirical {
+    label ru-KZ official "Палата является Сенатом";
+}
+relation mazhilis(chamber: Chamber) kind empirical {
+    label ru-KZ official "Палата является Мажилисом";
+}
+relation first_session_opened(body: Parliament) kind empirical {
+    label ru-KZ official "открылась первая сессия Парламента";
+}
+relation new_convocation_first_session_started(body: Parliament) kind empirical {
+    label ru-KZ official "открылась первая сессия Парламента нового созыва";
+}
+relation parliament_powers_active_1995(body: Parliament) kind institutional {
+    label ru-KZ official "полномочия Парламента данного созыва осуществляются";
+}
+relation deputy_of(deputy: Deputy, chamber: Chamber) kind empirical {
+    label ru-KZ official "депутат входит в состав данной Палаты";
+}
+relation deputy_member_of_both_chambers(deputy: Deputy) kind empirical {
+    label ru-KZ official "лицо одновременно является депутатом обеих Палат";
+}
+relation dual_membership_prohibited_1995(deputy: Deputy) kind institutional {
+    label ru-KZ official "одновременное членство в обеих Палатах не допускается";
+}
+
+// --- Ст. 51. Выборы и цензы депутатов ------------------------------------
+
+relation candidate_deputy(deputy: Deputy, person: Person) kind empirical {
+    label ru-KZ official "депутатский мандат принадлежит данному лицу";
+}
+relation citizen(person: Person) kind empirical {
+    label ru-KZ official "лицо является гражданином Республики Казахстан";
+}
+relation resides_in_kazakhstan_years(person: Person, years: Integer) kind empirical {
+    label ru-KZ official "число последних лет проживания в Казахстане";
+}
+relation age_years(person: Person, years: Integer) kind empirical {
+    label ru-KZ official "возраст лица в полных годах";
+}
+relation higher_education(person: Person) kind empirical {
+    label ru-KZ official "лицо имеет высшее образование";
+}
+relation work_experience_years(person: Person, years: Integer) kind empirical {
+    label ru-KZ official "стаж работы лица в полных годах";
+}
+relation resides_in_region_years(person: Person, years: Integer) kind empirical {
+    label ru-KZ official "число последних лет проживания на территории соответствующей области либо города";
+}
+relation seeks_senate_seat(deputy: Deputy) kind empirical {
+    label ru-KZ official "лицо претендует на депутатский мандат Сената";
+}
+relation seeks_mazhilis_seat(deputy: Deputy) kind empirical {
+    label ru-KZ official "лицо претендует на депутатский мандат Мажилиса";
+}
+relation eligible_senator_1995(deputy: Deputy) kind institutional {
+    label ru-KZ official "лицо отвечает требованиям к депутату Сената";
+}
+relation eligible_mazhilis_deputy_1995(deputy: Deputy) kind institutional {
+    label ru-KZ official "лицо отвечает требованиям к депутату Мажилиса";
+}
+
+// --- Ст. 52. Обязанности, несовместимости, неприкосновенность ------------
+
+relation deputy(deputy: Deputy) kind empirical {
+    label ru-KZ official "лицо является депутатом Парламента";
+}
+relation unexcused_absences(deputy: Deputy, count: Integer) kind empirical {
+    label ru-KZ official "число случаев отсутствия депутата на заседаниях без уважительных причин";
+}
+relation vote_delegated(deputy: Deputy) kind empirical {
+    label ru-KZ official "депутат передал право голоса другому лицу";
+}
+relation deputy_sanction_applies_1995(deputy: Deputy) kind institutional {
+    label ru-KZ official "к депутату применимы установленные законом меры взыскания";
+}
+relation deputy_holds_other_representative_mandate(deputy: Deputy) kind empirical {
+    label ru-KZ official "депутат является депутатом другого представительного органа";
+}
+relation deputy_holds_other_paid_office(deputy: Deputy) kind empirical {
+    label ru-KZ official "депутат занимает иную оплачиваемую должность";
+}
+relation office_is_teaching_research_or_creative(deputy: Deputy) kind empirical {
+    label ru-KZ official "занятие относится к разрешённой преподавательской, научной либо творческой деятельности";
+}
+relation deputy_conducts_business(deputy: Deputy) kind empirical {
+    label ru-KZ official "депутат осуществляет предпринимательскую деятельность";
+}
+relation deputy_in_commercial_governing_body(deputy: Deputy) kind empirical {
+    label ru-KZ official "депутат входит в руководящий орган либо наблюдательный совет коммерческой организации";
+}
+relation deputy_powers_terminated_1995(deputy: Deputy) kind institutional {
+    label ru-KZ official "полномочия депутата прекращены";
+}
+relation arrest_or_prosecution_attempt(deputy: Deputy) kind empirical {
+    label ru-KZ official "предпринята попытка ареста либо привлечения депутата к уголовной ответственности";
+}
+relation chamber_consent_given(deputy: Deputy) kind empirical {
+    label ru-KZ official "Палата дала согласие на привлечение депутата к ответственности";
+}
+relation caught_in_the_act_or_grave_crime(deputy: Deputy) kind empirical {
+    label ru-KZ official "депутат задержан на месте преступления либо совершил тяжкое преступление";
+}
+relation deputy_immunity_infringed_1995(deputy: Deputy) kind institutional {
+    label ru-KZ official "нарушена неприкосновенность депутата";
+}
+relation resignation_submitted(deputy: Deputy) kind empirical {
+    label ru-KZ official "депутат подал в отставку";
+}
+relation deputy_deceased(deputy: Deputy) kind empirical {
+    label ru-KZ official "депутат умер";
+}
+relation court_declared_incapable_dead_or_missing(deputy: Deputy) kind empirical {
+    label ru-KZ official "депутат признан судом недееспособным, умершим либо безвестно отсутствующим";
+}
+relation permanent_departure_from_kazakhstan(deputy: Deputy) kind empirical {
+    label ru-KZ official "депутат выехал на постоянное место жительства за пределы Казахстана";
+}
+relation criminal_conviction_in_force(deputy: Deputy) kind empirical {
+    label ru-KZ official "в отношении депутата вступил в законную силу обвинительный приговор";
+}
+relation citizenship_lost(deputy: Deputy) kind empirical {
+    label ru-KZ official "депутат утратил гражданство Республики Казахстан";
+}
+relation deputy_mandate_forfeited_1995(deputy: Deputy) kind institutional {
+    label ru-KZ official "депутат лишается своего мандата";
+}
+relation elected_on_party_list(deputy: Deputy) kind empirical {
+    label ru-KZ official "депутат избран по партийному списку";
+}
+relation left_or_expelled_from_party(deputy: Deputy) kind empirical {
+    label ru-KZ official "депутат вышел либо исключён из политической партии, от которой избран";
+}
+relation party_ceased_activity(deputy: Deputy) kind empirical {
+    label ru-KZ official "политическая партия, от которой избран депутат, прекратила деятельность";
+}
+relation elected_in_single_mandate_district(deputy: Deputy) kind empirical {
+    label ru-KZ official "депутат избран по одномандатному округу";
+}
+relation recalled_by_voters(deputy: Deputy) kind empirical {
+    label ru-KZ official "депутат отозван избирателями";
+}
+
+// --- Ст. 53, 54, 62. Пороги голосования в ДВУХ Палатах ------------------
+
+relation senate_total_deputies(item: Bill, total: Integer) kind empirical {
+    label ru-KZ official "общее число депутатов Сената";
+}
+relation mazhilis_total_deputies(item: Bill, total: Integer) kind empirical {
+    label ru-KZ official "общее число депутатов Мажилиса";
+}
+relation senate_votes(item: Bill, votes: Integer) kind empirical {
+    label ru-KZ official "число голосов депутатов Сената, поданных за законопроект";
+}
+relation mazhilis_votes(item: Bill, votes: Integer) kind empirical {
+    label ru-KZ official "число голосов депутатов Мажилиса, поданных за законопроект";
+}
+relation constitutional_amendment_bill(item: Bill) kind empirical {
+    label ru-KZ official "законопроект вносит изменения и дополнения в Конституцию";
+}
+relation constitutional_law_bill(item: Bill) kind empirical {
+    label ru-KZ official "законопроект является проектом конституционного закона";
+}
+// `ordinary_bill` СНЯТО 02.09.2026: следствие несёт отрицательная сторона (`budget_report_rejected` → вотум недоверия), а принятие обычного закона выражено парой `mazhilis_adopted`/`senate_approved` без классификации законопроекта
+relation presidential_proposal(item: Bill) kind empirical {
+    label ru-KZ official "Президент определил приоритетность рассмотрения законопроекта";
+}
+relation constitutional_amendment_adopted_1995(item: Bill) kind institutional {
+    label ru-KZ official "изменения и дополнения в Конституцию приняты Парламентом";
+}
+relation constitutional_law_adopted_1995(item: Bill) kind institutional {
+    label ru-KZ official "конституционный закон принят Парламентом";
+}
+relation readings_held(item: Bill, count: Integer) kind empirical {
+    label ru-KZ official "число проведённых чтений по законопроекту";
+}
+relation reading_requirement_met_1995(item: Bill) kind institutional {
+    label ru-KZ official "требование о числе чтений соблюдено";
+}
+
+relation presidential_objection(objection: Objection, item: Bill) kind empirical {
+    label ru-KZ official "Президент заявил возражения по данному закону";
+}
+relation objection_reconsidered_within_one_month(objection: Objection) kind empirical {
+    label ru-KZ official "повторное обсуждение проведено в месячный срок";
+}
+relation objection_on_constitutional_law(objection: Objection) kind empirical {
+    label ru-KZ official "возражения заявлены по конституционному закону";
+}
+relation objection_senate_votes(objection: Objection, votes: Integer) kind empirical {
+    label ru-KZ official "число голосов Сената при преодолении возражений";
+}
+relation objection_mazhilis_votes(objection: Objection, votes: Integer) kind empirical {
+    label ru-KZ official "число голосов Мажилиса при преодолении возражений";
+}
+relation objection_senate_total(objection: Objection, total: Integer) kind empirical {
+    label ru-KZ official "общее число депутатов Сената при преодолении возражений";
+}
+relation objection_mazhilis_total(objection: Objection, total: Integer) kind empirical {
+    label ru-KZ official "общее число депутатов Мажилиса при преодолении возражений";
+}
+relation objection_overridden_1995(objection: Objection) kind institutional {
+    label ru-KZ official "возражения Президента преодолены Парламентом";
+}
+relation objections_accepted_1995(objection: Objection) kind institutional {
+    label ru-KZ official "возражения Президента считаются принятыми";
+}
+
+// `budget_report_confirmed` СНЯТО 02.09.2026: следствие несёт отрицательная сторона (`budget_report_rejected` → вотум недоверия), а принятие обычного закона выражено парой `mazhilis_adopted`/`senate_approved` без классификации законопроекта
+relation budget_report_rejected(item: Bill) kind empirical {
+    label ru-KZ official "отчёт Правительства об исполнении республиканского бюджета не утверждён";
+}
+relation no_confidence_expressed_1995(item: Bill) kind institutional {
+    label ru-KZ official "неутверждение отчёта означает выражение вотума недоверия Правительству";
+}
+
+// --- Ст. 55, 56, 57. Ведение Палат ---------------------------------------
+
+relation appointment_requires_senate_consent(appointment: Appointment) kind empirical {
+    label ru-KZ official "назначение производится с согласия Сената";
+}
+relation senate_consent_given(appointment: Appointment) kind empirical {
+    label ru-KZ official "Сенат дал согласие на назначение";
+}
+relation appointment_effective_1995(appointment: Appointment) kind institutional {
+    label ru-KZ official "назначение состоялось";
+}
+relation mazhilis_absent_after_early_termination() kind empirical {
+    label ru-KZ official "Мажилис отсутствует вследствие досрочного прекращения его полномочий";
+}
+relation senate_exercises_parliament_functions_1995() kind institutional {
+    label ru-KZ official "Сенат осуществляет функции Парламента по принятию законов";
+}
+relation pm_consent_request(appointment: Appointment) kind empirical {
+    label ru-KZ official "внесено представление о даче согласия на назначение Премьер-Министра";
+}
+relation mazhilis_consent_votes(appointment: Appointment, votes: Integer) kind empirical {
+    label ru-KZ official "число голосов Мажилиса, поданных за согласие на назначение";
+}
+relation mazhilis_consent_total(appointment: Appointment, total: Integer) kind empirical {
+    label ru-KZ official "общее число депутатов Мажилиса при даче согласия";
+}
+relation pm_consent_given_1995(appointment: Appointment) kind institutional {
+    label ru-KZ official "Мажилис дал согласие на назначение Премьер-Министра";
+}
+
+relation no_confidence_motion(motion: NoConfidenceMotion, government: Government) kind empirical {
+    label ru-KZ official "инициатива о вотуме недоверия заявлена в отношении данного Правительства";
+}
+relation motion_initiating_deputies(motion: NoConfidenceMotion, votes: Integer) kind empirical {
+    label ru-KZ official "число депутатов, инициировавших вотум недоверия";
+}
+relation motion_mazhilis_total(motion: NoConfidenceMotion, total: Integer) kind empirical {
+    label ru-KZ official "общее число депутатов Палаты при инициативе о вотуме недоверия";
+}
+relation motion_supporting_votes(motion: NoConfidenceMotion, votes: Integer) kind empirical {
+    label ru-KZ official "число голосов, поданных за вотум недоверия Правительству";
+}
+relation no_confidence_motion_valid_1995(motion: NoConfidenceMotion) kind institutional {
+    label ru-KZ official "инициатива о вотуме недоверия заявлена управомоченным числом депутатов";
+}
+relation government_no_confidence_1995(government: Government) kind institutional {
+    label ru-KZ official "Парламенту выражен вотум недоверия Правительству";
+}
+
+relation minister_report_hearing(motion: NoConfidenceMotion) kind empirical {
+    label ru-KZ official "проводится заслушивание отчёта члена Правительства";
+}
+relation hearing_initiating_votes(motion: NoConfidenceMotion, votes: Integer) kind empirical {
+    label ru-KZ official "число депутатов, инициировавших заслушивание отчёта";
+}
+relation hearing_chamber_total(motion: NoConfidenceMotion, total: Integer) kind empirical {
+    label ru-KZ official "общее число депутатов Палаты при инициативе заслушивания";
+}
+relation minister_failed_to_execute_laws(motion: NoConfidenceMotion) kind empirical {
+    label ru-KZ official "установлено неисполнение членом Правительства законов Республики";
+}
+relation address_supporting_votes(motion: NoConfidenceMotion, votes: Integer) kind empirical {
+    label ru-KZ official "число голосов, поданных за обращение к Президенту об освобождении члена Правительства";
+}
+relation hearing_initiative_valid_1995(motion: NoConfidenceMotion) kind institutional {
+    label ru-KZ official "инициатива заслушивания отчёта заявлена управомоченным числом депутатов";
+}
+relation address_to_president_valid_1995(motion: NoConfidenceMotion) kind institutional {
+    label ru-KZ official "обращение к Президенту об освобождении члена Правительства принято правомерно";
+}
+relation minister_release_required_1995(motion: NoConfidenceMotion) kind institutional {
+    label ru-KZ official "Президент освобождает члена Правительства от должности";
+}
+
+// --- Ст. 58. Председатели Палат ------------------------------------------
+
+relation chair_candidate(chair: ChamberChair, person: Person) kind empirical {
+    label ru-KZ official "должность Председателя Палаты замещается данным лицом";
+}
+relation chair_of_senate(chair: ChamberChair) kind empirical {
+    label ru-KZ official "лицо является Председателем Сената";
+}
+relation chair_of_mazhilis(chair: ChamberChair) kind empirical {
+    label ru-KZ official "лицо является Председателем Мажилиса";
+}
+relation fluent_in_state_language(person: Person) kind empirical {
+    label ru-KZ official "лицо свободно владеет государственным языком";
+}
+relation nominated_by_president(chair: ChamberChair) kind empirical {
+    label ru-KZ official "кандидатура Председателя выдвинута Президентом Республики";
+}
+relation nominated_by_deputies(chair: ChamberChair) kind empirical {
+    label ru-KZ official "кандидатура Председателя выдвинута депутатами Палаты";
+}
+relation chair_election_votes(chair: ChamberChair, votes: Integer) kind empirical {
+    label ru-KZ official "число голосов, поданных за кандидата в Председатели Палаты";
+}
+relation chair_chamber_total(chair: ChamberChair, total: Integer) kind empirical {
+    label ru-KZ official "общее число депутатов Палаты при избрании Председателя";
+}
+relation chair_elected_1995(chair: ChamberChair) kind institutional {
+    label ru-KZ official "кандидат избран Председателем Палаты";
+}
+
+// --- Ст. 59, 60. Сессии, заседания, комитеты ------------------------------
+
+relation election_results_published(sitting: Session, day: Date) kind empirical {
+    label ru-KZ official "день опубликования итогов выборов";
+}
+relation first_session_convened(sitting: Session, day: Date) kind empirical {
+    label ru-KZ official "день созыва первой сессии Парламента";
+}
+relation first_session_within_thirty_days(sitting: Session) kind empirical {
+    label ru-KZ official "первая сессия созвана в тридцатидневный срок";
+}
+relation first_session_timely_1995(sitting: Session) kind institutional {
+    label ru-KZ official "первая сессия созвана в конституционный срок";
+}
+relation extraordinary_session_request(sitting: Session) kind empirical {
+    label ru-KZ official "заявлено требование о созыве внеочередной сессии";
+}
+relation request_by_chamber_chairs(sitting: Session) kind empirical {
+    label ru-KZ official "требование заявлено председателями Палат";
+}
+relation request_initiating_votes(sitting: Session, votes: Integer) kind empirical {
+    label ru-KZ official "число депутатов, инициировавших внеочередную сессию";
+}
+relation parliament_total_deputies(sitting: Session, total: Integer) kind empirical {
+    label ru-KZ official "общее число депутатов Парламента";
+}
+relation extraordinary_session_valid_1995(sitting: Session) kind institutional {
+    label ru-KZ official "внеочередная сессия созвана правомерно";
+}
+relation extraordinary_agenda_limited_1995(sitting: Session) kind institutional {
+    label ru-KZ official "на внеочередной сессии рассматриваются только вопросы, послужившие основанием созыва";
+}
+relation joint_or_separate_sitting(seating: Sitting) kind empirical {
+    label ru-KZ official "заседание является совместным либо раздельным заседанием Палат";
+}
+relation senate_present(seating: Sitting, present: Integer) kind empirical {
+    label ru-KZ official "число присутствующих депутатов Сената";
+}
+relation senate_seats(seating: Sitting, total: Integer) kind empirical {
+    label ru-KZ official "общее число депутатских мест Сената на заседании";
+}
+relation mazhilis_present(seating: Sitting, present: Integer) kind empirical {
+    label ru-KZ official "число присутствующих депутатов Мажилиса";
+}
+relation mazhilis_seats(seating: Sitting, total: Integer) kind empirical {
+    label ru-KZ official "общее число депутатских мест Мажилиса на заседании";
+}
+relation sitting_quorate_1995(seating: Sitting) kind institutional {
+    label ru-KZ official "заседание Палат правомочно";
+}
+relation standing_committees(chamber: Chamber, count: Integer) kind empirical {
+    label ru-KZ official "число постоянных комитетов Палаты";
+}
+relation committee_count_admissible_1995(chamber: Chamber) kind institutional {
+    label ru-KZ official "число постоянных комитетов Палаты допустимо";
+}
+
+// --- Ст. 61. Законодательная процедура ------------------------------------
+
+relation legislative_initiative_by_president(item: Bill) kind empirical {
+    label ru-KZ official "законопроект внесён Президентом Республики";
+}
+relation legislative_initiative_by_deputy(item: Bill) kind empirical {
+    label ru-KZ official "законопроект внесён депутатом Парламента";
+}
+relation legislative_initiative_by_government(item: Bill) kind empirical {
+    label ru-KZ official "законопроект внесён Правительством";
+}
+relation introduced_in_mazhilis(item: Bill) kind empirical {
+    label ru-KZ official "законопроект внесён в Мажилис";
+}
+relation legislative_initiative_valid_1995(item: Bill) kind institutional {
+    label ru-KZ official "право законодательной инициативы реализовано управомоченным субъектом";
+}
+relation reduces_revenue_or_increases_expenditure(item: Bill) kind empirical {
+    label ru-KZ official "законопроект предусматривает сокращение государственных доходов либо увеличение расходов";
+}
+relation positive_government_opinion(item: Bill) kind empirical {
+    label ru-KZ official "по законопроекту имеется положительное заключение Правительства";
+}
+relation bill_admissible_1995(item: Bill) kind institutional {
+    label ru-KZ official "законопроект допустим к рассмотрению";
+}
+relation mazhilis_adopted(item: Bill) kind empirical {
+    label ru-KZ official "Мажилис принял законопроект";
+}
+relation senate_review_days_elapsed(item: Bill) kind empirical {
+    label ru-KZ official "истёк срок рассмотрения законопроекта Сенатом";
+}
+relation senate_approved(item: Bill) kind empirical {
+    label ru-KZ official "Сенат одобрил законопроект";
+}
+relation senate_took_no_decision(item: Bill) kind empirical {
+    label ru-KZ official "Сенат не принял решения по законопроекту";
+}
+relation presented_to_president_1995(item: Bill) kind institutional {
+    label ru-KZ official "закон представлен Президенту на подпись";
+}
+relation mazhilis_rejected_bill(item: Bill) kind empirical {
+    label ru-KZ official "Мажилис отклонил законопроект";
+}
+relation bill_returned_to_initiator_1995(item: Bill) kind institutional {
+    label ru-KZ official "отклонённый законопроект возвращается инициатору";
+}
+relation conciliation_version(item: Bill) kind empirical {
+    label ru-KZ official "законопроект рассматривается в редакции согласительной комиссии";
+}
+relation mazhilis_repeat_votes(item: Bill, votes: Integer) kind empirical {
+    label ru-KZ official "число голосов Мажилиса при повторном голосовании";
+}
+relation mazhilis_confirmed_earlier_version_1995(item: Bill) kind institutional {
+    label ru-KZ official "Мажилис подтвердил ранее принятую редакцию законопроекта";
+}
+
+relation confidence_question(question: ConfidenceQuestion, government: Government) kind empirical {
+    label ru-KZ official "Премьер-Министр поставил вопрос о доверии Правительству";
+}
+relation confidence_vote_after_48_hours(question: ConfidenceQuestion) kind empirical {
+    label ru-KZ official "голосование по вопросу о доверии проведено не ранее чем через сорок восемь часов";
+}
+relation no_confidence_failed_in_both_chambers(question: ConfidenceQuestion) kind empirical {
+    label ru-KZ official "вотум недоверия не набрал большинства ни в одной из Палат";
+}
+relation confidence_uses_this_year(government: Government, count: Integer) kind empirical {
+    label ru-KZ official "число уже состоявшихся в этом году обращений Правительства к вопросу о доверии";
+}
+relation bill_adopted_without_vote_1995(question: ConfidenceQuestion) kind institutional {
+    label ru-KZ official "законопроект считается принятым без голосования";
+}
+relation confidence_right_exhausted_1995(government: Government) kind institutional {
+    label ru-KZ official "право Правительства на постановку вопроса о доверии в этом году исчерпано";
+}
+
+pub relation parliament_regulates_listed_subjects_1995() kind institutional {
+    label ru-KZ official "Парламент вправе издавать законы по перечисленным Конституцией предметам";
+}
+
+// --- Ст. 62. Акты Парламента ----------------------------------------------
+
+relation parliamentary_act(item: Statute) kind empirical {
+    label ru-KZ official "акт принят Парламентом";
+}
+relation act_signed_by_president(item: Statute) kind empirical {
+    label ru-KZ official "акт подписан Президентом Республики";
+}
+relation act_in_force_1995(item: Statute) kind institutional {
+    label ru-KZ official "акт Парламента действует";
+}
+relation act_contradicts_constitution(item: Statute) kind empirical {
+    label ru-KZ official "акт противоречит Конституции";
+}
+relation act_invalid_1995(item: Statute) kind institutional {
+    label ru-KZ official "акт Парламента недействителен";
+}
+
+// --- Ст. 63. Роспуск --------------------------------------------------------
+
+relation dissolution_attempt(dissolution: Dissolution) kind empirical {
+    label ru-KZ official "предпринят роспуск Парламента либо Мажилиса";
+}
+relation dissolution_consultations_completed(dissolution: Dissolution) kind empirical {
+    label ru-KZ official "проведены консультации с председателями Палат и Премьер-Министром";
+}
+relation emergency_or_martial_law_active() kind empirical {
+    label ru-KZ official "действует чрезвычайное либо военное положение";
+}
+relation last_six_months_of_presidential_term() kind empirical {
+    label ru-KZ official "идут последние шесть месяцев полномочий Президента";
+}
+relation within_one_year_after_prior_dissolution() kind empirical {
+    label ru-KZ official "со дня предыдущего роспуска не прошёл один год";
+}
+relation dissolution_admissible_1995(dissolution: Dissolution) kind institutional {
+    label ru-KZ official "роспуск Парламента допустим";
+}
+relation dissolution_barred_1995(dissolution: Dissolution) kind institutional {
+    label ru-KZ official "роспуск Парламента не допускается";
+}
+
+// --- Деонтический слой 13.09.2026 ------------------------------------------
+//
+// Полномочия §127 и иммунитеты §128 заводятся ТОЛЬКО там, где текст 1995
+// называет собственное условие действительности либо блокируемое правовое
+// изменение. Условие обязано быть отдельным фактом дела: вакуумный
+// `valid_when`, повторяющий посылку (дефект редакции 2026 — 27 полномочий
+// из 31), здесь не воспроизводится, потому что у такого полномочия пара
+// «действительно / недействительно» невыразима по построению.
+//
+// Роспуск ст. 63 живёт ЗДЕСЬ, а не в пакете Президента: статья уже
+// формализована в этом пакете плоскими правилами над `Dissolution`, и
+// второй комплект предикатов в соседнем пакете утверждал бы два разных
+// роспуска. Носитель полномочия (§190) связывается предикатом
+// `president_1995`, объявленным для этого здесь.
+//
+// ЗАМЕЧЕННЫЙ ДЕФЕКТ, НЕ ИСПРАВЛЯЕМЫЙ ЭТИМ ИЗМЕНЕНИЕМ: тело
+// `DissolutionBarred1995` соединяет три основания через `or`. Парсер и
+// `lawc check` дизъюнкцию принимают, но `flatten_body` обоих исполнителей
+// знает только `and` — правило компилируется и молчит (та же ловушка,
+// которую редакция 2026 расщепила у ст. 62 п. 3). Три иммунитета ниже
+// написаны РАСЩЕПЛЁННО, по одному на основание, и потому работают; плоское
+// правило оставлено как есть, чтобы его починка была отдельным измеряемым
+// изменением.
+
+entity StateAuthority {
+    label ru-KZ official "государственный орган либо должностное лицо";
+}
+entity President {
+    label ru-KZ official "Президент Республики Казахстан (редакция 1995)";
+}
+entity ArmedForcesDeployment {
+    label ru-KZ official "решение об использовании Вооружённых Сил для выполнения международных обязательств";
+}
+
+relation president_1995(authority: President) kind empirical {
+    label ru-KZ official "лицо является Президентом Республики";
+}
+relation state_authority(authority: StateAuthority) kind empirical {
+    label ru-KZ official "субъект является государственным органом либо должностным лицом";
+}
+relation dissolution_of(dissolution: Dissolution, body: Parliament) kind empirical {
+    label ru-KZ official "роспуск направлен на данный Парламент либо его Мажилис";
+}
+relation parliament_dissolved_1995(body: Parliament) kind institutional {
+    label ru-KZ official "Парламент либо Мажилис распущен";
+}
+
+relation supreme_court_office_appointment(appointment: Appointment) kind empirical {
+    label ru-KZ official "назначение производится на должность Председателя либо судьи Верховного Суда";
+}
+relation ombudsman_office_appointment(appointment: Appointment) kind empirical {
+    label ru-KZ official "назначение производится на должность Уполномоченного по правам человека";
+}
+relation presidential_submission_for_office(appointment: Appointment) kind empirical {
+    label ru-KZ official "имеется представление Президента Республики по данной должности";
+}
+relation senate_election_attempt(chamber: Chamber, appointment: Appointment) kind empirical {
+    label ru-KZ official "Сенат избирает лицо на должность";
+}
+
+relation deputy_prosecution_attempt(authority: StateAuthority, deputy: Deputy) kind empirical {
+    label ru-KZ official "государственный орган привлекает депутата к ответственности";
+}
+
+relation armed_forces_deployment(deployment: ArmedForcesDeployment) kind empirical {
+    label ru-KZ official "решается вопрос об использовании Вооружённых Сил для выполнения международных обязательств по поддержанию мира и безопасности";
+}
+relation presidential_armed_forces_proposal(deployment: ArmedForcesDeployment) kind empirical {
+    label ru-KZ official "имеется предложение Президента Республики об использовании Вооружённых Сил";
+}
+relation armed_forces_deployment_attempt(body: Parliament, deployment: ArmedForcesDeployment) kind empirical {
+    label ru-KZ official "Парламент принимает решение об использовании Вооружённых Сил";
+}
+relation armed_forces_deployment_decided_1995(deployment: ArmedForcesDeployment) kind institutional {
+    label ru-KZ official "решение об использовании Вооружённых Сил принято";
+}
+
+relation presidential_amendment_proposal(item: Bill) kind empirical {
+    label ru-KZ official "изменения и дополнения в Конституцию внесены по предложению Президента Республики";
+}
+relation amendment_adoption_attempt(body: Parliament, item: Bill) kind empirical {
+    label ru-KZ official "Парламент на совместном заседании Палат вносит изменения и дополнения в Конституцию";
+}
+
+relation no_confidence_vote_attempt(chamber: Chamber, motion: NoConfidenceMotion) kind empirical {
+    label ru-KZ official "Мажилис выражает вотум недоверия Правительству";
+}
+// Эффекты полномочий НЕ совпадают с выводами арифметических правил ст. 53 и
+// ст. 56: порог голосов остаётся у своего правила, полномочие отвечает за
+// действие палаты. Иначе эффект §127 производил бы принятие акта в обход
+// конституционного большинства.
+relation constitutional_amendment_introduced_1995(item: Bill) kind institutional {
+    label ru-KZ official "изменения и дополнения в Конституцию внесены Парламентом на совместном заседании Палат";
+}
+relation government_no_confidence_declared_1995(motion: NoConfidenceMotion) kind institutional {
+    label ru-KZ official "вотум недоверия Правительству выражен Мажилисом";
+}
+
+// =========================================================================
+// Конституционные числа. Каждое сверено с закреплённым текстом ст. 50–63.
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART50_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART50_KK")
+assert mazhilis_seats_1995(98);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART50_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART50_KK")
+assert senate_appointed_by_president_1995(10);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART50_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART50_KK")
+assert senate_appointed_on_assembly_proposal_1995(5);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART50_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART50_KK")
+assert senate_term_years_1995(6);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART50_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART50_KK")
+assert mazhilis_term_years_1995(5);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART51_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART51_KK")
+assert senate_rotation_years_1995(3);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART51_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART51_KK")
+assert deputy_residence_years_1995(10);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART51_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART51_KK")
+assert senator_minimum_age_1995(30);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART51_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART51_KK")
+assert senator_work_experience_years_1995(5);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART51_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART51_KK")
+assert senator_regional_residence_years_1995(3);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART51_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART51_KK")
+assert mazhilis_deputy_minimum_age_1995(25);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART52_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART52_KK")
+assert unexcused_absences_limit_1995(3);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART53_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART53_KK")
+assert constitutional_law_numerator_1995(2);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART53_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART53_KK")
+assert constitutional_law_denominator_1995(3);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART54_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART54_KK")
+assert veto_override_numerator_1995(2);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART54_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART54_KK")
+assert veto_override_denominator_1995(3);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART56_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART56_KK")
+assert no_confidence_initiative_numerator_1995(1);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART56_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART56_KK")
+assert no_confidence_initiative_denominator_1995(5);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART57_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART57_KK")
+assert constitutional_court_judges_per_chamber_1995(3);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART59_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART59_KK")
+assert first_session_convocation_days_1995(30);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART59_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART59_KK")
+assert quorum_numerator_1995(2);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART59_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART59_KK")
+assert quorum_denominator_1995(3);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART60_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART60_KK")
+assert standing_committees_max_1995(7);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART61_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART61_KK")
+assert senate_review_days_1995(60);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART61_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART61_KK")
+assert presentation_to_president_days_1995(10);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART61_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART61_KK")
+assert priority_bill_months_1995(2);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART61_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART61_KK")
+assert confidence_vote_wait_hours_1995(48);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART61_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART61_KK")
+assert confidence_uses_per_year_1995(2);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART62_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART62_KK")
+assert amendment_majority_numerator_1995(3);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART62_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART62_KK")
+assert amendment_majority_denominator_1995(4);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART62_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART62_KK")
+assert minimum_readings_1995(2);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART63_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART63_KK")
+assert dissolution_protected_months_1995(6);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART63_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART63_KK")
+assert dissolution_cooldown_years_1995(1);
+
+// --- Ст. 49–50. Конститутивные факты и полномочия Парламента -------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART49_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART49_KK")
+assert parliament_is_supreme_representative_body_1995();
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART50_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART50_KK")
+assert parliament_has_two_chambers_1995();
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART61_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART61_KK")
+assert parliament_regulates_listed_subjects_1995();
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART49_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART49_KK")
+rule ParliamentPowersActive1995(body: Parliament) strict {
+    when parliament(body);
+    when first_session_opened(body);
+    when not new_convocation_first_session_started(body);
+    then parliament_powers_active_1995(body);
+    label ru-KZ official "Статья 49 пункт 2 (ред. 1995). Полномочия Парламента начинаются с открытия первой сессии и заканчиваются с началом первой сессии Парламента нового созыва";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART50_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART50_KK")
+rule DualChamberMembershipProhibited1995(deputy: Deputy) strict {
+    when deputy_member_of_both_chambers(deputy);
+    then dual_membership_prohibited_1995(deputy);
+    label ru-KZ official "Статья 50 пункт 4 (ред. 1995). Депутат Парламента не может быть одновременно членом обеих Палат";
+}
+
+// --- Ст. 51. Цензы депутатов ----------------------------------------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART51_RU")
+// Принадлежность депутата Палате была объявлена (`deputy_of`, `senate`,
+// `mazhilis`) и не читалась ничем: требования к сенатору и к депутату Мажилиса
+// брали готовые признаки `seeks_senate_seat` / `seeks_mazhilis_seat`. Два
+// правила ниже связывают одно с другим, оставляя прежний путь: место, на
+// которое лицо претендует, теперь выводимо из состава Палаты.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART50_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART50_KK")
+rule SenateSeatFromChamberMembership1995(deputy: Deputy, chamber: Chamber) strict {
+    when deputy_of(deputy, chamber);
+    when senate(chamber);
+    then seeks_senate_seat(deputy);
+    label ru-KZ official "Статья 50 пункт 2 (ред. 1995). Депутат, входящий в состав Сената, занимает сенаторское место";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART50_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART50_KK")
+rule MazhilisSeatFromChamberMembership1995(deputy: Deputy, chamber: Chamber) strict {
+    when deputy_of(deputy, chamber);
+    when mazhilis(chamber);
+    then seeks_mazhilis_seat(deputy);
+    label ru-KZ official "Статья 50 пункт 3 (ред. 1995). Депутат, входящий в состав Мажилиса, занимает мажилисовское место";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART51_KK")
+rule EligibleSenator1995(
+    deputy: Deputy,
+    person: Person,
+    age: Integer,
+    residence: Integer,
+    experience: Integer,
+    regional: Integer,
+) strict {
+    when candidate_deputy(deputy, person)
+        and seeks_senate_seat(deputy)
+        and citizen(person)
+        and resides_in_kazakhstan_years(person, residence)
+        and age_years(person, age)
+        and higher_education(person)
+        and work_experience_years(person, experience)
+        and resides_in_region_years(person, regional)
+        and (residence >= 10)
+        and (age >= 30)
+        and (experience >= 5)
+        and (regional >= 3);
+    then eligible_senator_1995(deputy);
+    label ru-KZ official "Статья 51 пункт 4 (ред. 1995). Депутатом Сената может быть лицо не моложе тридцати лет с высшим образованием, стажем не менее пяти лет, проживающее в регионе не менее трёх лет и в Республике последние десять лет";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART51_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART51_KK")
+rule EligibleMazhilisDeputy1995(
+    deputy: Deputy,
+    person: Person,
+    age: Integer,
+    residence: Integer,
+) strict {
+    when candidate_deputy(deputy, person)
+        and seeks_mazhilis_seat(deputy)
+        and citizen(person)
+        and resides_in_kazakhstan_years(person, residence)
+        and age_years(person, age)
+        and (residence >= 10)
+        and (age >= 25);
+    then eligible_mazhilis_deputy_1995(deputy);
+    label ru-KZ official "Статья 51 пункт 4 (ред. 1995). Депутатом Мажилиса может быть лицо, достигшее двадцати пяти лет, состоящее в гражданстве и проживающее в Республике последние десять лет";
+}
+
+// --- Ст. 52. Дисциплина, несовместимости, неприкосновенность --------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART52_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART52_KK")
+rule DeputySanctionForAbsenceOrDelegation1995(deputy: Deputy, count: Integer) strict {
+    when deputy(deputy)
+        and unexcused_absences(deputy, count)
+        and (count > 3);
+    then deputy_sanction_applies_1995(deputy);
+    label ru-KZ official "Статья 52 пункт 2 (ред. 1995). Отсутствие без уважительных причин более трёх раз влечёт применение установленных законом мер взыскания";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART52_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART52_KK")
+rule DeputyVoteDelegationSanction1995(deputy: Deputy) strict {
+    when deputy(deputy);
+    when vote_delegated(deputy);
+    then deputy_sanction_applies_1995(deputy);
+    label ru-KZ official "Статья 52 пункт 2 (ред. 1995). Передача права голоса влечёт применение установленных законом мер взыскания";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART52_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART52_KK")
+rule DeputyIncompatibilityTerminatesPowers1995(deputy: Deputy) strict {
+    when deputy_holds_other_representative_mandate(deputy)
+        or deputy_conducts_business(deputy)
+        or deputy_in_commercial_governing_body(deputy);
+    then deputy_powers_terminated_1995(deputy);
+    label ru-KZ official "Статья 52 пункт 3 (ред. 1995). Нарушение запрета совмещения влечёт прекращение полномочий депутата";
+}
+
+// Оплачиваемая должность прекращает полномочия, КРОМЕ преподавательской,
+// научной и иной творческой: исключение названо Конституцией, поэтому
+// выражено отрицательным конъюнктом, а не отдельным правилом-исключением.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART52_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART52_KK")
+rule DeputyPaidOfficeTerminatesPowers1995(deputy: Deputy) strict {
+    when deputy_holds_other_paid_office(deputy);
+    when not office_is_teaching_research_or_creative(deputy);
+    then deputy_powers_terminated_1995(deputy);
+    label ru-KZ official "Статья 52 пункт 3 (ред. 1995). Занятие иной оплачиваемой должности, кроме преподавательской, научной или иной творческой, прекращает полномочия депутата";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART52_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART52_KK")
+rule DeputyImmunityFromArrest1995(deputy: Deputy) strict {
+    when deputy(deputy);
+    when arrest_or_prosecution_attempt(deputy);
+    when not chamber_consent_given(deputy);
+    when not caught_in_the_act_or_grave_crime(deputy);
+    then immunity DeputyInviolability1995 {
+        holder deputy;
+        protected_effect deputy_immunity_infringed_1995(deputy);
+    };
+    label ru-KZ official "Статья 52 пункт 4 (ред. 1995). Депутат не может быть арестован или привлечён к уголовной ответственности без согласия Палаты, кроме задержания на месте преступления и тяжких преступлений";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART52_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART52_KK")
+rule DeputyPowersTerminatedOnGeneralGrounds1995(deputy: Deputy) strict {
+    when resignation_submitted(deputy)
+        or deputy_deceased(deputy)
+        or court_declared_incapable_dead_or_missing(deputy);
+    then deputy_powers_terminated_1995(deputy);
+    label ru-KZ official "Статья 52 пункт 5 (ред. 1995). Полномочия прекращаются при отставке, смерти либо признании судом недееспособным, умершим или безвестно отсутствующим";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART52_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART52_KK")
+rule DeputyMandateForfeited1995(deputy: Deputy) strict {
+    when permanent_departure_from_kazakhstan(deputy)
+        or criminal_conviction_in_force(deputy)
+        or citizenship_lost(deputy);
+    then deputy_mandate_forfeited_1995(deputy);
+    label ru-KZ official "Статья 52 пункт 5 (ред. 1995). Депутат лишается мандата при выезде на постоянное жительство за пределы Казахстана, вступлении в силу обвинительного приговора и утрате гражданства";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART52_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART52_KK")
+rule MazhilisDeputyPartyMandateForfeited1995(deputy: Deputy) strict {
+    when elected_on_party_list(deputy)
+        and (left_or_expelled_from_party(deputy)
+             or party_ceased_activity(deputy));
+    then deputy_mandate_forfeited_1995(deputy);
+    label ru-KZ official "Статья 52 пункт 5 (ред. 1995). Депутат Мажилиса лишается мандата при выходе или исключении из партии, по списку которой избран, и при прекращении её деятельности";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART52_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART52_KK")
+rule SingleMandateDeputyRecalled1995(deputy: Deputy) strict {
+    when elected_in_single_mandate_district(deputy);
+    when recalled_by_voters(deputy);
+    then deputy_mandate_forfeited_1995(deputy);
+    label ru-KZ official "Статья 52 пункт 5 (ред. 1995). Депутат, избранный по одномандатному округу, лишается мандата при отзыве избирателями";
+}
+
+// --- Ст. 53, 54, 62. Пороги в ДВУХ Палатах --------------------------------
+//
+// Здесь и есть несущее институциональное отличие от редакции 2026: каждое
+// квалифицированное большинство проверяется ОТДЕЛЬНО по Сенату и по Мажилису.
+// В однопалатном Курултае то же требование — одно сравнение.
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART62_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART62_KK")
+rule ConstitutionalAmendmentAdopted1995(
+    item: Bill,
+    senate_yes: Integer,
+    senate_all: Integer,
+    mazhilis_yes: Integer,
+    mazhilis_all: Integer,
+    readings: Integer,
+) strict {
+    when constitutional_amendment_bill(item)
+        and presidential_proposal(item)
+        and readings_held(item, readings)
+        and senate_votes(item, senate_yes)
+        and senate_total_deputies(item, senate_all)
+        and mazhilis_votes(item, mazhilis_yes)
+        and mazhilis_total_deputies(item, mazhilis_all)
+        and (readings >= 2)
+        and (senate_yes * 4 >= senate_all * 3)
+        and (mazhilis_yes * 4 >= mazhilis_all * 3);
+    then constitutional_amendment_adopted_1995(item);
+    label ru-KZ official "Статья 62 пункт 3 (ред. 1995). Изменения и дополнения в Конституцию вносятся большинством не менее трёх четвертей голосов от общего числа депутатов каждой из Палат";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART62_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART62_KK")
+rule ConstitutionalLawAdopted1995(
+    item: Bill,
+    senate_yes: Integer,
+    senate_all: Integer,
+    mazhilis_yes: Integer,
+    mazhilis_all: Integer,
+    readings: Integer,
+) strict {
+    when constitutional_law_bill(item)
+        and readings_held(item, readings)
+        and senate_votes(item, senate_yes)
+        and senate_total_deputies(item, senate_all)
+        and mazhilis_votes(item, mazhilis_yes)
+        and mazhilis_total_deputies(item, mazhilis_all)
+        and (readings >= 2)
+        and (senate_yes * 3 >= senate_all * 2)
+        and (mazhilis_yes * 3 >= mazhilis_all * 2);
+    then constitutional_law_adopted_1995(item);
+    label ru-KZ official "Статья 62 пункт 4 (ред. 1995). Конституционные законы принимаются большинством не менее двух третей голосов от общего числа депутатов каждой из Палат";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART62_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART62_KK")
+rule ReadingRequirementMet1995(item: Bill, readings: Integer) strict {
+    when (constitutional_amendment_bill(item) or constitutional_law_bill(item))
+        and readings_held(item, readings)
+        and (readings >= 2);
+    then reading_requirement_met_1995(item);
+    label ru-KZ official "Статья 62 пункт 6 (ред. 1995). Проведение не менее двух чтений по изменениям Конституции и по проектам конституционных законов обязательно";
+}
+
+// Ст. 53 подпункт 1-2: возражения Президента по КОНСТИТУЦИОННОМУ закону
+// преодолеваются тремя четвертями каждой Палаты; ст. 54 п. 2 подпункт 2:
+// по обычному закону — двумя третями каждой Палаты. Пороги разные, и это
+// две разные нормы, а не одна с параметром.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART53_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART53_KK")
+rule ConstitutionalLawObjectionOverridden1995(
+    objection: Objection,
+    senate_yes: Integer,
+    senate_all: Integer,
+    mazhilis_yes: Integer,
+    mazhilis_all: Integer,
+) strict {
+    when objection_on_constitutional_law(objection)
+        and objection_reconsidered_within_one_month(objection)
+        and objection_senate_votes(objection, senate_yes)
+        and objection_senate_total(objection, senate_all)
+        and objection_mazhilis_votes(objection, mazhilis_yes)
+        and objection_mazhilis_total(objection, mazhilis_all)
+        and (senate_yes * 4 >= senate_all * 3)
+        and (mazhilis_yes * 4 >= mazhilis_all * 3);
+    then objection_overridden_1995(objection);
+    label ru-KZ official "Статья 53 подпункт 1-2 (ред. 1995). Возражения Президента по конституционному закону преодолеваются большинством в три четверти голосов от общего числа депутатов каждой из Палат";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART54_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART54_KK")
+rule OrdinaryLawObjectionOverridden1995(
+    objection: Objection,
+    senate_yes: Integer,
+    senate_all: Integer,
+    mazhilis_yes: Integer,
+    mazhilis_all: Integer,
+) strict {
+    when objection_reconsidered_within_one_month(objection)
+        and not objection_on_constitutional_law(objection)
+        and objection_senate_votes(objection, senate_yes)
+        and objection_senate_total(objection, senate_all)
+        and objection_mazhilis_votes(objection, mazhilis_yes)
+        and objection_mazhilis_total(objection, mazhilis_all)
+        and (senate_yes * 3 >= senate_all * 2)
+        and (mazhilis_yes * 3 >= mazhilis_all * 2);
+    then objection_overridden_1995(objection);
+    label ru-KZ official "Статья 54 пункт 2 подпункт 2 (ред. 1995). Возражения Президента по закону преодолеваются большинством в две трети голосов от общего числа депутатов каждой из Палат";
+}
+
+// Несоблюдение месячного срока ОЗНАЧАЕТ принятие возражений — это прямая
+// норма текста, а не молчаливый вывод из отсутствия голосования.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART54_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART54_KK")
+rule ObjectionsAcceptedOnMissedDeadline1995(objection: Objection, item: Bill) strict {
+    when presidential_objection(objection, item);
+    when not objection_reconsidered_within_one_month(objection);
+    then objections_accepted_1995(objection);
+    label ru-KZ official "Статья 54 пункт 2 подпункт 2 (ред. 1995). Несоблюдение месячного срока означает принятие возражений Президента";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART53_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART53_KK")
+rule BudgetReportRejectionIsNoConfidence1995(item: Bill) strict {
+    when budget_report_rejected(item);
+    then no_confidence_expressed_1995(item);
+    label ru-KZ official "Статья 53 подпункт 2 (ред. 1995). Неутверждение отчёта Правительства об исполнении республиканского бюджета означает выражение вотума недоверия Правительству";
+}
+
+// --- Ст. 55, 56, 57. Ведение Палат ----------------------------------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART55_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART55_KK")
+rule SenateConsentAppointment1995(appointment: Appointment) strict {
+    when appointment_requires_senate_consent(appointment);
+    when senate_consent_given(appointment);
+    then appointment_effective_1995(appointment);
+    label ru-KZ official "Статья 55 подпункт 2 (ред. 1995). Сенат даёт согласие на назначение Председателя Конституционного Суда, Председателя Национального Банка, Председателя Высшего Судебного Совета, Генерального Прокурора и Председателя КНБ";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART55_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART55_KK")
+rule SenateActsForParliament1995 strict {
+    when mazhilis_absent_after_early_termination();
+    then senate_exercises_parliament_functions_1995();
+    label ru-KZ official "Статья 55 подпункт 5 (ред. 1995). Сенат выполняет функции Парламента по принятию законов в период временного отсутствия Мажилиса";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART56_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART56_KK")
+rule MazhilisConsentToPrimeMinister1995(
+    appointment: Appointment,
+    votes: Integer,
+    total: Integer,
+) strict {
+    when pm_consent_request(appointment)
+        and mazhilis_consent_votes(appointment, votes)
+        and mazhilis_consent_total(appointment, total)
+        and (votes * 2 > total);
+    then pm_consent_given_1995(appointment);
+    label ru-KZ official "Статья 56 пункт 1 подпункт 2 (ред. 1995). Мажилис большинством голосов от общего числа депутатов Палаты даёт согласие Президенту на назначение Премьер-Министра";
+}
+
+// Ст. 56 п. 2: инициатива — не менее ОДНОЙ ПЯТОЙ депутатов Мажилиса.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART56_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART56_KK")
+rule NoConfidenceMotionValid1995(
+    motion: NoConfidenceMotion,
+    government: Government,
+    initiators: Integer,
+    total: Integer,
+) strict {
+    when no_confidence_motion(motion, government)
+        and motion_initiating_deputies(motion, initiators)
+        and motion_mazhilis_total(motion, total)
+        and (initiators * 5 >= total);
+    then no_confidence_motion_valid_1995(motion);
+    label ru-KZ official "Статья 56 пункт 2 (ред. 1995). Вотум недоверия выражается по инициативе не менее одной пятой от общего числа депутатов Мажилиса";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART56_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART56_KK")
+rule GovernmentNoConfidence1995(
+    motion: NoConfidenceMotion,
+    government: Government,
+    votes: Integer,
+    total: Integer,
+) strict {
+    when no_confidence_motion_valid_1995(motion)
+        and no_confidence_motion(motion, government)
+        and motion_supporting_votes(motion, votes)
+        and motion_mazhilis_total(motion, total)
+        and (votes * 2 > total);
+    then government_no_confidence_1995(government);
+    label ru-KZ official "Статья 56 пункт 2 (ред. 1995). Мажилис большинством голосов от общего числа депутатов вправе выразить вотум недоверия Правительству";
+}
+
+// Ст. 57 подпункт 6: инициатива одной трети, обращение — двумя третями, и
+// освобождение члена Правительства становится ОБЯЗАННОСТЬЮ Президента
+// («В этом случае Президент освобождает»), а не его усмотрением.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART57_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART57_KK")
+rule MinisterHearingInitiativeValid1995(
+    motion: NoConfidenceMotion,
+    votes: Integer,
+    total: Integer,
+) strict {
+    when minister_report_hearing(motion)
+        and hearing_initiating_votes(motion, votes)
+        and hearing_chamber_total(motion, total)
+        and (votes * 3 >= total);
+    then hearing_initiative_valid_1995(motion);
+    label ru-KZ official "Статья 57 подпункт 6 (ред. 1995). Палата вправе по инициативе не менее одной трети от общего числа своих депутатов заслушивать отчёты членов Правительства";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART57_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART57_KK")
+rule AddressToPresidentValid1995(
+    motion: NoConfidenceMotion,
+    votes: Integer,
+    total: Integer,
+) strict {
+    when hearing_initiative_valid_1995(motion)
+        and minister_failed_to_execute_laws(motion)
+        and address_supporting_votes(motion, votes)
+        and hearing_chamber_total(motion, total)
+        and (votes * 3 >= total * 2);
+    then address_to_president_valid_1995(motion);
+    label ru-KZ official "Статья 57 подпункт 6 (ред. 1995). Обращение к Президенту об освобождении члена Правительства принимается большинством не менее двух третей голосов от общего числа депутатов Палаты";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART57_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART57_KK")
+rule MinisterReleaseRequired1995(motion: NoConfidenceMotion) strict {
+    when address_to_president_valid_1995(motion);
+    then minister_release_required_1995(motion);
+    label ru-KZ official "Статья 57 подпункт 6 (ред. 1995). В этом случае Президент Республики освобождает от должности члена Правительства";
+}
+
+// --- Ст. 58. Председатели Палат -------------------------------------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART58_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART58_KK")
+rule SenateChairElected1995(
+    chair: ChamberChair,
+    person: Person,
+    votes: Integer,
+    total: Integer,
+) strict {
+    when chair_of_senate(chair)
+        and chair_candidate(chair, person)
+        and fluent_in_state_language(person)
+        and nominated_by_president(chair)
+        and chair_election_votes(chair, votes)
+        and chair_chamber_total(chair, total)
+        and (votes * 2 > total);
+    then chair_elected_1995(chair);
+    label ru-KZ official "Статья 58 пункт 1 (ред. 1995). Кандидатура Председателя Сената выдвигается Президентом; избрание — тайным голосованием большинством голосов от общего числа депутатов Палаты";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART58_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART58_KK")
+rule MazhilisChairElected1995(
+    chair: ChamberChair,
+    person: Person,
+    votes: Integer,
+    total: Integer,
+) strict {
+    when chair_of_mazhilis(chair)
+        and chair_candidate(chair, person)
+        and fluent_in_state_language(person)
+        and nominated_by_deputies(chair)
+        and chair_election_votes(chair, votes)
+        and chair_chamber_total(chair, total)
+        and (votes * 2 > total);
+    then chair_elected_1995(chair);
+    label ru-KZ official "Статья 58 пункт 1 (ред. 1995). Кандидатуры Председателя Мажилиса выдвигаются депутатами Палаты; избрание — большинством голосов от общего числа депутатов";
+}
+
+// --- Ст. 59, 60. Сессии, кворум, комитеты ---------------------------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART59_RU")
+// Тридцатидневный срок ст. 59 п. 2 СЧИТАЕТСЯ, а не сообщается делом. Прежде
+// его нёс единственный булев признак `first_session_within_thirty_days`, а
+// закреплённые даты (`election_results_published`, `first_session_convened`) и
+// само число дней не читались ничем: дело сообщало вывод, ради которого норма
+// существует. Правило-двойник редакции 2026 (`FirstSessionThirtyDays`) считает,
+// и здесь теперь тоже. Булев путь оставлен рядом: он не обязывает дело
+// приносить обе даты, когда они неизвестны, — но больше не единственный.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART59_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART59_KK")
+rule FirstSessionThirtyDaysComputed1995(
+    sitting: Session,
+    published: Date,
+    convened: Date,
+    limit_days: Integer,
+) strict {
+    when election_results_published(sitting, published)
+        and first_session_convened(sitting, convened)
+        and first_session_convocation_days_1995(limit_days)
+        and (days_between(published, convened) <= limit_days);
+    then first_session_timely_1995(sitting);
+    label ru-KZ official "Статья 59 пункт 2 (ред. 1995). Первая сессия Парламента созывается не позднее тридцати дней со дня опубликования итогов выборов";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART59_KK")
+rule FirstSessionTimely1995(sitting: Session) strict {
+    when first_session_within_thirty_days(sitting);
+    then first_session_timely_1995(sitting);
+    label ru-KZ official "Статья 59 пункт 2 (ред. 1995). Первая сессия Парламента созывается Президентом не позднее тридцати дней со дня опубликования итогов выборов";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART59_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART59_KK")
+rule ExtraordinarySessionByChairs1995(sitting: Session) strict {
+    when extraordinary_session_request(sitting);
+    when request_by_chamber_chairs(sitting);
+    then extraordinary_session_valid_1995(sitting);
+    label ru-KZ official "Статья 59 пункт 4 (ред. 1995). Внеочередная сессия может быть созвана по предложению председателей Палат";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART59_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART59_KK")
+rule ExtraordinarySessionByThird1995(sitting: Session, votes: Integer, total: Integer) strict {
+    when extraordinary_session_request(sitting)
+        and request_initiating_votes(sitting, votes)
+        and parliament_total_deputies(sitting, total)
+        and (votes * 3 >= total);
+    then extraordinary_session_valid_1995(sitting);
+    label ru-KZ official "Статья 59 пункт 4 (ред. 1995). Внеочередная сессия может быть созвана по предложению не менее одной трети от общего числа депутатов Парламента";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART59_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART59_KK")
+rule ExtraordinaryAgendaLimited1995(sitting: Session) strict {
+    when extraordinary_session_valid_1995(sitting);
+    then extraordinary_agenda_limited_1995(sitting);
+    label ru-KZ official "Статья 59 пункт 4 (ред. 1995). На внеочередной сессии могут рассматриваться лишь вопросы, послужившие основанием для её созыва";
+}
+
+// Кворум ст. 59 п. 5 — две трети В КАЖДОЙ Палате, а не от общего числа
+// депутатов Парламента.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART59_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART59_KK")
+rule SittingQuorate1995(
+    seating: Sitting,
+    senate_here: Integer,
+    senate_all: Integer,
+    mazhilis_here: Integer,
+    mazhilis_all: Integer,
+) strict {
+    when joint_or_separate_sitting(seating)
+        and senate_present(seating, senate_here)
+        and senate_seats(seating, senate_all)
+        and mazhilis_present(seating, mazhilis_here)
+        and mazhilis_seats(seating, mazhilis_all)
+        and (senate_here * 3 >= senate_all * 2)
+        and (mazhilis_here * 3 >= mazhilis_all * 2);
+    then sitting_quorate_1995(seating);
+    label ru-KZ official "Статья 59 пункт 5 (ред. 1995). Заседания Палат проводятся при присутствии не менее двух третей от общего числа депутатов каждой из Палат";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART60_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART60_KK")
+rule CommitteeCountAdmissible1995(chamber: Chamber, count: Integer) strict {
+    when standing_committees(chamber, count)
+        and (count <= 7);
+    then committee_count_admissible_1995(chamber);
+    label ru-KZ official "Статья 60 пункт 1 (ред. 1995). Число постоянных комитетов не превышает семи в каждой Палате";
+}
+
+// --- Ст. 61. Законодательная процедура -------------------------------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART61_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART61_KK")
+rule LegislativeInitiativeValid1995(item: Bill) strict {
+    when (legislative_initiative_by_president(item)
+          or legislative_initiative_by_deputy(item)
+          or legislative_initiative_by_government(item))
+        and introduced_in_mazhilis(item);
+    then legislative_initiative_valid_1995(item);
+    label ru-KZ official "Статья 61 пункт 1 (ред. 1995). Право законодательной инициативы принадлежит Президенту, депутатам Парламента и Правительству и реализуется исключительно в Мажилисе";
+}
+
+// Ст. 61 п. 6: заключение Правительства требуется, КРОМЕ законопроектов
+// президентской инициативы — исключение названо Конституцией.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART61_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART61_KK")
+rule FiscalBillRequiresGovernmentOpinion1995(item: Bill) strict {
+    when reduces_revenue_or_increases_expenditure(item);
+    when positive_government_opinion(item);
+    then bill_admissible_1995(item);
+    label ru-KZ official "Статья 61 пункт 6 (ред. 1995). Проекты, сокращающие доходы или увеличивающие расходы, могут быть внесены лишь при положительном заключении Правительства";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART61_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART61_KK")
+rule PresidentialFiscalBillExempt1995(item: Bill) strict {
+    when reduces_revenue_or_increases_expenditure(item);
+    when legislative_initiative_by_president(item);
+    then bill_admissible_1995(item);
+    label ru-KZ official "Статья 61 пункт 6 (ред. 1995). Для законопроектов президентской инициативы заключение Правительства не требуется";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART61_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART61_KK")
+rule ApprovedLawPresentedToPresident1995(item: Bill) strict {
+    when mazhilis_adopted(item);
+    when senate_approved(item);
+    then presented_to_president_1995(item);
+    label ru-KZ official "Статья 61 пункт 4 (ред. 1995). Закон, одобренный большинством голосов от общего числа депутатов Сената, в течение десяти дней представляется Президенту на подпись";
+}
+
+// Молчание Сената свыше шестидесяти дней ИМЕЕТ последствие по тексту: закон
+// уходит Президенту. Это норма, а не вывод из отсутствия факта.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART61_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART61_KK")
+rule SenateSilencePresentsLaw1995(item: Bill) strict {
+    when mazhilis_adopted(item);
+    when senate_review_days_elapsed(item);
+    when senate_took_no_decision(item);
+    then presented_to_president_1995(item);
+    label ru-KZ official "Статья 61 пункт 4 (ред. 1995). Если Сенат в течение шестидесяти дней не принял решения, закон представляется Президенту на подпись";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART61_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART61_KK")
+rule RejectedBillReturnedToInitiator1995(item: Bill) strict {
+    when mazhilis_rejected_bill(item);
+    then bill_returned_to_initiator_1995(item);
+    label ru-KZ official "Статья 61 пункт 4 (ред. 1995). Отклонённый Мажилисом законопроект считается непринятым и возвращается инициатору";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART61_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART61_KK")
+rule MazhilisConfirmsEarlierVersion1995(item: Bill, votes: Integer, total: Integer) strict {
+    when conciliation_version(item)
+        and mazhilis_repeat_votes(item, votes)
+        and mazhilis_total_deputies(item, total)
+        and (votes * 3 >= total * 2);
+    then mazhilis_confirmed_earlier_version_1995(item);
+    label ru-KZ official "Статья 61 пункт 5 (ред. 1995). Если при повторном голосовании Мажилис большинством в две трети голосов подтвердит ранее принятое решение, закон представляется Президенту на подпись";
+}
+
+// Ст. 61 п. 7: вопрос о доверии. Сорок восемь часов и «не более двух раз в
+// год» — конституционные числа редакции 1995.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART61_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART61_KK")
+rule BillAdoptedWithoutVoteOnConfidence1995(
+    question: ConfidenceQuestion,
+    government: Government,
+    uses: Integer,
+) strict {
+    when confidence_question(question, government)
+        and confidence_vote_after_48_hours(question)
+        and no_confidence_failed_in_both_chambers(question)
+        and confidence_uses_this_year(government, uses)
+        and (uses <= 2);
+    then bill_adopted_without_vote_1995(question);
+    label ru-KZ official "Статья 61 пункт 7 (ред. 1995). Если предложение о вотуме недоверия не наберёт большинства голосов от общего числа депутатов каждой из Палат, проект закона считается принятым без голосования";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART61_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART61_KK")
+rule ConfidenceRightExhausted1995(government: Government, uses: Integer) strict {
+    when confidence_uses_this_year(government, uses)
+        and (uses > 2);
+    then confidence_right_exhausted_1995(government);
+    label ru-KZ official "Статья 61 пункт 7 (ред. 1995). Правительство не может пользоваться этим правом более двух раз в год";
+}
+
+// --- Ст. 62. Акты Парламента ------------------------------------------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART62_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART62_KK")
+rule LawInForceAfterPresidentialSignature1995(item: Statute) strict {
+    when parliamentary_act(item);
+    when act_signed_by_president(item);
+    then act_in_force_1995(item);
+    label ru-KZ official "Статья 62 пункт 2 (ред. 1995). Законы Республики вступают в силу после их подписания Президентом Республики";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART62_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART62_KK")
+rule ActContradictingConstitutionInvalid1995(item: Statute) strict {
+    when parliamentary_act(item);
+    when act_contradicts_constitution(item);
+    then act_invalid_1995(item);
+    label ru-KZ official "Статья 62 пункт 7 (ред. 1995). Законы Республики, постановления Парламента и его Палат не должны противоречить Конституции";
+}
+
+// --- Ст. 63. Роспуск ---------------------------------------------------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART63_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART63_KK")
+rule DissolutionAdmissible1995(dissolution: Dissolution) strict {
+    when dissolution_attempt(dissolution);
+    when dissolution_consultations_completed(dissolution);
+    when not emergency_or_martial_law_active();
+    when not last_six_months_of_presidential_term();
+    when not within_one_year_after_prior_dissolution();
+    then dissolution_admissible_1995(dissolution);
+    label ru-KZ official "Статья 63 (ред. 1995). Президент после консультаций с председателями Палат и Премьер-Министром может распустить Парламент или Мажилис вне защищённых периодов";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART63_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART63_KK")
+rule DissolutionBarred1995(dissolution: Dissolution) strict {
+    when dissolution_attempt(dissolution)
+        and (emergency_or_martial_law_active()
+             or last_six_months_of_presidential_term()
+             or within_one_year_after_prior_dissolution());
+    then dissolution_barred_1995(dissolution);
+    label ru-KZ official "Статья 63 пункт 2 (ред. 1995). Парламент и Мажилис не могут быть распущены в период чрезвычайного или военного положения, в последние шесть месяцев полномочий Президента и в течение одного года после предыдущего роспуска";
+}
+
+// --- Деонтический слой §§127–128 (13.09.2026) -------------------------------
+
+// Ст. 63 п. 1: полномочие Президента распустить Парламент либо Мажилис.
+// Условие действительности — консультации с председателями Палат и
+// Премьер-Министром; это отдельный факт дела, и недействительное
+// осуществление здесь выразимо.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART63_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART63_KK")
+rule ParliamentDissolutionPower1995(
+    authority: President,
+    body: Parliament,
+    dissolution: Dissolution,
+) strict {
+    when president_1995(authority);
+    when parliament(body);
+    when dissolution_of(dissolution, body);
+    then power DissolveParliament1995 {
+        holder authority;
+        exercise dissolution_attempt(dissolution);
+        valid_when dissolution_consultations_completed(dissolution);
+        effect parliament_dissolved_1995(body);
+    };
+    label ru-KZ official "Статья 63 пункт 1 (ред. 1995). Президент Республики после консультаций с председателями Палат Парламента и Премьер-Министром может распустить Парламент или Мажилис Парламента";
+}
+
+// Ст. 63 п. 2 перечисляет ТРИ основания через запятую. Одна инлайн-норма на
+// три правила дала бы `A3 StableId collision` на lowering (`lawc check`
+// коллизии не видит), поэтому норма названа ПО ОСНОВАНИЮ — ответ заодно
+// называет, чем именно защищён Парламент.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART63_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART63_KK")
+rule DissolutionBarrierEmergency1995(body: Parliament) strict {
+    when parliament(body);
+    when emergency_or_martial_law_active();
+    then immunity NoDissolutionInEmergency1995 {
+        holder body;
+        protected_effect parliament_dissolved_1995(body);
+    };
+    label ru-KZ official "Статья 63 пункт 2 (ред. 1995). Парламент и Мажилис Парламента не могут быть распущены в период чрезвычайного или военного положения";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART63_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART63_KK")
+rule DissolutionBarrierLastSixMonths1995(body: Parliament) strict {
+    when parliament(body);
+    when last_six_months_of_presidential_term();
+    then immunity NoDissolutionInLastSixMonths1995 {
+        holder body;
+        protected_effect parliament_dissolved_1995(body);
+    };
+    label ru-KZ official "Статья 63 пункт 2 (ред. 1995). Парламент и Мажилис Парламента не могут быть распущены в последние шесть месяцев полномочий Президента";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART63_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART63_KK")
+rule DissolutionBarrierWithinYear1995(body: Parliament) strict {
+    when parliament(body);
+    when within_one_year_after_prior_dissolution();
+    then immunity NoDissolutionWithinYearAfterPrior1995 {
+        holder body;
+        protected_effect parliament_dissolved_1995(body);
+    };
+    label ru-KZ official "Статья 63 пункт 2 (ред. 1995). Парламент и Мажилис Парламента не могут быть распущены в течение одного года после предыдущего роспуска";
+}
+
+priority ProtectedPeriodOverDissolutionEmergency1995: DissolutionBarrierEmergency1995 > ParliamentDissolutionPower1995 reason lex_specialis;
+
+priority ProtectedPeriodOverDissolutionLastMonths1995: DissolutionBarrierLastSixMonths1995 > ParliamentDissolutionPower1995 reason lex_specialis;
+
+priority ProtectedPeriodOverDissolutionAfterPrior1995: DissolutionBarrierWithinYear1995 > ParliamentDissolutionPower1995 reason lex_specialis;
+
+// Ст. 52 п. 4 — вторая сторона уже заведённого иммунитета депутата: без
+// полномочия, производящего защищённый эффект, `DeputyInviolability1995`
+// внутри пакета был неатакуем. Условие действительности названо самим
+// пунктом — согласие соответствующей Палаты.
+//
+// ИЗМЕРЕНО, А НЕ ПРЕДПОЛОЖЕНО (тест kzq95-6): issue EFFECT_BLOCKED_BY_IMMUNITY
+// у этой пары НЕДОСТИЖИМ, и это свойство самой нормы, а не пробел набора.
+// Посылки иммунитета — `not chamber_consent_given` и `not caught_in_the_act…` —
+// в точности отрицают условие действительности полномочия, поэтому защита и
+// действительное осуществление не сосуществуют ни в одном деле: где согласие
+// есть, иммунитета нет, а где его нет, осуществление недействительно и
+// эффекту нечего блокировать. Наблюдаемая пара здесь — POWER_INVALID_EXERCISE
+// и наступивший эффект. По той же причине приоритет §116 между этими двумя
+// правилами НЕ объявлен: он не сработал бы ни разу.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART52_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART52_KK")
+rule DeputyProsecutionPower1995(authority: StateAuthority, deputy: Deputy) strict {
+    when state_authority(authority);
+    when deputy(deputy);
+    then power ProsecuteDeputy1995 {
+        holder authority;
+        exercise deputy_prosecution_attempt(authority, deputy);
+        valid_when chamber_consent_given(deputy);
+        effect deputy_immunity_infringed_1995(deputy);
+    };
+    label ru-KZ official "Статья 52 пункт 4 (ред. 1995). Депутат Парламента в течение срока своих полномочий не может быть арестован, привлечён к уголовной ответственности без согласия соответствующей Палаты";
+}
+
+// Ст. 55 подпункт 1: Сенат избирает Председателя и судей Верховного Суда ПО
+// ПРЕДСТАВЛЕНИЮ Президента — представление и есть условие действительности.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART55_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART55_KK")
+rule SenateSupremeCourtElectionPower1995(chamber: Chamber, appointment: Appointment) strict {
+    when senate(chamber);
+    when supreme_court_office_appointment(appointment);
+    then power ElectSupremeCourtJudge1995 {
+        holder chamber;
+        exercise senate_election_attempt(chamber, appointment);
+        valid_when presidential_submission_for_office(appointment);
+        effect appointment_effective_1995(appointment);
+    };
+    label ru-KZ official "Статья 55 подпункт 1 (ред. 1995). К исключительному ведению Сената относится избрание и освобождение от должности по представлению Президента Республики Председателя Верховного Суда и судей Верховного Суда";
+}
+
+// Ст. 55 подпункт 1-1: та же форма, отдельная должность и отдельный срок.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART55_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART55_KK")
+rule SenateOmbudsmanElectionPower1995(chamber: Chamber, appointment: Appointment) strict {
+    when senate(chamber);
+    when ombudsman_office_appointment(appointment);
+    then power ElectOmbudsman1995 {
+        holder chamber;
+        exercise senate_election_attempt(chamber, appointment);
+        valid_when presidential_submission_for_office(appointment);
+        effect appointment_effective_1995(appointment);
+    };
+    label ru-KZ official "Статья 55 подпункт 1-1 (ред. 1995). К исключительному ведению Сената относится по представлению Президента Республики избрание на должность сроком на пять лет и освобождение от должности Уполномоченного по правам человека";
+}
+
+// Ст. 53 подпункт 5: решение принимается ПО ПРЕДЛОЖЕНИЮ Президента.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART53_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART53_KK")
+rule ArmedForcesDeploymentPower1995(body: Parliament, deployment: ArmedForcesDeployment) strict {
+    when parliament(body);
+    when armed_forces_deployment(deployment);
+    then power DecideArmedForcesDeployment1995 {
+        holder body;
+        exercise armed_forces_deployment_attempt(body, deployment);
+        valid_when presidential_armed_forces_proposal(deployment);
+        effect armed_forces_deployment_decided_1995(deployment);
+    };
+    label ru-KZ official "Статья 53 подпункт 5 (ред. 1995). Парламент на совместном заседании Палат принимает по предложению Президента Республики решение об использовании Вооружённых Сил Республики для выполнения международных обязательств по поддержанию мира и безопасности";
+}
+
+// Ст. 53 подпункт 1: учредительная инициатива принадлежит Президенту, а не
+// самому Парламенту. Порог трёх четвертей остаётся у `ConstitutionalAmendmentAdopted1995`.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART53_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART53_KK")
+rule ConstitutionalAmendmentPower1995(body: Parliament, item: Bill) strict {
+    when parliament(body);
+    when constitutional_amendment_bill(item);
+    then power IntroduceConstitutionalAmendment1995 {
+        holder body;
+        exercise amendment_adoption_attempt(body, item);
+        valid_when presidential_amendment_proposal(item);
+        effect constitutional_amendment_introduced_1995(item);
+    };
+    label ru-KZ official "Статья 53 подпункт 1 (ред. 1995). Парламент на совместном заседании Палат по предложению Президента Республики Казахстан вносит изменения и дополнения в Конституцию";
+}
+
+// Ст. 56 п. 2: условие действительности — инициатива не менее одной пятой
+// депутатов, выводимая `NoConfidenceMotionValid1995`.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART56_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART56_KK")
+rule NoConfidencePower1995(
+    chamber: Chamber,
+    motion: NoConfidenceMotion,
+    government: Government,
+) strict {
+    when mazhilis(chamber);
+    when no_confidence_motion(motion, government);
+    then power ExpressNoConfidence1995 {
+        holder chamber;
+        exercise no_confidence_vote_attempt(chamber, motion);
+        valid_when no_confidence_motion_valid_1995(motion);
+        effect government_no_confidence_declared_1995(motion);
+    };
+    label ru-KZ official "Статья 56 пункт 2 (ред. 1995). Мажилис большинством голосов от общего числа депутатов Мажилиса по инициативе не менее одной пятой от общего числа депутатов Мажилиса вправе выразить вотум недоверия Правительству";
+}

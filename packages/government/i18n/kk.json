@@ -1,0 +1,914 @@
+{
+  "$comment": "Қазақ тіліндегі көрсету қабаты (DECISION-0070). Файл CLIR-ге кірмейді, оны тек презентациялық қабат оқиды: `lawref verbalize --labels`, MCP ресурсы `law://<пакет>/verbalized/kk` және жұмыс үстелі. Кілт — §218 декларациясының жергілікті аты. Аударманың негізі — түйіннің орыс тіліндегі (`ru-KZ`) белгісі; терминология мен тұжырымдар Конституцияның `sources/constitution/constitution-2026-kk.txt` және `constitution-1995-kk.txt` файлдарында бекітілген аутентті қазақ мәтінінен алынды. Аутентті мәтіннің үзіндісін сөзбе-сөз қайталайтын белгілердің мәртебесі — `official`, қалғандары — формализатордың жұмыс аудармасы (`translation`).",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "AcceptedResignationTerminatesGovernment": [
+      {
+        "status": "translation",
+        "text": "69-бап 5-тармақ. Орнынан түсуді қабылдау Үкіметтің өкілеттігі тоқтатылғанын білдіреді"
+      }
+    ],
+    "Bill": [
+      {
+        "status": "translation",
+        "text": "заң жобасы"
+      }
+    ],
+    "Government": [
+      {
+        "status": "translation",
+        "text": "Қазақстан Республикасының Үкіметі"
+      }
+    ],
+    "GovernmentAccountableToKurultai": [
+      {
+        "status": "translation",
+        "text": "63-бап. Үкімет Құрылтай алдында жауапты"
+      }
+    ],
+    "GovernmentAccountableToParliament1995": [
+      {
+        "status": "translation",
+        "text": "64-бап 2-тармақ (1995 ж. ред.). Үкімет Парламент алдында жауапты"
+      }
+    ],
+    "GovernmentAccountableToPresident": [
+      {
+        "status": "translation",
+        "text": "63-бап. Үкімет Президент алдында жауапты"
+      }
+    ],
+    "GovernmentAccountableToPresidentAndParliament1995": [
+      {
+        "status": "translation",
+        "text": "64-бап 2-тармақ (1995 ж. ред.). Үкімет Республика Президенті алдында жауапты"
+      }
+    ],
+    "GovernmentAct": [
+      {
+        "status": "translation",
+        "text": "Үкімет актісі"
+      }
+    ],
+    "GovernmentActBinding": [
+      {
+        "status": "translation",
+        "text": "68-бап 1 және 3-тармақтар. Үкіметтің өз құзыретіндегі мәселелер бойынша қаулысы, егер Конституцияға, заңдарға және Президент актілеріне қайшы келмесе, Республиканың бүкіл аумағында міндетті"
+      }
+    ],
+    "GovernmentActBinding/unless/0": [
+      {
+        "status": "translation",
+        "text": "68-бап 1 және 3-тармақтар. Үкіметтің өз құзыретіндегі мәселелер бойынша қаулысы, егер Конституцияға, заңдарға және Президент актілеріне қайшы келмесе, Республиканың бүкіл аумағында міндетті"
+      }
+    ],
+    "GovernmentActBinding1995": [
+      {
+        "status": "translation",
+        "text": "69-бап 1 және 3-тармақтар (1995 ж. ред.). Үкімет қаулылары Республиканың бүкіл аумағында міндетті және Конституцияға, заң актілеріне, Президент актілеріне қайшы келмеуге тиіс"
+      }
+    ],
+    "GovernmentDevelopsForeignPolicyMeasures": [
+      {
+        "status": "translation",
+        "text": "65-бап 5) тармақша. Үкімет сыртқы саясатты жүргізу шараларын әзірлейді"
+      }
+    ],
+    "GovernmentDevelopsStatePolicy": [
+      {
+        "status": "translation",
+        "text": "65-бап 1) тармақша. Үкімет мемлекеттік саясаттың негізгі бағыттарын әзірлейді"
+      }
+    ],
+    "GovernmentDevelopsStatePolicy1995": [
+      {
+        "status": "translation",
+        "text": "66-бап 1) тармақша (1995 ж. ред.). Үкімет әлеуметтік-экономикалық саясаттың, қорғаныс қабілеті мен қауіпсіздіктің негізгі бағыттарын әзірлейді және олардың жүзеге асырылуын ұйымдастырады"
+      }
+    ],
+    "GovernmentDirectsExecutiveBodies": [
+      {
+        "status": "translation",
+        "text": "65-бап 6) тармақша. Үкімет атқарушы органдардың қызметіне басшылық етеді"
+      }
+    ],
+    "GovernmentEnsuresBudgetExecution": [
+      {
+        "status": "translation",
+        "text": "65-бап 2) тармақша. Үкімет республикалық бюджеттің атқарылуын қамтамасыз етеді"
+      }
+    ],
+    "GovernmentExercisesExecutivePower": [
+      {
+        "status": "translation",
+        "text": "63-бап. Үкімет атқарушы билікті жүзеге асырады"
+      }
+    ],
+    "GovernmentExercisesExecutivePower1995": [
+      {
+        "status": "translation",
+        "text": "64-бап 1-тармақ (1995 ж. ред.). Үкімет атқарушы билікті жүзеге асырады және атқарушы органдар жүйесін басқарады"
+      }
+    ],
+    "GovernmentFormedByPresident": [
+      {
+        "status": "translation",
+        "text": "64-бап 1-тармақ. Үкіметті Қазақстан Республикасының Президенті Конституцияда көзделген тәртіппен құрады"
+      }
+    ],
+    "GovernmentHeadsExecutiveSystem": [
+      {
+        "status": "translation",
+        "text": "63-бап. Үкімет атқарушы органдар жүйесін басқарады"
+      }
+    ],
+    "GovernmentIntroducesBillsAndExecutesLaws": [
+      {
+        "status": "translation",
+        "text": "65-бап 3) тармақша. Үкімет заң жобаларын енгізеді және заңдардың орындалуын қамтамасыз етеді"
+      }
+    ],
+    "GovernmentManagesStateProperty": [
+      {
+        "status": "translation",
+        "text": "65-бап 4) тармақша. Үкімет мемлекеттік меншікті басқаруды ұйымдастырады"
+      }
+    ],
+    "GovernmentMayCancelExecutiveActs1995": [
+      {
+        "status": "translation",
+        "text": "66-бап 7) тармақша (1995 ж. ред.). Үкімет министрліктер мен өзге де атқарушы органдар актілерінің күшін жояды не қолданысын тоқтата тұрады"
+      }
+    ],
+    "GovernmentMayCancelExecutiveBodyActs": [
+      {
+        "status": "translation",
+        "text": "65-бап 6) тармақша. Үкімет атқарушы органдар актілерінің күшін жоя алады не қолданысын тоқтата тұра алады"
+      }
+    ],
+    "GovernmentMember": [
+      {
+        "status": "translation",
+        "text": "Үкімет мүшесі"
+      }
+    ],
+    "GovernmentMemberBoardConflict": [
+      {
+        "status": "translation",
+        "text": "67-бап 2-тармақ. Үкімет мүшесінің коммерциялық ұйымның басқарушы органының немесе байқаушы кеңесінің құрамына кіруге құқығы жоқ, ол оның лауазымдық міндеті болатын жағдайларды қоспағанда"
+      }
+    ],
+    "GovernmentMemberBoardConflict/unless/0": [
+      {
+        "status": "translation",
+        "text": "67-бап 2-тармақ. Үкімет мүшесінің коммерциялық ұйымның басқарушы органының немесе байқаушы кеңесінің құрамына кіруге құқығы жоқ, ол оның лауазымдық міндеті болатын жағдайларды қоспағанда"
+      }
+    ],
+    "GovernmentMemberBusinessConflict": [
+      {
+        "status": "translation",
+        "text": "67-бап 2-тармақ. Үкімет мүшесінің кәсіпкерлік қызметті жүзеге асыруға құқығы жоқ"
+      }
+    ],
+    "GovernmentMemberIncompatible1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "68-бап 2-тармақ (1995 ж. ред.). Үкімет мүшелерінің депутат болуға, оқытушылық, ғылыми немесе өзге де шығармашылық қызметтен басқа ақы төленетін лауазымды атқаруға және кәсіпкерлік қызметпен айналысуға құқығы жоқ"
+      }
+    ],
+    "GovernmentMemberIncompatible1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "68-бап 2-тармақ (1995 ж. ред.). Үкімет мүшелерінің депутат болуға, оқытушылық, ғылыми немесе өзге де шығармашылық қызметтен басқа ақы төленетін лауазымды атқаруға және кәсіпкерлік қызметпен айналысуға құқығы жоқ"
+      }
+    ],
+    "GovernmentMemberIncompatible1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "68-бап 2-тармақ (1995 ж. ред.). Үкімет мүшелерінің депутат болуға, оқытушылық, ғылыми немесе өзге де шығармашылық қызметтен басқа ақы төленетін лауазымды атқаруға және кәсіпкерлік қызметпен айналысуға құқығы жоқ"
+      }
+    ],
+    "GovernmentMemberPaidPositionConflict": [
+      {
+        "status": "translation",
+        "text": "67-бап 2-тармақ. Үкімет мүшесінің оқытушылық, ғылыми және шығармашылық қызметтен басқа ақы төленетін лауазымды атқаруға құқығы жоқ"
+      }
+    ],
+    "GovernmentMemberPaidPositionConflict/unless/0": [
+      {
+        "status": "translation",
+        "text": "67-бап 2-тармақ. Үкімет мүшесінің оқытушылық, ғылыми және шығармашылық қызметтен басқа ақы төленетін лауазымды атқаруға құқығы жоқ"
+      }
+    ],
+    "GovernmentMemberRepresentativeMandateConflict": [
+      {
+        "status": "translation",
+        "text": "67-бап 2-тармақ. Үкімет мүшесінің өкілді органның депутаты болуға құқығы жоқ"
+      }
+    ],
+    "GovernmentOathToPeopleAndPresident1995": [
+      {
+        "status": "translation",
+        "text": "65-бап 3-тармақ (1995 ж. ред.). Үкімет мүшелері Қазақстан халқы мен Президентіне ант береді"
+      }
+    ],
+    "GovernmentSetsUnifiedPublicPaySystemWithPresident": [
+      {
+        "status": "translation",
+        "text": "65-бап 7) тармақша. Үкімет Президенттің келісімімен жария органдарды қаржыландырудың және еңбекақы төлеудің бірыңғай жүйесін бекітеді"
+      }
+    ],
+    "GovernmentStructureProposalTenDays": [
+      {
+        "status": "translation",
+        "text": "64-бап 2-тармақ. Үкіметтің құрылымы мен құрамы туралы ұсыныс Президентке Премьер-Министр тағайындалғаннан кейін он күндік мерзімде енгізіледі"
+      }
+    ],
+    "GovernmentStructureProposalTenDays1995": [
+      {
+        "status": "translation",
+        "text": "65-бап 2-тармақ (1995 ж. ред.). Үкіметтің құрылымы мен құрамы туралы ұсынысты Премьер-Министр тағайындалғаннан кейін он күндік мерзімде енгізеді"
+      }
+    ],
+    "GovernmentSubmitsBudget1995": [
+      {
+        "status": "translation",
+        "text": "66-бап 2) тармақша (1995 ж. ред.). Үкімет Парламентке республикалық бюджетті және оның атқарылуы туралы есепті ұсынады"
+      }
+    ],
+    "GovernmentSubmitsBudgetAndReport": [
+      {
+        "status": "translation",
+        "text": "65-бап 2) тармақша. Үкімет республикалық бюджетті және оның атқарылуы туралы есепті ұсынады"
+      }
+    ],
+    "Kurultai": [
+      {
+        "status": "translation",
+        "text": "Қазақстан Республикасының Құрылтайы"
+      }
+    ],
+    "Mazhilis": [
+      {
+        "status": "translation",
+        "text": "Парламент Мәжілісі (1995 ж. ред.)"
+      }
+    ],
+    "MemberAccountableToChambers1995": [
+      {
+        "status": "translation",
+        "text": "64-бап 3-тармақ (1995 ж. ред.). Үкімет мүшелері Конституцияның 57-бабының 6) тармақшасында көзделген жағдайда Парламент Палаталарына есеп береді"
+      }
+    ],
+    "MemberPersonallyResponsible1995": [
+      {
+        "status": "translation",
+        "text": "68-бап 1-тармақ (1995 ж. ред.). Үкімет мүшелері шешім қабылдауда дербес және Премьер-Министр алдында дербес жауап береді"
+      }
+    ],
+    "NoConfidenceRequiresResignation": [
+      {
+        "status": "translation",
+        "text": "69-бап 3-тармақ. Құрылтай сенімсіздік вотумын білдірген жағдайда Үкімет Президентке орнынан түсу туралы мәлімдейді"
+      }
+    ],
+    "NoConfidenceRequiresResignation1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "70-бап 3-тармақ (1995 ж. ред.). Мәжіліс немесе Парламент сенімсіздік вотумын білдірген жағдайда Үкімет Президентке орнынан түсу туралы мәлімдейді"
+      }
+    ],
+    "NoConfidenceRequiresResignation1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "70-бап 3-тармақ (1995 ж. ред.). Мәжіліс немесе Парламент сенімсіздік вотумын білдірген жағдайда Үкімет Президентке орнынан түсу туралы мәлімдейді"
+      }
+    ],
+    "Parliament": [
+      {
+        "status": "translation",
+        "text": "Қазақстан Республикасының Парламенті (1995 ж. ред.)"
+      }
+    ],
+    "PeoplesCouncil": [
+      {
+        "status": "translation",
+        "text": "Қазақстан Халық Кеңесі"
+      }
+    ],
+    "PeoplesCouncilConstitutionalStatus": [
+      {
+        "status": "translation",
+        "text": "70-бап 1-тармақ. Қазақстан Халық Кеңесі — жоғары консультативтік орган"
+      }
+    ],
+    "PeoplesCouncilLegislativeInitiative": [
+      {
+        "status": "translation",
+        "text": "71-бап 2) тармақша. Қазақстан Халық Кеңесі Құрылтайға заң жобаларын енгізеді"
+      }
+    ],
+    "PeoplesCouncilMembersAreCitizens": [
+      {
+        "status": "translation",
+        "text": "70-бап 2-тармақ. Қазақстан Халық Кеңесі Қазақстан Республикасының азаматтарынан құралады"
+      }
+    ],
+    "PeoplesCouncilReferendumInitiative": [
+      {
+        "status": "translation",
+        "text": "71-бап 3) тармақша. Қазақстан Халық Кеңесі жалпыхалықтық референдум тағайындау туралы бастама көтереді"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "жеке тұлға"
+      }
+    ],
+    "PolicyDisagreementRequiresResignation": [
+      {
+        "status": "translation",
+        "text": "67-бап 1-тармақ. Жүргізіліп отырған саясатпен келіспейтін Үкімет мүшесі орнынан түсуге өтініш береді не лауазымынан босатылуға тиіс"
+      }
+    ],
+    "PolicyDisagreementRequiresResignation1995": [
+      {
+        "status": "translation",
+        "text": "68-бап 1-тармақ (1995 ж. ред.). Жүргізіліп отырған саясатпен келіспейтін немесе оны іске асырмайтын Үкімет мүшесі орнынан түсуге өтініш береді не лауазымынан босатылуға тиіс"
+      }
+    ],
+    "President": [
+      {
+        "status": "translation",
+        "text": "Қазақстан Республикасының Президенті"
+      }
+    ],
+    "PresidentialMemberRelease1995": [
+      {
+        "status": "translation",
+        "text": "70-бап 7-тармақ (1995 ж. ред.). Президент Үкіметтің кез келген мүшесін лауазымынан босатуға құқылы"
+      }
+    ],
+    "PresidentialOwnInitiativeTermination1995": [
+      {
+        "status": "translation",
+        "text": "70-бап 7-тармақ (1995 ж. ред.). Президент өз бастамасымен Үкіметтің өкілеттігін тоқтату туралы шешім қабылдауға құқылы"
+      }
+    ],
+    "PrimeMinister": [
+      {
+        "status": "translation",
+        "text": "Қазақстан Республикасының Премьер-Министрі"
+      }
+    ],
+    "PrimeMinisterDirectsGovernment": [
+      {
+        "status": "translation",
+        "text": "66-бап. Премьер-Министр Үкімет қызметін ұйымдастырады және басқарады"
+      }
+    ],
+    "PrimeMinisterDirectsGovernment1995": [
+      {
+        "status": "translation",
+        "text": "67-бап 1) тармақша (1995 ж. ред.). Премьер-Министр Үкімет қызметін ұйымдастырады және басқарады, оның жұмысы үшін дербес жауап береді"
+      }
+    ],
+    "PrimeMinisterOrderBinding1995": [
+      {
+        "status": "translation",
+        "text": "69-бап 2 және 3-тармақтар (1995 ж. ред.). Премьер-Министрдің өкімдері Республиканың бүкіл аумағында міндетті және Конституцияға, Президент актілеріне қайшы келмеуге тиіс"
+      }
+    ],
+    "PrimeMinisterPersonallyResponsible": [
+      {
+        "status": "translation",
+        "text": "66-бап. Премьер-Министр Үкіметтің жұмысы үшін дербес жауап береді"
+      }
+    ],
+    "PrimeMinisterReleaseTerminatesGovernment1995": [
+      {
+        "status": "translation",
+        "text": "70-бап 7-тармақ (1995 ж. ред.). Премьер-Министрді лауазымынан босату бүкіл Үкіметтің өкілеттігі тоқтатылғанын білдіреді"
+      }
+    ],
+    "PrimeMinisterReportsToPresidentAndKurultai": [
+      {
+        "status": "translation",
+        "text": "66-бап. Премьер-Министр Үкімет қызметінің негізгі бағыттары және аса маңызды шешімдері туралы Президент пен Құрылтайға баяндайды"
+      }
+    ],
+    "PrimeMinisterResignationTerminatesWholeGovernment": [
+      {
+        "status": "translation",
+        "text": "69-бап 5-тармақ. Премьер-Министрдің орнынан түсуін қабылдау бүкіл Үкіметтің өкілеттігі тоқтатылғанын білдіреді"
+      }
+    ],
+    "PrimeMinisterSignsGovernmentResolutions": [
+      {
+        "status": "translation",
+        "text": "66-бап. Премьер-Министр Үкімет қаулысына қол қояды"
+      }
+    ],
+    "RelinquishPowersBeforeNewKurultai": [
+      {
+        "status": "translation",
+        "text": "69-бап 1-тармақ. Үкімет жаңадан сайланған Құрылтай алдында өз өкілеттігін доғарады"
+      }
+    ],
+    "RelinquishPowersBeforeNewMazhilis1995": [
+      {
+        "status": "translation",
+        "text": "70-бап 1-тармақ (1995 ж. ред.). Үкімет жаңадан сайланған Парламент Мәжілісі алдында өз өкілеттігін доғарады"
+      }
+    ],
+    "ResignationDecisionTenDays": [
+      {
+        "status": "translation",
+        "text": "69-бап 4-тармақ. Президент орнынан түсуді қабылдау немесе қабылдамау туралы мәселені он күндік мерзімде қарайды"
+      }
+    ],
+    "bill_introduced_to_kurultai": [
+      {
+        "status": "translation",
+        "text": "заң жобасы Құрылтайға заң шығару бастамасы тәртібімен енгізілді"
+      }
+    ],
+    "citizen": [
+      {
+        "status": "translation",
+        "text": "тұлға Қазақстан Республикасының азаматы болып табылады"
+      }
+    ],
+    "commercial_board_membership": [
+      {
+        "status": "translation",
+        "text": "Үкімет мүшесі коммерциялық ұйымның басқарушы органының құрамына кіреді"
+      }
+    ],
+    "contradicts_constitution_law_or_presidential_act": [
+      {
+        "status": "translation",
+        "text": "акт Конституцияға, заңдарға немесе Президент актілеріне қайшы келеді"
+      }
+    ],
+    "entrepreneurial_activity": [
+      {
+        "status": "translation",
+        "text": "Үкімет мүшесі кәсіпкерлік қызметпен айналысады"
+      }
+    ],
+    "government": [
+      {
+        "status": "translation",
+        "text": "орган Республиканың Үкіметі болып табылады"
+      }
+    ],
+    "government_accountable_to_kurultai": [
+      {
+        "status": "translation",
+        "text": "Үкімет Құрылтай алдында жауапты"
+      }
+    ],
+    "government_accountable_to_parliament_1995": [
+      {
+        "status": "translation",
+        "text": "Үкімет Парламент алдында жауапты (1995 ж. ред.)"
+      }
+    ],
+    "government_accountable_to_president": [
+      {
+        "status": "translation",
+        "text": "Үкімет Президент алдында жауапты"
+      }
+    ],
+    "government_accountable_to_president_1995": [
+      {
+        "status": "translation",
+        "text": "Үкімет Президент алдында жауапты (1995 ж. ред.)"
+      }
+    ],
+    "government_act": [
+      {
+        "status": "translation",
+        "text": "актіні Үкімет қабылдады"
+      }
+    ],
+    "government_act_1995": [
+      {
+        "status": "translation",
+        "text": "актіні Үкімет қабылдады (1995 ж. ред.)"
+      }
+    ],
+    "government_act_binding": [
+      {
+        "status": "translation",
+        "text": "Үкімет актісі Республиканың бүкіл аумағында міндетті"
+      }
+    ],
+    "government_act_binding_1995": [
+      {
+        "status": "translation",
+        "text": "Үкімет қаулысы Республиканың бүкіл аумағында міндетті (1995 ж. ред.)"
+      }
+    ],
+    "government_develops_foreign_policy_measures": [
+      {
+        "status": "translation",
+        "text": "Үкімет сыртқы саясатты жүргізу шараларын әзірлейді"
+      }
+    ],
+    "government_develops_state_policy": [
+      {
+        "status": "translation",
+        "text": "Үкімет мемлекеттік саясаттың негізгі бағыттарын әзірлейді"
+      }
+    ],
+    "government_directs_executive_bodies": [
+      {
+        "status": "translation",
+        "text": "Үкімет атқарушы органдардың қызметіне басшылық етеді"
+      }
+    ],
+    "government_ensures_budget_execution": [
+      {
+        "status": "translation",
+        "text": "Үкімет республикалық бюджеттің атқарылуын қамтамасыз етеді"
+      }
+    ],
+    "government_exercises_executive_power": [
+      {
+        "status": "translation",
+        "text": "Үкімет Республиканың атқарушы билігін жүзеге асырады"
+      }
+    ],
+    "government_formed_by_president": [
+      {
+        "status": "translation",
+        "text": "Үкіметті Республиканың Президенті құрады"
+      }
+    ],
+    "government_heads_executive_system": [
+      {
+        "status": "translation",
+        "text": "Үкімет атқарушы органдар жүйесін басқарады"
+      }
+    ],
+    "government_introduces_bills_and_executes_laws": [
+      {
+        "status": "translation",
+        "text": "Үкімет заң жобаларын енгізеді және заңдардың орындалуын қамтамасыз етеді"
+      }
+    ],
+    "government_manages_state_property": [
+      {
+        "status": "translation",
+        "text": "Үкімет мемлекеттік меншікті басқарады"
+      }
+    ],
+    "government_may_cancel_executive_body_acts": [
+      {
+        "status": "translation",
+        "text": "Үкімет атқарушы органдар актілерінің күшін жоюға құқылы"
+      }
+    ],
+    "government_membership_incompatible": [
+      {
+        "status": "translation",
+        "text": "Үкімет мүшелігі атқарылатын лауазыммен немесе қызметпен сыйыспайды"
+      }
+    ],
+    "government_no_confidence": [
+      {
+        "status": "translation",
+        "text": "Құрылтай Үкіметке сенімсіздік вотумын білдірді"
+      }
+    ],
+    "government_oath_to_people_and_president_1995": [
+      {
+        "status": "translation",
+        "text": "Үкімет мүшесі халық пен Президентке ант беруге міндетті (1995 ж. ред.)"
+      }
+    ],
+    "government_policy_disagreement": [
+      {
+        "status": "translation",
+        "text": "Үкімет мүшесі Үкімет жүргізіп отырған саясатпен келіспейді"
+      }
+    ],
+    "government_powers_relinquished": [
+      {
+        "status": "translation",
+        "text": "Үкімет жаңадан сайланған Құрылтай алдында өкілеттігін доғарады"
+      }
+    ],
+    "government_powers_terminated": [
+      {
+        "status": "translation",
+        "text": "Үкіметтің өкілеттігі тоқтатылды"
+      }
+    ],
+    "government_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "Үкіметтің өкілеттігі тоқтатылды (1995 ж. ред.)"
+      }
+    ],
+    "government_proposal_date": [
+      {
+        "status": "translation",
+        "text": "Үкіметтің құрылымы мен құрамы туралы ұсыныс енгізілген күн"
+      }
+    ],
+    "government_proposal_deadline_days": [
+      {
+        "status": "translation",
+        "text": "Үкіметтің құрылымы мен құрамы туралы ұсынысты енгізу мерзімі — он күн"
+      }
+    ],
+    "government_proposal_timely": [
+      {
+        "status": "translation",
+        "text": "Үкіметтің құрылымы мен құрамы туралы ұсыныс мерзімінде енгізілді"
+      }
+    ],
+    "government_sets_unified_public_pay_system_with_president": [
+      {
+        "status": "translation",
+        "text": "Үкімет Президенттің келісімімен мемлекеттік органдарда еңбекақы төлеудің бірыңғай жүйесін бекітеді"
+      }
+    ],
+    "government_structure_proposal": [
+      {
+        "status": "translation",
+        "text": "Премьер-Министр Үкіметтің құрылымы мен құрамы туралы ұсыныс енгізді"
+      }
+    ],
+    "government_submits_budget_and_report": [
+      {
+        "status": "translation",
+        "text": "Үкімет республикалық бюджетті және оның атқарылуы туралы есепті ұсынады"
+      }
+    ],
+    "mazhilis_no_confidence": [
+      {
+        "status": "translation",
+        "text": "Мәжіліс Үкіметке сенімсіздік вотумын білдірді (1995 ж. ред.)"
+      }
+    ],
+    "member_accountable_to_chambers_1995": [
+      {
+        "status": "translation",
+        "text": "Үкімет мүшелері Парламент Палаталарына есеп береді (1995 ж. ред.)"
+      }
+    ],
+    "member_decides_within_competence": [
+      {
+        "status": "translation",
+        "text": "Үкімет мүшесі өз құзыреті шегінде шешім қабылдайды"
+      }
+    ],
+    "member_of_government": [
+      {
+        "status": "translation",
+        "text": "тұлға Үкімет құрамына кіреді"
+      }
+    ],
+    "member_personally_responsible_1995": [
+      {
+        "status": "translation",
+        "text": "Үкімет мүшесі өзіне бағынысты органдардың қызметі үшін дербес жауап береді (1995 ж. ред.)"
+      }
+    ],
+    "member_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "Үкімет мүшесінің өкілеттігі тоқтатылды (1995 ж. ред.)"
+      }
+    ],
+    "member_resignation_submitted": [
+      {
+        "status": "translation",
+        "text": "Үкімет мүшесі орнынан түсу туралы өтініш беруге міндетті"
+      }
+    ],
+    "minister_report_obligation_triggered": [
+      {
+        "status": "translation",
+        "text": "Үкімет мүшесінің Парламент Палатасы алдында есеп беру негізі туындады (1995 ж. ред.)"
+      }
+    ],
+    "new_kurultai_elected": [
+      {
+        "status": "translation",
+        "text": "Құрылтайдың жаңа құрамы сайланды"
+      }
+    ],
+    "new_mazhilis_elected": [
+      {
+        "status": "translation",
+        "text": "Мәжілістің жаңа құрамы сайланды (1995 ж. ред.)"
+      }
+    ],
+    "no_confidence_resignation_declared": [
+      {
+        "status": "translation",
+        "text": "сенімсіздік вотумы білдірілгенде Үкімет орнынан түсу туралы мәлімдеуге міндетті"
+      }
+    ],
+    "oath_taken_by_member": [
+      {
+        "status": "translation",
+        "text": "Үкімет мүшесі ант берді"
+      }
+    ],
+    "official_duty_exception": [
+      {
+        "status": "translation",
+        "text": "коммерциялық ұйым органына қатысу лауазымдық міндетке кіреді"
+      }
+    ],
+    "paid_external_position": [
+      {
+        "status": "translation",
+        "text": "Үкімет мүшесі өзге ақы төленетін лауазымды атқарады"
+      }
+    ],
+    "parliament_no_confidence": [
+      {
+        "status": "translation",
+        "text": "Парламент Үкіметке сенімсіздік вотумын білдірді (1995 ж. ред.)"
+      }
+    ],
+    "peoples_council": [
+      {
+        "status": "translation",
+        "text": "орган Қазақстан Халық Кеңесі болып табылады"
+      }
+    ],
+    "peoples_council_bill": [
+      {
+        "status": "translation",
+        "text": "Қазақстан Халық Кеңесі заң жобасын енгізді"
+      }
+    ],
+    "peoples_council_highest_consultative_body": [
+      {
+        "status": "translation",
+        "text": "Қазақстан Халық Кеңесі жоғары консультативтік-кеңесші орган болып табылады"
+      }
+    ],
+    "peoples_council_member": [
+      {
+        "status": "translation",
+        "text": "тұлға Қазақстан Халық Кеңесінің құрамына кіреді"
+      }
+    ],
+    "peoples_council_membership_constitutionally_valid": [
+      {
+        "status": "translation",
+        "text": "Қазақстан Халық Кеңесіндегі мүшелік конституциялық талаптарға сай келеді"
+      }
+    ],
+    "peoples_council_referendum_initiative": [
+      {
+        "status": "translation",
+        "text": "Қазақстан Халық Кеңесі референдум өткізу туралы бастама көтерді"
+      }
+    ],
+    "permitted_teaching_science_or_creative_work": [
+      {
+        "status": "translation",
+        "text": "айналысу рұқсат етілген оқытушылық, ғылыми немесе өзге де шығармашылық қызметке жатады"
+      }
+    ],
+    "president": [
+      {
+        "status": "translation",
+        "text": "тұлға Республиканың Президенті болып табылады"
+      }
+    ],
+    "presidential_member_release": [
+      {
+        "status": "translation",
+        "text": "Президент Үкімет мүшесін лауазымынан босатты (1995 ж. ред.)"
+      }
+    ],
+    "presidential_own_initiative_termination": [
+      {
+        "status": "translation",
+        "text": "Президент өз бастамасымен Үкіметтің өкілеттігін тоқтатты (1995 ж. ред.)"
+      }
+    ],
+    "presidential_resignation_decision": [
+      {
+        "status": "translation",
+        "text": "Президенттің мәлімделген орнынан түсу бойынша шешім қабылдаған күні"
+      }
+    ],
+    "prime_minister": [
+      {
+        "status": "translation",
+        "text": "тұлға Премьер-Министр болып табылады"
+      }
+    ],
+    "prime_minister_appointment_date": [
+      {
+        "status": "translation",
+        "text": "Премьер-Министр тағайындалған күн"
+      }
+    ],
+    "prime_minister_directs_government": [
+      {
+        "status": "translation",
+        "text": "Премьер-Министр Үкімет қызметін ұйымдастырады және басқарады"
+      }
+    ],
+    "prime_minister_order": [
+      {
+        "status": "translation",
+        "text": "акт Премьер-Министрдің өкімі болып табылады"
+      }
+    ],
+    "prime_minister_order_binding_1995": [
+      {
+        "status": "translation",
+        "text": "Премьер-Министрдің өкімі Республиканың бүкіл аумағында міндетті (1995 ж. ред.)"
+      }
+    ],
+    "prime_minister_personally_responsible": [
+      {
+        "status": "translation",
+        "text": "Премьер-Министр Үкімет қызметі үшін дербес жауап береді"
+      }
+    ],
+    "prime_minister_released": [
+      {
+        "status": "translation",
+        "text": "Премьер-Министр лауазымынан босатылды (1995 ж. ред.)"
+      }
+    ],
+    "prime_minister_reports_to_president_and_kurultai": [
+      {
+        "status": "translation",
+        "text": "Премьер-Министр Үкімет қызметінің негізгі бағыттары туралы Президент пен Құрылтайға баяндайды"
+      }
+    ],
+    "prime_minister_resignation_accepted": [
+      {
+        "status": "translation",
+        "text": "Премьер-Министрдің орнынан түсуі қабылданды"
+      }
+    ],
+    "prime_minister_signs_government_resolutions": [
+      {
+        "status": "translation",
+        "text": "Премьер-Министр Үкімет қаулыларына қол қояды"
+      }
+    ],
+    "referendum_initiative_valid": [
+      {
+        "status": "translation",
+        "text": "референдум туралы бастаманы уәкілетті субъект мәлімдеді"
+      }
+    ],
+    "representative_body_deputy": [
+      {
+        "status": "translation",
+        "text": "Үкімет мүшесі өкілді органның депутаты болып табылады"
+      }
+    ],
+    "resignation_accepted": [
+      {
+        "status": "translation",
+        "text": "Үкіметтің орнынан түсуін Президент қабылдады"
+      }
+    ],
+    "resignation_decision_deadline_days": [
+      {
+        "status": "translation",
+        "text": "мәлімделген орнынан түсу бойынша шешім қабылдау мерзімі — он күн"
+      }
+    ],
+    "resignation_decision_timely": [
+      {
+        "status": "translation",
+        "text": "орнынан түсу бойынша шешім белгіленген мерзімде қабылданды"
+      }
+    ],
+    "voluntary_resignation_declared": [
+      {
+        "status": "translation",
+        "text": "Үкіметтің өз шешімімен орнынан түсу туралы мәлімдеген күні"
+      }
+    ],
+    "within_government_competence": [
+      {
+        "status": "translation",
+        "text": "акт Үкіметтің құзыреті шегінде қабылданды"
+      }
+    ]
+  },
+  "language": "kk",
+  "package": "kz.constitution.government"
+}

@@ -1,0 +1,3283 @@
+// Конституция РК 2026, раздел II (ст. 12–41): права, свободы и обязанности.
+//
+// Границы честности:
+// - ст. 12–41 закреплены дословно в kz.constitution.sources; здесь находятся
+//   только исполняемые контуры, а не пересказ каждой декларативной фразы;
+// - «необходимо» и соразмерность ст. 41 не вычисляются эвристикой. Предикат
+//   proportionality_confirmed принадлежит именованной interpretation-группе,
+//   добавляемой генератором CLIR; без выбранной интерпретации evaluator
+//   возвращает INTERPRETATION_REQUIRED (§152–157);
+// - ст. 18 не содержит числа часов задержания: числовой предел не выдуман;
+// - межпакетные bridge-правила personal-data/marriage/OSMS подключаются через
+//   pinned imports после resolve-контекста WP-35.
+//
+// НОСИТЕЛЬ НОРМЫ СВЯЗЫВАЕТСЯ ТЕЛОМ, А НЕ ОБЪЯВЛЕНИЕМ `for` (§190), И ЦЕНА
+// ЗАБЫВЧИВОСТИ ЗДЕСЬ ИЗМЕРЕНА. До 31.08.2026 три правила редакции 2026 —
+// `TreatyExtraditionPower`, `CitizenshipDeprivationPower` и
+// `AccessToAffectingDocumentsDuty` — объявляли `for authority: StateAuthority`
+// и не читали `state_authority(authority)` в теле. `lawc check` отвергал их
+// тремя `LDC-E4101`, но `lawc lower` собирал CLIR БЕЗ ЕДИНОГО СЛОВА, пакет
+// уезжал в корпус, а ворота закрепления пропускали его целиком по коду
+// возврата `check`. На деле норма при этом не молчала — она была ХУЖЕ, чем
+// мёртвой: позиция создавалась с ВЫДУМАННЫМ носителем
+// (`urn:position:AccessToAffectingDocumentsDuty:0/holder` вместо органа
+// дела). Различающая проба — собственные близнецы редакции 1995
+// (`TreatyExtraditionPower1995`, `CitizenAccessToAffectingDocumentsDuty1995`):
+// они связыватель читают и на том же деле дают носителем реальный орган.
+// Правка — дописать `state_authority(authority)` в тело, как у близнецов.
+
+language "law.core" version "0.2";
+package kz.constitution.rights version "0.1.0";
+namespace "urn:kz:constitution:rights";
+
+entity Person {
+    label ru-KZ official "физическое лицо";
+    label kk-KZ official "жеке тұлға";
+}
+entity StateAuthority {
+    label ru-KZ official "государственный орган либо должностное лицо";
+    label kk-KZ official "мемлекеттік орган не лауазымды адам";
+}
+entity Legislature {
+    label ru-KZ official "законодательный орган";
+    label kk-KZ official "заң шығарушы орган";
+}
+pub entity Restriction {
+    label ru-KZ official "ограничение прав и свобод, вводимое законом";
+    label kk-KZ official "заңмен енгізілетін құқықтар мен бостандықтарды шектеу";
+}
+entity StateAct {
+    label ru-KZ official "акт государственного органа";
+    label kk-KZ official "мемлекеттік органның актісі";
+}
+entity Detention {
+    label ru-KZ official "задержание, арест либо содержание под стражей";
+    label kk-KZ official "ұстау, қамауға алу не күзетпен ұстау";
+}
+entity Document {
+    label ru-KZ official "документ, затрагивающий права и интересы лица";
+    label kk-KZ official "адамның құқықтары мен мүдделерін қозғайтын құжат";
+}
+entity Parent {
+    label ru-KZ official "родитель";
+    label kk-KZ official "ата-ана";
+}
+entity Child {
+    label ru-KZ official "ребёнок";
+    label kk-KZ official "бала";
+}
+entity MovementRestriction {
+    label ru-KZ official "ограничение свободы передвижения";
+    label kk-KZ official "жүріп-тұру бостандығын шектеу";
+}
+entity Association {
+    label ru-KZ official "объединение граждан";
+    label kk-KZ official "азаматтардың бірлестігі";
+}
+entity EducationInstitution {
+    label ru-KZ official "организация образования";
+    label kk-KZ official "білім беру ұйымы";
+}
+entity Assembly {
+    label ru-KZ official "мирное собрание";
+    label kk-KZ official "бейбіт жиналыс";
+}
+entity CivilServiceRequirement {
+    label ru-KZ official "требование, предъявляемое к поступающим на государственную службу";
+    label kk-KZ official "мемлекеттік қызметке кіретіндерге қойылатын талап";
+}
+
+enum CoreRight {
+    LegalPersonality;
+    NonExtradition;
+    Equality;
+    Life;
+    Dignity;
+    NationalIdentityAndLanguage;
+    FreedomOfConscience;
+    label ru-KZ official "право или свобода, ограничение которых Конституция 2026 года не допускает";
+    label kk-KZ official "2026 жылғы Конституция шектеуге жол бермейтін құқық не бостандық";
+}
+
+relation person(person: Person) kind empirical {
+    label ru-KZ official "субъект является физическим лицом";
+    label kk-KZ official "субъект жеке тұлға болып табылады";
+}
+relation citizen(person: Person) kind empirical {
+    label ru-KZ official "лицо является гражданином Республики Казахстан";
+    label kk-KZ official "адам Қазақстан Республикасының азаматы болып табылады";
+}
+relation legislature(authority: Legislature) kind empirical {
+    label ru-KZ official "орган является законодательным органом";
+    label kk-KZ official "орган заң шығарушы орган болып табылады";
+}
+relation restriction_affects(restriction: Restriction, person: Person) kind empirical {
+    label ru-KZ official "ограничение затрагивает данное лицо";
+    label kk-KZ official "шектеу осы адамды қозғайды";
+}
+relation restriction_targets(restriction: Restriction, right: CoreRight) kind empirical {
+    label ru-KZ official "ограничение направлено на данное право либо свободу";
+    label kk-KZ official "шектеу осы құқыққа не бостандыққа бағытталған";
+}
+relation restriction_enacted_by_law(restriction: Restriction) kind empirical {
+    label ru-KZ official "ограничение установлено законом";
+    label kk-KZ official "шектеу заңмен белгіленген";
+}
+relation restriction_has_constitutional_goal(restriction: Restriction) kind empirical {
+    label ru-KZ official "ограничение преследует конституционно признанную цель";
+    label kk-KZ official "шектеу конституциялық тұрғыда танылған мақсатты көздейді";
+}
+relation proportionality_confirmed(restriction: Restriction) kind evaluative {
+    label ru-KZ official "соразмерность ограничения подтверждена";
+    label kk-KZ official "шектеудің мөлшерлестігі расталды";
+}
+relation proportionality_disproved(restriction: Restriction) kind evaluative {
+    label ru-KZ official "соразмерность ограничения опровергнута";
+    label kk-KZ official "шектеудің мөлшерлестігі теріске шығарылды";
+}
+relation restriction_attempt(authority: Legislature, restriction: Restriction) kind empirical {
+    label ru-KZ official "законодательный орган вводит ограничение";
+    label kk-KZ official "заң шығарушы орган шектеу енгізеді";
+}
+relation restriction_has_legal_effect(restriction: Restriction) kind institutional {
+    label ru-KZ official "ограничение имеет правовой эффект";
+    label kk-KZ official "шектеудің құқықтық күші бар";
+}
+relation derogable_right_target(restriction: Restriction) kind institutional {
+    label ru-KZ official "ограничиваемое право допускает ограничение";
+    label kk-KZ official "шектелетін құқық шектеуге жол береді";
+}
+relation restriction_constitutionally_justified(restriction: Restriction) kind institutional {
+    label ru-KZ official "ограничение конституционно оправдано";
+    label kk-KZ official "шектеу конституциялық тұрғыда ақталған";
+}
+
+relation treaty_allows_extradition(person: Person) kind empirical {
+    label ru-KZ official "выдача допускается международным договором Республики";
+    label kk-KZ official "ұстап беруге Республиканың халықаралық шартымен жол беріледі";
+}
+relation extradition_decision(authority: StateAuthority, person: Person) kind empirical {
+    label ru-KZ official "государственный орган принимает решение о выдаче лица";
+    label kk-KZ official "мемлекеттік орган адамды ұстап беру туралы шешім қабылдайды";
+}
+relation extradited(person: Person) kind institutional {
+    label ru-KZ official "лицо выдано иностранному государству";
+    label kk-KZ official "адам шет мемлекетке ұстап берілді";
+}
+relation court_ordered_citizenship_deprivation(person: Person) kind empirical {
+    label ru-KZ official "лишение гражданства произведено по решению суда";
+    label kk-KZ official "азаматтықтан айыру сот шешімі бойынша жүргізілді";
+}
+relation terrorism_or_grave_national_harm(person: Person) kind empirical {
+    label ru-KZ official "лицом совершено террористическое преступление либо причинён иной тяжкий вред жизненно важным интересам Республики";
+    label kk-KZ official "адам террористік қылмыс жасады не Республиканың өмірлік маңызды мүдделеріне өзге де ауыр зиян келтірді";
+}
+relation citizenship_deprivation_decision(authority: StateAuthority, person: Person) kind empirical {
+    label ru-KZ official "государственный орган принимает решение о лишении гражданства";
+    label kk-KZ official "мемлекеттік орган азаматтықтан айыру туралы шешім қабылдайды";
+}
+relation citizenship_deprived(person: Person) kind institutional {
+    label ru-KZ official "лицо лишено гражданства Республики";
+    label kk-KZ official "адам Республика азаматтығынан айырылды";
+}
+
+relation death_penalty_attempt(authority: StateAuthority, person: Person) kind empirical {
+    label ru-KZ official "государственный орган назначает смертную казнь";
+    label kk-KZ official "мемлекеттік орган өлім жазасын тағайындайды";
+}
+relation death_penalty_imposed(person: Person) kind institutional {
+    label ru-KZ official "смертная казнь назначена";
+    label kk-KZ official "өлім жазасы тағайындалды";
+}
+relation torture_attempt(authority: StateAuthority, person: Person) kind empirical {
+    label ru-KZ official "государственный орган применяет пытки либо жестокое обращение";
+    label kk-KZ official "мемлекеттік орган азаптауды не қатыгездікпен қарауды қолданады";
+}
+relation tortured(person: Person) kind institutional {
+    label ru-KZ official "лицо подвергнуто пыткам либо жестокому, бесчеловечному или унижающему достоинство обращению";
+    label kk-KZ official "адам азаптауға не қатыгез, адамгершілікке жатпайтын немесе ар-намысты қорлайтын қарауға ұшырады";
+}
+relation censorship_attempt(authority: StateAuthority, person: Person) kind empirical {
+    label ru-KZ official "государственный орган осуществляет цензуру";
+    label kk-KZ official "мемлекеттік орган цензураны жүзеге асырады";
+}
+relation censorship_imposed(person: Person) kind institutional {
+    label ru-KZ official "цензура применена";
+    label kk-KZ official "цензура қолданылды";
+}
+relation discriminatory_treatment_attempt(authority: StateAuthority, person: Person) kind empirical {
+    label ru-KZ official "государственный орган допускает различие в обращении";
+    label kk-KZ official "мемлекеттік орган қарауда алалауға жол береді";
+}
+relation discriminated(person: Person) kind institutional {
+    label ru-KZ official "лицо подвергнуто дискриминации";
+    label kk-KZ official "адам кемсітушілікке ұшырады";
+}
+relation unlawful_privacy_interference_attempt(authority: StateAuthority, person: Person) kind empirical {
+    label ru-KZ official "государственный орган вмешивается в частную жизнь лица";
+    label kk-KZ official "мемлекеттік орган адамның жеке өміріне араласады";
+}
+relation privacy_unlawfully_interfered(person: Person) kind institutional {
+    label ru-KZ official "неприкосновенность частной жизни нарушена";
+    label kk-KZ official "жеке өмірге қол сұғылмаушылық бұзылды";
+}
+relation unlawful_home_entry_attempt(authority: StateAuthority, person: Person) kind empirical {
+    label ru-KZ official "государственный орган проникает в жилище лица";
+    label kk-KZ official "мемлекеттік орган адамның тұрғын үйіне кіреді";
+}
+relation home_unlawfully_entered(person: Person) kind institutional {
+    label ru-KZ official "неприкосновенность жилища нарушена";
+    label kk-KZ official "тұрғын үйге қол сұғылмаушылық бұзылды";
+}
+relation uncompensated_expropriation_attempt(authority: StateAuthority, person: Person) kind empirical {
+    label ru-KZ official "государственный орган изымает имущество без равноценного возмещения";
+    label kk-KZ official "мемлекеттік орган мүлікті тең бағамен өтемей алып қояды";
+}
+relation property_uncompensatedly_expropriated(person: Person) kind institutional {
+    label ru-KZ official "имущество изъято без равноценного возмещения";
+    label kk-KZ official "мүлік тең бағамен өтелмей алып қойылды";
+}
+
+relation detention_of(detention: Detention, person: Person) kind empirical {
+    label ru-KZ official "задержание касается данного лица";
+    label kk-KZ official "ұстау осы адамға қатысты";
+}
+relation detention_exceeds_statutory_period(detention: Detention) kind empirical {
+    label ru-KZ official "срок задержания превысил установленный законом предел";
+    label kk-KZ official "ұстау мерзімі заңмен белгіленген шектен асты";
+}
+relation continued_detention_barred(detention: Detention) kind institutional {
+    label ru-KZ official "задержание сверх установленного законом срока запрещено: судебного решения нет";
+    label kk-KZ official "заңмен белгіленген мерзімнен тыс ұстауға тыйым салынған: сот шешімі жоқ";
+}
+relation detention_has_court_decision(detention: Detention) kind empirical {
+    label ru-KZ official "имеется судебное решение о продлении задержания";
+    label kk-KZ official "ұстау мерзімін ұзарту туралы сот шешімі бар";
+}
+relation continued_detention_attempt(authority: StateAuthority, detention: Detention) kind empirical {
+    label ru-KZ official "государственный орган продолжает содержание лица под стражей";
+    label kk-KZ official "мемлекеттік орган адамды күзетпен ұстауды жалғастырады";
+}
+relation unlawful_continued_detention(detention: Detention) kind institutional {
+    label ru-KZ official "продолжение содержания под стражей неправомерно";
+    label kk-KZ official "күзетпен ұстауды жалғастыру заңсыз";
+}
+
+relation accused(person: Person) kind empirical {
+    label ru-KZ official "лицо обвиняется в совершении преступления";
+    label kk-KZ official "адам қылмыс жасады деп айыпталады";
+}
+relation final_conviction(person: Person) kind empirical {
+    label ru-KZ official "в отношении лица вступил в законную силу обвинительный приговор";
+    label kk-KZ official "адамға қатысты соттың айыптау үкімі заңды күшіне енді";
+}
+relation innocent(person: Person) kind institutional {
+    label ru-KZ official "лицо считается невиновным";
+    label kk-KZ official "адам кінәсіз деп есептеледі";
+}
+
+relation document_affects(document: Document, person: Person) kind empirical {
+    label ru-KZ official "документ затрагивает права и интересы лица";
+    label kk-KZ official "құжат адамның құқықтары мен мүдделерін қозғайды";
+}
+relation access_provided(document: Document, person: Person) kind empirical {
+    label ru-KZ official "лицу обеспечен доступ к затрагивающим его документам";
+    label kk-KZ official "адамға өзін қозғайтын құжаттармен танысу мүмкіндігі қамтамасыз етілді";
+}
+relation constitution_or_law_violated(person: Person) kind empirical {
+    label ru-KZ official "лицом нарушены Конституция либо законы Республики";
+    label kk-KZ official "адам Республиканың Конституциясын не заңдарын бұзды";
+}
+relation state_symbols_disrespected(person: Person) kind empirical {
+    label ru-KZ official "лицо не проявляет уважения к государственным символам";
+    label kk-KZ official "адам мемлекеттік рәміздерді құрметтемейді";
+}
+relation nature_harmed(person: Person) kind empirical {
+    label ru-KZ official "лицом причинён вред природе";
+    label kk-KZ official "адам табиғатқа зиян келтірді";
+}
+relation lawful_tax_unpaid(person: Person) kind empirical {
+    label ru-KZ official "лицом не уплачены законно установленные налоги, сборы и иные обязательные платежи";
+    label kk-KZ official "адам заңды түрде белгіленген салықтарды, алымдарды және өзге де міндетті төлемдерді төлемеді";
+}
+relation defence_duty_unperformed(person: Person) kind empirical {
+    label ru-KZ official "гражданином не исполнена обязанность по защите Республики";
+    label kk-KZ official "азамат Республиканы қорғау міндетін орындамады";
+}
+relation heritage_harmed(person: Person) kind empirical {
+    label ru-KZ official "лицом причинён вред историко-культурному наследию";
+    label kk-KZ official "адам тарихи-мәдени мұраға зиян келтірді";
+}
+relation parent_of(parent: Parent, child: Child) kind empirical {
+    label ru-KZ official "лицо является родителем данного ребёнка";
+    label kk-KZ official "адам осы баланың ата-анасы болып табылады";
+}
+relation child_care_provided(parent: Parent, child: Child) kind empirical {
+    label ru-KZ official "родители заботятся о ребёнке и воспитывают его";
+    label kk-KZ official "ата-ана балаға қамқорлық жасайды және оны тәрбиелейді";
+}
+
+// Ст. 15, 24, 26, 31, 33–35: прямые гарантии, обязанности и
+// закрытые конституционные основания ограничений.
+relation state_authority(authority: StateAuthority) kind empirical {
+    label ru-KZ official "субъект является государственным органом либо должностным лицом";
+    label kk-KZ official "субъект мемлекеттік орган не лауазымды адам болып табылады";
+}
+relation unlawful_state_action_harmed(authority: StateAuthority, person: Person) kind empirical {
+    label ru-KZ official "незаконными действиями государственных органов лицу причинён вред";
+    label kk-KZ official "мемлекеттік органдардың заңсыз әрекеттерімен адамға зиян келтірілді";
+}
+relation state_harm_compensated(authority: StateAuthority, person: Person) kind empirical {
+    label ru-KZ official "причинённый вред возмещён государством";
+    label kk-KZ official "келтірілген зиян мемлекет тарапынан өтелді";
+}
+relation rights_exercise_harms_others_or_constitutional_order(person: Person) kind empirical {
+    label ru-KZ official "осуществление прав нарушает права других лиц либо посягает на конституционный строй";
+    label kk-KZ official "құқықтарды жүзеге асыру басқа адамдардың құқықтарын бұзады не конституциялық құрылысқа нұқсан келтіреді";
+}
+relation rights_exercise_constitutionally_limited(person: Person) kind institutional {
+    label ru-KZ official "осуществление прав и свобод ограничено конституционным пределом";
+    label kk-KZ official "құқықтар мен бостандықтарды жүзеге асыру конституциялық шекпен шектелген";
+}
+
+relation lawfully_in_kazakhstan(person: Person) kind empirical {
+    label ru-KZ official "лицо находится в Казахстане на законном основании";
+    label kk-KZ official "адам Қазақстанда заңды негізде жүр";
+}
+relation movement_action(person: Person) kind empirical {
+    label ru-KZ official "лицо реализует свободу передвижения";
+    label kk-KZ official "адам жүріп-тұру бостандығын жүзеге асырады";
+}
+relation exit_action(person: Person) kind empirical {
+    label ru-KZ official "лицо выезжает за пределы Республики";
+    label kk-KZ official "адам Республикадан тыс жерге шығады";
+}
+relation movement_restriction(restriction: MovementRestriction, person: Person) kind empirical {
+    label ru-KZ official "ограничение свободы передвижения касается данного лица";
+    label kk-KZ official "жүріп-тұру бостандығын шектеу осы адамға қатысты";
+}
+relation movement_restriction_established_by_law(restriction: MovementRestriction) kind empirical {
+    label ru-KZ official "ограничение свободы передвижения установлено законом";
+    label kk-KZ official "жүріп-тұру бостандығын шектеу заңмен белгіленген";
+}
+relation movement_restriction_constitutionally_valid(restriction: MovementRestriction) kind institutional {
+    label ru-KZ official "ограничение свободы передвижения конституционно допустимо";
+    label kk-KZ official "жүріп-тұру бостандығын шектеуге конституциялық тұрғыда жол беріледі";
+}
+relation return_to_kazakhstan_action(person: Person) kind empirical {
+    label ru-KZ official "гражданин возвращается в Республику";
+    label kk-KZ official "азамат Республикаға қайтып оралады";
+}
+relation return_block_attempt(authority: StateAuthority, person: Person) kind empirical {
+    label ru-KZ official "государственный орган препятствует возвращению гражданина";
+    label kk-KZ official "мемлекеттік орган азаматтың қайтып оралуына кедергі жасайды";
+}
+relation return_blocked(person: Person) kind institutional {
+    label ru-KZ official "возвращение гражданина в Республику ограничено";
+    label kk-KZ official "азаматтың Республикаға қайтып оралуы шектелген";
+}
+
+relation association_membership_action(person: Person, association: Association) kind empirical {
+    label ru-KZ official "лицо состоит в объединении";
+    label kk-KZ official "адам бірлестікке мүше";
+}
+relation association(association: Association) kind empirical {
+    label ru-KZ official "объединение является объединением граждан";
+    label kk-KZ official "бірлестік азаматтардың бірлестігі болып табылады";
+}
+relation restricted_political_officeholder(person: Person) kind empirical {
+    label ru-KZ official "лицо занимает должность, для которой членство в партии либо профсоюзе ограничено";
+    label kk-KZ official "адам партияға не кәсіптік одаққа мүшелігі шектелген лауазымды атқарады";
+}
+relation political_party_or_union_membership(person: Person) kind empirical {
+    label ru-KZ official "лицо состоит в политической партии либо профессиональном союзе";
+    label kk-KZ official "адам саяси партияға не кәсіптік одаққа мүше";
+}
+relation restricted_office_membership_incompatible(person: Person) kind institutional {
+    label ru-KZ official "членство в партии либо профсоюзе несовместимо с занимаемой должностью";
+    label kk-KZ official "партияға не кәсіптік одаққа мүшелік атқаратын лауазыммен сыйыспайды";
+}
+
+relation lawful_social_security_ground(person: Person) kind empirical {
+    label ru-KZ official "налицо установленное законом основание социального обеспечения";
+    label kk-KZ official "әлеуметтік қамсыздандырудың заңмен белгіленген негізі бар";
+}
+relation social_security_provided(authority: StateAuthority, person: Person) kind empirical {
+    label ru-KZ official "лицу предоставлено социальное обеспечение";
+    label kk-KZ official "адамға әлеуметтік қамсыздандыру берілді";
+}
+relation free_secondary_education_eligible(person: Person) kind empirical {
+    label ru-KZ official "лицо имеет право на бесплатное среднее образование";
+    label kk-KZ official "адамның тегін орта білім алуға құқығы бар";
+}
+relation free_secondary_education_provided(authority: StateAuthority, person: Person) kind empirical {
+    label ru-KZ official "лицу обеспечено бесплатное среднее образование";
+    label kk-KZ official "адамға тегін орта білім алу қамтамасыз етілді";
+}
+relation primary_or_basic_secondary_education(person: Person) kind empirical {
+    label ru-KZ official "лицо получает начальное либо основное среднее образование";
+    label kk-KZ official "адам бастауыш не негізгі орта білім алуда";
+}
+relation compulsory_education_applies(person: Person) kind institutional {
+    label ru-KZ official "получение образования данного уровня обязательно";
+    label kk-KZ official "осы деңгейдегі білім алу міндетті";
+}
+relation education_institution(institution: EducationInstitution) kind empirical {
+    label ru-KZ official "организация является организацией образования";
+    label kk-KZ official "ұйым білім беру ұйымы болып табылады";
+}
+relation education_standards_met(institution: EducationInstitution) kind empirical {
+    label ru-KZ official "организация образования соблюдает общеобязательные стандарты";
+    label kk-KZ official "білім беру ұйымы жалпыға міндетті стандарттарды сақтайды";
+}
+relation education_institution_constitutionally_compliant(institution: EducationInstitution) kind institutional {
+    label ru-KZ official "деятельность организации образования конституционно допустима";
+    label kk-KZ official "білім беру ұйымының қызметіне конституциялық тұрғыда жол беріледі";
+}
+
+relation peaceful_assembly(assembly: Assembly, person: Person) kind empirical {
+    label ru-KZ official "лицо участвует в мирном собрании";
+    label kk-KZ official "адам бейбіт жиналысқа қатысады";
+}
+relation assembly_participation_action(person: Person, assembly: Assembly) kind empirical {
+    label ru-KZ official "лицо участвует в собрании";
+    label kk-KZ official "адам жиналысқа қатысады";
+}
+relation assembly_restriction(restriction: Restriction, assembly: Assembly) kind empirical {
+    label ru-KZ official "ограничение касается данного собрания";
+    label kk-KZ official "шектеу осы жиналысқа қатысты";
+}
+relation assembly_restriction_established_by_law(restriction: Restriction) kind empirical {
+    label ru-KZ official "ограничение права на мирные собрания установлено законом";
+    label kk-KZ official "бейбіт жиналыс құқығын шектеу заңмен белгіленген";
+}
+relation assembly_restriction_has_constitutional_goal(restriction: Restriction) kind empirical {
+    label ru-KZ official "ограничение права на мирные собрания преследует конституционную цель";
+    label kk-KZ official "бейбіт жиналыс құқығын шектеу конституциялық мақсатты көздейді";
+}
+// `pub`: конституционную допустимость ограничения собраний читает отраслевой
+// пакет. Первый потребитель — `kz.corpus.peacefulassembly`: отказ в проведении
+// мирного собрания по статье 14 Закона № 333-VI есть ограничение права, и
+// вопрос о его допустимости решается ЗДЕСЬ, а не в отраслевом акте.
+pub relation assembly_restriction_constitutionally_valid(restriction: Restriction) kind institutional {
+    label ru-KZ official "ограничение права на мирные собрания конституционно допустимо";
+    label kk-KZ official "бейбіт жиналыс құқығын шектеуге конституциялық тұрғыда жол беріледі";
+}
+
+relation state_governance_participation_action(person: Person) kind empirical {
+    label ru-KZ official "гражданин участвует в управлении делами государства";
+    label kk-KZ official "азамат мемлекет істерін басқаруға қатысады";
+}
+relation court_declared_incapable(person: Person) kind empirical {
+    label ru-KZ official "лицо признано судом недееспособным";
+    label kk-KZ official "адамды сот әрекетке қабілетсіз деп таныды";
+}
+relation imprisoned_by_court_sentence(person: Person) kind empirical {
+    label ru-KZ official "лицо содержится в местах лишения свободы по приговору суда";
+    label kk-KZ official "адам сот үкімі бойынша бас бостандығынан айыру орнында отыр";
+}
+relation voting_or_referendum_ineligible(person: Person) kind institutional {
+    label ru-KZ official "лицо не вправе избирать и участвовать в референдуме";
+    label kk-KZ official "адамның сайлауға және референдумға қатысуға құқығы жоқ";
+}
+relation unexpunged_conviction(person: Person) kind empirical {
+    label ru-KZ official "у лица имеется непогашенная либо неснятая судимость";
+    label kk-KZ official "адамның өтелмеген не алынбаған соттылығы бар";
+}
+relation corruption_offence_confirmed_by_court(person: Person) kind empirical {
+    label ru-KZ official "судом подтверждено совершение лицом коррупционного правонарушения";
+    label kk-KZ official "адамның сыбайлас жемқорлық құқық бұзушылық жасағанын сот растады";
+}
+relation electoral_candidate_ineligible(person: Person) kind institutional {
+    label ru-KZ official "лицо не вправе быть избранным";
+    label kk-KZ official "адамның сайлануға құқығы жоқ";
+}
+relation civil_service_requirement(requirement: CivilServiceRequirement) kind empirical {
+    label ru-KZ official "требование предъявляется к поступающим на государственную службу";
+    label kk-KZ official "талап мемлекеттік қызметке кіретіндерге қойылады";
+}
+relation requirement_only_reflects_official_duties(requirement: CivilServiceRequirement) kind empirical {
+    label ru-KZ official "требование обусловлено характером должностных обязанностей";
+    label kk-KZ official "талап лауазымдық міндеттердің сипатына байланысты";
+}
+relation civil_service_requirement_admissible(requirement: CivilServiceRequirement) kind institutional {
+    label ru-KZ official "требование к поступающим на государственную службу конституционно допустимо";
+    label kk-KZ official "мемлекеттік қызметке кіретіндерге қойылатын талапқа конституциялық тұрғыда жол беріледі";
+}
+
+// Нулеарные мосты прямого действия для отраслевых пакетов.
+//
+// У каждого моста ДВЕ редакции, и это не симметрия ради симметрии. Мост есть
+// `assert` с якорем в статью КОНКРЕТНОЙ редакции, а проекция as-of §31
+// снимает узлы неприменимых редакций. Пока мосты стояли только в редакции
+// 2026, любой отраслевой пакет, применивший датировку, терял конституционное
+// основание на всяком деле до 01.07.2026 — а такие дела в корпусе есть
+// (ОСМС считает взносы на 30.06.2025 и 30.06.2026). Без датировки было
+// наоборот: основание бралось из редакции, которой на дату дела нет.
+pub relation constitutional_personal_data_guarantee() kind institutional {
+    label ru-KZ official "Конституция гарантирует защиту персональных данных";
+    label kk-KZ official "Конституция дербес деректердің қорғалуына кепілдік береді";
+}
+pub relation constitutional_personal_data_guarantee_1995() kind institutional {
+    label ru-KZ official "Конституция 1995 года гарантировала защиту персональных данных";
+    label kk-KZ official "1995 жылғы Конституция дербес деректердің қорғалуына кепілдік берді";
+}
+pub relation constitutional_marriage_protection() kind institutional {
+    label ru-KZ official "Конституция защищает брак, семью, материнство, отцовство и детство";
+    label kk-KZ official "Конституция некені, отбасын, ана болуды, әке болуды және балалық шақты қорғайды";
+}
+pub relation constitutional_marriage_protection_1995() kind institutional {
+    label ru-KZ official "Конституция 1995 года защищала брак, семью, материнство, отцовство и детство";
+    label kk-KZ official "1995 жылғы Конституция некені, отбасын, ана болуды, әке болуды және балалық шақты қорғады";
+}
+relation constitutional_labor_guarantee() kind institutional {
+    label ru-KZ official "Конституция гарантирует условия труда, вознаграждение и отдых";
+    label kk-KZ official "Конституция еңбек жағдайларына, сыйақыға және демалысқа кепілдік береді";
+}
+pub relation constitutional_health_guarantee() kind institutional {
+    label ru-KZ official "Конституция гарантирует охрану здоровья";
+    label kk-KZ official "Конституция денсаулық сақтауға кепілдік береді";
+}
+pub relation constitutional_health_guarantee_1995() kind institutional {
+    label ru-KZ official "Конституция 1995 года гарантировала охрану здоровья";
+    label kk-KZ official "1995 жылғы Конституция денсаулық сақтауға кепілдік берді";
+}
+
+// Ст. 9: статус языков. Норма живёт здесь, а не в пакете источников: тот
+// хранит редакции и статьи, а это утверждения о государстве, которые ст. 22
+// (право пользоваться родным языком) предполагает установленными.
+//
+// Из этих фактов §158 сознательно НИЧЕГО не выводит. Divergence report
+// сообщает о расхождении аутентичных редакций и останавливается: какая
+// редакция превалирует — вопрос права, а не вывода, и `divergence_report`
+// понятия превалирующего языка не имеет по построению. Факты дают отчёту
+// конституционное основание считать обе редакции аутентичными и делают
+// ст. 9 адресуемой (§33), а не выводящей.
+pub relation state_language_is_kazakh() kind institutional {
+    label ru-KZ official "государственным языком Республики Казахстан является казахский язык";
+    label kk-KZ official "Қазақстан Республикасының мемлекеттік тілі — қазақ тілі";
+}
+pub relation russian_used_officially_in_state_bodies() kind institutional {
+    label ru-KZ official "в государственных организациях и органах местного самоуправления наравне с казахским официально употребляется русский язык";
+    label kk-KZ official "мемлекеттік ұйымдарда және жергілікті өзін-өзі басқару органдарында орыс тілі ресми түрде қазақ тілімен тең қолданылады";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART21_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART21_KK")
+assert constitutional_personal_data_guarantee();
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART30_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART30_KK")
+assert constitutional_marriage_protection();
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART27_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART27_KK")
+assert constitutional_labor_guarantee();
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART32_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART32_KK")
+assert constitutional_health_guarantee();
+
+// Те же гарантии в редакции 1995: ст. 18 (неприкосновенность частной жизни),
+// ст. 27 (брак и семья под защитой государства), ст. 29 (право на охрану
+// здоровья). Номера статей — из закреплённых байтов той редакции, а не из
+// подстановки «минус три»: нумерация разделов между редакциями сдвинута
+// неравномерно.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART18_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART18_KK")
+assert constitutional_personal_data_guarantee_1995();
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART27_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART27_KK")
+assert constitutional_marriage_protection_1995();
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART29_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART29_KK")
+assert constitutional_health_guarantee_1995();
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART9_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART9_KK")
+assert state_language_is_kazakh();
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART9_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART9_KK")
+assert russian_used_officially_in_state_bodies();
+
+// Ст. 41.3: семь прав образуют неограничиваемое ядро.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART12_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART12_KK")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART14_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART14_KK")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART16_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART16_KK")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART17_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART17_KK")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART20_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART20_KK")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART22_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART22_KK")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART25_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART25_KK")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART41_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART41_KK")
+rule CoreRightsRestrictionImmunity(
+    person: Person,
+    restriction: Restriction,
+    right: CoreRight,
+) strict {
+    when restriction_affects(restriction, person);
+    when restriction_targets(restriction, right);
+    then immunity NonDerogableCore {
+        holder person;
+        protected_effect restriction_has_legal_effect(restriction);
+    };
+    label ru-KZ official "Статья 41 пункт 3. Неограничиваемое ядро прав";
+    label kk-KZ official "41-бап 3-тармақ. Шектелмейтін құқықтар өзегі";
+}
+
+// Ст. 41.1: ограничение иных прав — только законом, с конституционной целью
+// и после явного разрешения оценочного вопроса соразмерности.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART41_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART41_KK")
+rule DerogableRestrictionClassification(restriction: Restriction) strict {
+    when restriction_enacted_by_law(restriction);
+    when restriction_has_constitutional_goal(restriction);
+    when proportionality_confirmed(restriction);
+    then restriction_constitutionally_justified(restriction);
+    label ru-KZ official "Статья 41 пункт 1. Ограничение права конституционно оправдано при подтверждённой соразмерности";
+    label kk-KZ official "41-бап 1-тармақ. Мөлшерлестігі расталған кезде құқықты шектеу конституциялық тұрғыда ақталған";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART41_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART41_KK")
+rule DerogableRestrictionRejected(restriction: Restriction) strict {
+    when restriction_enacted_by_law(restriction);
+    when restriction_has_constitutional_goal(restriction);
+    when proportionality_disproved(restriction);
+    then not restriction_constitutionally_justified(restriction);
+    label ru-KZ official "Статья 41 пункт 1. Ограничение права не оправдано при опровергнутой соразмерности";
+    label kk-KZ official "41-бап 1-тармақ. Мөлшерлестігі теріске шығарылған кезде құқықты шектеу ақталмаған";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART41_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART41_KK")
+rule RightsLimitationPower(authority: Legislature, restriction: Restriction) strict {
+    when legislature(authority);
+    when derogable_right_target(restriction);
+    then power RestrictDerogableRight {
+        holder authority;
+        exercise restriction_attempt(authority, restriction);
+        valid_when restriction_constitutionally_justified(restriction);
+        effect restriction_has_legal_effect(restriction);
+    };
+    label ru-KZ official "Статья 41 пункт 1. Права и свободы могут быть ограничены только законами и лишь в той мере, в какой это необходимо для защиты конституционного строя, прав и свобод, национальной безопасности, общественного порядка, здоровья и нравственности";
+    label kk-KZ official "41-бап 1-тармақ. Құқықтар мен бостандықтар конституциялық құрылысты, құқықтар мен бостандықтарды, ұлттық қауіпсіздікті, қоғамдық тәртіпті, денсаулық пен имандылықты қорғау үшін қажет болатын шамада ғана заңдармен шектелуі мүмкін";
+}
+
+// Ст. 14: общий иммунитет и прямо конституционная treaty-оговорка.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART14_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART14_KK")
+rule CitizenNonExtraditionImmunity(person: Person) strict {
+    when citizen(person);
+    then immunity NonExtradition {
+        holder person;
+        protected_effect extradited(person);
+    };
+    label ru-KZ official "Статья 14 пункт 1. Гражданин Республики Казахстан не может быть выдан иностранному государству";
+    label kk-KZ official "14-бап 1-тармақ. Қазақстан Республикасының азаматын шет мемлекетке ұстап беруге болмайды";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART14_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART14_KK")
+rule TreatyExtraditionPower(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when citizen(person);
+    then power ExtraditeUnderTreaty {
+        holder authority;
+        exercise extradition_decision(authority, person);
+        valid_when treaty_allows_extradition(person);
+        effect extradited(person);
+    };
+    label ru-KZ official "Статья 14 пункт 1. Выдача гражданина допустима, если это установлено международным договором Республики";
+    label kk-KZ official "14-бап 1-тармақ. Азаматты ұстап беруге Республиканың халықаралық шартында белгіленген жағдайда жол беріледі";
+}
+
+priority TreatyClauseOverGeneralNonExtradition: TreatyExtraditionPower > CitizenNonExtraditionImmunity reason lex_specialis;
+
+// Ст. 13.2: лишение гражданства — только судебное решение в двух указанных
+// Конституцией классах основания; иных оснований модель не домысливает.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART13_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART13_KK")
+rule CitizenshipDeprivationPower(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when court_ordered_citizenship_deprivation(person);
+    when terrorism_or_grave_national_harm(person);
+    then power DepriveCitizenship {
+        holder authority;
+        exercise citizenship_deprivation_decision(authority, person);
+        valid_when court_ordered_citizenship_deprivation(person);
+        effect citizenship_deprived(person);
+    };
+    label ru-KZ official "Статья 13 пункт 2. Лишение гражданства допускается только по решению суда за террористические преступления либо иной тяжкий вред национальным интересам Республики";
+    label kk-KZ official "13-бап 2-тармақ. Азаматтықтан айыруға террористік қылмыстар не Республиканың ұлттық мүдделеріне өзге де ауыр зиян келтіргені үшін сот шешімі бойынша ғана жол беріледі";
+}
+
+// Ст. 16, 17, 20 и специальные запреты прочих статей раздела II.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART16_RU")
+rule EqualityImmunity(person: Person) strict {
+    when person(person);
+    then immunity NoDiscrimination {
+        holder person;
+        protected_effect discriminated(person);
+    };
+    label ru-KZ official "Статья 16 пункт 2. Никто не может подвергаться дискриминации по происхождению, положению, полу, расе, национальности, языку, отношению к религии, убеждениям, месту жительства и любым иным обстоятельствам";
+    label kk-KZ official "16-бап 2-тармақ. Тегіне, жағдайына, жынысына, нәсіліне, ұлтына, тіліне, дінге көзқарасына, нанымына, тұрғылықты жеріне және кез келген өзге де мән-жайларға байланысты ешкім кемсітілмейді";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART17_RU")
+rule DeathPenaltyImmunity(person: Person) strict {
+    when person(person);
+    then immunity NoDeathPenalty {
+        holder person;
+        protected_effect death_penalty_imposed(person);
+    };
+    label ru-KZ official "Статья 17 пункт 3. Смертная казнь запрещена";
+    label kk-KZ official "17-бап 3-тармақ. Өлім жазасына тыйым салынған";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART20_RU")
+rule TortureImmunity(person: Person) strict {
+    when person(person);
+    then immunity NoTorture {
+        holder person;
+        protected_effect tortured(person);
+    };
+    label ru-KZ official "Статья 20 пункт 2. Никто не должен подвергаться пыткам, насилию, другому жестокому или унижающему человеческое достоинство обращению или наказанию";
+    label kk-KZ official "20-бап 2-тармақ. Ешкім азаптауға, зорлық-зомбылыққа, басқа да қатыгез немесе адамның ар-намысын қорлайтын қарауға не жазалауға ұшырамауға тиіс";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART21_RU")
+rule PrivacyImmunity(person: Person) strict {
+    when person(person);
+    then immunity PrivacyProtection {
+        holder person;
+        protected_effect privacy_unlawfully_interfered(person);
+    };
+    label ru-KZ official "Статья 21 пункт 1. Право на неприкосновенность частной жизни, личную и семейную тайну и защиту персональных данных гарантируется законом";
+    label kk-KZ official "21-бап 1-тармақ. Жеке өмірге қол сұғылмаушылық, жеке және отбасылық құпия және дербес деректердің қорғалу құқығына заңмен кепілдік беріледі";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART23_RU")
+rule CensorshipImmunity(person: Person) strict {
+    when person(person);
+    then immunity NoCensorship {
+        holder person;
+        protected_effect censorship_imposed(person);
+    };
+    label ru-KZ official "Статья 23 пункт 5. Цензура запрещена";
+    label kk-KZ official "23-бап 5-тармақ. Цензураға тыйым салынған";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART28_RU")
+rule HomeImmunity(person: Person) strict {
+    when person(person);
+    then immunity HomeInviolability {
+        holder person;
+        protected_effect home_unlawfully_entered(person);
+    };
+    label ru-KZ official "Статья 28 пункт 1. Жилище неприкосновенно; проникновение в него допускается лишь в случаях и порядке, установленных законом";
+    label kk-KZ official "28-бап 1-тармақ. Тұрғын үйге қол сұғылмайды; оған кіруге заңмен белгіленген жағдайларда және тәртіппен ғана жол беріледі";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART29_RU")
+rule PropertyImmunity(person: Person) strict {
+    when person(person);
+    then immunity CompensatedExpropriationOnly {
+        holder person;
+        protected_effect property_uncompensatedly_expropriated(person);
+    };
+    label ru-KZ official "Статья 29 пункт 3. Принудительное отчуждение имущества для государственных нужд допускается лишь при условии равноценного его возмещения";
+    label kk-KZ official "29-бап 3-тармақ. Мемлекет мұқтажы үшін мүліктен мәжбүрлеп айыруға оның құны тең бағамен өтелген жағдайда ғана жол беріледі";
+}
+
+// Ст. 18: Конституция отсылает сам числовой предел к закону.
+// Ст. 18 п. 2 говорит «БЕЗ СУДЕБНОГО РЕШЕНИЯ», и до 02.09.2026 эта оговорка в
+// модели не работала: предикат `detention_has_court_decision` был объявлен и не
+// читался ни одним правилом, а иммунитет выводился от одного лишь превышения
+// срока. Изъятие живёт на предикате с литеральной головой — `unless` при
+// норм-голове компилятор отбрасывает (LDC-E1302).
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART18_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART18_KK")
+rule ContinuedDetentionBarredWithoutCourtDecision(detention: Detention) defeasible {
+    when detention_exceeds_statutory_period(detention);
+    unless detention_has_court_decision(detention);
+    then continued_detention_barred(detention);
+    label ru-KZ official "Статья 18 пункт 2. Задержание свыше установленного законом срока запрещено, пока нет судебного решения";
+    label kk-KZ official "18-бап 2-тармақ. Сот шешімі болмайынша заңмен белгіленген мерзімнен тыс ұстауға тыйым салынған";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART18_RU")
+rule DetentionBeyondStatutoryLimitImmunity(detention: Detention, person: Person) strict {
+    when detention_of(detention, person);
+    when continued_detention_barred(detention);
+    then immunity CourtOrderRequiredForContinuedDetention {
+        holder person;
+        protected_effect unlawful_continued_detention(detention);
+    };
+    label ru-KZ official "Статья 18 пункт 2. Без судебного решения человек не может быть подвергнут задержанию свыше сроков, предусмотренных законом";
+    label kk-KZ official "18-бап 2-тармақ. Сот шешімінсіз адамды заңда көзделген мерзімнен тыс ұстауға болмайды";
+}
+
+// Ст. 19.1: презумпция снимается только вступившим в силу приговором.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART19_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART19_KK")
+presumption PresumptionOfInnocence(person: Person) {
+    when accused(person);
+    presume innocent(person);
+    unless final_conviction(person) then not innocent(person);
+    label ru-KZ official "Статья 19 пункт 1. Каждый считается невиновным, пока его виновность не будет признана вступившим в законную силу приговором суда";
+    label kk-KZ official "19-бап 1-тармақ. Адамның кінәлі екендігі заңды күшіне енген сот үкімімен танылғанға дейін ол кінәсіз деп есептеледі";
+}
+
+// Ст. 21.3 и 30.3: исполняемые обязанности с открытым окном. Доказательство
+// исполнения требует явного completeness-пути, молчание его не заменяет.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART21_RU")
+rule AccessToAffectingDocumentsDuty(
+    authority: StateAuthority,
+    document: Document,
+    person: Person,
+) strict {
+    when state_authority(authority);
+    when document_affects(document, person);
+    then duty ProvideAccess {
+        bearer authority;
+        beneficiary person;
+        maintain access_provided(document, person) during [@2026-07-01, infinity);
+    };
+    label ru-KZ official "Статья 21 пункт 3. Государственные органы, объединения, должностные лица и средства массовой информации обязаны обеспечить каждому возможность ознакомиться с затрагивающими его права и интересы документами";
+    label kk-KZ official "21-бап 3-тармақ. Мемлекеттік органдар, бірлестіктер, лауазымды адамдар және бұқаралық ақпарат құралдары әрбір адамға өзінің құқықтары мен мүдделерін қозғайтын құжаттармен танысу мүмкіндігін қамтамасыз етуге міндетті";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART30_RU")
+rule ParentCareDuty(parent: Parent, child: Child) strict {
+    when parent_of(parent, child);
+    then duty CareForChild {
+        bearer parent;
+        beneficiary child;
+        goal maintenance {
+            condition child_care_provided(parent, child);
+            window [@2026-07-01, infinity);
+            completeness_policy ChildCareCompleteness;
+        }
+    };
+    label ru-KZ official "Статья 30 пункт 3. Забота о детях и их воспитание — естественное право и обязанность родителей";
+    label kk-KZ official "30-бап 3-тармақ. Балаларына қамқорлық жасау және оларды тәрбиелеу — ата-ананың табиғи құқығы әрі міндеті";
+}
+
+// Ст. 36–40: продолжающиеся обязанности. Они не объявляются исполненными по
+// отсутствию контрпримера: completeness policy должна быть предъявлена делом.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART36_RU")
+rule ConstitutionComplianceDuty(person: Person) strict {
+    when person(person);
+    then duty RespectConstitutionAndLaw {
+        bearer person;
+        goal maintenance {
+            condition not constitution_or_law_violated(person);
+            window [@2026-07-01, infinity);
+            completeness_policy ConstitutionComplianceCompleteness;
+        }
+    };
+    label ru-KZ official "Статья 36 пункт 1. Каждый обязан соблюдать Конституцию и законодательство Республики, уважать права, свободы, честь и достоинство других лиц";
+    label kk-KZ official "36-бап 1-тармақ. Әркім Республиканың Конституциясы мен заңнамасын сақтауға, басқа адамдардың құқықтарын, бостандықтарын, абыройы мен ар-намысын құрметтеуге міндетті";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART37_RU")
+rule NatureProtectionDuty(person: Person) strict {
+    when citizen(person);
+    then duty ProtectNature {
+        bearer person;
+        goal maintenance {
+            condition not nature_harmed(person);
+            window [@2026-07-01, infinity);
+            completeness_policy NatureProtectionCompleteness;
+        }
+    };
+    label ru-KZ official "Статья 37 пункт 1. Граждане Республики обязаны сохранять природу и бережно относиться к природным богатствам";
+    label kk-KZ official "37-бап 1-тармақ. Республика азаматтары табиғатты сақтауға және табиғат байлықтарына ұқыпты қарауға міндетті";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART38_RU")
+rule TaxPaymentDuty(person: Person) strict {
+    when person(person);
+    then duty PayLawfulTaxes {
+        bearer person;
+        goal maintenance {
+            condition not lawful_tax_unpaid(person);
+            window [@2026-07-01, infinity);
+            completeness_policy TaxPaymentCompleteness;
+        }
+    };
+    label ru-KZ official "Статья 38. Уплата законно установленных налогов, сборов и иных обязательных платежей — долг и обязанность каждого";
+    label kk-KZ official "38-бап. Заңды түрде белгіленген салықтарды, алымдарды және өзге де міндетті төлемдерді төлеу — әркімнің борышы әрі міндеті";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART39_RU")
+rule DefenceDuty(person: Person) strict {
+    when citizen(person);
+    then duty DefendKazakhstan {
+        bearer person;
+        goal maintenance {
+            condition not defence_duty_unperformed(person);
+            window [@2026-07-01, infinity);
+            completeness_policy DefenceDutyCompleteness;
+        }
+    };
+    label ru-KZ official "Статья 39 пункт 1. Защита Республики Казахстан — священный долг и обязанность каждого её гражданина";
+    label kk-KZ official "39-бап 1-тармақ. Қазақстан Республикасын қорғау — оның әрбір азаматының қасиетті борышы әрі міндеті";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART40_RU")
+rule HeritageProtectionDuty(person: Person) strict {
+    when citizen(person);
+    then duty PreserveHeritage {
+        bearer person;
+        goal maintenance {
+            condition not heritage_harmed(person);
+            window [@2026-07-01, infinity);
+            completeness_policy HeritageProtectionCompleteness;
+        }
+    };
+    label ru-KZ official "Статья 40. Граждане Республики обязаны заботиться о сохранении исторического и культурного наследия";
+    label kk-KZ official "40-бап. Республика азаматтары тарихи және мәдени мұраның сақталуына қамқорлық жасауға міндетті";
+}
+
+// Ст. 15.6: право на возмещение вреда превращено в обязанность
+// органа. Незаконность приходит как установленный факт, а не
+// вычисляется по догадке.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART15_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART15_KK")
+rule StateCompensationForUnlawfulHarm(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when unlawful_state_action_harmed(authority, person);
+    then duty CompensateUnlawfulStateHarm {
+        bearer authority;
+        beneficiary person;
+        maintain state_harm_compensated(authority, person) during [@2026-07-01, infinity);
+    };
+    label ru-KZ official "Статья 15 пункт 6. Государство возмещает вред от незаконных действий его органов";
+    label kk-KZ official "15-бап 6-тармақ. Мемлекет өз органдарының заңсыз әрекеттерінен келтірілген зиянды өтейді";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART15_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART15_KK")
+rule RightsExerciseBoundary(person: Person) strict {
+    when rights_exercise_harms_others_or_constitutional_order(person);
+    then rights_exercise_constitutionally_limited(person);
+    label ru-KZ official "Статья 15 пункт 5. Осуществление прав ограничено правами других и конституционными целями";
+    label kk-KZ official "15-бап 5-тармақ. Құқықтарды жүзеге асыру басқалардың құқықтарымен және конституциялық мақсаттармен шектелген";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART24_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART24_KK")
+rule FreedomOfMovement(person: Person) strict {
+    when lawfully_in_kazakhstan(person);
+    then liberty MoveWithinKazakhstan {
+        holder person;
+        action movement_action(person);
+        window [@2026-07-01, infinity);
+    };
+    label ru-KZ official "Статья 24 пункт 1. Свобода передвижения законно находящегося в Казахстане лица";
+    label kk-KZ official "24-бап 1-тармақ. Қазақстанда заңды түрде жүрген адамның жүріп-тұру бостандығы";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART24_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART24_KK")
+rule StatutoryMovementRestriction(restriction: MovementRestriction, person: Person) strict {
+    when movement_restriction(restriction, person);
+    when movement_restriction_established_by_law(restriction);
+    then movement_restriction_constitutionally_valid(restriction);
+    label ru-KZ official "Статья 24. Ограничение передвижения или выезда допускается только законом";
+    label kk-KZ official "24-бап. Жүріп-тұруды не шығуды шектеуге тек заңмен жол беріледі";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART24_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART24_KK")
+rule ReturnToKazakhstanLiberty(person: Person) strict {
+    when citizen(person);
+    then liberty ReturnToKazakhstan {
+        holder person;
+        action return_to_kazakhstan_action(person);
+        window [@2026-07-01, infinity);
+    };
+    label ru-KZ official "Статья 24 пункт 2. Граждане Республики Казахстан имеют право беспрепятственного возвращения в Республику Казахстан";
+    label kk-KZ official "24-бап 2-тармақ. Қазақстан Республикасының азаматтары Қазақстан Республикасына кедергісіз қайтып оралуға құқылы";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART24_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART24_KK")
+rule CitizenReturnImmunity(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when citizen(person);
+    then immunity UnobstructedReturnToKazakhstan {
+        holder person;
+        protected_effect return_blocked(person);
+    };
+    label ru-KZ official "Статья 24 пункт 2. Гражданин вправе беспрепятственно возвращаться в Казахстан";
+    label kk-KZ official "24-бап 2-тармақ. Азамат Қазақстанға кедергісіз қайтып оралуға құқылы";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART26_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART26_KK")
+rule FreedomOfAssociation(person: Person, association: Association) strict {
+    when citizen(person);
+    when association(association);
+    then liberty JoinAssociation {
+        holder person;
+        action association_membership_action(person, association);
+        window [@2026-07-01, infinity);
+    };
+    label ru-KZ official "Статья 26 пункт 1. Свобода объединений";
+    label kk-KZ official "26-бап 1-тармақ. Бірлесу бостандығы";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART26_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART26_KK")
+rule RestrictedOfficePoliticalMembershipIncompatible(person: Person) strict {
+    when restricted_political_officeholder(person);
+    when political_party_or_union_membership(person);
+    then restricted_office_membership_incompatible(person);
+    label ru-KZ official "Статья 26 пункт 2. Партийное и профсоюзное членство несовместимо с перечисленными должностями";
+    label kk-KZ official "26-бап 2-тармақ. Партияға және кәсіптік одаққа мүшелік аталған лауазымдармен сыйыспайды";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART31_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART31_KK")
+rule SocialSecurityDuty(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when citizen(person);
+    when lawful_social_security_ground(person);
+    then duty ProvideSocialSecurity {
+        bearer authority;
+        beneficiary person;
+        maintain social_security_provided(authority, person) during [@2026-07-01, infinity);
+    };
+    label ru-KZ official "Статья 31 пункт 1. Социальное обеспечение по законному основанию";
+    label kk-KZ official "31-бап 1-тармақ. Заңды негіз бойынша әлеуметтік қамсыздандыру";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART33_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART33_KK")
+rule FreeSecondaryEducationDuty(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when citizen(person);
+    when free_secondary_education_eligible(person);
+    then duty ProvideFreeSecondaryEducation {
+        bearer authority;
+        beneficiary person;
+        maintain free_secondary_education_provided(authority, person) during [@2026-07-01, infinity);
+    };
+    label ru-KZ official "Статья 33 пункт 1. Бесплатное среднее образование в государственном учебном заведении";
+    label kk-KZ official "33-бап 1-тармақ. Мемлекеттік оқу орнында тегін орта білім алу";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART33_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART33_KK")
+rule PrimaryAndBasicEducationCompulsory(person: Person) strict {
+    when primary_or_basic_secondary_education(person);
+    then compulsory_education_applies(person);
+    label ru-KZ official "Статья 33 пункт 1. Начальное и основное среднее образование обязательно";
+    label kk-KZ official "33-бап 1-тармақ. Бастауыш және негізгі орта білім алу міндетті";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART33_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART33_KK")
+rule EducationStandardsCompliance(institution: EducationInstitution) strict {
+    when education_institution(institution);
+    when education_standards_met(institution);
+    then education_institution_constitutionally_compliant(institution);
+    label ru-KZ official "Статья 33 пункт 4. Деятельность учебных заведений соответствует общеобязательным стандартам";
+    label kk-KZ official "33-бап 4-тармақ. Оқу орындарының қызметі жалпыға міндетті стандарттарға сәйкес келеді";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART34_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART34_KK")
+rule PeacefulAssemblyLiberty(person: Person, assembly: Assembly) strict {
+    when citizen(person);
+    when peaceful_assembly(assembly, person);
+    then liberty ParticipateInPeacefulAssembly {
+        holder person;
+        action assembly_participation_action(person, assembly);
+        window [@2026-07-01, infinity);
+    };
+    label ru-KZ official "Статья 34. Право граждан на мирные собрания";
+    label kk-KZ official "34-бап. Азаматтардың бейбіт жиналыс өткізу құқығы";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART34_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART34_KK")
+rule AssemblyRestrictionRequiresLawAndGoal(restriction: Restriction, assembly: Assembly) strict {
+    when assembly_restriction(restriction, assembly);
+    when assembly_restriction_established_by_law(restriction);
+    when assembly_restriction_has_constitutional_goal(restriction);
+    then assembly_restriction_constitutionally_valid(restriction);
+    label ru-KZ official "Статья 34. Ограничение мирных собраний требует закона и конституционной цели";
+    label kk-KZ official "34-бап. Бейбіт жиналысты шектеу заңды және конституциялық мақсатты талап етеді";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART35_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART35_KK")
+rule StateGovernanceParticipationLiberty(person: Person) strict {
+    when citizen(person);
+    then liberty ParticipateInStateGovernance {
+        holder person;
+        action state_governance_participation_action(person);
+        window [@2026-07-01, infinity);
+    };
+    label ru-KZ official "Статья 35 пункт 1. Право участвовать в управлении делами государства";
+    label kk-KZ official "35-бап 1-тармақ. Мемлекет істерін басқаруға қатысу құқығы";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART35_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART35_KK")
+rule VotingAndReferendumDisqualification(person: Person) strict {
+    when court_declared_incapable(person)
+        or imprisoned_by_court_sentence(person);
+    then voting_or_referendum_ineligible(person);
+    label ru-KZ official "Статья 35 пункт 3. Закрытый перечень оснований неучастия в выборах и референдуме";
+    label kk-KZ official "35-бап 3-тармақ. Сайлауға және референдумға қатыспау негіздерінің жабық тізбесі";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART35_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART35_KK")
+rule CandidateDisqualification(person: Person) strict {
+    when court_declared_incapable(person)
+        or unexpunged_conviction(person)
+        or corruption_offence_confirmed_by_court(person);
+    then electoral_candidate_ineligible(person);
+    label ru-KZ official "Статья 35 пункт 3. Закрытый перечень оснований неизбираемости";
+    label kk-KZ official "35-бап 3-тармақ. Сайлануға болмайтын негіздердің жабық тізбесі";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART35_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART35_KK")
+rule CivilServiceRequirementMustReflectOfficialDuties(requirement: CivilServiceRequirement) strict {
+    when civil_service_requirement(requirement);
+    when requirement_only_reflects_official_duties(requirement);
+    then civil_service_requirement_admissible(requirement);
+    label ru-KZ official "Статья 35 пункт 4. Требования к госслужащему ограничены характером должностных обязанностей";
+    label kk-KZ official "35-бап 4-тармақ. Мемлекеттік қызметшіге қойылатын талаптар лауазымдық міндеттердің сипатымен шектелген";
+}
+
+// =========================================================================
+// РЕДАКЦИЯ 2026: НОРМЫ, ДОГОНЯЮЩИЕ СЛОЙ 1995 (заведены 02.09.2026).
+//
+// Разбор нашёл асимметрию: девятнадцать норм слоя 1995 не имели двойника в
+// редакции 2026, хотя ТЕКСТ 2026 их содержит. Мера §33.1 этого не видела по
+// построению — она считает СТАТЬИ, а на статью хватало одного правила либо
+// одного нормативного факта; невыраженное содержание оставалось внутри
+// покрытой статьи (ст. 27 и ст. 32 при этом стояли ANCHORED, то есть
+// «адресуемо, но ничего не выводится»).
+//
+// Чего в 2026 НЕТ и потому здесь не появилось: право на забастовку
+// (ст. 24 п. 3 ред. 1995 — «включая право на забастовку»; ст. 27 п. 3
+// редакции 2026 говорит о трудовых спорах БЕЗ забастовки), бесплатное
+// высшее образование на конкурсной основе (ст. 30 п. 2 ред. 1995 против
+// ст. 33 п. 2 редакции 2026 — «в соответствии с законом»), социальная
+// защита ОТ БЕЗРАБОТИЦЫ как отдельное право (ст. 24 п. 2 ред. 1995 против
+// «социальной защиты в соответствии с законом» ст. 27 п. 2) и бесплатная
+// юридическая помощь (ст. 13 п. 3 ред. 1995; ст. 86 редакции 2026 её не
+// повторяет). Эти четыре — расхождение редакций, а не пробел, и сценарии
+// KZ-CON-1995-07…09 уже требуют, чтобы после 01.07.2026 они не выводились.
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART13_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART13_KK")
+rule ForeignCitizenshipNotRecognized(person: Person) strict {
+    when citizen(person);
+    when holds_foreign_citizenship(person);
+    then foreign_citizenship_not_recognized(person);
+    label ru-KZ official "Статья 13 пункт 3. Гражданин Республики Казахстан не может иметь двойного или множественного гражданства";
+    label kk-KZ official "13-бап 3-тармақ. Қазақстан Республикасының азаматында қос немесе көп азаматтық болмайды";
+}
+
+// Расхождение с редакцией 1995: там наличие иного гражданства только НЕ
+// ПРИЗНАВАЛОСЬ; редакция 2026 добавляет прямое последствие — основание для
+// прекращения гражданства. Поэтому вторая норма, а не расширение первой.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART13_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART13_KK")
+rule ForeignCitizenshipTerminatesCitizenship(person: Person) strict {
+    when citizen(person);
+    when holds_foreign_citizenship(person);
+    then foreign_citizenship_is_termination_ground(person);
+    label ru-KZ official "Статья 13 пункт 3. Наличие иного гражданства — основание для прекращения гражданства Республики Казахстан";
+    label kk-KZ official "13-бап 3-тармақ. Өзге азаматтықтың болуы — Қазақстан Республикасының азаматтығын тоқтату негізі";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART14_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART14_KK")
+rule ProtectionAndPatronageAbroadDuty(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when citizen(person);
+    when abroad(person);
+    then duty ProtectAndPatroniseAbroad {
+        bearer authority;
+        beneficiary person;
+        goal maintenance {
+            condition protection_and_patronage_provided(authority, person);
+            window [@2026-07-01, infinity);
+            completeness_policy ProtectionAbroadCompleteness;
+        }
+    };
+    label ru-KZ official "Статья 14 пункт 2. Республика Казахстан гарантирует своим гражданам защиту за её пределами";
+    label kk-KZ official "14-бап 2-тармақ. Қазақстан Республикасы өз азаматтарына одан тыс жерде қорғауға кепілдік береді";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART18_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART18_KK")
+rule ArrestRequiresCourtDecisionAndAppeal(detention: Detention) strict {
+    when arrest_or_custody(detention);
+    when court_sanction_obtained(detention);
+    when appeal_right_granted(detention);
+    then arrest_constitutionally_admissible(detention);
+    label ru-KZ official "Статья 18 пункт 2. Содержание под стражей допускается только по судебному решению с предоставлением права на обжалование";
+    label kk-KZ official "18-бап 2-тармақ. Күзетпен ұстауға шағымдану құқығы берілген сот шешімі бойынша ғана жол беріледі";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART18_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART18_KK")
+rule CounselFromDetentionDuty(
+    authority: StateAuthority,
+    detention: Detention,
+    person: Person,
+) strict {
+    when state_authority(authority);
+    when detention_of(detention, person);
+    then duty ProvideCounselAccess {
+        bearer authority;
+        beneficiary person;
+        maintain counsel_access_provided(detention, person) during [@2026-07-01, infinity);
+    };
+    label ru-KZ official "Статья 18 пункт 4. Задержанный, подозреваемый, обвиняемый имеет право пользоваться помощью адвоката с момента задержания";
+    label kk-KZ official "18-бап 4-тармақ. Ұсталған, күдікті, айыпталушы адам ұсталған сәттен бастап адвокаттың көмегін пайдалануға құқылы";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART20_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART20_KK")
+rule DignityImmunity(person: Person) strict {
+    when person(person);
+    then immunity DignityInviolable {
+        holder person;
+        protected_effect dignity_infringed(person);
+    };
+    label ru-KZ official "Статья 20 пункт 1. Честь и достоинство человека неприкосновенны и охраняются законом";
+    label kk-KZ official "20-бап 1-тармақ. Адамның абыройы мен ар-намысына қол сұғылмайды және заңмен қорғалады";
+}
+
+// Расхождение с редакцией 1995: ст. 19 п. 1 говорила о национальной,
+// ПАРТИЙНОЙ и РЕЛИГИОЗНОЙ принадлежности; ст. 22 п. 1 редакции 2026 — только
+// о национальной. Предикат оставлен общий (`identity_declaration_action`),
+// разводит редакции метка и якорь.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART22_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART22_KK")
+rule NationalIdentityLiberty(person: Person) strict {
+    when person(person);
+    then liberty DeclareNationalIdentity {
+        holder person;
+        action identity_declaration_action(person);
+        window [@2026-07-01, infinity);
+    };
+    label ru-KZ official "Статья 22 пункт 1. Каждый человек вправе определять, указывать или не указывать свою национальную принадлежность";
+    label kk-KZ official "22-бап 1-тармақ. Әркім өзінің ұлттық тегін анықтауға, көрсетуге немесе көрсетпеуге құқылы";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART22_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART22_KK")
+rule NativeLanguageAndCultureLiberty(person: Person) strict {
+    when person(person);
+    then liberty UseNativeLanguageAndCulture {
+        holder person;
+        action native_language_and_culture_action(person);
+        window [@2026-07-01, infinity);
+    };
+    label ru-KZ official "Статья 22 пункт 2. Право пользоваться родным языком и культурой, свободно выбирать язык общения, воспитания, обучения и творчества";
+    label kk-KZ official "22-бап 2-тармақ. Ана тілі мен мәдениетін пайдалану, қарым-қатынас, тәрбие, оқу және шығармашылық тілін еркін таңдау құқығы";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART23_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART23_KK")
+rule ProhibitedPropaganda(person: Person) strict {
+    when propaganda_of_prohibited_content(person);
+    then propaganda_constitutionally_prohibited(person);
+    label ru-KZ official "Статья 23 пункт 6. Не допускаются пропаганда насильственного изменения основ конституционного строя, посягательства на территориальную целостность, войны, розни и призывы к таким действиям";
+    label kk-KZ official "23-бап 6-тармақ. Конституциялық құрылысты күштеп өзгертуді, аумақтық тұтастыққа нұқсан келтіруді, соғысты, алауыздықты насихаттауға және осындай әрекеттерге шақыруға жол берілмейді";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART24_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART24_KK")
+rule ExitKazakhstanLiberty(person: Person) strict {
+    when person(person);
+    then liberty ExitKazakhstan {
+        holder person;
+        action exit_action(person);
+        window [@2026-07-01, infinity);
+    };
+    label ru-KZ official "Статья 24 пункт 2. Каждый человек имеет право выезжать за пределы Республики Казахстан";
+    label kk-KZ official "24-бап 2-тармақ. Әркім Қазақстан Республикасынан тыс жерге шығуға құқылы";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART25_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART25_KK")
+rule FreedomOfConscienceLiberty(person: Person) strict {
+    when person(person);
+    then liberty ExerciseFreedomOfConscience {
+        holder person;
+        action conscience_action(person);
+        window [@2026-07-01, infinity);
+    };
+    label ru-KZ official "Статья 25 пункт 1. Каждый человек имеет право на свободу совести";
+    label kk-KZ official "25-бап 1-тармақ. Әркімнің ар-ождан бостандығына құқығы бар";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART27_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART27_KK")
+rule FreedomOfLabourLiberty(person: Person) strict {
+    when person(person);
+    then liberty ChooseOccupationFreely {
+        holder person;
+        action labour_action(person);
+        window [@2026-07-01, infinity);
+    };
+    label ru-KZ official "Статья 27 пункт 1. Право на труд, свободный выбор рода деятельности и профессии";
+    label kk-KZ official "27-бап 1-тармақ. Еңбек ету, қызмет пен кәсіп түрін еркін таңдау құқығы";
+}
+
+// Расхождение с редакцией 1995: там принудительный труд допускался ТОЛЬКО по
+// названным основаниям («только на основании»); ст. 27 п. 1 редакции 2026
+// слова «только» не содержит. Норма выражает то же достаточное основание, но
+// исключительности перечня из текста 2026 не следует.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART27_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART27_KK")
+rule ForcedLabourOnJudicialOrEmergencyBasis(person: Person) strict {
+    when judicial_act_or_emergency_basis(person);
+    then forced_labour_constitutionally_admissible(person);
+    label ru-KZ official "Статья 27 пункт 1. Принудительный труд допускается на основании судебного акта о признании виновным либо в условиях чрезвычайного или военного положения";
+    label kk-KZ official "27-бап 1-тармақ. Мәжбүрлі еңбекке кінәлі деп тану туралы сот актісі негізінде не төтенше немесе соғыс жағдайында жол беріледі";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART27_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART27_KK")
+rule LabourDisputeLiberty(person: Person) strict {
+    when labour_dispute(person);
+    then liberty ResolveLabourDispute {
+        holder person;
+        action labour_dispute_action(person);
+        window [@2026-07-01, infinity);
+    };
+    label ru-KZ official "Статья 27 пункт 3. Признаётся право на индивидуальные и коллективные трудовые споры с использованием установленных законом способов их разрешения";
+    label kk-KZ official "27-бап 3-тармақ. Заңмен белгіленген шешу тәсілдерін пайдалана отырып, жеке және ұжымдық еңбек дауларына құқық танылады";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART28_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART28_KK")
+rule StatutoryHousingProvisionDuty(
+    authority: StateAuthority,
+    need: HousingNeed,
+    person: Person,
+) strict {
+    when state_authority(authority);
+    when citizen(person);
+    when statutory_housing_need(need, person);
+    then duty ProvideStatutoryHousing {
+        bearer authority;
+        beneficiary person;
+        maintain affordable_state_housing_provided(need, person) during [@2026-07-01, infinity);
+    };
+    label ru-KZ official "Статья 28 пункт 2. Указанным в законе категориям граждан, нуждающихся в жилье, оно предоставляется в соответствии с установленными законом нормами";
+    label kk-KZ official "28-бап 2-тармақ. Заңда көрсетілген тұрғын үйге мұқтаж азаматтар санаттарына ол заңмен белгіленген нормаларға сәйкес беріледі";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART29_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART29_KK")
+rule FreedomOfEnterpriseLiberty(person: Person) strict {
+    when person(person);
+    then liberty ConductEnterprise {
+        holder person;
+        action entrepreneurial_action(person);
+        window [@2026-07-01, infinity);
+    };
+    label ru-KZ official "Статья 29 пункт 4. Республика Казахстан гарантирует право на свободу предпринимательской деятельности";
+    label kk-KZ official "29-бап 4-тармақ. Қазақстан Республикасы кәсіпкерлік қызмет бостандығына құқыққа кепілдік береді";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART29_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART29_KK")
+rule UnfairCompetitionProhibited(person: Person) strict {
+    when unfair_competition(person);
+    then unfair_competition_prohibited(person);
+    label ru-KZ official "Статья 29 пункт 4. Недобросовестная конкуренция запрещена";
+    label kk-KZ official "29-бап 4-тармақ. Жосықсыз бәсекеге тыйым салынған";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART30_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART30_KK")
+rule AdultChildParentCareDuty(child: Child, parent: Parent) strict {
+    when adult_capable_child_of(child, parent);
+    when parent_incapacitated(parent);
+    then duty CareForIncapacitatedParent {
+        bearer child;
+        beneficiary parent;
+        goal maintenance {
+            condition parent_care_provided(child, parent);
+            window [@2026-07-01, infinity);
+            completeness_policy ParentCareCompleteness;
+        }
+    };
+    label ru-KZ official "Статья 30 пункт 4. Совершеннолетние трудоспособные дети обязаны заботиться о нетрудоспособных родителях";
+    label kk-KZ official "30-бап 4-тармақ. Кәмелетке толған еңбекке қабілетті балалар еңбекке қабілетсіз ата-анасына қамқорлық жасауға міндетті";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART32_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART32_KK")
+rule UnpaidMedicalCareDuty(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when citizen(person);
+    then duty ProvideUnpaidMedicalCare {
+        bearer authority;
+        beneficiary person;
+        goal maintenance {
+            condition guaranteed_free_medical_care_provided(authority, person);
+            window [@2026-07-01, infinity);
+            completeness_policy MedicalCareCompleteness;
+        }
+    };
+    label ru-KZ official "Статья 32 пункт 2. Граждане Республики Казахстан вправе получать не оплачиваемую ими медицинскую помощь, установленную законом";
+    label kk-KZ official "32-бап 2-тармақ. Қазақстан Республикасының азаматтары заңмен белгіленген, өздері ақы төлемейтін медициналық көмек алуға құқылы";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART36_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART36_KK")
+rule StateSymbolsRespectDuty(person: Person) strict {
+    when person(person);
+    then duty RespectStateSymbols {
+        bearer person;
+        goal maintenance {
+            condition not state_symbols_disrespected(person);
+            window [@2026-07-01, infinity);
+            completeness_policy StateSymbolsCompleteness;
+        }
+    };
+    label ru-KZ official "Статья 36 пункт 2. Каждый человек обязан уважать государственные символы Республики Казахстан";
+    label kk-KZ official "36-бап 2-тармақ. Әркім Қазақстан Республикасының мемлекеттік рәміздерін құрметтеуге міндетті";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART37_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART37_KK")
+rule OfficialConcealmentLiability(person: Official) strict {
+    when official(person);
+    when concealed_life_threatening_facts(person);
+    then official_liability_arises(person);
+    label ru-KZ official "Статья 37 пункт 3. Сокрытие должностными лицами фактов и обстоятельств, угрожающих жизни и здоровью людей, окружающей среде, влечёт ответственность";
+    label kk-KZ official "37-бап 3-тармақ. Лауазымды адамдардың адамдардың өмірі мен денсаулығына, қоршаған ортаға қатер төндіретін фактілер мен мән-жайларды жасыруы жауаптылыққа әкеп соғады";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART41_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART41_KK")
+rule InterethnicAccordViolationUnconstitutional(person: Person) strict {
+    when action_harms_interethnic_or_interconfessional_accord(person);
+    then action_unconstitutional(person);
+    label ru-KZ official "Статья 41 пункт 2. Признаются неконституционными действия, способные нарушить межэтническое и межконфессиональное согласие";
+    label kk-KZ official "41-бап 2-тармақ. Этносаралық және конфессияаралық келісімді бұзуға қабілетті әрекеттер конституциялық емес деп танылады";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART41_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART41_KK")
+rule PoliticalMotiveRestrictionProhibited(restriction: Restriction) strict {
+    when restriction_on_political_grounds(restriction);
+    then restriction_prohibited(restriction);
+    label ru-KZ official "Статья 41 пункт 3. Не допускается ограничение прав и свобод граждан по политическим мотивам";
+    label kk-KZ official "41-бап 3-тармақ. Азаматтардың құқықтары мен бостандықтарын саяси себептер бойынша шектеуге жол берілмейді";
+}
+
+// =========================================================================
+// ЗАПРЕТЫ РЕДАКЦИИ 2026 (заведены 02.09.2026).
+//
+// Абсолютные запреты раздела II были выражены ОДНИМ иммунитетом §128:
+// «никто не может подвергаться пыткам» — это `immunity NoTorture` с
+// protected_effect `tortured(person)`. Половины при этом не хватало, и это
+// видно по словарю: одиннадцать предикатов вида `<деяние>_attempt` были
+// ОБЪЯВЛЕНЫ и не читались ни одним правилом. То есть дело могло сообщить
+// «орган применяет пытку», и не выводилось НИЧЕГО: иммунитет блокирует эффект
+// ВЛАСТИ §127, а власти пытать Конституция не даёт и дать не может.
+//
+// Вторая половина — запрет §125 на самом органе: носитель — государственный
+// орган, действие — тот самый `<деяние>_attempt`. Теперь дело о попытке
+// получает ответ, а не молчание, и словарь перестал звать факты, которых
+// никто не читает.
+//
+// 02.09.2026 запреты были заведены ТОЛЬКО для редакции 2026 — из опасения
+// подделать содержание прекращённой редакции. 13.09.2026 опасение проверено
+// чтением закреплённого текста 1995 и НЕ ПОДТВЕРДИЛОСЬ: у каждого из
+// одиннадцати запретов в редакции 1995 есть собственная норма. Близнецы
+// заведены ниже, в разделе «ЗАПРЕТЫ РЕДАКЦИИ 1995».
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART16_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART16_KK")
+rule DiscriminationProhibition(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when person(person);
+    then prohibition RefrainFromDiscrimination {
+        bearer authority;
+        action discriminatory_treatment_attempt(authority, person);
+        window [@2026-07-01, infinity);
+    };
+    label ru-KZ official "Статья 16 пункт 2. Никто не может подвергаться дискриминации по перечисленным и любым иным обстоятельствам";
+    label kk-KZ official "16-бап 2-тармақ. Аталған және кез келген өзге де мән-жайларға байланысты ешкім кемсітілмейді";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART17_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART17_KK")
+rule DeathPenaltyProhibition(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when person(person);
+    then prohibition RefrainFromDeathPenalty {
+        bearer authority;
+        action death_penalty_attempt(authority, person);
+        window [@2026-07-01, infinity);
+    };
+    label ru-KZ official "Статья 17 пункт 3. Смертная казнь запрещена";
+    label kk-KZ official "17-бап 3-тармақ. Өлім жазасына тыйым салынған";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART20_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART20_KK")
+rule DignityInfringementProhibition(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when person(person);
+    then prohibition RefrainFromDignityInfringement {
+        bearer authority;
+        action dignity_infringement_attempt(authority, person);
+        window [@2026-07-01, infinity);
+    };
+    label ru-KZ official "Статья 20 пункт 1. Честь и достоинство человека неприкосновенны и охраняются законом";
+    label kk-KZ official "20-бап 1-тармақ. Адамның абыройы мен ар-намысына қол сұғылмайды және заңмен қорғалады";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART20_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART20_KK")
+rule TortureProhibition(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when person(person);
+    then prohibition RefrainFromTorture {
+        bearer authority;
+        action torture_attempt(authority, person);
+        window [@2026-07-01, infinity);
+    };
+    label ru-KZ official "Статья 20 пункт 2. Никто не должен подвергаться пыткам, насилию, другому жестокому или унижающему человеческое достоинство обращению или наказанию";
+    label kk-KZ official "20-бап 2-тармақ. Ешкім азаптауға, зорлық-зомбылыққа, басқа да қатыгез немесе адамның ар-намысын қорлайтын қарауға не жазалауға ұшырамауға тиіс";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART21_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART21_KK")
+rule PrivacyInterferenceProhibition(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when person(person);
+    then prohibition RefrainFromPrivacyInterference {
+        bearer authority;
+        action unlawful_privacy_interference_attempt(authority, person);
+        window [@2026-07-01, infinity);
+    };
+    label ru-KZ official "Статья 21 пункты 1 и 2. Неприкосновенность частной жизни и тайна сообщений охраняются законом; ограничение допускается лишь в случаях и порядке, установленных законом";
+    label kk-KZ official "21-бап 1 және 2-тармақтар. Жеке өмірге қол сұғылмаушылық пен хабарлар құпиясы заңмен қорғалады; шектеуге заңмен белгіленген жағдайларда және тәртіппен ғана жол беріледі";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART23_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART23_KK")
+rule CensorshipProhibition(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when person(person);
+    then prohibition RefrainFromCensorship {
+        bearer authority;
+        action censorship_attempt(authority, person);
+        window [@2026-07-01, infinity);
+    };
+    label ru-KZ official "Статья 23 пункт 5. Цензура запрещена";
+    label kk-KZ official "23-бап 5-тармақ. Цензураға тыйым салынған";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART24_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART24_KK")
+rule ReturnBlockProhibition(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when citizen(person);
+    then prohibition RefrainFromBlockingReturn {
+        bearer authority;
+        action return_block_attempt(authority, person);
+        window [@2026-07-01, infinity);
+    };
+    label ru-KZ official "Статья 24 пункт 2. Граждане Республики Казахстан имеют право беспрепятственного возвращения в Республику Казахстан";
+    label kk-KZ official "24-бап 2-тармақ. Қазақстан Республикасының азаматтары Қазақстан Республикасына кедергісіз қайтып оралуға құқылы";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART28_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART28_KK")
+rule HomeEntryProhibition(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when person(person);
+    then prohibition RefrainFromUnlawfulHomeEntry {
+        bearer authority;
+        action unlawful_home_entry_attempt(authority, person);
+        window [@2026-07-01, infinity);
+    };
+    label ru-KZ official "Статья 28 пункт 1. Жилище неприкосновенно; проникновение в него, осмотр и обыск допускаются лишь в случаях и порядке, установленных законом";
+    label kk-KZ official "28-бап 1-тармақ. Тұрғын үйге қол сұғылмайды; оған кіруге, қарауға және тінтуге заңмен белгіленген жағдайларда және тәртіппен ғана жол беріледі";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART29_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART29_KK")
+rule UncompensatedExpropriationProhibition(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when person(person);
+    then prohibition RefrainFromUncompensatedExpropriation {
+        bearer authority;
+        action uncompensated_expropriation_attempt(authority, person);
+        window [@2026-07-01, infinity);
+    };
+    label ru-KZ official "Статья 29 пункт 3. Принудительное отчуждение имущества для государственных нужд допускается лишь при условии равноценного его возмещения";
+    label kk-KZ official "29-бап 3-тармақ. Мемлекет мұқтажы үшін мүліктен мәжбүрлеп айыруға оның құны тең бағамен өтелген жағдайда ғана жол беріледі";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART18_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART18_KK")
+rule ContinuedDetentionProhibition(authority: StateAuthority, detention: Detention) strict {
+    when state_authority(authority);
+    when continued_detention_barred(detention);
+    then prohibition RefrainFromDetentionBeyondStatutoryPeriod {
+        bearer authority;
+        action continued_detention_attempt(authority, detention);
+        window [@2026-07-01, infinity);
+    };
+    label ru-KZ official "Статья 18 пункт 2. Без судебного решения человек не может быть подвергнут задержанию свыше сроков, предусмотренных законом";
+    label kk-KZ official "18-бап 2-тармақ. Сот шешімінсіз адамды заңда көзделген мерзімнен тыс ұстауға болмайды";
+}
+
+// Единственный запрет раздела с ИЗЪЯТИЕМ: принуждение к труду допускается по
+// судебному акту либо в условиях чрезвычайного или военного положения. Изъятие
+// живёт на предикате с литеральной головой, а не на норм-голове: `unless` при
+// норм-голове компилятор отбрасывает (LDC-E1302).
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART27_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART27_KK")
+rule ForcedLabourBarredWithoutBasis(person: Person) defeasible {
+    when person(person);
+    unless forced_labour_constitutionally_admissible(person);
+    then forced_labour_barred(person);
+    label ru-KZ official "Статья 27 пункт 1. Принуждение к труду запрещено, пока нет судебного акта о признании виновным либо чрезвычайного или военного положения";
+    label kk-KZ official "27-бап 1-тармақ. Кінәлі деп тану туралы сот актісі не төтенше немесе соғыс жағдайы болмайынша еңбекке мәжбүрлеуге тыйым салынған";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART27_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART27_KK")
+rule ForcedLabourProhibition(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when forced_labour_barred(person);
+    then prohibition RefrainFromForcedLabour {
+        bearer authority;
+        action forced_labour_attempt(authority, person);
+        window [@2026-07-01, infinity);
+    };
+    label ru-KZ official "Статья 27 пункт 1. Принудительный труд вне названных Конституцией оснований не допускается";
+    label kk-KZ official "27-бап 1-тармақ. Конституцияда аталған негіздерден тыс мәжбүрлі еңбекке жол берілмейді";
+}
+
+// =========================================================================
+// РЕДАКЦИЯ 1995 ГОДА, РАЗДЕЛ II «Человек и гражданин» (ст. 10–39).
+//
+// Правила заключают в те же предикаты, что и правила 2026, и живут в том же
+// пакете (DECISION-0026, вариант «а» для разделов с сохранившимся
+// институтом). Разводит их проекция as-of по машине применимости §31:
+// якоря 1995 указывают на редакцию, чей `in_force` — [@1995-09-05,
+// @2026-07-01), поэтому на дату до 01.07.2026 применимы правила 1995, после
+// — правила 2026. Норм-позиции несут тот же интервал окном.
+//
+// СВОЙ ПРЕДИКАТ ЗАВЕДЁН ТАМ, ГДЕ АНТЕЦЕДЕНТ ДЕЙСТВИТЕЛЬНО ДРУГОЙ. Ниже —
+// расхождения, найденные ЧТЕНИЕМ закреплённого текста обеих редакций, а не
+// перенесённые по номеру статьи (номера сдвинуты на +2: 1995 ст. 10 ≈ 2026
+// ст. 13):
+//
+//   1) ст. 12 п. 4 — УМОЛЧАНИЕ ИНВЕРТИРОВАНО. 1995: иностранцы пользуются
+//      правами граждан, «если иное не предусмотрено»; 2026 ст. 15 п. 4:
+//      «в случаях, предусмотренных». Молчание закона в 1995 давало права,
+//      в 2026 — отказывает. Это самое сильное расхождение исхода в разделе;
+//   2) ст. 16 п. 2 — ЧИСЛО ЕСТЬ В КОНСТИТУЦИИ: «задержанию на срок не более
+//      семидесяти двух часов». 2026 ст. 18 п. 2 отсылает срок к закону.
+//      Поэтому у 1995 предел выражен keyed-фактом, а у 2026 его нет;
+//   3) ст. 24 п. 3 — ПРАВО НА ЗАБАСТОВКУ. 1995 называет его прямо; 2026
+//      ст. 27 п. 3 сохранил трудовые споры и убрал забастовку;
+//   4) ст. 30 п. 2 — БЕСПЛАТНОЕ ВЫСШЕЕ на конкурсной основе. 2026 ст. 33
+//      п. 2 оставил «в соответствии с законом» без бесплатности;
+//   5) ст. 30 п. 1 — обязательно ВСЁ среднее образование; 2026 ст. 33 п. 1
+//      сузил обязательность до начального и основного среднего;
+//   6) ст. 33 п. 3 — ОДИН перечень для «избирать» и «быть избранным»
+//      (недееспособность, места лишения свободы). 2026 ст. 35 п. 3 добавил
+//      для избираемости непогашенную судимость и коррупционное деяние:
+//      гражданин с непогашенной судимостью до 01.07.2026 избираем, после —
+//      нет;
+//   7) ст. 39 п. 3 — неограничиваемое ядро 1995 ШИРЕ: девять позиций против
+//      семи. Сверх ядра 2026 в него входят п. 1 ст. 16 (личная свобода) и
+//      п. 2 ст. 26 (гарантия собственности и наследования);
+//   8) ст. 12 п. 5 — предел осуществления прав в 1995 ýже: права других,
+//      конституционный строй и общественная нравственность. 2026 ст. 15
+//      п. 5 добавил общественный порядок и здоровье граждан;
+//   9) ст. 18 п. 3 — доступ к затрагивающим документам в 1995 обещан
+//      ГРАЖДАНИНУ, в 2026 ст. 21 п. 3 — каждому человеку;
+//  10) ст. 25 п. 2 — жильё нуждающимся «за доступную плату из
+//      государственных жилищных фондов»; 2026 ст. 28 п. 2 плату убрал;
+//  11) ст. 13 п. 3 — бесплатная юридическая помощь в случаях, установленных
+//      законом; 2026 ст. 12 п. 3 оставил только «в соответствии с законом»;
+//  12) ст. 10 п. 3 — гражданство другого государства НЕ ПРИЗНАЁТСЯ; 2026
+//      ст. 13 п. 3 сделал его основанием прекращения гражданства;
+//  13) ст. 21 п. 2 — выезд за пределы Республики без конституционной
+//      оговорки об ограничении; 2026 ст. 24 п. 2 такую оговорку внёс;
+//  14) ст. 19 п. 1 — определять принадлежность национальную, ПАРТИЙНУЮ и
+//      РЕЛИГИОЗНУЮ; 2026 ст. 22 п. 1 оставил только национальную.
+//
+// ОБЪЯВЛЕННАЯ ГРАНИЦА (DECISION-0012). Декларативные положения ст. 12 п. 1–2
+// («признаются абсолютными и неотчуждаемыми») правилами не выражаются:
+// антецедента у них нет, а придуманный антецедент был бы авторской нормой.
+// Они остаются адресуемыми через постатейный слой пакета источников.
+
+enum CoreRight1995 {
+    LegalPersonality;
+    NonExtradition;
+    Equality;
+    Life;
+    PersonalLiberty;
+    Dignity;
+    NationalIdentityAndLanguage;
+    FreedomOfConscience;
+    PropertyAndInheritanceGuarantee;
+    label ru-KZ official "право или свобода, ограничение которых Конституция 1995 года не допускала";
+    label kk-KZ official "1995 жылғы Конституция шектеуге жол бермеген құқық не бостандық";
+}
+
+entity Strike {
+    label ru-KZ official "забастовка";
+    label kk-KZ official "ереуіл";
+}
+entity HousingNeed {
+    label ru-KZ official "нуждаемость в жилище";
+    label kk-KZ official "тұрғын үйге мұқтаждық";
+}
+entity LegalAidCase {
+    label ru-KZ official "случай оказания юридической помощи";
+    label kk-KZ official "заң көмегін көрсету жағдайы";
+}
+entity Official {
+    label ru-KZ official "должностное лицо";
+    label kk-KZ official "лауазымды адам";
+}
+
+relation restriction_targets_1995(restriction: Restriction, right: CoreRight1995) kind empirical {
+    label ru-KZ official "ограничение направлено на данное право либо свободу (редакция 1995)";
+    label kk-KZ official "шектеу осы құқыққа не бостандыққа бағытталған (1995 жылғы редакция)";
+}
+
+// Ст. 10. Гражданство.
+relation terrorism_or_grave_vital_interest_harm(person: Person) kind empirical {
+    label ru-KZ official "лицом совершено террористическое преступление либо причинён иной тяжкий вред жизненно важным интересам Республики";
+    label kk-KZ official "адам террористік қылмыс жасады не Республиканың өмірлік маңызды мүдделеріне өзге де ауыр зиян келтірді";
+}
+relation holds_foreign_citizenship(person: Person) kind empirical {
+    label ru-KZ official "за лицом числится гражданство другого государства";
+    label kk-KZ official "адамның басқа мемлекеттің азаматтығы бар";
+}
+relation foreign_citizenship_not_recognized(person: Person) kind institutional {
+    label ru-KZ official "гражданство другого государства за гражданином Республики не признаётся";
+    label kk-KZ official "Республика азаматының басқа мемлекеттің азаматтығы танылмайды";
+}
+
+// Ст. 11 п. 2. Защита И ПОКРОВИТЕЛЬСТВО за пределами Республики.
+relation abroad(person: Person) kind empirical {
+    label ru-KZ official "лицо находится за пределами Республики";
+    label kk-KZ official "адам Республикадан тыс жерде жүр";
+}
+relation protection_and_patronage_provided(authority: StateAuthority, person: Person) kind empirical {
+    label ru-KZ official "гражданину за пределами Республики обеспечены защита и покровительство государства";
+    label kk-KZ official "Республикадан тыс жердегі азаматқа мемлекеттің қорғауы мен қамқорлығы қамтамасыз етілді";
+}
+
+// Ст. 12 п. 4–5.
+relation foreigner_or_stateless(person: Person) kind empirical {
+    label ru-KZ official "лицо является иностранцем либо лицом без гражданства";
+    label kk-KZ official "адам шетелдік не азаматтығы жоқ адам болып табылады";
+}
+relation different_regime_established_for_foreigners(person: Person) kind empirical {
+    label ru-KZ official "для иностранцев законом либо договором установлен иной режим";
+    label kk-KZ official "шетелдіктер үшін заңмен не шартпен өзгеше режим белгіленген";
+}
+relation enjoys_citizen_rights_and_duties(person: Person) kind institutional {
+    label ru-KZ official "лицо пользуется правами и несёт обязанности наравне с гражданами";
+    label kk-KZ official "адам азаматтармен тең құқықтарды пайдаланады және міндеттер атқарады";
+}
+relation rights_exercise_harms_others_order_or_morality(person: Person) kind empirical {
+    label ru-KZ official "осуществление прав нарушает права других лиц, посягает на конституционный строй либо общественную нравственность";
+    label kk-KZ official "құқықтарды жүзеге асыру басқа адамдардың құқықтарын бұзады, конституциялық құрылысқа не қоғамдық имандылыққа нұқсан келтіреді";
+}
+
+// Ст. 13 п. 3. Бесплатная юридическая помощь.
+relation legal_aid_case(aid: LegalAidCase, person: Person) kind empirical {
+    label ru-KZ official "случай оказания юридической помощи данному лицу";
+    label kk-KZ official "осы адамға заң көмегін көрсету жағдайы";
+}
+relation statutory_free_legal_aid_ground(aid: LegalAidCase) kind empirical {
+    label ru-KZ official "налицо предусмотренное законом основание бесплатной юридической помощи";
+    label kk-KZ official "тегін заң көмегінің заңда көзделген негізі бар";
+}
+relation free_legal_aid_provided(aid: LegalAidCase, person: Person) kind empirical {
+    label ru-KZ official "лицу оказана бесплатная юридическая помощь";
+    label kk-KZ official "адамға тегін заң көмегі көрсетілді";
+}
+
+// Ст. 16. Личная свобода; конституционный предел задержания — 72 часа.
+relation detention_without_court_sanction_limit_hours_1995(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "предельный срок задержания без санкции суда — семьдесят два часа (редакция 1995)";
+    label kk-KZ official "сот санкциясынсыз ұстаудың шекті мерзімі — жетпіс екі сағат (1995 жылғы редакция)";
+}
+relation detention_without_court_sanction(detention: Detention) kind empirical {
+    label ru-KZ official "задержание произведено без санкции суда";
+    label kk-KZ official "ұстау сот санкциясынсыз жүргізілді";
+}
+relation detention_exceeds_72_hours(detention: Detention) kind empirical {
+    label ru-KZ official "срок задержания превысил семьдесят два часа";
+    label kk-KZ official "ұстау мерзімі жетпіс екі сағаттан асты";
+}
+relation arrest_or_custody(detention: Detention) kind empirical {
+    label ru-KZ official "применены арест либо содержание под стражей";
+    label kk-KZ official "қамауға алу не күзетпен ұстау қолданылды";
+}
+relation court_sanction_obtained(detention: Detention) kind empirical {
+    label ru-KZ official "получена санкция суда";
+    label kk-KZ official "сот санкциясы алынды";
+}
+relation appeal_right_granted(detention: Detention) kind empirical {
+    label ru-KZ official "задержанному предоставлено право обжалования";
+    label kk-KZ official "ұсталған адамға шағымдану құқығы берілді";
+}
+relation arrest_constitutionally_admissible(detention: Detention) kind institutional {
+    label ru-KZ official "арест либо содержание под стражей конституционно допустимы";
+    label kk-KZ official "қамауға алуға не күзетпен ұстауға конституциялық тұрғыда жол беріледі";
+}
+relation counsel_access_provided(detention: Detention, person: Person) kind empirical {
+    label ru-KZ official "задержанному обеспечен доступ к адвокату";
+    label kk-KZ official "ұсталған адамға адвокатқа қол жеткізу қамтамасыз етілді";
+}
+
+// Ст. 17 п. 1. Достоинство неприкосновенно.
+relation dignity_infringement_attempt(authority: StateAuthority, person: Person) kind empirical {
+    label ru-KZ official "государственный орган посягает на достоинство лица";
+    label kk-KZ official "мемлекеттік орган адамның ар-намысына қол сұғады";
+}
+relation dignity_infringed(person: Person) kind institutional {
+    label ru-KZ official "достоинство лица нарушено";
+    label kk-KZ official "адамның ар-намысы бұзылды";
+}
+
+// Ст. 18 п. 3. Доступ ГРАЖДАНИНА к затрагивающим его документам.
+relation citizen_access_provided(document: Document, person: Person) kind empirical {
+    label ru-KZ official "гражданину обеспечен доступ к затрагивающим его документам";
+    label kk-KZ official "азаматқа өзін қозғайтын құжаттармен танысу мүмкіндігі қамтамасыз етілді";
+}
+
+// Ст. 19. Принадлежность и язык.
+relation identity_declaration_action(person: Person) kind empirical {
+    label ru-KZ official "лицо определяет и указывает свою национальную, партийную и религиозную принадлежность";
+    label kk-KZ official "адам өзінің ұлттық, партиялық және діни тегін анықтайды және көрсетеді";
+}
+relation native_language_and_culture_action(person: Person) kind empirical {
+    label ru-KZ official "лицо пользуется родным языком и культурой";
+    label kk-KZ official "адам ана тілі мен мәдениетін пайдаланады";
+}
+
+// Ст. 20 п. 3. Пределы распространения информации.
+relation propaganda_of_prohibited_content(person: Person) kind empirical {
+    label ru-KZ official "лицо ведёт пропаганду насильственного изменения конституционного строя, войны, социального, расового, национального, религиозного, сословного или родового превосходства";
+    label kk-KZ official "адам конституциялық құрылысты күштеп өзгертуді, соғысты, әлеуметтік, нәсілдік, ұлттық, діни, тектік-топтық және рулық астамшылықты насихаттайды";
+}
+relation propaganda_constitutionally_prohibited(person: Person) kind institutional {
+    label ru-KZ official "такая пропаганда конституционно запрещена";
+    label kk-KZ official "мұндай насихатқа конституциялық тұрғыда тыйым салынған";
+}
+
+// Ст. 21 п. 2. Выезд за пределы Республики.
+relation exit_kazakhstan_action_1995(person: Person) kind empirical {
+    label ru-KZ official "лицо выезжает за пределы Республики (редакция 1995)";
+    label kk-KZ official "адам Республикадан тыс жерге шығады (1995 жылғы редакция)";
+}
+
+// Ст. 22. Свобода совести.
+relation conscience_action(person: Person) kind empirical {
+    label ru-KZ official "лицо реализует свободу совести";
+    label kk-KZ official "адам ар-ождан бостандығын жүзеге асырады";
+}
+
+// Ст. 24. Труд, забастовка, отдых.
+relation labour_action(person: Person) kind empirical {
+    label ru-KZ official "лицо реализует свободу труда";
+    label kk-KZ official "адам еңбек бостандығын жүзеге асырады";
+}
+relation forced_labour_attempt(authority: StateAuthority, person: Person) kind empirical {
+    label ru-KZ official "государственный орган применяет принудительный труд";
+    label kk-KZ official "мемлекеттік орган мәжбүрлі еңбекті қолданады";
+}
+relation judicial_act_or_emergency_basis(person: Person) kind empirical {
+    label ru-KZ official "принудительный труд применён по приговору суда либо в условиях чрезвычайного или военного положения";
+    label kk-KZ official "мәжбүрлі еңбек сот үкімі бойынша не төтенше немесе соғыс жағдайында қолданылды";
+}
+relation forced_labour_barred(person: Person) kind institutional {
+    label ru-KZ official "принуждение к труду запрещено: названного Конституцией основания нет";
+    label kk-KZ official "еңбекке мәжбүрлеуге тыйым салынған: Конституцияда аталған негіз жоқ";
+}
+relation forced_labour_constitutionally_admissible(person: Person) kind institutional {
+    label ru-KZ official "принудительный труд конституционно допустим";
+    label kk-KZ official "мәжбүрлі еңбекке конституциялық тұрғыда жол беріледі";
+}
+relation foreign_citizenship_is_termination_ground(person: Person) kind institutional {
+    label ru-KZ official "наличие иного гражданства — основание для прекращения гражданства Республики";
+    label kk-KZ official "өзге азаматтықтың болуы — Республика азаматтығын тоқтату негізі";
+}
+relation labour_dispute(person: Person) kind empirical {
+    label ru-KZ official "лицо участвует в индивидуальном либо коллективном трудовом споре";
+    label kk-KZ official "адам жеке не ұжымдық еңбек дауына қатысады";
+}
+relation labour_dispute_action(person: Person) kind empirical {
+    label ru-KZ official "лицо использует установленные законом способы разрешения трудового спора";
+    label kk-KZ official "адам еңбек дауын шешудің заңмен белгіленген тәсілдерін пайдаланады";
+}
+relation collective_labour_dispute(strike: Strike, person: Person) kind empirical {
+    label ru-KZ official "имеет место коллективный трудовой спор";
+    label kk-KZ official "ұжымдық еңбек дауы орын алды";
+}
+relation strike_action(person: Person, strike: Strike) kind empirical {
+    label ru-KZ official "лицо участвует в забастовке";
+    label kk-KZ official "адам ереуілге қатысады";
+}
+relation unemployment_social_protection_ground(person: Person) kind empirical {
+    label ru-KZ official "налицо основание социальной защиты от безработицы";
+    label kk-KZ official "жұмыссыздықтан әлеуметтік қорғаудың негізі бар";
+}
+relation unemployment_social_protection_provided(authority: StateAuthority, person: Person) kind empirical {
+    label ru-KZ official "лицу предоставлена социальная защита от безработицы";
+    label kk-KZ official "адамға жұмыссыздықтан әлеуметтік қорғау берілді";
+}
+relation employed_under_labour_contract(person: Person) kind empirical {
+    label ru-KZ official "лицо работает по трудовому договору";
+    label kk-KZ official "адам еңбек шарты бойынша жұмыс істейді";
+}
+relation annual_paid_leave_provided(authority: StateAuthority, person: Person) kind empirical {
+    label ru-KZ official "лицу предоставлен оплачиваемый ежегодный отпуск";
+    label kk-KZ official "адамға ақы төленетін жыл сайынғы демалыс берілді";
+}
+
+// Ст. 25 п. 2. Жильё за доступную плату из государственных фондов.
+relation statutory_housing_need(need: HousingNeed, person: Person) kind empirical {
+    label ru-KZ official "лицо отнесено законом к нуждающимся в жилище";
+    label kk-KZ official "адам заңмен тұрғын үйге мұқтаждар қатарына жатқызылды";
+}
+relation affordable_state_housing_provided(need: HousingNeed, person: Person) kind empirical {
+    label ru-KZ official "лицу предоставлено жильё из государственных жилищных фондов за доступную плату";
+    label kk-KZ official "адамға мемлекеттік тұрғын үй қорларынан қолжетімді ақыға тұрғын үй берілді";
+}
+
+// Ст. 26 п. 4. Предпринимательство.
+relation entrepreneurial_action(person: Person) kind empirical {
+    label ru-KZ official "лицо осуществляет предпринимательскую деятельность";
+    label kk-KZ official "адам кәсіпкерлік қызметпен айналысады";
+}
+relation unfair_competition(person: Person) kind empirical {
+    label ru-KZ official "деятельность направлена на недобросовестную конкуренцию";
+    label kk-KZ official "қызмет жосықсыз бәсекеге бағытталған";
+}
+relation unfair_competition_prohibited(person: Person) kind institutional {
+    label ru-KZ official "недобросовестная конкуренция запрещена";
+    label kk-KZ official "жосықсыз бәсекеге тыйым салынған";
+}
+
+// Ст. 27 п. 3. Забота совершеннолетних детей о нетрудоспособных родителях.
+relation adult_capable_child_of(child: Child, parent: Parent) kind empirical {
+    label ru-KZ official "совершеннолетний трудоспособный ребёнок данного родителя";
+    label kk-KZ official "осы ата-ананың кәмелетке толған еңбекке қабілетті баласы";
+}
+relation parent_incapacitated(parent: Parent) kind empirical {
+    label ru-KZ official "родитель нетрудоспособен";
+    label kk-KZ official "ата-ана еңбекке қабілетсіз";
+}
+relation parent_care_provided(child: Child, parent: Parent) kind empirical {
+    label ru-KZ official "совершеннолетние дети заботятся о нетрудоспособных родителях";
+    label kk-KZ official "кәмелетке толған балалар еңбекке қабілетсіз ата-анасына қамқорлық жасайды";
+}
+
+// Ст. 29 п. 2. Бесплатный гарантированный объём медицинской помощи.
+relation guaranteed_free_medical_care_provided(authority: StateAuthority, person: Person) kind empirical {
+    label ru-KZ official "лицу предоставлен гарантированный объём бесплатной медицинской помощи";
+    label kk-KZ official "адамға тегін медициналық көмектің кепілдік берілген көлемі берілді";
+}
+
+// Ст. 30. Образование.
+relation secondary_education_stage(person: Person) kind empirical {
+    label ru-KZ official "лицо получает среднее образование";
+    label kk-KZ official "адам орта білім алуда";
+}
+relation higher_education_competition_won(person: Person) kind empirical {
+    label ru-KZ official "лицо на конкурсной основе получило право на бесплатное высшее образование";
+    label kk-KZ official "адам конкурстық негізде тегін жоғары білім алу құқығына ие болды";
+}
+relation free_higher_education_provided(authority: StateAuthority, person: Person) kind empirical {
+    label ru-KZ official "лицу обеспечено бесплатное высшее образование в государственном учебном заведении";
+    label kk-KZ official "адамға мемлекеттік оқу орнында тегін жоғары білім алу қамтамасыз етілді";
+}
+
+// Ст. 31 п. 2. Сокрытие должностным лицом угрожающих фактов.
+relation official(person: Official) kind empirical {
+    label ru-KZ official "лицо является должностным лицом";
+    label kk-KZ official "адам лауазымды адам болып табылады";
+}
+relation concealed_life_threatening_facts(person: Official) kind empirical {
+    label ru-KZ official "должностное лицо сокрыло факты и обстоятельства, угрожающие жизни и здоровью людей";
+    label kk-KZ official "лауазымды адам адамдардың өмірі мен денсаулығына қатер төндіретін фактілер мен мән-жайларды жасырды";
+}
+relation official_liability_arises(person: Official) kind institutional {
+    label ru-KZ official "должностное лицо несёт ответственность согласно закону";
+    label kk-KZ official "лауазымды адам заңға сәйкес жауапты болады";
+}
+
+// Ст. 32. Мирные собрания без оружия.
+relation unarmed_peaceful_assembly(assembly: Assembly, person: Person) kind empirical {
+    label ru-KZ official "собрание является мирным и проводится без оружия";
+    label kk-KZ official "жиналыс бейбіт әрі қарусыз өткізіледі";
+}
+
+// Ст. 34 п. 2. Уважение государственных символов.
+// `state_symbols_respected` СНЯТО 02.09.2026: объявление существовало, но его
+// не читало и не выводило ни одно правило — обязанность ст. 36 п. 2 (и её
+// двойник ст. 34 ред. 1995) держит условие `not state_symbols_disrespected`.
+// Предикат, который ничто не читает, зовёт факт, ничего не меняющий.
+
+// Ст. 39 п. 2–3. Согласие и политические мотивы.
+relation action_harms_interethnic_or_interconfessional_accord(person: Person) kind empirical {
+    label ru-KZ official "деяние наносит вред межнациональному и межконфессиональному согласию";
+    label kk-KZ official "әрекет ұлтаралық және конфессияаралық келісімге зиян келтіреді";
+}
+relation action_unconstitutional(person: Person) kind institutional {
+    label ru-KZ official "деяние конституционно недопустимо";
+    label kk-KZ official "әрекетке конституциялық тұрғыда жол берілмейді";
+}
+relation restriction_on_political_grounds(restriction: Restriction) kind empirical {
+    label ru-KZ official "ограничение введено по политическим мотивам";
+    label kk-KZ official "шектеу саяси себептер бойынша енгізілді";
+}
+relation restriction_prohibited(restriction: Restriction) kind institutional {
+    label ru-KZ official "введение такого ограничения не допускается";
+    label kk-KZ official "мұндай шектеуді енгізуге жол берілмейді";
+}
+
+// Конституционный предел задержания без санкции суда. Число взято из
+// закреплённого текста ст. 16 п. 2 («не более семидесяти двух часов»), а не
+// из закона и не по памяти; keyed-факт делает его адресуемым и проверяемым.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART16_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART16_KK")
+assert detention_without_court_sanction_limit_hours_1995(72);
+
+// --- Ст. 10. Гражданство -------------------------------------------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART10_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART10_KK")
+rule CitizenshipDeprivationPower1995(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when court_ordered_citizenship_deprivation(person);
+    when terrorism_or_grave_vital_interest_harm(person);
+    then power DepriveCitizenship1995 {
+        holder authority;
+        exercise citizenship_deprivation_decision(authority, person);
+        valid_when court_ordered_citizenship_deprivation(person);
+        effect citizenship_deprived(person);
+    };
+    label ru-KZ official "Статья 10 пункт 2 (ред. 1995). Лишение гражданства только по решению суда за террористические преступления или иной тяжкий вред жизненно важным интересам";
+    label kk-KZ official "10-бап 2-тармақ (1995 ж. ред.). Азаматтықтан айыру — террористік қылмыстар не өмірлік маңызды мүдделерге өзге де ауыр зиян келтіргені үшін сот шешімі бойынша ғана";
+}
+
+// РАСХОЖДЕНИЕ 12. 1995 не признаёт за гражданином иное гражданство; 2026
+// ст. 13 п. 3 превратил его наличие в основание ПРЕКРАЩЕНИЯ гражданства.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART10_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART10_KK")
+rule ForeignCitizenshipNotRecognized1995(person: Person) strict {
+    when citizen(person);
+    when holds_foreign_citizenship(person);
+    then foreign_citizenship_not_recognized(person);
+    label ru-KZ official "Статья 10 пункт 3 (ред. 1995). За гражданином Республики не признаётся гражданство другого государства";
+    label kk-KZ official "10-бап 3-тармақ (1995 ж. ред.). Республика азаматының басқа мемлекеттің азаматтығы танылмайды";
+}
+
+// --- Ст. 11. Невыдача и покровительство ----------------------------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART11_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART11_KK")
+rule CitizenNonExtraditionImmunity1995(person: Person) strict {
+    when citizen(person);
+    then immunity NonExtradition1995 {
+        holder person;
+        protected_effect extradited(person);
+    };
+    label ru-KZ official "Статья 11 пункт 1 (ред. 1995). Гражданин Республики не может быть выдан иностранному государству";
+    label kk-KZ official "11-бап 1-тармақ (1995 ж. ред.). Республика азаматын шет мемлекетке ұстап беруге болмайды";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART11_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART11_KK")
+rule TreatyExtraditionPower1995(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when citizen(person);
+    then power ExtraditeUnderTreaty1995 {
+        holder authority;
+        exercise extradition_decision(authority, person);
+        valid_when treaty_allows_extradition(person);
+        effect extradited(person);
+    };
+    label ru-KZ official "Статья 11 пункт 1 (ред. 1995). Выдача допускается, если это установлено международным договором Республики";
+    label kk-KZ official "11-бап 1-тармақ (1995 ж. ред.). Ұстап беруге Республиканың халықаралық шартында белгіленген жағдайда жол беріледі";
+}
+
+priority TreatyClauseOverGeneralNonExtradition1995: TreatyExtraditionPower1995 > CitizenNonExtraditionImmunity1995 reason lex_specialis;
+
+// РАСХОЖДЕНИЕ. 1995 обещает «защиту И ПОКРОВИТЕЛЬСТВО»; 2026 ст. 14 п. 2 —
+// «защиту в соответствии с законом», то есть обещание сужено отсылкой.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART11_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART11_KK")
+rule ProtectionAndPatronageAbroadDuty1995(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when citizen(person);
+    when abroad(person);
+    then duty ProtectAndPatroniseAbroad1995 {
+        bearer authority;
+        beneficiary person;
+        goal maintenance {
+            condition protection_and_patronage_provided(authority, person);
+            window [@1995-09-05, @2026-07-01);
+            completeness_policy ProtectionAbroadCompleteness;
+        }
+    };
+    label ru-KZ official "Статья 11 пункт 2 (ред. 1995). Республика гарантирует гражданам защиту и покровительство за её пределами";
+    label kk-KZ official "11-бап 2-тармақ (1995 ж. ред.). Республика азаматтарына одан тыс жерде қорғау мен қамқорлыққа кепілдік береді";
+}
+
+// --- Ст. 12. Признание прав, иностранцы, предел осуществления ------------
+
+// РАСХОЖДЕНИЕ 1 — самое сильное в разделе. Умолчание инвертировано: в 1995
+// молчание закона ДАЁТ иностранцу права гражданина, в 2026 — отказывает.
+// Обе редакции выражены явно, иначе impact-editions сообщал бы о появлении
+// нормы там, где на деле сменилось умолчание.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART12_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART12_KK")
+rule ForeignerEnjoysCitizenRightsUnlessOtherwise1995(person: Person) strict {
+    when foreigner_or_stateless(person);
+    when not different_regime_established_for_foreigners(person);
+    then enjoys_citizen_rights_and_duties(person);
+    label ru-KZ official "Статья 12 пункт 4 (ред. 1995). Иностранцы и лица без гражданства пользуются правами граждан, если иное не предусмотрено";
+    label kk-KZ official "12-бап 4-тармақ (1995 ж. ред.). Өзгеше көзделмесе, шетелдіктер мен азаматтығы жоқ адамдар азаматтардың құқықтарын пайдаланады";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART15_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART15_KK")
+rule ForeignerEnjoysCitizenRightsOnlyWhereProvided(person: Person) strict {
+    when foreigner_or_stateless(person);
+    when different_regime_established_for_foreigners(person);
+    then enjoys_citizen_rights_and_duties(person);
+    label ru-KZ official "Статья 15 пункт 4. Иностранцы и лица без гражданства пользуются правами граждан в случаях, предусмотренных Конституцией, законами и договорами";
+    label kk-KZ official "15-бап 4-тармақ. Шетелдіктер мен азаматтығы жоқ адамдар Конституцияда, заңдарда және шарттарда көзделген жағдайларда азаматтардың құқықтарын пайдаланады";
+}
+
+// РАСХОЖДЕНИЕ 8. Предел осуществления прав в 1995 ýже на два основания.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART12_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART12_KK")
+rule RightsExerciseBoundary1995(person: Person) strict {
+    when rights_exercise_harms_others_order_or_morality(person);
+    then rights_exercise_constitutionally_limited(person);
+    label ru-KZ official "Статья 12 пункт 5 (ред. 1995). Осуществление прав не должно нарушать прав других лиц, посягать на конституционный строй и общественную нравственность";
+    label kk-KZ official "12-бап 5-тармақ (1995 ж. ред.). Құқықтарды жүзеге асыру басқа адамдардың құқықтарын бұзбауға, конституциялық құрылысқа және қоғамдық имандылыққа нұқсан келтірмеуге тиіс";
+}
+
+// --- Ст. 13. Правосубъектность и юридическая помощь ----------------------
+
+// РАСХОЖДЕНИЕ 11. 1995 обязывает оказать помощь БЕСПЛАТНО в установленных
+// законом случаях; 2026 ст. 12 п. 3 признаёт право «в соответствии с законом».
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART13_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART13_KK")
+rule FreeLegalAidDuty1995(authority: StateAuthority, aid: LegalAidCase, person: Person) strict {
+    when state_authority(authority);
+    when legal_aid_case(aid, person);
+    when statutory_free_legal_aid_ground(aid);
+    then duty ProvideFreeLegalAid1995 {
+        bearer authority;
+        beneficiary person;
+        maintain free_legal_aid_provided(aid, person) during [@1995-09-05, @2026-07-01);
+    };
+    label ru-KZ official "Статья 13 пункт 3 (ред. 1995). В случаях, предусмотренных законом, юридическая помощь оказывается бесплатно";
+    label kk-KZ official "13-бап 3-тармақ (1995 ж. ред.). Заңда көзделген жағдайларда заң көмегі тегін көрсетіледі";
+}
+
+// --- Ст. 14, 15, 17, 18, 20, 25, 26: иммунитеты --------------------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART14_RU")
+rule EqualityImmunity1995(person: Person) strict {
+    when person(person);
+    then immunity NoDiscrimination1995 {
+        holder person;
+        protected_effect discriminated(person);
+    };
+    label ru-KZ official "Статья 14 (ред. 1995). Все равны перед законом и судом; дискриминация не допускается";
+    label kk-KZ official "14-бап (1995 ж. ред.). Заң мен сот алдында жұрттың бәрі тең; кемсітушілікке жол берілмейді";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART15_RU")
+rule DeathPenaltyImmunity1995(person: Person) strict {
+    when person(person);
+    then immunity NoDeathPenalty1995 {
+        holder person;
+        protected_effect death_penalty_imposed(person);
+    };
+    label ru-KZ official "Статья 15 пункт 2 (ред. 1995). Смертная казнь запрещается";
+    label kk-KZ official "15-бап 2-тармақ (1995 ж. ред.). Өлім жазасына тыйым салынады";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART17_RU") {
+    rule TortureImmunity1995(person: Person) strict {
+        when person(person);
+        then immunity NoTorture1995 {
+            holder person;
+            protected_effect tortured(person);
+        };
+        label ru-KZ official "Статья 17 пункт 2 (ред. 1995). Никто не должен подвергаться пыткам и жестокому обращению";
+        label kk-KZ official "17-бап 2-тармақ (1995 ж. ред.). Ешкім азаптауға және қатыгез қарауға ұшырамауға тиіс";
+    }
+
+    rule DignityImmunity1995(person: Person) strict {
+        when person(person);
+        then immunity DignityInviolable1995 {
+            holder person;
+            protected_effect dignity_infringed(person);
+        };
+        label ru-KZ official "Статья 17 пункт 1 (ред. 1995). Достоинство человека неприкосновенно";
+        label kk-KZ official "17-бап 1-тармақ (1995 ж. ред.). Адамның ар-намысына қол сұғылмайды";
+    }
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART18_RU")
+rule PrivacyImmunity1995(person: Person) strict {
+    when person(person);
+    then immunity PrivacyProtection1995 {
+        holder person;
+        protected_effect privacy_unlawfully_interfered(person);
+    };
+    label ru-KZ official "Статья 18 пункт 1 (ред. 1995). Неприкосновенность частной жизни, личная и семейная тайна";
+    label kk-KZ official "18-бап 1-тармақ (1995 ж. ред.). Жеке өмірге қол сұғылмаушылық, жеке және отбасылық құпия";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART20_RU")
+rule CensorshipImmunity1995(person: Person) strict {
+    when person(person);
+    then immunity NoCensorship1995 {
+        holder person;
+        protected_effect censorship_imposed(person);
+    };
+    label ru-KZ official "Статья 20 пункт 1 (ред. 1995). Цензура запрещается";
+    label kk-KZ official "20-бап 1-тармақ (1995 ж. ред.). Цензураға тыйым салынады";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART25_RU")
+rule HomeImmunity1995(person: Person) strict {
+    when person(person);
+    then immunity HomeInviolability1995 {
+        holder person;
+        protected_effect home_unlawfully_entered(person);
+    };
+    label ru-KZ official "Статья 25 пункт 1 (ред. 1995). Жилище неприкосновенно; лишение жилища — только по решению суда";
+    label kk-KZ official "25-бап 1-тармақ (1995 ж. ред.). Тұрғын үйге қол сұғылмайды; тұрғын үйден айыру — сот шешімі бойынша ғана";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART26_RU")
+rule PropertyImmunity1995(person: Person) strict {
+    when person(person);
+    then immunity CompensatedExpropriationOnly1995 {
+        holder person;
+        protected_effect property_uncompensatedly_expropriated(person);
+    };
+    label ru-KZ official "Статья 26 пункт 3 (ред. 1995). Принудительное отчуждение — только при равноценном возмещении";
+    label kk-KZ official "26-бап 3-тармақ (1995 ж. ред.). Мәжбүрлеп айыру — тең бағамен өтелген жағдайда ғана";
+}
+
+// =========================================================================
+// ЗАПРЕТЫ РЕДАКЦИИ 1995 (заведены 13.09.2026).
+//
+// Прежняя граница пакета — «запреты заведены ТОЛЬКО для редакции 2026, слой
+// 1995 служит проекции и расхождению» — держалась на опасении подделать
+// содержание прекращённой редакции. Чтением закреплённого текста 1995
+// проверено: ВСЕ одиннадцать абсолютных запретов раздела II 2026 года имеют
+// в редакции 1995 собственную норму, и большинство стоит в ней дословно в
+// той же формулировке («Смертная казнь запрещается», «Цензура запрещается»,
+// «Достоинство человека неприкосновенно»). Поэтому заведение близнеца ничего
+// не выдумывает, а отсутствие близнеца делало СРАВНЕНИЕ РЕДАКЦИЙ ПО ЭТОМУ
+// СЛОЮ ПУСТЫМ ПО ПОСТРОЕНИЮ: дело о попытке органа на дату до 01.07.2026 не
+// получало ни одной позиции, потому что иммунитет §128 блокирует эффект
+// ВЛАСТИ, а власти пытать или цензурировать Конституция 1995 года не давала
+// — ровно как и Конституция 2026 года.
+//
+// Единственное расхождение состава внутри этого слоя — предел задержания:
+// 1995 ст. 16 п. 2 называет семьдесят два часа В САМОЙ Конституции, 2026
+// ст. 18 п. 2 отсылает срок к закону. Запрет-близнец читает поэтому свой
+// антецедент (`detention_exceeds_72_hours`), а не статутный.
+//
+// Носитель связан ТЕЛОМ (`state_authority(authority)`, §190) у каждого из
+// одиннадцати — цена забывчивости измерена и описана в шапке файла.
+// Действие запрета посылкой того же правила не стоит нигде: попытка есть то,
+// что запрещено, а не то, при чём запрет возникает.
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART14_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART14_KK")
+rule DiscriminationProhibition1995(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when person(person);
+    then prohibition RefrainFromDiscrimination1995 {
+        bearer authority;
+        action discriminatory_treatment_attempt(authority, person);
+        window [@1995-09-05, @2026-07-01);
+    };
+    label ru-KZ official "Статья 14 пункт 2 (ред. 1995). Никто не может подвергаться какой-либо дискриминации по мотивам происхождения, социального, должностного и имущественного положения, пола, расы, национальности, языка, отношения к религии, убеждений, места жительства или по любым иным обстоятельствам";
+    label kk-KZ official "14-бап 2-тармақ (1995 ж. ред.). Тегіне, әлеуметтік, лауазымдық және мүліктік жағдайына, жынысына, нәсіліне, ұлтына, тіліне, дінге көзқарасына, нанымына, тұрғылықты жеріне байланысты немесе кез келген өзге жағдаяттар бойынша ешкімді ешқандай кемсітуге болмайды";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART15_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART15_KK")
+rule DeathPenaltyProhibition1995(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when person(person);
+    then prohibition RefrainFromDeathPenalty1995 {
+        bearer authority;
+        action death_penalty_attempt(authority, person);
+        window [@1995-09-05, @2026-07-01);
+    };
+    label ru-KZ official "Статья 15 пункт 2 (ред. 1995). Никто не вправе произвольно лишать человека жизни. Смертная казнь запрещается";
+    label kk-KZ official "15-бап 2-тармақ (1995 ж. ред.). Ешкімнің өз бетінше адам өмірін қиюға хақысы жоқ. Өлім жазасына тыйым салынады";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART17_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART17_KK")
+rule DignityInfringementProhibition1995(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when person(person);
+    then prohibition RefrainFromDignityInfringement1995 {
+        bearer authority;
+        action dignity_infringement_attempt(authority, person);
+        window [@1995-09-05, @2026-07-01);
+    };
+    label ru-KZ official "Статья 17 пункт 1 (ред. 1995). Достоинство человека неприкосновенно";
+    label kk-KZ official "17-бап 1-тармақ (1995 ж. ред.). Адамның қадір-қасиетіне қол сұғылмайды";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART17_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART17_KK")
+rule TortureProhibition1995(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when person(person);
+    then prohibition RefrainFromTorture1995 {
+        bearer authority;
+        action torture_attempt(authority, person);
+        window [@1995-09-05, @2026-07-01);
+    };
+    label ru-KZ official "Статья 17 пункт 2 (ред. 1995). Никто не должен подвергаться пыткам, насилию, другому жестокому или унижающему человеческое достоинство обращению или наказанию";
+    label kk-KZ official "17-бап 2-тармақ (1995 ж. ред.). Ешкімді азаптауға, оған зорлық-зомбылық жасауға, басқадай қатыгездік немесе адамдық қадір-қасиетін қорлайтындай жәбір көрсетуге не жазалауға болмайды";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART18_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART18_KK")
+rule PrivacyInterferenceProhibition1995(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when person(person);
+    then prohibition RefrainFromPrivacyInterference1995 {
+        bearer authority;
+        action unlawful_privacy_interference_attempt(authority, person);
+        window [@1995-09-05, @2026-07-01);
+    };
+    label ru-KZ official "Статья 18 пункты 1 и 2 (ред. 1995). Каждый имеет право на неприкосновенность частной жизни, личную и семейную тайну; ограничения этого права допускаются только в случаях и в порядке, прямо установленных законом";
+    label kk-KZ official "18-бап 1 және 2-тармақтар (1995 ж. ред.). Әркімнің жеке өміріне қол сұғылмауына, өзінің және отбасының құпиясы болуына құқығы бар; бұл құқықты шектеуге заңда тікелей белгіленген реттер мен тәртіп бойынша ғана жол беріледі";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART20_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART20_KK")
+rule CensorshipProhibition1995(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when person(person);
+    then prohibition RefrainFromCensorship1995 {
+        bearer authority;
+        action censorship_attempt(authority, person);
+        window [@1995-09-05, @2026-07-01);
+    };
+    label ru-KZ official "Статья 20 пункт 1 (ред. 1995). Свобода слова и творчества гарантируются. Цензура запрещается";
+    label kk-KZ official "20-бап 1-тармақ (1995 ж. ред.). Сөз бен шығармашылық еркіндігіне кепілдік беріледі. Цензураға тыйым салынады";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART21_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART21_KK")
+rule ReturnBlockProhibition1995(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when citizen(person);
+    then prohibition RefrainFromBlockingReturn1995 {
+        bearer authority;
+        action return_block_attempt(authority, person);
+        window [@1995-09-05, @2026-07-01);
+    };
+    label ru-KZ official "Статья 21 пункт 2 (ред. 1995). Граждане Республики имеют право беспрепятственного возвращения в Республику";
+    label kk-KZ official "21-бап 2-тармақ (1995 ж. ред.). Республика азаматтарының Республикаға кедергісіз қайтып оралуына құқығы бар";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART25_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART25_KK")
+rule HomeEntryProhibition1995(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when person(person);
+    then prohibition RefrainFromUnlawfulHomeEntry1995 {
+        bearer authority;
+        action unlawful_home_entry_attempt(authority, person);
+        window [@1995-09-05, @2026-07-01);
+    };
+    label ru-KZ official "Статья 25 пункт 1 (ред. 1995). Жилище неприкосновенно; проникновение в жилище, производство его осмотра и обыска допускаются лишь в случаях и в порядке, установленных законом";
+    label kk-KZ official "25-бап 1-тармақ (1995 ж. ред.). Тұрғын үйге қол сұғылмайды; тұрғын үйге басып кіруге, оны тексеруге және тінтуге заңмен белгіленген реттер мен тәртіп бойынша ғана жол беріледі";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART26_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART26_KK")
+rule UncompensatedExpropriationProhibition1995(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when person(person);
+    then prohibition RefrainFromUncompensatedExpropriation1995 {
+        bearer authority;
+        action uncompensated_expropriation_attempt(authority, person);
+        window [@1995-09-05, @2026-07-01);
+    };
+    label ru-KZ official "Статья 26 пункт 3 (ред. 1995). Принудительное отчуждение имущества для государственных нужд в исключительных случаях, предусмотренных законом, может быть произведено при условии равноценного его возмещения";
+    label kk-KZ official "26-бап 3-тармақ (1995 ж. ред.). Заңмен көзделген ерекше жағдайларда мемлекет мұқтажы үшін мүліктен күштеп айыру оның құны тең бағамен өтелген кезде жүргізілуі мүмкін";
+}
+
+// РАСХОЖДЕНИЕ СОСТАВА ВНУТРИ СЛОЯ ЗАПРЕТОВ: у 2026 антецедентом стоит
+// превышение СТАТУТНОГО срока (`detention_exceeds_statutory_period`), у 1995 —
+// превышение семидесяти двух часов, названных самой Конституцией.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART16_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART16_KK")
+rule DetentionBeyond72HoursProhibition1995(authority: StateAuthority, detention: Detention) strict {
+    when state_authority(authority);
+    when detention_without_court_sanction(detention);
+    when detention_exceeds_72_hours(detention);
+    then prohibition RefrainFromDetentionBeyond72Hours1995 {
+        bearer authority;
+        action continued_detention_attempt(authority, detention);
+        window [@1995-09-05, @2026-07-01);
+    };
+    label ru-KZ official "Статья 16 пункт 2 (ред. 1995). Без санкции суда лицо может быть подвергнуто задержанию на срок не более семидесяти двух часов";
+    label kk-KZ official "16-бап 2-тармақ (1995 ж. ред.). Соттың санкциясынсыз адамды жетпіс екі сағаттан аспайтын мерзімге ұстауға болады";
+}
+
+// Изъятие 1995 года — то же, что и у 2026: судебный акт о признании виновным
+// либо чрезвычайное или военное положение. `unless` при норм-голове
+// компилятор отбрасывает (LDC-E1302), поэтому изъятие живёт на предикате с
+// литеральной головой; у слоя 1995 правило своё, иначе на дату до 01.07.2026
+// посылка запрета выводилась бы правилом редакции 2026, исключённым §92.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART24_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART24_KK")
+rule ForcedLabourBarredWithoutBasis1995(person: Person) defeasible {
+    when person(person);
+    unless forced_labour_constitutionally_admissible(person);
+    then forced_labour_barred(person);
+    label ru-KZ official "Статья 24 пункт 1 (ред. 1995). Принуждение к труду запрещено, пока нет судебного акта о признании виновным в уголовном или административном правонарушении либо чрезвычайного или военного положения";
+    label kk-KZ official "24-бап 1-тармақ (1995 ж. ред.). Қылмыстық немесе әкімшілік құқық бұзушылық жасауға кінәлі деп тану туралы сот актісі не төтенше немесе соғыс жағдайы болмайынша еріксіз еңбекке тыйым салынған";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART24_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART24_KK")
+rule ForcedLabourProhibition1995(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when forced_labour_barred(person);
+    then prohibition RefrainFromForcedLabour1995 {
+        bearer authority;
+        action forced_labour_attempt(authority, person);
+        window [@1995-09-05, @2026-07-01);
+    };
+    label ru-KZ official "Статья 24 пункт 1 (ред. 1995). Принудительный труд вне названных Конституцией оснований не допускается";
+    label kk-KZ official "24-бап 1-тармақ (1995 ж. ред.). Конституцияда аталған негіздерден тыс еріксіз еңбекке жол берілмейді";
+}
+
+// --- Ст. 16. Личная свобода и конституционный предел задержания ----------
+
+// РАСХОЖДЕНИЕ 2. Предел в семьдесят два часа стоит В САМОЙ Конституции 1995;
+// 2026 ст. 18 п. 2 отсылает срок к закону. Поэтому дело о задержании на
+// девяносто часов без санкции суда до 01.07.2026 разрешается прямо из
+// Конституции, а после — только через закон, которого модель не домысливает.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART16_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART16_KK")
+rule DetentionBeyond72HoursImmunity1995(detention: Detention, person: Person) strict {
+    when detention_of(detention, person);
+    when detention_without_court_sanction(detention);
+    when detention_exceeds_72_hours(detention);
+    then immunity SeventyTwoHourDetentionLimit1995 {
+        holder person;
+        protected_effect unlawful_continued_detention(detention);
+    };
+    label ru-KZ official "Статья 16 пункт 2 (ред. 1995). Без санкции суда задержание не более семидесяти двух часов";
+    label kk-KZ official "16-бап 2-тармақ (1995 ж. ред.). Сот санкциясынсыз ұстау жетпіс екі сағаттан аспайды";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART16_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART16_KK")
+rule ArrestRequiresCourtSanctionAndAppeal1995(detention: Detention) strict {
+    when arrest_or_custody(detention);
+    when court_sanction_obtained(detention);
+    when appeal_right_granted(detention);
+    then arrest_constitutionally_admissible(detention);
+    label ru-KZ official "Статья 16 пункт 2 (ред. 1995). Арест и содержание под стражей — лишь с санкции суда и с правом обжалования";
+    label kk-KZ official "16-бап 2-тармақ (1995 ж. ред.). Қамауға алу және күзетпен ұстау — сот санкциясымен және шағымдану құқығымен ғана";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART16_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART16_KK")
+rule CounselFromDetentionDuty1995(
+    authority: StateAuthority,
+    detention: Detention,
+    person: Person,
+) strict {
+    when state_authority(authority);
+    when detention_of(detention, person);
+    then duty ProvideCounselAccess1995 {
+        bearer authority;
+        beneficiary person;
+        maintain counsel_access_provided(detention, person) during [@1995-09-05, @2026-07-01);
+    };
+    label ru-KZ official "Статья 16 пункт 3 (ред. 1995). Право пользоваться помощью адвоката с момента задержания, ареста или предъявления обвинения";
+    label kk-KZ official "16-бап 3-тармақ (1995 ж. ред.). Ұсталған, қамауға алынған не айып тағылған сәттен бастап адвокаттың көмегін пайдалану құқығы";
+}
+
+// --- Ст. 18 п. 3, 19, 20, 21, 22 ----------------------------------------
+
+// РАСХОЖДЕНИЕ 9. Доступ к затрагивающим документам в 1995 обещан гражданину,
+// в 2026 ст. 21 п. 3 — каждому человеку: круг управомоченных расширен.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART18_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART18_KK")
+rule CitizenAccessToAffectingDocumentsDuty1995(
+    authority: StateAuthority,
+    document: Document,
+    person: Person,
+) strict {
+    when state_authority(authority);
+    when citizen(person);
+    when document_affects(document, person);
+    then duty ProvideCitizenAccess1995 {
+        bearer authority;
+        beneficiary person;
+        maintain citizen_access_provided(document, person) during [@1995-09-05, @2026-07-01);
+    };
+    label ru-KZ official "Статья 18 пункт 3 (ред. 1995). Каждому гражданину обеспечивается возможность ознакомиться с затрагивающими его документами";
+    label kk-KZ official "18-бап 3-тармақ (1995 ж. ред.). Әрбір азаматқа өзін қозғайтын құжаттармен танысу мүмкіндігі қамтамасыз етіледі";
+}
+
+// РАСХОЖДЕНИЕ 14. В 1995 определяется принадлежность национальная, партийная
+// и религиозная; 2026 ст. 22 п. 1 оставил только национальную.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART19_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART19_KK")
+rule NationalPartyAndReligiousIdentityLiberty1995(person: Person) strict {
+    when person(person);
+    then liberty DeclareNationalPartyReligiousIdentity1995 {
+        holder person;
+        action identity_declaration_action(person);
+        window [@1995-09-05, @2026-07-01);
+    };
+    label ru-KZ official "Статья 19 пункт 1 (ред. 1995). Каждый вправе определять и указывать или не указывать национальную, партийную и религиозную принадлежность";
+    label kk-KZ official "19-бап 1-тармақ (1995 ж. ред.). Әркім өзінің ұлттық, партиялық және діни тегін анықтауға және көрсетуге немесе көрсетпеуге құқылы";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART19_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART19_KK")
+rule NativeLanguageAndCultureLiberty1995(person: Person) strict {
+    when person(person);
+    then liberty UseNativeLanguageAndCulture1995 {
+        holder person;
+        action native_language_and_culture_action(person);
+        window [@1995-09-05, @2026-07-01);
+    };
+    label ru-KZ official "Статья 19 пункт 2 (ред. 1995). Право на пользование родным языком и культурой, свободный выбор языка общения";
+    label kk-KZ official "19-бап 2-тармақ (1995 ж. ред.). Ана тілі мен мәдениетін пайдалану, қарым-қатынас тілін еркін таңдау құқығы";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART20_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART20_KK")
+rule ProhibitedPropaganda1995(person: Person) strict {
+    when propaganda_of_prohibited_content(person);
+    then propaganda_constitutionally_prohibited(person);
+    label ru-KZ official "Статья 20 пункт 3 (ред. 1995). Не допускаются пропаганда или агитация насильственного изменения конституционного строя и прочего перечисленного";
+    label kk-KZ official "20-бап 3-тармақ (1995 ж. ред.). Конституциялық құрылысты күштеп өзгертуді және өзге де аталғандарды насихаттауға немесе үгіттеуге жол берілмейді";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART21_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART21_KK")
+rule FreedomOfMovement1995(person: Person) strict {
+    when lawfully_in_kazakhstan(person);
+    then liberty MoveWithinKazakhstan1995 {
+        holder person;
+        action movement_action(person);
+        window [@1995-09-05, @2026-07-01);
+    };
+    label ru-KZ official "Статья 21 пункт 1 (ред. 1995). Свобода передвижения и выбора местожительства для законно находящегося в Республике";
+    label kk-KZ official "21-бап 1-тармақ (1995 ж. ред.). Республикада заңды түрде жүрген адамның жүріп-тұру және тұрғылықты жерін таңдау бостандығы";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART21_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART21_KK")
+rule StatutoryMovementRestriction1995(restriction: MovementRestriction, person: Person) strict {
+    when movement_restriction(restriction, person);
+    when movement_restriction_established_by_law(restriction);
+    then movement_restriction_constitutionally_valid(restriction);
+    label ru-KZ official "Статья 21 пункт 1 (ред. 1995). Ограничение передвижения допускается только в оговорённых законом случаях";
+    label kk-KZ official "21-бап 1-тармақ (1995 ж. ред.). Жүріп-тұруды шектеуге заңда айтылған жағдайларда ғана жол беріледі";
+}
+
+// РАСХОЖДЕНИЕ 13. В 1995 выезд объявлен без конституционной оговорки об
+// ограничении; 2026 ст. 24 п. 2 внёс «в случаях и в порядке, установленных
+// законом». Поэтому свобода выезда 1995 не имеет конституционного ограничителя.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART21_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART21_KK")
+rule ExitKazakhstanLiberty1995(person: Person) strict {
+    when person(person);
+    then liberty ExitKazakhstan1995 {
+        holder person;
+        action exit_kazakhstan_action_1995(person);
+        window [@1995-09-05, @2026-07-01);
+    };
+    label ru-KZ official "Статья 21 пункт 2 (ред. 1995). Каждый имеет право выезжать за пределы Республики";
+    label kk-KZ official "21-бап 2-тармақ (1995 ж. ред.). Әркім Республикадан тыс жерге шығуға құқылы";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART21_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART21_KK")
+rule CitizenReturnImmunity1995(person: Person) strict {
+    when citizen(person);
+    then immunity UnobstructedReturnToKazakhstan1995 {
+        holder person;
+        protected_effect return_blocked(person);
+    };
+    label ru-KZ official "Статья 21 пункт 2 (ред. 1995). Граждане имеют право беспрепятственного возвращения в Республику";
+    label kk-KZ official "21-бап 2-тармақ (1995 ж. ред.). Азаматтар Республикаға кедергісіз қайтып оралуға құқылы";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART22_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART22_KK")
+rule FreedomOfConscienceLiberty1995(person: Person) strict {
+    when person(person);
+    then liberty ExerciseFreedomOfConscience1995 {
+        holder person;
+        action conscience_action(person);
+        window [@1995-09-05, @2026-07-01);
+    };
+    label ru-KZ official "Статья 22 пункт 1 (ред. 1995). Каждый имеет право на свободу совести";
+    label kk-KZ official "22-бап 1-тармақ (1995 ж. ред.). Әркімнің ар-ождан бостандығына құқығы бар";
+}
+
+// --- Ст. 23. Объединения ------------------------------------------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART23_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART23_KK")
+rule FreedomOfAssociation1995(person: Person, association: Association) strict {
+    when citizen(person);
+    when association(association);
+    then liberty JoinAssociation1995 {
+        holder person;
+        action association_membership_action(person, association);
+        window [@1995-09-05, @2026-07-01);
+    };
+    label ru-KZ official "Статья 23 пункт 1 (ред. 1995). Граждане имеют право на свободу объединений";
+    label kk-KZ official "23-бап 1-тармақ (1995 ж. ред.). Азаматтардың бірлесу бостандығына құқығы бар";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART23_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART23_KK")
+rule RestrictedOfficePoliticalMembershipIncompatible1995(person: Person) strict {
+    when restricted_political_officeholder(person);
+    when political_party_or_union_membership(person);
+    then restricted_office_membership_incompatible(person);
+    label ru-KZ official "Статья 23 пункт 2 (ред. 1995). Перечисленные должностные лица не должны состоять в партиях и профсоюзах";
+    label kk-KZ official "23-бап 2-тармақ (1995 ж. ред.). Аталған лауазымды адамдар партиялар мен кәсіптік одақтарда болмауға тиіс";
+}
+
+// --- Ст. 24. Труд, забастовка, отдых ------------------------------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART24_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART24_KK")
+rule FreedomOfLabourLiberty1995(person: Person) strict {
+    when person(person);
+    then liberty ChooseOccupationFreely1995 {
+        holder person;
+        action labour_action(person);
+        window [@1995-09-05, @2026-07-01);
+    };
+    label ru-KZ official "Статья 24 пункт 1 (ред. 1995). Право на свободу труда, свободный выбор рода деятельности и профессии";
+    label kk-KZ official "24-бап 1-тармақ (1995 ж. ред.). Еңбек ету бостандығына, қызмет пен кәсіп түрін еркін таңдауға құқық";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART24_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART24_KK")
+rule ForcedLabourOnlyOnJudicialOrEmergencyBasis1995(person: Person) strict {
+    when judicial_act_or_emergency_basis(person);
+    then forced_labour_constitutionally_admissible(person);
+    label ru-KZ official "Статья 24 пункт 1 (ред. 1995). Принудительный труд допускается только по судебному акту либо в условиях чрезвычайного или военного положения";
+    label kk-KZ official "24-бап 1-тармақ (1995 ж. ред.). Мәжбүрлі еңбекке сот актісі бойынша не төтенше немесе соғыс жағдайында ғана жол беріледі";
+}
+
+// РАСХОЖДЕНИЕ 3. Право на забастовку названо в Конституции 1995 прямо
+// («включая право на забастовку»); 2026 ст. 27 п. 3 сохранил трудовые споры
+// и забастовку из текста убрал. Свобода прекращается 01.07.2026 не законом,
+// а сменой конституционного текста.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART24_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART24_KK")
+rule RightToStrikeLiberty1995(person: Person, strike: Strike) strict {
+    when collective_labour_dispute(strike, person);
+    then liberty Strike1995 {
+        holder person;
+        action strike_action(person, strike);
+        window [@1995-09-05, @2026-07-01);
+    };
+    label ru-KZ official "Статья 24 пункт 3 (ред. 1995). Признаётся право на трудовые споры, включая право на забастовку";
+    label kk-KZ official "24-бап 3-тармақ (1995 ж. ред.). Ереуіл жасау құқығын қоса алғанда, еңбек дауларына құқық танылады";
+}
+
+// РАСХОЖДЕНИЕ. 1995 обещает социальную защиту ОТ БЕЗРАБОТИЦЫ; 2026 ст. 27
+// п. 2 — «социальную защиту в соответствии с законом», без названного риска.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART24_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART24_KK")
+rule UnemploymentProtectionDuty1995(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when unemployment_social_protection_ground(person);
+    then duty ProvideUnemploymentProtection1995 {
+        bearer authority;
+        beneficiary person;
+        maintain unemployment_social_protection_provided(authority, person)
+            during [@1995-09-05, @2026-07-01);
+    };
+    label ru-KZ official "Статья 24 пункт 2 (ред. 1995). Право на социальную защиту от безработицы";
+    label kk-KZ official "24-бап 2-тармақ (1995 ж. ред.). Жұмыссыздықтан әлеуметтік қорғалу құқығы";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART24_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART24_KK")
+rule AnnualPaidLeaveDuty1995(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when employed_under_labour_contract(person);
+    then duty GuaranteeAnnualPaidLeave1995 {
+        bearer authority;
+        beneficiary person;
+        goal maintenance {
+            condition annual_paid_leave_provided(authority, person);
+            window [@1995-09-05, @2026-07-01);
+            completeness_policy AnnualLeaveCompleteness;
+        }
+    };
+    label ru-KZ official "Статья 24 пункт 4 (ред. 1995). Работающим по трудовому договору гарантируется оплачиваемый ежегодный отпуск";
+    label kk-KZ official "24-бап 4-тармақ (1995 ж. ред.). Еңбек шарты бойынша жұмыс істейтіндерге ақы төленетін жыл сайынғы демалысқа кепілдік беріледі";
+}
+
+// --- Ст. 25. Жилище -----------------------------------------------------
+
+// РАСХОЖДЕНИЕ 10. 1995 обещает жильё «за доступную плату из государственных
+// жилищных фондов»; 2026 ст. 28 п. 2 условие о доступной плате убрал.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART25_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART25_KK")
+rule AffordableStateHousingDuty1995(
+    authority: StateAuthority,
+    need: HousingNeed,
+    person: Person,
+) strict {
+    when state_authority(authority);
+    when citizen(person);
+    when statutory_housing_need(need, person);
+    then duty ProvideAffordableStateHousing1995 {
+        bearer authority;
+        beneficiary person;
+        maintain affordable_state_housing_provided(need, person) during [@1995-09-05, @2026-07-01);
+    };
+    label ru-KZ official "Статья 25 пункт 2 (ред. 1995). Указанным в законе категориям жильё предоставляется за доступную плату из государственных жилищных фондов";
+    label kk-KZ official "25-бап 2-тармақ (1995 ж. ред.). Заңда көрсетілген санаттарға тұрғын үй мемлекеттік тұрғын үй қорларынан қолжетімді ақыға беріледі";
+}
+
+// --- Ст. 26. Собственность и предпринимательство ------------------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART26_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART26_KK")
+rule FreedomOfEnterpriseLiberty1995(person: Person) strict {
+    when person(person);
+    then liberty ConductEnterprise1995 {
+        holder person;
+        action entrepreneurial_action(person);
+        window [@1995-09-05, @2026-07-01);
+    };
+    label ru-KZ official "Статья 26 пункт 4 (ред. 1995). Право на свободу предпринимательской деятельности";
+    label kk-KZ official "26-бап 4-тармақ (1995 ж. ред.). Кәсіпкерлік қызмет бостандығына құқық";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART26_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART26_KK")
+rule UnfairCompetitionProhibited1995(person: Person) strict {
+    when unfair_competition(person);
+    then unfair_competition_prohibited(person);
+    label ru-KZ official "Статья 26 пункт 4 (ред. 1995). Недобросовестная конкуренция запрещается";
+    label kk-KZ official "26-бап 4-тармақ (1995 ж. ред.). Жосықсыз бәсекеге тыйым салынады";
+}
+
+// --- Ст. 27. Семья ------------------------------------------------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART27_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART27_KK")
+rule ParentCareDuty1995(parent: Parent, child: Child) strict {
+    when parent_of(parent, child);
+    then duty CareForChild1995 {
+        bearer parent;
+        beneficiary child;
+        goal maintenance {
+            condition child_care_provided(parent, child);
+            window [@1995-09-05, @2026-07-01);
+            completeness_policy ChildCareCompleteness;
+        }
+    };
+    label ru-KZ official "Статья 27 пункт 2 (ред. 1995). Забота о детях и их воспитание — естественное право и обязанность родителей";
+    label kk-KZ official "27-бап 2-тармақ (1995 ж. ред.). Балаларына қамқорлық жасау және оларды тәрбиелеу — ата-ананың табиғи құқығы әрі міндеті";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART27_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART27_KK")
+rule AdultChildParentCareDuty1995(child: Child, parent: Parent) strict {
+    when adult_capable_child_of(child, parent);
+    when parent_incapacitated(parent);
+    then duty CareForIncapacitatedParent1995 {
+        bearer child;
+        beneficiary parent;
+        goal maintenance {
+            condition parent_care_provided(child, parent);
+            window [@1995-09-05, @2026-07-01);
+            completeness_policy ParentCareCompleteness;
+        }
+    };
+    label ru-KZ official "Статья 27 пункт 3 (ред. 1995). Совершеннолетние трудоспособные дети обязаны заботиться о нетрудоспособных родителях";
+    label kk-KZ official "27-бап 3-тармақ (1995 ж. ред.). Кәмелетке толған еңбекке қабілетті балалар еңбекке қабілетсіз ата-анасына қамқорлық жасауға міндетті";
+}
+
+// --- Ст. 28, 29. Социальное обеспечение и здоровье ----------------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART28_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART28_KK")
+rule SocialSecurityDuty1995(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when citizen(person);
+    when lawful_social_security_ground(person);
+    then duty ProvideSocialSecurity1995 {
+        bearer authority;
+        beneficiary person;
+        maintain social_security_provided(authority, person) during [@1995-09-05, @2026-07-01);
+    };
+    label ru-KZ official "Статья 28 пункт 1 (ред. 1995). Гарантируются минимальная заработная плата и пенсия, социальное обеспечение по законным основаниям";
+    label kk-KZ official "28-бап 1-тармақ (1995 ж. ред.). Ең төмен жалақы мен зейнетақыға, заңды негіздер бойынша әлеуметтік қамсыздандыруға кепілдік беріледі";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART29_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART29_KK")
+rule GuaranteedFreeMedicalCareDuty1995(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when citizen(person);
+    then duty ProvideGuaranteedFreeMedicalCare1995 {
+        bearer authority;
+        beneficiary person;
+        goal maintenance {
+            condition guaranteed_free_medical_care_provided(authority, person);
+            window [@1995-09-05, @2026-07-01);
+            completeness_policy MedicalCareCompleteness;
+        }
+    };
+    label ru-KZ official "Статья 29 пункт 2 (ред. 1995). Граждане вправе получать бесплатно гарантированный объём медицинской помощи";
+    label kk-KZ official "29-бап 2-тармақ (1995 ж. ред.). Азаматтар медициналық көмектің кепілдік берілген көлемін тегін алуға құқылы";
+}
+
+// --- Ст. 30. Образование ------------------------------------------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART30_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART30_KK")
+rule FreeSecondaryEducationDuty1995(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when citizen(person);
+    when free_secondary_education_eligible(person);
+    then duty ProvideFreeSecondaryEducation1995 {
+        bearer authority;
+        beneficiary person;
+        maintain free_secondary_education_provided(authority, person)
+            during [@1995-09-05, @2026-07-01);
+    };
+    label ru-KZ official "Статья 30 пункт 1 (ред. 1995). Гражданам гарантируется бесплатное среднее образование в государственных учебных заведениях";
+    label kk-KZ official "30-бап 1-тармақ (1995 ж. ред.). Азаматтарға мемлекеттік оқу орындарында тегін орта білім алуға кепілдік беріледі";
+}
+
+// РАСХОЖДЕНИЕ 5. 1995 объявляет обязательным ВСЁ среднее образование; 2026
+// ст. 33 п. 1 сузил обязательность до начального и основного среднего.
+// Учащийся старших классов до 01.07.2026 обязан учиться, после — нет.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART30_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART30_KK")
+rule SecondaryEducationCompulsory1995(person: Person) strict {
+    when secondary_education_stage(person);
+    then compulsory_education_applies(person);
+    label ru-KZ official "Статья 30 пункт 1 (ред. 1995). Среднее образование обязательно";
+    label kk-KZ official "30-бап 1-тармақ (1995 ж. ред.). Орта білім алу міндетті";
+}
+
+// РАСХОЖДЕНИЕ 4. Бесплатное высшее образование на конкурсной основе в
+// государственном вузе — конституционное обещание 1995. 2026 ст. 33 п. 2
+// оставил право на высшее образование «в соответствии с законом», сняв и
+// бесплатность, и конкурс как конституционные условия.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART30_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART30_KK")
+rule FreeCompetitiveHigherEducationDuty1995(authority: StateAuthority, person: Person) strict {
+    when state_authority(authority);
+    when citizen(person);
+    when higher_education_competition_won(person);
+    then duty ProvideFreeHigherEducation1995 {
+        bearer authority;
+        beneficiary person;
+        maintain free_higher_education_provided(authority, person) during [@1995-09-05, @2026-07-01);
+    };
+    label ru-KZ official "Статья 30 пункт 2 (ред. 1995). Право на получение на конкурсной основе бесплатного высшего образования в государственном вузе";
+    label kk-KZ official "30-бап 2-тармақ (1995 ж. ред.). Мемлекеттік жоғары оқу орнында конкурстық негізде тегін жоғары білім алу құқығы";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART30_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART30_KK")
+rule EducationStandardsCompliance1995(institution: EducationInstitution) strict {
+    when education_institution(institution);
+    when education_standards_met(institution);
+    then education_institution_constitutionally_compliant(institution);
+    label ru-KZ official "Статья 30 пункт 4 (ред. 1995). Деятельность любых учебных заведений должна соответствовать общеобязательным стандартам";
+    label kk-KZ official "30-бап 4-тармақ (1995 ж. ред.). Кез келген оқу орнының қызметі жалпыға міндетті стандарттарға сәйкес келуге тиіс";
+}
+
+// --- Ст. 31. Окружающая среда -------------------------------------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART31_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART31_KK")
+rule OfficialConcealmentLiability1995(person: Official) strict {
+    when official(person);
+    when concealed_life_threatening_facts(person);
+    then official_liability_arises(person);
+    label ru-KZ official "Статья 31 пункт 2 (ред. 1995). Сокрытие должностными лицами фактов, угрожающих жизни и здоровью людей, влечёт ответственность";
+    label kk-KZ official "31-бап 2-тармақ (1995 ж. ред.). Лауазымды адамдардың адамдардың өмірі мен денсаулығына қатер төндіретін фактілерді жасыруы жауаптылыққа әкеп соғады";
+}
+
+// --- Ст. 32. Мирные собрания --------------------------------------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART32_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART32_KK")
+rule PeacefulAssemblyLiberty1995(person: Person, assembly: Assembly) strict {
+    when citizen(person);
+    when unarmed_peaceful_assembly(assembly, person);
+    then liberty ParticipateInUnarmedAssembly1995 {
+        holder person;
+        action assembly_participation_action(person, assembly);
+        window [@1995-09-05, @2026-07-01);
+    };
+    label ru-KZ official "Статья 32 (ред. 1995). Граждане вправе мирно и без оружия собираться, проводить собрания, митинги, демонстрации, шествия и пикетирование";
+    label kk-KZ official "32-бап (1995 ж. ред.). Азаматтар бейбіт әрі қарусыз жиналуға, жиналыстар, митингілер, демонстрациялар, шерулер өткізуге және пикет қоюға құқылы";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART32_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART32_KK")
+rule AssemblyRestrictionRequiresLawAndGoal1995(
+    restriction: Restriction,
+    assembly: Assembly,
+) strict {
+    when assembly_restriction(restriction, assembly);
+    when assembly_restriction_established_by_law(restriction);
+    when assembly_restriction_has_constitutional_goal(restriction);
+    then assembly_restriction_constitutionally_valid(restriction);
+    label ru-KZ official "Статья 32 (ред. 1995). Ограничение права на собрания допускается законом в перечисленных конституционных целях";
+    label kk-KZ official "32-бап (1995 ж. ред.). Жиналыс құқығын шектеуге аталған конституциялық мақсаттарда заңмен жол беріледі";
+}
+
+// --- Ст. 33. Участие в управлении делами государства --------------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART33_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART33_KK")
+rule StateGovernanceParticipationLiberty1995(person: Person) strict {
+    when citizen(person);
+    then liberty ParticipateInStateGovernance1995 {
+        holder person;
+        action state_governance_participation_action(person);
+        window [@1995-09-05, @2026-07-01);
+    };
+    label ru-KZ official "Статья 33 пункт 1 (ред. 1995). Право участвовать в управлении делами государства и обращаться в государственные органы";
+    label kk-KZ official "33-бап 1-тармақ (1995 ж. ред.). Мемлекет істерін басқаруға қатысу және мемлекеттік органдарға өтініш білдіру құқығы";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART33_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART33_KK")
+rule VotingAndReferendumDisqualification1995(person: Person) strict {
+    when court_declared_incapable(person)
+        or imprisoned_by_court_sentence(person);
+    then voting_or_referendum_ineligible(person);
+    label ru-KZ official "Статья 33 пункт 3 (ред. 1995). Не имеют права избирать и участвовать в референдуме признанные судом недееспособными и содержащиеся в местах лишения свободы";
+    label kk-KZ official "33-бап 3-тармақ (1995 ж. ред.). Сот әрекетке қабілетсіз деп таныған және бас бостандығынан айыру орындарында отырған адамдардың сайлауға және референдумға қатысуға құқығы жоқ";
+}
+
+// РАСХОЖДЕНИЕ 6 — расхождение исхода дела. В 1995 перечень оснований у
+// «избирать» и «быть избранным» ОДИН: недееспособность и места лишения
+// свободы. 2026 ст. 35 п. 3 добавил к неизбираемости непогашенную судимость
+// и признанное судом коррупционное деяние. Гражданин с погашенным сроком, но
+// непогашенной судимостью, до 01.07.2026 избираем, после — нет.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART33_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART33_KK")
+rule CandidateDisqualification1995(person: Person) strict {
+    when court_declared_incapable(person)
+        or imprisoned_by_court_sentence(person);
+    then electoral_candidate_ineligible(person);
+    label ru-KZ official "Статья 33 пункт 3 (ред. 1995). Не имеют права быть избранными признанные судом недееспособными и содержащиеся в местах лишения свободы";
+    label kk-KZ official "33-бап 3-тармақ (1995 ж. ред.). Сот әрекетке қабілетсіз деп таныған және бас бостандығынан айыру орындарында отырған адамдардың сайлануға құқығы жоқ";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART33_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART33_KK")
+rule CivilServiceRequirementMustReflectOfficialDuties1995(
+    requirement: CivilServiceRequirement,
+) strict {
+    when civil_service_requirement(requirement);
+    when requirement_only_reflects_official_duties(requirement);
+    then civil_service_requirement_admissible(requirement);
+    label ru-KZ official "Статья 33 пункт 4 (ред. 1995). Требования к кандидату на должность госслужащего обусловливаются только характером должностных обязанностей";
+    label kk-KZ official "33-бап 4-тармақ (1995 ж. ред.). Мемлекеттік қызметші лауазымына кандидатқа қойылатын талаптар лауазымдық міндеттердің сипатына ғана байланысты болады";
+}
+
+// --- Ст. 34–38. Обязанности ---------------------------------------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART34_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART34_KK")
+rule ConstitutionComplianceDuty1995(person: Person) strict {
+    when person(person);
+    then duty RespectConstitutionAndLaw1995 {
+        bearer person;
+        goal maintenance {
+            condition not constitution_or_law_violated(person);
+            window [@1995-09-05, @2026-07-01);
+            completeness_policy ConstitutionComplianceCompleteness;
+        }
+    };
+    label ru-KZ official "Статья 34 пункт 1 (ред. 1995). Каждый обязан соблюдать Конституцию и законодательство, уважать права и достоинство других лиц";
+    label kk-KZ official "34-бап 1-тармақ (1995 ж. ред.). Әркім Конституция мен заңнаманы сақтауға, басқа адамдардың құқықтары мен ар-намысын құрметтеуге міндетті";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART34_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART34_KK")
+rule StateSymbolsRespectDuty1995(person: Person) strict {
+    when person(person);
+    then duty RespectStateSymbols1995 {
+        bearer person;
+        goal maintenance {
+            condition not state_symbols_disrespected(person);
+            window [@1995-09-05, @2026-07-01);
+            completeness_policy StateSymbolsCompleteness;
+        }
+    };
+    label ru-KZ official "Статья 34 пункт 2 (ред. 1995). Каждый обязан уважать государственные символы Республики";
+    label kk-KZ official "34-бап 2-тармақ (1995 ж. ред.). Әркім Республиканың мемлекеттік рәміздерін құрметтеуге міндетті";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART35_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART35_KK")
+rule TaxPaymentDuty1995(person: Person) strict {
+    when person(person);
+    then duty PayLawfulTaxes1995 {
+        bearer person;
+        goal maintenance {
+            condition not lawful_tax_unpaid(person);
+            window [@1995-09-05, @2026-07-01);
+            completeness_policy TaxPaymentCompleteness;
+        }
+    };
+    label ru-KZ official "Статья 35 (ред. 1995). Уплата законно установленных налогов, сборов и иных обязательных платежей — долг и обязанность каждого";
+    label kk-KZ official "35-бап (1995 ж. ред.). Заңды түрде белгіленген салықтарды, алымдарды және өзге де міндетті төлемдерді төлеу — әркімнің борышы әрі міндеті";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART36_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART36_KK")
+rule DefenceDuty1995(person: Person) strict {
+    when citizen(person);
+    then duty DefendKazakhstan1995 {
+        bearer person;
+        goal maintenance {
+            condition not defence_duty_unperformed(person);
+            window [@1995-09-05, @2026-07-01);
+            completeness_policy DefenceDutyCompleteness;
+        }
+    };
+    label ru-KZ official "Статья 36 (ред. 1995). Защита Республики — священный долг и обязанность каждого её гражданина";
+    label kk-KZ official "36-бап (1995 ж. ред.). Республиканы қорғау — оның әрбір азаматының қасиетті борышы әрі міндеті";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART37_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART37_KK")
+rule HeritageProtectionDuty1995(person: Person) strict {
+    when citizen(person);
+    then duty PreserveHeritage1995 {
+        bearer person;
+        goal maintenance {
+            condition not heritage_harmed(person);
+            window [@1995-09-05, @2026-07-01);
+            completeness_policy HeritageProtectionCompleteness;
+        }
+    };
+    label ru-KZ official "Статья 37 (ред. 1995). Граждане обязаны заботиться о сохранении исторического и культурного наследия";
+    label kk-KZ official "37-бап (1995 ж. ред.). Азаматтар тарихи және мәдени мұраның сақталуына қамқорлық жасауға міндетті";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART38_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART38_KK")
+rule NatureProtectionDuty1995(person: Person) strict {
+    when citizen(person);
+    then duty ProtectNature1995 {
+        bearer person;
+        goal maintenance {
+            condition not nature_harmed(person);
+            window [@1995-09-05, @2026-07-01);
+            completeness_policy NatureProtectionCompleteness;
+        }
+    };
+    label ru-KZ official "Статья 38 (ред. 1995). Граждане обязаны сохранять природу и бережно относиться к природным богатствам";
+    label kk-KZ official "38-бап (1995 ж. ред.). Азаматтар табиғатты сақтауға және табиғат байлықтарына ұқыпты қарауға міндетті";
+}
+
+// --- Ст. 39. Пределы ограничения прав -----------------------------------
+
+// РАСХОЖДЕНИЕ 7. Неограничиваемое ядро 1995 — ДЕВЯТЬ позиций против семи в
+// 2026. Сверх ядра 2026 в него входят п. 1 ст. 16 (личная свобода) и п. 2
+// ст. 26 (гарантия собственности и наследования): ограничение, нацеленное на
+// личную свободу, до 01.07.2026 не имело правового эффекта ни при какой
+// соразмерности, после — подчиняется общему режиму ст. 41 п. 1.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART39_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART39_KK")
+rule CoreRightsRestrictionImmunity1995(
+    person: Person,
+    restriction: Restriction,
+    right: CoreRight1995,
+) strict {
+    when restriction_affects(restriction, person);
+    when restriction_targets_1995(restriction, right);
+    then immunity NonDerogableCore1995 {
+        holder person;
+        protected_effect restriction_has_legal_effect(restriction);
+    };
+    label ru-KZ official "Статья 39 пункт 3 (ред. 1995). Ни в каких случаях не подлежат ограничению права статей 11, 13–15, пункта 1 статьи 16, статей 17, 19, 22 и пункта 2 статьи 26";
+    label kk-KZ official "39-бап 3-тармақ (1995 ж. ред.). 11, 13–15-баптарда, 16-баптың 1-тармағында, 17, 19, 22-баптарда және 26-баптың 2-тармағында көзделген құқықтар ешбір жағдайда шектелуге жатпайды";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART39_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART39_KK")
+rule DerogableRestrictionClassification1995(restriction: Restriction) strict {
+    when restriction_enacted_by_law(restriction);
+    when restriction_has_constitutional_goal(restriction);
+    when proportionality_confirmed(restriction);
+    then restriction_constitutionally_justified(restriction);
+    label ru-KZ official "Статья 39 пункт 1 (ред. 1995). Ограничение права конституционно оправдано при подтверждённой соразмерности";
+    label kk-KZ official "39-бап 1-тармақ (1995 ж. ред.). Мөлшерлестігі расталған кезде құқықты шектеу конституциялық тұрғыда ақталған";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART39_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART39_KK")
+rule DerogableRestrictionRejected1995(restriction: Restriction) strict {
+    when restriction_enacted_by_law(restriction);
+    when restriction_has_constitutional_goal(restriction);
+    when proportionality_disproved(restriction);
+    then not restriction_constitutionally_justified(restriction);
+    label ru-KZ official "Статья 39 пункт 1 (ред. 1995). Ограничение права не оправдано при опровергнутой соразмерности";
+    label kk-KZ official "39-бап 1-тармақ (1995 ж. ред.). Мөлшерлестігі теріске шығарылған кезде құқықты шектеу ақталмаған";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART39_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART39_KK")
+rule InterethnicAccordViolationUnconstitutional1995(person: Person) strict {
+    when action_harms_interethnic_or_interconfessional_accord(person);
+    then action_unconstitutional(person);
+    label ru-KZ official "Статья 39 пункт 2 (ред. 1995). Признаются неконституционными любые действия, способные нарушить межнациональное и межконфессиональное согласие";
+    label kk-KZ official "39-бап 2-тармақ (1995 ж. ред.). Ұлтаралық және конфессияаралық келісімді бұзуға қабілетті кез келген әрекет конституциялық емес деп танылады";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART39_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART39_KK")
+rule PoliticalMotiveRestrictionProhibited1995(restriction: Restriction) strict {
+    when restriction_on_political_grounds(restriction);
+    then restriction_prohibited(restriction);
+    label ru-KZ official "Статья 39 пункт 3 (ред. 1995). Не допускается ни в какой форме ограничение прав и свобод граждан по политическим мотивам";
+    label kk-KZ official "39-бап 3-тармақ (1995 ж. ред.). Азаматтардың құқықтары мен бостандықтарын саяси себептер бойынша қандай да бір нысанда шектеуге жол берілмейді";
+}
+
+// === Достройка действующей редакции по аудиту 12.09.2026 ====================
+//
+// Ст. 19 была выражена только пунктом 1 (презумпция невиновности). Пункты 2 и
+// 3 стояли без нормы, притом что запрет повторного привлечения существовал
+// правилом `RepeatedLiabilityProhibited1995` пакета `court` — но с якорем в
+// ст. 77 п. 3 редакции 1995, чьё окно закрылось 01.07.2026. В редакции 2026
+// эта норма переехала из перечня принципов правосудия в ст. 19 п. 3, поэтому
+// её действующий двойник заводится ЗДЕСЬ, а не рядом со ст. 78.
+
+relation testimony_demanded_against_self_or_relatives(person: Person) kind empirical {
+    label ru-KZ official "от человека потребованы показания против самого себя, супруга (супруги) либо близких родственников";
+    label kk-KZ official "адамнан өз-өзіне, жұбайына (зайыбына) немесе жақын туыстарына қарсы айғақ беру талап етілді";
+}
+relation clergy_testimony_demanded_about_confession(person: Person) kind empirical {
+    label ru-KZ official "от священнослужителя потребованы свидетельства против доверившихся ему на исповеди";
+    label kk-KZ official "діни қызметшіден өзіне сеніп, сырын ашқан адамдарға қарсы куәлік ету талап етілді";
+}
+relation no_duty_to_testify_against_self_or_relatives(person: Person) kind institutional {
+    label ru-KZ official "человек не обязан давать такие показания";
+    label kk-KZ official "адам мұндай айғақ беруге міндетті емес";
+}
+relation clergy_not_obliged_to_testify(person: Person) kind institutional {
+    label ru-KZ official "священнослужитель не обязан свидетельствовать против доверившихся ему на исповеди";
+    label kk-KZ official "діни қызметші өзіне сеніп, сырын ашқан адамдарға қарсы куәлік етуге міндетті емес";
+}
+relation repeated_prosecution_for_same_offence(person: Person) kind empirical {
+    label ru-KZ official "человек повторно привлекается к уголовной либо административной ответственности за одно и то же правонарушение";
+    label kk-KZ official "адам дәл сол құқық бұзушылық үшін қылмыстық немесе әкімшілік жауаптылыққа қайта тартылуда";
+}
+relation repeated_prosecution_prohibited(person: Person) kind institutional {
+    label ru-KZ official "повторное привлечение к ответственности за одно и то же правонарушение запрещено";
+    label kk-KZ official "дәл сол құқық бұзушылық үшін жауаптылыққа қайта тартуға тыйым салынады";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART19_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART19_KK")
+rule NoDutyToTestifyAgainstSelfOrRelatives(person: Person) strict {
+    when testimony_demanded_against_self_or_relatives(person);
+    then no_duty_to_testify_against_self_or_relatives(person);
+    label ru-KZ official "Статья 19 пункт 2. Никто не обязан давать показания против самого себя, супруга (супруги) и близких родственников, круг которых определяется законом";
+    label kk-KZ official "19-бап 2-тармақ. Ешкім өз-өзіне, жұбайына (зайыбына) және заңда айқындалған жақын туыстарына қарсы айғақ беруге міндетті емес";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART19_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART19_KK")
+rule ClergyNotObligedToTestifyAboutConfession(person: Person) strict {
+    when clergy_testimony_demanded_about_confession(person);
+    then clergy_not_obliged_to_testify(person);
+    label ru-KZ official "Статья 19 пункт 2. Священнослужители не обязаны свидетельствовать против доверившихся им на исповеди";
+    label kk-KZ official "19-бап 2-тармақ. Діни қызметшілер өздеріне сеніп, сырын ашқан адамдарға қарсы куәлік етуге міндетті емес";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART19_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART19_KK")
+rule RepeatedProsecutionProhibited(person: Person) strict {
+    when repeated_prosecution_for_same_offence(person);
+    then repeated_prosecution_prohibited(person);
+    label ru-KZ official "Статья 19 пункт 3. Повторное привлечение человека к уголовной или административной ответственности за одно и то же правонарушение запрещено";
+    label kk-KZ official "19-бап 3-тармақ. Адамды дәл сол құқық бұзушылық үшін қылмыстық немесе әкімшілік жауаптылыққа қайта тартуға тыйым салынады";
+}

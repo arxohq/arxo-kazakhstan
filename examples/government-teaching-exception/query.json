@@ -1,0 +1,15 @@
+{
+  "kind": "truth",
+  "literal": {
+    "args": [
+      {
+        "id": "urn:demo:kz:member",
+        "kind": "entity_ref"
+      }
+    ],
+    "kind": "literal",
+    "polarity": "positive",
+    "predicate": "urn:kz:constitution:government#government_membership_incompatible"
+  },
+  "queryId": "urn:kz:constitution:government#test/government-teaching-exception/query/0"
+}

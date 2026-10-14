@@ -1,0 +1,49 @@
+{
+  "assertions": [
+    {
+      "contentHash": "sha256:fb78c8ca079121ca1e72de2d194c6f808735a5c3b41976f796e423002bff6d97",
+      "evidence": [],
+      "id": "urn:kz:constitution:government#conflict-positive",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:demo:kz:member",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:government#entrepreneurial_activity"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:government"
+    },
+    {
+      "contentHash": "sha256:105ae33e5902b3774db1d88264044a33d5ce23c5b1b9a817055dc4dfb0e34338",
+      "evidence": [],
+      "id": "urn:kz:constitution:government#conflict-negative",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:demo:kz:member",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "negative",
+        "predicate": "urn:kz:constitution:government#entrepreneurial_activity"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:government"
+    }
+  ],
+  "context": {
+    "decisionTime": "2026-09-01T12:00:00+05:00",
+    "knowledgeTime": "2026-09-01T12:00:00+05:00",
+    "legalTime": "2026-09-01",
+    "timezone": "Asia/Almaty"
+  },
+  "options": {}
+}

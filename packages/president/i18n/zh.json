@@ -1,0 +1,2876 @@
+{
+  "$comment": "哈萨克斯坦共和国宪法程序包的中文（简体）标签叠加层（DECISION-0070）。本文件不参与编译，也不进入 CLIR 规范字节，仅由展示层读取（lawref verbalize --labels、MCP 资源 law://<程序包>/verbalized/zh、工作台）。译文由形式化人员依据各节点的俄文标签（ru-KZ）译出，术语参照宪法学通用汉语表述，状态为 translation（工作译文），并非官方译本。键为声明的本地名称。",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "AcceptCredentials": [
+      {
+        "status": "translation",
+        "text": "第四十六条第十二项。总统接受外国驻本国外交代表机构馆长和国际组织负责人的国书和召回书"
+      }
+    ],
+    "AddressThePeople": [
+      {
+        "status": "translation",
+        "text": "第四十六条第一项。总统就国内形势和内外政策基本方向向哈萨克斯坦人民发表咨文"
+      }
+    ],
+    "AdoptEmergencyMeasure": [
+      {
+        "status": "translation",
+        "text": "第四十六条。宪法制度面临直接威胁并经必要协商后，总统采取紧急状态措施并立即通报库鲁尔泰"
+      }
+    ],
+    "AdoptMartialMeasure": [
+      {
+        "status": "translation",
+        "text": "第四十六条。发生侵略或者面临直接外部威胁时，总统宣布战争状态"
+      }
+    ],
+    "AdvisoryBody": [
+      {
+        "status": "translation",
+        "text": "由总统组建的咨询协商机关或者其他机关"
+      }
+    ],
+    "AdvisoryBodyFormationPower": [
+      {
+        "status": "translation",
+        "text": "第四十六条第二十一项。总统组建安全会议、其他咨询协商机关以及最高司法委员会"
+      }
+    ],
+    "AdvisoryBodyKind": [
+      {
+        "status": "translation",
+        "text": "依第二十一项由总统组建的机关的种类"
+      }
+    ],
+    "AppointHighCommand": [
+      {
+        "status": "translation",
+        "text": "第四十六条第九项。总统任命武装力量最高指挥人员"
+      }
+    ],
+    "AppointMissionHead": [
+      {
+        "status": "translation",
+        "text": "第四十六条第七项。总统任命哈萨克斯坦共和国外交代表机构馆长"
+      }
+    ],
+    "AppointSubordinateBodyHead": [
+      {
+        "status": "translation",
+        "text": "第四十六条第六项。总统任命其所属国家机关的负责人"
+      }
+    ],
+    "AppointToPresidentialOffice": [
+      {
+        "status": "translation",
+        "text": "第四十六条第五项。总统任命宪法法院院长、最高法院院长、国家银行行长、总检察长、国家安全委员会主席、中央选举委员会主席、最高审计院院长、最高司法委员会主席、国家警卫局局长和人权专员"
+      }
+    ],
+    "AppointWithConsent": [
+      {
+        "status": "translation",
+        "text": "第四十六条。总统任命须经库鲁尔泰同意任命的公职人员"
+      }
+    ],
+    "Appointment": [
+      {
+        "status": "translation",
+        "text": "由总统作出的任命"
+      }
+    ],
+    "AppointmentWithKurultaiConsentPower": [
+      {
+        "status": "translation",
+        "text": "第四十六条。总统任命须经库鲁尔泰同意任命的公职人员"
+      }
+    ],
+    "AsylumDecisionPower": [
+      {
+        "status": "translation",
+        "text": "第四十六条第十五项。总统决定给予政治庇护的事项"
+      }
+    ],
+    "AsylumMatter": [
+      {
+        "status": "translation",
+        "text": "给予政治庇护的事项"
+      }
+    ],
+    "AwardEstablishment": [
+      {
+        "status": "translation",
+        "text": "国家奖励或者荣誉称号的设立"
+      }
+    ],
+    "AwardEstablishmentPower": [
+      {
+        "status": "translation",
+        "text": "第四十六条第十三项。总统设立国家奖励和荣誉称号"
+      }
+    ],
+    "CallReferendum": [
+      {
+        "status": "translation",
+        "text": "第四十六条。总统就举行全民公决作出决定"
+      }
+    ],
+    "Candidate": [
+      {
+        "status": "translation",
+        "text": "总统候选人"
+      }
+    ],
+    "CannotAssumeByCertifiedRefusal": [
+      {
+        "status": "translation",
+        "text": "第五十一条第一款。经确认的拒绝表示，即为不能承接职权"
+      }
+    ],
+    "CannotAssumeByHealthOrPersonalReasons": [
+      {
+        "status": "translation",
+        "text": "第五十一条第一款。因健康状况或者其他个人原因不能承接职权"
+      }
+    ],
+    "CentralElectionCommissionChair": [
+      {
+        "status": "translation",
+        "text": "中央选举委员会主席"
+      }
+    ],
+    "ChargeRejectedAtStage": [
+      {
+        "status": "translation",
+        "text": "第五十条第三款。指控在审议的某一阶段被驳回"
+      }
+    ],
+    "ChargeRejectedByExpiredPeriod": [
+      {
+        "status": "translation",
+        "text": "第五十条第三款。自提出指控之时起两个月内未作出最终决定的，指控视为被驳回"
+      }
+    ],
+    "ChargeRejectedByLateDecision": [
+      {
+        "status": "translation",
+        "text": "第五十条第三款。逾两个月期限作出的最终决定，导致指控视为被驳回"
+      }
+    ],
+    "CitizenshipDecisionPower": [
+      {
+        "status": "translation",
+        "text": "第四十六条第十五项。总统决定哈萨克斯坦共和国国籍事项"
+      }
+    ],
+    "CitizenshipMatter": [
+      {
+        "status": "translation",
+        "text": "哈萨克斯坦共和国国籍事项"
+      }
+    ],
+    "ClassRank": [
+      {
+        "status": "translation",
+        "text": "职衔"
+      }
+    ],
+    "ConferDistinction": [
+      {
+        "status": "translation",
+        "text": "第四十六条第十四项。总统授予国家奖励、荣誉称号、最高军衔和其他衔级、职衔、外交衔级和资格等级"
+      }
+    ],
+    "ConferredPower": [
+      {
+        "status": "translation",
+        "text": "由宪法或者法律规定的总统职权"
+      }
+    ],
+    "ConferredPowerExercise": [
+      {
+        "status": "translation",
+        "text": "第四十六条第二十二项。总统依哈萨克斯坦共和国宪法和法律行使其他职权"
+      }
+    ],
+    "ConstitutionalCourtChair": [
+      {
+        "status": "translation",
+        "text": "宪法法院院长"
+      }
+    ],
+    "ConstitutionalPetition": [
+      {
+        "status": "translation",
+        "text": "向宪法法院提出的申请"
+      }
+    ],
+    "ConstitutionalReviewPetitionPower": [
+      {
+        "status": "translation",
+        "text": "第四十六条。总统有权向宪法法院提出申请"
+      }
+    ],
+    "Credentials": [
+      {
+        "status": "translation",
+        "text": "外交代表机构馆长或者国际组织负责人的国书或者召回书"
+      }
+    ],
+    "CredentialsAcceptancePower": [
+      {
+        "status": "translation",
+        "text": "第四十六条第十二项。总统接受外国驻本国外交代表机构馆长和国际组织负责人的国书和召回书"
+      }
+    ],
+    "DecideCitizenshipMatter": [
+      {
+        "status": "translation",
+        "text": "第四十六条第十五项。总统决定哈萨克斯坦共和国国籍事项"
+      }
+    ],
+    "DiplomaticRank": [
+      {
+        "status": "translation",
+        "text": "外交衔级"
+      }
+    ],
+    "DissolutionBarrierEmergencyOrMartialLaw": [
+      {
+        "status": "translation",
+        "text": "第六十二条第三款。在紧急状态或者战争状态期间不得解散库鲁尔泰"
+      }
+    ],
+    "DissolutionBarrierLastSixMonths": [
+      {
+        "status": "translation",
+        "text": "第六十二条第三款。在总统职权的最后六个月内不得解散库鲁尔泰"
+      }
+    ],
+    "DissolutionBarrierSuccessionPresident": [
+      {
+        "status": "translation",
+        "text": "第六十二条第三款。在宪法第五十一条第三款规定的情形下不得解散库鲁尔泰"
+      }
+    ],
+    "DissolutionBarrierWithinYearAfterPrior": [
+      {
+        "status": "translation",
+        "text": "第六十二条第三款。上次解散后一年之内不得解散库鲁尔泰"
+      }
+    ],
+    "DissolutionFinalPeriodReached": [
+      {
+        "status": "translation",
+        "text": "第六十二条第三款。审议解散问题之日处于总统职权的最后六个月"
+      }
+    ],
+    "DissolutionIntervalAfterPriorNotElapsed": [
+      {
+        "status": "translation",
+        "text": "第六十二条第三款。自上次解散库鲁尔泰之日起未满一年"
+      }
+    ],
+    "DissolveKurultai": [
+      {
+        "status": "translation",
+        "text": "第六十二条第二款。库鲁尔泰再次拒绝同意总统提出的人选的，总统有权解散库鲁尔泰"
+      }
+    ],
+    "Distinction": [
+      {
+        "status": "translation",
+        "text": "由总统授予的奖励、称号、衔级、外交衔级或者资格等级"
+      }
+    ],
+    "DistinctionConferralPower": [
+      {
+        "status": "translation",
+        "text": "第四十六条第十四项。总统授予国家奖励、荣誉称号、最高军衔和其他衔级、职衔、外交衔级和资格等级"
+      }
+    ],
+    "DistinctionKind": [
+      {
+        "status": "translation",
+        "text": "由总统授予的荣誉的种类"
+      }
+    ],
+    "EarlyElectionAnnouncedWithinSevenDays": [
+      {
+        "status": "translation",
+        "text": "第五十一条第二款。自总统被提前解除职务之日或者死亡之日起七日内，库鲁尔泰宣布举行选举"
+      }
+    ],
+    "EarlyElectionConductDue": [
+      {
+        "status": "translation",
+        "text": "第五十一条第二款。选举自库鲁尔泰作出举行决定之日起两个月内举行"
+      }
+    ],
+    "EarlyElectionConductedInPeriod": [
+      {
+        "status": "translation",
+        "text": "第五十一条第二款。不迟于两个月期限届满之日举行的选举，即为按期举行"
+      }
+    ],
+    "EarlyElectionConductedInTime": [
+      {
+        "status": "translation",
+        "text": "第五十一条第二款。选举自库鲁尔泰作出相应决定之日起两个月内举行"
+      }
+    ],
+    "ElectedInRepeatVote": [
+      {
+        "status": "translation",
+        "text": "第四十三条第四款。在重新投票中获得参加投票选民票数较多的候选人视为当选"
+      }
+    ],
+    "Election": [
+      {
+        "status": "translation",
+        "text": "总统选举"
+      }
+    ],
+    "EmergencyMeasure": [
+      {
+        "status": "translation",
+        "text": "紧急状态或者战争状态措施"
+      }
+    ],
+    "EmergencyPower": [
+      {
+        "status": "translation",
+        "text": "第四十六条。宪法制度面临直接威胁并经必要协商后，总统采取紧急状态措施并立即通报库鲁尔泰"
+      }
+    ],
+    "EstablishPresidentialBody": [
+      {
+        "status": "translation",
+        "text": "第四十六条第二十一项。总统组建安全会议、其他咨询协商机关以及最高司法委员会"
+      }
+    ],
+    "EstablishStateAward": [
+      {
+        "status": "translation",
+        "text": "第四十六条第十三项。总统设立国家奖励和荣誉称号"
+      }
+    ],
+    "ExPresidentAfterHealthRelease": [
+      {
+        "status": "translation",
+        "text": "第四十四条第三款。因健康状况被解除职务的总统享有前总统称号"
+      }
+    ],
+    "ExPresidentAfterNewPresident": [
+      {
+        "status": "translation",
+        "text": "第四十四条第三款。因新当选总统就职而职权终止的总统享有前总统称号"
+      }
+    ],
+    "ExPresidentAfterResignation": [
+      {
+        "status": "translation",
+        "text": "第四十四条第三款。自愿辞职的总统享有前总统称号"
+      }
+    ],
+    "ExerciseConferredPower": [
+      {
+        "status": "translation",
+        "text": "第四十六条第二十二项。总统依哈萨克斯坦共和国宪法和法律行使其他职权"
+      }
+    ],
+    "FormPresidentialAdministration": [
+      {
+        "status": "translation",
+        "text": "第四十六条第二十项。总统组建哈萨克斯坦共和国总统办公厅"
+      }
+    ],
+    "FormStateGuardService": [
+      {
+        "status": "translation",
+        "text": "第四十六条第十九项。总统组建其所属的国家警卫局"
+      }
+    ],
+    "FormerPresidentImmunityForActsInOffice": [
+      {
+        "status": "translation",
+        "text": "第四十八条。前总统对其在履行职权期间所实施行为的豁免"
+      }
+    ],
+    "GovernmentInitiatedActCountersignature": [
+      {
+        "status": "translation",
+        "text": "第四十七条第三款。依政府动议发布的总统文件由总理副署"
+      }
+    ],
+    "GrantPardon": [
+      {
+        "status": "translation",
+        "text": "第四十六条第十六项。总统行使赦免权"
+      }
+    ],
+    "GrantPoliticalAsylum": [
+      {
+        "status": "translation",
+        "text": "第四十六条第十五项。总统决定给予政治庇护的事项"
+      }
+    ],
+    "HealthRemoval": [
+      {
+        "status": "translation",
+        "text": "因健康状况提前解除总统职务问题的审议"
+      }
+    ],
+    "HealthRemovalThreshold": [
+      {
+        "status": "translation",
+        "text": "第五十条第二款。提前解除职务的决定，根据委员会的结论和宪法法院的结论，以议员总数不少于四分之三的多数作出"
+      }
+    ],
+    "HighCommandAppointmentPower": [
+      {
+        "status": "translation",
+        "text": "第四十六条第九项。总统任命武装力量最高指挥人员"
+      }
+    ],
+    "HighCommandReleasePower": [
+      {
+        "status": "translation",
+        "text": "第四十六条第九项。总统免去武装力量最高指挥人员的职务"
+      }
+    ],
+    "HigherMilitaryRank": [
+      {
+        "status": "translation",
+        "text": "最高军衔"
+      }
+    ],
+    "HoldPresidentLiableForTreason": [
+      {
+        "status": "translation",
+        "text": "第四十八条第一款。叛国罪的豁免例外"
+      }
+    ],
+    "HonoraryTitle": [
+      {
+        "status": "translation",
+        "text": "荣誉称号"
+      }
+    ],
+    "HumanRightsCommissioner": [
+      {
+        "status": "translation",
+        "text": "哈萨克斯坦共和国人权专员"
+      }
+    ],
+    "Impeachment": [
+      {
+        "status": "translation",
+        "text": "罢免总统职务的程序"
+      }
+    ],
+    "ImpeachmentBarredDuringDissolutionConsideration": [
+      {
+        "status": "translation",
+        "text": "第五十条第四款。在总统审议提前终止库鲁尔泰职权问题期间，不得提出罢免总统职务的问题"
+      }
+    ],
+    "ImpeachmentFinalDecisionDue": [
+      {
+        "status": "translation",
+        "text": "第五十条第三款。最终决定自提出指控之时起两个月内作出"
+      }
+    ],
+    "ImpeachmentFinalDecisionTimely": [
+      {
+        "status": "translation",
+        "text": "第五十条第三款。不迟于两个月期限届满之日作出的决定，即为按期作出"
+      }
+    ],
+    "ImpeachmentFinalStage": [
+      {
+        "status": "translation",
+        "text": "第五十条。罢免总统的最终决定，以库鲁尔泰议员总数不少于四分之三的多数作出"
+      }
+    ],
+    "ImpeachmentInitiativeThreshold": [
+      {
+        "status": "translation",
+        "text": "第五十条。罢免总统的问题经不少于三分之一库鲁尔泰议员动议提出，在审议解散问题期间不得提出"
+      }
+    ],
+    "ImpeachmentInvestigationStage": [
+      {
+        "status": "translation",
+        "text": "第五十条。指控的调查经库鲁尔泰议员总数的多数票交付"
+      }
+    ],
+    "ImpeachmentQuestionDecision": [
+      {
+        "status": "translation",
+        "text": "第五十条第三款。关于提出指控及其调查问题的决定，以库鲁尔泰议员总数的多数作出"
+      }
+    ],
+    "InternationalTreaty": [
+      {
+        "status": "translation",
+        "text": "哈萨克斯坦共和国的国际条约"
+      }
+    ],
+    "Kurultai": [
+      {
+        "status": "translation",
+        "text": "哈萨克斯坦共和国库鲁尔泰"
+      }
+    ],
+    "KurultaiDissolutionPower": [
+      {
+        "status": "translation",
+        "text": "第六十二条第二款。库鲁尔泰再次拒绝同意总统提出的人选的，总统有权解散库鲁尔泰"
+      }
+    ],
+    "Law": [
+      {
+        "status": "translation",
+        "text": "提请总统签署的法律"
+      }
+    ],
+    "LawCountersignatureBeforePresidentialSignature": [
+      {
+        "status": "translation",
+        "text": "第四十七条第三款。法律事先由库鲁尔泰主席和总理副署"
+      }
+    ],
+    "MajorityReachedInElection": [
+      {
+        "status": "translation",
+        "text": "第四十三条第四款。选举中有候选人获得百分之五十以上的选票"
+      }
+    ],
+    "MartialPower": [
+      {
+        "status": "translation",
+        "text": "第四十六条。发生侵略或者面临直接外部威胁时，总统宣布战争状态"
+      }
+    ],
+    "MissionHead": [
+      {
+        "status": "translation",
+        "text": "哈萨克斯坦共和国外交代表机构馆长"
+      }
+    ],
+    "MissionHeadAppointmentPower": [
+      {
+        "status": "translation",
+        "text": "第四十六条第七项。总统任命哈萨克斯坦共和国外交代表机构馆长"
+      }
+    ],
+    "MissionHeadRecallPower": [
+      {
+        "status": "translation",
+        "text": "第四十六条第七项。总统召回哈萨克斯坦共和国外交代表机构馆长"
+      }
+    ],
+    "NationalBankChair": [
+      {
+        "status": "translation",
+        "text": "国家银行行长"
+      }
+    ],
+    "NationalSecurityCommitteeChair": [
+      {
+        "status": "translation",
+        "text": "国家安全委员会主席"
+      }
+    ],
+    "NoDissolutionInEmergency": [
+      {
+        "status": "translation",
+        "text": "第六十二条第三款。在紧急状态或者战争状态期间不得解散库鲁尔泰"
+      }
+    ],
+    "NoDissolutionInLastSixMonths": [
+      {
+        "status": "translation",
+        "text": "第六十二条第三款。在总统职权的最后六个月内不得解散库鲁尔泰"
+      }
+    ],
+    "NoDissolutionUnderSuccessionPresident": [
+      {
+        "status": "translation",
+        "text": "第六十二条第三款。在宪法第五十一条第三款规定的情形下不得解散库鲁尔泰"
+      }
+    ],
+    "NoDissolutionWithinYearAfterPrior": [
+      {
+        "status": "translation",
+        "text": "第六十二条第三款。上次解散后一年之内不得解散库鲁尔泰"
+      }
+    ],
+    "NoSecondPresidentialElection": [
+      {
+        "status": "translation",
+        "text": "第四十三条第一款。同一人当选总统不得超过一次"
+      }
+    ],
+    "OfficeRelease": [
+      {
+        "status": "translation",
+        "text": "免去职务"
+      }
+    ],
+    "OnePresidentialElectionImmunity": [
+      {
+        "status": "translation",
+        "text": "第四十三条第一款。同一人当选总统不得超过一次"
+      }
+    ],
+    "OrganiseSubordinateBody": [
+      {
+        "status": "translation",
+        "text": "第四十六条第六项。总统设立、撤销和改组直接隶属于总统并对总统负责的国家机关"
+      }
+    ],
+    "OtherRank": [
+      {
+        "status": "translation",
+        "text": "其他衔级"
+      }
+    ],
+    "PardonMatter": [
+      {
+        "status": "translation",
+        "text": "赦免申请"
+      }
+    ],
+    "PardonPower": [
+      {
+        "status": "translation",
+        "text": "第四十六条第十六项。总统行使赦免权"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "自然人"
+      }
+    ],
+    "PetitionConstitutionalCourt": [
+      {
+        "status": "translation",
+        "text": "第四十六条。总统有权向宪法法院提出申请"
+      }
+    ],
+    "PowersTerminatedByDeath": [
+      {
+        "status": "translation",
+        "text": "第四十四条第三款。总统死亡的，其职权终止"
+      }
+    ],
+    "PowersTerminatedByHealthRelease": [
+      {
+        "status": "translation",
+        "text": "第四十四条第三款。因健康状况持续不能履行职责而被提前解除职务的，总统职权终止"
+      }
+    ],
+    "PowersTerminatedByNewPresident": [
+      {
+        "status": "translation",
+        "text": "第四十四条第三款。总统的职权自新当选总统就职之时起终止"
+      }
+    ],
+    "PowersTerminatedByRemoval": [
+      {
+        "status": "translation",
+        "text": "第四十四条第三款。总统被罢免职务的，其职权终止"
+      }
+    ],
+    "PowersTerminatedByResignation": [
+      {
+        "status": "translation",
+        "text": "第四十四条第三款。因自愿辞职而被提前解除职务的，总统职权终止"
+      }
+    ],
+    "President": [
+      {
+        "status": "translation",
+        "text": "哈萨克斯坦共和国总统"
+      }
+    ],
+    "PresidentEnsuresCoordinatedStatePower": [
+      {
+        "status": "translation",
+        "text": "第四十二条。总统保障国家权力各分支的协调运作"
+      }
+    ],
+    "PresidentGuaranteesUnityConstitutionAndRights": [
+      {
+        "status": "translation",
+        "text": "第四十二条。总统是人民和国家权力统一、宪法不可动摇以及权利和自由的象征与保障者"
+      }
+    ],
+    "PresidentIsCommanderInChief": [
+      {
+        "status": "translation",
+        "text": "第四十六条第九项。总统是哈萨克斯坦共和国武装力量最高统帅"
+      }
+    ],
+    "PresidentIsHeadOfState": [
+      {
+        "status": "translation",
+        "text": "第四十二条。总统是国家元首"
+      }
+    ],
+    "PresidentReleasedFromOfficeForHealth": [
+      {
+        "status": "translation",
+        "text": "第五十条第二款。该总统已因健康状况被提前解除职务"
+      }
+    ],
+    "PresidentialAct": [
+      {
+        "status": "translation",
+        "text": "总统文件"
+      }
+    ],
+    "PresidentialActBindingNationwide": [
+      {
+        "status": "translation",
+        "text": "第四十七条第一款。根据宪法和法律发布的命令和指令在全国范围内具有约束力"
+      }
+    ],
+    "PresidentialAddress": [
+      {
+        "status": "translation",
+        "text": "总统向哈萨克斯坦人民发表的咨文"
+      }
+    ],
+    "PresidentialAddressPower": [
+      {
+        "status": "translation",
+        "text": "第四十六条第一项。总统就国内形势和内外政策基本方向向哈萨克斯坦人民发表咨文"
+      }
+    ],
+    "PresidentialAdministrationFormationPower": [
+      {
+        "status": "translation",
+        "text": "第四十六条第二十项。总统组建哈萨克斯坦共和国总统办公厅"
+      }
+    ],
+    "PresidentialCandidateEligibility": [
+      {
+        "status": "translation",
+        "text": "第四十三条第二款。出生取得共和国国籍、年满四十周岁、熟练掌握国语、最近十五年在哈萨克斯坦居住、具有高等教育学历并有不少于五年工作经历的公民，可以当选总统"
+      }
+    ],
+    "PresidentialElectionMajority": [
+      {
+        "status": "translation",
+        "text": "第四十三条第四款。获得参加投票选民百分之五十以上选票的候选人视为当选"
+      }
+    ],
+    "PresidentialImmunityForActsInOffice": [
+      {
+        "status": "translation",
+        "text": "第四十八条。总统对其在履行职权期间所实施行为的豁免"
+      }
+    ],
+    "PresidentialOffice": [
+      {
+        "status": "translation",
+        "text": "由总统自行任命的职务"
+      }
+    ],
+    "PresidentialOfficeAppointmentPower": [
+      {
+        "status": "translation",
+        "text": "第四十六条第五项。总统任命宪法法院院长、最高法院院长、国家银行行长、总检察长、国家安全委员会主席、中央选举委员会主席、最高审计院院长、最高司法委员会主席、国家警卫局局长和人权专员"
+      }
+    ],
+    "PresidentialOfficeIncompatibility/alt/1": [
+      {
+        "status": "translation",
+        "text": "第四十五条第一款。总统职务的不相容情形"
+      }
+    ],
+    "PresidentialOfficeIncompatibility/alt/2": [
+      {
+        "status": "translation",
+        "text": "第四十五条第一款。总统职务的不相容情形"
+      }
+    ],
+    "PresidentialOfficeIncompatibility/alt/3": [
+      {
+        "status": "translation",
+        "text": "第四十五条第一款。总统职务的不相容情形"
+      }
+    ],
+    "PresidentialOfficeIncompatibility/alt/4": [
+      {
+        "status": "translation",
+        "text": "第四十五条第一款。总统职务的不相容情形"
+      }
+    ],
+    "PresidentialOfficeReleasePower": [
+      {
+        "status": "translation",
+        "text": "第四十六条第五项。总统免去第五项所列人员的职务"
+      }
+    ],
+    "PresidentialOfficialImmunityFormer": [
+      {
+        "status": "translation",
+        "text": "第四十八条。前总统对其在履行职权期间所实施行为的豁免"
+      }
+    ],
+    "PresidentialOfficialImmunityInOffice": [
+      {
+        "status": "translation",
+        "text": "第四十八条。总统对其在履行职权期间所实施行为的豁免"
+      }
+    ],
+    "PresidentialRelativePositionProhibited": [
+      {
+        "status": "translation",
+        "text": "第四十五条第二款。总统的近亲属不得担任所列职务"
+      }
+    ],
+    "PresidentialReturnPower": [
+      {
+        "status": "translation",
+        "text": "第四十六条。总统有权将法律连同其异议退回库鲁尔泰"
+      }
+    ],
+    "PresidentialSignatureDue": [
+      {
+        "status": "translation",
+        "text": "第四十六条第三项。法律自库鲁尔泰提交之日起一个月内签署"
+      }
+    ],
+    "PresidentialSignaturePower": [
+      {
+        "status": "translation",
+        "text": "第四十六条。总统签署库鲁尔泰提交的法律"
+      }
+    ],
+    "PresidentialSignatureTimely": [
+      {
+        "status": "translation",
+        "text": "第四十六条第三项。不迟于一个月期限届满之日签署或者退回法律的，即为按期"
+      }
+    ],
+    "PresidentialTermExpiry": [
+      {
+        "status": "translation",
+        "text": "第四十三条第一款和第四十四条第一款。总统的任期自宣誓就职之日起为七年"
+      }
+    ],
+    "PresidentialVacancy": [
+      {
+        "status": "translation",
+        "text": "总统职务的提前空缺"
+      }
+    ],
+    "PriorOfficeRelinquished": [
+      {
+        "status": "translation",
+        "text": "第五十一条第一款。承接总统职权的人应当相应辞去副总统、库鲁尔泰主席、总理的职务"
+      }
+    ],
+    "ProsecutorGeneral": [
+      {
+        "status": "translation",
+        "text": "总检察长"
+      }
+    ],
+    "ProvidePresidentialSupportAndProtection": [
+      {
+        "status": "translation",
+        "text": "第四十八条第二款。总统及其家属的保障、服务和警卫由国家承担费用"
+      }
+    ],
+    "QualificationClass": [
+      {
+        "status": "translation",
+        "text": "资格等级"
+      }
+    ],
+    "RatificationInstrument": [
+      {
+        "status": "translation",
+        "text": "批准书"
+      }
+    ],
+    "RatificationInstrumentPower": [
+      {
+        "status": "translation",
+        "text": "第四十六条第十二项。总统签署批准书"
+      }
+    ],
+    "RecallMissionHead": [
+      {
+        "status": "translation",
+        "text": "第四十六条第七项。总统召回哈萨克斯坦共和国外交代表机构馆长"
+      }
+    ],
+    "ReferendumPower": [
+      {
+        "status": "translation",
+        "text": "第四十六条。总统就举行全民公决作出决定"
+      }
+    ],
+    "RefusalCertifiedByConstitutionalCourt": [
+      {
+        "status": "translation",
+        "text": "第五十一条第一款。宪法法院确认该人亲自并自愿提交了拒绝承接总统职权的声明"
+      }
+    ],
+    "RegularElectionCoincidesWithKurultaiElection": [
+      {
+        "status": "translation",
+        "text": "第四十三条第三款。总统例行选举与新一届库鲁尔泰选举同日举行"
+      }
+    ],
+    "RegularElectionOnKurultaiElectionDay": [
+      {
+        "status": "translation",
+        "text": "第四十三条第三款。总统例行选举的时间不得与新一届库鲁尔泰选举相重合"
+      }
+    ],
+    "RegularElectionScheduledInTime": [
+      {
+        "status": "translation",
+        "text": "第四十三条第三款。总统例行选举不迟于其任期届满前两个月举行"
+      }
+    ],
+    "RegularElectionTooLate": [
+      {
+        "status": "translation",
+        "text": "第四十三条第三款。例行选举定于总统任期届满前不足两个月之时"
+      }
+    ],
+    "RegularOathDue": [
+      {
+        "status": "translation",
+        "text": "第四十四条第二款。宣誓自选举结果公布之日起一个月内进行"
+      }
+    ],
+    "RegularOathTimely": [
+      {
+        "status": "translation",
+        "text": "第四十四条第二款。不迟于一个月期限届满之日进行的宣誓，即为按期"
+      }
+    ],
+    "RejectedChargeTerminatesInitiators": [
+      {
+        "status": "translation",
+        "text": "第五十条第三款。指控在任何阶段被驳回的，提出该问题审议的库鲁尔泰议员的职权提前终止"
+      }
+    ],
+    "ReleaseFromPresidentialOffice": [
+      {
+        "status": "translation",
+        "text": "第四十六条第五项。总统免去第五项所列人员的职务"
+      }
+    ],
+    "ReleaseHighCommand": [
+      {
+        "status": "translation",
+        "text": "第四十六条第九项。总统免去武装力量最高指挥人员的职务"
+      }
+    ],
+    "ReleaseSubordinateBodyHead": [
+      {
+        "status": "translation",
+        "text": "第四十六条第六项。总统免去其所属国家机关负责人的职务"
+      }
+    ],
+    "RemovedFromOfficeByImpeachment": [
+      {
+        "status": "translation",
+        "text": "第五十条第三款。总统因叛国罪指控经库鲁尔泰决定被罢免职务"
+      }
+    ],
+    "RepeatVoteRequired": [
+      {
+        "status": "translation",
+        "text": "第四十三条第四款。无候选人获得百分之五十以上选票的，举行重新投票"
+      }
+    ],
+    "ReturnLawWithObjections": [
+      {
+        "status": "translation",
+        "text": "第四十六条。总统有权将法律连同其异议退回库鲁尔泰"
+      }
+    ],
+    "SignInternationalTreaty": [
+      {
+        "status": "translation",
+        "text": "第四十六条第十二项。总统以哈萨克斯坦共和国名义进行谈判并签署国际条约"
+      }
+    ],
+    "SignLaw": [
+      {
+        "status": "translation",
+        "text": "第四十六条。总统签署库鲁尔泰提交的法律"
+      }
+    ],
+    "SignRatificationInstrument": [
+      {
+        "status": "translation",
+        "text": "第四十六条第十二项。总统签署批准书"
+      }
+    ],
+    "StateAuthority": [
+      {
+        "status": "translation",
+        "text": "国家机关或者公职人员"
+      }
+    ],
+    "StateAward": [
+      {
+        "status": "translation",
+        "text": "国家奖励"
+      }
+    ],
+    "StateBodyAct": [
+      {
+        "status": "translation",
+        "text": "关于设立、撤销或者改组国家机关的文件"
+      }
+    ],
+    "StateBodyAction": [
+      {
+        "status": "translation",
+        "text": "总统对其所属国家机关实施的行为"
+      }
+    ],
+    "StateGuardServiceFormationPower": [
+      {
+        "status": "translation",
+        "text": "第四十六条第十九项。总统组建其所属的国家警卫局"
+      }
+    ],
+    "StateGuardServiceHead": [
+      {
+        "status": "translation",
+        "text": "哈萨克斯坦共和国国家警卫局局长"
+      }
+    ],
+    "StateSupportForPresidentAndFamily": [
+      {
+        "status": "translation",
+        "text": "第四十八条第二款。总统及其家属的保障、服务和警卫由国家承担费用"
+      }
+    ],
+    "SubordinateBodyHeadAppointmentPower": [
+      {
+        "status": "translation",
+        "text": "第四十六条第六项。总统任命其所属国家机关的负责人"
+      }
+    ],
+    "SubordinateBodyHeadReleasePower": [
+      {
+        "status": "translation",
+        "text": "第四十六条第六项。总统免去其所属国家机关负责人的职务"
+      }
+    ],
+    "SubordinateBodyOrganisationPower": [
+      {
+        "status": "translation",
+        "text": "第四十六条第六项。总统设立、撤销和改组直接隶属于总统并对总统负责的国家机关"
+      }
+    ],
+    "SuccessionOathDeadline": [
+      {
+        "status": "translation",
+        "text": "第四十四条第二款。宣誓自承接总统职权之日起一个月内进行"
+      }
+    ],
+    "SuccessionRefusal": [
+      {
+        "status": "translation",
+        "text": "拒绝承接总统职权"
+      }
+    ],
+    "SuccessionToKurultaiChair": [
+      {
+        "status": "translation",
+        "text": "第五十一条第一款。副总统不能承接的，总统职权转由库鲁尔泰主席承接"
+      }
+    ],
+    "SuccessionToPrimeMinister": [
+      {
+        "status": "translation",
+        "text": "第五十一条第一款。库鲁尔泰主席不能承接的，总统职权转由总理承接"
+      }
+    ],
+    "SuccessionToVicePresident": [
+      {
+        "status": "translation",
+        "text": "第五十一条第一款。总统职权转由副总统承接"
+      }
+    ],
+    "SuccessorCannotDissolveKurultai": [
+      {
+        "status": "translation",
+        "text": "第五十一条第三款。承接总统职权的人无权解散库鲁尔泰"
+      }
+    ],
+    "SuccessorCannotInitiateAmendment": [
+      {
+        "status": "translation",
+        "text": "第五十一条第三款。承接总统职权的人无权提起宪法的修改和补充"
+      }
+    ],
+    "SupremeAuditChamberChair": [
+      {
+        "status": "translation",
+        "text": "最高审计院院长"
+      }
+    ],
+    "SupremeCourtChair": [
+      {
+        "status": "translation",
+        "text": "最高法院院长"
+      }
+    ],
+    "SupremeJudicialCouncilChair": [
+      {
+        "status": "translation",
+        "text": "最高司法委员会主席"
+      }
+    ],
+    "TemporaryLegislativeDecree": [
+      {
+        "status": "translation",
+        "text": "第四十七条第二款。在库鲁尔泰暂时缺位期间，总统命令可以具有法律效力"
+      }
+    ],
+    "TreasonLiabilityPower": [
+      {
+        "status": "translation",
+        "text": "第四十八条第一款。叛国罪的豁免例外"
+      }
+    ],
+    "TreatySignaturePower": [
+      {
+        "status": "translation",
+        "text": "第四十六条第十二项。总统以哈萨克斯坦共和国名义进行谈判并签署国际条约"
+      }
+    ],
+    "VacancyByDeath": [
+      {
+        "status": "translation",
+        "text": "第五十一条第一款。总统死亡引起职务替补"
+      }
+    ],
+    "VacancyByHealthIncapacity": [
+      {
+        "status": "translation",
+        "text": "第五十一条第一款。因健康状况持续不能履行职责而被提前解除职务，引起职务替补"
+      }
+    ],
+    "VacancyByRemovalFromOffice": [
+      {
+        "status": "translation",
+        "text": "第五十一条第一款。总统被罢免职务引起职务替补"
+      }
+    ],
+    "VacancyByVoluntaryResignation": [
+      {
+        "status": "translation",
+        "text": "第五十一条第一款。因自愿辞职而被提前解除职务，引起职务替补"
+      }
+    ],
+    "VicePresident": [
+      {
+        "status": "translation",
+        "text": "哈萨克斯坦共和国副总统"
+      }
+    ],
+    "VicePresidentAppointmentWithKurultaiConsent": [
+      {
+        "status": "translation",
+        "text": "第四十九条第一款。副总统由总统经库鲁尔泰多数同意任命"
+      }
+    ],
+    "VicePresidentRepresentationByInstruction": [
+      {
+        "status": "translation",
+        "text": "第四十九条第三款。副总统受总统委托代表总统"
+      }
+    ],
+    "VicePresidentialOfficeIncompatibility/alt/1": [
+      {
+        "status": "translation",
+        "text": "第四十九条第二款。副总统职务的不相容情形"
+      }
+    ],
+    "VicePresidentialOfficeIncompatibility/alt/2": [
+      {
+        "status": "translation",
+        "text": "第四十九条第二款。副总统职务的不相容情形"
+      }
+    ],
+    "VicePresidentialOfficeIncompatibility/alt/3": [
+      {
+        "status": "translation",
+        "text": "第四十九条第二款。副总统职务的不相容情形"
+      }
+    ],
+    "VicePresidentialOfficeIncompatibility/alt/4": [
+      {
+        "status": "translation",
+        "text": "第四十九条第二款。副总统职务的不相容情形"
+      }
+    ],
+    "act_countersigned_by_prime_minister": [
+      {
+        "status": "translation",
+        "text": "该文件经总理副署"
+      }
+    ],
+    "address_attempt": [
+      {
+        "status": "translation",
+        "text": "总统向哈萨克斯坦人民发表咨文"
+      }
+    ],
+    "advisory_body": [
+      {
+        "status": "translation",
+        "text": "依第二十一项由总统组建的机关及其种类"
+      }
+    ],
+    "age_years": [
+      {
+        "status": "translation",
+        "text": "该人的周岁年龄"
+      }
+    ],
+    "aggression_or_immediate_external_threat": [
+      {
+        "status": "translation",
+        "text": "存在对共和国的侵略或者直接的外部威胁"
+      }
+    ],
+    "appointment_effective": [
+      {
+        "status": "translation",
+        "text": "任命已经作出"
+      }
+    ],
+    "appointment_requires_kurultai_consent": [
+      {
+        "status": "translation",
+        "text": "该项任命经库鲁尔泰同意作出"
+      }
+    ],
+    "asylum_decision_attempt": [
+      {
+        "status": "translation",
+        "text": "总统决定给予政治庇护的事项"
+      }
+    ],
+    "asylum_matter": [
+      {
+        "status": "translation",
+        "text": "作为案件标的的给予政治庇护事项"
+      }
+    ],
+    "asylum_matter_decided": [
+      {
+        "status": "translation",
+        "text": "给予政治庇护的事项已经决定"
+      }
+    ],
+    "award_established": [
+      {
+        "status": "translation",
+        "text": "国家奖励或者荣誉称号已经设立"
+      }
+    ],
+    "award_establishment": [
+      {
+        "status": "translation",
+        "text": "作为案件标的的国家奖励或者荣誉称号的设立"
+      }
+    ],
+    "award_establishment_attempt": [
+      {
+        "status": "translation",
+        "text": "总统设立国家奖励或者荣誉称号"
+      }
+    ],
+    "body_formation_attempt": [
+      {
+        "status": "translation",
+        "text": "总统组建或者设立机关"
+      }
+    ],
+    "body_head_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "总统任命其所属机关的负责人"
+      }
+    ],
+    "body_head_appointment_effective": [
+      {
+        "status": "translation",
+        "text": "总统所属机关负责人的任命已经作出"
+      }
+    ],
+    "body_head_release_attempt": [
+      {
+        "status": "translation",
+        "text": "总统免去其所属机关负责人的职务"
+      }
+    ],
+    "body_head_release_effective": [
+      {
+        "status": "translation",
+        "text": "总统所属机关负责人的免职已经作出"
+      }
+    ],
+    "body_subordinate_to_president": [
+      {
+        "status": "translation",
+        "text": "该国家机关直接隶属于总统并对总统负责"
+      }
+    ],
+    "candidate_person": [
+      {
+        "status": "translation",
+        "text": "候选人即为该人"
+      }
+    ],
+    "cannot_assume_presidential_powers": [
+      {
+        "status": "translation",
+        "text": "该人不能承接总统职权"
+      }
+    ],
+    "charge_presented_on": [
+      {
+        "status": "translation",
+        "text": "向总统提出叛国罪指控之日"
+      }
+    ],
+    "citizen_by_birth": [
+      {
+        "status": "translation",
+        "text": "该人为出生取得共和国国籍的公民"
+      }
+    ],
+    "citizenship_decision_attempt": [
+      {
+        "status": "translation",
+        "text": "总统决定哈萨克斯坦共和国国籍事项"
+      }
+    ],
+    "citizenship_matter": [
+      {
+        "status": "translation",
+        "text": "作为案件标的的国籍事项"
+      }
+    ],
+    "citizenship_matter_decided": [
+      {
+        "status": "translation",
+        "text": "国籍事项已经决定"
+      }
+    ],
+    "close_relative_of_president": [
+      {
+        "status": "translation",
+        "text": "该人为总统的近亲属"
+      }
+    ],
+    "coincides_with_kurultai_election": [
+      {
+        "status": "translation",
+        "text": "总统例行选举与新一届库鲁尔泰选举时间相重合"
+      }
+    ],
+    "commission_conclusion_issued": [
+      {
+        "status": "translation",
+        "text": "委员会已作出结论"
+      }
+    ],
+    "conferrable_distinction_kind": [
+      {
+        "status": "translation",
+        "text": "该荣誉种类属于第四十六条第十四项所列范围"
+      }
+    ],
+    "conferred_power_attempt": [
+      {
+        "status": "translation",
+        "text": "总统行使由宪法或者法律规定的职权"
+      }
+    ],
+    "conferred_power_exercised": [
+      {
+        "status": "translation",
+        "text": "由宪法或者法律规定的职权已经行使"
+      }
+    ],
+    "constitutional_court_certified_refusal": [
+      {
+        "status": "translation",
+        "text": "宪法法院已确认拒绝表示出于自愿"
+      }
+    ],
+    "constitutional_court_procedure_confirmed": [
+      {
+        "status": "translation",
+        "text": "宪法法院确认既定程序已经遵守"
+      }
+    ],
+    "constitutional_court_procedure_confirmed_for_release": [
+      {
+        "status": "translation",
+        "text": "宪法法院已就既定宪法程序的遵守作出结论"
+      }
+    ],
+    "constitutional_petition": [
+      {
+        "status": "translation",
+        "text": "作为案件标的的总统向宪法法院提出的申请"
+      }
+    ],
+    "constitutional_review_petition_attempt": [
+      {
+        "status": "translation",
+        "text": "总统向宪法法院提出申请"
+      }
+    ],
+    "constitutional_review_requested": [
+      {
+        "status": "translation",
+        "text": "宪法监督由总统启动"
+      }
+    ],
+    "credentials": [
+      {
+        "status": "translation",
+        "text": "作为案件标的的国书或者召回书"
+      }
+    ],
+    "credentials_acceptance_attempt": [
+      {
+        "status": "translation",
+        "text": "总统接受国书或者召回书"
+      }
+    ],
+    "credentials_accepted": [
+      {
+        "status": "translation",
+        "text": "国书或者召回书已被接受"
+      }
+    ],
+    "deputy_powers_terminated": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰议员的职权已提前终止"
+      }
+    ],
+    "diplomatic_mission_head": [
+      {
+        "status": "translation",
+        "text": "作为案件标的的外交代表机构馆长"
+      }
+    ],
+    "dissolution_attempt": [
+      {
+        "status": "translation",
+        "text": "总统解散库鲁尔泰"
+      }
+    ],
+    "dissolution_considered_on": [
+      {
+        "status": "translation",
+        "text": "提出解散库鲁尔泰问题之日"
+      }
+    ],
+    "dissolution_final_period": [
+      {
+        "status": "translation",
+        "text": "总统职权届满前的受保护期间为六个月"
+      }
+    ],
+    "dissolution_interval_after_prior": [
+      {
+        "status": "translation",
+        "text": "上次解散后不得解散库鲁尔泰的期间为一年"
+      }
+    ],
+    "dissolution_question_under_consideration": [
+      {
+        "status": "translation",
+        "text": "总统正在审议提前终止库鲁尔泰职权的问题"
+      }
+    ],
+    "distinction_attempt": [
+      {
+        "status": "translation",
+        "text": "总统授予奖励、称号、衔级、外交衔级或者资格等级"
+      }
+    ],
+    "distinction_conferred": [
+      {
+        "status": "translation",
+        "text": "该项荣誉已经授予"
+      }
+    ],
+    "distinction_kind": [
+      {
+        "status": "translation",
+        "text": "所授予荣誉的种类"
+      }
+    ],
+    "early_election_announced_timely": [
+      {
+        "status": "translation",
+        "text": "临时选举已在宪法规定的期限内宣布"
+      }
+    ],
+    "early_election_announcement_day": [
+      {
+        "status": "translation",
+        "text": "宣布总统临时选举之日"
+      }
+    ],
+    "early_election_announcement_days": [
+      {
+        "status": "translation",
+        "text": "宣布临时选举的期限为七日"
+      }
+    ],
+    "early_election_conduct_due_on": [
+      {
+        "status": "translation",
+        "text": "举行选举两个月期限的届满之日"
+      }
+    ],
+    "early_election_conduct_period": [
+      {
+        "status": "translation",
+        "text": "举行总统临时选举的期限为两个月"
+      }
+    ],
+    "early_election_conducted_in_period": [
+      {
+        "status": "translation",
+        "text": "临时选举已在两个月期限内举行"
+      }
+    ],
+    "early_election_conducted_timely": [
+      {
+        "status": "translation",
+        "text": "临时选举已在宪法规定的期限内举行"
+      }
+    ],
+    "early_election_day": [
+      {
+        "status": "translation",
+        "text": "举行总统临时选举之日"
+      }
+    ],
+    "elected_president": [
+      {
+        "status": "translation",
+        "text": "该人视为当选总统"
+      }
+    ],
+    "election_results_published_on": [
+      {
+        "status": "translation",
+        "text": "总统选举结果公布之日"
+      }
+    ],
+    "eligible_presidential_candidate": [
+      {
+        "status": "translation",
+        "text": "该人符合总统候选人的条件"
+      }
+    ],
+    "emergency_consultations_completed": [
+      {
+        "status": "translation",
+        "text": "宣布紧急状态前所需的协商已经进行"
+      }
+    ],
+    "emergency_measure": [
+      {
+        "status": "translation",
+        "text": "总统在紧急状态或者战争状态下采取的措施"
+      }
+    ],
+    "emergency_measure_attempt": [
+      {
+        "status": "translation",
+        "text": "总统采取紧急状态措施"
+      }
+    ],
+    "emergency_measure_in_force": [
+      {
+        "status": "translation",
+        "text": "紧急状态措施的实施符合法定要求"
+      }
+    ],
+    "emergency_or_martial_law_active": [
+      {
+        "status": "translation",
+        "text": "紧急状态或者战争状态正在实施"
+      }
+    ],
+    "ex_president": [
+      {
+        "status": "translation",
+        "text": "该人享有哈萨克斯坦共和国前总统称号"
+      }
+    ],
+    "final_decision_day": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰就指控作出最终决定之日"
+      }
+    ],
+    "final_decision_not_taken": [
+      {
+        "status": "translation",
+        "text": "尚未就指控作出最终决定"
+      }
+    ],
+    "final_impeachment_votes": [
+      {
+        "status": "translation",
+        "text": "罢免最终决定的票数"
+      }
+    ],
+    "fluent_in_state_language": [
+      {
+        "status": "translation",
+        "text": "该人熟练掌握国语"
+      }
+    ],
+    "former_president": [
+      {
+        "status": "translation",
+        "text": "该人为共和国前总统"
+      }
+    ],
+    "government_initiated_act_ready": [
+      {
+        "status": "translation",
+        "text": "依政府动议发布的文件已依法定形式作成"
+      }
+    ],
+    "government_initiated_presidential_act": [
+      {
+        "status": "translation",
+        "text": "该文件系依政府动议发布"
+      }
+    ],
+    "health_removal_case": [
+      {
+        "status": "translation",
+        "text": "正在审议因健康状况提前解除总统职务的问题"
+      }
+    ],
+    "health_removal_denominator": [
+      {
+        "status": "translation",
+        "text": "因健康状况解除职务所需票数比例的分母"
+      }
+    ],
+    "health_removal_numerator": [
+      {
+        "status": "translation",
+        "text": "因健康状况解除职务所需票数比例的分子"
+      }
+    ],
+    "health_removal_target": [
+      {
+        "status": "translation",
+        "text": "因健康状况提前解除职务的问题涉及该总统"
+      }
+    ],
+    "health_removal_votes": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰议员对因健康状况提前解除职务投赞成票的票数"
+      }
+    ],
+    "high_command_appointment": [
+      {
+        "status": "translation",
+        "text": "该项任命涉及武装力量最高指挥人员"
+      }
+    ],
+    "high_command_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "总统任命武装力量最高指挥人员"
+      }
+    ],
+    "high_command_appointment_effective": [
+      {
+        "status": "translation",
+        "text": "武装力量最高指挥人员的任命已经作出"
+      }
+    ],
+    "high_command_release": [
+      {
+        "status": "translation",
+        "text": "该项免职涉及武装力量最高指挥人员"
+      }
+    ],
+    "high_command_release_attempt": [
+      {
+        "status": "translation",
+        "text": "总统免去武装力量最高指挥人员的职务"
+      }
+    ],
+    "high_command_release_effective": [
+      {
+        "status": "translation",
+        "text": "武装力量最高指挥人员的免职已经作出"
+      }
+    ],
+    "higher_education": [
+      {
+        "status": "translation",
+        "text": "该人具有高等教育学历"
+      }
+    ],
+    "immediate_constitutional_threat": [
+      {
+        "status": "translation",
+        "text": "存在对宪法制度、法律秩序或者安全的直接威胁"
+      }
+    ],
+    "impeachment_case": [
+      {
+        "status": "translation",
+        "text": "该程序为罢免总统职务的程序"
+      }
+    ],
+    "impeachment_charge_rejected": [
+      {
+        "status": "translation",
+        "text": "对总统的叛国罪指控已被驳回"
+      }
+    ],
+    "impeachment_final_decision_due_on": [
+      {
+        "status": "translation",
+        "text": "作出最终决定两个月期限的届满之日"
+      }
+    ],
+    "impeachment_final_decision_period": [
+      {
+        "status": "translation",
+        "text": "就指控作出最终决定的期限为两个月"
+      }
+    ],
+    "impeachment_final_decision_timely": [
+      {
+        "status": "translation",
+        "text": "最终决定已在两个月期限内作出"
+      }
+    ],
+    "impeachment_final_denominator": [
+      {
+        "status": "translation",
+        "text": "罢免门槛的分母为四分之三"
+      }
+    ],
+    "impeachment_final_numerator": [
+      {
+        "status": "translation",
+        "text": "罢免门槛的分子为四分之三"
+      }
+    ],
+    "impeachment_initiating_deputy": [
+      {
+        "status": "translation",
+        "text": "该库鲁尔泰议员提出了审议指控问题的动议"
+      }
+    ],
+    "impeachment_initiating_votes": [
+      {
+        "status": "translation",
+        "text": "提出罢免动议的库鲁尔泰议员人数"
+      }
+    ],
+    "impeachment_initiative_denominator": [
+      {
+        "status": "translation",
+        "text": "罢免动议门槛的分母为三分之一"
+      }
+    ],
+    "impeachment_initiative_numerator": [
+      {
+        "status": "translation",
+        "text": "罢免动议门槛的分子为三分之一"
+      }
+    ],
+    "impeachment_initiative_valid": [
+      {
+        "status": "translation",
+        "text": "罢免动议由法定人数的议员提出"
+      }
+    ],
+    "impeachment_investigation_denominator": [
+      {
+        "status": "translation",
+        "text": "交付调查决定门槛的分母为二分之一"
+      }
+    ],
+    "impeachment_investigation_numerator": [
+      {
+        "status": "translation",
+        "text": "交付调查决定门槛的分子为二分之一"
+      }
+    ],
+    "impeachment_investigation_valid": [
+      {
+        "status": "translation",
+        "text": "指控的调查已依法定程序交付"
+      }
+    ],
+    "impeachment_may_not_be_initiated": [
+      {
+        "status": "translation",
+        "text": "不得提出罢免总统职务的问题"
+      }
+    ],
+    "impeachment_question_approved": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰已就提出指控及其调查问题作出决定"
+      }
+    ],
+    "impeachment_question_denominator": [
+      {
+        "status": "translation",
+        "text": "就指控问题作出决定所需票数比例的分母"
+      }
+    ],
+    "impeachment_question_numerator": [
+      {
+        "status": "translation",
+        "text": "就指控问题作出决定所需票数比例的分子"
+      }
+    ],
+    "impeachment_question_votes": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰议员就提出指控及其调查问题所投的票数"
+      }
+    ],
+    "impeachment_rejected_at_stage": [
+      {
+        "status": "translation",
+        "text": "指控已在某一阶段被库鲁尔泰驳回"
+      }
+    ],
+    "impeachment_reviewed_on": [
+      {
+        "status": "translation",
+        "text": "审查指控案件状态所针对的日期"
+      }
+    ],
+    "impeachment_target": [
+      {
+        "status": "translation",
+        "text": "叛国罪指控系针对该总统提出"
+      }
+    ],
+    "in_final_period_of_presidential_term": [
+      {
+        "status": "translation",
+        "text": "解散问题系在总统职权的最后六个月内提出"
+      }
+    ],
+    "international_treaty": [
+      {
+        "status": "translation",
+        "text": "作为案件标的的国际条约"
+      }
+    ],
+    "investigation_approved_votes": [
+      {
+        "status": "translation",
+        "text": "对交付指控调查投赞成票的票数"
+      }
+    ],
+    "kurultai": [
+      {
+        "status": "translation",
+        "text": "该机关是库鲁尔泰"
+      }
+    ],
+    "kurultai_dissolved": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰已被解散"
+      }
+    ],
+    "kurultai_election_day": [
+      {
+        "status": "translation",
+        "text": "举行新一届库鲁尔泰选举之日"
+      }
+    ],
+    "kurultai_immediately_informed": [
+      {
+        "status": "translation",
+        "text": "已立即将所采取的措施通报库鲁尔泰"
+      }
+    ],
+    "kurultai_majority_consent": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰已以多数票同意该项任命"
+      }
+    ],
+    "kurultai_majority_consent_to_vice_president": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰已同意任命副总统"
+      }
+    ],
+    "kurultai_seat_count": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰议员总数为一百四十五人"
+      }
+    ],
+    "law_countersigned_by_kurultai_chair": [
+      {
+        "status": "translation",
+        "text": "该法律经库鲁尔泰主席副署"
+      }
+    ],
+    "law_countersigned_by_prime_minister": [
+      {
+        "status": "translation",
+        "text": "该法律经总理副署"
+      }
+    ],
+    "law_presented": [
+      {
+        "status": "translation",
+        "text": "法律已提请总统签署"
+      }
+    ],
+    "law_presented_on": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰将法律提交总统之日"
+      }
+    ],
+    "law_ready_for_presidential_signature": [
+      {
+        "status": "translation",
+        "text": "该法律已具备总统签署的条件"
+      }
+    ],
+    "law_returned_with_objections": [
+      {
+        "status": "translation",
+        "text": "法律已连同异议退回库鲁尔泰"
+      }
+    ],
+    "law_signed": [
+      {
+        "status": "translation",
+        "text": "法律已由总统签署"
+      }
+    ],
+    "majority_reached_in_election": [
+      {
+        "status": "translation",
+        "text": "选举中有人获得百分之五十以上的选票"
+      }
+    ],
+    "martial_measure_attempt": [
+      {
+        "status": "translation",
+        "text": "总统宣布战争状态"
+      }
+    ],
+    "martial_measure_in_force": [
+      {
+        "status": "translation",
+        "text": "战争状态的宣布符合法定要求"
+      }
+    ],
+    "medical_commission_formed": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰已组成由议员和相关医学领域专家组成的委员会"
+      }
+    ],
+    "mission_head_appointed": [
+      {
+        "status": "translation",
+        "text": "外交代表机构馆长已获任命"
+      }
+    ],
+    "mission_head_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "总统任命外交代表机构馆长"
+      }
+    ],
+    "mission_head_recall_attempt": [
+      {
+        "status": "translation",
+        "text": "总统召回外交代表机构馆长"
+      }
+    ],
+    "mission_head_recalled": [
+      {
+        "status": "translation",
+        "text": "外交代表机构馆长已被召回"
+      }
+    ],
+    "new_president_assumed_office": [
+      {
+        "status": "translation",
+        "text": "新当选总统已经就职"
+      }
+    ],
+    "no_candidate_reached_majority": [
+      {
+        "status": "translation",
+        "text": "无候选人获得百分之五十以上选票"
+      }
+    ],
+    "office_appointment": [
+      {
+        "status": "translation",
+        "text": "该项任命系就本条所列职务作出"
+      }
+    ],
+    "office_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "总统任命第五项所列职务的人员"
+      }
+    ],
+    "office_appointment_effective": [
+      {
+        "status": "translation",
+        "text": "该项职务任命已经作出"
+      }
+    ],
+    "office_release": [
+      {
+        "status": "translation",
+        "text": "该项免职系就本条所列职务作出"
+      }
+    ],
+    "office_release_attempt": [
+      {
+        "status": "translation",
+        "text": "总统免去第五项所列职务的人员"
+      }
+    ],
+    "office_release_effective": [
+      {
+        "status": "translation",
+        "text": "该项职务免职已经作出"
+      }
+    ],
+    "pardon_attempt": [
+      {
+        "status": "translation",
+        "text": "总统行使赦免权"
+      }
+    ],
+    "pardon_granted": [
+      {
+        "status": "translation",
+        "text": "赦免已经作出"
+      }
+    ],
+    "pardon_matter": [
+      {
+        "status": "translation",
+        "text": "作为案件标的的赦免申请"
+      }
+    ],
+    "participating_voters": [
+      {
+        "status": "translation",
+        "text": "参加投票的选民人数"
+      }
+    ],
+    "persistent_health_incapacity": [
+      {
+        "status": "translation",
+        "text": "总统因健康状况持续不能履行其职责"
+      }
+    ],
+    "power_conferred_by_constitution_or_law": [
+      {
+        "status": "translation",
+        "text": "该项总统职权由哈萨克斯坦共和国宪法或者法律规定"
+      }
+    ],
+    "president": [
+      {
+        "status": "translation",
+        "text": "该人是共和国总统"
+      }
+    ],
+    "president_assumed_office_on": [
+      {
+        "status": "translation",
+        "text": "总统就职之日"
+      }
+    ],
+    "president_conducts_business": [
+      {
+        "status": "translation",
+        "text": "总统从事经营活动"
+      }
+    ],
+    "president_died": [
+      {
+        "status": "translation",
+        "text": "总统已去世"
+      }
+    ],
+    "president_ensures_coordinated_state_power": [
+      {
+        "status": "translation",
+        "text": "总统保障国家权力各分支的协调运作"
+      }
+    ],
+    "president_experience_years": [
+      {
+        "status": "translation",
+        "text": "所需工作经历为五年"
+      }
+    ],
+    "president_guarantees_unity_constitution_and_rights": [
+      {
+        "status": "translation",
+        "text": "总统是人民统一、宪法不可动摇以及人的权利和自由的保障者"
+      }
+    ],
+    "president_held_criminally_or_administratively_liable": [
+      {
+        "status": "translation",
+        "text": "总统被追究刑事或者行政责任"
+      }
+    ],
+    "president_holds_other_paid_office": [
+      {
+        "status": "translation",
+        "text": "总统担任其他有报酬职务"
+      }
+    ],
+    "president_holds_representative_mandate": [
+      {
+        "status": "translation",
+        "text": "总统是代表机关的议员"
+      }
+    ],
+    "president_is_commander_in_chief": [
+      {
+        "status": "translation",
+        "text": "总统是哈萨克斯坦共和国武装力量最高统帅"
+      }
+    ],
+    "president_is_head_of_state": [
+      {
+        "status": "translation",
+        "text": "总统是国家元首、共和国最高公职人员"
+      }
+    ],
+    "president_minimum_age": [
+      {
+        "status": "translation",
+        "text": "总统的最低年龄为四十周岁"
+      }
+    ],
+    "president_party_member": [
+      {
+        "status": "translation",
+        "text": "总统是政党成员"
+      }
+    ],
+    "president_released_for_health": [
+      {
+        "status": "translation",
+        "text": "总统已因健康状况被提前解除职务"
+      }
+    ],
+    "president_released_from_office_for_health": [
+      {
+        "status": "translation",
+        "text": "该总统已因健康状况被提前解除职务"
+      }
+    ],
+    "president_removed_by_impeachment": [
+      {
+        "status": "translation",
+        "text": "总统已被罢免职务"
+      }
+    ],
+    "president_removed_from_office": [
+      {
+        "status": "translation",
+        "text": "总统已被罢免职务"
+      }
+    ],
+    "president_residence_years": [
+      {
+        "status": "translation",
+        "text": "在哈萨克斯坦所需的居住年限为十五年"
+      }
+    ],
+    "president_resigned": [
+      {
+        "status": "translation",
+        "text": "总统因自愿辞职被解除职务"
+      }
+    ],
+    "president_term": [
+      {
+        "status": "translation",
+        "text": "总统的任期为七年"
+      }
+    ],
+    "president_term_expires_on": [
+      {
+        "status": "translation",
+        "text": "总统任期届满之日"
+      }
+    ],
+    "presidential_act": [
+      {
+        "status": "translation",
+        "text": "该文件由该总统发布"
+      }
+    ],
+    "presidential_act_based_on_constitution_and_law": [
+      {
+        "status": "translation",
+        "text": "该文件系根据宪法和法律并为执行宪法和法律而发布"
+      }
+    ],
+    "presidential_act_binding_nationwide": [
+      {
+        "status": "translation",
+        "text": "总统文件在共和国全境具有约束力"
+      }
+    ],
+    "presidential_address": [
+      {
+        "status": "translation",
+        "text": "作为案件标的的总统咨文"
+      }
+    ],
+    "presidential_address_delivered": [
+      {
+        "status": "translation",
+        "text": "总统已向哈萨克斯坦人民发表咨文"
+      }
+    ],
+    "presidential_administration": [
+      {
+        "status": "translation",
+        "text": "作为案件标的的总统办公厅"
+      }
+    ],
+    "presidential_administration_formed": [
+      {
+        "status": "translation",
+        "text": "哈萨克斯坦共和国总统办公厅已经组建"
+      }
+    ],
+    "presidential_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "总统作出任命"
+      }
+    ],
+    "presidential_appointment_office": [
+      {
+        "status": "translation",
+        "text": "该职务属于第四十六条第五项所列范围"
+      }
+    ],
+    "presidential_body_established": [
+      {
+        "status": "translation",
+        "text": "安全会议、其他咨询协商机关或者最高司法委员会已经组建"
+      }
+    ],
+    "presidential_conduct_in_office": [
+      {
+        "status": "translation",
+        "text": "该行为系总统在履行职责期间实施"
+      }
+    ],
+    "presidential_election_attempt": [
+      {
+        "status": "translation",
+        "text": "该候选人参加总统选举"
+      }
+    ],
+    "presidential_election_held": [
+      {
+        "status": "translation",
+        "text": "总统选举已经举行"
+      }
+    ],
+    "presidential_election_majority_denominator": [
+      {
+        "status": "translation",
+        "text": "总统当选门槛的分母为二分之一"
+      }
+    ],
+    "presidential_election_majority_numerator": [
+      {
+        "status": "translation",
+        "text": "总统当选门槛的分子为二分之一"
+      }
+    ],
+    "presidential_family_support_case": [
+      {
+        "status": "translation",
+        "text": "涉及前总统及其家属的保障事宜"
+      }
+    ],
+    "presidential_instruction_to_vice_president": [
+      {
+        "status": "translation",
+        "text": "总统已委托副总统代表其行使职权"
+      }
+    ],
+    "presidential_liability_attempt": [
+      {
+        "status": "translation",
+        "text": "已实施追究总统责任的行为"
+      }
+    ],
+    "presidential_office_incompatible": [
+      {
+        "status": "translation",
+        "text": "总统职务与所任职务或者所从事活动不相容"
+      }
+    ],
+    "presidential_powers_assumed_by": [
+      {
+        "status": "translation",
+        "text": "总统职权已转由该人承接"
+      }
+    ],
+    "presidential_powers_terminated": [
+      {
+        "status": "translation",
+        "text": "总统的职权已终止"
+      }
+    ],
+    "presidential_relative_position_prohibited": [
+      {
+        "status": "translation",
+        "text": "总统的亲属不得担任该项职务"
+      }
+    ],
+    "presidential_return_attempt": [
+      {
+        "status": "translation",
+        "text": "总统将法律连同异议退回"
+      }
+    ],
+    "presidential_signature_attempt": [
+      {
+        "status": "translation",
+        "text": "总统签署所提交的法律"
+      }
+    ],
+    "presidential_signature_day": [
+      {
+        "status": "translation",
+        "text": "总统签署或者退回法律之日"
+      }
+    ],
+    "presidential_signature_due_on": [
+      {
+        "status": "translation",
+        "text": "签署法律一个月期限的届满之日"
+      }
+    ],
+    "presidential_signature_period": [
+      {
+        "status": "translation",
+        "text": "签署库鲁尔泰所提交法律的期限为一个月"
+      }
+    ],
+    "presidential_signature_timely": [
+      {
+        "status": "translation",
+        "text": "法律已在一个月期限内签署或者退回"
+      }
+    ],
+    "presidential_vacancy": [
+      {
+        "status": "translation",
+        "text": "总统职务已提前空缺"
+      }
+    ],
+    "presidential_vote": [
+      {
+        "status": "translation",
+        "text": "对该候选人投的票数"
+      }
+    ],
+    "previously_elected_president": [
+      {
+        "status": "translation",
+        "text": "该人此前曾当选共和国总统"
+      }
+    ],
+    "prior_dissolution_on": [
+      {
+        "status": "translation",
+        "text": "上次解散库鲁尔泰之日"
+      }
+    ],
+    "prior_office_relinquished": [
+      {
+        "status": "translation",
+        "text": "该人已辞去原任职务"
+      }
+    ],
+    "ratification_instrument": [
+      {
+        "status": "translation",
+        "text": "作为案件标的的批准书"
+      }
+    ],
+    "ratification_instrument_signed": [
+      {
+        "status": "translation",
+        "text": "批准书已经签署"
+      }
+    ],
+    "ratification_signature_attempt": [
+      {
+        "status": "translation",
+        "text": "总统签署批准书"
+      }
+    ],
+    "referendum_called": [
+      {
+        "status": "translation",
+        "text": "全民公决已经确定举行"
+      }
+    ],
+    "referendum_decision_attempt": [
+      {
+        "status": "translation",
+        "text": "总统就举行全民公决作出决定"
+      }
+    ],
+    "refusal_statement_filed": [
+      {
+        "status": "translation",
+        "text": "该人已向宪法法院提交拒绝承接总统职权的声明"
+      }
+    ],
+    "refused_to_assume_presidential_powers": [
+      {
+        "status": "translation",
+        "text": "该人拒绝承接总统职权"
+      }
+    ],
+    "regular_election_lead_period": [
+      {
+        "status": "translation",
+        "text": "例行选举先于任期届满的期限为两个月"
+      }
+    ],
+    "regular_election_scheduled_in_time": [
+      {
+        "status": "translation",
+        "text": "例行选举定于总统任期届满前不迟于两个月"
+      }
+    ],
+    "regular_oath_due_on": [
+      {
+        "status": "translation",
+        "text": "宣誓期限的届满之日"
+      }
+    ],
+    "regular_oath_period": [
+      {
+        "status": "translation",
+        "text": "宣誓的期限为一个月"
+      }
+    ],
+    "regular_oath_taken_on": [
+      {
+        "status": "translation",
+        "text": "宣誓之日"
+      }
+    ],
+    "regular_oath_timely": [
+      {
+        "status": "translation",
+        "text": "宣誓已在宪法规定的期限内进行"
+      }
+    ],
+    "regular_presidential_election_date_inadmissible": [
+      {
+        "status": "translation",
+        "text": "总统例行选举的日期不可接受"
+      }
+    ],
+    "regular_presidential_election_day": [
+      {
+        "status": "translation",
+        "text": "举行总统例行选举之日"
+      }
+    ],
+    "relative_holds_political_office_or_quasistate_leadership": [
+      {
+        "status": "translation",
+        "text": "该亲属担任政治性国家公职或者领导准国有部门组织"
+      }
+    ],
+    "repeat_vote_ballot": [
+      {
+        "status": "translation",
+        "text": "重新投票已经举行"
+      }
+    ],
+    "repeat_vote_participant": [
+      {
+        "status": "translation",
+        "text": "该候选人参加重新投票"
+      }
+    ],
+    "repeat_vote_required": [
+      {
+        "status": "translation",
+        "text": "举行重新投票"
+      }
+    ],
+    "repeat_vote_votes": [
+      {
+        "status": "translation",
+        "text": "重新投票中对该候选人投的票数"
+      }
+    ],
+    "repeated_refusal_of_presidential_nominee": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰再次拒绝同意总统提出的人选"
+      }
+    ],
+    "required_consultations_completed": [
+      {
+        "status": "translation",
+        "text": "解散库鲁尔泰前所需的协商已经进行"
+      }
+    ],
+    "resides_last_years": [
+      {
+        "status": "translation",
+        "text": "在哈萨克斯坦最近连续居住的年数"
+      }
+    ],
+    "state_authority": [
+      {
+        "status": "translation",
+        "text": "该主体是国家机关或者公职人员"
+      }
+    ],
+    "state_body_act": [
+      {
+        "status": "translation",
+        "text": "关于设立、撤销或者改组国家机关的文件"
+      }
+    ],
+    "state_body_act_attempt": [
+      {
+        "status": "translation",
+        "text": "总统设立、撤销或者改组国家机关"
+      }
+    ],
+    "state_body_act_effective": [
+      {
+        "status": "translation",
+        "text": "国家机关的设立、撤销或者改组已经完成"
+      }
+    ],
+    "state_guard_service": [
+      {
+        "status": "translation",
+        "text": "作为案件标的的国家警卫局"
+      }
+    ],
+    "state_guard_service_formed": [
+      {
+        "status": "translation",
+        "text": "隶属于总统的国家警卫局已经组建"
+      }
+    ],
+    "state_service_or_elected_years": [
+      {
+        "status": "translation",
+        "text": "在国家公职或者国家选任职务上的工作年限"
+      }
+    ],
+    "state_support_provided": [
+      {
+        "status": "translation",
+        "text": "国家已提供生活保障和警卫"
+      }
+    ],
+    "state_treason_by_president": [
+      {
+        "status": "translation",
+        "text": "总统实施了叛国行为"
+      }
+    ],
+    "subordinate_body_head_appointment": [
+      {
+        "status": "translation",
+        "text": "该项任命涉及总统所属机关的负责人"
+      }
+    ],
+    "subordinate_body_head_release": [
+      {
+        "status": "translation",
+        "text": "该项免职涉及总统所属机关的负责人"
+      }
+    ],
+    "succession_event": [
+      {
+        "status": "translation",
+        "text": "该人已承接总统职权"
+      }
+    ],
+    "succession_oath_date": [
+      {
+        "status": "translation",
+        "text": "承接职权之日和宣誓之日"
+      }
+    ],
+    "succession_oath_days": [
+      {
+        "status": "translation",
+        "text": "承接总统职权的人宣誓的期限为七日"
+      }
+    ],
+    "succession_oath_timely": [
+      {
+        "status": "translation",
+        "text": "职务替补时的宣誓已按期完成"
+      }
+    ],
+    "succession_president_in_office": [
+      {
+        "status": "translation",
+        "text": "总统职权由依替补程序承接职权的人行使"
+      }
+    ],
+    "successor_amendment_initiative_attempt": [
+      {
+        "status": "translation",
+        "text": "承接职权的人提起宪法修改"
+      }
+    ],
+    "successor_amendment_initiative_barred": [
+      {
+        "status": "translation",
+        "text": "承接职权的人不得提起宪法修改"
+      }
+    ],
+    "successor_dissolution_attempt": [
+      {
+        "status": "translation",
+        "text": "承接职权的人解散库鲁尔泰"
+      }
+    ],
+    "successor_dissolution_barred": [
+      {
+        "status": "translation",
+        "text": "承接职权的人不得解散库鲁尔泰"
+      }
+    ],
+    "supreme_court_charge_supported": [
+      {
+        "status": "translation",
+        "text": "最高法院确认指控成立"
+      }
+    ],
+    "temporary_decree_has_force_of_law": [
+      {
+        "status": "translation",
+        "text": "总统的临时文件具有法律效力"
+      }
+    ],
+    "temporary_kurultai_absence_after_early_termination": [
+      {
+        "status": "translation",
+        "text": "因库鲁尔泰职权提前终止而缺位"
+      }
+    ],
+    "temporary_legislative_decree": [
+      {
+        "status": "translation",
+        "text": "该文件是总统的临时规范性法律文件"
+      }
+    ],
+    "treaty_signature_attempt": [
+      {
+        "status": "translation",
+        "text": "总统以哈萨克斯坦共和国名义进行谈判并签署国际条约"
+      }
+    ],
+    "treaty_signed_on_behalf_of_republic": [
+      {
+        "status": "translation",
+        "text": "国际条约已以哈萨克斯坦共和国名义签署"
+      }
+    ],
+    "unable_by_health_or_personal_reasons": [
+      {
+        "status": "translation",
+        "text": "该人因健康状况或者其他个人原因不能承接职权"
+      }
+    ],
+    "vacancy_by_death": [
+      {
+        "status": "translation",
+        "text": "该职务因总统死亡而空缺"
+      }
+    ],
+    "vacancy_by_health_incapacity": [
+      {
+        "status": "translation",
+        "text": "该职务因总统健康状况持续不能履行职责而空缺"
+      }
+    ],
+    "vacancy_by_removal_from_office": [
+      {
+        "status": "translation",
+        "text": "该职务因总统被罢免而空缺"
+      }
+    ],
+    "vacancy_by_voluntary_resignation": [
+      {
+        "status": "translation",
+        "text": "该职务因总统自愿辞职而空缺"
+      }
+    ],
+    "vacancy_day": [
+      {
+        "status": "translation",
+        "text": "总统职务空缺之日"
+      }
+    ],
+    "vacancy_kurultai_chair": [
+      {
+        "status": "translation",
+        "text": "该人在职务空缺时担任库鲁尔泰主席"
+      }
+    ],
+    "vacancy_prime_minister": [
+      {
+        "status": "translation",
+        "text": "该人在职务空缺时担任总理"
+      }
+    ],
+    "vacancy_vice_president": [
+      {
+        "status": "translation",
+        "text": "该人在职务空缺时担任副总统"
+      }
+    ],
+    "vice_president": [
+      {
+        "status": "translation",
+        "text": "该人是共和国副总统"
+      }
+    ],
+    "vice_president_appointed": [
+      {
+        "status": "translation",
+        "text": "副总统已获任命"
+      }
+    ],
+    "vice_president_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "总统任命副总统"
+      }
+    ],
+    "vice_president_conducts_business": [
+      {
+        "status": "translation",
+        "text": "副总统从事经营活动"
+      }
+    ],
+    "vice_president_holds_other_paid_office": [
+      {
+        "status": "translation",
+        "text": "副总统担任其他有报酬职务"
+      }
+    ],
+    "vice_president_holds_representative_mandate": [
+      {
+        "status": "translation",
+        "text": "副总统是代表机关的议员"
+      }
+    ],
+    "vice_president_party_member": [
+      {
+        "status": "translation",
+        "text": "副总统是政党成员"
+      }
+    ],
+    "vice_president_representation_action": [
+      {
+        "status": "translation",
+        "text": "副总统以总统名义实施行为"
+      }
+    ],
+    "vice_president_representation_authorized": [
+      {
+        "status": "translation",
+        "text": "副总统的代表行为符合法定要求"
+      }
+    ],
+    "vice_presidential_office_incompatible": [
+      {
+        "status": "translation",
+        "text": "副总统职务与所任职务或者所从事活动不相容"
+      }
+    ],
+    "within_period_after_prior_dissolution": [
+      {
+        "status": "translation",
+        "text": "自上次解散库鲁尔泰之日起未满一年"
+      }
+    ]
+  },
+  "language": "zh",
+  "package": "kz.constitution.president"
+}
