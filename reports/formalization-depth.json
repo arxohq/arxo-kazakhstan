@@ -37,7 +37,7 @@
           "sourceSha256": "sha256:3673d5be9474ab9dc23500f42d24b2482b45e65181506a56910e8e4a2b03c2af",
           "edition": "2026",
           "language": "ru",
-          "unit": "ru_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-2026-ru.txt",
             "clir": [
@@ -919,14 +919,15 @@
             "ANCHORED": 7,
             "EXECUTABLE": 6,
             "SOURCE_ONLY": 83
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         },
         {
           "path": "packages/sources/sources/constitution/constitution-2026-kk.txt",
           "sourceSha256": "sha256:a94257309b7a9ba60f8d018b7e56fdee82235d708e0e82b4541e6969d3502835",
           "edition": "2026",
           "language": "kk",
-          "unit": "kk_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-2026-kk.txt",
             "clir": [
@@ -1808,14 +1809,15 @@
             "ANCHORED": 7,
             "EXECUTABLE": 6,
             "SOURCE_ONLY": 83
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         },
         {
           "path": "packages/sources/sources/constitution/constitution-1995-ru.txt",
           "sourceSha256": "sha256:46ac24be6f699f2fce4497b231f012d8b8c990afb3f55f45beccbb260bff4739",
           "edition": "1995",
           "language": "ru",
-          "unit": "ru_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-1995-ru.txt",
             "clir": [
@@ -2751,14 +2753,15 @@
             "ANCHORED": 5,
             "EXECUTABLE": 5,
             "SOURCE_ONLY": 92
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         },
         {
           "path": "packages/sources/sources/constitution/constitution-1995-kk.txt",
           "sourceSha256": "sha256:88e4c7f210b555b0790bada686ad596e29472514e6babe8bb0d6b7dd4836e7a7",
           "edition": "1995",
           "language": "kk",
-          "unit": "kk_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-1995-kk.txt",
             "clir": [
@@ -3694,7 +3697,8 @@
             "ANCHORED": 5,
             "EXECUTABLE": 5,
             "SOURCE_ONLY": 92
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         }
       ],
       "ownNodeInventory": {
@@ -3722,7 +3726,7 @@
           "sourceSha256": "sha256:3673d5be9474ab9dc23500f42d24b2482b45e65181506a56910e8e4a2b03c2af",
           "edition": "2026",
           "language": "ru",
-          "unit": "ru_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-2026-ru.txt",
             "clir": [
@@ -4604,14 +4608,15 @@
             "—": 65,
             "ANCHORED": 1,
             "EXECUTABLE": 30
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         },
         {
           "path": "packages/sources/sources/constitution/constitution-2026-kk.txt",
           "sourceSha256": "sha256:a94257309b7a9ba60f8d018b7e56fdee82235d708e0e82b4541e6969d3502835",
           "edition": "2026",
           "language": "kk",
-          "unit": "kk_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-2026-kk.txt",
             "clir": [
@@ -5493,14 +5498,15 @@
             "—": 65,
             "ANCHORED": 1,
             "EXECUTABLE": 30
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         },
         {
           "path": "packages/sources/sources/constitution/constitution-1995-ru.txt",
           "sourceSha256": "sha256:46ac24be6f699f2fce4497b231f012d8b8c990afb3f55f45beccbb260bff4739",
           "edition": "1995",
           "language": "ru",
-          "unit": "ru_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-1995-ru.txt",
             "clir": [
@@ -6435,14 +6441,15 @@
           "counts": {
             "—": 72,
             "EXECUTABLE": 30
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         },
         {
           "path": "packages/sources/sources/constitution/constitution-1995-kk.txt",
           "sourceSha256": "sha256:88e4c7f210b555b0790bada686ad596e29472514e6babe8bb0d6b7dd4836e7a7",
           "edition": "1995",
           "language": "kk",
-          "unit": "kk_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-1995-kk.txt",
             "clir": [
@@ -7377,7 +7384,8 @@
           "counts": {
             "—": 72,
             "EXECUTABLE": 30
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         }
       ],
       "ownNodeInventory": {
@@ -7400,7 +7408,7 @@
           "sourceSha256": "sha256:3673d5be9474ab9dc23500f42d24b2482b45e65181506a56910e8e4a2b03c2af",
           "edition": "2026",
           "language": "ru",
-          "unit": "ru_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-2026-ru.txt",
             "clir": [
@@ -8282,14 +8290,15 @@
             "—": 84,
             "EXECUTABLE": 11,
             "ANCHORED": 1
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         },
         {
           "path": "packages/sources/sources/constitution/constitution-2026-kk.txt",
           "sourceSha256": "sha256:a94257309b7a9ba60f8d018b7e56fdee82235d708e0e82b4541e6969d3502835",
           "edition": "2026",
           "language": "kk",
-          "unit": "kk_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-2026-kk.txt",
             "clir": [
@@ -9171,14 +9180,15 @@
             "—": 84,
             "EXECUTABLE": 11,
             "ANCHORED": 1
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         },
         {
           "path": "packages/sources/sources/constitution/constitution-1995-ru.txt",
           "sourceSha256": "sha256:46ac24be6f699f2fce4497b231f012d8b8c990afb3f55f45beccbb260bff4739",
           "edition": "1995",
           "language": "ru",
-          "unit": "ru_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-1995-ru.txt",
             "clir": [
@@ -10112,14 +10122,15 @@
           "denominator": 102,
           "counts": {
             "—": 102
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         },
         {
           "path": "packages/sources/sources/constitution/constitution-1995-kk.txt",
           "sourceSha256": "sha256:88e4c7f210b555b0790bada686ad596e29472514e6babe8bb0d6b7dd4836e7a7",
           "edition": "1995",
           "language": "kk",
-          "unit": "kk_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-1995-kk.txt",
             "clir": [
@@ -11053,7 +11064,8 @@
           "denominator": 102,
           "counts": {
             "—": 102
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         }
       ],
       "ownNodeInventory": {
@@ -11077,7 +11089,7 @@
           "sourceSha256": "sha256:3673d5be9474ab9dc23500f42d24b2482b45e65181506a56910e8e4a2b03c2af",
           "edition": "2026",
           "language": "ru",
-          "unit": "ru_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-2026-ru.txt",
             "clir": [
@@ -11959,14 +11971,15 @@
             "—": 86,
             "EXECUTABLE": 9,
             "ANCHORED": 1
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         },
         {
           "path": "packages/sources/sources/constitution/constitution-2026-kk.txt",
           "sourceSha256": "sha256:a94257309b7a9ba60f8d018b7e56fdee82235d708e0e82b4541e6969d3502835",
           "edition": "2026",
           "language": "kk",
-          "unit": "kk_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-2026-kk.txt",
             "clir": [
@@ -12848,14 +12861,15 @@
             "—": 86,
             "EXECUTABLE": 9,
             "ANCHORED": 1
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         },
         {
           "path": "packages/sources/sources/constitution/constitution-1995-ru.txt",
           "sourceSha256": "sha256:46ac24be6f699f2fce4497b231f012d8b8c990afb3f55f45beccbb260bff4739",
           "edition": "1995",
           "language": "ru",
-          "unit": "ru_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-1995-ru.txt",
             "clir": [
@@ -13789,14 +13803,15 @@
           "denominator": 102,
           "counts": {
             "—": 102
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         },
         {
           "path": "packages/sources/sources/constitution/constitution-1995-kk.txt",
           "sourceSha256": "sha256:88e4c7f210b555b0790bada686ad596e29472514e6babe8bb0d6b7dd4836e7a7",
           "edition": "1995",
           "language": "kk",
-          "unit": "kk_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-1995-kk.txt",
             "clir": [
@@ -14730,7 +14745,8 @@
           "denominator": 102,
           "counts": {
             "—": 102
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         }
       ],
       "ownNodeInventory": {
@@ -14753,7 +14769,7 @@
           "sourceSha256": "sha256:3673d5be9474ab9dc23500f42d24b2482b45e65181506a56910e8e4a2b03c2af",
           "edition": "2026",
           "language": "ru",
-          "unit": "ru_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-2026-ru.txt",
             "clir": [
@@ -15634,14 +15650,15 @@
           "counts": {
             "—": 87,
             "EXECUTABLE": 9
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         },
         {
           "path": "packages/sources/sources/constitution/constitution-2026-kk.txt",
           "sourceSha256": "sha256:a94257309b7a9ba60f8d018b7e56fdee82235d708e0e82b4541e6969d3502835",
           "edition": "2026",
           "language": "kk",
-          "unit": "kk_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-2026-kk.txt",
             "clir": [
@@ -16522,14 +16539,15 @@
           "counts": {
             "—": 87,
             "EXECUTABLE": 9
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         },
         {
           "path": "packages/sources/sources/constitution/constitution-1995-ru.txt",
           "sourceSha256": "sha256:46ac24be6f699f2fce4497b231f012d8b8c990afb3f55f45beccbb260bff4739",
           "edition": "1995",
           "language": "ru",
-          "unit": "ru_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-1995-ru.txt",
             "clir": [
@@ -17464,14 +17482,15 @@
           "counts": {
             "—": 95,
             "EXECUTABLE": 7
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         },
         {
           "path": "packages/sources/sources/constitution/constitution-1995-kk.txt",
           "sourceSha256": "sha256:88e4c7f210b555b0790bada686ad596e29472514e6babe8bb0d6b7dd4836e7a7",
           "edition": "1995",
           "language": "kk",
-          "unit": "kk_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-1995-kk.txt",
             "clir": [
@@ -18406,7 +18425,8 @@
           "counts": {
             "—": 95,
             "EXECUTABLE": 7
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         }
       ],
       "ownNodeInventory": {
@@ -18427,7 +18447,7 @@
           "sourceSha256": "sha256:3673d5be9474ab9dc23500f42d24b2482b45e65181506a56910e8e4a2b03c2af",
           "edition": "2026",
           "language": "ru",
-          "unit": "ru_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-2026-ru.txt",
             "clir": [
@@ -19309,14 +19329,15 @@
             "—": 76,
             "EXECUTABLE": 19,
             "ANCHORED": 1
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         },
         {
           "path": "packages/sources/sources/constitution/constitution-2026-kk.txt",
           "sourceSha256": "sha256:a94257309b7a9ba60f8d018b7e56fdee82235d708e0e82b4541e6969d3502835",
           "edition": "2026",
           "language": "kk",
-          "unit": "kk_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-2026-kk.txt",
             "clir": [
@@ -20198,14 +20219,15 @@
             "—": 76,
             "EXECUTABLE": 19,
             "ANCHORED": 1
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         },
         {
           "path": "packages/sources/sources/constitution/constitution-1995-ru.txt",
           "sourceSha256": "sha256:46ac24be6f699f2fce4497b231f012d8b8c990afb3f55f45beccbb260bff4739",
           "edition": "1995",
           "language": "ru",
-          "unit": "ru_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-1995-ru.txt",
             "clir": [
@@ -21141,14 +21163,15 @@
             "—": 83,
             "EXECUTABLE": 15,
             "ANCHORED": 4
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         },
         {
           "path": "packages/sources/sources/constitution/constitution-1995-kk.txt",
           "sourceSha256": "sha256:88e4c7f210b555b0790bada686ad596e29472514e6babe8bb0d6b7dd4836e7a7",
           "edition": "1995",
           "language": "kk",
-          "unit": "kk_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-1995-kk.txt",
             "clir": [
@@ -22084,7 +22107,8 @@
             "—": 83,
             "EXECUTABLE": 15,
             "ANCHORED": 4
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         }
       ],
       "ownNodeInventory": {
@@ -22107,7 +22131,7 @@
           "sourceSha256": "sha256:3673d5be9474ab9dc23500f42d24b2482b45e65181506a56910e8e4a2b03c2af",
           "edition": "2026",
           "language": "ru",
-          "unit": "ru_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-2026-ru.txt",
             "clir": [
@@ -22989,14 +23013,15 @@
             "—": 89,
             "ANCHORED": 2,
             "EXECUTABLE": 5
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         },
         {
           "path": "packages/sources/sources/constitution/constitution-2026-kk.txt",
           "sourceSha256": "sha256:a94257309b7a9ba60f8d018b7e56fdee82235d708e0e82b4541e6969d3502835",
           "edition": "2026",
           "language": "kk",
-          "unit": "kk_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-2026-kk.txt",
             "clir": [
@@ -23878,14 +23903,15 @@
             "—": 89,
             "ANCHORED": 2,
             "EXECUTABLE": 5
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         },
         {
           "path": "packages/sources/sources/constitution/constitution-1995-ru.txt",
           "sourceSha256": "sha256:46ac24be6f699f2fce4497b231f012d8b8c990afb3f55f45beccbb260bff4739",
           "edition": "1995",
           "language": "ru",
-          "unit": "ru_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-1995-ru.txt",
             "clir": [
@@ -24821,14 +24847,15 @@
             "—": 90,
             "EXECUTABLE": 3,
             "ANCHORED": 9
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         },
         {
           "path": "packages/sources/sources/constitution/constitution-1995-kk.txt",
           "sourceSha256": "sha256:88e4c7f210b555b0790bada686ad596e29472514e6babe8bb0d6b7dd4836e7a7",
           "edition": "1995",
           "language": "kk",
-          "unit": "kk_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-1995-kk.txt",
             "clir": [
@@ -25764,7 +25791,8 @@
             "—": 90,
             "EXECUTABLE": 3,
             "ANCHORED": 9
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         }
       ],
       "ownNodeInventory": {
@@ -25787,7 +25815,7 @@
           "sourceSha256": "sha256:3673d5be9474ab9dc23500f42d24b2482b45e65181506a56910e8e4a2b03c2af",
           "edition": "2026",
           "language": "ru",
-          "unit": "ru_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-2026-ru.txt",
             "clir": [
@@ -26667,14 +26695,15 @@
           "denominator": 96,
           "counts": {
             "—": 96
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         },
         {
           "path": "packages/sources/sources/constitution/constitution-2026-kk.txt",
           "sourceSha256": "sha256:a94257309b7a9ba60f8d018b7e56fdee82235d708e0e82b4541e6969d3502835",
           "edition": "2026",
           "language": "kk",
-          "unit": "kk_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-2026-kk.txt",
             "clir": [
@@ -27554,14 +27583,15 @@
           "denominator": 96,
           "counts": {
             "—": 96
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         },
         {
           "path": "packages/sources/sources/constitution/constitution-1995-ru.txt",
           "sourceSha256": "sha256:46ac24be6f699f2fce4497b231f012d8b8c990afb3f55f45beccbb260bff4739",
           "edition": "1995",
           "language": "ru",
-          "unit": "ru_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-1995-ru.txt",
             "clir": [
@@ -28497,14 +28527,15 @@
             "—": 93,
             "ANCHORED": 1,
             "EXECUTABLE": 8
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         },
         {
           "path": "packages/sources/sources/constitution/constitution-1995-kk.txt",
           "sourceSha256": "sha256:88e4c7f210b555b0790bada686ad596e29472514e6babe8bb0d6b7dd4836e7a7",
           "edition": "1995",
           "language": "kk",
-          "unit": "kk_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-1995-kk.txt",
             "clir": [
@@ -29440,7 +29471,8 @@
             "—": 93,
             "ANCHORED": 1,
             "EXECUTABLE": 8
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         }
       ],
       "ownNodeInventory": {
@@ -29464,7 +29496,7 @@
           "sourceSha256": "sha256:3673d5be9474ab9dc23500f42d24b2482b45e65181506a56910e8e4a2b03c2af",
           "edition": "2026",
           "language": "ru",
-          "unit": "ru_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-2026-ru.txt",
             "clir": [
@@ -30344,14 +30376,15 @@
           "denominator": 96,
           "counts": {
             "—": 96
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         },
         {
           "path": "packages/sources/sources/constitution/constitution-2026-kk.txt",
           "sourceSha256": "sha256:a94257309b7a9ba60f8d018b7e56fdee82235d708e0e82b4541e6969d3502835",
           "edition": "2026",
           "language": "kk",
-          "unit": "kk_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-2026-kk.txt",
             "clir": [
@@ -31231,14 +31264,15 @@
           "denominator": 96,
           "counts": {
             "—": 96
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         },
         {
           "path": "packages/sources/sources/constitution/constitution-1995-ru.txt",
           "sourceSha256": "sha256:46ac24be6f699f2fce4497b231f012d8b8c990afb3f55f45beccbb260bff4739",
           "edition": "1995",
           "language": "ru",
-          "unit": "ru_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-1995-ru.txt",
             "clir": [
@@ -32173,14 +32207,15 @@
           "counts": {
             "—": 87,
             "EXECUTABLE": 15
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         },
         {
           "path": "packages/sources/sources/constitution/constitution-1995-kk.txt",
           "sourceSha256": "sha256:88e4c7f210b555b0790bada686ad596e29472514e6babe8bb0d6b7dd4836e7a7",
           "edition": "1995",
           "language": "kk",
-          "unit": "kk_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-1995-kk.txt",
             "clir": [
@@ -33115,7 +33150,8 @@
           "counts": {
             "—": 87,
             "EXECUTABLE": 15
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         }
       ],
       "ownNodeInventory": {
@@ -33138,7 +33174,7 @@
           "sourceSha256": "sha256:3673d5be9474ab9dc23500f42d24b2482b45e65181506a56910e8e4a2b03c2af",
           "edition": "2026",
           "language": "ru",
-          "unit": "ru_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-2026-ru.txt",
             "clir": [
@@ -34019,14 +34055,15 @@
           "counts": {
             "ANCHORED": 7,
             "EXECUTABLE": 89
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         },
         {
           "path": "packages/sources/sources/constitution/constitution-2026-kk.txt",
           "sourceSha256": "sha256:a94257309b7a9ba60f8d018b7e56fdee82235d708e0e82b4541e6969d3502835",
           "edition": "2026",
           "language": "kk",
-          "unit": "kk_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-2026-kk.txt",
             "clir": [
@@ -34907,14 +34944,15 @@
           "counts": {
             "ANCHORED": 7,
             "EXECUTABLE": 89
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         },
         {
           "path": "packages/sources/sources/constitution/constitution-1995-ru.txt",
           "sourceSha256": "sha256:46ac24be6f699f2fce4497b231f012d8b8c990afb3f55f45beccbb260bff4739",
           "edition": "1995",
           "language": "ru",
-          "unit": "ru_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-1995-ru.txt",
             "clir": [
@@ -35850,14 +35888,15 @@
             "ANCHORED": 18,
             "EXECUTABLE": 59,
             "SOURCE_ONLY": 25
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         },
         {
           "path": "packages/sources/sources/constitution/constitution-1995-kk.txt",
           "sourceSha256": "sha256:88e4c7f210b555b0790bada686ad596e29472514e6babe8bb0d6b7dd4836e7a7",
           "edition": "1995",
           "language": "kk",
-          "unit": "kk_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-1995-kk.txt",
             "clir": [
@@ -36793,7 +36832,8 @@
             "ANCHORED": 18,
             "EXECUTABLE": 59,
             "SOURCE_ONLY": 25
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         }
       ]
     },
@@ -36808,7 +36848,7 @@
           "sourceSha256": "sha256:3673d5be9474ab9dc23500f42d24b2482b45e65181506a56910e8e4a2b03c2af",
           "edition": "2026",
           "language": "ru",
-          "unit": "ru_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-2026-ru.txt",
             "clir": [
@@ -37689,14 +37729,15 @@
           "counts": {
             "ANCHORED": 7,
             "EXECUTABLE": 89
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         },
         {
           "path": "packages/sources/sources/constitution/constitution-2026-kk.txt",
           "sourceSha256": "sha256:a94257309b7a9ba60f8d018b7e56fdee82235d708e0e82b4541e6969d3502835",
           "edition": "2026",
           "language": "kk",
-          "unit": "kk_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-2026-kk.txt",
             "clir": [
@@ -38577,14 +38618,15 @@
           "counts": {
             "ANCHORED": 7,
             "EXECUTABLE": 89
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         },
         {
           "path": "packages/sources/sources/constitution/constitution-1995-ru.txt",
           "sourceSha256": "sha256:46ac24be6f699f2fce4497b231f012d8b8c990afb3f55f45beccbb260bff4739",
           "edition": "1995",
           "language": "ru",
-          "unit": "ru_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-1995-ru.txt",
             "clir": [
@@ -39520,14 +39562,15 @@
             "ANCHORED": 19,
             "EXECUTABLE": 82,
             "SOURCE_ONLY": 1
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         },
         {
           "path": "packages/sources/sources/constitution/constitution-1995-kk.txt",
           "sourceSha256": "sha256:88e4c7f210b555b0790bada686ad596e29472514e6babe8bb0d6b7dd4836e7a7",
           "edition": "1995",
           "language": "kk",
-          "unit": "kk_article",
+          "unit": "article",
           "report": {
             "source": "packages/sources/sources/constitution/constitution-1995-kk.txt",
             "clir": [
@@ -40463,7 +40506,8 @@
             "ANCHORED": 19,
             "EXECUTABLE": 82,
             "SOURCE_ONLY": 1
-          }
+          },
+          "divisionDetection": "Existing classifier automatic article-heading recognition; the pinned declaration names editions and scope but does not declare a language-specific convention"
         }
       ]
     }
