@@ -5,7 +5,7 @@
   "semanticVersion": "0.2.11",
   "releaseVerified": false,
   "corpus": "not_checked",
-  "published": false,
+  "published": true,
   "nativeCompilation": {
     "checked": 9,
     "passed": 9,
@@ -67,7 +67,14 @@
       "repeatCanonicalDocuments": "identical",
       "nativeInspection": "passed"
     },
-    "linux": "not_checked"
+    "linux": {
+      "status": "passed",
+      "node": "20",
+      "checked": 17,
+      "repeatCanonicalDocuments": "identical",
+      "nativeInspection": "passed",
+      "workflow": "https://github.com/arxohq/arxo-kazakhstan/actions/runs/38545201986"
+    }
   },
   "sourceAnchors": {
     "runtimeResultField": "empty in the retained reader results",
@@ -76,8 +83,11 @@
   },
   "publicDelivery": {
     "repository": "https://github.com/arxohq/arxo-kazakhstan",
-    "status": "prepared",
-    "modelNpm": "not_requested"
+    "status": "public GitHub repository published; Linux reader CI passed",
+    "modelNpm": "not_requested",
+    "published": true,
+    "initialCommit": "c03940e14a666069301a8a8628c4a288e0df15e9",
+    "visibility": "PUBLIC"
   },
   "historicalRegister": {
     "depth": "Separate historical register; fresh depth uses pinned inputs and boundaries.depth",
