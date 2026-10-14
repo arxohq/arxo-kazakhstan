@@ -1,0 +1,72 @@
+{
+  "assertions": [
+    {
+      "contentHash": "sha256:31fd9867c0d81fff20dc1a9bf82b8efaf3627cf10817a2ed22724b01ace603a4",
+      "evidence": [],
+      "id": "urn:kz:constitution:government#government-teaching-exception-0",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:demo:kz:member",
+            "kind": "entity_ref"
+          },
+          {
+            "id": "urn:demo:kz:government",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:government#member_of_government"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:government"
+    },
+    {
+      "contentHash": "sha256:f38505afe58a13f21bd8dabffb4ea0c709b016178b0b1fde29e18b0cb20db732",
+      "evidence": [],
+      "id": "urn:kz:constitution:government#government-teaching-exception-1",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:demo:kz:member",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:government#paid_external_position"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:government"
+    },
+    {
+      "contentHash": "sha256:4b701edb05adcc8c82adad200542d4411bf60ec449aae0f9985630f5307425bf",
+      "evidence": [],
+      "id": "urn:kz:constitution:government#government-teaching-exception-2",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:demo:kz:member",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:government#permitted_teaching_science_or_creative_work"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:government"
+    }
+  ],
+  "context": {
+    "decisionTime": "2026-09-01T12:00:00+05:00",
+    "knowledgeTime": "2026-09-01T12:00:00+05:00",
+    "legalTime": "2026-09-01",
+    "timezone": "Asia/Almaty"
+  },
+  "options": {}
+}

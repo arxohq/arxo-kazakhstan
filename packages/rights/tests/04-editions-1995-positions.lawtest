@@ -1,0 +1,210 @@
+language "law.core" version "0.2";
+package kz.constitution.rights version "0.1.0";
+namespace "urn:kz:constitution:rights";
+
+// НАБЛЮДЕНИЕ ДЕОНТИЧЕСКОГО СЛОЯ, ЧАСТЬ 4: редакция 1995 года — ВЫБОРОЧНО.
+//
+// Наблюдаются позиции, у которых редакция 1995 расходится с 2026 по СОСТАВУ
+// (право на забастовку ст. 24 п. 3, бесплатное высшее на конкурсной основе
+// ст. 30 п. 2, семьдесят два часа ст. 16 п. 2, бесплатная юридическая помощь
+// ст. 13 п. 3, оплачиваемый отпуск ст. 24 п. 4, доступ к документам ГРАЖДАНИНА
+// ст. 18 п. 3), плюс пара «до / после 01.07.2026».
+//
+// ЧТО ЗДЕСЬ ИЗМЕРЕНО 13.09.2026. Шапка раздела 1995 в `rights.law` утверждает:
+// «на дату до 01.07.2026 применимы правила 1995, после — правила 2026».
+// Исполнением это ПОДТВЕРЖДЕНО — но только после того, как в мир набора попал
+// пакет закреплённого текста. До 13.09.2026 набор шёл без него: якоря
+// `KZ_CONSTITUTION_1995_…` не разрешались, `in_force` редакции сверять было не
+// с чем, правила обеих редакций применялись на ЛЮБУЮ дату, и разводило их одно
+// лишь окно нормы — а у иммунитета §128 окна нет вовсе, поэтому двенадцать
+// иммунитетов 1995 стояли ACTIVE и в 2026 году.
+//
+// Теперь манифест склеивает в мир `kz.constitution.sources`
+// (`concat = ["kz.constitution.sources"]`; `import` для этого не нужен и
+// объявлять его нельзя — мир из двух участников отвергается §23). Условие 3
+// §92 (errata E-0095) исключает из программы узел, ВСЕ датирующие якоря
+// которого ведут на неприменимую редакцию, и записывает issue
+// `EDITION_NOT_APPLICABLE` severity info. Следствие для ожиданий ниже:
+//   * на дату внутри окна 1995 норм редакции 2026 в документе НЕТ ВОВСЕ — ни
+//     PENDING, ни CREATED: исключена сама норма, а не закрыто её окно;
+//   * на дату редакции 2026 близнецов 1995 нет ни в одном статусе — ни ACTIVE
+//     у иммунитета, ни EXPIRED у свободы.
+
+// --- Пара границы редакций: 30.06.2026 против 01.07.2026 -----------------
+
+test "urn:query:kzcr-edition-pair-before-1" {
+    given {
+        context {
+            decision_time @2026-06-30T12:00:00+05:00;
+            knowledge_time @2026-06-30T12:00:00+05:00;
+            legal_time @2026-06-30;
+            timezone "Asia/Qyzylorda";
+        }
+
+        assert person(entity_ref("urn:kz:constitution:rights:case:person:31")) { id "e01-a1"; origin case_input; }
+        assert citizen(entity_ref("urn:kz:constitution:rights:case:person:31")) { id "e01-a2"; origin case_input; }
+    }
+
+    // ПОСЛЕДНИЙ ДЕНЬ РЕДАКЦИИ 1995. Окно норм 1995 — [@1995-09-05,
+    // @2026-07-01), правая граница исключающая, значит 30.06 ещё внутри.
+    evaluate positions();
+    expect issues_within(info);
+    expect issue(EDITION_NOT_APPLICABLE);
+
+    expect position(PayLawfulTaxes1995, ACTIVE);
+    expect position(RespectConstitutionAndLaw1995, ACTIVE);
+    expect position(DefendKazakhstan1995, ACTIVE);
+    expect position(ChooseOccupationFreely1995, ACTIVE);
+    expect position(ExitKazakhstan1995, ACTIVE);
+    expect position(ParticipateInStateGovernance1995, ACTIVE);
+
+    // Нормы 2026 в этот день НЕТ В ДОКУМЕНТЕ. Это не «окно ещё не открылось»
+    // (тогда были бы PENDING у обязанности и CREATED у свободы) — проекция §92
+    // исключила сами узлы: их якоря ведут на редакцию 2026, чей `in_force`
+    // начинается 01.07.2026.
+    expect not position(PayLawfulTaxes, PENDING);
+    expect not position(PayLawfulTaxes, ACTIVE);
+    expect not position(ChooseOccupationFreely, CREATED);
+    expect not position(ChooseOccupationFreely, ACTIVE);
+}
+
+test "urn:query:kzcr-edition-pair-after-1" {
+    given {
+        context {
+            decision_time @2026-07-01T12:00:00+05:00;
+            knowledge_time @2026-07-01T12:00:00+05:00;
+            legal_time @2026-07-01;
+            timezone "Asia/Qyzylorda";
+        }
+
+        assert person(entity_ref("urn:kz:constitution:rights:case:person:32")) { id "e02-a1"; origin case_input; }
+        assert citizen(entity_ref("urn:kz:constitution:rights:case:person:32")) { id "e02-a2"; origin case_input; }
+    }
+
+    // ПЕРВЫЙ ДЕНЬ РЕДАКЦИИ 2026. Та же пара норм меняется местами.
+    evaluate positions();
+    expect issues_within(info);
+
+    expect position(PayLawfulTaxes, ACTIVE);
+    expect position(RespectConstitutionAndLaw, ACTIVE);
+    expect position(DefendKazakhstan, ACTIVE);
+    expect position(ChooseOccupationFreely, ACTIVE);
+    expect position(ExitKazakhstan, ACTIVE);
+    expect position(ParticipateInStateGovernance, ACTIVE);
+
+    // Слой 1995 исключён проекцией целиком: EXPIRED у свободы 1995 больше не
+    // наблюдается — истекать нечему, узла в программе нет.
+    expect issue(EDITION_NOT_APPLICABLE);
+    expect not position(PayLawfulTaxes1995, ACTIVE);
+    expect not position(ChooseOccupationFreely1995, ACTIVE);
+    expect not position(ChooseOccupationFreely1995, EXPIRED);
+}
+
+// --- Состав редакции 1995, утраченный к 2026 -----------------------------
+
+test "urn:query:kzcr-edition-1995-lost-content-1" {
+    given {
+        context {
+            decision_time @2000-01-01T12:00:00+05:00;
+            knowledge_time @2000-01-01T12:00:00+05:00;
+            legal_time @2000-01-01;
+            timezone "Asia/Qyzylorda";
+        }
+
+        assert person(entity_ref("urn:kz:constitution:rights:case:person:33")) { id "e03-a1"; origin case_input; }
+        assert citizen(entity_ref("urn:kz:constitution:rights:case:person:33")) { id "e03-a2"; origin case_input; }
+        assert state_authority(entity_ref("urn:kz:constitution:rights:case:authority:31")) { id "e03-a3"; origin case_input; }
+
+        // Ст. 24 п. 3 (ред. 1995): право на забастовку. В 2026 его нет.
+        assert collective_labour_dispute(entity_ref("urn:kz:constitution:rights:case:strike:1"),
+                                         entity_ref("urn:kz:constitution:rights:case:person:33")) { id "e03-a4"; origin case_input; }
+        // Ст. 30 п. 2 (ред. 1995): бесплатное высшее на конкурсной основе.
+        assert higher_education_competition_won(entity_ref("urn:kz:constitution:rights:case:person:33")) { id "e03-a5"; origin case_input; }
+        // Ст. 24 п. 4 (ред. 1995): оплачиваемый ежегодный отпуск.
+        assert employed_under_labour_contract(entity_ref("urn:kz:constitution:rights:case:person:33")) { id "e03-a6"; origin case_input; }
+        // Ст. 13 п. 3 (ред. 1995): бесплатная юридическая помощь.
+        assert legal_aid_case(entity_ref("urn:kz:constitution:rights:case:aid:1"),
+                              entity_ref("urn:kz:constitution:rights:case:person:33")) { id "e03-a7"; origin case_input; }
+        assert statutory_free_legal_aid_ground(entity_ref("urn:kz:constitution:rights:case:aid:1")) { id "e03-a8"; origin case_input; }
+        // Ст. 18 п. 3 (ред. 1995): доступ к документам обещан ГРАЖДАНИНУ.
+        assert document_affects(entity_ref("urn:kz:constitution:rights:case:document:31"),
+                                entity_ref("urn:kz:constitution:rights:case:person:33")) { id "e03-a9"; origin case_input; }
+    }
+
+    evaluate positions();
+    expect issues_within(info);
+
+    expect position(Strike1995, ACTIVE);
+    expect position(ProvideFreeHigherEducation1995, ACTIVE);
+    expect position(GuaranteeAnnualPaidLeave1995, ACTIVE);
+    expect position(ProvideFreeLegalAid1995, ACTIVE);
+    expect position(ProvideCitizenAccess1995, ACTIVE);
+
+    // У редакции 2026 этих норм нет — свободы забастовки и обязанности
+    // бесплатного высшего образования в разделе II 2026 года не существует.
+    // Обязанность доступа к документам в 2026 есть (`ProvideAccess`), но на
+    // дату 2000 года она исключена проекцией §92 и в документе отсутствует —
+    // не PENDING, как было до включения проекции 13.09.2026.
+    expect issue(EDITION_NOT_APPLICABLE);
+    expect not position(ProvideAccess, PENDING);
+    expect not position(ProvideAccess, ACTIVE);
+}
+
+// --- Ст. 16 п. 2 (ред. 1995): семьдесят два часа в самой Конституции ------
+
+test "urn:query:kzcr-edition-1995-72-hours-1" {
+    given {
+        context {
+            decision_time @2000-01-01T12:00:00+05:00;
+            knowledge_time @2000-01-01T12:00:00+05:00;
+            legal_time @2000-01-01;
+            timezone "Asia/Qyzylorda";
+        }
+
+        assert person(entity_ref("urn:kz:constitution:rights:case:person:34")) { id "e04-a1"; origin case_input; }
+        assert detention_of(entity_ref("urn:kz:constitution:rights:case:detention:31"),
+                            entity_ref("urn:kz:constitution:rights:case:person:34")) { id "e04-a2"; origin case_input; }
+        assert detention_without_court_sanction(entity_ref("urn:kz:constitution:rights:case:detention:31")) { id "e04-a3"; origin case_input; }
+        assert detention_exceeds_72_hours(entity_ref("urn:kz:constitution:rights:case:detention:31")) { id "e04-a4"; origin case_input; }
+    }
+
+    // Число часов в редакции 1995 стоит В КОНСТИТУЦИИ, а редакция 2026
+    // отсылает срок к закону: поэтому у 1995 свой шаблон иммунитета.
+    evaluate positions();
+    expect issues_within(info);
+
+    expect position(SeventyTwoHourDetentionLimit1995, ACTIVE);
+    // Иммунитет 2026 требует `continued_detention_barred`, а он выводится из
+    // превышения СТАТУТНОГО срока, которого дело не подавало.
+    expect not position(CourtOrderRequiredForContinuedDetention, ACTIVE);
+}
+
+// --- Нарушение обязанности редакции 1995 внутри её окна ------------------
+
+test "urn:query:kzcr-edition-1995-violation-1" {
+    given {
+        context {
+            decision_time @2000-01-01T12:00:00+05:00;
+            knowledge_time @2000-01-01T12:00:00+05:00;
+            legal_time @2000-01-01;
+            timezone "Asia/Qyzylorda";
+        }
+
+        assert person(entity_ref("urn:kz:constitution:rights:case:person:35")) { id "e05-a1"; origin case_input; }
+        assert citizen(entity_ref("urn:kz:constitution:rights:case:person:35")) { id "e05-a2"; origin case_input; }
+        assert lawful_tax_unpaid(entity_ref("urn:kz:constitution:rights:case:person:35")) { id "e05-a3"; origin case_input; }
+        assert nature_harmed(entity_ref("urn:kz:constitution:rights:case:person:35")) { id "e05-a4"; origin case_input; }
+    }
+
+    // §137: контрпример внутри окна 1995 → VIOLATED. Норма 2026 на эту дату
+    // исключена проекцией §92 и нарушенной объявлена быть не может — её в
+    // документе нет вовсе (до 13.09.2026 она наблюдалась как PENDING).
+    evaluate positions();
+    expect issues_within(info);
+    expect issue(EDITION_NOT_APPLICABLE);
+
+    expect position(PayLawfulTaxes1995, VIOLATED);
+    expect position(ProtectNature1995, VIOLATED);
+    expect not position(PayLawfulTaxes, PENDING);
+    expect not position(PayLawfulTaxes, VIOLATED);
+}

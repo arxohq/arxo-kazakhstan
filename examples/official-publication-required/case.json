@@ -1,0 +1,49 @@
+{
+  "assertions": [
+    {
+      "contentHash": "sha256:8c0fe41db044f74f5cae742c7da9b313a8a46892c3f2118543e6131d4fcd58dd",
+      "evidence": [],
+      "id": "urn:kz:constitution:sources#pub-1",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:demo:kz:act",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:sources#legal_act_affects_citizen_rights_or_duties"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:sources"
+    },
+    {
+      "contentHash": "sha256:0b0854b4313c498a88d52fbf3127e0448640fe3f4db768eff778b521d9657a2a",
+      "evidence": [],
+      "id": "urn:kz:constitution:sources#pub-2",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:demo:kz:act",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:sources#legal_act_officially_published"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:sources"
+    }
+  ],
+  "context": {
+    "decisionTime": "2026-09-01T12:00:00+05:00",
+    "knowledgeTime": "2026-09-01T12:00:00+05:00",
+    "legalTime": "2026-09-01",
+    "timezone": "Asia/Almaty"
+  },
+  "options": {}
+}

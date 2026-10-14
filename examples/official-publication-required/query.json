@@ -1,0 +1,15 @@
+{
+  "kind": "truth",
+  "literal": {
+    "args": [
+      {
+        "id": "urn:demo:kz:act",
+        "kind": "entity_ref"
+      }
+    ],
+    "kind": "literal",
+    "polarity": "positive",
+    "predicate": "urn:kz:constitution:sources#legal_act_application_condition_satisfied"
+  },
+  "queryId": "urn:kz:constitution:sources#test/official-publication-required/query/0"
+}

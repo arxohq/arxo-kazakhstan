@@ -1,0 +1,30 @@
+{
+  "assertions": [
+    {
+      "contentHash": "sha256:080a1dc3b8d2568fde969bb7bc59319de41ad8448e00bd0f84626ab5f6220ee1",
+      "evidence": [],
+      "id": "urn:kz:constitution:kurultai#k2-1",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:kz:constitution:kurultai:test:deputy2",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:kurultai#deputy"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:kurultai"
+    }
+  ],
+  "context": {
+    "decisionTime": "2026-09-01T12:00:00+05:00",
+    "knowledgeTime": "2026-09-01T12:00:00+05:00",
+    "legalTime": "2026-09-01",
+    "timezone": "Asia/Almaty"
+  },
+  "options": {}
+}

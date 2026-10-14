@@ -1,0 +1,674 @@
+{
+  "$comment": "طبقة عرض عربية لحزم دستور جمهورية كازاخستان (DECISION-0070). الملف خارج CLIR ولا يقرأه المصرف، وإنما تقرأه طبقة العرض وحدها (verbalize --labels وخادم MCP وسطح المكتب). مصدر الترجمة هو تسمية العقدة الروسية ru-KZ في CLIR، ومصطلحاتها موافقة لحزمة law.verb.ar؛ والحالة translation أي ترجمة عمل غير رسمية لا نص رسمي. المفتاح هو الاسم المحلي للعقدة. النص غير مشكول.",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "Amendment": [
+      {
+        "status": "translation",
+        "text": "تعديل أو إضافة على الدستور"
+      }
+    ],
+    "AmendmentMayBeSubmitted1995": [
+      {
+        "status": "translation",
+        "text": "المادة 91 الفقرة 3 (طبعة 1995). لا تعرض التعديلات على الاستفتاء ولا على البرلمان بغير رأي إيجابي من المحكمة الدستورية"
+      }
+    ],
+    "AmendmentMayBeSubmitted1995/unless/0": [
+      {
+        "status": "translation",
+        "text": "المادة 91 الفقرة 3 (طبعة 1995). لا تعرض التعديلات على الاستفتاء ولا على البرلمان بغير رأي إيجابي من المحكمة الدستورية"
+      }
+    ],
+    "AmendmentReferendumDoubleThreshold": [
+      {
+        "status": "translation",
+        "text": "المادة 92 الفقرة 3. يقر التعديل إذا صوت لمصلحته أكثر من نصف المشاركين في ثلثي الولايات ومدن الشأن الجمهوري والعاصمة على الأقل"
+      }
+    ],
+    "AmendmentViolatesEntrenchedCore1995": [
+      {
+        "status": "translation",
+        "text": "المادة 91 الفقرة 2 (طبعة 1995). الاستقلال والبساطة ووحدة الإقليم وشكل الحكم والمبادئ الأساسية ومدة السبع سنوات للرئيس وانتخابه مرة واحدة أمور غير قابلة للتغيير"
+      }
+    ],
+    "Constitution1995InForceOnPublication": [
+      {
+        "status": "translation",
+        "text": "المادة 90 الفقرة 1 (طبعة 1995). ينفذ الدستور من يوم النشر الرسمي لنتائج الاستفتاء وينتهي في الوقت نفسه نفاذ الدستور السابق"
+      }
+    ],
+    "ConstitutionEdition": [
+      {
+        "status": "translation",
+        "text": "طبعة من الدستور"
+      }
+    ],
+    "ConstitutionalConclusion": [
+      {
+        "status": "translation",
+        "text": "رأي المحكمة الدستورية في مطابقة التعديل لشروط الدستور"
+      }
+    ],
+    "EffectiveDateAppointmentTwoMonths": [
+      {
+        "status": "translation",
+        "text": "المادة 95. يجرى التعيين الانتقالي الذي تحسب مدته من يوم نفاذ الدستور خلال شهرين"
+      }
+    ],
+    "EntrenchmentConclusion": [
+      {
+        "status": "translation",
+        "text": "المادة 93. يكون رأي المحكمة الدستورية إيجابيا إذا طابق التعديل شروط الفقرة 7 من المادة 2 والفقرة 5 من المادة 43"
+      }
+    ],
+    "EntrenchmentConclusion1995": [
+      {
+        "status": "translation",
+        "text": "المادة 91 الفقرة 3 (طبعة 1995). تعرض التعديلات على الاستفتاء أو على البرلمان عند وجود رأي من المحكمة الدستورية بمطابقتها لشروط الفقرة 2"
+      }
+    ],
+    "ExistingActsContinueIfCompatible": [
+      {
+        "status": "translation",
+        "text": "المادة 96 الفقرة 1. تطبق القوانين وسائر الصكوك القانونية المعيارية النافذة يوم نفاذ الدستور في الحدود التي لا تخالفه"
+      }
+    ],
+    "ExistingActsContinueIfCompatible/unless/0": [
+      {
+        "status": "translation",
+        "text": "المادة 96 الفقرة 1. تطبق القوانين وسائر الصكوك القانونية المعيارية النافذة يوم نفاذ الدستور في الحدود التي لا تخالفه"
+      }
+    ],
+    "FirstKurultaiElectionTransition": [
+      {
+        "status": "translation",
+        "text": "المادة 95 الفقرة 1. يعلن عن انتخابات القورولتاي خلال شهر وتجرى خلال شهرين من يوم نفاذ الدستور"
+      }
+    ],
+    "FirstSessionAppointmentTwoMonths": [
+      {
+        "status": "translation",
+        "text": "المادة 95 الفقرتان 2–4. تجرى التعيينات الانتقالية خلال شهرين من يوم افتتاح الدورة الأولى للقورولتاي في تشكيلته الأولى"
+      }
+    ],
+    "IncumbentContinuity": [
+      {
+        "status": "translation",
+        "text": "المادة 95. يحتفظ الموظفون القائمون بصلاحياتهم إلى حين تشكيل التشكيلات الجديدة"
+      }
+    ],
+    "KurultaiElection": [
+      {
+        "status": "translation",
+        "text": "انتخابات القورولتاي"
+      }
+    ],
+    "LegalAct": [
+      {
+        "status": "translation",
+        "text": "قانون أو صك قانوني معياري آخر"
+      }
+    ],
+    "ListIsNotASubjectReading": [
+      {
+        "status": "translation",
+        "text": "القراءة الأولى للمادة 91 الفقرة 2: القائمة تحمي الموضوعات ولا تحمي نفسها"
+      }
+    ],
+    "ListItselfEntrenchedReading": [
+      {
+        "status": "translation",
+        "text": "القراءة الثانية للمادة 91 الفقرة 2: عدم قابلية القائمة للتغيير مبدأ أساسي"
+      }
+    ],
+    "NarrowingAmendmentFilter1995": [
+      {
+        "status": "translation",
+        "text": "التعديل المضيق قابل للعرض عند وجود رأي المحكمة إذا لم يعد التضييق مساسا بالنواة"
+      }
+    ],
+    "NarrowingAmendmentFilter1995/unless/0": [
+      {
+        "status": "translation",
+        "text": "التعديل المضيق قابل للعرض عند وجود رأي المحكمة إذا لم يعد التضييق مساسا بالنواة"
+      }
+    ],
+    "NarrowingOutsideCore1995": [
+      {
+        "status": "translation",
+        "text": "القراءة الأولى: قائمة الفقرة 2 ليست في ذاتها موضوعا محميا وتضييقها تعديل عادي"
+      }
+    ],
+    "NarrowingTouchesCore1995": [
+      {
+        "status": "translation",
+        "text": "القراءة الثانية: عدم قابلية قائمة الفقرة 2 للتغيير مبدأ أساسي وتضييقها مساس بالنواة"
+      }
+    ],
+    "NewConstitutionInForceFromJulyFirst": [
+      {
+        "status": "translation",
+        "text": "المادة 94 الفقرة 1. ينفذ الدستور اعتبارا من 1 تموز 2026"
+      }
+    ],
+    "OldActsApplyIfCompatible1995": [
+      {
+        "status": "translation",
+        "text": "المادة 92 الفقرة 4 (طبعة 1995). تطبق التشريعات النافذة لحظة نفاذ الدستور في الحدود التي لا تخالفه"
+      }
+    ],
+    "OldConstitutionRepealedSimultaneously": [
+      {
+        "status": "translation",
+        "text": "المادة 94 الفقرة 1. ينتهي نفاذ الدستور السابق في وقت نفاذ الدستور الجديد"
+      }
+    ],
+    "ParliamentaryAmendmentFourFifths1995": [
+      {
+        "status": "translation",
+        "text": "المادة 91 الفقرة 1 (طبعة 1995). إذا رفض الرئيس اقتراح البرلمان بالاستفتاء جاز للبرلمان بأغلبية لا تقل عن أربعة أخماس أصوات مجموع نواب كل من المجلسين أن يقر قانونا بتعديل الدستور"
+      }
+    ],
+    "ParliamentaryAmendmentLaw": [
+      {
+        "status": "translation",
+        "text": "قانون البرلمان بالتعديلات والإضافات على الدستور (طبعة 1995)"
+      }
+    ],
+    "PositiveConclusionRequiredForReferendum": [
+      {
+        "status": "translation",
+        "text": "المادة 93. يعرض التعديل على استفتاء شعبي عند وجود رأي إيجابي من المحكمة الدستورية"
+      }
+    ],
+    "Referendum": [
+      {
+        "status": "translation",
+        "text": "استفتاء شعبي"
+      }
+    ],
+    "ReferendumTurnoutMoreThanHalf": [
+      {
+        "status": "translation",
+        "text": "المادة 92 الفقرة 2. يصح الاستفتاء الشعبي إذا شارك في الاقتراع أكثر من نصف المواطنين الذين لهم حق المشاركة فيه"
+      }
+    ],
+    "TransitionalAppointment": [
+      {
+        "status": "translation",
+        "text": "تعيين يجرى في المدة الانتقالية"
+      }
+    ],
+    "amendment_approved_by_referendum": [
+      {
+        "status": "translation",
+        "text": "أقرت التعديلات والإضافات على الدستور بالاستفتاء"
+      }
+    ],
+    "amendment_may_be_submitted_1995": [
+      {
+        "status": "translation",
+        "text": "يجوز عرض التعديل على الاستفتاء (طبعة 1995)"
+      }
+    ],
+    "amendment_may_be_submitted_to_referendum": [
+      {
+        "status": "translation",
+        "text": "يجوز عرض التعديل على استفتاء شعبي"
+      }
+    ],
+    "amendment_mazhilis_total": [
+      {
+        "status": "translation",
+        "text": "مجموع نواب مجلس النواب (طبعة 1995)"
+      }
+    ],
+    "amendment_mazhilis_votes": [
+      {
+        "status": "translation",
+        "text": "عدد أصوات نواب مجلس النواب المؤيدة للتعديل (طبعة 1995)"
+      }
+    ],
+    "amendment_narrows_entrenched_list_1995": [
+      {
+        "status": "translation",
+        "text": "مضمون التعديل: حذف موضوع من قائمة الفقرة 2 من المادة 91"
+      }
+    ],
+    "amendment_referendum_declined_by_president": [
+      {
+        "status": "translation",
+        "text": "رفض الرئيس اقتراح عرض التعديل على الاستفتاء (طبعة 1995)"
+      }
+    ],
+    "amendment_senate_total": [
+      {
+        "status": "translation",
+        "text": "مجموع نواب مجلس الشيوخ (طبعة 1995)"
+      }
+    ],
+    "amendment_senate_votes": [
+      {
+        "status": "translation",
+        "text": "عدد أصوات نواب مجلس الشيوخ المؤيدة للتعديل (طبعة 1995)"
+      }
+    ],
+    "amendment_touches_subject": [
+      {
+        "status": "translation",
+        "text": "التعديل يمس الموضوع المسمى"
+      }
+    ],
+    "amendment_violates_entrenched_core_1995": [
+      {
+        "status": "translation",
+        "text": "التعديل يخل بالنواة غير القابلة للتغيير في دستور سنة 1995"
+      }
+    ],
+    "appointment_completed_within_two_months": [
+      {
+        "status": "translation",
+        "text": "أجري التعيين خلال شهرين"
+      }
+    ],
+    "approving_regions_cities_and_capital": [
+      {
+        "status": "translation",
+        "text": "عدد الولايات ومدن الشأن الجمهوري والعاصمة التي أقر فيها التعديل"
+      }
+    ],
+    "cabinet_becomes_government_1995": [
+      {
+        "status": "translation",
+        "text": "يكتسب مجلس الوزراء صفة حكومة الجمهورية (طبعة 1995)"
+      }
+    ],
+    "conclusion_confirms_article_91_paragraph_2": [
+      {
+        "status": "translation",
+        "text": "الرأي يؤكد مطابقة التعديل للفقرة 2 من المادة 91 (طبعة 1995)"
+      }
+    ],
+    "conclusion_for_amendment": [
+      {
+        "status": "translation",
+        "text": "صدر رأي المحكمة الدستورية في هذا التعديل"
+      }
+    ],
+    "conforms_article_2_paragraph_7": [
+      {
+        "status": "translation",
+        "text": "التعديل مطابق لشروط الفقرة 7 من المادة 2 من الدستور"
+      }
+    ],
+    "conforms_article_43_paragraph_5": [
+      {
+        "status": "translation",
+        "text": "التعديل مطابق لشروط الفقرة 5 من المادة 43 من الدستور"
+      }
+    ],
+    "constitution_1995": [
+      {
+        "status": "translation",
+        "text": "دستور سنة 1995"
+      }
+    ],
+    "constitution_1995_in_force": [
+      {
+        "status": "translation",
+        "text": "دستور سنة 1995 نافذ"
+      }
+    ],
+    "constitution_1995_referendum_results_published": [
+      {
+        "status": "translation",
+        "text": "نشرت نتائج الاستفتاء الجمهوري لسنة 1995"
+      }
+    ],
+    "constitution_2026": [
+      {
+        "status": "translation",
+        "text": "دستور سنة 2026"
+      }
+    ],
+    "constitution_ceases_date": [
+      {
+        "status": "translation",
+        "text": "يوم انتهاء نفاذ طبعة الدستور"
+      }
+    ],
+    "constitution_day_is_state_holiday_1995": [
+      {
+        "status": "translation",
+        "text": "يوم إقرار الدستور بالاستفتاء أعلن يوما للدستور"
+      }
+    ],
+    "constitution_effective_date": [
+      {
+        "status": "translation",
+        "text": "يوم نفاذ طبعة الدستور"
+      }
+    ],
+    "constitution_in_force": [
+      {
+        "status": "translation",
+        "text": "طبعة الدستور نافذة"
+      }
+    ],
+    "constitution_repealed": [
+      {
+        "status": "translation",
+        "text": "انتهى نفاذ طبعة الدستور"
+      }
+    ],
+    "constitutional_council_acts_until_court_1995": [
+      {
+        "status": "translation",
+        "text": "يعمل المجلس الدستوري إلى حين إنشاء المحكمة الدستورية (طبعة 1995)"
+      }
+    ],
+    "constitutional_court_positive_conclusion": [
+      {
+        "status": "translation",
+        "text": "رأي المحكمة الدستورية في مطابقة التعديل إيجابي"
+      }
+    ],
+    "constitutional_court_positive_conclusion_1995": [
+      {
+        "status": "translation",
+        "text": "الرأي في مطابقة التعديل للنواة غير القابلة للتغيير إيجابي (طبعة 1995)"
+      }
+    ],
+    "continuity_preserved": [
+      {
+        "status": "translation",
+        "text": "حفظت استمرارية ممارسة الصلاحيات"
+      }
+    ],
+    "contrary_to_1995_constitution": [
+      {
+        "status": "translation",
+        "text": "الصك يخالف دستور سنة 1995"
+      }
+    ],
+    "contrary_to_2026_constitution": [
+      {
+        "status": "translation",
+        "text": "الصك يخالف دستور سنة 2026"
+      }
+    ],
+    "current_date": [
+      {
+        "status": "translation",
+        "text": "التاريخ الذي طرح عنده السؤال"
+      }
+    ],
+    "deadline_from_effective_date": [
+      {
+        "status": "translation",
+        "text": "تحسب مدة التعيين من يوم نفاذ الدستور"
+      }
+    ],
+    "deadline_from_first_session": [
+      {
+        "status": "translation",
+        "text": "تحسب مدة التعيين من يوم افتتاح الدورة الأولى للقورولتاي في تشكيلته الأولى"
+      }
+    ],
+    "edition_1995": [
+      {
+        "status": "translation",
+        "text": "المحل هو طبعة دستور سنة 1995"
+      }
+    ],
+    "edition_2026": [
+      {
+        "status": "translation",
+        "text": "المحل هو طبعة دستور سنة 2026"
+      }
+    ],
+    "election_announced_within_one_month": [
+      {
+        "status": "translation",
+        "text": "أعلن عن الانتخابات خلال شهر من يوم نفاذ الدستور"
+      }
+    ],
+    "election_held_within_two_months": [
+      {
+        "status": "translation",
+        "text": "أجريت الانتخابات خلال شهرين من يوم نفاذ الدستور"
+      }
+    ],
+    "eligible_referendum_citizens": [
+      {
+        "status": "translation",
+        "text": "عدد المواطنين الذين لهم حق المشاركة في الاستفتاء الشعبي"
+      }
+    ],
+    "existing_justice_bodies_continue_1995": [
+      {
+        "status": "translation",
+        "text": "تحتفظ أجهزة القضاء القائمة بصلاحياتها إلى حين تشكيل الأجهزة الجديدة (طبعة 1995)"
+      }
+    ],
+    "first_constitutional_council_composition_1995": [
+      {
+        "status": "translation",
+        "text": "شكلت التشكيلة الأولى للمجلس الدستوري بالأوضاع الانتقالية (طبعة 1995)"
+      }
+    ],
+    "first_kurultai_election": [
+      {
+        "status": "translation",
+        "text": "الانتخابات هي انتخابات القورولتاي في تشكيلته الأولى"
+      }
+    ],
+    "first_kurultai_transition_timely": [
+      {
+        "status": "translation",
+        "text": "تم الانتقال إلى القورولتاي في تشكيلته الأولى في المواعيد الدستورية"
+      }
+    ],
+    "first_senate_split_term_1995": [
+      {
+        "status": "translation",
+        "text": "انتخب نصف نواب مجلس الشيوخ في التشكيلة الأولى لمدة مخفضة (طبعة 1995)"
+      }
+    ],
+    "incumbent_continues_until_successor": [
+      {
+        "status": "translation",
+        "text": "الموظف القائم يحتفظ بصلاحياته إلى حين تشكيل التشكيلة الجديدة"
+      }
+    ],
+    "language_conditions_duty_declared_1995": [
+      {
+        "status": "translation",
+        "text": "على الدولة أن تهيئ الظروف لدراسة لغات شعب كازاخستان وتطويرها (طبعة 1995)"
+      }
+    ],
+    "narrowing_amendment_passes_filter_1995": [
+      {
+        "status": "translation",
+        "text": "التعديل الذي يضيق قائمة الفقرة 2 يجتاز مصفاة الفقرة 3 من المادة 91"
+      }
+    ],
+    "narrowing_deemed_outside_core_1995": [
+      {
+        "status": "translation",
+        "text": "عد تضييق القائمة غير ماس بالموضوعات المحمية في الفقرة 2"
+      }
+    ],
+    "old_act_applicable": [
+      {
+        "status": "translation",
+        "text": "يطبق الصك في الحدود التي لا يخالف فيها الدستور"
+      }
+    ],
+    "old_act_applicable_1995": [
+      {
+        "status": "translation",
+        "text": "يطبق الصك في الحدود التي لا يخالف فيها دستور سنة 1995"
+      }
+    ],
+    "old_act_predating_1995": [
+      {
+        "status": "translation",
+        "text": "كان الصك نافذا قبل نفاذ دستور سنة 1995"
+      }
+    ],
+    "old_legal_act": [
+      {
+        "status": "translation",
+        "text": "كان الصك نافذا يوم نفاذ الدستور"
+      }
+    ],
+    "parliamentary_amendment_adopted_1995": [
+      {
+        "status": "translation",
+        "text": "أقر البرلمان قانون تعديل الدستور بأغلبية موصوفة (طبعة 1995)"
+      }
+    ],
+    "parliamentary_amendment_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "مقام العتبة البرلمانية للتعديل أربعة أخماس (طبعة 1995)"
+      }
+    ],
+    "parliamentary_amendment_law": [
+      {
+        "status": "translation",
+        "text": "قانون البرلمان يدخل هذه التعديلات على الدستور (طبعة 1995)"
+      }
+    ],
+    "parliamentary_amendment_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "بسط العتبة البرلمانية للتعديل أربعة أخماس (طبعة 1995)"
+      }
+    ],
+    "protected_locator": [
+      {
+        "status": "translation",
+        "text": "حكم من أحكام الدستور معدود في النواة غير القابلة للتغيير"
+      }
+    ],
+    "protected_subject_1995": [
+      {
+        "status": "translation",
+        "text": "موضوع معدود في النواة غير القابلة للتغيير في دستور سنة 1995"
+      }
+    ],
+    "referendum_approval_denominator": [
+      {
+        "status": "translation",
+        "text": "مقام عتبة إقرار التعديل النصف"
+      }
+    ],
+    "referendum_approval_numerator": [
+      {
+        "status": "translation",
+        "text": "بسط عتبة إقرار التعديل النصف"
+      }
+    ],
+    "referendum_for_amendment": [
+      {
+        "status": "translation",
+        "text": "يجرى الاستفتاء على هذا التعديل للدستور"
+      }
+    ],
+    "referendum_held": [
+      {
+        "status": "translation",
+        "text": "يعد الاستفتاء الشعبي صحيحا"
+      }
+    ],
+    "referendum_participants": [
+      {
+        "status": "translation",
+        "text": "عدد المواطنين المشاركين في الاقتراع"
+      }
+    ],
+    "referendum_territory_denominator": [
+      {
+        "status": "translation",
+        "text": "مقام العتبة الإقليمية الثلثان"
+      }
+    ],
+    "referendum_territory_numerator": [
+      {
+        "status": "translation",
+        "text": "بسط العتبة الإقليمية الثلثان"
+      }
+    ],
+    "referendum_turnout_denominator": [
+      {
+        "status": "translation",
+        "text": "مقام عتبة المشاركة في الاستفتاء النصف"
+      }
+    ],
+    "referendum_turnout_numerator": [
+      {
+        "status": "translation",
+        "text": "بسط عتبة المشاركة في الاستفتاء النصف"
+      }
+    ],
+    "seven_year_term_applies_from_post_2005_election_1995": [
+      {
+        "status": "translation",
+        "text": "تطبق مدة السبع سنوات لصلاحيات الرئيس على من انتخب بعد سنة 2005 (طبعة 1995)"
+      }
+    ],
+    "single_election_rule_applies_prospectively_1995": [
+      {
+        "status": "translation",
+        "text": "تطبق قاعدة الانتخاب مرة واحدة على المستقبل (طبعة 1995)"
+      }
+    ],
+    "total_regions_cities_and_capital": [
+      {
+        "status": "translation",
+        "text": "مجموع الولايات ومدن الشأن الجمهوري والعاصمة"
+      }
+    ],
+    "transitional_appointment": [
+      {
+        "status": "translation",
+        "text": "التعيين من التعيينات الانتقالية"
+      }
+    ],
+    "transitional_appointment_timely": [
+      {
+        "status": "translation",
+        "text": "أجري التعيين الانتقالي في الميعاد"
+      }
+    ],
+    "transitional_constitutional_law_years_1995": [
+      {
+        "status": "translation",
+        "text": "ميعاد إقرار القوانين الدستورية للمدة الانتقالية سنة واحدة (طبعة 1995)"
+      }
+    ],
+    "transitional_other_law_years_1995": [
+      {
+        "status": "translation",
+        "text": "ميعاد إقرار سائر القوانين المسماة للمدة الانتقالية سنتان (طبعة 1995)"
+      }
+    ],
+    "vice_president_powers_preserved_1995": [
+      {
+        "status": "translation",
+        "text": "تستمر صلاحيات نائب الرئيس في المدة الانتقالية (طبعة 1995)"
+      }
+    ],
+    "votes_for_amendment": [
+      {
+        "status": "translation",
+        "text": "عدد الأصوات المؤيدة للتعديلات والإضافات"
+      }
+    ]
+  },
+  "language": "ar",
+  "package": "kz.constitution.amendment"
+}

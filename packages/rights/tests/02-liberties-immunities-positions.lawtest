@@ -1,0 +1,226 @@
+language "law.core" version "0.2";
+package kz.constitution.rights version "0.1.0";
+namespace "urn:kz:constitution:rights";
+
+// НАБЛЮДЕНИЕ ДЕОНТИЧЕСКОГО СЛОЯ, ЧАСТЬ 2: свободы (12) и иммунитеты (12)
+// редакции 2026.
+//
+// §125 и §128 не имеют цели, поэтому их статус даёт ОДНО окно (§134, ветка
+// power/immunity/liberty оценщика): CREATED до окна, ACTIVE в окне, EXPIRED
+// после. У свобод раздела II окно объявлено — [@2026-07-01, infinity);
+// у ИММУНИТЕТОВ окна нет вовсе (§128 payload его не несёт).
+//
+// ИЗМЕРЕНО 13.09.2026, ПОСЛЕ ВКЛЮЧЕНИЯ ПРОЕКЦИИ РЕДАКЦИЙ. До этой даты набор
+// шёл без пакета источников в мире, якоря 1995 не разрешались, условие 3 §92
+// сработать не могло — и близнец-иммунитет 1995 стоял ACTIVE в 2026 году
+// рядом с иммунитетом 2026. Теперь манифест склеивает `kz.constitution.sources`
+// (`concat`), `in_force` редакции 1995 закрыт 01.07.2026, и узел, все
+// датирующие якоря которого ведут на неприменимую редакцию, ИСКЛЮЧАЕТСЯ из
+// программы с issue `EDITION_NOT_APPLICABLE` severity info (errata E-0095).
+// Поэтому отсутствие окна у иммунитета больше ничего не решает: на дату 2026
+// близнеца 1995 в документе НЕТ ВОВСЕ — ни ACTIVE, ни EXPIRED.
+
+// --- Свободы: ст. 22, 23, 24, 26, 27, 29, 30, 35 -------------------------
+
+test "urn:query:kzcr-liberty-active-1" {
+    given {
+        context {
+            decision_time @2026-09-01T12:00:00+05:00;
+            knowledge_time @2026-09-01T12:00:00+05:00;
+            legal_time @2026-09-01;
+            timezone "Asia/Qyzylorda";
+        }
+
+        assert person(entity_ref("urn:kz:constitution:rights:case:person:11")) { id "l01-a1"; origin case_input; }
+        assert citizen(entity_ref("urn:kz:constitution:rights:case:person:11")) { id "l01-a2"; origin case_input; }
+        assert lawfully_in_kazakhstan(entity_ref("urn:kz:constitution:rights:case:person:11")) { id "l01-a3"; origin case_input; }
+        assert association(entity_ref("urn:kz:constitution:rights:case:association:1")) { id "l01-a4"; origin case_input; }
+        assert peaceful_assembly(entity_ref("urn:kz:constitution:rights:case:assembly:1"),
+                                 entity_ref("urn:kz:constitution:rights:case:person:11")) { id "l01-a5"; origin case_input; }
+        assert labour_dispute(entity_ref("urn:kz:constitution:rights:case:person:11")) { id "l01-a6"; origin case_input; }
+    }
+
+    // Все двенадцать свобод редакции 2026 наблюдаются одним делом: держатель
+    // связан телом каждого правила (§190), окно открыто на 01.09.2026.
+    evaluate positions();
+    expect evaluation_status == COMPUTED;
+    expect result_kind == NORM_POSITION;
+    expect issues_within(info);
+
+    expect position(MoveWithinKazakhstan, ACTIVE);          // ст. 24 п. 1
+    expect position(ExitKazakhstan, ACTIVE);                // ст. 24 п. 2
+    expect position(ReturnToKazakhstan, ACTIVE);            // ст. 24 п. 2
+    expect position(JoinAssociation, ACTIVE);               // ст. 26
+    expect position(ParticipateInPeacefulAssembly, ACTIVE); // ст. 34
+    expect position(ParticipateInStateGovernance, ACTIVE);  // ст. 35 п. 1
+    expect position(DeclareNationalIdentity, ACTIVE);       // ст. 22 п. 1
+    expect position(UseNativeLanguageAndCulture, ACTIVE);   // ст. 22 п. 2
+    expect position(ExerciseFreedomOfConscience, ACTIVE);   // ст. 25
+    expect position(ChooseOccupationFreely, ACTIVE);        // ст. 27 п. 1
+    expect position(ResolveLabourDispute, ACTIVE);          // ст. 27 п. 3
+    expect position(ConductEnterprise, ACTIVE);             // ст. 29 п. 4
+}
+
+test "urn:query:kzcr-liberty-window-not-open-1" {
+    given {
+        context {
+            decision_time @2026-06-30T12:00:00+05:00;
+            knowledge_time @2026-06-30T12:00:00+05:00;
+            legal_time @2026-06-30;
+            timezone "Asia/Qyzylorda";
+        }
+
+        assert person(entity_ref("urn:kz:constitution:rights:case:person:12")) { id "l02-a1"; origin case_input; }
+        assert citizen(entity_ref("urn:kz:constitution:rights:case:person:12")) { id "l02-a2"; origin case_input; }
+    }
+
+    // ПАРА К ГРАНИЦЕ ОКНА: 30.06.2026 — последний день ДО вступления редакции
+    // 2026 в силу. ИЗМЕРЕНО 13.09.2026: проекция §92 исключает норму 2026
+    // целиком — её якоря ведут на редакцию, чей `in_force` начинается
+    // 01.07.2026, — поэтому CREATED здесь наблюдать не на чем: позиции 2026
+    // в документе НЕТ. Близнец 1995 внутри своего окна и ACTIVE.
+    // Пара 30.06 / 01.07 стоит в файле 04.
+    evaluate positions();
+    expect issues_within(info);
+    expect issue(EDITION_NOT_APPLICABLE);
+
+    expect not position(ExitKazakhstan, CREATED);
+    expect not position(ExitKazakhstan, ACTIVE);
+    expect position(ExitKazakhstan1995, ACTIVE);
+}
+
+// --- Иммунитеты общего вида: ст. 16, 17, 20, 21, 23, 28, 29 --------------
+
+test "urn:query:kzcr-immunity-active-1" {
+    given {
+        context {
+            decision_time @2026-09-01T12:00:00+05:00;
+            knowledge_time @2026-09-01T12:00:00+05:00;
+            legal_time @2026-09-01;
+            timezone "Asia/Qyzylorda";
+        }
+
+        assert person(entity_ref("urn:kz:constitution:rights:case:person:13")) { id "i01-a1"; origin case_input; }
+        assert citizen(entity_ref("urn:kz:constitution:rights:case:person:13")) { id "i01-a2"; origin case_input; }
+        assert state_authority(entity_ref("urn:kz:constitution:rights:case:authority:11")) { id "i01-a3"; origin case_input; }
+    }
+
+    evaluate positions();
+    expect issues_within(info);
+
+    expect position(NoDiscrimination, ACTIVE);                 // ст. 16 п. 2
+    expect position(NoDeathPenalty, ACTIVE);                   // ст. 17 п. 3
+    expect position(DignityInviolable, ACTIVE);                // ст. 17 п. 1
+    expect position(NoTorture, ACTIVE);                        // ст. 20 п. 2
+    expect position(PrivacyProtection, ACTIVE);                // ст. 21 п. 1
+    expect position(NoCensorship, ACTIVE);                     // ст. 23 п. 5
+    expect position(HomeInviolability, ACTIVE);                // ст. 28 п. 1
+    expect position(CompensatedExpropriationOnly, ACTIVE);     // ст. 29 п. 3
+    expect position(NonExtradition, ACTIVE);                   // ст. 14 п. 1
+    expect position(UnobstructedReturnToKazakhstan, ACTIVE);   // ст. 24 п. 2
+
+    // ИЗМЕРЕНО 13.09.2026: редакции разводит ПРОЕКЦИЯ §92, а не окно нормы.
+    // На 01.09.2026 весь слой 1995 исключён из программы (условие 3 §92,
+    // errata E-0095), поэтому близнец-иммунитет отсутствует, хотя окна у него
+    // нет и истечь ему нечем; свобода 1995 отсутствует тоже, а не EXPIRED.
+    expect issue(EDITION_NOT_APPLICABLE);
+    expect not position(NoTorture1995, ACTIVE);
+    expect not position(ExitKazakhstan1995, EXPIRED);
+    expect not position(ExitKazakhstan1995, ACTIVE);
+}
+
+// --- Ст. 18 п. 2: иммунитет от продолжения задержания -------------------
+
+test "urn:query:kzcr-immunity-detention-1" {
+    given {
+        context {
+            decision_time @2026-09-01T12:00:00+05:00;
+            knowledge_time @2026-09-01T12:00:00+05:00;
+            legal_time @2026-09-01;
+            timezone "Asia/Qyzylorda";
+        }
+
+        assert person(entity_ref("urn:kz:constitution:rights:case:person:14")) { id "i02-a1"; origin case_input; }
+        assert detention_of(entity_ref("urn:kz:constitution:rights:case:detention:11"),
+                            entity_ref("urn:kz:constitution:rights:case:person:14")) { id "i02-a2"; origin case_input; }
+        assert detention_exceeds_statutory_period(entity_ref("urn:kz:constitution:rights:case:detention:11")) { id "i02-a3"; origin case_input; }
+    }
+
+    // Срок превышен, судебного решения нет → дефитер `unless` не срабатывает,
+    // `continued_detention_barred` выведено, иммунитет ACTIVE.
+    evaluate positions();
+    expect issues_within(info);
+
+    expect applied(ContinuedDetentionBarredWithoutCourtDecision);
+    expect position(CourtOrderRequiredForContinuedDetention, ACTIVE);
+}
+
+test "urn:query:kzcr-immunity-detention-1/2" {
+    given {
+        context {
+            decision_time @2026-09-01T12:00:00+05:00;
+            knowledge_time @2026-09-01T12:00:00+05:00;
+            legal_time @2026-09-01;
+            timezone "Asia/Qyzylorda";
+        }
+
+        assert person(entity_ref("urn:kz:constitution:rights:case:person:15")) { id "i03-a1"; origin case_input; }
+        assert detention_of(entity_ref("urn:kz:constitution:rights:case:detention:12"),
+                            entity_ref("urn:kz:constitution:rights:case:person:15")) { id "i03-a2"; origin case_input; }
+        assert detention_exceeds_statutory_period(entity_ref("urn:kz:constitution:rights:case:detention:12")) { id "i03-a3"; origin case_input; }
+        // ВТОРАЯ СТОРОНА ГРАНИЦЫ ст. 18 п. 2: судебное решение ЕСТЬ.
+        assert detention_has_court_decision(entity_ref("urn:kz:constitution:rights:case:detention:12")) { id "i03-a4"; origin case_input; }
+    }
+
+    evaluate positions();
+    expect issues_within(info);
+
+    expect not position(CourtOrderRequiredForContinuedDetention, ACTIVE);
+}
+
+// --- Ст. 41 п. 3: неограничиваемое ядро ---------------------------------
+
+test "urn:query:kzcr-immunity-core-rights-1" {
+    given {
+        context {
+            decision_time @2026-09-01T12:00:00+05:00;
+            knowledge_time @2026-09-01T12:00:00+05:00;
+            legal_time @2026-09-01;
+            timezone "Asia/Qyzylorda";
+        }
+
+        assert person(entity_ref("urn:kz:constitution:rights:case:person:16")) { id "i04-a1"; origin case_input; }
+        assert restriction_affects(entity_ref("urn:kz:constitution:rights:case:restriction:1"),
+                                   entity_ref("urn:kz:constitution:rights:case:person:16")) { id "i04-a2"; origin case_input; }
+        assert restriction_targets(entity_ref("urn:kz:constitution:rights:case:restriction:1"), Life) { id "i04-a3"; origin case_input; }
+    }
+
+    // Ограничение направлено на право, входящее в ядро ст. 41 п. 3 →
+    // иммунитет блокирует правовой эффект ограничения.
+    evaluate positions();
+    expect issues_within(info);
+
+    expect position(NonDerogableCore, ACTIVE);
+}
+
+test "urn:query:kzcr-immunity-core-rights-1/2" {
+    given {
+        context {
+            decision_time @2026-09-01T12:00:00+05:00;
+            knowledge_time @2026-09-01T12:00:00+05:00;
+            legal_time @2026-09-01;
+            timezone "Asia/Qyzylorda";
+        }
+
+        assert person(entity_ref("urn:kz:constitution:rights:case:person:17")) { id "i05-a1"; origin case_input; }
+        // Ограничение ЕСТЬ, но предмет ограничения делом не назван: членство
+        // в ядре не выводится из молчания, позиции нет.
+        assert restriction_affects(entity_ref("urn:kz:constitution:rights:case:restriction:2"),
+                                   entity_ref("urn:kz:constitution:rights:case:person:17")) { id "i05-a2"; origin case_input; }
+    }
+
+    evaluate positions();
+    expect issues_within(info);
+
+    expect not position(NonDerogableCore, ACTIVE);
+}

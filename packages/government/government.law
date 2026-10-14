@@ -1,0 +1,836 @@
+// Конституция РК 2026, разделы V–VI (ст. 63–71): Правительство и
+// Қазақстан Халық Кеңесі. Календарные месячные сроки, для которых в тексте
+// нет правила пересчёта в дни, представлены проверяемыми квалификациями.
+
+language "law.core" version "0.2";
+package kz.constitution.government version "0.1.0";
+namespace "urn:kz:constitution:government";
+
+entity Person {
+    label ru-KZ official "физическое лицо";
+}
+entity President {
+    label ru-KZ official "Президент Республики Казахстан";
+}
+entity PrimeMinister {
+    label ru-KZ official "Премьер-Министр Республики Казахстан";
+}
+// pub с 03.09.2026: конституционный закон о Правительстве (kz.corpus.government)
+// читает выводы статьи 69 о том же Правительстве — тип и предикаты экспортируются.
+pub entity Government {
+    label ru-KZ official "Правительство Республики Казахстан";
+}
+entity GovernmentMember {
+    label ru-KZ official "член Правительства";
+}
+pub entity Kurultai {
+    label ru-KZ official "Курултай Республики Казахстан";
+}
+entity GovernmentAct {
+    label ru-KZ official "акт Правительства";
+}
+entity Bill {
+    label ru-KZ official "законопроект";
+}
+entity PeoplesCouncil {
+    label ru-KZ official "Қазақстан Халық Кеңесі — Народный Совет Казахстана";
+}
+
+relation president(president: President) kind empirical {
+    label ru-KZ official "лицо является Президентом Республики";
+}
+relation prime_minister(prime_minister: PrimeMinister) kind empirical {
+    label ru-KZ official "лицо является Премьер-Министром";
+}
+pub relation government(government: Government) kind empirical {
+    label ru-KZ official "орган является Правительством Республики";
+}
+relation member_of_government(member: GovernmentMember, government: Government) kind empirical {
+    label ru-KZ official "лицо входит в состав Правительства";
+}
+relation government_formed_by_president(government: Government) kind institutional {
+    label ru-KZ official "Правительство образуется Президентом Республики";
+}
+relation government_structure_proposal(prime_minister: PrimeMinister, government: Government) kind empirical {
+    label ru-KZ official "Премьер-Министр внёс предложение о структуре и составе Правительства";
+}
+relation prime_minister_appointment_date(prime_minister: PrimeMinister, appointed: Date) kind empirical {
+    label ru-KZ official "день назначения Премьер-Министра";
+}
+relation government_proposal_date(government: Government, proposed: Date) kind empirical {
+    label ru-KZ official "день внесения предложения о структуре и составе Правительства";
+}
+relation government_proposal_timely(government: Government) kind institutional {
+    label ru-KZ official "предложение о структуре и составе Правительства внесено в срок";
+}
+relation government_proposal_deadline_days(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "срок внесения предложения о структуре и составе Правительства — десять дней";
+}
+
+relation government_policy_disagreement(member: GovernmentMember) kind empirical {
+    label ru-KZ official "член Правительства не согласен с проводимой Правительством политикой";
+}
+relation member_resignation_submitted(member: GovernmentMember) kind institutional {
+    label ru-KZ official "член Правительства обязан подать заявление об отставке";
+}
+relation representative_body_deputy(member: GovernmentMember) kind empirical {
+    label ru-KZ official "член Правительства является депутатом представительного органа";
+}
+relation paid_external_position(member: GovernmentMember) kind empirical {
+    label ru-KZ official "член Правительства занимает иную оплачиваемую должность";
+}
+relation permitted_teaching_science_or_creative_work(member: GovernmentMember) kind empirical {
+    label ru-KZ official "занятие относится к разрешённой преподавательской, научной или иной творческой деятельности";
+}
+relation entrepreneurial_activity(member: GovernmentMember) kind empirical {
+    label ru-KZ official "член Правительства занимается предпринимательской деятельностью";
+}
+relation commercial_board_membership(member: GovernmentMember) kind empirical {
+    label ru-KZ official "член Правительства входит в руководящий орган коммерческой организации";
+}
+relation official_duty_exception(member: GovernmentMember) kind empirical {
+    label ru-KZ official "участие в органе коммерческой организации входит в служебные обязанности";
+}
+relation government_membership_incompatible(member: GovernmentMember) kind institutional {
+    label ru-KZ official "членство в Правительстве несовместимо с занимаемой должностью или деятельностью";
+}
+
+relation government_act(act: GovernmentAct) kind empirical {
+    label ru-KZ official "акт принят Правительством";
+}
+relation within_government_competence(act: GovernmentAct) kind empirical {
+    label ru-KZ official "акт принят в пределах компетенции Правительства";
+}
+relation contradicts_constitution_law_or_presidential_act(act: GovernmentAct) kind empirical {
+    label ru-KZ official "акт противоречит Конституции, законам или актам Президента";
+}
+relation government_act_binding(act: GovernmentAct) kind institutional {
+    label ru-KZ official "акт Правительства обязателен на всей территории Республики";
+}
+
+pub relation new_kurultai_elected(kurultai: Kurultai) kind empirical {
+    label ru-KZ official "избран новый состав Курултая";
+}
+pub relation government_powers_relinquished(government: Government) kind institutional {
+    label ru-KZ official "Правительство слагает полномочия перед вновь избранным Курултаем";
+}
+relation government_no_confidence(government: Government) kind empirical {
+    label ru-KZ official "Курултай выразил вотум недоверия Правительству";
+}
+relation no_confidence_resignation_declared(government: Government) kind institutional {
+    label ru-KZ official "Правительство обязано заявить об отставке при вотуме недоверия";
+}
+// `government_resignation_declared` СНЯТО 02.09.2026: дубль `voluntary_resignation_declared`, который и читает правило ResignationDecisionTenDays; второй предикат той же даты не читался ничем
+relation voluntary_resignation_declared(government: Government, declared: Date) kind empirical {
+    label ru-KZ official "день, когда Правительство заявило об отставке по собственному решению";
+}
+relation presidential_resignation_decision(government: Government, decided: Date) kind empirical {
+    label ru-KZ official "день принятия Президентом решения по заявленной отставке";
+}
+relation resignation_decision_timely(government: Government) kind institutional {
+    label ru-KZ official "решение по отставке принято в установленный срок";
+}
+relation resignation_decision_deadline_days(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "срок принятия решения по заявленной отставке — десять дней";
+}
+relation resignation_accepted(government: Government) kind empirical {
+    label ru-KZ official "отставка Правительства принята Президентом";
+}
+relation prime_minister_resignation_accepted(government: Government) kind empirical {
+    label ru-KZ official "принята отставка Премьер-Министра";
+}
+relation government_powers_terminated(government: Government) kind institutional {
+    label ru-KZ official "полномочия Правительства прекращены";
+}
+
+relation peoples_council(council: PeoplesCouncil) kind empirical {
+    label ru-KZ official "орган является Қазақстан Халық Кеңесі";
+}
+relation peoples_council_bill(council: PeoplesCouncil, bill: Bill) kind empirical {
+    label ru-KZ official "Народный Совет внёс законопроект";
+}
+relation bill_introduced_to_kurultai(bill: Bill) kind institutional {
+    label ru-KZ official "законопроект внесён в Курултай в порядке законодательной инициативы";
+}
+relation peoples_council_referendum_initiative(council: PeoplesCouncil) kind empirical {
+    label ru-KZ official "Народный Совет выступил с инициативой о проведении референдума";
+}
+relation referendum_initiative_valid(council: PeoplesCouncil) kind institutional {
+    label ru-KZ official "инициатива о референдуме заявлена управомоченным субъектом";
+}
+
+// Ст. 63, 65, 66: статус и прямо перечисленная компетенция.
+relation government_exercises_executive_power(government: Government) kind institutional {
+    label ru-KZ official "Правительство осуществляет исполнительную власть Республики";
+}
+relation government_heads_executive_system(government: Government) kind institutional {
+    label ru-KZ official "Правительство возглавляет систему исполнительных органов";
+}
+relation government_accountable_to_president(government: Government) kind institutional {
+    label ru-KZ official "Правительство ответственно перед Президентом";
+}
+relation government_accountable_to_kurultai(government: Government) kind institutional {
+    label ru-KZ official "Правительство подотчётно Курултаю";
+}
+
+relation government_develops_state_policy(government: Government) kind institutional {
+    label ru-KZ official "Правительство разрабатывает основные направления государственной политики";
+}
+relation government_submits_budget_and_report(government: Government) kind institutional {
+    label ru-KZ official "Правительство представляет республиканский бюджет и отчёт о его исполнении";
+}
+relation government_ensures_budget_execution(government: Government) kind institutional {
+    label ru-KZ official "Правительство обеспечивает исполнение республиканского бюджета";
+}
+relation government_introduces_bills_and_executes_laws(government: Government) kind institutional {
+    label ru-KZ official "Правительство вносит законопроекты и обеспечивает исполнение законов";
+}
+relation government_manages_state_property(government: Government) kind institutional {
+    label ru-KZ official "Правительство управляет государственной собственностью";
+}
+relation government_develops_foreign_policy_measures(government: Government) kind institutional {
+    label ru-KZ official "Правительство разрабатывает меры по проведению внешней политики";
+}
+relation government_directs_executive_bodies(government: Government) kind institutional {
+    label ru-KZ official "Правительство руководит деятельностью исполнительных органов";
+}
+relation government_may_cancel_executive_body_acts(government: Government) kind institutional {
+    label ru-KZ official "Правительство вправе отменять акты исполнительных органов";
+}
+relation government_sets_unified_public_pay_system_with_president(government: Government) kind institutional {
+    label ru-KZ official "Правительство по согласованию с Президентом утверждает единую систему оплаты труда в государственных органах";
+}
+
+relation prime_minister_directs_government(prime_minister: PrimeMinister, government: Government) kind institutional {
+    label ru-KZ official "Премьер-Министр организует и руководит деятельностью Правительства";
+}
+relation prime_minister_personally_responsible(prime_minister: PrimeMinister, government: Government) kind institutional {
+    label ru-KZ official "Премьер-Министр персонально отвечает за деятельность Правительства";
+}
+relation prime_minister_signs_government_resolutions(prime_minister: PrimeMinister) kind institutional {
+    label ru-KZ official "Премьер-Министр подписывает постановления Правительства";
+}
+relation prime_minister_reports_to_president_and_kurultai(prime_minister: PrimeMinister) kind institutional {
+    label ru-KZ official "Премьер-Министр докладывает Президенту и Курултаю об основных направлениях деятельности Правительства";
+}
+relation citizen(person: Person) kind empirical {
+    label ru-KZ official "лицо является гражданином Республики Казахстан";
+}
+relation peoples_council_member(council: PeoplesCouncil, person: Person) kind empirical {
+    label ru-KZ official "лицо входит в состав Народного Совета";
+}
+relation peoples_council_highest_consultative_body(council: PeoplesCouncil) kind institutional {
+    label ru-KZ official "Народный Совет является высшим консультативно-совещательным органом";
+}
+relation peoples_council_membership_constitutionally_valid(council: PeoplesCouncil, person: Person) kind institutional {
+    label ru-KZ official "членство в Народном Совете отвечает конституционным требованиям";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART64_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART64_KK")
+assert government_proposal_deadline_days(10);
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART69_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART69_KK")
+assert resignation_decision_deadline_days(10);
+
+// Ст. 64 п. 1 не была выражена: предикат `president` объявлен и не читался
+// ничем, а образование Правительства Президентом — самостоятельная норма, из
+// которой десятидневный срок п. 2 и вытекает.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART64_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART64_KK")
+rule GovernmentFormedByPresident(president: President, government: Government) strict {
+    when president(president);
+    when government(government);
+    then government_formed_by_president(government);
+    label ru-KZ official "Статья 64 пункт 1. Правительство образуется Президентом Республики Казахстан в порядке, предусмотренном Конституцией";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART64_RU")
+rule GovernmentStructureProposalTenDays(
+    prime_minister: PrimeMinister,
+    government: Government,
+    appointed: Date,
+    proposed: Date,
+    limit_days: Integer,
+) strict {
+    when government_structure_proposal(prime_minister, government)
+        and prime_minister_appointment_date(prime_minister, appointed)
+        and government_proposal_date(government, proposed)
+        and government_proposal_deadline_days(limit_days)
+        and (days_between(appointed, proposed) <= limit_days);
+    then government_proposal_timely(government);
+    label ru-KZ official "Статья 64 пункт 2. Предложения о структуре и составе Правительства вносятся Президенту в десятидневный срок после назначения Премьер-Министра";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART67_RU") {
+    rule PolicyDisagreementRequiresResignation(
+        member: GovernmentMember,
+        government: Government,
+    ) strict {
+        when member_of_government(member, government);
+        when government_policy_disagreement(member);
+        then member_resignation_submitted(member);
+        label ru-KZ official "Статья 67 пункт 1. Член Правительства, не согласный с проводимой политикой, подаёт в отставку либо подлежит освобождению от должности";
+    }
+
+    rule GovernmentMemberRepresentativeMandateConflict(
+        member: GovernmentMember,
+        government: Government,
+    ) strict {
+        when member_of_government(member, government);
+        when representative_body_deputy(member);
+        then government_membership_incompatible(member);
+        label ru-KZ official "Статья 67 пункт 2. Член Правительства не вправе быть депутатом представительного органа";
+    }
+
+    rule GovernmentMemberPaidPositionConflict(
+        member: GovernmentMember,
+        government: Government,
+    ) defeasible {
+        when member_of_government(member, government);
+        when paid_external_position(member);
+        then government_membership_incompatible(member);
+        unless permitted_teaching_science_or_creative_work(member);
+        label ru-KZ official "Статья 67 пункт 2. Член Правительства не вправе занимать иные оплачиваемые должности, кроме преподавательской, научной и творческой деятельности";
+    }
+
+    rule GovernmentMemberBusinessConflict(member: GovernmentMember, government: Government) strict {
+        when member_of_government(member, government);
+        when entrepreneurial_activity(member);
+        then government_membership_incompatible(member);
+        label ru-KZ official "Статья 67 пункт 2. Член Правительства не вправе осуществлять предпринимательскую деятельность";
+    }
+
+    rule GovernmentMemberBoardConflict(
+        member: GovernmentMember,
+        government: Government,
+    ) defeasible {
+        when member_of_government(member, government);
+        when commercial_board_membership(member);
+        then government_membership_incompatible(member);
+        unless official_duty_exception(member);
+        label ru-KZ official "Статья 67 пункт 2. Член Правительства не вправе входить в руководящий орган или наблюдательный совет коммерческой организации, кроме случаев, когда это его должностная обязанность";
+    }
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART68_RU")
+rule GovernmentActBinding(act: GovernmentAct) defeasible {
+    when government_act(act);
+    when within_government_competence(act);
+    then government_act_binding(act);
+    unless contradicts_constitution_law_or_presidential_act(act);
+    label ru-KZ official "Статья 68 пункты 1 и 3. Постановление Правительства по вопросам его компетенции обязательно на всей территории Республики, если не противоречит Конституции, законам и актам Президента";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART69_RU") {
+    rule RelinquishPowersBeforeNewKurultai(government: Government, kurultai: Kurultai) strict {
+        when government(government);
+        when new_kurultai_elected(kurultai);
+        then government_powers_relinquished(government);
+        label ru-KZ official "Статья 69 пункт 1. Правительство слагает свои полномочия перед вновь избранным Курултаем";
+    }
+
+    rule NoConfidenceRequiresResignation(government: Government) strict {
+        when government_no_confidence(government);
+        then no_confidence_resignation_declared(government);
+        label ru-KZ official "Статья 69 пункт 3. При вотуме недоверия Курултая Правительство заявляет Президенту об отставке";
+    }
+
+    rule ResignationDecisionTenDays(
+        government: Government,
+        declared: Date,
+        decided: Date,
+        limit_days: Integer,
+    ) strict {
+        when voluntary_resignation_declared(government, declared)
+            and presidential_resignation_decision(government, decided)
+            and resignation_decision_deadline_days(limit_days)
+            and (days_between(declared, decided) <= limit_days);
+        then resignation_decision_timely(government);
+        label ru-KZ official "Статья 69 пункт 4. Президент рассматривает вопрос о принятии или отклонении отставки в десятидневный срок";
+    }
+
+    rule AcceptedResignationTerminatesGovernment(government: Government) strict {
+        when resignation_accepted(government);
+        then government_powers_terminated(government);
+        label ru-KZ official "Статья 69 пункт 5. Принятие отставки означает прекращение полномочий Правительства";
+    }
+
+    rule PrimeMinisterResignationTerminatesWholeGovernment(government: Government) strict {
+        when prime_minister_resignation_accepted(government);
+        then government_powers_terminated(government);
+        label ru-KZ official "Статья 69 пункт 5. Принятие отставки Премьер-Министра означает прекращение полномочий всего Правительства";
+    }
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART71_RU") {
+    rule PeoplesCouncilLegislativeInitiative(council: PeoplesCouncil, bill: Bill) strict {
+        when peoples_council(council);
+        when peoples_council_bill(council, bill);
+        then bill_introduced_to_kurultai(bill);
+        label ru-KZ official "Статья 71 подпункт 2). Қазақстан Халық Кеңесі вносит в Курултай проекты законов";
+    }
+
+    rule PeoplesCouncilReferendumInitiative(council: PeoplesCouncil) strict {
+        when peoples_council(council);
+        when peoples_council_referendum_initiative(council);
+        then referendum_initiative_valid(council);
+        label ru-KZ official "Статья 71 подпункт 3). Қазақстан Халық Кеңесі выдвигает инициативу о назначении всенародного референдума";
+    }
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART63_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART63_KK")
+rule GovernmentExercisesExecutivePower(government: Government) strict {
+    when government(government);
+    then government_exercises_executive_power(government);
+    label ru-KZ official "Статья 63. Правительство осуществляет исполнительную власть";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART63_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART63_KK")
+rule GovernmentHeadsExecutiveSystem(government: Government) strict {
+    when government(government);
+    then government_heads_executive_system(government);
+    label ru-KZ official "Статья 63. Правительство возглавляет систему исполнительных органов";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART63_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART63_KK")
+rule GovernmentAccountableToPresident(government: Government) strict {
+    when government(government);
+    then government_accountable_to_president(government);
+    label ru-KZ official "Статья 63. Правительство подотчётно Президенту";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART63_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART63_KK")
+rule GovernmentAccountableToKurultai(government: Government) strict {
+    when government(government);
+    then government_accountable_to_kurultai(government);
+    label ru-KZ official "Статья 63. Правительство подотчётно Курултаю";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART65_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART65_KK")
+rule GovernmentDevelopsStatePolicy(government: Government) strict {
+    when government(government);
+    then government_develops_state_policy(government);
+    label ru-KZ official "Статья 65 пункт 1. Правительство разрабатывает основные направления государственной политики";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART65_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART65_KK")
+rule GovernmentSubmitsBudgetAndReport(government: Government) strict {
+    when government(government);
+    then government_submits_budget_and_report(government);
+    label ru-KZ official "Статья 65 пункт 2. Правительство представляет республиканский бюджет и отчёт о его исполнении";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART65_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART65_KK")
+rule GovernmentEnsuresBudgetExecution(government: Government) strict {
+    when government(government);
+    then government_ensures_budget_execution(government);
+    label ru-KZ official "Статья 65 пункт 2. Правительство обеспечивает исполнение республиканского бюджета";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART65_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART65_KK")
+rule GovernmentIntroducesBillsAndExecutesLaws(government: Government) strict {
+    when government(government);
+    then government_introduces_bills_and_executes_laws(government);
+    label ru-KZ official "Статья 65 пункт 3. Правительство вносит законопроекты и обеспечивает исполнение законов";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART65_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART65_KK")
+rule GovernmentManagesStateProperty(government: Government) strict {
+    when government(government);
+    then government_manages_state_property(government);
+    label ru-KZ official "Статья 65 пункт 4. Правительство организует управление государственной собственностью";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART65_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART65_KK")
+rule GovernmentDevelopsForeignPolicyMeasures(government: Government) strict {
+    when government(government);
+    then government_develops_foreign_policy_measures(government);
+    label ru-KZ official "Статья 65 пункт 5. Правительство вырабатывает меры внешней политики";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART65_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART65_KK")
+rule GovernmentDirectsExecutiveBodies(government: Government) strict {
+    when government(government);
+    then government_directs_executive_bodies(government);
+    label ru-KZ official "Статья 65 пункт 6. Правительство руководит деятельностью исполнительных органов";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART65_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART65_KK")
+rule GovernmentMayCancelExecutiveBodyActs(government: Government) strict {
+    when government(government);
+    then government_may_cancel_executive_body_acts(government);
+    label ru-KZ official "Статья 65 пункт 6. Правительство может отменять или приостанавливать акты исполнительных органов";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART65_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART65_KK")
+rule GovernmentSetsUnifiedPublicPaySystemWithPresident(government: Government) strict {
+    when government(government);
+    then government_sets_unified_public_pay_system_with_president(government);
+    label ru-KZ official "Статья 65 пункт 7. Правительство по согласованию с Президентом утверждает единую систему финансирования и оплаты труда публичных органов";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART66_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART66_KK")
+rule PrimeMinisterDirectsGovernment(prime_minister: PrimeMinister, government: Government) strict {
+    when prime_minister(prime_minister);
+    when government(government);
+    then prime_minister_directs_government(prime_minister, government);
+    label ru-KZ official "Статья 66. Премьер-Министр организует и руководит деятельностью Правительства";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART66_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART66_KK")
+rule PrimeMinisterPersonallyResponsible(
+    prime_minister: PrimeMinister,
+    government: Government,
+) strict {
+    when prime_minister(prime_minister);
+    when government(government);
+    then prime_minister_personally_responsible(prime_minister, government);
+    label ru-KZ official "Статья 66. Премьер-Министр несёт персональную ответственность за работу Правительства";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART66_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART66_KK")
+rule PrimeMinisterSignsGovernmentResolutions(
+    prime_minister: PrimeMinister,
+    government: Government,
+) strict {
+    when prime_minister(prime_minister);
+    when government(government);
+    then prime_minister_signs_government_resolutions(prime_minister);
+    label ru-KZ official "Статья 66. Премьер-Министр подписывает постановления Правительства";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART66_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART66_KK")
+rule PrimeMinisterReportsToPresidentAndKurultai(
+    prime_minister: PrimeMinister,
+    government: Government,
+) strict {
+    when prime_minister(prime_minister);
+    when government(government);
+    then prime_minister_reports_to_president_and_kurultai(prime_minister);
+    label ru-KZ official "Статья 66. Премьер-Министр докладывает Президенту и Курултаю об основных направлениях и важнейших решениях Правительства";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART70_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART70_KK")
+rule PeoplesCouncilConstitutionalStatus(council: PeoplesCouncil) strict {
+    when peoples_council(council);
+    then peoples_council_highest_consultative_body(council);
+    label ru-KZ official "Статья 70 пункт 1. Народный Совет Казахстана — высший консультативный орган";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART70_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART70_KK")
+rule PeoplesCouncilMembersAreCitizens(council: PeoplesCouncil, person: Person) strict {
+    when peoples_council_member(council, person);
+    when citizen(person);
+    then peoples_council_membership_constitutionally_valid(council, person);
+    label ru-KZ official "Статья 70 пункт 2. Состав Народного Совета формируется из граждан Казахстана";
+}
+
+// =========================================================================
+// РЕДАКЦИЯ 1995 ГОДА, РАЗДЕЛ V «Правительство» (ст. 64–70).
+//
+// Институт сохранён, поэтому слой живёт в этом же пакете (DECISION-0026,
+// вариант «а»); разводит редакции проекция as-of §31 по якорям.
+//
+// РАСХОЖДЕНИЯ, найденные чтением закреплённого текста обеих редакций:
+//   1) ст. 64 п. 2 — Правительство 1995 ответственно перед Президентом И
+//      ПАРЛАМЕНТОМ; 2026 ст. 63 называет Курултай. Орган-контрагент другой,
+//      поэтому предикат другой;
+//   2) ст. 64 п. 3 — члены Правительства подотчётны ПАЛАТАМ Парламента (двум),
+//      а не однопалатному органу;
+//   3) ст. 65 п. 3 — присяга приносится народу И ПРЕЗИДЕНТУ;
+//   4) ст. 70 п. 1 — полномочия слагаются перед вновь избранным МАЖИЛИСОМ;
+//      в 2026 — перед вновь избранным Курултаем;
+//   5) ст. 70 п. 3 — отставка заявляется при вотуме недоверия Мажилиса ИЛИ
+//      Парламента: два пути, а не один;
+//   6) ст. 70 п. 7 — Президент вправе ПО СОБСТВЕННОЙ ИНИЦИАТИВЕ прекратить
+//      полномочия Правительства и освободить любого его члена.
+//
+// Десятидневные сроки ст. 65 п. 2 и ст. 70 п. 4 совпадают с редакцией 2026 —
+// это проверено по тексту, а не предположено, поэтому keyed-факты редакции
+// 2026 переиспользуются, а не дублируются новым числом.
+
+entity Mazhilis {
+    label ru-KZ official "Мажилис Парламента (редакция 1995)";
+}
+entity Parliament {
+    label ru-KZ official "Парламент Республики Казахстан (редакция 1995)";
+}
+
+relation government_accountable_to_president_1995(government: Government) kind institutional {
+    label ru-KZ official "Правительство ответственно перед Президентом (редакция 1995)";
+}
+relation government_accountable_to_parliament_1995(government: Government) kind institutional {
+    label ru-KZ official "Правительство ответственно перед Парламентом (редакция 1995)";
+}
+relation member_accountable_to_chambers_1995(member: GovernmentMember) kind institutional {
+    label ru-KZ official "члены Правительства подотчётны Палатам Парламента (редакция 1995)";
+}
+relation government_oath_to_people_and_president_1995(member: GovernmentMember) kind institutional {
+    label ru-KZ official "член Правительства обязан принести присягу народу и Президенту (редакция 1995)";
+}
+relation oath_taken_by_member(member: GovernmentMember) kind empirical {
+    label ru-KZ official "член Правительства принёс присягу";
+}
+relation new_mazhilis_elected(mazhilis: Mazhilis) kind empirical {
+    label ru-KZ official "избран новый состав Мажилиса (редакция 1995)";
+}
+relation mazhilis_no_confidence(government: Government) kind empirical {
+    label ru-KZ official "Мажилис выразил вотум недоверия Правительству (редакция 1995)";
+}
+relation parliament_no_confidence(government: Government) kind empirical {
+    label ru-KZ official "Парламент выразил вотум недоверия Правительству (редакция 1995)";
+}
+relation presidential_own_initiative_termination(government: Government) kind empirical {
+    label ru-KZ official "Президент по собственной инициативе прекратил полномочия Правительства (редакция 1995)";
+}
+relation presidential_member_release(member: GovernmentMember) kind empirical {
+    label ru-KZ official "Президент освободил члена Правительства от должности (редакция 1995)";
+}
+relation government_powers_terminated_1995(government: Government) kind institutional {
+    label ru-KZ official "полномочия Правительства прекращены (редакция 1995)";
+}
+relation member_powers_terminated_1995(member: GovernmentMember) kind institutional {
+    label ru-KZ official "полномочия члена Правительства прекращены (редакция 1995)";
+}
+relation prime_minister_released(government: Government) kind empirical {
+    label ru-KZ official "Премьер-Министр освобождён от должности (редакция 1995)";
+}
+relation minister_report_obligation_triggered(member: GovernmentMember) kind empirical {
+    label ru-KZ official "наступило основание для отчёта члена Правительства перед Палатой Парламента (редакция 1995)";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART64_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART64_KK")
+rule GovernmentAccountableToPresidentAndParliament1995(government: Government) strict {
+    when government(government);
+    then government_accountable_to_president_1995(government);
+    label ru-KZ official "Статья 64 пункт 2 (ред. 1995). Правительство ответственно перед Президентом Республики";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART64_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART64_KK")
+rule GovernmentAccountableToParliament1995(government: Government) strict {
+    when government(government);
+    then government_accountable_to_parliament_1995(government);
+    label ru-KZ official "Статья 64 пункт 2 (ред. 1995). Правительство ответственно перед Парламентом";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART64_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART64_KK")
+rule MemberAccountableToChambers1995(member: GovernmentMember) strict {
+    when minister_report_obligation_triggered(member);
+    then member_accountable_to_chambers_1995(member);
+    label ru-KZ official "Статья 64 пункт 3 (ред. 1995). Члены Правительства подотчётны Палатам Парламента в случае, предусмотренном подпунктом 6) статьи 57 Конституции";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART65_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART65_KK")
+rule GovernmentStructureProposalTenDays1995(
+    prime_minister: PrimeMinister,
+    government: Government,
+    appointed: Date,
+    proposed: Date,
+) strict {
+    when government_structure_proposal(prime_minister, government)
+        and prime_minister_appointment_date(prime_minister, appointed)
+        and government_proposal_date(government, proposed)
+        and (days_between(appointed, proposed) <= 10);
+    then government_proposal_timely(government);
+    label ru-KZ official "Статья 65 пункт 2 (ред. 1995). Предложения о структуре и составе Правительства вносятся Премьер-Министром в десятидневный срок после назначения";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART65_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART65_KK")
+rule GovernmentOathToPeopleAndPresident1995(member: GovernmentMember) strict {
+    when oath_taken_by_member(member);
+    then government_oath_to_people_and_president_1995(member);
+    label ru-KZ official "Статья 65 пункт 3 (ред. 1995). Члены Правительства приносят присягу народу и Президенту Казахстана";
+}
+
+// РАСХОЖДЕНИЕ 4. Перед вновь избранным МАЖИЛИСОМ, а не перед Курултаем.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART70_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART70_KK")
+rule RelinquishPowersBeforeNewMazhilis1995(government: Government, mazhilis: Mazhilis) strict {
+    when government(government);
+    when new_mazhilis_elected(mazhilis);
+    then government_powers_relinquished(government);
+    label ru-KZ official "Статья 70 пункт 1 (ред. 1995). Правительство слагает свои полномочия перед вновь избранным Мажилисом Парламента";
+}
+
+// РАСХОЖДЕНИЕ 5. Два основания вместо одного: вотум недоверия Мажилиса ИЛИ
+// Парламента (последний — по ст. 53 подпункт 2, неутверждение отчёта).
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART70_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART70_KK")
+rule NoConfidenceRequiresResignation1995(government: Government) strict {
+    when mazhilis_no_confidence(government)
+        or parliament_no_confidence(government);
+    then no_confidence_resignation_declared(government);
+    label ru-KZ official "Статья 70 пункт 3 (ред. 1995). Правительство заявляет Президенту об отставке при выражении Мажилисом или Парламентом вотума недоверия";
+}
+
+// РАСХОЖДЕНИЕ 6. Прекращение по собственной инициативе Президента.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART70_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART70_KK")
+rule PresidentialOwnInitiativeTermination1995(government: Government) strict {
+    when presidential_own_initiative_termination(government);
+    then government_powers_terminated_1995(government);
+    label ru-KZ official "Статья 70 пункт 7 (ред. 1995). Президент вправе по собственной инициативе принять решение о прекращении полномочий Правительства";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART70_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART70_KK")
+rule PresidentialMemberRelease1995(member: GovernmentMember) strict {
+    when presidential_member_release(member);
+    then member_powers_terminated_1995(member);
+    label ru-KZ official "Статья 70 пункт 7 (ред. 1995). Президент вправе освободить от должности любого члена Правительства";
+}
+
+// Освобождение Премьер-Министра прекращает полномочия ВСЕГО Правительства —
+// прямая норма ст. 70 п. 7, а не вывод из отставки по п. 5.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART70_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART70_KK")
+rule PrimeMinisterReleaseTerminatesGovernment1995(government: Government) strict {
+    when prime_minister_released(government);
+    then government_powers_terminated_1995(government);
+    label ru-KZ official "Статья 70 пункт 7 (ред. 1995). Освобождение от должности Премьер-Министра означает прекращение полномочий всего Правительства";
+}
+
+// --- Ст. 66–69 редакции 1995 ----------------------------------------------
+// Компетенция Правительства и Премьер-Министра совпадает с редакцией 2026 по
+// составу; правила заводятся отдельно ради ЯКОРЯ 1995 — без него проекция
+// as-of на дату до 01.07.2026 не нашла бы применимой нормы, хотя текст был.
+
+relation government_act_1995(act: GovernmentAct) kind empirical {
+    label ru-KZ official "акт принят Правительством (редакция 1995)";
+}
+relation prime_minister_order(act: GovernmentAct) kind empirical {
+    label ru-KZ official "акт является распоряжением Премьер-Министра";
+}
+relation government_act_binding_1995(act: GovernmentAct) kind institutional {
+    label ru-KZ official "постановление Правительства обязательно на всей территории Республики (редакция 1995)";
+}
+relation prime_minister_order_binding_1995(act: GovernmentAct) kind institutional {
+    label ru-KZ official "распоряжение Премьер-Министра обязательно на всей территории Республики (редакция 1995)";
+}
+relation member_decides_within_competence(member: GovernmentMember) kind empirical {
+    label ru-KZ official "член Правительства принимает решение в пределах своей компетенции";
+}
+relation member_personally_responsible_1995(member: GovernmentMember) kind institutional {
+    label ru-KZ official "член Правительства персонально отвечает за деятельность подчинённых органов (редакция 1995)";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART64_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART64_KK")
+rule GovernmentExercisesExecutivePower1995(government: Government) strict {
+    when government(government);
+    then government_exercises_executive_power(government);
+    label ru-KZ official "Статья 64 пункт 1 (ред. 1995). Правительство осуществляет исполнительную власть и возглавляет систему исполнительных органов";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART66_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART66_KK")
+rule GovernmentDevelopsStatePolicy1995(government: Government) strict {
+    when government(government);
+    then government_develops_state_policy(government);
+    label ru-KZ official "Статья 66 подпункт 1 (ред. 1995). Правительство разрабатывает основные направления социально-экономической политики, обороноспособности и безопасности и организует их осуществление";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART66_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART66_KK")
+rule GovernmentSubmitsBudget1995(government: Government) strict {
+    when government(government);
+    then government_submits_budget_and_report(government);
+    label ru-KZ official "Статья 66 подпункт 2 (ред. 1995). Правительство представляет Парламенту республиканский бюджет и отчёт о его исполнении";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART66_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART66_KK")
+rule GovernmentMayCancelExecutiveActs1995(government: Government) strict {
+    when government(government);
+    then government_may_cancel_executive_body_acts(government);
+    label ru-KZ official "Статья 66 подпункт 7 (ред. 1995). Правительство отменяет или приостанавливает действие актов министерств и иных исполнительных органов";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART67_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART67_KK")
+rule PrimeMinisterDirectsGovernment1995(
+    prime_minister: PrimeMinister,
+    government: Government,
+) strict {
+    when prime_minister(prime_minister);
+    when government(government);
+    then prime_minister_personally_responsible(prime_minister, government);
+    label ru-KZ official "Статья 67 подпункт 1 (ред. 1995). Премьер-Министр организует и руководит деятельностью Правительства, персонально отвечает за его работу";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART68_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART68_KK")
+rule MemberPersonallyResponsible1995(member: GovernmentMember) strict {
+    when member_decides_within_competence(member);
+    then member_personally_responsible_1995(member);
+    label ru-KZ official "Статья 68 пункт 1 (ред. 1995). Члены Правительства самостоятельны в принятии решений и несут персональную ответственность перед Премьер-Министром";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART68_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART68_KK")
+rule PolicyDisagreementRequiresResignation1995(
+    member: GovernmentMember,
+    government: Government,
+) strict {
+    when member_of_government(member, government);
+    when government_policy_disagreement(member);
+    then member_resignation_submitted(member);
+    label ru-KZ official "Статья 68 пункт 1 (ред. 1995). Член Правительства, не согласный с проводимой политикой или не проводящий её, подаёт в отставку либо подлежит освобождению";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART68_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART68_KK")
+rule GovernmentMemberIncompatible1995(member: GovernmentMember) strict {
+    when representative_body_deputy(member)
+        or entrepreneurial_activity(member)
+        or (paid_external_position(member)
+            and not permitted_teaching_science_or_creative_work(member));
+    then government_membership_incompatible(member);
+    label ru-KZ official "Статья 68 пункт 2 (ред. 1995). Члены Правительства не вправе быть депутатами, занимать иные оплачиваемые должности, кроме преподавательской, научной или иной творческой, и вести предпринимательскую деятельность";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART69_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART69_KK")
+rule GovernmentActBinding1995(act: GovernmentAct) strict {
+    when government_act_1995(act);
+    when within_government_competence(act);
+    when not contradicts_constitution_law_or_presidential_act(act);
+    then government_act_binding_1995(act);
+    label ru-KZ official "Статья 69 пункты 1 и 3 (ред. 1995). Постановления Правительства обязательны на всей территории Республики и не должны противоречить Конституции, законодательным актам и актам Президента";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART69_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART69_KK")
+rule PrimeMinisterOrderBinding1995(act: GovernmentAct) strict {
+    when prime_minister_order(act);
+    when not contradicts_constitution_law_or_presidential_act(act);
+    then prime_minister_order_binding_1995(act);
+    label ru-KZ official "Статья 69 пункты 2 и 3 (ред. 1995). Распоряжения Премьер-Министра обязательны на всей территории Республики и не должны противоречить Конституции и актам Президента";
+}

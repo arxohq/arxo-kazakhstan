@@ -1,0 +1,102 @@
+{
+  "format": "arxo.kazakhstan-verification/1",
+  "date": "2026-10-14",
+  "tool": "0.2.5",
+  "semanticVersion": "0.2.11",
+  "releaseVerified": false,
+  "corpus": "not_checked",
+  "published": false,
+  "nativeCompilation": {
+    "checked": 9,
+    "passed": 9,
+    "retainedClirBytesIdentical": 9
+  },
+  "originalSourceSuites": {
+    "checked": 141,
+    "passed": 138,
+    "failed": 3,
+    "expectationsChanged": false,
+    "failures": [
+      {
+        "failures": [
+          "position(urn:kz:constitution:rights#RefrainFromTorture, ACTIVE): in the document absent",
+          "position(urn:kz:constitution:rights#RefrainFromCensorship, ACTIVE): in the document absent",
+          "position(urn:kz:constitution:rights#RefrainFromDiscrimination, ACTIVE): in the document absent",
+          "not position(urn:kz:constitution:rights#RefrainFromTorture, VIOLATED): in the document present",
+          "not position(urn:kz:constitution:rights#RefrainFromCensorship, VIOLATED): in the document present",
+          "not position(urn:kz:constitution:rights#RefrainFromDiscrimination, VIOLATED): in the document present"
+        ],
+        "passed": false,
+        "test": "packages/rights/tests/03-prohibitions-powers-positions.lawtest",
+        "title": "urn:query:kzcr-prohibition-never-violated-1",
+        "suite": "packages/rights/tests/03-prohibitions-powers-positions.lawtest"
+      },
+      {
+        "failures": [
+          "position(urn:kz:constitution:rights#RefrainFromTorture1995, ACTIVE): in the document absent",
+          "position(urn:kz:constitution:rights#RefrainFromCensorship1995, ACTIVE): in the document absent",
+          "position(urn:kz:constitution:rights#RefrainFromForcedLabour1995, ACTIVE): in the document absent",
+          "not position(urn:kz:constitution:rights#RefrainFromTorture1995, VIOLATED): in the document present",
+          "not position(urn:kz:constitution:rights#RefrainFromCensorship1995, VIOLATED): in the document present",
+          "not position(urn:kz:constitution:rights#RefrainFromForcedLabour1995, VIOLATED): in the document present"
+        ],
+        "passed": false,
+        "test": "packages/rights/tests/03-prohibitions-powers-positions.lawtest",
+        "title": "urn:query:kzcr-prohibition-1995-never-violated-1",
+        "suite": "packages/rights/tests/03-prohibitions-powers-positions.lawtest"
+      },
+      {
+        "failures": [
+          "position(urn:kz:constitution:court#RefrainFromNonCourtJustice, ACTIVE): in the document absent",
+          "not position(urn:kz:constitution:court#RefrainFromNonCourtJustice, VIOLATED): in the document present"
+        ],
+        "passed": false,
+        "test": "packages/court/tests/01-positions.lawtest",
+        "title": "urn:query:kzcc-1",
+        "suite": "packages/court/tests/01-positions.lawtest"
+      }
+    ],
+    "meaning": "Historical sentinel expectations require ACTIVE after forbearance events; this published runtime returns VIOLATED. No expectation or model was changed to obtain a pass."
+  },
+  "readerExamples": {
+    "checked": 17,
+    "macos": {
+      "status": "passed",
+      "node": "20.20.2",
+      "checked": 17,
+      "repeatCanonicalDocuments": "identical",
+      "nativeInspection": "passed"
+    },
+    "linux": "not_checked"
+  },
+  "sourceAnchors": {
+    "runtimeResultField": "empty in the retained reader results",
+    "modelAnchors": "preserved in CLIR and native unfold; proof rule IDs allow model lookup",
+    "status": "runtime field limitation retained, not claimed as passed"
+  },
+  "publicDelivery": {
+    "repository": "https://github.com/arxohq/arxo-kazakhstan",
+    "status": "prepared",
+    "modelNpm": "not_requested"
+  },
+  "historicalRegister": {
+    "depth": "Separate historical register; fresh depth uses pinned inputs and boundaries.depth",
+    "regressionRunner": "Not run: Python corpus-wide constructor not used as consumer interface"
+  },
+  "interpretations": {
+    "reading": "ListItselfEntrenchedReading explicitly selected in the two referendum reader cases and historical parliamentary assembly example",
+    "status": "disputed modeling choice; not a certified constitutional interpretation"
+  },
+  "worldComposition": {
+    "status": "passed",
+    "checked": 11,
+    "nativeReproduction": "byte-identical"
+  },
+  "deliveryChecks": {
+    "sourcePins": "passed; 109 original delivered files",
+    "exactInventory": "216 allowlisted files plus manifest",
+    "svgPreview": "passed",
+    "localReadmeLinks": "passed",
+    "machinePaths": "none"
+  }
+}

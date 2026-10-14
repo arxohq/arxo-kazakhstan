@@ -1,0 +1,2876 @@
+{
+  "$comment": "Қазақ тіліндегі көрсету қабаты (DECISION-0070). Файл CLIR-ге кірмейді, оны тек презентациялық қабат оқиды: `lawref verbalize --labels`, MCP ресурсы `law://<пакет>/verbalized/kk` және жұмыс үстелі. Кілт — §218 декларациясының жергілікті аты. Аударманың негізі — түйіннің орыс тіліндегі (`ru-KZ`) белгісі; терминология мен тұжырымдар Конституцияның `sources/constitution/constitution-2026-kk.txt` және `constitution-1995-kk.txt` файлдарында бекітілген аутентті қазақ мәтінінен алынды. Аутентті мәтіннің үзіндісін сөзбе-сөз қайталайтын белгілердің мәртебесі — `official`, қалғандары — формализатордың жұмыс аудармасы (`translation`).",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "AcceptCredentials": [
+      {
+        "status": "translation",
+        "text": "46-бап 12) тармақша. Президент шет мемлекеттердің аккредиттелген дипломатиялық өкілдіктері басшыларының және халықаралық ұйым басшыларының сенім және кері шақырып алу грамоталарын қабылдайды"
+      }
+    ],
+    "AddressThePeople": [
+      {
+        "status": "translation",
+        "text": "46-бап 1) тармақша. Президент Қазақстан халқына елдегі жағдай мен ішкі және сыртқы саясаттың негізгі бағыттары туралы жолдау жасайды"
+      }
+    ],
+    "AdoptEmergencyMeasure": [
+      {
+        "status": "translation",
+        "text": "46-бап. Конституциялық құрылысқа тікелей қатер төнгенде және талап етілетін консультациялардан кейін Президент Құрылтайға дереу хабарлай отырып төтенше жағдай шараларын енгізеді"
+      }
+    ],
+    "AdoptMartialMeasure": [
+      {
+        "status": "translation",
+        "text": "46-бап. Агрессия жасалған не сырттан тікелей қатер төнген жағдайда Президент соғыс жағдайын енгізеді"
+      }
+    ],
+    "AdvisoryBody": [
+      {
+        "status": "translation",
+        "text": "Президент құратын консультативтік-кеңесші не өзге орган"
+      }
+    ],
+    "AdvisoryBodyFormationPower": [
+      {
+        "status": "translation",
+        "text": "46-бап 21) тармақша. Президент Қауіпсіздік Кеңесін, өзге де консультативтік-кеңесші органдарды, сондай-ақ Жоғары Сот Кеңесін құрады"
+      }
+    ],
+    "AdvisoryBodyKind": [
+      {
+        "status": "translation",
+        "text": "Президент 21) тармақша бойынша құратын органның түрі"
+      }
+    ],
+    "AppointHighCommand": [
+      {
+        "status": "translation",
+        "text": "46-бап 9) тармақша. Президент Қарулы Күштердің жоғары қолбасшылығын лауазымға тағайындайды"
+      }
+    ],
+    "AppointMissionHead": [
+      {
+        "status": "translation",
+        "text": "46-бап 7) тармақша. Президент Қазақстан Республикасы дипломатиялық өкілдіктерінің басшыларын тағайындайды"
+      }
+    ],
+    "AppointSubordinateBodyHead": [
+      {
+        "status": "translation",
+        "text": "46-бап 6) тармақша. Президент өзіне бағынатын мемлекеттік органдардың басшыларын лауазымға тағайындайды"
+      }
+    ],
+    "AppointToPresidentialOffice": [
+      {
+        "status": "translation",
+        "text": "46-бап 5) тармақша. Президент Конституциялық Сот Төрағасын, Жоғарғы Сот Төрағасын, Ұлттық Банк Төрағасын, Бас Прокурорды, Ұлттық қауіпсіздік комитетінің Төрағасын, Орталық сайлау комиссиясының Төрағасын, Жоғары аудиторлық палатаның Төрағасын, Жоғары Сот Кеңесінің Төрағасын, Мемлекеттік күзет қызметінің Бастығын және Адам құқықтары жөніндегі уәкілді лауазымға тағайындайды"
+      }
+    ],
+    "AppointWithConsent": [
+      {
+        "status": "translation",
+        "text": "46-бап. Президент тағайындалуы Құрылтайдың келісімімен жүргізілетін лауазымды адамдарды тағайындайды"
+      }
+    ],
+    "Appointment": [
+      {
+        "status": "translation",
+        "text": "Президент жүргізетін тағайындау"
+      }
+    ],
+    "AppointmentWithKurultaiConsentPower": [
+      {
+        "status": "translation",
+        "text": "46-бап. Президент тағайындалуы Құрылтайдың келісімімен жүргізілетін лауазымды адамдарды тағайындайды"
+      }
+    ],
+    "AsylumDecisionPower": [
+      {
+        "status": "translation",
+        "text": "46-бап 15) тармақша. Президент саяси баспана беру мәселесін шешеді"
+      }
+    ],
+    "AsylumMatter": [
+      {
+        "status": "translation",
+        "text": "саяси баспана беру мәселесі"
+      }
+    ],
+    "AwardEstablishment": [
+      {
+        "status": "translation",
+        "text": "мемлекеттік награданы не құрметті атақты белгілеу"
+      }
+    ],
+    "AwardEstablishmentPower": [
+      {
+        "status": "translation",
+        "text": "46-бап 13) тармақша. Президент мемлекеттік наградаларды және құрметті атақтарды белгілейді"
+      }
+    ],
+    "CallReferendum": [
+      {
+        "status": "translation",
+        "text": "46-бап. Президент жалпыхалықтық референдум өткізу туралы шешім қабылдайды"
+      }
+    ],
+    "Candidate": [
+      {
+        "status": "translation",
+        "text": "Президенттікке кандидат"
+      }
+    ],
+    "CannotAssumeByCertifiedRefusal": [
+      {
+        "status": "translation",
+        "text": "51-бап 1-тармақ. Тұлғаның куәландырылған бас тартуы өкілеттікті өзіне қабылдау мүмкін еместігін білдіреді"
+      }
+    ],
+    "CannotAssumeByHealthOrPersonalReasons": [
+      {
+        "status": "translation",
+        "text": "51-бап 1-тармақ. Денсаулық жағдайына не жеке сипаттағы өзге себептерге байланысты өкілеттікті өзіне қабылдау мүмкін еместігі"
+      }
+    ],
+    "CentralElectionCommissionChair": [
+      {
+        "status": "translation",
+        "text": "Орталық сайлау комиссиясының Төрағасы"
+      }
+    ],
+    "ChargeRejectedAtStage": [
+      {
+        "status": "translation",
+        "text": "50-бап 3-тармақ. Айып оны қарау сатыларының бірінде қабылданбады"
+      }
+    ],
+    "ChargeRejectedByExpiredPeriod": [
+      {
+        "status": "translation",
+        "text": "50-бап 3-тармақ. Айып тағылған сәттен бастап екі ай ішінде түпкілікті шешім қабылданбауы айыптың қабылданбағанын білдіреді"
+      }
+    ],
+    "ChargeRejectedByLateDecision": [
+      {
+        "status": "translation",
+        "text": "50-бап 3-тармақ. Екі айлық мерзімнен кейін қабылданған түпкілікті шешім айыптың қабылданбағанын білдіреді"
+      }
+    ],
+    "CitizenshipDecisionPower": [
+      {
+        "status": "translation",
+        "text": "46-бап 15) тармақша. Президент Қазақстан Республикасының азаматтығы мәселесін шешеді"
+      }
+    ],
+    "CitizenshipMatter": [
+      {
+        "status": "translation",
+        "text": "Қазақстан Республикасының азаматтығы мәселесі"
+      }
+    ],
+    "ClassRank": [
+      {
+        "status": "translation",
+        "text": "сыныптық шен"
+      }
+    ],
+    "ConferDistinction": [
+      {
+        "status": "translation",
+        "text": "46-бап 14) тармақша. Президент мемлекеттік наградалармен марапаттайды, құрметті атақтарды, жоғары әскери және өзге де атақтарды, сыныптық шендерді, дипломатиялық дәрежелерді және біліктілік сыныптарын береді"
+      }
+    ],
+    "ConferredPower": [
+      {
+        "status": "translation",
+        "text": "Конституциямен не заңмен белгіленген Президент өкілеттігі"
+      }
+    ],
+    "ConferredPowerExercise": [
+      {
+        "status": "translation",
+        "text": "46-бап 22) тармақша. Президент Қазақстан Республикасының Конституциясы мен заңдарына сәйкес басқа да өкілеттіктерді жүзеге асырады"
+      }
+    ],
+    "ConstitutionalCourtChair": [
+      {
+        "status": "translation",
+        "text": "Конституциялық Соттың Төрағасы"
+      }
+    ],
+    "ConstitutionalPetition": [
+      {
+        "status": "translation",
+        "text": "Конституциялық Сотқа өтініш"
+      }
+    ],
+    "ConstitutionalReviewPetitionPower": [
+      {
+        "status": "translation",
+        "text": "46-бап. Президент Конституциялық Сотқа жүгінуге құқылы"
+      }
+    ],
+    "Credentials": [
+      {
+        "status": "translation",
+        "text": "дипломатиялық өкілдік не халықаралық ұйым басшысының сенім немесе кері шақырып алу грамотасы"
+      }
+    ],
+    "CredentialsAcceptancePower": [
+      {
+        "status": "translation",
+        "text": "46-бап 12) тармақша. Президент шет мемлекеттердің аккредиттелген дипломатиялық өкілдіктері басшыларының және халықаралық ұйым басшыларының сенім және кері шақырып алу грамоталарын қабылдайды"
+      }
+    ],
+    "DecideCitizenshipMatter": [
+      {
+        "status": "translation",
+        "text": "46-бап 15) тармақша. Президент Қазақстан Республикасының азаматтығы мәселесін шешеді"
+      }
+    ],
+    "DiplomaticRank": [
+      {
+        "status": "translation",
+        "text": "дипломатиялық дәреже"
+      }
+    ],
+    "DissolutionBarrierEmergencyOrMartialLaw": [
+      {
+        "status": "translation",
+        "text": "62-бап 3-тармақ. Құрылтай төтенше не соғыс жағдайы кезеңінде таратылмайды"
+      }
+    ],
+    "DissolutionBarrierLastSixMonths": [
+      {
+        "status": "translation",
+        "text": "62-бап 3-тармақ. Құрылтай Президент өкілеттігінің соңғы алты айында таратылмайды"
+      }
+    ],
+    "DissolutionBarrierSuccessionPresident": [
+      {
+        "status": "translation",
+        "text": "62-бап 3-тармақ. Құрылтай Конституцияның 51-бабының 3-тармағында белгіленген жағдайда таратылмайды"
+      }
+    ],
+    "DissolutionBarrierWithinYearAfterPrior": [
+      {
+        "status": "translation",
+        "text": "62-бап 3-тармақ. Құрылтай алдыңғы таратудан кейінгі бір жыл ішінде таратылмайды"
+      }
+    ],
+    "DissolutionFinalPeriodReached": [
+      {
+        "status": "translation",
+        "text": "62-бап 3-тармақ. Тарату мәселесі қаралатын күн Президент өкілеттігінің соңғы алты айына түседі"
+      }
+    ],
+    "DissolutionIntervalAfterPriorNotElapsed": [
+      {
+        "status": "translation",
+        "text": "62-бап 3-тармақ. Құрылтайдың алдыңғы таратылған күнінен бастап бір жыл өткен жоқ"
+      }
+    ],
+    "DissolveKurultai": [
+      {
+        "status": "translation",
+        "text": "62-бап 2-тармақ. Президент өзі ұсынған кандидатураға келісім беруден қайта бас тартылған жағдайда Құрылтайды таратуға құқылы"
+      }
+    ],
+    "Distinction": [
+      {
+        "status": "translation",
+        "text": "Президент беретін награда, атақ, шен, дәреже не біліктілік сыныбы"
+      }
+    ],
+    "DistinctionConferralPower": [
+      {
+        "status": "translation",
+        "text": "46-бап 14) тармақша. Президент мемлекеттік наградалармен марапаттайды, құрметті атақтарды, жоғары әскери және өзге де атақтарды, сыныптық шендерді, дипломатиялық дәрежелерді және біліктілік сыныптарын береді"
+      }
+    ],
+    "DistinctionKind": [
+      {
+        "status": "translation",
+        "text": "Президент беретін марапаттың түрі"
+      }
+    ],
+    "EarlyElectionAnnouncedWithinSevenDays": [
+      {
+        "status": "translation",
+        "text": "51-бап 2-тармақ. Президент лауазымынан мерзімінен бұрын босатылған не қайтыс болған күннен бастап жеті күн ішінде Құрылтай сайлау өткізу туралы жариялайды"
+      }
+    ],
+    "EarlyElectionConductDue": [
+      {
+        "status": "translation",
+        "text": "51-бап 2-тармақ. Сайлау Құрылтай оны өткізу туралы шешім қабылдаған күннен бастап екі ай ішінде өткізіледі"
+      }
+    ],
+    "EarlyElectionConductedInPeriod": [
+      {
+        "status": "translation",
+        "text": "51-бап 2-тармақ. Екі айлық мерзім аяқталатын күннен кешіктірілмей өткізілген сайлау мерзімінде өткізілген"
+      }
+    ],
+    "EarlyElectionConductedInTime": [
+      {
+        "status": "translation",
+        "text": "51-бап 2-тармақ. Сайлау Құрылтай тиісті шешім қабылдаған күннен бастап екі ай ішінде өткізіледі"
+      }
+    ],
+    "ElectedInRepeatVote": [
+      {
+        "status": "translation",
+        "text": "43-бап 4-тармақ. Қайта дауыс беруде дауыс беруге қатысқан сайлаушылардың ең көп дауысын алған кандидат сайланды деп саналады"
+      }
+    ],
+    "Election": [
+      {
+        "status": "translation",
+        "text": "Президент сайлауы"
+      }
+    ],
+    "EmergencyMeasure": [
+      {
+        "status": "translation",
+        "text": "төтенше не соғыс жағдайының шарасы"
+      }
+    ],
+    "EmergencyPower": [
+      {
+        "status": "translation",
+        "text": "46-бап. Конституциялық құрылысқа тікелей қатер төнгенде және талап етілетін консультациялардан кейін Президент Құрылтайға дереу хабарлай отырып төтенше жағдай шараларын енгізеді"
+      }
+    ],
+    "EstablishPresidentialBody": [
+      {
+        "status": "translation",
+        "text": "46-бап 21) тармақша. Президент Қауіпсіздік Кеңесін, өзге де консультативтік-кеңесші органдарды, сондай-ақ Жоғары Сот Кеңесін құрады"
+      }
+    ],
+    "EstablishStateAward": [
+      {
+        "status": "translation",
+        "text": "46-бап 13) тармақша. Президент мемлекеттік наградаларды және құрметті атақтарды белгілейді"
+      }
+    ],
+    "ExPresidentAfterHealthRelease": [
+      {
+        "status": "translation",
+        "text": "44-бап 3-тармақ. Денсаулық жағдайы бойынша лауазымынан босатылған Президенттің экс-Президент атағы болады"
+      }
+    ],
+    "ExPresidentAfterNewPresident": [
+      {
+        "status": "translation",
+        "text": "44-бап 3-тармақ. Өкілеттігі жаңадан сайланған Президент қызметіне кіріскенде тоқтатылған Президенттің экс-Президент атағы болады"
+      }
+    ],
+    "ExPresidentAfterResignation": [
+      {
+        "status": "translation",
+        "text": "44-бап 3-тармақ. Өз еркімен орнынан түскен Президенттің экс-Президент атағы болады"
+      }
+    ],
+    "ExerciseConferredPower": [
+      {
+        "status": "translation",
+        "text": "46-бап 22) тармақша. Президент Қазақстан Республикасының Конституциясы мен заңдарына сәйкес басқа да өкілеттіктерді жүзеге асырады"
+      }
+    ],
+    "FormPresidentialAdministration": [
+      {
+        "status": "translation",
+        "text": "46-бап 20) тармақша. Президент Қазақстан Республикасы Президентінің Әкімшілігін құрады"
+      }
+    ],
+    "FormStateGuardService": [
+      {
+        "status": "translation",
+        "text": "46-бап 19) тармақша. Президент өзіне бағынатын Мемлекеттік күзет қызметін құрады"
+      }
+    ],
+    "FormerPresidentImmunityForActsInOffice": [
+      {
+        "status": "translation",
+        "text": "48-бап. Экс-Президенттің өкілеттігін атқару кезіндегі әрекеті үшін иммунитеті"
+      }
+    ],
+    "GovernmentInitiatedActCountersignature": [
+      {
+        "status": "translation",
+        "text": "47-бап 3-тармақ. Үкімет бастамасымен шығарылатын Президент актісін Премьер-Министр алдын ала қол қойып бекемдейді"
+      }
+    ],
+    "GrantPardon": [
+      {
+        "status": "translation",
+        "text": "46-бап 16) тармақша. Президент кешірім беруді жүзеге асырады"
+      }
+    ],
+    "GrantPoliticalAsylum": [
+      {
+        "status": "translation",
+        "text": "46-бап 15) тармақша. Президент саяси баспана беру мәселесін шешеді"
+      }
+    ],
+    "HealthRemoval": [
+      {
+        "status": "translation",
+        "text": "Президентті денсаулық жағдайы бойынша лауазымынан мерзімінен бұрын босату мәселесін қарау"
+      }
+    ],
+    "HealthRemovalThreshold": [
+      {
+        "status": "translation",
+        "text": "50-бап 2-тармақ. Мерзімінен бұрын босату туралы шешім комиссияның қорытындысы мен Конституциялық Соттың қорытындысы негізінде депутаттардың жалпы санының кемінде төрттен үшінің көпшілік даусымен қабылданады"
+      }
+    ],
+    "HighCommandAppointmentPower": [
+      {
+        "status": "translation",
+        "text": "46-бап 9) тармақша. Президент Қарулы Күштердің жоғары қолбасшылығын лауазымға тағайындайды"
+      }
+    ],
+    "HighCommandReleasePower": [
+      {
+        "status": "translation",
+        "text": "46-бап 9) тармақша. Президент Қарулы Күштердің жоғары қолбасшылығын лауазымынан босатады"
+      }
+    ],
+    "HigherMilitaryRank": [
+      {
+        "status": "translation",
+        "text": "жоғары әскери атақ"
+      }
+    ],
+    "HoldPresidentLiableForTreason": [
+      {
+        "status": "translation",
+        "text": "48-бап 1-тармақ. Мемлекетке опасыздық жасау үшін иммунитеттен ерекшелік"
+      }
+    ],
+    "HonoraryTitle": [
+      {
+        "status": "translation",
+        "text": "құрметті атақ"
+      }
+    ],
+    "HumanRightsCommissioner": [
+      {
+        "status": "translation",
+        "text": "Қазақстан Республикасындағы Адам құқықтары жөніндегі уәкіл"
+      }
+    ],
+    "Impeachment": [
+      {
+        "status": "translation",
+        "text": "Президентті қызметінен кетіру жөніндегі іс жүргізу"
+      }
+    ],
+    "ImpeachmentBarredDuringDissolutionConsideration": [
+      {
+        "status": "translation",
+        "text": "50-бап 4-тармақ. Президентті қызметінен кетіру мәселесі ол Құрылтайдың өкілеттігін мерзімінен бұрын тоқтату мәселесін қарап жатқан кезеңде қойылмайды"
+      }
+    ],
+    "ImpeachmentFinalDecisionDue": [
+      {
+        "status": "translation",
+        "text": "50-бап 3-тармақ. Түпкілікті шешім айып тағылған сәттен бастап екі ай ішінде қабылданады"
+      }
+    ],
+    "ImpeachmentFinalDecisionTimely": [
+      {
+        "status": "translation",
+        "text": "50-бап 3-тармақ. Екі айлық мерзім аяқталатын күннен кешіктірілмей қабылданған шешім мерзімінде қабылданған"
+      }
+    ],
+    "ImpeachmentFinalStage": [
+      {
+        "status": "translation",
+        "text": "50-бап. Президентті қызметінен кетіру туралы түпкілікті шешім Құрылтай депутаттарының жалпы санының кемінде төрттен үшінің көпшілік даусымен қабылданады"
+      }
+    ],
+    "ImpeachmentInitiativeThreshold": [
+      {
+        "status": "translation",
+        "text": "50-бап. Президентті қызметінен кетіру мәселесі Құрылтай депутаттарының кемінде үштен бірінің бастамасы бойынша қозғалады және тарату мәселесі қаралып жатқанда қозғалмайды"
+      }
+    ],
+    "ImpeachmentInvestigationStage": [
+      {
+        "status": "translation",
+        "text": "50-бап. Айыпты тексеру Құрылтай депутаттарының жалпы санының көпшілік даусымен жүктеледі"
+      }
+    ],
+    "ImpeachmentQuestionDecision": [
+      {
+        "status": "translation",
+        "text": "50-бап 3-тармақ. Айып тағу және оны тексеру мәселесі бойынша шешім Құрылтай депутаттарының жалпы санының көпшілік даусымен қабылданады"
+      }
+    ],
+    "InternationalTreaty": [
+      {
+        "status": "translation",
+        "text": "Қазақстан Республикасының халықаралық шарты"
+      }
+    ],
+    "Kurultai": [
+      {
+        "status": "translation",
+        "text": "Қазақстан Республикасының Құрылтайы"
+      }
+    ],
+    "KurultaiDissolutionPower": [
+      {
+        "status": "translation",
+        "text": "62-бап 2-тармақ. Президент өзі ұсынған кандидатураға келісім беруден қайта бас тартылған жағдайда Құрылтайды таратуға құқылы"
+      }
+    ],
+    "Law": [
+      {
+        "status": "translation",
+        "text": "Президентке ұсынылған заң"
+      }
+    ],
+    "LawCountersignatureBeforePresidentialSignature": [
+      {
+        "status": "translation",
+        "text": "47-бап 3-тармақ. Заңды Құрылтай Төрағасы мен Премьер-Министр алдын ала қол қойып бекемдейді"
+      }
+    ],
+    "MajorityReachedInElection": [
+      {
+        "status": "translation",
+        "text": "43-бап 4-тармақ. Сайлауда кандидаттардың бірі дауыстың елу пайызынан астамын алды"
+      }
+    ],
+    "MartialPower": [
+      {
+        "status": "translation",
+        "text": "46-бап. Агрессия жасалған не сырттан тікелей қатер төнген жағдайда Президент соғыс жағдайын енгізеді"
+      }
+    ],
+    "MissionHead": [
+      {
+        "status": "translation",
+        "text": "Қазақстан Республикасы дипломатиялық өкілдігінің басшысы"
+      }
+    ],
+    "MissionHeadAppointmentPower": [
+      {
+        "status": "translation",
+        "text": "46-бап 7) тармақша. Президент Қазақстан Республикасы дипломатиялық өкілдіктерінің басшыларын тағайындайды"
+      }
+    ],
+    "MissionHeadRecallPower": [
+      {
+        "status": "translation",
+        "text": "46-бап 7) тармақша. Президент Қазақстан Республикасы дипломатиялық өкілдіктерінің басшыларын кері шақырып алады"
+      }
+    ],
+    "NationalBankChair": [
+      {
+        "status": "translation",
+        "text": "Ұлттық Банктің Төрағасы"
+      }
+    ],
+    "NationalSecurityCommitteeChair": [
+      {
+        "status": "translation",
+        "text": "Ұлттық қауіпсіздік комитетінің Төрағасы"
+      }
+    ],
+    "NoDissolutionInEmergency": [
+      {
+        "status": "translation",
+        "text": "62-бап 3-тармақ. Құрылтай төтенше не соғыс жағдайы кезеңінде таратылмайды"
+      }
+    ],
+    "NoDissolutionInLastSixMonths": [
+      {
+        "status": "translation",
+        "text": "62-бап 3-тармақ. Құрылтай Президент өкілеттігінің соңғы алты айында таратылмайды"
+      }
+    ],
+    "NoDissolutionUnderSuccessionPresident": [
+      {
+        "status": "translation",
+        "text": "62-бап 3-тармақ. Құрылтай Конституцияның 51-бабының 3-тармағында белгіленген жағдайда таратылмайды"
+      }
+    ],
+    "NoDissolutionWithinYearAfterPrior": [
+      {
+        "status": "translation",
+        "text": "62-бап 3-тармақ. Құрылтай алдыңғы таратудан кейінгі бір жыл ішінде таратылмайды"
+      }
+    ],
+    "NoSecondPresidentialElection": [
+      {
+        "status": "translation",
+        "text": "43-бап 1-тармақ. Бір адам бір реттен артық Президент болып сайлана алмайды"
+      }
+    ],
+    "OfficeRelease": [
+      {
+        "status": "translation",
+        "text": "лауазымнан босату"
+      }
+    ],
+    "OnePresidentialElectionImmunity": [
+      {
+        "status": "translation",
+        "text": "43-бап 1-тармақ. Бір адам бір реттен артық Президент болып сайлана алмайды"
+      }
+    ],
+    "OrganiseSubordinateBody": [
+      {
+        "status": "translation",
+        "text": "46-бап 6) тармақша. Президент өзіне тікелей бағынатын және есеп беретін мемлекеттік органдарды құрады, таратады және қайта құрады"
+      }
+    ],
+    "OtherRank": [
+      {
+        "status": "translation",
+        "text": "өзге де атақ"
+      }
+    ],
+    "PardonMatter": [
+      {
+        "status": "translation",
+        "text": "кешірім беру туралы өтінішхат"
+      }
+    ],
+    "PardonPower": [
+      {
+        "status": "translation",
+        "text": "46-бап 16) тармақша. Президент кешірім беруді жүзеге асырады"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "жеке тұлға"
+      }
+    ],
+    "PetitionConstitutionalCourt": [
+      {
+        "status": "translation",
+        "text": "46-бап. Президент Конституциялық Сотқа жүгінуге құқылы"
+      }
+    ],
+    "PowersTerminatedByDeath": [
+      {
+        "status": "translation",
+        "text": "44-бап 3-тармақ. Президент қайтыс болған жағдайда оның өкілеттігі тоқтатылады"
+      }
+    ],
+    "PowersTerminatedByHealthRelease": [
+      {
+        "status": "translation",
+        "text": "44-бап 3-тармақ. Денсаулық жағдайына қарай міндеттерін атқаруға тұрақты қабілетінің болмауына байланысты мерзімінен бұрын лауазымынан босатылған жағдайда Президенттің өкілеттігі тоқтатылады"
+      }
+    ],
+    "PowersTerminatedByNewPresident": [
+      {
+        "status": "translation",
+        "text": "44-бап 3-тармақ. Жаңадан сайланған Президент қызметіне кіріскен сәттен бастап Президенттің өкілеттігі тоқтатылады"
+      }
+    ],
+    "PowersTerminatedByRemoval": [
+      {
+        "status": "translation",
+        "text": "44-бап 3-тармақ. Қызметінен кетірілген жағдайда Президенттің өкілеттігі тоқтатылады"
+      }
+    ],
+    "PowersTerminatedByResignation": [
+      {
+        "status": "translation",
+        "text": "44-бап 3-тармақ. Өз еркімен орнынан түсуіне байланысты мерзімінен бұрын лауазымынан босатылған жағдайда Президенттің өкілеттігі тоқтатылады"
+      }
+    ],
+    "President": [
+      {
+        "status": "translation",
+        "text": "Қазақстан Республикасының Президенті"
+      }
+    ],
+    "PresidentEnsuresCoordinatedStatePower": [
+      {
+        "status": "translation",
+        "text": "42-бап. Президент мемлекеттік биліктің барлық тармағының үйлесімді жұмыс істеуін қамтамасыз етеді"
+      }
+    ],
+    "PresidentGuaranteesUnityConstitutionAndRights": [
+      {
+        "status": "translation",
+        "text": "42-бап. Президент — халық пен мемлекеттік билік бірлігінің, Конституцияның мызғымастығының, құқықтар мен бостандықтардың нышаны әрі кепілі"
+      }
+    ],
+    "PresidentIsCommanderInChief": [
+      {
+        "status": "translation",
+        "text": "46-бап 9) тармақша. Президент Қазақстан Республикасы Қарулы Күштерінің Жоғарғы Бас Қолбасшысы болып табылады"
+      }
+    ],
+    "PresidentIsHeadOfState": [
+      {
+        "status": "translation",
+        "text": "42-бап. Президент — мемлекет басшысы"
+      }
+    ],
+    "PresidentReleasedFromOfficeForHealth": [
+      {
+        "status": "translation",
+        "text": "50-бап 2-тармақ. Осы Президент денсаулық жағдайы бойынша лауазымынан мерзімінен бұрын босатылды"
+      }
+    ],
+    "PresidentialAct": [
+      {
+        "status": "translation",
+        "text": "Президент актісі"
+      }
+    ],
+    "PresidentialActBindingNationwide": [
+      {
+        "status": "translation",
+        "text": "47-бап 1-тармақ. Конституция мен заңдар негізінде шығарылған жарлықтар мен өкімдер ел бойынша міндетті"
+      }
+    ],
+    "PresidentialAddress": [
+      {
+        "status": "translation",
+        "text": "Президенттің Қазақстан халқына жолдауы"
+      }
+    ],
+    "PresidentialAddressPower": [
+      {
+        "status": "translation",
+        "text": "46-бап 1) тармақша. Президент Қазақстан халқына елдегі жағдай мен ішкі және сыртқы саясаттың негізгі бағыттары туралы жолдау жасайды"
+      }
+    ],
+    "PresidentialAdministrationFormationPower": [
+      {
+        "status": "translation",
+        "text": "46-бап 20) тармақша. Президент Қазақстан Республикасы Президентінің Әкімшілігін құрады"
+      }
+    ],
+    "PresidentialCandidateEligibility": [
+      {
+        "status": "translation",
+        "text": "43-бап 2-тармақ. Президент болып тумысынан Республика азаматы болып табылатын, қырық жасқа толған, мемлекеттік тілді жетік меңгерген, Қазақстанда соңғы он бес жыл тұратын, жоғары білімі бар және кемінде бес жыл жұмыс өтілі бар азамат сайлана алады"
+      }
+    ],
+    "PresidentialElectionMajority": [
+      {
+        "status": "translation",
+        "text": "43-бап 4-тармақ. Дауыс беруге қатысқан сайлаушылардың елу пайызынан астам дауысын алған кандидат сайланды деп саналады"
+      }
+    ],
+    "PresidentialImmunityForActsInOffice": [
+      {
+        "status": "translation",
+        "text": "48-бап. Президенттің өкілеттігін атқару кезіндегі әрекеті үшін иммунитеті"
+      }
+    ],
+    "PresidentialOffice": [
+      {
+        "status": "translation",
+        "text": "Президент дербес тағайындау жүргізетін лауазым"
+      }
+    ],
+    "PresidentialOfficeAppointmentPower": [
+      {
+        "status": "translation",
+        "text": "46-бап 5) тармақша. Президент Конституциялық Сот Төрағасын, Жоғарғы Сот Төрағасын, Ұлттық Банк Төрағасын, Бас Прокурорды, Ұлттық қауіпсіздік комитетінің Төрағасын, Орталық сайлау комиссиясының Төрағасын, Жоғары аудиторлық палатаның Төрағасын, Жоғары Сот Кеңесінің Төрағасын, Мемлекеттік күзет қызметінің Бастығын және Адам құқықтары жөніндегі уәкілді лауазымға тағайындайды"
+      }
+    ],
+    "PresidentialOfficeIncompatibility/alt/1": [
+      {
+        "status": "translation",
+        "text": "45-бап 1-тармақ. Президент лауазымының сыйыспаушылықтары"
+      }
+    ],
+    "PresidentialOfficeIncompatibility/alt/2": [
+      {
+        "status": "translation",
+        "text": "45-бап 1-тармақ. Президент лауазымының сыйыспаушылықтары"
+      }
+    ],
+    "PresidentialOfficeIncompatibility/alt/3": [
+      {
+        "status": "translation",
+        "text": "45-бап 1-тармақ. Президент лауазымының сыйыспаушылықтары"
+      }
+    ],
+    "PresidentialOfficeIncompatibility/alt/4": [
+      {
+        "status": "translation",
+        "text": "45-бап 1-тармақ. Президент лауазымының сыйыспаушылықтары"
+      }
+    ],
+    "PresidentialOfficeReleasePower": [
+      {
+        "status": "translation",
+        "text": "46-бап 5) тармақша. Президент 5) тармақшаның тізбесінде аталған адамдарды лауазымынан босатады"
+      }
+    ],
+    "PresidentialOfficialImmunityFormer": [
+      {
+        "status": "translation",
+        "text": "48-бап. Экс-Президенттің өкілеттігін атқару кезіндегі әрекеті үшін иммунитеті"
+      }
+    ],
+    "PresidentialOfficialImmunityInOffice": [
+      {
+        "status": "translation",
+        "text": "48-бап. Президенттің өкілеттігін атқару кезіндегі әрекеті үшін иммунитеті"
+      }
+    ],
+    "PresidentialRelativePositionProhibited": [
+      {
+        "status": "translation",
+        "text": "45-бап 2-тармақ. Президенттің жақын туыстары аталған лауазымдарды атқармайды"
+      }
+    ],
+    "PresidentialReturnPower": [
+      {
+        "status": "translation",
+        "text": "46-бап. Президент заңды өз қарсылықтарымен Құрылтайға қайтаруға құқылы"
+      }
+    ],
+    "PresidentialSignatureDue": [
+      {
+        "status": "translation",
+        "text": "46-бап 3) тармақша. Заңға Құрылтай оны ұсынған күннен бастап бір ай ішінде қол қойылады"
+      }
+    ],
+    "PresidentialSignaturePower": [
+      {
+        "status": "translation",
+        "text": "46-бап. Президент Құрылтай ұсынған заңға қол қояды"
+      }
+    ],
+    "PresidentialSignatureTimely": [
+      {
+        "status": "translation",
+        "text": "46-бап 3) тармақша. Бір айлық мерзім аяқталатын күннен кешіктірілмей заңға қол қою не оны қайтару уақтылы болып табылады"
+      }
+    ],
+    "PresidentialTermExpiry": [
+      {
+        "status": "translation",
+        "text": "43-бап 1-тармақ және 44-бап 1-тармақ. Президент өкілеттігінің мерзімі — ант берген сәттен қызметіне кіріскен күннен бастап жеті жыл"
+      }
+    ],
+    "PresidentialVacancy": [
+      {
+        "status": "translation",
+        "text": "Президент лауазымының мерзімінен бұрын босауы"
+      }
+    ],
+    "PriorOfficeRelinquished": [
+      {
+        "status": "translation",
+        "text": "51-бап 1-тармақ. Президент өкілеттігін өзіне қабылдаған тұлға тиісінше Вице-Президент, Құрылтай Төрағасы, Премьер-Министр өкілеттігін өзінен алады"
+      }
+    ],
+    "ProsecutorGeneral": [
+      {
+        "status": "translation",
+        "text": "Бас Прокурор"
+      }
+    ],
+    "ProvidePresidentialSupportAndProtection": [
+      {
+        "status": "translation",
+        "text": "48-бап 2-тармақ. Президент пен оның отбасын мемлекет есебінен қамтамасыз ету, оларға қызмет көрсету және күзету"
+      }
+    ],
+    "QualificationClass": [
+      {
+        "status": "translation",
+        "text": "біліктілік сыныбы"
+      }
+    ],
+    "RatificationInstrument": [
+      {
+        "status": "translation",
+        "text": "ратификациялық грамота"
+      }
+    ],
+    "RatificationInstrumentPower": [
+      {
+        "status": "translation",
+        "text": "46-бап 12) тармақша. Президент ратификациялық грамоталарға қол қояды"
+      }
+    ],
+    "RecallMissionHead": [
+      {
+        "status": "translation",
+        "text": "46-бап 7) тармақша. Президент Қазақстан Республикасы дипломатиялық өкілдіктерінің басшыларын кері шақырып алады"
+      }
+    ],
+    "ReferendumPower": [
+      {
+        "status": "translation",
+        "text": "46-бап. Президент жалпыхалықтық референдум өткізу туралы шешім қабылдайды"
+      }
+    ],
+    "RefusalCertifiedByConstitutionalCourt": [
+      {
+        "status": "translation",
+        "text": "51-бап 1-тармақ. Конституциялық Сот тұлғаның Президент өкілеттігін өзіне қабылдаудан бас тарту туралы өтінішті жеке өзі және өз еркімен бергенін куәландырады"
+      }
+    ],
+    "RegularElectionCoincidesWithKurultaiElection": [
+      {
+        "status": "translation",
+        "text": "43-бап 3-тармақ. Президенттің кезекті сайлауы Құрылтайдың жаңа құрамын сайлау күніне түседі"
+      }
+    ],
+    "RegularElectionOnKurultaiElectionDay": [
+      {
+        "status": "translation",
+        "text": "43-бап 3-тармақ. Президенттің кезекті сайлауы Құрылтайдың жаңа құрамын сайлау мерзімімен тұспа-тұс келмеуге тиіс"
+      }
+    ],
+    "RegularElectionScheduledInTime": [
+      {
+        "status": "translation",
+        "text": "43-бап 3-тармақ. Президенттің кезекті сайлауы оның өкілеттік мерзімі аяқталғанға дейін екі айдан кешіктірілмей өткізіледі"
+      }
+    ],
+    "RegularElectionTooLate": [
+      {
+        "status": "translation",
+        "text": "43-бап 3-тармақ. Кезекті сайлау Президент өкілеттігінің мерзімі аяқталуына екі айдан кемірек уақыт қалғанда тағайындалды"
+      }
+    ],
+    "RegularOathDue": [
+      {
+        "status": "translation",
+        "text": "44-бап 2-тармақ. Ант сайлау қорытындысы жарияланған күннен бастап бір ай ішінде беріледі"
+      }
+    ],
+    "RegularOathTimely": [
+      {
+        "status": "translation",
+        "text": "44-бап 2-тармақ. Бір айлық мерзім аяқталатын күннен кешіктірілмей берілген ант уақтылы болып табылады"
+      }
+    ],
+    "RejectedChargeTerminatesInitiators": [
+      {
+        "status": "translation",
+        "text": "50-бап 3-тармақ. Айыптың кез келген сатыда қабылданбауы осы мәселені қарауды бастамашылық еткен Құрылтай депутаттарының өкілеттігін мерзімінен бұрын тоқтатуға алып келеді"
+      }
+    ],
+    "ReleaseFromPresidentialOffice": [
+      {
+        "status": "translation",
+        "text": "46-бап 5) тармақша. Президент 5) тармақшаның тізбесінде аталған адамдарды лауазымынан босатады"
+      }
+    ],
+    "ReleaseHighCommand": [
+      {
+        "status": "translation",
+        "text": "46-бап 9) тармақша. Президент Қарулы Күштердің жоғары қолбасшылығын лауазымынан босатады"
+      }
+    ],
+    "ReleaseSubordinateBodyHead": [
+      {
+        "status": "translation",
+        "text": "46-бап 6) тармақша. Президент өзіне бағынатын мемлекеттік органдардың басшыларын лауазымынан босатады"
+      }
+    ],
+    "RemovedFromOfficeByImpeachment": [
+      {
+        "status": "translation",
+        "text": "50-бап 3-тармақ. Президент мемлекетке опасыздық жасады деген айып бойынша Құрылтайдың шешімімен қызметінен кетірілді"
+      }
+    ],
+    "RepeatVoteRequired": [
+      {
+        "status": "translation",
+        "text": "43-бап 4-тармақ. Кандидаттардың ешқайсысы дауыстың елу пайызынан астамын алмаса, қайта дауыс беру өткізіледі"
+      }
+    ],
+    "ReturnLawWithObjections": [
+      {
+        "status": "translation",
+        "text": "46-бап. Президент заңды өз қарсылықтарымен Құрылтайға қайтаруға құқылы"
+      }
+    ],
+    "SignInternationalTreaty": [
+      {
+        "status": "translation",
+        "text": "46-бап 12) тармақша. Президент Қазақстан Республикасының атынан келіссөздер жүргізеді және халықаралық шарттарға қол қояды"
+      }
+    ],
+    "SignLaw": [
+      {
+        "status": "translation",
+        "text": "46-бап. Президент Құрылтай ұсынған заңға қол қояды"
+      }
+    ],
+    "SignRatificationInstrument": [
+      {
+        "status": "translation",
+        "text": "46-бап 12) тармақша. Президент ратификациялық грамоталарға қол қояды"
+      }
+    ],
+    "StateAuthority": [
+      {
+        "status": "translation",
+        "text": "мемлекеттік орган не лауазымды адам"
+      }
+    ],
+    "StateAward": [
+      {
+        "status": "translation",
+        "text": "мемлекеттік награда"
+      }
+    ],
+    "StateBodyAct": [
+      {
+        "status": "translation",
+        "text": "мемлекеттік органды құру, тарату не қайта құру туралы акт"
+      }
+    ],
+    "StateBodyAction": [
+      {
+        "status": "translation",
+        "text": "Президенттің өзіне бағынатын мемлекеттік органға қатысты әрекеті"
+      }
+    ],
+    "StateGuardServiceFormationPower": [
+      {
+        "status": "translation",
+        "text": "46-бап 19) тармақша. Президент өзіне бағынатын Мемлекеттік күзет қызметін құрады"
+      }
+    ],
+    "StateGuardServiceHead": [
+      {
+        "status": "translation",
+        "text": "Қазақстан Республикасы Мемлекеттік күзет қызметінің Бастығы"
+      }
+    ],
+    "StateSupportForPresidentAndFamily": [
+      {
+        "status": "translation",
+        "text": "48-бап 2-тармақ. Президент пен оның отбасын мемлекет есебінен қамтамасыз ету, оларға қызмет көрсету және күзету"
+      }
+    ],
+    "SubordinateBodyHeadAppointmentPower": [
+      {
+        "status": "translation",
+        "text": "46-бап 6) тармақша. Президент өзіне бағынатын мемлекеттік органдардың басшыларын лауазымға тағайындайды"
+      }
+    ],
+    "SubordinateBodyHeadReleasePower": [
+      {
+        "status": "translation",
+        "text": "46-бап 6) тармақша. Президент өзіне бағынатын мемлекеттік органдардың басшыларын лауазымынан босатады"
+      }
+    ],
+    "SubordinateBodyOrganisationPower": [
+      {
+        "status": "translation",
+        "text": "46-бап 6) тармақша. Президент өзіне тікелей бағынатын және есеп беретін мемлекеттік органдарды құрады, таратады және қайта құрады"
+      }
+    ],
+    "SuccessionOathDeadline": [
+      {
+        "status": "translation",
+        "text": "44-бап 2-тармақ. Ант Президент өкілеттігі қабылданған күннен бастап бір ай ішінде беріледі"
+      }
+    ],
+    "SuccessionRefusal": [
+      {
+        "status": "translation",
+        "text": "Президент өкілеттігін өзіне қабылдаудан бас тарту"
+      }
+    ],
+    "SuccessionToKurultaiChair": [
+      {
+        "status": "translation",
+        "text": "51-бап 1-тармақ. Вице-Президенттің мүмкіндігі болмағанда Президент өкілеттігі Құрылтай Төрағасына көшеді"
+      }
+    ],
+    "SuccessionToPrimeMinister": [
+      {
+        "status": "translation",
+        "text": "51-бап 1-тармақ. Құрылтай Төрағасының мүмкіндігі болмағанда Президент өкілеттігі Премьер-Министрге көшеді"
+      }
+    ],
+    "SuccessionToVicePresident": [
+      {
+        "status": "translation",
+        "text": "51-бап 1-тармақ. Президент өкілеттігі Вице-Президентке көшеді"
+      }
+    ],
+    "SuccessorCannotDissolveKurultai": [
+      {
+        "status": "translation",
+        "text": "51-бап 3-тармақ. Президент өкілеттігін өзіне қабылдаған тұлғаның Құрылтайды таратуға құқығы жоқ"
+      }
+    ],
+    "SuccessorCannotInitiateAmendment": [
+      {
+        "status": "translation",
+        "text": "51-бап 3-тармақ. Президент өкілеттігін өзіне қабылдаған тұлғаның Конституцияға өзгерістер мен толықтырулар енгізуді бастамашылық етуге құқығы жоқ"
+      }
+    ],
+    "SupremeAuditChamberChair": [
+      {
+        "status": "translation",
+        "text": "Жоғары аудиторлық палатаның Төрағасы"
+      }
+    ],
+    "SupremeCourtChair": [
+      {
+        "status": "translation",
+        "text": "Жоғарғы Соттың Төрағасы"
+      }
+    ],
+    "SupremeJudicialCouncilChair": [
+      {
+        "status": "translation",
+        "text": "Жоғары Сот Кеңесінің Төрағасы"
+      }
+    ],
+    "TemporaryLegislativeDecree": [
+      {
+        "status": "translation",
+        "text": "47-бап 2-тармақ. Құрылтай уақытша болмаған кезеңде жарлықтың заң күші болуы мүмкін"
+      }
+    ],
+    "TreasonLiabilityPower": [
+      {
+        "status": "translation",
+        "text": "48-бап 1-тармақ. Мемлекетке опасыздық жасау үшін иммунитеттен ерекшелік"
+      }
+    ],
+    "TreatySignaturePower": [
+      {
+        "status": "translation",
+        "text": "46-бап 12) тармақша. Президент Қазақстан Республикасының атынан келіссөздер жүргізеді және халықаралық шарттарға қол қояды"
+      }
+    ],
+    "VacancyByDeath": [
+      {
+        "status": "translation",
+        "text": "51-бап 1-тармақ. Президенттің қайтыс болуы орын басуды ашады"
+      }
+    ],
+    "VacancyByHealthIncapacity": [
+      {
+        "status": "translation",
+        "text": "51-бап 1-тармақ. Денсаулық жағдайына қарай міндеттерін атқаруға тұрақты қабілетінің болмауына байланысты мерзімінен бұрын босату орын басуды ашады"
+      }
+    ],
+    "VacancyByRemovalFromOffice": [
+      {
+        "status": "translation",
+        "text": "51-бап 1-тармақ. Президентті қызметінен кетіру орын басуды ашады"
+      }
+    ],
+    "VacancyByVoluntaryResignation": [
+      {
+        "status": "translation",
+        "text": "51-бап 1-тармақ. Өз еркімен орнынан түсуіне байланысты лауазымынан мерзімінен бұрын босату орын басуды ашады"
+      }
+    ],
+    "VicePresident": [
+      {
+        "status": "translation",
+        "text": "Қазақстан Республикасының Вице-Президенті"
+      }
+    ],
+    "VicePresidentAppointmentWithKurultaiConsent": [
+      {
+        "status": "translation",
+        "text": "49-бап 1-тармақ. Вице-Президентті Құрылтай депутаттарының көпшілігінің келісімімен Президент тағайындайды"
+      }
+    ],
+    "VicePresidentRepresentationByInstruction": [
+      {
+        "status": "translation",
+        "text": "49-бап 3-тармақ. Вице-Президент Президенттің тапсырмасы бойынша оның атынан өкілдік етеді"
+      }
+    ],
+    "VicePresidentialOfficeIncompatibility/alt/1": [
+      {
+        "status": "translation",
+        "text": "49-бап 2-тармақ. Вице-Президент лауазымының сыйыспаушылықтары"
+      }
+    ],
+    "VicePresidentialOfficeIncompatibility/alt/2": [
+      {
+        "status": "translation",
+        "text": "49-бап 2-тармақ. Вице-Президент лауазымының сыйыспаушылықтары"
+      }
+    ],
+    "VicePresidentialOfficeIncompatibility/alt/3": [
+      {
+        "status": "translation",
+        "text": "49-бап 2-тармақ. Вице-Президент лауазымының сыйыспаушылықтары"
+      }
+    ],
+    "VicePresidentialOfficeIncompatibility/alt/4": [
+      {
+        "status": "translation",
+        "text": "49-бап 2-тармақ. Вице-Президент лауазымының сыйыспаушылықтары"
+      }
+    ],
+    "act_countersigned_by_prime_minister": [
+      {
+        "status": "translation",
+        "text": "актіні Премьер-Министр алдын ала қол қойып бекемдеді"
+      }
+    ],
+    "address_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент Қазақстан халқына жолдау жасайды"
+      }
+    ],
+    "advisory_body": [
+      {
+        "status": "translation",
+        "text": "Президент 21) тармақша бойынша құратын орган және оның түрі"
+      }
+    ],
+    "age_years": [
+      {
+        "status": "translation",
+        "text": "тұлғаның толық жасы"
+      }
+    ],
+    "aggression_or_immediate_external_threat": [
+      {
+        "status": "translation",
+        "text": "Республикаға қарсы агрессия не сырттан тікелей қатер бар"
+      }
+    ],
+    "appointment_effective": [
+      {
+        "status": "translation",
+        "text": "тағайындау жүзеге асты"
+      }
+    ],
+    "appointment_requires_kurultai_consent": [
+      {
+        "status": "translation",
+        "text": "тағайындау Құрылтайдың келісімімен жүргізіледі"
+      }
+    ],
+    "asylum_decision_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент саяси баспана беру мәселесін шешеді"
+      }
+    ],
+    "asylum_matter": [
+      {
+        "status": "translation",
+        "text": "іс нысанасы ретіндегі саяси баспана беру мәселесі"
+      }
+    ],
+    "asylum_matter_decided": [
+      {
+        "status": "translation",
+        "text": "саяси баспана беру мәселесі шешілді"
+      }
+    ],
+    "award_established": [
+      {
+        "status": "translation",
+        "text": "мемлекеттік награда не құрметті атақ белгіленді"
+      }
+    ],
+    "award_establishment": [
+      {
+        "status": "translation",
+        "text": "іс нысанасы ретіндегі мемлекеттік награданы не құрметті атақты белгілеу"
+      }
+    ],
+    "award_establishment_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент мемлекеттік награданы не құрметті атақты белгілейді"
+      }
+    ],
+    "body_formation_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент органды құрады не жасақтайды"
+      }
+    ],
+    "body_head_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент өзіне бағынатын органның басшысын тағайындайды"
+      }
+    ],
+    "body_head_appointment_effective": [
+      {
+        "status": "translation",
+        "text": "Президентке бағынатын органның басшысын тағайындау жүзеге асты"
+      }
+    ],
+    "body_head_release_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент өзіне бағынатын органның басшысын лауазымынан босатады"
+      }
+    ],
+    "body_head_release_effective": [
+      {
+        "status": "translation",
+        "text": "Президентке бағынатын органның басшысын лауазымынан босату жүзеге асты"
+      }
+    ],
+    "body_subordinate_to_president": [
+      {
+        "status": "translation",
+        "text": "мемлекеттік орган Президентке тікелей бағынады және есеп береді"
+      }
+    ],
+    "candidate_person": [
+      {
+        "status": "translation",
+        "text": "кандидат осы тұлға болып табылады"
+      }
+    ],
+    "cannot_assume_presidential_powers": [
+      {
+        "status": "translation",
+        "text": "тұлға Президент өкілеттігін өзіне қабылдай алмайды"
+      }
+    ],
+    "charge_presented_on": [
+      {
+        "status": "translation",
+        "text": "Президентке мемлекетке опасыздық жасады деген айып тағылған күн"
+      }
+    ],
+    "citizen_by_birth": [
+      {
+        "status": "translation",
+        "text": "тұлға тумысынан Республика азаматы болып табылады"
+      }
+    ],
+    "citizenship_decision_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент Қазақстан Республикасының азаматтығы мәселесін шешеді"
+      }
+    ],
+    "citizenship_matter": [
+      {
+        "status": "translation",
+        "text": "іс нысанасы ретіндегі азаматтық мәселесі"
+      }
+    ],
+    "citizenship_matter_decided": [
+      {
+        "status": "translation",
+        "text": "азаматтық мәселесі шешілді"
+      }
+    ],
+    "close_relative_of_president": [
+      {
+        "status": "translation",
+        "text": "тұлға Президенттің жақын туысы болып табылады"
+      }
+    ],
+    "coincides_with_kurultai_election": [
+      {
+        "status": "translation",
+        "text": "Президенттің кезекті сайлауы Құрылтайдың жаңа құрамын сайлау мерзімімен тұспа-тұс келеді"
+      }
+    ],
+    "commission_conclusion_issued": [
+      {
+        "status": "translation",
+        "text": "комиссия қорытынды берді"
+      }
+    ],
+    "conferrable_distinction_kind": [
+      {
+        "status": "translation",
+        "text": "марапат түрі 46-баптың 14) тармақшасының тізбесіне кіреді"
+      }
+    ],
+    "conferred_power_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент Конституциямен не заңмен белгіленген өкілеттікті жүзеге асырады"
+      }
+    ],
+    "conferred_power_exercised": [
+      {
+        "status": "translation",
+        "text": "Конституциямен не заңмен белгіленген өкілеттік жүзеге асырылды"
+      }
+    ],
+    "constitutional_court_certified_refusal": [
+      {
+        "status": "translation",
+        "text": "Конституциялық Сот бас тартудың ерікті екенін куәландырды"
+      }
+    ],
+    "constitutional_court_procedure_confirmed": [
+      {
+        "status": "translation",
+        "text": "Конституциялық Сот белгіленген рәсімнің сақталғанын растады"
+      }
+    ],
+    "constitutional_court_procedure_confirmed_for_release": [
+      {
+        "status": "translation",
+        "text": "Конституциялық Сот белгіленген конституциялық рәсімдердің сақталуы туралы қорытынды берді"
+      }
+    ],
+    "constitutional_petition": [
+      {
+        "status": "translation",
+        "text": "іс нысанасы ретіндегі Президенттің Конституциялық Сотқа өтініші"
+      }
+    ],
+    "constitutional_review_petition_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент Конституциялық Сотқа жүгінеді"
+      }
+    ],
+    "constitutional_review_requested": [
+      {
+        "status": "translation",
+        "text": "конституциялық бақылауды Президент бастамашылық етті"
+      }
+    ],
+    "credentials": [
+      {
+        "status": "translation",
+        "text": "іс нысанасы ретіндегі сенім не кері шақырып алу грамотасы"
+      }
+    ],
+    "credentials_acceptance_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент сенім не кері шақырып алу грамотасын қабылдайды"
+      }
+    ],
+    "credentials_accepted": [
+      {
+        "status": "translation",
+        "text": "сенім не кері шақырып алу грамотасы қабылданды"
+      }
+    ],
+    "deputy_powers_terminated": [
+      {
+        "status": "translation",
+        "text": "Құрылтай депутатының өкілеттігі мерзімінен бұрын тоқтатылды"
+      }
+    ],
+    "diplomatic_mission_head": [
+      {
+        "status": "translation",
+        "text": "іс нысанасы ретіндегі дипломатиялық өкілдіктің басшысы"
+      }
+    ],
+    "dissolution_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент Құрылтайды таратады"
+      }
+    ],
+    "dissolution_considered_on": [
+      {
+        "status": "translation",
+        "text": "Құрылтайды тарату мәселесі қойылатын күн"
+      }
+    ],
+    "dissolution_final_period": [
+      {
+        "status": "translation",
+        "text": "Президент өкілеттігінің аяқталуы алдындағы қорғалған кезең — алты ай"
+      }
+    ],
+    "dissolution_interval_after_prior": [
+      {
+        "status": "translation",
+        "text": "алдыңғы таратудан кейін Құрылтай таратылмайтын мерзім — бір жыл"
+      }
+    ],
+    "dissolution_question_under_consideration": [
+      {
+        "status": "translation",
+        "text": "Президент Құрылтайдың өкілеттігін мерзімінен бұрын тоқтату мәселесін қарайды"
+      }
+    ],
+    "distinction_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент марапаттайды, атақ, шен, дәреже не біліктілік сыныбын береді"
+      }
+    ],
+    "distinction_conferred": [
+      {
+        "status": "translation",
+        "text": "марапат берілді"
+      }
+    ],
+    "distinction_kind": [
+      {
+        "status": "translation",
+        "text": "берілетін марапаттың түрі"
+      }
+    ],
+    "early_election_announced_timely": [
+      {
+        "status": "translation",
+        "text": "кезектен тыс сайлау конституциялық мерзімде жарияланды"
+      }
+    ],
+    "early_election_announcement_day": [
+      {
+        "status": "translation",
+        "text": "Президенттің кезектен тыс сайлауы жарияланған күн"
+      }
+    ],
+    "early_election_announcement_days": [
+      {
+        "status": "translation",
+        "text": "кезектен тыс сайлауды жариялау мерзімі — жеті күн"
+      }
+    ],
+    "early_election_conduct_due_on": [
+      {
+        "status": "translation",
+        "text": "сайлау өткізуге берілген екі айлық мерзімнің аяқталу күні"
+      }
+    ],
+    "early_election_conduct_period": [
+      {
+        "status": "translation",
+        "text": "Президенттің кезектен тыс сайлауын өткізу мерзімі — екі ай"
+      }
+    ],
+    "early_election_conducted_in_period": [
+      {
+        "status": "translation",
+        "text": "кезектен тыс сайлау екі айлық мерзім шегінде өткізілді"
+      }
+    ],
+    "early_election_conducted_timely": [
+      {
+        "status": "translation",
+        "text": "кезектен тыс сайлау конституциялық мерзімде өткізілді"
+      }
+    ],
+    "early_election_day": [
+      {
+        "status": "translation",
+        "text": "Президенттің кезектен тыс сайлауы өткізілген күн"
+      }
+    ],
+    "elected_president": [
+      {
+        "status": "translation",
+        "text": "тұлға Президент болып сайланды деп саналады"
+      }
+    ],
+    "election_results_published_on": [
+      {
+        "status": "translation",
+        "text": "Президент сайлауының қорытындысы жарияланған күн"
+      }
+    ],
+    "eligible_presidential_candidate": [
+      {
+        "status": "translation",
+        "text": "тұлға Президенттікке кандидатқа қойылатын талаптарға сай келеді"
+      }
+    ],
+    "emergency_consultations_completed": [
+      {
+        "status": "translation",
+        "text": "төтенше жағдай енгізер алдында талап етілетін консультациялар өткізілді"
+      }
+    ],
+    "emergency_measure": [
+      {
+        "status": "translation",
+        "text": "Президент төтенше жағдай не соғыс жағдайы кезінде қабылдайтын шара"
+      }
+    ],
+    "emergency_measure_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент төтенше жағдай шараларын енгізеді"
+      }
+    ],
+    "emergency_measure_in_force": [
+      {
+        "status": "translation",
+        "text": "төтенше жағдай шаралары құқыққа сай енгізілді"
+      }
+    ],
+    "emergency_or_martial_law_active": [
+      {
+        "status": "translation",
+        "text": "төтенше не соғыс жағдайы қолданылады"
+      }
+    ],
+    "ex_president": [
+      {
+        "status": "translation",
+        "text": "тұлғаның Қазақстан Республикасының экс-Президенті атағы бар"
+      }
+    ],
+    "final_decision_day": [
+      {
+        "status": "translation",
+        "text": "Құрылтайдың айып бойынша түпкілікті шешім қабылдаған күні"
+      }
+    ],
+    "final_decision_not_taken": [
+      {
+        "status": "translation",
+        "text": "айып бойынша түпкілікті шешім қабылданбады"
+      }
+    ],
+    "final_impeachment_votes": [
+      {
+        "status": "translation",
+        "text": "қызметінен кетіру туралы түпкілікті шешім кезіндегі дауыстардың саны"
+      }
+    ],
+    "fluent_in_state_language": [
+      {
+        "status": "translation",
+        "text": "тұлға мемлекеттік тілді жетік меңгерген"
+      }
+    ],
+    "former_president": [
+      {
+        "status": "translation",
+        "text": "тұлға Республиканың бұрынғы Президенті болып табылады"
+      }
+    ],
+    "government_initiated_act_ready": [
+      {
+        "status": "translation",
+        "text": "Үкімет бастамасымен шығарылған акт тиісінше ресімделген"
+      }
+    ],
+    "government_initiated_presidential_act": [
+      {
+        "status": "translation",
+        "text": "акт Үкіметтің бастамасымен шығарылды"
+      }
+    ],
+    "health_removal_case": [
+      {
+        "status": "translation",
+        "text": "Президентті денсаулық жағдайы бойынша мерзімінен бұрын босату мәселесі қаралады"
+      }
+    ],
+    "health_removal_denominator": [
+      {
+        "status": "translation",
+        "text": "денсаулық бойынша босатуға қажет дауыс үлесінің бөлімі"
+      }
+    ],
+    "health_removal_numerator": [
+      {
+        "status": "translation",
+        "text": "денсаулық бойынша босатуға қажет дауыс үлесінің алымы"
+      }
+    ],
+    "health_removal_target": [
+      {
+        "status": "translation",
+        "text": "денсаулық бойынша мерзімінен бұрын босату мәселесі осы Президентке қатысты"
+      }
+    ],
+    "health_removal_votes": [
+      {
+        "status": "translation",
+        "text": "денсаулық бойынша мерзімінен бұрын босатуды жақтап берілген Құрылтай депутаттары даусының саны"
+      }
+    ],
+    "high_command_appointment": [
+      {
+        "status": "translation",
+        "text": "тағайындау Қарулы Күштердің жоғары қолбасшылығына қатысты"
+      }
+    ],
+    "high_command_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент Қарулы Күштердің жоғары қолбасшылық лауазымына тағайындайды"
+      }
+    ],
+    "high_command_appointment_effective": [
+      {
+        "status": "translation",
+        "text": "жоғары қолбасшылық лауазымына тағайындау жүзеге асты"
+      }
+    ],
+    "high_command_release": [
+      {
+        "status": "translation",
+        "text": "лауазымнан босату Қарулы Күштердің жоғары қолбасшылығына қатысты"
+      }
+    ],
+    "high_command_release_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент Қарулы Күштердің жоғары қолбасшылығын лауазымынан босатады"
+      }
+    ],
+    "high_command_release_effective": [
+      {
+        "status": "translation",
+        "text": "жоғары қолбасшылықты лауазымынан босату жүзеге асты"
+      }
+    ],
+    "higher_education": [
+      {
+        "status": "translation",
+        "text": "тұлғаның жоғары білімі бар"
+      }
+    ],
+    "immediate_constitutional_threat": [
+      {
+        "status": "translation",
+        "text": "конституциялық құрылысқа, құқықтық тәртіпке не қауіпсіздікке тікелей қатер бар"
+      }
+    ],
+    "impeachment_case": [
+      {
+        "status": "translation",
+        "text": "іс жүргізу Президентті қызметінен кетіру жөніндегі іс жүргізу болып табылады"
+      }
+    ],
+    "impeachment_charge_rejected": [
+      {
+        "status": "translation",
+        "text": "Президентке мемлекетке опасыздық жасады деген айып қабылданбады"
+      }
+    ],
+    "impeachment_final_decision_due_on": [
+      {
+        "status": "translation",
+        "text": "түпкілікті шешімге берілген екі айлық мерзімнің аяқталу күні"
+      }
+    ],
+    "impeachment_final_decision_period": [
+      {
+        "status": "translation",
+        "text": "айып бойынша түпкілікті шешім қабылдау мерзімі — екі ай"
+      }
+    ],
+    "impeachment_final_decision_timely": [
+      {
+        "status": "translation",
+        "text": "түпкілікті шешім екі айлық мерзім шегінде қабылданды"
+      }
+    ],
+    "impeachment_final_denominator": [
+      {
+        "status": "translation",
+        "text": "қызметінен кетіру табалдырығының бөлімі — төрттен үш"
+      }
+    ],
+    "impeachment_final_numerator": [
+      {
+        "status": "translation",
+        "text": "қызметінен кетіру табалдырығының алымы — төрттен үш"
+      }
+    ],
+    "impeachment_initiating_deputy": [
+      {
+        "status": "translation",
+        "text": "Құрылтай депутаты айып мәселесін қарауды бастамашылық етті"
+      }
+    ],
+    "impeachment_initiating_votes": [
+      {
+        "status": "translation",
+        "text": "қызметінен кетіруді бастамашылық еткен Құрылтай депутаттарының саны"
+      }
+    ],
+    "impeachment_initiative_denominator": [
+      {
+        "status": "translation",
+        "text": "қызметінен кетіру бастамасы табалдырығының бөлімі — үштен бір"
+      }
+    ],
+    "impeachment_initiative_numerator": [
+      {
+        "status": "translation",
+        "text": "қызметінен кетіру бастамасы табалдырығының алымы — үштен бір"
+      }
+    ],
+    "impeachment_initiative_valid": [
+      {
+        "status": "translation",
+        "text": "қызметінен кетіру бастамасын уәкілетті депутаттар саны мәлімдеді"
+      }
+    ],
+    "impeachment_investigation_denominator": [
+      {
+        "status": "translation",
+        "text": "тексеру туралы шешім табалдырығының бөлімі — екіден бір"
+      }
+    ],
+    "impeachment_investigation_numerator": [
+      {
+        "status": "translation",
+        "text": "тексеру туралы шешім табалдырығының алымы — екіден бір"
+      }
+    ],
+    "impeachment_investigation_valid": [
+      {
+        "status": "translation",
+        "text": "айыпты тексеру құқыққа сай жүктелді"
+      }
+    ],
+    "impeachment_may_not_be_initiated": [
+      {
+        "status": "translation",
+        "text": "Президентті қызметінен кетіру мәселесі қойылмайды"
+      }
+    ],
+    "impeachment_question_approved": [
+      {
+        "status": "translation",
+        "text": "Құрылтай айып тағу және оны тексеру мәселесі бойынша шешім қабылдады"
+      }
+    ],
+    "impeachment_question_denominator": [
+      {
+        "status": "translation",
+        "text": "айып мәселесі бойынша шешімге қажет дауыс үлесінің бөлімі"
+      }
+    ],
+    "impeachment_question_numerator": [
+      {
+        "status": "translation",
+        "text": "айып мәселесі бойынша шешімге қажет дауыс үлесінің алымы"
+      }
+    ],
+    "impeachment_question_votes": [
+      {
+        "status": "translation",
+        "text": "айып тағу және оны тексеру мәселесі бойынша Құрылтай депутаттары даусының саны"
+      }
+    ],
+    "impeachment_rejected_at_stage": [
+      {
+        "status": "translation",
+        "text": "айыпты Құрылтай сатылардың бірінде қабылдамады"
+      }
+    ],
+    "impeachment_reviewed_on": [
+      {
+        "status": "translation",
+        "text": "айып ісінің жағдайы тексерілетін күн"
+      }
+    ],
+    "impeachment_target": [
+      {
+        "status": "translation",
+        "text": "мемлекетке опасыздық жасады деген айып осы Президентке тағылды"
+      }
+    ],
+    "in_final_period_of_presidential_term": [
+      {
+        "status": "translation",
+        "text": "тарату мәселесі Президент өкілеттігінің соңғы алты айында қойылды"
+      }
+    ],
+    "international_treaty": [
+      {
+        "status": "translation",
+        "text": "іс нысанасы ретіндегі халықаралық шарт"
+      }
+    ],
+    "investigation_approved_votes": [
+      {
+        "status": "translation",
+        "text": "айыпты тексеруді жүктеуді жақтап берілген дауыс саны"
+      }
+    ],
+    "kurultai": [
+      {
+        "status": "translation",
+        "text": "орган Құрылтай болып табылады"
+      }
+    ],
+    "kurultai_dissolved": [
+      {
+        "status": "translation",
+        "text": "Құрылтай таратылды"
+      }
+    ],
+    "kurultai_election_day": [
+      {
+        "status": "translation",
+        "text": "Құрылтайдың жаңа құрамын сайлау өткізілетін күн"
+      }
+    ],
+    "kurultai_immediately_informed": [
+      {
+        "status": "translation",
+        "text": "қабылданған шаралар туралы Құрылтайға дереу хабарланды"
+      }
+    ],
+    "kurultai_majority_consent": [
+      {
+        "status": "translation",
+        "text": "Құрылтай тағайындауға көпшілік дауыспен келісім берді"
+      }
+    ],
+    "kurultai_majority_consent_to_vice_president": [
+      {
+        "status": "translation",
+        "text": "Құрылтай Вице-Президентті тағайындауға келісім берді"
+      }
+    ],
+    "kurultai_seat_count": [
+      {
+        "status": "translation",
+        "text": "Құрылтай депутаттарының жалпы саны — бір жүз қырық бес"
+      }
+    ],
+    "law_countersigned_by_kurultai_chair": [
+      {
+        "status": "translation",
+        "text": "заңға Құрылтай Төрағасы алдын ала қол қойды"
+      }
+    ],
+    "law_countersigned_by_prime_minister": [
+      {
+        "status": "translation",
+        "text": "заңға Премьер-Министр алдын ала қол қойды"
+      }
+    ],
+    "law_presented": [
+      {
+        "status": "translation",
+        "text": "заң Президентке қол қоюға ұсынылды"
+      }
+    ],
+    "law_presented_on": [
+      {
+        "status": "translation",
+        "text": "Құрылтай заңды Президентке ұсынған күн"
+      }
+    ],
+    "law_ready_for_presidential_signature": [
+      {
+        "status": "translation",
+        "text": "заң Президенттің қол қоюына дайын"
+      }
+    ],
+    "law_returned_with_objections": [
+      {
+        "status": "translation",
+        "text": "заң қарсылықтармен Құрылтайға қайтарылды"
+      }
+    ],
+    "law_signed": [
+      {
+        "status": "translation",
+        "text": "заңға Президент қол қойды"
+      }
+    ],
+    "majority_reached_in_election": [
+      {
+        "status": "translation",
+        "text": "сайлауда кандидаттардың бірі дауыстың елу пайызынан астамын алды"
+      }
+    ],
+    "martial_measure_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент соғыс жағдайын енгізеді"
+      }
+    ],
+    "martial_measure_in_force": [
+      {
+        "status": "translation",
+        "text": "соғыс жағдайы құқыққа сай енгізілді"
+      }
+    ],
+    "medical_commission_formed": [
+      {
+        "status": "translation",
+        "text": "Құрылтай депутаттар мен тиісті медицина салаларының мамандарынан комиссия құрды"
+      }
+    ],
+    "mission_head_appointed": [
+      {
+        "status": "translation",
+        "text": "дипломатиялық өкілдіктің басшысы тағайындалды"
+      }
+    ],
+    "mission_head_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент дипломатиялық өкілдіктің басшысын тағайындайды"
+      }
+    ],
+    "mission_head_recall_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент дипломатиялық өкілдіктің басшысын кері шақырып алады"
+      }
+    ],
+    "mission_head_recalled": [
+      {
+        "status": "translation",
+        "text": "дипломатиялық өкілдіктің басшысы кері шақырып алынды"
+      }
+    ],
+    "new_president_assumed_office": [
+      {
+        "status": "translation",
+        "text": "жаңадан сайланған Президент қызметіне кірісті"
+      }
+    ],
+    "no_candidate_reached_majority": [
+      {
+        "status": "translation",
+        "text": "кандидаттардың ешқайсысы дауыстың елу пайызынан астамын алмады"
+      }
+    ],
+    "office_appointment": [
+      {
+        "status": "translation",
+        "text": "тағайындау бапта аталған лауазымға жүргізіледі"
+      }
+    ],
+    "office_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент 5) тармақшаның тізбесіндегі лауазымға тағайындайды"
+      }
+    ],
+    "office_appointment_effective": [
+      {
+        "status": "translation",
+        "text": "лауазымға тағайындау жүзеге асты"
+      }
+    ],
+    "office_release": [
+      {
+        "status": "translation",
+        "text": "лауазымнан босату бапта аталған лауазымнан жүргізіледі"
+      }
+    ],
+    "office_release_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент 5) тармақшаның тізбесіндегі лауазымнан босатады"
+      }
+    ],
+    "office_release_effective": [
+      {
+        "status": "translation",
+        "text": "лауазымнан босату жүзеге асты"
+      }
+    ],
+    "pardon_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент кешірім беруді жүзеге асырады"
+      }
+    ],
+    "pardon_granted": [
+      {
+        "status": "translation",
+        "text": "кешірім берілді"
+      }
+    ],
+    "pardon_matter": [
+      {
+        "status": "translation",
+        "text": "іс нысанасы ретіндегі кешірім беру туралы өтінішхат"
+      }
+    ],
+    "participating_voters": [
+      {
+        "status": "translation",
+        "text": "дауыс беруге қатысқан сайлаушылардың саны"
+      }
+    ],
+    "persistent_health_incapacity": [
+      {
+        "status": "translation",
+        "text": "Президенттің денсаулық жағдайына қарай өз міндеттерін атқаруға тұрақты қабілетінің болмауы"
+      }
+    ],
+    "power_conferred_by_constitution_or_law": [
+      {
+        "status": "translation",
+        "text": "Президенттің өкілеттігі Қазақстан Республикасының Конституциясымен не заңымен белгіленген"
+      }
+    ],
+    "president": [
+      {
+        "status": "translation",
+        "text": "тұлға Республиканың Президенті болып табылады"
+      }
+    ],
+    "president_assumed_office_on": [
+      {
+        "status": "translation",
+        "text": "Президенттің қызметіне кіріскен күні"
+      }
+    ],
+    "president_conducts_business": [
+      {
+        "status": "translation",
+        "text": "Президент кәсіпкерлік қызметті жүзеге асырады"
+      }
+    ],
+    "president_died": [
+      {
+        "status": "translation",
+        "text": "Президент қайтыс болды"
+      }
+    ],
+    "president_ensures_coordinated_state_power": [
+      {
+        "status": "translation",
+        "text": "Президент мемлекеттік билік тармақтарының үйлесімді жұмыс істеуін қамтамасыз етеді"
+      }
+    ],
+    "president_experience_years": [
+      {
+        "status": "translation",
+        "text": "талап етілетін жұмыс өтілі — бес жыл"
+      }
+    ],
+    "president_guarantees_unity_constitution_and_rights": [
+      {
+        "status": "translation",
+        "text": "Президент — халық бірлігінің, Конституцияның мызғымастығының, адамның құқықтары мен бостандықтарының кепілі"
+      }
+    ],
+    "president_held_criminally_or_administratively_liable": [
+      {
+        "status": "translation",
+        "text": "Президент қылмыстық не әкімшілік жауаптылыққа тартылды"
+      }
+    ],
+    "president_holds_other_paid_office": [
+      {
+        "status": "translation",
+        "text": "Президент өзге ақы төленетін лауазымды атқарады"
+      }
+    ],
+    "president_holds_representative_mandate": [
+      {
+        "status": "translation",
+        "text": "Президент өкілді органның депутаты болып табылады"
+      }
+    ],
+    "president_is_commander_in_chief": [
+      {
+        "status": "translation",
+        "text": "Президент Қазақстан Республикасы Қарулы Күштерінің Жоғарғы Бас Қолбасшысы болып табылады"
+      }
+    ],
+    "president_is_head_of_state": [
+      {
+        "status": "translation",
+        "text": "Президент — мемлекет басшысы және Республиканың ең жоғары лауазымды тұлғасы"
+      }
+    ],
+    "president_minimum_age": [
+      {
+        "status": "translation",
+        "text": "Президенттің ең төменгі жасы — қырық"
+      }
+    ],
+    "president_party_member": [
+      {
+        "status": "translation",
+        "text": "Президент саяси партияда болады"
+      }
+    ],
+    "president_released_for_health": [
+      {
+        "status": "translation",
+        "text": "Президент денсаулық жағдайы бойынша лауазымынан мерзімінен бұрын босатылды"
+      }
+    ],
+    "president_released_from_office_for_health": [
+      {
+        "status": "translation",
+        "text": "осы Президент денсаулық жағдайы бойынша лауазымынан мерзімінен бұрын босатылды"
+      }
+    ],
+    "president_removed_by_impeachment": [
+      {
+        "status": "translation",
+        "text": "Президент қызметінен кетірілді"
+      }
+    ],
+    "president_removed_from_office": [
+      {
+        "status": "translation",
+        "text": "Президент қызметінен кетірілді"
+      }
+    ],
+    "president_residence_years": [
+      {
+        "status": "translation",
+        "text": "Қазақстанда тұрудың талап етілетін мерзімі — он бес жыл"
+      }
+    ],
+    "president_resigned": [
+      {
+        "status": "translation",
+        "text": "Президент өз еркімен орнынан түсуіне байланысты лауазымынан босатылды"
+      }
+    ],
+    "president_term": [
+      {
+        "status": "translation",
+        "text": "Президент өкілеттігінің мерзімі — жеті жыл"
+      }
+    ],
+    "president_term_expires_on": [
+      {
+        "status": "translation",
+        "text": "Президент өкілеттігі мерзімінің аяқталу күні"
+      }
+    ],
+    "presidential_act": [
+      {
+        "status": "translation",
+        "text": "актіні осы Президент шығарды"
+      }
+    ],
+    "presidential_act_based_on_constitution_and_law": [
+      {
+        "status": "translation",
+        "text": "акт Конституция мен заңдар негізінде және олардың орындалуы үшін шығарылды"
+      }
+    ],
+    "presidential_act_binding_nationwide": [
+      {
+        "status": "translation",
+        "text": "Президент актісі Республиканың бүкіл аумағында міндетті"
+      }
+    ],
+    "presidential_address": [
+      {
+        "status": "translation",
+        "text": "іс нысанасы ретіндегі Президенттің жолдауы"
+      }
+    ],
+    "presidential_address_delivered": [
+      {
+        "status": "translation",
+        "text": "Президенттің Қазақстан халқына жолдауы жасалды"
+      }
+    ],
+    "presidential_administration": [
+      {
+        "status": "translation",
+        "text": "іс нысанасы ретіндегі Президент Әкімшілігі"
+      }
+    ],
+    "presidential_administration_formed": [
+      {
+        "status": "translation",
+        "text": "Қазақстан Республикасы Президентінің Әкімшілігі құрылды"
+      }
+    ],
+    "presidential_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент тағайындау жүргізеді"
+      }
+    ],
+    "presidential_appointment_office": [
+      {
+        "status": "translation",
+        "text": "лауазым 46-баптың 5) тармақшасының тізбесіне кіреді"
+      }
+    ],
+    "presidential_body_established": [
+      {
+        "status": "translation",
+        "text": "Қауіпсіздік Кеңесі, өзге консультативтік-кеңесші орган не Жоғары Сот Кеңесі құрылды"
+      }
+    ],
+    "presidential_conduct_in_office": [
+      {
+        "status": "translation",
+        "text": "әрекетті Президент өз міндеттерін атқару кезінде жасады"
+      }
+    ],
+    "presidential_election_attempt": [
+      {
+        "status": "translation",
+        "text": "кандидат Президент сайлауына қатысады"
+      }
+    ],
+    "presidential_election_held": [
+      {
+        "status": "translation",
+        "text": "Президент сайлауы өтті"
+      }
+    ],
+    "presidential_election_majority_denominator": [
+      {
+        "status": "translation",
+        "text": "Президент сайлануы табалдырығының бөлімі — екіден бір"
+      }
+    ],
+    "presidential_election_majority_numerator": [
+      {
+        "status": "translation",
+        "text": "Президент сайлануы табалдырығының алымы — екіден бір"
+      }
+    ],
+    "presidential_family_support_case": [
+      {
+        "status": "translation",
+        "text": "әңгіме бұрынғы Президент пен оның отбасын қамтамасыз ету туралы"
+      }
+    ],
+    "presidential_instruction_to_vice_president": [
+      {
+        "status": "translation",
+        "text": "Президент Вице-Президентке өзін өкілдік етуді тапсырды"
+      }
+    ],
+    "presidential_liability_attempt": [
+      {
+        "status": "translation",
+        "text": "Президентті жауаптылыққа тарту әрекеті жасалды"
+      }
+    ],
+    "presidential_office_incompatible": [
+      {
+        "status": "translation",
+        "text": "Президент лауазымы атқарылатын лауазыммен не қызметпен сыйыспайды"
+      }
+    ],
+    "presidential_powers_assumed_by": [
+      {
+        "status": "translation",
+        "text": "Президент өкілеттігі осы тұлғаға көшті"
+      }
+    ],
+    "presidential_powers_terminated": [
+      {
+        "status": "translation",
+        "text": "Президенттің өкілеттігі тоқтатылды"
+      }
+    ],
+    "presidential_relative_position_prohibited": [
+      {
+        "status": "translation",
+        "text": "Президенттің туысының мұндай лауазымды атқаруына жол берілмейді"
+      }
+    ],
+    "presidential_return_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент заңды қарсылықтарымен қайтарады"
+      }
+    ],
+    "presidential_signature_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент ұсынылған заңға қол қояды"
+      }
+    ],
+    "presidential_signature_day": [
+      {
+        "status": "translation",
+        "text": "Президенттің заңға қол қойған не оны қайтарған күні"
+      }
+    ],
+    "presidential_signature_due_on": [
+      {
+        "status": "translation",
+        "text": "заңға қол қоюдың бір айлық мерзімінің аяқталу күні"
+      }
+    ],
+    "presidential_signature_period": [
+      {
+        "status": "translation",
+        "text": "Құрылтай ұсынған заңға қол қою мерзімі — бір ай"
+      }
+    ],
+    "presidential_signature_timely": [
+      {
+        "status": "translation",
+        "text": "заңға бір айлық мерзім шегінде қол қойылды не ол қайтарылды"
+      }
+    ],
+    "presidential_vacancy": [
+      {
+        "status": "translation",
+        "text": "Президент лауазымы мерзімінен бұрын босады"
+      }
+    ],
+    "presidential_vote": [
+      {
+        "status": "translation",
+        "text": "кандидатты жақтап берілген дауыстардың саны"
+      }
+    ],
+    "previously_elected_president": [
+      {
+        "status": "translation",
+        "text": "тұлға бұрын Республика Президенті болып сайланған"
+      }
+    ],
+    "prior_dissolution_on": [
+      {
+        "status": "translation",
+        "text": "Құрылтайдың алдыңғы таратылған күні"
+      }
+    ],
+    "prior_office_relinquished": [
+      {
+        "status": "translation",
+        "text": "тұлға бұрынғы лауазымын өзінен алды"
+      }
+    ],
+    "ratification_instrument": [
+      {
+        "status": "translation",
+        "text": "іс нысанасы ретіндегі ратификациялық грамота"
+      }
+    ],
+    "ratification_instrument_signed": [
+      {
+        "status": "translation",
+        "text": "ратификациялық грамотаға қол қойылды"
+      }
+    ],
+    "ratification_signature_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент ратификациялық грамотаға қол қояды"
+      }
+    ],
+    "referendum_called": [
+      {
+        "status": "translation",
+        "text": "жалпыхалықтық референдум тағайындалды"
+      }
+    ],
+    "referendum_decision_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент референдум өткізу туралы шешім қабылдайды"
+      }
+    ],
+    "refusal_statement_filed": [
+      {
+        "status": "translation",
+        "text": "тұлға Конституциялық Сотқа Президент өкілеттігін қабылдаудан бас тарту туралы өтініш берді"
+      }
+    ],
+    "refused_to_assume_presidential_powers": [
+      {
+        "status": "translation",
+        "text": "тұлға Президент өкілеттігін өзіне қабылдаудан бас тартты"
+      }
+    ],
+    "regular_election_lead_period": [
+      {
+        "status": "translation",
+        "text": "кезекті сайлау өкілеттіктің аяқталуынан бұрын өткізілетін мерзім — екі ай"
+      }
+    ],
+    "regular_election_scheduled_in_time": [
+      {
+        "status": "translation",
+        "text": "кезекті сайлау Президент өкілеттігі мерзімінің аяқталуына дейін екі айдан кешіктірілмей тағайындалды"
+      }
+    ],
+    "regular_oath_due_on": [
+      {
+        "status": "translation",
+        "text": "ант беру мерзімінің аяқталу күні"
+      }
+    ],
+    "regular_oath_period": [
+      {
+        "status": "translation",
+        "text": "ант беру мерзімі — бір ай"
+      }
+    ],
+    "regular_oath_taken_on": [
+      {
+        "status": "translation",
+        "text": "ант берілген күн"
+      }
+    ],
+    "regular_oath_timely": [
+      {
+        "status": "translation",
+        "text": "ант конституциялық мерзімде берілді"
+      }
+    ],
+    "regular_presidential_election_date_inadmissible": [
+      {
+        "status": "translation",
+        "text": "Президенттің кезекті сайлауының күніне жол берілмейді"
+      }
+    ],
+    "regular_presidential_election_day": [
+      {
+        "status": "translation",
+        "text": "Президенттің кезекті сайлауы өткізілетін күн"
+      }
+    ],
+    "relative_holds_political_office_or_quasistate_leadership": [
+      {
+        "status": "translation",
+        "text": "туысы мемлекеттік саяси қызметші лауазымын атқарады не квазимемлекеттік сектор ұйымын басқарады"
+      }
+    ],
+    "repeat_vote_ballot": [
+      {
+        "status": "translation",
+        "text": "қайта дауыс беру өткізілді"
+      }
+    ],
+    "repeat_vote_participant": [
+      {
+        "status": "translation",
+        "text": "кандидат қайта дауыс беруге қатысады"
+      }
+    ],
+    "repeat_vote_required": [
+      {
+        "status": "translation",
+        "text": "қайта дауыс беру өткізіледі"
+      }
+    ],
+    "repeat_vote_votes": [
+      {
+        "status": "translation",
+        "text": "қайта дауыс беруде кандидатты жақтап берілген дауыстардың саны"
+      }
+    ],
+    "repeated_refusal_of_presidential_nominee": [
+      {
+        "status": "translation",
+        "text": "Құрылтай Президент ұсынған кандидатураға келісім беруден қайта бас тартты"
+      }
+    ],
+    "required_consultations_completed": [
+      {
+        "status": "translation",
+        "text": "Құрылтайды таратар алдында талап етілетін консультациялар өткізілді"
+      }
+    ],
+    "resides_last_years": [
+      {
+        "status": "translation",
+        "text": "Қазақстанда тұрудың соңғы жылдарының саны"
+      }
+    ],
+    "state_authority": [
+      {
+        "status": "translation",
+        "text": "субъект мемлекеттік орган не лауазымды адам болып табылады"
+      }
+    ],
+    "state_body_act": [
+      {
+        "status": "translation",
+        "text": "мемлекеттік органды құру, тарату не қайта құру туралы акт"
+      }
+    ],
+    "state_body_act_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент мемлекеттік органды құрады, таратады не қайта құрады"
+      }
+    ],
+    "state_body_act_effective": [
+      {
+        "status": "translation",
+        "text": "мемлекеттік органды құру, тарату не қайта құру жүзеге асты"
+      }
+    ],
+    "state_guard_service": [
+      {
+        "status": "translation",
+        "text": "іс нысанасы ретіндегі Мемлекеттік күзет қызметі"
+      }
+    ],
+    "state_guard_service_formed": [
+      {
+        "status": "translation",
+        "text": "Президентке бағынатын Мемлекеттік күзет қызметі құрылды"
+      }
+    ],
+    "state_service_or_elected_years": [
+      {
+        "status": "translation",
+        "text": "мемлекеттік қызметтегі не сайланбалы мемлекеттік лауазымдағы жұмыс өтілі"
+      }
+    ],
+    "state_support_provided": [
+      {
+        "status": "translation",
+        "text": "мемлекет қамтамасыз етуді және күзетуді жүзеге асырды"
+      }
+    ],
+    "state_treason_by_president": [
+      {
+        "status": "translation",
+        "text": "Президент мемлекетке опасыздық жасады"
+      }
+    ],
+    "subordinate_body_head_appointment": [
+      {
+        "status": "translation",
+        "text": "тағайындау Президентке бағынатын органның басшысына қатысты"
+      }
+    ],
+    "subordinate_body_head_release": [
+      {
+        "status": "translation",
+        "text": "лауазымнан босату Президентке бағынатын органның басшысына қатысты"
+      }
+    ],
+    "succession_event": [
+      {
+        "status": "translation",
+        "text": "тұлға Президент өкілеттігін өзіне қабылдады"
+      }
+    ],
+    "succession_oath_date": [
+      {
+        "status": "translation",
+        "text": "өкілеттік қабылданған күн және ант берілген күн"
+      }
+    ],
+    "succession_oath_days": [
+      {
+        "status": "translation",
+        "text": "Президент өкілеттігін өзіне қабылдаған тұлғаның ант беру мерзімі — жеті күн"
+      }
+    ],
+    "succession_oath_timely": [
+      {
+        "status": "translation",
+        "text": "лауазымды алмастыру кезіндегі ант мерзімінде берілді"
+      }
+    ],
+    "succession_president_in_office": [
+      {
+        "status": "translation",
+        "text": "Президент өкілеттігін оны алмастыру тәртібімен қабылдаған тұлға жүзеге асырады"
+      }
+    ],
+    "successor_amendment_initiative_attempt": [
+      {
+        "status": "translation",
+        "text": "өкілеттікті қабылдаған тұлға Конституцияны өзгертуді бастамашылық етеді"
+      }
+    ],
+    "successor_amendment_initiative_barred": [
+      {
+        "status": "translation",
+        "text": "өкілеттікті қабылдаған тұлғаға Конституцияны өзгертуді бастамашылық етуге тыйым салынған"
+      }
+    ],
+    "successor_dissolution_attempt": [
+      {
+        "status": "translation",
+        "text": "өкілеттікті қабылдаған тұлға Құрылтайды таратады"
+      }
+    ],
+    "successor_dissolution_barred": [
+      {
+        "status": "translation",
+        "text": "өкілеттікті қабылдаған тұлғаға Құрылтайды таратуға тыйым салынған"
+      }
+    ],
+    "supreme_court_charge_supported": [
+      {
+        "status": "translation",
+        "text": "Жоғарғы Сот айыптың негізділігін растады"
+      }
+    ],
+    "temporary_decree_has_force_of_law": [
+      {
+        "status": "translation",
+        "text": "Президенттің уақытша актісінің заң күші бар"
+      }
+    ],
+    "temporary_kurultai_absence_after_early_termination": [
+      {
+        "status": "translation",
+        "text": "Құрылтай өкілеттігі мерзімінен бұрын тоқтатылуына байланысты жоқ"
+      }
+    ],
+    "temporary_legislative_decree": [
+      {
+        "status": "translation",
+        "text": "акт Президенттің уақытша нормативтік құқықтық актісі болып табылады"
+      }
+    ],
+    "treaty_signature_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент Қазақстан Республикасының атынан келіссөздер жүргізеді және халықаралық шартқа қол қояды"
+      }
+    ],
+    "treaty_signed_on_behalf_of_republic": [
+      {
+        "status": "translation",
+        "text": "халықаралық шартқа Қазақстан Республикасының атынан қол қойылды"
+      }
+    ],
+    "unable_by_health_or_personal_reasons": [
+      {
+        "status": "translation",
+        "text": "тұлға денсаулық жағдайына не жеке сипаттағы өзге себептерге байланысты өкілеттікті қабылдай алмайды"
+      }
+    ],
+    "vacancy_by_death": [
+      {
+        "status": "translation",
+        "text": "лауазым Президенттің қайтыс болуы салдарынан босады"
+      }
+    ],
+    "vacancy_by_health_incapacity": [
+      {
+        "status": "translation",
+        "text": "лауазым Президенттің денсаулық жағдайы бойынша тұрақты қабілетсіздігі салдарынан босады"
+      }
+    ],
+    "vacancy_by_removal_from_office": [
+      {
+        "status": "translation",
+        "text": "лауазым Президентті қызметінен кетіру салдарынан босады"
+      }
+    ],
+    "vacancy_by_voluntary_resignation": [
+      {
+        "status": "translation",
+        "text": "лауазым Президенттің өз еркімен орнынан түсуі салдарынан босады"
+      }
+    ],
+    "vacancy_day": [
+      {
+        "status": "translation",
+        "text": "Президент лауазымының босаған күні"
+      }
+    ],
+    "vacancy_kurultai_chair": [
+      {
+        "status": "translation",
+        "text": "лауазым босаған сәтте тұлға Құрылтай Төрағасы лауазымын атқарады"
+      }
+    ],
+    "vacancy_prime_minister": [
+      {
+        "status": "translation",
+        "text": "лауазым босаған сәтте тұлға Премьер-Министр лауазымын атқарады"
+      }
+    ],
+    "vacancy_vice_president": [
+      {
+        "status": "translation",
+        "text": "лауазым босаған сәтте тұлға Вице-Президент лауазымын атқарады"
+      }
+    ],
+    "vice_president": [
+      {
+        "status": "translation",
+        "text": "тұлға Республиканың Вице-Президенті болып табылады"
+      }
+    ],
+    "vice_president_appointed": [
+      {
+        "status": "translation",
+        "text": "Вице-Президент тағайындалды"
+      }
+    ],
+    "vice_president_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент Вице-Президентті тағайындайды"
+      }
+    ],
+    "vice_president_conducts_business": [
+      {
+        "status": "translation",
+        "text": "Вице-Президент кәсіпкерлік қызметті жүзеге асырады"
+      }
+    ],
+    "vice_president_holds_other_paid_office": [
+      {
+        "status": "translation",
+        "text": "Вице-Президент өзге ақы төленетін лауазымды атқарады"
+      }
+    ],
+    "vice_president_holds_representative_mandate": [
+      {
+        "status": "translation",
+        "text": "Вице-Президент өкілді органның депутаты болып табылады"
+      }
+    ],
+    "vice_president_party_member": [
+      {
+        "status": "translation",
+        "text": "Вице-Президент саяси партияда болады"
+      }
+    ],
+    "vice_president_representation_action": [
+      {
+        "status": "translation",
+        "text": "Вице-Президент Президенттің атынан әрекет етеді"
+      }
+    ],
+    "vice_president_representation_authorized": [
+      {
+        "status": "translation",
+        "text": "Вице-Президенттің өкілдік етуі құқыққа сай"
+      }
+    ],
+    "vice_presidential_office_incompatible": [
+      {
+        "status": "translation",
+        "text": "Вице-Президент лауазымы атқарылатын лауазыммен не қызметпен сыйыспайды"
+      }
+    ],
+    "within_period_after_prior_dissolution": [
+      {
+        "status": "translation",
+        "text": "Құрылтайдың алдыңғы таратылған күнінен бастап бір жыл өткен жоқ"
+      }
+    ]
+  },
+  "language": "kk",
+  "package": "kz.constitution.president"
+}

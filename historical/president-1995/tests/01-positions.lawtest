@@ -1,0 +1,566 @@
+language "law.core" version "0.2";
+package kz.constitution1995.president version "0.1.0";
+namespace "urn:kz:constitution1995:president";
+
+// ПОЗИЦИИ §§122–137 РАЗДЕЛА III «ПРЕЗИДЕНТ» РЕДАКЦИИ 1995 ГОДА (13.09.2026).
+//
+// В пакете 19 норм-шаблонов: 14 полномочий §127, четыре иммунитета §128 и
+// одна обязанность §136/§138. Набор наблюдает каждый.
+//
+// ОТЛИЧИЕ ОТ РЕДАКЦИИ 2026, РАДИ КОТОРОГО ЗАВЕДЁН СЛОЙ. У 27 полномочий из
+// 31 в пакете 2026 `valid_when` читает предикат, уже стоящий посылкой
+// создающего правила, и недействительное осуществление там невозможно по
+// построению. Здесь условие действительности у КАЖДОГО полномочия — отдельный
+// эмпирический факт дела (месячный срок, согласие Палаты, представление
+// Премьер-Министра, консультации с фракциями, пятилетний срок назначения,
+// информирование Парламента, государственная измена, управомоченное число
+// инициаторов), поэтому пара «действительно / недействительно» наблюдаема у
+// всех четырнадцати.
+//
+// ПРОЕКЦИЯ РЕДАКЦИЙ. Мир сценария склеен с пакетом источников
+// `kz.constitution.sources` (`concat` в law.toml), где редакция
+// KZ_CONSTITUTION_1995 объявлена как in_force [@1995-09-05, @2026-07-01).
+// Поэтому дела ведутся на `legal_time @2020-01-01`, а последнее дело набора
+// проверяет обратное: на @2026-09-01 узлы редакции 1995 исключены условием 3
+// §92, ни одной позиции нет, эффекта нет.
+
+// ─────────────────────────────────────────────────────────────────────────
+// Ст. 44 подп. 2. Подписание закона и возвращение для повторного обсуждения.
+// ─────────────────────────────────────────────────────────────────────────
+
+// Закон подписан в месячный срок: оба полномочия есть, эффект наступает.
+// Здесь же наблюдаются обе презумпции неприкосновенности действующего
+// Президента — ст. 46 п. 1 и ст. 47 п. 2.
+test "urn:query:kzp95-1" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "a1-1": president(entity_ref("urn:kz:constitution1995:president:test:president1")) { origin case_input; }
+        assert "a1-2": president_person(entity_ref("urn:kz:constitution1995:president:test:president1"), entity_ref("urn:kz:constitution1995:president:test:person1")) { origin case_input; }
+        assert "a1-3": law_presented(entity_ref("urn:kz:constitution1995:president:test:law1"), entity_ref("urn:kz:constitution1995:president:test:president1")) { origin case_input; }
+        assert "a1-4": signature_within_one_month(entity_ref("urn:kz:constitution1995:president:test:law1")) { origin case_input; }
+        assert "a1-5": presidential_signature_attempt(entity_ref("urn:kz:constitution1995:president:test:president1"), entity_ref("urn:kz:constitution1995:president:test:law1")) { origin case_input; }
+    }
+    evaluate positions();
+    expect issues_within(info);
+    expect position(SignPresentedLaw1995, ACTIVE);
+    expect position(ReturnLawForReconsideration1995, ACTIVE);
+    expect position(PresidentialInviolability1995, ACTIVE);
+    expect position(PresidentialLiabilityOnlyForTreason1995, ACTIVE);
+
+    evaluate truth(law_signed_1995(entity_ref("urn:kz:constitution1995:president:test:law1")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// Тот же закон подписан за пределами месячного срока: полномочие остаётся,
+// эффекта нет, осуществление помечено недействительным.
+test "urn:query:kzp95-2" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "a2-1": president(entity_ref("urn:kz:constitution1995:president:test:president1")) { origin case_input; }
+        assert "a2-2": law_presented(entity_ref("urn:kz:constitution1995:president:test:law2"), entity_ref("urn:kz:constitution1995:president:test:president1")) { origin case_input; }
+        assert "a2-3": presidential_signature_attempt(entity_ref("urn:kz:constitution1995:president:test:president1"), entity_ref("urn:kz:constitution1995:president:test:law2")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(SignPresentedLaw1995, ACTIVE);
+    expect issue(POWER_INVALID_EXERCISE);
+
+    evaluate truth(law_signed_1995(entity_ref("urn:kz:constitution1995:president:test:law2")));
+    expect truth_status == NEITHER;
+}
+
+// Возвращение закона в срок.
+test "urn:query:kzp95-3" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "a3-1": president(entity_ref("urn:kz:constitution1995:president:test:president1")) { origin case_input; }
+        assert "a3-2": law_presented(entity_ref("urn:kz:constitution1995:president:test:law3"), entity_ref("urn:kz:constitution1995:president:test:president1")) { origin case_input; }
+        assert "a3-3": signature_within_one_month(entity_ref("urn:kz:constitution1995:president:test:law3")) { origin case_input; }
+        assert "a3-4": presidential_return_attempt(entity_ref("urn:kz:constitution1995:president:test:president1"), entity_ref("urn:kz:constitution1995:president:test:law3")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(ReturnLawForReconsideration1995, ACTIVE);
+
+    evaluate truth(law_returned_for_reconsideration_1995(entity_ref("urn:kz:constitution1995:president:test:law3")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// Возвращение за пределами срока.
+test "urn:query:kzp95-4" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "a4-1": president(entity_ref("urn:kz:constitution1995:president:test:president1")) { origin case_input; }
+        assert "a4-2": law_presented(entity_ref("urn:kz:constitution1995:president:test:law4"), entity_ref("urn:kz:constitution1995:president:test:president1")) { origin case_input; }
+        assert "a4-3": presidential_return_attempt(entity_ref("urn:kz:constitution1995:president:test:president1"), entity_ref("urn:kz:constitution1995:president:test:law4")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(ReturnLawForReconsideration1995, ACTIVE);
+    expect issue(POWER_INVALID_EXERCISE);
+
+    evaluate truth(law_returned_for_reconsideration_1995(entity_ref("urn:kz:constitution1995:president:test:law4")));
+    expect truth_status == NEITHER;
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// Ст. 44 подп. 3. Премьер-Министр: внесение кандидатуры и назначение.
+// ─────────────────────────────────────────────────────────────────────────
+
+// Консультации с фракциями проведены, согласие Мажилиса дано: оба полномочия
+// осуществлены действительно.
+test "urn:query:kzp95-5" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "a5-1": president(entity_ref("urn:kz:constitution1995:president:test:president1")) { origin case_input; }
+        assert "a5-2": appointment_requires_mazhilis_consent(entity_ref("urn:kz:constitution1995:president:test:appointment1")) { origin case_input; }
+        assert "a5-3": fraction_consultations_completed(entity_ref("urn:kz:constitution1995:president:test:appointment1")) { origin case_input; }
+        assert "a5-4": mazhilis_consent_given(entity_ref("urn:kz:constitution1995:president:test:appointment1")) { origin case_input; }
+        assert "a5-5": pm_nomination_attempt(entity_ref("urn:kz:constitution1995:president:test:president1"), entity_ref("urn:kz:constitution1995:president:test:appointment1")) { origin case_input; }
+        assert "a5-6": presidential_appointment_attempt(entity_ref("urn:kz:constitution1995:president:test:president1"), entity_ref("urn:kz:constitution1995:president:test:appointment1")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(NominatePrimeMinister1995, ACTIVE);
+    expect position(AppointWithMazhilisConsent1995, ACTIVE);
+
+    evaluate truth(pm_nomination_submitted_1995(entity_ref("urn:kz:constitution1995:president:test:appointment1")));
+    expect truth_status == TRUE_ONLY;
+
+    evaluate truth(appointment_effective_1995(entity_ref("urn:kz:constitution1995:president:test:appointment1")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// Ни консультаций, ни согласия: оба осуществления недействительны.
+test "urn:query:kzp95-6" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "a6-1": president(entity_ref("urn:kz:constitution1995:president:test:president1")) { origin case_input; }
+        assert "a6-2": appointment_requires_mazhilis_consent(entity_ref("urn:kz:constitution1995:president:test:appointment2")) { origin case_input; }
+        assert "a6-3": pm_nomination_attempt(entity_ref("urn:kz:constitution1995:president:test:president1"), entity_ref("urn:kz:constitution1995:president:test:appointment2")) { origin case_input; }
+        assert "a6-4": presidential_appointment_attempt(entity_ref("urn:kz:constitution1995:president:test:president1"), entity_ref("urn:kz:constitution1995:president:test:appointment2")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(NominatePrimeMinister1995, ACTIVE);
+    expect position(AppointWithMazhilisConsent1995, ACTIVE);
+    expect issue(POWER_INVALID_EXERCISE);
+
+    evaluate truth(pm_nomination_submitted_1995(entity_ref("urn:kz:constitution1995:president:test:appointment2")));
+    expect truth_status == NEITHER;
+
+    evaluate truth(appointment_effective_1995(entity_ref("urn:kz:constitution1995:president:test:appointment2")));
+    expect truth_status == NEITHER;
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// Ст. 44 подп. 4. Назначение с согласия Сената.
+// ─────────────────────────────────────────────────────────────────────────
+
+test "urn:query:kzp95-7" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "a7-1": president(entity_ref("urn:kz:constitution1995:president:test:president1")) { origin case_input; }
+        assert "a7-2": appointment_requires_senate_consent(entity_ref("urn:kz:constitution1995:president:test:appointment3")) { origin case_input; }
+        assert "a7-3": senate_consent_given(entity_ref("urn:kz:constitution1995:president:test:appointment3")) { origin case_input; }
+        assert "a7-4": presidential_appointment_attempt(entity_ref("urn:kz:constitution1995:president:test:president1"), entity_ref("urn:kz:constitution1995:president:test:appointment3")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(AppointWithSenateConsent1995, ACTIVE);
+
+    evaluate truth(appointment_effective_1995(entity_ref("urn:kz:constitution1995:president:test:appointment3")));
+    expect truth_status == TRUE_ONLY;
+}
+
+test "urn:query:kzp95-8" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "a8-1": president(entity_ref("urn:kz:constitution1995:president:test:president1")) { origin case_input; }
+        assert "a8-2": appointment_requires_senate_consent(entity_ref("urn:kz:constitution1995:president:test:appointment4")) { origin case_input; }
+        assert "a8-3": presidential_appointment_attempt(entity_ref("urn:kz:constitution1995:president:test:president1"), entity_ref("urn:kz:constitution1995:president:test:appointment4")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(AppointWithSenateConsent1995, ACTIVE);
+    expect issue(POWER_INVALID_EXERCISE);
+
+    evaluate truth(appointment_effective_1995(entity_ref("urn:kz:constitution1995:president:test:appointment4")));
+    expect truth_status == NEITHER;
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// Ст. 44 подп. 3 и 7. Структура Правительства, члены Правительства,
+// пятилетние должности.
+// ─────────────────────────────────────────────────────────────────────────
+
+test "urn:query:kzp95-9" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "a9-1": president(entity_ref("urn:kz:constitution1995:president:test:president1")) { origin case_input; }
+        assert "a9-2": government_structure_decision(entity_ref("urn:kz:constitution1995:president:test:structure1")) { origin case_input; }
+        assert "a9-3": prime_minister_structure_submission(entity_ref("urn:kz:constitution1995:president:test:structure1")) { origin case_input; }
+        assert "a9-4": government_structure_decision_attempt(entity_ref("urn:kz:constitution1995:president:test:president1"), entity_ref("urn:kz:constitution1995:president:test:structure1")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(DetermineGovernmentStructure1995, ACTIVE);
+
+    evaluate truth(government_structure_determined_1995(entity_ref("urn:kz:constitution1995:president:test:structure1")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// Без представления Премьер-Министра структура не определена.
+test "urn:query:kzp95-10" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "a10-1": president(entity_ref("urn:kz:constitution1995:president:test:president1")) { origin case_input; }
+        assert "a10-2": government_structure_decision(entity_ref("urn:kz:constitution1995:president:test:structure2")) { origin case_input; }
+        assert "a10-3": government_structure_decision_attempt(entity_ref("urn:kz:constitution1995:president:test:president1"), entity_ref("urn:kz:constitution1995:president:test:structure2")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(DetermineGovernmentStructure1995, ACTIVE);
+    expect issue(POWER_INVALID_EXERCISE);
+
+    evaluate truth(government_structure_determined_1995(entity_ref("urn:kz:constitution1995:president:test:structure2")));
+    expect truth_status == NEITHER;
+}
+
+test "urn:query:kzp95-11" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "a11-1": president(entity_ref("urn:kz:constitution1995:president:test:president1")) { origin case_input; }
+        assert "a11-2": government_member_appointment(entity_ref("urn:kz:constitution1995:president:test:appointment5")) { origin case_input; }
+        assert "a11-3": pm_submission_after_mazhilis_consultations(entity_ref("urn:kz:constitution1995:president:test:appointment5")) { origin case_input; }
+        assert "a11-4": presidential_appointment_attempt(entity_ref("urn:kz:constitution1995:president:test:president1"), entity_ref("urn:kz:constitution1995:president:test:appointment5")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(AppointGovernmentMember1995, ACTIVE);
+
+    evaluate truth(appointment_effective_1995(entity_ref("urn:kz:constitution1995:president:test:appointment5")));
+    expect truth_status == TRUE_ONLY;
+}
+
+test "urn:query:kzp95-12" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "a12-1": president(entity_ref("urn:kz:constitution1995:president:test:president1")) { origin case_input; }
+        assert "a12-2": government_member_appointment(entity_ref("urn:kz:constitution1995:president:test:appointment6")) { origin case_input; }
+        assert "a12-3": presidential_appointment_attempt(entity_ref("urn:kz:constitution1995:president:test:president1"), entity_ref("urn:kz:constitution1995:president:test:appointment6")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(AppointGovernmentMember1995, ACTIVE);
+    expect issue(POWER_INVALID_EXERCISE);
+
+    evaluate truth(appointment_effective_1995(entity_ref("urn:kz:constitution1995:president:test:appointment6")));
+    expect truth_status == NEITHER;
+}
+
+// Пятилетний срок назначения — конституционное условие, а не свойство
+// должности: назначение на иной срок конституционного основания не имеет.
+test "urn:query:kzp95-13" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "a13-1": president(entity_ref("urn:kz:constitution1995:president:test:president1")) { origin case_input; }
+        assert "a13-2": five_year_office_appointment(entity_ref("urn:kz:constitution1995:president:test:appointment7")) { origin case_input; }
+        assert "a13-3": appointment_term_is_five_years(entity_ref("urn:kz:constitution1995:president:test:appointment7")) { origin case_input; }
+        assert "a13-4": presidential_appointment_attempt(entity_ref("urn:kz:constitution1995:president:test:president1"), entity_ref("urn:kz:constitution1995:president:test:appointment7")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(AppointForFiveYearTerm1995, ACTIVE);
+
+    evaluate truth(appointment_effective_1995(entity_ref("urn:kz:constitution1995:president:test:appointment7")));
+    expect truth_status == TRUE_ONLY;
+}
+
+test "urn:query:kzp95-14" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "a14-1": president(entity_ref("urn:kz:constitution1995:president:test:president1")) { origin case_input; }
+        assert "a14-2": five_year_office_appointment(entity_ref("urn:kz:constitution1995:president:test:appointment8")) { origin case_input; }
+        assert "a14-3": presidential_appointment_attempt(entity_ref("urn:kz:constitution1995:president:test:president1"), entity_ref("urn:kz:constitution1995:president:test:appointment8")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(AppointForFiveYearTerm1995, ACTIVE);
+    expect issue(POWER_INVALID_EXERCISE);
+
+    evaluate truth(appointment_effective_1995(entity_ref("urn:kz:constitution1995:president:test:appointment8")));
+    expect truth_status == NEITHER;
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// Ст. 44 подп. 10, 10-1, 16, 17. Референдум, обращение в Конституционный
+// Суд, чрезвычайное и военное положение.
+// ─────────────────────────────────────────────────────────────────────────
+
+test "urn:query:kzp95-15" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "a15-1": president(entity_ref("urn:kz:constitution1995:president:test:president1")) { origin case_input; }
+        assert "a15-2": referendum_proposal(entity_ref("urn:kz:constitution1995:president:test:referendum1")) { origin case_input; }
+        assert "a15-3": referendum_decision_attempt(entity_ref("urn:kz:constitution1995:president:test:president1"), entity_ref("urn:kz:constitution1995:president:test:referendum1")) { origin case_input; }
+        assert "a15-4": constitutional_petition(entity_ref("urn:kz:constitution1995:president:test:petition1")) { origin case_input; }
+        assert "a15-5": petition_protects_rights_or_security(entity_ref("urn:kz:constitution1995:president:test:petition1")) { origin case_input; }
+        assert "a15-6": constitutional_review_petition_attempt(entity_ref("urn:kz:constitution1995:president:test:president1"), entity_ref("urn:kz:constitution1995:president:test:petition1")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(CallReferendum1995, ACTIVE);
+    expect position(PetitionConstitutionalCourt1995, ACTIVE);
+
+    evaluate truth(referendum_called_1995(entity_ref("urn:kz:constitution1995:president:test:referendum1")));
+    expect truth_status == TRUE_ONLY;
+
+    evaluate truth(constitutional_review_requested_1995(entity_ref("urn:kz:constitution1995:president:test:petition1")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// РАСХОЖДЕНИЕ С 2026, ИЗМЕРЕННОЕ ЗДЕСЬ: у обращения в Конституционный Суд
+// редакция 1995 называет собственную цель («в интересах защиты прав и свобод
+// … безопасности»), и потому недействительное обращение выразимо. В редакции
+// 2026 `valid_when` того же полномочия читает `president(president)` —
+// повторение посылки, и этого дела там построить нельзя.
+test "urn:query:kzp95-16" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "a16-1": president(entity_ref("urn:kz:constitution1995:president:test:president1")) { origin case_input; }
+        assert "a16-2": constitutional_petition(entity_ref("urn:kz:constitution1995:president:test:petition2")) { origin case_input; }
+        assert "a16-3": constitutional_review_petition_attempt(entity_ref("urn:kz:constitution1995:president:test:president1"), entity_ref("urn:kz:constitution1995:president:test:petition2")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(PetitionConstitutionalCourt1995, ACTIVE);
+    expect issue(POWER_INVALID_EXERCISE);
+
+    evaluate truth(constitutional_review_requested_1995(entity_ref("urn:kz:constitution1995:president:test:petition2")));
+    expect truth_status == NEITHER;
+}
+
+test "urn:query:kzp95-17" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "a17-1": president(entity_ref("urn:kz:constitution1995:president:test:president1")) { origin case_input; }
+        assert "a17-2": emergency_measure(entity_ref("urn:kz:constitution1995:president:test:measure1")) { origin case_input; }
+        assert "a17-3": serious_and_immediate_threat() { origin case_input; }
+        assert "a17-4": constitutional_organs_functioning_disrupted() { origin case_input; }
+        assert "a17-5": emergency_consultations_with_pm_and_chairs_completed() { origin case_input; }
+        assert "a17-6": parliament_immediately_informed() { origin case_input; }
+        assert "a17-7": emergency_measure_attempt(entity_ref("urn:kz:constitution1995:president:test:president1"), entity_ref("urn:kz:constitution1995:president:test:measure1")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(AdoptEmergencyMeasure1995, ACTIVE);
+
+    evaluate truth(emergency_measure_in_force_1995(entity_ref("urn:kz:constitution1995:president:test:measure1")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// Парламент не проинформирован — меры не введены правомерно.
+test "urn:query:kzp95-18" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "a18-1": president(entity_ref("urn:kz:constitution1995:president:test:president1")) { origin case_input; }
+        assert "a18-2": emergency_measure(entity_ref("urn:kz:constitution1995:president:test:measure2")) { origin case_input; }
+        assert "a18-3": serious_and_immediate_threat() { origin case_input; }
+        assert "a18-4": constitutional_organs_functioning_disrupted() { origin case_input; }
+        assert "a18-5": emergency_consultations_with_pm_and_chairs_completed() { origin case_input; }
+        assert "a18-6": emergency_measure_attempt(entity_ref("urn:kz:constitution1995:president:test:president1"), entity_ref("urn:kz:constitution1995:president:test:measure2")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(AdoptEmergencyMeasure1995, ACTIVE);
+    expect issue(POWER_INVALID_EXERCISE);
+
+    evaluate truth(emergency_measure_in_force_1995(entity_ref("urn:kz:constitution1995:president:test:measure2")));
+    expect truth_status == NEITHER;
+}
+
+test "urn:query:kzp95-19" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "a19-1": president(entity_ref("urn:kz:constitution1995:president:test:president1")) { origin case_input; }
+        assert "a19-2": emergency_measure(entity_ref("urn:kz:constitution1995:president:test:measure3")) { origin case_input; }
+        assert "a19-3": aggression_or_immediate_external_threat() { origin case_input; }
+        assert "a19-4": parliament_immediately_informed() { origin case_input; }
+        assert "a19-5": martial_measure_attempt(entity_ref("urn:kz:constitution1995:president:test:president1"), entity_ref("urn:kz:constitution1995:president:test:measure3")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(AdoptMartialMeasure1995, ACTIVE);
+
+    evaluate truth(martial_measure_in_force_1995(entity_ref("urn:kz:constitution1995:president:test:measure3")));
+    expect truth_status == TRUE_ONLY;
+}
+
+test "urn:query:kzp95-20" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "a20-1": president(entity_ref("urn:kz:constitution1995:president:test:president1")) { origin case_input; }
+        assert "a20-2": emergency_measure(entity_ref("urn:kz:constitution1995:president:test:measure4")) { origin case_input; }
+        assert "a20-3": aggression_or_immediate_external_threat() { origin case_input; }
+        assert "a20-4": martial_measure_attempt(entity_ref("urn:kz:constitution1995:president:test:president1"), entity_ref("urn:kz:constitution1995:president:test:measure4")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(AdoptMartialMeasure1995, ACTIVE);
+    expect issue(POWER_INVALID_EXERCISE);
+
+    evaluate truth(martial_measure_in_force_1995(entity_ref("urn:kz:constitution1995:president:test:measure4")));
+    expect truth_status == NEITHER;
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// Ст. 47 п. 2. Иммунитет за должностные действия и его единственное
+// исключение.
+// ─────────────────────────────────────────────────────────────────────────
+
+// Государственной измены нет: защита держит, осуществление недействительно,
+// эффект заблокирован иммунитетом.
+test "urn:query:kzp95-21" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "a21-1": president(entity_ref("urn:kz:constitution1995:president:test:president1")) { origin case_input; }
+        assert "a21-2": president_person(entity_ref("urn:kz:constitution1995:president:test:president1"), entity_ref("urn:kz:constitution1995:president:test:person1")) { origin case_input; }
+        assert "a21-3": state_authority(entity_ref("urn:kz:constitution1995:president:test:authority1")) { origin case_input; }
+        assert "a21-4": presidential_liability_attempt(entity_ref("urn:kz:constitution1995:president:test:authority1"), entity_ref("urn:kz:constitution1995:president:test:person1")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(PresidentialLiabilityOnlyForTreason1995, ACTIVE);
+    expect position(HoldPresidentLiableForTreason1995, ACTIVE);
+    expect issue(POWER_INVALID_EXERCISE);
+
+    evaluate truth(president_held_liable_for_acts_in_office_1995(entity_ref("urn:kz:constitution1995:president:test:person1")));
+    expect truth_status == NEITHER;
+}
+
+// Государственная измена установлена: исключение вытесняет иммунитет
+// приоритетом, эффект наступает.
+test "urn:query:kzp95-22" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "a22-1": president(entity_ref("urn:kz:constitution1995:president:test:president2")) { origin case_input; }
+        assert "a22-2": president_person(entity_ref("urn:kz:constitution1995:president:test:president2"), entity_ref("urn:kz:constitution1995:president:test:person2")) { origin case_input; }
+        assert "a22-3": state_authority(entity_ref("urn:kz:constitution1995:president:test:authority1")) { origin case_input; }
+        assert "a22-4": state_treason_by_president_1995(entity_ref("urn:kz:constitution1995:president:test:person2")) { origin case_input; }
+        assert "a22-5": presidential_liability_attempt(entity_ref("urn:kz:constitution1995:president:test:authority1"), entity_ref("urn:kz:constitution1995:president:test:person2")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(HoldPresidentLiableForTreason1995, ACTIVE);
+
+    evaluate truth(president_held_liable_for_acts_in_office_1995(entity_ref("urn:kz:constitution1995:president:test:person2")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// Ст. 47 пп. 2 и 3. Возбуждение вопроса об отрешении и барьер роспуска.
+// ─────────────────────────────────────────────────────────────────────────
+
+// Инициатива заявлена одной третью депутатов Мажилиса: вопрос возбуждён.
+test "urn:query:kzp95-23" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "a23-1": president(entity_ref("urn:kz:constitution1995:president:test:president1")) { origin case_input; }
+        assert "a23-2": mazhilis_chamber(entity_ref("urn:kz:constitution1995:president:test:mazhilis1")) { origin case_input; }
+        assert "a23-3": impeachment_case(entity_ref("urn:kz:constitution1995:president:test:process1")) { origin case_input; }
+        assert "a23-4": treason_charge(entity_ref("urn:kz:constitution1995:president:test:process1")) { origin case_input; }
+        assert "a23-5": mazhilis_initiating_votes(entity_ref("urn:kz:constitution1995:president:test:process1"), 40) { origin case_input; }
+        assert "a23-6": mazhilis_total_deputies(entity_ref("urn:kz:constitution1995:president:test:process1"), 98) { origin case_input; }
+        assert "a23-7": impeachment_initiation_attempt(entity_ref("urn:kz:constitution1995:president:test:mazhilis1"), entity_ref("urn:kz:constitution1995:president:test:process1")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(InitiateImpeachment1995, ACTIVE);
+    expect not position(NoImpeachmentDuringDissolutionReview1995, ACTIVE);
+
+    evaluate truth(impeachment_initiated_1995(entity_ref("urn:kz:constitution1995:president:test:process1")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// Инициаторов меньше одной трети: осуществление недействительно.
+test "urn:query:kzp95-24" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "a24-1": mazhilis_chamber(entity_ref("urn:kz:constitution1995:president:test:mazhilis1")) { origin case_input; }
+        assert "a24-2": impeachment_case(entity_ref("urn:kz:constitution1995:president:test:process2")) { origin case_input; }
+        assert "a24-3": treason_charge(entity_ref("urn:kz:constitution1995:president:test:process2")) { origin case_input; }
+        assert "a24-4": mazhilis_initiating_votes(entity_ref("urn:kz:constitution1995:president:test:process2"), 10) { origin case_input; }
+        assert "a24-5": mazhilis_total_deputies(entity_ref("urn:kz:constitution1995:president:test:process2"), 98) { origin case_input; }
+        assert "a24-6": impeachment_initiation_attempt(entity_ref("urn:kz:constitution1995:president:test:mazhilis1"), entity_ref("urn:kz:constitution1995:president:test:process2")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(InitiateImpeachment1995, ACTIVE);
+    expect issue(POWER_INVALID_EXERCISE);
+
+    evaluate truth(impeachment_initiated_1995(entity_ref("urn:kz:constitution1995:president:test:process2")));
+    expect truth_status == NEITHER;
+}
+
+// Ст. 47 п. 3: Президент рассматривает вопрос о роспуске — барьер блокирует
+// эффект даже при управомоченной инициативе.
+test "urn:query:kzp95-25" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "a25-1": president(entity_ref("urn:kz:constitution1995:president:test:president1")) { origin case_input; }
+        assert "a25-2": mazhilis_chamber(entity_ref("urn:kz:constitution1995:president:test:mazhilis1")) { origin case_input; }
+        assert "a25-3": impeachment_case(entity_ref("urn:kz:constitution1995:president:test:process3")) { origin case_input; }
+        assert "a25-4": treason_charge(entity_ref("urn:kz:constitution1995:president:test:process3")) { origin case_input; }
+        assert "a25-5": mazhilis_initiating_votes(entity_ref("urn:kz:constitution1995:president:test:process3"), 40) { origin case_input; }
+        assert "a25-6": mazhilis_total_deputies(entity_ref("urn:kz:constitution1995:president:test:process3"), 98) { origin case_input; }
+        assert "a25-7": parliament_dissolution_under_consideration() { origin case_input; }
+        assert "a25-8": impeachment_initiation_attempt(entity_ref("urn:kz:constitution1995:president:test:mazhilis1"), entity_ref("urn:kz:constitution1995:president:test:process3")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(NoImpeachmentDuringDissolutionReview1995, ACTIVE);
+    expect issue(EFFECT_BLOCKED_BY_IMMUNITY);
+
+    evaluate truth(impeachment_initiated_1995(entity_ref("urn:kz:constitution1995:president:test:process3")));
+    expect truth_status == NEITHER;
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// Ст. 46. Экс-Президент: иммунитет и обязанность государства.
+// ─────────────────────────────────────────────────────────────────────────
+
+test "urn:query:kzp95-26" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "a26-1": former_president(entity_ref("urn:kz:constitution1995:president:test:person3")) { origin case_input; }
+        assert "a26-2": state_authority(entity_ref("urn:kz:constitution1995:president:test:authority1")) { origin case_input; }
+        assert "a26-3": state_funded_protection_provided(entity_ref("urn:kz:constitution1995:president:test:person3")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(FormerPresidentialInviolability1995, ACTIVE);
+    // ГРАНИЦА, ИЗМЕРЕННАЯ ЗДЕСЬ, А НЕ ПРЕДПОЛОЖЕННАЯ: охрана обеспечена, и
+    // обязанность всё равно остаётся ACTIVE. Цель редакции 1995 —
+    // `maintenance` с окном нормы, а не `achieve`; исполненное условие
+    // поддержания SATISFIED не даёт. Та же обязанность 2026 записана через
+    // `achieve` и SATISFIED получает — расхождение в ФОРМЕ ЦЕЛИ, и тест
+    // обязан упасть, если однажды придёт SATISFIED.
+    expect position(ProvideStateFundedProtection1995, ACTIVE);
+    expect not position(ProvideStateFundedProtection1995, SATISFIED);
+}
+
+// Охрана не обеспечена: обязанность держится, нарушением не становится —
+// цель maintenance не получает VIOLATED без установленного провала.
+test "urn:query:kzp95-27" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "a27-1": former_president(entity_ref("urn:kz:constitution1995:president:test:person4")) { origin case_input; }
+        assert "a27-2": state_authority(entity_ref("urn:kz:constitution1995:president:test:authority1")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(FormerPresidentialInviolability1995, ACTIVE);
+    expect position(ProvideStateFundedProtection1995, ACTIVE);
+    expect not position(ProvideStateFundedProtection1995, VIOLATED);
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// Проекция редакций §92: то же дело на дате действия редакции 2026.
+// ─────────────────────────────────────────────────────────────────────────
+
+// Дело kzp95-1 слово в слово, но legal_time @2026-09-01. Редакция 1995 к
+// этой дате не применима: узлы исключены условием 3 §92, ни одной позиции
+// нет, эффекта нет.
+test "urn:query:kzp95-28" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+06:00; knowledge_time @2026-09-01T12:00:00+06:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+        assert "a28-1": president(entity_ref("urn:kz:constitution1995:president:test:president1")) { origin case_input; }
+        assert "a28-2": president_person(entity_ref("urn:kz:constitution1995:president:test:president1"), entity_ref("urn:kz:constitution1995:president:test:person1")) { origin case_input; }
+        assert "a28-3": law_presented(entity_ref("urn:kz:constitution1995:president:test:law1"), entity_ref("urn:kz:constitution1995:president:test:president1")) { origin case_input; }
+        assert "a28-4": signature_within_one_month(entity_ref("urn:kz:constitution1995:president:test:law1")) { origin case_input; }
+        assert "a28-5": presidential_signature_attempt(entity_ref("urn:kz:constitution1995:president:test:president1"), entity_ref("urn:kz:constitution1995:president:test:law1")) { origin case_input; }
+    }
+    evaluate positions();
+    expect not position(SignPresentedLaw1995, ACTIVE);
+    expect not position(ReturnLawForReconsideration1995, ACTIVE);
+    expect not position(PresidentialInviolability1995, ACTIVE);
+    expect not position(PresidentialLiabilityOnlyForTreason1995, ACTIVE);
+
+    evaluate truth(law_signed_1995(entity_ref("urn:kz:constitution1995:president:test:law1")));
+    expect truth_status == NEITHER;
+}

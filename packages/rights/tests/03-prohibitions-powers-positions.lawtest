@@ -1,0 +1,396 @@
+language "law.core" version "0.2";
+package kz.constitution.rights version "0.1.0";
+namespace "urn:kz:constitution:rights";
+
+// НАБЛЮДЕНИЕ ДЕОНТИЧЕСКОГО СЛОЯ, ЧАСТЬ 3: запреты (11) и полномочия (3)
+// редакции 2026.
+//
+// `prohibition` §130 десахарен в duty с целью `forbearance` §124.3. В срезе
+// Core 0.1 такая позиция знает ровно два исхода — ACTIVE и EXPIRED, — и
+// VIOLATED не получает НИКОГДА: событийной модели совершения действия §79 в
+// срезе нет. Окно всех одиннадцати запретов раздела II — [@2026-07-01,
+// infinity), поэтому и EXPIRED недостижим: наблюдаемый исход один, ACTIVE.
+// Сторож `expect not position(…, VIOLATED)` при поданном факте попытки
+// закрепляет именно границу среза, а не ошибку формализации: тест обязан
+// упасть, когда §79 придёт и запрет станет нарушаемым.
+
+// --- Ст. 16, 17, 20, 21, 23, 24, 28, 29: запреты органу ------------------
+
+test "urn:query:kzcr-prohibition-active-1" {
+    given {
+        context {
+            decision_time @2026-09-01T12:00:00+05:00;
+            knowledge_time @2026-09-01T12:00:00+05:00;
+            legal_time @2026-09-01;
+            timezone "Asia/Qyzylorda";
+        }
+
+        assert state_authority(entity_ref("urn:kz:constitution:rights:case:authority:21")) { id "p01-a1"; origin case_input; }
+        assert person(entity_ref("urn:kz:constitution:rights:case:person:21")) { id "p01-a2"; origin case_input; }
+        assert citizen(entity_ref("urn:kz:constitution:rights:case:person:21")) { id "p01-a3"; origin case_input; }
+        assert detention_of(entity_ref("urn:kz:constitution:rights:case:detention:21"),
+                            entity_ref("urn:kz:constitution:rights:case:person:21")) { id "p01-a4"; origin case_input; }
+        assert detention_exceeds_statutory_period(entity_ref("urn:kz:constitution:rights:case:detention:21")) { id "p01-a5"; origin case_input; }
+    }
+
+    evaluate positions();
+    expect evaluation_status == COMPUTED;
+    expect result_kind == NORM_POSITION;
+    expect issues_within(info);
+
+    expect position(RefrainFromDiscrimination, ACTIVE);                   // ст. 16 п. 2
+    expect position(RefrainFromDeathPenalty, ACTIVE);                     // ст. 17 п. 3
+    expect position(RefrainFromDignityInfringement, ACTIVE);              // ст. 17 п. 1
+    expect position(RefrainFromTorture, ACTIVE);                          // ст. 20 п. 2
+    expect position(RefrainFromPrivacyInterference, ACTIVE);              // ст. 21 п. 1
+    expect position(RefrainFromCensorship, ACTIVE);                       // ст. 23 п. 5
+    expect position(RefrainFromBlockingReturn, ACTIVE);                   // ст. 24 п. 2
+    expect position(RefrainFromUnlawfulHomeEntry, ACTIVE);                // ст. 28 п. 1
+    expect position(RefrainFromUncompensatedExpropriation, ACTIVE);       // ст. 29 п. 3
+    expect position(RefrainFromForcedLabour, ACTIVE);                     // ст. 27 п. 1
+    expect position(RefrainFromDetentionBeyondStatutoryPeriod, ACTIVE);   // ст. 18 п. 2
+}
+
+test "urn:query:kzcr-prohibition-never-violated-1" {
+    given {
+        context {
+            decision_time @2026-09-01T12:00:00+05:00;
+            knowledge_time @2026-09-01T12:00:00+05:00;
+            legal_time @2026-09-01;
+            timezone "Asia/Qyzylorda";
+        }
+
+        assert state_authority(entity_ref("urn:kz:constitution:rights:case:authority:22")) { id "p02-a1"; origin case_input; }
+        assert person(entity_ref("urn:kz:constitution:rights:case:person:22")) { id "p02-a2"; origin case_input; }
+        assert citizen(entity_ref("urn:kz:constitution:rights:case:person:22")) { id "p02-a3"; origin case_input; }
+
+        // ПОПЫТКИ ЗАПРЕЩЁННЫХ ДЕЙСТВИЙ ПОДАНЫ ДЕЛОМ.
+        assert torture_attempt(entity_ref("urn:kz:constitution:rights:case:authority:22"),
+                               entity_ref("urn:kz:constitution:rights:case:person:22")) { id "p02-a4"; origin case_input; }
+        assert censorship_attempt(entity_ref("urn:kz:constitution:rights:case:authority:22"),
+                                  entity_ref("urn:kz:constitution:rights:case:person:22")) { id "p02-a5"; origin case_input; }
+        assert discriminatory_treatment_attempt(entity_ref("urn:kz:constitution:rights:case:authority:22"),
+                                                entity_ref("urn:kz:constitution:rights:case:person:22")) { id "p02-a6"; origin case_input; }
+    }
+
+    // СТОРОЖ ГРАНИЦЫ §130/§124.3 В СРЕЗЕ CORE 0.1: запрет остаётся ACTIVE
+    // даже при установленной попытке. Это граница среза, а не дефект нормы.
+    evaluate positions();
+    expect issues_within(info);
+
+    expect position(RefrainFromTorture, ACTIVE);
+    expect position(RefrainFromCensorship, ACTIVE);
+    expect position(RefrainFromDiscrimination, ACTIVE);
+    expect not position(RefrainFromTorture, VIOLATED);
+    expect not position(RefrainFromCensorship, VIOLATED);
+    expect not position(RefrainFromDiscrimination, VIOLATED);
+    expect not position(RefrainFromTorture, EXPIRED);
+}
+
+test "urn:query:kzcr-prohibition-forced-labour-defeated-1" {
+    given {
+        context {
+            decision_time @2026-09-01T12:00:00+05:00;
+            knowledge_time @2026-09-01T12:00:00+05:00;
+            legal_time @2026-09-01;
+            timezone "Asia/Qyzylorda";
+        }
+
+        assert state_authority(entity_ref("urn:kz:constitution:rights:case:authority:23")) { id "p03-a1"; origin case_input; }
+        assert person(entity_ref("urn:kz:constitution:rights:case:person:23")) { id "p03-a2"; origin case_input; }
+        // Ст. 27 п. 1: единственное ИЗЪЯТИЕ раздела — судебный акт либо
+        // чрезвычайное/военное положение. Изъятие живёт на предикате, а не на
+        // норм-голове (`unless` при норм-голове компилятор отбрасывает,
+        // LDC-E1302), поэтому исчезает не позиция, а её посылка.
+        assert judicial_act_or_emergency_basis(entity_ref("urn:kz:constitution:rights:case:person:23")) { id "p03-a3"; origin case_input; }
+    }
+
+    evaluate positions();
+    expect issues_within(info);
+
+    expect not position(RefrainFromForcedLabour, ACTIVE);
+    expect position(RefrainFromTorture, ACTIVE);
+}
+
+// --- Ст. 13 п. 2, ст. 14 п. 1, ст. 41 п. 1: полномочия -------------------
+
+test "urn:query:kzcr-power-available-1" {
+    given {
+        context {
+            decision_time @2026-09-01T12:00:00+05:00;
+            knowledge_time @2026-09-01T12:00:00+05:00;
+            legal_time @2026-09-01;
+            timezone "Asia/Qyzylorda";
+        }
+
+        assert state_authority(entity_ref("urn:kz:constitution:rights:case:authority:24")) { id "p04-a1"; origin case_input; }
+        assert person(entity_ref("urn:kz:constitution:rights:case:person:24")) { id "p04-a2"; origin case_input; }
+        assert citizen(entity_ref("urn:kz:constitution:rights:case:person:24")) { id "p04-a3"; origin case_input; }
+        assert court_ordered_citizenship_deprivation(entity_ref("urn:kz:constitution:rights:case:person:24")) { id "p04-a4"; origin case_input; }
+        assert terrorism_or_grave_national_harm(entity_ref("urn:kz:constitution:rights:case:person:24")) { id "p04-a5"; origin case_input; }
+
+        assert legislature(entity_ref("urn:kz:constitution:rights:case:legislature:1")) { id "p04-a6"; origin case_input; }
+        assert derogable_right_target(entity_ref("urn:kz:constitution:rights:case:restriction:11")) { id "p04-a7"; origin case_input; }
+    }
+
+    // §127: позиция полномочия создаётся ДО осуществления; статус — его
+    // доступность. Все три полномочия раздела наблюдаются здесь.
+    evaluate positions();
+    expect issues_within(info);
+
+    expect position(DepriveCitizenship, ACTIVE);        // ст. 13 п. 2
+    expect position(ExtraditeUnderTreaty, ACTIVE);      // ст. 14 п. 1
+    expect position(RestrictDerogableRight, ACTIVE);    // ст. 41 п. 1
+}
+
+test "urn:query:kzcr-power-not-created-without-ground-1" {
+    given {
+        context {
+            decision_time @2026-09-01T12:00:00+05:00;
+            knowledge_time @2026-09-01T12:00:00+05:00;
+            legal_time @2026-09-01;
+            timezone "Asia/Qyzylorda";
+        }
+
+        assert state_authority(entity_ref("urn:kz:constitution:rights:case:authority:25")) { id "p05-a1"; origin case_input; }
+        assert person(entity_ref("urn:kz:constitution:rights:case:person:25")) { id "p05-a2"; origin case_input; }
+        assert citizen(entity_ref("urn:kz:constitution:rights:case:person:25")) { id "p05-a3"; origin case_input; }
+        // Судебное решение ЕСТЬ, но класса основания ст. 13 п. 2 нет.
+        assert court_ordered_citizenship_deprivation(entity_ref("urn:kz:constitution:rights:case:person:25")) { id "p05-a4"; origin case_input; }
+        assert legislature(entity_ref("urn:kz:constitution:rights:case:legislature:2")) { id "p05-a5"; origin case_input; }
+    }
+
+    // Оба класса основания ст. 13 п. 2 — конъюнкция: без «терроризм либо иной
+    // тяжкий вред национальным интересам» полномочия нет вовсе. И ограничение
+    // без предмета (`derogable_right_target`) полномочия ст. 41 не создаёт.
+    evaluate positions();
+    expect issues_within(info);
+
+    expect not position(DepriveCitizenship, ACTIVE);
+    expect not position(RestrictDerogableRight, ACTIVE);
+    expect position(ExtraditeUnderTreaty, ACTIVE);
+}
+
+// --- Эффект полномочия §127: что материализуется, а что нет --------------
+
+test "urn:query:kzcr-power-effect-materialises-1" {
+    given {
+        context {
+            decision_time @2026-09-01T12:00:00+05:00;
+            knowledge_time @2026-09-01T12:00:00+05:00;
+            legal_time @2026-09-01;
+            timezone "Asia/Qyzylorda";
+        }
+
+        assert person(entity_ref("urn:kz:constitution:rights:case:person:26")) { id "p06-a1"; origin case_input; }
+        assert citizen(entity_ref("urn:kz:constitution:rights:case:person:26")) { id "p06-a2"; origin case_input; }
+        assert state_authority(entity_ref("urn:kz:constitution:rights:case:authority:26")) { id "p06-a3"; origin case_input; }
+        assert court_ordered_citizenship_deprivation(entity_ref("urn:kz:constitution:rights:case:person:26")) { id "p06-a4"; origin case_input; }
+        assert terrorism_or_grave_national_harm(entity_ref("urn:kz:constitution:rights:case:person:26")) { id "p06-a5"; origin case_input; }
+        // Осуществление полномочия ст. 13 п. 2 предъявлено делом.
+        assert citizenship_deprivation_decision(entity_ref("urn:kz:constitution:rights:case:authority:26"),
+                                                entity_ref("urn:kz:constitution:rights:case:person:26")) { id "p06-a6"; origin case_input; }
+    }
+
+    // `valid_when` выполнено, иммунитета против ЭТОГО эффекта в разделе нет →
+    // §127 материализует эффект: гражданства лицо лишено.
+    evaluate truth(citizenship_deprived(entity_ref("urn:kz:constitution:rights:case:person:26")));
+    expect evaluation_status == COMPUTED;
+    expect truth_status == TRUE_ONLY;
+}
+
+test "urn:query:kzcr-power-effect-blocked-by-twin-immunity-1" {
+    given {
+        context {
+            decision_time @2026-09-01T12:00:00+05:00;
+            knowledge_time @2026-09-01T12:00:00+05:00;
+            legal_time @2026-09-01;
+            timezone "Asia/Qyzylorda";
+        }
+
+        assert person(entity_ref("urn:kz:constitution:rights:case:person:27")) { id "p07-a1"; origin case_input; }
+        assert citizen(entity_ref("urn:kz:constitution:rights:case:person:27")) { id "p07-a2"; origin case_input; }
+        assert state_authority(entity_ref("urn:kz:constitution:rights:case:authority:27")) { id "p07-a3"; origin case_input; }
+        assert extradition_decision(entity_ref("urn:kz:constitution:rights:case:authority:27"),
+                                    entity_ref("urn:kz:constitution:rights:case:person:27")) { id "p07-a4"; origin case_input; }
+        // `valid_when` полномочия ст. 14 п. 1 ВЫПОЛНЕНО: договор допускает выдачу.
+        assert treaty_allows_extradition(entity_ref("urn:kz:constitution:rights:case:person:27")) { id "p07-a5"; origin case_input; }
+    }
+
+    // ОГОВОРКА О ВЫДАЧЕ ПО ДОГОВОРУ ОЖИЛА 13.09.2026 — И ЭТО ИЗМЕРЕНО, А НЕ
+    // ОБЪЯВЛЕНО. До включения проекции редакций тест стоял сторожем дефекта:
+    // `truth` по `extradited` давал NEITHER на любую дату, а документ нёс ДВЕ
+    // записи `UNRESOLVED_NORMATIVE_CONFLICT` §127. Причина была не в приоритете
+    // и не в `valid_when`, а в том, что слои редакций пересекались: приоритет
+    // `TreatyClauseOverGeneralNonExtradition` объявлен внутри ОДНОЙ редакции
+    // (`TreatyExtraditionPower > CitizenNonExtraditionImmunity`), а
+    // иммунитет-близнец 1995 (`NonExtradition1995`) окна не имел и оставался
+    // ACTIVE; пара «полномочие 2026 / иммунитет 1995» несравнима, и
+    // conservative materialization §127 эффект не создавала. Симметричная пара
+    // давала вторую запись того же кода.
+    //
+    // Правки в `rights.law` не потребовалось. Манифест склеил в мир набора
+    // пакет источников (`concat = ["kz.constitution.sources"]`), якоря 1995
+    // разрешились, условие 3 §92 исключило весь слой 1995 на дату 2026
+    // (`EDITION_NOT_APPLICABLE`, severity info, errata E-0095) — и несравнимая
+    // пара исчезла вместе с ним. Осталась одна пара внутри редакции 2026, где
+    // приоритет объявлен: §127 материализует эффект.
+    evaluate truth(extradited(entity_ref("urn:kz:constitution:rights:case:person:27")));
+    expect truth_status == TRUE_ONLY;
+    expect not issue(UNRESOLVED_NORMATIVE_CONFLICT);
+    expect issue(EDITION_NOT_APPLICABLE);
+}
+// --- ЗАПРЕТЫ РЕДАКЦИИ 1995 (наблюдение заведено 13.09.2026) --------------
+//
+// До 13.09.2026 слой 1995 не нёс НИ ОДНОГО запрета: те же нормы были выражены
+// только иммунитетами, и сравнение редакций по деонтическому слою запрета
+// было пусто по построению. Одиннадцать близнецов заведены в `rights.law`;
+// здесь они предъявлены делом внутри своего окна и вне его.
+
+test "urn:query:kzcr-prohibition-1995-active-1" {
+    given {
+        context {
+            decision_time @2020-05-20T12:00:00+05:00;
+            knowledge_time @2020-05-20T12:00:00+05:00;
+            legal_time @2020-05-20;
+            timezone "Asia/Qyzylorda";
+        }
+
+        assert state_authority(entity_ref("urn:kz:constitution:rights:case:authority:28")) { id "p08-a1"; origin case_input; }
+        assert person(entity_ref("urn:kz:constitution:rights:case:person:28")) { id "p08-a2"; origin case_input; }
+        assert citizen(entity_ref("urn:kz:constitution:rights:case:person:28")) { id "p08-a3"; origin case_input; }
+        // Ст. 16 п. 2 (ред. 1995): семьдесят два часа стоят В САМОЙ Конституции.
+        assert detention_of(entity_ref("urn:kz:constitution:rights:case:detention:28"),
+                            entity_ref("urn:kz:constitution:rights:case:person:28")) { id "p08-a4"; origin case_input; }
+        assert detention_without_court_sanction(entity_ref("urn:kz:constitution:rights:case:detention:28")) { id "p08-a5"; origin case_input; }
+        assert detention_exceeds_72_hours(entity_ref("urn:kz:constitution:rights:case:detention:28")) { id "p08-a6"; origin case_input; }
+    }
+
+    // Дата внутри окна [@1995-09-05, @2026-07-01). Слой 2026 исключён
+    // проекцией §92 (`EDITION_NOT_APPLICABLE`, severity info), слой 1995
+    // применим целиком.
+    evaluate positions();
+    expect evaluation_status == COMPUTED;
+    expect result_kind == NORM_POSITION;
+    expect issues_within(info);
+    expect issue(EDITION_NOT_APPLICABLE);
+
+    expect position(RefrainFromDiscrimination1995, ACTIVE);                 // ст. 14 п. 2
+    expect position(RefrainFromDeathPenalty1995, ACTIVE);                   // ст. 15 п. 2
+    expect position(RefrainFromDignityInfringement1995, ACTIVE);            // ст. 17 п. 1
+    expect position(RefrainFromTorture1995, ACTIVE);                        // ст. 17 п. 2
+    expect position(RefrainFromPrivacyInterference1995, ACTIVE);            // ст. 18 п. 1–2
+    expect position(RefrainFromCensorship1995, ACTIVE);                     // ст. 20 п. 1
+    expect position(RefrainFromBlockingReturn1995, ACTIVE);                 // ст. 21 п. 2
+    expect position(RefrainFromUnlawfulHomeEntry1995, ACTIVE);              // ст. 25 п. 1
+    expect position(RefrainFromUncompensatedExpropriation1995, ACTIVE);     // ст. 26 п. 3
+    expect position(RefrainFromForcedLabour1995, ACTIVE);                   // ст. 24 п. 1
+    expect position(RefrainFromDetentionBeyond72Hours1995, ACTIVE);         // ст. 16 п. 2
+
+    // Запретов редакции 2026 на эту дату в документе нет вовсе.
+    expect not position(RefrainFromTorture, ACTIVE);
+    expect not position(RefrainFromCensorship, ACTIVE);
+    expect not position(RefrainFromDetentionBeyondStatutoryPeriod, ACTIVE);
+}
+
+test "urn:query:kzcr-prohibition-1995-never-violated-1" {
+    given {
+        context {
+            decision_time @2020-05-20T12:00:00+05:00;
+            knowledge_time @2020-05-20T12:00:00+05:00;
+            legal_time @2020-05-20;
+            timezone "Asia/Qyzylorda";
+        }
+
+        assert state_authority(entity_ref("urn:kz:constitution:rights:case:authority:29")) { id "p09-a1"; origin case_input; }
+        assert person(entity_ref("urn:kz:constitution:rights:case:person:29")) { id "p09-a2"; origin case_input; }
+
+        // ПОПЫТКИ ЗАПРЕЩЁННЫХ ДЕЙСТВИЙ ПОДАНЫ ДЕЛОМ.
+        assert torture_attempt(entity_ref("urn:kz:constitution:rights:case:authority:29"),
+                               entity_ref("urn:kz:constitution:rights:case:person:29")) { id "p09-a3"; origin case_input; }
+        assert censorship_attempt(entity_ref("urn:kz:constitution:rights:case:authority:29"),
+                                  entity_ref("urn:kz:constitution:rights:case:person:29")) { id "p09-a4"; origin case_input; }
+        assert forced_labour_attempt(entity_ref("urn:kz:constitution:rights:case:authority:29"),
+                                     entity_ref("urn:kz:constitution:rights:case:person:29")) { id "p09-a5"; origin case_input; }
+    }
+
+    // ГРАНИЦА CORE 0.1 ТА ЖЕ, ЧТО И У ЗАПРЕТОВ 2026: `prohibition` §130
+    // десахарен в duty с целью `forbearance` §124.3, событийной модели
+    // совершения действия §79 в срезе нет, поэтому VIOLATED недостижим — даже
+    // при установленной попытке. Сторож обязан УПАСТЬ, когда §79 придёт.
+    evaluate positions();
+    expect issues_within(info);
+
+    expect position(RefrainFromTorture1995, ACTIVE);
+    expect position(RefrainFromCensorship1995, ACTIVE);
+    expect position(RefrainFromForcedLabour1995, ACTIVE);
+    expect not position(RefrainFromTorture1995, VIOLATED);
+    expect not position(RefrainFromCensorship1995, VIOLATED);
+    expect not position(RefrainFromForcedLabour1995, VIOLATED);
+}
+
+test "urn:query:kzcr-prohibition-1995-forced-labour-defeated-1" {
+    given {
+        context {
+            decision_time @2020-05-20T12:00:00+05:00;
+            knowledge_time @2020-05-20T12:00:00+05:00;
+            legal_time @2020-05-20;
+            timezone "Asia/Qyzylorda";
+        }
+
+        assert state_authority(entity_ref("urn:kz:constitution:rights:case:authority:30")) { id "p10-a1"; origin case_input; }
+        assert person(entity_ref("urn:kz:constitution:rights:case:person:30")) { id "p10-a2"; origin case_input; }
+        // Изъятие ст. 24 п. 1 (ред. 1995) предъявлено: судебный акт либо
+        // чрезвычайное/военное положение. Исчезает посылка, а не позиция.
+        assert judicial_act_or_emergency_basis(entity_ref("urn:kz:constitution:rights:case:person:30")) { id "p10-a3"; origin case_input; }
+    }
+
+    evaluate positions();
+    expect issues_within(info);
+
+    expect not position(RefrainFromForcedLabour1995, ACTIVE);
+    expect position(RefrainFromTorture1995, ACTIVE);
+}
+
+test "urn:query:kzcr-prohibition-1995-absent-in-2026-1" {
+    given {
+        context {
+            decision_time @2026-09-01T12:00:00+05:00;
+            knowledge_time @2026-09-01T12:00:00+05:00;
+            legal_time @2026-09-01;
+            timezone "Asia/Qyzylorda";
+        }
+
+        assert state_authority(entity_ref("urn:kz:constitution:rights:case:authority:31")) { id "p11-a1"; origin case_input; }
+        assert person(entity_ref("urn:kz:constitution:rights:case:person:31")) { id "p11-a2"; origin case_input; }
+        assert citizen(entity_ref("urn:kz:constitution:rights:case:person:31")) { id "p11-a3"; origin case_input; }
+        assert detention_of(entity_ref("urn:kz:constitution:rights:case:detention:31"),
+                            entity_ref("urn:kz:constitution:rights:case:person:31")) { id "p11-a4"; origin case_input; }
+        assert detention_without_court_sanction(entity_ref("urn:kz:constitution:rights:case:detention:31")) { id "p11-a5"; origin case_input; }
+        assert detention_exceeds_72_hours(entity_ref("urn:kz:constitution:rights:case:detention:31")) { id "p11-a6"; origin case_input; }
+    }
+
+    // ЗЕРКАЛО: на дату редакции 2026 слой 1995 исключён проекцией §92 целиком.
+    // Не EXPIRED — позиции НЕТ В ДОКУМЕНТЕ: исключён сам узел правила.
+    evaluate positions();
+    expect issues_within(info);
+    expect issue(EDITION_NOT_APPLICABLE);
+
+    expect not position(RefrainFromDiscrimination1995, ACTIVE);
+    expect not position(RefrainFromDeathPenalty1995, ACTIVE);
+    expect not position(RefrainFromDignityInfringement1995, ACTIVE);
+    expect not position(RefrainFromTorture1995, ACTIVE);
+    expect not position(RefrainFromPrivacyInterference1995, ACTIVE);
+    expect not position(RefrainFromCensorship1995, ACTIVE);
+    expect not position(RefrainFromBlockingReturn1995, ACTIVE);
+    expect not position(RefrainFromUnlawfulHomeEntry1995, ACTIVE);
+    expect not position(RefrainFromUncompensatedExpropriation1995, ACTIVE);
+    expect not position(RefrainFromForcedLabour1995, ACTIVE);
+    expect not position(RefrainFromDetentionBeyond72Hours1995, ACTIVE);
+    expect not position(RefrainFromTorture1995, EXPIRED);
+    expect not position(RefrainFromCensorship1995, EXPIRED);
+
+    // Запреты редакции 2026 на ту же дату применимы.
+    expect position(RefrainFromTorture, ACTIVE);
+    expect position(RefrainFromCensorship, ACTIVE);
+}

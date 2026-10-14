@@ -1,0 +1,2876 @@
+{
+  "$comment": "English display overlay for the labels (§218) of this package of the Constitution of the Republic of Kazakhstan (DECISION-0070). The file is not compiled into the CLIR and is read only by the presentation layer (verbalize --labels, the MCP resource law://<package>/verbalized/en, the workbench). The translation is a working one made by the formaliser from the Russian labels of the package, checked against the authentic Russian and Kazakh texts of the Constitution; it is not an official publication, hence the status \"translation\" for every entry. Spelling is British. A key is the local name of the declaration (the part of the node id after \"#\").",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "AcceptCredentials": [
+      {
+        "status": "translation",
+        "text": "the person holds higher education"
+      }
+    ],
+    "AddressThePeople": [
+      {
+        "status": "translation",
+        "text": "the candidature for Prime Minister was submitted after consultations with the factions of the political parties"
+      }
+    ],
+    "AdoptEmergencyMeasure": [
+      {
+        "status": "translation",
+        "text": "an early release from office, a removal from office or the death of the President has occurred"
+      }
+    ],
+    "AdoptMartialMeasure": [
+      {
+        "status": "translation",
+        "text": "the appointment has taken effect"
+      }
+    ],
+    "AdvisoryBody": [
+      {
+        "status": "translation",
+        "text": "consultative and advisory or other body formed by the President"
+      }
+    ],
+    "AdvisoryBodyFormationPower": [
+      {
+        "status": "translation",
+        "text": "the person is deemed elected President"
+      }
+    ],
+    "AdvisoryBodyKind": [
+      {
+        "status": "translation",
+        "text": "kind of body formed by the President under sub-paragraph 21"
+      }
+    ],
+    "AppointHighCommand": [
+      {
+        "status": "translation",
+        "text": "the minimum age for the President is forty years"
+      }
+    ],
+    "AppointMissionHead": [
+      {
+        "status": "translation",
+        "text": "the measure is a measure of a state of emergency"
+      }
+    ],
+    "AppointSubordinateBodyHead": [
+      {
+        "status": "translation",
+        "text": "the person is a former President of the Republic"
+      }
+    ],
+    "AppointToPresidentialOffice": [
+      {
+        "status": "translation",
+        "text": "the person is the Prime Minister"
+      }
+    ],
+    "AppointWithConsent": [
+      {
+        "status": "translation",
+        "text": "there is a serious and immediate threat to security, to the constitutional order or to public order"
+      }
+    ],
+    "Appointment": [
+      {
+        "status": "translation",
+        "text": "appointment made by the President"
+      }
+    ],
+    "AppointmentWithKurultaiConsentPower": [
+      {
+        "status": "translation",
+        "text": "there is a serious and immediate threat to security, to the constitutional order or to public order"
+      }
+    ],
+    "AsylumDecisionPower": [
+      {
+        "status": "translation",
+        "text": "the person has taken the oath to the people of Kazakhstan"
+      }
+    ],
+    "AsylumMatter": [
+      {
+        "status": "translation",
+        "text": "question of the granting of political asylum"
+      }
+    ],
+    "AwardEstablishment": [
+      {
+        "status": "translation",
+        "text": "establishment of a state decoration or an honorary title"
+      }
+    ],
+    "AwardEstablishmentPower": [
+      {
+        "status": "translation",
+        "text": "the person is acting President"
+      }
+    ],
+    "CallReferendum": [
+      {
+        "status": "translation",
+        "text": "the normal functioning of the constitutional organs has been disrupted"
+      }
+    ],
+    "Candidate": [
+      {
+        "status": "translation",
+        "text": "candidate for President"
+      }
+    ],
+    "CannotAssumeByCertifiedRefusal": [
+      {
+        "status": "translation",
+        "text": "the term of office of the President is seven years"
+      }
+    ],
+    "CannotAssumeByHealthOrPersonalReasons": [
+      {
+        "status": "translation",
+        "text": "the relative holds a political state position or heads an organisation of the quasi-state sector"
+      }
+    ],
+    "CentralElectionCommissionChair": [
+      {
+        "status": "translation",
+        "text": "the President is a deputy of a representative body"
+      }
+    ],
+    "ChargeRejectedAtStage": [
+      {
+        "status": "translation",
+        "text": "the threshold for the election of the President is more than fifty per cent of the votes"
+      }
+    ],
+    "ChargeRejectedByExpiredPeriod": [
+      {
+        "status": "translation",
+        "text": "the powers of the deputies of the Mazhilis who initiated the charge are terminated"
+      }
+    ],
+    "ChargeRejectedByLateDecision": [
+      {
+        "status": "translation",
+        "text": "the oath upon the transfer of powers was taken in time"
+      }
+    ],
+    "CitizenshipDecisionPower": [
+      {
+        "status": "translation",
+        "text": "the person has been removed from the office of President"
+      }
+    ],
+    "CitizenshipMatter": [
+      {
+        "status": "translation",
+        "text": "question of the citizenship of the Republic of Kazakhstan"
+      }
+    ],
+    "ClassRank": [
+      {
+        "status": "translation",
+        "text": "class grade"
+      }
+    ],
+    "ConferDistinction": [
+      {
+        "status": "translation",
+        "text": "the person meets the requirements for a candidate for President"
+      }
+    ],
+    "ConferredPower": [
+      {
+        "status": "translation",
+        "text": "power of the President laid down by the Constitution or by a statute"
+      }
+    ],
+    "ConferredPowerExercise": [
+      {
+        "status": "translation",
+        "text": "the person is the Chair of the Mazhilis"
+      }
+    ],
+    "ConstitutionalCourtChair": [
+      {
+        "status": "translation",
+        "text": "the President has died"
+      }
+    ],
+    "ConstitutionalPetition": [
+      {
+        "status": "translation",
+        "text": "application to the Constitutional Court"
+      }
+    ],
+    "ConstitutionalReviewPetitionPower": [
+      {
+        "status": "translation",
+        "text": "there is aggression against the Republic or an immediate external threat"
+      }
+    ],
+    "Credentials": [
+      {
+        "status": "translation",
+        "text": "letters of credence or of recall of the head of a diplomatic mission or of an international organisation"
+      }
+    ],
+    "CredentialsAcceptancePower": [
+      {
+        "status": "translation",
+        "text": "the person holds higher education"
+      }
+    ],
+    "DecideCitizenshipMatter": [
+      {
+        "status": "translation",
+        "text": "the person has been removed from the office of President"
+      }
+    ],
+    "DiplomaticRank": [
+      {
+        "status": "translation",
+        "text": "diplomatic rank"
+      }
+    ],
+    "DissolutionBarrierEmergencyOrMartialLaw": [
+      {
+        "status": "translation",
+        "text": "the number of votes of the Mazhilis on the final decision"
+      }
+    ],
+    "DissolutionBarrierLastSixMonths": [
+      {
+        "status": "translation",
+        "text": "the number of votes of the Mazhilis cast for bringing the charge"
+      }
+    ],
+    "DissolutionBarrierSuccessionPresident": [
+      {
+        "status": "translation",
+        "text": "the number of votes of the Mazhilis cast for release on grounds of health"
+      }
+    ],
+    "DissolutionBarrierWithinYearAfterPrior": [
+      {
+        "status": "translation",
+        "text": "the number of votes of the Senate on the final decision"
+      }
+    ],
+    "DissolutionFinalPeriodReached": [
+      {
+        "status": "translation",
+        "text": "the numerator of the threshold for removal from office is three-quarters"
+      }
+    ],
+    "DissolutionIntervalAfterPriorNotElapsed": [
+      {
+        "status": "translation",
+        "text": "the number of votes of the Senate cast for entrusting the investigation"
+      }
+    ],
+    "DissolveKurultai": [
+      {
+        "status": "translation",
+        "text": "the numerator of the threshold for release on grounds of health is three-quarters"
+      }
+    ],
+    "Distinction": [
+      {
+        "status": "translation",
+        "text": "decoration, title, grade, rank or qualification class conferred by the President"
+      }
+    ],
+    "DistinctionConferralPower": [
+      {
+        "status": "translation",
+        "text": "the person meets the requirements for a candidate for President"
+      }
+    ],
+    "DistinctionKind": [
+      {
+        "status": "translation",
+        "text": "kind of distinction conferred by the President"
+      }
+    ],
+    "EarlyElectionAnnouncedWithinSevenDays": [
+      {
+        "status": "translation",
+        "text": "the time limit for taking the oath upon the transfer of powers is one month"
+      }
+    ],
+    "EarlyElectionConductDue": [
+      {
+        "status": "translation",
+        "text": "the time limit for taking the final decision on removal from office is two months"
+      }
+    ],
+    "EarlyElectionConductedInPeriod": [
+      {
+        "status": "translation",
+        "text": "the required period of residence in Kazakhstan is fifteen years"
+      }
+    ],
+    "EarlyElectionConductedInTime": [
+      {
+        "status": "translation",
+        "text": "the subject is a state body or an official"
+      }
+    ],
+    "ElectedInRepeatVote": [
+      {
+        "status": "translation",
+        "text": "the statute has been returned for reconsideration and a further vote"
+      }
+    ],
+    "Election": [
+      {
+        "status": "translation",
+        "text": "election of the President"
+      }
+    ],
+    "EmergencyMeasure": [
+      {
+        "status": "translation",
+        "text": "measure of a state of emergency or of martial law"
+      }
+    ],
+    "EmergencyPower": [
+      {
+        "status": "translation",
+        "text": "an early release from office, a removal from office or the death of the President has occurred"
+      }
+    ],
+    "EstablishPresidentialBody": [
+      {
+        "status": "translation",
+        "text": "the person is deemed elected President"
+      }
+    ],
+    "EstablishStateAward": [
+      {
+        "status": "translation",
+        "text": "the person is acting President"
+      }
+    ],
+    "ExPresidentAfterHealthRelease": [
+      {
+        "status": "translation",
+        "text": "the acting President is prohibited from initiating an amendment of the Constitution"
+      }
+    ],
+    "ExPresidentAfterNewPresident": [
+      {
+        "status": "translation",
+        "text": "the acting President initiates an amendment of the Constitution"
+      }
+    ],
+    "ExPresidentAfterResignation": [
+      {
+        "status": "translation",
+        "text": "candidate for President"
+      }
+    ],
+    "ExerciseConferredPower": [
+      {
+        "status": "translation",
+        "text": "the person is the Chair of the Mazhilis"
+      }
+    ],
+    "FormPresidentialAdministration": [
+      {
+        "status": "translation",
+        "text": "the person has a fluent command of the state language"
+      }
+    ],
+    "FormStateGuardService": [
+      {
+        "status": "translation",
+        "text": "the person has previously been elected President of the Republic"
+      }
+    ],
+    "FormerPresidentImmunityForActsInOffice": [
+      {
+        "status": "translation",
+        "text": "the total number of the deputies of the Senate"
+      }
+    ],
+    "GovernmentInitiatedActCountersignature": [
+      {
+        "status": "translation",
+        "text": "the charge has been rejected"
+      }
+    ],
+    "GrantPardon": [
+      {
+        "status": "translation",
+        "text": "the person assumes the powers of the President"
+      }
+    ],
+    "GrantPoliticalAsylum": [
+      {
+        "status": "translation",
+        "text": "the person has taken the oath to the people of Kazakhstan"
+      }
+    ],
+    "HealthRemoval": [
+      {
+        "status": "translation",
+        "text": "consideration of the question of the early release of the President from office on grounds of health"
+      }
+    ],
+    "HealthRemovalThreshold": [
+      {
+        "status": "translation",
+        "text": "the powers of the President have been terminated"
+      }
+    ],
+    "HighCommandAppointmentPower": [
+      {
+        "status": "translation",
+        "text": "the minimum age for the President is forty years"
+      }
+    ],
+    "HighCommandReleasePower": [
+      {
+        "status": "translation",
+        "text": "the appointment is made with the consent of the Mazhilis"
+      }
+    ],
+    "HigherMilitaryRank": [
+      {
+        "status": "translation",
+        "text": "higher military title"
+      }
+    ],
+    "HoldPresidentLiableForTreason": [
+      {
+        "status": "translation",
+        "text": "the application has been sent to the Constitutional Court"
+      }
+    ],
+    "HonoraryTitle": [
+      {
+        "status": "translation",
+        "text": "honorary title"
+      }
+    ],
+    "HumanRightsCommissioner": [
+      {
+        "status": "translation",
+        "text": "the number of votes of the Senate cast for release on grounds of health"
+      }
+    ],
+    "Impeachment": [
+      {
+        "status": "translation",
+        "text": "proceedings for the removal of the President from office"
+      }
+    ],
+    "ImpeachmentBarredDuringDissolutionConsideration": [
+      {
+        "status": "translation",
+        "text": "proceedings for the removal of the President from office or for his release on grounds of health"
+      }
+    ],
+    "ImpeachmentFinalDecisionDue": [
+      {
+        "status": "translation",
+        "text": "an attempt has been made to elect the person President again"
+      }
+    ],
+    "ImpeachmentFinalDecisionTimely": [
+      {
+        "status": "translation",
+        "text": "a second ballot is held"
+      }
+    ],
+    "ImpeachmentFinalStage": [
+      {
+        "status": "translation",
+        "text": "the proceedings are proceedings for the removal of the President from office"
+      }
+    ],
+    "ImpeachmentInitiativeThreshold": [
+      {
+        "status": "translation",
+        "text": "the proceedings are proceedings for the release of the President on grounds of health"
+      }
+    ],
+    "ImpeachmentInvestigationStage": [
+      {
+        "status": "translation",
+        "text": "the investigation of the charge has been lawfully entrusted"
+      }
+    ],
+    "ImpeachmentQuestionDecision": [
+      {
+        "status": "translation",
+        "text": "consultations with the factions of the political parties have been held"
+      }
+    ],
+    "InternationalTreaty": [
+      {
+        "status": "translation",
+        "text": "international treaty of the Republic of Kazakhstan"
+      }
+    ],
+    "Kurultai": [
+      {
+        "status": "translation",
+        "text": "the President holds another paid position"
+      }
+    ],
+    "KurultaiDissolutionPower": [
+      {
+        "status": "translation",
+        "text": "the numerator of the threshold for release on grounds of health is three-quarters"
+      }
+    ],
+    "Law": [
+      {
+        "status": "translation",
+        "text": "statute submitted to the President"
+      }
+    ],
+    "LawCountersignatureBeforePresidentialSignature": [
+      {
+        "status": "translation",
+        "text": "application to the Constitutional Court"
+      }
+    ],
+    "MajorityReachedInElection": [
+      {
+        "status": "translation",
+        "text": "the statute has been submitted to the President for signature"
+      }
+    ],
+    "MartialPower": [
+      {
+        "status": "translation",
+        "text": "the appointment has taken effect"
+      }
+    ],
+    "MissionHead": [
+      {
+        "status": "translation",
+        "text": "head of a diplomatic mission of the Republic of Kazakhstan"
+      }
+    ],
+    "MissionHeadAppointmentPower": [
+      {
+        "status": "translation",
+        "text": "the measure is a measure of a state of emergency"
+      }
+    ],
+    "MissionHeadRecallPower": [
+      {
+        "status": "translation",
+        "text": "the measures of a state of emergency have been lawfully introduced"
+      }
+    ],
+    "NationalBankChair": [
+      {
+        "status": "translation",
+        "text": "the President is this natural person"
+      }
+    ],
+    "NationalSecurityCommitteeChair": [
+      {
+        "status": "translation",
+        "text": "the President is a member of a political party"
+      }
+    ],
+    "NoDissolutionInEmergency": [
+      {
+        "status": "translation",
+        "text": "the number of votes of the Mazhilis on the final decision"
+      }
+    ],
+    "NoDissolutionInLastSixMonths": [
+      {
+        "status": "translation",
+        "text": "the number of votes of the Mazhilis cast for bringing the charge"
+      }
+    ],
+    "NoDissolutionUnderSuccessionPresident": [
+      {
+        "status": "translation",
+        "text": "the number of votes of the Mazhilis cast for release on grounds of health"
+      }
+    ],
+    "NoDissolutionWithinYearAfterPrior": [
+      {
+        "status": "translation",
+        "text": "the number of votes of the Senate on the final decision"
+      }
+    ],
+    "NoSecondPresidentialElection": [
+      {
+        "status": "translation",
+        "text": "election of the President"
+      }
+    ],
+    "OfficeRelease": [
+      {
+        "status": "translation",
+        "text": "release from office"
+      }
+    ],
+    "OnePresidentialElectionImmunity": [
+      {
+        "status": "translation",
+        "text": "election of the President"
+      }
+    ],
+    "OrganiseSubordinateBody": [
+      {
+        "status": "translation",
+        "text": "the person is a citizen of the Republic by birth"
+      }
+    ],
+    "OtherRank": [
+      {
+        "status": "translation",
+        "text": "other title"
+      }
+    ],
+    "PardonMatter": [
+      {
+        "status": "translation",
+        "text": "petition for pardon"
+      }
+    ],
+    "PardonPower": [
+      {
+        "status": "translation",
+        "text": "the person assumes the powers of the President"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "natural person"
+      }
+    ],
+    "PetitionConstitutionalCourt": [
+      {
+        "status": "translation",
+        "text": "there is aggression against the Republic or an immediate external threat"
+      }
+    ],
+    "PowersTerminatedByDeath": [
+      {
+        "status": "translation",
+        "text": "there is a conclusion of a medical commission"
+      }
+    ],
+    "PowersTerminatedByHealthRelease": [
+      {
+        "status": "translation",
+        "text": "the denominator of the threshold for release on grounds of health is three-quarters"
+      }
+    ],
+    "PowersTerminatedByNewPresident": [
+      {
+        "status": "translation",
+        "text": "the initiative for removal from office has been brought by the required number of deputies"
+      }
+    ],
+    "PowersTerminatedByRemoval": [
+      {
+        "status": "translation",
+        "text": "the denominator of the threshold for removal from office is three-quarters"
+      }
+    ],
+    "PowersTerminatedByResignation": [
+      {
+        "status": "translation",
+        "text": "the denominator of the threshold for initiating removal from office is one third"
+      }
+    ],
+    "President": [
+      {
+        "status": "translation",
+        "text": "the President is the Supreme Commander-in-Chief of the Armed Forces"
+      }
+    ],
+    "PresidentEnsuresCoordinatedStatePower": [
+      {
+        "status": "translation",
+        "text": "the former President is provided with protection at the expense of the state"
+      }
+    ],
+    "PresidentGuaranteesUnityConstitutionAndRights": [
+      {
+        "status": "translation",
+        "text": "the age of the person in completed years"
+      }
+    ],
+    "PresidentIsCommanderInChief": [
+      {
+        "status": "translation",
+        "text": "the appointment is made with the consent of the Senate"
+      }
+    ],
+    "PresidentIsHeadOfState": [
+      {
+        "status": "translation",
+        "text": "martial law has been lawfully introduced"
+      }
+    ],
+    "PresidentReleasedFromOfficeForHealth": [
+      {
+        "status": "translation",
+        "text": "the powers of the President pass to this person"
+      }
+    ],
+    "PresidentialAct": [
+      {
+        "status": "translation",
+        "text": "the number of votes cast for the candidate"
+      }
+    ],
+    "PresidentialActBindingNationwide": [
+      {
+        "status": "translation",
+        "text": "no candidate obtained more than half of the votes"
+      }
+    ],
+    "PresidentialAddress": [
+      {
+        "status": "translation",
+        "text": "message of the President to the people of Kazakhstan"
+      }
+    ],
+    "PresidentialAddressPower": [
+      {
+        "status": "translation",
+        "text": "the candidature for Prime Minister was submitted after consultations with the factions of the political parties"
+      }
+    ],
+    "PresidentialAdministrationFormationPower": [
+      {
+        "status": "translation",
+        "text": "the person has a fluent command of the state language"
+      }
+    ],
+    "PresidentialCandidateEligibility": [
+      {
+        "status": "translation",
+        "text": "the election of the President coincides in time with the elections of a new composition of Parliament"
+      }
+    ],
+    "PresidentialElectionMajority": [
+      {
+        "status": "translation",
+        "text": "the statute was signed within the one-month time limit"
+      }
+    ],
+    "PresidentialImmunityForActsInOffice": [
+      {
+        "status": "translation",
+        "text": "the total number of the deputies of the Mazhilis"
+      }
+    ],
+    "PresidentialOffice": [
+      {
+        "status": "translation",
+        "text": "position to which the President makes an appointment independently"
+      }
+    ],
+    "PresidentialOfficeAppointmentPower": [
+      {
+        "status": "translation",
+        "text": "the person is the Prime Minister"
+      }
+    ],
+    "PresidentialOfficeIncompatibility/alt/1": [
+      {
+        "status": "translation",
+        "text": "the candidate obtained the greater number of votes in the second ballot"
+      }
+    ],
+    "PresidentialOfficeIncompatibility/alt/2": [
+      {
+        "status": "translation",
+        "text": "the candidate obtained the greater number of votes in the second ballot"
+      }
+    ],
+    "PresidentialOfficeIncompatibility/alt/3": [
+      {
+        "status": "translation",
+        "text": "the candidate obtained the greater number of votes in the second ballot"
+      }
+    ],
+    "PresidentialOfficeIncompatibility/alt/4": [
+      {
+        "status": "translation",
+        "text": "the candidate obtained the greater number of votes in the second ballot"
+      }
+    ],
+    "PresidentialOfficeReleasePower": [
+      {
+        "status": "translation",
+        "text": "the person is a close relative of the President"
+      }
+    ],
+    "PresidentialOfficialImmunityFormer": [
+      {
+        "status": "translation",
+        "text": "the total number of the deputies of the Senate"
+      }
+    ],
+    "PresidentialOfficialImmunityInOffice": [
+      {
+        "status": "translation",
+        "text": "the total number of the deputies of the Mazhilis"
+      }
+    ],
+    "PresidentialRelativePositionProhibited": [
+      {
+        "status": "translation",
+        "text": "the candidate is this person"
+      }
+    ],
+    "PresidentialReturnPower": [
+      {
+        "status": "translation",
+        "text": "appointment made by the President"
+      }
+    ],
+    "PresidentialSignatureDue": [
+      {
+        "status": "translation",
+        "text": "the person is the Chair of the Senate"
+      }
+    ],
+    "PresidentialSignaturePower": [
+      {
+        "status": "translation",
+        "text": "the inviolability of the President has been infringed"
+      }
+    ],
+    "PresidentialSignatureTimely": [
+      {
+        "status": "translation",
+        "text": "the person is the President of the Republic"
+      }
+    ],
+    "PresidentialTermExpiry": [
+      {
+        "status": "translation",
+        "text": "the question of the removal of the President from office may not be raised"
+      }
+    ],
+    "PresidentialVacancy": [
+      {
+        "status": "translation",
+        "text": "early vacancy of the office of President"
+      }
+    ],
+    "PriorOfficeRelinquished": [
+      {
+        "status": "translation",
+        "text": "the decision to bring the charge was taken by a majority of the total number of the deputies of the Mazhilis"
+      }
+    ],
+    "ProsecutorGeneral": [
+      {
+        "status": "translation",
+        "text": "the President introduces measures of a state of emergency"
+      }
+    ],
+    "ProvidePresidentialSupportAndProtection": [
+      {
+        "status": "translation",
+        "text": "the application is directed at protecting human rights and freedoms or the security of the state"
+      }
+    ],
+    "QualificationClass": [
+      {
+        "status": "translation",
+        "text": "qualification class"
+      }
+    ],
+    "RatificationInstrument": [
+      {
+        "status": "translation",
+        "text": "instrument of ratification"
+      }
+    ],
+    "RatificationInstrumentPower": [
+      {
+        "status": "translation",
+        "text": "the person has taken office as President"
+      }
+    ],
+    "RecallMissionHead": [
+      {
+        "status": "translation",
+        "text": "the measures of a state of emergency have been lawfully introduced"
+      }
+    ],
+    "ReferendumPower": [
+      {
+        "status": "translation",
+        "text": "the normal functioning of the constitutional organs has been disrupted"
+      }
+    ],
+    "RefusalCertifiedByConstitutionalCourt": [
+      {
+        "status": "translation",
+        "text": "the republican referendum has been called"
+      }
+    ],
+    "RegularElectionCoincidesWithKurultaiElection": [
+      {
+        "status": "translation",
+        "text": "state body or official"
+      }
+    ],
+    "RegularElectionOnKurultaiElectionDay": [
+      {
+        "status": "translation",
+        "text": "the ballot is a second ballot"
+      }
+    ],
+    "RegularElectionScheduledInTime": [
+      {
+        "status": "translation",
+        "text": "the office of President is incompatible with the position held or the activity carried on"
+      }
+    ],
+    "RegularElectionTooLate": [
+      {
+        "status": "translation",
+        "text": "the former President retains the title of President of the Republic"
+      }
+    ],
+    "RegularOathDue": [
+      {
+        "status": "translation",
+        "text": "statute submitted to the President"
+      }
+    ],
+    "RegularOathTimely": [
+      {
+        "status": "translation",
+        "text": "a proposal to hold a republican referendum has been made"
+      }
+    ],
+    "RejectedChargeTerminatesInitiators": [
+      {
+        "status": "translation",
+        "text": "the oath was taken within one month of the day the powers were assumed"
+      }
+    ],
+    "ReleaseFromPresidentialOffice": [
+      {
+        "status": "translation",
+        "text": "the person is a close relative of the President"
+      }
+    ],
+    "ReleaseHighCommand": [
+      {
+        "status": "translation",
+        "text": "the appointment is made with the consent of the Mazhilis"
+      }
+    ],
+    "ReleaseSubordinateBodyHead": [
+      {
+        "status": "translation",
+        "text": "measure of a state of emergency or of martial law"
+      }
+    ],
+    "RemovedFromOfficeByImpeachment": [
+      {
+        "status": "translation",
+        "text": "consultations with the Prime Minister and the Chairs of the Chambers of Parliament have been held"
+      }
+    ],
+    "RepeatVoteRequired": [
+      {
+        "status": "translation",
+        "text": "the statute has been signed by the President"
+      }
+    ],
+    "ReturnLawWithObjections": [
+      {
+        "status": "translation",
+        "text": "appointment made by the President"
+      }
+    ],
+    "SignInternationalTreaty": [
+      {
+        "status": "translation",
+        "text": "constitutional review has been lawfully initiated"
+      }
+    ],
+    "SignLaw": [
+      {
+        "status": "translation",
+        "text": "the inviolability of the President has been infringed"
+      }
+    ],
+    "SignRatificationInstrument": [
+      {
+        "status": "translation",
+        "text": "the person has taken office as President"
+      }
+    ],
+    "StateAuthority": [
+      {
+        "status": "translation",
+        "text": "state body or official"
+      }
+    ],
+    "StateAward": [
+      {
+        "status": "translation",
+        "text": "state decoration"
+      }
+    ],
+    "StateBodyAct": [
+      {
+        "status": "translation",
+        "text": "act forming, abolishing or reorganising a state body"
+      }
+    ],
+    "StateBodyAction": [
+      {
+        "status": "translation",
+        "text": "action of the President in respect of a state body subordinate to him"
+      }
+    ],
+    "StateGuardServiceFormationPower": [
+      {
+        "status": "translation",
+        "text": "the person has previously been elected President of the Republic"
+      }
+    ],
+    "StateGuardServiceHead": [
+      {
+        "status": "translation",
+        "text": "the President signs the statute submitted to him"
+      }
+    ],
+    "StateSupportForPresidentAndFamily": [
+      {
+        "status": "translation",
+        "text": "the application is directed at protecting human rights and freedoms or the security of the state"
+      }
+    ],
+    "SubordinateBodyHeadAppointmentPower": [
+      {
+        "status": "translation",
+        "text": "the person is a former President of the Republic"
+      }
+    ],
+    "SubordinateBodyHeadReleasePower": [
+      {
+        "status": "translation",
+        "text": "measure of a state of emergency or of martial law"
+      }
+    ],
+    "SubordinateBodyOrganisationPower": [
+      {
+        "status": "translation",
+        "text": "the person is a citizen of the Republic by birth"
+      }
+    ],
+    "SuccessionOathDeadline": [
+      {
+        "status": "translation",
+        "text": "the holding of such a position by a relative of the President is not permitted"
+      }
+    ],
+    "SuccessionRefusal": [
+      {
+        "status": "translation",
+        "text": "refusal to assume the powers of the President"
+      }
+    ],
+    "SuccessionToKurultaiChair": [
+      {
+        "status": "translation",
+        "text": "the event is an election of the President"
+      }
+    ],
+    "SuccessionToPrimeMinister": [
+      {
+        "status": "translation",
+        "text": "the date of the regular election of the President is admissible"
+      }
+    ],
+    "SuccessionToVicePresident": [
+      {
+        "status": "translation",
+        "text": "case of the transfer of the powers of the President"
+      }
+    ],
+    "SuccessorCannotDissolveKurultai": [
+      {
+        "status": "translation",
+        "text": "the numerator of the threshold for initiating removal from office is one third"
+      }
+    ],
+    "SuccessorCannotInitiateAmendment": [
+      {
+        "status": "translation",
+        "text": "natural person"
+      }
+    ],
+    "SupremeAuditChamberChair": [
+      {
+        "status": "translation",
+        "text": "the President decides questions of citizenship and of the granting of political asylum"
+      }
+    ],
+    "SupremeCourtChair": [
+      {
+        "status": "translation",
+        "text": "the President takes a decision to hold a referendum"
+      }
+    ],
+    "SupremeJudicialCouncilChair": [
+      {
+        "status": "translation",
+        "text": "the President makes an appointment"
+      }
+    ],
+    "TemporaryLegislativeDecree": [
+      {
+        "status": "translation",
+        "text": "the new President has taken office"
+      }
+    ],
+    "TreasonLiabilityPower": [
+      {
+        "status": "translation",
+        "text": "the application has been sent to the Constitutional Court"
+      }
+    ],
+    "TreatySignaturePower": [
+      {
+        "status": "translation",
+        "text": "constitutional review has been lawfully initiated"
+      }
+    ],
+    "VacancyByDeath": [
+      {
+        "status": "translation",
+        "text": "the time limit for signing a statute submitted is one month"
+      }
+    ],
+    "VacancyByHealthIncapacity": [
+      {
+        "status": "translation",
+        "text": "the question of the dissolution of Parliament or of the Mazhilis is under consideration"
+      }
+    ],
+    "VacancyByRemovalFromOffice": [
+      {
+        "status": "translation",
+        "text": "the person countersigning the act bears legal responsibility for its lawfulness"
+      }
+    ],
+    "VacancyByVoluntaryResignation": [
+      {
+        "status": "translation",
+        "text": "republican referendum"
+      }
+    ],
+    "VicePresident": [
+      {
+        "status": "translation",
+        "text": "the Mazhilis has consented to the appointment"
+      }
+    ],
+    "VicePresidentAppointmentWithKurultaiConsent": [
+      {
+        "status": "translation",
+        "text": "the final decision was taken within the two-month time limit"
+      }
+    ],
+    "VicePresidentRepresentationByInstruction": [
+      {
+        "status": "translation",
+        "text": "the repeated election of one and the same person as President is not permitted"
+      }
+    ],
+    "VicePresidentialOfficeIncompatibility/alt/1": [
+      {
+        "status": "translation",
+        "text": "the regular elections have been called for the first Sunday of December"
+      }
+    ],
+    "VicePresidentialOfficeIncompatibility/alt/2": [
+      {
+        "status": "translation",
+        "text": "the regular elections have been called for the first Sunday of December"
+      }
+    ],
+    "VicePresidentialOfficeIncompatibility/alt/3": [
+      {
+        "status": "translation",
+        "text": "the regular elections have been called for the first Sunday of December"
+      }
+    ],
+    "VicePresidentialOfficeIncompatibility/alt/4": [
+      {
+        "status": "translation",
+        "text": "the regular elections have been called for the first Sunday of December"
+      }
+    ],
+    "act_countersigned_by_prime_minister": [
+      {
+        "status": "translation",
+        "text": "the act is countersigned by the Prime Minister"
+      }
+    ],
+    "address_attempt": [
+      {
+        "status": "translation",
+        "text": "Article 43, paragraph 4 (1995 version). Close relatives of the President may not hold positions of political civil servants or of heads of the quasi-state sector"
+      }
+    ],
+    "advisory_body": [
+      {
+        "status": "translation",
+        "text": "the body formed by the President under sub-paragraph 21, and its kind"
+      }
+    ],
+    "age_years": [
+      {
+        "status": "translation",
+        "text": "the age of the person in completed years"
+      }
+    ],
+    "aggression_or_immediate_external_threat": [
+      {
+        "status": "translation",
+        "text": "there is aggression against the Republic or an immediate external threat"
+      }
+    ],
+    "appointment_effective": [
+      {
+        "status": "translation",
+        "text": "the appointment has taken effect"
+      }
+    ],
+    "appointment_requires_kurultai_consent": [
+      {
+        "status": "translation",
+        "text": "the appointment is made with the consent of the Kurultai"
+      }
+    ],
+    "asylum_decision_attempt": [
+      {
+        "status": "translation",
+        "text": "Article 47, paragraph 2 (1995 version). The decision to bring the charge is taken by a majority of the total number of the deputies of the Mazhilis"
+      }
+    ],
+    "asylum_matter": [
+      {
+        "status": "translation",
+        "text": "the question of the granting of political asylum as the subject matter of the case"
+      }
+    ],
+    "asylum_matter_decided": [
+      {
+        "status": "translation",
+        "text": "the question of the granting of political asylum has been decided"
+      }
+    ],
+    "award_established": [
+      {
+        "status": "translation",
+        "text": "the state decoration or honorary title has been established"
+      }
+    ],
+    "award_establishment": [
+      {
+        "status": "translation",
+        "text": "the establishment of a state decoration or an honorary title as the subject matter of the case"
+      }
+    ],
+    "award_establishment_attempt": [
+      {
+        "status": "translation",
+        "text": "Article 48, paragraph 1 (1995 version). The powers of the President pass for the remainder of the term to the Chair of the Senate of Parliament"
+      }
+    ],
+    "body_formation_attempt": [
+      {
+        "status": "translation",
+        "text": "Article 48, paragraph 1 (1995 version). Where the Chair of the Mazhilis is unable to act, the powers pass to the Prime Minister of the Republic"
+      }
+    ],
+    "body_head_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "Article 42, paragraph 2 (1995 version). The person assuming the powers of the President takes the oath within one month"
+      }
+    ],
+    "body_head_appointment_effective": [
+      {
+        "status": "translation",
+        "text": "the appointment of the head of a body subordinate to the President has taken effect"
+      }
+    ],
+    "body_head_release_attempt": [
+      {
+        "status": "translation",
+        "text": "Article 44, sub-paragraph 10-1 (1995 version). The President applies to the Constitutional Court to review an act that has come into force for conformity with the Constitution"
+      }
+    ],
+    "body_head_release_effective": [
+      {
+        "status": "translation",
+        "text": "the release of the head of a body subordinate to the President has taken effect"
+      }
+    ],
+    "body_subordinate_to_president": [
+      {
+        "status": "translation",
+        "text": "the state body is directly subordinate and accountable to the President"
+      }
+    ],
+    "candidate_person": [
+      {
+        "status": "translation",
+        "text": "the candidate is this person"
+      }
+    ],
+    "cannot_assume_presidential_powers": [
+      {
+        "status": "translation",
+        "text": "the person cannot assume the powers of the President"
+      }
+    ],
+    "charge_presented_on": [
+      {
+        "status": "translation",
+        "text": "the day on which the charge of high treason was brought against the President"
+      }
+    ],
+    "citizen_by_birth": [
+      {
+        "status": "translation",
+        "text": "the person is a citizen of the Republic by birth"
+      }
+    ],
+    "citizenship_decision_attempt": [
+      {
+        "status": "translation",
+        "text": "Article 47, paragraph 2 (1995 version). The investigation of the charge is organised by the Senate, and its results are transmitted by a majority of the votes of the total number of its deputies"
+      }
+    ],
+    "citizenship_matter": [
+      {
+        "status": "translation",
+        "text": "the question of citizenship as the subject matter of the case"
+      }
+    ],
+    "citizenship_matter_decided": [
+      {
+        "status": "translation",
+        "text": "the question of citizenship has been decided"
+      }
+    ],
+    "close_relative_of_president": [
+      {
+        "status": "translation",
+        "text": "the person is a close relative of the President"
+      }
+    ],
+    "coincides_with_kurultai_election": [
+      {
+        "status": "translation",
+        "text": "the regular election of the President coincides in time with the elections of a new composition of the Kurultai"
+      }
+    ],
+    "commission_conclusion_issued": [
+      {
+        "status": "translation",
+        "text": "the commission has given its conclusion"
+      }
+    ],
+    "conferrable_distinction_kind": [
+      {
+        "status": "translation",
+        "text": "the kind of distinction is on the list in Article 46, sub-paragraph 14"
+      }
+    ],
+    "conferred_power_attempt": [
+      {
+        "status": "translation",
+        "text": "Article 44, sub-paragraph 17 (1995 version). In the event of aggression or an immediate external threat, the President introduces martial law and informs Parliament without delay"
+      }
+    ],
+    "conferred_power_exercised": [
+      {
+        "status": "translation",
+        "text": "the power laid down by the Constitution or by a statute has been exercised"
+      }
+    ],
+    "constitutional_court_certified_refusal": [
+      {
+        "status": "translation",
+        "text": "the President has been released from office early on grounds of health"
+      }
+    ],
+    "constitutional_court_procedure_confirmed": [
+      {
+        "status": "translation",
+        "text": "the President has been released from office early or removed from office"
+      }
+    ],
+    "constitutional_court_procedure_confirmed_for_release": [
+      {
+        "status": "translation",
+        "text": "the President returns the statute for reconsideration"
+      }
+    ],
+    "constitutional_petition": [
+      {
+        "status": "translation",
+        "text": "the application of the President to the Constitutional Court as the subject matter of the case"
+      }
+    ],
+    "constitutional_review_petition_attempt": [
+      {
+        "status": "translation",
+        "text": "Article 42, paragraph 5 (1995 version). One and the same person may not be elected President more than once"
+      }
+    ],
+    "constitutional_review_requested": [
+      {
+        "status": "translation",
+        "text": "constitutional review has been initiated by the President"
+      }
+    ],
+    "credentials": [
+      {
+        "status": "translation",
+        "text": "the letters of credence or of recall as the subject matter of the case"
+      }
+    ],
+    "credentials_acceptance_attempt": [
+      {
+        "status": "translation",
+        "text": "Article 46, paragraph 3 (1995 version). The provisions on inviolability extend to the ex-Presidents of the Republic"
+      }
+    ],
+    "credentials_accepted": [
+      {
+        "status": "translation",
+        "text": "the letters of credence or of recall have been accepted"
+      }
+    ],
+    "deputy_powers_terminated": [
+      {
+        "status": "translation",
+        "text": "the powers of the deputy of the Kurultai have been terminated early"
+      }
+    ],
+    "diplomatic_mission_head": [
+      {
+        "status": "translation",
+        "text": "the head of the diplomatic mission as the subject matter of the case"
+      }
+    ],
+    "dissolution_attempt": [
+      {
+        "status": "translation",
+        "text": "Article 47, paragraph 2 (1995 version). The final decision is taken by a majority of not less than three-quarters of the votes of the deputies of each of the Chambers, given the conclusions of the Supreme Court and of the Constitutional Court"
+      }
+    ],
+    "dissolution_considered_on": [
+      {
+        "status": "translation",
+        "text": "the day on which the question of the dissolution of the Kurultai is raised"
+      }
+    ],
+    "dissolution_final_period": [
+      {
+        "status": "translation",
+        "text": "the protected period before the end of the powers of the President is six months"
+      }
+    ],
+    "dissolution_interval_after_prior": [
+      {
+        "status": "translation",
+        "text": "the period during which the Kurultai is not dissolved after a previous dissolution is one year"
+      }
+    ],
+    "dissolution_question_under_consideration": [
+      {
+        "status": "translation",
+        "text": "Article 47, paragraph 2 (1995 version). The rejection of the charge at any stage entails the early termination of the powers of the deputies of the Mazhilis who initiated it"
+      }
+    ],
+    "distinction_attempt": [
+      {
+        "status": "translation",
+        "text": "Article 41, paragraph 3 (1995 version). Regular elections are held on the first Sunday of December and may not coincide in time with the elections of a new composition of Parliament"
+      }
+    ],
+    "distinction_conferred": [
+      {
+        "status": "translation",
+        "text": "the distinction has been conferred"
+      }
+    ],
+    "distinction_kind": [
+      {
+        "status": "translation",
+        "text": "the kind of distinction conferred"
+      }
+    ],
+    "early_election_announced_timely": [
+      {
+        "status": "translation",
+        "text": "the early election was announced within the constitutional time limit"
+      }
+    ],
+    "early_election_announcement_day": [
+      {
+        "status": "translation",
+        "text": "the day on which the early election of the President was announced"
+      }
+    ],
+    "early_election_announcement_days": [
+      {
+        "status": "translation",
+        "text": "the time limit for announcing an early election is seven days"
+      }
+    ],
+    "early_election_conduct_due_on": [
+      {
+        "status": "translation",
+        "text": "the day on which the two-month period for holding the election ends"
+      }
+    ],
+    "early_election_conduct_period": [
+      {
+        "status": "translation",
+        "text": "the time limit for holding an early election of the President is two months"
+      }
+    ],
+    "early_election_conducted_in_period": [
+      {
+        "status": "translation",
+        "text": "the early election was held within the two-month period"
+      }
+    ],
+    "early_election_conducted_timely": [
+      {
+        "status": "translation",
+        "text": "the early election was held within the constitutional time limit"
+      }
+    ],
+    "early_election_day": [
+      {
+        "status": "translation",
+        "text": "the day on which the early election of the President was held"
+      }
+    ],
+    "elected_president": [
+      {
+        "status": "translation",
+        "text": "the person is deemed elected President"
+      }
+    ],
+    "election_results_published_on": [
+      {
+        "status": "translation",
+        "text": "the day on which the results of the election of the President were published"
+      }
+    ],
+    "eligible_presidential_candidate": [
+      {
+        "status": "translation",
+        "text": "the person meets the requirements for a candidate for President"
+      }
+    ],
+    "emergency_consultations_completed": [
+      {
+        "status": "translation",
+        "text": "the consultations required before the introduction of a state of emergency have been held"
+      }
+    ],
+    "emergency_measure": [
+      {
+        "status": "translation",
+        "text": "measure taken by the President in conditions of a state of emergency or of martial law"
+      }
+    ],
+    "emergency_measure_attempt": [
+      {
+        "status": "translation",
+        "text": "the President is the symbol and guarantor of the unity of the people and of state power"
+      }
+    ],
+    "emergency_measure_in_force": [
+      {
+        "status": "translation",
+        "text": "the measures of a state of emergency have been lawfully introduced"
+      }
+    ],
+    "emergency_or_martial_law_active": [
+      {
+        "status": "translation",
+        "text": "a state of emergency or martial law is in force"
+      }
+    ],
+    "ex_president": [
+      {
+        "status": "translation",
+        "text": "the person holds the title of ex-President of the Republic of Kazakhstan"
+      }
+    ],
+    "final_decision_day": [
+      {
+        "status": "translation",
+        "text": "the day on which the Kurultai took the final decision on the charge"
+      }
+    ],
+    "final_decision_not_taken": [
+      {
+        "status": "translation",
+        "text": "the final decision on the charge has not been taken"
+      }
+    ],
+    "final_impeachment_votes": [
+      {
+        "status": "translation",
+        "text": "the number of votes on the final decision on removal from office"
+      }
+    ],
+    "fluent_in_state_language": [
+      {
+        "status": "translation",
+        "text": "the person has a fluent command of the state language"
+      }
+    ],
+    "former_president": [
+      {
+        "status": "translation",
+        "text": "the person is a former President of the Republic"
+      }
+    ],
+    "government_initiated_act_ready": [
+      {
+        "status": "translation",
+        "text": "the act issued on the initiative of the Government has been drawn up properly"
+      }
+    ],
+    "government_initiated_presidential_act": [
+      {
+        "status": "translation",
+        "text": "the act was issued on the initiative of the Government"
+      }
+    ],
+    "health_removal_case": [
+      {
+        "status": "translation",
+        "text": "the question of the early release of the President on grounds of health is under consideration"
+      }
+    ],
+    "health_removal_denominator": [
+      {
+        "status": "translation",
+        "text": "the denominator of the share of votes required for release on grounds of health"
+      }
+    ],
+    "health_removal_numerator": [
+      {
+        "status": "translation",
+        "text": "the numerator of the share of votes required for release on grounds of health"
+      }
+    ],
+    "health_removal_target": [
+      {
+        "status": "translation",
+        "text": "the question of early release on grounds of health concerns this President"
+      }
+    ],
+    "health_removal_votes": [
+      {
+        "status": "translation",
+        "text": "the number of votes of the deputies of the Kurultai for early release on grounds of health"
+      }
+    ],
+    "high_command_appointment": [
+      {
+        "status": "translation",
+        "text": "the appointment concerns the high command of the Armed Forces"
+      }
+    ],
+    "high_command_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "Article 41, paragraph 5 (1995 version). The candidate obtaining more than fifty per cent of the votes of those taking part in the voting is deemed elected"
+      }
+    ],
+    "high_command_appointment_effective": [
+      {
+        "status": "translation",
+        "text": "the appointment to a position of the high command has taken effect"
+      }
+    ],
+    "high_command_release": [
+      {
+        "status": "translation",
+        "text": "the release from office concerns the high command of the Armed Forces"
+      }
+    ],
+    "high_command_release_attempt": [
+      {
+        "status": "translation",
+        "text": "Article 43, paragraphs 1 and 3 (1995 version). The President may not be a deputy, hold other paid positions, engage in entrepreneurial activity or be a member of a political party"
+      }
+    ],
+    "high_command_release_effective": [
+      {
+        "status": "translation",
+        "text": "the release of the high command from office has taken effect"
+      }
+    ],
+    "higher_education": [
+      {
+        "status": "translation",
+        "text": "the person holds higher education"
+      }
+    ],
+    "immediate_constitutional_threat": [
+      {
+        "status": "translation",
+        "text": "there is an immediate threat to the constitutional order, to law and order or to security"
+      }
+    ],
+    "impeachment_case": [
+      {
+        "status": "translation",
+        "text": "the proceedings are proceedings for the removal of the President from office"
+      }
+    ],
+    "impeachment_charge_rejected": [
+      {
+        "status": "translation",
+        "text": "the charge of high treason against the President has been rejected"
+      }
+    ],
+    "impeachment_final_decision_due_on": [
+      {
+        "status": "translation",
+        "text": "the day on which the two-month period for the final decision ends"
+      }
+    ],
+    "impeachment_final_decision_period": [
+      {
+        "status": "translation",
+        "text": "the time limit for taking the final decision on the charge is two months"
+      }
+    ],
+    "impeachment_final_decision_timely": [
+      {
+        "status": "translation",
+        "text": "the final decision was taken within the two-month period"
+      }
+    ],
+    "impeachment_final_denominator": [
+      {
+        "status": "translation",
+        "text": "the denominator of the threshold for removal from office is three-quarters"
+      }
+    ],
+    "impeachment_final_numerator": [
+      {
+        "status": "translation",
+        "text": "the numerator of the threshold for removal from office is three-quarters"
+      }
+    ],
+    "impeachment_initiating_deputy": [
+      {
+        "status": "translation",
+        "text": "the deputy of the Kurultai initiated the consideration of the question of the charge"
+      }
+    ],
+    "impeachment_initiating_votes": [
+      {
+        "status": "translation",
+        "text": "the number of deputies of the Kurultai who initiated the removal from office"
+      }
+    ],
+    "impeachment_initiative_denominator": [
+      {
+        "status": "translation",
+        "text": "the denominator of the threshold for initiating removal from office is one third"
+      }
+    ],
+    "impeachment_initiative_numerator": [
+      {
+        "status": "translation",
+        "text": "the numerator of the threshold for initiating removal from office is one third"
+      }
+    ],
+    "impeachment_initiative_valid": [
+      {
+        "status": "translation",
+        "text": "the initiative for removal from office has been brought by the required number of deputies"
+      }
+    ],
+    "impeachment_investigation_denominator": [
+      {
+        "status": "translation",
+        "text": "the denominator of the threshold for the decision on the investigation is one half"
+      }
+    ],
+    "impeachment_investigation_numerator": [
+      {
+        "status": "translation",
+        "text": "the numerator of the threshold for the decision on the investigation is one half"
+      }
+    ],
+    "impeachment_investigation_valid": [
+      {
+        "status": "translation",
+        "text": "the investigation of the charge has been lawfully entrusted"
+      }
+    ],
+    "impeachment_may_not_be_initiated": [
+      {
+        "status": "translation",
+        "text": "the question of the removal of the President may not be raised"
+      }
+    ],
+    "impeachment_question_approved": [
+      {
+        "status": "translation",
+        "text": "the President engages in entrepreneurial activity"
+      }
+    ],
+    "impeachment_question_denominator": [
+      {
+        "status": "translation",
+        "text": "the denominator of the share of votes required for the decision on the question of the charge"
+      }
+    ],
+    "impeachment_question_numerator": [
+      {
+        "status": "translation",
+        "text": "the numerator of the share of votes required for the decision on the question of the charge"
+      }
+    ],
+    "impeachment_question_votes": [
+      {
+        "status": "translation",
+        "text": "the number of votes of the deputies of the Kurultai on the question of bringing the charge and of its investigation"
+      }
+    ],
+    "impeachment_rejected_at_stage": [
+      {
+        "status": "translation",
+        "text": "the charge has been rejected by the Kurultai at one of the stages"
+      }
+    ],
+    "impeachment_reviewed_on": [
+      {
+        "status": "translation",
+        "text": "the day as at which the state of the case on the charge is checked"
+      }
+    ],
+    "impeachment_target": [
+      {
+        "status": "translation",
+        "text": "the charge of high treason has been brought against this President"
+      }
+    ],
+    "in_final_period_of_presidential_term": [
+      {
+        "status": "translation",
+        "text": "the question of dissolution has been raised in the last six months of the powers of the President"
+      }
+    ],
+    "international_treaty": [
+      {
+        "status": "translation",
+        "text": "the international treaty as the subject matter of the case"
+      }
+    ],
+    "investigation_approved_votes": [
+      {
+        "status": "translation",
+        "text": "the number of votes cast for entrusting the investigation of the charge"
+      }
+    ],
+    "kurultai": [
+      {
+        "status": "translation",
+        "text": "the body is the Kurultai"
+      }
+    ],
+    "kurultai_dissolved": [
+      {
+        "status": "translation",
+        "text": "the President has been removed from office"
+      }
+    ],
+    "kurultai_election_day": [
+      {
+        "status": "translation",
+        "text": "the day on which the elections of a new composition of the Kurultai are held"
+      }
+    ],
+    "kurultai_immediately_informed": [
+      {
+        "status": "translation",
+        "text": "the President forms the Security Council and the Assembly of the People of Kazakhstan"
+      }
+    ],
+    "kurultai_majority_consent": [
+      {
+        "status": "translation",
+        "text": "the President forms the State Guard Service"
+      }
+    ],
+    "kurultai_majority_consent_to_vice_president": [
+      {
+        "status": "translation",
+        "text": "the President ensures the concerted functioning of the branches of state power"
+      }
+    ],
+    "kurultai_seat_count": [
+      {
+        "status": "translation",
+        "text": "the total number of the deputies of the Kurultai is one hundred and forty-five"
+      }
+    ],
+    "law_countersigned_by_kurultai_chair": [
+      {
+        "status": "translation",
+        "text": "the statute is countersigned by the Chair of the Kurultai"
+      }
+    ],
+    "law_countersigned_by_prime_minister": [
+      {
+        "status": "translation",
+        "text": "the statute is countersigned by the Prime Minister"
+      }
+    ],
+    "law_presented": [
+      {
+        "status": "translation",
+        "text": "the statute has been submitted to the President for signature"
+      }
+    ],
+    "law_presented_on": [
+      {
+        "status": "translation",
+        "text": "the day on which the statute was submitted to the President by the Kurultai"
+      }
+    ],
+    "law_ready_for_presidential_signature": [
+      {
+        "status": "translation",
+        "text": "the statute is ready for signature by the President"
+      }
+    ],
+    "law_returned_with_objections": [
+      {
+        "status": "translation",
+        "text": "the statute has been returned to the Kurultai with objections"
+      }
+    ],
+    "law_signed": [
+      {
+        "status": "translation",
+        "text": "the statute has been signed by the President"
+      }
+    ],
+    "majority_reached_in_election": [
+      {
+        "status": "translation",
+        "text": "one of the candidates obtained more than fifty per cent of the votes at the election"
+      }
+    ],
+    "martial_measure_attempt": [
+      {
+        "status": "translation",
+        "text": "the President is the head of state and the highest official of the Republic"
+      }
+    ],
+    "martial_measure_in_force": [
+      {
+        "status": "translation",
+        "text": "martial law has been lawfully introduced"
+      }
+    ],
+    "medical_commission_formed": [
+      {
+        "status": "translation",
+        "text": "the President applies to the Constitutional Court"
+      }
+    ],
+    "mission_head_appointed": [
+      {
+        "status": "translation",
+        "text": "the head of the diplomatic mission has been appointed"
+      }
+    ],
+    "mission_head_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "Article 41, paragraph 5 (1995 version). If no candidate has obtained the required number of votes, a second ballot is held"
+      }
+    ],
+    "mission_head_recall_attempt": [
+      {
+        "status": "translation",
+        "text": "Article 44, sub-paragraph 3 (1995 version). With the consent of the Mazhilis, the President appoints the Prime Minister"
+      }
+    ],
+    "mission_head_recalled": [
+      {
+        "status": "translation",
+        "text": "the head of the diplomatic mission has been recalled"
+      }
+    ],
+    "new_president_assumed_office": [
+      {
+        "status": "translation",
+        "text": "the newly elected President has taken office"
+      }
+    ],
+    "no_candidate_reached_majority": [
+      {
+        "status": "translation",
+        "text": "no candidate obtained more than fifty per cent of the votes"
+      }
+    ],
+    "office_appointment": [
+      {
+        "status": "translation",
+        "text": "the appointment is made to a position named in the article"
+      }
+    ],
+    "office_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "Article 42, paragraph 1 (1995 version). The President takes office from the moment he takes the oath to the people"
+      }
+    ],
+    "office_appointment_effective": [
+      {
+        "status": "translation",
+        "text": "the appointment to the position has taken effect"
+      }
+    ],
+    "office_release": [
+      {
+        "status": "translation",
+        "text": "the release is from a position named in the article"
+      }
+    ],
+    "office_release_attempt": [
+      {
+        "status": "translation",
+        "text": "Article 44, sub-paragraph 10 (1995 version). The President takes a decision to hold a republican referendum"
+      }
+    ],
+    "office_release_effective": [
+      {
+        "status": "translation",
+        "text": "the release from office has taken effect"
+      }
+    ],
+    "pardon_attempt": [
+      {
+        "status": "translation",
+        "text": "Article 44, sub-paragraph 2 (1995 version). The President returns a statute, or particular articles of it, for reconsideration and a further vote"
+      }
+    ],
+    "pardon_granted": [
+      {
+        "status": "translation",
+        "text": "the pardon has been granted"
+      }
+    ],
+    "pardon_matter": [
+      {
+        "status": "translation",
+        "text": "the petition for pardon as the subject matter of the case"
+      }
+    ],
+    "participating_voters": [
+      {
+        "status": "translation",
+        "text": "the number of voters who took part in the voting"
+      }
+    ],
+    "persistent_health_incapacity": [
+      {
+        "status": "translation",
+        "text": "a persistent inability of the President to discharge his duties for reasons of health"
+      }
+    ],
+    "power_conferred_by_constitution_or_law": [
+      {
+        "status": "translation",
+        "text": "the power of the President is laid down by the Constitution or by a statute of the Republic of Kazakhstan"
+      }
+    ],
+    "president": [
+      {
+        "status": "translation",
+        "text": "the person is the President of the Republic"
+      }
+    ],
+    "president_assumed_office_on": [
+      {
+        "status": "translation",
+        "text": "the day on which the President took office"
+      }
+    ],
+    "president_conducts_business": [
+      {
+        "status": "translation",
+        "text": "Article 44, sub-paragraph 2 (1995 version). The President signs a statute submitted by Parliament within one month"
+      }
+    ],
+    "president_died": [
+      {
+        "status": "translation",
+        "text": "Article 47, paragraph 3 (1995 version). The question of removal from office may not be raised while the President is considering the question of the early termination of the powers of Parliament or of the Mazhilis"
+      }
+    ],
+    "president_ensures_coordinated_state_power": [
+      {
+        "status": "translation",
+        "text": "Article 42, paragraph 3 (1995 version). All former Presidents, apart from those removed from office, hold the title of ex-President"
+      }
+    ],
+    "president_experience_years": [
+      {
+        "status": "translation",
+        "text": "the required work experience is five years"
+      }
+    ],
+    "president_guarantees_unity_constitution_and_rights": [
+      {
+        "status": "translation",
+        "text": "act of the President"
+      }
+    ],
+    "president_held_criminally_or_administratively_liable": [
+      {
+        "status": "translation",
+        "text": "Article 46, paragraph 1 (1995 version). The President, his honour and dignity are inviolable"
+      }
+    ],
+    "president_holds_other_paid_office": [
+      {
+        "status": "translation",
+        "text": "Article 41, paragraph 2 (1995 version). A citizen by birth of not less than forty years of age, having a command of the state language, having resided in Kazakhstan for fifteen years and holding higher education may be elected President"
+      }
+    ],
+    "president_holds_representative_mandate": [
+      {
+        "status": "translation",
+        "text": "Article 48, paragraph 2 (1995 version). A person who has assumed the powers of the President may not initiate amendments and additions to the Constitution"
+      }
+    ],
+    "president_is_commander_in_chief": [
+      {
+        "status": "translation",
+        "text": "Article 48, paragraph 1 (1995 version). Where the Chair of the Senate is unable to act, the powers pass to the Chair of the Mazhilis"
+      }
+    ],
+    "president_is_head_of_state": [
+      {
+        "status": "translation",
+        "text": "the act of the President is binding throughout the territory of the Republic"
+      }
+    ],
+    "president_minimum_age": [
+      {
+        "status": "translation",
+        "text": "the minimum age for the President is forty years"
+      }
+    ],
+    "president_party_member": [
+      {
+        "status": "translation",
+        "text": "Article 47, paragraph 2 (1995 version). The decision to bring the charge is taken on the initiative of not less than one-third of the deputies of the Mazhilis"
+      }
+    ],
+    "president_released_for_health": [
+      {
+        "status": "translation",
+        "text": "the Senate has consented to the appointment"
+      }
+    ],
+    "president_released_from_office_for_health": [
+      {
+        "status": "translation",
+        "text": "this President has been released from office early on grounds of health"
+      }
+    ],
+    "president_removed_by_impeachment": [
+      {
+        "status": "translation",
+        "text": "Article 44, sub-paragraph 3) (1995 version). The candidature for Prime Minister is submitted to the Mazhilis after consultations with the factions of the political parties"
+      }
+    ],
+    "president_removed_from_office": [
+      {
+        "status": "translation",
+        "text": "Article 44, sub-paragraph 3) (1995 version). The candidature for Prime Minister is submitted to the Mazhilis after consultations with the factions of the political parties"
+      }
+    ],
+    "president_residence_years": [
+      {
+        "status": "translation",
+        "text": "the required period of residence in Kazakhstan is fifteen years"
+      }
+    ],
+    "president_resigned": [
+      {
+        "status": "translation",
+        "text": "Article 44, sub-paragraph 16 (1995 version). The President introduces a state of emergency after official consultations with the Prime Minister and the Chairs of the Chambers, informing Parliament without delay"
+      }
+    ],
+    "president_term": [
+      {
+        "status": "translation",
+        "text": "the term of office of the President is seven years"
+      }
+    ],
+    "president_term_expires_on": [
+      {
+        "status": "translation",
+        "text": "the day on which the term of office of the President ends"
+      }
+    ],
+    "presidential_act": [
+      {
+        "status": "translation",
+        "text": "the number of voters who took part in the voting"
+      }
+    ],
+    "presidential_act_based_on_constitution_and_law": [
+      {
+        "status": "translation",
+        "text": "the number of the last years of residence in Kazakhstan"
+      }
+    ],
+    "presidential_act_binding_nationwide": [
+      {
+        "status": "translation",
+        "text": "the number of deputies of the Mazhilis who initiated the removal from office"
+      }
+    ],
+    "presidential_address": [
+      {
+        "status": "translation",
+        "text": "the message of the President as the subject matter of the case"
+      }
+    ],
+    "presidential_address_delivered": [
+      {
+        "status": "translation",
+        "text": "the message of the President to the people of Kazakhstan has been delivered"
+      }
+    ],
+    "presidential_administration": [
+      {
+        "status": "translation",
+        "text": "the Constitutional Court has confirmed that the constitutional procedures laid down have been observed"
+      }
+    ],
+    "presidential_administration_formed": [
+      {
+        "status": "translation",
+        "text": "the Supreme Court has confirmed that the charge is well-founded"
+      }
+    ],
+    "presidential_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "Article 47, paragraph 1 (1995 version). The decision on early release from office on grounds of illness is taken by a majority of not less than three-quarters of the total number of the deputies of each of the Chambers"
+      }
+    ],
+    "presidential_appointment_office": [
+      {
+        "status": "translation",
+        "text": "the position is on the list in Article 46, sub-paragraph 5"
+      }
+    ],
+    "presidential_body_established": [
+      {
+        "status": "translation",
+        "text": "the act is countersigned by the Prime Minister or by the Chair of a Chamber of Parliament"
+      }
+    ],
+    "presidential_conduct_in_office": [
+      {
+        "status": "translation",
+        "text": "the act was committed by the President in the discharge of his duties"
+      }
+    ],
+    "presidential_election_attempt": [
+      {
+        "status": "translation",
+        "text": "the candidate takes part in the election of the President"
+      }
+    ],
+    "presidential_election_held": [
+      {
+        "status": "translation",
+        "text": "the election of the President has taken place"
+      }
+    ],
+    "presidential_election_majority_denominator": [
+      {
+        "status": "translation",
+        "text": "the denominator of the threshold for the election of the President is one half"
+      }
+    ],
+    "presidential_election_majority_numerator": [
+      {
+        "status": "translation",
+        "text": "the numerator of the threshold for the election of the President is one half"
+      }
+    ],
+    "presidential_family_support_case": [
+      {
+        "status": "translation",
+        "text": "the matter concerns the provision made for a former President and his family"
+      }
+    ],
+    "presidential_instruction_to_vice_president": [
+      {
+        "status": "translation",
+        "text": "Article 45, paragraph 3 (1995 version). The Chair of a Chamber or the Prime Minister who countersigns the act bears legal responsibility for its lawfulness"
+      }
+    ],
+    "presidential_liability_attempt": [
+      {
+        "status": "translation",
+        "text": "an attempt has been made to hold the President liable"
+      }
+    ],
+    "presidential_office_incompatible": [
+      {
+        "status": "translation",
+        "text": "the office of President is incompatible with the position held or the activity carried on"
+      }
+    ],
+    "presidential_powers_assumed_by": [
+      {
+        "status": "translation",
+        "text": "the powers of the President have passed to this person"
+      }
+    ],
+    "presidential_powers_terminated": [
+      {
+        "status": "translation",
+        "text": "the powers of the President have been terminated"
+      }
+    ],
+    "presidential_relative_position_prohibited": [
+      {
+        "status": "translation",
+        "text": "the holding of such a position by a relative of the President is not permitted"
+      }
+    ],
+    "presidential_return_attempt": [
+      {
+        "status": "translation",
+        "text": "Senate of Parliament"
+      }
+    ],
+    "presidential_signature_attempt": [
+      {
+        "status": "translation",
+        "text": "Article 44, sub-paragraph 4 (1995 version). With the consent of the Senate are appointed the Chair of the Constitutional Court, the Chair of the National Bank, the Chair of the Supreme Judicial Council, the Prosecutor General and the Chair of the National Security Committee"
+      }
+    ],
+    "presidential_signature_day": [
+      {
+        "status": "translation",
+        "text": "the day on which the President signed or returned the statute"
+      }
+    ],
+    "presidential_signature_due_on": [
+      {
+        "status": "translation",
+        "text": "the day on which the one-month period for signing the statute ends"
+      }
+    ],
+    "presidential_signature_period": [
+      {
+        "status": "translation",
+        "text": "the time limit for signing a statute submitted by the Kurultai is one month"
+      }
+    ],
+    "presidential_signature_timely": [
+      {
+        "status": "translation",
+        "text": "the statute was signed or returned within the one-month period"
+      }
+    ],
+    "presidential_vacancy": [
+      {
+        "status": "translation",
+        "text": "the office of President has become vacant early"
+      }
+    ],
+    "presidential_vote": [
+      {
+        "status": "translation",
+        "text": "the number of votes cast for the candidate"
+      }
+    ],
+    "previously_elected_president": [
+      {
+        "status": "translation",
+        "text": "the person has previously been elected President of the Republic"
+      }
+    ],
+    "prior_dissolution_on": [
+      {
+        "status": "translation",
+        "text": "the day of the previous dissolution of the Kurultai"
+      }
+    ],
+    "prior_office_relinquished": [
+      {
+        "status": "translation",
+        "text": "the person has relinquished his previous office"
+      }
+    ],
+    "ratification_instrument": [
+      {
+        "status": "translation",
+        "text": "the instrument of ratification as the subject matter of the case"
+      }
+    ],
+    "ratification_instrument_signed": [
+      {
+        "status": "translation",
+        "text": "the instrument of ratification has been signed"
+      }
+    ],
+    "ratification_signature_attempt": [
+      {
+        "status": "translation",
+        "text": "Article 45, paragraph 1 (1995 version). On the basis of and in pursuance of the Constitution and the statutes, the President issues decrees and orders that are binding throughout the territory of the Republic"
+      }
+    ],
+    "referendum_called": [
+      {
+        "status": "translation",
+        "text": "the national referendum has been called"
+      }
+    ],
+    "referendum_decision_attempt": [
+      {
+        "status": "translation",
+        "text": "Article 46, paragraphs 2 and 3 (1995 version). The provision, servicing and protection of the President and his family are at the expense of the state; the provisions of the article extend to the ex-Presidents"
+      }
+    ],
+    "refusal_statement_filed": [
+      {
+        "status": "translation",
+        "text": "the person has submitted to the Constitutional Court a statement refusing to assume the powers of the President"
+      }
+    ],
+    "refused_to_assume_presidential_powers": [
+      {
+        "status": "translation",
+        "text": "the person has refused to assume the powers of the President"
+      }
+    ],
+    "regular_election_lead_period": [
+      {
+        "status": "translation",
+        "text": "the period by which a regular election precedes the end of the powers is two months"
+      }
+    ],
+    "regular_election_scheduled_in_time": [
+      {
+        "status": "translation",
+        "text": "the regular election has been called not later than two months before the end of the President's term of office"
+      }
+    ],
+    "regular_oath_due_on": [
+      {
+        "status": "translation",
+        "text": "the day on which the period for taking the oath ends"
+      }
+    ],
+    "regular_oath_period": [
+      {
+        "status": "translation",
+        "text": "the time limit for taking the oath is one month"
+      }
+    ],
+    "regular_oath_taken_on": [
+      {
+        "status": "translation",
+        "text": "the day on which the oath was taken"
+      }
+    ],
+    "regular_oath_timely": [
+      {
+        "status": "translation",
+        "text": "the oath was taken within the constitutional time limit"
+      }
+    ],
+    "regular_presidential_election_date_inadmissible": [
+      {
+        "status": "translation",
+        "text": "the date of the regular election of the President is inadmissible"
+      }
+    ],
+    "regular_presidential_election_day": [
+      {
+        "status": "translation",
+        "text": "the day on which the regular election of the President is held"
+      }
+    ],
+    "relative_holds_political_office_or_quasistate_leadership": [
+      {
+        "status": "translation",
+        "text": "the relative holds a political state position or heads an organisation of the quasi-state sector"
+      }
+    ],
+    "repeat_vote_ballot": [
+      {
+        "status": "translation",
+        "text": "the second ballot has been held"
+      }
+    ],
+    "repeat_vote_participant": [
+      {
+        "status": "translation",
+        "text": "the candidate takes part in the second ballot"
+      }
+    ],
+    "repeat_vote_required": [
+      {
+        "status": "translation",
+        "text": "a second ballot is held"
+      }
+    ],
+    "repeat_vote_votes": [
+      {
+        "status": "translation",
+        "text": "the number of votes cast for the candidate in the second ballot"
+      }
+    ],
+    "repeated_refusal_of_presidential_nominee": [
+      {
+        "status": "translation",
+        "text": "the President exercises the pardon of citizens"
+      }
+    ],
+    "required_consultations_completed": [
+      {
+        "status": "translation",
+        "text": "the consultations required before the dissolution of the Kurultai have been held"
+      }
+    ],
+    "resides_last_years": [
+      {
+        "status": "translation",
+        "text": "the number of the last years of residence in Kazakhstan"
+      }
+    ],
+    "state_authority": [
+      {
+        "status": "translation",
+        "text": "the subject is a state body or an official"
+      }
+    ],
+    "state_body_act": [
+      {
+        "status": "translation",
+        "text": "act forming, abolishing or reorganising a state body"
+      }
+    ],
+    "state_body_act_attempt": [
+      {
+        "status": "translation",
+        "text": "Article 42, paragraph 3 (1995 version). The powers terminate when the newly elected President takes office, and upon early release from office, removal from office or death"
+      }
+    ],
+    "state_body_act_effective": [
+      {
+        "status": "translation",
+        "text": "the formation, abolition or reorganisation of the state body has taken effect"
+      }
+    ],
+    "state_guard_service": [
+      {
+        "status": "translation",
+        "text": "the act was issued on the basis of and in pursuance of the Constitution and the statutes"
+      }
+    ],
+    "state_guard_service_formed": [
+      {
+        "status": "translation",
+        "text": "the act was issued on the initiative of the Government"
+      }
+    ],
+    "state_service_or_elected_years": [
+      {
+        "status": "translation",
+        "text": "work experience in the civil service or in elective state offices"
+      }
+    ],
+    "state_support_provided": [
+      {
+        "status": "translation",
+        "text": "the state has provided maintenance and protection"
+      }
+    ],
+    "state_treason_by_president": [
+      {
+        "status": "translation",
+        "text": "the act was issued by this President"
+      }
+    ],
+    "subordinate_body_head_appointment": [
+      {
+        "status": "translation",
+        "text": "the appointment concerns the head of a body subordinate to the President"
+      }
+    ],
+    "subordinate_body_head_release": [
+      {
+        "status": "translation",
+        "text": "the release from office concerns the head of a body subordinate to the President"
+      }
+    ],
+    "succession_event": [
+      {
+        "status": "translation",
+        "text": "the person has assumed the powers of the President"
+      }
+    ],
+    "succession_oath_date": [
+      {
+        "status": "translation",
+        "text": "the day the powers were assumed and the day the oath was taken"
+      }
+    ],
+    "succession_oath_days": [
+      {
+        "status": "translation",
+        "text": "the time limit for the taking of the oath by a person who has assumed the powers of the President is seven days"
+      }
+    ],
+    "succession_oath_timely": [
+      {
+        "status": "translation",
+        "text": "the oath upon succession to the office was taken in time"
+      }
+    ],
+    "succession_president_in_office": [
+      {
+        "status": "translation",
+        "text": "the powers of the President are exercised by the person who assumed them by way of succession"
+      }
+    ],
+    "successor_amendment_initiative_attempt": [
+      {
+        "status": "translation",
+        "text": "the person who assumed the powers initiates an amendment of the Constitution"
+      }
+    ],
+    "successor_amendment_initiative_barred": [
+      {
+        "status": "translation",
+        "text": "the person who assumed the powers is prohibited from initiating an amendment of the Constitution"
+      }
+    ],
+    "successor_dissolution_attempt": [
+      {
+        "status": "translation",
+        "text": "the person who assumed the powers dissolves the Kurultai"
+      }
+    ],
+    "successor_dissolution_barred": [
+      {
+        "status": "translation",
+        "text": "the person who assumed the powers is prohibited from dissolving the Kurultai"
+      }
+    ],
+    "supreme_court_charge_supported": [
+      {
+        "status": "translation",
+        "text": "Mazhilis of Parliament"
+      }
+    ],
+    "temporary_decree_has_force_of_law": [
+      {
+        "status": "translation",
+        "text": "the temporary act of the President has the force of a statute"
+      }
+    ],
+    "temporary_kurultai_absence_after_early_termination": [
+      {
+        "status": "translation",
+        "text": "the President delivers an annual message on the state of the country"
+      }
+    ],
+    "temporary_legislative_decree": [
+      {
+        "status": "translation",
+        "text": "the act is a temporary regulatory legal act of the President"
+      }
+    ],
+    "treaty_signature_attempt": [
+      {
+        "status": "translation",
+        "text": "the President has been charged with high treason"
+      }
+    ],
+    "treaty_signed_on_behalf_of_republic": [
+      {
+        "status": "translation",
+        "text": "the international treaty has been signed on behalf of the Republic of Kazakhstan"
+      }
+    ],
+    "unable_by_health_or_personal_reasons": [
+      {
+        "status": "translation",
+        "text": "the person cannot assume the powers for reasons of health or for other reasons of a personal nature"
+      }
+    ],
+    "vacancy_by_death": [
+      {
+        "status": "translation",
+        "text": "the office became vacant as a result of the death of the President"
+      }
+    ],
+    "vacancy_by_health_incapacity": [
+      {
+        "status": "translation",
+        "text": "the office became vacant as a result of the President's persistent inability for reasons of health"
+      }
+    ],
+    "vacancy_by_removal_from_office": [
+      {
+        "status": "translation",
+        "text": "the office became vacant as a result of the removal of the President from office"
+      }
+    ],
+    "vacancy_by_voluntary_resignation": [
+      {
+        "status": "translation",
+        "text": "the office became vacant as a result of the voluntary resignation of the President"
+      }
+    ],
+    "vacancy_day": [
+      {
+        "status": "translation",
+        "text": "the day on which the office of President became vacant"
+      }
+    ],
+    "vacancy_kurultai_chair": [
+      {
+        "status": "translation",
+        "text": "the person holds the office of Chair of the Kurultai at the moment the office becomes vacant"
+      }
+    ],
+    "vacancy_prime_minister": [
+      {
+        "status": "translation",
+        "text": "the person holds the office of Prime Minister at the moment the office becomes vacant"
+      }
+    ],
+    "vacancy_vice_president": [
+      {
+        "status": "translation",
+        "text": "the person holds the office of Vice-President at the moment the office becomes vacant"
+      }
+    ],
+    "vice_president": [
+      {
+        "status": "translation",
+        "text": "the person is the Vice-President of the Republic"
+      }
+    ],
+    "vice_president_appointed": [
+      {
+        "status": "translation",
+        "text": "the Chair of the Mazhilis cannot assume the powers of the President"
+      }
+    ],
+    "vice_president_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "Article 41, paragraph 5 (1995 version). In a second ballot the candidate obtaining the greater number of votes is deemed elected"
+      }
+    ],
+    "vice_president_conducts_business": [
+      {
+        "status": "translation",
+        "text": "the Chair of the Senate cannot assume the powers of the President"
+      }
+    ],
+    "vice_president_holds_other_paid_office": [
+      {
+        "status": "translation",
+        "text": "Parliament has been informed of the measures taken without delay"
+      }
+    ],
+    "vice_president_holds_representative_mandate": [
+      {
+        "status": "translation",
+        "text": "the President introduces martial law"
+      }
+    ],
+    "vice_president_party_member": [
+      {
+        "status": "translation",
+        "text": "President of the Republic of Kazakhstan (1995 version)"
+      }
+    ],
+    "vice_president_representation_action": [
+      {
+        "status": "translation",
+        "text": "Parliament of the Republic of Kazakhstan"
+      }
+    ],
+    "vice_president_representation_authorized": [
+      {
+        "status": "translation",
+        "text": "the representation by the Vice-President is lawful"
+      }
+    ],
+    "vice_presidential_office_incompatible": [
+      {
+        "status": "translation",
+        "text": "the office of Vice-President is incompatible with the position held or the activity carried on"
+      }
+    ],
+    "within_period_after_prior_dissolution": [
+      {
+        "status": "translation",
+        "text": "one year has not elapsed since the previous dissolution of the Kurultai"
+      }
+    ]
+  },
+  "language": "en",
+  "package": "kz.constitution.president"
+}

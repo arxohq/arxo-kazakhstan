@@ -1,0 +1,53 @@
+{
+  "assertions": [
+    {
+      "contentHash": "sha256:2a170b49bcfc7800824daea408d804ada9b9bc5f1cddee7732bf0ce2ec6cc717",
+      "evidence": [],
+      "id": "urn:kz:constitution:government#government-business-conflict-0",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:demo:kz:member",
+            "kind": "entity_ref"
+          },
+          {
+            "id": "urn:demo:kz:government",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:government#member_of_government"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:government"
+    },
+    {
+      "contentHash": "sha256:35de753b92e3e6484df8e2e64e88800518e0cd28ff9f304d691b666600b0e85c",
+      "evidence": [],
+      "id": "urn:kz:constitution:government#government-business-conflict-1",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:demo:kz:member",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:government#entrepreneurial_activity"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:government"
+    }
+  ],
+  "context": {
+    "decisionTime": "2026-09-01T12:00:00+05:00",
+    "knowledgeTime": "2026-09-01T12:00:00+05:00",
+    "legalTime": "2026-09-01",
+    "timezone": "Asia/Almaty"
+  },
+  "options": {}
+}

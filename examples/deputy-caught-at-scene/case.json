@@ -1,0 +1,68 @@
+{
+  "assertions": [
+    {
+      "contentHash": "sha256:b35e0211018af5ef601a5c8746b660a1865a70a3e78775fa0d43364ca31acda2",
+      "evidence": [],
+      "id": "urn:kz:constitution:kurultai#k4-1",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:kz:constitution:kurultai:test:deputy3",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:kurultai#deputy"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:kurultai"
+    },
+    {
+      "contentHash": "sha256:dda0d90b3203a639ecaafb30f067bbf2bba6c2c2e04f9aab4b0b66201e8a9dbd",
+      "evidence": [],
+      "id": "urn:kz:constitution:kurultai#k4-2",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:kz:constitution:kurultai:test:deputy3",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:kurultai#deputy_detention_attempt"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:kurultai"
+    },
+    {
+      "contentHash": "sha256:2c3ad671e3ca65d4d1ce4eeb9db451d6f89817df4a6e2663fbd1eaaea56e5065",
+      "evidence": [],
+      "id": "urn:kz:constitution:kurultai#k4-3",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:kz:constitution:kurultai:test:deputy3",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:kurultai#caught_at_crime_scene"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:kurultai"
+    }
+  ],
+  "context": {
+    "decisionTime": "2026-09-01T12:00:00+05:00",
+    "knowledgeTime": "2026-09-01T12:00:00+05:00",
+    "legalTime": "2026-09-01",
+    "timezone": "Asia/Almaty"
+  },
+  "options": {}
+}

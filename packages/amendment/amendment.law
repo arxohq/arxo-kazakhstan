@@ -1,0 +1,730 @@
+// Конституция РК 2026, разделы X–XI (ст. 92–96): поправки, незыблемые
+// положения, вступление в силу и переход. Защищённые локаторы — данные
+// пакета, а не зашитый список инструмента сравнения редакций.
+
+language "law.core" version "0.2";
+package kz.constitution.amendment version "0.1.0";
+namespace "urn:kz:constitution:amendment";
+
+entity Amendment {
+    label ru-KZ official "изменение или дополнение в Конституцию";
+}
+entity Referendum {
+    label ru-KZ official "всенародный референдум";
+}
+entity ConstitutionalConclusion {
+    label ru-KZ official "заключение Конституционного Суда о соответствии поправки требованиям Конституции";
+}
+entity ConstitutionEdition {
+    label ru-KZ official "редакция Конституции";
+}
+entity LegalAct {
+    label ru-KZ official "закон либо иной нормативный правовой акт";
+}
+entity TransitionalAppointment {
+    label ru-KZ official "назначение, производимое в переходный период";
+}
+entity KurultaiElection {
+    label ru-KZ official "выборы в Курултай";
+}
+
+relation protected_locator(locator: Text) kind institutional {
+    key(locator);
+    label ru-KZ official "положение Конституции, отнесённое к неизменяемому ядру";
+}
+relation referendum_for_amendment(referendum: Referendum, amendment: Amendment) kind empirical {
+    label ru-KZ official "референдум проводится по данному изменению Конституции";
+}
+relation eligible_referendum_citizens(referendum: Referendum, count: Integer) kind empirical {
+    label ru-KZ official "число граждан, имеющих право участвовать во всенародном референдуме";
+}
+relation referendum_participants(referendum: Referendum, count: Integer) kind empirical {
+    label ru-KZ official "число граждан, принявших участие в голосовании";
+}
+relation votes_for_amendment(referendum: Referendum, count: Integer) kind empirical {
+    label ru-KZ official "число голосов, поданных за изменения и дополнения";
+}
+relation total_regions_cities_and_capital(referendum: Referendum, count: Integer) kind empirical {
+    label ru-KZ official "общее число областей, городов республиканского значения и столицы";
+}
+relation approving_regions_cities_and_capital(referendum: Referendum, count: Integer) kind empirical {
+    label ru-KZ official "число областей, городов республиканского значения и столицы, где поправка одобрена";
+}
+relation referendum_held(referendum: Referendum) kind institutional {
+    label ru-KZ official "всенародный референдум считается состоявшимся";
+}
+relation amendment_approved_by_referendum(amendment: Amendment) kind institutional {
+    label ru-KZ official "изменения и дополнения в Конституцию приняты референдумом";
+}
+relation referendum_turnout_numerator(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "числитель порога явки референдума — одна вторая";
+}
+relation referendum_turnout_denominator(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "знаменатель порога явки референдума — одна вторая";
+}
+relation referendum_approval_numerator(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "числитель порога одобрения поправки — одна вторая";
+}
+relation referendum_approval_denominator(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "знаменатель порога одобрения поправки — одна вторая";
+}
+relation referendum_territory_numerator(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "числитель территориального порога — две трети";
+}
+relation referendum_territory_denominator(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "знаменатель территориального порога — две трети";
+}
+
+relation conclusion_for_amendment(conclusion: ConstitutionalConclusion, amendment: Amendment) kind empirical {
+    label ru-KZ official "заключение Конституционного Суда дано по данной поправке";
+}
+relation conforms_article_2_paragraph_7(conclusion: ConstitutionalConclusion) kind empirical {
+    label ru-KZ official "поправка соответствует требованиям пункта 7 статьи 2 Конституции";
+}
+relation conforms_article_43_paragraph_5(conclusion: ConstitutionalConclusion) kind empirical {
+    label ru-KZ official "поправка соответствует требованиям пункта 5 статьи 43 Конституции";
+}
+relation constitutional_court_positive_conclusion(amendment: Amendment) kind institutional {
+    label ru-KZ official "заключение Конституционного Суда о соответствии поправки положительно";
+}
+relation amendment_may_be_submitted_to_referendum(amendment: Amendment) kind institutional {
+    label ru-KZ official "поправка может быть вынесена на всенародный референдум";
+}
+
+relation edition_1995(version_obj: ConstitutionEdition) kind empirical {
+    label ru-KZ official "объект является редакцией Конституции 1995 года";
+}
+relation edition_2026(version_obj: ConstitutionEdition) kind empirical {
+    label ru-KZ official "объект является редакцией Конституции 2026 года";
+}
+relation constitution_effective_date(version_obj: ConstitutionEdition, date: Date) kind institutional {
+    label ru-KZ official "день вступления редакции Конституции в силу";
+}
+relation constitution_ceases_date(version_obj: ConstitutionEdition, date: Date) kind institutional {
+    label ru-KZ official "день прекращения действия редакции Конституции";
+}
+relation current_date(date: Date) kind empirical {
+    label ru-KZ official "дата, на которую задан вопрос";
+}
+relation constitution_in_force(version_obj: ConstitutionEdition) kind institutional {
+    label ru-KZ official "редакция Конституции действует";
+}
+relation constitution_repealed(version_obj: ConstitutionEdition) kind institutional {
+    label ru-KZ official "действие редакции Конституции прекращено";
+}
+
+relation old_legal_act(act: LegalAct) kind empirical {
+    label ru-KZ official "акт действовал на день вступления Конституции в силу";
+}
+relation contrary_to_2026_constitution(act: LegalAct) kind empirical {
+    label ru-KZ official "акт противоречит Конституции 2026 года";
+}
+relation old_act_applicable(act: LegalAct) kind institutional {
+    label ru-KZ official "акт применяется в части, не противоречащей Конституции";
+}
+
+relation first_kurultai_election(election: KurultaiElection) kind empirical {
+    label ru-KZ official "выборы являются выборами Курултая первого созыва";
+}
+relation election_announced_within_one_month(election: KurultaiElection) kind empirical {
+    label ru-KZ official "выборы объявлены в течение месяца со дня вступления Конституции в силу";
+}
+relation election_held_within_two_months(election: KurultaiElection) kind empirical {
+    label ru-KZ official "выборы проведены в течение двух месяцев со дня вступления Конституции в силу";
+}
+relation first_kurultai_transition_timely(election: KurultaiElection) kind institutional {
+    label ru-KZ official "переход к Курултаю первого созыва совершён в конституционные сроки";
+}
+
+relation transitional_appointment(appointment: TransitionalAppointment) kind empirical {
+    label ru-KZ official "назначение относится к переходным назначениям";
+}
+relation deadline_from_first_session(appointment: TransitionalAppointment) kind empirical {
+    label ru-KZ official "срок назначения исчисляется со дня открытия первой сессии Курултая первого созыва";
+}
+relation deadline_from_effective_date(appointment: TransitionalAppointment) kind empirical {
+    label ru-KZ official "срок назначения исчисляется со дня вступления Конституции в силу";
+}
+relation appointment_completed_within_two_months(appointment: TransitionalAppointment) kind empirical {
+    label ru-KZ official "назначение произведено в течение двух месяцев";
+}
+relation transitional_appointment_timely(appointment: TransitionalAppointment) kind institutional {
+    label ru-KZ official "переходное назначение произведено в срок";
+}
+relation incumbent_continues_until_successor(appointment: TransitionalAppointment) kind empirical {
+    label ru-KZ official "действующее должностное лицо сохраняет полномочия до формирования нового состава";
+}
+relation continuity_preserved(appointment: TransitionalAppointment) kind institutional {
+    label ru-KZ official "непрерывность осуществления полномочий сохранена";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART2_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART93_RU")
+assert protected_locator("article/2/paragraph/7");
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART43_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART93_RU")
+assert protected_locator("article/43/paragraph/1");
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART94_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART94_KK")
+assert constitution_effective_date(constitution_2026, @2026-07-01);
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART94_RU")
+assert constitution_ceases_date(constitution_1995, @2026-07-01);
+
+// Ст. 92.2: «Всенародный референдум считается состоявшимся, если в
+// голосовании приняло участие более половины граждан…, имеющих право
+// участвовать». Ст. 92.3: «…считаются принятыми, если за них проголосовало
+// более половины граждан…, принявших участие в голосовании, не менее чем в
+// двух третях областей, городов республиканского значения и столицы».
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART92_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART92_KK")
+assert referendum_turnout_numerator(1);
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART92_RU") {
+    assert referendum_turnout_denominator(2);
+    assert referendum_approval_numerator(1);
+    assert referendum_approval_denominator(2);
+}
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART92_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART92_KK")
+assert referendum_territory_numerator(2);
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART92_RU") {
+    assert referendum_territory_denominator(3);
+
+    rule ReferendumTurnoutMoreThanHalf(
+        referendum: Referendum,
+        eligible: Integer,
+        participants: Integer,
+        num: Integer,
+        den: Integer,
+    ) strict {
+        when eligible_referendum_citizens(referendum, eligible)
+            and referendum_participants(referendum, participants)
+            and referendum_turnout_numerator(num)
+            and referendum_turnout_denominator(den)
+            and (participants * den > eligible * num);
+        then referendum_held(referendum);
+        label ru-KZ official "Статья 92 пункт 2. Всенародный референдум состоялся, если в голосовании приняло участие более половины граждан, имеющих право участвовать в нём";
+    }
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART92_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART92_KK")
+rule AmendmentReferendumDoubleThreshold(
+    referendum: Referendum,
+    amendment: Amendment,
+    votes: Integer,
+    participants: Integer,
+    approving_units: Integer,
+    total_units: Integer,
+    vote_num: Integer,
+    vote_den: Integer,
+    unit_num: Integer,
+    unit_den: Integer,
+) strict {
+    when referendum_for_amendment(referendum, amendment)
+        and referendum_held(referendum)
+        and votes_for_amendment(referendum, votes)
+        and referendum_participants(referendum, participants)
+        and approving_regions_cities_and_capital(referendum, approving_units)
+        and total_regions_cities_and_capital(referendum, total_units)
+        and referendum_approval_numerator(vote_num)
+        and referendum_approval_denominator(vote_den)
+        and referendum_territory_numerator(unit_num)
+        and referendum_territory_denominator(unit_den)
+        and (votes * vote_den > participants * vote_num)
+        and (approving_units * unit_den >= total_units * unit_num);
+    then amendment_approved_by_referendum(amendment);
+    label ru-KZ official "Статья 92 пункт 3. Поправка принята, если за неё проголосовало более половины участвовавших не менее чем в двух третях областей, городов республиканского значения и столицы";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART93_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART93_KK")
+rule EntrenchmentConclusion(conclusion: ConstitutionalConclusion, amendment: Amendment) strict {
+    when conclusion_for_amendment(conclusion, amendment);
+    when conforms_article_2_paragraph_7(conclusion);
+    when conforms_article_43_paragraph_5(conclusion);
+    then constitutional_court_positive_conclusion(amendment);
+    label ru-KZ official "Статья 93. Заключение Конституционного Суда положительно, если поправка соответствует требованиям пункта 7 статьи 2 и пункта 5 статьи 43";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART93_RU")
+rule PositiveConclusionRequiredForReferendum(amendment: Amendment) strict {
+    when constitutional_court_positive_conclusion(amendment);
+    then amendment_may_be_submitted_to_referendum(amendment);
+    label ru-KZ official "Статья 93. Поправка выносится на всенародный референдум при наличии положительного заключения Конституционного Суда";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART94_RU") {
+    rule NewConstitutionInForceFromJulyFirst(
+        version_obj: ConstitutionEdition,
+        start_date: Date,
+        as_of: Date,
+    ) strict {
+        when edition_2026(version_obj)
+            and constitution_effective_date(version_obj, start_date)
+            and current_date(as_of)
+            and (start_date <= as_of);
+        then constitution_in_force(version_obj);
+        label ru-KZ official "Статья 94 пункт 1. Конституция вступает в силу с 1 июля 2026 года";
+    }
+
+    rule OldConstitutionRepealedSimultaneously(
+        version_obj: ConstitutionEdition,
+        ceases: Date,
+        as_of: Date,
+    ) strict {
+        when edition_1995(version_obj)
+            and constitution_ceases_date(version_obj, ceases)
+            and current_date(as_of)
+            and (ceases <= as_of);
+        then constitution_repealed(version_obj);
+        label ru-KZ official "Статья 94 пункт 1. Действие ранее принятой Конституции прекращается одновременно со вступлением в силу новой";
+    }
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART95_RU") {
+    rule FirstKurultaiElectionTransition(election: KurultaiElection) strict {
+        when first_kurultai_election(election);
+        when election_announced_within_one_month(election);
+        when election_held_within_two_months(election);
+        then first_kurultai_transition_timely(election);
+        label ru-KZ official "Статья 95 пункт 1. Выборы в Курултай объявляются в течение месяца и проводятся в течение двух месяцев со дня вступления Конституции в силу";
+    }
+
+    rule FirstSessionAppointmentTwoMonths(appointment: TransitionalAppointment) strict {
+        when transitional_appointment(appointment);
+        when deadline_from_first_session(appointment);
+        when appointment_completed_within_two_months(appointment);
+        then transitional_appointment_timely(appointment);
+        label ru-KZ official "Статья 95 пункты 2–4. Переходные назначения производятся в течение двух месяцев со дня открытия первой сессии Курултая первого созыва";
+    }
+
+    rule EffectiveDateAppointmentTwoMonths(appointment: TransitionalAppointment) strict {
+        when transitional_appointment(appointment);
+        when deadline_from_effective_date(appointment);
+        when appointment_completed_within_two_months(appointment);
+        then transitional_appointment_timely(appointment);
+        label ru-KZ official "Статья 95. Переходное назначение, срок которого исчисляется со дня вступления Конституции в силу, производится в течение двух месяцев";
+    }
+
+    rule IncumbentContinuity(appointment: TransitionalAppointment) strict {
+        when incumbent_continues_until_successor(appointment);
+        then continuity_preserved(appointment);
+        label ru-KZ official "Статья 95. До формирования новых составов действующие должностные лица сохраняют свои полномочия";
+    }
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART96_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART96_KK")
+rule ExistingActsContinueIfCompatible(act: LegalAct) defeasible {
+    when old_legal_act(act);
+    then old_act_applicable(act);
+    unless contrary_to_2026_constitution(act);
+    label ru-KZ official "Статья 96 пункт 1. Законы и иные нормативные правовые акты, действовавшие на день вступления Конституции в силу, применяются в части, ей не противоречащей";
+}
+
+// =========================================================================
+// РЕДАКЦИЯ 1995 ГОДА, РАЗДЕЛ IX «Заключительные и переходные положения»
+// (ст. 90–99).
+//
+// Институт учредительной власти сохранён, поэтому слой живёт здесь же
+// (DECISION-0026, вариант «а»).
+//
+// РАСХОЖДЕНИЯ, найденные чтением закреплённого текста:
+//   1) ст. 91 п. 1 — у изменения Конституции 1995 ДВА пути: референдум по
+//      решению Президента и парламентский закон, принимаемый большинством не
+//      менее ЧЕТЫРЁХ ПЯТЫХ голосов от общего числа депутатов каждой из Палат
+//      после отклонения Президентом предложения о референдуме. Порога в
+//      четыре пятых в редакции 2026 нет вовсе;
+//   2) ст. 91 п. 2 — НЕИЗМЕНЯЕМОЕ ЯДРО 1995 перечислено предметно:
+//      независимость, унитарность, территориальная целостность, форма
+//      правления, основополагающие принципы деятельности Республики, а также
+//      семилетний срок Президента и однократность его избрания. Ядро 2026
+//      (ст. 2 п. 7 и ст. 43 п. 1) адресуется локаторами, поэтому здесь
+//      заведён свой перечень, а не переиспользован protected_locator;
+//   3) ст. 92 — переходные сроки: конституционные законы в течение ГОДА,
+//      иные названные законы — не позднее ДВУХ ЛЕТ, приведение
+//      законодательства — два года. Это собственные числа редакции 1995.
+//
+// ОБЪЯВЛЕННАЯ ГРАНИЦА (DECISION-0012). Ст. 94–99 описывают однократные
+// события 1995–1996 годов (первый состав Конституционного Совета, полномочия
+// Вице-Президента, первый созыв Сената). Они выражены фактами: у них нет
+// повторяемого антецедента, а правило с придуманным антецедентом было бы
+// авторской нормой, а не Конституцией.
+
+entity ParliamentaryAmendmentLaw {
+    label ru-KZ official "закон Парламента об изменениях и дополнениях в Конституцию (редакция 1995)";
+}
+
+relation protected_subject_1995(subject: Text) kind institutional {
+    key(subject);
+    label ru-KZ official "предмет, отнесённый к неизменяемому ядру Конституции 1995 года";
+}
+relation transitional_constitutional_law_years_1995(years: Integer) kind institutional {
+    key(years);
+    label ru-KZ official "срок принятия конституционных законов переходного периода — один год (редакция 1995)";
+}
+relation transitional_other_law_years_1995(years: Integer) kind institutional {
+    key(years);
+    label ru-KZ official "срок принятия иных названных законов переходного периода — два года (редакция 1995)";
+}
+relation parliamentary_amendment_numerator_1995(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "числитель парламентского порога поправки — четыре пятых (редакция 1995)";
+}
+relation parliamentary_amendment_denominator_1995(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "знаменатель парламентского порога поправки — четыре пятых (редакция 1995)";
+}
+
+relation amendment_referendum_declined_by_president(amendment: Amendment) kind empirical {
+    label ru-KZ official "Президент отклонил предложение о вынесении поправки на референдум (редакция 1995)";
+}
+relation parliamentary_amendment_law(act: ParliamentaryAmendmentLaw, amendment: Amendment) kind empirical {
+    label ru-KZ official "закон Парламента вносит данные изменения в Конституцию (редакция 1995)";
+}
+relation amendment_senate_votes(act: ParliamentaryAmendmentLaw, votes: Integer) kind empirical {
+    label ru-KZ official "число голосов депутатов Сената, поданных за поправку (редакция 1995)";
+}
+relation amendment_senate_total(act: ParliamentaryAmendmentLaw, total: Integer) kind empirical {
+    label ru-KZ official "общее число депутатов Сената (редакция 1995)";
+}
+relation amendment_mazhilis_votes(act: ParliamentaryAmendmentLaw, votes: Integer) kind empirical {
+    label ru-KZ official "число голосов депутатов Мажилиса, поданных за поправку (редакция 1995)";
+}
+relation amendment_mazhilis_total(act: ParliamentaryAmendmentLaw, total: Integer) kind empirical {
+    label ru-KZ official "общее число депутатов Мажилиса (редакция 1995)";
+}
+relation parliamentary_amendment_adopted_1995(act: ParliamentaryAmendmentLaw) kind institutional {
+    label ru-KZ official "закон об изменениях в Конституцию принят Парламентом квалифицированным большинством (редакция 1995)";
+}
+
+relation amendment_touches_subject(amendment: Amendment, subject: Text) kind empirical {
+    label ru-KZ official "поправка затрагивает названный предмет";
+}
+relation amendment_violates_entrenched_core_1995(amendment: Amendment) kind institutional {
+    label ru-KZ official "поправка нарушает неизменяемое ядро Конституции 1995 года";
+}
+relation conclusion_confirms_article_91_paragraph_2(conclusion: ConstitutionalConclusion) kind empirical {
+    label ru-KZ official "заключение подтверждает соответствие поправки пункту 2 статьи 91 (редакция 1995)";
+}
+relation constitutional_court_positive_conclusion_1995(amendment: Amendment) kind institutional {
+    label ru-KZ official "заключение о соответствии поправки неизменяемому ядру положительно (редакция 1995)";
+}
+relation amendment_may_be_submitted_1995(amendment: Amendment) kind institutional {
+    label ru-KZ official "поправка может быть вынесена на референдум (редакция 1995)";
+}
+
+relation constitution_1995_referendum_results_published() kind empirical {
+    label ru-KZ official "опубликованы итоги республиканского референдума 1995 года";
+}
+relation constitution_1995_in_force() kind institutional {
+    label ru-KZ official "Конституция 1995 года действует";
+}
+pub relation constitution_day_is_state_holiday_1995() kind institutional {
+    label ru-KZ official "день принятия Конституции на референдуме объявлен Днём Конституции";
+}
+
+relation old_act_predating_1995(act: LegalAct) kind empirical {
+    label ru-KZ official "акт действовал до вступления в силу Конституции 1995 года";
+}
+relation contrary_to_1995_constitution(act: LegalAct) kind empirical {
+    label ru-KZ official "акт противоречит Конституции 1995 года";
+}
+relation old_act_applicable_1995(act: LegalAct) kind institutional {
+    label ru-KZ official "акт применяется в части, не противоречащей Конституции 1995 года";
+}
+
+pub relation language_conditions_duty_declared_1995() kind institutional {
+    label ru-KZ official "государство обязано создать условия для изучения и развития языков народа Казахстана (редакция 1995)";
+}
+pub relation vice_president_powers_preserved_1995() kind institutional {
+    label ru-KZ official "полномочия Вице-Президента сохраняются в переходный период (редакция 1995)";
+}
+pub relation first_senate_split_term_1995() kind institutional {
+    label ru-KZ official "половина депутатов Сената первого созыва избрана на укороченный срок (редакция 1995)";
+}
+pub relation cabinet_becomes_government_1995() kind institutional {
+    label ru-KZ official "Кабинет Министров приобретает статус Правительства Республики (редакция 1995)";
+}
+pub relation first_constitutional_council_composition_1995() kind institutional {
+    label ru-KZ official "первый состав Конституционного Совета образован в порядке переходных положений (редакция 1995)";
+}
+pub relation existing_justice_bodies_continue_1995() kind institutional {
+    label ru-KZ official "действующие органы правосудия сохраняют полномочия до формирования новых (редакция 1995)";
+}
+pub relation constitutional_council_acts_until_court_1995() kind institutional {
+    label ru-KZ official "Конституционный Совет действует до образования Конституционного Суда (редакция 1995)";
+}
+
+// --- Конституционные числа редакции 1995 ----------------------------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART91_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART91_KK")
+assert parliamentary_amendment_numerator_1995(4);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART91_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART91_KK")
+assert parliamentary_amendment_denominator_1995(5);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART92_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART92_KK")
+assert transitional_constitutional_law_years_1995(1);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART92_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART92_KK")
+assert transitional_other_law_years_1995(2);
+
+// Неизменяемое ядро ст. 91 п. 2 — перечень ПРЕДМЕТОВ, а не локаторов.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART91_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART91_KK")
+assert protected_subject_1995("independence");
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART91_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART91_KK")
+assert protected_subject_1995("unitarity");
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART91_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART91_KK")
+assert protected_subject_1995("territorial-integrity");
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART91_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART91_KK")
+assert protected_subject_1995("form-of-government");
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART91_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART91_KK")
+assert protected_subject_1995("fundamental-principles");
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART91_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART91_KK")
+assert protected_subject_1995("presidential-seven-year-term");
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART91_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART91_KK")
+assert protected_subject_1995("single-presidential-election");
+
+// --- Ст. 90. Вступление в силу ---------------------------------------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART90_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART90_KK")
+assert constitution_day_is_state_holiday_1995();
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART90_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART90_KK")
+rule Constitution1995InForceOnPublication strict {
+    when constitution_1995_referendum_results_published();
+    then constitution_1995_in_force();
+    label ru-KZ official "Статья 90 пункт 1 (ред. 1995). Конституция вступает в силу со дня официального опубликования результатов референдума с одновременным прекращением действия ранее принятой Конституции";
+}
+
+// --- Ст. 91. Изменение Конституции ------------------------------------------
+
+// РАСХОЖДЕНИЕ 1. Парламентский путь с порогом четыре пятых КАЖДОЙ Палаты.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART91_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART91_KK")
+rule ParliamentaryAmendmentFourFifths1995(
+    act: ParliamentaryAmendmentLaw,
+    amendment: Amendment,
+    senate_yes: Integer,
+    senate_all: Integer,
+    mazhilis_yes: Integer,
+    mazhilis_all: Integer,
+) strict {
+    when parliamentary_amendment_law(act, amendment)
+        and amendment_referendum_declined_by_president(amendment)
+        and amendment_senate_votes(act, senate_yes)
+        and amendment_senate_total(act, senate_all)
+        and amendment_mazhilis_votes(act, mazhilis_yes)
+        and amendment_mazhilis_total(act, mazhilis_all)
+        and (senate_yes * 5 >= senate_all * 4)
+        and (mazhilis_yes * 5 >= mazhilis_all * 4);
+    then parliamentary_amendment_adopted_1995(act);
+    label ru-KZ official "Статья 91 пункт 1 (ред. 1995). Если Президент отклоняет предложение Парламента о референдуме, Парламент вправе большинством не менее четырёх пятых голосов от общего числа депутатов каждой из Палат принять закон о внесении изменений в Конституцию";
+}
+
+// РАСХОЖДЕНИЕ 2. Ядро 1995 задано предметами, а не локаторами статей.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART91_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART91_KK")
+rule AmendmentViolatesEntrenchedCore1995(amendment: Amendment, subject: Text) strict {
+    when protected_subject_1995(subject);
+    when amendment_touches_subject(amendment, subject);
+    then amendment_violates_entrenched_core_1995(amendment);
+    label ru-KZ official "Статья 91 пункт 2 (ред. 1995). Независимость, унитарность, территориальная целостность, форма правления, основополагающие принципы, семилетний срок Президента и однократность его избрания являются неизменными";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART91_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART91_KK")
+rule EntrenchmentConclusion1995(conclusion: ConstitutionalConclusion, amendment: Amendment) strict {
+    when conclusion_for_amendment(conclusion, amendment);
+    when conclusion_confirms_article_91_paragraph_2(conclusion);
+    then constitutional_court_positive_conclusion_1995(amendment);
+    label ru-KZ official "Статья 91 пункт 3 (ред. 1995). Изменения выносятся на референдум или на рассмотрение Парламента при наличии заключения Конституционного Суда об их соответствии требованиям пункта 2";
+}
+
+// ИЗМЕРЕНО 30.08.2026: прежняя строгая форма с `not
+// amendment_violates_entrenched_core_1995` была МЁРТВОЙ НОРМОЙ — `not` в
+// строгом теле требует установленного отрицания (FALSE_ONLY), а установить
+// «не посягает» пакету неоткуда: замыкание §70 унарно и на бинарное
+// amendment_touches_subject не ложится, негативных фактов пакет не ассертит.
+// Голова не выводилась НИ НА ОДНОМ деле (зонд: невинная поправка с
+// заключением — NEITHER), и ни один сценарий этого не видел. Каноническая
+// форма поражаемого слоя выражает ровно текст 91.3: заключение открывает
+// путь, посягательство на ядро 91.2 его поражает.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART91_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART91_KK")
+rule AmendmentMayBeSubmitted1995(amendment: Amendment) defeasible {
+    when constitutional_court_positive_conclusion_1995(amendment);
+    then amendment_may_be_submitted_1995(amendment);
+    unless amendment_violates_entrenched_core_1995(amendment);
+    label ru-KZ official "Статья 91 пункт 3 (ред. 1995). Без положительного заключения Конституционного Суда изменения на референдум и в Парламент не выносятся";
+}
+
+// --- Ст. 92. Переходное законодательство -------------------------------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART92_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART92_KK")
+rule OldActsApplyIfCompatible1995(act: LegalAct) defeasible {
+    when old_act_predating_1995(act);
+    when not contrary_to_1995_constitution(act);
+    then old_act_applicable_1995(act);
+    label ru-KZ official "Статья 92 пункт 4 (ред. 1995). Действующее на момент вступления Конституции в силу законодательство применяется в части, не противоречащей ей";
+}
+
+// --- Ст. 93–99. Однократные переходные положения ------------------------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART93_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART93_KK")
+assert language_conditions_duty_declared_1995();
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART94_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART94_KK")
+assert vice_president_powers_preserved_1995();
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART95_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART95_KK")
+assert first_senate_split_term_1995();
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART96_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART96_KK")
+assert cabinet_becomes_government_1995();
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART97_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART97_KK")
+assert first_constitutional_council_composition_1995();
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART98_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART98_KK")
+assert existing_justice_bodies_continue_1995();
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART99_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART99_KK")
+assert constitutional_council_acts_until_court_1995();
+
+// --- Ст. 94-1, 94-2 редакции 1995: правила действия во времени -------------
+// Обе статьи адресуют ПРИМЕНЕНИЕ уже действующих норм к определённому кругу
+// лиц. Антецедента, вычислимого из дела, у них нет — они сами задают, к кому
+// применяется норма. Поэтому это конститутивные факты, а не правила.
+
+pub relation seven_year_term_applies_from_post_2005_election_1995() kind institutional {
+    label ru-KZ official "семилетний срок полномочий Президента применяется к лицу, избранному после 2005 года (редакция 1995)";
+}
+pub relation single_election_rule_applies_prospectively_1995() kind institutional {
+    label ru-KZ official "правило о единственном избрании применяется на будущее время (редакция 1995)";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART94_1_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART94_1_KK")
+assert seven_year_term_applies_from_post_2005_election_1995();
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART94_2_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART94_2_KK")
+assert single_election_rule_applies_prospectively_1995();
+
+// =========================================================================
+// ОСЬ САМОПРИМЕНИМОСТИ СТ. 91 («лазейка Гёделя» в казахстанской редакции,
+// 30.08.2026; пара к us.constitution/self-amendment.law).
+//
+// Перечень ст. 91 п. 2 защищает ПРЕДМЕТЫ, но не называет саму статью 91.
+// Гёделевская двухходовка здесь свелась бы к первому же шагу: проходит ли
+// фильтр 91.3 поправка, СУЖАЮЩАЯ перечень? Ответ зависит от прочтения,
+// которого закреплённый текст не даёт:
+//   А) перечень — не предмет: сужение не «касается» защищённых предметов;
+//   Б) перечень сам входит в «основополагающие принципы»: его сужение —
+//      посягательство на ядро.
+// Спор известен доктрине (та же развилка у вечной оговорки 79(3) Основного
+// закона ФРГ) и решается не формализатором: обе стороны заведены
+// прочтениями §152 в группе exactly_one — без выбранного прочтения вывод
+// останавливается INTERPRETATION_REQUIRED, а не молчит. Содержание
+// гипотетической поправки — факт дела, как и у оси США.
+
+relation amendment_narrows_entrenched_list_1995(amendment: Amendment) kind empirical {
+    label ru-KZ unofficial "содержание поправки: исключить предмет из перечня пункта 2 статьи 91";
+}
+relation narrowing_deemed_outside_core_1995(amendment: Amendment) kind institutional {
+    label ru-KZ unofficial "сужение перечня признано не касающимся защищённых предметов пункта 2";
+}
+relation narrowing_amendment_passes_filter_1995(amendment: Amendment) kind institutional {
+    label ru-KZ unofficial "поправка, сужающая перечень пункта 2, проходит фильтр пункта 3 статьи 91";
+}
+
+// Прочтение А: сужение перечня — вне защищённых предметов.
+rule NarrowingOutsideCore1995(amendment: Amendment) strict {
+    when amendment_narrows_entrenched_list_1995(amendment);
+    then narrowing_deemed_outside_core_1995(amendment);
+    label ru-KZ unofficial "прочтение А: перечень пункта 2 сам не есть защищённый предмет, его сужение — обычная поправка";
+}
+
+// Прочтение Б: перечень сам защищён как основополагающий принцип.
+rule NarrowingTouchesCore1995(amendment: Amendment) strict {
+    when amendment_narrows_entrenched_list_1995(amendment);
+    then amendment_violates_entrenched_core_1995(amendment);
+    label ru-KZ unofficial "прочтение Б: неизменность перечня пункта 2 — основополагающий принцип, его сужение посягает на ядро";
+}
+
+// Вопрос двухходовки: сужающая поправка с заключением суда проходит фильтр
+// ТОЛЬКО под прочтением А. Без выбора прочтения — громкая остановка.
+rule NarrowingAmendmentFilter1995(amendment: Amendment) defeasible {
+    when constitutional_court_positive_conclusion_1995(amendment);
+    when narrowing_deemed_outside_core_1995(amendment);
+    then narrowing_amendment_passes_filter_1995(amendment);
+    unless amendment_violates_entrenched_core_1995(amendment);
+    label ru-KZ unofficial "сужающая поправка выносима при заключении суда, если сужение не признано посягательством на ядро";
+}
+
+interpretation ListIsNotASubjectReading {
+    status disputed;
+    label ru-KZ unofficial "прочтение А статьи 91 пункта 2: перечень защищает предметы, но не сам себя";
+    include NarrowingOutsideCore1995;
+}
+
+interpretation ListItselfEntrenchedReading {
+    status disputed;
+    label ru-KZ unofficial "прочтение Б статьи 91 пункта 2: неизменность перечня — основополагающий принцип";
+    include NarrowingTouchesCore1995;
+}
+
+// Метки §218 группа не принимает (LDC-E0201, замер blefuscu 30.08.2026);
+// имя развилки живёт в метках обеих альтернатив.
+interpretation_group Article91SelfEntrenchmentDoctrine {
+    alternatives ListIsNotASubjectReading, ListItselfEntrenchedReading;
+    selection exactly_one;
+}
+
+// --- Константы §54 (E-0032 п. 1 / E-0117) ------------------------------------
+//
+// Две редакции Конституции как индивиды: слот
+// `constitution_effective_date(version_obj: ConstitutionEdition, date: Date)`
+// и парный ему `constitution_ceases_date` типизированы `ConstitutionEdition`.
+const constitution_1995: ConstitutionEdition = entity_ref("urn:kz:constitution:amendment#constitution_1995") {
+    label ru-KZ unofficial "Конституция 1995 года";
+};
+const constitution_2026: ConstitutionEdition = entity_ref("urn:kz:constitution:amendment#constitution_2026") {
+    label ru-KZ unofficial "Конституция 2026 года";
+};

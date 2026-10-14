@@ -1,0 +1,1052 @@
+{
+  "$comment": "English display overlay for the labels (§218) of this package of the Constitution of the Republic of Kazakhstan (DECISION-0070). The file is not compiled into the CLIR and is read only by the presentation layer (verbalize --labels, the MCP resource law://<package>/verbalized/en, the workbench). The translation is a working one made by the formaliser from the Russian labels of the package, checked against the authentic Russian and Kazakh texts of the Constitution; it is not an official publication, hence the status \"translation\" for every entry. Spelling is British. A key is the local name of the declaration (the part of the node id after \"#\").",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "Bill": [
+      {
+        "status": "translation",
+        "text": "bill"
+      }
+    ],
+    "Candidate": [
+      {
+        "status": "translation",
+        "text": "candidate"
+      }
+    ],
+    "Commission": [
+      {
+        "status": "translation",
+        "text": "commission of the Kurultai"
+      }
+    ],
+    "CommissionEstablished": [
+      {
+        "status": "translation",
+        "text": "Article 59, paragraph 1. The Kurultai forms commissions"
+      }
+    ],
+    "Committee": [
+      {
+        "status": "translation",
+        "text": "standing committee of the Kurultai"
+      }
+    ],
+    "ConstitutionalEarlyTermination": [
+      {
+        "status": "translation",
+        "text": "Article 52, paragraph 3. Early termination of powers requires a ground and a procedure provided for by the Constitution"
+      }
+    ],
+    "ConstitutionalLawTwoThirds": [
+      {
+        "status": "translation",
+        "text": "Article 61, paragraph 3. Constitutional statutes are adopted by a majority of not less than two-thirds of the votes of the total number of the deputies of the Kurultai"
+      }
+    ],
+    "ConstitutionalVetoOverride": [
+      {
+        "status": "translation",
+        "text": "Article 56, sub-paragraph 2). Objections of the President to a constitutional statute are overridden by a majority of three-quarters of the votes of the total number of the deputies"
+      }
+    ],
+    "Deputy": [
+      {
+        "status": "translation",
+        "text": "deputy of the Kurultai"
+      }
+    ],
+    "DeputyCandidateEligibility": [
+      {
+        "status": "translation",
+        "text": "Article 54, paragraph 3. A deputy of the Kurultai may be a citizen of the Republic who has attained the age of twenty-five and has permanently resided in Kazakhstan for the last ten years"
+      }
+    ],
+    "DeputyDetentionException": [
+      {
+        "status": "translation",
+        "text": "Article 55, paragraph 3. The detention of a deputy is permissible where he is detained at the scene of a crime, where a grave or especially grave crime has been committed, or with the consent of the Kurultai"
+      }
+    ],
+    "DeputyDetentionGroundConsent": [
+      {
+        "status": "translation",
+        "text": "Article 55, paragraph 3. The consent of the Kurultai is a ground lifting the protection of a deputy"
+      }
+    ],
+    "DeputyDetentionGroundGraveOffence": [
+      {
+        "status": "translation",
+        "text": "Article 55, paragraph 3. The commission of a grave or especially grave crime is a ground lifting the protection of a deputy"
+      }
+    ],
+    "DeputyDetentionGroundInTheAct": [
+      {
+        "status": "translation",
+        "text": "Article 55, paragraph 3. Detention at the scene of a crime is a ground lifting the protection of a deputy"
+      }
+    ],
+    "DeputyImmunity": [
+      {
+        "status": "translation",
+        "text": "Article 55, paragraph 3. A deputy of the Kurultai may not be detained without the consent of the Kurultai, except where detained at the scene of a crime and where a grave or especially grave crime has been committed"
+      }
+    ],
+    "DeputyInviolabilityApplies": [
+      {
+        "status": "translation",
+        "text": "Article 55, paragraph 3. The protection of a deputy against detention operates so long as none of the three grounds named is present"
+      }
+    ],
+    "DeputyInviolabilityApplies/unless/0": [
+      {
+        "status": "translation",
+        "text": "Article 55, paragraph 3. The protection of a deputy against detention operates so long as none of the three grounds named is present"
+      }
+    ],
+    "DeputyPersonalImmunity": [
+      {
+        "status": "translation",
+        "text": "Article 55, paragraph 3. A deputy of the Kurultai may not be detained without the consent of the Kurultai, except where detained at the scene of a crime and where a grave or especially grave crime has been committed"
+      }
+    ],
+    "DeputyTermExpiry": [
+      {
+        "status": "translation",
+        "text": "Article 53, paragraph 2. The term of office of deputies of the Kurultai is five years"
+      }
+    ],
+    "FinancialBillWithGovernmentOpinion": [
+      {
+        "status": "translation",
+        "text": "Article 60, paragraph 6. A bill reducing revenue or increasing expenditure is introduced only where there is a positive opinion of the Government"
+      }
+    ],
+    "FirstSessionThirtyDays": [
+      {
+        "status": "translation",
+        "text": "Article 58, paragraph 2. The first session of the Kurultai is convened not later than thirty days after the day the election results are published"
+      }
+    ],
+    "Government": [
+      {
+        "status": "translation",
+        "text": "Government of the Republic of Kazakhstan"
+      }
+    ],
+    "GovernmentMember": [
+      {
+        "status": "translation",
+        "text": "member of the Government"
+      }
+    ],
+    "GovernmentMemberDismissalRequest": [
+      {
+        "status": "translation",
+        "text": "Article 56, sub-paragraph 17). On the initiative of not less than one-third of the deputies, the Kurultai, by not less than two-thirds of the votes, takes a decision to apply to the President for the release of a member of the Government"
+      }
+    ],
+    "GovernmentNoConfidence": [
+      {
+        "status": "translation",
+        "text": "Article 56, sub-paragraph 13). On the initiative of not less than one-fifth of the deputies, the Kurultai, by a majority of the total number of the deputies, passes a vote of no confidence in the Government"
+      }
+    ],
+    "Kurultai": [
+      {
+        "status": "translation",
+        "text": "Kurultai of the Republic of Kazakhstan"
+      }
+    ],
+    "KurultaiChair": [
+      {
+        "status": "translation",
+        "text": "Chair of the Kurultai"
+      }
+    ],
+    "KurultaiChairElection": [
+      {
+        "status": "translation",
+        "text": "Article 57, paragraph 1. Election of the Chair by secret ballot by a majority of the total number of the deputies"
+      }
+    ],
+    "KurultaiChairMayConveneAndPreside": [
+      {
+        "status": "translation",
+        "text": "Article 57, paragraph 3. The Chair convenes sittings and presides over them"
+      }
+    ],
+    "KurultaiChairMayDirectAgendaPreparation": [
+      {
+        "status": "translation",
+        "text": "Article 57, paragraph 3. The Chair exercises general direction of the preparation of the matters before the Kurultai"
+      }
+    ],
+    "KurultaiChairMayEnforceRules": [
+      {
+        "status": "translation",
+        "text": "Article 57, paragraph 3. The Chair ensures compliance with the Rules of Procedure of the Kurultai"
+      }
+    ],
+    "KurultaiChairMayIssueOrders": [
+      {
+        "status": "translation",
+        "text": "Article 57, paragraph 5. The Chair issues orders on matters within his competence"
+      }
+    ],
+    "KurultaiChairMaySignActs": [
+      {
+        "status": "translation",
+        "text": "Article 57, paragraph 3. The Chair signs the acts of the Kurultai"
+      }
+    ],
+    "KurultaiChairRemovalOrResignation": [
+      {
+        "status": "translation",
+        "text": "Article 57, paragraph 2. Recall or resignation of the Chair by a majority of the total number of the deputies"
+      }
+    ],
+    "KurultaiPowersEndAtNewConvocation": [
+      {
+        "status": "translation",
+        "text": "Article 52, paragraph 2. The powers end when the first session of the new convocation begins its work"
+      }
+    ],
+    "KurultaiPowersStartAtFirstSession": [
+      {
+        "status": "translation",
+        "text": "Article 52, paragraph 2. The powers of the Kurultai begin with the opening of its first session"
+      }
+    ],
+    "KurultaiResolution": [
+      {
+        "status": "translation",
+        "text": "resolution of the Kurultai or of one of its working bodies"
+      }
+    ],
+    "Law": [
+      {
+        "status": "translation",
+        "text": "statute or constitutional statute"
+      }
+    ],
+    "LawPresentedWithinTenDays": [
+      {
+        "status": "translation",
+        "text": "Article 60, paragraph 5. A statute adopted by the Kurultai is submitted for signature to the President within ten days"
+      }
+    ],
+    "MissedReconsiderationAcceptsObjection": [
+      {
+        "status": "translation",
+        "text": "Article 56, sub-paragraph 2). Failure to observe the one-month time limit for reconsideration means that the objections of the President are accepted"
+      }
+    ],
+    "OrdinaryLawMajority": [
+      {
+        "status": "translation",
+        "text": "Article 61, paragraph 4. Statutes are adopted by a majority of the votes of the total number of the deputies of the Kurultai"
+      }
+    ],
+    "OrdinaryVetoOverride": [
+      {
+        "status": "translation",
+        "text": "Article 56, sub-paragraph 2). Objections of the President to a statute are overridden by a majority of two-thirds of the votes of the total number of the deputies"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "natural person"
+      }
+    ],
+    "PresidentialFinancialBillException": [
+      {
+        "status": "translation",
+        "text": "Article 60, paragraph 6. For bills introduced by the President, an opinion of the Government is not required"
+      }
+    ],
+    "PriorityBillDue": [
+      {
+        "status": "translation",
+        "text": "Article 60, paragraph 2. A priority bill must be adopted within two months"
+      }
+    ],
+    "PriorityBillTwoMonths": [
+      {
+        "status": "translation",
+        "text": "Article 60, paragraph 2. A priority bill adopted not later than the day the two-month period ends has been adopted in time"
+      }
+    ],
+    "RepeatedAbsenceSanction": [
+      {
+        "status": "translation",
+        "text": "Article 55, paragraph 1. The absence of a deputy without good reason more than three times entails the application of the sanctions laid down by statute"
+      }
+    ],
+    "RepeatedChairRefusalAllowsDissolution": [
+      {
+        "status": "translation",
+        "text": "Article 57, paragraph 1. A repeated refusal to elect the Chair entitles the President to dissolve the Kurultai"
+      }
+    ],
+    "Report": [
+      {
+        "status": "translation",
+        "text": "report of a member of the Government to the Kurultai"
+      }
+    ],
+    "Session": [
+      {
+        "status": "translation",
+        "text": "session of the Kurultai"
+      }
+    ],
+    "SessionQuorumTwoThirds": [
+      {
+        "status": "translation",
+        "text": "Article 58, paragraph 5. A sitting of the Kurultai is competent where not less than two-thirds of the total number of the deputies are present"
+      }
+    ],
+    "StandingCommitteeEstablished": [
+      {
+        "status": "translation",
+        "text": "Article 59, paragraph 1. The Kurultai forms standing committees, whose number is determined by a constitutional statute"
+      }
+    ],
+    "TrustVoteTimingAndAnnualCap": [
+      {
+        "status": "translation",
+        "text": "Article 60, paragraph 7. The vote on the question of confidence is held not earlier than forty-eight hours after the question is raised, and the power is used not more than twice a year"
+      }
+    ],
+    "WorkingBodyResolutionWithinCompetence": [
+      {
+        "status": "translation",
+        "text": "Article 59, paragraph 2. Committees and commissions issue resolutions within their competence"
+      }
+    ],
+    "absence_sanction_threshold": [
+      {
+        "status": "translation",
+        "text": "the threshold for applying sanctions for absence is more than three times"
+      }
+    ],
+    "age_years": [
+      {
+        "status": "translation",
+        "text": "the age of the person in completed years"
+      }
+    ],
+    "annual_prior_trust_uses": [
+      {
+        "status": "translation",
+        "text": "the number of times the Government has already had recourse to the question of confidence this year"
+      }
+    ],
+    "bill_passed": [
+      {
+        "status": "translation",
+        "text": "the bill has been passed by the Kurultai"
+      }
+    ],
+    "candidate_person": [
+      {
+        "status": "translation",
+        "text": "the candidate is this person"
+      }
+    ],
+    "caught_at_crime_scene": [
+      {
+        "status": "translation",
+        "text": "the deputy was detained at the scene of a crime"
+      }
+    ],
+    "chair_candidate": [
+      {
+        "status": "translation",
+        "text": "the person has been nominated as a candidate for the office of Chair of the Kurultai"
+      }
+    ],
+    "chair_candidate_elected": [
+      {
+        "status": "translation",
+        "text": "the candidate has been elected Chair of the Kurultai"
+      }
+    ],
+    "chair_candidate_fluent_in_state_language": [
+      {
+        "status": "translation",
+        "text": "the candidate for Chair has a fluent command of the state language"
+      }
+    ],
+    "chair_candidate_is_deputy": [
+      {
+        "status": "translation",
+        "text": "the candidate for Chair is a deputy of the Kurultai"
+      }
+    ],
+    "chair_may_convene_and_preside": [
+      {
+        "status": "translation",
+        "text": "the Chair convenes sittings of the Kurultai and presides over them"
+      }
+    ],
+    "chair_may_direct_agenda_preparation": [
+      {
+        "status": "translation",
+        "text": "the Chair exercises general direction of the preparation of the matters submitted"
+      }
+    ],
+    "chair_may_enforce_rules": [
+      {
+        "status": "translation",
+        "text": "the Chair ensures compliance with the Rules of Procedure of the Kurultai"
+      }
+    ],
+    "chair_may_issue_orders": [
+      {
+        "status": "translation",
+        "text": "the Chair issues orders on matters within his competence"
+      }
+    ],
+    "chair_may_sign_kurultai_acts": [
+      {
+        "status": "translation",
+        "text": "the Chair signs the acts issued by the Kurultai"
+      }
+    ],
+    "chair_removal_votes": [
+      {
+        "status": "translation",
+        "text": "the number of votes cast for the recall of the Chair or for the acceptance of his resignation"
+      }
+    ],
+    "chair_removed_or_resignation_accepted": [
+      {
+        "status": "translation",
+        "text": "the Chair has been recalled from office or his resignation has been accepted"
+      }
+    ],
+    "chair_secret_ballot_votes": [
+      {
+        "status": "translation",
+        "text": "the number of votes cast for the candidate by secret ballot"
+      }
+    ],
+    "citizen": [
+      {
+        "status": "translation",
+        "text": "the person is a citizen of the Republic of Kazakhstan"
+      }
+    ],
+    "commission_established": [
+      {
+        "status": "translation",
+        "text": "the commission of the Kurultai has been lawfully formed"
+      }
+    ],
+    "commission_formed": [
+      {
+        "status": "translation",
+        "text": "the Kurultai has formed a commission"
+      }
+    ],
+    "constitutional_bill": [
+      {
+        "status": "translation",
+        "text": "the bill is a draft constitutional statute"
+      }
+    ],
+    "constitutional_early_termination_ground": [
+      {
+        "status": "translation",
+        "text": "a constitutional ground for the early termination of the powers of the Kurultai is present"
+      }
+    ],
+    "constitutional_law": [
+      {
+        "status": "translation",
+        "text": "the act is a constitutional statute"
+      }
+    ],
+    "constitutional_law_denominator": [
+      {
+        "status": "translation",
+        "text": "the denominator of the threshold for adopting a constitutional statute is two-thirds"
+      }
+    ],
+    "constitutional_law_numerator": [
+      {
+        "status": "translation",
+        "text": "the numerator of the threshold for adopting a constitutional statute is two-thirds"
+      }
+    ],
+    "constitutional_veto_override_denominator": [
+      {
+        "status": "translation",
+        "text": "the denominator of the threshold for overriding objections to a constitutional statute is three-quarters"
+      }
+    ],
+    "constitutional_veto_override_numerator": [
+      {
+        "status": "translation",
+        "text": "the numerator of the threshold for overriding objections to a constitutional statute is three-quarters"
+      }
+    ],
+    "deputies_present": [
+      {
+        "status": "translation",
+        "text": "the number of deputies present at the sitting"
+      }
+    ],
+    "deputy": [
+      {
+        "status": "translation",
+        "text": "the person is a deputy of the Kurultai"
+      }
+    ],
+    "deputy_detained": [
+      {
+        "status": "translation",
+        "text": "the deputy has been detained"
+      }
+    ],
+    "deputy_detention_attempt": [
+      {
+        "status": "translation",
+        "text": "an attempt has been made to detain the deputy"
+      }
+    ],
+    "deputy_detention_ground": [
+      {
+        "status": "translation",
+        "text": "a ground on which the detention of a deputy is permissible is present"
+      }
+    ],
+    "deputy_inviolability_applies": [
+      {
+        "status": "translation",
+        "text": "the protection of the deputy against detention operates"
+      }
+    ],
+    "deputy_minimum_age": [
+      {
+        "status": "translation",
+        "text": "the minimum age for a deputy of the Kurultai is twenty-five years"
+      }
+    ],
+    "deputy_residence_years": [
+      {
+        "status": "translation",
+        "text": "the required period of permanent residence for a deputy is ten years"
+      }
+    ],
+    "deputy_term": [
+      {
+        "status": "translation",
+        "text": "the term of office of a deputy of the Kurultai is five years"
+      }
+    ],
+    "deputy_term_expires_on": [
+      {
+        "status": "translation",
+        "text": "the day on which the powers of the deputy end"
+      }
+    ],
+    "deputy_term_started_on": [
+      {
+        "status": "translation",
+        "text": "the day on which the powers of the deputy began"
+      }
+    ],
+    "disciplinary_measure_applicable": [
+      {
+        "status": "translation",
+        "text": "the sanctions laid down by statute are applicable to the deputy"
+      }
+    ],
+    "election_results_published": [
+      {
+        "status": "translation",
+        "text": "the day on which the results of the election of deputies were published"
+      }
+    ],
+    "eligible_deputy_candidate": [
+      {
+        "status": "translation",
+        "text": "the person meets the requirements for a deputy of the Kurultai"
+      }
+    ],
+    "financial_bill_admissible": [
+      {
+        "status": "translation",
+        "text": "the financial bill may be introduced"
+      }
+    ],
+    "first_session_deadline_days": [
+      {
+        "status": "translation",
+        "text": "the time limit for convening the first session is thirty days from the day the election results are published"
+      }
+    ],
+    "first_session_of_kurultai": [
+      {
+        "status": "translation",
+        "text": "the session is the first session of this convocation of the Kurultai"
+      }
+    ],
+    "first_session_opened": [
+      {
+        "status": "translation",
+        "text": "the day on which the first session of the Kurultai opened"
+      }
+    ],
+    "first_session_timely": [
+      {
+        "status": "translation",
+        "text": "the first session was convened within the constitutional time limit"
+      }
+    ],
+    "government": [
+      {
+        "status": "translation",
+        "text": "the body is the Government of the Republic"
+      }
+    ],
+    "government_no_confidence": [
+      {
+        "status": "translation",
+        "text": "the Kurultai has passed a vote of no confidence in the Government"
+      }
+    ],
+    "grave_or_especially_grave_offence": [
+      {
+        "status": "translation",
+        "text": "the deputy has committed a grave or especially grave crime"
+      }
+    ],
+    "introduced_by_president": [
+      {
+        "status": "translation",
+        "text": "the bill was introduced by way of the legislative initiative of the President"
+      }
+    ],
+    "kurultai_body": [
+      {
+        "status": "translation",
+        "text": "the body is the Kurultai"
+      }
+    ],
+    "kurultai_chair": [
+      {
+        "status": "translation",
+        "text": "the person is the Chair of the Kurultai"
+      }
+    ],
+    "kurultai_chair_vote_denominator": [
+      {
+        "status": "translation",
+        "text": "the denominator of the threshold for electing the Chair is one half"
+      }
+    ],
+    "kurultai_chair_vote_numerator": [
+      {
+        "status": "translation",
+        "text": "the numerator of the threshold for electing the Chair is one half"
+      }
+    ],
+    "kurultai_consent_to_prosecution": [
+      {
+        "status": "translation",
+        "text": "the Kurultai has consented to the deputy being held liable"
+      }
+    ],
+    "kurultai_dissolution_authorized": [
+      {
+        "status": "translation",
+        "text": "the dissolution of the Kurultai is admissible"
+      }
+    ],
+    "kurultai_early_termination_authorized": [
+      {
+        "status": "translation",
+        "text": "the early termination of the powers of the Kurultai is admissible"
+      }
+    ],
+    "kurultai_powers_ended": [
+      {
+        "status": "translation",
+        "text": "the powers of the Kurultai of this convocation have ended"
+      }
+    ],
+    "kurultai_powers_started": [
+      {
+        "status": "translation",
+        "text": "the powers of the Kurultai of this convocation have begun"
+      }
+    ],
+    "kurultai_seat_count": [
+      {
+        "status": "translation",
+        "text": "the total number of the deputies of the Kurultai is one hundred and forty-five"
+      }
+    ],
+    "law_adopted": [
+      {
+        "status": "translation",
+        "text": "the day on which the statute was adopted by the Kurultai"
+      }
+    ],
+    "law_nonperformance_established": [
+      {
+        "status": "translation",
+        "text": "the report has established that the member of the Government failed to execute the statutes of the Republic"
+      }
+    ],
+    "law_presented_timely": [
+      {
+        "status": "translation",
+        "text": "the statute was submitted for signature within the constitutional time limit"
+      }
+    ],
+    "law_presented_to_president": [
+      {
+        "status": "translation",
+        "text": "the day on which the statute was submitted for signature to the President"
+      }
+    ],
+    "law_submission_deadline_days": [
+      {
+        "status": "translation",
+        "text": "the time limit for submitting an adopted statute for signature is ten days"
+      }
+    ],
+    "member_dismissal_decision_denominator": [
+      {
+        "status": "translation",
+        "text": "the denominator of the threshold for applying for a release from office is two-thirds"
+      }
+    ],
+    "member_dismissal_decision_numerator": [
+      {
+        "status": "translation",
+        "text": "the numerator of the threshold for applying for a release from office is two-thirds"
+      }
+    ],
+    "member_dismissal_initiative_denominator": [
+      {
+        "status": "translation",
+        "text": "the denominator of the threshold for initiating the hearing of a report is one third"
+      }
+    ],
+    "member_dismissal_initiative_numerator": [
+      {
+        "status": "translation",
+        "text": "the numerator of the threshold for initiating the hearing of a report is one third"
+      }
+    ],
+    "new_convocation_first_session_started": [
+      {
+        "status": "translation",
+        "text": "the first session of the Kurultai of the new convocation has opened"
+      }
+    ],
+    "no_confidence_decision_denominator": [
+      {
+        "status": "translation",
+        "text": "the denominator of the threshold for passing a vote of no confidence is one half"
+      }
+    ],
+    "no_confidence_decision_numerator": [
+      {
+        "status": "translation",
+        "text": "the numerator of the threshold for passing a vote of no confidence is one half"
+      }
+    ],
+    "no_confidence_initiating_votes": [
+      {
+        "status": "translation",
+        "text": "the number of deputies who initiated the question of a vote of no confidence"
+      }
+    ],
+    "no_confidence_initiative_denominator": [
+      {
+        "status": "translation",
+        "text": "the denominator of the threshold for initiating a vote of no confidence is one fifth"
+      }
+    ],
+    "no_confidence_initiative_numerator": [
+      {
+        "status": "translation",
+        "text": "the numerator of the threshold for initiating a vote of no confidence is one fifth"
+      }
+    ],
+    "no_confidence_votes": [
+      {
+        "status": "translation",
+        "text": "the number of votes cast for a vote of no confidence in the Government"
+      }
+    ],
+    "ordinary_bill": [
+      {
+        "status": "translation",
+        "text": "the bill is a draft ordinary statute"
+      }
+    ],
+    "ordinary_law": [
+      {
+        "status": "translation",
+        "text": "the act is an ordinary statute"
+      }
+    ],
+    "ordinary_law_denominator": [
+      {
+        "status": "translation",
+        "text": "the denominator of the threshold for adopting a statute is one half"
+      }
+    ],
+    "ordinary_law_numerator": [
+      {
+        "status": "translation",
+        "text": "the numerator of the threshold for adopting a statute is one half"
+      }
+    ],
+    "ordinary_veto_override_denominator": [
+      {
+        "status": "translation",
+        "text": "the denominator of the threshold for overriding objections to a statute is two-thirds"
+      }
+    ],
+    "ordinary_veto_override_numerator": [
+      {
+        "status": "translation",
+        "text": "the numerator of the threshold for overriding objections to a statute is two-thirds"
+      }
+    ],
+    "override_votes": [
+      {
+        "status": "translation",
+        "text": "the number of votes cast on overriding the objections of the President"
+      }
+    ],
+    "permanent_committee_formed": [
+      {
+        "status": "translation",
+        "text": "the Kurultai has formed a standing committee"
+      }
+    ],
+    "positive_government_opinion": [
+      {
+        "status": "translation",
+        "text": "there is a positive opinion of the Government on the bill"
+      }
+    ],
+    "president_nominated_chair": [
+      {
+        "status": "translation",
+        "text": "the candidature for Chair has been nominated by the President of the Republic"
+      }
+    ],
+    "president_objected_to_law": [
+      {
+        "status": "translation",
+        "text": "the President has raised objections to the statute"
+      }
+    ],
+    "presidential_dismissal_request": [
+      {
+        "status": "translation",
+        "text": "the Kurultai applies to the President for the release of a member of the Government from office"
+      }
+    ],
+    "presidential_objection_accepted": [
+      {
+        "status": "translation",
+        "text": "the objections of the President are deemed accepted"
+      }
+    ],
+    "presidential_objection_overridden": [
+      {
+        "status": "translation",
+        "text": "the objections of the President have been overridden by the Kurultai"
+      }
+    ],
+    "priority_bill": [
+      {
+        "status": "translation",
+        "text": "the day on which the bill recognised as a priority bill was introduced"
+      }
+    ],
+    "priority_bill_adopted": [
+      {
+        "status": "translation",
+        "text": "the day on which the priority bill was adopted"
+      }
+    ],
+    "priority_bill_due_on": [
+      {
+        "status": "translation",
+        "text": "the day on which the two-month period for the priority bill ends"
+      }
+    ],
+    "priority_bill_period": [
+      {
+        "status": "translation",
+        "text": "the period for the priority adoption of a priority bill is two months"
+      }
+    ],
+    "priority_bill_timely": [
+      {
+        "status": "translation",
+        "text": "the priority bill was adopted within the constitutional time limit"
+      }
+    ],
+    "reconsideration_deadline_missed": [
+      {
+        "status": "translation",
+        "text": "the one-month time limit for reconsideration has been missed"
+      }
+    ],
+    "reconsideration_within_one_month": [
+      {
+        "status": "translation",
+        "text": "the reconsideration and the vote were held within the one-month time limit"
+      }
+    ],
+    "repeated_refusal_to_elect_chair": [
+      {
+        "status": "translation",
+        "text": "the Kurultai has again refused to elect the Chair"
+      }
+    ],
+    "report_dismissal_votes": [
+      {
+        "status": "translation",
+        "text": "the number of votes cast for applying for the release of a member of the Government"
+      }
+    ],
+    "report_initiating_votes": [
+      {
+        "status": "translation",
+        "text": "the number of deputies who initiated the hearing of the report"
+      }
+    ],
+    "report_of_member": [
+      {
+        "status": "translation",
+        "text": "the report was presented by this member of the Government"
+      }
+    ],
+    "resides_last_years": [
+      {
+        "status": "translation",
+        "text": "the number of the last years of permanent residence in Kazakhstan"
+      }
+    ],
+    "resolution_within_body_competence": [
+      {
+        "status": "translation",
+        "text": "the resolution was adopted on matters within the competence of the body"
+      }
+    ],
+    "revenue_reducing_or_expenditure_increasing": [
+      {
+        "status": "translation",
+        "text": "the bill provides for a reduction of state revenue or an increase of expenditure"
+      }
+    ],
+    "session_opened": [
+      {
+        "status": "translation",
+        "text": "the session of the Kurultai has opened"
+      }
+    ],
+    "session_quorate": [
+      {
+        "status": "translation",
+        "text": "the sitting of the Kurultai is competent"
+      }
+    ],
+    "session_quorum_denominator": [
+      {
+        "status": "translation",
+        "text": "the denominator of the quorum for a sitting is two-thirds"
+      }
+    ],
+    "session_quorum_numerator": [
+      {
+        "status": "translation",
+        "text": "the numerator of the quorum for a sitting is two-thirds"
+      }
+    ],
+    "standing_committee_established": [
+      {
+        "status": "translation",
+        "text": "the standing committee of the Kurultai has been lawfully formed"
+      }
+    ],
+    "trust_power_annual_limit": [
+      {
+        "status": "translation",
+        "text": "the limit on the Government's recourse to the question of confidence is twice a year"
+      }
+    ],
+    "trust_question_on_rejected_government_bill": [
+      {
+        "status": "translation",
+        "text": "the Prime Minister has raised the question of confidence in connection with the failure to adopt a bill introduced by the Government"
+      }
+    ],
+    "trust_question_raised_at": [
+      {
+        "status": "translation",
+        "text": "the moment at which the question of confidence in the Government was raised"
+      }
+    ],
+    "trust_vote_held_at": [
+      {
+        "status": "translation",
+        "text": "the moment of the vote on the question of confidence"
+      }
+    ],
+    "trust_vote_timing_valid": [
+      {
+        "status": "translation",
+        "text": "the time limits for raising the question of confidence have been observed"
+      }
+    ],
+    "trust_vote_wait_hours": [
+      {
+        "status": "translation",
+        "text": "the period between the raising of the question of confidence and the vote is forty-eight hours"
+      }
+    ],
+    "unexcused_absences": [
+      {
+        "status": "translation",
+        "text": "the number of occasions on which the deputy was absent from sittings without good reason"
+      }
+    ],
+    "votes_for_bill": [
+      {
+        "status": "translation",
+        "text": "the number of votes cast for the bill"
+      }
+    ],
+    "working_body_resolution": [
+      {
+        "status": "translation",
+        "text": "the act is a resolution of a committee or a commission"
+      }
+    ],
+    "working_body_resolution_authorized": [
+      {
+        "status": "translation",
+        "text": "the committee or commission may issue this resolution"
+      }
+    ]
+  },
+  "language": "en",
+  "package": "kz.constitution.kurultai"
+}

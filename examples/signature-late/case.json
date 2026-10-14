@@ -1,0 +1,129 @@
+{
+  "assertions": [
+    {
+      "contentHash": "sha256:6919df29feffa327cd7fccc23f62f857cfa55014fd1c2b9b893770024dab9711",
+      "evidence": [],
+      "id": "urn:kz:constitution:president#p2-1",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:kz:constitution:president:test:president1",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:president#president"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:president"
+    },
+    {
+      "contentHash": "sha256:c0e8a0310cbea7ef3d6677f4a3660509c1830f03b7ef8c61cc58dfd670309110",
+      "evidence": [],
+      "id": "urn:kz:constitution:president#p2-2",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:kz:constitution:president:test:law2",
+            "kind": "entity_ref"
+          },
+          {
+            "id": "urn:kz:constitution:president:test:president1",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:president#law_presented"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:president"
+    },
+    {
+      "contentHash": "sha256:d35e7fb2092ebb4eaa9d9562025936b6d88983ccc87b721479e7ff463a3c90e9",
+      "evidence": [],
+      "id": "urn:kz:constitution:president#p2-3",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:kz:constitution:president:test:law2",
+            "kind": "entity_ref"
+          },
+          {
+            "kind": "value",
+            "type": {
+              "name": "urn:law:std#Date"
+            },
+            "value": "2026-08-01"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:president#law_presented_on"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:president"
+    },
+    {
+      "contentHash": "sha256:d6502dcad4961898df4f6f18ade6f080cee1606a41cb592bc289a1a327c14873",
+      "evidence": [],
+      "id": "urn:kz:constitution:president#p2-4",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:kz:constitution:president:test:law2",
+            "kind": "entity_ref"
+          },
+          {
+            "kind": "value",
+            "type": {
+              "name": "urn:law:std#Date"
+            },
+            "value": "2026-09-15"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:president#presidential_signature_day"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:president"
+    },
+    {
+      "contentHash": "sha256:271fe868227ae214602c852431da115601b748906c104d21c780cf48866f51bc",
+      "evidence": [],
+      "id": "urn:kz:constitution:president#p2-5",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:kz:constitution:president:test:president1",
+            "kind": "entity_ref"
+          },
+          {
+            "id": "urn:kz:constitution:president:test:law2",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:president#presidential_signature_attempt"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:president"
+    }
+  ],
+  "context": {
+    "deadlinePolicy": "urn:kz:constitution:president#KZ_CONSTITUTION_TERMS",
+    "decisionTime": "2026-09-20T12:00:00+05:00",
+    "knowledgeTime": "2026-09-20T12:00:00+05:00",
+    "legalTime": "2026-09-20",
+    "timezone": "Asia/Almaty"
+  },
+  "options": {}
+}

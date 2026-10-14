@@ -1,0 +1,1052 @@
+{
+  "$comment": "Кыргыз тилиндеги көрсөтүү катмары (DECISION-0070). Бул файл CLIR'ге кирбейт жана презентациялык катмар менен гана окулат (verbalize --labels, MCP, жумуш үстөлү). Котормо Казакстан Республикасынын Конституциясын ресмилештирүүнүн орусча (ru-KZ) белгилеринен жасалган жумушчу котормо (`translation`) — расмий басылма эмес; терминология Кыргыз Республикасынын Конституциясынын кыргызча редакциясы (corpus/laws/kg/constitution) жана law.verb.ky пакети боюнча сверкаланган. Ачкыч — жарыялоонун жергиликтүү аты.",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "Bill": [
+      {
+        "status": "translation",
+        "text": "мыйзам долбоору"
+      }
+    ],
+    "Candidate": [
+      {
+        "status": "translation",
+        "text": "кандидат"
+      }
+    ],
+    "Commission": [
+      {
+        "status": "translation",
+        "text": "Курултайдын комиссиясы"
+      }
+    ],
+    "CommissionEstablished": [
+      {
+        "status": "translation",
+        "text": "59-берене, 1-пункт. Курултай комиссияларды түзөт"
+      }
+    ],
+    "Committee": [
+      {
+        "status": "translation",
+        "text": "Курултайдын туруктуу комитети"
+      }
+    ],
+    "ConstitutionalEarlyTermination": [
+      {
+        "status": "translation",
+        "text": "52-берене, 3-пункт. Ыйгарым укуктарды мөөнөтүнөн мурда токтотуу Конституцияда каралган негизди жана тартипти талап кылат"
+      }
+    ],
+    "ConstitutionalLawTwoThirds": [
+      {
+        "status": "translation",
+        "text": "61-берене, 3-пункт. Конституциялык мыйзамдар Курултай депутаттарынын жалпы санынын үчтөн эки бөлүгүнөн кем эмес көпчүлүк добушу менен кабыл алынат"
+      }
+    ],
+    "ConstitutionalVetoOverride": [
+      {
+        "status": "translation",
+        "text": "56-берене, 2)-пунктча. Президенттин конституциялык мыйзам боюнча каршы пикирлери депутаттардын жалпы санынын төрттөн үч көпчүлүк добушу менен четке кагылат"
+      }
+    ],
+    "Deputy": [
+      {
+        "status": "translation",
+        "text": "Курултайдын депутаты"
+      }
+    ],
+    "DeputyCandidateEligibility": [
+      {
+        "status": "translation",
+        "text": "54-берене, 3-пункт. Курултайдын депутаты жыйырма беш жашка толгон жана акыркы он жыл ичинде Казакстанда туруктуу жашаган Республиканын жараны боло алат"
+      }
+    ],
+    "DeputyDetentionException": [
+      {
+        "status": "translation",
+        "text": "55-берене, 3-пункт. Депутатты кармоого кылмыш үстүндө кармалганда, оор жана өзгөчө оор кылмыштарды жасаганда же Курултайдын макулдугу менен жол берилет"
+      }
+    ],
+    "DeputyDetentionGroundConsent": [
+      {
+        "status": "translation",
+        "text": "55-берене, 3-пункт. Курултайдын макулдугу — депутаттын коргоосун алып салуучу негиз"
+      }
+    ],
+    "DeputyDetentionGroundGraveOffence": [
+      {
+        "status": "translation",
+        "text": "55-берене, 3-пункт. Оор же өзгөчө оор кылмыш жасоо — депутаттын коргоосун алып салуучу негиз"
+      }
+    ],
+    "DeputyDetentionGroundInTheAct": [
+      {
+        "status": "translation",
+        "text": "55-берене, 3-пункт. Кылмыш үстүндө кармоо — депутаттын коргоосун алып салуучу негиз"
+      }
+    ],
+    "DeputyImmunity": [
+      {
+        "status": "translation",
+        "text": "55-берене, 3-пункт. Курултайдын депутаты кылмыш үстүндө кармоодон жана оор жана өзгөчө оор кылмыштарды жасоодон тышкары, Курултайдын макулдугусуз кармалышы мүмкүн эмес"
+      }
+    ],
+    "DeputyInviolabilityApplies": [
+      {
+        "status": "translation",
+        "text": "55-берене, 3-пункт. Депутатты кармоодон коргоо аталган үч негиздин бири да жок болгондо күчүндө болот"
+      }
+    ],
+    "DeputyInviolabilityApplies/unless/0": [
+      {
+        "status": "translation",
+        "text": "55-берене, 3-пункт. Депутатты кармоодон коргоо аталган үч негиздин бири да жок болгондо күчүндө болот"
+      }
+    ],
+    "DeputyPersonalImmunity": [
+      {
+        "status": "translation",
+        "text": "55-берене, 3-пункт. Курултайдын депутаты кылмыш үстүндө кармоодон жана оор жана өзгөчө оор кылмыштарды жасоодон тышкары, Курултайдын макулдугусуз кармалышы мүмкүн эмес"
+      }
+    ],
+    "DeputyTermExpiry": [
+      {
+        "status": "translation",
+        "text": "53-берене, 2-пункт. Курултай депутаттарынын ыйгарым укуктарынын мөөнөтү — беш жыл"
+      }
+    ],
+    "FinancialBillWithGovernmentOpinion": [
+      {
+        "status": "translation",
+        "text": "60-берене, 6-пункт. Кирешелерди кыскартуучу же чыгашаларды көбөйтүүчү мыйзам долбоору Өкмөттүн оң корутундусу болгондо гана киргизилет"
+      }
+    ],
+    "FirstSessionThirtyDays": [
+      {
+        "status": "translation",
+        "text": "58-берене, 2-пункт. Курултайдын биринчи сессиясы шайлоонун жыйынтыктары жарыяланган күндөн тартып отуз күндөн кечиктирилбей чакырылат"
+      }
+    ],
+    "Government": [
+      {
+        "status": "translation",
+        "text": "Казакстан Республикасынын Өкмөтү"
+      }
+    ],
+    "GovernmentMember": [
+      {
+        "status": "translation",
+        "text": "Өкмөттүн мүчөсү"
+      }
+    ],
+    "GovernmentMemberDismissalRequest": [
+      {
+        "status": "translation",
+        "text": "56-берене, 17)-пунктча. Депутаттардын үчтөн бир бөлүгүнөн кем эмесинин демилгеси боюнча Курултай добуштардын үчтөн эки бөлүгүнөн кем эмеси менен Өкмөттүн мүчөсүн бошотуу жөнүндө Президентке кайрылуу тууралуу чечим кабыл алат"
+      }
+    ],
+    "GovernmentNoConfidence": [
+      {
+        "status": "translation",
+        "text": "56-берене, 13)-пунктча. Депутаттардын бештен бир бөлүгүнөн кем эмесинин демилгеси боюнча Курултай депутаттардын жалпы санынын көпчүлүк добушу менен Өкмөткө ишенбестик билдирет"
+      }
+    ],
+    "Kurultai": [
+      {
+        "status": "translation",
+        "text": "Казакстан Республикасынын Курултайы"
+      }
+    ],
+    "KurultaiChair": [
+      {
+        "status": "translation",
+        "text": "Курултайдын Төрагасы"
+      }
+    ],
+    "KurultaiChairElection": [
+      {
+        "status": "translation",
+        "text": "57-берене, 1-пункт. Төраганы депутаттардын жалпы санынын көпчүлүгү менен жашыруун добуш берүү аркылуу шайлоо"
+      }
+    ],
+    "KurultaiChairMayConveneAndPreside": [
+      {
+        "status": "translation",
+        "text": "57-берене, 3-пункт. Төрага отурумдарды чакырат жана аларда төрагалык кылат"
+      }
+    ],
+    "KurultaiChairMayDirectAgendaPreparation": [
+      {
+        "status": "translation",
+        "text": "57-берене, 3-пункт. Төрага Курултайдын маселелерин даярдоого жалпы жетекчилик кылат"
+      }
+    ],
+    "KurultaiChairMayEnforceRules": [
+      {
+        "status": "translation",
+        "text": "57-берене, 3-пункт. Төрага Курултайдын Регламентинин сакталышын камсыз кылат"
+      }
+    ],
+    "KurultaiChairMayIssueOrders": [
+      {
+        "status": "translation",
+        "text": "57-берене, 5-пункт. Төрага өз компетенциясындагы маселелер боюнча тескемелерди чыгарат"
+      }
+    ],
+    "KurultaiChairMaySignActs": [
+      {
+        "status": "translation",
+        "text": "57-берене, 3-пункт. Төрага Курултайдын актыларына кол коёт"
+      }
+    ],
+    "KurultaiChairRemovalOrResignation": [
+      {
+        "status": "translation",
+        "text": "57-берене, 2-пункт. Төраганы депутаттардын жалпы санынын көпчүлүгү менен кызматтан кайра чакыртып алуу же анын отставкасы"
+      }
+    ],
+    "KurultaiPowersEndAtNewConvocation": [
+      {
+        "status": "translation",
+        "text": "52-берене, 2-пункт. Ыйгарым укуктар жаңы чакырылыштын биринчи сессиясынын иши башталышы менен аяктайт"
+      }
+    ],
+    "KurultaiPowersStartAtFirstSession": [
+      {
+        "status": "translation",
+        "text": "52-берене, 2-пункт. Курултайдын ыйгарым укуктары биринчи сессиянын ачылышы менен башталат"
+      }
+    ],
+    "KurultaiResolution": [
+      {
+        "status": "translation",
+        "text": "Курултайдын же анын жумушчу органынын токтому"
+      }
+    ],
+    "Law": [
+      {
+        "status": "translation",
+        "text": "мыйзам же конституциялык мыйзам"
+      }
+    ],
+    "LawPresentedWithinTenDays": [
+      {
+        "status": "translation",
+        "text": "60-берене, 5-пункт. Курултай кабыл алган мыйзам он күндүн ичинде Президентке кол коюуга берилет"
+      }
+    ],
+    "MissedReconsiderationAcceptsObjection": [
+      {
+        "status": "translation",
+        "text": "56-берене, 2)-пунктча. Кайра талкуулоонун бир айлык мөөнөтүн сактабоо Президенттин каршы пикирлери кабыл алынганын билдирет"
+      }
+    ],
+    "OrdinaryLawMajority": [
+      {
+        "status": "translation",
+        "text": "61-берене, 4-пункт. Мыйзамдар Курултай депутаттарынын жалпы санынын көпчүлүк добушу менен кабыл алынат"
+      }
+    ],
+    "OrdinaryVetoOverride": [
+      {
+        "status": "translation",
+        "text": "56-берене, 2)-пунктча. Президенттин мыйзам боюнча каршы пикирлери депутаттардын жалпы санынын үчтөн эки көпчүлүк добушу менен четке кагылат"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "жеке адам"
+      }
+    ],
+    "PresidentialFinancialBillException": [
+      {
+        "status": "translation",
+        "text": "60-берене, 6-пункт. Президент киргизген мыйзам долбоорлору үчүн Өкмөттүн корутундусу талап кылынбайт"
+      }
+    ],
+    "PriorityBillDue": [
+      {
+        "status": "translation",
+        "text": "60-берене, 2-пункт. Артыкчылыктуу мыйзам долбоору эки айдын ичинде кабыл алынууга тийиш"
+      }
+    ],
+    "PriorityBillTwoMonths": [
+      {
+        "status": "translation",
+        "text": "60-берене, 2-пункт. Эки айлык мөөнөт аяктаган күндөн кечиктирилбей кабыл алынган артыкчылыктуу мыйзам долбоору өз убагында кабыл алынган"
+      }
+    ],
+    "RepeatedAbsenceSanction": [
+      {
+        "status": "translation",
+        "text": "55-берене, 1-пункт. Депутаттын жүйөлүү себепсиз үч жолудан ашык катышпоосу мыйзамда белгиленген жаза чараларын колдонууга алып келет"
+      }
+    ],
+    "RepeatedChairRefusalAllowsDissolution": [
+      {
+        "status": "translation",
+        "text": "57-берене, 1-пункт. Төраганы шайлоодон кайталап баш тартуу Президентке Курултайды таратуу укугун берет"
+      }
+    ],
+    "Report": [
+      {
+        "status": "translation",
+        "text": "Өкмөт мүчөсүнүн Курултайдын алдындагы отчету"
+      }
+    ],
+    "Session": [
+      {
+        "status": "translation",
+        "text": "Курултайдын сессиясы"
+      }
+    ],
+    "SessionQuorumTwoThirds": [
+      {
+        "status": "translation",
+        "text": "58-берене, 5-пункт. Курултайдын отуруму депутаттардын жалпы санынын үчтөн эки бөлүгүнөн кем эмеси катышканда укуктуу болот"
+      }
+    ],
+    "StandingCommitteeEstablished": [
+      {
+        "status": "translation",
+        "text": "59-берене, 1-пункт. Курултай туруктуу комитеттерди түзөт, алардын саны конституциялык мыйзам менен аныкталат"
+      }
+    ],
+    "TrustVoteTimingAndAnnualCap": [
+      {
+        "status": "translation",
+        "text": "60-берене, 7-пункт. Ишеним маселеси боюнча добуш берүү маселе коюлган учурдан тартып кырк сегиз сааттан эрте эмес өткөрүлөт, ал эми бул ыйгарым укук жылына эки жолудан ашык колдонулбайт"
+      }
+    ],
+    "WorkingBodyResolutionWithinCompetence": [
+      {
+        "status": "translation",
+        "text": "59-берене, 2-пункт. Комитеттер жана комиссиялар компетенциясынын чегинде токтомдорду чыгарат"
+      }
+    ],
+    "absence_sanction_threshold": [
+      {
+        "status": "translation",
+        "text": "катышпагандыгы үчүн жаза чараларын колдонуу порогу — үч жолудан ашык"
+      }
+    ],
+    "age_years": [
+      {
+        "status": "translation",
+        "text": "адамдын толук жылдардагы жашы"
+      }
+    ],
+    "annual_prior_trust_uses": [
+      {
+        "status": "translation",
+        "text": "ушул жылы Өкмөттүн ишеним маселесине кайрылууларынын өткөн саны"
+      }
+    ],
+    "bill_passed": [
+      {
+        "status": "translation",
+        "text": "мыйзам долбоору Курултай тарабынан кабыл алынды"
+      }
+    ],
+    "candidate_person": [
+      {
+        "status": "translation",
+        "text": "кандидат ушул адам болуп саналат"
+      }
+    ],
+    "caught_at_crime_scene": [
+      {
+        "status": "translation",
+        "text": "депутат кылмыш үстүндө кармалган"
+      }
+    ],
+    "chair_candidate": [
+      {
+        "status": "translation",
+        "text": "адам Курултайдын Төрагасынын кызматына кандидат болуп көрсөтүлгөн"
+      }
+    ],
+    "chair_candidate_elected": [
+      {
+        "status": "translation",
+        "text": "кандидат Курултайдын Төрагасы болуп шайланган"
+      }
+    ],
+    "chair_candidate_fluent_in_state_language": [
+      {
+        "status": "translation",
+        "text": "Төрагалыкка кандидат мамлекеттик тилди эркин билет"
+      }
+    ],
+    "chair_candidate_is_deputy": [
+      {
+        "status": "translation",
+        "text": "Төрагалыкка кандидат Курултайдын депутаты болуп саналат"
+      }
+    ],
+    "chair_may_convene_and_preside": [
+      {
+        "status": "translation",
+        "text": "Төрага Курултайдын отурумдарын чакырат жана аларда төрагалык кылат"
+      }
+    ],
+    "chair_may_direct_agenda_preparation": [
+      {
+        "status": "translation",
+        "text": "Төрага киргизилүүчү маселелерди даярдоого жалпы жетекчилик кылат"
+      }
+    ],
+    "chair_may_enforce_rules": [
+      {
+        "status": "translation",
+        "text": "Төрага Курултайдын регламентинин сакталышын камсыз кылат"
+      }
+    ],
+    "chair_may_issue_orders": [
+      {
+        "status": "translation",
+        "text": "Төрага өз компетенциясындагы маселелер боюнча тескемелерди чыгарат"
+      }
+    ],
+    "chair_may_sign_kurultai_acts": [
+      {
+        "status": "translation",
+        "text": "Төрага Курултай чыгарган актыларга кол коёт"
+      }
+    ],
+    "chair_removal_votes": [
+      {
+        "status": "translation",
+        "text": "Төраганы кайра чакыртып алуу же анын отставкасын кабыл алуу үчүн берилген добуштардын саны"
+      }
+    ],
+    "chair_removed_or_resignation_accepted": [
+      {
+        "status": "translation",
+        "text": "Төрага кызматтан кайра чакыртып алынган же анын отставкасы кабыл алынган"
+      }
+    ],
+    "chair_secret_ballot_votes": [
+      {
+        "status": "translation",
+        "text": "жашыруун добуш берүүдө кандидат үчүн берилген добуштардын саны"
+      }
+    ],
+    "citizen": [
+      {
+        "status": "translation",
+        "text": "адам Казакстан Республикасынын жараны болуп саналат"
+      }
+    ],
+    "commission_established": [
+      {
+        "status": "translation",
+        "text": "Курултайдын комиссиясы мыйзамдуу түрдө түзүлгөн"
+      }
+    ],
+    "commission_formed": [
+      {
+        "status": "translation",
+        "text": "Курултай комиссия түздү"
+      }
+    ],
+    "constitutional_bill": [
+      {
+        "status": "translation",
+        "text": "мыйзам долбоору конституциялык мыйзамдын долбоору болуп саналат"
+      }
+    ],
+    "constitutional_early_termination_ground": [
+      {
+        "status": "translation",
+        "text": "Курултайдын ыйгарым укуктарын мөөнөтүнөн мурда токтотуунун конституциялык негизи бар"
+      }
+    ],
+    "constitutional_law": [
+      {
+        "status": "translation",
+        "text": "акт конституциялык мыйзам болуп саналат"
+      }
+    ],
+    "constitutional_law_denominator": [
+      {
+        "status": "translation",
+        "text": "конституциялык мыйзамды кабыл алуу порогунун бөлүмү — үчтөн эки"
+      }
+    ],
+    "constitutional_law_numerator": [
+      {
+        "status": "translation",
+        "text": "конституциялык мыйзамды кабыл алуу порогунун алымы — үчтөн эки"
+      }
+    ],
+    "constitutional_veto_override_denominator": [
+      {
+        "status": "translation",
+        "text": "конституциялык мыйзам боюнча каршы пикирлерди четке кагуу порогунун бөлүмү — төрттөн үч"
+      }
+    ],
+    "constitutional_veto_override_numerator": [
+      {
+        "status": "translation",
+        "text": "конституциялык мыйзам боюнча каршы пикирлерди четке кагуу порогунун алымы — төрттөн үч"
+      }
+    ],
+    "deputies_present": [
+      {
+        "status": "translation",
+        "text": "отурумга катышкан депутаттардын саны"
+      }
+    ],
+    "deputy": [
+      {
+        "status": "translation",
+        "text": "адам Курултайдын депутаты болуп саналат"
+      }
+    ],
+    "deputy_detained": [
+      {
+        "status": "translation",
+        "text": "депутат кармалган"
+      }
+    ],
+    "deputy_detention_attempt": [
+      {
+        "status": "translation",
+        "text": "депутатты кармоого аракет жасалган"
+      }
+    ],
+    "deputy_detention_ground": [
+      {
+        "status": "translation",
+        "text": "депутатты кармоого жол берилүүчү негиз бар"
+      }
+    ],
+    "deputy_inviolability_applies": [
+      {
+        "status": "translation",
+        "text": "депутатты кармоодон коргоо күчүндө"
+      }
+    ],
+    "deputy_minimum_age": [
+      {
+        "status": "translation",
+        "text": "Курултай депутатынын минималдуу жашы — жыйырма беш жыл"
+      }
+    ],
+    "deputy_residence_years": [
+      {
+        "status": "translation",
+        "text": "депутаттын туруктуу жашоосунун талап кылынган мөөнөтү — он жыл"
+      }
+    ],
+    "deputy_term": [
+      {
+        "status": "translation",
+        "text": "Курултай депутатынын ыйгарым укуктарынын мөөнөтү — беш жыл"
+      }
+    ],
+    "deputy_term_expires_on": [
+      {
+        "status": "translation",
+        "text": "депутаттын ыйгарым укуктары аяктаган күн"
+      }
+    ],
+    "deputy_term_started_on": [
+      {
+        "status": "translation",
+        "text": "депутаттын ыйгарым укуктары башталган күн"
+      }
+    ],
+    "disciplinary_measure_applicable": [
+      {
+        "status": "translation",
+        "text": "депутатка мыйзамда белгиленген жаза чаралары колдонулушу мүмкүн"
+      }
+    ],
+    "election_results_published": [
+      {
+        "status": "translation",
+        "text": "депутаттарды шайлоонун жыйынтыктары жарыяланган күн"
+      }
+    ],
+    "eligible_deputy_candidate": [
+      {
+        "status": "translation",
+        "text": "адам Курултайдын депутатына коюлган талаптарга жооп берет"
+      }
+    ],
+    "financial_bill_admissible": [
+      {
+        "status": "translation",
+        "text": "финансылык мүнөздөгү мыйзам долбоорун киргизүүгө жол берилет"
+      }
+    ],
+    "first_session_deadline_days": [
+      {
+        "status": "translation",
+        "text": "биринчи сессияны чакыруу мөөнөтү — шайлоонун жыйынтыктары жарыяланган күндөн тартып отуз күн"
+      }
+    ],
+    "first_session_of_kurultai": [
+      {
+        "status": "translation",
+        "text": "сессия Курултайдын ушул чакырылышынын биринчи сессиясы болуп саналат"
+      }
+    ],
+    "first_session_opened": [
+      {
+        "status": "translation",
+        "text": "Курултайдын биринчи сессиясы ачылган күн"
+      }
+    ],
+    "first_session_timely": [
+      {
+        "status": "translation",
+        "text": "биринчи сессия конституциялык мөөнөттө чакырылган"
+      }
+    ],
+    "government": [
+      {
+        "status": "translation",
+        "text": "орган Республиканын Өкмөтү болуп саналат"
+      }
+    ],
+    "government_no_confidence": [
+      {
+        "status": "translation",
+        "text": "Курултай Өкмөткө ишенбестик билдирди"
+      }
+    ],
+    "grave_or_especially_grave_offence": [
+      {
+        "status": "translation",
+        "text": "депутат оор же өзгөчө оор кылмыш жасаган"
+      }
+    ],
+    "introduced_by_president": [
+      {
+        "status": "translation",
+        "text": "мыйзам долбоору Президенттин мыйзам чыгаруу демилгеси тартибинде киргизилген"
+      }
+    ],
+    "kurultai_body": [
+      {
+        "status": "translation",
+        "text": "орган Курултай болуп саналат"
+      }
+    ],
+    "kurultai_chair": [
+      {
+        "status": "translation",
+        "text": "адам Курултайдын Төрагасы болуп саналат"
+      }
+    ],
+    "kurultai_chair_vote_denominator": [
+      {
+        "status": "translation",
+        "text": "Төраганы шайлоо порогунун бөлүмү — экиден бир"
+      }
+    ],
+    "kurultai_chair_vote_numerator": [
+      {
+        "status": "translation",
+        "text": "Төраганы шайлоо порогунун алымы — экиден бир"
+      }
+    ],
+    "kurultai_consent_to_prosecution": [
+      {
+        "status": "translation",
+        "text": "Курултай депутатты жоопкерчиликке тартууга макулдук берди"
+      }
+    ],
+    "kurultai_dissolution_authorized": [
+      {
+        "status": "translation",
+        "text": "Курултайды таратууга жол берилет"
+      }
+    ],
+    "kurultai_early_termination_authorized": [
+      {
+        "status": "translation",
+        "text": "Курултайдын ыйгарым укуктарын мөөнөтүнөн мурда токтотууга жол берилет"
+      }
+    ],
+    "kurultai_powers_ended": [
+      {
+        "status": "translation",
+        "text": "Курултайдын ушул чакырылышынын ыйгарым укуктары токтотулган"
+      }
+    ],
+    "kurultai_powers_started": [
+      {
+        "status": "translation",
+        "text": "Курултайдын ушул чакырылышынын ыйгарым укуктары башталган"
+      }
+    ],
+    "kurultai_seat_count": [
+      {
+        "status": "translation",
+        "text": "Курултай депутаттарынын жалпы саны — жүз кырк беш"
+      }
+    ],
+    "law_adopted": [
+      {
+        "status": "translation",
+        "text": "мыйзам Курултай тарабынан кабыл алынган күн"
+      }
+    ],
+    "law_nonperformance_established": [
+      {
+        "status": "translation",
+        "text": "отчеттун жыйынтыгы боюнча Өкмөт мүчөсүнүн Республиканын мыйзамдарын аткарбагандыгы аныкталган"
+      }
+    ],
+    "law_presented_timely": [
+      {
+        "status": "translation",
+        "text": "мыйзам кол коюуга конституциялык мөөнөттө берилген"
+      }
+    ],
+    "law_presented_to_president": [
+      {
+        "status": "translation",
+        "text": "мыйзам Президентке кол коюуга берилген күн"
+      }
+    ],
+    "law_submission_deadline_days": [
+      {
+        "status": "translation",
+        "text": "кабыл алынган мыйзамды кол коюуга берүү мөөнөтү — он күн"
+      }
+    ],
+    "member_dismissal_decision_denominator": [
+      {
+        "status": "translation",
+        "text": "бошотуу жөнүндө кайрылуу порогунун бөлүмү — үчтөн эки"
+      }
+    ],
+    "member_dismissal_decision_numerator": [
+      {
+        "status": "translation",
+        "text": "бошотуу жөнүндө кайрылуу порогунун алымы — үчтөн эки"
+      }
+    ],
+    "member_dismissal_initiative_denominator": [
+      {
+        "status": "translation",
+        "text": "отчетту угуу демилгесинин порогунун бөлүмү — үчтөн бир"
+      }
+    ],
+    "member_dismissal_initiative_numerator": [
+      {
+        "status": "translation",
+        "text": "отчетту угуу демилгесинин порогунун алымы — үчтөн бир"
+      }
+    ],
+    "new_convocation_first_session_started": [
+      {
+        "status": "translation",
+        "text": "Курултайдын жаңы чакырылышынын биринчи сессиясы ачылды"
+      }
+    ],
+    "no_confidence_decision_denominator": [
+      {
+        "status": "translation",
+        "text": "ишенбестик билдирүү порогунун бөлүмү — экиден бир"
+      }
+    ],
+    "no_confidence_decision_numerator": [
+      {
+        "status": "translation",
+        "text": "ишенбестик билдирүү порогунун алымы — экиден бир"
+      }
+    ],
+    "no_confidence_initiating_votes": [
+      {
+        "status": "translation",
+        "text": "ишенбестик билдирүү маселесин демилгелеген депутаттардын саны"
+      }
+    ],
+    "no_confidence_initiative_denominator": [
+      {
+        "status": "translation",
+        "text": "ишенбестик жөнүндө демилге порогунун бөлүмү — бештен бир"
+      }
+    ],
+    "no_confidence_initiative_numerator": [
+      {
+        "status": "translation",
+        "text": "ишенбестик жөнүндө демилге порогунун алымы — бештен бир"
+      }
+    ],
+    "no_confidence_votes": [
+      {
+        "status": "translation",
+        "text": "Өкмөткө ишенбестик билдирүү үчүн берилген добуштардын саны"
+      }
+    ],
+    "ordinary_bill": [
+      {
+        "status": "translation",
+        "text": "мыйзам долбоору кадимки мыйзамдын долбоору болуп саналат"
+      }
+    ],
+    "ordinary_law": [
+      {
+        "status": "translation",
+        "text": "акт кадимки мыйзам болуп саналат"
+      }
+    ],
+    "ordinary_law_denominator": [
+      {
+        "status": "translation",
+        "text": "мыйзамды кабыл алуу порогунун бөлүмү — экиден бир"
+      }
+    ],
+    "ordinary_law_numerator": [
+      {
+        "status": "translation",
+        "text": "мыйзамды кабыл алуу порогунун алымы — экиден бир"
+      }
+    ],
+    "ordinary_veto_override_denominator": [
+      {
+        "status": "translation",
+        "text": "мыйзам боюнча каршы пикирлерди четке кагуу порогунун бөлүмү — үчтөн эки"
+      }
+    ],
+    "ordinary_veto_override_numerator": [
+      {
+        "status": "translation",
+        "text": "мыйзам боюнча каршы пикирлерди четке кагуу порогунун алымы — үчтөн эки"
+      }
+    ],
+    "override_votes": [
+      {
+        "status": "translation",
+        "text": "Президенттин каршы пикирлерин четке кагууда берилген добуштардын саны"
+      }
+    ],
+    "permanent_committee_formed": [
+      {
+        "status": "translation",
+        "text": "Курултай туруктуу комитет түздү"
+      }
+    ],
+    "positive_government_opinion": [
+      {
+        "status": "translation",
+        "text": "мыйзам долбоору боюнча Өкмөттүн оң корутундусу бар"
+      }
+    ],
+    "president_nominated_chair": [
+      {
+        "status": "translation",
+        "text": "Төраганын талапкерлиги Республиканын Президенти тарабынан көрсөтүлгөн"
+      }
+    ],
+    "president_objected_to_law": [
+      {
+        "status": "translation",
+        "text": "Президент мыйзам боюнча каршы пикирлерин билдирди"
+      }
+    ],
+    "presidential_dismissal_request": [
+      {
+        "status": "translation",
+        "text": "Курултай Өкмөттүн мүчөсүн кызматтан бошотуу жөнүндө Президентке кайрылат"
+      }
+    ],
+    "presidential_objection_accepted": [
+      {
+        "status": "translation",
+        "text": "Президенттин каршы пикирлери кабыл алынды деп эсептелет"
+      }
+    ],
+    "presidential_objection_overridden": [
+      {
+        "status": "translation",
+        "text": "Президенттин каршы пикирлери Курултай тарабынан четке кагылган"
+      }
+    ],
+    "priority_bill": [
+      {
+        "status": "translation",
+        "text": "артыкчылыктуу деп таанылган мыйзам долбоору киргизилген күн"
+      }
+    ],
+    "priority_bill_adopted": [
+      {
+        "status": "translation",
+        "text": "артыкчылыктуу мыйзам долбоору кабыл алынган күн"
+      }
+    ],
+    "priority_bill_due_on": [
+      {
+        "status": "translation",
+        "text": "артыкчылыктуу мыйзам долбоору боюнча эки айлык мөөнөт аяктаган күн"
+      }
+    ],
+    "priority_bill_period": [
+      {
+        "status": "translation",
+        "text": "артыкчылыктуу мыйзам долбоорун кезексиз кабыл алуу мөөнөтү — эки ай"
+      }
+    ],
+    "priority_bill_timely": [
+      {
+        "status": "translation",
+        "text": "артыкчылыктуу мыйзам долбоору конституциялык мөөнөттө кабыл алынган"
+      }
+    ],
+    "reconsideration_deadline_missed": [
+      {
+        "status": "translation",
+        "text": "кайра талкуулоонун бир айлык мөөнөтү өткөрүлүп жиберилген"
+      }
+    ],
+    "reconsideration_within_one_month": [
+      {
+        "status": "translation",
+        "text": "кайра талкуулоо жана добуш берүү бир айлык мөөнөттө өткөрүлгөн"
+      }
+    ],
+    "repeated_refusal_to_elect_chair": [
+      {
+        "status": "translation",
+        "text": "Курултай Төраганы шайлоодон кайталап баш тартты"
+      }
+    ],
+    "report_dismissal_votes": [
+      {
+        "status": "translation",
+        "text": "Өкмөт мүчөсүн бошотуу жөнүндө кайрылуу үчүн берилген добуштардын саны"
+      }
+    ],
+    "report_initiating_votes": [
+      {
+        "status": "translation",
+        "text": "отчетту угууну демилгелеген депутаттардын саны"
+      }
+    ],
+    "report_of_member": [
+      {
+        "status": "translation",
+        "text": "отчет ушул Өкмөт мүчөсү тарабынан берилген"
+      }
+    ],
+    "resides_last_years": [
+      {
+        "status": "translation",
+        "text": "Казакстанда туруктуу жашаган акыркы жылдардын саны"
+      }
+    ],
+    "resolution_within_body_competence": [
+      {
+        "status": "translation",
+        "text": "токтом органдын компетенциясындагы маселелер боюнча кабыл алынган"
+      }
+    ],
+    "revenue_reducing_or_expenditure_increasing": [
+      {
+        "status": "translation",
+        "text": "мыйзам долбоору мамлекеттик кирешелерди кыскартууну же чыгашаларды көбөйтүүнү карайт"
+      }
+    ],
+    "session_opened": [
+      {
+        "status": "translation",
+        "text": "Курултайдын сессиясы ачылган"
+      }
+    ],
+    "session_quorate": [
+      {
+        "status": "translation",
+        "text": "Курултайдын отуруму укуктуу"
+      }
+    ],
+    "session_quorum_denominator": [
+      {
+        "status": "translation",
+        "text": "отурумдун кворумунун бөлүмү — үчтөн эки"
+      }
+    ],
+    "session_quorum_numerator": [
+      {
+        "status": "translation",
+        "text": "отурумдун кворумунун алымы — үчтөн эки"
+      }
+    ],
+    "standing_committee_established": [
+      {
+        "status": "translation",
+        "text": "Курултайдын туруктуу комитети мыйзамдуу түрдө түзүлгөн"
+      }
+    ],
+    "trust_power_annual_limit": [
+      {
+        "status": "translation",
+        "text": "Өкмөттүн ишеним маселесине кайрылуусунун чеги — жылына эки жолу"
+      }
+    ],
+    "trust_question_on_rejected_government_bill": [
+      {
+        "status": "translation",
+        "text": "Премьер-Министр Өкмөт киргизген мыйзам долбоорунун кабыл алынбагандыгына байланыштуу ишеним маселесин койду"
+      }
+    ],
+    "trust_question_raised_at": [
+      {
+        "status": "translation",
+        "text": "Өкмөткө ишеним маселеси коюлган учур"
+      }
+    ],
+    "trust_vote_held_at": [
+      {
+        "status": "translation",
+        "text": "ишеним маселеси боюнча добуш берүү учуру"
+      }
+    ],
+    "trust_vote_timing_valid": [
+      {
+        "status": "translation",
+        "text": "ишеним маселесин коюунун мөөнөттөрү сакталган"
+      }
+    ],
+    "trust_vote_wait_hours": [
+      {
+        "status": "translation",
+        "text": "ишеним маселесин коюу менен добуш берүүнүн ортосундагы мөөнөт — кырк сегиз саат"
+      }
+    ],
+    "unexcused_absences": [
+      {
+        "status": "translation",
+        "text": "депутаттын жүйөлүү себепсиз отурумдарга катышпаган учурларынын саны"
+      }
+    ],
+    "votes_for_bill": [
+      {
+        "status": "translation",
+        "text": "мыйзам долбоору үчүн берилген добуштардын саны"
+      }
+    ],
+    "working_body_resolution": [
+      {
+        "status": "translation",
+        "text": "акт комитеттин же комиссиянын токтому болуп саналат"
+      }
+    ],
+    "working_body_resolution_authorized": [
+      {
+        "status": "translation",
+        "text": "комитет же комиссия ушул токтомду чыгарууга укуктуу"
+      }
+    ]
+  },
+  "language": "ky",
+  "package": "kz.constitution.kurultai"
+}

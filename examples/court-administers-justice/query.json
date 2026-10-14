@@ -1,0 +1,15 @@
+{
+  "kind": "truth",
+  "literal": {
+    "args": [
+      {
+        "id": "urn:kz:constitution:court:test:case2",
+        "kind": "entity_ref"
+      }
+    ],
+    "kind": "literal",
+    "polarity": "positive",
+    "predicate": "urn:kz:constitution:court#justice_lawful"
+  },
+  "queryId": "urn:kz:constitution:court#test/urn%3Aquery%3Akzcc-2/query/1"
+}

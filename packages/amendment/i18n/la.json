@@ -1,0 +1,674 @@
+{
+  "$comment": "Stratum praesentationis Latinum pacti kz.constitution.amendment (DECISION-0070). Hoc tabularium in CLIR non ingreditur et a solo strato praesentationis legitur (verbalize --labels, MCP, pons mensae operariae). Versio ex notis Russicis authenticis (ru-KZ) eiusdem pacti ducta est; status omnium notarum est 'translation', id est versio operosa a formalizatore facta, non editio officialis. Clavis est nomen locale declarationis.",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "Amendment": [
+      {
+        "status": "translation",
+        "text": "mutatio vel additamentum Constitutionis"
+      }
+    ],
+    "AmendmentMayBeSubmitted1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 91, numerus 3 (recensio anni 1995). Sine responso favorabili Curiae Constitutionalis mutationes neque ad referendum neque ad Parlamentum deferuntur"
+      }
+    ],
+    "AmendmentMayBeSubmitted1995/unless/0": [
+      {
+        "status": "translation",
+        "text": "Articulus 91, numerus 3 (recensio anni 1995). Sine responso favorabili Curiae Constitutionalis mutationes neque ad referendum neque ad Parlamentum deferuntur"
+      }
+    ],
+    "AmendmentReferendumDoubleThreshold": [
+      {
+        "status": "translation",
+        "text": "Articulus 92, numerus 3. Emendatio accepta est, si pro ea plus quam dimidia pars participantium suffragium tulit in non minus quam duabus ex tribus partibus provinciarum, urbium momenti rei publicae et capitis"
+      }
+    ],
+    "AmendmentViolatesEntrenchedCore1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 91, numerus 2 (recensio anni 1995). Independentia, unitas civitatis, integritas territorii, forma regiminis, principia fundamentalia, septennium Praesidis et unica eius electio immutabilia sunt"
+      }
+    ],
+    "Constitution1995InForceOnPublication": [
+      {
+        "status": "translation",
+        "text": "Articulus 90, numerus 1 (recensio anni 1995). Constitutio vim obtinet ex die publicationis officialis exitus referendi, Constitutione antea accepta simul vim amittente"
+      }
+    ],
+    "ConstitutionEdition": [
+      {
+        "status": "translation",
+        "text": "recensio Constitutionis"
+      }
+    ],
+    "ConstitutionalConclusion": [
+      {
+        "status": "translation",
+        "text": "responsum Curiae Constitutionalis de emendatione requisitis Constitutionis congruente"
+      }
+    ],
+    "EffectiveDateAppointmentTwoMonths": [
+      {
+        "status": "translation",
+        "text": "Articulus 95. Nominatio transitoria, cuius terminus a die quo Constitutio vim obtinuit computatur, intra duos menses fit"
+      }
+    ],
+    "EntrenchmentConclusion": [
+      {
+        "status": "translation",
+        "text": "Articulus 93. Responsum Curiae Constitutionalis favorabile est, si emendatio requisitis numeri 7 articuli 2 et numeri 5 articuli 43 congruit"
+      }
+    ],
+    "EntrenchmentConclusion1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 91, numerus 3 (recensio anni 1995). Mutationes ad referendum vel ad Parlamentum deliberandas deferuntur, si responsum Curiae Constitutionalis de earum congruentia cum requisitis numeri 2 adest"
+      }
+    ],
+    "ExistingActsContinueIfCompatible": [
+      {
+        "status": "translation",
+        "text": "Articulus 96, numerus 1. Leges ceterique actus normativi iuridici, qui die quo Constitutio vim obtinuit vigebant, ea parte applicantur qua ei non repugnant"
+      }
+    ],
+    "ExistingActsContinueIfCompatible/unless/0": [
+      {
+        "status": "translation",
+        "text": "Articulus 96, numerus 1. Leges ceterique actus normativi iuridici, qui die quo Constitutio vim obtinuit vigebant, ea parte applicantur qua ei non repugnant"
+      }
+    ],
+    "FirstKurultaiElectionTransition": [
+      {
+        "status": "translation",
+        "text": "Articulus 95, numerus 1. Electiones Kurultai intra mensem indicuntur et intra duos menses a die quo Constitutio vim obtinuit fiunt"
+      }
+    ],
+    "FirstSessionAppointmentTwoMonths": [
+      {
+        "status": "translation",
+        "text": "Articulus 95, numeri 2-4. Nominationes transitoriae intra duos menses a die quo prima sessio Kurultai primi conventus aperta est fiunt"
+      }
+    ],
+    "IncumbentContinuity": [
+      {
+        "status": "translation",
+        "text": "Articulus 95. Donec novi ordines constituantur, magistratus in munere versantes potestates suas retinent"
+      }
+    ],
+    "KurultaiElection": [
+      {
+        "status": "translation",
+        "text": "electiones Kurultai"
+      }
+    ],
+    "LegalAct": [
+      {
+        "status": "translation",
+        "text": "lex vel alius actus normativus iuridicus"
+      }
+    ],
+    "ListIsNotASubjectReading": [
+      {
+        "status": "translation",
+        "text": "lectio A articuli 91 numeri 2: index res tuetur, se ipsum autem non tuetur"
+      }
+    ],
+    "ListItselfEntrenchedReading": [
+      {
+        "status": "translation",
+        "text": "lectio B articuli 91 numeri 2: immutabilitas indicis principium fundamentale est"
+      }
+    ],
+    "NarrowingAmendmentFilter1995": [
+      {
+        "status": "translation",
+        "text": "emendatio angustans deferri potest responso Curiae adhibito, si angustatio impetus in nucleum non iudicatur"
+      }
+    ],
+    "NarrowingAmendmentFilter1995/unless/0": [
+      {
+        "status": "translation",
+        "text": "emendatio angustans deferri potest responso Curiae adhibito, si angustatio impetus in nucleum non iudicatur"
+      }
+    ],
+    "NarrowingOutsideCore1995": [
+      {
+        "status": "translation",
+        "text": "lectio A: index numeri 2 ipse res tutela munita non est, eius angustatio emendatio ordinaria est"
+      }
+    ],
+    "NarrowingTouchesCore1995": [
+      {
+        "status": "translation",
+        "text": "lectio B: immutabilitas indicis numeri 2 principium fundamentale est, eius angustatio in nucleum impetum facit"
+      }
+    ],
+    "NewConstitutionInForceFromJulyFirst": [
+      {
+        "status": "translation",
+        "text": "Articulus 94, numerus 1. Constitutio a die 1 mensis Iulii anni 2026 vim obtinet"
+      }
+    ],
+    "OldActsApplyIfCompatible1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 92, numerus 4 (recensio anni 1995). Leges eo tempore vigentes quo Constitutio vim obtinuit ea parte applicantur qua ei non repugnant"
+      }
+    ],
+    "OldConstitutionRepealedSimultaneously": [
+      {
+        "status": "translation",
+        "text": "Articulus 94, numerus 1. Constitutio antea accepta vim amittit simul atque nova vim obtinet"
+      }
+    ],
+    "ParliamentaryAmendmentFourFifths1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 91, numerus 1 (recensio anni 1995). Si Praeses propositum Parlamenti de referendo reicit, Parlamentum maiore parte non minus quattuor ex quinque partibus suffragiorum totius numeri deputatorum utriusque Camerae legem de mutationibus Constitutionis inferendis ferre potest"
+      }
+    ],
+    "ParliamentaryAmendmentLaw": [
+      {
+        "status": "translation",
+        "text": "lex Parlamenti de mutationibus et additamentis Constitutionis (recensio anni 1995)"
+      }
+    ],
+    "PositiveConclusionRequiredForReferendum": [
+      {
+        "status": "translation",
+        "text": "Articulus 93. Emendatio ad referendum universi populi defertur, si responsum favorabile Curiae Constitutionalis adest"
+      }
+    ],
+    "Referendum": [
+      {
+        "status": "translation",
+        "text": "referendum universi populi"
+      }
+    ],
+    "ReferendumTurnoutMoreThanHalf": [
+      {
+        "status": "translation",
+        "text": "Articulus 92, numerus 2. Referendum universi populi factum est, si plus quam dimidia pars civium ius participandi habentium suffragium tulit"
+      }
+    ],
+    "TransitionalAppointment": [
+      {
+        "status": "translation",
+        "text": "nominatio tempore transitorio facta"
+      }
+    ],
+    "amendment_approved_by_referendum": [
+      {
+        "status": "translation",
+        "text": "mutationes et additamenta Constitutionis referendo accepta sunt"
+      }
+    ],
+    "amendment_may_be_submitted_1995": [
+      {
+        "status": "translation",
+        "text": "emendatio ad referendum deferri potest (recensio anni 1995)"
+      }
+    ],
+    "amendment_may_be_submitted_to_referendum": [
+      {
+        "status": "translation",
+        "text": "emendatio ad referendum universi populi deferri potest"
+      }
+    ],
+    "amendment_mazhilis_total": [
+      {
+        "status": "translation",
+        "text": "totus numerus deputatorum Mazhilis (recensio anni 1995)"
+      }
+    ],
+    "amendment_mazhilis_votes": [
+      {
+        "status": "translation",
+        "text": "numerus suffragiorum deputatorum Mazhilis pro emendatione latorum (recensio anni 1995)"
+      }
+    ],
+    "amendment_narrows_entrenched_list_1995": [
+      {
+        "status": "translation",
+        "text": "res emendationis: rem ex indice numeri 2 articuli 91 eximere"
+      }
+    ],
+    "amendment_referendum_declined_by_president": [
+      {
+        "status": "translation",
+        "text": "Praeses propositum de emendatione ad referendum deferenda reiecit (recensio anni 1995)"
+      }
+    ],
+    "amendment_senate_total": [
+      {
+        "status": "translation",
+        "text": "totus numerus deputatorum Senatus (recensio anni 1995)"
+      }
+    ],
+    "amendment_senate_votes": [
+      {
+        "status": "translation",
+        "text": "numerus suffragiorum deputatorum Senatus pro emendatione latorum (recensio anni 1995)"
+      }
+    ],
+    "amendment_touches_subject": [
+      {
+        "status": "translation",
+        "text": "emendatio rem nominatam attingit"
+      }
+    ],
+    "amendment_violates_entrenched_core_1995": [
+      {
+        "status": "translation",
+        "text": "emendatio nucleum immutabilem Constitutionis anni 1995 violat"
+      }
+    ],
+    "appointment_completed_within_two_months": [
+      {
+        "status": "translation",
+        "text": "nominatio intra duos menses facta est"
+      }
+    ],
+    "approving_regions_cities_and_capital": [
+      {
+        "status": "translation",
+        "text": "numerus provinciarum, urbium momenti rei publicae et capitis, ubi emendatio probata est"
+      }
+    ],
+    "cabinet_becomes_government_1995": [
+      {
+        "status": "translation",
+        "text": "Consilium Ministrorum statum Gubernii Rei Publicae accipit (recensio anni 1995)"
+      }
+    ],
+    "conclusion_confirms_article_91_paragraph_2": [
+      {
+        "status": "translation",
+        "text": "responsum congruentiam emendationis cum numero 2 articuli 91 confirmat (recensio anni 1995)"
+      }
+    ],
+    "conclusion_for_amendment": [
+      {
+        "status": "translation",
+        "text": "responsum Curiae Constitutionalis de hac emendatione datum est"
+      }
+    ],
+    "conforms_article_2_paragraph_7": [
+      {
+        "status": "translation",
+        "text": "emendatio requisitis numeri 7 articuli 2 Constitutionis congruit"
+      }
+    ],
+    "conforms_article_43_paragraph_5": [
+      {
+        "status": "translation",
+        "text": "emendatio requisitis numeri 5 articuli 43 Constitutionis congruit"
+      }
+    ],
+    "constitution_1995": [
+      {
+        "status": "translation",
+        "text": "Constitutio anni 1995"
+      }
+    ],
+    "constitution_1995_in_force": [
+      {
+        "status": "translation",
+        "text": "Constitutio anni 1995 viget"
+      }
+    ],
+    "constitution_1995_referendum_results_published": [
+      {
+        "status": "translation",
+        "text": "exitus referendi rei publicae anni 1995 publicati sunt"
+      }
+    ],
+    "constitution_2026": [
+      {
+        "status": "translation",
+        "text": "Constitutio anni 2026"
+      }
+    ],
+    "constitution_ceases_date": [
+      {
+        "status": "translation",
+        "text": "dies quo recensio Constitutionis vim amittit"
+      }
+    ],
+    "constitution_day_is_state_holiday_1995": [
+      {
+        "status": "translation",
+        "text": "dies quo Constitutio referendo accepta est Dies Constitutionis declaratus est"
+      }
+    ],
+    "constitution_effective_date": [
+      {
+        "status": "translation",
+        "text": "dies quo recensio Constitutionis vim obtinuit"
+      }
+    ],
+    "constitution_in_force": [
+      {
+        "status": "translation",
+        "text": "recensio Constitutionis viget"
+      }
+    ],
+    "constitution_repealed": [
+      {
+        "status": "translation",
+        "text": "recensio Constitutionis vim amisit"
+      }
+    ],
+    "constitutional_council_acts_until_court_1995": [
+      {
+        "status": "translation",
+        "text": "Consilium Constitutionale usque ad Curiam Constitutionalem constitutam agit (recensio anni 1995)"
+      }
+    ],
+    "constitutional_court_positive_conclusion": [
+      {
+        "status": "translation",
+        "text": "responsum Curiae Constitutionalis de congruentia emendationis favorabile est"
+      }
+    ],
+    "constitutional_court_positive_conclusion_1995": [
+      {
+        "status": "translation",
+        "text": "responsum de congruentia emendationis cum nucleo immutabili favorabile est (recensio anni 1995)"
+      }
+    ],
+    "continuity_preserved": [
+      {
+        "status": "translation",
+        "text": "continuitas potestatum exercendarum servata est"
+      }
+    ],
+    "contrary_to_1995_constitution": [
+      {
+        "status": "translation",
+        "text": "actus Constitutioni anni 1995 repugnat"
+      }
+    ],
+    "contrary_to_2026_constitution": [
+      {
+        "status": "translation",
+        "text": "actus Constitutioni anni 2026 repugnat"
+      }
+    ],
+    "current_date": [
+      {
+        "status": "translation",
+        "text": "dies ad quem quaestio proposita est"
+      }
+    ],
+    "deadline_from_effective_date": [
+      {
+        "status": "translation",
+        "text": "terminus nominationis a die quo Constitutio vim obtinuit computatur"
+      }
+    ],
+    "deadline_from_first_session": [
+      {
+        "status": "translation",
+        "text": "terminus nominationis a die quo prima sessio Kurultai primi conventus aperta est computatur"
+      }
+    ],
+    "edition_1995": [
+      {
+        "status": "translation",
+        "text": "res est recensio Constitutionis anni 1995"
+      }
+    ],
+    "edition_2026": [
+      {
+        "status": "translation",
+        "text": "res est recensio Constitutionis anni 2026"
+      }
+    ],
+    "election_announced_within_one_month": [
+      {
+        "status": "translation",
+        "text": "electiones intra mensem a die quo Constitutio vim obtinuit indictae sunt"
+      }
+    ],
+    "election_held_within_two_months": [
+      {
+        "status": "translation",
+        "text": "electiones intra duos menses a die quo Constitutio vim obtinuit factae sunt"
+      }
+    ],
+    "eligible_referendum_citizens": [
+      {
+        "status": "translation",
+        "text": "numerus civium qui ius participandi in referendo universi populi habent"
+      }
+    ],
+    "existing_justice_bodies_continue_1995": [
+      {
+        "status": "translation",
+        "text": "collegia iustitiae in munere versantia potestates retinent donec nova constituantur (recensio anni 1995)"
+      }
+    ],
+    "first_constitutional_council_composition_1995": [
+      {
+        "status": "translation",
+        "text": "primus ordo Consilii Constitutionalis ratione dispositionum transitoriarum constitutus est (recensio anni 1995)"
+      }
+    ],
+    "first_kurultai_election": [
+      {
+        "status": "translation",
+        "text": "electiones sunt electiones Kurultai primi conventus"
+      }
+    ],
+    "first_kurultai_transition_timely": [
+      {
+        "status": "translation",
+        "text": "transitus ad Kurultai primi conventus intra terminos constitutionales factus est"
+      }
+    ],
+    "first_senate_split_term_1995": [
+      {
+        "status": "translation",
+        "text": "dimidia pars deputatorum Senatus primi conventus in terminum breviorem electa est (recensio anni 1995)"
+      }
+    ],
+    "incumbent_continues_until_successor": [
+      {
+        "status": "translation",
+        "text": "magistratus in munere versans potestates retinet donec novus ordo constituatur"
+      }
+    ],
+    "language_conditions_duty_declared_1995": [
+      {
+        "status": "translation",
+        "text": "civitas condiciones ad linguas populi Kazachstaniae discendas et provehendas creare tenetur (recensio anni 1995)"
+      }
+    ],
+    "narrowing_amendment_passes_filter_1995": [
+      {
+        "status": "translation",
+        "text": "emendatio indicem numeri 2 angustans cribrum numeri 3 articuli 91 transit"
+      }
+    ],
+    "narrowing_deemed_outside_core_1995": [
+      {
+        "status": "translation",
+        "text": "angustatio indicis res tutela munitas numeri 2 non attingere iudicata est"
+      }
+    ],
+    "old_act_applicable": [
+      {
+        "status": "translation",
+        "text": "actus ea parte applicatur qua Constitutioni non repugnat"
+      }
+    ],
+    "old_act_applicable_1995": [
+      {
+        "status": "translation",
+        "text": "actus ea parte applicatur qua Constitutioni anni 1995 non repugnat"
+      }
+    ],
+    "old_act_predating_1995": [
+      {
+        "status": "translation",
+        "text": "actus ante Constitutionem anni 1995 vim obtinentem vigebat"
+      }
+    ],
+    "old_legal_act": [
+      {
+        "status": "translation",
+        "text": "actus die quo Constitutio vim obtinuit vigebat"
+      }
+    ],
+    "parliamentary_amendment_adopted_1995": [
+      {
+        "status": "translation",
+        "text": "lex de mutationibus Constitutionis a Parlamento maiore parte qualificata lata est (recensio anni 1995)"
+      }
+    ],
+    "parliamentary_amendment_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "denominator limitis parlamentarii emendationis: quinque (recensio anni 1995)"
+      }
+    ],
+    "parliamentary_amendment_law": [
+      {
+        "status": "translation",
+        "text": "lex Parlamenti has mutationes Constitutioni infert (recensio anni 1995)"
+      }
+    ],
+    "parliamentary_amendment_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "numerator limitis parlamentarii emendationis: quattuor (recensio anni 1995)"
+      }
+    ],
+    "protected_locator": [
+      {
+        "status": "translation",
+        "text": "dispositio Constitutionis ad nucleum immutabilem pertinens"
+      }
+    ],
+    "protected_subject_1995": [
+      {
+        "status": "translation",
+        "text": "res ad nucleum immutabilem Constitutionis anni 1995 pertinens"
+      }
+    ],
+    "referendum_approval_denominator": [
+      {
+        "status": "translation",
+        "text": "denominator limitis probationis emendationis: duo"
+      }
+    ],
+    "referendum_approval_numerator": [
+      {
+        "status": "translation",
+        "text": "numerator limitis probationis emendationis: unum"
+      }
+    ],
+    "referendum_for_amendment": [
+      {
+        "status": "translation",
+        "text": "referendum de hac mutatione Constitutionis fit"
+      }
+    ],
+    "referendum_held": [
+      {
+        "status": "translation",
+        "text": "referendum universi populi factum esse habetur"
+      }
+    ],
+    "referendum_participants": [
+      {
+        "status": "translation",
+        "text": "numerus civium qui suffragium tulerunt"
+      }
+    ],
+    "referendum_territory_denominator": [
+      {
+        "status": "translation",
+        "text": "denominator limitis territorialis: tres"
+      }
+    ],
+    "referendum_territory_numerator": [
+      {
+        "status": "translation",
+        "text": "numerator limitis territorialis: duo"
+      }
+    ],
+    "referendum_turnout_denominator": [
+      {
+        "status": "translation",
+        "text": "denominator limitis participationis referendi: duo"
+      }
+    ],
+    "referendum_turnout_numerator": [
+      {
+        "status": "translation",
+        "text": "numerator limitis participationis referendi: unum"
+      }
+    ],
+    "seven_year_term_applies_from_post_2005_election_1995": [
+      {
+        "status": "translation",
+        "text": "septennium potestatum Praesidis ad personam post annum 2005 electam applicatur (recensio anni 1995)"
+      }
+    ],
+    "single_election_rule_applies_prospectively_1995": [
+      {
+        "status": "translation",
+        "text": "regula de unica electione in futurum tempus applicatur (recensio anni 1995)"
+      }
+    ],
+    "total_regions_cities_and_capital": [
+      {
+        "status": "translation",
+        "text": "totus numerus provinciarum, urbium momenti rei publicae et capitis"
+      }
+    ],
+    "transitional_appointment": [
+      {
+        "status": "translation",
+        "text": "nominatio ad nominationes transitorias pertinet"
+      }
+    ],
+    "transitional_appointment_timely": [
+      {
+        "status": "translation",
+        "text": "nominatio transitoria intra terminum facta est"
+      }
+    ],
+    "transitional_constitutional_law_years_1995": [
+      {
+        "status": "translation",
+        "text": "terminus legum constitutionalium temporis transitorii ferendarum: unus annus (recensio anni 1995)"
+      }
+    ],
+    "transitional_other_law_years_1995": [
+      {
+        "status": "translation",
+        "text": "terminus ceterarum legum nominatarum temporis transitorii ferendarum: duo anni (recensio anni 1995)"
+      }
+    ],
+    "vice_president_powers_preserved_1995": [
+      {
+        "status": "translation",
+        "text": "potestates Vice-Praesidis tempore transitorio servantur (recensio anni 1995)"
+      }
+    ],
+    "votes_for_amendment": [
+      {
+        "status": "translation",
+        "text": "numerus suffragiorum pro mutationibus et additamentis latorum"
+      }
+    ]
+  },
+  "language": "la",
+  "package": "kz.constitution.amendment"
+}

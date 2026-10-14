@@ -1,0 +1,36 @@
+# Манифест §10 — маркер корня пакета (DECISION-0033). Нормативны заголовки §22
+# в самих .law; манифест обязан с ними совпадать (LDC-E1109, lawc check).
+[package]
+name = "kz.constitution1995.parliament"
+version = "0.1.0"
+language = "0.2"
+namespace = "urn:kz:constitution1995:parliament"
+
+# Каталожная метадата (DECISION-0051; docs/PACKAGE-METADATA.ru.md). НЕ семантика:
+# в CLIR не понижается, в semantic hash §209 не входит.
+# Выводимые поля (jurisdiction, instrument, sourceFidelity) НЕ объявлены
+# намеренно: пакета нет в реестре LOWERED_ACTS `corpus/gen_kz_clir.py`, по
+# которому ворота ci/check_package_metadata.py находят CLIR, и сверить
+# заявленное с source-декларациями им не с чем. Объявить их значило бы
+# получить поля, которые никто не проверяет.
+[metadata]
+act = "kz-constitution-parliament-1995"
+title = "Конституция РК 1995: Парламент (раздел IV)"
+# legalStatus: `superseded` — редакция 1995 года заменена Конституцией 2026;
+# пакет держится как отдельный, потому что институт в нём ДРУГОЙ, а не «старая
+# редакция того же» (DECISION о переписке, а не редакции).
+legalStatus = "superseded"
+
+# Сценарии пакета §267: наблюдение деонтического слоя §§122–137 (13.09.2026).
+# `concat` вводит в мир сценария пакет источников: без него якоря
+# `KZ_CONSTITUTION_1995_*` не разрешаются, и условие 3 §92 (E-0095) не может
+# исключить узлы неприменимой редакции.
+[[tests]]
+family = "kz.constitution1995.parliament#positions"
+regression = false
+suites = ["tests/01-positions.lawtest"]
+world = ["kz.constitution1995.parliament"]
+concat = ["kz.constitution.sources"]
+
+[authoring]
+local_imports = "explicit"

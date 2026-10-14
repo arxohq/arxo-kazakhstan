@@ -1,0 +1,716 @@
+{
+  "$comment": "Stratum praesentationis Latinum pacti kz.constitution.sources (DECISION-0070). Hoc tabularium in CLIR non ingreditur et a solo strato praesentationis legitur (verbalize --labels, MCP, pons mensae operariae). Versio ex notis Russicis authenticis (ru-KZ) eiusdem pacti ducta est; status omnium notarum est 'translation', id est versio operosa a formalizatore facta, non editio officialis. Clavis est nomen locale declarationis.",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "Association": [
+      {
+        "status": "translation",
+        "text": "Consociatio publica"
+      }
+    ],
+    "AssociationUnlawfulInterferenceProhibited/alt/1": [
+      {
+        "status": "translation",
+        "text": "Articulus 6, numerus 2. Interventus mutuus illicitus prohibetur"
+      }
+    ],
+    "AssociationUnlawfulInterferenceProhibited/alt/2": [
+      {
+        "status": "translation",
+        "text": "Articulus 6, numerus 2. Interventus mutuus illicitus prohibetur"
+      }
+    ],
+    "AssociationUnlawfulInterferenceProhibited1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "Articulus 5, numerus 2 (recensio anni 1995). Interventus mutuus illicitus civitatis et consociationum non licet"
+      }
+    ],
+    "AssociationUnlawfulInterferenceProhibited1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "Articulus 5, numerus 2 (recensio anni 1995). Interventus mutuus illicitus civitatis et consociationum non licet"
+      }
+    ],
+    "AssociationWithProhibitedGoalProhibited": [
+      {
+        "status": "translation",
+        "text": "Articulus 6, numerus 3. Consociationes finibus vel actionibus expresse prohibitis praeditae prohibentur"
+      }
+    ],
+    "AssociationWithProhibitedGoalProhibited1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 5, numerus 3 (recensio anni 1995). Consociationes finibus prohibitis praeditae prohibentur"
+      }
+    ],
+    "AuthorityUsurpationProhibited": [
+      {
+        "status": "translation",
+        "text": "Articulus 4, numerus 3. Usurpatio potestatis prohibetur"
+      }
+    ],
+    "AuthorityUsurpationProhibited1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 3, numerus 3 (recensio anni 1995). Usurpatio potestatis prohibetur"
+      }
+    ],
+    "ConductForbiddenByStatute1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 4, numerus 3 (recensio anni 1995). Conclusio ex norma legis Rei Publicae"
+      }
+    ],
+    "ConductPermittedByTreaty1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 4, numerus 3 (recensio anni 1995). Conclusio ex norma pacti internationalis ratihabiti"
+      }
+    ],
+    "ConstitutionalActor": [
+      {
+        "status": "translation",
+        "text": "Particeps rationum constitutionalium"
+      }
+    ],
+    "ForeignAssetDisclosureRequired": [
+      {
+        "status": "translation",
+        "text": "Articulus 6, numerus 5. Notitia de pecuniis et rebus externis patere debet"
+      }
+    ],
+    "ForeignPartyActivityOrFinancingProhibited/alt/1": [
+      {
+        "status": "translation",
+        "text": "Articulus 6, numerus 4. Negotiatio externa et pecuniae externae factionibus et consociationibus opificum praebitae prohibentur"
+      }
+    ],
+    "ForeignPartyActivityOrFinancingProhibited/alt/2": [
+      {
+        "status": "translation",
+        "text": "Articulus 6, numerus 4. Negotiatio externa et pecuniae externae factionibus et consociationibus opificum praebitae prohibentur"
+      }
+    ],
+    "ForeignPartyActivityOrFinancingProhibited1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "Articulus 5, numerus 4 (recensio anni 1995). Negotiatio et pecuniae a personis externis praebitae prohibentur"
+      }
+    ],
+    "ForeignPartyActivityOrFinancingProhibited1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "Articulus 5, numerus 4 (recensio anni 1995). Negotiatio et pecuniae a personis externis praebitae prohibentur"
+      }
+    ],
+    "ForeignReligiousActivityRequiresAgreement1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "Articulus 5, numerus 5 (recensio anni 1995). Negotiatio consociationum religiosarum externarum et nominatio rectorum a centris externis facta consensu magistratuum publicorum competentium fiunt"
+      }
+    ],
+    "ForeignReligiousActivityRequiresAgreement1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "Articulus 5, numerus 5 (recensio anni 1995). Negotiatio consociationum religiosarum externarum et nominatio rectorum a centris externis facta consensu magistratuum publicorum competentium fiunt"
+      }
+    ],
+    "ForeignReligiousBody": [
+      {
+        "status": "translation",
+        "text": "Consociatio religiosa externa"
+      }
+    ],
+    "IncreasedLiabilityNoRetroactivity": [
+      {
+        "status": "translation",
+        "text": "Articulus 5, numerus 5. Responsabilitas aucta vim retroactivam non habet"
+      }
+    ],
+    "IncreasedLiabilityNoRetroactivity1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 77, numerus 3, subnumerus 5 (recensio anni 1995). Responsabilitas aucta vim retroactivam non habet"
+      }
+    ],
+    "KZ_CONSTITUTION_1995": [
+      {
+        "status": "translation",
+        "text": "Constitutio Rei Publicae Kazachstaniae (anni 1995)"
+      }
+    ],
+    "KZ_CONSTITUTION_1995_KK": [
+      {
+        "status": "translation",
+        "text": "Recensio Kazachica consolidata quae vim amisit"
+      }
+    ],
+    "KZ_CONSTITUTION_1995_RU": [
+      {
+        "status": "translation",
+        "text": "Recensio Russica consolidata quae vim amisit"
+      }
+    ],
+    "KZ_CONSTITUTION_2026": [
+      {
+        "status": "translation",
+        "text": "Constitutio Rei Publicae Kazachstaniae"
+      }
+    ],
+    "KZ_CONSTITUTION_2026_KK": [
+      {
+        "status": "translation",
+        "text": "Recensio Kazachica authentica"
+      }
+    ],
+    "KZ_CONSTITUTION_2026_RU": [
+      {
+        "status": "translation",
+        "text": "Recensio Russica authentica"
+      }
+    ],
+    "LandHolding": [
+      {
+        "status": "translation",
+        "text": "Fundus"
+      }
+    ],
+    "LegalAct": [
+      {
+        "status": "translation",
+        "text": "Actus normativus iuridicus"
+      }
+    ],
+    "MitigatingLawAppliesToPriorOffence": [
+      {
+        "status": "translation",
+        "text": "Articulus 5, numerus 5. Lex tollens vel mitigans ad factum antea commissum applicatur"
+      }
+    ],
+    "MitigatingLawAppliesToPriorOffence1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 77, numerus 3, subnumerus 5 (recensio anni 1995). Lex mitigans ad delictum antea commissum applicatur"
+      }
+    ],
+    "NewDutiesAndWorsePositionNoRetroactivity": [
+      {
+        "status": "translation",
+        "text": "Articulus 5, numerus 5. Nova officia et condicio deterior vim retroactivam non habent"
+      }
+    ],
+    "NewDutiesAndWorsePositionNoRetroactivity1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 77, numerus 3, subnumerus 5 (recensio anni 1995). Nova officia et condicio deterior vim retroactivam non habent"
+      }
+    ],
+    "OfficialPublicationRequiredForApplication": [
+      {
+        "status": "translation",
+        "text": "Articulus 5, numerus 4. Publicatio officialis condicio applicationis"
+      }
+    ],
+    "OfficialPublicationRequiredForApplication1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 4, numerus 4 (recensio anni 1995). Publicatio officialis condicio applicationis"
+      }
+    ],
+    "PrivateLandHoldingWithinStatutoryLimits": [
+      {
+        "status": "translation",
+        "text": "Articulus 8, numerus 3. Proprietas privata terrae licet causis, condicionibus et finibus lege statutis"
+      }
+    ],
+    "PrivateLandHoldingWithinStatutoryLimits1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 6, numerus 3 (recensio anni 1995). Proprietas privata terrae licet causis, condicionibus et finibus lege statutis"
+      }
+    ],
+    "PropertyUse": [
+      {
+        "status": "translation",
+        "text": "Usus proprietatis"
+      }
+    ],
+    "PropertyUseConstitutionallyCompliant": [
+      {
+        "status": "translation",
+        "text": "Articulus 8, numerus 2. Condiciones constitutionales usus proprietatis"
+      }
+    ],
+    "PropertyUseConstitutionallyCompliant1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 6, numerus 2 (recensio anni 1995). Usus proprietatis bono communi servire debet"
+      }
+    ],
+    "RatifiedTreatyOverStatuteInInference1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 4, numerus 3 (recensio anni 1995). Conclusionibus repugnantibus valet conclusio ex pacto internationali ratihabito, non ex lege"
+      }
+    ],
+    "RatifiedTreatyPrevailsOverStatute1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 4, numerus 3 (recensio anni 1995). Pacta internationalia a Re Publica ratihabita legibus eius praestant"
+      }
+    ],
+    "RegulatedConduct": [
+      {
+        "status": "translation",
+        "text": "Modus agendi de cuius liceitate pactum et lex dissentiunt"
+      }
+    ],
+    "ReligiousActivity": [
+      {
+        "status": "translation",
+        "text": "Negotiatio consociationis religiosae"
+      }
+    ],
+    "ReligiousRestriction": [
+      {
+        "status": "translation",
+        "text": "Restrictio negotiationis consociationis religiosae"
+      }
+    ],
+    "ReligiousRestrictionRequiresLawAndConstitutionalGoal": [
+      {
+        "status": "translation",
+        "text": "Articulus 7, numerus 2. Restrictio negotiationis religiosae legem et finem constitutionalem requirit"
+      }
+    ],
+    "RuleApplication": [
+      {
+        "status": "translation",
+        "text": "Applicatio normae"
+      }
+    ],
+    "Statute": [
+      {
+        "status": "translation",
+        "text": "Lex Rei Publicae"
+      }
+    ],
+    "Treaty": [
+      {
+        "status": "translation",
+        "text": "Pactum internationale"
+      }
+    ],
+    "agreed_with_state_bodies": [
+      {
+        "status": "translation",
+        "text": "negotiatio consensu magistratuum publicorum competentium facta est"
+      }
+    ],
+    "association_activity_prohibited": [
+      {
+        "status": "translation",
+        "text": "institutio et negotiatio consociationis publicae prohibentur"
+      }
+    ],
+    "association_has_prohibited_constitutional_goal": [
+      {
+        "status": "translation",
+        "text": "fines vel actiones consociationis publicae spectant ad fundamenta ordinis constitutionalis vi mutanda, ad integritatem Rei Publicae vel ordinem publicum violandum, ad securitatem nationalem labefactandam vel ad discordiam excitandam"
+      }
+    ],
+    "astana_special_financial_regime_1995": [
+      {
+        "status": "translation",
+        "text": "intra fines urbis Astana regimen iuridicum speciale in re nummaria constitui potest (recensio anni 1995)"
+      }
+    ],
+    "authority_usurpation_attempt": [
+      {
+        "status": "translation",
+        "text": "usurpatio potestatis in Re Publica temptata est"
+      }
+    ],
+    "authority_usurpation_prohibited": [
+      {
+        "status": "translation",
+        "text": "usurpatio potestatis prohibetur et lege punitur"
+      }
+    ],
+    "capital_is_astana_1995": [
+      {
+        "status": "translation",
+        "text": "caput Kazachstaniae est urbs Astana (recensio anni 1995)"
+      }
+    ],
+    "conduct_admissible_1995": [
+      {
+        "status": "translation",
+        "text": "modus agendi licet (lis pacti et legis, recensio anni 1995)"
+      }
+    ],
+    "constitutional_activity_principles_declared": [
+      {
+        "status": "translation",
+        "text": "principia fundamentalia negotiationis Rei Publicae Constitutione statuta sunt"
+      }
+    ],
+    "environmental_requirements_observed": [
+      {
+        "status": "translation",
+        "text": "requisita statuta de ambitu naturali tuendo observata sunt"
+      }
+    ],
+    "foreign_asset_disclosure_required": [
+      {
+        "status": "translation",
+        "text": "notitia de motu pecuniarum et rerum ex fontibus externis acceptarum patere et accessibilis esse debet"
+      }
+    ],
+    "foreign_asset_information_disclosed": [
+      {
+        "status": "translation",
+        "text": "notitia de motu pecuniarum et rerum ex fontibus externis acceptarum patet et accessibilis est"
+      }
+    ],
+    "foreign_centre_appoints_leader": [
+      {
+        "status": "translation",
+        "text": "rectores consociationis religiosae a centro religioso externo nominantur"
+      }
+    ],
+    "foreign_financing_of_party_or_union": [
+      {
+        "status": "translation",
+        "text": "factio politica vel consociatio opificum a personis externis, civitatibus vel institutis internationalibus pecunia sustinetur"
+      }
+    ],
+    "foreign_party_or_union_activity": [
+      {
+        "status": "translation",
+        "text": "negotiationem exercet factio politica vel consociatio opificum alterius civitatis vel factio politica in fundamento religioso condita"
+      }
+    ],
+    "foreign_religious_activity_admissible_1995": [
+      {
+        "status": "translation",
+        "text": "negotiatio consociationis religiosae externae licet (recensio anni 1995)"
+      }
+    ],
+    "foreign_religious_body_activity": [
+      {
+        "status": "translation",
+        "text": "in territorio Rei Publicae consociatio religiosa externa agit"
+      }
+    ],
+    "fundamental_principles_declared_1995": [
+      {
+        "status": "translation",
+        "text": "principia fundamentalia negotiationis Rei Publicae Constitutione statuta sunt (recensio anni 1995)"
+      }
+    ],
+    "human_capital_education_science_innovation_strategic_direction": [
+      {
+        "status": "translation",
+        "text": "progressus facultatum humanarum, educationis, scientiae et inventorum via strategica negotiationis civitatis agnoscitur"
+      }
+    ],
+    "human_life_rights_freedoms_highest_state_values": [
+      {
+        "status": "translation",
+        "text": "summi valores civitatis sunt homo, eius vita, iura et libertates"
+      }
+    ],
+    "kazakhstan_democratic_secular_legal_social_state": [
+      {
+        "status": "translation",
+        "text": "Res Publica Kazachstania est civitas democratica, saecularis, iuridica et socialis"
+      }
+    ],
+    "kazakhstan_democratic_secular_legal_social_state_1995": [
+      {
+        "status": "translation",
+        "text": "Res Publica se civitatem democraticam, saecularem, iuridicam et socialem esse affirmat (recensio anni 1995)"
+      }
+    ],
+    "law_creates_or_increases_liability": [
+      {
+        "status": "translation",
+        "text": "lex responsabilitatem statuit vel auget"
+      }
+    ],
+    "law_imposes_new_citizen_duties_or_worsens_position": [
+      {
+        "status": "translation",
+        "text": "lex civibus nova officia imponit vel condicionem eorum deteriorem facit"
+      }
+    ],
+    "legal_act_affects_citizen_rights_or_duties": [
+      {
+        "status": "translation",
+        "text": "actus normativus iuridicus iura, libertates et officia civium attingit"
+      }
+    ],
+    "legal_act_application_condition_satisfied": [
+      {
+        "status": "translation",
+        "text": "condicio necessaria applicationis actus normativi iuridici impleta est"
+      }
+    ],
+    "legal_act_officially_published": [
+      {
+        "status": "translation",
+        "text": "actus normativus iuridicus officialiter publicatus est"
+      }
+    ],
+    "new_law_applies_to_prior_offence": [
+      {
+        "status": "translation",
+        "text": "ad delictum antea commissum lex nova applicatur"
+      }
+    ],
+    "new_law_cancels_or_mitigates_liability": [
+      {
+        "status": "translation",
+        "text": "lex nova responsabilitatem pro delicto antea commisso tollit vel mitigat"
+      }
+    ],
+    "nonprofit_receives_foreign_assets": [
+      {
+        "status": "translation",
+        "text": "institutum non quaestuosum pecunias et res a civitatibus externis, personis iuridicis internationalibus et externis, civibus externis et personis sine civitate accipit"
+      }
+    ],
+    "party_or_union_activity_prohibited": [
+      {
+        "status": "translation",
+        "text": "negotiatio factionis politicae vel consociationis opificum non licet"
+      }
+    ],
+    "peaceful_cooperative_foreign_policy_1995": [
+      {
+        "status": "translation",
+        "text": "Res Publica rationem cooperationis et bonae vicinitatis inter civitates sequitur (recensio anni 1995)"
+      }
+    ],
+    "peaceful_cooperative_foreign_policy_declared": [
+      {
+        "status": "translation",
+        "text": "Res Publica rationem externam pacis et cooperationis cum civitatibus interesse habentibus sequitur"
+      }
+    ],
+    "private_land_basis_conditions_limits_established_by_law": [
+      {
+        "status": "translation",
+        "text": "causae, condiciones et fines proprietatis privatae terrae lege statuti sunt"
+      }
+    ],
+    "private_land_holding": [
+      {
+        "status": "translation",
+        "text": "terra in proprietate privata est"
+      }
+    ],
+    "private_land_holding_constitutionally_allowed": [
+      {
+        "status": "translation",
+        "text": "terram in proprietate privata esse constitutionaliter licet"
+      }
+    ],
+    "property_use": [
+      {
+        "status": "translation",
+        "text": "usus proprietatis adest"
+      }
+    ],
+    "property_use_constitutionally_compliant": [
+      {
+        "status": "translation",
+        "text": "usus proprietatis condicionibus constitutionalibus congruit"
+      }
+    ],
+    "property_use_serves_public_and_state_interests": [
+      {
+        "status": "translation",
+        "text": "usus proprietatis commodis societatis et civitatis congruit"
+      }
+    ],
+    "property_use_serves_public_good": [
+      {
+        "status": "translation",
+        "text": "usus proprietatis bono communi servit (recensio anni 1995)"
+      }
+    ],
+    "protected_rights_not_infringed": [
+      {
+        "status": "translation",
+        "text": "iura et commoda aliarum personarum lege tuta laesa non sunt"
+      }
+    ],
+    "religious_activity": [
+      {
+        "status": "translation",
+        "text": "negotiatio est negotiatio consociationis religiosae"
+      }
+    ],
+    "religious_restriction_constitutionally_authorized": [
+      {
+        "status": "translation",
+        "text": "restrictio negotiationis consociationis religiosae constitutionaliter licet"
+      }
+    ],
+    "religious_restriction_established_by_law": [
+      {
+        "status": "translation",
+        "text": "restrictio lege statuta est"
+      }
+    ],
+    "religious_restriction_has_constitutional_goal": [
+      {
+        "status": "translation",
+        "text": "restrictio introducta est ad fundamenta ordinis constitutionalis, iura et libertates hominis et civis tuenda, ad securitatem nationalem praestandam, ad ordinem publicum, valetudinem civium et mores societatis servandos"
+      }
+    ],
+    "renounces_first_use_of_armed_force_1995": [
+      {
+        "status": "translation",
+        "text": "Res Publica primo vim armatam adhibere recusat (recensio anni 1995)"
+      }
+    ],
+    "republic_names_equivalent_1995": [
+      {
+        "status": "translation",
+        "text": "nomina \"Res Publica Kazachstania\" et \"Kazachstania\" idem valent (recensio anni 1995)"
+      }
+    ],
+    "restriction_of_religious_activity": [
+      {
+        "status": "translation",
+        "text": "restrictio ad negotiationem consociationis religiosae pertinet"
+      }
+    ],
+    "retroactive_application_attempt": [
+      {
+        "status": "translation",
+        "text": "lex ad rationes ante eius vim ortas applicatur"
+      }
+    ],
+    "retroactive_application_prohibited": [
+      {
+        "status": "translation",
+        "text": "lex vim retroactivam non habet"
+      }
+    ],
+    "rule_reads_statute": [
+      {
+        "status": "translation",
+        "text": "norma ex hac lege Rei Publicae deducta est"
+      }
+    ],
+    "rule_reads_treaty": [
+      {
+        "status": "translation",
+        "text": "norma ex hoc pacto internationali deducta est"
+      }
+    ],
+    "russian_used_officially_1995": [
+      {
+        "status": "translation",
+        "text": "in institutis publicis et collegiis administrationis localis sui iuris lingua Russica pariter cum Kazachica officialiter adhibetur (recensio anni 1995)"
+      }
+    ],
+    "sovereignty_covers_whole_territory_1995": [
+      {
+        "status": "translation",
+        "text": "imperium summum Rei Publicae ad totum eius territorium pertinet (recensio anni 1995)"
+      }
+    ],
+    "state_anthem_established": [
+      {
+        "status": "translation",
+        "text": "Hymnus Publicus institutus est"
+      }
+    ],
+    "state_cares_for_language_development_1995": [
+      {
+        "status": "translation",
+        "text": "civitas de condicionibus ad linguas populi Kazachstaniae discendas et provehendas creandis curat (recensio anni 1995)"
+      }
+    ],
+    "state_emblem_established": [
+      {
+        "status": "translation",
+        "text": "Insigne Publicum institutum est"
+      }
+    ],
+    "state_flag_established": [
+      {
+        "status": "translation",
+        "text": "Vexillum Publicum institutum est"
+      }
+    ],
+    "state_language_is_kazakh_1995": [
+      {
+        "status": "translation",
+        "text": "lingua publica est Kazachica (recensio anni 1995)"
+      }
+    ],
+    "state_symbols_established_1995": [
+      {
+        "status": "translation",
+        "text": "Res Publica signa publica habet: Vexillum, Insigne et Hymnum (recensio anni 1995)"
+      }
+    ],
+    "statute_norm_forbids": [
+      {
+        "status": "translation",
+        "text": "norma legis Rei Publicae hunc modum agendi prohibet"
+      }
+    ],
+    "treaty_conflicts_with_statute": [
+      {
+        "status": "translation",
+        "text": "pactum internationale et lex Rei Publicae dissentiunt"
+      }
+    ],
+    "treaty_norm_permits": [
+      {
+        "status": "translation",
+        "text": "norma pacti internationalis ratihabiti hunc modum agendi permittit"
+      }
+    ],
+    "treaty_prevails_over_statute": [
+      {
+        "status": "translation",
+        "text": "pactum internationale legi Rei Publicae praestat (recensio anni 1995)"
+      }
+    ],
+    "treaty_ratified_by_republic": [
+      {
+        "status": "translation",
+        "text": "pactum internationale a Re Publica ratihabitum est"
+      }
+    ],
+    "unitary_state_presidential_form_1995": [
+      {
+        "status": "translation",
+        "text": "Res Publica est civitas unitaria forma regiminis praesidiali (recensio anni 1995)"
+      }
+    ],
+    "unlawful_association_interference_with_state": [
+      {
+        "status": "translation",
+        "text": "adest interventus illicitus consociationis publicae in res civitatis"
+      }
+    ],
+    "unlawful_state_interference_with_association": [
+      {
+        "status": "translation",
+        "text": "adest interventus illicitus civitatis in res consociationis publicae"
+      }
+    ]
+  },
+  "language": "la",
+  "package": "kz.constitution.sources"
+}

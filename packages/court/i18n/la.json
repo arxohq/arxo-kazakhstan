@@ -1,0 +1,2318 @@
+{
+  "$comment": "Stratum praesentationis Latinum pacti kz.constitution.court (DECISION-0070). Hoc tabularium in CLIR non ingreditur et a solo strato praesentationis legitur (verbalize --labels, MCP, pons mensae operariae). Versio ex notis Russicis authenticis (ru-KZ) eiusdem pacti ducta est; status omnium notarum est 'translation', id est versio operosa a formalizatore facta, non editio officialis. Clavis est nomen locale declarationis.",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "Advocate": [
+      {
+        "status": "translation",
+        "text": "advocatus vel alia persona auxilium iuridicum praestans"
+      }
+    ],
+    "Akim": [
+      {
+        "status": "translation",
+        "text": "akim — praefectus collegii exsecutivi localis"
+      }
+    ],
+    "AkimCandidateAtLeastTwoAndMajority": [
+      {
+        "status": "translation",
+        "text": "Articulus 89. Akim nominatur, si non minus duo candidati maslikhat deliberandi causa inlati sunt et maior pars deputatorum suffragium ferentium consensit"
+      }
+    ],
+    "AkimNoConfidence": [
+      {
+        "status": "translation",
+        "text": "Articulus 89. Incohante non minus quinta parte deputatorum, maslikhat maiore parte suffragiorum akim fidem abrogare potest"
+      }
+    ],
+    "AkimNoConfidenceExpressed1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 87, numerus 5 (recensio anni 1995). Maslikhat maiore parte suffragiorum totius numeri deputatorum akim fidem abrogare potest"
+      }
+    ],
+    "AkimNoConfidenceInitiativeValid1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 87, numerus 5 (recensio anni 1995). Quaestio de fide akim abroganda incohante non minus quinta parte totius numeri deputatorum maslikhat proponitur"
+      }
+    ],
+    "Candidate": [
+      {
+        "status": "translation",
+        "text": "candidatus ad munus iudicis vel aliud munus nominatum"
+      }
+    ],
+    "Case": [
+      {
+        "status": "translation",
+        "text": "causa iudicialis"
+      }
+    ],
+    "ConstitutionConformingInterpretationRequired": [
+      {
+        "status": "translation",
+        "text": "Articulus 75, numerus 2. Actus in interpretatione Curiae Constitutionalis constitutionalis declaratus in ea interpretatione applicandus est"
+      }
+    ],
+    "ConstitutionConformingInterpretationRequired1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 74, numeri 2 et 3 (recensio anni 1995). Interpretatio qua norma constitutionalis declarata est omnibus obligat a die sententiae latae"
+      }
+    ],
+    "ConstitutionalCourt": [
+      {
+        "status": "translation",
+        "text": "Curia Constitutionalis Rei Publicae Kazachstaniae"
+      }
+    ],
+    "ConstitutionalCourtReferralRequired1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 78 (recensio anni 1995). Iudicium tenetur ad Curiam Constitutionalem petitionem de actu inconstitutionali declarando deferre"
+      }
+    ],
+    "ConstitutionalJudge": [
+      {
+        "status": "translation",
+        "text": "iudex Curiae Constitutionalis"
+      }
+    ],
+    "ConstitutionalJudgeImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 71, numerus 5 (recensio anni 1995). Iudices Curiae Constitutionalis sine consensu Parlamenti custodiae mandari neque ad responsabilitatem criminalem vocari possunt, nisi in ipso facinore comprehenduntur vel delicta gravia commiserunt"
+      }
+    ],
+    "ConstitutionalJudgeIncompatible1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "Articulus 71, numerus 4 (recensio anni 1995). Munus iudicis Curiae Constitutionalis cum mandato deputati, alio munere stipendio aucto et negotiatione quaestuosa incompatibile est"
+      }
+    ],
+    "ConstitutionalJudgeIncompatible1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "Articulus 71, numerus 4 (recensio anni 1995). Munus iudicis Curiae Constitutionalis cum mandato deputati, alio munere stipendio aucto et negotiatione quaestuosa incompatibile est"
+      }
+    ],
+    "ConstitutionalJudgeIncompatible1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "Articulus 71, numerus 4 (recensio anni 1995). Munus iudicis Curiae Constitutionalis cum mandato deputati, alio munere stipendio aucto et negotiatione quaestuosa incompatibile est"
+      }
+    ],
+    "ConstitutionalJudgeInviolability1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 71, numerus 5 (recensio anni 1995). Iudices Curiae Constitutionalis sine consensu Parlamenti custodiae mandari neque ad responsabilitatem criminalem vocari possunt, nisi in ipso facinore comprehenduntur vel delicta gravia commiserunt"
+      }
+    ],
+    "ConstitutionalJudgeOneTerm": [
+      {
+        "status": "translation",
+        "text": "Articulus 72, numerus 2. Eadem persona plus quam semel iudex Curiae Constitutionalis nominari non potest"
+      }
+    ],
+    "ConstitutionalJudgeReappointmentProhibited1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 71, numerus 1 (recensio anni 1995). Eadem persona plus quam semel iudex Curiae Constitutionalis nominari non potest"
+      }
+    ],
+    "ConstitutionalJudgeTermExpiry": [
+      {
+        "status": "translation",
+        "text": "Articulus 72. Terminus potestatum iudicis Curiae Constitutionalis octo anni a die nominationis est"
+      }
+    ],
+    "ConstitutionalPetitionInstitutionalApplicants/alt/1": [
+      {
+        "status": "translation",
+        "text": "Articulus 73, numerus 1. Curia Constitutionalis petitiones Praesidis, Moderatoris Kurultai, non minus quintae partis deputatorum Kurultai, Primi Ministri et Procuratoris Generalis cognoscit"
+      }
+    ],
+    "ConstitutionalPetitionInstitutionalApplicants/alt/2": [
+      {
+        "status": "translation",
+        "text": "Articulus 73, numerus 1. Curia Constitutionalis petitiones Praesidis, Moderatoris Kurultai, non minus quintae partis deputatorum Kurultai, Primi Ministri et Procuratoris Generalis cognoscit"
+      }
+    ],
+    "ConstitutionalPetitionInstitutionalApplicants/alt/3": [
+      {
+        "status": "translation",
+        "text": "Articulus 73, numerus 1. Curia Constitutionalis petitiones Praesidis, Moderatoris Kurultai, non minus quintae partis deputatorum Kurultai, Primi Ministri et Procuratoris Generalis cognoscit"
+      }
+    ],
+    "ConstitutionalPetitionInstitutionalApplicants/alt/4": [
+      {
+        "status": "translation",
+        "text": "Articulus 73, numerus 1. Curia Constitutionalis petitiones Praesidis, Moderatoris Kurultai, non minus quintae partis deputatorum Kurultai, Primi Ministri et Procuratoris Generalis cognoscit"
+      }
+    ],
+    "ConstitutionalPetitionRightsApplicants/alt/1": [
+      {
+        "status": "translation",
+        "text": "Articulus 73, numeri 2-3. Curia Constitutionalis petitiones civium, Commissarii pro iuribus hominis et iudiciorum de iuribus et libertatibus constitutionalibus cognoscit"
+      }
+    ],
+    "ConstitutionalPetitionRightsApplicants/alt/2": [
+      {
+        "status": "translation",
+        "text": "Articulus 73, numeri 2-3. Curia Constitutionalis petitiones civium, Commissarii pro iuribus hominis et iudiciorum de iuribus et libertatibus constitutionalibus cognoscit"
+      }
+    ],
+    "ConstitutionalPetitionRightsApplicants/alt/3": [
+      {
+        "status": "translation",
+        "text": "Articulus 73, numeri 2-3. Curia Constitutionalis petitiones civium, Commissarii pro iuribus hominis et iudiciorum de iuribus et libertatibus constitutionalibus cognoscit"
+      }
+    ],
+    "ConstitutionalPetitionRightsApplicants/alt/4": [
+      {
+        "status": "translation",
+        "text": "Articulus 73, numeri 2-3. Curia Constitutionalis petitiones civium, Commissarii pro iuribus hominis et iudiciorum de iuribus et libertatibus constitutionalibus cognoscit"
+      }
+    ],
+    "ConstitutionalReviewCompetence": [
+      {
+        "status": "translation",
+        "text": "Articulus 72, numerus 1. Curia Constitutionalis magistratus publicus independens est, qui custodiam constitutionalem exercet et supremam Constitutionis auctoritatem in toto territorio patriae praestat"
+      }
+    ],
+    "ConvictionOnConfessionAloneImpermissible1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 77, numerus 3, subnumerus 9 (recensio anni 1995). Nemo sola sua confessione damnari potest"
+      }
+    ],
+    "Court": [
+      {
+        "status": "translation",
+        "text": "iudicium"
+      }
+    ],
+    "CourtRefersRightsInfringingActToConstitutionalCourt": [
+      {
+        "status": "translation",
+        "text": "Articulus 79. Iudicium, cum actum applicandum iura constitutionalia laedere animadvertit, ad Curiam Constitutionalem adire tenetur"
+      }
+    ],
+    "CourtRulingBinding1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 76, numerus 3 (recensio anni 1995). Sententiae, damnationes et cetera constituta iudiciorum in toto territorio Rei Publicae obligant"
+      }
+    ],
+    "CourtSuspendsRightsInfringingActProceeding": [
+      {
+        "status": "translation",
+        "text": "Articulus 79. Iudicium, cum actum applicandum iura constitutionalia laedere animadvertit, causam suspendere tenetur"
+      }
+    ],
+    "CriminalAnalogyProhibited1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 77, numerus 3, subnumerus 10 (recensio anni 1995). Legem criminalem per analogiam applicare non licet"
+      }
+    ],
+    "DeputyElectionDisputeSuspendsRegistration": [
+      {
+        "status": "translation",
+        "text": "Articulus 74, numerus 1. Petitione ad Curiam Constitutionalem de controversia electionum lata, inscriptio deputatorum Kurultai electorum suspenditur"
+      }
+    ],
+    "DetermineJudgeRequirements": [
+      {
+        "status": "translation",
+        "text": "Articulus 80, numerus 3. Requisita iudicibus iudiciorum Rei Publicae Kazachstaniae proposita lege constitutionali definiuntur"
+      }
+    ],
+    "DoubtResolvedForAccused1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 77, numerus 3, subnumerus 8 (recensio anni 1995). Omnis dubitatio de culpa personae in favorem accusati interpretatur"
+      }
+    ],
+    "EligibleMaslikhatDeputy1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 86, numerus 3 (recensio anni 1995). Deputatus maslikhat eligi potest civis viginti annos natus; civis unius tantum maslikhat deputatus esse potest"
+      }
+    ],
+    "EstablishJudicialCollegia": [
+      {
+        "status": "translation",
+        "text": "Articulus 83, numerus 3. In iudiciis secundum legem constitutionalem collegia iudicialia constitui possunt"
+      }
+    ],
+    "HearingRightViolated1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 77, numerus 3, subnumerus 4 (recensio anni 1995). In iudicio quisque ius habet audiri"
+      }
+    ],
+    "InaugurationSuspendedOnElectionPetition1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 73, numerus 1 (recensio anni 1995). Petitione de rectitudine electionum lata, ingressus Praesidis in munus, inscriptio deputatorum vel exitus referendi conficiendi suspenduntur"
+      }
+    ],
+    "InterferenceWithJusticeLiability1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 77, numerus 2 (recensio anni 1995). Interventus in negotiationem iudicii in administratione iustitiae non licet et responsabilitatem lege statutam parit"
+      }
+    ],
+    "Judge": [
+      {
+        "status": "translation",
+        "text": "iudex"
+      }
+    ],
+    "JudgeDetentionConstitutionalException": [
+      {
+        "status": "translation",
+        "text": "Articulus 80, numerus 2. Comprehensio iudicis licet, si in ipso facinore comprehenditur, si delicta gravia et praegravia commisit vel si consensus requisitus adest"
+      }
+    ],
+    "JudgeDetentionGroundConsent": [
+      {
+        "status": "translation",
+        "text": "Articulus 80, numerus 2. Consensus requisitus causa est quae tutelam iudicis tollit"
+      }
+    ],
+    "JudgeDetentionGroundGraveOffence": [
+      {
+        "status": "translation",
+        "text": "Articulus 80, numerus 2. Delictum grave vel praegrave commissum causa est quae tutelam iudicis tollit"
+      }
+    ],
+    "JudgeDetentionGroundInTheAct": [
+      {
+        "status": "translation",
+        "text": "Articulus 80, numerus 2. Comprehensio in ipso facinore causa est quae tutelam iudicis tollit"
+      }
+    ],
+    "JudgeDetentionImmunity": [
+      {
+        "status": "translation",
+        "text": "Articulus 80, numerus 2. Iudex sine consensu requisito comprehendi non potest, nisi in ipso facinore comprehenditur vel delicta gravia et praegravia commisit"
+      }
+    ],
+    "JudgeImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 79, numerus 2 (recensio anni 1995). Iudex sine consensu Praesidis ex sententia Consilii Iudicialis Supremi vel sine consensu Senatus custodiae mandari neque ad responsabilitatem criminalem vocari potest"
+      }
+    ],
+    "JudgeInviolabilityApplies": [
+      {
+        "status": "translation",
+        "text": "Articulus 80, numerus 2. Tutela iudicis a comprehensione viget, donec nulla ex tribus causis nominatis adest"
+      }
+    ],
+    "JudgeInviolabilityApplies/unless/0": [
+      {
+        "status": "translation",
+        "text": "Articulus 80, numerus 2. Tutela iudicis a comprehensione viget, donec nulla ex tribus causis nominatis adest"
+      }
+    ],
+    "JudgeOfficeIncompatible1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "Articulus 79, numerus 4 (recensio anni 1995). Munus iudicis cum mandato deputati, alio munere stipendio aucto et negotiatione quaestuosa incompatibile est"
+      }
+    ],
+    "JudgeOfficeIncompatible1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "Articulus 79, numerus 4 (recensio anni 1995). Munus iudicis cum mandato deputati, alio munere stipendio aucto et negotiatione quaestuosa incompatibile est"
+      }
+    ],
+    "JudgeOfficeIncompatible1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "Articulus 79, numerus 4 (recensio anni 1995). Munus iudicis cum mandato deputati, alio munere stipendio aucto et negotiatione quaestuosa incompatibile est"
+      }
+    ],
+    "JudgePersonalImmunity": [
+      {
+        "status": "translation",
+        "text": "Articulus 80, numerus 2. Iudex sine consensu requisito comprehendi non potest, nisi in ipso facinore comprehenditur vel delicta gravia et praegravia commisit"
+      }
+    ],
+    "JudgeRequirementsDelegated": [
+      {
+        "status": "translation",
+        "text": "Articulus 80, numerus 3. Requisita iudicibus iudiciorum Rei Publicae Kazachstaniae proposita lege constitutionali definiuntur"
+      }
+    ],
+    "JudicialCollegiaDelegated": [
+      {
+        "status": "translation",
+        "text": "Articulus 83, numerus 3. In iudiciis secundum legem constitutionalem collegia iudicialia constitui possunt"
+      }
+    ],
+    "JudicialDecisionBindingNationwide": [
+      {
+        "status": "translation",
+        "text": "Articulus 77, numerus 3. Sententiae, damnationes et cetera constituta iudiciorum in toto territorio Kazachstaniae obligant"
+      }
+    ],
+    "JudicialIndependence": [
+      {
+        "status": "translation",
+        "text": "Articulus 78, numerus 1. Iudex in administratione iustitiae independens est et soli Constitutioni et legi paret"
+      }
+    ],
+    "JudicialInterferenceUnlawful": [
+      {
+        "status": "translation",
+        "text": "Articulus 78, numerus 2. Ullus interventus in negotiationem iudicii in administratione iustitiae non licet"
+      }
+    ],
+    "JudicialInviolability1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 79, numerus 2 (recensio anni 1995). Iudex sine consensu Praesidis ex sententia Consilii Iudicialis Supremi vel sine consensu Senatus custodiae mandari neque ad responsabilitatem criminalem vocari potest"
+      }
+    ],
+    "JudicialPowerCoversCase1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 76, numerus 2 (recensio anni 1995). Potestas iudicialis ad omnes causas et controversias ex Constitutione, legibus et pactis internationalibus ortas pertinet"
+      }
+    ],
+    "JudicialPowerCoversLegalApplicationCases": [
+      {
+        "status": "translation",
+        "text": "Articulus 77, numerus 2. Potestas iudicialis causas et controversias ex normis iuris applicandis ortas complectitur"
+      }
+    ],
+    "JurisdictionChangeProhibited1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 77, numerus 3, subnumerus 3 (recensio anni 1995). Nemini sine eius consensu forum lege ei praevisum mutari potest"
+      }
+    ],
+    "JusticeByCourtOnly1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 75, numerus 1 (recensio anni 1995). Iustitia in Re Publica Kazachstania a solo iudicio administratur"
+      }
+    ],
+    "JusticeOnlyByCourt": [
+      {
+        "status": "translation",
+        "text": "Articulus 76, numerus 1. Iustitia in Re Publica Kazachstania a solo iudicio administratur"
+      }
+    ],
+    "LegalAct": [
+      {
+        "status": "translation",
+        "text": "actus normativus iuridicus vel sententia iudicii"
+      }
+    ],
+    "LegalAid": [
+      {
+        "status": "translation",
+        "text": "casus auxilii iuridici praestandi"
+      }
+    ],
+    "LegalAidByAuthorizedProvider": [
+      {
+        "status": "translation",
+        "text": "Articulus 86. Auxilium iuridicum ab advocatis et aliis personis secundum legem praestatur"
+      }
+    ],
+    "LocalCourtAppointment1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 82, numerus 2 (recensio anni 1995). Moderatores et iudices iudiciorum localium ceterorumque a Praeside ex commendatione Consilii Iudicialis Supremi nominantur"
+      }
+    ],
+    "LocalDecision": [
+      {
+        "status": "translation",
+        "text": "constitutum maslikhat vel collegii administrationis localis sui iuris"
+      }
+    ],
+    "LocalExecutiveBodyResponsibility": [
+      {
+        "status": "translation",
+        "text": "Articulus 87. Collegium exsecutivum locale de statu rerum in territorio suo respondet"
+      }
+    ],
+    "LocalFinancialDecisionWithAkimOpinion": [
+      {
+        "status": "translation",
+        "text": "Articulus 90. Constitutum reditus locales minuens vel sumptus augens solum favorabili sententia akim fertur"
+      }
+    ],
+    "LocalRepresentativeBodyResponsibility": [
+      {
+        "status": "translation",
+        "text": "Articulus 87. Collegium repraesentans locale de statu rerum in territorio suo respondet"
+      }
+    ],
+    "LocalSelfGovernmentAutonomy": [
+      {
+        "status": "translation",
+        "text": "Articulus 91. Sui iuris potestas collegiorum administrationis localis in rebus momenti localis decernendis praestatur"
+      }
+    ],
+    "Maslikhat": [
+      {
+        "status": "translation",
+        "text": "maslikhat — collegium repraesentans locale"
+      }
+    ],
+    "MaslikhatCandidateEligibility": [
+      {
+        "status": "translation",
+        "text": "Articulus 88. Deputatus maslikhat esse potest civis Rei Publicae viginti annos natus qui alterius maslikhat deputatus non est"
+      }
+    ],
+    "MaslikhatDeputy": [
+      {
+        "status": "translation",
+        "text": "deputatus maslikhat"
+      }
+    ],
+    "MaslikhatFiscalRulingRequiresAkimOpinion1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 88, numerus 2 (recensio anni 1995). Rogationes constitutorum maslikhat reditus locales minuentes vel sumptus augentes solum favorabili sententia akim inferuntur"
+      }
+    ],
+    "MaslikhatPowersTerminated1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "Articulus 86, numerus 5 (recensio anni 1995). Potestates maslikhat ante tempus a Praeside post consultationes cum Primo Ministro et Moderatoribus Camerarum Parlamenti vel sua ipsius dissolutione finiuntur"
+      }
+    ],
+    "MaslikhatPowersTerminated1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "Articulus 86, numerus 5 (recensio anni 1995). Potestates maslikhat ante tempus a Praeside post consultationes cum Primo Ministro et Moderatoribus Camerarum Parlamenti vel sua ipsius dissolutione finiuntur"
+      }
+    ],
+    "MaslikhatRulingAnnullable1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 88, numerus 3 (recensio anni 1995). Constituta maslikhat Constitutioni et legibus non congruentia iudicio tolli possunt"
+      }
+    ],
+    "MaslikhatTermExpiry": [
+      {
+        "status": "translation",
+        "text": "Articulus 88, numerus 2. Maslikhat in quinque annos eliguntur"
+      }
+    ],
+    "Mazhilis1995": [
+      {
+        "status": "translation",
+        "text": "Mazhilis Parlamenti (recensio anni 1995)"
+      }
+    ],
+    "NonCourtJusticeProhibition": [
+      {
+        "status": "translation",
+        "text": "Articulus 76, numerus 1. Iustitia in Re Publica Kazachstania a solo iudicio administratur"
+      }
+    ],
+    "Ombudsman": [
+      {
+        "status": "translation",
+        "text": "Commissarius pro iuribus hominis"
+      }
+    ],
+    "OmbudsmanAppointmentByPresident": [
+      {
+        "status": "translation",
+        "text": "Articulus 85, numerus 2. Commissarius pro iuribus hominis a Praeside nominatur"
+      }
+    ],
+    "OmbudsmanCoerciveMeasureException": [
+      {
+        "status": "translation",
+        "text": "Articulus 85, numerus 4. Exceptiones constitutionales ab inviolabilitate Commissarii"
+      }
+    ],
+    "OmbudsmanCoerciveMeasureImmunity": [
+      {
+        "status": "translation",
+        "text": "Articulus 85, numerus 4. Inviolabilitas Commissarii a mensuris coactionis sine consensu Praesidis"
+      }
+    ],
+    "OmbudsmanCoerciveMeasureImmunityRule": [
+      {
+        "status": "translation",
+        "text": "Articulus 85, numerus 4. Inviolabilitas Commissarii a mensuris coactionis sine consensu Praesidis"
+      }
+    ],
+    "OmbudsmanImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 83-1, numerus 3 (recensio anni 1995). Commissarius pro iuribus hominis sine consensu Senatus custodiae mandari neque ad responsabilitatem criminalem vocari potest"
+      }
+    ],
+    "OmbudsmanIndependent": [
+      {
+        "status": "translation",
+        "text": "Articulus 85, numerus 3. Commissarius independens est neque cuiquam rationem reddit"
+      }
+    ],
+    "OmbudsmanInviolability1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 83-1, numerus 3 (recensio anni 1995). Commissarius pro iuribus hominis sine consensu Senatus custodiae mandari neque ad responsabilitatem criminalem vocari potest"
+      }
+    ],
+    "OmbudsmanInviolabilityApplies": [
+      {
+        "status": "translation",
+        "text": "Articulus 85, numerus 4. Tutela Commissarii a mensuris coactionis viget, donec nulla ex tribus causis nominatis adest"
+      }
+    ],
+    "OmbudsmanInviolabilityApplies/unless/0": [
+      {
+        "status": "translation",
+        "text": "Articulus 85, numerus 4. Tutela Commissarii a mensuris coactionis viget, donec nulla ex tribus causis nominatis adest"
+      }
+    ],
+    "OmbudsmanMeasureGroundConsent": [
+      {
+        "status": "translation",
+        "text": "Articulus 85, numerus 4. Consensus Praesidis causa est quae tutelam Commissarii tollit"
+      }
+    ],
+    "OmbudsmanMeasureGroundGraveOffence": [
+      {
+        "status": "translation",
+        "text": "Articulus 85, numerus 4. Delictum grave vel praegrave commissum causa est quae tutelam Commissarii tollit"
+      }
+    ],
+    "OmbudsmanMeasureGroundInTheAct": [
+      {
+        "status": "translation",
+        "text": "Articulus 85, numerus 4. Comprehensio in ipso facinore causa est quae tutelam Commissarii tollit"
+      }
+    ],
+    "OmbudsmanRightsAssistance": [
+      {
+        "status": "translation",
+        "text": "Articulus 85, numerus 1. Adiumentum iuribus et libertatibus restituendis et provehendis"
+      }
+    ],
+    "Parliament": [
+      {
+        "status": "translation",
+        "text": "Parlamentum Rei Publicae Kazachstaniae"
+      }
+    ],
+    "Parliament1995": [
+      {
+        "status": "translation",
+        "text": "Parlamentum Rei Publicae Kazachstaniae (recensio anni 1995)"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "persona physica"
+      }
+    ],
+    "Petition": [
+      {
+        "status": "translation",
+        "text": "petitio ad Curiam Constitutionalem"
+      }
+    ],
+    "PetitionAdmissible1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "Articulus 72 (recensio anni 1995). Curia Constitutionalis petitiones Praesidis, Moderatoris Senatus, Moderatoris Mazhilis, non minus quintae partis deputatorum Parlamenti, Primi Ministri, civium, Procuratoris Generalis et Commissarii pro iuribus hominis cognoscit"
+      }
+    ],
+    "PetitionAdmissible1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "Articulus 72 (recensio anni 1995). Curia Constitutionalis petitiones Praesidis, Moderatoris Senatus, Moderatoris Mazhilis, non minus quintae partis deputatorum Parlamenti, Primi Ministri, civium, Procuratoris Generalis et Commissarii pro iuribus hominis cognoscit"
+      }
+    ],
+    "PetitionAdmissible1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "Articulus 72 (recensio anni 1995). Curia Constitutionalis petitiones Praesidis, Moderatoris Senatus, Moderatoris Mazhilis, non minus quintae partis deputatorum Parlamenti, Primi Ministri, civium, Procuratoris Generalis et Commissarii pro iuribus hominis cognoscit"
+      }
+    ],
+    "PetitionAdmissible1995/alt/4": [
+      {
+        "status": "translation",
+        "text": "Articulus 72 (recensio anni 1995). Curia Constitutionalis petitiones Praesidis, Moderatoris Senatus, Moderatoris Mazhilis, non minus quintae partis deputatorum Parlamenti, Primi Ministri, civium, Procuratoris Generalis et Commissarii pro iuribus hominis cognoscit"
+      }
+    ],
+    "PetitionAdmissible1995/alt/5": [
+      {
+        "status": "translation",
+        "text": "Articulus 72 (recensio anni 1995). Curia Constitutionalis petitiones Praesidis, Moderatoris Senatus, Moderatoris Mazhilis, non minus quintae partis deputatorum Parlamenti, Primi Ministri, civium, Procuratoris Generalis et Commissarii pro iuribus hominis cognoscit"
+      }
+    ],
+    "PetitionAdmissible1995/alt/6": [
+      {
+        "status": "translation",
+        "text": "Articulus 72 (recensio anni 1995). Curia Constitutionalis petitiones Praesidis, Moderatoris Senatus, Moderatoris Mazhilis, non minus quintae partis deputatorum Parlamenti, Primi Ministri, civium, Procuratoris Generalis et Commissarii pro iuribus hominis cognoscit"
+      }
+    ],
+    "PetitionAdmissible1995/alt/7": [
+      {
+        "status": "translation",
+        "text": "Articulus 72 (recensio anni 1995). Curia Constitutionalis petitiones Praesidis, Moderatoris Senatus, Moderatoris Mazhilis, non minus quintae partis deputatorum Parlamenti, Primi Ministri, civium, Procuratoris Generalis et Commissarii pro iuribus hominis cognoscit"
+      }
+    ],
+    "PetitionAdmissible1995/alt/8": [
+      {
+        "status": "translation",
+        "text": "Articulus 72 (recensio anni 1995). Curia Constitutionalis petitiones Praesidis, Moderatoris Senatus, Moderatoris Mazhilis, non minus quintae partis deputatorum Parlamenti, Primi Ministri, civium, Procuratoris Generalis et Commissarii pro iuribus hominis cognoscit"
+      }
+    ],
+    "PreRatificationReviewSuspendsDeadline": [
+      {
+        "status": "translation",
+        "text": "Articulus 74, numerus 2. Petitione ad Curiam Constitutionalem lata, cursus termini pacti ratihabendi suspenditur"
+      }
+    ],
+    "PreSignatureReviewSuspendsDeadline": [
+      {
+        "status": "translation",
+        "text": "Articulus 74, numerus 2. Petitione ad Curiam Constitutionalem lata, cursus termini actus subscribendi suspenditur"
+      }
+    ],
+    "PresidentialElectionDisputeSuspendsInauguration": [
+      {
+        "status": "translation",
+        "text": "Articulus 74, numerus 1. Petitione ad Curiam Constitutionalem de controversia electionum lata, ingressus Praesidis in munus suspenditur"
+      }
+    ],
+    "ProceedingSuspendedOnRightsInfringement1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 78 (recensio anni 1995). Iudicium, cum actum applicandum iura constitutionalia laedere animadvertit, causam suspendere tenetur"
+      }
+    ],
+    "ProsecutorGeneral": [
+      {
+        "status": "translation",
+        "text": "Procurator Generalis Rei Publicae Kazachstaniae"
+      }
+    ],
+    "ProsecutorGeneralImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 83, numerus 3 (recensio anni 1995). Procurator Generalis sine consensu Senatus custodiae mandari neque ad responsabilitatem criminalem vocari potest"
+      }
+    ],
+    "ProsecutorGeneralInviolability1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 83, numerus 3 (recensio anni 1995). Procurator Generalis sine consensu Senatus custodiae mandari neque ad responsabilitatem criminalem vocari potest"
+      }
+    ],
+    "ProsecutorGeneralOneTerm": [
+      {
+        "status": "translation",
+        "text": "Articulus 84, numerus 3. Eadem persona plus quam semel Procurator Generalis nominari non potest"
+      }
+    ],
+    "ProsecutorGeneralTermExpiry": [
+      {
+        "status": "translation",
+        "text": "Articulus 84. Terminus potestatum Procuratoris Generalis sex anni a die nominationis est"
+      }
+    ],
+    "RatificationDeadlineSuspended1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 73, numerus 2 (recensio anni 1995). Petitione de pacto internationali lata, cursus termini ratihabendi suspenditur"
+      }
+    ],
+    "ReferendumDisputeSuspendsResults": [
+      {
+        "status": "translation",
+        "text": "Articulus 74, numerus 1. Petitione ad Curiam Constitutionalem de controversia referendi lata, exitus eius conficiendi suspenduntur"
+      }
+    ],
+    "RefrainFromNonCourtJustice": [
+      {
+        "status": "translation",
+        "text": "Articulus 76, numerus 1. Iustitia in Re Publica Kazachstania a solo iudicio administratur"
+      }
+    ],
+    "RegionalAkimAppointmentValid1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 87, numerus 4 (recensio anni 1995). Akim provinciarum consentientibus deputatis maslikhat nominantur; Praeses non minus duos candidatos proponit"
+      }
+    ],
+    "RegionalAkimPowersEndWithNewPresident1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 87, numerus 5 (recensio anni 1995). Potestates akim provinciarum, urbium momenti rei publicae et capitis finiuntur, cum Praeses noviter electus in munus ingreditur"
+      }
+    ],
+    "RepeatedLiabilityProhibited1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 77, numerus 3, subnumerus 2 (recensio anni 1995). Nemo propter idem delictum iterum ad responsabilitatem criminalem vel administrativam vocari potest"
+      }
+    ],
+    "Senate1995": [
+      {
+        "status": "translation",
+        "text": "Senatus Parlamenti (recensio anni 1995)"
+      }
+    ],
+    "SignatureDeadlineSuspended1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 73, numerus 2 (recensio anni 1995). Petitione de lege iam lata proposita, cursus termini subscribendi suspenditur"
+      }
+    ],
+    "SpecialCourtProhibited1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 75, numerus 4 (recensio anni 1995). Iudicia specialia et extraordinaria quolibet nomine constituere non licet"
+      }
+    ],
+    "SpecialCourtsProhibited": [
+      {
+        "status": "translation",
+        "text": "Articulus 76, numerus 4. Iudicia specialia et extraordinaria quolibet nomine constituere non licet"
+      }
+    ],
+    "StateOrgan": [
+      {
+        "status": "translation",
+        "text": "magistratus publicus"
+      }
+    ],
+    "SupremeCourt": [
+      {
+        "status": "translation",
+        "text": "Curia Suprema Rei Publicae Kazachstaniae"
+      }
+    ],
+    "SupremeCourtAppointmentBySenate1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 82, numerus 1 (recensio anni 1995). Moderator et iudices Curiae Supremae a Senatu ex propositione Praesidis commendatione Consilii Iudicialis Supremi nixa eliguntur"
+      }
+    ],
+    "SupremeCourtChairOneTerm": [
+      {
+        "status": "translation",
+        "text": "Articulus 83, numerus 1. Eadem persona plus quam semel Moderator Curiae Supremae nominari non potest"
+      }
+    ],
+    "SupremeCourtChairTermExpiry": [
+      {
+        "status": "translation",
+        "text": "Articulus 83. Terminus potestatum Moderatoris Curiae Supremae sex anni a die nominationis est"
+      }
+    ],
+    "SupremeCourtExplainsPracticeWhenAuthorizedByLaw": [
+      {
+        "status": "translation",
+        "text": "Articulus 82. Curia Suprema in casibus lege praevisis explanationes de rebus usus iudicialis dat"
+      }
+    ],
+    "SupremeCourtHearsCasesAssignedByLaw": [
+      {
+        "status": "translation",
+        "text": "Articulus 82. Curia Suprema causas ad forum eius lege attributas cognoscit"
+      }
+    ],
+    "Treaty": [
+      {
+        "status": "translation",
+        "text": "pactum internationale Rei Publicae"
+      }
+    ],
+    "UnconstitutionalActCeasesOnDecision": [
+      {
+        "status": "translation",
+        "text": "Articulus 75, numerus 2. Actus inconstitutionalis declaratus vim amittit a die quo Curia Constitutionalis sententiam tulit"
+      }
+    ],
+    "UnconstitutionalActCeasesOnSpecifiedDate": [
+      {
+        "status": "translation",
+        "text": "Articulus 75, numerus 2. Actus inconstitutionalis declaratus vim amittit a die a Curia Constitutionali statuto"
+      }
+    ],
+    "UnconstitutionalActCeasesToApply1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 74, numerus 2 (recensio anni 1995). Actus inconstitutionales declarati tolluntur neque applicandi sunt a die sententiae Curiae Constitutionalis vel a die ab ea statuto"
+      }
+    ],
+    "UnconstitutionalActMayNotBeSigned1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 74, numerus 1 (recensio anni 1995). Leges Constitutioni non congruentes declaratae subscribi non possunt"
+      }
+    ],
+    "UnconstitutionalTreatyMayNotBeRatified1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 74, numerus 1 (recensio anni 1995). Pacta internationalia Constitutioni non congruentia declarata ratihaberi neque in vim adduci possunt"
+      }
+    ],
+    "UnlawfulEvidenceHasNoForce1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 77, numerus 3, subnumerus 9 (recensio anni 1995). Probationes modo illicito partae vim iuridicam non habent"
+      }
+    ],
+    "act_ceased_to_apply": [
+      {
+        "status": "translation",
+        "text": "actus vim amisit neque applicandus est"
+      }
+    ],
+    "act_ceased_to_apply_1995": [
+      {
+        "status": "translation",
+        "text": "actus vim amisit neque applicandus est (recensio anni 1995)"
+      }
+    ],
+    "act_infringes_constitutional_rights": [
+      {
+        "status": "translation",
+        "text": "actus iura et libertates Constitutione statuta laedit"
+      }
+    ],
+    "act_may_not_be_signed_1995": [
+      {
+        "status": "translation",
+        "text": "actus subscribi non potest (recensio anni 1995)"
+      }
+    ],
+    "age_years": [
+      {
+        "status": "translation",
+        "text": "aetas personae annis expletis"
+      }
+    ],
+    "aid_provider_authorized_by_law": [
+      {
+        "status": "translation",
+        "text": "subiectum lege ad auxilium iuridicum praestandum potestatem habet"
+      }
+    ],
+    "akim_appointment_valid_1995": [
+      {
+        "status": "translation",
+        "text": "nominatio akim facta est (recensio anni 1995)"
+      }
+    ],
+    "akim_candidate_consented": [
+      {
+        "status": "translation",
+        "text": "maslikhat candidato in munus akim nominando consensit"
+      }
+    ],
+    "akim_candidate_minimum": [
+      {
+        "status": "translation",
+        "text": "minimus numerus candidatorum akim inlatorum: duo"
+      }
+    ],
+    "akim_candidate_set": [
+      {
+        "status": "translation",
+        "text": "numerus candidatorum akim maslikhat deliberandi causa inlatorum"
+      }
+    ],
+    "akim_candidate_vote": [
+      {
+        "status": "translation",
+        "text": "numerus suffragiorum deputatorum maslikhat pro candidato akim latorum"
+      }
+    ],
+    "akim_consent_denominator": [
+      {
+        "status": "translation",
+        "text": "denominator limitis consensus maslikhat de akim nominando: duo"
+      }
+    ],
+    "akim_consent_numerator": [
+      {
+        "status": "translation",
+        "text": "numerator limitis consensus maslikhat de akim nominando: unum"
+      }
+    ],
+    "akim_no_confidence": [
+      {
+        "status": "translation",
+        "text": "maslikhat akim fidem abrogavit"
+      }
+    ],
+    "akim_no_confidence_denominator": [
+      {
+        "status": "translation",
+        "text": "denominator limitis fidei akim abrogandae: duo"
+      }
+    ],
+    "akim_no_confidence_expressed_1995": [
+      {
+        "status": "translation",
+        "text": "fides akim a maslikhat abrogata est (recensio anni 1995)"
+      }
+    ],
+    "akim_no_confidence_initiating_votes": [
+      {
+        "status": "translation",
+        "text": "numerus deputatorum maslikhat qui abrogationem fidei akim incohaverunt"
+      }
+    ],
+    "akim_no_confidence_initiative_denominator": [
+      {
+        "status": "translation",
+        "text": "denominator limitis incohandae abrogationis fidei akim: quinque"
+      }
+    ],
+    "akim_no_confidence_initiative_numerator": [
+      {
+        "status": "translation",
+        "text": "numerator limitis incohandae abrogationis fidei akim: unum"
+      }
+    ],
+    "akim_no_confidence_initiative_valid_1995": [
+      {
+        "status": "translation",
+        "text": "abrogatio fidei akim a legitimo numero deputatorum incohata est (recensio anni 1995)"
+      }
+    ],
+    "akim_no_confidence_numerator": [
+      {
+        "status": "translation",
+        "text": "numerator limitis fidei akim abrogandae: unum"
+      }
+    ],
+    "akim_no_confidence_votes": [
+      {
+        "status": "translation",
+        "text": "numerus suffragiorum pro fide akim abroganda latorum"
+      }
+    ],
+    "akim_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "potestates akim finitae sunt (recensio anni 1995)"
+      }
+    ],
+    "akim_responsible_for_territorial_affairs": [
+      {
+        "status": "translation",
+        "text": "akim de statu rerum in territorio pertinenti respondet"
+      }
+    ],
+    "already_member_of_other_maslikhat": [
+      {
+        "status": "translation",
+        "text": "persona iam alterius maslikhat deputatus est"
+      }
+    ],
+    "analogy_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "legem criminalem per analogiam applicare non licet (recensio anni 1995)"
+      }
+    ],
+    "applicable_act": [
+      {
+        "status": "translation",
+        "text": "in causa hic actus applicandus est"
+      }
+    ],
+    "assessment_date": [
+      {
+        "status": "translation",
+        "text": "dies ad quem vis actus aestimatur"
+      }
+    ],
+    "case_assigned_by_law_to_supreme_court": [
+      {
+        "status": "translation",
+        "text": "causa lege ad forum Curiae Supremae attributa est"
+      }
+    ],
+    "citizen": [
+      {
+        "status": "translation",
+        "text": "persona civis Rei Publicae Kazachstaniae est"
+      }
+    ],
+    "constitutional_court": [
+      {
+        "status": "translation",
+        "text": "collegium Curia Constitutionalis est"
+      }
+    ],
+    "constitutional_court_decisions_final_1995": [
+      {
+        "status": "translation",
+        "text": "sententiae Curiae Constitutionalis definitivae sunt neque appellationi obnoxiae (recensio anni 1995)"
+      }
+    ],
+    "constitutional_court_referral_required_1995": [
+      {
+        "status": "translation",
+        "text": "iudicium ad Curiam Constitutionalem adire tenetur (recensio anni 1995)"
+      }
+    ],
+    "constitutional_judge": [
+      {
+        "status": "translation",
+        "text": "persona iudex Curiae Constitutionalis est"
+      }
+    ],
+    "constitutional_judge_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "nominatio iudicis Curiae Constitutionalis fit"
+      }
+    ],
+    "constitutional_judge_arrest_attempt": [
+      {
+        "status": "translation",
+        "text": "custodia iudicis Curiae Constitutionalis temptata est"
+      }
+    ],
+    "constitutional_judge_business": [
+      {
+        "status": "translation",
+        "text": "iudex Curiae Constitutionalis negotiationem quaestuosam exercet"
+      }
+    ],
+    "constitutional_judge_count": [
+      {
+        "status": "translation",
+        "text": "numerus iudicum Curiae Constitutionalis: undecim"
+      }
+    ],
+    "constitutional_judge_deputy_mandate": [
+      {
+        "status": "translation",
+        "text": "iudex Curiae Constitutionalis deputatus collegii repraesentantis est"
+      }
+    ],
+    "constitutional_judge_immunity_infringed_1995": [
+      {
+        "status": "translation",
+        "text": "inviolabilitas iudicis Curiae Constitutionalis violata est (recensio anni 1995)"
+      }
+    ],
+    "constitutional_judge_office_incompatible_1995": [
+      {
+        "status": "translation",
+        "text": "munus iudicis Curiae Constitutionalis cum munere gesto vel negotiatione incompatibile est (recensio anni 1995)"
+      }
+    ],
+    "constitutional_judge_paid_office": [
+      {
+        "status": "translation",
+        "text": "iudex Curiae Constitutionalis aliud munus stipendio auctum gerit"
+      }
+    ],
+    "constitutional_judge_permitted_activity": [
+      {
+        "status": "translation",
+        "text": "negotiatio ad permissam docendi, scientiae vel artis operam pertinet"
+      }
+    ],
+    "constitutional_judge_reappointment_prohibited": [
+      {
+        "status": "translation",
+        "text": "iterata nominatio iudicis Curiae Constitutionalis non licet"
+      }
+    ],
+    "constitutional_judge_term": [
+      {
+        "status": "translation",
+        "text": "terminus potestatum iudicis Curiae Constitutionalis: octo anni"
+      }
+    ],
+    "constitutional_judge_term_expires_on": [
+      {
+        "status": "translation",
+        "text": "dies quo potestates iudicis Curiae Constitutionalis finiuntur"
+      }
+    ],
+    "constitutional_judge_term_started_on": [
+      {
+        "status": "translation",
+        "text": "dies quo potestates iudicis Curiae Constitutionalis coeperunt"
+      }
+    ],
+    "constitutional_judges_appointed_by_mazhilis_1995": [
+      {
+        "status": "translation",
+        "text": "numerus iudicum Curiae Constitutionalis a Mazhilis nominandorum: tres (recensio anni 1995)"
+      }
+    ],
+    "constitutional_judges_appointed_by_president_1995": [
+      {
+        "status": "translation",
+        "text": "numerus iudicum Curiae Constitutionalis a Praeside nominandorum: quattuor (recensio anni 1995)"
+      }
+    ],
+    "constitutional_judges_appointed_by_senate_1995": [
+      {
+        "status": "translation",
+        "text": "numerus iudicum Curiae Constitutionalis a Senatu nominandorum: tres (recensio anni 1995)"
+      }
+    ],
+    "constitutional_law": [
+      {
+        "status": "translation",
+        "text": "lex constitutionalis Rei Publicae Kazachstaniae"
+      }
+    ],
+    "constitutional_law_adopted": [
+      {
+        "status": "translation",
+        "text": "lex constitutionalis lata est"
+      }
+    ],
+    "constitutional_referral_required": [
+      {
+        "status": "translation",
+        "text": "iudicium ad Curiam Constitutionalem adire tenetur"
+      }
+    ],
+    "constitutional_review_exercised": [
+      {
+        "status": "translation",
+        "text": "collegium custodiam constitutionalem exercet et supremam Constitutionis auctoritatem praestat"
+      }
+    ],
+    "conviction_impermissible_1995": [
+      {
+        "status": "translation",
+        "text": "talis damnatio non licet (recensio anni 1995)"
+      }
+    ],
+    "conviction_only_on_own_confession": [
+      {
+        "status": "translation",
+        "text": "damnatio sola confessione accusati nititur"
+      }
+    ],
+    "council_recommendation": [
+      {
+        "status": "translation",
+        "text": "commendatio Consilii Iudicialis Supremi adest"
+      }
+    ],
+    "court": [
+      {
+        "status": "translation",
+        "text": "collegium iudicium est"
+      }
+    ],
+    "court_finds_act_infringing_rights": [
+      {
+        "status": "translation",
+        "text": "iudicium actum applicandum iura constitutionalia laedere animadvertit"
+      }
+    ],
+    "court_handles": [
+      {
+        "status": "translation",
+        "text": "causa ab hoc iudicio cognoscitur"
+      }
+    ],
+    "court_ruling_binding_1995": [
+      {
+        "status": "translation",
+        "text": "sententia iudicii in toto territorio Rei Publicae obligat (recensio anni 1995)"
+      }
+    ],
+    "court_ruling_issued": [
+      {
+        "status": "translation",
+        "text": "iudicium sententiam in causa tulit"
+      }
+    ],
+    "court_specified_termination_date": [
+      {
+        "status": "translation",
+        "text": "dies a quo iudicium vim actus finiri statuit"
+      }
+    ],
+    "courts_financed_from_republican_budget": [
+      {
+        "status": "translation",
+        "text": "iudicia ex aerario rei publicae sustentantur"
+      }
+    ],
+    "courts_financed_from_republican_budget_1995": [
+      {
+        "status": "translation",
+        "text": "iudicia ex aerario rei publicae sustentantur (recensio anni 1995)"
+      }
+    ],
+    "criminal_law_applied_by_analogy": [
+      {
+        "status": "translation",
+        "text": "lex criminalis per analogiam applicata est"
+      }
+    ],
+    "decision_date": [
+      {
+        "status": "translation",
+        "text": "dies quo Curia Constitutionalis sententiam tulit"
+      }
+    ],
+    "declared_constitutional_in_interpretation": [
+      {
+        "status": "translation",
+        "text": "actus in interpretatione a Curia data constitutionalis declaratus est"
+      }
+    ],
+    "declared_constitutional_in_interpretation_1995": [
+      {
+        "status": "translation",
+        "text": "actus in interpretatione Constitutioni congruens declaratus est (recensio anni 1995)"
+      }
+    ],
+    "declared_unconstitutional": [
+      {
+        "status": "translation",
+        "text": "actus inconstitutionalis declaratus est"
+      }
+    ],
+    "declared_unconstitutional_1995": [
+      {
+        "status": "translation",
+        "text": "actus inconstitutionalis declaratus est (recensio anni 1995)"
+      }
+    ],
+    "deputy_registration_suspended": [
+      {
+        "status": "translation",
+        "text": "inscriptio deputati electi usque ad sententiam Curiae Constitutionalis suspensa est"
+      }
+    ],
+    "doubt_about_guilt": [
+      {
+        "status": "translation",
+        "text": "dubitationes de culpa personae adsunt"
+      }
+    ],
+    "doubt_resolved_for_accused_1995": [
+      {
+        "status": "translation",
+        "text": "dubitationes de culpa in favorem accusati interpretantur (recensio anni 1995)"
+      }
+    ],
+    "election_dispute_petition": [
+      {
+        "status": "translation",
+        "text": "petitio rectitudinem electionum impugnat"
+      }
+    ],
+    "election_dispute_petition_1995": [
+      {
+        "status": "translation",
+        "text": "petitio rectitudinem electionum impugnat (recensio anni 1995)"
+      }
+    ],
+    "eligible_maslikhat_candidate": [
+      {
+        "status": "translation",
+        "text": "persona requisitis deputati maslikhat satisfacit"
+      }
+    ],
+    "eligible_maslikhat_deputy_1995": [
+      {
+        "status": "translation",
+        "text": "persona requisitis deputati maslikhat satisfacit (recensio anni 1995)"
+      }
+    ],
+    "evidence_obtained_unlawfully": [
+      {
+        "status": "translation",
+        "text": "probationes modo illicito partae sunt"
+      }
+    ],
+    "evidence_without_legal_force_1995": [
+      {
+        "status": "translation",
+        "text": "probationes vim iuridicam non habent (recensio anni 1995)"
+      }
+    ],
+    "hearing_right_violated_1995": [
+      {
+        "status": "translation",
+        "text": "ius in iudicio audiri violatum est (recensio anni 1995)"
+      }
+    ],
+    "inauguration_suspended_1995": [
+      {
+        "status": "translation",
+        "text": "ingressus in munus usque ad sententiam Curiae Constitutionalis suspensus est (recensio anni 1995)"
+      }
+    ],
+    "interference_liability_arises_1995": [
+      {
+        "status": "translation",
+        "text": "interventus in administrationem iustitiae responsabilitatem lege statutam parit (recensio anni 1995)"
+      }
+    ],
+    "interference_unlawful": [
+      {
+        "status": "translation",
+        "text": "interventus in administrationem iustitiae non licet"
+      }
+    ],
+    "interference_with_justice": [
+      {
+        "status": "translation",
+        "text": "in causa interventus in administrationem iustitiae factus est"
+      }
+    ],
+    "judge": [
+      {
+        "status": "translation",
+        "text": "persona iudex est"
+      }
+    ],
+    "judge_applies_law": [
+      {
+        "status": "translation",
+        "text": "iudex legem in causa applicat"
+      }
+    ],
+    "judge_arrest_attempt": [
+      {
+        "status": "translation",
+        "text": "custodia iudicis temptata est"
+      }
+    ],
+    "judge_business": [
+      {
+        "status": "translation",
+        "text": "iudex negotiationem quaestuosam exercet"
+      }
+    ],
+    "judge_caught_at_crime_scene": [
+      {
+        "status": "translation",
+        "text": "iudex in ipso facinore comprehensus est"
+      }
+    ],
+    "judge_caught_in_act_or_grave_crime": [
+      {
+        "status": "translation",
+        "text": "iudex Curiae Constitutionalis in ipso facinore comprehensus est vel delictum grave commisit"
+      }
+    ],
+    "judge_deputy_mandate": [
+      {
+        "status": "translation",
+        "text": "iudex deputatus collegii repraesentantis est"
+      }
+    ],
+    "judge_detained": [
+      {
+        "status": "translation",
+        "text": "iudex comprehensus est"
+      }
+    ],
+    "judge_detention_attempt": [
+      {
+        "status": "translation",
+        "text": "comprehensio iudicis temptata est"
+      }
+    ],
+    "judge_detention_ground": [
+      {
+        "status": "translation",
+        "text": "adest causa qua comprehensio iudicis licet"
+      }
+    ],
+    "judge_grave_or_especially_grave_offence": [
+      {
+        "status": "translation",
+        "text": "iudex delictum grave vel praegrave commisit"
+      }
+    ],
+    "judge_immunity_infringed_1995": [
+      {
+        "status": "translation",
+        "text": "inviolabilitas iudicis violata est (recensio anni 1995)"
+      }
+    ],
+    "judge_independent_and_subject_only_to_law": [
+      {
+        "status": "translation",
+        "text": "iudex in administratione iustitiae independens est et soli Constitutioni et legi paret"
+      }
+    ],
+    "judge_inviolability_applies": [
+      {
+        "status": "translation",
+        "text": "tutela iudicis a comprehensione viget"
+      }
+    ],
+    "judge_office_incompatible_1995": [
+      {
+        "status": "translation",
+        "text": "munus iudicis cum munere gesto vel negotiatione incompatibile est (recensio anni 1995)"
+      }
+    ],
+    "judge_paid_office": [
+      {
+        "status": "translation",
+        "text": "iudex aliud munus stipendio auctum gerit"
+      }
+    ],
+    "judge_permitted_activity": [
+      {
+        "status": "translation",
+        "text": "negotiatio ad permissam docendi, scientiae vel artis operam pertinet"
+      }
+    ],
+    "judge_requirements_determined": [
+      {
+        "status": "translation",
+        "text": "requisita iudicibus iudiciorum Rei Publicae Kazachstaniae proposita definita sunt"
+      }
+    ],
+    "judicial_collegia_established": [
+      {
+        "status": "translation",
+        "text": "in iudiciis collegia iudicialia constituta sunt"
+      }
+    ],
+    "judicial_decision": [
+      {
+        "status": "translation",
+        "text": "actus sententia huius iudicii est"
+      }
+    ],
+    "judicial_decision_binding_nationwide": [
+      {
+        "status": "translation",
+        "text": "sententia iudicii in toto territorio Rei Publicae obligat"
+      }
+    ],
+    "judicial_interference": [
+      {
+        "status": "translation",
+        "text": "interventus in negotiationem iudicis in administratione iustitiae fit"
+      }
+    ],
+    "judicial_power_covers_case_1995": [
+      {
+        "status": "translation",
+        "text": "causa ad potestatem iudicialem pertinet (recensio anni 1995)"
+      }
+    ],
+    "judicial_practice_explanation_authorized_by_law": [
+      {
+        "status": "translation",
+        "text": "explanationes de rebus usus iudicialis dare lege ad Curiam Supremam attributum est"
+      }
+    ],
+    "jurisdiction_change_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "forum causae sine consensu personae mutare non licet (recensio anni 1995)"
+      }
+    ],
+    "jurisdiction_changed_without_consent": [
+      {
+        "status": "translation",
+        "text": "forum causae sine consensu personae mutatum est"
+      }
+    ],
+    "justice_act": [
+      {
+        "status": "translation",
+        "text": "subiectum iustitiam administrat"
+      }
+    ],
+    "justice_by_court_only_1995": [
+      {
+        "status": "translation",
+        "text": "iustitia a solo iudicio administratur (recensio anni 1995)"
+      }
+    ],
+    "justice_lawful": [
+      {
+        "status": "translation",
+        "text": "iustitia legitime administrata est"
+      }
+    ],
+    "legal_aid": [
+      {
+        "status": "translation",
+        "text": "auxilium iuridicum huic personae praestatur"
+      }
+    ],
+    "legal_aid_constitutionally_provided": [
+      {
+        "status": "translation",
+        "text": "auxilium iuridicum ordine constitutionali praestitum est"
+      }
+    ],
+    "legal_aid_provider": [
+      {
+        "status": "translation",
+        "text": "auxilium iuridicum ab hoc subiecto praestatur"
+      }
+    ],
+    "legal_application_case": [
+      {
+        "status": "translation",
+        "text": "in causa lex applicatur"
+      }
+    ],
+    "local_court_appointment": [
+      {
+        "status": "translation",
+        "text": "nominatio in munus iudicis iudicii localis fit"
+      }
+    ],
+    "local_court_appointment_valid_1995": [
+      {
+        "status": "translation",
+        "text": "nominatio iudicis iudicii localis facta est (recensio anni 1995)"
+      }
+    ],
+    "local_decision_admissible": [
+      {
+        "status": "translation",
+        "text": "constitutum maslikhat in territorio pertinenti obligat"
+      }
+    ],
+    "local_executive_body": [
+      {
+        "status": "translation",
+        "text": "collegium exsecutivum locale est"
+      }
+    ],
+    "local_representative_body": [
+      {
+        "status": "translation",
+        "text": "collegium maslikhat est"
+      }
+    ],
+    "local_revenue_reducing_or_spending_increasing": [
+      {
+        "status": "translation",
+        "text": "constitutum reditus locales minuere vel sumptus augere praevidet"
+      }
+    ],
+    "local_self_government_action": [
+      {
+        "status": "translation",
+        "text": "actus a collegio administrationis localis sui iuris latus est"
+      }
+    ],
+    "local_self_government_autonomy": [
+      {
+        "status": "translation",
+        "text": "sui iuris potestas administrationis localis in rebus momenti localis decernendis praestita est"
+      }
+    ],
+    "local_self_government_autonomy_guaranteed_1995": [
+      {
+        "status": "translation",
+        "text": "sui iuris potestas collegiorum administrationis localis praestatur (recensio anni 1995)"
+      }
+    ],
+    "local_self_government_recognized_1995": [
+      {
+        "status": "translation",
+        "text": "in Re Publica administratio localis sui iuris agnoscitur (recensio anni 1995)"
+      }
+    ],
+    "local_state_administration_established_1995": [
+      {
+        "status": "translation",
+        "text": "administratio publica localis a collegiis repraesentantibus et exsecutivis localibus exercetur (recensio anni 1995)"
+      }
+    ],
+    "maslikhat_candidate": [
+      {
+        "status": "translation",
+        "text": "candidatus ad munus deputati maslikhat haec persona est"
+      }
+    ],
+    "maslikhat_decision_admissible_1995": [
+      {
+        "status": "translation",
+        "text": "constitutum maslikhat in territorio pertinenti obligat (recensio anni 1995)"
+      }
+    ],
+    "maslikhat_deputy_minimum_age": [
+      {
+        "status": "translation",
+        "text": "minima aetas deputati maslikhat: viginti anni"
+      }
+    ],
+    "maslikhat_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "potestates maslikhat finitae sunt (recensio anni 1995)"
+      }
+    ],
+    "maslikhat_responsible_for_territorial_affairs": [
+      {
+        "status": "translation",
+        "text": "maslikhat de statu rerum in territorio pertinenti respondet"
+      }
+    ],
+    "maslikhat_ruling": [
+      {
+        "status": "translation",
+        "text": "actus constitutum maslikhat est"
+      }
+    ],
+    "maslikhat_self_dissolution": [
+      {
+        "status": "translation",
+        "text": "maslikhat de se ipso dissolvendo decrevit"
+      }
+    ],
+    "maslikhat_term": [
+      {
+        "status": "translation",
+        "text": "terminus potestatum maslikhat: quinque anni"
+      }
+    ],
+    "maslikhat_term_expires_on": [
+      {
+        "status": "translation",
+        "text": "dies quo potestates maslikhat finiuntur"
+      }
+    ],
+    "maslikhat_term_started_on": [
+      {
+        "status": "translation",
+        "text": "dies quo potestates maslikhat coeperunt"
+      }
+    ],
+    "new_president_assumed_office_1995": [
+      {
+        "status": "translation",
+        "text": "novus Praeses in munus ingressus est (recensio anni 1995)"
+      }
+    ],
+    "non_court_justice_attempt": [
+      {
+        "status": "translation",
+        "text": "iustitia extra iudicium administratur"
+      }
+    ],
+    "ombudsman": [
+      {
+        "status": "translation",
+        "text": "persona Commissarius pro iuribus hominis est"
+      }
+    ],
+    "ombudsman_appointed": [
+      {
+        "status": "translation",
+        "text": "Commissarius pro iuribus hominis nominatus est"
+      }
+    ],
+    "ombudsman_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "nominatio Commissarii pro iuribus hominis fit"
+      }
+    ],
+    "ombudsman_arrest_attempt": [
+      {
+        "status": "translation",
+        "text": "custodia Commissarii temptata est"
+      }
+    ],
+    "ombudsman_assistance_authorized": [
+      {
+        "status": "translation",
+        "text": "adiumentum Commissarii legitimum est"
+      }
+    ],
+    "ombudsman_caught_at_crime_scene": [
+      {
+        "status": "translation",
+        "text": "Commissarius in ipso facinore comprehensus est"
+      }
+    ],
+    "ombudsman_caught_in_act_or_grave_crime": [
+      {
+        "status": "translation",
+        "text": "Commissarius in ipso facinore comprehensus est vel delictum grave commisit"
+      }
+    ],
+    "ombudsman_coercive_measure_applied": [
+      {
+        "status": "translation",
+        "text": "mensura coactionis in Commissarium adhibita est"
+      }
+    ],
+    "ombudsman_coercive_measure_attempt": [
+      {
+        "status": "translation",
+        "text": "mensura coactionis in Commissarium adhibetur"
+      }
+    ],
+    "ombudsman_grave_or_especially_grave_offence": [
+      {
+        "status": "translation",
+        "text": "Commissarius delictum grave vel praegrave commisit"
+      }
+    ],
+    "ombudsman_immunity_infringed_1995": [
+      {
+        "status": "translation",
+        "text": "inviolabilitas Commissarii violata est (recensio anni 1995)"
+      }
+    ],
+    "ombudsman_independent_1995": [
+      {
+        "status": "translation",
+        "text": "Commissarius pro iuribus hominis independens est (recensio anni 1995)"
+      }
+    ],
+    "ombudsman_independent_and_unaccountable": [
+      {
+        "status": "translation",
+        "text": "Commissarius independens est neque magistratibus publicis rationem reddit"
+      }
+    ],
+    "ombudsman_inviolability_applies": [
+      {
+        "status": "translation",
+        "text": "tutela Commissarii a mensuris coactionis viget"
+      }
+    ],
+    "ombudsman_measure_ground": [
+      {
+        "status": "translation",
+        "text": "adest causa qua mensura coactionis in Commissarium licet"
+      }
+    ],
+    "ombudsman_rights_assistance": [
+      {
+        "status": "translation",
+        "text": "Commissarius personae adiumentum in iuribus restituendis praestat"
+      }
+    ],
+    "ordinary_judge_caught_in_act_or_grave_crime": [
+      {
+        "status": "translation",
+        "text": "iudex in ipso facinore comprehensus est vel delictum grave commisit"
+      }
+    ],
+    "parliament_consent_for_judge": [
+      {
+        "status": "translation",
+        "text": "consensus collegii repraesentantis ad iudicem nominandum acceptus est"
+      }
+    ],
+    "participating_maslikhat_deputies": [
+      {
+        "status": "translation",
+        "text": "numerus deputatorum maslikhat qui suffragium tulerunt"
+      }
+    ],
+    "petition_admissible": [
+      {
+        "status": "translation",
+        "text": "petitio ad Curiam Constitutionalem cognoscenda accepta est"
+      }
+    ],
+    "petition_admissible_1995": [
+      {
+        "status": "translation",
+        "text": "petitio ad Curiam Constitutionalem cognoscenda accepta est (recensio anni 1995)"
+      }
+    ],
+    "petition_by_citizen_affecting_constitutional_rights": [
+      {
+        "status": "translation",
+        "text": "petitio a cive de iuribus et libertatibus eius constitutionalibus inlata est"
+      }
+    ],
+    "petition_by_court_under_article_79": [
+      {
+        "status": "translation",
+        "text": "petitio a iudicio ordine articuli 79 Constitutionis inlata est"
+      }
+    ],
+    "petition_by_kurultai_chair": [
+      {
+        "status": "translation",
+        "text": "petitio a Moderatore Kurultai inlata est"
+      }
+    ],
+    "petition_by_mazhilis_chair_1995": [
+      {
+        "status": "translation",
+        "text": "petitio a Moderatore Mazhilis inlata est (recensio anni 1995)"
+      }
+    ],
+    "petition_by_ombudsman_affecting_rights": [
+      {
+        "status": "translation",
+        "text": "petitio a Commissario pro iuribus hominis de iuribus et libertatibus inlata est"
+      }
+    ],
+    "petition_by_one_fifth_of_deputies": [
+      {
+        "status": "translation",
+        "text": "petitio a non minus quinta parte deputatorum Kurultai inlata est"
+      }
+    ],
+    "petition_by_one_fifth_of_parliament_1995": [
+      {
+        "status": "translation",
+        "text": "petitio a non minus quinta parte deputatorum Parlamenti inlata est (recensio anni 1995)"
+      }
+    ],
+    "petition_by_president": [
+      {
+        "status": "translation",
+        "text": "petitio a Praeside Rei Publicae inlata est"
+      }
+    ],
+    "petition_by_prime_minister": [
+      {
+        "status": "translation",
+        "text": "petitio a Primo Ministro inlata est"
+      }
+    ],
+    "petition_by_prosecutor_general": [
+      {
+        "status": "translation",
+        "text": "petitio a Procuratore Generali inlata est"
+      }
+    ],
+    "petition_by_senate_chair_1995": [
+      {
+        "status": "translation",
+        "text": "petitio a Moderatore Senatus inlata est (recensio anni 1995)"
+      }
+    ],
+    "petition_to_constitutional_court": [
+      {
+        "status": "translation",
+        "text": "petitio ad Curiam Constitutionalem missa est"
+      }
+    ],
+    "positive_akim_opinion": [
+      {
+        "status": "translation",
+        "text": "de constituto favorabilis sententia akim adest"
+      }
+    ],
+    "pre_ratification_petition_1995": [
+      {
+        "status": "translation",
+        "text": "petitio ante pactum ratihabitum inlata est (recensio anni 1995)"
+      }
+    ],
+    "pre_ratification_treaty_petition": [
+      {
+        "status": "translation",
+        "text": "petitio ante pactum internationale ratihabitum inlata est"
+      }
+    ],
+    "pre_signature_law_petition": [
+      {
+        "status": "translation",
+        "text": "petitio ante legem a Praeside subscriptam inlata est"
+      }
+    ],
+    "pre_signature_petition_1995": [
+      {
+        "status": "translation",
+        "text": "petitio ante actum subscriptum inlata est (recensio anni 1995)"
+      }
+    ],
+    "presidential_appointment_of_ombudsman": [
+      {
+        "status": "translation",
+        "text": "Commissarius a Praeside Rei Publicae nominatur"
+      }
+    ],
+    "presidential_consent_on_council_conclusion": [
+      {
+        "status": "translation",
+        "text": "decretum Praesidis de sententia Consilii Iudicialis Supremi acceptum est"
+      }
+    ],
+    "presidential_consent_to_ombudsman_measure": [
+      {
+        "status": "translation",
+        "text": "consensus Praesidis ad mensuram in Commissarium adhibendam acceptus est"
+      }
+    ],
+    "presidential_inauguration_suspended": [
+      {
+        "status": "translation",
+        "text": "ingressus Praesidis in munus usque ad sententiam Curiae Constitutionalis suspensus est"
+      }
+    ],
+    "presidential_maslikhat_termination": [
+      {
+        "status": "translation",
+        "text": "Praeses potestates maslikhat finivit"
+      }
+    ],
+    "presidential_submission_on_council_recommendation": [
+      {
+        "status": "translation",
+        "text": "Praeses propositionem ex commendatione Consilii Iudicialis Supremi intulit"
+      }
+    ],
+    "previously_appointed_constitutional_judge": [
+      {
+        "status": "translation",
+        "text": "persona antea iudex Curiae Constitutionalis nominata est"
+      }
+    ],
+    "prior_prosecutor_general_term": [
+      {
+        "status": "translation",
+        "text": "persona antea munus Procuratoris Generalis gessit"
+      }
+    ],
+    "prior_supreme_court_chair_term": [
+      {
+        "status": "translation",
+        "text": "persona antea munus Moderatoris Curiae Supremae gessit"
+      }
+    ],
+    "proceeding_suspended": [
+      {
+        "status": "translation",
+        "text": "causa suspensa est"
+      }
+    ],
+    "proceeding_suspended_1995": [
+      {
+        "status": "translation",
+        "text": "causa suspensa est (recensio anni 1995)"
+      }
+    ],
+    "prosecutor_caught_in_act_or_grave_crime": [
+      {
+        "status": "translation",
+        "text": "Procurator Generalis in ipso facinore comprehensus est vel delictum grave commisit"
+      }
+    ],
+    "prosecutor_general_arrest_attempt": [
+      {
+        "status": "translation",
+        "text": "custodia Procuratoris Generalis temptata est"
+      }
+    ],
+    "prosecutor_general_reappointment_attempt": [
+      {
+        "status": "translation",
+        "text": "iterata nominatio Procuratoris Generalis temptata est"
+      }
+    ],
+    "prosecutor_general_reappointment_prohibited": [
+      {
+        "status": "translation",
+        "text": "iterata nominatio Procuratoris Generalis non licet"
+      }
+    ],
+    "prosecutor_general_term": [
+      {
+        "status": "translation",
+        "text": "terminus potestatum Procuratoris Generalis: sex anni"
+      }
+    ],
+    "prosecutor_general_term_expires_on": [
+      {
+        "status": "translation",
+        "text": "dies quo potestates Procuratoris Generalis finiuntur"
+      }
+    ],
+    "prosecutor_general_term_started_on": [
+      {
+        "status": "translation",
+        "text": "dies quo potestates Procuratoris Generalis coeperunt"
+      }
+    ],
+    "prosecutor_general_term_years_1995": [
+      {
+        "status": "translation",
+        "text": "terminus potestatum Procuratoris Generalis: quinque anni (recensio anni 1995)"
+      }
+    ],
+    "prosecutor_immunity_infringed_1995": [
+      {
+        "status": "translation",
+        "text": "inviolabilitas Procuratoris Generalis violata est (recensio anni 1995)"
+      }
+    ],
+    "ratification_deadline_suspended": [
+      {
+        "status": "translation",
+        "text": "cursus termini pacti internationalis ratihabendi suspensus est"
+      }
+    ],
+    "ratification_deadline_suspended_1995": [
+      {
+        "status": "translation",
+        "text": "cursus termini pacti ratihabendi suspensus est (recensio anni 1995)"
+      }
+    ],
+    "referendum_results_suspended": [
+      {
+        "status": "translation",
+        "text": "exitus referendi usque ad sententiam Curiae Constitutionalis non conficiuntur"
+      }
+    ],
+    "regional_akim": [
+      {
+        "status": "translation",
+        "text": "akim provinciae, urbis momenti rei publicae vel capitis est"
+      }
+    ],
+    "regional_akim_appointment": [
+      {
+        "status": "translation",
+        "text": "nominatio akim fit"
+      }
+    ],
+    "repeated_liability_for_same_offence": [
+      {
+        "status": "translation",
+        "text": "persona propter idem delictum iterum ad responsabilitatem vocatur"
+      }
+    ],
+    "repeated_liability_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "iterata vocatio ad responsabilitatem propter idem delictum non licet (recensio anni 1995)"
+      }
+    ],
+    "required_constitutional_interpretation_applied": [
+      {
+        "status": "translation",
+        "text": "actus solum in ea interpretatione applicatur qua constitutionalis declaratus est"
+      }
+    ],
+    "required_constitutional_interpretation_applied_1995": [
+      {
+        "status": "translation",
+        "text": "interpretatio qua actus constitutionalis declaratus est applicanda est (recensio anni 1995)"
+      }
+    ],
+    "required_judge_detention_consent": [
+      {
+        "status": "translation",
+        "text": "consensus ad comprehensionem iudicis requisitus acceptus est"
+      }
+    ],
+    "right_to_be_heard_denied": [
+      {
+        "status": "translation",
+        "text": "personae ius in iudicio audiri negatum est"
+      }
+    ],
+    "rights_restoration_case": [
+      {
+        "status": "translation",
+        "text": "persona de iuribus violatis restituendis adiit"
+      }
+    ],
+    "ruling_annullable_in_court_1995": [
+      {
+        "status": "translation",
+        "text": "constitutum iudicio tolli potest (recensio anni 1995)"
+      }
+    ],
+    "ruling_contrary_to_constitution_or_law": [
+      {
+        "status": "translation",
+        "text": "constitutum Constitutioni vel legibus repugnat"
+      }
+    ],
+    "senate_consent_for_judge": [
+      {
+        "status": "translation",
+        "text": "Senatus ad iudicem nominandum consensit"
+      }
+    ],
+    "senate_consent_for_ombudsman": [
+      {
+        "status": "translation",
+        "text": "Senatus ad Commissarium nominandum consensit"
+      }
+    ],
+    "senate_consent_for_prosecutor": [
+      {
+        "status": "translation",
+        "text": "Senatus ad Procuratorem Generalem custodiae mandandum consensit"
+      }
+    ],
+    "senate_elected": [
+      {
+        "status": "translation",
+        "text": "candidatus a Senatu electus est (recensio anni 1995)"
+      }
+    ],
+    "signature_deadline_suspended": [
+      {
+        "status": "translation",
+        "text": "cursus termini legis subscribendae suspensus est"
+      }
+    ],
+    "signature_deadline_suspended_1995": [
+      {
+        "status": "translation",
+        "text": "cursus termini actus subscribendi suspensus est (recensio anni 1995)"
+      }
+    ],
+    "special_court_prohibited": [
+      {
+        "status": "translation",
+        "text": "iudicia specialia et extraordinaria constituere non licet"
+      }
+    ],
+    "special_court_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "iudicia specialia et extraordinaria constituere non licet (recensio anni 1995)"
+      }
+    ],
+    "special_or_emergency_court": [
+      {
+        "status": "translation",
+        "text": "iudicium speciale vel extraordinarium est"
+      }
+    ],
+    "supreme_court": [
+      {
+        "status": "translation",
+        "text": "collegium Curia Suprema est"
+      }
+    ],
+    "supreme_court_appointment": [
+      {
+        "status": "translation",
+        "text": "nominatio in munus iudicis Curiae Supremae fit"
+      }
+    ],
+    "supreme_court_appointment_valid_1995": [
+      {
+        "status": "translation",
+        "text": "nominatio iudicis Curiae Supremae facta est (recensio anni 1995)"
+      }
+    ],
+    "supreme_court_case_authorized": [
+      {
+        "status": "translation",
+        "text": "Curia Suprema causam cognoscere potest"
+      }
+    ],
+    "supreme_court_chair_reappointment_attempt": [
+      {
+        "status": "translation",
+        "text": "iterata nominatio Moderatoris Curiae Supremae temptata est"
+      }
+    ],
+    "supreme_court_chair_reappointment_prohibited": [
+      {
+        "status": "translation",
+        "text": "iterata nominatio Moderatoris Curiae Supremae non licet"
+      }
+    ],
+    "supreme_court_chair_term": [
+      {
+        "status": "translation",
+        "text": "terminus potestatum Moderatoris Curiae Supremae: sex anni"
+      }
+    ],
+    "supreme_court_chair_term_expires_on": [
+      {
+        "status": "translation",
+        "text": "dies quo potestates Moderatoris Curiae Supremae finiuntur"
+      }
+    ],
+    "supreme_court_chair_term_started_on": [
+      {
+        "status": "translation",
+        "text": "dies quo potestates Moderatoris Curiae Supremae coeperunt"
+      }
+    ],
+    "supreme_court_explanation_authorized": [
+      {
+        "status": "translation",
+        "text": "Curia Suprema explanationes de rebus usus iudicialis dare potest"
+      }
+    ],
+    "supreme_court_is_highest_judicial_body_1995": [
+      {
+        "status": "translation",
+        "text": "Curia Suprema collegium iudiciale supremum in causis civilibus, criminalibus ceterisque est (recensio anni 1995)"
+      }
+    ],
+    "termination_consultations_completed": [
+      {
+        "status": "translation",
+        "text": "consultationes ad potestates maslikhat finiendas requisitae factae sunt"
+      }
+    ],
+    "total_maslikhat_deputies": [
+      {
+        "status": "translation",
+        "text": "totus numerus deputatorum maslikhat"
+      }
+    ],
+    "treaty_declared_unconstitutional_1995": [
+      {
+        "status": "translation",
+        "text": "pactum internationale inconstitutionale declaratum est (recensio anni 1995)"
+      }
+    ],
+    "treaty_may_not_be_ratified_1995": [
+      {
+        "status": "translation",
+        "text": "pactum internationale ratihaberi non potest (recensio anni 1995)"
+      }
+    ],
+    "within_judicial_power": [
+      {
+        "status": "translation",
+        "text": "causa ad potestatem iudicialem pertinet"
+      }
+    ],
+    "within_statutory_local_power": [
+      {
+        "status": "translation",
+        "text": "constitutum intra competentiam lege statutam latum est"
+      }
+    ]
+  },
+  "language": "la",
+  "package": "kz.constitution.court"
+}

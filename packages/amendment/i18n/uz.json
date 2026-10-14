@@ -1,0 +1,674 @@
+{
+  "$comment": "Қозоғистон Республикаси Конституциясининг kz.constitution.amendment пакети учун ўзбек тилидаги (кирилл ёзуви) белгилар қатлами — §218 (DECISION-0070). Бу қатлам CLIR таркибига кирмайди ва фақат тақдимот босқичида ўқилади (verbalize --labels, MCP ресурслари, иш столи). Таржима пакетнинг ru-KZ белгиларидан қилинган ишчи таржима (`translation`) бўлиб, Конституциянинг расмий ўзбекча матни эмас; ҳуқуқий куч ru-KZ ва kk-KZ манбаларидадир. Калит — эълоннинг маҳаллий номи.",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "Amendment": [
+      {
+        "status": "translation",
+        "text": "Конституцияга ўзгартириш ёки қўшимча"
+      }
+    ],
+    "AmendmentMayBeSubmitted1995": [
+      {
+        "status": "translation",
+        "text": "91-модда 3-банд (1995 йилги таҳрир). Конституциявий суднинг ижобий хулосасисиз ўзгартишлар референдумга ва Парламентга киритилмайди"
+      }
+    ],
+    "AmendmentMayBeSubmitted1995/unless/0": [
+      {
+        "status": "translation",
+        "text": "91-модда 3-банд (1995 йилги таҳрир). Конституциявий суднинг ижобий хулосасисиз ўзгартишлар референдумга ва Парламентга киритилмайди"
+      }
+    ],
+    "AmendmentReferendumDoubleThreshold": [
+      {
+        "status": "translation",
+        "text": "92-модда 3-банд. Тузатиш, агар вилоятлар, республика аҳамиятига молик шаҳарлар ва пойтахтнинг камида учдан икки қисмида қатнашганларнинг ярмидан кўпи унга овоз берган бўлса, қабул қилинган ҳисобланади"
+      }
+    ],
+    "AmendmentViolatesEntrenchedCore1995": [
+      {
+        "status": "translation",
+        "text": "91-модда 2-банд (1995 йилги таҳрир). Мустақиллик, унитарлик, ҳудудий яхлитлик, бошқарув шакли, асосий принциплар, Президентнинг етти йиллик муддати ва унинг бир марта сайланиши ўзгармасдир"
+      }
+    ],
+    "Constitution1995InForceOnPublication": [
+      {
+        "status": "translation",
+        "text": "90-модда 1-банд (1995 йилги таҳрир). Конституция референдум натижалари расмий эълон қилинган кундан эътиборан кучга киради ва шу билан бир вақтда илгари қабул қилинган Конституциянинг амал қилиши тугатилади"
+      }
+    ],
+    "ConstitutionEdition": [
+      {
+        "status": "translation",
+        "text": "Конституция таҳрири"
+      }
+    ],
+    "ConstitutionalConclusion": [
+      {
+        "status": "translation",
+        "text": "тузатишнинг Конституция талабларига мувофиқлиги тўғрисидаги Конституциявий суднинг хулосаси"
+      }
+    ],
+    "EffectiveDateAppointmentTwoMonths": [
+      {
+        "status": "translation",
+        "text": "95-модда. Муддати Конституция кучга кирган кундан эътиборан ҳисобланадиган ўтиш даври тайинлови икки ой ичида амалга оширилади"
+      }
+    ],
+    "EntrenchmentConclusion": [
+      {
+        "status": "translation",
+        "text": "93-модда. Агар тузатиш 2-модда 7-банди ва 43-модда 5-банди талабларига мувофиқ бўлса, Конституциявий суднинг хулосаси ижобийдир"
+      }
+    ],
+    "EntrenchmentConclusion1995": [
+      {
+        "status": "translation",
+        "text": "91-модда 3-банд (1995 йилги таҳрир). Ўзгартишлар Конституциявий суднинг уларнинг 2-банд талабларига мувофиқлиги тўғрисидаги хулосаси бўлганида референдумга ёки Парламент кўригига киритилади"
+      }
+    ],
+    "ExistingActsContinueIfCompatible": [
+      {
+        "status": "translation",
+        "text": "96-модда 1-банд. Конституция кучга кирган кунда амалда бўлган қонунлар ва бошқа норматив-ҳуқуқий ҳужжатлар унга зид бўлмаган қисмида қўлланилади"
+      }
+    ],
+    "ExistingActsContinueIfCompatible/unless/0": [
+      {
+        "status": "translation",
+        "text": "96-модда 1-банд. Конституция кучга кирган кунда амалда бўлган қонунлар ва бошқа норматив-ҳуқуқий ҳужжатлар унга зид бўлмаган қисмида қўлланилади"
+      }
+    ],
+    "FirstKurultaiElectionTransition": [
+      {
+        "status": "translation",
+        "text": "95-модда 1-банд. Қурултой сайлови Конституция кучга кирган кундан эътиборан бир ой ичида эълон қилинади ва икки ой ичида ўтказилади"
+      }
+    ],
+    "FirstSessionAppointmentTwoMonths": [
+      {
+        "status": "translation",
+        "text": "95-модда 2–4-бандлар. Ўтиш даври тайинловлари биринчи чақириқ Қурултойининг биринчи сессияси очилган кундан эътиборан икки ой ичида амалга оширилади"
+      }
+    ],
+    "IncumbentContinuity": [
+      {
+        "status": "translation",
+        "text": "95-модда. Янги таркиблар шакллантирилгунига қадар амалдаги мансабдор шахслар ўз ваколатларини сақлаб қоладилар"
+      }
+    ],
+    "KurultaiElection": [
+      {
+        "status": "translation",
+        "text": "Қурултой сайлови"
+      }
+    ],
+    "LegalAct": [
+      {
+        "status": "translation",
+        "text": "қонун ёки бошқа норматив-ҳуқуқий ҳужжат"
+      }
+    ],
+    "ListIsNotASubjectReading": [
+      {
+        "status": "translation",
+        "text": "91-модда 2-бандининг А ўқилиши: рўйхат предметларни ҳимоя қилади, лекин ўзини ўзи эмас"
+      }
+    ],
+    "ListItselfEntrenchedReading": [
+      {
+        "status": "translation",
+        "text": "91-модда 2-бандининг Б ўқилиши: рўйхатнинг ўзгармаслиги — асосий принцип"
+      }
+    ],
+    "NarrowingAmendmentFilter1995": [
+      {
+        "status": "translation",
+        "text": "торайтирувчи тузатиш, агар торайтириш ўзакка тажовуз деб топилмаса, суд хулосаси бўлганида киритилиши мумкин"
+      }
+    ],
+    "NarrowingAmendmentFilter1995/unless/0": [
+      {
+        "status": "translation",
+        "text": "торайтирувчи тузатиш, агар торайтириш ўзакка тажовуз деб топилмаса, суд хулосаси бўлганида киритилиши мумкин"
+      }
+    ],
+    "NarrowingOutsideCore1995": [
+      {
+        "status": "translation",
+        "text": "А ўқилиши: 2-банд рўйхатининг ўзи ҳимояланган предмет эмас, уни торайтириш — оддий тузатиш"
+      }
+    ],
+    "NarrowingTouchesCore1995": [
+      {
+        "status": "translation",
+        "text": "Б ўқилиши: 2-банд рўйхатининг ўзгармаслиги — асосий принцип, уни торайтириш ўзакка тажовуз қилади"
+      }
+    ],
+    "NewConstitutionInForceFromJulyFirst": [
+      {
+        "status": "translation",
+        "text": "94-модда 1-банд. Конституция 2026 йил 1 июлдан кучга киради"
+      }
+    ],
+    "OldActsApplyIfCompatible1995": [
+      {
+        "status": "translation",
+        "text": "92-модда 4-банд (1995 йилги таҳрир). Конституция кучга кирган пайтда амалда бўлган қонунчилик унга зид бўлмаган қисмида қўлланилади"
+      }
+    ],
+    "OldConstitutionRepealedSimultaneously": [
+      {
+        "status": "translation",
+        "text": "94-модда 1-банд. Илгари қабул қилинган Конституциянинг амал қилиши янгисининг кучга кириши билан бир вақтда тугатилади"
+      }
+    ],
+    "ParliamentaryAmendmentFourFifths1995": [
+      {
+        "status": "translation",
+        "text": "91-модда 1-банд (1995 йилги таҳрир). Агар Президент Парламентнинг референдум тўғрисидаги таклифини рад этса, Парламент ҳар бир Палата депутатларининг умумий сонидан камида бешдан тўрт қисм овоз кўпчилиги билан Конституцияга ўзгартишлар киритиш тўғрисидаги қонунни қабул қилишга ҳақли"
+      }
+    ],
+    "ParliamentaryAmendmentLaw": [
+      {
+        "status": "translation",
+        "text": "Парламентнинг Конституцияга ўзгартириш ва қўшимчалар тўғрисидаги қонуни (1995 йилги таҳрир)"
+      }
+    ],
+    "PositiveConclusionRequiredForReferendum": [
+      {
+        "status": "translation",
+        "text": "93-модда. Тузатиш Конституциявий суднинг ижобий хулосаси бўлганида умумхалқ референдумига киритилади"
+      }
+    ],
+    "Referendum": [
+      {
+        "status": "translation",
+        "text": "умумхалқ референдуми"
+      }
+    ],
+    "ReferendumTurnoutMoreThanHalf": [
+      {
+        "status": "translation",
+        "text": "92-модда 2-банд. Умумхалқ референдуми, агар унда қатнашиш ҳуқуқига эга бўлган фуқароларнинг ярмидан кўпи овоз беришда иштирок этган бўлса, ўтказилган ҳисобланади"
+      }
+    ],
+    "TransitionalAppointment": [
+      {
+        "status": "translation",
+        "text": "ўтиш даврида амалга ошириладиган тайинлов"
+      }
+    ],
+    "amendment_approved_by_referendum": [
+      {
+        "status": "translation",
+        "text": "Конституцияга ўзгартириш ва қўшимчалар референдум билан қабул қилинган"
+      }
+    ],
+    "amendment_may_be_submitted_1995": [
+      {
+        "status": "translation",
+        "text": "тузатиш референдумга киритилиши мумкин (1995 йилги таҳрир)"
+      }
+    ],
+    "amendment_may_be_submitted_to_referendum": [
+      {
+        "status": "translation",
+        "text": "тузатиш умумхалқ референдумига киритилиши мумкин"
+      }
+    ],
+    "amendment_mazhilis_total": [
+      {
+        "status": "translation",
+        "text": "Мажилис депутатларининг умумий сони (1995 йилги таҳрир)"
+      }
+    ],
+    "amendment_mazhilis_votes": [
+      {
+        "status": "translation",
+        "text": "тузатиш учун берилган Мажилис депутатлари овозларининг сони (1995 йилги таҳрир)"
+      }
+    ],
+    "amendment_narrows_entrenched_list_1995": [
+      {
+        "status": "translation",
+        "text": "тузатишнинг мазмуни: 91-модда 2-банди рўйхатидан предметни чиқариш"
+      }
+    ],
+    "amendment_referendum_declined_by_president": [
+      {
+        "status": "translation",
+        "text": "Президент тузатишни референдумга киритиш тўғрисидаги таклифни рад этди (1995 йилги таҳрир)"
+      }
+    ],
+    "amendment_senate_total": [
+      {
+        "status": "translation",
+        "text": "Сенат депутатларининг умумий сони (1995 йилги таҳрир)"
+      }
+    ],
+    "amendment_senate_votes": [
+      {
+        "status": "translation",
+        "text": "тузатиш учун берилган Сенат депутатлари овозларининг сони (1995 йилги таҳрир)"
+      }
+    ],
+    "amendment_touches_subject": [
+      {
+        "status": "translation",
+        "text": "тузатиш номи келтирилган предметга дахл қилади"
+      }
+    ],
+    "amendment_violates_entrenched_core_1995": [
+      {
+        "status": "translation",
+        "text": "тузатиш 1995 йилги Конституциянинг ўзгармас ўзагини бузади"
+      }
+    ],
+    "appointment_completed_within_two_months": [
+      {
+        "status": "translation",
+        "text": "тайинлов икки ой ичида амалга оширилди"
+      }
+    ],
+    "approving_regions_cities_and_capital": [
+      {
+        "status": "translation",
+        "text": "тузатиш маъқулланган вилоятлар, республика аҳамиятига молик шаҳарлар ва пойтахтнинг сони"
+      }
+    ],
+    "cabinet_becomes_government_1995": [
+      {
+        "status": "translation",
+        "text": "Вазирлар Маҳкамаси Республика Ҳукумати мақомини олади (1995 йилги таҳрир)"
+      }
+    ],
+    "conclusion_confirms_article_91_paragraph_2": [
+      {
+        "status": "translation",
+        "text": "хулоса тузатишнинг 91-модда 2-бандига мувофиқлигини тасдиқлайди (1995 йилги таҳрир)"
+      }
+    ],
+    "conclusion_for_amendment": [
+      {
+        "status": "translation",
+        "text": "Конституциявий суднинг хулосаси мазкур тузатиш бўйича берилган"
+      }
+    ],
+    "conforms_article_2_paragraph_7": [
+      {
+        "status": "translation",
+        "text": "тузатиш Конституциянинг 2-моддаси 7-банди талабларига мувофиқ"
+      }
+    ],
+    "conforms_article_43_paragraph_5": [
+      {
+        "status": "translation",
+        "text": "тузатиш Конституциянинг 43-моддаси 5-банди талабларига мувофиқ"
+      }
+    ],
+    "constitution_1995": [
+      {
+        "status": "translation",
+        "text": "1995 йилги Конституция"
+      }
+    ],
+    "constitution_1995_in_force": [
+      {
+        "status": "translation",
+        "text": "1995 йилги Конституция амал қилади"
+      }
+    ],
+    "constitution_1995_referendum_results_published": [
+      {
+        "status": "translation",
+        "text": "1995 йилги республика референдумининг якунлари эълон қилинган"
+      }
+    ],
+    "constitution_2026": [
+      {
+        "status": "translation",
+        "text": "2026 йилги Конституция"
+      }
+    ],
+    "constitution_ceases_date": [
+      {
+        "status": "translation",
+        "text": "Конституция таҳрирининг амал қилиши тугатилган куни"
+      }
+    ],
+    "constitution_day_is_state_holiday_1995": [
+      {
+        "status": "translation",
+        "text": "Конституциянинг референдумда қабул қилинган куни Конституция куни деб эълон қилинган"
+      }
+    ],
+    "constitution_effective_date": [
+      {
+        "status": "translation",
+        "text": "Конституция таҳрири кучга кирган кун"
+      }
+    ],
+    "constitution_in_force": [
+      {
+        "status": "translation",
+        "text": "Конституция таҳрири амал қилади"
+      }
+    ],
+    "constitution_repealed": [
+      {
+        "status": "translation",
+        "text": "Конституция таҳрирининг амал қилиши тугатилган"
+      }
+    ],
+    "constitutional_council_acts_until_court_1995": [
+      {
+        "status": "translation",
+        "text": "Конституциявий суд ташкил этилгунига қадар Конституциявий кенгаш амал қилади (1995 йилги таҳрир)"
+      }
+    ],
+    "constitutional_court_positive_conclusion": [
+      {
+        "status": "translation",
+        "text": "тузатишнинг мувофиқлиги тўғрисидаги Конституциявий суднинг хулосаси ижобий"
+      }
+    ],
+    "constitutional_court_positive_conclusion_1995": [
+      {
+        "status": "translation",
+        "text": "тузатишнинг ўзгармас ўзакка мувофиқлиги тўғрисидаги хулоса ижобий (1995 йилги таҳрир)"
+      }
+    ],
+    "continuity_preserved": [
+      {
+        "status": "translation",
+        "text": "ваколатларни амалга оширишнинг узлуксизлиги сақланган"
+      }
+    ],
+    "contrary_to_1995_constitution": [
+      {
+        "status": "translation",
+        "text": "ҳужжат 1995 йилги Конституцияга зид"
+      }
+    ],
+    "contrary_to_2026_constitution": [
+      {
+        "status": "translation",
+        "text": "ҳужжат 2026 йилги Конституцияга зид"
+      }
+    ],
+    "current_date": [
+      {
+        "status": "translation",
+        "text": "савол берилган сана"
+      }
+    ],
+    "deadline_from_effective_date": [
+      {
+        "status": "translation",
+        "text": "тайинлов муддати Конституция кучга кирган кундан эътиборан ҳисобланади"
+      }
+    ],
+    "deadline_from_first_session": [
+      {
+        "status": "translation",
+        "text": "тайинлов муддати биринчи чақириқ Қурултойининг биринчи сессияси очилган кундан эътиборан ҳисобланади"
+      }
+    ],
+    "edition_1995": [
+      {
+        "status": "translation",
+        "text": "объект 1995 йилги Конституциянинг таҳриридир"
+      }
+    ],
+    "edition_2026": [
+      {
+        "status": "translation",
+        "text": "объект 2026 йилги Конституциянинг таҳриридир"
+      }
+    ],
+    "election_announced_within_one_month": [
+      {
+        "status": "translation",
+        "text": "сайлов Конституция кучга кирган кундан эътиборан бир ой ичида эълон қилинган"
+      }
+    ],
+    "election_held_within_two_months": [
+      {
+        "status": "translation",
+        "text": "сайлов Конституция кучга кирган кундан эътиборан икки ой ичида ўтказилган"
+      }
+    ],
+    "eligible_referendum_citizens": [
+      {
+        "status": "translation",
+        "text": "умумхалқ референдумида қатнашиш ҳуқуқига эга фуқароларнинг сони"
+      }
+    ],
+    "existing_justice_bodies_continue_1995": [
+      {
+        "status": "translation",
+        "text": "амалдаги одил судлов органлари янгилари шакллантирилгунига қадар ваколатларини сақлаб қоладилар (1995 йилги таҳрир)"
+      }
+    ],
+    "first_constitutional_council_composition_1995": [
+      {
+        "status": "translation",
+        "text": "Конституциявий кенгашнинг биринчи таркиби ўтиш даври қоидалари тартибида ташкил этилган (1995 йилги таҳрир)"
+      }
+    ],
+    "first_kurultai_election": [
+      {
+        "status": "translation",
+        "text": "сайлов биринчи чақириқ Қурултойининг сайловидир"
+      }
+    ],
+    "first_kurultai_transition_timely": [
+      {
+        "status": "translation",
+        "text": "биринчи чақириқ Қурултойига ўтиш конституциявий муддатларда амалга оширилган"
+      }
+    ],
+    "first_senate_split_term_1995": [
+      {
+        "status": "translation",
+        "text": "биринчи чақириқ Сенати депутатларининг ярми қисқартирилган муддатга сайланган (1995 йилги таҳрир)"
+      }
+    ],
+    "incumbent_continues_until_successor": [
+      {
+        "status": "translation",
+        "text": "амалдаги мансабдор шахс янги таркиб шакллантирилгунига қадар ваколатларини сақлаб қолади"
+      }
+    ],
+    "language_conditions_duty_declared_1995": [
+      {
+        "status": "translation",
+        "text": "давлат Қозоғистон халқи тилларини ўрганиш ва ривожлантириш учун шароит яратишга мажбур (1995 йилги таҳрир)"
+      }
+    ],
+    "narrowing_amendment_passes_filter_1995": [
+      {
+        "status": "translation",
+        "text": "2-банд рўйхатини торайтирувчи тузатиш 91-модда 3-банди фильтридан ўтади"
+      }
+    ],
+    "narrowing_deemed_outside_core_1995": [
+      {
+        "status": "translation",
+        "text": "рўйхатнинг торайтирилиши 2-банднинг ҳимояланган предметларига дахл қилмайди деб топилган"
+      }
+    ],
+    "old_act_applicable": [
+      {
+        "status": "translation",
+        "text": "ҳужжат Конституцияга зид бўлмаган қисмида қўлланилади"
+      }
+    ],
+    "old_act_applicable_1995": [
+      {
+        "status": "translation",
+        "text": "ҳужжат 1995 йилги Конституцияга зид бўлмаган қисмида қўлланилади"
+      }
+    ],
+    "old_act_predating_1995": [
+      {
+        "status": "translation",
+        "text": "ҳужжат 1995 йилги Конституция кучга киргунига қадар амал қилган"
+      }
+    ],
+    "old_legal_act": [
+      {
+        "status": "translation",
+        "text": "ҳужжат Конституция кучга кирган кунда амал қилган"
+      }
+    ],
+    "parliamentary_amendment_adopted_1995": [
+      {
+        "status": "translation",
+        "text": "Конституцияга ўзгартишлар тўғрисидаги қонун Парламент томонидан малакали кўпчилик билан қабул қилинган (1995 йилги таҳрир)"
+      }
+    ],
+    "parliamentary_amendment_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "тузатишнинг парламент бўсағаси махражи — бешдан тўрт"
+      }
+    ],
+    "parliamentary_amendment_law": [
+      {
+        "status": "translation",
+        "text": "Парламент қонуни Конституцияга мазкур ўзгартишларни киритади (1995 йилги таҳрир)"
+      }
+    ],
+    "parliamentary_amendment_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "тузатишнинг парламент бўсағаси сурати — бешдан тўрт"
+      }
+    ],
+    "protected_locator": [
+      {
+        "status": "translation",
+        "text": "ўзгармас ўзакка киритилган Конституция қоидаси"
+      }
+    ],
+    "protected_subject_1995": [
+      {
+        "status": "translation",
+        "text": "1995 йилги Конституциянинг ўзгармас ўзагига киритилган предмет"
+      }
+    ],
+    "referendum_approval_denominator": [
+      {
+        "status": "translation",
+        "text": "тузатишни маъқуллаш бўсағасининг махражи — иккидан бир"
+      }
+    ],
+    "referendum_approval_numerator": [
+      {
+        "status": "translation",
+        "text": "тузатишни маъқуллаш бўсағасининг сурати — иккидан бир"
+      }
+    ],
+    "referendum_for_amendment": [
+      {
+        "status": "translation",
+        "text": "мазкур Конституция ўзгартиши бўйича референдум ўтказилади"
+      }
+    ],
+    "referendum_held": [
+      {
+        "status": "translation",
+        "text": "умумхалқ референдуми ўтказилган ҳисобланади"
+      }
+    ],
+    "referendum_participants": [
+      {
+        "status": "translation",
+        "text": "овоз беришда иштирок этган фуқароларнинг сони"
+      }
+    ],
+    "referendum_territory_denominator": [
+      {
+        "status": "translation",
+        "text": "ҳудудий бўсағанинг махражи — учдан икки"
+      }
+    ],
+    "referendum_territory_numerator": [
+      {
+        "status": "translation",
+        "text": "ҳудудий бўсағанинг сурати — учдан икки"
+      }
+    ],
+    "referendum_turnout_denominator": [
+      {
+        "status": "translation",
+        "text": "референдумга келиш бўсағасининг махражи — иккидан бир"
+      }
+    ],
+    "referendum_turnout_numerator": [
+      {
+        "status": "translation",
+        "text": "референдумга келиш бўсағасининг сурати — иккидан бир"
+      }
+    ],
+    "seven_year_term_applies_from_post_2005_election_1995": [
+      {
+        "status": "translation",
+        "text": "Президент ваколатларининг етти йиллик муддати 2005 йилдан кейин сайланган шахсга нисбатан қўлланилади (1995 йилги таҳрир)"
+      }
+    ],
+    "single_election_rule_applies_prospectively_1995": [
+      {
+        "status": "translation",
+        "text": "бир марта сайланиш тўғрисидаги қоида келгусига нисбатан қўлланилади (1995 йилги таҳрир)"
+      }
+    ],
+    "total_regions_cities_and_capital": [
+      {
+        "status": "translation",
+        "text": "вилоятлар, республика аҳамиятига молик шаҳарлар ва пойтахтнинг умумий сони"
+      }
+    ],
+    "transitional_appointment": [
+      {
+        "status": "translation",
+        "text": "тайинлов ўтиш даври тайинловларига киради"
+      }
+    ],
+    "transitional_appointment_timely": [
+      {
+        "status": "translation",
+        "text": "ўтиш даври тайинлови муддатида амалга оширилган"
+      }
+    ],
+    "transitional_constitutional_law_years_1995": [
+      {
+        "status": "translation",
+        "text": "ўтиш даврининг конституциявий қонунларини қабул қилиш муддати — бир йил (1995 йилги таҳрир)"
+      }
+    ],
+    "transitional_other_law_years_1995": [
+      {
+        "status": "translation",
+        "text": "ўтиш даврининг номи келтирилган бошқа қонунларини қабул қилиш муддати — икки йил (1995 йилги таҳрир)"
+      }
+    ],
+    "vice_president_powers_preserved_1995": [
+      {
+        "status": "translation",
+        "text": "Вице-Президентнинг ваколатлари ўтиш даврида сақланади (1995 йилги таҳрир)"
+      }
+    ],
+    "votes_for_amendment": [
+      {
+        "status": "translation",
+        "text": "ўзгартириш ва қўшимчалар учун берилган овозларнинг сони"
+      }
+    ]
+  },
+  "language": "uz",
+  "package": "kz.constitution.amendment"
+}

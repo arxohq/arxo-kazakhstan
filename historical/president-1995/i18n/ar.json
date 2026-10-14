@@ -1,0 +1,1262 @@
+{
+  "$comment": "طبقة عرض عربية لحزم دستور جمهورية كازاخستان (DECISION-0070). الملف خارج CLIR ولا يقرأه المصرف، وإنما تقرأه طبقة العرض وحدها (verbalize --labels وخادم MCP وسطح المكتب). مصدر الترجمة هو تسمية العقدة الروسية ru-KZ في CLIR، ومصطلحاتها موافقة لحزمة law.verb.ar؛ والحالة translation أي ترجمة عمل غير رسمية لا نص رسمي. المفتاح هو الاسم المحلي للعقدة. النص غير مشكول.",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "ActingPresidentCannotInitiateAmendment1995": [
+      {
+        "status": "translation",
+        "text": "المادة 48 الفقرة 2 (طبعة 1995). لا يجوز لمن تولى صلاحيات الرئيس المبادرة بتعديل الدستور أو الإضافة إليه"
+      }
+    ],
+    "AdoptEmergencyMeasure1995": [
+      {
+        "status": "translation",
+        "text": "المادة 44 البند 16 (طبعة 1995). يعلن الرئيس حالة الطوارئ بعد مشاورات رسمية مع رئيس الوزراء ورئيسي المجلسين مع إبلاغ البرلمان فورا"
+      }
+    ],
+    "AdoptMartialMeasure1995": [
+      {
+        "status": "translation",
+        "text": "المادة 44 البند 17 (طبعة 1995). في حال العدوان أو الخطر الخارجي المباشر يعلن الرئيس الأحكام العرفية ويبلغ البرلمان فورا"
+      }
+    ],
+    "AppointWithMazhilisConsent1995": [
+      {
+        "status": "translation",
+        "text": "المادة 44 البند 3 (طبعة 1995). يعين الرئيس رئيس الوزراء بموافقة مجلس النواب"
+      }
+    ],
+    "AppointWithSenateConsent1995": [
+      {
+        "status": "translation",
+        "text": "المادة 44 البند 4 (طبعة 1995). يعين بموافقة مجلس الشيوخ رئيس المحكمة الدستورية ورئيس البنك الوطني ورئيس المجلس الأعلى للقضاء والمدعي العام ورئيس لجنة الأمن القومي"
+      }
+    ],
+    "Appointment": [
+      {
+        "status": "translation",
+        "text": "تعيين يجريه الرئيس"
+      }
+    ],
+    "CallReferendum1995": [
+      {
+        "status": "translation",
+        "text": "المادة 44 البند 10 (طبعة 1995). يصدر الرئيس قرارا بإجراء استفتاء جمهوري"
+      }
+    ],
+    "Candidate": [
+      {
+        "status": "translation",
+        "text": "مترشح لرئاسة الجمهورية"
+      }
+    ],
+    "ConstitutionalPetition": [
+      {
+        "status": "translation",
+        "text": "مخاطبة المحكمة الدستورية"
+      }
+    ],
+    "ConstitutionalReviewPetitionPower1995": [
+      {
+        "status": "translation",
+        "text": "المادة 44 البند 10-1 (طبعة 1995). يوجه الرئيس مخاطبة إلى المحكمة الدستورية للنظر في مطابقة صك نافذ للدستور"
+      }
+    ],
+    "CountersignatureResponsibility1995": [
+      {
+        "status": "translation",
+        "text": "المادة 45 الفقرة 3 (طبعة 1995). يتحمل رئيس المجلس أو رئيس الوزراء الذي وقع بالعطف على الصك المسؤولية القانونية عن مشروعيته"
+      }
+    ],
+    "ElectedByAbsoluteMajority1995": [
+      {
+        "status": "translation",
+        "text": "المادة 41 الفقرة 5 (طبعة 1995). يعد فائزا المترشح الحائز أكثر من خمسين في المائة من أصوات المشاركين في الاقتراع"
+      }
+    ],
+    "ElectedInRunoff1995": [
+      {
+        "status": "translation",
+        "text": "المادة 41 الفقرة 5 (طبعة 1995). في الاقتراع المعاد يعد فائزا المترشح الحائز أكبر عدد من الأصوات"
+      }
+    ],
+    "Election": [
+      {
+        "status": "translation",
+        "text": "انتخابات رئيس الجمهورية"
+      }
+    ],
+    "EmergencyMeasure": [
+      {
+        "status": "translation",
+        "text": "تدبير من تدابير حالة الطوارئ أو الأحكام العرفية"
+      }
+    ],
+    "EmergencyPower1995": [
+      {
+        "status": "translation",
+        "text": "المادة 44 البند 16 (طبعة 1995). يعلن الرئيس حالة الطوارئ بعد مشاورات رسمية مع رئيس الوزراء ورئيسي المجلسين مع إبلاغ البرلمان فورا"
+      }
+    ],
+    "FormerPresidentInviolabilityImmunity1995": [
+      {
+        "status": "translation",
+        "text": "المادة 46 الفقرة 3 (طبعة 1995). تسري أحكام الحصانة على رؤساء الجمهورية السابقين"
+      }
+    ],
+    "FormerPresidentStateProvisionDuty1995": [
+      {
+        "status": "translation",
+        "text": "المادة 46 الفقرتان 2 و3 (طبعة 1995). تكفل الدولة على نفقتها إعالة الرئيس وأسرته وخدمتهما وحمايتهما؛ وتسري أحكام المادة على الرؤساء السابقين"
+      }
+    ],
+    "FormerPresidentTitle1995": [
+      {
+        "status": "translation",
+        "text": "المادة 42 الفقرة 3 (طبعة 1995). يحمل جميع الرؤساء السابقين لقب الرئيس السابق عدا من عزل من منصبه"
+      }
+    ],
+    "FormerPresidentialInviolability1995": [
+      {
+        "status": "translation",
+        "text": "المادة 46 الفقرة 3 (طبعة 1995). تسري أحكام الحصانة على رؤساء الجمهورية السابقين"
+      }
+    ],
+    "Impeachment": [
+      {
+        "status": "translation",
+        "text": "إجراءات عزل الرئيس من المنصب أو إعفائه لأسباب صحية"
+      }
+    ],
+    "ImpeachmentBarredDuringDissolution1995": [
+      {
+        "status": "translation",
+        "text": "المادة 47 الفقرة 3 (طبعة 1995). لا يجوز إثارة مسألة العزل في مدة نظر الرئيس مسألة الإنهاء المبكر لصلاحيات البرلمان أو مجلس النواب"
+      }
+    ],
+    "ImpeachmentChargeBroughtByMazhilisMajority1995": [
+      {
+        "status": "translation",
+        "text": "المادة 47 الفقرة 2 (طبعة 1995). يتخذ قرار توجيه الاتهام بأغلبية مجموع نواب مجلس النواب"
+      }
+    ],
+    "ImpeachmentInitiativeThreshold1995": [
+      {
+        "status": "translation",
+        "text": "المادة 47 الفقرة 2 (طبعة 1995). يتخذ قرار توجيه الاتهام بمبادرة ثلث نواب مجلس النواب على الأقل"
+      }
+    ],
+    "ImpeachmentInvestigationValid1995": [
+      {
+        "status": "translation",
+        "text": "المادة 47 الفقرة 2 (طبعة 1995). ينظم مجلس الشيوخ التحقيق في الاتهام وتحال نتائجه بأغلبية أصوات مجموع نوابه"
+      }
+    ],
+    "Law": [
+      {
+        "status": "translation",
+        "text": "قانون معروض على الرئيس"
+      }
+    ],
+    "LawReturnPower1995": [
+      {
+        "status": "translation",
+        "text": "المادة 44 البند 2 (طبعة 1995). يرد الرئيس القانون أو بعض مواده لإعادة المناقشة والاقتراع"
+      }
+    ],
+    "LawSigningPower1995": [
+      {
+        "status": "translation",
+        "text": "المادة 44 البند 2 (طبعة 1995). يوقع الرئيس على القانون الذي يعرضه البرلمان خلال شهر واحد"
+      }
+    ],
+    "MartialPower1995": [
+      {
+        "status": "translation",
+        "text": "المادة 44 البند 17 (طبعة 1995). في حال العدوان أو الخطر الخارجي المباشر يعلن الرئيس الأحكام العرفية ويبلغ البرلمان فورا"
+      }
+    ],
+    "Mazhilis": [
+      {
+        "status": "translation",
+        "text": "مجلس النواب في البرلمان"
+      }
+    ],
+    "MazhilisChairAssumesPowers1995": [
+      {
+        "status": "translation",
+        "text": "المادة 48 الفقرة 1 (طبعة 1995). عند تعذر ذلك على رئيس مجلس الشيوخ تنتقل الصلاحيات إلى رئيس مجلس النواب"
+      }
+    ],
+    "MazhilisConsentAppointmentPower1995": [
+      {
+        "status": "translation",
+        "text": "المادة 44 البند 3 (طبعة 1995). يعين الرئيس رئيس الوزراء بموافقة مجلس النواب"
+      }
+    ],
+    "Parliament": [
+      {
+        "status": "translation",
+        "text": "برلمان جمهورية كازاخستان"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "شخص طبيعي"
+      }
+    ],
+    "PetitionConstitutionalCourt1995": [
+      {
+        "status": "translation",
+        "text": "المادة 44 البند 10-1 (طبعة 1995). يوجه الرئيس مخاطبة إلى المحكمة الدستورية للنظر في مطابقة صك نافذ للدستور"
+      }
+    ],
+    "President": [
+      {
+        "status": "translation",
+        "text": "رئيس جمهورية كازاخستان (طبعة 1995)"
+      }
+    ],
+    "PresidentAssumesOfficeOnOath1995": [
+      {
+        "status": "translation",
+        "text": "المادة 42 الفقرة 1 (طبعة 1995). يتولى الرئيس منصبه من لحظة أدائه اليمين أمام الشعب"
+      }
+    ],
+    "PresidentReleasedForIncapacity1995": [
+      {
+        "status": "translation",
+        "text": "المادة 47 الفقرة 1 (طبعة 1995). يتخذ قرار الإعفاء المبكر لأسباب صحية بأغلبية لا تقل عن ثلاثة أرباع مجموع نواب كل من المجلسين"
+      }
+    ],
+    "PresidentRemovedByImpeachment1995": [
+      {
+        "status": "translation",
+        "text": "المادة 47 الفقرة 2 (طبعة 1995). يتخذ القرار النهائي بأغلبية لا تقل عن ثلاثة أرباع أصوات نواب كل من المجلسين مع صدور رأيي المحكمة العليا والمحكمة الدستورية"
+      }
+    ],
+    "PresidentialAct": [
+      {
+        "status": "translation",
+        "text": "صك صادر عن الرئيس"
+      }
+    ],
+    "PresidentialActBinding1995": [
+      {
+        "status": "translation",
+        "text": "المادة 45 الفقرة 1 (طبعة 1995). يصدر الرئيس استنادا إلى الدستور والقوانين وتنفيذا لهما مراسيم وأوامر ملزمة في جميع أنحاء إقليم الجمهورية"
+      }
+    ],
+    "PresidentialCandidateEligibility1995": [
+      {
+        "status": "translation",
+        "text": "المادة 41 الفقرة 2 (طبعة 1995). يجوز أن ينتخب رئيسا المواطن بالميلاد الذي لا يقل عمره عن أربعين سنة ويتقن لغة الدولة ويقيم في كازاخستان خمس عشرة سنة وله تعليم عال"
+      }
+    ],
+    "PresidentialInviolability1995": [
+      {
+        "status": "translation",
+        "text": "المادة 46 الفقرة 1 (طبعة 1995). الرئيس وشرفه وكرامته مصونون"
+      }
+    ],
+    "PresidentialInviolabilityImmunity1995": [
+      {
+        "status": "translation",
+        "text": "المادة 46 الفقرة 1 (طبعة 1995). الرئيس وشرفه وكرامته مصونون"
+      }
+    ],
+    "PresidentialOfficeIncompatible1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "المادة 43 الفقرتان 1 و3 (طبعة 1995). لا يجوز للرئيس أن يكون نائبا ولا أن يشغل مناصب أخرى بأجر ولا أن يمارس نشاطا رياديا ولا أن يكون عضوا في حزب سياسي"
+      }
+    ],
+    "PresidentialOfficeIncompatible1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "المادة 43 الفقرتان 1 و3 (طبعة 1995). لا يجوز للرئيس أن يكون نائبا ولا أن يشغل مناصب أخرى بأجر ولا أن يمارس نشاطا رياديا ولا أن يكون عضوا في حزب سياسي"
+      }
+    ],
+    "PresidentialOfficeIncompatible1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "المادة 43 الفقرتان 1 و3 (طبعة 1995). لا يجوز للرئيس أن يكون نائبا ولا أن يشغل مناصب أخرى بأجر ولا أن يمارس نشاطا رياديا ولا أن يكون عضوا في حزب سياسي"
+      }
+    ],
+    "PresidentialOfficeIncompatible1995/alt/4": [
+      {
+        "status": "translation",
+        "text": "المادة 43 الفقرتان 1 و3 (طبعة 1995). لا يجوز للرئيس أن يكون نائبا ولا أن يشغل مناصب أخرى بأجر ولا أن يمارس نشاطا رياديا ولا أن يكون عضوا في حزب سياسي"
+      }
+    ],
+    "PresidentialPowersTerminated1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "المادة 42 الفقرة 3 (طبعة 1995). تنتهي الصلاحيات بتولي الرئيس المنتخب الجديد منصبه أو بالإعفاء المبكر أو بالعزل أو بالوفاة"
+      }
+    ],
+    "PresidentialPowersTerminated1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "المادة 42 الفقرة 3 (طبعة 1995). تنتهي الصلاحيات بتولي الرئيس المنتخب الجديد منصبه أو بالإعفاء المبكر أو بالعزل أو بالوفاة"
+      }
+    ],
+    "PresidentialPowersTerminated1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "المادة 42 الفقرة 3 (طبعة 1995). تنتهي الصلاحيات بتولي الرئيس المنتخب الجديد منصبه أو بالإعفاء المبكر أو بالعزل أو بالوفاة"
+      }
+    ],
+    "PresidentialRelativePositionProhibited1995": [
+      {
+        "status": "translation",
+        "text": "المادة 43 الفقرة 4 (طبعة 1995). لا يجوز لأقارب الرئيس المقربين شغل مناصب الموظفين السياسيين في الدولة ولا رئاسة منظمات القطاع شبه الحكومي"
+      }
+    ],
+    "PrimeMinisterAssumesPowers1995": [
+      {
+        "status": "translation",
+        "text": "المادة 48 الفقرة 1 (طبعة 1995). عند تعذر ذلك على رئيس مجلس النواب تنتقل الصلاحيات إلى رئيس وزراء الجمهورية"
+      }
+    ],
+    "PrimeMinisterNomineeAfterFractionConsultations1995": [
+      {
+        "status": "translation",
+        "text": "المادة 44 البند 3) (طبعة 1995). يعرض ترشيح رئيس الوزراء على مجلس النواب بعد مشاورات مع الكتل الحزبية"
+      }
+    ],
+    "ProvideStateFundedProtection1995": [
+      {
+        "status": "translation",
+        "text": "المادة 46 الفقرتان 2 و3 (طبعة 1995). تكفل الدولة على نفقتها إعالة الرئيس وأسرته وخدمتهما وحمايتهما؛ وتسري أحكام المادة على الرؤساء السابقين"
+      }
+    ],
+    "Referendum": [
+      {
+        "status": "translation",
+        "text": "استفتاء جمهوري"
+      }
+    ],
+    "ReferendumPower1995": [
+      {
+        "status": "translation",
+        "text": "المادة 44 البند 10 (طبعة 1995). يصدر الرئيس قرارا بإجراء استفتاء جمهوري"
+      }
+    ],
+    "RegularElectionDateAdmissible1995": [
+      {
+        "status": "translation",
+        "text": "المادة 41 الفقرة 3 (طبعة 1995). تجرى الانتخابات الدورية في أول أحد من كانون الأول ولا يجوز أن تتزامن مع انتخاب تشكيلة جديدة للبرلمان"
+      }
+    ],
+    "RejectedChargeTerminatesInitiators1995": [
+      {
+        "status": "translation",
+        "text": "المادة 47 الفقرة 2 (طبعة 1995). رفض الاتهام في أي مرحلة يرتب الإنهاء المبكر لصلاحيات نواب مجلس النواب الذين بادروا به"
+      }
+    ],
+    "RepeatedElectionProhibited1995": [
+      {
+        "status": "translation",
+        "text": "المادة 42 الفقرة 5 (طبعة 1995). لا يجوز انتخاب الشخص الواحد رئيسا أكثر من مرة واحدة"
+      }
+    ],
+    "ReturnLawForReconsideration1995": [
+      {
+        "status": "translation",
+        "text": "المادة 44 البند 2 (طبعة 1995). يرد الرئيس القانون أو بعض مواده لإعادة المناقشة والاقتراع"
+      }
+    ],
+    "RunoffRequired1995": [
+      {
+        "status": "translation",
+        "text": "المادة 41 الفقرة 5 (طبعة 1995). إذا لم يحز أي مترشح العدد المذكور من الأصوات أجري اقتراع معاد"
+      }
+    ],
+    "Senate": [
+      {
+        "status": "translation",
+        "text": "مجلس الشيوخ في البرلمان"
+      }
+    ],
+    "SenateChairAssumesPowers1995": [
+      {
+        "status": "translation",
+        "text": "المادة 48 الفقرة 1 (طبعة 1995). تنتقل صلاحيات الرئيس للمدة الباقية إلى رئيس مجلس الشيوخ في البرلمان"
+      }
+    ],
+    "SenateConsentAppointmentPower1995": [
+      {
+        "status": "translation",
+        "text": "المادة 44 البند 4 (طبعة 1995). يعين بموافقة مجلس الشيوخ رئيس المحكمة الدستورية ورئيس البنك الوطني ورئيس المجلس الأعلى للقضاء والمدعي العام ورئيس لجنة الأمن القومي"
+      }
+    ],
+    "SignPresentedLaw1995": [
+      {
+        "status": "translation",
+        "text": "المادة 44 البند 2 (طبعة 1995). يوقع الرئيس على القانون الذي يعرضه البرلمان خلال شهر واحد"
+      }
+    ],
+    "StateAuthority": [
+      {
+        "status": "translation",
+        "text": "جهاز الدولة أو الموظف العام"
+      }
+    ],
+    "SuccessionEvent": [
+      {
+        "status": "translation",
+        "text": "حالة من حالات انتقال صلاحيات الرئيس"
+      }
+    ],
+    "SuccessionOathTimely1995": [
+      {
+        "status": "translation",
+        "text": "المادة 42 الفقرة 2 (طبعة 1995). يؤدي من تولى صلاحيات الرئيس اليمين خلال شهر واحد"
+      }
+    ],
+    "act_countersigned_by_pm_or_chamber_chair": [
+      {
+        "status": "translation",
+        "text": "وقع رئيس الوزراء أو رئيس أحد مجلسي البرلمان بالعطف على الصك"
+      }
+    ],
+    "act_initiated_by_government": [
+      {
+        "status": "translation",
+        "text": "صدر الصك بمبادرة من الحكومة"
+      }
+    ],
+    "acting_president": [
+      {
+        "status": "translation",
+        "text": "الشخص يقوم بأعمال الرئيس"
+      }
+    ],
+    "acting_president_amendment_initiative_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "يحظر على القائم بأعمال الرئيس المبادرة بتعديل الدستور"
+      }
+    ],
+    "age_years": [
+      {
+        "status": "translation",
+        "text": "عمر الشخص بالسنين التامة"
+      }
+    ],
+    "aggression_or_immediate_external_threat": [
+      {
+        "status": "translation",
+        "text": "وقع عدوان على الجمهورية أو خطر خارجي مباشر"
+      }
+    ],
+    "appointment_effective_1995": [
+      {
+        "status": "translation",
+        "text": "تم التعيين"
+      }
+    ],
+    "appointment_requires_mazhilis_consent": [
+      {
+        "status": "translation",
+        "text": "يجري التعيين بموافقة مجلس النواب"
+      }
+    ],
+    "appointment_requires_senate_consent": [
+      {
+        "status": "translation",
+        "text": "يجري التعيين بموافقة مجلس الشيوخ"
+      }
+    ],
+    "assumes_presidential_powers_1995": [
+      {
+        "status": "translation",
+        "text": "الشخص يتولى صلاحيات الرئيس"
+      }
+    ],
+    "candidate_person": [
+      {
+        "status": "translation",
+        "text": "المترشح هو هذا الشخص"
+      }
+    ],
+    "charge_rejected": [
+      {
+        "status": "translation",
+        "text": "رفض الاتهام"
+      }
+    ],
+    "citizen_by_birth": [
+      {
+        "status": "translation",
+        "text": "الشخص من مواطني الجمهورية بالميلاد"
+      }
+    ],
+    "close_relative_of_president": [
+      {
+        "status": "translation",
+        "text": "الشخص من أقارب الرئيس المقربين"
+      }
+    ],
+    "coincides_with_parliament_election": [
+      {
+        "status": "translation",
+        "text": "انتخابات الرئيس تتزامن مع انتخاب تشكيلة جديدة للبرلمان"
+      }
+    ],
+    "constitutional_amendment_initiative_attempt": [
+      {
+        "status": "translation",
+        "text": "القائم بأعمال الرئيس يبادر بتعديل الدستور"
+      }
+    ],
+    "constitutional_court_procedure_confirmed": [
+      {
+        "status": "translation",
+        "text": "أكدت المحكمة الدستورية مراعاة الإجراءات الدستورية المقررة"
+      }
+    ],
+    "constitutional_organs_functioning_disrupted": [
+      {
+        "status": "translation",
+        "text": "اختل السير الطبيعي للأجهزة الدستورية"
+      }
+    ],
+    "constitutional_petition": [
+      {
+        "status": "translation",
+        "text": "وجهت المخاطبة إلى المحكمة الدستورية"
+      }
+    ],
+    "constitutional_review_petition_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يخاطب المحكمة الدستورية"
+      }
+    ],
+    "constitutional_review_requested_1995": [
+      {
+        "status": "translation",
+        "text": "أثيرت الرقابة الدستورية بصورة مشروعة"
+      }
+    ],
+    "countersignatory_bears_legal_responsibility_1995": [
+      {
+        "status": "translation",
+        "text": "من وقع بالعطف على الصك يتحمل المسؤولية القانونية عن مشروعيته"
+      }
+    ],
+    "early_release_or_removal": [
+      {
+        "status": "translation",
+        "text": "أعفي الرئيس مبكرا أو عزل من منصبه"
+      }
+    ],
+    "elected_president_1995": [
+      {
+        "status": "translation",
+        "text": "يعد الشخص منتخبا رئيسا"
+      }
+    ],
+    "election_majority_percent_1995": [
+      {
+        "status": "translation",
+        "text": "عتبة انتخاب الرئيس أكثر من خمسين في المائة من الأصوات"
+      }
+    ],
+    "eligible_presidential_candidate_1995": [
+      {
+        "status": "translation",
+        "text": "الشخص مستوف لشروط المترشح لرئاسة الجمهورية"
+      }
+    ],
+    "emergency_consultations_with_pm_and_chairs_completed": [
+      {
+        "status": "translation",
+        "text": "أجريت المشاورات مع رئيس الوزراء ورئيسي مجلسي البرلمان"
+      }
+    ],
+    "emergency_measure": [
+      {
+        "status": "translation",
+        "text": "التدبير من تدابير حالة الطوارئ"
+      }
+    ],
+    "emergency_measure_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يقرر تدابير حالة الطوارئ"
+      }
+    ],
+    "emergency_measure_in_force_1995": [
+      {
+        "status": "translation",
+        "text": "قررت تدابير حالة الطوارئ بصورة مشروعة"
+      }
+    ],
+    "final_decision_within_two_months": [
+      {
+        "status": "translation",
+        "text": "اتخذ القرار النهائي في ميعاد الشهرين"
+      }
+    ],
+    "fluent_in_state_language": [
+      {
+        "status": "translation",
+        "text": "الشخص يتقن لغة الدولة"
+      }
+    ],
+    "former_president": [
+      {
+        "status": "translation",
+        "text": "الشخص رئيس سابق للجمهورية"
+      }
+    ],
+    "former_president_title_held_1995": [
+      {
+        "status": "translation",
+        "text": "يحتفظ الرئيس السابق بلقب رئيس الجمهورية"
+      }
+    ],
+    "fraction_consultations_completed": [
+      {
+        "status": "translation",
+        "text": "أجريت المشاورات مع الكتل الحزبية"
+      }
+    ],
+    "higher_education": [
+      {
+        "status": "translation",
+        "text": "للشخص تعليم عال"
+      }
+    ],
+    "highest_vote_in_runoff": [
+      {
+        "status": "translation",
+        "text": "حاز المترشح أكبر عدد من الأصوات في الاقتراع المعاد"
+      }
+    ],
+    "impeachment_case": [
+      {
+        "status": "translation",
+        "text": "الإجراءات هي إجراءات عزل الرئيس من المنصب"
+      }
+    ],
+    "impeachment_charge_brought_1995": [
+      {
+        "status": "translation",
+        "text": "اتخذ قرار توجيه الاتهام بأغلبية مجموع نواب مجلس النواب"
+      }
+    ],
+    "impeachment_deadline_months_1995": [
+      {
+        "status": "translation",
+        "text": "ميعاد اتخاذ القرار النهائي بالعزل شهران"
+      }
+    ],
+    "impeachment_final_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "مقام عتبة العزل ثلاثة أرباع"
+      }
+    ],
+    "impeachment_final_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "بسط عتبة العزل ثلاثة أرباع"
+      }
+    ],
+    "impeachment_initiative_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "مقام عتبة المبادرة بالعزل الثلث"
+      }
+    ],
+    "impeachment_initiative_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "بسط عتبة المبادرة بالعزل الثلث"
+      }
+    ],
+    "impeachment_initiative_valid_1995": [
+      {
+        "status": "translation",
+        "text": "قدمت المبادرة بالعزل من العدد المخول من النواب"
+      }
+    ],
+    "impeachment_investigation_valid_1995": [
+      {
+        "status": "translation",
+        "text": "عهد بالتحقيق في الاتهام بصورة مشروعة"
+      }
+    ],
+    "impeachment_may_not_be_initiated_1995": [
+      {
+        "status": "translation",
+        "text": "لا يجوز إثارة مسألة عزل الرئيس"
+      }
+    ],
+    "incapacity_case": [
+      {
+        "status": "translation",
+        "text": "الإجراءات هي إجراءات إعفاء الرئيس لأسباب صحية"
+      }
+    ],
+    "incapacity_release_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "مقام عتبة الإعفاء لأسباب صحية ثلاثة أرباع"
+      }
+    ],
+    "incapacity_release_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "بسط عتبة الإعفاء لأسباب صحية ثلاثة أرباع"
+      }
+    ],
+    "initiating_mazhilis_deputies_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "تنتهي صلاحيات نواب مجلس النواب الذين بادروا بالاتهام"
+      }
+    ],
+    "law_presented": [
+      {
+        "status": "translation",
+        "text": "عرض القانون على الرئيس للتوقيع"
+      }
+    ],
+    "law_returned_for_reconsideration_1995": [
+      {
+        "status": "translation",
+        "text": "رد القانون لإعادة المناقشة والاقتراع"
+      }
+    ],
+    "law_signature_months_1995": [
+      {
+        "status": "translation",
+        "text": "ميعاد التوقيع على القانون المعروض شهر واحد"
+      }
+    ],
+    "law_signed_1995": [
+      {
+        "status": "translation",
+        "text": "وقع الرئيس على القانون"
+      }
+    ],
+    "martial_measure_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يعلن الأحكام العرفية"
+      }
+    ],
+    "martial_measure_in_force_1995": [
+      {
+        "status": "translation",
+        "text": "أعلنت الأحكام العرفية بصورة مشروعة"
+      }
+    ],
+    "mazhilis_accusation_votes": [
+      {
+        "status": "translation",
+        "text": "عدد أصوات مجلس النواب المؤيدة لتوجيه الاتهام"
+      }
+    ],
+    "mazhilis_chair": [
+      {
+        "status": "translation",
+        "text": "الشخص رئيس مجلس النواب"
+      }
+    ],
+    "mazhilis_chair_unable": [
+      {
+        "status": "translation",
+        "text": "لا يستطيع رئيس مجلس النواب تولي صلاحيات الرئيس"
+      }
+    ],
+    "mazhilis_consent_given": [
+      {
+        "status": "translation",
+        "text": "وافق مجلس النواب على التعيين"
+      }
+    ],
+    "mazhilis_final_votes": [
+      {
+        "status": "translation",
+        "text": "عدد أصوات مجلس النواب عند القرار النهائي"
+      }
+    ],
+    "mazhilis_initiating_votes": [
+      {
+        "status": "translation",
+        "text": "عدد نواب مجلس النواب الذين بادروا بالعزل"
+      }
+    ],
+    "mazhilis_release_votes": [
+      {
+        "status": "translation",
+        "text": "عدد أصوات مجلس النواب المؤيدة للإعفاء لأسباب صحية"
+      }
+    ],
+    "mazhilis_total_deputies": [
+      {
+        "status": "translation",
+        "text": "مجموع نواب مجلس النواب"
+      }
+    ],
+    "medical_commission_conclusion": [
+      {
+        "status": "translation",
+        "text": "يوجد رأي من اللجنة الطبية"
+      }
+    ],
+    "new_president_assumed_office": [
+      {
+        "status": "translation",
+        "text": "تولى الرئيس الجديد منصبه"
+      }
+    ],
+    "no_candidate_reached_majority": [
+      {
+        "status": "translation",
+        "text": "لم يحز أي مترشح أكثر من نصف الأصوات"
+      }
+    ],
+    "oath_taken": [
+      {
+        "status": "translation",
+        "text": "أدى الشخص اليمين أمام شعب كازاخستان"
+      }
+    ],
+    "parliament_dissolution_under_consideration": [
+      {
+        "status": "translation",
+        "text": "تنظر مسألة حل البرلمان أو مجلس النواب"
+      }
+    ],
+    "parliament_immediately_informed": [
+      {
+        "status": "translation",
+        "text": "أبلغ البرلمان فورا بالتدابير المتخذة"
+      }
+    ],
+    "participating_voters": [
+      {
+        "status": "translation",
+        "text": "عدد الناخبين المشاركين في الاقتراع"
+      }
+    ],
+    "petition_protects_rights_or_security": [
+      {
+        "status": "translation",
+        "text": "المخاطبة موجهة إلى حماية حقوق الإنسان وحرياته أو أمن الدولة"
+      }
+    ],
+    "pm_appointment_consultations_completed_1995": [
+      {
+        "status": "translation",
+        "text": "عرض ترشيح رئيس الوزراء بعد مشاورات مع الكتل الحزبية"
+      }
+    ],
+    "president": [
+      {
+        "status": "translation",
+        "text": "الشخص رئيس الجمهورية"
+      }
+    ],
+    "president_addresses_annual_message_1995": [
+      {
+        "status": "translation",
+        "text": "الرئيس يوجه رسالة سنوية عن حال البلاد"
+      }
+    ],
+    "president_assumed_office_1995": [
+      {
+        "status": "translation",
+        "text": "تولى الشخص منصب الرئيس"
+      }
+    ],
+    "president_conducts_business": [
+      {
+        "status": "translation",
+        "text": "الرئيس يمارس نشاطا رياديا"
+      }
+    ],
+    "president_deceased": [
+      {
+        "status": "translation",
+        "text": "توفي الرئيس"
+      }
+    ],
+    "president_decides_citizenship_and_asylum_1995": [
+      {
+        "status": "translation",
+        "text": "الرئيس يفصل في مسائل الجنسية ومنح اللجوء السياسي"
+      }
+    ],
+    "president_ensures_concerted_branch_functioning_1995": [
+      {
+        "status": "translation",
+        "text": "الرئيس يكفل التسيير المتناسق لفروع سلطة الدولة"
+      }
+    ],
+    "president_exercises_pardon_1995": [
+      {
+        "status": "translation",
+        "text": "الرئيس يمارس حق العفو عن المواطنين"
+      }
+    ],
+    "president_forms_security_council_and_assembly_1995": [
+      {
+        "status": "translation",
+        "text": "الرئيس ينشئ مجلس الأمن وجمعية شعب كازاخستان"
+      }
+    ],
+    "president_forms_state_guard_service_1995": [
+      {
+        "status": "translation",
+        "text": "الرئيس ينشئ جهاز الحرس الحكومي"
+      }
+    ],
+    "president_holds_other_paid_office": [
+      {
+        "status": "translation",
+        "text": "الرئيس يشغل منصبا آخر بأجر"
+      }
+    ],
+    "president_holds_representative_mandate": [
+      {
+        "status": "translation",
+        "text": "الرئيس نائب في جهاز تمثيلي"
+      }
+    ],
+    "president_is_head_of_state_1995": [
+      {
+        "status": "translation",
+        "text": "الرئيس رئيس الدولة والموظف الأعلى في الجمهورية"
+      }
+    ],
+    "president_is_supreme_commander_1995": [
+      {
+        "status": "translation",
+        "text": "الرئيس هو القائد الأعلى للقوات المسلحة"
+      }
+    ],
+    "president_is_symbol_and_guarantor_of_unity_1995": [
+      {
+        "status": "translation",
+        "text": "الرئيس رمز وحدة الشعب وسلطة الدولة وضامنها"
+      }
+    ],
+    "president_minimum_age_1995": [
+      {
+        "status": "translation",
+        "text": "الحد الأدنى لسن الرئيس أربعون سنة"
+      }
+    ],
+    "president_party_member": [
+      {
+        "status": "translation",
+        "text": "الرئيس عضو في حزب سياسي"
+      }
+    ],
+    "president_person": [
+      {
+        "status": "translation",
+        "text": "الرئيس هو هذا الشخص الطبيعي"
+      }
+    ],
+    "president_released_for_incapacity_1995": [
+      {
+        "status": "translation",
+        "text": "أعفي الرئيس من المنصب مبكرا لأسباب صحية"
+      }
+    ],
+    "president_removed_by_impeachment_1995": [
+      {
+        "status": "translation",
+        "text": "عزل الرئيس من المنصب"
+      }
+    ],
+    "president_residence_years_1995": [
+      {
+        "status": "translation",
+        "text": "مدة الإقامة المطلوبة في كازاخستان خمس عشرة سنة"
+      }
+    ],
+    "president_term_years_1995": [
+      {
+        "status": "translation",
+        "text": "مدة صلاحيات الرئيس سبع سنوات"
+      }
+    ],
+    "presidential_act": [
+      {
+        "status": "translation",
+        "text": "أصدر هذا الرئيس الصك"
+      }
+    ],
+    "presidential_act_based_on_constitution_and_law": [
+      {
+        "status": "translation",
+        "text": "صدر الصك استنادا إلى الدستور والقوانين وتنفيذا لهما"
+      }
+    ],
+    "presidential_act_binding_nationwide_1995": [
+      {
+        "status": "translation",
+        "text": "صك الرئيس ملزم في جميع أنحاء إقليم الجمهورية"
+      }
+    ],
+    "presidential_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يجري التعيين"
+      }
+    ],
+    "presidential_election": [
+      {
+        "status": "translation",
+        "text": "الواقعة هي انتخابات رئيس الجمهورية"
+      }
+    ],
+    "presidential_inviolability_infringement": [
+      {
+        "status": "translation",
+        "text": "انتهكت حصانة الرئيس"
+      }
+    ],
+    "presidential_office_incompatible_1995": [
+      {
+        "status": "translation",
+        "text": "منصب الرئيس لا يجتمع مع المنصب المشغول أو النشاط الممارس"
+      }
+    ],
+    "presidential_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "انتهت صلاحيات الرئيس"
+      }
+    ],
+    "presidential_relative_position_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "لا يجوز أن يشغل قريب الرئيس مثل هذا المنصب"
+      }
+    ],
+    "presidential_return_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يرد القانون لإعادة المناقشة"
+      }
+    ],
+    "presidential_signature_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يوقع على القانون المعروض"
+      }
+    ],
+    "presidential_vacancy": [
+      {
+        "status": "translation",
+        "text": "وقع الإعفاء المبكر أو العزل أو وفاة الرئيس"
+      }
+    ],
+    "presidential_vote": [
+      {
+        "status": "translation",
+        "text": "عدد الأصوات التي نالها المترشح"
+      }
+    ],
+    "previously_elected_president": [
+      {
+        "status": "translation",
+        "text": "سبق انتخاب الشخص رئيسا للجمهورية"
+      }
+    ],
+    "prime_minister": [
+      {
+        "status": "translation",
+        "text": "الشخص رئيس الوزراء"
+      }
+    ],
+    "referendum_called_1995": [
+      {
+        "status": "translation",
+        "text": "دعي إلى استفتاء جمهوري"
+      }
+    ],
+    "referendum_decision_attempt": [
+      {
+        "status": "translation",
+        "text": "الرئيس يصدر قرارا بإجراء استفتاء"
+      }
+    ],
+    "referendum_proposal": [
+      {
+        "status": "translation",
+        "text": "قدم اقتراح بإجراء استفتاء جمهوري"
+      }
+    ],
+    "regular_election_date_admissible_1995": [
+      {
+        "status": "translation",
+        "text": "ميعاد الانتخابات الدورية للرئيس جائز"
+      }
+    ],
+    "regular_election_on_first_december_sunday": [
+      {
+        "status": "translation",
+        "text": "حددت الانتخابات الدورية في أول أحد من كانون الأول"
+      }
+    ],
+    "relative_holds_political_office_or_quasistate_leadership": [
+      {
+        "status": "translation",
+        "text": "القريب يشغل منصبا سياسيا في الدولة أو يرأس منظمة من القطاع شبه الحكومي"
+      }
+    ],
+    "removed_from_office": [
+      {
+        "status": "translation",
+        "text": "عزل الشخص من منصب الرئيس"
+      }
+    ],
+    "repeated_election_attempt": [
+      {
+        "status": "translation",
+        "text": "جرت محاولة لإعادة انتخاب الشخص رئيسا"
+      }
+    ],
+    "repeated_election_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "لا يجوز إعادة انتخاب الشخص الواحد رئيسا"
+      }
+    ],
+    "resides_last_years": [
+      {
+        "status": "translation",
+        "text": "عدد سنوات الإقامة الأخيرة في كازاخستان"
+      }
+    ],
+    "runoff_ballot": [
+      {
+        "status": "translation",
+        "text": "الاقتراع اقتراع معاد"
+      }
+    ],
+    "runoff_required_1995": [
+      {
+        "status": "translation",
+        "text": "يجرى اقتراع معاد"
+      }
+    ],
+    "senate_chair": [
+      {
+        "status": "translation",
+        "text": "الشخص رئيس مجلس الشيوخ"
+      }
+    ],
+    "senate_chair_unable": [
+      {
+        "status": "translation",
+        "text": "لا يستطيع رئيس مجلس الشيوخ تولي صلاحيات الرئيس"
+      }
+    ],
+    "senate_consent_given": [
+      {
+        "status": "translation",
+        "text": "وافق مجلس الشيوخ على التعيين"
+      }
+    ],
+    "senate_final_votes": [
+      {
+        "status": "translation",
+        "text": "عدد أصوات مجلس الشيوخ عند القرار النهائي"
+      }
+    ],
+    "senate_investigation_votes": [
+      {
+        "status": "translation",
+        "text": "عدد أصوات مجلس الشيوخ المؤيدة للعهد بالتحقيق"
+      }
+    ],
+    "senate_release_votes": [
+      {
+        "status": "translation",
+        "text": "عدد أصوات مجلس الشيوخ المؤيدة للإعفاء لأسباب صحية"
+      }
+    ],
+    "senate_total_deputies": [
+      {
+        "status": "translation",
+        "text": "مجموع نواب مجلس الشيوخ"
+      }
+    ],
+    "serious_and_immediate_threat": [
+      {
+        "status": "translation",
+        "text": "يوجد خطر جسيم ومباشر على الأمن أو النظام الدستوري أو النظام العام"
+      }
+    ],
+    "signature_within_one_month": [
+      {
+        "status": "translation",
+        "text": "وقع على القانون في ميعاد الشهر"
+      }
+    ],
+    "state_authority": [
+      {
+        "status": "translation",
+        "text": "الكيان جهاز دولة أو موظف عام"
+      }
+    ],
+    "state_funded_protection_provided": [
+      {
+        "status": "translation",
+        "text": "كفلت للرئيس السابق حماية على نفقة الدولة"
+      }
+    ],
+    "succession_event": [
+      {
+        "status": "translation",
+        "text": "انتقلت صلاحيات الرئيس إلى هذا الشخص"
+      }
+    ],
+    "succession_oath_months_1995": [
+      {
+        "status": "translation",
+        "text": "ميعاد أداء اليمين عند انتقال الصلاحيات شهر واحد"
+      }
+    ],
+    "succession_oath_timely_1995": [
+      {
+        "status": "translation",
+        "text": "أديت اليمين عند انتقال الصلاحيات في الميعاد"
+      }
+    ],
+    "succession_oath_within_one_month": [
+      {
+        "status": "translation",
+        "text": "أديت اليمين خلال شهر من يوم تولي الصلاحيات"
+      }
+    ],
+    "supreme_court_charge_supported": [
+      {
+        "status": "translation",
+        "text": "أكدت المحكمة العليا وجاهة الاتهام"
+      }
+    ],
+    "treason_charge": [
+      {
+        "status": "translation",
+        "text": "وجه إلى الرئيس اتهام بالخيانة العظمى"
+      }
+    ]
+  },
+  "language": "ar",
+  "package": "kz.constitution1995.president"
+}

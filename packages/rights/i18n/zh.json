@@ -1,0 +1,2606 @@
+{
+  "$comment": "哈萨克斯坦共和国宪法程序包的中文（简体）标签叠加层（DECISION-0070）。本文件不参与编译，也不进入 CLIR 规范字节，仅由展示层读取（lawref verbalize --labels、MCP 资源 law://<程序包>/verbalized/zh、工作台）。译文由形式化人员依据各节点的俄文标签（ru-KZ）译出，术语参照宪法学通用汉语表述，状态为 translation（工作译文），并非官方译本。键为声明的本地名称。",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "AccessToAffectingDocumentsDuty": [
+      {
+        "status": "translation",
+        "text": "第二十一条第三款。国家机关、社会团体、公职人员和大众传媒有义务保障每个人查阅涉及其权利和利益的文件"
+      }
+    ],
+    "AdultChildParentCareDuty": [
+      {
+        "status": "translation",
+        "text": "第三十条第四款。有劳动能力的成年子女有义务赡养无劳动能力的父母"
+      }
+    ],
+    "AdultChildParentCareDuty1995": [
+      {
+        "status": "translation",
+        "text": "第二十七条第三款（1995年版）。有劳动能力的成年子女有义务赡养无劳动能力的父母"
+      }
+    ],
+    "AffordableStateHousingDuty1995": [
+      {
+        "status": "translation",
+        "text": "第二十五条第二款（1995年版）。法律规定的类别人员，以可负担的租金从国家住房基金获得住房"
+      }
+    ],
+    "AnnualPaidLeaveDuty1995": [
+      {
+        "status": "translation",
+        "text": "第二十四条第四款（1995年版）。依劳动合同工作的人享有带薪年休假的保障"
+      }
+    ],
+    "ArrestRequiresCourtDecisionAndAppeal": [
+      {
+        "status": "translation",
+        "text": "第十八条第二款。羁押只能依法院裁判进行，并应当赋予申诉权"
+      }
+    ],
+    "ArrestRequiresCourtSanctionAndAppeal1995": [
+      {
+        "status": "translation",
+        "text": "第十六条第二款（1995年版）。逮捕和羁押只能经法院批准，并享有申诉权"
+      }
+    ],
+    "Assembly": [
+      {
+        "status": "translation",
+        "text": "和平集会"
+      }
+    ],
+    "AssemblyRestrictionRequiresLawAndGoal": [
+      {
+        "status": "translation",
+        "text": "第三十四条。限制和平集会须有法律依据和宪法目的"
+      }
+    ],
+    "AssemblyRestrictionRequiresLawAndGoal1995": [
+      {
+        "status": "translation",
+        "text": "第三十二条（1995年版）。集会权利的限制只能由法律为所列宪法目的设定"
+      }
+    ],
+    "Association": [
+      {
+        "status": "translation",
+        "text": "公民的社会团体"
+      }
+    ],
+    "CandidateDisqualification/alt/1": [
+      {
+        "status": "translation",
+        "text": "第三十五条第三款。不得当选事由的封闭列举"
+      }
+    ],
+    "CandidateDisqualification/alt/2": [
+      {
+        "status": "translation",
+        "text": "第三十五条第三款。不得当选事由的封闭列举"
+      }
+    ],
+    "CandidateDisqualification/alt/3": [
+      {
+        "status": "translation",
+        "text": "第三十五条第三款。不得当选事由的封闭列举"
+      }
+    ],
+    "CandidateDisqualification1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "第三十三条第三款（1995年版）。经法院宣告无行为能力的人和被羁押于剥夺自由场所的人无权当选"
+      }
+    ],
+    "CandidateDisqualification1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "第三十三条第三款（1995年版）。经法院宣告无行为能力的人和被羁押于剥夺自由场所的人无权当选"
+      }
+    ],
+    "CareForChild": [
+      {
+        "status": "translation",
+        "text": "第三十条第三款。抚养和教育子女是父母的自然权利和义务"
+      }
+    ],
+    "CareForChild1995": [
+      {
+        "status": "translation",
+        "text": "第二十七条第二款（1995年版）。抚养和教育子女是父母的自然权利和义务"
+      }
+    ],
+    "CareForIncapacitatedParent": [
+      {
+        "status": "translation",
+        "text": "第三十条第四款。有劳动能力的成年子女有义务赡养无劳动能力的父母"
+      }
+    ],
+    "CareForIncapacitatedParent1995": [
+      {
+        "status": "translation",
+        "text": "第二十七条第三款（1995年版）。有劳动能力的成年子女有义务赡养无劳动能力的父母"
+      }
+    ],
+    "CensorshipImmunity": [
+      {
+        "status": "translation",
+        "text": "第二十三条第五款。禁止新闻检查"
+      }
+    ],
+    "CensorshipImmunity1995": [
+      {
+        "status": "translation",
+        "text": "第二十条第一款（1995年版）。禁止新闻检查"
+      }
+    ],
+    "CensorshipProhibition": [
+      {
+        "status": "translation",
+        "text": "第二十三条第五款。禁止新闻检查"
+      }
+    ],
+    "Child": [
+      {
+        "status": "translation",
+        "text": "子女"
+      }
+    ],
+    "ChooseOccupationFreely": [
+      {
+        "status": "translation",
+        "text": "第二十七条第一款。劳动权以及自由选择活动种类和职业的权利"
+      }
+    ],
+    "ChooseOccupationFreely1995": [
+      {
+        "status": "translation",
+        "text": "第二十四条第一款（1995年版）。劳动自由以及自由选择活动种类和职业的权利"
+      }
+    ],
+    "CitizenAccessToAffectingDocumentsDuty1995": [
+      {
+        "status": "translation",
+        "text": "第十八条第三款（1995年版）。保障每个公民查阅涉及其本人的文件"
+      }
+    ],
+    "CitizenNonExtraditionImmunity": [
+      {
+        "status": "translation",
+        "text": "第十四条第一款。哈萨克斯坦共和国公民不得引渡给外国"
+      }
+    ],
+    "CitizenNonExtraditionImmunity1995": [
+      {
+        "status": "translation",
+        "text": "第十一条第一款（1995年版）。共和国公民不得引渡给外国"
+      }
+    ],
+    "CitizenReturnImmunity": [
+      {
+        "status": "translation",
+        "text": "第二十四条第二款。公民有权无阻碍地返回哈萨克斯坦"
+      }
+    ],
+    "CitizenReturnImmunity1995": [
+      {
+        "status": "translation",
+        "text": "第二十一条第二款（1995年版）。公民有权无阻碍地返回共和国"
+      }
+    ],
+    "CitizenshipDeprivationPower": [
+      {
+        "status": "translation",
+        "text": "第十三条第二款。剥夺国籍只能由法院就恐怖主义犯罪或者对共和国国家利益造成其他重大损害的行为作出裁判"
+      }
+    ],
+    "CitizenshipDeprivationPower1995": [
+      {
+        "status": "translation",
+        "text": "第十条第二款（1995年版）。剥夺国籍只能由法院就恐怖主义犯罪或者对生死攸关利益造成其他重大损害的行为作出裁判"
+      }
+    ],
+    "CivilServiceRequirement": [
+      {
+        "status": "translation",
+        "text": "对进入国家公务人员提出的要求"
+      }
+    ],
+    "CivilServiceRequirementMustReflectOfficialDuties": [
+      {
+        "status": "translation",
+        "text": "第三十五条第四款。对国家公务人员的要求以职务职责的性质为限"
+      }
+    ],
+    "CivilServiceRequirementMustReflectOfficialDuties1995": [
+      {
+        "status": "translation",
+        "text": "第三十三条第四款（1995年版）。对国家公务职位候选人的要求仅由职务职责的性质决定"
+      }
+    ],
+    "CompensateUnlawfulStateHarm": [
+      {
+        "status": "translation",
+        "text": "第十五条第六款。国家赔偿其机关非法行为造成的损害"
+      }
+    ],
+    "CompensatedExpropriationOnly": [
+      {
+        "status": "translation",
+        "text": "第二十九条第三款。为国家需要强制征收财产，只有在给予等值补偿的条件下方可进行"
+      }
+    ],
+    "CompensatedExpropriationOnly1995": [
+      {
+        "status": "translation",
+        "text": "第二十六条第三款（1995年版）。强制征收只有在给予等值补偿时方可进行"
+      }
+    ],
+    "ConductEnterprise": [
+      {
+        "status": "translation",
+        "text": "第二十九条第四款。哈萨克斯坦共和国保障经营活动自由的权利"
+      }
+    ],
+    "ConductEnterprise1995": [
+      {
+        "status": "translation",
+        "text": "第二十六条第四款（1995年版）。经营活动自由的权利"
+      }
+    ],
+    "ConstitutionComplianceDuty": [
+      {
+        "status": "translation",
+        "text": "第三十六条第一款。每个人有义务遵守共和国宪法和立法，尊重他人的权利、自由、荣誉和尊严"
+      }
+    ],
+    "ConstitutionComplianceDuty1995": [
+      {
+        "status": "translation",
+        "text": "第三十四条第一款（1995年版）。每个人有义务遵守宪法和立法，尊重他人的权利和尊严"
+      }
+    ],
+    "ContinuedDetentionBarredWithoutCourtDecision": [
+      {
+        "status": "translation",
+        "text": "第十八条第二款。无法院裁判的，禁止超过法律规定期限的拘留"
+      }
+    ],
+    "ContinuedDetentionBarredWithoutCourtDecision/unless/0": [
+      {
+        "status": "translation",
+        "text": "第十八条第二款。无法院裁判的，禁止超过法律规定期限的拘留"
+      }
+    ],
+    "ContinuedDetentionProhibition": [
+      {
+        "status": "translation",
+        "text": "第十八条第二款。无法院裁判，不得对人科以超过法律规定期限的拘留"
+      }
+    ],
+    "CoreRight": [
+      {
+        "status": "translation",
+        "text": "2026年宪法不允许限制的权利或者自由"
+      }
+    ],
+    "CoreRight1995": [
+      {
+        "status": "translation",
+        "text": "1995年宪法不允许限制的权利或者自由"
+      }
+    ],
+    "CoreRightsRestrictionImmunity": [
+      {
+        "status": "translation",
+        "text": "第四十一条第三款。不可限制的权利核心"
+      }
+    ],
+    "CoreRightsRestrictionImmunity1995": [
+      {
+        "status": "translation",
+        "text": "第三十九条第三款（1995年版）。第十一条、第十三条至第十五条、第十六条第一款、第十七条、第十九条、第二十二条和第二十六条第二款所定权利，在任何情形下均不受限制"
+      }
+    ],
+    "CounselFromDetentionDuty": [
+      {
+        "status": "translation",
+        "text": "第十八条第四款。被拘留人、犯罪嫌疑人、被告人自被拘留之时起有权获得律师帮助"
+      }
+    ],
+    "CounselFromDetentionDuty1995": [
+      {
+        "status": "translation",
+        "text": "第十六条第三款（1995年版）。自被拘留、逮捕或者被提出指控之时起有权获得律师帮助"
+      }
+    ],
+    "CourtOrderRequiredForContinuedDetention": [
+      {
+        "status": "translation",
+        "text": "第十八条第二款。无法院裁判，不得对人科以超过法律规定期限的拘留"
+      }
+    ],
+    "DeathPenaltyImmunity": [
+      {
+        "status": "translation",
+        "text": "第十七条第三款。禁止死刑"
+      }
+    ],
+    "DeathPenaltyImmunity1995": [
+      {
+        "status": "translation",
+        "text": "第十五条第二款（1995年版）。禁止死刑"
+      }
+    ],
+    "DeathPenaltyProhibition": [
+      {
+        "status": "translation",
+        "text": "第十七条第三款。禁止死刑"
+      }
+    ],
+    "DeclareNationalIdentity": [
+      {
+        "status": "translation",
+        "text": "第二十二条第一款。每个人有权确定、表明或者不表明其民族归属"
+      }
+    ],
+    "DeclareNationalPartyReligiousIdentity1995": [
+      {
+        "status": "translation",
+        "text": "第十九条第一款（1995年版）。每个人有权确定并表明或者不表明其民族、党派和宗教归属"
+      }
+    ],
+    "DefenceDuty": [
+      {
+        "status": "translation",
+        "text": "第三十九条第一款。保卫哈萨克斯坦共和国是其每个公民的神圣天职和义务"
+      }
+    ],
+    "DefenceDuty1995": [
+      {
+        "status": "translation",
+        "text": "第三十六条（1995年版）。保卫共和国是其每个公民的神圣天职和义务"
+      }
+    ],
+    "DefendKazakhstan": [
+      {
+        "status": "translation",
+        "text": "第三十九条第一款。保卫哈萨克斯坦共和国是其每个公民的神圣天职和义务"
+      }
+    ],
+    "DefendKazakhstan1995": [
+      {
+        "status": "translation",
+        "text": "第三十六条（1995年版）。保卫共和国是其每个公民的神圣天职和义务"
+      }
+    ],
+    "DepriveCitizenship": [
+      {
+        "status": "translation",
+        "text": "第十三条第二款。剥夺国籍只能由法院就恐怖主义犯罪或者对共和国国家利益造成其他重大损害的行为作出裁判"
+      }
+    ],
+    "DepriveCitizenship1995": [
+      {
+        "status": "translation",
+        "text": "第十条第二款（1995年版）。剥夺国籍只能由法院就恐怖主义犯罪或者对生死攸关利益造成其他重大损害的行为作出裁判"
+      }
+    ],
+    "Detention": [
+      {
+        "status": "translation",
+        "text": "拘留、逮捕或者羁押"
+      }
+    ],
+    "DetentionBeyond72HoursImmunity1995": [
+      {
+        "status": "translation",
+        "text": "第十六条第二款（1995年版）。未经法院批准的拘留不得超过七十二小时"
+      }
+    ],
+    "DetentionBeyondStatutoryLimitImmunity": [
+      {
+        "status": "translation",
+        "text": "第十八条第二款。无法院裁判，不得科以超过法律规定期限的拘留"
+      }
+    ],
+    "DignityImmunity": [
+      {
+        "status": "translation",
+        "text": "第二十条第一款。人的荣誉和尊严不可侵犯并受法律保护"
+      }
+    ],
+    "DignityImmunity1995": [
+      {
+        "status": "translation",
+        "text": "第十七条第一款（1995年版）。人的尊严不可侵犯"
+      }
+    ],
+    "DignityInfringementProhibition": [
+      {
+        "status": "translation",
+        "text": "第二十条第一款。人的荣誉和尊严不可侵犯并受法律保护"
+      }
+    ],
+    "DignityInviolable": [
+      {
+        "status": "translation",
+        "text": "第二十条第一款。人的荣誉和尊严不可侵犯并受法律保护"
+      }
+    ],
+    "DignityInviolable1995": [
+      {
+        "status": "translation",
+        "text": "第十七条第一款（1995年版）。人的尊严不可侵犯"
+      }
+    ],
+    "DiscriminationProhibition": [
+      {
+        "status": "translation",
+        "text": "第十六条第二款。任何人不得因所列举的以及任何其他情况而受到歧视"
+      }
+    ],
+    "Document": [
+      {
+        "status": "translation",
+        "text": "涉及个人权利和利益的文件"
+      }
+    ],
+    "EducationInstitution": [
+      {
+        "status": "translation",
+        "text": "教育机构"
+      }
+    ],
+    "EducationStandardsCompliance": [
+      {
+        "status": "translation",
+        "text": "第三十三条第四款。教育机构的活动符合普遍强制性标准"
+      }
+    ],
+    "EducationStandardsCompliance1995": [
+      {
+        "status": "translation",
+        "text": "第三十条第四款（1995年版）。任何教育机构的活动均应当符合普遍强制性标准"
+      }
+    ],
+    "EqualityImmunity": [
+      {
+        "status": "translation",
+        "text": "第十六条第二款。任何人不得因出身、地位、性别、种族、民族、语言、宗教态度、信念、居住地以及任何其他情况而受到歧视"
+      }
+    ],
+    "EqualityImmunity1995": [
+      {
+        "status": "translation",
+        "text": "第十四条（1995年版）。法律和法院面前人人平等；不允许歧视"
+      }
+    ],
+    "ExerciseFreedomOfConscience": [
+      {
+        "status": "translation",
+        "text": "第二十五条第一款。每个人有信仰自由的权利"
+      }
+    ],
+    "ExerciseFreedomOfConscience1995": [
+      {
+        "status": "translation",
+        "text": "第二十二条第一款（1995年版）。每个人有信仰自由的权利"
+      }
+    ],
+    "ExitKazakhstan": [
+      {
+        "status": "translation",
+        "text": "第二十四条第二款。每个人有权离开哈萨克斯坦共和国国境"
+      }
+    ],
+    "ExitKazakhstan1995": [
+      {
+        "status": "translation",
+        "text": "第二十一条第二款（1995年版）。每个人有权离开共和国国境"
+      }
+    ],
+    "ExitKazakhstanLiberty": [
+      {
+        "status": "translation",
+        "text": "第二十四条第二款。每个人有权离开哈萨克斯坦共和国国境"
+      }
+    ],
+    "ExitKazakhstanLiberty1995": [
+      {
+        "status": "translation",
+        "text": "第二十一条第二款（1995年版）。每个人有权离开共和国国境"
+      }
+    ],
+    "ExtraditeUnderTreaty": [
+      {
+        "status": "translation",
+        "text": "第十四条第一款。共和国国际条约有规定的，可以引渡公民"
+      }
+    ],
+    "ExtraditeUnderTreaty1995": [
+      {
+        "status": "translation",
+        "text": "第十一条第一款（1995年版）。共和国国际条约有规定的，可以引渡"
+      }
+    ],
+    "ForcedLabourBarredWithoutBasis": [
+      {
+        "status": "translation",
+        "text": "第二十七条第一款。无有罪判决的法院裁判，且不处于紧急状态或者战争状态的，禁止强迫劳动"
+      }
+    ],
+    "ForcedLabourBarredWithoutBasis/unless/0": [
+      {
+        "status": "translation",
+        "text": "第二十七条第一款。无有罪判决的法院裁判，且不处于紧急状态或者战争状态的，禁止强迫劳动"
+      }
+    ],
+    "ForcedLabourOnJudicialOrEmergencyBasis": [
+      {
+        "status": "translation",
+        "text": "第二十七条第一款。依有罪判决的法院裁判或者在紧急状态或者战争状态下，允许强制劳动"
+      }
+    ],
+    "ForcedLabourOnlyOnJudicialOrEmergencyBasis1995": [
+      {
+        "status": "translation",
+        "text": "第二十四条第一款（1995年版）。强制劳动只能依法院裁判或者在紧急状态或者战争状态下适用"
+      }
+    ],
+    "ForcedLabourProhibition": [
+      {
+        "status": "translation",
+        "text": "第二十七条第一款。不允许在宪法所列根据之外实行强制劳动"
+      }
+    ],
+    "ForeignCitizenshipNotRecognized": [
+      {
+        "status": "translation",
+        "text": "第十三条第三款。哈萨克斯坦共和国公民不得具有双重或者多重国籍"
+      }
+    ],
+    "ForeignCitizenshipNotRecognized1995": [
+      {
+        "status": "translation",
+        "text": "第十条第三款（1995年版）。不承认共和国公民具有他国国籍"
+      }
+    ],
+    "ForeignCitizenshipTerminatesCitizenship": [
+      {
+        "status": "translation",
+        "text": "第十三条第三款。具有他国国籍是终止哈萨克斯坦共和国国籍的根据"
+      }
+    ],
+    "ForeignerEnjoysCitizenRightsOnlyWhereProvided": [
+      {
+        "status": "translation",
+        "text": "第十五条第四款。外国人和无国籍人在宪法、法律和条约规定的情形下享有公民的权利"
+      }
+    ],
+    "ForeignerEnjoysCitizenRightsUnlessOtherwise1995": [
+      {
+        "status": "translation",
+        "text": "第十二条第四款（1995年版）。除另有规定外，外国人和无国籍人享有公民的权利"
+      }
+    ],
+    "FreeCompetitiveHigherEducationDuty1995": [
+      {
+        "status": "translation",
+        "text": "第三十条第二款（1995年版）。有权以竞争方式在国立高等院校接受免费高等教育"
+      }
+    ],
+    "FreeLegalAidDuty1995": [
+      {
+        "status": "translation",
+        "text": "第十三条第三款（1995年版）。在法律规定的情形下，免费提供法律帮助"
+      }
+    ],
+    "FreeSecondaryEducationDuty": [
+      {
+        "status": "translation",
+        "text": "第三十三条第一款。在国立教育机构接受免费中等教育"
+      }
+    ],
+    "FreeSecondaryEducationDuty1995": [
+      {
+        "status": "translation",
+        "text": "第三十条第一款（1995年版）。保障公民在国立教育机构接受免费中等教育"
+      }
+    ],
+    "FreedomOfAssociation": [
+      {
+        "status": "translation",
+        "text": "第二十六条第一款。结社自由"
+      }
+    ],
+    "FreedomOfAssociation1995": [
+      {
+        "status": "translation",
+        "text": "第二十三条第一款（1995年版）。公民享有结社自由的权利"
+      }
+    ],
+    "FreedomOfConscienceLiberty": [
+      {
+        "status": "translation",
+        "text": "第二十五条第一款。每个人有信仰自由的权利"
+      }
+    ],
+    "FreedomOfConscienceLiberty1995": [
+      {
+        "status": "translation",
+        "text": "第二十二条第一款（1995年版）。每个人有信仰自由的权利"
+      }
+    ],
+    "FreedomOfEnterpriseLiberty": [
+      {
+        "status": "translation",
+        "text": "第二十九条第四款。哈萨克斯坦共和国保障经营活动自由的权利"
+      }
+    ],
+    "FreedomOfEnterpriseLiberty1995": [
+      {
+        "status": "translation",
+        "text": "第二十六条第四款（1995年版）。经营活动自由的权利"
+      }
+    ],
+    "FreedomOfLabourLiberty": [
+      {
+        "status": "translation",
+        "text": "第二十七条第一款。劳动权以及自由选择活动种类和职业的权利"
+      }
+    ],
+    "FreedomOfLabourLiberty1995": [
+      {
+        "status": "translation",
+        "text": "第二十四条第一款（1995年版）。劳动自由以及自由选择活动种类和职业的权利"
+      }
+    ],
+    "FreedomOfMovement": [
+      {
+        "status": "translation",
+        "text": "第二十四条第一款。合法处于哈萨克斯坦境内的人的迁徙自由"
+      }
+    ],
+    "FreedomOfMovement1995": [
+      {
+        "status": "translation",
+        "text": "第二十一条第一款（1995年版）。合法处于共和国境内的人的迁徙和选择居住地自由"
+      }
+    ],
+    "GuaranteeAnnualPaidLeave1995": [
+      {
+        "status": "translation",
+        "text": "第二十四条第四款（1995年版）。依劳动合同工作的人享有带薪年休假的保障"
+      }
+    ],
+    "GuaranteedFreeMedicalCareDuty1995": [
+      {
+        "status": "translation",
+        "text": "第二十九条第二款（1995年版）。公民有权免费获得保障范围内的医疗帮助"
+      }
+    ],
+    "HeritageProtectionDuty": [
+      {
+        "status": "translation",
+        "text": "第四十条。共和国公民有义务爱护历史和文化遗产"
+      }
+    ],
+    "HeritageProtectionDuty1995": [
+      {
+        "status": "translation",
+        "text": "第三十七条（1995年版）。公民有义务爱护历史和文化遗产"
+      }
+    ],
+    "HomeEntryProhibition": [
+      {
+        "status": "translation",
+        "text": "第二十八条第一款。住宅不可侵犯；进入、查看和搜查住宅只能在法律规定的情形下依法定程序进行"
+      }
+    ],
+    "HomeImmunity": [
+      {
+        "status": "translation",
+        "text": "第二十八条第一款。住宅不可侵犯；进入住宅只能在法律规定的情形下依法定程序进行"
+      }
+    ],
+    "HomeImmunity1995": [
+      {
+        "status": "translation",
+        "text": "第二十五条第一款（1995年版）。住宅不可侵犯；剥夺住宅只能依法院裁判"
+      }
+    ],
+    "HomeInviolability": [
+      {
+        "status": "translation",
+        "text": "第二十八条第一款。住宅不可侵犯；进入住宅只能在法律规定的情形下依法定程序进行"
+      }
+    ],
+    "HomeInviolability1995": [
+      {
+        "status": "translation",
+        "text": "第二十五条第一款（1995年版）。住宅不可侵犯；剥夺住宅只能依法院裁判"
+      }
+    ],
+    "HousingNeed": [
+      {
+        "status": "translation",
+        "text": "住房需求"
+      }
+    ],
+    "InterethnicAccordViolationUnconstitutional": [
+      {
+        "status": "translation",
+        "text": "第四十一条第二款。可能破坏族际和教际和睦的行为被认定为违宪"
+      }
+    ],
+    "InterethnicAccordViolationUnconstitutional1995": [
+      {
+        "status": "translation",
+        "text": "第三十九条第二款（1995年版）。可能破坏民族间和教派间和睦的任何行为均被认定为违宪"
+      }
+    ],
+    "JoinAssociation": [
+      {
+        "status": "translation",
+        "text": "第二十六条第一款。结社自由"
+      }
+    ],
+    "JoinAssociation1995": [
+      {
+        "status": "translation",
+        "text": "第二十三条第一款（1995年版）。公民享有结社自由的权利"
+      }
+    ],
+    "LabourDisputeLiberty": [
+      {
+        "status": "translation",
+        "text": "第二十七条第三款。承认以法律规定的解决方式进行个人和集体劳动争议的权利"
+      }
+    ],
+    "LegalAidCase": [
+      {
+        "status": "translation",
+        "text": "提供法律帮助的情形"
+      }
+    ],
+    "Legislature": [
+      {
+        "status": "translation",
+        "text": "立法机关"
+      }
+    ],
+    "MoveWithinKazakhstan": [
+      {
+        "status": "translation",
+        "text": "第二十四条第一款。合法处于哈萨克斯坦境内的人的迁徙自由"
+      }
+    ],
+    "MoveWithinKazakhstan1995": [
+      {
+        "status": "translation",
+        "text": "第二十一条第一款（1995年版）。合法处于共和国境内的人的迁徙和选择居住地自由"
+      }
+    ],
+    "MovementRestriction": [
+      {
+        "status": "translation",
+        "text": "迁徙自由的限制"
+      }
+    ],
+    "NationalIdentityLiberty": [
+      {
+        "status": "translation",
+        "text": "第二十二条第一款。每个人有权确定、表明或者不表明其民族归属"
+      }
+    ],
+    "NationalPartyAndReligiousIdentityLiberty1995": [
+      {
+        "status": "translation",
+        "text": "第十九条第一款（1995年版）。每个人有权确定并表明或者不表明其民族、党派和宗教归属"
+      }
+    ],
+    "NativeLanguageAndCultureLiberty": [
+      {
+        "status": "translation",
+        "text": "第二十二条第二款。使用母语和本民族文化，自由选择交际、教养、教育和创作语言的权利"
+      }
+    ],
+    "NativeLanguageAndCultureLiberty1995": [
+      {
+        "status": "translation",
+        "text": "第十九条第二款（1995年版）。使用母语和本民族文化、自由选择交际语言的权利"
+      }
+    ],
+    "NatureProtectionDuty": [
+      {
+        "status": "translation",
+        "text": "第三十七条第一款。共和国公民有义务保护自然并爱惜自然财富"
+      }
+    ],
+    "NatureProtectionDuty1995": [
+      {
+        "status": "translation",
+        "text": "第三十八条（1995年版）。公民有义务保护自然并爱惜自然财富"
+      }
+    ],
+    "NoCensorship": [
+      {
+        "status": "translation",
+        "text": "第二十三条第五款。禁止新闻检查"
+      }
+    ],
+    "NoCensorship1995": [
+      {
+        "status": "translation",
+        "text": "第二十条第一款（1995年版）。禁止新闻检查"
+      }
+    ],
+    "NoDeathPenalty": [
+      {
+        "status": "translation",
+        "text": "第十七条第三款。禁止死刑"
+      }
+    ],
+    "NoDeathPenalty1995": [
+      {
+        "status": "translation",
+        "text": "第十五条第二款（1995年版）。禁止死刑"
+      }
+    ],
+    "NoDiscrimination": [
+      {
+        "status": "translation",
+        "text": "第十六条第二款。任何人不得因出身、地位、性别、种族、民族、语言、宗教态度、信念、居住地以及任何其他情况而受到歧视"
+      }
+    ],
+    "NoDiscrimination1995": [
+      {
+        "status": "translation",
+        "text": "第十四条（1995年版）。法律和法院面前人人平等；不允许歧视"
+      }
+    ],
+    "NoTorture": [
+      {
+        "status": "translation",
+        "text": "第二十条第二款。任何人不得遭受酷刑、暴力以及其他残忍或者有辱人格的待遇或者处罚"
+      }
+    ],
+    "NoTorture1995": [
+      {
+        "status": "translation",
+        "text": "第十七条第二款（1995年版）。任何人不得遭受酷刑和残忍待遇"
+      }
+    ],
+    "NonDerogableCore": [
+      {
+        "status": "translation",
+        "text": "第四十一条第三款。不可限制的权利核心"
+      }
+    ],
+    "NonDerogableCore1995": [
+      {
+        "status": "translation",
+        "text": "第三十九条第三款（1995年版）。第十一条、第十三条至第十五条、第十六条第一款、第十七条、第十九条、第二十二条和第二十六条第二款所定权利，在任何情形下均不受限制"
+      }
+    ],
+    "NonExtradition": [
+      {
+        "status": "translation",
+        "text": "第十四条第一款。哈萨克斯坦共和国公民不得引渡给外国"
+      }
+    ],
+    "NonExtradition1995": [
+      {
+        "status": "translation",
+        "text": "第十一条第一款（1995年版）。共和国公民不得引渡给外国"
+      }
+    ],
+    "Official": [
+      {
+        "status": "translation",
+        "text": "公职人员"
+      }
+    ],
+    "OfficialConcealmentLiability": [
+      {
+        "status": "translation",
+        "text": "第三十七条第三款。公职人员隐瞒危及人的生命健康和环境的事实与情况的，承担责任"
+      }
+    ],
+    "OfficialConcealmentLiability1995": [
+      {
+        "status": "translation",
+        "text": "第三十一条第二款（1995年版）。公职人员隐瞒危及人的生命健康的事实的，承担责任"
+      }
+    ],
+    "Parent": [
+      {
+        "status": "translation",
+        "text": "父母"
+      }
+    ],
+    "ParentCareDuty": [
+      {
+        "status": "translation",
+        "text": "第三十条第三款。抚养和教育子女是父母的自然权利和义务"
+      }
+    ],
+    "ParentCareDuty1995": [
+      {
+        "status": "translation",
+        "text": "第二十七条第二款（1995年版）。抚养和教育子女是父母的自然权利和义务"
+      }
+    ],
+    "ParticipateInPeacefulAssembly": [
+      {
+        "status": "translation",
+        "text": "第三十四条。公民的和平集会权利"
+      }
+    ],
+    "ParticipateInStateGovernance": [
+      {
+        "status": "translation",
+        "text": "第三十五条第一款。参与管理国家事务的权利"
+      }
+    ],
+    "ParticipateInStateGovernance1995": [
+      {
+        "status": "translation",
+        "text": "第三十三条第一款（1995年版）。参与管理国家事务并向国家机关提出申诉的权利"
+      }
+    ],
+    "ParticipateInUnarmedAssembly1995": [
+      {
+        "status": "translation",
+        "text": "第三十二条（1995年版）。公民有权和平地、不携带武器地集会，举行集会、群众大会、游行、示威和纠察"
+      }
+    ],
+    "PayLawfulTaxes": [
+      {
+        "status": "translation",
+        "text": "第三十八条。缴纳依法设定的税、费和其他强制性缴款是每个人的天职和义务"
+      }
+    ],
+    "PayLawfulTaxes1995": [
+      {
+        "status": "translation",
+        "text": "第三十五条（1995年版）。缴纳依法设定的税、费和其他强制性缴款是每个人的天职和义务"
+      }
+    ],
+    "PeacefulAssemblyLiberty": [
+      {
+        "status": "translation",
+        "text": "第三十四条。公民的和平集会权利"
+      }
+    ],
+    "PeacefulAssemblyLiberty1995": [
+      {
+        "status": "translation",
+        "text": "第三十二条（1995年版）。公民有权和平地、不携带武器地集会，举行集会、群众大会、游行、示威和纠察"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "自然人"
+      }
+    ],
+    "PoliticalMotiveRestrictionProhibited": [
+      {
+        "status": "translation",
+        "text": "第四十一条第三款。不允许以政治动机限制公民的权利和自由"
+      }
+    ],
+    "PoliticalMotiveRestrictionProhibited1995": [
+      {
+        "status": "translation",
+        "text": "第三十九条第三款（1995年版）。不允许以任何形式基于政治动机限制公民的权利和自由"
+      }
+    ],
+    "PreserveHeritage": [
+      {
+        "status": "translation",
+        "text": "第四十条。共和国公民有义务爱护历史和文化遗产"
+      }
+    ],
+    "PreserveHeritage1995": [
+      {
+        "status": "translation",
+        "text": "第三十七条（1995年版）。公民有义务爱护历史和文化遗产"
+      }
+    ],
+    "PresumptionOfInnocence/R2": [
+      {
+        "status": "translation",
+        "text": "第十九条第一款。在其有罪未经生效的法院判决认定之前，任何人均被推定无罪"
+      }
+    ],
+    "PrimaryAndBasicEducationCompulsory": [
+      {
+        "status": "translation",
+        "text": "第三十三条第一款。初等教育和基础中等教育为义务教育"
+      }
+    ],
+    "PrivacyImmunity": [
+      {
+        "status": "translation",
+        "text": "第二十一条第一款。私生活不受侵犯、个人和家庭秘密以及个人数据保护的权利受法律保障"
+      }
+    ],
+    "PrivacyImmunity1995": [
+      {
+        "status": "translation",
+        "text": "第十八条第一款（1995年版）。私生活不受侵犯、个人和家庭秘密"
+      }
+    ],
+    "PrivacyInterferenceProhibition": [
+      {
+        "status": "translation",
+        "text": "第二十一条第一款和第二款。私生活不受侵犯和通信秘密受法律保护；只能在法律规定的情形下依法定程序予以限制"
+      }
+    ],
+    "PrivacyProtection": [
+      {
+        "status": "translation",
+        "text": "第二十一条第一款。私生活不受侵犯、个人和家庭秘密以及个人数据保护的权利受法律保障"
+      }
+    ],
+    "PrivacyProtection1995": [
+      {
+        "status": "translation",
+        "text": "第十八条第一款（1995年版）。私生活不受侵犯、个人和家庭秘密"
+      }
+    ],
+    "ProhibitedPropaganda": [
+      {
+        "status": "translation",
+        "text": "第二十三条第六款。不允许宣扬以暴力改变宪法制度基础、侵害领土完整、战争、仇恨，也不允许煽动此类行为"
+      }
+    ],
+    "ProhibitedPropaganda1995": [
+      {
+        "status": "translation",
+        "text": "第二十条第三款（1995年版）。不允许宣扬或者鼓动以暴力改变宪法制度以及其他所列内容"
+      }
+    ],
+    "PropertyImmunity": [
+      {
+        "status": "translation",
+        "text": "第二十九条第三款。为国家需要强制征收财产，只有在给予等值补偿的条件下方可进行"
+      }
+    ],
+    "PropertyImmunity1995": [
+      {
+        "status": "translation",
+        "text": "第二十六条第三款（1995年版）。强制征收只有在给予等值补偿时方可进行"
+      }
+    ],
+    "ProtectAndPatroniseAbroad": [
+      {
+        "status": "translation",
+        "text": "第十四条第二款。哈萨克斯坦共和国保障其公民在国外受到保护"
+      }
+    ],
+    "ProtectAndPatroniseAbroad1995": [
+      {
+        "status": "translation",
+        "text": "第十一条第二款（1995年版）。共和国保障公民在国外受到保护和庇护"
+      }
+    ],
+    "ProtectNature": [
+      {
+        "status": "translation",
+        "text": "第三十七条第一款。共和国公民有义务保护自然并爱惜自然财富"
+      }
+    ],
+    "ProtectNature1995": [
+      {
+        "status": "translation",
+        "text": "第三十八条（1995年版）。公民有义务保护自然并爱惜自然财富"
+      }
+    ],
+    "ProtectionAndPatronageAbroadDuty": [
+      {
+        "status": "translation",
+        "text": "第十四条第二款。哈萨克斯坦共和国保障其公民在国外受到保护"
+      }
+    ],
+    "ProtectionAndPatronageAbroadDuty1995": [
+      {
+        "status": "translation",
+        "text": "第十一条第二款（1995年版）。共和国保障公民在国外受到保护和庇护"
+      }
+    ],
+    "ProvideAccess": [
+      {
+        "status": "translation",
+        "text": "第二十一条第三款。国家机关、社会团体、公职人员和大众传媒有义务保障每个人查阅涉及其权利和利益的文件"
+      }
+    ],
+    "ProvideAffordableStateHousing1995": [
+      {
+        "status": "translation",
+        "text": "第二十五条第二款（1995年版）。法律规定的类别人员，以可负担的租金从国家住房基金获得住房"
+      }
+    ],
+    "ProvideCitizenAccess1995": [
+      {
+        "status": "translation",
+        "text": "第十八条第三款（1995年版）。保障每个公民查阅涉及其本人的文件"
+      }
+    ],
+    "ProvideCounselAccess": [
+      {
+        "status": "translation",
+        "text": "第十八条第四款。被拘留人、犯罪嫌疑人、被告人自被拘留之时起有权获得律师帮助"
+      }
+    ],
+    "ProvideCounselAccess1995": [
+      {
+        "status": "translation",
+        "text": "第十六条第三款（1995年版）。自被拘留、逮捕或者被提出指控之时起有权获得律师帮助"
+      }
+    ],
+    "ProvideFreeHigherEducation1995": [
+      {
+        "status": "translation",
+        "text": "第三十条第二款（1995年版）。有权以竞争方式在国立高等院校接受免费高等教育"
+      }
+    ],
+    "ProvideFreeLegalAid1995": [
+      {
+        "status": "translation",
+        "text": "第十三条第三款（1995年版）。在法律规定的情形下，免费提供法律帮助"
+      }
+    ],
+    "ProvideFreeSecondaryEducation": [
+      {
+        "status": "translation",
+        "text": "第三十三条第一款。在国立教育机构接受免费中等教育"
+      }
+    ],
+    "ProvideFreeSecondaryEducation1995": [
+      {
+        "status": "translation",
+        "text": "第三十条第一款（1995年版）。保障公民在国立教育机构接受免费中等教育"
+      }
+    ],
+    "ProvideGuaranteedFreeMedicalCare1995": [
+      {
+        "status": "translation",
+        "text": "第二十九条第二款（1995年版）。公民有权免费获得保障范围内的医疗帮助"
+      }
+    ],
+    "ProvideSocialSecurity": [
+      {
+        "status": "translation",
+        "text": "第三十一条第一款。依法定根据享有社会保障"
+      }
+    ],
+    "ProvideSocialSecurity1995": [
+      {
+        "status": "translation",
+        "text": "第二十八条第一款（1995年版）。保障最低工资和最低养老金，并依法定根据享有社会保障"
+      }
+    ],
+    "ProvideStatutoryHousing": [
+      {
+        "status": "translation",
+        "text": "第二十八条第二款。法律规定的需要住房的公民类别，按法律确定的标准获得住房"
+      }
+    ],
+    "ProvideUnemploymentProtection1995": [
+      {
+        "status": "translation",
+        "text": "第二十四条第二款（1995年版）。享有失业社会保护的权利"
+      }
+    ],
+    "ProvideUnpaidMedicalCare": [
+      {
+        "status": "translation",
+        "text": "第三十二条第二款。哈萨克斯坦共和国公民有权获得法律规定的、由其本人无需付费的医疗帮助"
+      }
+    ],
+    "RefrainFromBlockingReturn": [
+      {
+        "status": "translation",
+        "text": "第二十四条第二款。哈萨克斯坦共和国公民有权无阻碍地返回哈萨克斯坦共和国"
+      }
+    ],
+    "RefrainFromCensorship": [
+      {
+        "status": "translation",
+        "text": "第二十三条第五款。禁止新闻检查"
+      }
+    ],
+    "RefrainFromDeathPenalty": [
+      {
+        "status": "translation",
+        "text": "第十七条第三款。禁止死刑"
+      }
+    ],
+    "RefrainFromDetentionBeyondStatutoryPeriod": [
+      {
+        "status": "translation",
+        "text": "第十八条第二款。无法院裁判，不得科以超过法律规定期限的拘留"
+      }
+    ],
+    "RefrainFromDignityInfringement": [
+      {
+        "status": "translation",
+        "text": "第二十条第一款。人的荣誉和尊严不可侵犯并受法律保护"
+      }
+    ],
+    "RefrainFromDiscrimination": [
+      {
+        "status": "translation",
+        "text": "第十六条第二款。任何人不得因所列举的以及任何其他情况而受到歧视"
+      }
+    ],
+    "RefrainFromForcedLabour": [
+      {
+        "status": "translation",
+        "text": "第二十七条第一款。不允许在宪法所列根据之外实行强制劳动"
+      }
+    ],
+    "RefrainFromPrivacyInterference": [
+      {
+        "status": "translation",
+        "text": "第二十一条第一款和第二款。私生活不受侵犯和通信秘密受法律保护；只能在法律规定的情形下依法定程序予以限制"
+      }
+    ],
+    "RefrainFromTorture": [
+      {
+        "status": "translation",
+        "text": "第二十条第二款。任何人不得遭受酷刑、暴力以及其他残忍或者有辱人格的待遇或者处罚"
+      }
+    ],
+    "RefrainFromUncompensatedExpropriation": [
+      {
+        "status": "translation",
+        "text": "第二十九条第三款。为国家需要强制征收财产，只有在给予等值补偿的条件下方可进行"
+      }
+    ],
+    "RefrainFromUnlawfulHomeEntry": [
+      {
+        "status": "translation",
+        "text": "第二十八条第一款。住宅不可侵犯；进入、查看和搜查住宅只能在法律规定的情形下依法定程序进行"
+      }
+    ],
+    "ResolveLabourDispute": [
+      {
+        "status": "translation",
+        "text": "第二十七条第三款。承认以法律规定的解决方式进行个人和集体劳动争议的权利"
+      }
+    ],
+    "RespectConstitutionAndLaw": [
+      {
+        "status": "translation",
+        "text": "第三十六条第一款。每个人有义务遵守共和国宪法和立法，尊重他人的权利、自由、荣誉和尊严"
+      }
+    ],
+    "RespectConstitutionAndLaw1995": [
+      {
+        "status": "translation",
+        "text": "第三十四条第一款（1995年版）。每个人有义务遵守宪法和立法，尊重他人的权利和尊严"
+      }
+    ],
+    "RespectStateSymbols": [
+      {
+        "status": "translation",
+        "text": "第三十六条第二款。每个人有义务尊重哈萨克斯坦共和国的国家标志"
+      }
+    ],
+    "RespectStateSymbols1995": [
+      {
+        "status": "translation",
+        "text": "第三十四条第二款（1995年版）。每个人有义务尊重共和国的国家标志"
+      }
+    ],
+    "RestrictDerogableRight": [
+      {
+        "status": "translation",
+        "text": "第四十一条第一款。权利和自由只能由法律限制，且以保护宪法制度、权利和自由、国家安全、公共秩序、健康和道德所必需的限度为限"
+      }
+    ],
+    "RestrictedOfficePoliticalMembershipIncompatible": [
+      {
+        "status": "translation",
+        "text": "第二十六条第二款。政党和工会成员身份与所列职务不相容"
+      }
+    ],
+    "RestrictedOfficePoliticalMembershipIncompatible1995": [
+      {
+        "status": "translation",
+        "text": "第二十三条第二款（1995年版）。所列公职人员不得加入政党和工会"
+      }
+    ],
+    "Restriction": [
+      {
+        "status": "translation",
+        "text": "由法律设定的对权利和自由的限制"
+      }
+    ],
+    "ReturnBlockProhibition": [
+      {
+        "status": "translation",
+        "text": "第二十四条第二款。哈萨克斯坦共和国公民有权无阻碍地返回哈萨克斯坦共和国"
+      }
+    ],
+    "ReturnToKazakhstan": [
+      {
+        "status": "translation",
+        "text": "第二十四条第二款。哈萨克斯坦共和国公民有权无阻碍地返回哈萨克斯坦共和国"
+      }
+    ],
+    "ReturnToKazakhstanLiberty": [
+      {
+        "status": "translation",
+        "text": "第二十四条第二款。哈萨克斯坦共和国公民有权无阻碍地返回哈萨克斯坦共和国"
+      }
+    ],
+    "RightToStrikeLiberty1995": [
+      {
+        "status": "translation",
+        "text": "第二十四条第三款（1995年版）。承认劳动争议权利，包括罢工权"
+      }
+    ],
+    "RightsExerciseBoundary": [
+      {
+        "status": "translation",
+        "text": "第十五条第五款。权利的行使以他人权利和宪法目的为界限"
+      }
+    ],
+    "RightsExerciseBoundary1995": [
+      {
+        "status": "translation",
+        "text": "第十二条第五款（1995年版）。权利的行使不得侵犯他人权利，不得损害宪法制度和社会道德"
+      }
+    ],
+    "RightsLimitationPower": [
+      {
+        "status": "translation",
+        "text": "第四十一条第一款。权利和自由只能由法律限制，且以保护宪法制度、权利和自由、国家安全、公共秩序、健康和道德所必需的限度为限"
+      }
+    ],
+    "SecondaryEducationCompulsory1995": [
+      {
+        "status": "translation",
+        "text": "第三十条第一款（1995年版）。中等教育为义务教育"
+      }
+    ],
+    "SeventyTwoHourDetentionLimit1995": [
+      {
+        "status": "translation",
+        "text": "第十六条第二款（1995年版）。未经法院批准的拘留不得超过七十二小时"
+      }
+    ],
+    "SocialSecurityDuty": [
+      {
+        "status": "translation",
+        "text": "第三十一条第一款。依法定根据享有社会保障"
+      }
+    ],
+    "SocialSecurityDuty1995": [
+      {
+        "status": "translation",
+        "text": "第二十八条第一款（1995年版）。保障最低工资和最低养老金，并依法定根据享有社会保障"
+      }
+    ],
+    "StateAct": [
+      {
+        "status": "translation",
+        "text": "国家机关的文件"
+      }
+    ],
+    "StateAuthority": [
+      {
+        "status": "translation",
+        "text": "国家机关或者公职人员"
+      }
+    ],
+    "StateCompensationForUnlawfulHarm": [
+      {
+        "status": "translation",
+        "text": "第十五条第六款。国家赔偿其机关非法行为造成的损害"
+      }
+    ],
+    "StateGovernanceParticipationLiberty": [
+      {
+        "status": "translation",
+        "text": "第三十五条第一款。参与管理国家事务的权利"
+      }
+    ],
+    "StateGovernanceParticipationLiberty1995": [
+      {
+        "status": "translation",
+        "text": "第三十三条第一款（1995年版）。参与管理国家事务并向国家机关提出申诉的权利"
+      }
+    ],
+    "StateSymbolsRespectDuty": [
+      {
+        "status": "translation",
+        "text": "第三十六条第二款。每个人有义务尊重哈萨克斯坦共和国的国家标志"
+      }
+    ],
+    "StateSymbolsRespectDuty1995": [
+      {
+        "status": "translation",
+        "text": "第三十四条第二款（1995年版）。每个人有义务尊重共和国的国家标志"
+      }
+    ],
+    "StatutoryHousingProvisionDuty": [
+      {
+        "status": "translation",
+        "text": "第二十八条第二款。法律规定的需要住房的公民类别，按法律确定的标准获得住房"
+      }
+    ],
+    "StatutoryMovementRestriction": [
+      {
+        "status": "translation",
+        "text": "第二十四条。迁徙或者出境的限制只能由法律设定"
+      }
+    ],
+    "StatutoryMovementRestriction1995": [
+      {
+        "status": "translation",
+        "text": "第二十一条第一款（1995年版）。迁徙的限制只能在法律规定的情形下设定"
+      }
+    ],
+    "Strike": [
+      {
+        "status": "translation",
+        "text": "罢工"
+      }
+    ],
+    "Strike1995": [
+      {
+        "status": "translation",
+        "text": "第二十四条第三款（1995年版）。承认劳动争议权利，包括罢工权"
+      }
+    ],
+    "TaxPaymentDuty": [
+      {
+        "status": "translation",
+        "text": "第三十八条。缴纳依法设定的税、费和其他强制性缴款是每个人的天职和义务"
+      }
+    ],
+    "TaxPaymentDuty1995": [
+      {
+        "status": "translation",
+        "text": "第三十五条（1995年版）。缴纳依法设定的税、费和其他强制性缴款是每个人的天职和义务"
+      }
+    ],
+    "TortureImmunity": [
+      {
+        "status": "translation",
+        "text": "第二十条第二款。任何人不得遭受酷刑、暴力以及其他残忍或者有辱人格的待遇或者处罚"
+      }
+    ],
+    "TortureImmunity1995": [
+      {
+        "status": "translation",
+        "text": "第十七条第二款（1995年版）。任何人不得遭受酷刑和残忍待遇"
+      }
+    ],
+    "TortureProhibition": [
+      {
+        "status": "translation",
+        "text": "第二十条第二款。任何人不得遭受酷刑、暴力以及其他残忍或者有辱人格的待遇或者处罚"
+      }
+    ],
+    "TreatyExtraditionPower": [
+      {
+        "status": "translation",
+        "text": "第十四条第一款。共和国国际条约有规定的，可以引渡公民"
+      }
+    ],
+    "TreatyExtraditionPower1995": [
+      {
+        "status": "translation",
+        "text": "第十一条第一款（1995年版）。共和国国际条约有规定的，可以引渡"
+      }
+    ],
+    "UncompensatedExpropriationProhibition": [
+      {
+        "status": "translation",
+        "text": "第二十九条第三款。为国家需要强制征收财产，只有在给予等值补偿的条件下方可进行"
+      }
+    ],
+    "UnemploymentProtectionDuty1995": [
+      {
+        "status": "translation",
+        "text": "第二十四条第二款（1995年版）。享有失业社会保护的权利"
+      }
+    ],
+    "UnfairCompetitionProhibited": [
+      {
+        "status": "translation",
+        "text": "第二十九条第四款。禁止不正当竞争"
+      }
+    ],
+    "UnfairCompetitionProhibited1995": [
+      {
+        "status": "translation",
+        "text": "第二十六条第四款（1995年版）。禁止不正当竞争"
+      }
+    ],
+    "UnobstructedReturnToKazakhstan": [
+      {
+        "status": "translation",
+        "text": "第二十四条第二款。公民有权无阻碍地返回哈萨克斯坦"
+      }
+    ],
+    "UnobstructedReturnToKazakhstan1995": [
+      {
+        "status": "translation",
+        "text": "第二十一条第二款（1995年版）。公民有权无阻碍地返回共和国"
+      }
+    ],
+    "UnpaidMedicalCareDuty": [
+      {
+        "status": "translation",
+        "text": "第三十二条第二款。哈萨克斯坦共和国公民有权获得法律规定的、由其本人无需付费的医疗帮助"
+      }
+    ],
+    "UseNativeLanguageAndCulture": [
+      {
+        "status": "translation",
+        "text": "第二十二条第二款。使用母语和本民族文化，自由选择交际、教养、教育和创作语言的权利"
+      }
+    ],
+    "UseNativeLanguageAndCulture1995": [
+      {
+        "status": "translation",
+        "text": "第十九条第二款（1995年版）。使用母语和本民族文化、自由选择交际语言的权利"
+      }
+    ],
+    "VotingAndReferendumDisqualification/alt/1": [
+      {
+        "status": "translation",
+        "text": "第三十五条第三款。不得参加选举和全民公决事由的封闭列举"
+      }
+    ],
+    "VotingAndReferendumDisqualification/alt/2": [
+      {
+        "status": "translation",
+        "text": "第三十五条第三款。不得参加选举和全民公决事由的封闭列举"
+      }
+    ],
+    "VotingAndReferendumDisqualification1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "第三十三条第三款（1995年版）。经法院宣告无行为能力的人和被羁押于剥夺自由场所的人无权选举和参加全民公决"
+      }
+    ],
+    "VotingAndReferendumDisqualification1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "第三十三条第三款（1995年版）。经法院宣告无行为能力的人和被羁押于剥夺自由场所的人无权选举和参加全民公决"
+      }
+    ],
+    "abroad": [
+      {
+        "status": "translation",
+        "text": "该人处于共和国境外"
+      }
+    ],
+    "access_provided": [
+      {
+        "status": "translation",
+        "text": "已向该人提供查阅涉及其本人文件的机会"
+      }
+    ],
+    "accused": [
+      {
+        "status": "translation",
+        "text": "该人被指控实施犯罪"
+      }
+    ],
+    "action_harms_interethnic_or_interconfessional_accord": [
+      {
+        "status": "translation",
+        "text": "该行为损害民族间和教派间的和睦"
+      }
+    ],
+    "action_unconstitutional": [
+      {
+        "status": "translation",
+        "text": "该行为在宪法上不被允许"
+      }
+    ],
+    "adult_capable_child_of": [
+      {
+        "status": "translation",
+        "text": "该父母的有劳动能力的成年子女"
+      }
+    ],
+    "affordable_state_housing_provided": [
+      {
+        "status": "translation",
+        "text": "已以可负担的租金向该人提供国家住房基金的住房"
+      }
+    ],
+    "annual_paid_leave_provided": [
+      {
+        "status": "translation",
+        "text": "已向该人提供带薪年休假"
+      }
+    ],
+    "appeal_right_granted": [
+      {
+        "status": "translation",
+        "text": "已赋予被拘留人申诉权"
+      }
+    ],
+    "arrest_constitutionally_admissible": [
+      {
+        "status": "translation",
+        "text": "逮捕或者羁押在宪法上可以允许"
+      }
+    ],
+    "arrest_or_custody": [
+      {
+        "status": "translation",
+        "text": "已适用逮捕或者羁押"
+      }
+    ],
+    "assembly_participation_action": [
+      {
+        "status": "translation",
+        "text": "该人参加集会"
+      }
+    ],
+    "assembly_restriction": [
+      {
+        "status": "translation",
+        "text": "该项限制针对该集会"
+      }
+    ],
+    "assembly_restriction_constitutionally_valid": [
+      {
+        "status": "translation",
+        "text": "对和平集会权利的限制在宪法上可以允许"
+      }
+    ],
+    "assembly_restriction_established_by_law": [
+      {
+        "status": "translation",
+        "text": "对和平集会权利的限制由法律设定"
+      }
+    ],
+    "assembly_restriction_has_constitutional_goal": [
+      {
+        "status": "translation",
+        "text": "对和平集会权利的限制具有宪法目的"
+      }
+    ],
+    "association": [
+      {
+        "status": "translation",
+        "text": "该团体为公民的社会团体"
+      }
+    ],
+    "association_membership_action": [
+      {
+        "status": "translation",
+        "text": "该人是该团体的成员"
+      }
+    ],
+    "censorship_attempt": [
+      {
+        "status": "translation",
+        "text": "国家机关实施新闻检查"
+      }
+    ],
+    "censorship_imposed": [
+      {
+        "status": "translation",
+        "text": "已适用新闻检查"
+      }
+    ],
+    "child_care_provided": [
+      {
+        "status": "translation",
+        "text": "父母抚养并教育该子女"
+      }
+    ],
+    "citizen": [
+      {
+        "status": "translation",
+        "text": "该人是哈萨克斯坦共和国公民"
+      }
+    ],
+    "citizen_access_provided": [
+      {
+        "status": "translation",
+        "text": "已向该公民提供查阅涉及其本人文件的机会"
+      }
+    ],
+    "citizenship_deprivation_decision": [
+      {
+        "status": "translation",
+        "text": "国家机关作出剥夺国籍的决定"
+      }
+    ],
+    "citizenship_deprived": [
+      {
+        "status": "translation",
+        "text": "该人已被剥夺共和国国籍"
+      }
+    ],
+    "civil_service_requirement": [
+      {
+        "status": "translation",
+        "text": "该要求系对进入国家公务的人提出"
+      }
+    ],
+    "civil_service_requirement_admissible": [
+      {
+        "status": "translation",
+        "text": "对进入国家公务人员的该项要求在宪法上可以允许"
+      }
+    ],
+    "collective_labour_dispute": [
+      {
+        "status": "translation",
+        "text": "存在集体劳动争议"
+      }
+    ],
+    "compulsory_education_applies": [
+      {
+        "status": "translation",
+        "text": "该级别教育为义务教育"
+      }
+    ],
+    "concealed_life_threatening_facts": [
+      {
+        "status": "translation",
+        "text": "公职人员隐瞒了危及人的生命健康的事实和情况"
+      }
+    ],
+    "conscience_action": [
+      {
+        "status": "translation",
+        "text": "该人行使信仰自由"
+      }
+    ],
+    "constitution_or_law_violated": [
+      {
+        "status": "translation",
+        "text": "该人违反了共和国宪法或者法律"
+      }
+    ],
+    "constitutional_health_guarantee": [
+      {
+        "status": "translation",
+        "text": "宪法保障健康保护"
+      }
+    ],
+    "constitutional_health_guarantee_1995": [
+      {
+        "status": "translation",
+        "text": "1995年宪法保障健康保护"
+      }
+    ],
+    "constitutional_labor_guarantee": [
+      {
+        "status": "translation",
+        "text": "宪法保障劳动条件、报酬和休息"
+      }
+    ],
+    "constitutional_marriage_protection": [
+      {
+        "status": "translation",
+        "text": "宪法保护婚姻、家庭、母亲、父亲和儿童"
+      }
+    ],
+    "constitutional_marriage_protection_1995": [
+      {
+        "status": "translation",
+        "text": "1995年宪法保护婚姻、家庭、母亲、父亲和儿童"
+      }
+    ],
+    "constitutional_personal_data_guarantee": [
+      {
+        "status": "translation",
+        "text": "宪法保障个人数据的保护"
+      }
+    ],
+    "constitutional_personal_data_guarantee_1995": [
+      {
+        "status": "translation",
+        "text": "1995年宪法保障个人数据的保护"
+      }
+    ],
+    "continued_detention_attempt": [
+      {
+        "status": "translation",
+        "text": "国家机关继续对该人予以羁押"
+      }
+    ],
+    "continued_detention_barred": [
+      {
+        "status": "translation",
+        "text": "超过法律规定期限的拘留被禁止：不存在法院裁判"
+      }
+    ],
+    "corruption_offence_confirmed_by_court": [
+      {
+        "status": "translation",
+        "text": "法院确认该人实施了腐败违法行为"
+      }
+    ],
+    "counsel_access_provided": [
+      {
+        "status": "translation",
+        "text": "已为被拘留人提供与律师接触的机会"
+      }
+    ],
+    "court_declared_incapable": [
+      {
+        "status": "translation",
+        "text": "该人经法院宣告无行为能力"
+      }
+    ],
+    "court_ordered_citizenship_deprivation": [
+      {
+        "status": "translation",
+        "text": "剥夺国籍系依法院裁判作出"
+      }
+    ],
+    "court_sanction_obtained": [
+      {
+        "status": "translation",
+        "text": "已取得法院的批准"
+      }
+    ],
+    "death_penalty_attempt": [
+      {
+        "status": "translation",
+        "text": "国家机关判处死刑"
+      }
+    ],
+    "death_penalty_imposed": [
+      {
+        "status": "translation",
+        "text": "已判处死刑"
+      }
+    ],
+    "defence_duty_unperformed": [
+      {
+        "status": "translation",
+        "text": "该公民未履行保卫共和国的义务"
+      }
+    ],
+    "derogable_right_target": [
+      {
+        "status": "translation",
+        "text": "可限制的权利允许予以限制"
+      }
+    ],
+    "detention_exceeds_72_hours": [
+      {
+        "status": "translation",
+        "text": "拘留时间已超过七十二小时"
+      }
+    ],
+    "detention_exceeds_statutory_period": [
+      {
+        "status": "translation",
+        "text": "拘留时间已超过法律规定的期限"
+      }
+    ],
+    "detention_has_court_decision": [
+      {
+        "status": "translation",
+        "text": "已有延长拘留的法院裁判"
+      }
+    ],
+    "detention_of": [
+      {
+        "status": "translation",
+        "text": "该拘留针对该人"
+      }
+    ],
+    "detention_without_court_sanction": [
+      {
+        "status": "translation",
+        "text": "该拘留未经法院批准"
+      }
+    ],
+    "detention_without_court_sanction_limit_hours_1995": [
+      {
+        "status": "translation",
+        "text": "未经法院批准拘留的最长期限为七十二小时（1995年版）"
+      }
+    ],
+    "different_regime_established_for_foreigners": [
+      {
+        "status": "translation",
+        "text": "法律或者条约对外国人规定了不同的待遇"
+      }
+    ],
+    "dignity_infringed": [
+      {
+        "status": "translation",
+        "text": "该人的尊严受到侵犯"
+      }
+    ],
+    "dignity_infringement_attempt": [
+      {
+        "status": "translation",
+        "text": "国家机关侵害该人的尊严"
+      }
+    ],
+    "discriminated": [
+      {
+        "status": "translation",
+        "text": "该人受到歧视"
+      }
+    ],
+    "discriminatory_treatment_attempt": [
+      {
+        "status": "translation",
+        "text": "国家机关实施了差别对待"
+      }
+    ],
+    "document_affects": [
+      {
+        "status": "translation",
+        "text": "该文件涉及该人的权利和利益"
+      }
+    ],
+    "education_institution": [
+      {
+        "status": "translation",
+        "text": "该组织是教育机构"
+      }
+    ],
+    "education_institution_constitutionally_compliant": [
+      {
+        "status": "translation",
+        "text": "该教育机构的活动在宪法上可以允许"
+      }
+    ],
+    "education_standards_met": [
+      {
+        "status": "translation",
+        "text": "该教育机构遵守普遍强制性标准"
+      }
+    ],
+    "electoral_candidate_ineligible": [
+      {
+        "status": "translation",
+        "text": "该人无权当选"
+      }
+    ],
+    "employed_under_labour_contract": [
+      {
+        "status": "translation",
+        "text": "该人依劳动合同工作"
+      }
+    ],
+    "enjoys_citizen_rights_and_duties": [
+      {
+        "status": "translation",
+        "text": "该人与公民同等享有权利并承担义务"
+      }
+    ],
+    "entrepreneurial_action": [
+      {
+        "status": "translation",
+        "text": "该人从事经营活动"
+      }
+    ],
+    "exit_action": [
+      {
+        "status": "translation",
+        "text": "该人离开共和国国境"
+      }
+    ],
+    "exit_kazakhstan_action_1995": [
+      {
+        "status": "translation",
+        "text": "该人离开共和国国境（1995年版）"
+      }
+    ],
+    "extradited": [
+      {
+        "status": "translation",
+        "text": "该人已被引渡给外国"
+      }
+    ],
+    "extradition_decision": [
+      {
+        "status": "translation",
+        "text": "国家机关作出引渡该人的决定"
+      }
+    ],
+    "final_conviction": [
+      {
+        "status": "translation",
+        "text": "对该人的有罪判决已经生效"
+      }
+    ],
+    "forced_labour_attempt": [
+      {
+        "status": "translation",
+        "text": "国家机关实行强制劳动"
+      }
+    ],
+    "forced_labour_barred": [
+      {
+        "status": "translation",
+        "text": "强迫劳动被禁止：不存在宪法所列根据"
+      }
+    ],
+    "forced_labour_constitutionally_admissible": [
+      {
+        "status": "translation",
+        "text": "强制劳动在宪法上可以允许"
+      }
+    ],
+    "foreign_citizenship_is_termination_ground": [
+      {
+        "status": "translation",
+        "text": "具有他国国籍是终止共和国国籍的根据"
+      }
+    ],
+    "foreign_citizenship_not_recognized": [
+      {
+        "status": "translation",
+        "text": "不承认共和国公民具有他国国籍"
+      }
+    ],
+    "foreigner_or_stateless": [
+      {
+        "status": "translation",
+        "text": "该人是外国人或者无国籍人"
+      }
+    ],
+    "free_higher_education_provided": [
+      {
+        "status": "translation",
+        "text": "已为该人提供国立教育机构的免费高等教育"
+      }
+    ],
+    "free_legal_aid_provided": [
+      {
+        "status": "translation",
+        "text": "已为该人提供免费法律帮助"
+      }
+    ],
+    "free_secondary_education_eligible": [
+      {
+        "status": "translation",
+        "text": "该人享有接受免费中等教育的权利"
+      }
+    ],
+    "free_secondary_education_provided": [
+      {
+        "status": "translation",
+        "text": "已为该人提供免费中等教育"
+      }
+    ],
+    "guaranteed_free_medical_care_provided": [
+      {
+        "status": "translation",
+        "text": "已为该人提供保障范围内的免费医疗帮助"
+      }
+    ],
+    "heritage_harmed": [
+      {
+        "status": "translation",
+        "text": "该人对历史文化遗产造成损害"
+      }
+    ],
+    "higher_education_competition_won": [
+      {
+        "status": "translation",
+        "text": "该人以竞争方式取得接受免费高等教育的资格"
+      }
+    ],
+    "holds_foreign_citizenship": [
+      {
+        "status": "translation",
+        "text": "该人被登记具有他国国籍"
+      }
+    ],
+    "home_unlawfully_entered": [
+      {
+        "status": "translation",
+        "text": "住宅不可侵犯性受到侵犯"
+      }
+    ],
+    "identity_declaration_action": [
+      {
+        "status": "translation",
+        "text": "该人确定并表明其民族、党派和宗教归属"
+      }
+    ],
+    "imprisoned_by_court_sentence": [
+      {
+        "status": "translation",
+        "text": "该人依法院判决被羁押于剥夺自由场所"
+      }
+    ],
+    "innocent": [
+      {
+        "status": "translation",
+        "text": "该人被推定无罪"
+      }
+    ],
+    "judicial_act_or_emergency_basis": [
+      {
+        "status": "translation",
+        "text": "强制劳动系依法院判决或者在紧急状态或者战争状态下适用"
+      }
+    ],
+    "labour_action": [
+      {
+        "status": "translation",
+        "text": "该人行使劳动自由"
+      }
+    ],
+    "labour_dispute": [
+      {
+        "status": "translation",
+        "text": "该人参加个人或者集体劳动争议"
+      }
+    ],
+    "labour_dispute_action": [
+      {
+        "status": "translation",
+        "text": "该人使用法律规定的劳动争议解决方式"
+      }
+    ],
+    "lawful_social_security_ground": [
+      {
+        "status": "translation",
+        "text": "存在法律规定的社会保障根据"
+      }
+    ],
+    "lawful_tax_unpaid": [
+      {
+        "status": "translation",
+        "text": "该人未缴纳依法设定的税、费和其他强制性缴款"
+      }
+    ],
+    "lawfully_in_kazakhstan": [
+      {
+        "status": "translation",
+        "text": "该人合法处于哈萨克斯坦境内"
+      }
+    ],
+    "legal_aid_case": [
+      {
+        "status": "translation",
+        "text": "向该人提供法律帮助的情形"
+      }
+    ],
+    "legislature": [
+      {
+        "status": "translation",
+        "text": "该机关是立法机关"
+      }
+    ],
+    "movement_action": [
+      {
+        "status": "translation",
+        "text": "该人行使迁徙自由"
+      }
+    ],
+    "movement_restriction": [
+      {
+        "status": "translation",
+        "text": "该项迁徙自由限制针对该人"
+      }
+    ],
+    "movement_restriction_constitutionally_valid": [
+      {
+        "status": "translation",
+        "text": "对迁徙自由的限制在宪法上可以允许"
+      }
+    ],
+    "movement_restriction_established_by_law": [
+      {
+        "status": "translation",
+        "text": "对迁徙自由的限制由法律设定"
+      }
+    ],
+    "native_language_and_culture_action": [
+      {
+        "status": "translation",
+        "text": "该人使用母语和本民族文化"
+      }
+    ],
+    "nature_harmed": [
+      {
+        "status": "translation",
+        "text": "该人对自然造成损害"
+      }
+    ],
+    "official": [
+      {
+        "status": "translation",
+        "text": "该人是公职人员"
+      }
+    ],
+    "official_liability_arises": [
+      {
+        "status": "translation",
+        "text": "该公职人员依法承担责任"
+      }
+    ],
+    "parent_care_provided": [
+      {
+        "status": "translation",
+        "text": "成年子女赡养无劳动能力的父母"
+      }
+    ],
+    "parent_incapacitated": [
+      {
+        "status": "translation",
+        "text": "该父母无劳动能力"
+      }
+    ],
+    "parent_of": [
+      {
+        "status": "translation",
+        "text": "该人是该子女的父母"
+      }
+    ],
+    "peaceful_assembly": [
+      {
+        "status": "translation",
+        "text": "该人参加和平集会"
+      }
+    ],
+    "person": [
+      {
+        "status": "translation",
+        "text": "该主体是自然人"
+      }
+    ],
+    "political_party_or_union_membership": [
+      {
+        "status": "translation",
+        "text": "该人是政党或者工会成员"
+      }
+    ],
+    "primary_or_basic_secondary_education": [
+      {
+        "status": "translation",
+        "text": "该人正在接受初等教育或者基础中等教育"
+      }
+    ],
+    "privacy_unlawfully_interfered": [
+      {
+        "status": "translation",
+        "text": "私生活不受侵犯的权利受到侵犯"
+      }
+    ],
+    "propaganda_constitutionally_prohibited": [
+      {
+        "status": "translation",
+        "text": "该项宣扬在宪法上被禁止"
+      }
+    ],
+    "propaganda_of_prohibited_content": [
+      {
+        "status": "translation",
+        "text": "该人宣扬以暴力改变宪法制度、战争，或者宣扬社会、种族、民族、宗教、等级或者血统优越"
+      }
+    ],
+    "property_uncompensatedly_expropriated": [
+      {
+        "status": "translation",
+        "text": "财产被无等值补偿地征收"
+      }
+    ],
+    "proportionality_confirmed": [
+      {
+        "status": "translation",
+        "text": "限制的相称性已获确认"
+      }
+    ],
+    "proportionality_disproved": [
+      {
+        "status": "translation",
+        "text": "限制的相称性已被推翻"
+      }
+    ],
+    "protection_and_patronage_provided": [
+      {
+        "status": "translation",
+        "text": "已为该公民在共和国境外提供国家的保护和庇护"
+      }
+    ],
+    "requirement_only_reflects_official_duties": [
+      {
+        "status": "translation",
+        "text": "该项要求由职务职责的性质决定"
+      }
+    ],
+    "restricted_office_membership_incompatible": [
+      {
+        "status": "translation",
+        "text": "政党或者工会成员身份与所任职务不相容"
+      }
+    ],
+    "restricted_political_officeholder": [
+      {
+        "status": "translation",
+        "text": "该人担任对政党或者工会成员身份有限制的职务"
+      }
+    ],
+    "restriction_affects": [
+      {
+        "status": "translation",
+        "text": "该项限制涉及该人"
+      }
+    ],
+    "restriction_attempt": [
+      {
+        "status": "translation",
+        "text": "立法机关设定限制"
+      }
+    ],
+    "restriction_constitutionally_justified": [
+      {
+        "status": "translation",
+        "text": "该项限制在宪法上具有正当性"
+      }
+    ],
+    "restriction_enacted_by_law": [
+      {
+        "status": "translation",
+        "text": "该项限制由法律设定"
+      }
+    ],
+    "restriction_has_constitutional_goal": [
+      {
+        "status": "translation",
+        "text": "该项限制追求宪法认可的目的"
+      }
+    ],
+    "restriction_has_legal_effect": [
+      {
+        "status": "translation",
+        "text": "该项限制具有法律效果"
+      }
+    ],
+    "restriction_on_political_grounds": [
+      {
+        "status": "translation",
+        "text": "该项限制基于政治动机设定"
+      }
+    ],
+    "restriction_prohibited": [
+      {
+        "status": "translation",
+        "text": "不允许设定此类限制"
+      }
+    ],
+    "restriction_targets": [
+      {
+        "status": "translation",
+        "text": "该项限制针对该权利或者自由"
+      }
+    ],
+    "restriction_targets_1995": [
+      {
+        "status": "translation",
+        "text": "该项限制针对该权利或者自由（1995年版）"
+      }
+    ],
+    "return_block_attempt": [
+      {
+        "status": "translation",
+        "text": "国家机关阻碍公民返回"
+      }
+    ],
+    "return_blocked": [
+      {
+        "status": "translation",
+        "text": "公民返回共和国受到限制"
+      }
+    ],
+    "return_to_kazakhstan_action": [
+      {
+        "status": "translation",
+        "text": "公民返回共和国"
+      }
+    ],
+    "rights_exercise_constitutionally_limited": [
+      {
+        "status": "translation",
+        "text": "权利和自由的行使受宪法界限约束"
+      }
+    ],
+    "rights_exercise_harms_others_or_constitutional_order": [
+      {
+        "status": "translation",
+        "text": "权利的行使侵犯他人权利或者损害宪法制度"
+      }
+    ],
+    "rights_exercise_harms_others_order_or_morality": [
+      {
+        "status": "translation",
+        "text": "权利的行使侵犯他人权利、损害宪法制度或者社会道德"
+      }
+    ],
+    "russian_used_officially_in_state_bodies": [
+      {
+        "status": "translation",
+        "text": "在国家组织和地方自治机关中，俄语与哈萨克语同等地正式使用"
+      }
+    ],
+    "secondary_education_stage": [
+      {
+        "status": "translation",
+        "text": "该人正在接受中等教育"
+      }
+    ],
+    "social_security_provided": [
+      {
+        "status": "translation",
+        "text": "已向该人提供社会保障"
+      }
+    ],
+    "state_authority": [
+      {
+        "status": "translation",
+        "text": "该主体是国家机关或者公职人员"
+      }
+    ],
+    "state_governance_participation_action": [
+      {
+        "status": "translation",
+        "text": "该公民参与管理国家事务"
+      }
+    ],
+    "state_harm_compensated": [
+      {
+        "status": "translation",
+        "text": "所造成的损害已由国家赔偿"
+      }
+    ],
+    "state_language_is_kazakh": [
+      {
+        "status": "translation",
+        "text": "哈萨克斯坦共和国的国语为哈萨克语"
+      }
+    ],
+    "state_symbols_disrespected": [
+      {
+        "status": "translation",
+        "text": "该人不尊重国家标志"
+      }
+    ],
+    "statutory_free_legal_aid_ground": [
+      {
+        "status": "translation",
+        "text": "存在法律规定的免费法律帮助根据"
+      }
+    ],
+    "statutory_housing_need": [
+      {
+        "status": "translation",
+        "text": "该人被法律列为需要住房者"
+      }
+    ],
+    "strike_action": [
+      {
+        "status": "translation",
+        "text": "该人参加罢工"
+      }
+    ],
+    "terrorism_or_grave_national_harm": [
+      {
+        "status": "translation",
+        "text": "该人实施了恐怖主义犯罪或者对共和国生死攸关利益造成其他重大损害"
+      }
+    ],
+    "terrorism_or_grave_vital_interest_harm": [
+      {
+        "status": "translation",
+        "text": "该人实施了恐怖主义犯罪或者对共和国生死攸关利益造成其他重大损害"
+      }
+    ],
+    "torture_attempt": [
+      {
+        "status": "translation",
+        "text": "国家机关实施酷刑或者残忍待遇"
+      }
+    ],
+    "tortured": [
+      {
+        "status": "translation",
+        "text": "该人遭受酷刑或者残忍的、不人道的或者有辱人格的待遇"
+      }
+    ],
+    "treaty_allows_extradition": [
+      {
+        "status": "translation",
+        "text": "共和国国际条约允许引渡"
+      }
+    ],
+    "unarmed_peaceful_assembly": [
+      {
+        "status": "translation",
+        "text": "该集会为和平集会且未携带武器"
+      }
+    ],
+    "uncompensated_expropriation_attempt": [
+      {
+        "status": "translation",
+        "text": "国家机关无等值补偿地征收财产"
+      }
+    ],
+    "unemployment_social_protection_ground": [
+      {
+        "status": "translation",
+        "text": "存在失业社会保护的根据"
+      }
+    ],
+    "unemployment_social_protection_provided": [
+      {
+        "status": "translation",
+        "text": "已向该人提供失业社会保护"
+      }
+    ],
+    "unexpunged_conviction": [
+      {
+        "status": "translation",
+        "text": "该人有未消除或者未撤销的前科"
+      }
+    ],
+    "unfair_competition": [
+      {
+        "status": "translation",
+        "text": "该活动旨在进行不正当竞争"
+      }
+    ],
+    "unfair_competition_prohibited": [
+      {
+        "status": "translation",
+        "text": "禁止不正当竞争"
+      }
+    ],
+    "unlawful_continued_detention": [
+      {
+        "status": "translation",
+        "text": "继续羁押不合法"
+      }
+    ],
+    "unlawful_home_entry_attempt": [
+      {
+        "status": "translation",
+        "text": "国家机关进入该人的住宅"
+      }
+    ],
+    "unlawful_privacy_interference_attempt": [
+      {
+        "status": "translation",
+        "text": "国家机关干预该人的私生活"
+      }
+    ],
+    "unlawful_state_action_harmed": [
+      {
+        "status": "translation",
+        "text": "国家机关的非法行为对该人造成损害"
+      }
+    ],
+    "voting_or_referendum_ineligible": [
+      {
+        "status": "translation",
+        "text": "该人无权选举和参加全民公决"
+      }
+    ]
+  },
+  "language": "zh",
+  "package": "kz.constitution.rights"
+}

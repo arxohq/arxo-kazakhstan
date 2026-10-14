@@ -1,0 +1,2318 @@
+{
+  "$comment": "哈萨克斯坦共和国宪法程序包的中文（简体）标签叠加层（DECISION-0070）。本文件不参与编译，也不进入 CLIR 规范字节，仅由展示层读取（lawref verbalize --labels、MCP 资源 law://<程序包>/verbalized/zh、工作台）。译文由形式化人员依据各节点的俄文标签（ru-KZ）译出，术语参照宪法学通用汉语表述，状态为 translation（工作译文），并非官方译本。键为声明的本地名称。",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "Advocate": [
+      {
+        "status": "translation",
+        "text": "律师或者其他提供法律帮助的主体"
+      }
+    ],
+    "Akim": [
+      {
+        "status": "translation",
+        "text": "阿基姆——地方执行机关首长"
+      }
+    ],
+    "AkimCandidateAtLeastTwoAndMajority": [
+      {
+        "status": "translation",
+        "text": "第八十九条。向马斯利哈特提交不少于两名候选人并获得参加投票议员过半数同意的，任命为阿基姆"
+      }
+    ],
+    "AkimNoConfidence": [
+      {
+        "status": "translation",
+        "text": "第八十九条。经不少于五分之一议员动议，马斯利哈特有权以过半数票对阿基姆通过不信任案"
+      }
+    ],
+    "AkimNoConfidenceExpressed1995": [
+      {
+        "status": "translation",
+        "text": "第八十七条第五款（1995年版）。马斯利哈特有权以议员总数过半数对阿基姆表示不信任"
+      }
+    ],
+    "AkimNoConfidenceInitiativeValid1995": [
+      {
+        "status": "translation",
+        "text": "第八十七条第五款（1995年版）。对阿基姆的不信任案问题，经不少于马斯利哈特议员总数五分之一的动议提出"
+      }
+    ],
+    "Candidate": [
+      {
+        "status": "translation",
+        "text": "法官职务或者其他所列职务的候选人"
+      }
+    ],
+    "Case": [
+      {
+        "status": "translation",
+        "text": "司法案件"
+      }
+    ],
+    "ConstitutionConformingInterpretationRequired": [
+      {
+        "status": "translation",
+        "text": "第七十五条第二款。经宪法法院解释后被认定合宪的文件，应当按该解释适用"
+      }
+    ],
+    "ConstitutionConformingInterpretationRequired1995": [
+      {
+        "status": "translation",
+        "text": "第七十四条第二款和第三款（1995年版）。据以认定规范合宪的解释，自决定作出之日起具有普遍约束力"
+      }
+    ],
+    "ConstitutionalCourt": [
+      {
+        "status": "translation",
+        "text": "哈萨克斯坦共和国宪法法院"
+      }
+    ],
+    "ConstitutionalCourtReferralRequired1995": [
+      {
+        "status": "translation",
+        "text": "第七十八条（1995年版）。法院应当向宪法法院提出认定该文件违宪的申请"
+      }
+    ],
+    "ConstitutionalJudge": [
+      {
+        "status": "translation",
+        "text": "宪法法院法官"
+      }
+    ],
+    "ConstitutionalJudgeImmunity1995": [
+      {
+        "status": "translation",
+        "text": "第七十一条第五款（1995年版）。未经议会同意不得逮捕宪法法院法官或者追究其刑事责任，当场抓获和重罪的除外"
+      }
+    ],
+    "ConstitutionalJudgeIncompatible1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "第七十一条第四款（1995年版）。宪法法院法官职务与议员资格、其他有报酬职务和经营活动不相容"
+      }
+    ],
+    "ConstitutionalJudgeIncompatible1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "第七十一条第四款（1995年版）。宪法法院法官职务与议员资格、其他有报酬职务和经营活动不相容"
+      }
+    ],
+    "ConstitutionalJudgeIncompatible1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "第七十一条第四款（1995年版）。宪法法院法官职务与议员资格、其他有报酬职务和经营活动不相容"
+      }
+    ],
+    "ConstitutionalJudgeInviolability1995": [
+      {
+        "status": "translation",
+        "text": "第七十一条第五款（1995年版）。未经议会同意不得逮捕宪法法院法官或者追究其刑事责任，当场抓获和重罪的除外"
+      }
+    ],
+    "ConstitutionalJudgeOneTerm": [
+      {
+        "status": "translation",
+        "text": "第七十二条第二款。同一人被任命为宪法法院法官不得超过一次"
+      }
+    ],
+    "ConstitutionalJudgeReappointmentProhibited1995": [
+      {
+        "status": "translation",
+        "text": "第七十一条第一款（1995年版）。同一人被任命为宪法法院法官不得超过一次"
+      }
+    ],
+    "ConstitutionalJudgeTermExpiry": [
+      {
+        "status": "translation",
+        "text": "第七十二条。宪法法院法官的任期自任命之日起为八年"
+      }
+    ],
+    "ConstitutionalPetitionInstitutionalApplicants/alt/1": [
+      {
+        "status": "translation",
+        "text": "第七十三条第一款。宪法法院审理总统、库鲁尔泰主席、不少于五分之一库鲁尔泰议员、总理和总检察长提出的申请"
+      }
+    ],
+    "ConstitutionalPetitionInstitutionalApplicants/alt/2": [
+      {
+        "status": "translation",
+        "text": "第七十三条第一款。宪法法院审理总统、库鲁尔泰主席、不少于五分之一库鲁尔泰议员、总理和总检察长提出的申请"
+      }
+    ],
+    "ConstitutionalPetitionInstitutionalApplicants/alt/3": [
+      {
+        "status": "translation",
+        "text": "第七十三条第一款。宪法法院审理总统、库鲁尔泰主席、不少于五分之一库鲁尔泰议员、总理和总检察长提出的申请"
+      }
+    ],
+    "ConstitutionalPetitionInstitutionalApplicants/alt/4": [
+      {
+        "status": "translation",
+        "text": "第七十三条第一款。宪法法院审理总统、库鲁尔泰主席、不少于五分之一库鲁尔泰议员、总理和总检察长提出的申请"
+      }
+    ],
+    "ConstitutionalPetitionRightsApplicants/alt/1": [
+      {
+        "status": "translation",
+        "text": "第七十三条第二款至第三款。宪法法院审理公民、人权专员和法院就宪法权利和自由问题提出的申请"
+      }
+    ],
+    "ConstitutionalPetitionRightsApplicants/alt/2": [
+      {
+        "status": "translation",
+        "text": "第七十三条第二款至第三款。宪法法院审理公民、人权专员和法院就宪法权利和自由问题提出的申请"
+      }
+    ],
+    "ConstitutionalPetitionRightsApplicants/alt/3": [
+      {
+        "status": "translation",
+        "text": "第七十三条第二款至第三款。宪法法院审理公民、人权专员和法院就宪法权利和自由问题提出的申请"
+      }
+    ],
+    "ConstitutionalPetitionRightsApplicants/alt/4": [
+      {
+        "status": "translation",
+        "text": "第七十三条第二款至第三款。宪法法院审理公民、人权专员和法院就宪法权利和自由问题提出的申请"
+      }
+    ],
+    "ConstitutionalReviewCompetence": [
+      {
+        "status": "translation",
+        "text": "第七十二条第一款。宪法法院是行使宪法监督、保障宪法在全国范围内至上地位的独立国家机关"
+      }
+    ],
+    "ConvictionOnConfessionAloneImpermissible1995": [
+      {
+        "status": "translation",
+        "text": "第七十七条第三款第九项（1995年版）。任何人不得仅凭其本人供认而被定罪"
+      }
+    ],
+    "Court": [
+      {
+        "status": "translation",
+        "text": "法院"
+      }
+    ],
+    "CourtRefersRightsInfringingActToConstitutionalCourt": [
+      {
+        "status": "translation",
+        "text": "第七十九条。法院认为应予适用的文件侵害宪法权利的，应当向宪法法院提出申请"
+      }
+    ],
+    "CourtRulingBinding1995": [
+      {
+        "status": "translation",
+        "text": "第七十六条第三款（1995年版）。法院的裁判、判决和其他裁定在共和国全境具有约束力"
+      }
+    ],
+    "CourtSuspendsRightsInfringingActProceeding": [
+      {
+        "status": "translation",
+        "text": "第七十九条。法院认为应予适用的文件侵害宪法权利的，应当中止案件审理"
+      }
+    ],
+    "CriminalAnalogyProhibited1995": [
+      {
+        "status": "translation",
+        "text": "第七十七条第三款第十项（1995年版）。不允许类推适用刑事法律"
+      }
+    ],
+    "DeputyElectionDisputeSuspendsRegistration": [
+      {
+        "status": "translation",
+        "text": "第七十四条第一款。就选举争议向宪法法院提出申请的，当选库鲁尔泰议员的登记中止"
+      }
+    ],
+    "DetermineJudgeRequirements": [
+      {
+        "status": "translation",
+        "text": "第八十条第三款。对哈萨克斯坦共和国各法院法官的要求，由宪法性法律规定"
+      }
+    ],
+    "DoubtResolvedForAccused1995": [
+      {
+        "status": "translation",
+        "text": "第七十七条第三款第八项（1995年版）。对有罪的任何怀疑均作有利于被告人的解释"
+      }
+    ],
+    "EligibleMaslikhatDeputy1995": [
+      {
+        "status": "translation",
+        "text": "第八十六条第三款（1995年版）。年满二十周岁的公民可以当选马斯利哈特议员；公民只能担任一个马斯利哈特的议员"
+      }
+    ],
+    "EstablishJudicialCollegia": [
+      {
+        "status": "translation",
+        "text": "第八十三条第三款。各法院可以依宪法性法律设立审判庭"
+      }
+    ],
+    "HearingRightViolated1995": [
+      {
+        "status": "translation",
+        "text": "第七十七条第三款第四项（1995年版）。在法庭上人人享有陈述意见的权利"
+      }
+    ],
+    "InaugurationSuspendedOnElectionPetition1995": [
+      {
+        "status": "translation",
+        "text": "第七十三条第一款（1995年版）。就选举是否正确提出申请的，总统就职、议员登记或者全民公决结果的确认中止"
+      }
+    ],
+    "InterferenceWithJusticeLiability1995": [
+      {
+        "status": "translation",
+        "text": "第七十七条第二款（1995年版）。不允许干预法院的审判活动，干预者依法承担责任"
+      }
+    ],
+    "Judge": [
+      {
+        "status": "translation",
+        "text": "法官"
+      }
+    ],
+    "JudgeDetentionConstitutionalException": [
+      {
+        "status": "translation",
+        "text": "第八十条第二款。当场抓获、实施重罪和特别重罪或者取得所需同意的，允许拘留法官"
+      }
+    ],
+    "JudgeDetentionGroundConsent": [
+      {
+        "status": "translation",
+        "text": "第八十条第二款。所需同意为解除法官保护的根据"
+      }
+    ],
+    "JudgeDetentionGroundGraveOffence": [
+      {
+        "status": "translation",
+        "text": "第八十条第二款。实施重罪或者特别重罪为解除法官保护的根据"
+      }
+    ],
+    "JudgeDetentionGroundInTheAct": [
+      {
+        "status": "translation",
+        "text": "第八十条第二款。犯罪现场当场抓获为解除法官保护的根据"
+      }
+    ],
+    "JudgeDetentionImmunity": [
+      {
+        "status": "translation",
+        "text": "第八十条第二款。未取得所需同意不得拘留法官，当场抓获或者实施重罪和特别重罪的除外"
+      }
+    ],
+    "JudgeImmunity1995": [
+      {
+        "status": "translation",
+        "text": "第七十九条第二款（1995年版）。未经总统根据最高司法委员会的结论同意或者未经参议院同意，不得逮捕法官或者追究其刑事责任"
+      }
+    ],
+    "JudgeInviolabilityApplies": [
+      {
+        "status": "translation",
+        "text": "第八十条第二款。三项所列根据均不存在时，法官免受拘留的保护持续有效"
+      }
+    ],
+    "JudgeInviolabilityApplies/unless/0": [
+      {
+        "status": "translation",
+        "text": "第八十条第二款。三项所列根据均不存在时，法官免受拘留的保护持续有效"
+      }
+    ],
+    "JudgeOfficeIncompatible1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "第七十九条第四款（1995年版）。法官职务与议员资格、其他有报酬职务和经营活动不相容"
+      }
+    ],
+    "JudgeOfficeIncompatible1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "第七十九条第四款（1995年版）。法官职务与议员资格、其他有报酬职务和经营活动不相容"
+      }
+    ],
+    "JudgeOfficeIncompatible1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "第七十九条第四款（1995年版）。法官职务与议员资格、其他有报酬职务和经营活动不相容"
+      }
+    ],
+    "JudgePersonalImmunity": [
+      {
+        "status": "translation",
+        "text": "第八十条第二款。未取得所需同意不得拘留法官，当场抓获或者实施重罪和特别重罪的除外"
+      }
+    ],
+    "JudgeRequirementsDelegated": [
+      {
+        "status": "translation",
+        "text": "第八十条第三款。对哈萨克斯坦共和国各法院法官的要求，由宪法性法律规定"
+      }
+    ],
+    "JudicialCollegiaDelegated": [
+      {
+        "status": "translation",
+        "text": "第八十三条第三款。各法院可以依宪法性法律设立审判庭"
+      }
+    ],
+    "JudicialDecisionBindingNationwide": [
+      {
+        "status": "translation",
+        "text": "第七十七条第三款。法院的裁判、判决和其他裁定在哈萨克斯坦全境具有约束力"
+      }
+    ],
+    "JudicialIndependence": [
+      {
+        "status": "translation",
+        "text": "第七十八条第一款。法官行使审判权时独立，只服从宪法和法律"
+      }
+    ],
+    "JudicialInterferenceUnlawful": [
+      {
+        "status": "translation",
+        "text": "第七十八条第二款。不允许以任何方式干预法院的审判活动"
+      }
+    ],
+    "JudicialInviolability1995": [
+      {
+        "status": "translation",
+        "text": "第七十九条第二款（1995年版）。未经总统根据最高司法委员会的结论同意或者未经参议院同意，不得逮捕法官或者追究其刑事责任"
+      }
+    ],
+    "JudicialPowerCoversCase1995": [
+      {
+        "status": "translation",
+        "text": "第七十六条第二款（1995年版）。审判权及于依宪法、法律和国际条约产生的一切案件和争议"
+      }
+    ],
+    "JudicialPowerCoversLegalApplicationCases": [
+      {
+        "status": "translation",
+        "text": "第七十七条第二款。审判权涵盖因适用法律规范而产生的案件和争议"
+      }
+    ],
+    "JurisdictionChangeProhibited1995": [
+      {
+        "status": "translation",
+        "text": "第七十七条第三款第三项（1995年版）。未经本人同意，不得变更法律为其规定的管辖"
+      }
+    ],
+    "JusticeByCourtOnly1995": [
+      {
+        "status": "translation",
+        "text": "第七十五条第一款（1995年版）。哈萨克斯坦共和国的审判权只能由法院行使"
+      }
+    ],
+    "JusticeOnlyByCourt": [
+      {
+        "status": "translation",
+        "text": "第七十六条第一款。哈萨克斯坦共和国的审判权只能由法院行使"
+      }
+    ],
+    "LegalAct": [
+      {
+        "status": "translation",
+        "text": "规范性法律文件或者法院裁判"
+      }
+    ],
+    "LegalAid": [
+      {
+        "status": "translation",
+        "text": "提供法律帮助的情形"
+      }
+    ],
+    "LegalAidByAuthorizedProvider": [
+      {
+        "status": "translation",
+        "text": "第八十六条。法律帮助依法律由律师和其他人提供"
+      }
+    ],
+    "LocalCourtAppointment1995": [
+      {
+        "status": "translation",
+        "text": "第八十二条第二款（1995年版）。地方法院和其他法院的院长和法官，由总统根据最高司法委员会的推荐任命"
+      }
+    ],
+    "LocalDecision": [
+      {
+        "status": "translation",
+        "text": "马斯利哈特或者地方自治机关的决定"
+      }
+    ],
+    "LocalExecutiveBodyResponsibility": [
+      {
+        "status": "translation",
+        "text": "第八十七条。地方执行机关对本辖区的事务状况负责"
+      }
+    ],
+    "LocalFinancialDecisionWithAkimOpinion": [
+      {
+        "status": "translation",
+        "text": "第九十条。减少地方收入或者增加支出的决定，仅在阿基姆作出肯定性结论后方可通过"
+      }
+    ],
+    "LocalRepresentativeBodyResponsibility": [
+      {
+        "status": "translation",
+        "text": "第八十七条。地方代表机关对本辖区的事务状况负责"
+      }
+    ],
+    "LocalSelfGovernmentAutonomy": [
+      {
+        "status": "translation",
+        "text": "第九十一条。保障地方自治机关自主解决地方性事务"
+      }
+    ],
+    "Maslikhat": [
+      {
+        "status": "translation",
+        "text": "马斯利哈特——地方代表机关"
+      }
+    ],
+    "MaslikhatCandidateEligibility": [
+      {
+        "status": "translation",
+        "text": "第八十八条。年满二十周岁且不是其他马斯利哈特议员的共和国公民，可以担任马斯利哈特议员"
+      }
+    ],
+    "MaslikhatDeputy": [
+      {
+        "status": "translation",
+        "text": "马斯利哈特议员"
+      }
+    ],
+    "MaslikhatFiscalRulingRequiresAkimOpinion1995": [
+      {
+        "status": "translation",
+        "text": "第八十八条第二款（1995年版）。减少地方收入或者增加支出的马斯利哈特决定草案，仅在阿基姆作出肯定性结论后方可提出"
+      }
+    ],
+    "MaslikhatPowersTerminated1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "第八十六条第五款（1995年版）。马斯利哈特的职权，由总统在与总理和议会两院议长协商后提前终止，或者因自行解散而终止"
+      }
+    ],
+    "MaslikhatPowersTerminated1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "第八十六条第五款（1995年版）。马斯利哈特的职权，由总统在与总理和议会两院议长协商后提前终止，或者因自行解散而终止"
+      }
+    ],
+    "MaslikhatRulingAnnullable1995": [
+      {
+        "status": "translation",
+        "text": "第八十八条第三款（1995年版）。不符合宪法和立法的马斯利哈特决定，可以通过司法程序撤销"
+      }
+    ],
+    "MaslikhatTermExpiry": [
+      {
+        "status": "translation",
+        "text": "第八十八条第二款。马斯利哈特的任期为五年"
+      }
+    ],
+    "Mazhilis1995": [
+      {
+        "status": "translation",
+        "text": "议会马日利斯（1995年版）"
+      }
+    ],
+    "NonCourtJusticeProhibition": [
+      {
+        "status": "translation",
+        "text": "第七十六条第一款。哈萨克斯坦共和国的审判权只能由法院行使"
+      }
+    ],
+    "Ombudsman": [
+      {
+        "status": "translation",
+        "text": "人权专员"
+      }
+    ],
+    "OmbudsmanAppointmentByPresident": [
+      {
+        "status": "translation",
+        "text": "第八十五条第二款。人权专员由总统任命"
+      }
+    ],
+    "OmbudsmanCoerciveMeasureException": [
+      {
+        "status": "translation",
+        "text": "第八十五条第四款。人权专员豁免的宪法例外"
+      }
+    ],
+    "OmbudsmanCoerciveMeasureImmunity": [
+      {
+        "status": "translation",
+        "text": "第八十五条第四款。未经总统同意，人权专员免受强制措施的豁免"
+      }
+    ],
+    "OmbudsmanCoerciveMeasureImmunityRule": [
+      {
+        "status": "translation",
+        "text": "第八十五条第四款。未经总统同意，人权专员免受强制措施的豁免"
+      }
+    ],
+    "OmbudsmanImmunity1995": [
+      {
+        "status": "translation",
+        "text": "第八十三条之一第三款（1995年版）。未经参议院同意，不得逮捕人权专员或者追究其刑事责任"
+      }
+    ],
+    "OmbudsmanIndependent": [
+      {
+        "status": "translation",
+        "text": "第八十五条第三款。人权专员独立且不受问责"
+      }
+    ],
+    "OmbudsmanInviolability1995": [
+      {
+        "status": "translation",
+        "text": "第八十三条之一第三款（1995年版）。未经参议院同意，不得逮捕人权专员或者追究其刑事责任"
+      }
+    ],
+    "OmbudsmanInviolabilityApplies": [
+      {
+        "status": "translation",
+        "text": "第八十五条第四款。三项所列根据均不存在时，人权专员免受强制措施的保护持续有效"
+      }
+    ],
+    "OmbudsmanInviolabilityApplies/unless/0": [
+      {
+        "status": "translation",
+        "text": "第八十五条第四款。三项所列根据均不存在时，人权专员免受强制措施的保护持续有效"
+      }
+    ],
+    "OmbudsmanMeasureGroundConsent": [
+      {
+        "status": "translation",
+        "text": "第八十五条第四款。总统的同意为解除人权专员保护的根据"
+      }
+    ],
+    "OmbudsmanMeasureGroundGraveOffence": [
+      {
+        "status": "translation",
+        "text": "第八十五条第四款。实施重罪或者特别重罪为解除人权专员保护的根据"
+      }
+    ],
+    "OmbudsmanMeasureGroundInTheAct": [
+      {
+        "status": "translation",
+        "text": "第八十五条第四款。犯罪现场当场抓获为解除人权专员保护的根据"
+      }
+    ],
+    "OmbudsmanRightsAssistance": [
+      {
+        "status": "translation",
+        "text": "第八十五条第一款。协助恢复和促进权利与自由"
+      }
+    ],
+    "Parliament": [
+      {
+        "status": "translation",
+        "text": "哈萨克斯坦共和国议会"
+      }
+    ],
+    "Parliament1995": [
+      {
+        "status": "translation",
+        "text": "哈萨克斯坦共和国议会（1995年版）"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "自然人"
+      }
+    ],
+    "Petition": [
+      {
+        "status": "translation",
+        "text": "向宪法法院提出的申请"
+      }
+    ],
+    "PetitionAdmissible1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "第七十二条（1995年版）。宪法法院审理总统、参议院议长、马日利斯议长、不少于五分之一议会议员、总理、公民、总检察长和人权专员提出的申请"
+      }
+    ],
+    "PetitionAdmissible1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "第七十二条（1995年版）。宪法法院审理总统、参议院议长、马日利斯议长、不少于五分之一议会议员、总理、公民、总检察长和人权专员提出的申请"
+      }
+    ],
+    "PetitionAdmissible1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "第七十二条（1995年版）。宪法法院审理总统、参议院议长、马日利斯议长、不少于五分之一议会议员、总理、公民、总检察长和人权专员提出的申请"
+      }
+    ],
+    "PetitionAdmissible1995/alt/4": [
+      {
+        "status": "translation",
+        "text": "第七十二条（1995年版）。宪法法院审理总统、参议院议长、马日利斯议长、不少于五分之一议会议员、总理、公民、总检察长和人权专员提出的申请"
+      }
+    ],
+    "PetitionAdmissible1995/alt/5": [
+      {
+        "status": "translation",
+        "text": "第七十二条（1995年版）。宪法法院审理总统、参议院议长、马日利斯议长、不少于五分之一议会议员、总理、公民、总检察长和人权专员提出的申请"
+      }
+    ],
+    "PetitionAdmissible1995/alt/6": [
+      {
+        "status": "translation",
+        "text": "第七十二条（1995年版）。宪法法院审理总统、参议院议长、马日利斯议长、不少于五分之一议会议员、总理、公民、总检察长和人权专员提出的申请"
+      }
+    ],
+    "PetitionAdmissible1995/alt/7": [
+      {
+        "status": "translation",
+        "text": "第七十二条（1995年版）。宪法法院审理总统、参议院议长、马日利斯议长、不少于五分之一议会议员、总理、公民、总检察长和人权专员提出的申请"
+      }
+    ],
+    "PetitionAdmissible1995/alt/8": [
+      {
+        "status": "translation",
+        "text": "第七十二条（1995年版）。宪法法院审理总统、参议院议长、马日利斯议长、不少于五分之一议会议员、总理、公民、总检察长和人权专员提出的申请"
+      }
+    ],
+    "PreRatificationReviewSuspendsDeadline": [
+      {
+        "status": "translation",
+        "text": "第七十四条第二款。向宪法法院提出申请的，条约批准期限的计算中止"
+      }
+    ],
+    "PreSignatureReviewSuspendsDeadline": [
+      {
+        "status": "translation",
+        "text": "第七十四条第二款。向宪法法院提出申请的，文件签署期限的计算中止"
+      }
+    ],
+    "PresidentialElectionDisputeSuspendsInauguration": [
+      {
+        "status": "translation",
+        "text": "第七十四条第一款。就选举争议向宪法法院提出申请的，总统就职中止"
+      }
+    ],
+    "ProceedingSuspendedOnRightsInfringement1995": [
+      {
+        "status": "translation",
+        "text": "第七十八条（1995年版）。法院认为应予适用的文件侵害宪法权利的，应当中止案件审理"
+      }
+    ],
+    "ProsecutorGeneral": [
+      {
+        "status": "translation",
+        "text": "哈萨克斯坦共和国总检察长"
+      }
+    ],
+    "ProsecutorGeneralImmunity1995": [
+      {
+        "status": "translation",
+        "text": "第八十三条第三款（1995年版）。未经参议院同意，不得逮捕总检察长或者追究其刑事责任"
+      }
+    ],
+    "ProsecutorGeneralInviolability1995": [
+      {
+        "status": "translation",
+        "text": "第八十三条第三款（1995年版）。未经参议院同意，不得逮捕总检察长或者追究其刑事责任"
+      }
+    ],
+    "ProsecutorGeneralOneTerm": [
+      {
+        "status": "translation",
+        "text": "第八十四条第三款。同一人被任命为总检察长不得超过一次"
+      }
+    ],
+    "ProsecutorGeneralTermExpiry": [
+      {
+        "status": "translation",
+        "text": "第八十四条。总检察长的任期自任命之日起为六年"
+      }
+    ],
+    "RatificationDeadlineSuspended1995": [
+      {
+        "status": "translation",
+        "text": "第七十三条第二款（1995年版）。就国际条约提出申请的，批准期限的计算中止"
+      }
+    ],
+    "ReferendumDisputeSuspendsResults": [
+      {
+        "status": "translation",
+        "text": "第七十四条第一款。就全民公决争议向宪法法院提出申请的，其结果的确认中止"
+      }
+    ],
+    "RefrainFromNonCourtJustice": [
+      {
+        "status": "translation",
+        "text": "第七十六条第一款。哈萨克斯坦共和国的审判权只能由法院行使"
+      }
+    ],
+    "RegionalAkimAppointmentValid1995": [
+      {
+        "status": "translation",
+        "text": "第八十七条第四款（1995年版）。州阿基姆经马斯利哈特议员同意任命；总统提出不少于两名候选人"
+      }
+    ],
+    "RegionalAkimPowersEndWithNewPresident1995": [
+      {
+        "status": "translation",
+        "text": "第八十七条第五款（1995年版）。新当选总统就职时，州、共和国直辖市和首都阿基姆的职权终止"
+      }
+    ],
+    "RepeatedLiabilityProhibited1995": [
+      {
+        "status": "translation",
+        "text": "第七十七条第三款第二项（1995年版）。任何人不得因同一违法行为重复承担刑事或者行政责任"
+      }
+    ],
+    "Senate1995": [
+      {
+        "status": "translation",
+        "text": "议会参议院（1995年版）"
+      }
+    ],
+    "SignatureDeadlineSuspended1995": [
+      {
+        "status": "translation",
+        "text": "第七十三条第二款（1995年版）。就已通过的法律提出申请的，签署期限的计算中止"
+      }
+    ],
+    "SpecialCourtProhibited1995": [
+      {
+        "status": "translation",
+        "text": "第七十五条第四款（1995年版）。不允许以任何名义设立特别法院和非常法院"
+      }
+    ],
+    "SpecialCourtsProhibited": [
+      {
+        "status": "translation",
+        "text": "第七十六条第四款。不允许以任何名义设立特别法院和非常法院"
+      }
+    ],
+    "StateOrgan": [
+      {
+        "status": "translation",
+        "text": "国家机关"
+      }
+    ],
+    "SupremeCourt": [
+      {
+        "status": "translation",
+        "text": "哈萨克斯坦共和国最高法院"
+      }
+    ],
+    "SupremeCourtAppointmentBySenate1995": [
+      {
+        "status": "translation",
+        "text": "第八十二条第一款（1995年版）。最高法院院长和法官，由参议院根据总统基于最高司法委员会推荐提出的提名选举产生"
+      }
+    ],
+    "SupremeCourtChairOneTerm": [
+      {
+        "status": "translation",
+        "text": "第八十三条第一款。同一人被任命为最高法院院长不得超过一次"
+      }
+    ],
+    "SupremeCourtChairTermExpiry": [
+      {
+        "status": "translation",
+        "text": "第八十三条。最高法院院长的任期自任命之日起为六年"
+      }
+    ],
+    "SupremeCourtExplainsPracticeWhenAuthorizedByLaw": [
+      {
+        "status": "translation",
+        "text": "第八十二条。最高法院在法律规定的情形下就审判实践问题作出解释"
+      }
+    ],
+    "SupremeCourtHearsCasesAssignedByLaw": [
+      {
+        "status": "translation",
+        "text": "第八十二条。最高法院审理法律规定由其管辖的案件"
+      }
+    ],
+    "Treaty": [
+      {
+        "status": "translation",
+        "text": "共和国的国际条约"
+      }
+    ],
+    "UnconstitutionalActCeasesOnDecision": [
+      {
+        "status": "translation",
+        "text": "第七十五条第二款。被认定违宪的文件，自宪法法院作出决定之日起失效"
+      }
+    ],
+    "UnconstitutionalActCeasesOnSpecifiedDate": [
+      {
+        "status": "translation",
+        "text": "第七十五条第二款。被认定违宪的文件，自宪法法院确定之日起失效"
+      }
+    ],
+    "UnconstitutionalActCeasesToApply1995": [
+      {
+        "status": "translation",
+        "text": "第七十四条第二款（1995年版）。被认定违宪的文件予以废止，并自宪法法院作出决定之日或者其确定之日起不再适用"
+      }
+    ],
+    "UnconstitutionalActMayNotBeSigned1995": [
+      {
+        "status": "translation",
+        "text": "第七十四条第一款（1995年版）。被认定不符合宪法的法律不得签署"
+      }
+    ],
+    "UnconstitutionalTreatyMayNotBeRatified1995": [
+      {
+        "status": "translation",
+        "text": "第七十四条第一款（1995年版）。被认定不符合宪法的国际条约不得批准和施行"
+      }
+    ],
+    "UnlawfulEvidenceHasNoForce1995": [
+      {
+        "status": "translation",
+        "text": "第七十七条第三款第九项（1995年版）。以非法方法取得的证据不具有法律效力"
+      }
+    ],
+    "act_ceased_to_apply": [
+      {
+        "status": "translation",
+        "text": "该文件已失效并不再适用"
+      }
+    ],
+    "act_ceased_to_apply_1995": [
+      {
+        "status": "translation",
+        "text": "该文件已失效并不再适用（1995年版）"
+      }
+    ],
+    "act_infringes_constitutional_rights": [
+      {
+        "status": "translation",
+        "text": "该文件侵害宪法确认的权利和自由"
+      }
+    ],
+    "act_may_not_be_signed_1995": [
+      {
+        "status": "translation",
+        "text": "该文件不得签署（1995年版）"
+      }
+    ],
+    "age_years": [
+      {
+        "status": "translation",
+        "text": "该人的周岁年龄"
+      }
+    ],
+    "aid_provider_authorized_by_law": [
+      {
+        "status": "translation",
+        "text": "该主体经法律授权提供法律帮助"
+      }
+    ],
+    "akim_appointment_valid_1995": [
+      {
+        "status": "translation",
+        "text": "阿基姆的任命已经作出（1995年版）"
+      }
+    ],
+    "akim_candidate_consented": [
+      {
+        "status": "translation",
+        "text": "马斯利哈特已同意任命该候选人为阿基姆"
+      }
+    ],
+    "akim_candidate_minimum": [
+      {
+        "status": "translation",
+        "text": "提交阿基姆候选人的最低人数为两名"
+      }
+    ],
+    "akim_candidate_set": [
+      {
+        "status": "translation",
+        "text": "提交马斯利哈特审议的阿基姆候选人人数"
+      }
+    ],
+    "akim_candidate_vote": [
+      {
+        "status": "translation",
+        "text": "马斯利哈特议员对阿基姆候选人投赞成票的票数"
+      }
+    ],
+    "akim_consent_denominator": [
+      {
+        "status": "translation",
+        "text": "马斯利哈特同意任命阿基姆门槛的分母为二分之一"
+      }
+    ],
+    "akim_consent_numerator": [
+      {
+        "status": "translation",
+        "text": "马斯利哈特同意任命阿基姆门槛的分子为二分之一"
+      }
+    ],
+    "akim_no_confidence": [
+      {
+        "status": "translation",
+        "text": "马斯利哈特已对阿基姆通过不信任案"
+      }
+    ],
+    "akim_no_confidence_denominator": [
+      {
+        "status": "translation",
+        "text": "对阿基姆通过不信任案门槛的分母为二分之一"
+      }
+    ],
+    "akim_no_confidence_expressed_1995": [
+      {
+        "status": "translation",
+        "text": "已对阿基姆表示不信任（1995年版）"
+      }
+    ],
+    "akim_no_confidence_initiating_votes": [
+      {
+        "status": "translation",
+        "text": "提出对阿基姆不信任案动议的马斯利哈特议员人数"
+      }
+    ],
+    "akim_no_confidence_initiative_denominator": [
+      {
+        "status": "translation",
+        "text": "对阿基姆不信任案动议门槛的分母为五分之一"
+      }
+    ],
+    "akim_no_confidence_initiative_numerator": [
+      {
+        "status": "translation",
+        "text": "对阿基姆不信任案动议门槛的分子为五分之一"
+      }
+    ],
+    "akim_no_confidence_initiative_valid_1995": [
+      {
+        "status": "translation",
+        "text": "对阿基姆的不信任案动议由法定人数的议员提出（1995年版）"
+      }
+    ],
+    "akim_no_confidence_numerator": [
+      {
+        "status": "translation",
+        "text": "对阿基姆通过不信任案门槛的分子为二分之一"
+      }
+    ],
+    "akim_no_confidence_votes": [
+      {
+        "status": "translation",
+        "text": "对阿基姆不信任案投赞成票的票数"
+      }
+    ],
+    "akim_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "阿基姆的职权已终止（1995年版）"
+      }
+    ],
+    "akim_responsible_for_territorial_affairs": [
+      {
+        "status": "translation",
+        "text": "阿基姆对相应辖区的事务状况负责"
+      }
+    ],
+    "already_member_of_other_maslikhat": [
+      {
+        "status": "translation",
+        "text": "该人已是其他马斯利哈特的议员"
+      }
+    ],
+    "analogy_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "不允许类推适用刑事法律（1995年版）"
+      }
+    ],
+    "applicable_act": [
+      {
+        "status": "translation",
+        "text": "该案件应当适用该文件"
+      }
+    ],
+    "assessment_date": [
+      {
+        "status": "translation",
+        "text": "评价该文件效力所针对的日期"
+      }
+    ],
+    "case_assigned_by_law_to_supreme_court": [
+      {
+        "status": "translation",
+        "text": "该案件由法律规定归最高法院管辖"
+      }
+    ],
+    "citizen": [
+      {
+        "status": "translation",
+        "text": "该人是哈萨克斯坦共和国公民"
+      }
+    ],
+    "constitutional_court": [
+      {
+        "status": "translation",
+        "text": "该机关是宪法法院"
+      }
+    ],
+    "constitutional_court_decisions_final_1995": [
+      {
+        "status": "translation",
+        "text": "宪法法院的决定为终局决定，不得上诉（1995年版）"
+      }
+    ],
+    "constitutional_court_referral_required_1995": [
+      {
+        "status": "translation",
+        "text": "法院应当向宪法法院提出申请（1995年版）"
+      }
+    ],
+    "constitutional_judge": [
+      {
+        "status": "translation",
+        "text": "该人是宪法法院法官"
+      }
+    ],
+    "constitutional_judge_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "正在任命宪法法院法官"
+      }
+    ],
+    "constitutional_judge_arrest_attempt": [
+      {
+        "status": "translation",
+        "text": "已实施逮捕宪法法院法官的行为"
+      }
+    ],
+    "constitutional_judge_business": [
+      {
+        "status": "translation",
+        "text": "宪法法院法官从事经营活动"
+      }
+    ],
+    "constitutional_judge_count": [
+      {
+        "status": "translation",
+        "text": "宪法法院法官人数为十一名"
+      }
+    ],
+    "constitutional_judge_deputy_mandate": [
+      {
+        "status": "translation",
+        "text": "宪法法院法官是代表机关的议员"
+      }
+    ],
+    "constitutional_judge_immunity_infringed_1995": [
+      {
+        "status": "translation",
+        "text": "宪法法院法官的不可侵犯性已受侵害（1995年版）"
+      }
+    ],
+    "constitutional_judge_office_incompatible_1995": [
+      {
+        "status": "translation",
+        "text": "宪法法院法官职务与所任职务或者所从事活动不相容（1995年版）"
+      }
+    ],
+    "constitutional_judge_paid_office": [
+      {
+        "status": "translation",
+        "text": "宪法法院法官担任其他有报酬职务"
+      }
+    ],
+    "constitutional_judge_permitted_activity": [
+      {
+        "status": "translation",
+        "text": "该项活动属于准许从事的教学、科研或者创作活动"
+      }
+    ],
+    "constitutional_judge_reappointment_prohibited": [
+      {
+        "status": "translation",
+        "text": "不允许再次被任命为宪法法院法官"
+      }
+    ],
+    "constitutional_judge_term": [
+      {
+        "status": "translation",
+        "text": "宪法法院法官的任期为八年"
+      }
+    ],
+    "constitutional_judge_term_expires_on": [
+      {
+        "status": "translation",
+        "text": "宪法法院法官职权终止之日"
+      }
+    ],
+    "constitutional_judge_term_started_on": [
+      {
+        "status": "translation",
+        "text": "宪法法院法官职权开始之日"
+      }
+    ],
+    "constitutional_judges_appointed_by_mazhilis_1995": [
+      {
+        "status": "translation",
+        "text": "由马日利斯任命的宪法法院法官人数为三名（1995年版）"
+      }
+    ],
+    "constitutional_judges_appointed_by_president_1995": [
+      {
+        "status": "translation",
+        "text": "由总统任命的宪法法院法官人数为四名（1995年版）"
+      }
+    ],
+    "constitutional_judges_appointed_by_senate_1995": [
+      {
+        "status": "translation",
+        "text": "由参议院任命的宪法法院法官人数为三名（1995年版）"
+      }
+    ],
+    "constitutional_law": [
+      {
+        "status": "translation",
+        "text": "哈萨克斯坦共和国宪法性法律"
+      }
+    ],
+    "constitutional_law_adopted": [
+      {
+        "status": "translation",
+        "text": "宪法性法律已经通过"
+      }
+    ],
+    "constitutional_referral_required": [
+      {
+        "status": "translation",
+        "text": "法院应当向宪法法院提出申请"
+      }
+    ],
+    "constitutional_review_exercised": [
+      {
+        "status": "translation",
+        "text": "该机关行使宪法监督并保障宪法的至上地位"
+      }
+    ],
+    "conviction_impermissible_1995": [
+      {
+        "status": "translation",
+        "text": "该有罪判决不被允许（1995年版）"
+      }
+    ],
+    "conviction_only_on_own_confession": [
+      {
+        "status": "translation",
+        "text": "有罪判决仅以被告人本人的供认为依据"
+      }
+    ],
+    "council_recommendation": [
+      {
+        "status": "translation",
+        "text": "已有最高司法委员会的推荐"
+      }
+    ],
+    "court": [
+      {
+        "status": "translation",
+        "text": "该机关是法院"
+      }
+    ],
+    "court_finds_act_infringing_rights": [
+      {
+        "status": "translation",
+        "text": "法院认为应予适用的文件侵害宪法权利"
+      }
+    ],
+    "court_handles": [
+      {
+        "status": "translation",
+        "text": "该案件由该法院审理"
+      }
+    ],
+    "court_ruling_binding_1995": [
+      {
+        "status": "translation",
+        "text": "法院裁判在共和国全境具有约束力（1995年版）"
+      }
+    ],
+    "court_ruling_issued": [
+      {
+        "status": "translation",
+        "text": "法院已就该案件作出裁判"
+      }
+    ],
+    "court_specified_termination_date": [
+      {
+        "status": "translation",
+        "text": "法院确定该文件失效之日"
+      }
+    ],
+    "courts_financed_from_republican_budget": [
+      {
+        "status": "translation",
+        "text": "各法院经费由共和国预算保障"
+      }
+    ],
+    "courts_financed_from_republican_budget_1995": [
+      {
+        "status": "translation",
+        "text": "各法院经费由共和国预算保障（1995年版）"
+      }
+    ],
+    "criminal_law_applied_by_analogy": [
+      {
+        "status": "translation",
+        "text": "已类推适用刑事法律"
+      }
+    ],
+    "decision_date": [
+      {
+        "status": "translation",
+        "text": "宪法法院作出决定之日"
+      }
+    ],
+    "declared_constitutional_in_interpretation": [
+      {
+        "status": "translation",
+        "text": "该文件按法院所作解释被认定合宪"
+      }
+    ],
+    "declared_constitutional_in_interpretation_1995": [
+      {
+        "status": "translation",
+        "text": "该文件按所作解释被认定符合宪法（1995年版）"
+      }
+    ],
+    "declared_unconstitutional": [
+      {
+        "status": "translation",
+        "text": "该文件被认定违宪"
+      }
+    ],
+    "declared_unconstitutional_1995": [
+      {
+        "status": "translation",
+        "text": "该文件被认定违宪（1995年版）"
+      }
+    ],
+    "deputy_registration_suspended": [
+      {
+        "status": "translation",
+        "text": "当选议员的登记在宪法法院作出决定前中止"
+      }
+    ],
+    "doubt_about_guilt": [
+      {
+        "status": "translation",
+        "text": "对该人是否有罪存在怀疑"
+      }
+    ],
+    "doubt_resolved_for_accused_1995": [
+      {
+        "status": "translation",
+        "text": "对有罪的怀疑作有利于被告人的解释（1995年版）"
+      }
+    ],
+    "election_dispute_petition": [
+      {
+        "status": "translation",
+        "text": "该申请就选举是否正确提出异议"
+      }
+    ],
+    "election_dispute_petition_1995": [
+      {
+        "status": "translation",
+        "text": "该申请就选举是否正确提出异议（1995年版）"
+      }
+    ],
+    "eligible_maslikhat_candidate": [
+      {
+        "status": "translation",
+        "text": "该人符合马斯利哈特议员的条件"
+      }
+    ],
+    "eligible_maslikhat_deputy_1995": [
+      {
+        "status": "translation",
+        "text": "该人符合马斯利哈特议员的条件（1995年版）"
+      }
+    ],
+    "evidence_obtained_unlawfully": [
+      {
+        "status": "translation",
+        "text": "证据系以非法方法取得"
+      }
+    ],
+    "evidence_without_legal_force_1995": [
+      {
+        "status": "translation",
+        "text": "该证据不具有法律效力（1995年版）"
+      }
+    ],
+    "hearing_right_violated_1995": [
+      {
+        "status": "translation",
+        "text": "在法庭上陈述意见的权利受到侵犯（1995年版）"
+      }
+    ],
+    "inauguration_suspended_1995": [
+      {
+        "status": "translation",
+        "text": "就职在宪法法院作出决定前中止（1995年版）"
+      }
+    ],
+    "interference_liability_arises_1995": [
+      {
+        "status": "translation",
+        "text": "干预审判活动的，依法承担责任（1995年版）"
+      }
+    ],
+    "interference_unlawful": [
+      {
+        "status": "translation",
+        "text": "不允许干预审判活动"
+      }
+    ],
+    "interference_with_justice": [
+      {
+        "status": "translation",
+        "text": "该案件中发生了干预审判活动的情形"
+      }
+    ],
+    "judge": [
+      {
+        "status": "translation",
+        "text": "该人是法官"
+      }
+    ],
+    "judge_applies_law": [
+      {
+        "status": "translation",
+        "text": "法官就该案件适用法律"
+      }
+    ],
+    "judge_arrest_attempt": [
+      {
+        "status": "translation",
+        "text": "已实施逮捕法官的行为"
+      }
+    ],
+    "judge_business": [
+      {
+        "status": "translation",
+        "text": "法官从事经营活动"
+      }
+    ],
+    "judge_caught_at_crime_scene": [
+      {
+        "status": "translation",
+        "text": "法官在犯罪现场被当场抓获"
+      }
+    ],
+    "judge_caught_in_act_or_grave_crime": [
+      {
+        "status": "translation",
+        "text": "宪法法院法官在犯罪现场被当场抓获或者实施了重罪"
+      }
+    ],
+    "judge_deputy_mandate": [
+      {
+        "status": "translation",
+        "text": "法官是代表机关的议员"
+      }
+    ],
+    "judge_detained": [
+      {
+        "status": "translation",
+        "text": "法官已被拘留"
+      }
+    ],
+    "judge_detention_attempt": [
+      {
+        "status": "translation",
+        "text": "已实施拘留法官的行为"
+      }
+    ],
+    "judge_detention_ground": [
+      {
+        "status": "translation",
+        "text": "存在允许拘留法官的根据"
+      }
+    ],
+    "judge_grave_or_especially_grave_offence": [
+      {
+        "status": "translation",
+        "text": "法官实施了重罪或者特别重罪"
+      }
+    ],
+    "judge_immunity_infringed_1995": [
+      {
+        "status": "translation",
+        "text": "法官的不可侵犯性已受侵害（1995年版）"
+      }
+    ],
+    "judge_independent_and_subject_only_to_law": [
+      {
+        "status": "translation",
+        "text": "法官行使审判权时独立，只服从宪法和法律"
+      }
+    ],
+    "judge_inviolability_applies": [
+      {
+        "status": "translation",
+        "text": "法官免受拘留的保护有效"
+      }
+    ],
+    "judge_office_incompatible_1995": [
+      {
+        "status": "translation",
+        "text": "法官职务与所任职务或者所从事活动不相容（1995年版）"
+      }
+    ],
+    "judge_paid_office": [
+      {
+        "status": "translation",
+        "text": "法官担任其他有报酬职务"
+      }
+    ],
+    "judge_permitted_activity": [
+      {
+        "status": "translation",
+        "text": "该项活动属于准许从事的教学、科研或者创作活动"
+      }
+    ],
+    "judge_requirements_determined": [
+      {
+        "status": "translation",
+        "text": "对哈萨克斯坦共和国各法院法官的要求已经确定"
+      }
+    ],
+    "judicial_collegia_established": [
+      {
+        "status": "translation",
+        "text": "各法院已设立审判庭"
+      }
+    ],
+    "judicial_decision": [
+      {
+        "status": "translation",
+        "text": "该文件是该法院的裁判"
+      }
+    ],
+    "judicial_decision_binding_nationwide": [
+      {
+        "status": "translation",
+        "text": "法院裁判在共和国全境具有约束力"
+      }
+    ],
+    "judicial_interference": [
+      {
+        "status": "translation",
+        "text": "存在干预法官审判活动的情形"
+      }
+    ],
+    "judicial_power_covers_case_1995": [
+      {
+        "status": "translation",
+        "text": "该案件属于审判权范围（1995年版）"
+      }
+    ],
+    "judicial_practice_explanation_authorized_by_law": [
+      {
+        "status": "translation",
+        "text": "就审判实践问题作出解释由法律规定归最高法院管辖"
+      }
+    ],
+    "jurisdiction_change_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "未经本人同意不得变更案件管辖（1995年版）"
+      }
+    ],
+    "jurisdiction_changed_without_consent": [
+      {
+        "status": "translation",
+        "text": "案件管辖未经本人同意被变更"
+      }
+    ],
+    "justice_act": [
+      {
+        "status": "translation",
+        "text": "该主体行使审判权"
+      }
+    ],
+    "justice_by_court_only_1995": [
+      {
+        "status": "translation",
+        "text": "审判权只能由法院行使（1995年版）"
+      }
+    ],
+    "justice_lawful": [
+      {
+        "status": "translation",
+        "text": "审判权的行使符合法定要求"
+      }
+    ],
+    "legal_aid": [
+      {
+        "status": "translation",
+        "text": "向该人提供法律帮助"
+      }
+    ],
+    "legal_aid_constitutionally_provided": [
+      {
+        "status": "translation",
+        "text": "法律帮助已依宪法规定的方式提供"
+      }
+    ],
+    "legal_aid_provider": [
+      {
+        "status": "translation",
+        "text": "法律帮助由该主体提供"
+      }
+    ],
+    "legal_application_case": [
+      {
+        "status": "translation",
+        "text": "该案件适用法律"
+      }
+    ],
+    "local_court_appointment": [
+      {
+        "status": "translation",
+        "text": "正在任命地方法院法官"
+      }
+    ],
+    "local_court_appointment_valid_1995": [
+      {
+        "status": "translation",
+        "text": "地方法院法官的任命已经作出（1995年版）"
+      }
+    ],
+    "local_decision_admissible": [
+      {
+        "status": "translation",
+        "text": "马斯利哈特的决定在相应辖区具有约束力"
+      }
+    ],
+    "local_executive_body": [
+      {
+        "status": "translation",
+        "text": "该机关是地方执行机关"
+      }
+    ],
+    "local_representative_body": [
+      {
+        "status": "translation",
+        "text": "该机关是马斯利哈特"
+      }
+    ],
+    "local_revenue_reducing_or_spending_increasing": [
+      {
+        "status": "translation",
+        "text": "该决定规定减少地方收入或者增加支出"
+      }
+    ],
+    "local_self_government_action": [
+      {
+        "status": "translation",
+        "text": "该文件由地方自治机关作出"
+      }
+    ],
+    "local_self_government_autonomy": [
+      {
+        "status": "translation",
+        "text": "保障地方自治自主解决地方性事务"
+      }
+    ],
+    "local_self_government_autonomy_guaranteed_1995": [
+      {
+        "status": "translation",
+        "text": "保障地方自治机关的自主性（1995年版）"
+      }
+    ],
+    "local_self_government_recognized_1995": [
+      {
+        "status": "translation",
+        "text": "共和国承认地方自治（1995年版）"
+      }
+    ],
+    "local_state_administration_established_1995": [
+      {
+        "status": "translation",
+        "text": "地方国家管理由地方代表机关和执行机关实施（1995年版）"
+      }
+    ],
+    "maslikhat_candidate": [
+      {
+        "status": "translation",
+        "text": "马斯利哈特议员候选人即为该人"
+      }
+    ],
+    "maslikhat_decision_admissible_1995": [
+      {
+        "status": "translation",
+        "text": "马斯利哈特的决定在相应辖区具有约束力（1995年版）"
+      }
+    ],
+    "maslikhat_deputy_minimum_age": [
+      {
+        "status": "translation",
+        "text": "马斯利哈特议员的最低年龄为二十周岁"
+      }
+    ],
+    "maslikhat_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "马斯利哈特的职权已终止（1995年版）"
+      }
+    ],
+    "maslikhat_responsible_for_territorial_affairs": [
+      {
+        "status": "translation",
+        "text": "马斯利哈特对相应辖区的事务状况负责"
+      }
+    ],
+    "maslikhat_ruling": [
+      {
+        "status": "translation",
+        "text": "该文件是马斯利哈特的决定"
+      }
+    ],
+    "maslikhat_self_dissolution": [
+      {
+        "status": "translation",
+        "text": "马斯利哈特已作出自行解散的决定"
+      }
+    ],
+    "maslikhat_term": [
+      {
+        "status": "translation",
+        "text": "马斯利哈特的任期为五年"
+      }
+    ],
+    "maslikhat_term_expires_on": [
+      {
+        "status": "translation",
+        "text": "马斯利哈特职权终止之日"
+      }
+    ],
+    "maslikhat_term_started_on": [
+      {
+        "status": "translation",
+        "text": "马斯利哈特职权开始之日"
+      }
+    ],
+    "new_president_assumed_office_1995": [
+      {
+        "status": "translation",
+        "text": "新总统已经就职（1995年版）"
+      }
+    ],
+    "non_court_justice_attempt": [
+      {
+        "status": "translation",
+        "text": "在法院之外行使审判权"
+      }
+    ],
+    "ombudsman": [
+      {
+        "status": "translation",
+        "text": "该人是人权专员"
+      }
+    ],
+    "ombudsman_appointed": [
+      {
+        "status": "translation",
+        "text": "人权专员已获任命"
+      }
+    ],
+    "ombudsman_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "正在任命人权专员"
+      }
+    ],
+    "ombudsman_arrest_attempt": [
+      {
+        "status": "translation",
+        "text": "已实施逮捕人权专员的行为"
+      }
+    ],
+    "ombudsman_assistance_authorized": [
+      {
+        "status": "translation",
+        "text": "人权专员的协助符合法定要求"
+      }
+    ],
+    "ombudsman_caught_at_crime_scene": [
+      {
+        "status": "translation",
+        "text": "人权专员在犯罪现场被当场抓获"
+      }
+    ],
+    "ombudsman_caught_in_act_or_grave_crime": [
+      {
+        "status": "translation",
+        "text": "人权专员在犯罪现场被当场抓获或者实施了重罪"
+      }
+    ],
+    "ombudsman_coercive_measure_applied": [
+      {
+        "status": "translation",
+        "text": "已对人权专员适用强制措施"
+      }
+    ],
+    "ombudsman_coercive_measure_attempt": [
+      {
+        "status": "translation",
+        "text": "正在对人权专员适用强制措施"
+      }
+    ],
+    "ombudsman_grave_or_especially_grave_offence": [
+      {
+        "status": "translation",
+        "text": "人权专员实施了重罪或者特别重罪"
+      }
+    ],
+    "ombudsman_immunity_infringed_1995": [
+      {
+        "status": "translation",
+        "text": "人权专员的不可侵犯性已受侵害（1995年版）"
+      }
+    ],
+    "ombudsman_independent_1995": [
+      {
+        "status": "translation",
+        "text": "人权专员独立（1995年版）"
+      }
+    ],
+    "ombudsman_independent_and_unaccountable": [
+      {
+        "status": "translation",
+        "text": "人权专员独立且不对国家机关负责"
+      }
+    ],
+    "ombudsman_inviolability_applies": [
+      {
+        "status": "translation",
+        "text": "人权专员免受强制措施的保护有效"
+      }
+    ],
+    "ombudsman_measure_ground": [
+      {
+        "status": "translation",
+        "text": "存在允许对人权专员适用强制措施的根据"
+      }
+    ],
+    "ombudsman_rights_assistance": [
+      {
+        "status": "translation",
+        "text": "人权专员协助该人恢复权利"
+      }
+    ],
+    "ordinary_judge_caught_in_act_or_grave_crime": [
+      {
+        "status": "translation",
+        "text": "法官在犯罪现场被当场抓获或者实施了重罪"
+      }
+    ],
+    "parliament_consent_for_judge": [
+      {
+        "status": "translation",
+        "text": "已取得代表机关对任命法官的同意"
+      }
+    ],
+    "participating_maslikhat_deputies": [
+      {
+        "status": "translation",
+        "text": "参加投票的马斯利哈特议员人数"
+      }
+    ],
+    "petition_admissible": [
+      {
+        "status": "translation",
+        "text": "向宪法法院提出的申请已受理"
+      }
+    ],
+    "petition_admissible_1995": [
+      {
+        "status": "translation",
+        "text": "向宪法法院提出的申请已受理（1995年版）"
+      }
+    ],
+    "petition_by_citizen_affecting_constitutional_rights": [
+      {
+        "status": "translation",
+        "text": "该申请由公民就其宪法权利和自由问题提出"
+      }
+    ],
+    "petition_by_court_under_article_79": [
+      {
+        "status": "translation",
+        "text": "该申请由法院依宪法第七十九条提出"
+      }
+    ],
+    "petition_by_kurultai_chair": [
+      {
+        "status": "translation",
+        "text": "该申请由库鲁尔泰主席提出"
+      }
+    ],
+    "petition_by_mazhilis_chair_1995": [
+      {
+        "status": "translation",
+        "text": "该申请由马日利斯议长提出（1995年版）"
+      }
+    ],
+    "petition_by_ombudsman_affecting_rights": [
+      {
+        "status": "translation",
+        "text": "该申请由人权专员就权利和自由问题提出"
+      }
+    ],
+    "petition_by_one_fifth_of_deputies": [
+      {
+        "status": "translation",
+        "text": "该申请由不少于五分之一的库鲁尔泰议员提出"
+      }
+    ],
+    "petition_by_one_fifth_of_parliament_1995": [
+      {
+        "status": "translation",
+        "text": "该申请由不少于五分之一的议会议员提出（1995年版）"
+      }
+    ],
+    "petition_by_president": [
+      {
+        "status": "translation",
+        "text": "该申请由共和国总统提出"
+      }
+    ],
+    "petition_by_prime_minister": [
+      {
+        "status": "translation",
+        "text": "该申请由总理提出"
+      }
+    ],
+    "petition_by_prosecutor_general": [
+      {
+        "status": "translation",
+        "text": "该申请由总检察长提出"
+      }
+    ],
+    "petition_by_senate_chair_1995": [
+      {
+        "status": "translation",
+        "text": "该申请由参议院议长提出（1995年版）"
+      }
+    ],
+    "petition_to_constitutional_court": [
+      {
+        "status": "translation",
+        "text": "已向宪法法院提出申请"
+      }
+    ],
+    "positive_akim_opinion": [
+      {
+        "status": "translation",
+        "text": "阿基姆已就该决定作出肯定性结论"
+      }
+    ],
+    "pre_ratification_petition_1995": [
+      {
+        "status": "translation",
+        "text": "该申请在条约批准之前提出（1995年版）"
+      }
+    ],
+    "pre_ratification_treaty_petition": [
+      {
+        "status": "translation",
+        "text": "该申请在国际条约批准之前提出"
+      }
+    ],
+    "pre_signature_law_petition": [
+      {
+        "status": "translation",
+        "text": "该申请在总统签署法律之前提出"
+      }
+    ],
+    "pre_signature_petition_1995": [
+      {
+        "status": "translation",
+        "text": "该申请在文件签署之前提出（1995年版）"
+      }
+    ],
+    "presidential_appointment_of_ombudsman": [
+      {
+        "status": "translation",
+        "text": "人权专员由共和国总统任命"
+      }
+    ],
+    "presidential_consent_on_council_conclusion": [
+      {
+        "status": "translation",
+        "text": "已就最高司法委员会的结论取得总统的决定"
+      }
+    ],
+    "presidential_consent_to_ombudsman_measure": [
+      {
+        "status": "translation",
+        "text": "已取得总统对人权专员适用措施的同意"
+      }
+    ],
+    "presidential_inauguration_suspended": [
+      {
+        "status": "translation",
+        "text": "总统就职在宪法法院作出决定前中止"
+      }
+    ],
+    "presidential_maslikhat_termination": [
+      {
+        "status": "translation",
+        "text": "总统已终止马斯利哈特的职权"
+      }
+    ],
+    "presidential_submission_on_council_recommendation": [
+      {
+        "status": "translation",
+        "text": "总统已根据最高司法委员会的推荐提出提名"
+      }
+    ],
+    "previously_appointed_constitutional_judge": [
+      {
+        "status": "translation",
+        "text": "该人此前曾被任命为宪法法院法官"
+      }
+    ],
+    "prior_prosecutor_general_term": [
+      {
+        "status": "translation",
+        "text": "该人此前曾担任总检察长职务"
+      }
+    ],
+    "prior_supreme_court_chair_term": [
+      {
+        "status": "translation",
+        "text": "该人此前曾担任最高法院院长职务"
+      }
+    ],
+    "proceeding_suspended": [
+      {
+        "status": "translation",
+        "text": "案件审理已经中止"
+      }
+    ],
+    "proceeding_suspended_1995": [
+      {
+        "status": "translation",
+        "text": "案件审理已经中止（1995年版）"
+      }
+    ],
+    "prosecutor_caught_in_act_or_grave_crime": [
+      {
+        "status": "translation",
+        "text": "总检察长在犯罪现场被当场抓获或者实施了重罪"
+      }
+    ],
+    "prosecutor_general_arrest_attempt": [
+      {
+        "status": "translation",
+        "text": "已实施逮捕总检察长的行为"
+      }
+    ],
+    "prosecutor_general_reappointment_attempt": [
+      {
+        "status": "translation",
+        "text": "已发生再次任命总检察长的情形"
+      }
+    ],
+    "prosecutor_general_reappointment_prohibited": [
+      {
+        "status": "translation",
+        "text": "不允许再次被任命为总检察长"
+      }
+    ],
+    "prosecutor_general_term": [
+      {
+        "status": "translation",
+        "text": "总检察长的任期为六年"
+      }
+    ],
+    "prosecutor_general_term_expires_on": [
+      {
+        "status": "translation",
+        "text": "总检察长职权终止之日"
+      }
+    ],
+    "prosecutor_general_term_started_on": [
+      {
+        "status": "translation",
+        "text": "总检察长职权开始之日"
+      }
+    ],
+    "prosecutor_general_term_years_1995": [
+      {
+        "status": "translation",
+        "text": "总检察长的任期为五年（1995年版）"
+      }
+    ],
+    "prosecutor_immunity_infringed_1995": [
+      {
+        "status": "translation",
+        "text": "总检察长的不可侵犯性已受侵害（1995年版）"
+      }
+    ],
+    "ratification_deadline_suspended": [
+      {
+        "status": "translation",
+        "text": "国际条约批准期限的计算已经中止"
+      }
+    ],
+    "ratification_deadline_suspended_1995": [
+      {
+        "status": "translation",
+        "text": "条约批准期限的计算已经中止（1995年版）"
+      }
+    ],
+    "referendum_results_suspended": [
+      {
+        "status": "translation",
+        "text": "全民公决结果在宪法法院作出决定前不予确认"
+      }
+    ],
+    "regional_akim": [
+      {
+        "status": "translation",
+        "text": "该阿基姆为州、共和国直辖市或者首都的阿基姆"
+      }
+    ],
+    "regional_akim_appointment": [
+      {
+        "status": "translation",
+        "text": "正在任命阿基姆"
+      }
+    ],
+    "repeated_liability_for_same_offence": [
+      {
+        "status": "translation",
+        "text": "该人因同一违法行为被重复追究责任"
+      }
+    ],
+    "repeated_liability_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "不允许因同一违法行为重复追究责任（1995年版）"
+      }
+    ],
+    "required_constitutional_interpretation_applied": [
+      {
+        "status": "translation",
+        "text": "该文件仅按据以认定其合宪的解释适用"
+      }
+    ],
+    "required_constitutional_interpretation_applied_1995": [
+      {
+        "status": "translation",
+        "text": "据以认定文件合宪的解释必须适用（1995年版）"
+      }
+    ],
+    "required_judge_detention_consent": [
+      {
+        "status": "translation",
+        "text": "已取得拘留法官所需的同意"
+      }
+    ],
+    "right_to_be_heard_denied": [
+      {
+        "status": "translation",
+        "text": "该人在法庭上陈述意见的权利被拒绝"
+      }
+    ],
+    "rights_restoration_case": [
+      {
+        "status": "translation",
+        "text": "该人已申请恢复被侵犯的权利"
+      }
+    ],
+    "ruling_annullable_in_court_1995": [
+      {
+        "status": "translation",
+        "text": "该决定可以通过司法程序撤销（1995年版）"
+      }
+    ],
+    "ruling_contrary_to_constitution_or_law": [
+      {
+        "status": "translation",
+        "text": "该决定与宪法或者立法相抵触"
+      }
+    ],
+    "senate_consent_for_judge": [
+      {
+        "status": "translation",
+        "text": "参议院已同意任命该法官"
+      }
+    ],
+    "senate_consent_for_ombudsman": [
+      {
+        "status": "translation",
+        "text": "参议院已同意任命人权专员"
+      }
+    ],
+    "senate_consent_for_prosecutor": [
+      {
+        "status": "translation",
+        "text": "参议院已同意逮捕总检察长"
+      }
+    ],
+    "senate_elected": [
+      {
+        "status": "translation",
+        "text": "该候选人已由参议院选出（1995年版）"
+      }
+    ],
+    "signature_deadline_suspended": [
+      {
+        "status": "translation",
+        "text": "法律签署期限的计算已经中止"
+      }
+    ],
+    "signature_deadline_suspended_1995": [
+      {
+        "status": "translation",
+        "text": "文件签署期限的计算已经中止（1995年版）"
+      }
+    ],
+    "special_court_prohibited": [
+      {
+        "status": "translation",
+        "text": "不允许设立特别法院和非常法院"
+      }
+    ],
+    "special_court_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "不允许设立特别法院和非常法院（1995年版）"
+      }
+    ],
+    "special_or_emergency_court": [
+      {
+        "status": "translation",
+        "text": "该法院为特别法院或者非常法院"
+      }
+    ],
+    "supreme_court": [
+      {
+        "status": "translation",
+        "text": "该机关是最高法院"
+      }
+    ],
+    "supreme_court_appointment": [
+      {
+        "status": "translation",
+        "text": "正在任命最高法院法官"
+      }
+    ],
+    "supreme_court_appointment_valid_1995": [
+      {
+        "status": "translation",
+        "text": "最高法院法官的任命已经作出（1995年版）"
+      }
+    ],
+    "supreme_court_case_authorized": [
+      {
+        "status": "translation",
+        "text": "最高法院有权审理该案件"
+      }
+    ],
+    "supreme_court_chair_reappointment_attempt": [
+      {
+        "status": "translation",
+        "text": "已发生再次任命最高法院院长的情形"
+      }
+    ],
+    "supreme_court_chair_reappointment_prohibited": [
+      {
+        "status": "translation",
+        "text": "不允许再次被任命为最高法院院长"
+      }
+    ],
+    "supreme_court_chair_term": [
+      {
+        "status": "translation",
+        "text": "最高法院院长的任期为六年"
+      }
+    ],
+    "supreme_court_chair_term_expires_on": [
+      {
+        "status": "translation",
+        "text": "最高法院院长职权终止之日"
+      }
+    ],
+    "supreme_court_chair_term_started_on": [
+      {
+        "status": "translation",
+        "text": "最高法院院长职权开始之日"
+      }
+    ],
+    "supreme_court_explanation_authorized": [
+      {
+        "status": "translation",
+        "text": "最高法院有权就审判实践问题作出解释"
+      }
+    ],
+    "supreme_court_is_highest_judicial_body_1995": [
+      {
+        "status": "translation",
+        "text": "最高法院是民事、刑事和其他案件的最高审判机关（1995年版）"
+      }
+    ],
+    "termination_consultations_completed": [
+      {
+        "status": "translation",
+        "text": "终止马斯利哈特职权所需的协商已经进行"
+      }
+    ],
+    "total_maslikhat_deputies": [
+      {
+        "status": "translation",
+        "text": "马斯利哈特议员总数"
+      }
+    ],
+    "treaty_declared_unconstitutional_1995": [
+      {
+        "status": "translation",
+        "text": "该国际条约被认定违宪（1995年版）"
+      }
+    ],
+    "treaty_may_not_be_ratified_1995": [
+      {
+        "status": "translation",
+        "text": "该国际条约不得批准（1995年版）"
+      }
+    ],
+    "within_judicial_power": [
+      {
+        "status": "translation",
+        "text": "该案件属于审判权范围"
+      }
+    ],
+    "within_statutory_local_power": [
+      {
+        "status": "translation",
+        "text": "该决定系在法律规定的职权范围内作出"
+      }
+    ]
+  },
+  "language": "zh",
+  "package": "kz.constitution.court"
+}

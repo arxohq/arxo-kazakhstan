@@ -1,0 +1,1052 @@
+{
+  "$comment": "طبقة عرض عربية لحزم دستور جمهورية كازاخستان (DECISION-0070). الملف خارج CLIR ولا يقرأه المصرف، وإنما تقرأه طبقة العرض وحدها (verbalize --labels وخادم MCP وسطح المكتب). مصدر الترجمة هو تسمية العقدة الروسية ru-KZ في CLIR، ومصطلحاتها موافقة لحزمة law.verb.ar؛ والحالة translation أي ترجمة عمل غير رسمية لا نص رسمي. المفتاح هو الاسم المحلي للعقدة. النص غير مشكول.",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "Bill": [
+      {
+        "status": "translation",
+        "text": "مشروع قانون"
+      }
+    ],
+    "Candidate": [
+      {
+        "status": "translation",
+        "text": "مترشح"
+      }
+    ],
+    "Commission": [
+      {
+        "status": "translation",
+        "text": "لجنة القورولتاي"
+      }
+    ],
+    "CommissionEstablished": [
+      {
+        "status": "translation",
+        "text": "المادة 59 الفقرة 1. يشكل القورولتاي لجانا"
+      }
+    ],
+    "Committee": [
+      {
+        "status": "translation",
+        "text": "لجنة دائمة في القورولتاي"
+      }
+    ],
+    "ConstitutionalEarlyTermination": [
+      {
+        "status": "translation",
+        "text": "المادة 52 الفقرة 3. يستلزم الإنهاء المبكر للصلاحيات سببا وأوضاعا مقررة في الدستور"
+      }
+    ],
+    "ConstitutionalLawTwoThirds": [
+      {
+        "status": "translation",
+        "text": "المادة 61 الفقرة 3. تقر القوانين الدستورية بأغلبية لا تقل عن ثلثي أصوات مجموع نواب القورولتاي"
+      }
+    ],
+    "ConstitutionalVetoOverride": [
+      {
+        "status": "translation",
+        "text": "المادة 56 البند 2). تتجاوز اعتراضات الرئيس على القانون الدستوري بأغلبية ثلاثة أرباع أصوات مجموع النواب"
+      }
+    ],
+    "Deputy": [
+      {
+        "status": "translation",
+        "text": "نائب في القورولتاي"
+      }
+    ],
+    "DeputyCandidateEligibility": [
+      {
+        "status": "translation",
+        "text": "المادة 54 الفقرة 3. يجوز أن يكون نائبا في القورولتاي مواطن الجمهورية البالغ خمسا وعشرين سنة المقيم في كازاخستان بصفة دائمة العشر سنوات الأخيرة"
+      }
+    ],
+    "DeputyDetentionException": [
+      {
+        "status": "translation",
+        "text": "المادة 55 الفقرة 3. يجوز احتجاز النائب في حال ضبطه متلبسا أو ارتكابه جرائم جسيمة وجسيمة بوجه خاص أو بموافقة القورولتاي"
+      }
+    ],
+    "DeputyDetentionGroundConsent": [
+      {
+        "status": "translation",
+        "text": "المادة 55 الفقرة 3. موافقة القورولتاي سبب يرفع الحماية عن النائب"
+      }
+    ],
+    "DeputyDetentionGroundGraveOffence": [
+      {
+        "status": "translation",
+        "text": "المادة 55 الفقرة 3. ارتكاب جريمة جسيمة أو جسيمة بوجه خاص سبب يرفع الحماية عن النائب"
+      }
+    ],
+    "DeputyDetentionGroundInTheAct": [
+      {
+        "status": "translation",
+        "text": "المادة 55 الفقرة 3. الضبط في حال التلبس سبب يرفع الحماية عن النائب"
+      }
+    ],
+    "DeputyImmunity": [
+      {
+        "status": "translation",
+        "text": "المادة 55 الفقرة 3. لا يجوز احتجاز نائب القورولتاي بغير موافقة القورولتاي عدا الضبط في حال التلبس وارتكاب جرائم جسيمة وجسيمة بوجه خاص"
+      }
+    ],
+    "DeputyInviolabilityApplies": [
+      {
+        "status": "translation",
+        "text": "المادة 55 الفقرة 3. تظل حماية النائب من الاحتجاز قائمة ما لم يتحقق سبب من الأسباب الثلاثة المسماة"
+      }
+    ],
+    "DeputyInviolabilityApplies/unless/0": [
+      {
+        "status": "translation",
+        "text": "المادة 55 الفقرة 3. تظل حماية النائب من الاحتجاز قائمة ما لم يتحقق سبب من الأسباب الثلاثة المسماة"
+      }
+    ],
+    "DeputyPersonalImmunity": [
+      {
+        "status": "translation",
+        "text": "المادة 55 الفقرة 3. لا يجوز احتجاز نائب القورولتاي بغير موافقة القورولتاي عدا الضبط في حال التلبس وارتكاب جرائم جسيمة وجسيمة بوجه خاص"
+      }
+    ],
+    "DeputyTermExpiry": [
+      {
+        "status": "translation",
+        "text": "المادة 53 الفقرة 2. مدة صلاحيات نواب القورولتاي خمس سنوات"
+      }
+    ],
+    "FinancialBillWithGovernmentOpinion": [
+      {
+        "status": "translation",
+        "text": "المادة 60 الفقرة 6. لا يقدم مشروع القانون الذي يقلل الإيرادات أو يزيد النفقات إلا برأي إيجابي من الحكومة"
+      }
+    ],
+    "FirstSessionThirtyDays": [
+      {
+        "status": "translation",
+        "text": "المادة 58 الفقرة 2. تنعقد الدورة الأولى للقورولتاي في موعد لا يجاوز ثلاثين يوما من يوم نشر نتائج الانتخابات"
+      }
+    ],
+    "Government": [
+      {
+        "status": "translation",
+        "text": "حكومة جمهورية كازاخستان"
+      }
+    ],
+    "GovernmentMember": [
+      {
+        "status": "translation",
+        "text": "عضو الحكومة"
+      }
+    ],
+    "GovernmentMemberDismissalRequest": [
+      {
+        "status": "translation",
+        "text": "المادة 56 البند 17). بمبادرة ثلث النواب على الأقل يتخذ القورولتاي بثلثي الأصوات على الأقل قرارا بمخاطبة الرئيس لإعفاء عضو من أعضاء الحكومة"
+      }
+    ],
+    "GovernmentNoConfidence": [
+      {
+        "status": "translation",
+        "text": "المادة 56 البند 13). بمبادرة خمس النواب على الأقل يحجب القورولتاي الثقة عن الحكومة بأغلبية أصوات مجموع النواب"
+      }
+    ],
+    "Kurultai": [
+      {
+        "status": "translation",
+        "text": "قورولتاي جمهورية كازاخستان"
+      }
+    ],
+    "KurultaiChair": [
+      {
+        "status": "translation",
+        "text": "رئيس القورولتاي"
+      }
+    ],
+    "KurultaiChairElection": [
+      {
+        "status": "translation",
+        "text": "المادة 57 الفقرة 1. ينتخب الرئيس بالاقتراع السري بأغلبية مجموع النواب"
+      }
+    ],
+    "KurultaiChairMayConveneAndPreside": [
+      {
+        "status": "translation",
+        "text": "المادة 57 الفقرة 3. يدعو الرئيس إلى الجلسات ويرأسها"
+      }
+    ],
+    "KurultaiChairMayDirectAgendaPreparation": [
+      {
+        "status": "translation",
+        "text": "المادة 57 الفقرة 3. يتولى الرئيس التوجيه العام لإعداد مسائل القورولتاي"
+      }
+    ],
+    "KurultaiChairMayEnforceRules": [
+      {
+        "status": "translation",
+        "text": "المادة 57 الفقرة 3. يكفل الرئيس مراعاة لائحة القورولتاي"
+      }
+    ],
+    "KurultaiChairMayIssueOrders": [
+      {
+        "status": "translation",
+        "text": "المادة 57 الفقرة 5. يصدر الرئيس أوامر في المسائل الداخلة في اختصاصه"
+      }
+    ],
+    "KurultaiChairMaySignActs": [
+      {
+        "status": "translation",
+        "text": "المادة 57 الفقرة 3. يوقع الرئيس صكوك القورولتاي"
+      }
+    ],
+    "KurultaiChairRemovalOrResignation": [
+      {
+        "status": "translation",
+        "text": "المادة 57 الفقرة 2. يسحب الرئيس أو تقبل استقالته بأغلبية مجموع النواب"
+      }
+    ],
+    "KurultaiPowersEndAtNewConvocation": [
+      {
+        "status": "translation",
+        "text": "المادة 52 الفقرة 2. تنتهي الصلاحيات ببدء أعمال الدورة الأولى للتشكيلة الجديدة"
+      }
+    ],
+    "KurultaiPowersStartAtFirstSession": [
+      {
+        "status": "translation",
+        "text": "المادة 52 الفقرة 2. تبدأ صلاحيات القورولتاي بافتتاح الدورة الأولى"
+      }
+    ],
+    "KurultaiResolution": [
+      {
+        "status": "translation",
+        "text": "قرار القورولتاي أو أحد أجهزته العاملة"
+      }
+    ],
+    "Law": [
+      {
+        "status": "translation",
+        "text": "قانون أو قانون دستوري"
+      }
+    ],
+    "LawPresentedWithinTenDays": [
+      {
+        "status": "translation",
+        "text": "المادة 60 الفقرة 5. يعرض القانون الذي أقره القورولتاي على الرئيس للتوقيع خلال عشرة أيام"
+      }
+    ],
+    "MissedReconsiderationAcceptsObjection": [
+      {
+        "status": "translation",
+        "text": "المادة 56 البند 2). عدم مراعاة ميعاد الشهر لإعادة المناقشة يعني قبول اعتراضات الرئيس"
+      }
+    ],
+    "OrdinaryLawMajority": [
+      {
+        "status": "translation",
+        "text": "المادة 61 الفقرة 4. تقر القوانين بأغلبية أصوات مجموع نواب القورولتاي"
+      }
+    ],
+    "OrdinaryVetoOverride": [
+      {
+        "status": "translation",
+        "text": "المادة 56 البند 2). تتجاوز اعتراضات الرئيس على القانون بأغلبية ثلثي أصوات مجموع النواب"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "شخص طبيعي"
+      }
+    ],
+    "PresidentialFinancialBillException": [
+      {
+        "status": "translation",
+        "text": "المادة 60 الفقرة 6. لا يلزم رأي الحكومة في مشروعات القوانين التي يقدمها الرئيس"
+      }
+    ],
+    "PriorityBillDue": [
+      {
+        "status": "translation",
+        "text": "المادة 60 الفقرة 2. يجب أن يقر مشروع القانون ذو الأولوية خلال شهرين"
+      }
+    ],
+    "PriorityBillTwoMonths": [
+      {
+        "status": "translation",
+        "text": "المادة 60 الفقرة 2. مشروع القانون ذو الأولوية الذي يقر في موعد لا يجاوز يوم انتهاء مدة الشهرين يعد قد أقر في الميعاد"
+      }
+    ],
+    "RepeatedAbsenceSanction": [
+      {
+        "status": "translation",
+        "text": "المادة 55 الفقرة 1. تخلف النائب بغير عذر مقبول أكثر من ثلاث مرات يرتب تطبيق تدابير الجزاء المقررة قانونا"
+      }
+    ],
+    "RepeatedChairRefusalAllowsDissolution": [
+      {
+        "status": "translation",
+        "text": "المادة 57 الفقرة 1. تكرار الامتناع عن انتخاب الرئيس يخول الرئيس حل القورولتاي"
+      }
+    ],
+    "Report": [
+      {
+        "status": "translation",
+        "text": "تقرير عضو الحكومة أمام القورولتاي"
+      }
+    ],
+    "Session": [
+      {
+        "status": "translation",
+        "text": "دورة القورولتاي"
+      }
+    ],
+    "SessionQuorumTwoThirds": [
+      {
+        "status": "translation",
+        "text": "المادة 58 الفقرة 5. تصح جلسة القورولتاي بحضور ثلثي مجموع النواب على الأقل"
+      }
+    ],
+    "StandingCommitteeEstablished": [
+      {
+        "status": "translation",
+        "text": "المادة 59 الفقرة 1. يشكل القورولتاي لجانا دائمة يحدد القانون الدستوري عددها"
+      }
+    ],
+    "TrustVoteTimingAndAnnualCap": [
+      {
+        "status": "translation",
+        "text": "المادة 60 الفقرة 7. لا يجرى الاقتراع على مسألة الثقة قبل مضي ثمان وأربعين ساعة من طرحها ولا تستعمل هذه الصلاحية أكثر من مرتين في السنة"
+      }
+    ],
+    "WorkingBodyResolutionWithinCompetence": [
+      {
+        "status": "translation",
+        "text": "المادة 59 الفقرة 2. تصدر اللجان الدائمة واللجان قرارات في حدود اختصاصها"
+      }
+    ],
+    "absence_sanction_threshold": [
+      {
+        "status": "translation",
+        "text": "عتبة تطبيق تدابير الجزاء على التخلف أكثر من ثلاث مرات"
+      }
+    ],
+    "age_years": [
+      {
+        "status": "translation",
+        "text": "عمر الشخص بالسنين التامة"
+      }
+    ],
+    "annual_prior_trust_uses": [
+      {
+        "status": "translation",
+        "text": "عدد مرات لجوء الحكومة إلى مسألة الثقة في هذه السنة"
+      }
+    ],
+    "bill_passed": [
+      {
+        "status": "translation",
+        "text": "أقر القورولتاي مشروع القانون"
+      }
+    ],
+    "candidate_person": [
+      {
+        "status": "translation",
+        "text": "المترشح هو هذا الشخص"
+      }
+    ],
+    "caught_at_crime_scene": [
+      {
+        "status": "translation",
+        "text": "ضبط النائب في حال التلبس"
+      }
+    ],
+    "chair_candidate": [
+      {
+        "status": "translation",
+        "text": "رشح الشخص لمنصب رئيس القورولتاي"
+      }
+    ],
+    "chair_candidate_elected": [
+      {
+        "status": "translation",
+        "text": "انتخب المترشح رئيسا للقورولتاي"
+      }
+    ],
+    "chair_candidate_fluent_in_state_language": [
+      {
+        "status": "translation",
+        "text": "المترشح لرئاسة القورولتاي يتقن لغة الدولة"
+      }
+    ],
+    "chair_candidate_is_deputy": [
+      {
+        "status": "translation",
+        "text": "المترشح لرئاسة القورولتاي نائب في القورولتاي"
+      }
+    ],
+    "chair_may_convene_and_preside": [
+      {
+        "status": "translation",
+        "text": "الرئيس يدعو إلى جلسات القورولتاي ويرأسها"
+      }
+    ],
+    "chair_may_direct_agenda_preparation": [
+      {
+        "status": "translation",
+        "text": "الرئيس يتولى التوجيه العام لإعداد المسائل المعروضة"
+      }
+    ],
+    "chair_may_enforce_rules": [
+      {
+        "status": "translation",
+        "text": "الرئيس يكفل مراعاة لائحة القورولتاي"
+      }
+    ],
+    "chair_may_issue_orders": [
+      {
+        "status": "translation",
+        "text": "الرئيس يصدر أوامر في المسائل الداخلة في اختصاصه"
+      }
+    ],
+    "chair_may_sign_kurultai_acts": [
+      {
+        "status": "translation",
+        "text": "الرئيس يوقع الصكوك التي يصدرها القورولتاي"
+      }
+    ],
+    "chair_removal_votes": [
+      {
+        "status": "translation",
+        "text": "عدد الأصوات المؤيدة لسحب الرئيس أو لقبول استقالته"
+      }
+    ],
+    "chair_removed_or_resignation_accepted": [
+      {
+        "status": "translation",
+        "text": "سحب الرئيس من منصبه أو قبلت استقالته"
+      }
+    ],
+    "chair_secret_ballot_votes": [
+      {
+        "status": "translation",
+        "text": "عدد الأصوات التي نالها المترشح في الاقتراع السري"
+      }
+    ],
+    "citizen": [
+      {
+        "status": "translation",
+        "text": "الشخص من مواطني جمهورية كازاخستان"
+      }
+    ],
+    "commission_established": [
+      {
+        "status": "translation",
+        "text": "شكلت لجنة القورولتاي بصورة مشروعة"
+      }
+    ],
+    "commission_formed": [
+      {
+        "status": "translation",
+        "text": "شكل القورولتاي لجنة"
+      }
+    ],
+    "constitutional_bill": [
+      {
+        "status": "translation",
+        "text": "مشروع القانون مشروع قانون دستوري"
+      }
+    ],
+    "constitutional_early_termination_ground": [
+      {
+        "status": "translation",
+        "text": "تحقق السبب الدستوري للإنهاء المبكر لصلاحيات القورولتاي"
+      }
+    ],
+    "constitutional_law": [
+      {
+        "status": "translation",
+        "text": "الصك قانون دستوري"
+      }
+    ],
+    "constitutional_law_denominator": [
+      {
+        "status": "translation",
+        "text": "مقام عتبة إقرار القانون الدستوري الثلثان"
+      }
+    ],
+    "constitutional_law_numerator": [
+      {
+        "status": "translation",
+        "text": "بسط عتبة إقرار القانون الدستوري الثلثان"
+      }
+    ],
+    "constitutional_veto_override_denominator": [
+      {
+        "status": "translation",
+        "text": "مقام عتبة تجاوز الاعتراضات على القانون الدستوري ثلاثة أرباع"
+      }
+    ],
+    "constitutional_veto_override_numerator": [
+      {
+        "status": "translation",
+        "text": "بسط عتبة تجاوز الاعتراضات على القانون الدستوري ثلاثة أرباع"
+      }
+    ],
+    "deputies_present": [
+      {
+        "status": "translation",
+        "text": "عدد النواب الحاضرين في الجلسة"
+      }
+    ],
+    "deputy": [
+      {
+        "status": "translation",
+        "text": "الشخص نائب في القورولتاي"
+      }
+    ],
+    "deputy_detained": [
+      {
+        "status": "translation",
+        "text": "احتجز النائب"
+      }
+    ],
+    "deputy_detention_attempt": [
+      {
+        "status": "translation",
+        "text": "جرت محاولة لاحتجاز النائب"
+      }
+    ],
+    "deputy_detention_ground": [
+      {
+        "status": "translation",
+        "text": "تحقق السبب الذي يجوز معه احتجاز النائب"
+      }
+    ],
+    "deputy_inviolability_applies": [
+      {
+        "status": "translation",
+        "text": "حماية النائب من الاحتجاز قائمة"
+      }
+    ],
+    "deputy_minimum_age": [
+      {
+        "status": "translation",
+        "text": "الحد الأدنى لسن نائب القورولتاي خمس وعشرون سنة"
+      }
+    ],
+    "deputy_residence_years": [
+      {
+        "status": "translation",
+        "text": "مدة الإقامة الدائمة المطلوبة في النائب عشر سنوات"
+      }
+    ],
+    "deputy_term": [
+      {
+        "status": "translation",
+        "text": "مدة صلاحيات نائب القورولتاي خمس سنوات"
+      }
+    ],
+    "deputy_term_expires_on": [
+      {
+        "status": "translation",
+        "text": "يوم انتهاء صلاحيات النائب"
+      }
+    ],
+    "deputy_term_started_on": [
+      {
+        "status": "translation",
+        "text": "يوم بدء صلاحيات النائب"
+      }
+    ],
+    "disciplinary_measure_applicable": [
+      {
+        "status": "translation",
+        "text": "تطبق على النائب تدابير الجزاء المقررة قانونا"
+      }
+    ],
+    "election_results_published": [
+      {
+        "status": "translation",
+        "text": "يوم نشر نتائج انتخابات النواب"
+      }
+    ],
+    "eligible_deputy_candidate": [
+      {
+        "status": "translation",
+        "text": "الشخص مستوف لشروط النائب في القورولتاي"
+      }
+    ],
+    "financial_bill_admissible": [
+      {
+        "status": "translation",
+        "text": "مشروع القانون ذو الطابع المالي جائز التقديم"
+      }
+    ],
+    "first_session_deadline_days": [
+      {
+        "status": "translation",
+        "text": "ميعاد الدعوة إلى الدورة الأولى ثلاثون يوما من يوم نشر نتائج الانتخابات"
+      }
+    ],
+    "first_session_of_kurultai": [
+      {
+        "status": "translation",
+        "text": "الدورة هي الدورة الأولى لهذه التشكيلة من القورولتاي"
+      }
+    ],
+    "first_session_opened": [
+      {
+        "status": "translation",
+        "text": "يوم افتتاح الدورة الأولى للقورولتاي"
+      }
+    ],
+    "first_session_timely": [
+      {
+        "status": "translation",
+        "text": "دعي إلى الدورة الأولى في الميعاد الدستوري"
+      }
+    ],
+    "government": [
+      {
+        "status": "translation",
+        "text": "الجهاز هو حكومة الجمهورية"
+      }
+    ],
+    "government_no_confidence": [
+      {
+        "status": "translation",
+        "text": "حجب القورولتاي الثقة عن الحكومة"
+      }
+    ],
+    "grave_or_especially_grave_offence": [
+      {
+        "status": "translation",
+        "text": "ارتكب النائب جريمة جسيمة أو جسيمة بوجه خاص"
+      }
+    ],
+    "introduced_by_president": [
+      {
+        "status": "translation",
+        "text": "قدم مشروع القانون على سبيل المبادرة التشريعية للرئيس"
+      }
+    ],
+    "kurultai_body": [
+      {
+        "status": "translation",
+        "text": "الجهاز هو القورولتاي"
+      }
+    ],
+    "kurultai_chair": [
+      {
+        "status": "translation",
+        "text": "الشخص رئيس القورولتاي"
+      }
+    ],
+    "kurultai_chair_vote_denominator": [
+      {
+        "status": "translation",
+        "text": "مقام عتبة انتخاب رئيس القورولتاي النصف"
+      }
+    ],
+    "kurultai_chair_vote_numerator": [
+      {
+        "status": "translation",
+        "text": "بسط عتبة انتخاب رئيس القورولتاي النصف"
+      }
+    ],
+    "kurultai_consent_to_prosecution": [
+      {
+        "status": "translation",
+        "text": "وافق القورولتاي على مساءلة النائب"
+      }
+    ],
+    "kurultai_dissolution_authorized": [
+      {
+        "status": "translation",
+        "text": "حل القورولتاي جائز"
+      }
+    ],
+    "kurultai_early_termination_authorized": [
+      {
+        "status": "translation",
+        "text": "الإنهاء المبكر لصلاحيات القورولتاي جائز"
+      }
+    ],
+    "kurultai_powers_ended": [
+      {
+        "status": "translation",
+        "text": "انتهت صلاحيات هذه التشكيلة من القورولتاي"
+      }
+    ],
+    "kurultai_powers_started": [
+      {
+        "status": "translation",
+        "text": "بدأت صلاحيات هذه التشكيلة من القورولتاي"
+      }
+    ],
+    "kurultai_seat_count": [
+      {
+        "status": "translation",
+        "text": "مجموع نواب القورولتاي مائة وخمسة وأربعون"
+      }
+    ],
+    "law_adopted": [
+      {
+        "status": "translation",
+        "text": "يوم إقرار القورولتاي القانون"
+      }
+    ],
+    "law_nonperformance_established": [
+      {
+        "status": "translation",
+        "text": "تبين من التقرير أن عضو الحكومة لم ينفذ قوانين الجمهورية"
+      }
+    ],
+    "law_presented_timely": [
+      {
+        "status": "translation",
+        "text": "عرض القانون للتوقيع في الميعاد الدستوري"
+      }
+    ],
+    "law_presented_to_president": [
+      {
+        "status": "translation",
+        "text": "يوم عرض القانون على الرئيس للتوقيع"
+      }
+    ],
+    "law_submission_deadline_days": [
+      {
+        "status": "translation",
+        "text": "ميعاد عرض القانون المقر للتوقيع عشرة أيام"
+      }
+    ],
+    "member_dismissal_decision_denominator": [
+      {
+        "status": "translation",
+        "text": "مقام عتبة المخاطبة بالإعفاء الثلثان"
+      }
+    ],
+    "member_dismissal_decision_numerator": [
+      {
+        "status": "translation",
+        "text": "بسط عتبة المخاطبة بالإعفاء الثلثان"
+      }
+    ],
+    "member_dismissal_initiative_denominator": [
+      {
+        "status": "translation",
+        "text": "مقام عتبة المبادرة بسماع التقرير الثلث"
+      }
+    ],
+    "member_dismissal_initiative_numerator": [
+      {
+        "status": "translation",
+        "text": "بسط عتبة المبادرة بسماع التقرير الثلث"
+      }
+    ],
+    "new_convocation_first_session_started": [
+      {
+        "status": "translation",
+        "text": "افتتحت الدورة الأولى للقورولتاي في تشكيلته الجديدة"
+      }
+    ],
+    "no_confidence_decision_denominator": [
+      {
+        "status": "translation",
+        "text": "مقام عتبة حجب الثقة النصف"
+      }
+    ],
+    "no_confidence_decision_numerator": [
+      {
+        "status": "translation",
+        "text": "بسط عتبة حجب الثقة النصف"
+      }
+    ],
+    "no_confidence_initiating_votes": [
+      {
+        "status": "translation",
+        "text": "عدد النواب الذين بادروا بطرح مسألة حجب الثقة"
+      }
+    ],
+    "no_confidence_initiative_denominator": [
+      {
+        "status": "translation",
+        "text": "مقام عتبة المبادرة بحجب الثقة الخمس"
+      }
+    ],
+    "no_confidence_initiative_numerator": [
+      {
+        "status": "translation",
+        "text": "بسط عتبة المبادرة بحجب الثقة الخمس"
+      }
+    ],
+    "no_confidence_votes": [
+      {
+        "status": "translation",
+        "text": "عدد الأصوات المؤيدة لحجب الثقة عن الحكومة"
+      }
+    ],
+    "ordinary_bill": [
+      {
+        "status": "translation",
+        "text": "مشروع القانون مشروع قانون عادي"
+      }
+    ],
+    "ordinary_law": [
+      {
+        "status": "translation",
+        "text": "الصك قانون عادي"
+      }
+    ],
+    "ordinary_law_denominator": [
+      {
+        "status": "translation",
+        "text": "مقام عتبة إقرار القانون النصف"
+      }
+    ],
+    "ordinary_law_numerator": [
+      {
+        "status": "translation",
+        "text": "بسط عتبة إقرار القانون النصف"
+      }
+    ],
+    "ordinary_veto_override_denominator": [
+      {
+        "status": "translation",
+        "text": "مقام عتبة تجاوز الاعتراضات على القانون الثلثان"
+      }
+    ],
+    "ordinary_veto_override_numerator": [
+      {
+        "status": "translation",
+        "text": "بسط عتبة تجاوز الاعتراضات على القانون الثلثان"
+      }
+    ],
+    "override_votes": [
+      {
+        "status": "translation",
+        "text": "عدد الأصوات المدلى بها عند تجاوز اعتراضات الرئيس"
+      }
+    ],
+    "permanent_committee_formed": [
+      {
+        "status": "translation",
+        "text": "شكل القورولتاي لجنة دائمة"
+      }
+    ],
+    "positive_government_opinion": [
+      {
+        "status": "translation",
+        "text": "لمشروع القانون رأي إيجابي من الحكومة"
+      }
+    ],
+    "president_nominated_chair": [
+      {
+        "status": "translation",
+        "text": "رشح رئيس الجمهورية المرشح لرئاسة القورولتاي"
+      }
+    ],
+    "president_objected_to_law": [
+      {
+        "status": "translation",
+        "text": "أبدى الرئيس اعتراضاته على القانون"
+      }
+    ],
+    "presidential_dismissal_request": [
+      {
+        "status": "translation",
+        "text": "القورولتاي يخاطب الرئيس لإعفاء عضو من أعضاء الحكومة من منصبه"
+      }
+    ],
+    "presidential_objection_accepted": [
+      {
+        "status": "translation",
+        "text": "تعد اعتراضات الرئيس مقبولة"
+      }
+    ],
+    "presidential_objection_overridden": [
+      {
+        "status": "translation",
+        "text": "تجاوز القورولتاي اعتراضات الرئيس"
+      }
+    ],
+    "priority_bill": [
+      {
+        "status": "translation",
+        "text": "يوم تقديم مشروع القانون الذي عد ذا أولوية"
+      }
+    ],
+    "priority_bill_adopted": [
+      {
+        "status": "translation",
+        "text": "يوم إقرار مشروع القانون ذي الأولوية"
+      }
+    ],
+    "priority_bill_due_on": [
+      {
+        "status": "translation",
+        "text": "يوم انتهاء مدة الشهرين المقررة لمشروع القانون ذي الأولوية"
+      }
+    ],
+    "priority_bill_period": [
+      {
+        "status": "translation",
+        "text": "ميعاد الإقرار المستعجل لمشروع القانون ذي الأولوية شهران"
+      }
+    ],
+    "priority_bill_timely": [
+      {
+        "status": "translation",
+        "text": "أقر مشروع القانون ذو الأولوية في الميعاد الدستوري"
+      }
+    ],
+    "reconsideration_deadline_missed": [
+      {
+        "status": "translation",
+        "text": "فات ميعاد الشهر المقرر لإعادة المناقشة"
+      }
+    ],
+    "reconsideration_within_one_month": [
+      {
+        "status": "translation",
+        "text": "أجريت إعادة المناقشة والاقتراع في ميعاد الشهر"
+      }
+    ],
+    "repeated_refusal_to_elect_chair": [
+      {
+        "status": "translation",
+        "text": "امتنع القورولتاي مجددا عن انتخاب رئيسه"
+      }
+    ],
+    "report_dismissal_votes": [
+      {
+        "status": "translation",
+        "text": "عدد الأصوات المؤيدة للمخاطبة بإعفاء عضو الحكومة"
+      }
+    ],
+    "report_initiating_votes": [
+      {
+        "status": "translation",
+        "text": "عدد النواب الذين بادروا بسماع التقرير"
+      }
+    ],
+    "report_of_member": [
+      {
+        "status": "translation",
+        "text": "قدم التقرير هذا العضو من أعضاء الحكومة"
+      }
+    ],
+    "resides_last_years": [
+      {
+        "status": "translation",
+        "text": "عدد سنوات الإقامة الدائمة الأخيرة في كازاخستان"
+      }
+    ],
+    "resolution_within_body_competence": [
+      {
+        "status": "translation",
+        "text": "اتخذ القرار في المسائل الداخلة في اختصاص الجهاز"
+      }
+    ],
+    "revenue_reducing_or_expenditure_increasing": [
+      {
+        "status": "translation",
+        "text": "مشروع القانون ينص على تقليل إيرادات الدولة أو زيادة النفقات"
+      }
+    ],
+    "session_opened": [
+      {
+        "status": "translation",
+        "text": "افتتحت دورة القورولتاي"
+      }
+    ],
+    "session_quorate": [
+      {
+        "status": "translation",
+        "text": "جلسة القورولتاي صحيحة"
+      }
+    ],
+    "session_quorum_denominator": [
+      {
+        "status": "translation",
+        "text": "مقام نصاب الجلسة الثلثان"
+      }
+    ],
+    "session_quorum_numerator": [
+      {
+        "status": "translation",
+        "text": "بسط نصاب الجلسة الثلثان"
+      }
+    ],
+    "standing_committee_established": [
+      {
+        "status": "translation",
+        "text": "شكلت اللجنة الدائمة في القورولتاي بصورة مشروعة"
+      }
+    ],
+    "trust_power_annual_limit": [
+      {
+        "status": "translation",
+        "text": "حد لجوء الحكومة إلى مسألة الثقة مرتان في السنة"
+      }
+    ],
+    "trust_question_on_rejected_government_bill": [
+      {
+        "status": "translation",
+        "text": "طرح رئيس الوزراء مسألة الثقة بسبب عدم إقرار مشروع القانون الذي قدمته الحكومة"
+      }
+    ],
+    "trust_question_raised_at": [
+      {
+        "status": "translation",
+        "text": "لحظة طرح مسألة الثقة بالحكومة"
+      }
+    ],
+    "trust_vote_held_at": [
+      {
+        "status": "translation",
+        "text": "لحظة الاقتراع على مسألة الثقة"
+      }
+    ],
+    "trust_vote_timing_valid": [
+      {
+        "status": "translation",
+        "text": "روعيت مواعيد طرح مسألة الثقة"
+      }
+    ],
+    "trust_vote_wait_hours": [
+      {
+        "status": "translation",
+        "text": "المدة بين طرح مسألة الثقة والاقتراع ثمان وأربعون ساعة"
+      }
+    ],
+    "unexcused_absences": [
+      {
+        "status": "translation",
+        "text": "عدد مرات تخلف النائب عن الجلسات بغير عذر مقبول"
+      }
+    ],
+    "votes_for_bill": [
+      {
+        "status": "translation",
+        "text": "عدد الأصوات المؤيدة لمشروع القانون"
+      }
+    ],
+    "working_body_resolution": [
+      {
+        "status": "translation",
+        "text": "الصك قرار صادر عن لجنة دائمة أو عن لجنة"
+      }
+    ],
+    "working_body_resolution_authorized": [
+      {
+        "status": "translation",
+        "text": "اللجنة الدائمة أو اللجنة مختصة بإصدار هذا القرار"
+      }
+    ]
+  },
+  "language": "ar",
+  "package": "kz.constitution.kurultai"
+}

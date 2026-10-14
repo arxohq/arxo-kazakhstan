@@ -1,0 +1,716 @@
+{
+  "$comment": "طبقة عرض عربية لحزم دستور جمهورية كازاخستان (DECISION-0070). الملف خارج CLIR ولا يقرأه المصرف، وإنما تقرأه طبقة العرض وحدها (verbalize --labels وخادم MCP وسطح المكتب). مصدر الترجمة هو تسمية العقدة الروسية ru-KZ في CLIR، ومصطلحاتها موافقة لحزمة law.verb.ar؛ والحالة translation أي ترجمة عمل غير رسمية لا نص رسمي. المفتاح هو الاسم المحلي للعقدة. النص غير مشكول.",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "Association": [
+      {
+        "status": "translation",
+        "text": "جمعية عامة"
+      }
+    ],
+    "AssociationUnlawfulInterferenceProhibited/alt/1": [
+      {
+        "status": "translation",
+        "text": "المادة 6 الفقرة 2. يحظر التدخل المتبادل غير المشروع"
+      }
+    ],
+    "AssociationUnlawfulInterferenceProhibited/alt/2": [
+      {
+        "status": "translation",
+        "text": "المادة 6 الفقرة 2. يحظر التدخل المتبادل غير المشروع"
+      }
+    ],
+    "AssociationUnlawfulInterferenceProhibited1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "المادة 5 الفقرة 2 (طبعة 1995). لا يجوز التدخل المتبادل غير المشروع بين الدولة والجمعيات"
+      }
+    ],
+    "AssociationUnlawfulInterferenceProhibited1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "المادة 5 الفقرة 2 (طبعة 1995). لا يجوز التدخل المتبادل غير المشروع بين الدولة والجمعيات"
+      }
+    ],
+    "AssociationWithProhibitedGoalProhibited": [
+      {
+        "status": "translation",
+        "text": "المادة 6 الفقرة 3. تحظر الجمعيات ذات الأهداف أو الأفعال المحظورة صراحة"
+      }
+    ],
+    "AssociationWithProhibitedGoalProhibited1995": [
+      {
+        "status": "translation",
+        "text": "المادة 5 الفقرة 3 (طبعة 1995). تحظر الجمعيات ذات الأهداف المحظورة"
+      }
+    ],
+    "AuthorityUsurpationProhibited": [
+      {
+        "status": "translation",
+        "text": "المادة 4 الفقرة 3. يحظر اغتصاب السلطة"
+      }
+    ],
+    "AuthorityUsurpationProhibited1995": [
+      {
+        "status": "translation",
+        "text": "المادة 3 الفقرة 3 (طبعة 1995). يحظر اغتصاب السلطة"
+      }
+    ],
+    "ConductForbiddenByStatute1995": [
+      {
+        "status": "translation",
+        "text": "المادة 4 الفقرة 3 (طبعة 1995). الاستنتاج من قاعدة في قانون الجمهورية"
+      }
+    ],
+    "ConductPermittedByTreaty1995": [
+      {
+        "status": "translation",
+        "text": "المادة 4 الفقرة 3 (طبعة 1995). الاستنتاج من قاعدة في معاهدة دولية مصدق عليها"
+      }
+    ],
+    "ConstitutionalActor": [
+      {
+        "status": "translation",
+        "text": "طرف في العلاقات الدستورية"
+      }
+    ],
+    "ForeignAssetDisclosureRequired": [
+      {
+        "status": "translation",
+        "text": "المادة 6 الفقرة 5. يجب أن تكون المعلومات عن الأموال والأصول الأجنبية مفتوحة"
+      }
+    ],
+    "ForeignPartyActivityOrFinancingProhibited/alt/1": [
+      {
+        "status": "translation",
+        "text": "المادة 6 الفقرة 4. يحظر النشاط الأجنبي وتمويل الأحزاب والنقابات"
+      }
+    ],
+    "ForeignPartyActivityOrFinancingProhibited/alt/2": [
+      {
+        "status": "translation",
+        "text": "المادة 6 الفقرة 4. يحظر النشاط الأجنبي وتمويل الأحزاب والنقابات"
+      }
+    ],
+    "ForeignPartyActivityOrFinancingProhibited1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "المادة 5 الفقرة 4 (طبعة 1995). يحظر النشاط والتمويل من قبل أشخاص أجانب"
+      }
+    ],
+    "ForeignPartyActivityOrFinancingProhibited1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "المادة 5 الفقرة 4 (طبعة 1995). يحظر النشاط والتمويل من قبل أشخاص أجانب"
+      }
+    ],
+    "ForeignReligiousActivityRequiresAgreement1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "المادة 5 الفقرة 5 (طبعة 1995). يمارس نشاط الجمعيات الدينية الأجنبية ويجري تعيين رؤسائها من قبل المراكز الأجنبية بالاتفاق مع أجهزة الدولة المختصة"
+      }
+    ],
+    "ForeignReligiousActivityRequiresAgreement1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "المادة 5 الفقرة 5 (طبعة 1995). يمارس نشاط الجمعيات الدينية الأجنبية ويجري تعيين رؤسائها من قبل المراكز الأجنبية بالاتفاق مع أجهزة الدولة المختصة"
+      }
+    ],
+    "ForeignReligiousBody": [
+      {
+        "status": "translation",
+        "text": "هيئة دينية أجنبية"
+      }
+    ],
+    "IncreasedLiabilityNoRetroactivity": [
+      {
+        "status": "translation",
+        "text": "المادة 5 الفقرة 5. تشديد المسؤولية لا أثر رجعي له"
+      }
+    ],
+    "IncreasedLiabilityNoRetroactivity1995": [
+      {
+        "status": "translation",
+        "text": "المادة 77 الفقرة 3 البند 5 (طبعة 1995). تشديد المسؤولية لا أثر رجعي له"
+      }
+    ],
+    "KZ_CONSTITUTION_1995": [
+      {
+        "status": "translation",
+        "text": "دستور جمهورية كازاخستان (1995)"
+      }
+    ],
+    "KZ_CONSTITUTION_1995_KK": [
+      {
+        "status": "translation",
+        "text": "الطبعة الكازاخية المدمجة التي انتهى العمل بها"
+      }
+    ],
+    "KZ_CONSTITUTION_1995_RU": [
+      {
+        "status": "translation",
+        "text": "الطبعة الروسية المدمجة التي انتهى العمل بها"
+      }
+    ],
+    "KZ_CONSTITUTION_2026": [
+      {
+        "status": "translation",
+        "text": "دستور جمهورية كازاخستان"
+      }
+    ],
+    "KZ_CONSTITUTION_2026_KK": [
+      {
+        "status": "translation",
+        "text": "الطبعة الكازاخية الأصلية"
+      }
+    ],
+    "KZ_CONSTITUTION_2026_RU": [
+      {
+        "status": "translation",
+        "text": "الطبعة الروسية ذات الحجية"
+      }
+    ],
+    "LandHolding": [
+      {
+        "status": "translation",
+        "text": "قطعة أرض"
+      }
+    ],
+    "LegalAct": [
+      {
+        "status": "translation",
+        "text": "صك قانوني معياري"
+      }
+    ],
+    "MitigatingLawAppliesToPriorOffence": [
+      {
+        "status": "translation",
+        "text": "المادة 5 الفقرة 5. يسري القانون الملغي للمسؤولية أو المخفف لها على الفعل المرتكب سابقا"
+      }
+    ],
+    "MitigatingLawAppliesToPriorOffence1995": [
+      {
+        "status": "translation",
+        "text": "المادة 77 الفقرة 3 البند 5 (طبعة 1995). يسري القانون المخفف على المخالفة المرتكبة سابقا"
+      }
+    ],
+    "NewDutiesAndWorsePositionNoRetroactivity": [
+      {
+        "status": "translation",
+        "text": "المادة 5 الفقرة 5. الواجبات الجديدة وتسوء المركز لا أثر رجعي لهما"
+      }
+    ],
+    "NewDutiesAndWorsePositionNoRetroactivity1995": [
+      {
+        "status": "translation",
+        "text": "المادة 77 الفقرة 3 البند 5 (طبعة 1995). الواجبات الجديدة وتسوء المركز لا أثر رجعي لهما"
+      }
+    ],
+    "OfficialPublicationRequiredForApplication": [
+      {
+        "status": "translation",
+        "text": "المادة 5 الفقرة 4. النشر الرسمي شرط للتطبيق"
+      }
+    ],
+    "OfficialPublicationRequiredForApplication1995": [
+      {
+        "status": "translation",
+        "text": "المادة 4 الفقرة 4 (طبعة 1995). النشر الرسمي شرط للتطبيق"
+      }
+    ],
+    "PrivateLandHoldingWithinStatutoryLimits": [
+      {
+        "status": "translation",
+        "text": "المادة 8 الفقرة 3. تجوز الملكية الخاصة للأرض بالأسباب والشروط والحدود المقررة قانونا"
+      }
+    ],
+    "PrivateLandHoldingWithinStatutoryLimits1995": [
+      {
+        "status": "translation",
+        "text": "المادة 6 الفقرة 3 (طبعة 1995). تجوز الملكية الخاصة للأرض بالأسباب والشروط والحدود المقررة قانونا"
+      }
+    ],
+    "PropertyUse": [
+      {
+        "status": "translation",
+        "text": "استعمال الملكية"
+      }
+    ],
+    "PropertyUseConstitutionallyCompliant": [
+      {
+        "status": "translation",
+        "text": "المادة 8 الفقرة 2. الشروط الدستورية لاستعمال الملكية"
+      }
+    ],
+    "PropertyUseConstitutionallyCompliant1995": [
+      {
+        "status": "translation",
+        "text": "المادة 6 الفقرة 2 (طبعة 1995). يجب أن يخدم استعمال الملكية الصالح العام"
+      }
+    ],
+    "RatifiedTreatyOverStatuteInInference1995": [
+      {
+        "status": "translation",
+        "text": "المادة 4 الفقرة 3 (طبعة 1995). عند تعارض الاستنتاجين يعتد بالاستنتاج المستمد من المعاهدة الدولية المصدق عليها لا من القانون"
+      }
+    ],
+    "RatifiedTreatyPrevailsOverStatute1995": [
+      {
+        "status": "translation",
+        "text": "المادة 4 الفقرة 3 (طبعة 1995). للمعاهدات الدولية التي صدقت عليها الجمهورية أولوية على قوانينها"
+      }
+    ],
+    "RegulatedConduct": [
+      {
+        "status": "translation",
+        "text": "سلوك تختلف المعاهدة والقانون في جوازه"
+      }
+    ],
+    "ReligiousActivity": [
+      {
+        "status": "translation",
+        "text": "نشاط منظمة دينية"
+      }
+    ],
+    "ReligiousRestriction": [
+      {
+        "status": "translation",
+        "text": "تقييد نشاط منظمة دينية"
+      }
+    ],
+    "ReligiousRestrictionRequiresLawAndConstitutionalGoal": [
+      {
+        "status": "translation",
+        "text": "المادة 7 الفقرة 2. يستلزم تقييد النشاط الديني قانونا وغاية دستورية"
+      }
+    ],
+    "RuleApplication": [
+      {
+        "status": "translation",
+        "text": "تطبيق القاعدة"
+      }
+    ],
+    "Statute": [
+      {
+        "status": "translation",
+        "text": "قانون الجمهورية"
+      }
+    ],
+    "Treaty": [
+      {
+        "status": "translation",
+        "text": "معاهدة دولية"
+      }
+    ],
+    "agreed_with_state_bodies": [
+      {
+        "status": "translation",
+        "text": "النشاط متفق عليه مع أجهزة الدولة المختصة"
+      }
+    ],
+    "association_activity_prohibited": [
+      {
+        "status": "translation",
+        "text": "يحظر إنشاء الجمعية العامة ونشاطها"
+      }
+    ],
+    "association_has_prohibited_constitutional_goal": [
+      {
+        "status": "translation",
+        "text": "أهداف الجمعية العامة أو أفعالها موجهة إلى تغيير أسس النظام الدستوري بالقوة أو الإخلال بوحدة الجمهورية أو النظام العام أو تقويض الأمن القومي أو إثارة الفتنة"
+      }
+    ],
+    "astana_special_financial_regime_1995": [
+      {
+        "status": "translation",
+        "text": "يجوز أن يقرر داخل حدود مدينة أستانا نظام قانوني خاص في المجال المالي (طبعة 1995)"
+      }
+    ],
+    "authority_usurpation_attempt": [
+      {
+        "status": "translation",
+        "text": "وقعت محاولة لاغتصاب السلطة في الجمهورية"
+      }
+    ],
+    "authority_usurpation_prohibited": [
+      {
+        "status": "translation",
+        "text": "اغتصاب السلطة محظور ويلاحق قانونا"
+      }
+    ],
+    "capital_is_astana_1995": [
+      {
+        "status": "translation",
+        "text": "عاصمة كازاخستان مدينة أستانا (طبعة 1995)"
+      }
+    ],
+    "conduct_admissible_1995": [
+      {
+        "status": "translation",
+        "text": "السلوك جائز (خلاف بين المعاهدة والقانون، طبعة 1995)"
+      }
+    ],
+    "constitutional_activity_principles_declared": [
+      {
+        "status": "translation",
+        "text": "المبادئ الأساسية لنشاط الجمهورية مقررة في الدستور"
+      }
+    ],
+    "environmental_requirements_observed": [
+      {
+        "status": "translation",
+        "text": "روعيت المتطلبات المقررة في مجال حماية البيئة"
+      }
+    ],
+    "foreign_asset_disclosure_required": [
+      {
+        "status": "translation",
+        "text": "يجب أن تكون المعلومات عن حركة الأموال والأصول الواردة من مصادر أجنبية مفتوحة ومتاحة"
+      }
+    ],
+    "foreign_asset_information_disclosed": [
+      {
+        "status": "translation",
+        "text": "المعلومات عن حركة الأموال والأصول الواردة من مصادر أجنبية مفتوحة ومتاحة"
+      }
+    ],
+    "foreign_centre_appoints_leader": [
+      {
+        "status": "translation",
+        "text": "يعين رؤساء الجمعية الدينية من قبل مركز ديني أجنبي"
+      }
+    ],
+    "foreign_financing_of_party_or_union": [
+      {
+        "status": "translation",
+        "text": "الحزب السياسي أو النقابة المهنية ممول من أشخاص أجانب أو دول أو منظمات دولية"
+      }
+    ],
+    "foreign_party_or_union_activity": [
+      {
+        "status": "translation",
+        "text": "يمارس النشاط حزب سياسي أو نقابة مهنية لدولة أخرى أو حزب سياسي قائم على أساس ديني"
+      }
+    ],
+    "foreign_religious_activity_admissible_1995": [
+      {
+        "status": "translation",
+        "text": "نشاط الجمعية الدينية الأجنبية جائز (طبعة 1995)"
+      }
+    ],
+    "foreign_religious_body_activity": [
+      {
+        "status": "translation",
+        "text": "تمارس جمعية دينية أجنبية نشاطها في إقليم الجمهورية"
+      }
+    ],
+    "fundamental_principles_declared_1995": [
+      {
+        "status": "translation",
+        "text": "المبادئ الأساسية لنشاط الجمهورية مقررة في الدستور (طبعة 1995)"
+      }
+    ],
+    "human_capital_education_science_innovation_strategic_direction": [
+      {
+        "status": "translation",
+        "text": "تنمية رأس المال البشري والتعليم والعلم والابتكار معترف بها اتجاها استراتيجيا لنشاط الدولة"
+      }
+    ],
+    "human_life_rights_freedoms_highest_state_values": [
+      {
+        "status": "translation",
+        "text": "القيم العليا للدولة هي الإنسان وحياته وحقوقه وحرياته"
+      }
+    ],
+    "kazakhstan_democratic_secular_legal_social_state": [
+      {
+        "status": "translation",
+        "text": "جمهورية كازاخستان دولة ديمقراطية علمانية قانونية اجتماعية"
+      }
+    ],
+    "kazakhstan_democratic_secular_legal_social_state_1995": [
+      {
+        "status": "translation",
+        "text": "تقرر الجمهورية نفسها دولة ديمقراطية علمانية قانونية اجتماعية (طبعة 1995)"
+      }
+    ],
+    "law_creates_or_increases_liability": [
+      {
+        "status": "translation",
+        "text": "القانون ينشئ المسؤولية أو يشددها"
+      }
+    ],
+    "law_imposes_new_citizen_duties_or_worsens_position": [
+      {
+        "status": "translation",
+        "text": "القانون يفرض على المواطنين واجبات جديدة أو يسيء مركزهم"
+      }
+    ],
+    "legal_act_affects_citizen_rights_or_duties": [
+      {
+        "status": "translation",
+        "text": "الصك القانوني المعياري يتعلق بحقوق المواطنين وحرياتهم وواجباتهم"
+      }
+    ],
+    "legal_act_application_condition_satisfied": [
+      {
+        "status": "translation",
+        "text": "الشرط الإلزامي لتطبيق الصك القانوني المعياري مستوفى"
+      }
+    ],
+    "legal_act_officially_published": [
+      {
+        "status": "translation",
+        "text": "الصك القانوني المعياري منشور رسميا"
+      }
+    ],
+    "new_law_applies_to_prior_offence": [
+      {
+        "status": "translation",
+        "text": "يطبق قانون جديد على مخالفة ارتكبت سابقا"
+      }
+    ],
+    "new_law_cancels_or_mitigates_liability": [
+      {
+        "status": "translation",
+        "text": "القانون الجديد يلغي المسؤولية عن مخالفة ارتكبت سابقا أو يخففها"
+      }
+    ],
+    "nonprofit_receives_foreign_assets": [
+      {
+        "status": "translation",
+        "text": "المنظمة غير الربحية تتلقى أموالا وأصولا من دول أجنبية ومن أشخاص اعتبارية دولية وأجنبية ومن مواطنين أجانب وعديمي الجنسية"
+      }
+    ],
+    "party_or_union_activity_prohibited": [
+      {
+        "status": "translation",
+        "text": "لا يجوز نشاط الحزب السياسي أو النقابة المهنية"
+      }
+    ],
+    "peaceful_cooperative_foreign_policy_1995": [
+      {
+        "status": "translation",
+        "text": "تنتهج الجمهورية سياسة التعاون وحسن الجوار بين الدول (طبعة 1995)"
+      }
+    ],
+    "peaceful_cooperative_foreign_policy_declared": [
+      {
+        "status": "translation",
+        "text": "تنتهج الجمهورية سياسة خارجية قوامها السلم والتعاون مع الدول المعنية"
+      }
+    ],
+    "private_land_basis_conditions_limits_established_by_law": [
+      {
+        "status": "translation",
+        "text": "أسباب الملكية الخاصة للأرض وشروطها وحدودها مقررة بقانون"
+      }
+    ],
+    "private_land_holding": [
+      {
+        "status": "translation",
+        "text": "الأرض مملوكة ملكية خاصة"
+      }
+    ],
+    "private_land_holding_constitutionally_allowed": [
+      {
+        "status": "translation",
+        "text": "وجود الأرض في الملكية الخاصة جائز دستوريا"
+      }
+    ],
+    "property_use": [
+      {
+        "status": "translation",
+        "text": "وقع استعمال للملكية"
+      }
+    ],
+    "property_use_constitutionally_compliant": [
+      {
+        "status": "translation",
+        "text": "استعمال الملكية مستوف للشروط الدستورية"
+      }
+    ],
+    "property_use_serves_public_and_state_interests": [
+      {
+        "status": "translation",
+        "text": "استعمال الملكية يخدم مصالح المجتمع والدولة"
+      }
+    ],
+    "property_use_serves_public_good": [
+      {
+        "status": "translation",
+        "text": "استعمال الملكية يخدم الصالح العام (طبعة 1995)"
+      }
+    ],
+    "protected_rights_not_infringed": [
+      {
+        "status": "translation",
+        "text": "حقوق الغير ومصالحهم المحمية قانونا لم تمس"
+      }
+    ],
+    "religious_activity": [
+      {
+        "status": "translation",
+        "text": "النشاط نشاط منظمة دينية"
+      }
+    ],
+    "religious_restriction_constitutionally_authorized": [
+      {
+        "status": "translation",
+        "text": "تقييد نشاط المنظمة الدينية جائز دستوريا"
+      }
+    ],
+    "religious_restriction_established_by_law": [
+      {
+        "status": "translation",
+        "text": "التقييد مقرر بقانون"
+      }
+    ],
+    "religious_restriction_has_constitutional_goal": [
+      {
+        "status": "translation",
+        "text": "فرض التقييد بغرض حماية أسس النظام الدستوري وحقوق الإنسان والمواطن وحرياته وكفالة الأمن القومي وحفظ النظام العام وصحة المواطنين وأخلاق المجتمع"
+      }
+    ],
+    "renounces_first_use_of_armed_force_1995": [
+      {
+        "status": "translation",
+        "text": "تنبذ الجمهورية البدء باستعمال القوة المسلحة (طبعة 1995)"
+      }
+    ],
+    "republic_names_equivalent_1995": [
+      {
+        "status": "translation",
+        "text": "تسمية «جمهورية كازاخستان» وتسمية «كازاخستان» متساويتان (طبعة 1995)"
+      }
+    ],
+    "restriction_of_religious_activity": [
+      {
+        "status": "translation",
+        "text": "التقييد يتعلق بنشاط منظمة دينية"
+      }
+    ],
+    "retroactive_application_attempt": [
+      {
+        "status": "translation",
+        "text": "يطبق القانون على علاقات نشأت قبل نفاذه"
+      }
+    ],
+    "retroactive_application_prohibited": [
+      {
+        "status": "translation",
+        "text": "لا أثر رجعي للقانون"
+      }
+    ],
+    "rule_reads_statute": [
+      {
+        "status": "translation",
+        "text": "القاعدة مستمدة من قانون الجمهورية هذا"
+      }
+    ],
+    "rule_reads_treaty": [
+      {
+        "status": "translation",
+        "text": "القاعدة مستمدة من هذه المعاهدة الدولية"
+      }
+    ],
+    "russian_used_officially_1995": [
+      {
+        "status": "translation",
+        "text": "تستعمل اللغة الروسية رسميا في مؤسسات الدولة وأجهزة الحكم المحلي على قدم المساواة مع الكازاخية (طبعة 1995)"
+      }
+    ],
+    "sovereignty_covers_whole_territory_1995": [
+      {
+        "status": "translation",
+        "text": "تشمل سيادة الجمهورية إقليمها كله (طبعة 1995)"
+      }
+    ],
+    "state_anthem_established": [
+      {
+        "status": "translation",
+        "text": "أنشئ النشيد الوطني"
+      }
+    ],
+    "state_cares_for_language_development_1995": [
+      {
+        "status": "translation",
+        "text": "تعتني الدولة بتهيئة الظروف لدراسة لغات شعب كازاخستان وتطويرها (طبعة 1995)"
+      }
+    ],
+    "state_emblem_established": [
+      {
+        "status": "translation",
+        "text": "أنشئ شعار الدولة"
+      }
+    ],
+    "state_flag_established": [
+      {
+        "status": "translation",
+        "text": "أنشئ علم الدولة"
+      }
+    ],
+    "state_language_is_kazakh_1995": [
+      {
+        "status": "translation",
+        "text": "اللغة الكازاخية هي لغة الدولة (طبعة 1995)"
+      }
+    ],
+    "state_symbols_established_1995": [
+      {
+        "status": "translation",
+        "text": "للجمهورية رموز وطنية هي العلم والشعار والنشيد (طبعة 1995)"
+      }
+    ],
+    "statute_norm_forbids": [
+      {
+        "status": "translation",
+        "text": "قاعدة قانون الجمهورية تحظر هذا السلوك"
+      }
+    ],
+    "treaty_conflicts_with_statute": [
+      {
+        "status": "translation",
+        "text": "المعاهدة الدولية وقانون الجمهورية متعارضان"
+      }
+    ],
+    "treaty_norm_permits": [
+      {
+        "status": "translation",
+        "text": "قاعدة المعاهدة الدولية المصدق عليها تجيز هذا السلوك"
+      }
+    ],
+    "treaty_prevails_over_statute": [
+      {
+        "status": "translation",
+        "text": "للمعاهدة الدولية أولوية على قانون الجمهورية (طبعة 1995)"
+      }
+    ],
+    "treaty_ratified_by_republic": [
+      {
+        "status": "translation",
+        "text": "صدقت الجمهورية على المعاهدة الدولية"
+      }
+    ],
+    "unitary_state_presidential_form_1995": [
+      {
+        "status": "translation",
+        "text": "الجمهورية دولة بسيطة ذات نظام حكم رئاسي (طبعة 1995)"
+      }
+    ],
+    "unlawful_association_interference_with_state": [
+      {
+        "status": "translation",
+        "text": "وقع تدخل غير مشروع من الجمعية العامة في شؤون الدولة"
+      }
+    ],
+    "unlawful_state_interference_with_association": [
+      {
+        "status": "translation",
+        "text": "وقع تدخل غير مشروع من الدولة في شؤون الجمعية العامة"
+      }
+    ]
+  },
+  "language": "ar",
+  "package": "kz.constitution.sources"
+}

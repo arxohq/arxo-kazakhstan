@@ -1,0 +1,1052 @@
+{
+  "$comment": "Stratum praesentationis Latinum pacti kz.constitution.kurultai (DECISION-0070). Hoc tabularium in CLIR non ingreditur et a solo strato praesentationis legitur (verbalize --labels, MCP, pons mensae operariae). Versio ex notis Russicis authenticis (ru-KZ) eiusdem pacti ducta est; status omnium notarum est 'translation', id est versio operosa a formalizatore facta, non editio officialis. Clavis est nomen locale declarationis.",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "Bill": [
+      {
+        "status": "translation",
+        "text": "rogatio legis"
+      }
+    ],
+    "Candidate": [
+      {
+        "status": "translation",
+        "text": "candidatus"
+      }
+    ],
+    "Commission": [
+      {
+        "status": "translation",
+        "text": "commissio Kurultai"
+      }
+    ],
+    "CommissionEstablished": [
+      {
+        "status": "translation",
+        "text": "Articulus 59, numerus 1. Kurultai commissiones constituit"
+      }
+    ],
+    "Committee": [
+      {
+        "status": "translation",
+        "text": "comitatus perpetuus Kurultai"
+      }
+    ],
+    "ConstitutionalEarlyTermination": [
+      {
+        "status": "translation",
+        "text": "Articulus 52, numerus 3. Finis potestatum ante tempus causam et ordinem Constitutione praevisos requirit"
+      }
+    ],
+    "ConstitutionalLawTwoThirds": [
+      {
+        "status": "translation",
+        "text": "Articulus 61, numerus 3. Leges constitutionales maiore parte non minus duabus ex tribus partibus suffragiorum totius numeri deputatorum Kurultai feruntur"
+      }
+    ],
+    "ConstitutionalVetoOverride": [
+      {
+        "status": "translation",
+        "text": "Articulus 56, subnumerus 2). Obiectiones Praesidis de lege constitutionali maiore parte trium ex quattuor partibus suffragiorum totius numeri deputatorum superantur"
+      }
+    ],
+    "Deputy": [
+      {
+        "status": "translation",
+        "text": "deputatus Kurultai"
+      }
+    ],
+    "DeputyCandidateEligibility": [
+      {
+        "status": "translation",
+        "text": "Articulus 54, numerus 3. Deputatus Kurultai esse potest civis Rei Publicae qui viginti quinque annos explevit et decem annis proximis in Kazachstania perpetuo habitavit"
+      }
+    ],
+    "DeputyDetentionException": [
+      {
+        "status": "translation",
+        "text": "Articulus 55, numerus 3. Comprehensio deputati licet, si in ipso facinore comprehenditur, si delicta gravia et praegravia commisit vel si Kurultai consentit"
+      }
+    ],
+    "DeputyDetentionGroundConsent": [
+      {
+        "status": "translation",
+        "text": "Articulus 55, numerus 3. Consensus Kurultai causa est quae tutelam deputati tollit"
+      }
+    ],
+    "DeputyDetentionGroundGraveOffence": [
+      {
+        "status": "translation",
+        "text": "Articulus 55, numerus 3. Delictum grave vel praegrave commissum causa est quae tutelam deputati tollit"
+      }
+    ],
+    "DeputyDetentionGroundInTheAct": [
+      {
+        "status": "translation",
+        "text": "Articulus 55, numerus 3. Comprehensio in ipso facinore causa est quae tutelam deputati tollit"
+      }
+    ],
+    "DeputyImmunity": [
+      {
+        "status": "translation",
+        "text": "Articulus 55, numerus 3. Deputatus Kurultai sine consensu Kurultai comprehendi non potest, nisi in ipso facinore comprehenditur vel delicta gravia et praegravia commisit"
+      }
+    ],
+    "DeputyInviolabilityApplies": [
+      {
+        "status": "translation",
+        "text": "Articulus 55, numerus 3. Tutela deputati a comprehensione viget, donec nulla ex tribus causis nominatis adest"
+      }
+    ],
+    "DeputyInviolabilityApplies/unless/0": [
+      {
+        "status": "translation",
+        "text": "Articulus 55, numerus 3. Tutela deputati a comprehensione viget, donec nulla ex tribus causis nominatis adest"
+      }
+    ],
+    "DeputyPersonalImmunity": [
+      {
+        "status": "translation",
+        "text": "Articulus 55, numerus 3. Deputatus Kurultai sine consensu Kurultai comprehendi non potest, nisi in ipso facinore comprehenditur vel delicta gravia et praegravia commisit"
+      }
+    ],
+    "DeputyTermExpiry": [
+      {
+        "status": "translation",
+        "text": "Articulus 53, numerus 2. Terminus potestatum deputatorum Kurultai quinque anni est"
+      }
+    ],
+    "FinancialBillWithGovernmentOpinion": [
+      {
+        "status": "translation",
+        "text": "Articulus 60, numerus 6. Rogatio legis quae reditus minuit vel sumptus auget solum sententia favorabili Gubernii adhibita infertur"
+      }
+    ],
+    "FirstSessionThirtyDays": [
+      {
+        "status": "translation",
+        "text": "Articulus 58, numerus 2. Prima sessio Kurultai non serius quam triginta diebus a die exitus electionum publicati convocatur"
+      }
+    ],
+    "Government": [
+      {
+        "status": "translation",
+        "text": "Gubernium Rei Publicae Kazachstaniae"
+      }
+    ],
+    "GovernmentMember": [
+      {
+        "status": "translation",
+        "text": "membrum Gubernii"
+      }
+    ],
+    "GovernmentMemberDismissalRequest": [
+      {
+        "status": "translation",
+        "text": "Articulus 56, subnumerus 17). Incohantibus non minus quam tertia parte deputatorum Kurultai non minus duabus ex tribus partibus suffragiorum decernit ut Praesidem de membro Gubernii dimittendo adeat"
+      }
+    ],
+    "GovernmentNoConfidence": [
+      {
+        "status": "translation",
+        "text": "Articulus 56, subnumerus 13). Incohantibus non minus quam quinta parte deputatorum Kurultai maiore parte suffragiorum totius numeri deputatorum Gubernio fidem abrogat"
+      }
+    ],
+    "Kurultai": [
+      {
+        "status": "translation",
+        "text": "Kurultai Rei Publicae Kazachstaniae"
+      }
+    ],
+    "KurultaiChair": [
+      {
+        "status": "translation",
+        "text": "Moderator Kurultai"
+      }
+    ],
+    "KurultaiChairElection": [
+      {
+        "status": "translation",
+        "text": "Articulus 57, numerus 1. Electio Moderatoris suffragio tacito maiore parte totius numeri deputatorum"
+      }
+    ],
+    "KurultaiChairMayConveneAndPreside": [
+      {
+        "status": "translation",
+        "text": "Articulus 57, numerus 3. Moderator consessus convocat iisque praesidet"
+      }
+    ],
+    "KurultaiChairMayDirectAgendaPreparation": [
+      {
+        "status": "translation",
+        "text": "Articulus 57, numerus 3. Moderator generalem curam parandarum rerum Kurultai gerit"
+      }
+    ],
+    "KurultaiChairMayEnforceRules": [
+      {
+        "status": "translation",
+        "text": "Articulus 57, numerus 3. Moderator observantiam ordinis agendi Kurultai praestat"
+      }
+    ],
+    "KurultaiChairMayIssueOrders": [
+      {
+        "status": "translation",
+        "text": "Articulus 57, numerus 5. Moderator mandata de rebus competentiae suae edit"
+      }
+    ],
+    "KurultaiChairMaySignActs": [
+      {
+        "status": "translation",
+        "text": "Articulus 57, numerus 3. Moderator actus Kurultai subscribit"
+      }
+    ],
+    "KurultaiChairRemovalOrResignation": [
+      {
+        "status": "translation",
+        "text": "Articulus 57, numerus 2. Revocatio vel abdicatio Moderatoris maiore parte totius numeri deputatorum"
+      }
+    ],
+    "KurultaiPowersEndAtNewConvocation": [
+      {
+        "status": "translation",
+        "text": "Articulus 52, numerus 2. Potestates finiuntur cum prima sessio novi conventus opus incipit"
+      }
+    ],
+    "KurultaiPowersStartAtFirstSession": [
+      {
+        "status": "translation",
+        "text": "Articulus 52, numerus 2. Potestates Kurultai a prima sessione aperta incipiunt"
+      }
+    ],
+    "KurultaiResolution": [
+      {
+        "status": "translation",
+        "text": "constitutum Kurultai vel collegii eius operantis"
+      }
+    ],
+    "Law": [
+      {
+        "status": "translation",
+        "text": "lex vel lex constitutionalis"
+      }
+    ],
+    "LawPresentedWithinTenDays": [
+      {
+        "status": "translation",
+        "text": "Articulus 60, numerus 5. Lex a Kurultai lata intra decem dies Praesidi ad subscribendum exhibetur"
+      }
+    ],
+    "MissedReconsiderationAcceptsObjection": [
+      {
+        "status": "translation",
+        "text": "Articulus 56, subnumerus 2). Terminus mensis ad iteratam deliberationem non observatus significat obiectiones Praesidis acceptas esse"
+      }
+    ],
+    "OrdinaryLawMajority": [
+      {
+        "status": "translation",
+        "text": "Articulus 61, numerus 4. Leges maiore parte suffragiorum totius numeri deputatorum Kurultai feruntur"
+      }
+    ],
+    "OrdinaryVetoOverride": [
+      {
+        "status": "translation",
+        "text": "Articulus 56, subnumerus 2). Obiectiones Praesidis de lege maiore parte duarum ex tribus partibus suffragiorum totius numeri deputatorum superantur"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "persona physica"
+      }
+    ],
+    "PresidentialFinancialBillException": [
+      {
+        "status": "translation",
+        "text": "Articulus 60, numerus 6. Rogationibus legum a Praeside inlatis sententia Gubernii non requiritur"
+      }
+    ],
+    "PriorityBillDue": [
+      {
+        "status": "translation",
+        "text": "Articulus 60, numerus 2. Rogatio legis prior intra duos menses ferenda est"
+      }
+    ],
+    "PriorityBillTwoMonths": [
+      {
+        "status": "translation",
+        "text": "Articulus 60, numerus 2. Rogatio legis prior non serius quam die exitus termini duorum mensium lata intra terminum lata est"
+      }
+    ],
+    "RepeatedAbsenceSanction": [
+      {
+        "status": "translation",
+        "text": "Articulus 55, numerus 1. Deputatus sine iustis causis plus quam ter absens poenis disciplinaribus lege statutis subicitur"
+      }
+    ],
+    "RepeatedChairRefusalAllowsDissolution": [
+      {
+        "status": "translation",
+        "text": "Articulus 57, numerus 1. Iterata recusatio Moderatoris eligendi Praesidi ius Kurultai dissolvendi dat"
+      }
+    ],
+    "Report": [
+      {
+        "status": "translation",
+        "text": "ratio a membro Gubernii coram Kurultai reddita"
+      }
+    ],
+    "Session": [
+      {
+        "status": "translation",
+        "text": "sessio Kurultai"
+      }
+    ],
+    "SessionQuorumTwoThirds": [
+      {
+        "status": "translation",
+        "text": "Articulus 58, numerus 5. Consessus Kurultai legitimus est, si non minus duae ex tribus partibus totius numeri deputatorum adsunt"
+      }
+    ],
+    "StandingCommitteeEstablished": [
+      {
+        "status": "translation",
+        "text": "Articulus 59, numerus 1. Kurultai comitatus perpetuos constituit, quorum numerus lege constitutionali definitur"
+      }
+    ],
+    "TrustVoteTimingAndAnnualCap": [
+      {
+        "status": "translation",
+        "text": "Articulus 60, numerus 7. Suffragium de fide non prius quam post quadraginta octo horas a quaestione proposita fit, et hac potestate non plus quam bis in anno utitur"
+      }
+    ],
+    "WorkingBodyResolutionWithinCompetence": [
+      {
+        "status": "translation",
+        "text": "Articulus 59, numerus 2. Comitatus et commissiones constituta intra fines competentiae edunt"
+      }
+    ],
+    "absence_sanction_threshold": [
+      {
+        "status": "translation",
+        "text": "limes poenarum disciplinarium propter absentiam: plus quam ter"
+      }
+    ],
+    "age_years": [
+      {
+        "status": "translation",
+        "text": "aetas personae annis expletis"
+      }
+    ],
+    "annual_prior_trust_uses": [
+      {
+        "status": "translation",
+        "text": "numerus quaestionum de fide hoc anno iam a Gubernio propositarum"
+      }
+    ],
+    "bill_passed": [
+      {
+        "status": "translation",
+        "text": "rogatio legis a Kurultai lata est"
+      }
+    ],
+    "candidate_person": [
+      {
+        "status": "translation",
+        "text": "candidatus est haec persona"
+      }
+    ],
+    "caught_at_crime_scene": [
+      {
+        "status": "translation",
+        "text": "deputatus in ipso facinore comprehensus est"
+      }
+    ],
+    "chair_candidate": [
+      {
+        "status": "translation",
+        "text": "persona candidatus ad munus Moderatoris Kurultai proposita est"
+      }
+    ],
+    "chair_candidate_elected": [
+      {
+        "status": "translation",
+        "text": "candidatus Moderator Kurultai electus est"
+      }
+    ],
+    "chair_candidate_fluent_in_state_language": [
+      {
+        "status": "translation",
+        "text": "candidatus ad munus Moderatoris lingua publica libere utitur"
+      }
+    ],
+    "chair_candidate_is_deputy": [
+      {
+        "status": "translation",
+        "text": "candidatus ad munus Moderatoris deputatus Kurultai est"
+      }
+    ],
+    "chair_may_convene_and_preside": [
+      {
+        "status": "translation",
+        "text": "Moderator consessus Kurultai convocat iisque praesidet"
+      }
+    ],
+    "chair_may_direct_agenda_preparation": [
+      {
+        "status": "translation",
+        "text": "Moderator generalem curam parandarum rerum inlatarum gerit"
+      }
+    ],
+    "chair_may_enforce_rules": [
+      {
+        "status": "translation",
+        "text": "Moderator observantiam ordinis agendi Kurultai praestat"
+      }
+    ],
+    "chair_may_issue_orders": [
+      {
+        "status": "translation",
+        "text": "Moderator mandata de rebus competentiae suae edit"
+      }
+    ],
+    "chair_may_sign_kurultai_acts": [
+      {
+        "status": "translation",
+        "text": "Moderator actus a Kurultai editos subscribit"
+      }
+    ],
+    "chair_removal_votes": [
+      {
+        "status": "translation",
+        "text": "numerus suffragiorum pro revocatione Moderatoris vel abdicatione eius accipienda latorum"
+      }
+    ],
+    "chair_removed_or_resignation_accepted": [
+      {
+        "status": "translation",
+        "text": "Moderator a munere revocatus est vel abdicatio eius accepta est"
+      }
+    ],
+    "chair_secret_ballot_votes": [
+      {
+        "status": "translation",
+        "text": "numerus suffragiorum pro candidato tacito suffragio latorum"
+      }
+    ],
+    "citizen": [
+      {
+        "status": "translation",
+        "text": "persona civis Rei Publicae Kazachstaniae est"
+      }
+    ],
+    "commission_established": [
+      {
+        "status": "translation",
+        "text": "commissio Kurultai legitime constituta est"
+      }
+    ],
+    "commission_formed": [
+      {
+        "status": "translation",
+        "text": "Kurultai commissionem constituit"
+      }
+    ],
+    "constitutional_bill": [
+      {
+        "status": "translation",
+        "text": "rogatio est rogatio legis constitutionalis"
+      }
+    ],
+    "constitutional_early_termination_ground": [
+      {
+        "status": "translation",
+        "text": "adest causa constitutionalis finiendarum ante tempus potestatum Kurultai"
+      }
+    ],
+    "constitutional_law": [
+      {
+        "status": "translation",
+        "text": "actus est lex constitutionalis"
+      }
+    ],
+    "constitutional_law_denominator": [
+      {
+        "status": "translation",
+        "text": "denominator limitis legis constitutionalis ferendae: tres"
+      }
+    ],
+    "constitutional_law_numerator": [
+      {
+        "status": "translation",
+        "text": "numerator limitis legis constitutionalis ferendae: duo"
+      }
+    ],
+    "constitutional_veto_override_denominator": [
+      {
+        "status": "translation",
+        "text": "denominator limitis superandarum obiectionum de lege constitutionali: quattuor"
+      }
+    ],
+    "constitutional_veto_override_numerator": [
+      {
+        "status": "translation",
+        "text": "numerator limitis superandarum obiectionum de lege constitutionali: tres"
+      }
+    ],
+    "deputies_present": [
+      {
+        "status": "translation",
+        "text": "numerus deputatorum consessui praesentium"
+      }
+    ],
+    "deputy": [
+      {
+        "status": "translation",
+        "text": "persona deputatus Kurultai est"
+      }
+    ],
+    "deputy_detained": [
+      {
+        "status": "translation",
+        "text": "deputatus comprehensus est"
+      }
+    ],
+    "deputy_detention_attempt": [
+      {
+        "status": "translation",
+        "text": "comprehensio deputati temptata est"
+      }
+    ],
+    "deputy_detention_ground": [
+      {
+        "status": "translation",
+        "text": "adest causa qua comprehensio deputati licet"
+      }
+    ],
+    "deputy_inviolability_applies": [
+      {
+        "status": "translation",
+        "text": "tutela deputati a comprehensione viget"
+      }
+    ],
+    "deputy_minimum_age": [
+      {
+        "status": "translation",
+        "text": "aetas minima deputati Kurultai: viginti quinque anni"
+      }
+    ],
+    "deputy_residence_years": [
+      {
+        "status": "translation",
+        "text": "terminus habitationis perpetuae deputati requisitus: decem anni"
+      }
+    ],
+    "deputy_term": [
+      {
+        "status": "translation",
+        "text": "terminus potestatum deputati Kurultai: quinque anni"
+      }
+    ],
+    "deputy_term_expires_on": [
+      {
+        "status": "translation",
+        "text": "dies quo potestates deputati finiuntur"
+      }
+    ],
+    "deputy_term_started_on": [
+      {
+        "status": "translation",
+        "text": "dies quo potestates deputati coeperunt"
+      }
+    ],
+    "disciplinary_measure_applicable": [
+      {
+        "status": "translation",
+        "text": "poenae disciplinares lege statutae deputato applicari possunt"
+      }
+    ],
+    "election_results_published": [
+      {
+        "status": "translation",
+        "text": "dies quo exitus electionum deputatorum publicatus est"
+      }
+    ],
+    "eligible_deputy_candidate": [
+      {
+        "status": "translation",
+        "text": "persona requisitis deputati Kurultai congruit"
+      }
+    ],
+    "financial_bill_admissible": [
+      {
+        "status": "translation",
+        "text": "rogatio legis rei nummariae inferri licet"
+      }
+    ],
+    "first_session_deadline_days": [
+      {
+        "status": "translation",
+        "text": "terminus primae sessionis convocandae: triginta dies a die exitus electionum publicati"
+      }
+    ],
+    "first_session_of_kurultai": [
+      {
+        "status": "translation",
+        "text": "sessio est prima sessio huius conventus Kurultai"
+      }
+    ],
+    "first_session_opened": [
+      {
+        "status": "translation",
+        "text": "dies quo prima sessio Kurultai aperta est"
+      }
+    ],
+    "first_session_timely": [
+      {
+        "status": "translation",
+        "text": "prima sessio intra terminum constitutionalem convocata est"
+      }
+    ],
+    "government": [
+      {
+        "status": "translation",
+        "text": "collegium est Gubernium Rei Publicae"
+      }
+    ],
+    "government_no_confidence": [
+      {
+        "status": "translation",
+        "text": "Kurultai Gubernio fidem abrogavit"
+      }
+    ],
+    "grave_or_especially_grave_offence": [
+      {
+        "status": "translation",
+        "text": "deputatus delictum grave vel praegrave commisit"
+      }
+    ],
+    "introduced_by_president": [
+      {
+        "status": "translation",
+        "text": "rogatio legis iure incohandi legem Praesidis inlata est"
+      }
+    ],
+    "kurultai_body": [
+      {
+        "status": "translation",
+        "text": "collegium est Kurultai"
+      }
+    ],
+    "kurultai_chair": [
+      {
+        "status": "translation",
+        "text": "persona Moderator Kurultai est"
+      }
+    ],
+    "kurultai_chair_vote_denominator": [
+      {
+        "status": "translation",
+        "text": "denominator limitis electionis Moderatoris: duo"
+      }
+    ],
+    "kurultai_chair_vote_numerator": [
+      {
+        "status": "translation",
+        "text": "numerator limitis electionis Moderatoris: unum"
+      }
+    ],
+    "kurultai_consent_to_prosecution": [
+      {
+        "status": "translation",
+        "text": "Kurultai consensit ut deputatus ad responsabilitatem vocaretur"
+      }
+    ],
+    "kurultai_dissolution_authorized": [
+      {
+        "status": "translation",
+        "text": "dissolutio Kurultai licet"
+      }
+    ],
+    "kurultai_early_termination_authorized": [
+      {
+        "status": "translation",
+        "text": "finis potestatum Kurultai ante tempus licet"
+      }
+    ],
+    "kurultai_powers_ended": [
+      {
+        "status": "translation",
+        "text": "potestates Kurultai huius conventus finitae sunt"
+      }
+    ],
+    "kurultai_powers_started": [
+      {
+        "status": "translation",
+        "text": "potestates Kurultai huius conventus coeperunt"
+      }
+    ],
+    "kurultai_seat_count": [
+      {
+        "status": "translation",
+        "text": "totus numerus deputatorum Kurultai: centum quadraginta quinque"
+      }
+    ],
+    "law_adopted": [
+      {
+        "status": "translation",
+        "text": "dies quo lex a Kurultai lata est"
+      }
+    ],
+    "law_nonperformance_established": [
+      {
+        "status": "translation",
+        "text": "ratione reddita constat membrum Gubernii leges Rei Publicae non exsecutum esse"
+      }
+    ],
+    "law_presented_timely": [
+      {
+        "status": "translation",
+        "text": "lex intra terminum constitutionalem ad subscribendum exhibita est"
+      }
+    ],
+    "law_presented_to_president": [
+      {
+        "status": "translation",
+        "text": "dies quo lex Praesidi ad subscribendum exhibita est"
+      }
+    ],
+    "law_submission_deadline_days": [
+      {
+        "status": "translation",
+        "text": "terminus legis latae ad subscribendum exhibendae: decem dies"
+      }
+    ],
+    "member_dismissal_decision_denominator": [
+      {
+        "status": "translation",
+        "text": "denominator limitis adeundi de dimissione: tres"
+      }
+    ],
+    "member_dismissal_decision_numerator": [
+      {
+        "status": "translation",
+        "text": "numerator limitis adeundi de dimissione: duo"
+      }
+    ],
+    "member_dismissal_initiative_denominator": [
+      {
+        "status": "translation",
+        "text": "denominator limitis incohandae rationis reddendae: tres"
+      }
+    ],
+    "member_dismissal_initiative_numerator": [
+      {
+        "status": "translation",
+        "text": "numerator limitis incohandae rationis reddendae: unum"
+      }
+    ],
+    "new_convocation_first_session_started": [
+      {
+        "status": "translation",
+        "text": "prima sessio Kurultai novi conventus aperta est"
+      }
+    ],
+    "no_confidence_decision_denominator": [
+      {
+        "status": "translation",
+        "text": "denominator limitis fidei abrogandae: duo"
+      }
+    ],
+    "no_confidence_decision_numerator": [
+      {
+        "status": "translation",
+        "text": "numerator limitis fidei abrogandae: unum"
+      }
+    ],
+    "no_confidence_initiating_votes": [
+      {
+        "status": "translation",
+        "text": "numerus deputatorum qui quaestionem de fide abroganda incohaverunt"
+      }
+    ],
+    "no_confidence_initiative_denominator": [
+      {
+        "status": "translation",
+        "text": "denominator limitis incohandae fidei abrogationis: quinque"
+      }
+    ],
+    "no_confidence_initiative_numerator": [
+      {
+        "status": "translation",
+        "text": "numerator limitis incohandae fidei abrogationis: unum"
+      }
+    ],
+    "no_confidence_votes": [
+      {
+        "status": "translation",
+        "text": "numerus suffragiorum pro fide Gubernio abroganda latorum"
+      }
+    ],
+    "ordinary_bill": [
+      {
+        "status": "translation",
+        "text": "rogatio est rogatio legis ordinariae"
+      }
+    ],
+    "ordinary_law": [
+      {
+        "status": "translation",
+        "text": "actus est lex ordinaria"
+      }
+    ],
+    "ordinary_law_denominator": [
+      {
+        "status": "translation",
+        "text": "denominator limitis legis ferendae: duo"
+      }
+    ],
+    "ordinary_law_numerator": [
+      {
+        "status": "translation",
+        "text": "numerator limitis legis ferendae: unum"
+      }
+    ],
+    "ordinary_veto_override_denominator": [
+      {
+        "status": "translation",
+        "text": "denominator limitis superandarum obiectionum de lege: tres"
+      }
+    ],
+    "ordinary_veto_override_numerator": [
+      {
+        "status": "translation",
+        "text": "numerator limitis superandarum obiectionum de lege: duo"
+      }
+    ],
+    "override_votes": [
+      {
+        "status": "translation",
+        "text": "numerus suffragiorum in obiectionibus Praesidis superandis latorum"
+      }
+    ],
+    "permanent_committee_formed": [
+      {
+        "status": "translation",
+        "text": "Kurultai comitatum perpetuum constituit"
+      }
+    ],
+    "positive_government_opinion": [
+      {
+        "status": "translation",
+        "text": "de rogatione legis sententia favorabilis Gubernii adest"
+      }
+    ],
+    "president_nominated_chair": [
+      {
+        "status": "translation",
+        "text": "candidatus ad munus Moderatoris a Praeside Rei Publicae propositus est"
+      }
+    ],
+    "president_objected_to_law": [
+      {
+        "status": "translation",
+        "text": "Praeses obiectiones de lege denuntiavit"
+      }
+    ],
+    "presidential_dismissal_request": [
+      {
+        "status": "translation",
+        "text": "Kurultai Praesidem adit ut membrum Gubernii a munere dimittatur"
+      }
+    ],
+    "presidential_objection_accepted": [
+      {
+        "status": "translation",
+        "text": "obiectiones Praesidis acceptae habentur"
+      }
+    ],
+    "presidential_objection_overridden": [
+      {
+        "status": "translation",
+        "text": "obiectiones Praesidis a Kurultai superatae sunt"
+      }
+    ],
+    "priority_bill": [
+      {
+        "status": "translation",
+        "text": "dies quo rogatio legis prior iudicata inlata est"
+      }
+    ],
+    "priority_bill_adopted": [
+      {
+        "status": "translation",
+        "text": "dies quo rogatio legis prior lata est"
+      }
+    ],
+    "priority_bill_due_on": [
+      {
+        "status": "translation",
+        "text": "dies exitus termini duorum mensium rogationis legis prioris"
+      }
+    ],
+    "priority_bill_period": [
+      {
+        "status": "translation",
+        "text": "terminus rogationis legis prioris primo loco ferendae: duo menses"
+      }
+    ],
+    "priority_bill_timely": [
+      {
+        "status": "translation",
+        "text": "rogatio legis prior intra terminum constitutionalem lata est"
+      }
+    ],
+    "reconsideration_deadline_missed": [
+      {
+        "status": "translation",
+        "text": "terminus mensis ad iteratam deliberationem praetermissus est"
+      }
+    ],
+    "reconsideration_within_one_month": [
+      {
+        "status": "translation",
+        "text": "iterata deliberatio et suffragium intra mensem facta sunt"
+      }
+    ],
+    "repeated_refusal_to_elect_chair": [
+      {
+        "status": "translation",
+        "text": "Kurultai iterum Moderatorem eligere recusavit"
+      }
+    ],
+    "report_dismissal_votes": [
+      {
+        "status": "translation",
+        "text": "numerus suffragiorum pro Praeside adeundo de membro Gubernii dimittendo latorum"
+      }
+    ],
+    "report_initiating_votes": [
+      {
+        "status": "translation",
+        "text": "numerus deputatorum qui rationem reddendam incohaverunt"
+      }
+    ],
+    "report_of_member": [
+      {
+        "status": "translation",
+        "text": "ratio ab hoc membro Gubernii reddita est"
+      }
+    ],
+    "resides_last_years": [
+      {
+        "status": "translation",
+        "text": "numerus annorum proximorum habitationis perpetuae in Kazachstania"
+      }
+    ],
+    "resolution_within_body_competence": [
+      {
+        "status": "translation",
+        "text": "constitutum de rebus competentiae collegii latum est"
+      }
+    ],
+    "revenue_reducing_or_expenditure_increasing": [
+      {
+        "status": "translation",
+        "text": "rogatio legis reditus publicos minui vel sumptus augeri praevidet"
+      }
+    ],
+    "session_opened": [
+      {
+        "status": "translation",
+        "text": "sessio Kurultai aperta est"
+      }
+    ],
+    "session_quorate": [
+      {
+        "status": "translation",
+        "text": "consessus Kurultai legitimus est"
+      }
+    ],
+    "session_quorum_denominator": [
+      {
+        "status": "translation",
+        "text": "denominator numeri legitimi consessus: tres"
+      }
+    ],
+    "session_quorum_numerator": [
+      {
+        "status": "translation",
+        "text": "numerator numeri legitimi consessus: duo"
+      }
+    ],
+    "standing_committee_established": [
+      {
+        "status": "translation",
+        "text": "comitatus perpetuus Kurultai legitime constitutus est"
+      }
+    ],
+    "trust_power_annual_limit": [
+      {
+        "status": "translation",
+        "text": "limes quaestionis de fide a Gubernio proponendae: bis in anno"
+      }
+    ],
+    "trust_question_on_rejected_government_bill": [
+      {
+        "status": "translation",
+        "text": "Primus Minister quaestionem de fide propter rogationem legis a Gubernio inlatam non latam proposuit"
+      }
+    ],
+    "trust_question_raised_at": [
+      {
+        "status": "translation",
+        "text": "momentum quo quaestio de fide Gubernio proposita est"
+      }
+    ],
+    "trust_vote_held_at": [
+      {
+        "status": "translation",
+        "text": "momentum quo de quaestione fidei suffragium latum est"
+      }
+    ],
+    "trust_vote_timing_valid": [
+      {
+        "status": "translation",
+        "text": "termini quaestionis de fide proponendae observati sunt"
+      }
+    ],
+    "trust_vote_wait_hours": [
+      {
+        "status": "translation",
+        "text": "terminus inter quaestionem de fide propositam et suffragium: quadraginta octo horae"
+      }
+    ],
+    "unexcused_absences": [
+      {
+        "status": "translation",
+        "text": "numerus absentiarum deputati a consessibus sine iustis causis"
+      }
+    ],
+    "votes_for_bill": [
+      {
+        "status": "translation",
+        "text": "numerus suffragiorum pro rogatione legis latorum"
+      }
+    ],
+    "working_body_resolution": [
+      {
+        "status": "translation",
+        "text": "actus est constitutum comitatus vel commissionis"
+      }
+    ],
+    "working_body_resolution_authorized": [
+      {
+        "status": "translation",
+        "text": "comitatui vel commissioni hoc constitutum edere licet"
+      }
+    ]
+  },
+  "language": "la",
+  "package": "kz.constitution.kurultai"
+}

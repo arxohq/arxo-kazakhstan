@@ -1,0 +1,1264 @@
+// Конституция РК 2026, раздел IV (ст. 52–62): Курултай.
+// Пороговые правила используют только целочисленное умножение: это сохраняет
+// строгие «более» и нестрогие «не менее» без округления долей депутата.
+
+language "law.core" version "0.2";
+package kz.constitution.kurultai version "0.1.0";
+namespace "urn:kz:constitution:kurultai";
+
+
+// Политика счёта §86 — узел права, а не запись дела (DECISION-0111 §2.9):
+// до 0.2 её возило дело, и две копии одной политики могли разойтись между
+// `case` и профилем, ничем не будучи пойманы. Дело несёт только StableId.
+//
+// Срок полномочий считается календарным шагом (`calendar_year`, errata
+// E-0026). `no_roll` и `include_end` выбраны по тексту: при них шаг не
+// спрашивает снимок §85 вовсе, и срок не требует календаря праздников,
+// которого норма не читает. `month_end` обязателен календарной единице.
+deadline policy KZ_CONSTITUTION_TERMS {
+    start_count same_day;
+    include_end true;
+    roll no_roll;
+    month_end last_day_of_month;
+}
+
+entity Person {
+    label ru-KZ official "физическое лицо";
+}
+entity Candidate {
+    label ru-KZ official "кандидат";
+}
+entity Deputy {
+    label ru-KZ official "депутат Курултая";
+}
+entity Kurultai {
+    label ru-KZ official "Курултай Республики Казахстан";
+}
+entity Session {
+    label ru-KZ official "сессия Курултая";
+}
+entity Bill {
+    label ru-KZ official "законопроект";
+}
+entity Law {
+    label ru-KZ official "закон либо конституционный закон";
+}
+entity Government {
+    label ru-KZ official "Правительство Республики Казахстан";
+}
+entity GovernmentMember {
+    label ru-KZ official "член Правительства";
+}
+entity Report {
+    label ru-KZ official "отчёт члена Правительства перед Курултаем";
+}
+entity KurultaiChair {
+    label ru-KZ official "Председатель Курултая";
+}
+entity Committee {
+    label ru-KZ official "постоянный комитет Курултая";
+}
+entity Commission {
+    label ru-KZ official "комиссия Курултая";
+}
+entity KurultaiResolution {
+    label ru-KZ official "постановление Курултая либо его рабочего органа";
+}
+
+relation candidate_person(candidate: Candidate, person: Person) kind empirical {
+    label ru-KZ official "кандидат является данным лицом";
+}
+relation citizen(person: Person) kind empirical {
+    label ru-KZ official "лицо является гражданином Республики Казахстан";
+}
+relation age_years(person: Person, years: Integer) kind empirical {
+    label ru-KZ official "возраст лица в полных годах";
+}
+relation resides_last_years(person: Person, years: Integer) kind empirical {
+    label ru-KZ official "число последних лет постоянного проживания в Казахстане";
+}
+relation eligible_deputy_candidate(candidate: Candidate) kind institutional {
+    label ru-KZ official "лицо отвечает требованиям к депутату Курултая";
+}
+
+relation kurultai_seat_count(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "общее число депутатов Курултая — сто сорок пять";
+}
+// Срок закреплён КАК QUANTITY: единица §84.4 обязана оставаться видимой, а
+// грамматика допускает её только у литерала — из переменной Quantity не
+// собрать. Величина едет с единицей, и правило истечения читает её целиком.
+relation deputy_term(length: Quantity) kind institutional {
+    key(length);
+    label ru-KZ official "срок полномочий депутата Курултая — пять лет";
+}
+relation deputy_minimum_age(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "минимальный возраст депутата Курултая — двадцать пять лет";
+}
+relation deputy_residence_years(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "требуемый срок постоянного проживания депутата — десять лет";
+}
+relation absence_sanction_threshold(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "порог применения мер взыскания за отсутствие — более трёх раз";
+}
+relation first_session_deadline_days(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "срок созыва первой сессии — тридцать дней со дня опубликования итогов выборов";
+}
+relation priority_bill_period(length: Quantity) kind institutional {
+    key(length);
+    label ru-KZ official "срок первоочередного принятия приоритетного законопроекта — два месяца";
+}
+relation priority_bill_due_on(bill: Bill, day: Date) kind institutional {
+    key(bill);
+    label ru-KZ official "день окончания двухмесячного срока по приоритетному законопроекту";
+}
+relation law_submission_deadline_days(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "срок представления принятого закона на подпись — десять дней";
+}
+// Ст. 60.7: «не ранее чем через сорок восемь часов с момента постановки
+// вопроса о доверии». До errata E-0028 час был неизмерим (§84.1 объявлял
+// Duration и не давал терма), и правило читало эмпирический предикат с
+// величиной в имени — то есть дело само сообщало вывод, ради которого норма
+// существует. Величина остаётся Integer: `hours_between` ИЗМЕРЯЕТ и
+// возвращает счёт часов, единица видна в имени функции (§84.4).
+relation trust_vote_wait_hours(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "срок между постановкой вопроса о доверии и голосованием — сорок восемь часов";
+}
+relation trust_question_raised_at(government: Government, at: Instant) kind empirical {
+    label ru-KZ official "момент постановки вопроса о доверии Правительству";
+}
+relation trust_vote_held_at(government: Government, at: Instant) kind empirical {
+    label ru-KZ official "момент голосования по вопросу о доверии";
+}
+relation trust_power_annual_limit(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "предел обращения Правительства к вопросу о доверии — два раза в год";
+}
+relation session_quorum_numerator(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "числитель кворума заседания — две трети";
+}
+relation session_quorum_denominator(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "знаменатель кворума заседания — две трети";
+}
+relation constitutional_law_numerator(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "числитель порога принятия конституционного закона — две трети";
+}
+relation constitutional_law_denominator(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "знаменатель порога принятия конституционного закона — две трети";
+}
+relation ordinary_law_numerator(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "числитель порога принятия закона — одна вторая";
+}
+relation ordinary_law_denominator(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "знаменатель порога принятия закона — одна вторая";
+}
+relation constitutional_veto_override_numerator(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "числитель порога преодоления возражений по конституционному закону — три четверти";
+}
+relation constitutional_veto_override_denominator(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "знаменатель порога преодоления возражений по конституционному закону — три четверти";
+}
+relation ordinary_veto_override_numerator(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "числитель порога преодоления возражений по закону — две трети";
+}
+relation ordinary_veto_override_denominator(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "знаменатель порога преодоления возражений по закону — две трети";
+}
+relation no_confidence_initiative_numerator(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "числитель порога инициативы о вотуме недоверия — одна пятая";
+}
+relation no_confidence_initiative_denominator(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "знаменатель порога инициативы о вотуме недоверия — одна пятая";
+}
+relation no_confidence_decision_numerator(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "числитель порога выражения вотума недоверия — одна вторая";
+}
+relation no_confidence_decision_denominator(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "знаменатель порога выражения вотума недоверия — одна вторая";
+}
+relation member_dismissal_initiative_numerator(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "числитель порога инициативы заслушивания отчёта — одна треть";
+}
+relation member_dismissal_initiative_denominator(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "знаменатель порога инициативы заслушивания отчёта — одна треть";
+}
+relation member_dismissal_decision_numerator(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "числитель порога обращения об освобождении — две трети";
+}
+relation member_dismissal_decision_denominator(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "знаменатель порога обращения об освобождении — две трети";
+}
+relation kurultai_chair_vote_numerator(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "числитель порога избрания Председателя — одна вторая";
+}
+relation kurultai_chair_vote_denominator(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "знаменатель порога избрания Председателя — одна вторая";
+}
+
+relation deputy(deputy: Deputy) kind empirical {
+    label ru-KZ official "лицо является депутатом Курултая";
+}
+relation unexcused_absences(deputy: Deputy, count: Integer) kind empirical {
+    label ru-KZ official "число случаев отсутствия депутата на заседаниях без уважительных причин";
+}
+relation disciplinary_measure_applicable(deputy: Deputy) kind institutional {
+    label ru-KZ official "к депутату применимы установленные законом меры взыскания";
+}
+relation deputy_detention_attempt(deputy: Deputy) kind empirical {
+    label ru-KZ official "предпринята попытка задержания депутата";
+}
+relation caught_at_crime_scene(deputy: Deputy) kind empirical {
+    label ru-KZ official "депутат задержан на месте преступления";
+}
+relation grave_or_especially_grave_offence(deputy: Deputy) kind empirical {
+    label ru-KZ official "депутатом совершено тяжкое или особо тяжкое преступление";
+}
+relation kurultai_consent_to_prosecution(deputy: Deputy) kind empirical {
+    label ru-KZ official "Курултай дал согласие на привлечение депутата к ответственности";
+}
+// `deputy_detention_permitted` СНЯТО 02.09.2026: вывод «задержание депутата допустимо» несёт `deputy_detained`, а основание — `deputy_detention_ground`; третьего предиката для той же нормы не нужно, и он не читался ничем
+relation deputy_detention_ground(deputy: Deputy) kind institutional {
+    label ru-KZ official "налицо основание, при котором задержание депутата допустимо";
+}
+relation deputy_inviolability_applies(deputy: Deputy) kind institutional {
+    label ru-KZ official "защита депутата от задержания действует";
+}
+relation deputy_detained(deputy: Deputy) kind institutional {
+    label ru-KZ official "депутат задержан";
+}
+
+relation election_results_published(session: Session, published: Date) kind empirical {
+    label ru-KZ official "день опубликования итогов выборов депутатов";
+}
+relation first_session_opened(session: Session, opened: Date) kind empirical {
+    label ru-KZ official "день открытия первой сессии Курултая";
+}
+relation first_session_timely(session: Session) kind institutional {
+    label ru-KZ official "первая сессия созвана в конституционный срок";
+}
+relation deputies_present(session: Session, present: Integer) kind empirical {
+    label ru-KZ official "число депутатов, присутствующих на заседании";
+}
+relation session_quorate(session: Session) kind institutional {
+    label ru-KZ official "заседание Курултая правомочно";
+}
+
+relation constitutional_bill(bill: Bill) kind empirical {
+    label ru-KZ official "законопроект является проектом конституционного закона";
+}
+relation ordinary_bill(bill: Bill) kind empirical {
+    label ru-KZ official "законопроект является проектом обычного закона";
+}
+relation votes_for_bill(bill: Bill, votes: Integer) kind empirical {
+    label ru-KZ official "число голосов, поданных за законопроект";
+}
+relation bill_passed(bill: Bill) kind institutional {
+    label ru-KZ official "законопроект принят Курултаем";
+}
+
+relation president_objected_to_law(law: Law) kind empirical {
+    label ru-KZ official "Президент заявил возражения по закону";
+}
+relation constitutional_law(law: Law) kind empirical {
+    label ru-KZ official "акт является конституционным законом";
+}
+relation ordinary_law(law: Law) kind empirical {
+    label ru-KZ official "акт является обычным законом";
+}
+relation override_votes(law: Law, votes: Integer) kind empirical {
+    label ru-KZ official "число голосов, поданных при преодолении возражений Президента";
+}
+relation reconsideration_within_one_month(law: Law) kind empirical {
+    label ru-KZ official "повторное обсуждение и голосование проведены в месячный срок";
+}
+relation reconsideration_deadline_missed(law: Law) kind empirical {
+    label ru-KZ official "месячный срок повторного обсуждения пропущен";
+}
+relation presidential_objection_overridden(law: Law) kind institutional {
+    label ru-KZ official "возражения Президента преодолены Курултаем";
+}
+relation presidential_objection_accepted(law: Law) kind institutional {
+    label ru-KZ official "возражения Президента считаются принятыми";
+}
+
+relation law_adopted(law: Law, adopted: Date) kind empirical {
+    label ru-KZ official "день принятия закона Курултаем";
+}
+relation law_presented_to_president(law: Law, presented: Date) kind empirical {
+    label ru-KZ official "день представления закона на подпись Президенту";
+}
+relation law_presented_timely(law: Law) kind institutional {
+    label ru-KZ official "закон представлен на подпись в конституционный срок";
+}
+relation priority_bill(bill: Bill, introduced: Date) kind empirical {
+    label ru-KZ official "день внесения законопроекта, признанного приоритетным";
+}
+relation priority_bill_adopted(bill: Bill, adopted: Date) kind empirical {
+    label ru-KZ official "день принятия приоритетного законопроекта";
+}
+// `priority_bill_adopted_within_two_months` СНЯТО 02.09.2026: дело сообщало бы ВЫВОД, ради которого норма существует: сроки считают правила PriorityBillTimely и TrustVoteTiming из дат и мгновений, и булев ярлык обходил бы вычисление
+relation priority_bill_timely(bill: Bill) kind institutional {
+    label ru-KZ official "приоритетный законопроект принят в конституционный срок";
+}
+
+relation government(government: Government) kind empirical {
+    label ru-KZ official "орган является Правительством Республики";
+}
+relation no_confidence_initiating_votes(government: Government, votes: Integer) kind empirical {
+    label ru-KZ official "число депутатов, инициировавших вопрос о вотуме недоверия";
+}
+relation no_confidence_votes(government: Government, votes: Integer) kind empirical {
+    label ru-KZ official "число голосов, поданных за вотум недоверия Правительству";
+}
+relation government_no_confidence(government: Government) kind institutional {
+    label ru-KZ official "Курултай выразил вотум недоверия Правительству";
+}
+
+relation report_of_member(report: Report, member: GovernmentMember) kind empirical {
+    label ru-KZ official "отчёт представлен данным членом Правительства";
+}
+relation report_initiating_votes(report: Report, votes: Integer) kind empirical {
+    label ru-KZ official "число депутатов, инициировавших заслушивание отчёта";
+}
+relation report_dismissal_votes(report: Report, votes: Integer) kind empirical {
+    label ru-KZ official "число голосов, поданных за обращение об освобождении члена Правительства";
+}
+relation law_nonperformance_established(report: Report) kind empirical {
+    label ru-KZ official "по итогам отчёта установлено неисполнение членом Правительства законов Республики";
+}
+relation presidential_dismissal_request(member: GovernmentMember) kind institutional {
+    label ru-KZ official "Курултай обращается к Президенту об освобождении члена Правительства от должности";
+}
+
+relation trust_question_on_rejected_government_bill(government: Government, bill: Bill) kind empirical {
+    label ru-KZ official "Премьер-Министр поставил вопрос о доверии в связи с непринятием внесённого Правительством законопроекта";
+}
+// `trust_vote_not_earlier_than_48_hours` СНЯТО 02.09.2026: дело сообщало бы ВЫВОД, ради которого норма существует: сроки считают правила PriorityBillTimely и TrustVoteTiming из дат и мгновений, и булев ярлык обходил бы вычисление
+relation annual_prior_trust_uses(government: Government, count: Integer) kind empirical {
+    label ru-KZ official "число уже состоявшихся в этом году обращений Правительства к вопросу о доверии";
+}
+relation trust_vote_timing_valid(government: Government) kind institutional {
+    label ru-KZ official "сроки постановки вопроса о доверии соблюдены";
+}
+
+relation revenue_reducing_or_expenditure_increasing(bill: Bill) kind empirical {
+    label ru-KZ official "законопроект предусматривает сокращение государственных доходов либо увеличение расходов";
+}
+relation introduced_by_president(bill: Bill) kind empirical {
+    label ru-KZ official "законопроект внесён в порядке законодательной инициативы Президента";
+}
+relation positive_government_opinion(bill: Bill) kind empirical {
+    label ru-KZ official "по законопроекту имеется положительное заключение Правительства";
+}
+relation financial_bill_admissible(bill: Bill) kind institutional {
+    label ru-KZ official "законопроект финансового характера допустим к внесению";
+}
+
+// Ст. 52, 57, 59: жизненный цикл созыва, Председатель и рабочие органы.
+relation kurultai_body(kurultai: Kurultai) kind empirical {
+    label ru-KZ official "орган является Курултаем";
+}
+relation first_session_of_kurultai(session: Session, kurultai: Kurultai) kind empirical {
+    label ru-KZ official "сессия является первой сессией данного созыва Курултая";
+}
+relation session_opened(session: Session) kind empirical {
+    label ru-KZ official "сессия Курултая открыта";
+}
+relation kurultai_powers_started(kurultai: Kurultai) kind institutional {
+    label ru-KZ official "полномочия Курултая данного созыва начались";
+}
+relation new_convocation_first_session_started(old_kurultai: Kurultai, new_kurultai: Kurultai) kind empirical {
+    label ru-KZ official "открылась первая сессия Курултая нового созыва";
+}
+relation kurultai_powers_ended(kurultai: Kurultai) kind institutional {
+    label ru-KZ official "полномочия Курултая данного созыва прекращены";
+}
+relation constitutional_early_termination_ground(kurultai: Kurultai) kind empirical {
+    label ru-KZ official "налицо конституционное основание досрочного прекращения полномочий Курултая";
+}
+relation kurultai_early_termination_authorized(kurultai: Kurultai) kind institutional {
+    label ru-KZ official "досрочное прекращение полномочий Курултая допустимо";
+}
+
+relation chair_candidate(candidate: Candidate) kind empirical {
+    label ru-KZ official "лицо выдвинуто кандидатом на должность Председателя Курултая";
+}
+relation chair_candidate_is_deputy(candidate: Candidate) kind empirical {
+    label ru-KZ official "кандидат в Председатели является депутатом Курултая";
+}
+relation chair_candidate_fluent_in_state_language(candidate: Candidate) kind empirical {
+    label ru-KZ official "кандидат в Председатели свободно владеет государственным языком";
+}
+relation president_nominated_chair(candidate: Candidate) kind empirical {
+    label ru-KZ official "кандидатура Председателя выдвинута Президентом Республики";
+}
+relation chair_secret_ballot_votes(candidate: Candidate, votes: Integer) kind empirical {
+    label ru-KZ official "число голосов, поданных за кандидата тайным голосованием";
+}
+relation chair_candidate_elected(candidate: Candidate) kind institutional {
+    label ru-KZ official "кандидат избран Председателем Курултая";
+}
+relation repeated_refusal_to_elect_chair(kurultai: Kurultai) kind empirical {
+    label ru-KZ official "Курултай повторно отказал в избрании Председателя";
+}
+relation kurultai_dissolution_authorized(kurultai: Kurultai) kind institutional {
+    label ru-KZ official "роспуск Курултая допустим";
+}
+relation kurultai_chair(chair: KurultaiChair) kind empirical {
+    label ru-KZ official "лицо является Председателем Курултая";
+}
+relation chair_removal_votes(chair: KurultaiChair, votes: Integer) kind empirical {
+    label ru-KZ official "число голосов, поданных за отзыв Председателя либо принятие его отставки";
+}
+relation chair_removed_or_resignation_accepted(chair: KurultaiChair) kind institutional {
+    label ru-KZ official "Председатель отозван от должности либо его отставка принята";
+}
+relation chair_may_convene_and_preside(chair: KurultaiChair) kind institutional {
+    label ru-KZ official "Председатель созывает заседания Курултая и председательствует на них";
+}
+relation chair_may_direct_agenda_preparation(chair: KurultaiChair) kind institutional {
+    label ru-KZ official "Председатель осуществляет общее руководство подготовкой вносимых вопросов";
+}
+relation chair_may_enforce_rules(chair: KurultaiChair) kind institutional {
+    label ru-KZ official "Председатель обеспечивает соблюдение регламента Курултая";
+}
+relation chair_may_sign_kurultai_acts(chair: KurultaiChair) kind institutional {
+    label ru-KZ official "Председатель подписывает акты, издаваемые Курултаем";
+}
+relation chair_may_issue_orders(chair: KurultaiChair) kind institutional {
+    label ru-KZ official "Председатель издаёт распоряжения по вопросам своей компетенции";
+}
+
+relation permanent_committee_formed(kurultai: Kurultai, committee: Committee) kind empirical {
+    label ru-KZ official "Курултай образовал постоянный комитет";
+}
+relation commission_formed(kurultai: Kurultai, commission: Commission) kind empirical {
+    label ru-KZ official "Курултай образовал комиссию";
+}
+relation standing_committee_established(committee: Committee) kind institutional {
+    label ru-KZ official "постоянный комитет Курултая образован правомерно";
+}
+relation commission_established(commission: Commission) kind institutional {
+    label ru-KZ official "комиссия Курултая образована правомерно";
+}
+relation working_body_resolution(resolution: KurultaiResolution) kind empirical {
+    label ru-KZ official "акт является постановлением комитета либо комиссии";
+}
+relation resolution_within_body_competence(resolution: KurultaiResolution) kind empirical {
+    label ru-KZ official "постановление принято по вопросам компетенции органа";
+}
+relation working_body_resolution_authorized(resolution: KurultaiResolution) kind institutional {
+    label ru-KZ official "комитет либо комиссия вправе издать данное постановление";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART53_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART53_KK")
+assert kurultai_seat_count(145);
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART53_RU")
+assert deputy_term(5 calendar_year);
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART54_RU") {
+    assert deputy_minimum_age(25);
+    assert deputy_residence_years(10);
+}
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART55_RU")
+assert absence_sanction_threshold(3);
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART58_RU")
+assert first_session_deadline_days(30);
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART60_RU") {
+    assert priority_bill_period(2 calendar_month);
+    assert law_submission_deadline_days(10);
+    assert trust_vote_wait_hours(48);
+    assert trust_power_annual_limit(2);
+}
+
+// Доли голосований закреплены за статьями, из которых взяты, — иначе число
+// живёт только в теле правила и не адресуемо вопросом «какой порог ставит
+// статья N». Формулировки сверены с закреплённым текстом (§194).
+// Ст. 58.5: «Заседания Курултая проводятся при условии присутствия на них
+// не менее двух третей от общего числа депутатов Курултая».
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART58_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART58_KK")
+assert session_quorum_numerator(2);
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART58_RU")
+assert session_quorum_denominator(3);
+// Ст. 61: «Конституционные законы принимаются… большинством не менее двух
+// третей голосов от общего числа депутатов Курултая».
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART61_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART61_KK")
+assert constitutional_law_numerator(2);
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART61_RU") {
+    assert constitutional_law_denominator(3);
+    // Ст. 61: «Законы принимаются Курултаем большинством голосов от общего числа
+    // депутатов Курултая, если иное не предусмотрено Конституцией».
+    assert ordinary_law_numerator(1);
+    assert ordinary_law_denominator(2);
+}
+// Ст. 56.2: «…по конституционным законам… большинством в три четверти
+// голосов от общего числа депутатов, а по законам… большинством в две трети».
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART56_RU") {
+    assert constitutional_veto_override_numerator(3);
+    assert constitutional_veto_override_denominator(4);
+    assert ordinary_veto_override_numerator(2);
+    assert ordinary_veto_override_denominator(3);
+    // Ст. 56.13: «по инициативе не менее одной пятой от общего числа депутатов
+    // Курултая вправе большинством голосов от общего числа депутатов Курултая
+    // выразить вотум недоверия Правительству».
+    assert no_confidence_initiative_numerator(1);
+    assert no_confidence_initiative_denominator(5);
+    assert no_confidence_decision_numerator(1);
+    assert no_confidence_decision_denominator(2);
+    // Ст. 56.17: «по инициативе не менее одной трети… По итогам заслушивания
+    // отчета большинством не менее чем двумя третями голосов от общего числа
+    // депутатов Курултая вправе принимать решение об обращении к Президенту».
+    assert member_dismissal_initiative_numerator(1);
+    assert member_dismissal_initiative_denominator(3);
+    assert member_dismissal_decision_numerator(2);
+    assert member_dismissal_decision_denominator(3);
+}
+// Ст. 57.1 и 57.2: избрание Председателя и его отзыв/отставка — обе точки
+// дают один порог, «большинство от общего числа депутатов Курултая».
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART57_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART57_KK")
+assert kurultai_chair_vote_numerator(1);
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART57_RU")
+assert kurultai_chair_vote_denominator(2);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART54_RU")
+rule DeputyCandidateEligibility(
+    candidate: Candidate,
+    person: Person,
+    age: Integer,
+    residence: Integer,
+    min_age: Integer,
+    min_residence: Integer,
+) strict {
+    when candidate_person(candidate, person)
+        and citizen(person)
+        and age_years(person, age)
+        and resides_last_years(person, residence)
+        and deputy_minimum_age(min_age)
+        and deputy_residence_years(min_residence)
+        and (age >= min_age)
+        and (residence >= min_residence);
+    then eligible_deputy_candidate(candidate);
+    label ru-KZ official "Статья 54 пункт 3. Депутатом Курултая может быть гражданин Республики, достигший двадцати пяти лет и постоянно проживающий в Казахстане последние десять лет";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART55_RU") {
+    rule RepeatedAbsenceSanction(deputy: Deputy, count: Integer, threshold: Integer) strict {
+        when deputy(deputy) and unexcused_absences(deputy, count)
+            and absence_sanction_threshold(threshold)
+            and (count > threshold);
+        then disciplinary_measure_applicable(deputy);
+        label ru-KZ official "Статья 55 пункт 1. Отсутствие депутата без уважительных причин более трёх раз влечёт применение установленных законом мер взыскания";
+    }
+
+    // Ст. 55 п. 3 — защита и три её изъятия. Изъятия живут на предикате с
+    // ЛИТЕРАЛЬНОЙ головой, а не на самой норм-голове: `unless` при норм-голове
+    // компилятор ОТБРАСЫВАЕТ (LDC-E1302, §149/§150 требует defeat позиции), и
+    // иммунитет выводился бы безусловно. Тот же приём, что у ст. 11 закона о
+    // Конституционном Суде (`inviolability_applies`).
+    rule DeputyDetentionGroundInTheAct(deputy: Deputy) defeasible {
+        when caught_at_crime_scene(deputy);
+        then deputy_detention_ground(deputy);
+        label ru-KZ official "Статья 55 пункт 3. Задержание на месте преступления — основание, снимающее защиту депутата";
+    }
+
+    rule DeputyDetentionGroundGraveOffence(deputy: Deputy) defeasible {
+        when grave_or_especially_grave_offence(deputy);
+        then deputy_detention_ground(deputy);
+        label ru-KZ official "Статья 55 пункт 3. Совершение тяжкого или особо тяжкого преступления — основание, снимающее защиту депутата";
+    }
+
+    rule DeputyDetentionGroundConsent(deputy: Deputy) defeasible {
+        when kurultai_consent_to_prosecution(deputy);
+        then deputy_detention_ground(deputy);
+        label ru-KZ official "Статья 55 пункт 3. Согласие Курултая — основание, снимающее защиту депутата";
+    }
+
+    rule DeputyInviolabilityApplies(deputy: Deputy) defeasible {
+        when deputy(deputy);
+        unless deputy_detention_ground(deputy);
+        then deputy_inviolability_applies(deputy);
+        label ru-KZ official "Статья 55 пункт 3. Защита депутата от задержания действует, пока нет ни одного из трёх названных оснований";
+    }
+
+    rule DeputyImmunity(deputy: Deputy) defeasible {
+        when deputy_inviolability_applies(deputy);
+        then immunity DeputyPersonalImmunity {
+            holder deputy;
+            protected_effect deputy_detained(deputy);
+        };
+        label ru-KZ official "Статья 55 пункт 3. Депутат Курултая не может быть задержан без согласия Курултая, кроме задержания на месте преступления и совершения тяжких и особо тяжких преступлений";
+    }
+
+    rule DeputyDetentionException(deputy: Deputy) defeasible {
+        when deputy_detention_attempt(deputy);
+        when deputy_detention_ground(deputy);
+        then deputy_detained(deputy);
+        label ru-KZ official "Статья 55 пункт 3. Задержание депутата допустимо при задержании на месте преступления, совершении тяжких и особо тяжких преступлений либо с согласия Курултая";
+    }
+}
+
+// Приоритета между исключением и иммунитетом здесь БОЛЬШЕ НЕТ. Прежде стояло
+// `prefer DeputyDetentionException over DeputyImmunity`, и это ребро не
+// консультировалось никогда (LDC-E4111, §192): исключение выводит ЛИТЕРАЛ, а
+// иммунитет — НОРМУ, и стороны играют в разных механизмах. Пока ребро стояло,
+// депутат, задержанный на месте преступления, одновременно числился
+// задержанным (TRUE_ONLY) и обладающим иммунитетом от задержания (ACTIVE) —
+// проверено исполнением. Снятие защиты выражено там, где оно работает: в
+// `unless` правила DeputyInviolabilityApplies.
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART58_RU") {
+    rule FirstSessionThirtyDays(
+        session: Session,
+        published: Date,
+        opened: Date,
+        limit_days: Integer,
+    ) strict {
+        when election_results_published(session, published)
+            and first_session_opened(session, opened)
+            and first_session_deadline_days(limit_days)
+            and (days_between(published, opened) <= limit_days);
+        then first_session_timely(session);
+        label ru-KZ official "Статья 58 пункт 2. Первая сессия Курултая созывается не позднее тридцати дней со дня опубликования итогов выборов";
+    }
+
+    rule SessionQuorumTwoThirds(
+        session: Session,
+        present: Integer,
+        total: Integer,
+        num: Integer,
+        den: Integer,
+    ) strict {
+        when deputies_present(session, present)
+            and kurultai_seat_count(total)
+            and session_quorum_numerator(num)
+            and session_quorum_denominator(den)
+            and (present * den >= total * num);
+        then session_quorate(session);
+        label ru-KZ official "Статья 58 пункт 5. Заседание Курултая правомочно при присутствии не менее двух третей от общего числа депутатов";
+    }
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART61_RU") {
+    rule ConstitutionalLawTwoThirds(
+        bill: Bill,
+        votes: Integer,
+        total: Integer,
+        num: Integer,
+        den: Integer,
+    ) strict {
+        when constitutional_bill(bill)
+            and votes_for_bill(bill, votes)
+            and kurultai_seat_count(total)
+            and constitutional_law_numerator(num)
+            and constitutional_law_denominator(den)
+            and (votes * den >= total * num);
+        then bill_passed(bill);
+        label ru-KZ official "Статья 61 пункт 3. Конституционные законы принимаются большинством не менее двух третей голосов от общего числа депутатов Курултая";
+    }
+
+    rule OrdinaryLawMajority(
+        bill: Bill,
+        votes: Integer,
+        total: Integer,
+        num: Integer,
+        den: Integer,
+    ) strict {
+        when ordinary_bill(bill)
+            and votes_for_bill(bill, votes)
+            and kurultai_seat_count(total)
+            and ordinary_law_numerator(num)
+            and ordinary_law_denominator(den)
+            and (votes * den > total * num);
+        then bill_passed(bill);
+        label ru-KZ official "Статья 61 пункт 4. Законы принимаются большинством голосов от общего числа депутатов Курултая";
+    }
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART56_RU") {
+    rule ConstitutionalVetoOverride(
+        law: Law,
+        votes: Integer,
+        total: Integer,
+        num: Integer,
+        den: Integer,
+    ) strict {
+        when president_objected_to_law(law)
+            and constitutional_law(law)
+            and reconsideration_within_one_month(law)
+            and override_votes(law, votes)
+            and kurultai_seat_count(total)
+            and constitutional_veto_override_numerator(num)
+            and constitutional_veto_override_denominator(den)
+            and (votes * den >= total * num);
+        then presidential_objection_overridden(law);
+        label ru-KZ official "Статья 56 подпункт 2). Возражения Президента по конституционному закону преодолеваются большинством в три четверти голосов от общего числа депутатов";
+    }
+
+    rule OrdinaryVetoOverride(
+        law: Law,
+        votes: Integer,
+        total: Integer,
+        num: Integer,
+        den: Integer,
+    ) strict {
+        when president_objected_to_law(law)
+            and ordinary_law(law)
+            and reconsideration_within_one_month(law)
+            and override_votes(law, votes)
+            and kurultai_seat_count(total)
+            and ordinary_veto_override_numerator(num)
+            and ordinary_veto_override_denominator(den)
+            and (votes * den >= total * num);
+        then presidential_objection_overridden(law);
+        label ru-KZ official "Статья 56 подпункт 2). Возражения Президента по закону преодолеваются большинством в две трети голосов от общего числа депутатов";
+    }
+
+    rule MissedReconsiderationAcceptsObjection(law: Law) strict {
+        when president_objected_to_law(law);
+        when reconsideration_deadline_missed(law);
+        then presidential_objection_accepted(law);
+        label ru-KZ official "Статья 56 подпункт 2). Несоблюдение месячного срока повторного обсуждения означает принятие возражений Президента";
+    }
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART60_RU") {
+    rule LawPresentedWithinTenDays(
+        law: Law,
+        adopted: Date,
+        presented: Date,
+        limit_days: Integer,
+    ) strict {
+        when law_adopted(law, adopted)
+            and law_presented_to_president(law, presented)
+            and law_submission_deadline_days(limit_days)
+            and (days_between(adopted, presented) <= limit_days);
+        then law_presented_timely(law);
+        label ru-KZ official "Статья 60 пункт 5. Принятый Курултаем закон в течение десяти дней представляется на подпись Президенту";
+    }
+
+    // Ст. 60.2: «законопроекты должны быть приняты в первоочередном порядке в
+    // течение двух месяцев». До errata E-0026 срок НЕ вычислялся — правило читало
+    // эмпирический `priority_bill_adopted_within_two_months`, то есть дело само
+    // сообщало вывод, ради которого норма существует. Теперь дата окончания
+    // выводится календарным шагом §86, а своевременность — сравнением дат.
+    rule PriorityBillDue(bill: Bill, introduced: Date, length: Quantity) strict {
+        when priority_bill(bill, introduced);
+        when priority_bill_period(length);
+        then priority_bill_due_on(bill, add_calendar_period(introduced, length));
+        label ru-KZ official "Статья 60 пункт 2. Приоритетный законопроект должен быть принят в течение двух месяцев";
+    }
+
+    rule PriorityBillTwoMonths(bill: Bill, due: Date, adopted: Date) strict {
+        when priority_bill_due_on(bill, due)
+            and priority_bill_adopted(bill, adopted)
+            and (adopted <= due);
+        then priority_bill_timely(bill);
+        label ru-KZ official "Статья 60 пункт 2. Приоритетный законопроект, принятый не позднее дня окончания двухмесячного срока, принят своевременно";
+    }
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART56_RU") {
+    rule GovernmentNoConfidence(
+        government: Government,
+        initiating: Integer,
+        votes: Integer,
+        total: Integer,
+        init_num: Integer,
+        init_den: Integer,
+        num: Integer,
+        den: Integer,
+    ) strict {
+        when government(government)
+            and no_confidence_initiating_votes(government, initiating)
+            and no_confidence_votes(government, votes)
+            and kurultai_seat_count(total)
+            and no_confidence_initiative_numerator(init_num)
+            and no_confidence_initiative_denominator(init_den)
+            and no_confidence_decision_numerator(num)
+            and no_confidence_decision_denominator(den)
+            and (initiating * init_den >= total * init_num)
+            and (votes * den > total * num);
+        then government_no_confidence(government);
+        label ru-KZ official "Статья 56 подпункт 13). По инициативе не менее одной пятой депутатов Курултай большинством голосов от общего числа депутатов выражает вотум недоверия Правительству";
+    }
+
+    rule GovernmentMemberDismissalRequest(
+        report: Report,
+        member: GovernmentMember,
+        initiating: Integer,
+        votes: Integer,
+        total: Integer,
+        init_num: Integer,
+        init_den: Integer,
+        num: Integer,
+        den: Integer,
+    ) strict {
+        when report_of_member(report, member)
+            and report_initiating_votes(report, initiating)
+            and report_dismissal_votes(report, votes)
+            and kurultai_seat_count(total)
+            and law_nonperformance_established(report)
+            and member_dismissal_initiative_numerator(init_num)
+            and member_dismissal_initiative_denominator(init_den)
+            and member_dismissal_decision_numerator(num)
+            and member_dismissal_decision_denominator(den)
+            and (initiating * init_den >= total * init_num)
+            and (votes * den >= total * num);
+        then presidential_dismissal_request(member);
+        label ru-KZ official "Статья 56 подпункт 17). По инициативе не менее одной трети депутатов Курултай не менее чем двумя третями голосов принимает решение об обращении к Президенту об освобождении члена Правительства";
+    }
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART60_RU") {
+    rule TrustVoteTimingAndAnnualCap(
+        government: Government,
+        bill: Bill,
+        prior: Integer,
+        annual_limit: Integer,
+        raised: Instant,
+        held: Instant,
+        wait: Integer,
+    ) strict {
+        when trust_question_on_rejected_government_bill(government, bill)
+            and trust_question_raised_at(government, raised)
+            and trust_vote_held_at(government, held)
+            and trust_vote_wait_hours(wait)
+            and (hours_between(raised, held) >= wait)
+            and annual_prior_trust_uses(government, prior)
+            and trust_power_annual_limit(annual_limit)
+            and (prior < annual_limit);
+        then trust_vote_timing_valid(government);
+        label ru-KZ official "Статья 60 пункт 7. Голосование по вопросу о доверии проводится не ранее чем через сорок восемь часов с момента постановки вопроса, и полномочие используется не более двух раз в год";
+    }
+
+    rule FinancialBillWithGovernmentOpinion(bill: Bill) strict {
+        when revenue_reducing_or_expenditure_increasing(bill);
+        when positive_government_opinion(bill);
+        then financial_bill_admissible(bill);
+        label ru-KZ official "Статья 60 пункт 6. Законопроект, сокращающий доходы или увеличивающий расходы, вносится только при положительном заключении Правительства";
+    }
+
+    rule PresidentialFinancialBillException(bill: Bill) strict {
+        when revenue_reducing_or_expenditure_increasing(bill);
+        when introduced_by_president(bill);
+        then financial_bill_admissible(bill);
+        label ru-KZ official "Статья 60 пункт 6. Для законопроектов, вносимых Президентом, заключение Правительства не требуется";
+    }
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART52_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART52_KK")
+rule KurultaiPowersStartAtFirstSession(kurultai: Kurultai, session: Session) strict {
+    when kurultai_body(kurultai);
+    when first_session_of_kurultai(session, kurultai);
+    when session_opened(session);
+    then kurultai_powers_started(kurultai);
+    label ru-KZ official "Статья 52 пункт 2. Полномочия Курултая начинаются с открытия первой сессии";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART52_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART52_KK")
+rule KurultaiPowersEndAtNewConvocation(old_kurultai: Kurultai, new_kurultai: Kurultai) strict {
+    when new_convocation_first_session_started(old_kurultai, new_kurultai);
+    then kurultai_powers_ended(old_kurultai);
+    label ru-KZ official "Статья 52 пункт 2. Полномочия заканчиваются с началом работы первой сессии нового созыва";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART52_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART52_KK")
+rule ConstitutionalEarlyTermination(kurultai: Kurultai) strict {
+    when constitutional_early_termination_ground(kurultai);
+    then kurultai_early_termination_authorized(kurultai);
+    label ru-KZ official "Статья 52 пункт 3. Досрочное прекращение полномочий требует основания и порядка, предусмотренных Конституцией";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART57_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART57_KK")
+rule KurultaiChairElection(
+    candidate: Candidate,
+    votes: Integer,
+    total: Integer,
+    num: Integer,
+    den: Integer,
+) strict {
+    when chair_candidate(candidate)
+        and chair_candidate_is_deputy(candidate)
+        and chair_candidate_fluent_in_state_language(candidate)
+        and president_nominated_chair(candidate)
+        and chair_secret_ballot_votes(candidate, votes)
+        and kurultai_seat_count(total)
+        and kurultai_chair_vote_numerator(num)
+        and kurultai_chair_vote_denominator(den)
+        and (votes * den > total * num);
+    then chair_candidate_elected(candidate);
+    label ru-KZ official "Статья 57 пункт 1. Избрание Председателя тайным голосованием большинством от общего числа депутатов";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART57_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART57_KK")
+rule RepeatedChairRefusalAllowsDissolution(kurultai: Kurultai) strict {
+    when repeated_refusal_to_elect_chair(kurultai);
+    then kurultai_dissolution_authorized(kurultai);
+    label ru-KZ official "Статья 57 пункт 1. Повторный отказ избрать Председателя даёт Президенту право распустить Курултай";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART57_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART57_KK")
+rule KurultaiChairRemovalOrResignation(
+    chair: KurultaiChair,
+    votes: Integer,
+    total: Integer,
+    num: Integer,
+    den: Integer,
+) strict {
+    when kurultai_chair(chair)
+        and chair_removal_votes(chair, votes)
+        and kurultai_seat_count(total)
+        and kurultai_chair_vote_numerator(num)
+        and kurultai_chair_vote_denominator(den)
+        and (votes * den > total * num);
+    then chair_removed_or_resignation_accepted(chair);
+    label ru-KZ official "Статья 57 пункт 2. Отзыв или отставка Председателя большинством от общего числа депутатов";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART57_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART57_KK")
+rule KurultaiChairMayConveneAndPreside(chair: KurultaiChair) strict {
+    when kurultai_chair(chair);
+    then chair_may_convene_and_preside(chair);
+    label ru-KZ official "Статья 57 пункт 3. Председатель созывает заседания и председательствует на них";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART57_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART57_KK")
+rule KurultaiChairMayDirectAgendaPreparation(chair: KurultaiChair) strict {
+    when kurultai_chair(chair);
+    then chair_may_direct_agenda_preparation(chair);
+    label ru-KZ official "Статья 57 пункт 3. Председатель осуществляет общее руководство подготовкой вопросов Курултая";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART57_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART57_KK")
+rule KurultaiChairMayEnforceRules(chair: KurultaiChair) strict {
+    when kurultai_chair(chair);
+    then chair_may_enforce_rules(chair);
+    label ru-KZ official "Статья 57 пункт 3. Председатель обеспечивает соблюдение Регламента Курултая";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART57_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART57_KK")
+rule KurultaiChairMaySignActs(chair: KurultaiChair) strict {
+    when kurultai_chair(chair);
+    then chair_may_sign_kurultai_acts(chair);
+    label ru-KZ official "Статья 57 пункт 3. Председатель подписывает акты Курултая";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART57_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART57_KK")
+rule KurultaiChairMayIssueOrders(chair: KurultaiChair) strict {
+    when kurultai_chair(chair);
+    then chair_may_issue_orders(chair);
+    label ru-KZ official "Статья 57 пункт 5. Председатель издаёт распоряжения по вопросам своей компетенции";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART59_RU")
+// Ст. 59 п. 1: образование постоянных комитетов и комиссий. Предикаты
+// `permanent_committee_formed` и `commission_formed` были объявлены и не
+// читались ничем — норма п. 1 в модели отсутствовала, тогда как п. 2 (акты
+// рабочих органов) был выражен.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART59_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART59_KK")
+rule StandingCommitteeEstablished(kurultai: Kurultai, committee: Committee) strict {
+    when kurultai_body(kurultai);
+    when permanent_committee_formed(kurultai, committee);
+    then standing_committee_established(committee);
+    label ru-KZ official "Статья 59 пункт 1. Курултай образует постоянные комитеты, число которых определяется конституционным законом";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART59_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART59_KK")
+rule CommissionEstablished(kurultai: Kurultai, commission: Commission) strict {
+    when kurultai_body(kurultai);
+    when commission_formed(kurultai, commission);
+    then commission_established(commission);
+    label ru-KZ official "Статья 59 пункт 1. Курултай образует комиссии";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART59_KK")
+rule WorkingBodyResolutionWithinCompetence(resolution: KurultaiResolution) strict {
+    when working_body_resolution(resolution);
+    when resolution_within_body_competence(resolution);
+    then working_body_resolution_authorized(resolution);
+    label ru-KZ official "Статья 59 пункт 2. Комитеты и комиссии издают постановления в пределах компетенции";
+}
+
+relation deputy_term_started_on(holder: Deputy, day: Date) kind empirical {
+    label ru-KZ official "день начала полномочий депутата";
+}
+relation deputy_term_expires_on(holder: Deputy, day: Date) kind institutional {
+    key(holder);
+    label ru-KZ official "день окончания полномочий депутата";
+}
+
+// Статья даёт ДЛИНУ срока; СОБЫТИЕ начала (назначение, избрание) приходит
+// фактом дела — Конституция называет его не для всех должностей одинаково, и
+// выдумывать общее событие значило бы дописать за неё. Дата истечения
+// считается календарным шагом §86 (единица calendar_year, errata E-0026).
+rule DeputyTermExpiry(holder: Deputy, start: Date, length: Quantity) strict {
+    when deputy_term_started_on(holder, start);
+    when deputy_term(length);
+    then deputy_term_expires_on(holder, add_calendar_period(start, length));
+    label ru-KZ official "Статья 53 пункт 2. Срок полномочий депутатов Курултая — пять лет";
+}
+
+// === Достройка действующей редакции по аудиту 12.09.2026 ====================
+//
+// Ст. 55 была выражена пунктами 1 и 3. Пункты 2 и 4 стояли без нормы, притом
+// что их двойники редакции 1995 существуют в пакете `kz.constitution1995.parliament`
+// (`DeputyIncompatibilityTerminatesPowers1995`, `DeputyMandateForfeited1995`,
+// `DeputyPowersTerminatedOnGeneralGrounds1995`) — с якорем в ст. 52, чьё окно
+// закрылось 01.07.2026.
+//
+// Изъятие «кроме преподавательской, научной, творческой деятельности»
+// записано `unless` поражаемого правила, а НЕ `and not …`: классическое
+// отрицание без негативного продюсера не срабатывает никогда (замер
+// kz-credit-bureau 04.09.2026), и ветвь оплачиваемой должности была бы мертва.
+
+relation deputy_holds_other_representative_mandate(deputy: Deputy) kind empirical {
+    label ru-KZ official "депутат Курултая является депутатом другого представительного органа";
+}
+relation deputy_paid_office(deputy: Deputy) kind empirical {
+    label ru-KZ official "депутат Курултая занимает иную оплачиваемую должность";
+}
+relation deputy_permitted_activity(deputy: Deputy) kind empirical {
+    label ru-KZ official "занятие депутата — преподавательская, научная либо творческая деятельность";
+}
+relation deputy_conducts_business(deputy: Deputy) kind empirical {
+    label ru-KZ official "депутат Курултая осуществляет предпринимательскую деятельность";
+}
+relation deputy_in_commercial_governing_body(deputy: Deputy) kind empirical {
+    label ru-KZ official "депутат Курултая входит в состав руководящего органа либо наблюдательного совета коммерческой организации";
+}
+relation deputy_office_incompatible(deputy: Deputy) kind institutional {
+    label ru-KZ official "занятие депутата Курултая несовместимо с депутатским мандатом";
+}
+relation deputy_powers_terminated(deputy: Deputy) kind institutional {
+    label ru-KZ official "полномочия депутата Курултая прекращены";
+}
+relation deputy_mandate_forfeited(deputy: Deputy) kind institutional {
+    label ru-KZ official "депутат Курултая лишён мандата";
+}
+relation deputy_resignation_submitted(deputy: Deputy) kind empirical {
+    label ru-KZ official "депутат подал в отставку";
+}
+relation deputy_deceased(deputy: Deputy) kind empirical {
+    label ru-KZ official "депутат умер";
+}
+relation deputy_declared_incapable_dead_or_missing(deputy: Deputy) kind empirical {
+    label ru-KZ official "депутат признан вступившим в законную силу решением суда недееспособным, умершим либо безвестно отсутствующим";
+}
+relation deputy_permanent_departure(deputy: Deputy) kind empirical {
+    label ru-KZ official "депутат выехал на постоянное место жительства за пределы Казахстана";
+}
+relation deputy_criminal_conviction_in_force(deputy: Deputy) kind empirical {
+    label ru-KZ official "в отношении депутата вступил в законную силу обвинительный приговор суда";
+}
+relation deputy_citizenship_terminated(deputy: Deputy) kind empirical {
+    label ru-KZ official "гражданство Республики Казахстан депутата прекращено";
+}
+relation deputy_left_or_expelled_from_party(deputy: Deputy) kind empirical {
+    label ru-KZ official "депутат вышел либо исключён из политической партии, от которой избран";
+}
+relation electing_party_ceased(deputy: Deputy) kind empirical {
+    label ru-KZ official "деятельность политической партии, от которой избран депутат, прекращена";
+}
+relation kurultai_dissolved(kurultai: Kurultai) kind empirical {
+    label ru-KZ official "Курултай распущен";
+}
+relation deputy_of_kurultai(deputy: Deputy, kurultai: Kurultai) kind empirical {
+    label ru-KZ official "депутат входит в состав данного созыва Курултая";
+}
+
+// --- Ст. 55 п. 2. Несовместимость и её последствие -------------------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART55_RU")
+rule DeputyRepresentativeMandateIncompatible(deputy: Deputy) strict {
+    when deputy_holds_other_representative_mandate(deputy);
+    then deputy_office_incompatible(deputy);
+    label ru-KZ official "Статья 55 пункт 2. Депутат Курултая не вправе быть депутатом другого представительного органа";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART55_RU")
+rule DeputyPaidOfficeIncompatible(deputy: Deputy) defeasible {
+    when deputy_paid_office(deputy);
+    then deputy_office_incompatible(deputy);
+    unless deputy_permitted_activity(deputy);
+    label ru-KZ official "Статья 55 пункт 2. Депутат Курултая не вправе занимать иные оплачиваемые должности, кроме преподавательской, научной, творческой деятельности";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART55_RU")
+rule DeputyBusinessIncompatible(deputy: Deputy) strict {
+    when deputy_conducts_business(deputy);
+    then deputy_office_incompatible(deputy);
+    label ru-KZ official "Статья 55 пункт 2. Депутат Курултая не вправе осуществлять предпринимательскую деятельность";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART55_RU")
+rule DeputyCommercialBoardIncompatible(deputy: Deputy) strict {
+    when deputy_in_commercial_governing_body(deputy);
+    then deputy_office_incompatible(deputy);
+    label ru-KZ official "Статья 55 пункт 2. Депутат Курултая не вправе входить в состав руководящего органа или наблюдательного совета коммерческой организации";
+}
+
+// Последствие несовместимости названо самим текстом: «Нарушение этих
+// требований влечёт за собой прекращение полномочий депутата». Голова —
+// ОБЩИЙ предикат прекращения, тот же, что у оснований пункта 4: последствие
+// одно, и читатель не должен различать, каким основанием оно наступило.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART55_RU")
+// Правило ПОРАЖАЕМО не по смыслу нормы, а по §111: один из четырёх
+// производителей `deputy_office_incompatible` — поражаемый
+// (`DeputyPaidOfficeIncompatible` с изъятием для преподавания), и strict-
+// читатель его вывода отвергается компилятором (LDC-E4103). Каскад учтён
+// сразу цепью, а не по одному правилу.
+rule DeputyIncompatibilityTerminatesPowers(deputy: Deputy) defeasible {
+    when deputy_office_incompatible(deputy);
+    then deputy_powers_terminated(deputy);
+    label ru-KZ official "Статья 55 пункт 2. Нарушение требований несовместимости влечёт за собой прекращение полномочий депутата";
+}
+
+// --- Ст. 55 п. 4. Прекращение полномочий и лишение мандата -----------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART55_RU")
+rule DeputyPowersTerminatedByResignation(deputy: Deputy) strict {
+    when deputy_resignation_submitted(deputy);
+    then deputy_powers_terminated(deputy);
+    label ru-KZ official "Статья 55 пункт 4. Полномочия депутата Курултая прекращаются в случае подачи в отставку";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART55_RU")
+rule DeputyPowersTerminatedByDeath(deputy: Deputy) strict {
+    when deputy_deceased(deputy);
+    then deputy_powers_terminated(deputy);
+    label ru-KZ official "Статья 55 пункт 4. Полномочия депутата Курултая прекращаются в случае его смерти";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART55_RU")
+rule DeputyPowersTerminatedByCourtDecision(deputy: Deputy) strict {
+    when deputy_declared_incapable_dead_or_missing(deputy);
+    then deputy_powers_terminated(deputy);
+    label ru-KZ official "Статья 55 пункт 4. Полномочия депутата Курултая прекращаются при признании его судом недееспособным, умершим или безвестно отсутствующим";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART55_RU")
+rule DeputyPowersTerminatedByDissolution(deputy: Deputy, kurultai: Kurultai) strict {
+    when deputy_of_kurultai(deputy, kurultai);
+    when kurultai_dissolved(kurultai);
+    then deputy_powers_terminated(deputy);
+    label ru-KZ official "Статья 55 пункт 4. Полномочия депутатов Курултая прекращаются в случае роспуска Курултая";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART55_RU")
+rule DeputyMandateForfeitedByDeparture(deputy: Deputy) strict {
+    when deputy_permanent_departure(deputy);
+    then deputy_mandate_forfeited(deputy);
+    label ru-KZ official "Статья 55 пункт 4 подпункт 1). Депутат лишается мандата при выезде на постоянное место жительства за пределы Казахстана";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART55_RU")
+rule DeputyMandateForfeitedByConviction(deputy: Deputy) strict {
+    when deputy_criminal_conviction_in_force(deputy);
+    then deputy_mandate_forfeited(deputy);
+    label ru-KZ official "Статья 55 пункт 4 подпункт 2). Депутат лишается мандата при вступлении в законную силу в отношении его обвинительного приговора суда";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART55_RU")
+rule DeputyMandateForfeitedByCitizenshipLoss(deputy: Deputy) strict {
+    when deputy_citizenship_terminated(deputy);
+    then deputy_mandate_forfeited(deputy);
+    label ru-KZ official "Статья 55 пункт 4 подпункт 3). Депутат лишается мандата при прекращении гражданства Республики Казахстан";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART55_RU")
+rule DeputyMandateForfeitedByLeavingParty(deputy: Deputy) strict {
+    when deputy_left_or_expelled_from_party(deputy);
+    then deputy_mandate_forfeited(deputy);
+    label ru-KZ official "Статья 55 пункт 4 подпункт 4). Депутат лишается мандата при выходе или исключении из политической партии, от которой он избран";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART55_RU")
+rule DeputyMandateForfeitedByPartyTermination(deputy: Deputy) strict {
+    when electing_party_ceased(deputy);
+    then deputy_mandate_forfeited(deputy);
+    label ru-KZ official "Статья 55 пункт 4 подпункт 5). Депутат лишается мандата при прекращении деятельности политической партии, от которой он избран";
+}
+
+// --- Ст. 60 п. 4. Немедленное рассмотрение срочного законопроекта ----------
+//
+// Норма не была выражена. «Немедленно» — ОЦЕНОЧНЫЙ признак, а не нулевой
+// срок: Конституция не называет ни единицы, ни точки отсчёта, и окно по
+// арифметике было бы приписано ей нами. Канал — второй из трёх
+// (DECISION-0194): закон требует УСТАНОВИТЬ ФАКТ, факт приходит в дело с
+// origin `adjudicated`. Орган, оценивающий немедленность, текст не называет,
+// поэтому `external judgment` §47.3 здесь неверен.
+
+relation urgent_government_bill(bill: Bill) kind empirical {
+    label ru-KZ official "законопроект внесён Правительством в целях оперативного реагирования на условия, создающие угрозу жизни и здоровью населения, конституционному строю, охране общественного порядка либо экономической безопасности страны";
+}
+// Оценочный признак; строка линта `evaluative-fact-without-producer`
+// закрывается диспозицией `accepted`, а не остаётся долгом.
+relation considered_immediately(bill: Bill) kind empirical {
+    label ru-KZ official "законопроект рассмотрен Курултаем немедленно";
+}
+relation urgent_bill_consideration_duty_met(bill: Bill) kind institutional {
+    label ru-KZ official "требование немедленного рассмотрения срочного законопроекта соблюдено";
+}
+relation government_temporary_act_admissible(bill: Bill) kind institutional {
+    label ru-KZ official "Правительство вправе принимать под свою ответственность временные нормативные правовые акты, имеющие силу закона";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART60_RU")
+rule UrgentBillConsideredImmediately(bill: Bill) strict {
+    when urgent_government_bill(bill);
+    when considered_immediately(bill);
+    then urgent_bill_consideration_duty_met(bill);
+    label ru-KZ official "Статья 60 пункт 4. Законопроекты, внесённые Правительством в целях оперативного реагирования, подлежат рассмотрению Курултаем немедленно";
+}
+
+// Второй абзац п. 4: внесение такого законопроекта открывает Правительству
+// собственное полномочие. Условие — только факт внесения; оценка
+// немедленности к нему не относится и в посылку не входит.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART60_RU")
+rule UrgentBillOpensTemporaryActPower(bill: Bill) strict {
+    when urgent_government_bill(bill);
+    then government_temporary_act_admissible(bill);
+    label ru-KZ official "Статья 60 пункт 4. В случае внесения таких законопроектов Правительство вправе принимать под свою ответственность временные нормативные правовые акты, имеющие силу закона, действующие до вступления в силу принятых Курултаем законов либо до отклонения законопроектов";
+}

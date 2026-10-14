@@ -1,0 +1,114 @@
+{
+  "assertions": [
+    {
+      "contentHash": "sha256:c75bdc1d541e650be4713c13b7bfb1b10536854596535f66753606dd5bec364c",
+      "evidence": [],
+      "id": "urn:kz:constitution1995:parliament#b1-1",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:kz:constitution1995:parliament:test:president1",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution1995:parliament#president_1995"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution1995:parliament"
+    },
+    {
+      "contentHash": "sha256:3ee038d639bc322830558e1388b98484d85d96f8c73d5601538f8a7fbd3fae11",
+      "evidence": [],
+      "id": "urn:kz:constitution1995:parliament#b1-2",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:kz:constitution1995:parliament:test:parliament1",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution1995:parliament#parliament"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution1995:parliament"
+    },
+    {
+      "contentHash": "sha256:f58f394b07b52845601ccfa227373c2ee416b4fa5c78b4f94f6f689a84b089db",
+      "evidence": [],
+      "id": "urn:kz:constitution1995:parliament#b1-3",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:kz:constitution1995:parliament:test:dissolution1",
+            "kind": "entity_ref"
+          },
+          {
+            "id": "urn:kz:constitution1995:parliament:test:parliament1",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution1995:parliament#dissolution_of"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution1995:parliament"
+    },
+    {
+      "contentHash": "sha256:2966f98d7f7bb22eb2895811c9e8c31d0d28c1df3fa06e6b22bbaa86195c0720",
+      "evidence": [],
+      "id": "urn:kz:constitution1995:parliament#b1-4",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:kz:constitution1995:parliament:test:dissolution1",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution1995:parliament#dissolution_consultations_completed"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution1995:parliament"
+    },
+    {
+      "contentHash": "sha256:80ada74265b35f20bdc3d6997073becef5f18d28a1ac436e226e78f492542f36",
+      "evidence": [],
+      "id": "urn:kz:constitution1995:parliament#b1-5",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:kz:constitution1995:parliament:test:dissolution1",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution1995:parliament#dissolution_attempt"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution1995:parliament"
+    }
+  ],
+  "context": {
+    "decisionTime": "2020-01-01T12:00:00+06:00",
+    "knowledgeTime": "2020-01-01T12:00:00+06:00",
+    "legalTime": "2020-01-01",
+    "timezone": "Asia/Almaty"
+  },
+  "options": {
+    "selectedInterpretations": [
+      "urn:kz:constitution1995:parliament#ListItselfEntrenchedReading"
+    ]
+  }
+}

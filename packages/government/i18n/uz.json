@@ -1,0 +1,914 @@
+{
+  "$comment": "Қозоғистон Республикаси Конституциясининг kz.constitution.government пакети учун ўзбек тилидаги (кирилл ёзуви) белгилар қатлами — §218 (DECISION-0070). Бу қатлам CLIR таркибига кирмайди ва фақат тақдимот босқичида ўқилади (verbalize --labels, MCP ресурслари, иш столи). Таржима пакетнинг ru-KZ белгиларидан қилинган ишчи таржима (`translation`) бўлиб, Конституциянинг расмий ўзбекча матни эмас; ҳуқуқий куч ru-KZ ва kk-KZ манбаларидадир. Калит — эълоннинг маҳаллий номи.",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "AcceptedResignationTerminatesGovernment": [
+      {
+        "status": "translation",
+        "text": "69-модда 5-банд. Истеъфонинг қабул қилиниши Ҳукумат ваколатларининг тугатилишини англатади"
+      }
+    ],
+    "Bill": [
+      {
+        "status": "translation",
+        "text": "қонун лойиҳаси"
+      }
+    ],
+    "Government": [
+      {
+        "status": "translation",
+        "text": "Қозоғистон Республикасининг Ҳукумати"
+      }
+    ],
+    "GovernmentAccountableToKurultai": [
+      {
+        "status": "translation",
+        "text": "63-модда. Ҳукумат Қурултой олдида ҳисобдордир"
+      }
+    ],
+    "GovernmentAccountableToParliament1995": [
+      {
+        "status": "translation",
+        "text": "64-модда 2-банд (1995 йилги таҳрир). Ҳукумат Парламент олдида масъулдир"
+      }
+    ],
+    "GovernmentAccountableToPresident": [
+      {
+        "status": "translation",
+        "text": "63-модда. Ҳукумат Президент олдида ҳисобдордир"
+      }
+    ],
+    "GovernmentAccountableToPresidentAndParliament1995": [
+      {
+        "status": "translation",
+        "text": "64-модда 2-банд (1995 йилги таҳрир). Ҳукумат Республика Президенти олдида масъулдир"
+      }
+    ],
+    "GovernmentAct": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат ҳужжати"
+      }
+    ],
+    "GovernmentActBinding": [
+      {
+        "status": "translation",
+        "text": "68-модда 1 ва 3-бандлар. Ҳукуматнинг ўз ваколат доирасидаги масалалар бўйича қарори, агар Конституцияга, қонунларга ва Президент ҳужжатларига зид бўлмаса, Республиканинг бутун ҳудудида мажбурийдир"
+      }
+    ],
+    "GovernmentActBinding/unless/0": [
+      {
+        "status": "translation",
+        "text": "68-модда 1 ва 3-бандлар. Ҳукуматнинг ўз ваколат доирасидаги масалалар бўйича қарори, агар Конституцияга, қонунларга ва Президент ҳужжатларига зид бўлмаса, Республиканинг бутун ҳудудида мажбурийдир"
+      }
+    ],
+    "GovernmentActBinding1995": [
+      {
+        "status": "translation",
+        "text": "69-модда 1 ва 3-бандлар (1995 йилги таҳрир). Ҳукумат қарорлари Республиканинг бутун ҳудудида мажбурий бўлиб, Конституцияга, қонунчилик ҳужжатларига ва Президент ҳужжатларига зид бўлмаслиги керак"
+      }
+    ],
+    "GovernmentDevelopsForeignPolicyMeasures": [
+      {
+        "status": "translation",
+        "text": "65-модда 5-банд. Ҳукумат ташқи сиёсат чораларини ишлаб чиқади"
+      }
+    ],
+    "GovernmentDevelopsStatePolicy": [
+      {
+        "status": "translation",
+        "text": "65-модда 1-банд. Ҳукумат давлат сиёсатининг асосий йўналишларини ишлаб чиқади"
+      }
+    ],
+    "GovernmentDevelopsStatePolicy1995": [
+      {
+        "status": "translation",
+        "text": "66-модда 1-кичик банд (1995 йилги таҳрир). Ҳукумат ижтимоий-иқтисодий сиёсат, мудофаа қобилияти ва хавфсизликнинг асосий йўналишларини ишлаб чиқади ҳамда уларнинг амалга оширилишини ташкил этади"
+      }
+    ],
+    "GovernmentDirectsExecutiveBodies": [
+      {
+        "status": "translation",
+        "text": "65-модда 6-банд. Ҳукумат ижро этувчи органларнинг фаолиятига раҳбарлик қилади"
+      }
+    ],
+    "GovernmentEnsuresBudgetExecution": [
+      {
+        "status": "translation",
+        "text": "65-модда 2-банд. Ҳукумат республика бюджетининг ижросини таъминлайди"
+      }
+    ],
+    "GovernmentExercisesExecutivePower": [
+      {
+        "status": "translation",
+        "text": "63-модда. Ҳукумат ижро этувчи ҳокимиятни амалга оширади"
+      }
+    ],
+    "GovernmentExercisesExecutivePower1995": [
+      {
+        "status": "translation",
+        "text": "64-модда 1-банд (1995 йилги таҳрир). Ҳукумат ижро этувчи ҳокимиятни амалга оширади ва ижро этувчи органлар тизимига бошчилик қилади"
+      }
+    ],
+    "GovernmentFormedByPresident": [
+      {
+        "status": "translation",
+        "text": "64-модда 1-банд. Ҳукумат Қозоғистон Республикаси Президенти томонидан Конституцияда назарда тутилган тартибда тузилади"
+      }
+    ],
+    "GovernmentHeadsExecutiveSystem": [
+      {
+        "status": "translation",
+        "text": "63-модда. Ҳукумат ижро этувчи органлар тизимига бошчилик қилади"
+      }
+    ],
+    "GovernmentIntroducesBillsAndExecutesLaws": [
+      {
+        "status": "translation",
+        "text": "65-модда 3-банд. Ҳукумат қонун лойиҳаларини киритади ва қонунларнинг ижросини таъминлайди"
+      }
+    ],
+    "GovernmentManagesStateProperty": [
+      {
+        "status": "translation",
+        "text": "65-модда 4-банд. Ҳукумат давлат мулкини бошқаришни ташкил этади"
+      }
+    ],
+    "GovernmentMayCancelExecutiveActs1995": [
+      {
+        "status": "translation",
+        "text": "66-модда 7-кичик банд (1995 йилги таҳрир). Ҳукумат вазирликлар ва бошқа ижро этувчи органлар ҳужжатларини бекор қилади ёки уларнинг амал қилишини тўхтатиб туради"
+      }
+    ],
+    "GovernmentMayCancelExecutiveBodyActs": [
+      {
+        "status": "translation",
+        "text": "65-модда 6-банд. Ҳукумат ижро этувчи органлар ҳужжатларини бекор қилиши ёки уларнинг амал қилишини тўхтатиб туриши мумкин"
+      }
+    ],
+    "GovernmentMember": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат аъзоси"
+      }
+    ],
+    "GovernmentMemberBoardConflict": [
+      {
+        "status": "translation",
+        "text": "67-модда 2-банд. Ҳукумат аъзоси, бу унинг лавозим мажбурияти бўлган ҳоллардан ташқари, тижорат ташкилотининг раҳбар органига ёки кузатув кенгашига кириши мумкин эмас"
+      }
+    ],
+    "GovernmentMemberBoardConflict/unless/0": [
+      {
+        "status": "translation",
+        "text": "67-модда 2-банд. Ҳукумат аъзоси, бу унинг лавозим мажбурияти бўлган ҳоллардан ташқари, тижорат ташкилотининг раҳбар органига ёки кузатув кенгашига кириши мумкин эмас"
+      }
+    ],
+    "GovernmentMemberBusinessConflict": [
+      {
+        "status": "translation",
+        "text": "67-модда 2-банд. Ҳукумат аъзоси тадбиркорлик фаолияти билан шуғулланишга ҳақли эмас"
+      }
+    ],
+    "GovernmentMemberIncompatible1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "68-модда 2-банд (1995 йилги таҳрир). Ҳукумат аъзолари депутат бўлишга, педагогик, илмий ёки бошқа ижодий фаолиятдан ташқари бошқа ҳақ тўланадиган лавозимларни эгаллашга ва тадбиркорлик фаолияти юритишга ҳақли эмас"
+      }
+    ],
+    "GovernmentMemberIncompatible1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "68-модда 2-банд (1995 йилги таҳрир). Ҳукумат аъзолари депутат бўлишга, педагогик, илмий ёки бошқа ижодий фаолиятдан ташқари бошқа ҳақ тўланадиган лавозимларни эгаллашга ва тадбиркорлик фаолияти юритишга ҳақли эмас"
+      }
+    ],
+    "GovernmentMemberIncompatible1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "68-модда 2-банд (1995 йилги таҳрир). Ҳукумат аъзолари депутат бўлишга, педагогик, илмий ёки бошқа ижодий фаолиятдан ташқари бошқа ҳақ тўланадиган лавозимларни эгаллашга ва тадбиркорлик фаолияти юритишга ҳақли эмас"
+      }
+    ],
+    "GovernmentMemberPaidPositionConflict": [
+      {
+        "status": "translation",
+        "text": "67-модда 2-банд. Ҳукумат аъзоси педагогик, илмий ва ижодий фаолиятдан ташқари бошқа ҳақ тўланадиган лавозимларни эгаллашга ҳақли эмас"
+      }
+    ],
+    "GovernmentMemberPaidPositionConflict/unless/0": [
+      {
+        "status": "translation",
+        "text": "67-модда 2-банд. Ҳукумат аъзоси педагогик, илмий ва ижодий фаолиятдан ташқари бошқа ҳақ тўланадиган лавозимларни эгаллашга ҳақли эмас"
+      }
+    ],
+    "GovernmentMemberRepresentativeMandateConflict": [
+      {
+        "status": "translation",
+        "text": "67-модда 2-банд. Ҳукумат аъзоси вакиллик органининг депутати бўлишга ҳақли эмас"
+      }
+    ],
+    "GovernmentOathToPeopleAndPresident1995": [
+      {
+        "status": "translation",
+        "text": "65-модда 3-банд (1995 йилги таҳрир). Ҳукумат аъзолари Қозоғистон халқи ва Президентига қасамёд қиладилар"
+      }
+    ],
+    "GovernmentSetsUnifiedPublicPaySystemWithPresident": [
+      {
+        "status": "translation",
+        "text": "65-модда 7-банд. Ҳукумат Президент билан келишган ҳолда оммавий органларни молиялаштириш ва меҳнатга ҳақ тўлашнинг ягона тизимини тасдиқлайди"
+      }
+    ],
+    "GovernmentStructureProposalTenDays": [
+      {
+        "status": "translation",
+        "text": "64-модда 2-банд. Ҳукуматнинг тузилмаси ва таркиби тўғрисидаги таклифлар Бош вазир тайинлангандан кейин ўн кунлик муддатда Президентга киритилади"
+      }
+    ],
+    "GovernmentStructureProposalTenDays1995": [
+      {
+        "status": "translation",
+        "text": "65-модда 2-банд (1995 йилги таҳрир). Ҳукуматнинг тузилмаси ва таркиби тўғрисидаги таклифлар Бош вазир томонидан у тайинлангандан кейин ўн кунлик муддатда киритилади"
+      }
+    ],
+    "GovernmentSubmitsBudget1995": [
+      {
+        "status": "translation",
+        "text": "66-модда 2-кичик банд (1995 йилги таҳрир). Ҳукумат Парламентга республика бюджетини ва унинг ижроси тўғрисидаги ҳисоботни тақдим этади"
+      }
+    ],
+    "GovernmentSubmitsBudgetAndReport": [
+      {
+        "status": "translation",
+        "text": "65-модда 2-банд. Ҳукумат республика бюджетини ва унинг ижроси тўғрисидаги ҳисоботни тақдим этади"
+      }
+    ],
+    "Kurultai": [
+      {
+        "status": "translation",
+        "text": "Қозоғистон Республикасининг Қурултойи"
+      }
+    ],
+    "Mazhilis": [
+      {
+        "status": "translation",
+        "text": "Парламент Мажилиси (1995 йилги таҳрир)"
+      }
+    ],
+    "MemberAccountableToChambers1995": [
+      {
+        "status": "translation",
+        "text": "64-модда 3-банд (1995 йилги таҳрир). Ҳукумат аъзолари Конституциянинг 57-моддаси 6) кичик бандида назарда тутилган ҳолда Парламент Палаталари олдида ҳисобдордир"
+      }
+    ],
+    "MemberPersonallyResponsible1995": [
+      {
+        "status": "translation",
+        "text": "68-модда 1-банд (1995 йилги таҳрир). Ҳукумат аъзолари қарор қабул қилишда мустақил бўлиб, Бош вазир олдида шахсан жавобгардир"
+      }
+    ],
+    "NoConfidenceRequiresResignation": [
+      {
+        "status": "translation",
+        "text": "69-модда 3-банд. Қурултой ишончсизлик вотумини билдирганда Ҳукумат Президентга истеъфо тўғрисида ариза беради"
+      }
+    ],
+    "NoConfidenceRequiresResignation1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "70-модда 3-банд (1995 йилги таҳрир). Мажилис ёки Парламент ишончсизлик вотумини билдирганда Ҳукумат Президентга истеъфо тўғрисида ариза беради"
+      }
+    ],
+    "NoConfidenceRequiresResignation1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "70-модда 3-банд (1995 йилги таҳрир). Мажилис ёки Парламент ишончсизлик вотумини билдирганда Ҳукумат Президентга истеъфо тўғрисида ариза беради"
+      }
+    ],
+    "Parliament": [
+      {
+        "status": "translation",
+        "text": "Қозоғистон Республикасининг Парламенти (1995 йилги таҳрир)"
+      }
+    ],
+    "PeoplesCouncil": [
+      {
+        "status": "translation",
+        "text": "Қозоғистон Халқ Кенгаши"
+      }
+    ],
+    "PeoplesCouncilConstitutionalStatus": [
+      {
+        "status": "translation",
+        "text": "70-модда 1-банд. Қозоғистон Халқ Кенгаши — олий маслаҳат органи"
+      }
+    ],
+    "PeoplesCouncilLegislativeInitiative": [
+      {
+        "status": "translation",
+        "text": "71-модда 2) кичик банд. Қозоғистон Халқ Кенгаши Қурултойга қонун лойиҳаларини киритади"
+      }
+    ],
+    "PeoplesCouncilMembersAreCitizens": [
+      {
+        "status": "translation",
+        "text": "70-модда 2-банд. Халқ Кенгашининг таркиби Қозоғистон фуқароларидан шакллантирилади"
+      }
+    ],
+    "PeoplesCouncilReferendumInitiative": [
+      {
+        "status": "translation",
+        "text": "71-модда 3) кичик банд. Қозоғистон Халқ Кенгаши умумхалқ референдумини тайинлаш тўғрисида ташаббус кўрсатади"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "жисмоний шахс"
+      }
+    ],
+    "PolicyDisagreementRequiresResignation": [
+      {
+        "status": "translation",
+        "text": "67-модда 1-банд. Олиб борилаётган сиёсатга рози бўлмаган Ҳукумат аъзоси истеъфога ариза беради ёки лавозимидан озод қилинишга дучор бўлади"
+      }
+    ],
+    "PolicyDisagreementRequiresResignation1995": [
+      {
+        "status": "translation",
+        "text": "68-модда 1-банд (1995 йилги таҳрир). Олиб борилаётган сиёсатга рози бўлмаган ёки уни амалга оширмаётган Ҳукумат аъзоси истеъфога ариза беради ёки лавозимидан озод қилинишга дучор бўлади"
+      }
+    ],
+    "President": [
+      {
+        "status": "translation",
+        "text": "Қозоғистон Республикасининг Президенти"
+      }
+    ],
+    "PresidentialMemberRelease1995": [
+      {
+        "status": "translation",
+        "text": "70-модда 7-банд (1995 йилги таҳрир). Президент Ҳукуматнинг ҳар қандай аъзосини лавозимидан озод қилишга ҳақли"
+      }
+    ],
+    "PresidentialOwnInitiativeTermination1995": [
+      {
+        "status": "translation",
+        "text": "70-модда 7-банд (1995 йилги таҳрир). Президент ўз ташаббуси билан Ҳукумат ваколатларини тугатиш тўғрисида қарор қабул қилишга ҳақли"
+      }
+    ],
+    "PrimeMinister": [
+      {
+        "status": "translation",
+        "text": "Қозоғистон Республикасининг Бош вазири"
+      }
+    ],
+    "PrimeMinisterDirectsGovernment": [
+      {
+        "status": "translation",
+        "text": "66-модда. Бош вазир Ҳукумат фаолиятини ташкил этади ва унга раҳбарлик қилади"
+      }
+    ],
+    "PrimeMinisterDirectsGovernment1995": [
+      {
+        "status": "translation",
+        "text": "67-модда 1-кичик банд (1995 йилги таҳрир). Бош вазир Ҳукумат фаолиятини ташкил этади ва унга раҳбарлик қилади, унинг иши учун шахсан жавобгардир"
+      }
+    ],
+    "PrimeMinisterOrderBinding1995": [
+      {
+        "status": "translation",
+        "text": "69-модда 2 ва 3-бандлар (1995 йилги таҳрир). Бош вазирнинг фармойишлари Республиканинг бутун ҳудудида мажбурий бўлиб, Конституцияга ва Президент ҳужжатларига зид бўлмаслиги керак"
+      }
+    ],
+    "PrimeMinisterPersonallyResponsible": [
+      {
+        "status": "translation",
+        "text": "66-модда. Бош вазир Ҳукумат иши учун шахсан жавобгардир"
+      }
+    ],
+    "PrimeMinisterReleaseTerminatesGovernment1995": [
+      {
+        "status": "translation",
+        "text": "70-модда 7-банд (1995 йилги таҳрир). Бош вазирнинг лавозимидан озод қилиниши бутун Ҳукумат ваколатларининг тугатилишини англатади"
+      }
+    ],
+    "PrimeMinisterReportsToPresidentAndKurultai": [
+      {
+        "status": "translation",
+        "text": "66-модда. Бош вазир Президентга ва Қурултойга Ҳукуматнинг асосий йўналишлари ва энг муҳим қарорлари тўғрисида маъруза қилади"
+      }
+    ],
+    "PrimeMinisterResignationTerminatesWholeGovernment": [
+      {
+        "status": "translation",
+        "text": "69-модда 5-банд. Бош вазир истеъфосининг қабул қилиниши бутун Ҳукумат ваколатларининг тугатилишини англатади"
+      }
+    ],
+    "PrimeMinisterSignsGovernmentResolutions": [
+      {
+        "status": "translation",
+        "text": "66-модда. Бош вазир Ҳукумат қарорларини имзолайди"
+      }
+    ],
+    "RelinquishPowersBeforeNewKurultai": [
+      {
+        "status": "translation",
+        "text": "69-модда 1-банд. Ҳукумат янги сайланган Қурултой олдида ўз ваколатларини топширади"
+      }
+    ],
+    "RelinquishPowersBeforeNewMazhilis1995": [
+      {
+        "status": "translation",
+        "text": "70-модда 1-банд (1995 йилги таҳрир). Ҳукумат Парламентнинг янги сайланган Мажилиси олдида ўз ваколатларини топширади"
+      }
+    ],
+    "ResignationDecisionTenDays": [
+      {
+        "status": "translation",
+        "text": "69-модда 4-банд. Президент истеъфони қабул қилиш ёки рад этиш масаласини ўн кунлик муддатда кўриб чиқади"
+      }
+    ],
+    "bill_introduced_to_kurultai": [
+      {
+        "status": "translation",
+        "text": "қонун лойиҳаси қонунчилик ташаббуси тартибида Қурултойга киритилган"
+      }
+    ],
+    "citizen": [
+      {
+        "status": "translation",
+        "text": "шахс Қозоғистон Республикасининг фуқаросидир"
+      }
+    ],
+    "commercial_board_membership": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат аъзоси тижорат ташкилотининг раҳбар органига киради"
+      }
+    ],
+    "contradicts_constitution_law_or_presidential_act": [
+      {
+        "status": "translation",
+        "text": "ҳужжат Конституцияга, қонунларга ёки Президент ҳужжатларига зид"
+      }
+    ],
+    "entrepreneurial_activity": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат аъзоси тадбиркорлик фаолияти билан шуғулланади"
+      }
+    ],
+    "government": [
+      {
+        "status": "translation",
+        "text": "орган Республика Ҳукуматидир"
+      }
+    ],
+    "government_accountable_to_kurultai": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат Қурултой олдида ҳисобдор"
+      }
+    ],
+    "government_accountable_to_parliament_1995": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат Парламент олдида масъул (1995 йилги таҳрир)"
+      }
+    ],
+    "government_accountable_to_president": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат Президент олдида масъул"
+      }
+    ],
+    "government_accountable_to_president_1995": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат Президент олдида масъул (1995 йилги таҳрир)"
+      }
+    ],
+    "government_act": [
+      {
+        "status": "translation",
+        "text": "ҳужжат Ҳукумат томонидан қабул қилинган"
+      }
+    ],
+    "government_act_1995": [
+      {
+        "status": "translation",
+        "text": "ҳужжат Ҳукумат томонидан қабул қилинган (1995 йилги таҳрир)"
+      }
+    ],
+    "government_act_binding": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат ҳужжати Республиканинг бутун ҳудудида мажбурий"
+      }
+    ],
+    "government_act_binding_1995": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат қарори Республиканинг бутун ҳудудида мажбурий (1995 йилги таҳрир)"
+      }
+    ],
+    "government_develops_foreign_policy_measures": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат ташқи сиёсатни олиб бориш чораларини ишлаб чиқади"
+      }
+    ],
+    "government_develops_state_policy": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат давлат сиёсатининг асосий йўналишларини ишлаб чиқади"
+      }
+    ],
+    "government_directs_executive_bodies": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат ижро этувчи органларнинг фаолиятига раҳбарлик қилади"
+      }
+    ],
+    "government_ensures_budget_execution": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат республика бюджетининг ижросини таъминлайди"
+      }
+    ],
+    "government_exercises_executive_power": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат Республиканинг ижро этувчи ҳокимиятини амалга оширади"
+      }
+    ],
+    "government_formed_by_president": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат Республика Президенти томонидан тузилади"
+      }
+    ],
+    "government_heads_executive_system": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат ижро этувчи органлар тизимига бошчилик қилади"
+      }
+    ],
+    "government_introduces_bills_and_executes_laws": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат қонун лойиҳаларини киритади ва қонунларнинг ижросини таъминлайди"
+      }
+    ],
+    "government_manages_state_property": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат давлат мулкини бошқаради"
+      }
+    ],
+    "government_may_cancel_executive_body_acts": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат ижро этувчи органлар ҳужжатларини бекор қилишга ҳақли"
+      }
+    ],
+    "government_membership_incompatible": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат аъзолиги эгалланган лавозим ёки фаолият билан сиғишмайди"
+      }
+    ],
+    "government_no_confidence": [
+      {
+        "status": "translation",
+        "text": "Қурултой Ҳукуматга ишончсизлик вотумини билдирди"
+      }
+    ],
+    "government_oath_to_people_and_president_1995": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат аъзоси халқ ва Президентга қасамёд қилиши шарт (1995 йилги таҳрир)"
+      }
+    ],
+    "government_policy_disagreement": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат аъзоси Ҳукумат олиб бораётган сиёсатга рози эмас"
+      }
+    ],
+    "government_powers_relinquished": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат янги сайланган Қурултой олдида ваколатларини топширади"
+      }
+    ],
+    "government_powers_terminated": [
+      {
+        "status": "translation",
+        "text": "Ҳукуматнинг ваколатлари тугатилган"
+      }
+    ],
+    "government_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "Ҳукуматнинг ваколатлари тугатилган (1995 йилги таҳрир)"
+      }
+    ],
+    "government_proposal_date": [
+      {
+        "status": "translation",
+        "text": "Ҳукуматнинг тузилмаси ва таркиби тўғрисида таклиф киритилган кун"
+      }
+    ],
+    "government_proposal_deadline_days": [
+      {
+        "status": "translation",
+        "text": "Ҳукуматнинг тузилмаси ва таркиби тўғрисида таклиф киритиш муддати — ўн кун"
+      }
+    ],
+    "government_proposal_timely": [
+      {
+        "status": "translation",
+        "text": "Ҳукуматнинг тузилмаси ва таркиби тўғрисидаги таклиф муддатида киритилган"
+      }
+    ],
+    "government_sets_unified_public_pay_system_with_president": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат Президент билан келишган ҳолда давлат органларида меҳнатга ҳақ тўлашнинг ягона тизимини тасдиқлайди"
+      }
+    ],
+    "government_structure_proposal": [
+      {
+        "status": "translation",
+        "text": "Бош вазир Ҳукуматнинг тузилмаси ва таркиби тўғрисида таклиф киритди"
+      }
+    ],
+    "government_submits_budget_and_report": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат республика бюджетини ва унинг ижроси тўғрисидаги ҳисоботни тақдим этади"
+      }
+    ],
+    "mazhilis_no_confidence": [
+      {
+        "status": "translation",
+        "text": "Мажилис Ҳукуматга ишончсизлик вотумини билдирди (1995 йилги таҳрир)"
+      }
+    ],
+    "member_accountable_to_chambers_1995": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат аъзолари Парламент Палаталари олдида ҳисобдор (1995 йилги таҳрир)"
+      }
+    ],
+    "member_decides_within_competence": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат аъзоси ўз ваколат доирасида қарор қабул қилади"
+      }
+    ],
+    "member_of_government": [
+      {
+        "status": "translation",
+        "text": "шахс Ҳукумат таркибига киради"
+      }
+    ],
+    "member_personally_responsible_1995": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат аъзоси бўйсунувчи органларнинг фаолияти учун шахсан жавобгар (1995 йилги таҳрир)"
+      }
+    ],
+    "member_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат аъзосининг ваколатлари тугатилган (1995 йилги таҳрир)"
+      }
+    ],
+    "member_resignation_submitted": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат аъзоси истеъфо тўғрисида ариза бериши шарт"
+      }
+    ],
+    "minister_report_obligation_triggered": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат аъзосининг Парламент Палатаси олдида ҳисобот бериши учун асос юзага келган (1995 йилги таҳрир)"
+      }
+    ],
+    "new_kurultai_elected": [
+      {
+        "status": "translation",
+        "text": "Қурултойнинг янги таркиби сайланган"
+      }
+    ],
+    "new_mazhilis_elected": [
+      {
+        "status": "translation",
+        "text": "Мажилиснинг янги таркиби сайланган (1995 йилги таҳрир)"
+      }
+    ],
+    "no_confidence_resignation_declared": [
+      {
+        "status": "translation",
+        "text": "ишончсизлик вотуми билдирилганда Ҳукумат истеъфо тўғрисида ариза бериши шарт"
+      }
+    ],
+    "oath_taken_by_member": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат аъзоси қасамёд қилди"
+      }
+    ],
+    "official_duty_exception": [
+      {
+        "status": "translation",
+        "text": "тижорат ташкилоти органида иштирок этиш хизмат мажбуриятларига киради"
+      }
+    ],
+    "paid_external_position": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат аъзоси бошқа ҳақ тўланадиган лавозимни эгаллайди"
+      }
+    ],
+    "parliament_no_confidence": [
+      {
+        "status": "translation",
+        "text": "Парламент Ҳукуматга ишончсизлик вотумини билдирди (1995 йилги таҳрир)"
+      }
+    ],
+    "peoples_council": [
+      {
+        "status": "translation",
+        "text": "орган Қозоғистон Халқ Кенгашидир"
+      }
+    ],
+    "peoples_council_bill": [
+      {
+        "status": "translation",
+        "text": "Халқ Кенгаши қонун лойиҳасини киритди"
+      }
+    ],
+    "peoples_council_highest_consultative_body": [
+      {
+        "status": "translation",
+        "text": "Халқ Кенгаши олий маслаҳат-кенгаш органидир"
+      }
+    ],
+    "peoples_council_member": [
+      {
+        "status": "translation",
+        "text": "шахс Халқ Кенгаши таркибига киради"
+      }
+    ],
+    "peoples_council_membership_constitutionally_valid": [
+      {
+        "status": "translation",
+        "text": "Халқ Кенгашидаги аъзолик конституциявий талабларга жавоб беради"
+      }
+    ],
+    "peoples_council_referendum_initiative": [
+      {
+        "status": "translation",
+        "text": "Халқ Кенгаши референдум ўтказиш тўғрисида ташаббус билан чиқди"
+      }
+    ],
+    "permitted_teaching_science_or_creative_work": [
+      {
+        "status": "translation",
+        "text": "машғулот рухсат этилган педагогик, илмий ёки бошқа ижодий фаолиятга киради"
+      }
+    ],
+    "president": [
+      {
+        "status": "translation",
+        "text": "шахс Республиканинг Президентидир"
+      }
+    ],
+    "presidential_member_release": [
+      {
+        "status": "translation",
+        "text": "Президент Ҳукумат аъзосини лавозимидан озод қилди (1995 йилги таҳрир)"
+      }
+    ],
+    "presidential_own_initiative_termination": [
+      {
+        "status": "translation",
+        "text": "Президент ўз ташаббуси билан Ҳукумат ваколатларини тугатди (1995 йилги таҳрир)"
+      }
+    ],
+    "presidential_resignation_decision": [
+      {
+        "status": "translation",
+        "text": "Президент билдирилган истеъфо бўйича қарор қабул қилган кун"
+      }
+    ],
+    "prime_minister": [
+      {
+        "status": "translation",
+        "text": "шахс Бош вазирдир"
+      }
+    ],
+    "prime_minister_appointment_date": [
+      {
+        "status": "translation",
+        "text": "Бош вазир тайинланган кун"
+      }
+    ],
+    "prime_minister_directs_government": [
+      {
+        "status": "translation",
+        "text": "Бош вазир Ҳукумат фаолиятини ташкил этади ва унга раҳбарлик қилади"
+      }
+    ],
+    "prime_minister_order": [
+      {
+        "status": "translation",
+        "text": "ҳужжат Бош вазирнинг фармойишидир"
+      }
+    ],
+    "prime_minister_order_binding_1995": [
+      {
+        "status": "translation",
+        "text": "Бош вазирнинг фармойиши Республиканинг бутун ҳудудида мажбурий (1995 йилги таҳрир)"
+      }
+    ],
+    "prime_minister_personally_responsible": [
+      {
+        "status": "translation",
+        "text": "Бош вазир Ҳукумат фаолияти учун шахсан жавобгар"
+      }
+    ],
+    "prime_minister_released": [
+      {
+        "status": "translation",
+        "text": "Бош вазир лавозимидан озод қилинган (1995 йилги таҳрир)"
+      }
+    ],
+    "prime_minister_reports_to_president_and_kurultai": [
+      {
+        "status": "translation",
+        "text": "Бош вазир Президентга ва Қурултойга Ҳукумат фаолиятининг асосий йўналишлари тўғрисида маъруза қилади"
+      }
+    ],
+    "prime_minister_resignation_accepted": [
+      {
+        "status": "translation",
+        "text": "Бош вазирнинг истеъфоси қабул қилинган"
+      }
+    ],
+    "prime_minister_signs_government_resolutions": [
+      {
+        "status": "translation",
+        "text": "Бош вазир Ҳукумат қарорларини имзолайди"
+      }
+    ],
+    "referendum_initiative_valid": [
+      {
+        "status": "translation",
+        "text": "референдум тўғрисидаги ташаббус ваколатли субъект томонидан билдирилган"
+      }
+    ],
+    "representative_body_deputy": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат аъзоси вакиллик органининг депутатидир"
+      }
+    ],
+    "resignation_accepted": [
+      {
+        "status": "translation",
+        "text": "Ҳукуматнинг истеъфоси Президент томонидан қабул қилинган"
+      }
+    ],
+    "resignation_decision_deadline_days": [
+      {
+        "status": "translation",
+        "text": "билдирилган истеъфо бўйича қарор қабул қилиш муддати — ўн кун"
+      }
+    ],
+    "resignation_decision_timely": [
+      {
+        "status": "translation",
+        "text": "истеъфо бўйича қарор белгиланган муддатда қабул қилинган"
+      }
+    ],
+    "voluntary_resignation_declared": [
+      {
+        "status": "translation",
+        "text": "Ҳукумат ўз қарори билан истеъфо тўғрисида ариза берган кун"
+      }
+    ],
+    "within_government_competence": [
+      {
+        "status": "translation",
+        "text": "ҳужжат Ҳукуматнинг ваколат доирасида қабул қилинган"
+      }
+    ]
+  },
+  "language": "uz",
+  "package": "kz.constitution.government"
+}

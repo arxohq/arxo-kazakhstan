@@ -1,0 +1,1640 @@
+{
+  "$comment": "طبقة عرض عربية لحزم دستور جمهورية كازاخستان (DECISION-0070). الملف خارج CLIR ولا يقرأه المصرف، وإنما تقرأه طبقة العرض وحدها (verbalize --labels وخادم MCP وسطح المكتب). مصدر الترجمة هو تسمية العقدة الروسية ru-KZ في CLIR، ومصطلحاتها موافقة لحزمة law.verb.ar؛ والحالة translation أي ترجمة عمل غير رسمية لا نص رسمي. المفتاح هو الاسم المحلي للعقدة. النص غير مشكول.",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "ActContradictingConstitutionInvalid1995": [
+      {
+        "status": "translation",
+        "text": "المادة 62 الفقرة 7 (طبعة 1995). لا يجوز أن تخالف قوانين الجمهورية وقرارات البرلمان ومجلسيه الدستور"
+      }
+    ],
+    "AddressToPresidentValid1995": [
+      {
+        "status": "translation",
+        "text": "المادة 57 البند 6 (طبعة 1995). تقر المخاطبة الموجهة إلى الرئيس لإعفاء عضو الحكومة بأغلبية لا تقل عن ثلثي أصوات مجموع نواب المجلس"
+      }
+    ],
+    "Appointment": [
+      {
+        "status": "translation",
+        "text": "تعيين يجري بموافقة المجلس"
+      }
+    ],
+    "ApprovedLawPresentedToPresident1995": [
+      {
+        "status": "translation",
+        "text": "المادة 61 الفقرة 4 (طبعة 1995). يعرض القانون الذي يوافق عليه مجلس الشيوخ بأغلبية أصوات مجموع نوابه على الرئيس للتوقيع خلال عشرة أيام"
+      }
+    ],
+    "Bill": [
+      {
+        "status": "translation",
+        "text": "مشروع قانون"
+      }
+    ],
+    "BillAdoptedWithoutVoteOnConfidence1995": [
+      {
+        "status": "translation",
+        "text": "المادة 61 الفقرة 7 (طبعة 1995). إذا لم يحز اقتراح حجب الثقة أغلبية أصوات مجموع نواب كل من المجلسين عد مشروع القانون مقرا بغير اقتراع"
+      }
+    ],
+    "BudgetReportRejectionIsNoConfidence1995": [
+      {
+        "status": "translation",
+        "text": "المادة 53 البند 2 (طبعة 1995). عدم إقرار تقرير الحكومة عن تنفيذ الموازنة الجمهورية يعني حجب الثقة عن الحكومة"
+      }
+    ],
+    "Chamber": [
+      {
+        "status": "translation",
+        "text": "مجلس من مجلسي البرلمان — مجلس الشيوخ أو مجلس النواب"
+      }
+    ],
+    "ChamberChair": [
+      {
+        "status": "translation",
+        "text": "رئيس مجلس من مجلسي البرلمان"
+      }
+    ],
+    "Committee": [
+      {
+        "status": "translation",
+        "text": "لجنة دائمة في المجلس"
+      }
+    ],
+    "CommitteeCountAdmissible1995": [
+      {
+        "status": "translation",
+        "text": "المادة 60 الفقرة 1 (طبعة 1995). لا يجاوز عدد اللجان الدائمة سبعا في كل مجلس"
+      }
+    ],
+    "ConfidenceQuestion": [
+      {
+        "status": "translation",
+        "text": "مسألة الثقة بالحكومة"
+      }
+    ],
+    "ConfidenceRightExhausted1995": [
+      {
+        "status": "translation",
+        "text": "المادة 61 الفقرة 7 (طبعة 1995). لا يجوز للحكومة أن تستعمل هذا الحق أكثر من مرتين في السنة"
+      }
+    ],
+    "ConstitutionalAmendmentAdopted1995": [
+      {
+        "status": "translation",
+        "text": "المادة 62 الفقرة 3 (طبعة 1995). تدخل التعديلات والإضافات على الدستور بأغلبية لا تقل عن ثلاثة أرباع أصوات مجموع نواب كل من المجلسين"
+      }
+    ],
+    "ConstitutionalLawAdopted1995": [
+      {
+        "status": "translation",
+        "text": "المادة 62 الفقرة 4 (طبعة 1995). تقر القوانين الدستورية بأغلبية لا تقل عن ثلثي أصوات مجموع نواب كل من المجلسين"
+      }
+    ],
+    "ConstitutionalLawObjectionOverridden1995": [
+      {
+        "status": "translation",
+        "text": "المادة 53 البند 1-2 (طبعة 1995). تتجاوز اعتراضات الرئيس على القانون الدستوري بأغلبية ثلاثة أرباع أصوات مجموع نواب كل من المجلسين"
+      }
+    ],
+    "Deputy": [
+      {
+        "status": "translation",
+        "text": "نائب في البرلمان"
+      }
+    ],
+    "DeputyImmunityFromArrest1995": [
+      {
+        "status": "translation",
+        "text": "المادة 52 الفقرة 4 (طبعة 1995). لا يجوز القبض على النائب ولا مساءلته جنائيا بغير موافقة مجلسه عدا الضبط في حال التلبس والجرائم الجسيمة"
+      }
+    ],
+    "DeputyIncompatibilityTerminatesPowers1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "المادة 52 الفقرة 3 (طبعة 1995). مخالفة حظر الجمع ترتب انتهاء صلاحيات النائب"
+      }
+    ],
+    "DeputyIncompatibilityTerminatesPowers1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "المادة 52 الفقرة 3 (طبعة 1995). مخالفة حظر الجمع ترتب انتهاء صلاحيات النائب"
+      }
+    ],
+    "DeputyIncompatibilityTerminatesPowers1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "المادة 52 الفقرة 3 (طبعة 1995). مخالفة حظر الجمع ترتب انتهاء صلاحيات النائب"
+      }
+    ],
+    "DeputyInviolability1995": [
+      {
+        "status": "translation",
+        "text": "المادة 52 الفقرة 4 (طبعة 1995). لا يجوز القبض على النائب ولا مساءلته جنائيا بغير موافقة مجلسه عدا الضبط في حال التلبس والجرائم الجسيمة"
+      }
+    ],
+    "DeputyMandateForfeited1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "المادة 52 الفقرة 5 (طبعة 1995). يفقد النائب نيابته عند انتقاله للإقامة الدائمة خارج كازاخستان وعند حيازة حكم الإدانة قوة الأمر المقضي وعند زوال الجنسية"
+      }
+    ],
+    "DeputyMandateForfeited1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "المادة 52 الفقرة 5 (طبعة 1995). يفقد النائب نيابته عند انتقاله للإقامة الدائمة خارج كازاخستان وعند حيازة حكم الإدانة قوة الأمر المقضي وعند زوال الجنسية"
+      }
+    ],
+    "DeputyMandateForfeited1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "المادة 52 الفقرة 5 (طبعة 1995). يفقد النائب نيابته عند انتقاله للإقامة الدائمة خارج كازاخستان وعند حيازة حكم الإدانة قوة الأمر المقضي وعند زوال الجنسية"
+      }
+    ],
+    "DeputyPaidOfficeTerminatesPowers1995": [
+      {
+        "status": "translation",
+        "text": "المادة 52 الفقرة 3 (طبعة 1995). شغل منصب آخر بأجر عدا التدريس والبحث وسائر الأنشطة الإبداعية ينهي صلاحيات النائب"
+      }
+    ],
+    "DeputyPowersTerminatedOnGeneralGrounds1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "المادة 52 الفقرة 5 (طبعة 1995). تنتهي الصلاحيات بالاستقالة أو الوفاة أو الحكم بعدم الأهلية أو بالموت أو بالغياب المجهول"
+      }
+    ],
+    "DeputyPowersTerminatedOnGeneralGrounds1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "المادة 52 الفقرة 5 (طبعة 1995). تنتهي الصلاحيات بالاستقالة أو الوفاة أو الحكم بعدم الأهلية أو بالموت أو بالغياب المجهول"
+      }
+    ],
+    "DeputyPowersTerminatedOnGeneralGrounds1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "المادة 52 الفقرة 5 (طبعة 1995). تنتهي الصلاحيات بالاستقالة أو الوفاة أو الحكم بعدم الأهلية أو بالموت أو بالغياب المجهول"
+      }
+    ],
+    "DeputySanctionForAbsenceOrDelegation1995": [
+      {
+        "status": "translation",
+        "text": "المادة 52 الفقرة 2 (طبعة 1995). التخلف بغير عذر مقبول أكثر من ثلاث مرات يرتب تطبيق تدابير الجزاء المقررة قانونا"
+      }
+    ],
+    "DeputyVoteDelegationSanction1995": [
+      {
+        "status": "translation",
+        "text": "المادة 52 الفقرة 2 (طبعة 1995). التنازل عن حق التصويت يرتب تطبيق تدابير الجزاء المقررة قانونا"
+      }
+    ],
+    "Dissolution": [
+      {
+        "status": "translation",
+        "text": "حل البرلمان أو مجلس النواب"
+      }
+    ],
+    "DissolutionAdmissible1995": [
+      {
+        "status": "translation",
+        "text": "المادة 63 (طبعة 1995). للرئيس بعد مشاورات مع رئيسي المجلسين ورئيس الوزراء أن يحل البرلمان أو مجلس النواب خارج المدد المحمية"
+      }
+    ],
+    "DissolutionBarred1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "المادة 63 الفقرة 2 (طبعة 1995). لا يجوز حل البرلمان ومجلس النواب في مدة حالة الطوارئ أو الأحكام العرفية ولا في الأشهر الستة الأخيرة من صلاحيات الرئيس ولا خلال سنة واحدة من الحل السابق"
+      }
+    ],
+    "DissolutionBarred1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "المادة 63 الفقرة 2 (طبعة 1995). لا يجوز حل البرلمان ومجلس النواب في مدة حالة الطوارئ أو الأحكام العرفية ولا في الأشهر الستة الأخيرة من صلاحيات الرئيس ولا خلال سنة واحدة من الحل السابق"
+      }
+    ],
+    "DissolutionBarred1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "المادة 63 الفقرة 2 (طبعة 1995). لا يجوز حل البرلمان ومجلس النواب في مدة حالة الطوارئ أو الأحكام العرفية ولا في الأشهر الستة الأخيرة من صلاحيات الرئيس ولا خلال سنة واحدة من الحل السابق"
+      }
+    ],
+    "DualChamberMembershipProhibited1995": [
+      {
+        "status": "translation",
+        "text": "المادة 50 الفقرة 4 (طبعة 1995). لا يجوز أن يكون نائب البرلمان عضوا في المجلسين في آن واحد"
+      }
+    ],
+    "EligibleMazhilisDeputy1995": [
+      {
+        "status": "translation",
+        "text": "المادة 51 الفقرة 4 (طبعة 1995). يجوز أن يكون نائبا في مجلس النواب من بلغ خمسا وعشرين سنة وكان حائزا للجنسية ومقيما في الجمهورية العشر سنوات الأخيرة"
+      }
+    ],
+    "EligibleSenator1995": [
+      {
+        "status": "translation",
+        "text": "المادة 51 الفقرة 4 (طبعة 1995). يجوز أن يكون نائبا في مجلس الشيوخ من لا يقل عمره عن ثلاثين سنة وله تعليم عال وخبرة لا تقل عن خمس سنوات ويقيم في الإقليم ثلاث سنوات على الأقل وفي الجمهورية العشر سنوات الأخيرة"
+      }
+    ],
+    "ExtraordinaryAgendaLimited1995": [
+      {
+        "status": "translation",
+        "text": "المادة 59 الفقرة 4 (طبعة 1995). لا ينظر في الدورة الاستثنائية إلا في المسائل التي كانت سببا للدعوة إليها"
+      }
+    ],
+    "ExtraordinarySessionByChairs1995": [
+      {
+        "status": "translation",
+        "text": "المادة 59 الفقرة 4 (طبعة 1995). يجوز الدعوة إلى دورة استثنائية باقتراح من رئيسي المجلسين"
+      }
+    ],
+    "ExtraordinarySessionByThird1995": [
+      {
+        "status": "translation",
+        "text": "المادة 59 الفقرة 4 (طبعة 1995). يجوز الدعوة إلى دورة استثنائية باقتراح من ثلث مجموع نواب البرلمان على الأقل"
+      }
+    ],
+    "FirstSessionThirtyDaysComputed1995": [
+      {
+        "status": "translation",
+        "text": "المادة 59 الفقرة 2 (طبعة 1995). تنعقد الدورة الأولى للبرلمان في موعد لا يجاوز ثلاثين يوما من يوم نشر نتائج الانتخابات"
+      }
+    ],
+    "FirstSessionTimely1995": [
+      {
+        "status": "translation",
+        "text": "المادة 59 الفقرة 2 (طبعة 1995). يدعو الرئيس إلى الدورة الأولى للبرلمان في موعد لا يجاوز ثلاثين يوما من يوم نشر نتائج الانتخابات"
+      }
+    ],
+    "FiscalBillRequiresGovernmentOpinion1995": [
+      {
+        "status": "translation",
+        "text": "المادة 61 الفقرة 6 (طبعة 1995). لا تقدم المشروعات التي تقلل الإيرادات أو تزيد النفقات إلا برأي إيجابي من الحكومة"
+      }
+    ],
+    "Government": [
+      {
+        "status": "translation",
+        "text": "حكومة جمهورية كازاخستان"
+      }
+    ],
+    "GovernmentNoConfidence1995": [
+      {
+        "status": "translation",
+        "text": "المادة 56 الفقرة 2 (طبعة 1995). لمجلس النواب بأغلبية أصوات مجموع نوابه أن يحجب الثقة عن الحكومة"
+      }
+    ],
+    "LawInForceAfterPresidentialSignature1995": [
+      {
+        "status": "translation",
+        "text": "المادة 62 الفقرة 2 (طبعة 1995). تنفذ قوانين الجمهورية بعد توقيع رئيس الجمهورية عليها"
+      }
+    ],
+    "LegislativeInitiativeValid1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "المادة 61 الفقرة 1 (طبعة 1995). حق المبادرة التشريعية للرئيس ولنواب البرلمان وللحكومة ولا يمارس إلا في مجلس النواب"
+      }
+    ],
+    "LegislativeInitiativeValid1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "المادة 61 الفقرة 1 (طبعة 1995). حق المبادرة التشريعية للرئيس ولنواب البرلمان وللحكومة ولا يمارس إلا في مجلس النواب"
+      }
+    ],
+    "LegislativeInitiativeValid1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "المادة 61 الفقرة 1 (طبعة 1995). حق المبادرة التشريعية للرئيس ولنواب البرلمان وللحكومة ولا يمارس إلا في مجلس النواب"
+      }
+    ],
+    "MazhilisChairElected1995": [
+      {
+        "status": "translation",
+        "text": "المادة 58 الفقرة 1 (طبعة 1995). يرشح نواب المجلس المرشحين لرئاسة مجلس النواب؛ والانتخاب بأغلبية أصوات مجموع النواب"
+      }
+    ],
+    "MazhilisConfirmsEarlierVersion1995": [
+      {
+        "status": "translation",
+        "text": "المادة 61 الفقرة 5 (طبعة 1995). إذا أكد مجلس النواب في الاقتراع المعاد قراره السابق بأغلبية ثلثي الأصوات عرض القانون على الرئيس للتوقيع"
+      }
+    ],
+    "MazhilisConsentToPrimeMinister1995": [
+      {
+        "status": "translation",
+        "text": "المادة 56 الفقرة 1 البند 2 (طبعة 1995). يوافق مجلس النواب بأغلبية أصوات مجموع نوابه على تعيين الرئيس لرئيس الوزراء"
+      }
+    ],
+    "MazhilisDeputyPartyMandateForfeited1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "المادة 52 الفقرة 5 (طبعة 1995). يفقد نائب مجلس النواب نيابته عند خروجه من الحزب الذي انتخب في قائمته أو فصله منه وعند انتهاء نشاط ذلك الحزب"
+      }
+    ],
+    "MazhilisDeputyPartyMandateForfeited1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "المادة 52 الفقرة 5 (طبعة 1995). يفقد نائب مجلس النواب نيابته عند خروجه من الحزب الذي انتخب في قائمته أو فصله منه وعند انتهاء نشاط ذلك الحزب"
+      }
+    ],
+    "MazhilisSeatFromChamberMembership1995": [
+      {
+        "status": "translation",
+        "text": "المادة 50 الفقرة 3 (طبعة 1995). النائب الداخل في تشكيل مجلس النواب يشغل مقعدا في مجلس النواب"
+      }
+    ],
+    "MinisterHearingInitiativeValid1995": [
+      {
+        "status": "translation",
+        "text": "المادة 57 البند 6 (طبعة 1995). للمجلس بمبادرة ثلث مجموع نوابه على الأقل أن يسمع تقارير أعضاء الحكومة"
+      }
+    ],
+    "MinisterReleaseRequired1995": [
+      {
+        "status": "translation",
+        "text": "المادة 57 البند 6 (طبعة 1995). في هذه الحالة يعفي رئيس الجمهورية عضو الحكومة من منصبه"
+      }
+    ],
+    "NoConfidenceMotion": [
+      {
+        "status": "translation",
+        "text": "مبادرة بحجب الثقة عن الحكومة أو بسماع تقرير عضو من أعضائها"
+      }
+    ],
+    "NoConfidenceMotionValid1995": [
+      {
+        "status": "translation",
+        "text": "المادة 56 الفقرة 2 (طبعة 1995). تحجب الثقة بمبادرة خمس مجموع نواب مجلس النواب على الأقل"
+      }
+    ],
+    "Objection": [
+      {
+        "status": "translation",
+        "text": "اعتراض الرئيس على القانون"
+      }
+    ],
+    "ObjectionsAcceptedOnMissedDeadline1995": [
+      {
+        "status": "translation",
+        "text": "المادة 54 الفقرة 2 البند 2 (طبعة 1995). عدم مراعاة ميعاد الشهر يعني قبول اعتراضات الرئيس"
+      }
+    ],
+    "OrdinaryLawObjectionOverridden1995": [
+      {
+        "status": "translation",
+        "text": "المادة 54 الفقرة 2 البند 2 (طبعة 1995). تتجاوز اعتراضات الرئيس على القانون بأغلبية ثلثي أصوات مجموع نواب كل من المجلسين"
+      }
+    ],
+    "Parliament": [
+      {
+        "status": "translation",
+        "text": "برلمان جمهورية كازاخستان (طبعة 1995)"
+      }
+    ],
+    "ParliamentPowersActive1995": [
+      {
+        "status": "translation",
+        "text": "المادة 49 الفقرة 2 (طبعة 1995). تبدأ صلاحيات البرلمان بافتتاح الدورة الأولى وتنتهي ببدء الدورة الأولى للبرلمان في تشكيلته الجديدة"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "شخص طبيعي"
+      }
+    ],
+    "PresidentialFiscalBillExempt1995": [
+      {
+        "status": "translation",
+        "text": "المادة 61 الفقرة 6 (طبعة 1995). لا يلزم رأي الحكومة في مشروعات القوانين ذات المبادرة الرئاسية"
+      }
+    ],
+    "ReadingRequirementMet1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "المادة 62 الفقرة 6 (طبعة 1995). تجب قراءتان على الأقل لتعديلات الدستور ولمشروعات القوانين الدستورية"
+      }
+    ],
+    "ReadingRequirementMet1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "المادة 62 الفقرة 6 (طبعة 1995). تجب قراءتان على الأقل لتعديلات الدستور ولمشروعات القوانين الدستورية"
+      }
+    ],
+    "Referendum": [
+      {
+        "status": "translation",
+        "text": "استفتاء جمهوري"
+      }
+    ],
+    "RejectedBillReturnedToInitiator1995": [
+      {
+        "status": "translation",
+        "text": "المادة 61 الفقرة 4 (طبعة 1995). مشروع القانون الذي يرفضه مجلس النواب يعد غير مقر ويرد إلى مقدمه"
+      }
+    ],
+    "SenateActsForParliament1995": [
+      {
+        "status": "translation",
+        "text": "المادة 55 البند 5 (طبعة 1995). يمارس مجلس الشيوخ وظائف البرلمان في إقرار القوانين في مدة الغياب المؤقت لمجلس النواب"
+      }
+    ],
+    "SenateChairElected1995": [
+      {
+        "status": "translation",
+        "text": "المادة 58 الفقرة 1 (طبعة 1995). يرشح الرئيس المرشح لرئاسة مجلس الشيوخ؛ والانتخاب بالاقتراع السري بأغلبية أصوات مجموع نواب المجلس"
+      }
+    ],
+    "SenateConsentAppointment1995": [
+      {
+        "status": "translation",
+        "text": "المادة 55 البند 2 (طبعة 1995). يوافق مجلس الشيوخ على تعيين رئيس المحكمة الدستورية ورئيس البنك الوطني ورئيس المجلس الأعلى للقضاء والمدعي العام ورئيس لجنة الأمن القومي"
+      }
+    ],
+    "SenateSeatFromChamberMembership1995": [
+      {
+        "status": "translation",
+        "text": "المادة 50 الفقرة 2 (طبعة 1995). النائب الداخل في تشكيل مجلس الشيوخ يشغل مقعدا في مجلس الشيوخ"
+      }
+    ],
+    "SenateSilencePresentsLaw1995": [
+      {
+        "status": "translation",
+        "text": "المادة 61 الفقرة 4 (طبعة 1995). إذا لم يتخذ مجلس الشيوخ قرارا خلال ستين يوما عرض القانون على الرئيس للتوقيع"
+      }
+    ],
+    "Session": [
+      {
+        "status": "translation",
+        "text": "دورة البرلمان"
+      }
+    ],
+    "SingleMandateDeputyRecalled1995": [
+      {
+        "status": "translation",
+        "text": "المادة 52 الفقرة 5 (طبعة 1995). النائب المنتخب في دائرة فردية يفقد نيابته عند سحبه من الناخبين"
+      }
+    ],
+    "Sitting": [
+      {
+        "status": "translation",
+        "text": "جلسة مشتركة أو منفصلة للمجلسين"
+      }
+    ],
+    "SittingQuorate1995": [
+      {
+        "status": "translation",
+        "text": "المادة 59 الفقرة 5 (طبعة 1995). تعقد جلسات المجلسين بحضور ثلثي مجموع نواب كل منهما على الأقل"
+      }
+    ],
+    "Statute": [
+      {
+        "status": "translation",
+        "text": "قانون أو صك آخر صادر عن البرلمان"
+      }
+    ],
+    "act_contradicts_constitution": [
+      {
+        "status": "translation",
+        "text": "الصك يخالف الدستور"
+      }
+    ],
+    "act_in_force_1995": [
+      {
+        "status": "translation",
+        "text": "صك البرلمان نافذ"
+      }
+    ],
+    "act_invalid_1995": [
+      {
+        "status": "translation",
+        "text": "صك البرلمان باطل"
+      }
+    ],
+    "act_signed_by_president": [
+      {
+        "status": "translation",
+        "text": "وقع رئيس الجمهورية على الصك"
+      }
+    ],
+    "address_supporting_votes": [
+      {
+        "status": "translation",
+        "text": "عدد الأصوات المؤيدة لمخاطبة الرئيس بإعفاء عضو الحكومة"
+      }
+    ],
+    "address_to_president_valid_1995": [
+      {
+        "status": "translation",
+        "text": "أقرت المخاطبة الموجهة إلى الرئيس بإعفاء عضو الحكومة بصورة مشروعة"
+      }
+    ],
+    "age_years": [
+      {
+        "status": "translation",
+        "text": "عمر الشخص بالسنين التامة"
+      }
+    ],
+    "amendment_majority_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "مقام العتبة البرلمانية لتعديل الدستور ثلاثة أرباع"
+      }
+    ],
+    "amendment_majority_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "بسط العتبة البرلمانية لتعديل الدستور ثلاثة أرباع"
+      }
+    ],
+    "appointment_effective_1995": [
+      {
+        "status": "translation",
+        "text": "تم التعيين"
+      }
+    ],
+    "appointment_requires_senate_consent": [
+      {
+        "status": "translation",
+        "text": "يجري التعيين بموافقة مجلس الشيوخ"
+      }
+    ],
+    "arrest_or_prosecution_attempt": [
+      {
+        "status": "translation",
+        "text": "جرت محاولة للقبض على النائب أو لمساءلته جنائيا"
+      }
+    ],
+    "bill_admissible_1995": [
+      {
+        "status": "translation",
+        "text": "مشروع القانون جائز النظر"
+      }
+    ],
+    "bill_adopted_without_vote_1995": [
+      {
+        "status": "translation",
+        "text": "يعد مشروع القانون مقرا بغير اقتراع"
+      }
+    ],
+    "bill_returned_to_initiator_1995": [
+      {
+        "status": "translation",
+        "text": "يرد مشروع القانون المرفوض إلى مقدمه"
+      }
+    ],
+    "budget_report_rejected": [
+      {
+        "status": "translation",
+        "text": "لم يقر تقرير الحكومة عن تنفيذ الموازنة الجمهورية"
+      }
+    ],
+    "candidate_deputy": [
+      {
+        "status": "translation",
+        "text": "النيابة البرلمانية لهذا الشخص"
+      }
+    ],
+    "caught_in_the_act_or_grave_crime": [
+      {
+        "status": "translation",
+        "text": "ضبط النائب في حال التلبس أو ارتكب جريمة جسيمة"
+      }
+    ],
+    "chair_candidate": [
+      {
+        "status": "translation",
+        "text": "يشغل هذا الشخص منصب رئيس المجلس"
+      }
+    ],
+    "chair_chamber_total": [
+      {
+        "status": "translation",
+        "text": "مجموع نواب المجلس عند انتخاب رئيسه"
+      }
+    ],
+    "chair_elected_1995": [
+      {
+        "status": "translation",
+        "text": "انتخب المترشح رئيسا للمجلس"
+      }
+    ],
+    "chair_election_votes": [
+      {
+        "status": "translation",
+        "text": "عدد الأصوات التي نالها المترشح لرئاسة المجلس"
+      }
+    ],
+    "chair_of_mazhilis": [
+      {
+        "status": "translation",
+        "text": "الشخص رئيس مجلس النواب"
+      }
+    ],
+    "chair_of_senate": [
+      {
+        "status": "translation",
+        "text": "الشخص رئيس مجلس الشيوخ"
+      }
+    ],
+    "chamber_consent_given": [
+      {
+        "status": "translation",
+        "text": "وافق المجلس على مساءلة النائب"
+      }
+    ],
+    "citizen": [
+      {
+        "status": "translation",
+        "text": "الشخص من مواطني جمهورية كازاخستان"
+      }
+    ],
+    "citizenship_lost": [
+      {
+        "status": "translation",
+        "text": "زالت عن النائب جنسية جمهورية كازاخستان"
+      }
+    ],
+    "committee_count_admissible_1995": [
+      {
+        "status": "translation",
+        "text": "عدد اللجان الدائمة في المجلس جائز"
+      }
+    ],
+    "conciliation_version": [
+      {
+        "status": "translation",
+        "text": "ينظر مشروع القانون بصيغة لجنة التوفيق"
+      }
+    ],
+    "confidence_question": [
+      {
+        "status": "translation",
+        "text": "طرح رئيس الوزراء مسألة الثقة بالحكومة"
+      }
+    ],
+    "confidence_right_exhausted_1995": [
+      {
+        "status": "translation",
+        "text": "استنفد حق الحكومة في طرح مسألة الثقة في هذه السنة"
+      }
+    ],
+    "confidence_uses_per_year_1995": [
+      {
+        "status": "translation",
+        "text": "حد لجوء الحكومة إلى مسألة الثقة مرتان في السنة"
+      }
+    ],
+    "confidence_uses_this_year": [
+      {
+        "status": "translation",
+        "text": "عدد مرات لجوء الحكومة إلى مسألة الثقة في هذه السنة"
+      }
+    ],
+    "confidence_vote_after_48_hours": [
+      {
+        "status": "translation",
+        "text": "أجري الاقتراع على مسألة الثقة بعد مضي ثمان وأربعين ساعة على الأقل"
+      }
+    ],
+    "confidence_vote_wait_hours_1995": [
+      {
+        "status": "translation",
+        "text": "المدة بين طرح مسألة الثقة والاقتراع ثمان وأربعون ساعة"
+      }
+    ],
+    "constitutional_amendment_adopted_1995": [
+      {
+        "status": "translation",
+        "text": "أقر البرلمان التعديلات والإضافات على الدستور"
+      }
+    ],
+    "constitutional_amendment_bill": [
+      {
+        "status": "translation",
+        "text": "مشروع القانون يدخل تعديلات وإضافات على الدستور"
+      }
+    ],
+    "constitutional_court_judges_per_chamber_1995": [
+      {
+        "status": "translation",
+        "text": "عدد قضاة المحكمة الدستورية الذين يعينهم كل مجلس باستقلال ثلاثة"
+      }
+    ],
+    "constitutional_law_adopted_1995": [
+      {
+        "status": "translation",
+        "text": "أقر البرلمان القانون الدستوري"
+      }
+    ],
+    "constitutional_law_bill": [
+      {
+        "status": "translation",
+        "text": "مشروع القانون مشروع قانون دستوري"
+      }
+    ],
+    "constitutional_law_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "مقام عتبة إقرار القانون الدستوري الثلثان"
+      }
+    ],
+    "constitutional_law_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "بسط عتبة إقرار القانون الدستوري الثلثان"
+      }
+    ],
+    "court_declared_incapable_dead_or_missing": [
+      {
+        "status": "translation",
+        "text": "حكم على النائب بعدم الأهلية أو بالموت أو بالغياب المجهول"
+      }
+    ],
+    "criminal_conviction_in_force": [
+      {
+        "status": "translation",
+        "text": "حاز حكم الإدانة الصادر بحق النائب قوة الأمر المقضي"
+      }
+    ],
+    "deputy": [
+      {
+        "status": "translation",
+        "text": "الشخص نائب في البرلمان"
+      }
+    ],
+    "deputy_conducts_business": [
+      {
+        "status": "translation",
+        "text": "النائب يمارس نشاطا رياديا"
+      }
+    ],
+    "deputy_deceased": [
+      {
+        "status": "translation",
+        "text": "توفي النائب"
+      }
+    ],
+    "deputy_holds_other_paid_office": [
+      {
+        "status": "translation",
+        "text": "النائب يشغل منصبا آخر بأجر"
+      }
+    ],
+    "deputy_holds_other_representative_mandate": [
+      {
+        "status": "translation",
+        "text": "النائب نائب في جهاز تمثيلي آخر"
+      }
+    ],
+    "deputy_immunity_infringed_1995": [
+      {
+        "status": "translation",
+        "text": "انتهكت حصانة النائب"
+      }
+    ],
+    "deputy_in_commercial_governing_body": [
+      {
+        "status": "translation",
+        "text": "النائب عضو في جهاز إدارة منظمة تجارية أو في مجلس رقابتها"
+      }
+    ],
+    "deputy_mandate_forfeited_1995": [
+      {
+        "status": "translation",
+        "text": "يفقد النائب نيابته"
+      }
+    ],
+    "deputy_member_of_both_chambers": [
+      {
+        "status": "translation",
+        "text": "الشخص نائب في المجلسين في آن واحد"
+      }
+    ],
+    "deputy_of": [
+      {
+        "status": "translation",
+        "text": "النائب داخل في تشكيل هذا المجلس"
+      }
+    ],
+    "deputy_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "انتهت صلاحيات النائب"
+      }
+    ],
+    "deputy_residence_years_1995": [
+      {
+        "status": "translation",
+        "text": "مدة إقامة النائب المطلوبة في كازاخستان عشر سنوات"
+      }
+    ],
+    "deputy_sanction_applies_1995": [
+      {
+        "status": "translation",
+        "text": "تطبق على النائب تدابير الجزاء المقررة قانونا"
+      }
+    ],
+    "dissolution_admissible_1995": [
+      {
+        "status": "translation",
+        "text": "حل البرلمان جائز"
+      }
+    ],
+    "dissolution_attempt": [
+      {
+        "status": "translation",
+        "text": "جرى حل البرلمان أو مجلس النواب"
+      }
+    ],
+    "dissolution_barred_1995": [
+      {
+        "status": "translation",
+        "text": "لا يجوز حل البرلمان"
+      }
+    ],
+    "dissolution_consultations_completed": [
+      {
+        "status": "translation",
+        "text": "أجريت المشاورات مع رئيسي المجلسين ورئيس الوزراء"
+      }
+    ],
+    "dissolution_cooldown_years_1995": [
+      {
+        "status": "translation",
+        "text": "المدة التي لا يحل فيها البرلمان بعد الحل السابق سنة واحدة"
+      }
+    ],
+    "dissolution_protected_months_1995": [
+      {
+        "status": "translation",
+        "text": "المدة المحمية قبل انتهاء صلاحيات الرئيس ستة أشهر"
+      }
+    ],
+    "dual_membership_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "لا يجوز الجمع بين العضوية في المجلسين"
+      }
+    ],
+    "elected_in_single_mandate_district": [
+      {
+        "status": "translation",
+        "text": "انتخب النائب في دائرة فردية"
+      }
+    ],
+    "elected_on_party_list": [
+      {
+        "status": "translation",
+        "text": "انتخب النائب في قائمة حزبية"
+      }
+    ],
+    "election_results_published": [
+      {
+        "status": "translation",
+        "text": "يوم نشر نتائج الانتخابات"
+      }
+    ],
+    "eligible_mazhilis_deputy_1995": [
+      {
+        "status": "translation",
+        "text": "الشخص مستوف لشروط النائب في مجلس النواب"
+      }
+    ],
+    "eligible_senator_1995": [
+      {
+        "status": "translation",
+        "text": "الشخص مستوف لشروط النائب في مجلس الشيوخ"
+      }
+    ],
+    "emergency_or_martial_law_active": [
+      {
+        "status": "translation",
+        "text": "حالة الطوارئ أو الأحكام العرفية سارية"
+      }
+    ],
+    "extraordinary_agenda_limited_1995": [
+      {
+        "status": "translation",
+        "text": "لا ينظر في الدورة الاستثنائية إلا في المسائل التي كانت سببا للدعوة إليها"
+      }
+    ],
+    "extraordinary_session_request": [
+      {
+        "status": "translation",
+        "text": "قدم طلب الدعوة إلى دورة استثنائية"
+      }
+    ],
+    "extraordinary_session_valid_1995": [
+      {
+        "status": "translation",
+        "text": "دعي إلى الدورة الاستثنائية بصورة مشروعة"
+      }
+    ],
+    "first_session_convened": [
+      {
+        "status": "translation",
+        "text": "يوم الدعوة إلى الدورة الأولى للبرلمان"
+      }
+    ],
+    "first_session_convocation_days_1995": [
+      {
+        "status": "translation",
+        "text": "ميعاد الدعوة إلى الدورة الأولى ثلاثون يوما من يوم نشر نتائج الانتخابات"
+      }
+    ],
+    "first_session_opened": [
+      {
+        "status": "translation",
+        "text": "افتتحت الدورة الأولى للبرلمان"
+      }
+    ],
+    "first_session_timely_1995": [
+      {
+        "status": "translation",
+        "text": "دعي إلى الدورة الأولى في الميعاد الدستوري"
+      }
+    ],
+    "first_session_within_thirty_days": [
+      {
+        "status": "translation",
+        "text": "دعي إلى الدورة الأولى في ميعاد الثلاثين يوما"
+      }
+    ],
+    "fluent_in_state_language": [
+      {
+        "status": "translation",
+        "text": "الشخص يتقن لغة الدولة"
+      }
+    ],
+    "government_no_confidence_1995": [
+      {
+        "status": "translation",
+        "text": "حجب البرلمان الثقة عن الحكومة"
+      }
+    ],
+    "hearing_chamber_total": [
+      {
+        "status": "translation",
+        "text": "مجموع نواب المجلس عند المبادرة بسماع التقرير"
+      }
+    ],
+    "hearing_initiating_votes": [
+      {
+        "status": "translation",
+        "text": "عدد النواب الذين بادروا بسماع التقرير"
+      }
+    ],
+    "hearing_initiative_valid_1995": [
+      {
+        "status": "translation",
+        "text": "قدمت المبادرة بسماع التقرير من العدد المخول من النواب"
+      }
+    ],
+    "higher_education": [
+      {
+        "status": "translation",
+        "text": "للشخص تعليم عال"
+      }
+    ],
+    "introduced_in_mazhilis": [
+      {
+        "status": "translation",
+        "text": "قدم مشروع القانون إلى مجلس النواب"
+      }
+    ],
+    "joint_or_separate_sitting": [
+      {
+        "status": "translation",
+        "text": "الجلسة جلسة مشتركة أو منفصلة للمجلسين"
+      }
+    ],
+    "last_six_months_of_presidential_term": [
+      {
+        "status": "translation",
+        "text": "تجري الأشهر الستة الأخيرة من صلاحيات الرئيس"
+      }
+    ],
+    "left_or_expelled_from_party": [
+      {
+        "status": "translation",
+        "text": "خرج النائب من الحزب السياسي الذي انتخب عنه أو فصل منه"
+      }
+    ],
+    "legislative_initiative_by_deputy": [
+      {
+        "status": "translation",
+        "text": "قدم مشروع القانون نائب في البرلمان"
+      }
+    ],
+    "legislative_initiative_by_government": [
+      {
+        "status": "translation",
+        "text": "قدمت الحكومة مشروع القانون"
+      }
+    ],
+    "legislative_initiative_by_president": [
+      {
+        "status": "translation",
+        "text": "قدم رئيس الجمهورية مشروع القانون"
+      }
+    ],
+    "legislative_initiative_valid_1995": [
+      {
+        "status": "translation",
+        "text": "مورس حق المبادرة التشريعية من جهة مخولة"
+      }
+    ],
+    "mazhilis": [
+      {
+        "status": "translation",
+        "text": "المجلس هو مجلس النواب"
+      }
+    ],
+    "mazhilis_absent_after_early_termination": [
+      {
+        "status": "translation",
+        "text": "مجلس النواب غائب بسبب الإنهاء المبكر لصلاحياته"
+      }
+    ],
+    "mazhilis_adopted": [
+      {
+        "status": "translation",
+        "text": "أقر مجلس النواب مشروع القانون"
+      }
+    ],
+    "mazhilis_confirmed_earlier_version_1995": [
+      {
+        "status": "translation",
+        "text": "أكد مجلس النواب الصيغة التي سبق إقرارها لمشروع القانون"
+      }
+    ],
+    "mazhilis_consent_total": [
+      {
+        "status": "translation",
+        "text": "مجموع نواب مجلس النواب عند إبداء الموافقة"
+      }
+    ],
+    "mazhilis_consent_votes": [
+      {
+        "status": "translation",
+        "text": "عدد أصوات مجلس النواب المؤيدة للموافقة على التعيين"
+      }
+    ],
+    "mazhilis_deputy_minimum_age_1995": [
+      {
+        "status": "translation",
+        "text": "الحد الأدنى لسن نائب مجلس النواب خمس وعشرون سنة"
+      }
+    ],
+    "mazhilis_present": [
+      {
+        "status": "translation",
+        "text": "عدد نواب مجلس النواب الحاضرين"
+      }
+    ],
+    "mazhilis_rejected_bill": [
+      {
+        "status": "translation",
+        "text": "رفض مجلس النواب مشروع القانون"
+      }
+    ],
+    "mazhilis_repeat_votes": [
+      {
+        "status": "translation",
+        "text": "عدد أصوات مجلس النواب في الاقتراع المعاد"
+      }
+    ],
+    "mazhilis_seats": [
+      {
+        "status": "translation",
+        "text": "مجموع مقاعد النواب في مجلس النواب في الجلسة"
+      }
+    ],
+    "mazhilis_seats_1995": [
+      {
+        "status": "translation",
+        "text": "عدد نواب مجلس النواب ثمانية وتسعون"
+      }
+    ],
+    "mazhilis_term_years_1995": [
+      {
+        "status": "translation",
+        "text": "مدة صلاحيات نائب مجلس النواب خمس سنوات"
+      }
+    ],
+    "mazhilis_total_deputies": [
+      {
+        "status": "translation",
+        "text": "مجموع نواب مجلس النواب"
+      }
+    ],
+    "mazhilis_votes": [
+      {
+        "status": "translation",
+        "text": "عدد أصوات نواب مجلس النواب المؤيدة لمشروع القانون"
+      }
+    ],
+    "minimum_readings_1995": [
+      {
+        "status": "translation",
+        "text": "الحد الأدنى لعدد قراءات مشروع القانون اثنتان"
+      }
+    ],
+    "minister_failed_to_execute_laws": [
+      {
+        "status": "translation",
+        "text": "ثبت أن عضو الحكومة لم ينفذ قوانين الجمهورية"
+      }
+    ],
+    "minister_release_required_1995": [
+      {
+        "status": "translation",
+        "text": "الرئيس يعفي عضو الحكومة من منصبه"
+      }
+    ],
+    "minister_report_hearing": [
+      {
+        "status": "translation",
+        "text": "يجري سماع تقرير عضو الحكومة"
+      }
+    ],
+    "motion_initiating_deputies": [
+      {
+        "status": "translation",
+        "text": "عدد النواب الذين بادروا بحجب الثقة"
+      }
+    ],
+    "motion_mazhilis_total": [
+      {
+        "status": "translation",
+        "text": "مجموع نواب المجلس عند المبادرة بحجب الثقة"
+      }
+    ],
+    "motion_supporting_votes": [
+      {
+        "status": "translation",
+        "text": "عدد الأصوات المؤيدة لحجب الثقة عن الحكومة"
+      }
+    ],
+    "new_convocation_first_session_started": [
+      {
+        "status": "translation",
+        "text": "افتتحت الدورة الأولى للبرلمان في تشكيلته الجديدة"
+      }
+    ],
+    "no_confidence_expressed_1995": [
+      {
+        "status": "translation",
+        "text": "عدم إقرار التقرير يعني حجب الثقة عن الحكومة"
+      }
+    ],
+    "no_confidence_failed_in_both_chambers": [
+      {
+        "status": "translation",
+        "text": "لم يحز حجب الثقة الأغلبية في أي من المجلسين"
+      }
+    ],
+    "no_confidence_initiative_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "مقام عتبة المبادرة بحجب الثقة الخمس"
+      }
+    ],
+    "no_confidence_initiative_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "بسط عتبة المبادرة بحجب الثقة الخمس"
+      }
+    ],
+    "no_confidence_motion": [
+      {
+        "status": "translation",
+        "text": "قدمت المبادرة بحجب الثقة بشأن هذه الحكومة"
+      }
+    ],
+    "no_confidence_motion_valid_1995": [
+      {
+        "status": "translation",
+        "text": "قدمت المبادرة بحجب الثقة من العدد المخول من النواب"
+      }
+    ],
+    "nominated_by_deputies": [
+      {
+        "status": "translation",
+        "text": "رشح نواب المجلس المرشح لرئاسته"
+      }
+    ],
+    "nominated_by_president": [
+      {
+        "status": "translation",
+        "text": "رشح رئيس الجمهورية المرشح لرئاسة القورولتاي"
+      }
+    ],
+    "objection_mazhilis_total": [
+      {
+        "status": "translation",
+        "text": "مجموع نواب مجلس النواب عند تجاوز الاعتراضات"
+      }
+    ],
+    "objection_mazhilis_votes": [
+      {
+        "status": "translation",
+        "text": "عدد أصوات مجلس النواب عند تجاوز الاعتراضات"
+      }
+    ],
+    "objection_on_constitutional_law": [
+      {
+        "status": "translation",
+        "text": "أبديت الاعتراضات على القانون الدستوري"
+      }
+    ],
+    "objection_overridden_1995": [
+      {
+        "status": "translation",
+        "text": "تجاوز البرلمان اعتراضات الرئيس"
+      }
+    ],
+    "objection_reconsidered_within_one_month": [
+      {
+        "status": "translation",
+        "text": "أجريت إعادة المناقشة في ميعاد الشهر"
+      }
+    ],
+    "objection_senate_total": [
+      {
+        "status": "translation",
+        "text": "مجموع نواب مجلس الشيوخ عند تجاوز الاعتراضات"
+      }
+    ],
+    "objection_senate_votes": [
+      {
+        "status": "translation",
+        "text": "عدد أصوات مجلس الشيوخ عند تجاوز الاعتراضات"
+      }
+    ],
+    "objections_accepted_1995": [
+      {
+        "status": "translation",
+        "text": "تعد اعتراضات الرئيس مقبولة"
+      }
+    ],
+    "office_is_teaching_research_or_creative": [
+      {
+        "status": "translation",
+        "text": "الاشتغال داخل في التدريس أو البحث أو النشاط الإبداعي المأذون فيه"
+      }
+    ],
+    "parliament": [
+      {
+        "status": "translation",
+        "text": "الجهاز هو برلمان الجمهورية"
+      }
+    ],
+    "parliament_has_two_chambers_1995": [
+      {
+        "status": "translation",
+        "text": "يتألف البرلمان من مجلسين هما مجلس الشيوخ ومجلس النواب"
+      }
+    ],
+    "parliament_is_supreme_representative_body_1995": [
+      {
+        "status": "translation",
+        "text": "البرلمان هو الجهاز التمثيلي الأعلى الذي يمارس الوظائف التشريعية"
+      }
+    ],
+    "parliament_powers_active_1995": [
+      {
+        "status": "translation",
+        "text": "تمارس صلاحيات البرلمان في هذه التشكيلة"
+      }
+    ],
+    "parliament_regulates_listed_subjects_1995": [
+      {
+        "status": "translation",
+        "text": "للبرلمان أن يصدر قوانين في الموضوعات التي عددها الدستور"
+      }
+    ],
+    "parliament_total_deputies": [
+      {
+        "status": "translation",
+        "text": "مجموع نواب البرلمان"
+      }
+    ],
+    "parliamentary_act": [
+      {
+        "status": "translation",
+        "text": "اتخذ البرلمان الصك"
+      }
+    ],
+    "party_ceased_activity": [
+      {
+        "status": "translation",
+        "text": "انتهى نشاط الحزب السياسي الذي انتخب عنه النائب"
+      }
+    ],
+    "permanent_departure_from_kazakhstan": [
+      {
+        "status": "translation",
+        "text": "انتقل النائب للإقامة الدائمة خارج كازاخستان"
+      }
+    ],
+    "pm_consent_given_1995": [
+      {
+        "status": "translation",
+        "text": "وافق مجلس النواب على تعيين رئيس الوزراء"
+      }
+    ],
+    "pm_consent_request": [
+      {
+        "status": "translation",
+        "text": "قدم ترشيح لأخذ الموافقة على تعيين رئيس الوزراء"
+      }
+    ],
+    "positive_government_opinion": [
+      {
+        "status": "translation",
+        "text": "لمشروع القانون رأي إيجابي من الحكومة"
+      }
+    ],
+    "presentation_to_president_days_1995": [
+      {
+        "status": "translation",
+        "text": "ميعاد عرض القانون المقر للتوقيع عشرة أيام"
+      }
+    ],
+    "presented_to_president_1995": [
+      {
+        "status": "translation",
+        "text": "عرض القانون على الرئيس للتوقيع"
+      }
+    ],
+    "presidential_objection": [
+      {
+        "status": "translation",
+        "text": "أبدى الرئيس اعتراضاته على هذا القانون"
+      }
+    ],
+    "presidential_proposal": [
+      {
+        "status": "translation",
+        "text": "قرر الرئيس أولوية النظر في مشروع القانون"
+      }
+    ],
+    "priority_bill_months_1995": [
+      {
+        "status": "translation",
+        "text": "ميعاد النظر المستعجل في مشروع القانون ذي الأولوية شهران"
+      }
+    ],
+    "quorum_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "مقام نصاب الجلسة الثلثان"
+      }
+    ],
+    "quorum_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "بسط نصاب الجلسة الثلثان"
+      }
+    ],
+    "reading_requirement_met_1995": [
+      {
+        "status": "translation",
+        "text": "روعي شرط عدد القراءات"
+      }
+    ],
+    "readings_held": [
+      {
+        "status": "translation",
+        "text": "عدد القراءات التي أجريت لمشروع القانون"
+      }
+    ],
+    "recalled_by_voters": [
+      {
+        "status": "translation",
+        "text": "سحب الناخبون النائب"
+      }
+    ],
+    "reduces_revenue_or_increases_expenditure": [
+      {
+        "status": "translation",
+        "text": "مشروع القانون ينص على تقليل إيرادات الدولة أو زيادة النفقات"
+      }
+    ],
+    "request_by_chamber_chairs": [
+      {
+        "status": "translation",
+        "text": "قدم الطلب من رئيسي المجلسين"
+      }
+    ],
+    "request_initiating_votes": [
+      {
+        "status": "translation",
+        "text": "عدد النواب الذين بادروا بالدورة الاستثنائية"
+      }
+    ],
+    "resides_in_kazakhstan_years": [
+      {
+        "status": "translation",
+        "text": "عدد سنوات الإقامة الأخيرة في كازاخستان"
+      }
+    ],
+    "resides_in_region_years": [
+      {
+        "status": "translation",
+        "text": "عدد سنوات الإقامة الأخيرة في إقليم الولاية أو المدينة المعنية"
+      }
+    ],
+    "resignation_submitted": [
+      {
+        "status": "translation",
+        "text": "قدم النائب استقالته"
+      }
+    ],
+    "seeks_mazhilis_seat": [
+      {
+        "status": "translation",
+        "text": "الشخص يطلب النيابة في مجلس النواب"
+      }
+    ],
+    "seeks_senate_seat": [
+      {
+        "status": "translation",
+        "text": "الشخص يطلب النيابة في مجلس الشيوخ"
+      }
+    ],
+    "senate": [
+      {
+        "status": "translation",
+        "text": "المجلس هو مجلس الشيوخ"
+      }
+    ],
+    "senate_appointed_by_president_1995": [
+      {
+        "status": "translation",
+        "text": "عدد نواب مجلس الشيوخ الذين يعينهم الرئيس عشرة"
+      }
+    ],
+    "senate_appointed_on_assembly_proposal_1995": [
+      {
+        "status": "translation",
+        "text": "عدد نواب مجلس الشيوخ الذين يعينون باقتراح من جمعية شعب كازاخستان خمسة"
+      }
+    ],
+    "senate_approved": [
+      {
+        "status": "translation",
+        "text": "وافق مجلس الشيوخ على مشروع القانون"
+      }
+    ],
+    "senate_consent_given": [
+      {
+        "status": "translation",
+        "text": "وافق مجلس الشيوخ على التعيين"
+      }
+    ],
+    "senate_exercises_parliament_functions_1995": [
+      {
+        "status": "translation",
+        "text": "مجلس الشيوخ يمارس وظائف البرلمان في إقرار القوانين"
+      }
+    ],
+    "senate_present": [
+      {
+        "status": "translation",
+        "text": "عدد نواب مجلس الشيوخ الحاضرين"
+      }
+    ],
+    "senate_review_days_1995": [
+      {
+        "status": "translation",
+        "text": "ميعاد نظر مجلس الشيوخ في مشروع القانون ستون يوما"
+      }
+    ],
+    "senate_review_days_elapsed": [
+      {
+        "status": "translation",
+        "text": "انقضى ميعاد نظر مجلس الشيوخ في مشروع القانون"
+      }
+    ],
+    "senate_rotation_years_1995": [
+      {
+        "status": "translation",
+        "text": "دورية تجديد نصف نواب مجلس الشيوخ ثلاث سنوات"
+      }
+    ],
+    "senate_seats": [
+      {
+        "status": "translation",
+        "text": "مجموع مقاعد النواب في مجلس الشيوخ في الجلسة"
+      }
+    ],
+    "senate_term_years_1995": [
+      {
+        "status": "translation",
+        "text": "مدة صلاحيات نائب مجلس الشيوخ ست سنوات"
+      }
+    ],
+    "senate_took_no_decision": [
+      {
+        "status": "translation",
+        "text": "لم يتخذ مجلس الشيوخ قرارا في مشروع القانون"
+      }
+    ],
+    "senate_total_deputies": [
+      {
+        "status": "translation",
+        "text": "مجموع نواب مجلس الشيوخ"
+      }
+    ],
+    "senate_votes": [
+      {
+        "status": "translation",
+        "text": "عدد أصوات نواب مجلس الشيوخ المؤيدة لمشروع القانون"
+      }
+    ],
+    "senator_minimum_age_1995": [
+      {
+        "status": "translation",
+        "text": "الحد الأدنى لسن نائب مجلس الشيوخ ثلاثون سنة"
+      }
+    ],
+    "senator_regional_residence_years_1995": [
+      {
+        "status": "translation",
+        "text": "مدة إقامة نائب مجلس الشيوخ المطلوبة في الإقليم ثلاث سنوات"
+      }
+    ],
+    "senator_work_experience_years_1995": [
+      {
+        "status": "translation",
+        "text": "خبرة العمل المطلوبة في نائب مجلس الشيوخ خمس سنوات"
+      }
+    ],
+    "sitting_quorate_1995": [
+      {
+        "status": "translation",
+        "text": "جلسة المجلسين صحيحة"
+      }
+    ],
+    "standing_committees": [
+      {
+        "status": "translation",
+        "text": "عدد اللجان الدائمة في المجلس"
+      }
+    ],
+    "standing_committees_max_1995": [
+      {
+        "status": "translation",
+        "text": "الحد الأقصى للجان الدائمة في المجلس سبع"
+      }
+    ],
+    "unexcused_absences": [
+      {
+        "status": "translation",
+        "text": "عدد مرات تخلف النائب عن الجلسات بغير عذر مقبول"
+      }
+    ],
+    "unexcused_absences_limit_1995": [
+      {
+        "status": "translation",
+        "text": "عتبة تطبيق تدابير الجزاء على التخلف أكثر من ثلاث مرات"
+      }
+    ],
+    "veto_override_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "مقام عتبة تجاوز اعتراضات الرئيس الثلثان"
+      }
+    ],
+    "veto_override_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "بسط عتبة تجاوز اعتراضات الرئيس الثلثان"
+      }
+    ],
+    "vote_delegated": [
+      {
+        "status": "translation",
+        "text": "تنازل النائب عن حق التصويت لغيره"
+      }
+    ],
+    "within_one_year_after_prior_dissolution": [
+      {
+        "status": "translation",
+        "text": "لم تمض سنة واحدة على يوم الحل السابق"
+      }
+    ],
+    "work_experience_years": [
+      {
+        "status": "translation",
+        "text": "خبرة عمل الشخص بالسنين التامة"
+      }
+    ]
+  },
+  "language": "ar",
+  "package": "kz.constitution1995.parliament"
+}

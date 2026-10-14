@@ -1,0 +1,674 @@
+{
+  "$comment": "哈萨克斯坦共和国宪法程序包的中文（简体）标签叠加层（DECISION-0070）。本文件不参与编译，也不进入 CLIR 规范字节，仅由展示层读取（lawref verbalize --labels、MCP 资源 law://<程序包>/verbalized/zh、工作台）。译文由形式化人员依据各节点的俄文标签（ru-KZ）译出，术语参照宪法学通用汉语表述，状态为 translation（工作译文），并非官方译本。键为声明的本地名称。",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "Amendment": [
+      {
+        "status": "translation",
+        "text": "宪法的修改或者补充"
+      }
+    ],
+    "AmendmentMayBeSubmitted1995": [
+      {
+        "status": "translation",
+        "text": "第九十一条第三款（1995年版）。未经宪法法院作出肯定性结论，修改案不得提交全民公决，也不得提交议会审议"
+      }
+    ],
+    "AmendmentMayBeSubmitted1995/unless/0": [
+      {
+        "status": "translation",
+        "text": "第九十一条第三款（1995年版）。未经宪法法院作出肯定性结论，修改案不得提交全民公决，也不得提交议会审议"
+      }
+    ],
+    "AmendmentReferendumDoubleThreshold": [
+      {
+        "status": "translation",
+        "text": "第九十二条第三款。修正案在不少于三分之二的州、共和国直辖市和首都中获得参加投票者过半数赞成的，即为通过"
+      }
+    ],
+    "AmendmentViolatesEntrenchedCore1995": [
+      {
+        "status": "translation",
+        "text": "第九十一条第二款（1995年版）。独立性、单一制、领土完整、政体、根本原则、总统七年任期及其仅可当选一次，均不得变更"
+      }
+    ],
+    "Constitution1995InForceOnPublication": [
+      {
+        "status": "translation",
+        "text": "第九十条第一款（1995年版）。宪法自全民公决结果正式公布之日起生效，此前通过的宪法同时失效"
+      }
+    ],
+    "ConstitutionEdition": [
+      {
+        "status": "translation",
+        "text": "宪法版本"
+      }
+    ],
+    "ConstitutionalConclusion": [
+      {
+        "status": "translation",
+        "text": "宪法法院关于修正案是否符合宪法要求的结论"
+      }
+    ],
+    "EffectiveDateAppointmentTwoMonths": [
+      {
+        "status": "translation",
+        "text": "第九十五条。自宪法生效之日起算期限的过渡期任命，应当在两个月内完成"
+      }
+    ],
+    "EntrenchmentConclusion": [
+      {
+        "status": "translation",
+        "text": "第九十三条。修正案符合第二条第七款和第四十三条第五款要求的，宪法法院的结论为肯定性结论"
+      }
+    ],
+    "EntrenchmentConclusion1995": [
+      {
+        "status": "translation",
+        "text": "第九十一条第三款（1995年版）。宪法法院作出修改案符合第二款要求的结论后，修改案方可提交全民公决或者议会审议"
+      }
+    ],
+    "ExistingActsContinueIfCompatible": [
+      {
+        "status": "translation",
+        "text": "第九十六条第一款。宪法生效之日有效的法律和其他规范性法律文件，在不与宪法相抵触的范围内适用"
+      }
+    ],
+    "ExistingActsContinueIfCompatible/unless/0": [
+      {
+        "status": "translation",
+        "text": "第九十六条第一款。宪法生效之日有效的法律和其他规范性法律文件，在不与宪法相抵触的范围内适用"
+      }
+    ],
+    "FirstKurultaiElectionTransition": [
+      {
+        "status": "translation",
+        "text": "第九十五条第一款。库鲁尔泰选举应当自宪法生效之日起一个月内宣布，并在两个月内举行"
+      }
+    ],
+    "FirstSessionAppointmentTwoMonths": [
+      {
+        "status": "translation",
+        "text": "第九十五条第二款至第四款。过渡期任命应当自第一届库鲁尔泰第一次会议开幕之日起两个月内完成"
+      }
+    ],
+    "IncumbentContinuity": [
+      {
+        "status": "translation",
+        "text": "第九十五条。在新的组成产生之前，现任公职人员保留其职权"
+      }
+    ],
+    "KurultaiElection": [
+      {
+        "status": "translation",
+        "text": "库鲁尔泰选举"
+      }
+    ],
+    "LegalAct": [
+      {
+        "status": "translation",
+        "text": "法律或者其他规范性法律文件"
+      }
+    ],
+    "ListIsNotASubjectReading": [
+      {
+        "status": "translation",
+        "text": "第九十一条第二款的甲种解读：该列举保护所列各项，但不保护其自身"
+      }
+    ],
+    "ListItselfEntrenchedReading": [
+      {
+        "status": "translation",
+        "text": "第九十一条第二款的乙种解读：该列举本身的不可变更性属于根本原则"
+      }
+    ],
+    "NarrowingAmendmentFilter1995": [
+      {
+        "status": "translation",
+        "text": "缩减性修改案经法院作出结论后可以提交，但缩减未被认定为侵犯不可变更的核心"
+      }
+    ],
+    "NarrowingAmendmentFilter1995/unless/0": [
+      {
+        "status": "translation",
+        "text": "缩减性修改案经法院作出结论后可以提交，但缩减未被认定为侵犯不可变更的核心"
+      }
+    ],
+    "NarrowingOutsideCore1995": [
+      {
+        "status": "translation",
+        "text": "甲种解读：第二款的列举本身不属于受保护事项，缩减该列举属于普通修改案"
+      }
+    ],
+    "NarrowingTouchesCore1995": [
+      {
+        "status": "translation",
+        "text": "乙种解读：第二款列举的不可变更性属于根本原则，缩减该列举即侵犯不可变更的核心"
+      }
+    ],
+    "NewConstitutionInForceFromJulyFirst": [
+      {
+        "status": "translation",
+        "text": "第九十四条第一款。宪法自2026年7月1日起生效"
+      }
+    ],
+    "OldActsApplyIfCompatible1995": [
+      {
+        "status": "translation",
+        "text": "第九十二条第四款（1995年版）。宪法生效时有效的立法在不与宪法相抵触的范围内适用"
+      }
+    ],
+    "OldConstitutionRepealedSimultaneously": [
+      {
+        "status": "translation",
+        "text": "第九十四条第一款。此前通过的宪法自新宪法生效之时同时失效"
+      }
+    ],
+    "ParliamentaryAmendmentFourFifths1995": [
+      {
+        "status": "translation",
+        "text": "第九十一条第一款（1995年版）。总统否决议会关于举行全民公决的建议的，议会有权以两院各自议员总数不少于五分之四的多数通过修改宪法的法律"
+      }
+    ],
+    "ParliamentaryAmendmentLaw": [
+      {
+        "status": "translation",
+        "text": "议会关于宪法修改和补充的法律（1995年版）"
+      }
+    ],
+    "PositiveConclusionRequiredForReferendum": [
+      {
+        "status": "translation",
+        "text": "第九十三条。宪法法院作出肯定性结论后，修正案提交全民公决"
+      }
+    ],
+    "Referendum": [
+      {
+        "status": "translation",
+        "text": "全民公决"
+      }
+    ],
+    "ReferendumTurnoutMoreThanHalf": [
+      {
+        "status": "translation",
+        "text": "第九十二条第二款。有权参加全民公决的公民过半数参加投票的，全民公决即为有效举行"
+      }
+    ],
+    "TransitionalAppointment": [
+      {
+        "status": "translation",
+        "text": "过渡期作出的任命"
+      }
+    ],
+    "amendment_approved_by_referendum": [
+      {
+        "status": "translation",
+        "text": "宪法的修改和补充已由全民公决通过"
+      }
+    ],
+    "amendment_may_be_submitted_1995": [
+      {
+        "status": "translation",
+        "text": "修改案可以提交全民公决（1995年版）"
+      }
+    ],
+    "amendment_may_be_submitted_to_referendum": [
+      {
+        "status": "translation",
+        "text": "修正案可以提交全民公决"
+      }
+    ],
+    "amendment_mazhilis_total": [
+      {
+        "status": "translation",
+        "text": "马日利斯议员总数（1995年版）"
+      }
+    ],
+    "amendment_mazhilis_votes": [
+      {
+        "status": "translation",
+        "text": "马日利斯议员对修改案投赞成票的票数（1995年版）"
+      }
+    ],
+    "amendment_narrows_entrenched_list_1995": [
+      {
+        "status": "translation",
+        "text": "修改案的内容：将某一事项自第九十一条第二款的列举中删除"
+      }
+    ],
+    "amendment_referendum_declined_by_president": [
+      {
+        "status": "translation",
+        "text": "总统否决了将修改案提交全民公决的建议（1995年版）"
+      }
+    ],
+    "amendment_senate_total": [
+      {
+        "status": "translation",
+        "text": "参议院议员总数（1995年版）"
+      }
+    ],
+    "amendment_senate_votes": [
+      {
+        "status": "translation",
+        "text": "参议院议员对修改案投赞成票的票数（1995年版）"
+      }
+    ],
+    "amendment_touches_subject": [
+      {
+        "status": "translation",
+        "text": "修正案涉及所列事项"
+      }
+    ],
+    "amendment_violates_entrenched_core_1995": [
+      {
+        "status": "translation",
+        "text": "修改案违反1995年宪法不可变更的核心"
+      }
+    ],
+    "appointment_completed_within_two_months": [
+      {
+        "status": "translation",
+        "text": "任命已在两个月内完成"
+      }
+    ],
+    "approving_regions_cities_and_capital": [
+      {
+        "status": "translation",
+        "text": "修正案获得通过的州、共和国直辖市和首都的数目"
+      }
+    ],
+    "cabinet_becomes_government_1995": [
+      {
+        "status": "translation",
+        "text": "部长会议取得共和国政府的地位（1995年版）"
+      }
+    ],
+    "conclusion_confirms_article_91_paragraph_2": [
+      {
+        "status": "translation",
+        "text": "结论确认修改案符合第九十一条第二款（1995年版）"
+      }
+    ],
+    "conclusion_for_amendment": [
+      {
+        "status": "translation",
+        "text": "宪法法院已就该修正案作出结论"
+      }
+    ],
+    "conforms_article_2_paragraph_7": [
+      {
+        "status": "translation",
+        "text": "修正案符合宪法第二条第七款的要求"
+      }
+    ],
+    "conforms_article_43_paragraph_5": [
+      {
+        "status": "translation",
+        "text": "修正案符合宪法第四十三条第五款的要求"
+      }
+    ],
+    "constitution_1995": [
+      {
+        "status": "translation",
+        "text": "1995年宪法"
+      }
+    ],
+    "constitution_1995_in_force": [
+      {
+        "status": "translation",
+        "text": "1995年宪法有效"
+      }
+    ],
+    "constitution_1995_referendum_results_published": [
+      {
+        "status": "translation",
+        "text": "1995年共和国全民公决结果已公布"
+      }
+    ],
+    "constitution_2026": [
+      {
+        "status": "translation",
+        "text": "2026年宪法"
+      }
+    ],
+    "constitution_ceases_date": [
+      {
+        "status": "translation",
+        "text": "宪法版本失效之日"
+      }
+    ],
+    "constitution_day_is_state_holiday_1995": [
+      {
+        "status": "translation",
+        "text": "在全民公决通过宪法之日被定为宪法日"
+      }
+    ],
+    "constitution_effective_date": [
+      {
+        "status": "translation",
+        "text": "宪法版本生效之日"
+      }
+    ],
+    "constitution_in_force": [
+      {
+        "status": "translation",
+        "text": "宪法版本有效"
+      }
+    ],
+    "constitution_repealed": [
+      {
+        "status": "translation",
+        "text": "宪法版本已失效"
+      }
+    ],
+    "constitutional_council_acts_until_court_1995": [
+      {
+        "status": "translation",
+        "text": "在宪法法院成立之前由宪法委员会行使职权（1995年版）"
+      }
+    ],
+    "constitutional_court_positive_conclusion": [
+      {
+        "status": "translation",
+        "text": "宪法法院关于修正案合宪性的结论为肯定性结论"
+      }
+    ],
+    "constitutional_court_positive_conclusion_1995": [
+      {
+        "status": "translation",
+        "text": "关于修改案是否符合不可变更核心的结论为肯定性结论（1995年版）"
+      }
+    ],
+    "continuity_preserved": [
+      {
+        "status": "translation",
+        "text": "职权行使的连续性得以保持"
+      }
+    ],
+    "contrary_to_1995_constitution": [
+      {
+        "status": "translation",
+        "text": "该文件与1995年宪法相抵触"
+      }
+    ],
+    "contrary_to_2026_constitution": [
+      {
+        "status": "translation",
+        "text": "该文件与2026年宪法相抵触"
+      }
+    ],
+    "current_date": [
+      {
+        "status": "translation",
+        "text": "提问所针对的日期"
+      }
+    ],
+    "deadline_from_effective_date": [
+      {
+        "status": "translation",
+        "text": "任命期限自宪法生效之日起算"
+      }
+    ],
+    "deadline_from_first_session": [
+      {
+        "status": "translation",
+        "text": "任命期限自第一届库鲁尔泰第一次会议开幕之日起算"
+      }
+    ],
+    "edition_1995": [
+      {
+        "status": "translation",
+        "text": "该对象为1995年宪法版本"
+      }
+    ],
+    "edition_2026": [
+      {
+        "status": "translation",
+        "text": "该对象为2026年宪法版本"
+      }
+    ],
+    "election_announced_within_one_month": [
+      {
+        "status": "translation",
+        "text": "选举已自宪法生效之日起一个月内宣布"
+      }
+    ],
+    "election_held_within_two_months": [
+      {
+        "status": "translation",
+        "text": "选举已自宪法生效之日起两个月内举行"
+      }
+    ],
+    "eligible_referendum_citizens": [
+      {
+        "status": "translation",
+        "text": "有权参加全民公决的公民人数"
+      }
+    ],
+    "existing_justice_bodies_continue_1995": [
+      {
+        "status": "translation",
+        "text": "现有司法机关在新机关组成之前保留职权（1995年版）"
+      }
+    ],
+    "first_constitutional_council_composition_1995": [
+      {
+        "status": "translation",
+        "text": "第一届宪法委员会依过渡条款组成（1995年版）"
+      }
+    ],
+    "first_kurultai_election": [
+      {
+        "status": "translation",
+        "text": "该选举为第一届库鲁尔泰选举"
+      }
+    ],
+    "first_kurultai_transition_timely": [
+      {
+        "status": "translation",
+        "text": "向第一届库鲁尔泰的过渡已在宪法规定的期限内完成"
+      }
+    ],
+    "first_senate_split_term_1995": [
+      {
+        "status": "translation",
+        "text": "第一届参议院半数议员按缩短的任期当选（1995年版）"
+      }
+    ],
+    "incumbent_continues_until_successor": [
+      {
+        "status": "translation",
+        "text": "现任公职人员在新的组成产生之前保留职权"
+      }
+    ],
+    "language_conditions_duty_declared_1995": [
+      {
+        "status": "translation",
+        "text": "国家有义务为哈萨克斯坦人民各民族语言的学习和发展创造条件（1995年版）"
+      }
+    ],
+    "narrowing_amendment_passes_filter_1995": [
+      {
+        "status": "translation",
+        "text": "缩减第二款列举的修改案通过第九十一条第三款的筛选"
+      }
+    ],
+    "narrowing_deemed_outside_core_1995": [
+      {
+        "status": "translation",
+        "text": "列举的缩减被认定为不涉及第二款所保护的事项"
+      }
+    ],
+    "old_act_applicable": [
+      {
+        "status": "translation",
+        "text": "该文件在不与宪法相抵触的范围内适用"
+      }
+    ],
+    "old_act_applicable_1995": [
+      {
+        "status": "translation",
+        "text": "该文件在不与1995年宪法相抵触的范围内适用"
+      }
+    ],
+    "old_act_predating_1995": [
+      {
+        "status": "translation",
+        "text": "该文件在1995年宪法生效前已有效"
+      }
+    ],
+    "old_legal_act": [
+      {
+        "status": "translation",
+        "text": "该文件在宪法生效之日有效"
+      }
+    ],
+    "parliamentary_amendment_adopted_1995": [
+      {
+        "status": "translation",
+        "text": "修改宪法的法律已由议会以特定多数通过（1995年版）"
+      }
+    ],
+    "parliamentary_amendment_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "修改案议会门槛的分母为五分之四（1995年版）"
+      }
+    ],
+    "parliamentary_amendment_law": [
+      {
+        "status": "translation",
+        "text": "议会法律对宪法作出该项修改（1995年版）"
+      }
+    ],
+    "parliamentary_amendment_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "修改案议会门槛的分子为五分之四（1995年版）"
+      }
+    ],
+    "protected_locator": [
+      {
+        "status": "translation",
+        "text": "被列入不可变更核心的宪法条款"
+      }
+    ],
+    "protected_subject_1995": [
+      {
+        "status": "translation",
+        "text": "被列入1995年宪法不可变更核心的事项"
+      }
+    ],
+    "referendum_approval_denominator": [
+      {
+        "status": "translation",
+        "text": "修正案通过门槛的分母为二分之一"
+      }
+    ],
+    "referendum_approval_numerator": [
+      {
+        "status": "translation",
+        "text": "修正案通过门槛的分子为二分之一"
+      }
+    ],
+    "referendum_for_amendment": [
+      {
+        "status": "translation",
+        "text": "就该项宪法修改举行全民公决"
+      }
+    ],
+    "referendum_held": [
+      {
+        "status": "translation",
+        "text": "全民公决视为有效举行"
+      }
+    ],
+    "referendum_participants": [
+      {
+        "status": "translation",
+        "text": "参加投票的公民人数"
+      }
+    ],
+    "referendum_territory_denominator": [
+      {
+        "status": "translation",
+        "text": "地域门槛的分母为三分之二"
+      }
+    ],
+    "referendum_territory_numerator": [
+      {
+        "status": "translation",
+        "text": "地域门槛的分子为三分之二"
+      }
+    ],
+    "referendum_turnout_denominator": [
+      {
+        "status": "translation",
+        "text": "全民公决参加率门槛的分母为二分之一"
+      }
+    ],
+    "referendum_turnout_numerator": [
+      {
+        "status": "translation",
+        "text": "全民公决参加率门槛的分子为二分之一"
+      }
+    ],
+    "seven_year_term_applies_from_post_2005_election_1995": [
+      {
+        "status": "translation",
+        "text": "总统七年任期适用于2005年之后当选的人（1995年版）"
+      }
+    ],
+    "single_election_rule_applies_prospectively_1995": [
+      {
+        "status": "translation",
+        "text": "仅可当选一次的规则自将来适用（1995年版）"
+      }
+    ],
+    "total_regions_cities_and_capital": [
+      {
+        "status": "translation",
+        "text": "州、共和国直辖市和首都的总数"
+      }
+    ],
+    "transitional_appointment": [
+      {
+        "status": "translation",
+        "text": "该任命属于过渡期任命"
+      }
+    ],
+    "transitional_appointment_timely": [
+      {
+        "status": "translation",
+        "text": "过渡期任命已按期完成"
+      }
+    ],
+    "transitional_constitutional_law_years_1995": [
+      {
+        "status": "translation",
+        "text": "过渡期宪法性法律的制定期限为一年（1995年版）"
+      }
+    ],
+    "transitional_other_law_years_1995": [
+      {
+        "status": "translation",
+        "text": "过渡期其他所列法律的制定期限为两年（1995年版）"
+      }
+    ],
+    "vice_president_powers_preserved_1995": [
+      {
+        "status": "translation",
+        "text": "副总统的职权在过渡期内予以保留（1995年版）"
+      }
+    ],
+    "votes_for_amendment": [
+      {
+        "status": "translation",
+        "text": "对宪法修改和补充投赞成票的票数"
+      }
+    ]
+  },
+  "language": "zh",
+  "package": "kz.constitution.amendment"
+}

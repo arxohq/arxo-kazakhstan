@@ -1,0 +1,2606 @@
+{
+  "$comment": "Stratum praesentationis Latinum pacti kz.constitution.rights (DECISION-0070). Hoc tabularium in CLIR non ingreditur et a solo strato praesentationis legitur (verbalize --labels, MCP, pons mensae operariae). Versio ex notis Russicis authenticis (ru-KZ) eiusdem pacti ducta est; status omnium notarum est 'translation', id est versio operosa a formalizatore facta, non editio officialis. Clavis est nomen locale declarationis.",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "AccessToAffectingDocumentsDuty": [
+      {
+        "status": "translation",
+        "text": "Articulus 21, numerus 3. Magistratus publici, consociationes, magistratus et instrumenta communicationis socialis tenentur unicuique facultatem praebere documenta iura et commoda eius attingentia cognoscendi"
+      }
+    ],
+    "AdultChildParentCareDuty": [
+      {
+        "status": "translation",
+        "text": "Articulus 30, numerus 4. Liberi adulti laboris capaces de parentibus laboris incapacibus curare tenentur"
+      }
+    ],
+    "AdultChildParentCareDuty1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 27, numerus 3 (recensio anni 1995). Liberi adulti laboris capaces de parentibus laboris incapacibus curare tenentur"
+      }
+    ],
+    "AffordableStateHousingDuty1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 25, numerus 2 (recensio anni 1995). Generibus lege designatis habitatio pretio accessibili ex fundis habitationis publicis praebetur"
+      }
+    ],
+    "AnnualPaidLeaveDuty1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 24, numerus 4 (recensio anni 1995). Operantibus ex contractu laboris commeatus annuus mercede solutus praestatur"
+      }
+    ],
+    "ArrestRequiresCourtDecisionAndAppeal": [
+      {
+        "status": "translation",
+        "text": "Articulus 18, numerus 2. Custodia solum ex sententia iudicii licet, dato iure appellandi"
+      }
+    ],
+    "ArrestRequiresCourtSanctionAndAppeal1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 16, numerus 2 (recensio anni 1995). Comprehensio et custodia — solum ex auctoritate iudicii et cum iure appellandi"
+      }
+    ],
+    "Assembly": [
+      {
+        "status": "translation",
+        "text": "Conventus pacificus"
+      }
+    ],
+    "AssemblyRestrictionRequiresLawAndGoal": [
+      {
+        "status": "translation",
+        "text": "Articulus 34. Restrictio conventuum pacificorum legem et finem constitutionalem exigit"
+      }
+    ],
+    "AssemblyRestrictionRequiresLawAndGoal1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 32 (recensio anni 1995). Restrictio iuris conventuum lege in finibus constitutionalibus enumeratis licet"
+      }
+    ],
+    "Association": [
+      {
+        "status": "translation",
+        "text": "Consociatio civium"
+      }
+    ],
+    "CandidateDisqualification/alt/1": [
+      {
+        "status": "translation",
+        "text": "Articulus 35, numerus 3. Index clausus causarum quibus quis eligi non potest"
+      }
+    ],
+    "CandidateDisqualification/alt/2": [
+      {
+        "status": "translation",
+        "text": "Articulus 35, numerus 3. Index clausus causarum quibus quis eligi non potest"
+      }
+    ],
+    "CandidateDisqualification/alt/3": [
+      {
+        "status": "translation",
+        "text": "Articulus 35, numerus 3. Index clausus causarum quibus quis eligi non potest"
+      }
+    ],
+    "CandidateDisqualification1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "Articulus 33, numerus 3 (recensio anni 1995). Eligi non possunt a iudicio incapaces declarati et in locis libertatis privationis detenti"
+      }
+    ],
+    "CandidateDisqualification1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "Articulus 33, numerus 3 (recensio anni 1995). Eligi non possunt a iudicio incapaces declarati et in locis libertatis privationis detenti"
+      }
+    ],
+    "CareForChild": [
+      {
+        "status": "translation",
+        "text": "Articulus 30, numerus 3. Cura liberorum eorumque educatio — ius naturale et officium parentum"
+      }
+    ],
+    "CareForChild1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 27, numerus 2 (recensio anni 1995). Cura liberorum eorumque educatio — ius naturale et officium parentum"
+      }
+    ],
+    "CareForIncapacitatedParent": [
+      {
+        "status": "translation",
+        "text": "Articulus 30, numerus 4. Liberi adulti laboris capaces de parentibus laboris incapacibus curare tenentur"
+      }
+    ],
+    "CareForIncapacitatedParent1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 27, numerus 3 (recensio anni 1995). Liberi adulti laboris capaces de parentibus laboris incapacibus curare tenentur"
+      }
+    ],
+    "CensorshipImmunity": [
+      {
+        "status": "translation",
+        "text": "Articulus 23, numerus 5. Censura prohibetur"
+      }
+    ],
+    "CensorshipImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 20, numerus 1 (recensio anni 1995). Censura prohibetur"
+      }
+    ],
+    "CensorshipProhibition": [
+      {
+        "status": "translation",
+        "text": "Articulus 23, numerus 5. Censura prohibetur"
+      }
+    ],
+    "Child": [
+      {
+        "status": "translation",
+        "text": "Puer"
+      }
+    ],
+    "ChooseOccupationFreely": [
+      {
+        "status": "translation",
+        "text": "Articulus 27, numerus 1. Ius ad laborem, ad liberam generis actionis et professionis electionem"
+      }
+    ],
+    "ChooseOccupationFreely1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 24, numerus 1 (recensio anni 1995). Ius ad libertatem laboris, ad liberam generis actionis et professionis electionem"
+      }
+    ],
+    "CitizenAccessToAffectingDocumentsDuty1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 18, numerus 3 (recensio anni 1995). Unicuique civi facultas praebetur documenta eum attingentia cognoscendi"
+      }
+    ],
+    "CitizenNonExtraditionImmunity": [
+      {
+        "status": "translation",
+        "text": "Articulus 14, numerus 1. Civis Rei Publicae Kazachstaniae civitati externae dedi non potest"
+      }
+    ],
+    "CitizenNonExtraditionImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 11, numerus 1 (recensio anni 1995). Civis Rei Publicae civitati externae dedi non potest"
+      }
+    ],
+    "CitizenReturnImmunity": [
+      {
+        "status": "translation",
+        "text": "Articulus 24, numerus 2. Civis sine impedimento in Kazachstaniam redire ius habet"
+      }
+    ],
+    "CitizenReturnImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 21, numerus 2 (recensio anni 1995). Cives ius habent sine impedimento in Rem Publicam redeundi"
+      }
+    ],
+    "CitizenshipDeprivationPower": [
+      {
+        "status": "translation",
+        "text": "Articulus 13, numerus 2. Privatio iuris civitatis solum ex sententia iudicii propter delicta terroristica vel aliud grave damnum commodis nationalibus Rei Publicae illatum licet"
+      }
+    ],
+    "CitizenshipDeprivationPower1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 10, numerus 2 (recensio anni 1995). Privatio iuris civitatis solum ex sententia iudicii propter delicta terroristica vel aliud grave damnum commodis vitalibus illatum"
+      }
+    ],
+    "CivilServiceRequirement": [
+      {
+        "status": "translation",
+        "text": "Requisitum iis propositum qui servitium publicum ineunt"
+      }
+    ],
+    "CivilServiceRequirementMustReflectOfficialDuties": [
+      {
+        "status": "translation",
+        "text": "Articulus 35, numerus 4. Requisita magistratui publico natura officiorum muneris circumscribuntur"
+      }
+    ],
+    "CivilServiceRequirementMustReflectOfficialDuties1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 33, numerus 4 (recensio anni 1995). Requisita candidato ad munus publicum sola natura officiorum muneris determinantur"
+      }
+    ],
+    "CompensateUnlawfulStateHarm": [
+      {
+        "status": "translation",
+        "text": "Articulus 15, numerus 6. Civitas damnum ex actionibus illegitimis organorum suorum resarcit"
+      }
+    ],
+    "CompensatedExpropriationOnly": [
+      {
+        "status": "translation",
+        "text": "Articulus 29, numerus 3. Alienatio coacta rerum ad usus publicos solum sub condicione compensationis aequalis licet"
+      }
+    ],
+    "CompensatedExpropriationOnly1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 26, numerus 3 (recensio anni 1995). Alienatio coacta — solum cum compensatione aequali"
+      }
+    ],
+    "ConductEnterprise": [
+      {
+        "status": "translation",
+        "text": "Articulus 29, numerus 4. Res Publica Kazachstania ius ad libertatem negotiationis praestat"
+      }
+    ],
+    "ConductEnterprise1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 26, numerus 4 (recensio anni 1995). Ius ad libertatem negotiationis"
+      }
+    ],
+    "ConstitutionComplianceDuty": [
+      {
+        "status": "translation",
+        "text": "Articulus 36, numerus 1. Quisque tenetur Constitutionem et leges Rei Publicae observare, iura, libertates, honorem et dignitatem aliorum revereri"
+      }
+    ],
+    "ConstitutionComplianceDuty1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 34, numerus 1 (recensio anni 1995). Quisque tenetur Constitutionem et leges observare, iura et dignitatem aliorum revereri"
+      }
+    ],
+    "ContinuedDetentionBarredWithoutCourtDecision": [
+      {
+        "status": "translation",
+        "text": "Articulus 18, numerus 2. Detentio ultra terminum lege statutum prohibetur, dum sententia iudicii deest"
+      }
+    ],
+    "ContinuedDetentionBarredWithoutCourtDecision/unless/0": [
+      {
+        "status": "translation",
+        "text": "Articulus 18, numerus 2. Detentio ultra terminum lege statutum prohibetur, dum sententia iudicii deest"
+      }
+    ],
+    "ContinuedDetentionProhibition": [
+      {
+        "status": "translation",
+        "text": "Articulus 18, numerus 2. Sine sententia iudicii homo detentioni ultra terminos lege praevisos subici non potest"
+      }
+    ],
+    "CoreRight": [
+      {
+        "status": "translation",
+        "text": "Ius vel libertas cuius restrictionem Constitutio anni 2026 non admittit"
+      }
+    ],
+    "CoreRight1995": [
+      {
+        "status": "translation",
+        "text": "Ius vel libertas cuius restrictionem Constitutio anni 1995 non admittebat"
+      }
+    ],
+    "CoreRightsRestrictionImmunity": [
+      {
+        "status": "translation",
+        "text": "Articulus 41, numerus 3. Nucleus iurium restrictioni non obnoxius"
+      }
+    ],
+    "CoreRightsRestrictionImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 39, numerus 3 (recensio anni 1995). Nullo casu restrictioni subiciuntur iura articulorum 11, 13-15, numeri 1 articuli 16, articulorum 17, 19, 22 et numeri 2 articuli 26"
+      }
+    ],
+    "CounselFromDetentionDuty": [
+      {
+        "status": "translation",
+        "text": "Articulus 18, numerus 4. Detentus, suspectus, accusatus ius habet auxilio advocati uti ex momento detentionis"
+      }
+    ],
+    "CounselFromDetentionDuty1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 16, numerus 3 (recensio anni 1995). Ius auxilio advocati uti ex momento detentionis, comprehensionis vel accusationis propositae"
+      }
+    ],
+    "CourtOrderRequiredForContinuedDetention": [
+      {
+        "status": "translation",
+        "text": "Articulus 18, numerus 2. Sine sententia iudicii homo detentioni ultra terminos lege praevisos subici non potest"
+      }
+    ],
+    "DeathPenaltyImmunity": [
+      {
+        "status": "translation",
+        "text": "Articulus 17, numerus 3. Poena capitis prohibetur"
+      }
+    ],
+    "DeathPenaltyImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 15, numerus 2 (recensio anni 1995). Poena capitis prohibetur"
+      }
+    ],
+    "DeathPenaltyProhibition": [
+      {
+        "status": "translation",
+        "text": "Articulus 17, numerus 3. Poena capitis prohibetur"
+      }
+    ],
+    "DeclareNationalIdentity": [
+      {
+        "status": "translation",
+        "text": "Articulus 22, numerus 1. Quisque homo ius habet nationem suam determinandi, indicandi vel non indicandi"
+      }
+    ],
+    "DeclareNationalPartyReligiousIdentity1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 19, numerus 1 (recensio anni 1995). Quisque ius habet nationem, factionem et religionem determinandi et indicandi vel non indicandi"
+      }
+    ],
+    "DefenceDuty": [
+      {
+        "status": "translation",
+        "text": "Articulus 39, numerus 1. Defensio Rei Publicae Kazachstaniae — sacrum debitum et officium cuiusque civis eius"
+      }
+    ],
+    "DefenceDuty1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 36 (recensio anni 1995). Defensio Rei Publicae — sacrum debitum et officium cuiusque civis eius"
+      }
+    ],
+    "DefendKazakhstan": [
+      {
+        "status": "translation",
+        "text": "Articulus 39, numerus 1. Defensio Rei Publicae Kazachstaniae — sacrum debitum et officium cuiusque civis eius"
+      }
+    ],
+    "DefendKazakhstan1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 36 (recensio anni 1995). Defensio Rei Publicae — sacrum debitum et officium cuiusque civis eius"
+      }
+    ],
+    "DepriveCitizenship": [
+      {
+        "status": "translation",
+        "text": "Articulus 13, numerus 2. Privatio iuris civitatis solum ex sententia iudicii propter delicta terroristica vel aliud grave damnum commodis nationalibus Rei Publicae illatum licet"
+      }
+    ],
+    "DepriveCitizenship1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 10, numerus 2 (recensio anni 1995). Privatio iuris civitatis solum ex sententia iudicii propter delicta terroristica vel aliud grave damnum commodis vitalibus illatum"
+      }
+    ],
+    "Detention": [
+      {
+        "status": "translation",
+        "text": "Detentio, comprehensio vel custodia"
+      }
+    ],
+    "DetentionBeyond72HoursImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 16, numerus 2 (recensio anni 1995). Sine auctoritate iudicii detentio non ultra septuaginta duas horas"
+      }
+    ],
+    "DetentionBeyondStatutoryLimitImmunity": [
+      {
+        "status": "translation",
+        "text": "Articulus 18, numerus 2. Sine sententia iudicii homo detentioni ultra terminos lege praevisos subici non potest"
+      }
+    ],
+    "DignityImmunity": [
+      {
+        "status": "translation",
+        "text": "Articulus 20, numerus 1. Honor et dignitas hominis inviolabiles sunt et lege tutantur"
+      }
+    ],
+    "DignityImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 17, numerus 1 (recensio anni 1995). Dignitas hominis inviolabilis est"
+      }
+    ],
+    "DignityInfringementProhibition": [
+      {
+        "status": "translation",
+        "text": "Articulus 20, numerus 1. Honor et dignitas hominis inviolabiles sunt et lege tutantur"
+      }
+    ],
+    "DignityInviolable": [
+      {
+        "status": "translation",
+        "text": "Articulus 20, numerus 1. Honor et dignitas hominis inviolabiles sunt et lege tutantur"
+      }
+    ],
+    "DignityInviolable1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 17, numerus 1 (recensio anni 1995). Dignitas hominis inviolabilis est"
+      }
+    ],
+    "DiscriminationProhibition": [
+      {
+        "status": "translation",
+        "text": "Articulus 16, numerus 2. Nemo discriminationi propter causas enumeratas vel quaslibet alias subici potest"
+      }
+    ],
+    "Document": [
+      {
+        "status": "translation",
+        "text": "Documentum iura et commoda personae attingens"
+      }
+    ],
+    "EducationInstitution": [
+      {
+        "status": "translation",
+        "text": "Institutum educationis"
+      }
+    ],
+    "EducationStandardsCompliance": [
+      {
+        "status": "translation",
+        "text": "Articulus 33, numerus 4. Actio institutorum educationis normis universaliter obligatoriis respondet"
+      }
+    ],
+    "EducationStandardsCompliance1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 30, numerus 4 (recensio anni 1995). Actio quorumlibet institutorum educationis normis universaliter obligatoriis respondere debet"
+      }
+    ],
+    "EqualityImmunity": [
+      {
+        "status": "translation",
+        "text": "Articulus 16, numerus 2. Nemo discriminationi propter originem, condicionem, sexum, stirpem, nationem, linguam, habitum erga religionem, opiniones, domicilium vel quaslibet alias causas subici potest"
+      }
+    ],
+    "EqualityImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 14 (recensio anni 1995). Omnes coram lege et iudicio aequales sunt; discriminatio non licet"
+      }
+    ],
+    "ExerciseFreedomOfConscience": [
+      {
+        "status": "translation",
+        "text": "Articulus 25, numerus 1. Quisque homo ius habet ad libertatem conscientiae"
+      }
+    ],
+    "ExerciseFreedomOfConscience1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 22, numerus 1 (recensio anni 1995). Quisque ius habet ad libertatem conscientiae"
+      }
+    ],
+    "ExitKazakhstan": [
+      {
+        "status": "translation",
+        "text": "Articulus 24, numerus 2. Quisque homo ius habet extra fines Rei Publicae Kazachstaniae exire"
+      }
+    ],
+    "ExitKazakhstan1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 21, numerus 2 (recensio anni 1995). Quisque ius habet extra fines Rei Publicae exire"
+      }
+    ],
+    "ExitKazakhstanLiberty": [
+      {
+        "status": "translation",
+        "text": "Articulus 24, numerus 2. Quisque homo ius habet extra fines Rei Publicae Kazachstaniae exire"
+      }
+    ],
+    "ExitKazakhstanLiberty1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 21, numerus 2 (recensio anni 1995). Quisque ius habet extra fines Rei Publicae exire"
+      }
+    ],
+    "ExtraditeUnderTreaty": [
+      {
+        "status": "translation",
+        "text": "Articulus 14, numerus 1. Deditio civis licet, si id pacto internationali Rei Publicae statutum est"
+      }
+    ],
+    "ExtraditeUnderTreaty1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 11, numerus 1 (recensio anni 1995). Deditio licet, si id pacto internationali Rei Publicae statutum est"
+      }
+    ],
+    "ForcedLabourBarredWithoutBasis": [
+      {
+        "status": "translation",
+        "text": "Articulus 27, numerus 1. Coactio ad laborem prohibetur, dum actus iudicii de culpa declarata aut status necessitatis vel belli deest"
+      }
+    ],
+    "ForcedLabourBarredWithoutBasis/unless/0": [
+      {
+        "status": "translation",
+        "text": "Articulus 27, numerus 1. Coactio ad laborem prohibetur, dum actus iudicii de culpa declarata aut status necessitatis vel belli deest"
+      }
+    ],
+    "ForcedLabourOnJudicialOrEmergencyBasis": [
+      {
+        "status": "translation",
+        "text": "Articulus 27, numerus 1. Labor coactus ex actu iudicii de culpa declarata aut in statu necessitatis vel belli licet"
+      }
+    ],
+    "ForcedLabourOnlyOnJudicialOrEmergencyBasis1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 24, numerus 1 (recensio anni 1995). Labor coactus solum ex actu iudicii aut in statu necessitatis vel belli licet"
+      }
+    ],
+    "ForcedLabourProhibition": [
+      {
+        "status": "translation",
+        "text": "Articulus 27, numerus 1. Labor coactus extra causas a Constitutione nominatas non licet"
+      }
+    ],
+    "ForeignCitizenshipNotRecognized": [
+      {
+        "status": "translation",
+        "text": "Articulus 13, numerus 3. Civis Rei Publicae Kazachstaniae ius civitatis duplex vel multiplex habere non potest"
+      }
+    ],
+    "ForeignCitizenshipNotRecognized1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 10, numerus 3 (recensio anni 1995). Civi Rei Publicae ius civitatis alterius civitatis non agnoscitur"
+      }
+    ],
+    "ForeignCitizenshipTerminatesCitizenship": [
+      {
+        "status": "translation",
+        "text": "Articulus 13, numerus 3. Ius civitatis alienum — causa iuris civitatis Rei Publicae Kazachstaniae amittendi"
+      }
+    ],
+    "ForeignerEnjoysCitizenRightsOnlyWhereProvided": [
+      {
+        "status": "translation",
+        "text": "Articulus 15, numerus 4. Peregrini et personae sine iure civitatis iuribus civium fruuntur in casibus Constitutione, legibus et pactis praevisis"
+      }
+    ],
+    "ForeignerEnjoysCitizenRightsUnlessOtherwise1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 12, numerus 4 (recensio anni 1995). Peregrini et personae sine iure civitatis iuribus civium fruuntur, nisi aliud praevisum est"
+      }
+    ],
+    "FreeCompetitiveHigherEducationDuty1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 30, numerus 2 (recensio anni 1995). Ius educationem superiorem gratuitam in instituto publico ex certamine accipiendi"
+      }
+    ],
+    "FreeLegalAidDuty1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 13, numerus 3 (recensio anni 1995). In casibus lege praevisis auxilium iuridicum gratuito praestatur"
+      }
+    ],
+    "FreeSecondaryEducationDuty": [
+      {
+        "status": "translation",
+        "text": "Articulus 33, numerus 1. Educatio media gratuita in instituto educationis publico"
+      }
+    ],
+    "FreeSecondaryEducationDuty1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 30, numerus 1 (recensio anni 1995). Civibus educatio media gratuita in institutis educationis publicis praestatur"
+      }
+    ],
+    "FreedomOfAssociation": [
+      {
+        "status": "translation",
+        "text": "Articulus 26, numerus 1. Libertas consociationum"
+      }
+    ],
+    "FreedomOfAssociation1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 23, numerus 1 (recensio anni 1995). Cives ius habent ad libertatem consociationum"
+      }
+    ],
+    "FreedomOfConscienceLiberty": [
+      {
+        "status": "translation",
+        "text": "Articulus 25, numerus 1. Quisque homo ius habet ad libertatem conscientiae"
+      }
+    ],
+    "FreedomOfConscienceLiberty1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 22, numerus 1 (recensio anni 1995). Quisque ius habet ad libertatem conscientiae"
+      }
+    ],
+    "FreedomOfEnterpriseLiberty": [
+      {
+        "status": "translation",
+        "text": "Articulus 29, numerus 4. Res Publica Kazachstania ius ad libertatem negotiationis praestat"
+      }
+    ],
+    "FreedomOfEnterpriseLiberty1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 26, numerus 4 (recensio anni 1995). Ius ad libertatem negotiationis"
+      }
+    ],
+    "FreedomOfLabourLiberty": [
+      {
+        "status": "translation",
+        "text": "Articulus 27, numerus 1. Ius ad laborem, ad liberam generis actionis et professionis electionem"
+      }
+    ],
+    "FreedomOfLabourLiberty1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 24, numerus 1 (recensio anni 1995). Ius ad libertatem laboris, ad liberam generis actionis et professionis electionem"
+      }
+    ],
+    "FreedomOfMovement": [
+      {
+        "status": "translation",
+        "text": "Articulus 24, numerus 1. Libertas migrandi personae legitime in Kazachstania versantis"
+      }
+    ],
+    "FreedomOfMovement1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 21, numerus 1 (recensio anni 1995). Libertas migrandi et domicilium eligendi personae legitime in Re Publica versanti"
+      }
+    ],
+    "GuaranteeAnnualPaidLeave1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 24, numerus 4 (recensio anni 1995). Operantibus ex contractu laboris commeatus annuus mercede solutus praestatur"
+      }
+    ],
+    "GuaranteedFreeMedicalCareDuty1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 29, numerus 2 (recensio anni 1995). Cives ius habent mensuram auxilii medici praestitam gratuito accipiendi"
+      }
+    ],
+    "HeritageProtectionDuty": [
+      {
+        "status": "translation",
+        "text": "Articulus 40. Cives Rei Publicae tenentur de hereditate historica et culturali servanda curare"
+      }
+    ],
+    "HeritageProtectionDuty1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 37 (recensio anni 1995). Cives tenentur de hereditate historica et culturali servanda curare"
+      }
+    ],
+    "HomeEntryProhibition": [
+      {
+        "status": "translation",
+        "text": "Articulus 28, numerus 1. Domicilium inviolabile est; ingressus, inspectio et perquisitio solum in casibus et ordine lege statutis licent"
+      }
+    ],
+    "HomeImmunity": [
+      {
+        "status": "translation",
+        "text": "Articulus 28, numerus 1. Domicilium inviolabile est; ingressus in id solum in casibus et ordine lege statutis licet"
+      }
+    ],
+    "HomeImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 25, numerus 1 (recensio anni 1995). Domicilium inviolabile est; privatio domicilii — solum ex sententia iudicii"
+      }
+    ],
+    "HomeInviolability": [
+      {
+        "status": "translation",
+        "text": "Articulus 28, numerus 1. Domicilium inviolabile est; ingressus in id solum in casibus et ordine lege statutis licet"
+      }
+    ],
+    "HomeInviolability1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 25, numerus 1 (recensio anni 1995). Domicilium inviolabile est; privatio domicilii — solum ex sententia iudicii"
+      }
+    ],
+    "HousingNeed": [
+      {
+        "status": "translation",
+        "text": "Indigentia habitationis"
+      }
+    ],
+    "InterethnicAccordViolationUnconstitutional": [
+      {
+        "status": "translation",
+        "text": "Articulus 41, numerus 2. Actiones concordiam inter gentes et confessiones laedere valentes contra Constitutionem esse agnoscuntur"
+      }
+    ],
+    "InterethnicAccordViolationUnconstitutional1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 39, numerus 2 (recensio anni 1995). Quaelibet actiones concordiam inter nationes et confessiones laedere valentes contra Constitutionem esse agnoscuntur"
+      }
+    ],
+    "JoinAssociation": [
+      {
+        "status": "translation",
+        "text": "Articulus 26, numerus 1. Libertas consociationum"
+      }
+    ],
+    "JoinAssociation1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 23, numerus 1 (recensio anni 1995). Cives ius habent ad libertatem consociationum"
+      }
+    ],
+    "LabourDisputeLiberty": [
+      {
+        "status": "translation",
+        "text": "Articulus 27, numerus 3. Agnoscitur ius ad controversias laboris singulares et collectivas modis lege statutis dirimendas"
+      }
+    ],
+    "LegalAidCase": [
+      {
+        "status": "translation",
+        "text": "Casus auxilii iuridici praestandi"
+      }
+    ],
+    "Legislature": [
+      {
+        "status": "translation",
+        "text": "Collegium legis ferendae"
+      }
+    ],
+    "MoveWithinKazakhstan": [
+      {
+        "status": "translation",
+        "text": "Articulus 24, numerus 1. Libertas migrandi personae legitime in Kazachstania versantis"
+      }
+    ],
+    "MoveWithinKazakhstan1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 21, numerus 1 (recensio anni 1995). Libertas migrandi et domicilium eligendi personae legitime in Re Publica versanti"
+      }
+    ],
+    "MovementRestriction": [
+      {
+        "status": "translation",
+        "text": "Restrictio libertatis migrandi"
+      }
+    ],
+    "NationalIdentityLiberty": [
+      {
+        "status": "translation",
+        "text": "Articulus 22, numerus 1. Quisque homo ius habet nationem suam determinandi, indicandi vel non indicandi"
+      }
+    ],
+    "NationalPartyAndReligiousIdentityLiberty1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 19, numerus 1 (recensio anni 1995). Quisque ius habet nationem, factionem et religionem determinandi et indicandi vel non indicandi"
+      }
+    ],
+    "NativeLanguageAndCultureLiberty": [
+      {
+        "status": "translation",
+        "text": "Articulus 22, numerus 2. Ius lingua patria et cultura utendi, linguam communicationis, educationis, institutionis et creationis libere eligendi"
+      }
+    ],
+    "NativeLanguageAndCultureLiberty1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 19, numerus 2 (recensio anni 1995). Ius lingua patria et cultura utendi, libera electio linguae communicationis"
+      }
+    ],
+    "NatureProtectionDuty": [
+      {
+        "status": "translation",
+        "text": "Articulus 37, numerus 1. Cives Rei Publicae tenentur naturam servare et divitiis naturalibus parce uti"
+      }
+    ],
+    "NatureProtectionDuty1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 38 (recensio anni 1995). Cives tenentur naturam servare et divitiis naturalibus parce uti"
+      }
+    ],
+    "NoCensorship": [
+      {
+        "status": "translation",
+        "text": "Articulus 23, numerus 5. Censura prohibetur"
+      }
+    ],
+    "NoCensorship1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 20, numerus 1 (recensio anni 1995). Censura prohibetur"
+      }
+    ],
+    "NoDeathPenalty": [
+      {
+        "status": "translation",
+        "text": "Articulus 17, numerus 3. Poena capitis prohibetur"
+      }
+    ],
+    "NoDeathPenalty1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 15, numerus 2 (recensio anni 1995). Poena capitis prohibetur"
+      }
+    ],
+    "NoDiscrimination": [
+      {
+        "status": "translation",
+        "text": "Articulus 16, numerus 2. Nemo discriminationi propter originem, condicionem, sexum, stirpem, nationem, linguam, habitum erga religionem, opiniones, domicilium vel quaslibet alias causas subici potest"
+      }
+    ],
+    "NoDiscrimination1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 14 (recensio anni 1995). Omnes coram lege et iudicio aequales sunt; discriminatio non licet"
+      }
+    ],
+    "NoTorture": [
+      {
+        "status": "translation",
+        "text": "Articulus 20, numerus 2. Nemo tormentis, violentiae, alii tractationi vel poenae crudeli aut dignitatem humanam deprimenti subici debet"
+      }
+    ],
+    "NoTorture1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 17, numerus 2 (recensio anni 1995). Nemo tormentis et tractationi crudeli subici debet"
+      }
+    ],
+    "NonDerogableCore": [
+      {
+        "status": "translation",
+        "text": "Articulus 41, numerus 3. Nucleus iurium restrictioni non obnoxius"
+      }
+    ],
+    "NonDerogableCore1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 39, numerus 3 (recensio anni 1995). Nullo casu restrictioni subiciuntur iura articulorum 11, 13-15, numeri 1 articuli 16, articulorum 17, 19, 22 et numeri 2 articuli 26"
+      }
+    ],
+    "NonExtradition": [
+      {
+        "status": "translation",
+        "text": "Articulus 14, numerus 1. Civis Rei Publicae Kazachstaniae civitati externae dedi non potest"
+      }
+    ],
+    "NonExtradition1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 11, numerus 1 (recensio anni 1995). Civis Rei Publicae civitati externae dedi non potest"
+      }
+    ],
+    "Official": [
+      {
+        "status": "translation",
+        "text": "Magistratus (persona munere publico fungens)"
+      }
+    ],
+    "OfficialConcealmentLiability": [
+      {
+        "status": "translation",
+        "text": "Articulus 37, numerus 3. Occultatio a magistratibus factorum et rerum vitae et valetudini hominum atque ambitui naturali periculosarum responsabilitatem parit"
+      }
+    ],
+    "OfficialConcealmentLiability1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 31, numerus 2 (recensio anni 1995). Occultatio a magistratibus factorum vitae et valetudini hominum periculosorum responsabilitatem parit"
+      }
+    ],
+    "Parent": [
+      {
+        "status": "translation",
+        "text": "Parens"
+      }
+    ],
+    "ParentCareDuty": [
+      {
+        "status": "translation",
+        "text": "Articulus 30, numerus 3. Cura liberorum eorumque educatio — ius naturale et officium parentum"
+      }
+    ],
+    "ParentCareDuty1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 27, numerus 2 (recensio anni 1995). Cura liberorum eorumque educatio — ius naturale et officium parentum"
+      }
+    ],
+    "ParticipateInPeacefulAssembly": [
+      {
+        "status": "translation",
+        "text": "Articulus 34. Ius civium ad conventus pacificos"
+      }
+    ],
+    "ParticipateInStateGovernance": [
+      {
+        "status": "translation",
+        "text": "Articulus 35, numerus 1. Ius in rerum civitatis administratione participandi"
+      }
+    ],
+    "ParticipateInStateGovernance1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 33, numerus 1 (recensio anni 1995). Ius in rerum civitatis administratione participandi et ad magistratus publicos adeundi"
+      }
+    ],
+    "ParticipateInUnarmedAssembly1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 32 (recensio anni 1995). Cives ius habent pacifice et sine armis convenire, conventus, contiones, demonstrationes, pompas et vigilias agere"
+      }
+    ],
+    "PayLawfulTaxes": [
+      {
+        "status": "translation",
+        "text": "Articulus 38. Solutio vectigalium, collationum et aliorum tributorum lege statutorum — debitum et officium cuiusque"
+      }
+    ],
+    "PayLawfulTaxes1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 35 (recensio anni 1995). Solutio vectigalium, collationum et aliorum tributorum lege statutorum — debitum et officium cuiusque"
+      }
+    ],
+    "PeacefulAssemblyLiberty": [
+      {
+        "status": "translation",
+        "text": "Articulus 34. Ius civium ad conventus pacificos"
+      }
+    ],
+    "PeacefulAssemblyLiberty1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 32 (recensio anni 1995). Cives ius habent pacifice et sine armis convenire, conventus, contiones, demonstrationes, pompas et vigilias agere"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "Persona physica"
+      }
+    ],
+    "PoliticalMotiveRestrictionProhibited": [
+      {
+        "status": "translation",
+        "text": "Articulus 41, numerus 3. Restrictio iurium et libertatum civium propter causas politicas non licet"
+      }
+    ],
+    "PoliticalMotiveRestrictionProhibited1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 39, numerus 3 (recensio anni 1995). Restrictio iurium et libertatum civium propter causas politicas nulla forma licet"
+      }
+    ],
+    "PreserveHeritage": [
+      {
+        "status": "translation",
+        "text": "Articulus 40. Cives Rei Publicae tenentur de hereditate historica et culturali servanda curare"
+      }
+    ],
+    "PreserveHeritage1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 37 (recensio anni 1995). Cives tenentur de hereditate historica et culturali servanda curare"
+      }
+    ],
+    "PresumptionOfInnocence/R2": [
+      {
+        "status": "translation",
+        "text": "Articulus 19, numerus 1. Quisque innocens habetur, donec culpa eius sententia iudicii in rem iudicatam transeunte agnita erit"
+      }
+    ],
+    "PrimaryAndBasicEducationCompulsory": [
+      {
+        "status": "translation",
+        "text": "Articulus 33, numerus 1. Educatio prima et media fundamentalis obligatoria est"
+      }
+    ],
+    "PrivacyImmunity": [
+      {
+        "status": "translation",
+        "text": "Articulus 21, numerus 1. Ius ad inviolabilitatem vitae privatae, ad secretum personale et familiare et ad tutelam datorum personalium lege praestatur"
+      }
+    ],
+    "PrivacyImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 18, numerus 1 (recensio anni 1995). Inviolabilitas vitae privatae, secretum personale et familiare"
+      }
+    ],
+    "PrivacyInterferenceProhibition": [
+      {
+        "status": "translation",
+        "text": "Articulus 21, numeri 1 et 2. Inviolabilitas vitae privatae et secretum communicationum lege tutantur; restrictio solum in casibus et ordine lege statutis licet"
+      }
+    ],
+    "PrivacyProtection": [
+      {
+        "status": "translation",
+        "text": "Articulus 21, numerus 1. Ius ad inviolabilitatem vitae privatae, ad secretum personale et familiare et ad tutelam datorum personalium lege praestatur"
+      }
+    ],
+    "PrivacyProtection1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 18, numerus 1 (recensio anni 1995). Inviolabilitas vitae privatae, secretum personale et familiare"
+      }
+    ],
+    "ProhibitedPropaganda": [
+      {
+        "status": "translation",
+        "text": "Articulus 23, numerus 6. Non licet propaganda mutationis violentae fundamentorum ordinis constitutionalis, impugnationis integritatis territorialis, belli et discordiae, neque provocatio ad tales actiones"
+      }
+    ],
+    "ProhibitedPropaganda1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 20, numerus 3 (recensio anni 1995). Non licet propaganda vel agitatio mutationis violentae ordinis constitutionalis et ceterorum enumeratorum"
+      }
+    ],
+    "PropertyImmunity": [
+      {
+        "status": "translation",
+        "text": "Articulus 29, numerus 3. Alienatio coacta rerum ad usus publicos solum sub condicione compensationis aequalis licet"
+      }
+    ],
+    "PropertyImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 26, numerus 3 (recensio anni 1995). Alienatio coacta — solum cum compensatione aequali"
+      }
+    ],
+    "ProtectAndPatroniseAbroad": [
+      {
+        "status": "translation",
+        "text": "Articulus 14, numerus 2. Res Publica Kazachstania civibus suis extra fines eius tutelam praestat"
+      }
+    ],
+    "ProtectAndPatroniseAbroad1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 11, numerus 2 (recensio anni 1995). Res Publica civibus extra fines eius tutelam et patrocinium praestat"
+      }
+    ],
+    "ProtectNature": [
+      {
+        "status": "translation",
+        "text": "Articulus 37, numerus 1. Cives Rei Publicae tenentur naturam servare et divitiis naturalibus parce uti"
+      }
+    ],
+    "ProtectNature1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 38 (recensio anni 1995). Cives tenentur naturam servare et divitiis naturalibus parce uti"
+      }
+    ],
+    "ProtectionAndPatronageAbroadDuty": [
+      {
+        "status": "translation",
+        "text": "Articulus 14, numerus 2. Res Publica Kazachstania civibus suis extra fines eius tutelam praestat"
+      }
+    ],
+    "ProtectionAndPatronageAbroadDuty1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 11, numerus 2 (recensio anni 1995). Res Publica civibus extra fines eius tutelam et patrocinium praestat"
+      }
+    ],
+    "ProvideAccess": [
+      {
+        "status": "translation",
+        "text": "Articulus 21, numerus 3. Magistratus publici, consociationes, magistratus et instrumenta communicationis socialis tenentur unicuique facultatem praebere documenta iura et commoda eius attingentia cognoscendi"
+      }
+    ],
+    "ProvideAffordableStateHousing1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 25, numerus 2 (recensio anni 1995). Generibus lege designatis habitatio pretio accessibili ex fundis habitationis publicis praebetur"
+      }
+    ],
+    "ProvideCitizenAccess1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 18, numerus 3 (recensio anni 1995). Unicuique civi facultas praebetur documenta eum attingentia cognoscendi"
+      }
+    ],
+    "ProvideCounselAccess": [
+      {
+        "status": "translation",
+        "text": "Articulus 18, numerus 4. Detentus, suspectus, accusatus ius habet auxilio advocati uti ex momento detentionis"
+      }
+    ],
+    "ProvideCounselAccess1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 16, numerus 3 (recensio anni 1995). Ius auxilio advocati uti ex momento detentionis, comprehensionis vel accusationis propositae"
+      }
+    ],
+    "ProvideFreeHigherEducation1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 30, numerus 2 (recensio anni 1995). Ius educationem superiorem gratuitam in instituto publico ex certamine accipiendi"
+      }
+    ],
+    "ProvideFreeLegalAid1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 13, numerus 3 (recensio anni 1995). In casibus lege praevisis auxilium iuridicum gratuito praestatur"
+      }
+    ],
+    "ProvideFreeSecondaryEducation": [
+      {
+        "status": "translation",
+        "text": "Articulus 33, numerus 1. Educatio media gratuita in instituto educationis publico"
+      }
+    ],
+    "ProvideFreeSecondaryEducation1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 30, numerus 1 (recensio anni 1995). Civibus educatio media gratuita in institutis educationis publicis praestatur"
+      }
+    ],
+    "ProvideGuaranteedFreeMedicalCare1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 29, numerus 2 (recensio anni 1995). Cives ius habent mensuram auxilii medici praestitam gratuito accipiendi"
+      }
+    ],
+    "ProvideSocialSecurity": [
+      {
+        "status": "translation",
+        "text": "Articulus 31, numerus 1. Subsidium sociale ex causa lege statuta"
+      }
+    ],
+    "ProvideSocialSecurity1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 28, numerus 1 (recensio anni 1995). Merces minima et pensio praestantur, itemque subsidium sociale ex causis legitimis"
+      }
+    ],
+    "ProvideStatutoryHousing": [
+      {
+        "status": "translation",
+        "text": "Articulus 28, numerus 2. Generibus civium lege designatis habitatione indigentium ea secundum normas lege statutas praebetur"
+      }
+    ],
+    "ProvideUnemploymentProtection1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 24, numerus 2 (recensio anni 1995). Ius ad tutelam socialem contra inopiam operis"
+      }
+    ],
+    "ProvideUnpaidMedicalCare": [
+      {
+        "status": "translation",
+        "text": "Articulus 32, numerus 2. Cives Rei Publicae Kazachstaniae ius habent auxilium medicum lege statutum a se non solutum accipiendi"
+      }
+    ],
+    "RefrainFromBlockingReturn": [
+      {
+        "status": "translation",
+        "text": "Articulus 24, numerus 2. Cives Rei Publicae Kazachstaniae ius habent sine impedimento in Rem Publicam Kazachstaniam redeundi"
+      }
+    ],
+    "RefrainFromCensorship": [
+      {
+        "status": "translation",
+        "text": "Articulus 23, numerus 5. Censura prohibetur"
+      }
+    ],
+    "RefrainFromDeathPenalty": [
+      {
+        "status": "translation",
+        "text": "Articulus 17, numerus 3. Poena capitis prohibetur"
+      }
+    ],
+    "RefrainFromDetentionBeyondStatutoryPeriod": [
+      {
+        "status": "translation",
+        "text": "Articulus 18, numerus 2. Sine sententia iudicii homo detentioni ultra terminos lege praevisos subici non potest"
+      }
+    ],
+    "RefrainFromDignityInfringement": [
+      {
+        "status": "translation",
+        "text": "Articulus 20, numerus 1. Honor et dignitas hominis inviolabiles sunt et lege tutantur"
+      }
+    ],
+    "RefrainFromDiscrimination": [
+      {
+        "status": "translation",
+        "text": "Articulus 16, numerus 2. Nemo discriminationi propter causas enumeratas vel quaslibet alias subici potest"
+      }
+    ],
+    "RefrainFromForcedLabour": [
+      {
+        "status": "translation",
+        "text": "Articulus 27, numerus 1. Labor coactus extra causas a Constitutione nominatas non licet"
+      }
+    ],
+    "RefrainFromPrivacyInterference": [
+      {
+        "status": "translation",
+        "text": "Articulus 21, numeri 1 et 2. Inviolabilitas vitae privatae et secretum communicationum lege tutantur; restrictio solum in casibus et ordine lege statutis licet"
+      }
+    ],
+    "RefrainFromTorture": [
+      {
+        "status": "translation",
+        "text": "Articulus 20, numerus 2. Nemo tormentis, violentiae, alii tractationi vel poenae crudeli aut dignitatem humanam deprimenti subici debet"
+      }
+    ],
+    "RefrainFromUncompensatedExpropriation": [
+      {
+        "status": "translation",
+        "text": "Articulus 29, numerus 3. Alienatio coacta rerum ad usus publicos solum sub condicione compensationis aequalis licet"
+      }
+    ],
+    "RefrainFromUnlawfulHomeEntry": [
+      {
+        "status": "translation",
+        "text": "Articulus 28, numerus 1. Domicilium inviolabile est; ingressus, inspectio et perquisitio solum in casibus et ordine lege statutis licent"
+      }
+    ],
+    "ResolveLabourDispute": [
+      {
+        "status": "translation",
+        "text": "Articulus 27, numerus 3. Agnoscitur ius ad controversias laboris singulares et collectivas modis lege statutis dirimendas"
+      }
+    ],
+    "RespectConstitutionAndLaw": [
+      {
+        "status": "translation",
+        "text": "Articulus 36, numerus 1. Quisque tenetur Constitutionem et leges Rei Publicae observare, iura, libertates, honorem et dignitatem aliorum revereri"
+      }
+    ],
+    "RespectConstitutionAndLaw1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 34, numerus 1 (recensio anni 1995). Quisque tenetur Constitutionem et leges observare, iura et dignitatem aliorum revereri"
+      }
+    ],
+    "RespectStateSymbols": [
+      {
+        "status": "translation",
+        "text": "Articulus 36, numerus 2. Quisque homo tenetur symbola publica Rei Publicae Kazachstaniae revereri"
+      }
+    ],
+    "RespectStateSymbols1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 34, numerus 2 (recensio anni 1995). Quisque tenetur symbola publica Rei Publicae revereri"
+      }
+    ],
+    "RestrictDerogableRight": [
+      {
+        "status": "translation",
+        "text": "Articulus 41, numerus 1. Iura et libertates solis legibus restringi possunt et ea tantum mensura quae ad ordinem constitutionalem, iura et libertates, securitatem nationalem, ordinem publicum, valetudinem et mores tuendos necessaria est"
+      }
+    ],
+    "RestrictedOfficePoliticalMembershipIncompatible": [
+      {
+        "status": "translation",
+        "text": "Articulus 26, numerus 2. Membratus in factione et consociatione opificum cum muneribus enumeratis incompatibilis est"
+      }
+    ],
+    "RestrictedOfficePoliticalMembershipIncompatible1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 23, numerus 2 (recensio anni 1995). Magistratus enumerati in factionibus et consociationibus opificum esse non debent"
+      }
+    ],
+    "Restriction": [
+      {
+        "status": "translation",
+        "text": "Restrictio iurium et libertatum lege introducta"
+      }
+    ],
+    "ReturnBlockProhibition": [
+      {
+        "status": "translation",
+        "text": "Articulus 24, numerus 2. Cives Rei Publicae Kazachstaniae ius habent sine impedimento in Rem Publicam Kazachstaniam redeundi"
+      }
+    ],
+    "ReturnToKazakhstan": [
+      {
+        "status": "translation",
+        "text": "Articulus 24, numerus 2. Cives Rei Publicae Kazachstaniae ius habent sine impedimento in Rem Publicam Kazachstaniam redeundi"
+      }
+    ],
+    "ReturnToKazakhstanLiberty": [
+      {
+        "status": "translation",
+        "text": "Articulus 24, numerus 2. Cives Rei Publicae Kazachstaniae ius habent sine impedimento in Rem Publicam Kazachstaniam redeundi"
+      }
+    ],
+    "RightToStrikeLiberty1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 24, numerus 3 (recensio anni 1995). Agnoscitur ius ad controversias laboris, incluso iure cessationis operis"
+      }
+    ],
+    "RightsExerciseBoundary": [
+      {
+        "status": "translation",
+        "text": "Articulus 15, numerus 5. Exercitium iurium iuribus aliorum et finibus constitutionalibus circumscribitur"
+      }
+    ],
+    "RightsExerciseBoundary1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 12, numerus 5 (recensio anni 1995). Exercitium iurium iura aliorum laedere neque ordinem constitutionalem et mores publicos impugnare debet"
+      }
+    ],
+    "RightsLimitationPower": [
+      {
+        "status": "translation",
+        "text": "Articulus 41, numerus 1. Iura et libertates solis legibus restringi possunt et ea tantum mensura quae ad ordinem constitutionalem, iura et libertates, securitatem nationalem, ordinem publicum, valetudinem et mores tuendos necessaria est"
+      }
+    ],
+    "SecondaryEducationCompulsory1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 30, numerus 1 (recensio anni 1995). Educatio media obligatoria est"
+      }
+    ],
+    "SeventyTwoHourDetentionLimit1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 16, numerus 2 (recensio anni 1995). Sine auctoritate iudicii detentio non ultra septuaginta duas horas"
+      }
+    ],
+    "SocialSecurityDuty": [
+      {
+        "status": "translation",
+        "text": "Articulus 31, numerus 1. Subsidium sociale ex causa lege statuta"
+      }
+    ],
+    "SocialSecurityDuty1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 28, numerus 1 (recensio anni 1995). Merces minima et pensio praestantur, itemque subsidium sociale ex causis legitimis"
+      }
+    ],
+    "StateAct": [
+      {
+        "status": "translation",
+        "text": "Actus magistratus publici"
+      }
+    ],
+    "StateAuthority": [
+      {
+        "status": "translation",
+        "text": "Magistratus publicus vel persona munere publico fungens"
+      }
+    ],
+    "StateCompensationForUnlawfulHarm": [
+      {
+        "status": "translation",
+        "text": "Articulus 15, numerus 6. Civitas damnum ex actionibus illegitimis organorum suorum resarcit"
+      }
+    ],
+    "StateGovernanceParticipationLiberty": [
+      {
+        "status": "translation",
+        "text": "Articulus 35, numerus 1. Ius in rerum civitatis administratione participandi"
+      }
+    ],
+    "StateGovernanceParticipationLiberty1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 33, numerus 1 (recensio anni 1995). Ius in rerum civitatis administratione participandi et ad magistratus publicos adeundi"
+      }
+    ],
+    "StateSymbolsRespectDuty": [
+      {
+        "status": "translation",
+        "text": "Articulus 36, numerus 2. Quisque homo tenetur symbola publica Rei Publicae Kazachstaniae revereri"
+      }
+    ],
+    "StateSymbolsRespectDuty1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 34, numerus 2 (recensio anni 1995). Quisque tenetur symbola publica Rei Publicae revereri"
+      }
+    ],
+    "StatutoryHousingProvisionDuty": [
+      {
+        "status": "translation",
+        "text": "Articulus 28, numerus 2. Generibus civium lege designatis habitatione indigentium ea secundum normas lege statutas praebetur"
+      }
+    ],
+    "StatutoryMovementRestriction": [
+      {
+        "status": "translation",
+        "text": "Articulus 24. Restrictio migrandi vel exeundi sola lege licet"
+      }
+    ],
+    "StatutoryMovementRestriction1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 21, numerus 1 (recensio anni 1995). Restrictio migrandi solum in casibus lege expressis licet"
+      }
+    ],
+    "Strike": [
+      {
+        "status": "translation",
+        "text": "Cessatio operis"
+      }
+    ],
+    "Strike1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 24, numerus 3 (recensio anni 1995). Agnoscitur ius ad controversias laboris, incluso iure cessationis operis"
+      }
+    ],
+    "TaxPaymentDuty": [
+      {
+        "status": "translation",
+        "text": "Articulus 38. Solutio vectigalium, collationum et aliorum tributorum lege statutorum — debitum et officium cuiusque"
+      }
+    ],
+    "TaxPaymentDuty1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 35 (recensio anni 1995). Solutio vectigalium, collationum et aliorum tributorum lege statutorum — debitum et officium cuiusque"
+      }
+    ],
+    "TortureImmunity": [
+      {
+        "status": "translation",
+        "text": "Articulus 20, numerus 2. Nemo tormentis, violentiae, alii tractationi vel poenae crudeli aut dignitatem humanam deprimenti subici debet"
+      }
+    ],
+    "TortureImmunity1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 17, numerus 2 (recensio anni 1995). Nemo tormentis et tractationi crudeli subici debet"
+      }
+    ],
+    "TortureProhibition": [
+      {
+        "status": "translation",
+        "text": "Articulus 20, numerus 2. Nemo tormentis, violentiae, alii tractationi vel poenae crudeli aut dignitatem humanam deprimenti subici debet"
+      }
+    ],
+    "TreatyExtraditionPower": [
+      {
+        "status": "translation",
+        "text": "Articulus 14, numerus 1. Deditio civis licet, si id pacto internationali Rei Publicae statutum est"
+      }
+    ],
+    "TreatyExtraditionPower1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 11, numerus 1 (recensio anni 1995). Deditio licet, si id pacto internationali Rei Publicae statutum est"
+      }
+    ],
+    "UncompensatedExpropriationProhibition": [
+      {
+        "status": "translation",
+        "text": "Articulus 29, numerus 3. Alienatio coacta rerum ad usus publicos solum sub condicione compensationis aequalis licet"
+      }
+    ],
+    "UnemploymentProtectionDuty1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 24, numerus 2 (recensio anni 1995). Ius ad tutelam socialem contra inopiam operis"
+      }
+    ],
+    "UnfairCompetitionProhibited": [
+      {
+        "status": "translation",
+        "text": "Articulus 29, numerus 4. Certatio improba prohibetur"
+      }
+    ],
+    "UnfairCompetitionProhibited1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 26, numerus 4 (recensio anni 1995). Certatio improba prohibetur"
+      }
+    ],
+    "UnobstructedReturnToKazakhstan": [
+      {
+        "status": "translation",
+        "text": "Articulus 24, numerus 2. Civis sine impedimento in Kazachstaniam redire ius habet"
+      }
+    ],
+    "UnobstructedReturnToKazakhstan1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 21, numerus 2 (recensio anni 1995). Cives ius habent sine impedimento in Rem Publicam redeundi"
+      }
+    ],
+    "UnpaidMedicalCareDuty": [
+      {
+        "status": "translation",
+        "text": "Articulus 32, numerus 2. Cives Rei Publicae Kazachstaniae ius habent auxilium medicum lege statutum a se non solutum accipiendi"
+      }
+    ],
+    "UseNativeLanguageAndCulture": [
+      {
+        "status": "translation",
+        "text": "Articulus 22, numerus 2. Ius lingua patria et cultura utendi, linguam communicationis, educationis, institutionis et creationis libere eligendi"
+      }
+    ],
+    "UseNativeLanguageAndCulture1995": [
+      {
+        "status": "translation",
+        "text": "Articulus 19, numerus 2 (recensio anni 1995). Ius lingua patria et cultura utendi, libera electio linguae communicationis"
+      }
+    ],
+    "VotingAndReferendumDisqualification/alt/1": [
+      {
+        "status": "translation",
+        "text": "Articulus 35, numerus 3. Index clausus causarum quibus quis suffragium ferre et in referendo participare non potest"
+      }
+    ],
+    "VotingAndReferendumDisqualification/alt/2": [
+      {
+        "status": "translation",
+        "text": "Articulus 35, numerus 3. Index clausus causarum quibus quis suffragium ferre et in referendo participare non potest"
+      }
+    ],
+    "VotingAndReferendumDisqualification1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "Articulus 33, numerus 3 (recensio anni 1995). Suffragium ferre et in referendo participare non possunt a iudicio incapaces declarati et in locis libertatis privationis detenti"
+      }
+    ],
+    "VotingAndReferendumDisqualification1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "Articulus 33, numerus 3 (recensio anni 1995). Suffragium ferre et in referendo participare non possunt a iudicio incapaces declarati et in locis libertatis privationis detenti"
+      }
+    ],
+    "abroad": [
+      {
+        "status": "translation",
+        "text": "persona extra fines Rei Publicae versatur"
+      }
+    ],
+    "access_provided": [
+      {
+        "status": "translation",
+        "text": "personae aditus ad documenta eam attingentia praebitus est"
+      }
+    ],
+    "accused": [
+      {
+        "status": "translation",
+        "text": "persona delicti commissi accusatur"
+      }
+    ],
+    "action_harms_interethnic_or_interconfessional_accord": [
+      {
+        "status": "translation",
+        "text": "actio concordiae inter nationes et confessiones damnum infert"
+      }
+    ],
+    "action_unconstitutional": [
+      {
+        "status": "translation",
+        "text": "actio constitutionaliter inadmissibilis est"
+      }
+    ],
+    "adult_capable_child_of": [
+      {
+        "status": "translation",
+        "text": "filius adultus laboris capax huius parentis"
+      }
+    ],
+    "affordable_state_housing_provided": [
+      {
+        "status": "translation",
+        "text": "personae habitatio ex fundis habitationis publicis pretio accessibili praebita est"
+      }
+    ],
+    "annual_paid_leave_provided": [
+      {
+        "status": "translation",
+        "text": "personae commeatus annuus mercede solutus praebitus est"
+      }
+    ],
+    "appeal_right_granted": [
+      {
+        "status": "translation",
+        "text": "detento ius appellandi concessum est"
+      }
+    ],
+    "arrest_constitutionally_admissible": [
+      {
+        "status": "translation",
+        "text": "comprehensio vel custodia constitutionaliter admissibiles sunt"
+      }
+    ],
+    "arrest_or_custody": [
+      {
+        "status": "translation",
+        "text": "comprehensio vel custodia adhibita est"
+      }
+    ],
+    "assembly_participation_action": [
+      {
+        "status": "translation",
+        "text": "persona in conventu participat"
+      }
+    ],
+    "assembly_restriction": [
+      {
+        "status": "translation",
+        "text": "restrictio hunc conventum attingit"
+      }
+    ],
+    "assembly_restriction_constitutionally_valid": [
+      {
+        "status": "translation",
+        "text": "restrictio iuris conventuum pacificorum constitutionaliter admissibilis est"
+      }
+    ],
+    "assembly_restriction_established_by_law": [
+      {
+        "status": "translation",
+        "text": "restrictio iuris conventuum pacificorum lege statuta est"
+      }
+    ],
+    "assembly_restriction_has_constitutional_goal": [
+      {
+        "status": "translation",
+        "text": "restrictio iuris conventuum pacificorum finem constitutionalem sequitur"
+      }
+    ],
+    "association": [
+      {
+        "status": "translation",
+        "text": "consociatio est consociatio civium"
+      }
+    ],
+    "association_membership_action": [
+      {
+        "status": "translation",
+        "text": "persona consociationis membrum est"
+      }
+    ],
+    "censorship_attempt": [
+      {
+        "status": "translation",
+        "text": "magistratus publicus censuram exercet"
+      }
+    ],
+    "censorship_imposed": [
+      {
+        "status": "translation",
+        "text": "censura adhibita est"
+      }
+    ],
+    "child_care_provided": [
+      {
+        "status": "translation",
+        "text": "parentes de puero curant eumque educant"
+      }
+    ],
+    "citizen": [
+      {
+        "status": "translation",
+        "text": "persona civis Rei Publicae Kazachstaniae est"
+      }
+    ],
+    "citizen_access_provided": [
+      {
+        "status": "translation",
+        "text": "civi aditus ad documenta eum attingentia praebitus est"
+      }
+    ],
+    "citizenship_deprivation_decision": [
+      {
+        "status": "translation",
+        "text": "magistratus publicus de iure civitatis adimendo decernit"
+      }
+    ],
+    "citizenship_deprived": [
+      {
+        "status": "translation",
+        "text": "persona iure civitatis Rei Publicae privata est"
+      }
+    ],
+    "civil_service_requirement": [
+      {
+        "status": "translation",
+        "text": "requisitum iis proponitur qui servitium publicum ineunt"
+      }
+    ],
+    "civil_service_requirement_admissible": [
+      {
+        "status": "translation",
+        "text": "requisitum iis propositum qui servitium publicum ineunt constitutionaliter admissibile est"
+      }
+    ],
+    "collective_labour_dispute": [
+      {
+        "status": "translation",
+        "text": "controversia laboris collectiva adest"
+      }
+    ],
+    "compulsory_education_applies": [
+      {
+        "status": "translation",
+        "text": "educatio huius gradus obligatoria est"
+      }
+    ],
+    "concealed_life_threatening_facts": [
+      {
+        "status": "translation",
+        "text": "magistratus facta et res vitae et valetudini hominum periculosas occultavit"
+      }
+    ],
+    "conscience_action": [
+      {
+        "status": "translation",
+        "text": "persona libertate conscientiae utitur"
+      }
+    ],
+    "constitution_or_law_violated": [
+      {
+        "status": "translation",
+        "text": "a persona Constitutio vel leges Rei Publicae violatae sunt"
+      }
+    ],
+    "constitutional_health_guarantee": [
+      {
+        "status": "translation",
+        "text": "Constitutio tutelam valetudinis praestat"
+      }
+    ],
+    "constitutional_health_guarantee_1995": [
+      {
+        "status": "translation",
+        "text": "Constitutio anni 1995 tutelam valetudinis praestabat"
+      }
+    ],
+    "constitutional_labor_guarantee": [
+      {
+        "status": "translation",
+        "text": "Constitutio condiciones laboris, mercedem et quietem praestat"
+      }
+    ],
+    "constitutional_marriage_protection": [
+      {
+        "status": "translation",
+        "text": "Constitutio matrimonium, familiam, maternitatem, paternitatem et pueritiam tuetur"
+      }
+    ],
+    "constitutional_marriage_protection_1995": [
+      {
+        "status": "translation",
+        "text": "Constitutio anni 1995 matrimonium, familiam, maternitatem, paternitatem et pueritiam tuebatur"
+      }
+    ],
+    "constitutional_personal_data_guarantee": [
+      {
+        "status": "translation",
+        "text": "Constitutio tutelam datorum personalium praestat"
+      }
+    ],
+    "constitutional_personal_data_guarantee_1995": [
+      {
+        "status": "translation",
+        "text": "Constitutio anni 1995 tutelam datorum personalium praestabat"
+      }
+    ],
+    "continued_detention_attempt": [
+      {
+        "status": "translation",
+        "text": "magistratus publicus personam in custodia retinere pergit"
+      }
+    ],
+    "continued_detention_barred": [
+      {
+        "status": "translation",
+        "text": "detentio ultra terminum lege statutum prohibita est: sententia iudicii deest"
+      }
+    ],
+    "corruption_offence_confirmed_by_court": [
+      {
+        "status": "translation",
+        "text": "a iudicio confirmatum est personam delictum corruptionis commisisse"
+      }
+    ],
+    "counsel_access_provided": [
+      {
+        "status": "translation",
+        "text": "detento aditus ad advocatum praebitus est"
+      }
+    ],
+    "court_declared_incapable": [
+      {
+        "status": "translation",
+        "text": "persona a iudicio incapax declarata est"
+      }
+    ],
+    "court_ordered_citizenship_deprivation": [
+      {
+        "status": "translation",
+        "text": "privatio iuris civitatis ex sententia iudicii facta est"
+      }
+    ],
+    "court_sanction_obtained": [
+      {
+        "status": "translation",
+        "text": "auctoritas iudicii obtenta est"
+      }
+    ],
+    "death_penalty_attempt": [
+      {
+        "status": "translation",
+        "text": "magistratus publicus poenam capitis irrogat"
+      }
+    ],
+    "death_penalty_imposed": [
+      {
+        "status": "translation",
+        "text": "poena capitis irrogata est"
+      }
+    ],
+    "defence_duty_unperformed": [
+      {
+        "status": "translation",
+        "text": "a cive officium Rei Publicae defendendae non impletum est"
+      }
+    ],
+    "derogable_right_target": [
+      {
+        "status": "translation",
+        "text": "ius restrictioni obnoxium restrictionem admittit"
+      }
+    ],
+    "detention_exceeds_72_hours": [
+      {
+        "status": "translation",
+        "text": "tempus detentionis septuaginta duas horas excessit"
+      }
+    ],
+    "detention_exceeds_statutory_period": [
+      {
+        "status": "translation",
+        "text": "tempus detentionis terminum lege statutum excessit"
+      }
+    ],
+    "detention_has_court_decision": [
+      {
+        "status": "translation",
+        "text": "sententia iudicii de detentione prorogata adest"
+      }
+    ],
+    "detention_of": [
+      {
+        "status": "translation",
+        "text": "detentio hanc personam attingit"
+      }
+    ],
+    "detention_without_court_sanction": [
+      {
+        "status": "translation",
+        "text": "detentio sine auctoritate iudicii facta est"
+      }
+    ],
+    "detention_without_court_sanction_limit_hours_1995": [
+      {
+        "status": "translation",
+        "text": "terminus summus detentionis sine auctoritate iudicii — septuaginta duae horae (recensio anni 1995)"
+      }
+    ],
+    "different_regime_established_for_foreigners": [
+      {
+        "status": "translation",
+        "text": "peregrinis lege vel pacto alius status statutus est"
+      }
+    ],
+    "dignity_infringed": [
+      {
+        "status": "translation",
+        "text": "dignitas personae violata est"
+      }
+    ],
+    "dignity_infringement_attempt": [
+      {
+        "status": "translation",
+        "text": "magistratus publicus dignitatem personae impugnat"
+      }
+    ],
+    "discriminated": [
+      {
+        "status": "translation",
+        "text": "persona discriminationi subiecta est"
+      }
+    ],
+    "discriminatory_treatment_attempt": [
+      {
+        "status": "translation",
+        "text": "magistratus publicus discrimen in tractatione admittit"
+      }
+    ],
+    "document_affects": [
+      {
+        "status": "translation",
+        "text": "documentum iura et commoda personae attingit"
+      }
+    ],
+    "education_institution": [
+      {
+        "status": "translation",
+        "text": "institutum est institutum educationis"
+      }
+    ],
+    "education_institution_constitutionally_compliant": [
+      {
+        "status": "translation",
+        "text": "actio instituti educationis constitutionaliter admissibilis est"
+      }
+    ],
+    "education_standards_met": [
+      {
+        "status": "translation",
+        "text": "institutum educationis normas universaliter obligatorias observat"
+      }
+    ],
+    "electoral_candidate_ineligible": [
+      {
+        "status": "translation",
+        "text": "persona eligi non potest"
+      }
+    ],
+    "employed_under_labour_contract": [
+      {
+        "status": "translation",
+        "text": "persona ex contractu laboris operatur"
+      }
+    ],
+    "enjoys_citizen_rights_and_duties": [
+      {
+        "status": "translation",
+        "text": "persona iuribus fruitur et officia sustinet pariter cum civibus"
+      }
+    ],
+    "entrepreneurial_action": [
+      {
+        "status": "translation",
+        "text": "persona negotiationem exercet"
+      }
+    ],
+    "exit_action": [
+      {
+        "status": "translation",
+        "text": "persona extra fines Rei Publicae exit"
+      }
+    ],
+    "exit_kazakhstan_action_1995": [
+      {
+        "status": "translation",
+        "text": "persona extra fines Rei Publicae exit (recensio anni 1995)"
+      }
+    ],
+    "extradited": [
+      {
+        "status": "translation",
+        "text": "persona civitati externae dedita est"
+      }
+    ],
+    "extradition_decision": [
+      {
+        "status": "translation",
+        "text": "magistratus publicus de persona dedenda decernit"
+      }
+    ],
+    "final_conviction": [
+      {
+        "status": "translation",
+        "text": "erga personam sententia damnatoria in rem iudicatam transiit"
+      }
+    ],
+    "forced_labour_attempt": [
+      {
+        "status": "translation",
+        "text": "magistratus publicus laborem coactum adhibet"
+      }
+    ],
+    "forced_labour_barred": [
+      {
+        "status": "translation",
+        "text": "coactio ad laborem prohibita est: causa a Constitutione nominata deest"
+      }
+    ],
+    "forced_labour_constitutionally_admissible": [
+      {
+        "status": "translation",
+        "text": "labor coactus constitutionaliter admissibilis est"
+      }
+    ],
+    "foreign_citizenship_is_termination_ground": [
+      {
+        "status": "translation",
+        "text": "ius civitatis alienum — causa iuris civitatis Rei Publicae amittendi"
+      }
+    ],
+    "foreign_citizenship_not_recognized": [
+      {
+        "status": "translation",
+        "text": "ius civitatis alterius civitatis civi Rei Publicae non agnoscitur"
+      }
+    ],
+    "foreigner_or_stateless": [
+      {
+        "status": "translation",
+        "text": "persona peregrinus vel persona sine iure civitatis est"
+      }
+    ],
+    "free_higher_education_provided": [
+      {
+        "status": "translation",
+        "text": "personae educatio superior gratuita in instituto educationis publico praebita est"
+      }
+    ],
+    "free_legal_aid_provided": [
+      {
+        "status": "translation",
+        "text": "personae auxilium iuridicum gratuitum praestitum est"
+      }
+    ],
+    "free_secondary_education_eligible": [
+      {
+        "status": "translation",
+        "text": "persona ius ad educationem mediam gratuitam habet"
+      }
+    ],
+    "free_secondary_education_provided": [
+      {
+        "status": "translation",
+        "text": "personae educatio media gratuita praebita est"
+      }
+    ],
+    "guaranteed_free_medical_care_provided": [
+      {
+        "status": "translation",
+        "text": "personae mensura praestita auxilii medici gratuiti praebita est"
+      }
+    ],
+    "heritage_harmed": [
+      {
+        "status": "translation",
+        "text": "a persona damnum hereditati historicae et culturali illatum est"
+      }
+    ],
+    "higher_education_competition_won": [
+      {
+        "status": "translation",
+        "text": "persona ex certamine ius ad educationem superiorem gratuitam adepta est"
+      }
+    ],
+    "holds_foreign_citizenship": [
+      {
+        "status": "translation",
+        "text": "persona ius civitatis alterius civitatis habet"
+      }
+    ],
+    "home_unlawfully_entered": [
+      {
+        "status": "translation",
+        "text": "inviolabilitas domicilii violata est"
+      }
+    ],
+    "identity_declaration_action": [
+      {
+        "status": "translation",
+        "text": "persona nationem, factionem et religionem suam determinat et indicat"
+      }
+    ],
+    "imprisoned_by_court_sentence": [
+      {
+        "status": "translation",
+        "text": "persona ex sententia iudicii in locis libertatis privationis detinetur"
+      }
+    ],
+    "innocent": [
+      {
+        "status": "translation",
+        "text": "persona innocens habetur"
+      }
+    ],
+    "judicial_act_or_emergency_basis": [
+      {
+        "status": "translation",
+        "text": "labor coactus ex sententia iudicii aut in statu necessitatis vel belli adhibitus est"
+      }
+    ],
+    "labour_action": [
+      {
+        "status": "translation",
+        "text": "persona libertate laboris utitur"
+      }
+    ],
+    "labour_dispute": [
+      {
+        "status": "translation",
+        "text": "persona in controversia laboris singulari vel collectiva participat"
+      }
+    ],
+    "labour_dispute_action": [
+      {
+        "status": "translation",
+        "text": "persona modis lege statutis controversiam laboris dirimit"
+      }
+    ],
+    "lawful_social_security_ground": [
+      {
+        "status": "translation",
+        "text": "causa subsidii socialis lege statuta adest"
+      }
+    ],
+    "lawful_tax_unpaid": [
+      {
+        "status": "translation",
+        "text": "a persona vectigalia, collationes et alia tributa lege statuta non soluta sunt"
+      }
+    ],
+    "lawfully_in_kazakhstan": [
+      {
+        "status": "translation",
+        "text": "persona legitime in Kazachstania versatur"
+      }
+    ],
+    "legal_aid_case": [
+      {
+        "status": "translation",
+        "text": "casus auxilii iuridici huic personae praestandi"
+      }
+    ],
+    "legislature": [
+      {
+        "status": "translation",
+        "text": "collegium est collegium legis ferendae"
+      }
+    ],
+    "movement_action": [
+      {
+        "status": "translation",
+        "text": "persona libertate migrandi utitur"
+      }
+    ],
+    "movement_restriction": [
+      {
+        "status": "translation",
+        "text": "restrictio libertatis migrandi hanc personam attingit"
+      }
+    ],
+    "movement_restriction_constitutionally_valid": [
+      {
+        "status": "translation",
+        "text": "restrictio libertatis migrandi constitutionaliter admissibilis est"
+      }
+    ],
+    "movement_restriction_established_by_law": [
+      {
+        "status": "translation",
+        "text": "restrictio libertatis migrandi lege statuta est"
+      }
+    ],
+    "native_language_and_culture_action": [
+      {
+        "status": "translation",
+        "text": "persona lingua patria et cultura utitur"
+      }
+    ],
+    "nature_harmed": [
+      {
+        "status": "translation",
+        "text": "a persona damnum naturae illatum est"
+      }
+    ],
+    "official": [
+      {
+        "status": "translation",
+        "text": "persona munere publico fungitur"
+      }
+    ],
+    "official_liability_arises": [
+      {
+        "status": "translation",
+        "text": "magistratus responsabilitatem secundum legem sustinet"
+      }
+    ],
+    "parent_care_provided": [
+      {
+        "status": "translation",
+        "text": "liberi adulti de parentibus laboris incapacibus curant"
+      }
+    ],
+    "parent_incapacitated": [
+      {
+        "status": "translation",
+        "text": "parens laboris incapax est"
+      }
+    ],
+    "parent_of": [
+      {
+        "status": "translation",
+        "text": "persona huius pueri parens est"
+      }
+    ],
+    "peaceful_assembly": [
+      {
+        "status": "translation",
+        "text": "persona in conventu pacifico participat"
+      }
+    ],
+    "person": [
+      {
+        "status": "translation",
+        "text": "subiectum persona physica est"
+      }
+    ],
+    "political_party_or_union_membership": [
+      {
+        "status": "translation",
+        "text": "persona factionis politicae vel consociationis opificum membrum est"
+      }
+    ],
+    "primary_or_basic_secondary_education": [
+      {
+        "status": "translation",
+        "text": "persona educationem primam vel mediam fundamentalem accipit"
+      }
+    ],
+    "privacy_unlawfully_interfered": [
+      {
+        "status": "translation",
+        "text": "inviolabilitas vitae privatae violata est"
+      }
+    ],
+    "propaganda_constitutionally_prohibited": [
+      {
+        "status": "translation",
+        "text": "talis propaganda constitutionaliter prohibita est"
+      }
+    ],
+    "propaganda_of_prohibited_content": [
+      {
+        "status": "translation",
+        "text": "persona propagandam mutationis violentae ordinis constitutionalis, belli, praestantiae socialis, stirpis, nationis, religionis, ordinis vel generis agit"
+      }
+    ],
+    "property_uncompensatedly_expropriated": [
+      {
+        "status": "translation",
+        "text": "res sine compensatione aequali ablatae sunt"
+      }
+    ],
+    "proportionality_confirmed": [
+      {
+        "status": "translation",
+        "text": "proportio restrictionis confirmata est"
+      }
+    ],
+    "proportionality_disproved": [
+      {
+        "status": "translation",
+        "text": "proportio restrictionis refutata est"
+      }
+    ],
+    "protection_and_patronage_provided": [
+      {
+        "status": "translation",
+        "text": "civi extra fines Rei Publicae tutela et patrocinium civitatis praestita sunt"
+      }
+    ],
+    "requirement_only_reflects_official_duties": [
+      {
+        "status": "translation",
+        "text": "requisitum natura officiorum muneris determinatur"
+      }
+    ],
+    "restricted_office_membership_incompatible": [
+      {
+        "status": "translation",
+        "text": "membratus in factione vel consociatione opificum cum munere gesto incompatibilis est"
+      }
+    ],
+    "restricted_political_officeholder": [
+      {
+        "status": "translation",
+        "text": "persona munus gerit cui membratus in factione vel consociatione opificum restringitur"
+      }
+    ],
+    "restriction_affects": [
+      {
+        "status": "translation",
+        "text": "restrictio hanc personam attingit"
+      }
+    ],
+    "restriction_attempt": [
+      {
+        "status": "translation",
+        "text": "collegium legis ferendae restrictionem introducit"
+      }
+    ],
+    "restriction_constitutionally_justified": [
+      {
+        "status": "translation",
+        "text": "restrictio constitutionaliter iustificata est"
+      }
+    ],
+    "restriction_enacted_by_law": [
+      {
+        "status": "translation",
+        "text": "restrictio lege statuta est"
+      }
+    ],
+    "restriction_has_constitutional_goal": [
+      {
+        "status": "translation",
+        "text": "restrictio finem constitutionaliter agnitum sequitur"
+      }
+    ],
+    "restriction_has_legal_effect": [
+      {
+        "status": "translation",
+        "text": "restrictio effectum iuridicum habet"
+      }
+    ],
+    "restriction_on_political_grounds": [
+      {
+        "status": "translation",
+        "text": "restrictio propter causas politicas introducta est"
+      }
+    ],
+    "restriction_prohibited": [
+      {
+        "status": "translation",
+        "text": "talis restrictio introduci non licet"
+      }
+    ],
+    "restriction_targets": [
+      {
+        "status": "translation",
+        "text": "restrictio hoc ius vel hanc libertatem petit"
+      }
+    ],
+    "restriction_targets_1995": [
+      {
+        "status": "translation",
+        "text": "restrictio hoc ius vel hanc libertatem petit (recensio anni 1995)"
+      }
+    ],
+    "return_block_attempt": [
+      {
+        "status": "translation",
+        "text": "magistratus publicus reditum civis impedit"
+      }
+    ],
+    "return_blocked": [
+      {
+        "status": "translation",
+        "text": "reditus civis in Rem Publicam restrictus est"
+      }
+    ],
+    "return_to_kazakhstan_action": [
+      {
+        "status": "translation",
+        "text": "civis in Rem Publicam redit"
+      }
+    ],
+    "rights_exercise_constitutionally_limited": [
+      {
+        "status": "translation",
+        "text": "exercitium iurium et libertatum fine constitutionali circumscriptum est"
+      }
+    ],
+    "rights_exercise_harms_others_or_constitutional_order": [
+      {
+        "status": "translation",
+        "text": "exercitium iurium iura aliorum laedit vel ordinem constitutionalem impugnat"
+      }
+    ],
+    "rights_exercise_harms_others_order_or_morality": [
+      {
+        "status": "translation",
+        "text": "exercitium iurium iura aliorum laedit, ordinem constitutionalem vel mores publicos impugnat"
+      }
+    ],
+    "russian_used_officially_in_state_bodies": [
+      {
+        "status": "translation",
+        "text": "in institutis publicis et organis administrationis localis sui iuris pariter cum Kazachica lingua Russica officialiter adhibetur"
+      }
+    ],
+    "secondary_education_stage": [
+      {
+        "status": "translation",
+        "text": "persona educationem mediam accipit"
+      }
+    ],
+    "social_security_provided": [
+      {
+        "status": "translation",
+        "text": "personae subsidium sociale praebitum est"
+      }
+    ],
+    "state_authority": [
+      {
+        "status": "translation",
+        "text": "subiectum magistratus publicus vel persona munere publico fungens est"
+      }
+    ],
+    "state_governance_participation_action": [
+      {
+        "status": "translation",
+        "text": "civis in rerum civitatis administratione participat"
+      }
+    ],
+    "state_harm_compensated": [
+      {
+        "status": "translation",
+        "text": "damnum illatum a civitate resarcitum est"
+      }
+    ],
+    "state_language_is_kazakh": [
+      {
+        "status": "translation",
+        "text": "lingua publica Rei Publicae Kazachstaniae lingua Kazachica est"
+      }
+    ],
+    "state_symbols_disrespected": [
+      {
+        "status": "translation",
+        "text": "persona symbola publica non reveretur"
+      }
+    ],
+    "statutory_free_legal_aid_ground": [
+      {
+        "status": "translation",
+        "text": "causa auxilii iuridici gratuiti lege praevisa adest"
+      }
+    ],
+    "statutory_housing_need": [
+      {
+        "status": "translation",
+        "text": "persona lege inter habitatione indigentes numeratur"
+      }
+    ],
+    "strike_action": [
+      {
+        "status": "translation",
+        "text": "persona in cessatione operis participat"
+      }
+    ],
+    "terrorism_or_grave_national_harm": [
+      {
+        "status": "translation",
+        "text": "a persona delictum terroristicum commissum est vel aliud grave damnum commodis vitalibus Rei Publicae illatum"
+      }
+    ],
+    "terrorism_or_grave_vital_interest_harm": [
+      {
+        "status": "translation",
+        "text": "a persona delictum terroristicum commissum est vel aliud grave damnum commodis vitalibus Rei Publicae illatum"
+      }
+    ],
+    "torture_attempt": [
+      {
+        "status": "translation",
+        "text": "magistratus publicus tormenta vel tractationem crudelem adhibet"
+      }
+    ],
+    "tortured": [
+      {
+        "status": "translation",
+        "text": "persona tormentis vel tractationi crudeli, inhumanae aut dignitatem deprimenti subiecta est"
+      }
+    ],
+    "treaty_allows_extradition": [
+      {
+        "status": "translation",
+        "text": "deditio pacto internationali Rei Publicae permittitur"
+      }
+    ],
+    "unarmed_peaceful_assembly": [
+      {
+        "status": "translation",
+        "text": "conventus pacificus est et sine armis agitur"
+      }
+    ],
+    "uncompensated_expropriation_attempt": [
+      {
+        "status": "translation",
+        "text": "magistratus publicus res sine compensatione aequali aufert"
+      }
+    ],
+    "unemployment_social_protection_ground": [
+      {
+        "status": "translation",
+        "text": "causa tutelae socialis contra inopiam operis adest"
+      }
+    ],
+    "unemployment_social_protection_provided": [
+      {
+        "status": "translation",
+        "text": "personae tutela socialis contra inopiam operis praestita est"
+      }
+    ],
+    "unexpunged_conviction": [
+      {
+        "status": "translation",
+        "text": "persona damnationem non deletam neque sublatam habet"
+      }
+    ],
+    "unfair_competition": [
+      {
+        "status": "translation",
+        "text": "actio ad certationem improbam spectat"
+      }
+    ],
+    "unfair_competition_prohibited": [
+      {
+        "status": "translation",
+        "text": "certatio improba prohibita est"
+      }
+    ],
+    "unlawful_continued_detention": [
+      {
+        "status": "translation",
+        "text": "custodiae continuatio illegitima est"
+      }
+    ],
+    "unlawful_home_entry_attempt": [
+      {
+        "status": "translation",
+        "text": "magistratus publicus in domicilium personae ingreditur"
+      }
+    ],
+    "unlawful_privacy_interference_attempt": [
+      {
+        "status": "translation",
+        "text": "magistratus publicus in vitam privatam personae intervenit"
+      }
+    ],
+    "unlawful_state_action_harmed": [
+      {
+        "status": "translation",
+        "text": "actionibus illegitimis magistratuum publicorum personae damnum illatum est"
+      }
+    ],
+    "voting_or_referendum_ineligible": [
+      {
+        "status": "translation",
+        "text": "persona suffragium ferre et in referendo participare non potest"
+      }
+    ]
+  },
+  "language": "la",
+  "package": "kz.constitution.rights"
+}

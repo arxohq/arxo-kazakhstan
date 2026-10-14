@@ -1,0 +1,168 @@
+{
+  "assertions": [
+    {
+      "contentHash": "sha256:1671cbc1ce4be12c7dbf772512653d28d07b443748a05635f2a820e11476a0a8",
+      "evidence": [],
+      "id": "urn:kz:constitution:amendment#referendum-passes-0",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:demo:kz:referendum",
+            "kind": "entity_ref"
+          },
+          {
+            "id": "urn:demo:kz:amendment",
+            "kind": "entity_ref"
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:amendment#referendum_for_amendment"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:amendment"
+    },
+    {
+      "contentHash": "sha256:64963c6c29010ff0b75dbf02bf4559eba7c957f0dcafa7c1ec46137de108d8a4",
+      "evidence": [],
+      "id": "urn:kz:constitution:amendment#referendum-passes-1",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:demo:kz:referendum",
+            "kind": "entity_ref"
+          },
+          {
+            "kind": "value",
+            "type": {
+              "name": "urn:law:std#Integer"
+            },
+            "value": 10
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:amendment#eligible_referendum_citizens"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:amendment"
+    },
+    {
+      "contentHash": "sha256:567cd0a04e3c49a2b1ad3db656cdebeb020a1921fd159c8f9699e4903827a436",
+      "evidence": [],
+      "id": "urn:kz:constitution:amendment#referendum-passes-2",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:demo:kz:referendum",
+            "kind": "entity_ref"
+          },
+          {
+            "kind": "value",
+            "type": {
+              "name": "urn:law:std#Integer"
+            },
+            "value": 6
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:amendment#referendum_participants"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:amendment"
+    },
+    {
+      "contentHash": "sha256:9429f84253ac067f865da77ebe8368e2731e10b169a3d24917f6c724eba6f4f4",
+      "evidence": [],
+      "id": "urn:kz:constitution:amendment#referendum-passes-3",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:demo:kz:referendum",
+            "kind": "entity_ref"
+          },
+          {
+            "kind": "value",
+            "type": {
+              "name": "urn:law:std#Integer"
+            },
+            "value": 4
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:amendment#votes_for_amendment"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:amendment"
+    },
+    {
+      "contentHash": "sha256:e3693421fe6c3141ed9c0d72df03b2d6f7eb71f72e36b670bab654265bb17bda",
+      "evidence": [],
+      "id": "urn:kz:constitution:amendment#referendum-passes-4",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:demo:kz:referendum",
+            "kind": "entity_ref"
+          },
+          {
+            "kind": "value",
+            "type": {
+              "name": "urn:law:std#Integer"
+            },
+            "value": 14
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:amendment#approving_regions_cities_and_capital"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:amendment"
+    },
+    {
+      "contentHash": "sha256:7582913a12f74c8e30c98342998e26dfd891e6576ab5651711d07b80fc62208b",
+      "evidence": [],
+      "id": "urn:kz:constitution:amendment#referendum-passes-5",
+      "kind": "assertion",
+      "literal": {
+        "args": [
+          {
+            "id": "urn:demo:kz:referendum",
+            "kind": "entity_ref"
+          },
+          {
+            "kind": "value",
+            "type": {
+              "name": "urn:law:std#Integer"
+            },
+            "value": 21
+          }
+        ],
+        "kind": "literal",
+        "polarity": "positive",
+        "predicate": "urn:kz:constitution:amendment#total_regions_cities_and_capital"
+      },
+      "origin": "case_input",
+      "package": "urn:kz:constitution:amendment"
+    }
+  ],
+  "context": {
+    "decisionTime": "2026-09-01T12:00:00+05:00",
+    "knowledgeTime": "2026-09-01T12:00:00+05:00",
+    "legalTime": "2026-09-01",
+    "timezone": "Asia/Almaty"
+  },
+  "options": {
+    "selectedInterpretations": [
+      "urn:kz:constitution:amendment#ListItselfEntrenchedReading"
+    ]
+  }
+}

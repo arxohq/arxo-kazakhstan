@@ -1,0 +1,1262 @@
+{
+  "$comment": "Қозоғистон Республикаси Конституциясининг kz.constitution1995.president пакети учун ўзбек тилидаги (кирилл ёзуви) белгилар қатлами — §218 (DECISION-0070). Бу қатлам CLIR таркибига кирмайди ва фақат тақдимот босқичида ўқилади (verbalize --labels, MCP ресурслари, иш столи). Таржима пакетнинг ru-KZ белгиларидан қилинган ишчи таржима (`translation`) бўлиб, Конституциянинг расмий ўзбекча матни эмас; ҳуқуқий куч ru-KZ ва kk-KZ манбаларидадир. Калит — эълоннинг маҳаллий номи.",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "ActingPresidentCannotInitiateAmendment1995": [
+      {
+        "status": "translation",
+        "text": "48-модда 2-банд (1995 йилги таҳрир). Президент ваколатларини қабул қилиб олган шахс Конституцияга ўзгартириш ва қўшимчалар киритишни ташаббус қилишга ҳақли эмас"
+      }
+    ],
+    "AdoptEmergencyMeasure1995": [
+      {
+        "status": "translation",
+        "text": "44-модда 16-кичик банд (1995 йилги таҳрир). Президент фавқулодда ҳолатни Бош вазир ва Палаталар раислари билан расмий маслаҳатлашувлардан кейин, Парламентни зудлик билан хабардор қилган ҳолда жорий этади"
+      }
+    ],
+    "AdoptMartialMeasure1995": [
+      {
+        "status": "translation",
+        "text": "44-модда 17-кичик банд (1995 йилги таҳрир). Тажовуз ёки бевосита ташқи таҳдид юз берганда Президент ҳарбий ҳолатни жорий этади ва Парламентни зудлик билан хабардор қилади"
+      }
+    ],
+    "AppointWithMazhilisConsent1995": [
+      {
+        "status": "translation",
+        "text": "44-модда 3-кичик банд (1995 йилги таҳрир). Президент Мажилиснинг розилиги билан Бош вазирни тайинлайди"
+      }
+    ],
+    "AppointWithSenateConsent1995": [
+      {
+        "status": "translation",
+        "text": "44-модда 4-кичик банд (1995 йилги таҳрир). Сенатнинг розилиги билан Конституциявий суднинг Раиси, Миллий банкнинг Раиси, Олий суд кенгашининг Раиси, Бош прокурор ва Миллий хавфсизлик қўмитасининг Раиси тайинланади"
+      }
+    ],
+    "Appointment": [
+      {
+        "status": "translation",
+        "text": "Президент томонидан амалга ошириладиган тайинлов"
+      }
+    ],
+    "CallReferendum1995": [
+      {
+        "status": "translation",
+        "text": "44-модда 10-кичик банд (1995 йилги таҳрир). Президент республика референдумини ўтказиш тўғрисида қарор қабул қилади"
+      }
+    ],
+    "Candidate": [
+      {
+        "status": "translation",
+        "text": "Президентликка номзод"
+      }
+    ],
+    "ConstitutionalPetition": [
+      {
+        "status": "translation",
+        "text": "Конституциявий судга мурожаат"
+      }
+    ],
+    "ConstitutionalReviewPetitionPower1995": [
+      {
+        "status": "translation",
+        "text": "44-модда 10-1-кичик банд (1995 йилги таҳрир). Президент кучга кирган ҳужжатнинг Конституцияга мувофиқлигини кўриб чиқиш тўғрисида Конституциявий судга мурожаат юборади"
+      }
+    ],
+    "CountersignatureResponsibility1995": [
+      {
+        "status": "translation",
+        "text": "45-модда 3-банд (1995 йилги таҳрир). Ҳужжатни имзо билан мустаҳкамлаган Палата Раиси ёки Бош вазир унинг қонунийлиги учун юридик жавобгарликни зиммасига олади"
+      }
+    ],
+    "ElectedByAbsoluteMajority1995": [
+      {
+        "status": "translation",
+        "text": "41-модда 5-банд (1995 йилги таҳрир). Овоз беришда иштирок этганлар овозининг эллик фоизидан кўпини олган номзод сайланган ҳисобланади"
+      }
+    ],
+    "ElectedInRunoff1995": [
+      {
+        "status": "translation",
+        "text": "41-модда 5-банд (1995 йилги таҳрир). Такрорий овоз беришда кўпроқ овоз тўплаган номзод сайланган ҳисобланади"
+      }
+    ],
+    "Election": [
+      {
+        "status": "translation",
+        "text": "Президент сайлови"
+      }
+    ],
+    "EmergencyMeasure": [
+      {
+        "status": "translation",
+        "text": "фавқулодда ёки ҳарбий ҳолат чораси"
+      }
+    ],
+    "EmergencyPower1995": [
+      {
+        "status": "translation",
+        "text": "44-модда 16-кичик банд (1995 йилги таҳрир). Президент фавқулодда ҳолатни Бош вазир ва Палаталар раислари билан расмий маслаҳатлашувлардан кейин, Парламентни зудлик билан хабардор қилган ҳолда жорий этади"
+      }
+    ],
+    "FormerPresidentInviolabilityImmunity1995": [
+      {
+        "status": "translation",
+        "text": "46-модда 3-банд (1995 йилги таҳрир). Дахлсизлик тўғрисидаги қоидалар Республиканинг экс-Президентларига ҳам тааллуқлидир"
+      }
+    ],
+    "FormerPresidentStateProvisionDuty1995": [
+      {
+        "status": "translation",
+        "text": "46-модда 2 ва 3-бандлар (1995 йилги таҳрир). Президентни ва унинг оиласини таъминлаш, уларга хизмат кўрсатиш ва уларни муҳофаза қилиш давлат ҳисобидан амалга оширилади; модда қоидалари экс-Президентларга ҳам тааллуқлидир"
+      }
+    ],
+    "FormerPresidentTitle1995": [
+      {
+        "status": "translation",
+        "text": "42-модда 3-банд (1995 йилги таҳрир). Лавозимидан четлатилганлардан ташқари барча собиқ Президентлар экс-Президент унвонига эга"
+      }
+    ],
+    "FormerPresidentialInviolability1995": [
+      {
+        "status": "translation",
+        "text": "46-модда 3-банд (1995 йилги таҳрир). Дахлсизлик тўғрисидаги қоидалар Республиканинг экс-Президентларига ҳам тааллуқлидир"
+      }
+    ],
+    "Impeachment": [
+      {
+        "status": "translation",
+        "text": "Президентни лавозимидан четлатиш ёки соғлиғи ҳолатига кўра озод қилиш тўғрисидаги иш юритув"
+      }
+    ],
+    "ImpeachmentBarredDuringDissolution1995": [
+      {
+        "status": "translation",
+        "text": "47-модда 3-банд (1995 йилги таҳрир). Президент Парламент ёки Мажилис ваколатларини муддатидан илгари тугатиш масаласини кўриб чиқаётган даврда лавозимидан четлатиш масаласи қўзғатилиши мумкин эмас"
+      }
+    ],
+    "ImpeachmentChargeBroughtByMazhilisMajority1995": [
+      {
+        "status": "translation",
+        "text": "47-модда 2-банд (1995 йилги таҳрир). Айблов қўйиш тўғрисидаги қарор Мажилис депутатларининг умумий сонидан кўпчилик билан қабул қилинади"
+      }
+    ],
+    "ImpeachmentInitiativeThreshold1995": [
+      {
+        "status": "translation",
+        "text": "47-модда 2-банд (1995 йилги таҳрир). Айблов қўйиш тўғрисидаги қарор Мажилис депутатларининг камида учдан бир қисми ташаббуси билан қабул қилинади"
+      }
+    ],
+    "ImpeachmentInvestigationValid1995": [
+      {
+        "status": "translation",
+        "text": "47-модда 2-банд (1995 йилги таҳрир). Айбловни текшириш Сенат томонидан ташкил этилади, натижалари унинг депутатлари умумий сонидан овозлар кўпчилиги билан топширилади"
+      }
+    ],
+    "Law": [
+      {
+        "status": "translation",
+        "text": "Президентга тақдим этилган қонун"
+      }
+    ],
+    "LawReturnPower1995": [
+      {
+        "status": "translation",
+        "text": "44-модда 2-кичик банд (1995 йилги таҳрир). Президент қонунни ёки унинг айрим моддаларини такроран муҳокама қилиш ва овоз бериш учун қайтаради"
+      }
+    ],
+    "LawSigningPower1995": [
+      {
+        "status": "translation",
+        "text": "44-модда 2-кичик банд (1995 йилги таҳрир). Президент Парламент тақдим этган қонунни бир ой ичида имзолайди"
+      }
+    ],
+    "MartialPower1995": [
+      {
+        "status": "translation",
+        "text": "44-модда 17-кичик банд (1995 йилги таҳрир). Тажовуз ёки бевосита ташқи таҳдид юз берганда Президент ҳарбий ҳолатни жорий этади ва Парламентни зудлик билан хабардор қилади"
+      }
+    ],
+    "Mazhilis": [
+      {
+        "status": "translation",
+        "text": "Парламент Мажилиси"
+      }
+    ],
+    "MazhilisChairAssumesPowers1995": [
+      {
+        "status": "translation",
+        "text": "48-модда 1-банд (1995 йилги таҳрир). Сенат Раисининг имконияти бўлмаганда ваколатлар Мажилис Раисига ўтади"
+      }
+    ],
+    "MazhilisConsentAppointmentPower1995": [
+      {
+        "status": "translation",
+        "text": "44-модда 3-кичик банд (1995 йилги таҳрир). Президент Мажилиснинг розилиги билан Бош вазирни тайинлайди"
+      }
+    ],
+    "Parliament": [
+      {
+        "status": "translation",
+        "text": "Қозоғистон Республикасининг Парламенти"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "жисмоний шахс"
+      }
+    ],
+    "PetitionConstitutionalCourt1995": [
+      {
+        "status": "translation",
+        "text": "44-модда 10-1-кичик банд (1995 йилги таҳрир). Президент кучга кирган ҳужжатнинг Конституцияга мувофиқлигини кўриб чиқиш тўғрисида Конституциявий судга мурожаат юборади"
+      }
+    ],
+    "President": [
+      {
+        "status": "translation",
+        "text": "Қозоғистон Республикасининг Президенти (1995 йилги таҳрир)"
+      }
+    ],
+    "PresidentAssumesOfficeOnOath1995": [
+      {
+        "status": "translation",
+        "text": "42-модда 1-банд (1995 йилги таҳрир). Президент халққа қасамёд қилган пайтдан эътиборан лавозимга киришади"
+      }
+    ],
+    "PresidentReleasedForIncapacity1995": [
+      {
+        "status": "translation",
+        "text": "47-модда 1-банд (1995 йилги таҳрир). Касаллик туфайли муддатидан илгари озод қилиш тўғрисидаги қарор ҳар бир Палата депутатларининг умумий сонидан камида тўртдан уч қисм кўпчилик билан қабул қилинади"
+      }
+    ],
+    "PresidentRemovedByImpeachment1995": [
+      {
+        "status": "translation",
+        "text": "47-модда 2-банд (1995 йилги таҳрир). Якуний қарор Олий суд ва Конституциявий суднинг хулосалари бўлганида ҳар бир Палата депутатлари овозининг камида тўртдан уч қисм кўпчилиги билан қабул қилинади"
+      }
+    ],
+    "PresidentialAct": [
+      {
+        "status": "translation",
+        "text": "Президент ҳужжати"
+      }
+    ],
+    "PresidentialActBinding1995": [
+      {
+        "status": "translation",
+        "text": "45-модда 1-банд (1995 йилги таҳрир). Президент Конституция ва қонунлар асосида ҳамда уларни ижро этиш юзасидан Республиканинг бутун ҳудудида мажбурий бўлган фармонлар ва фармойишлар чиқаради"
+      }
+    ],
+    "PresidentialCandidateEligibility1995": [
+      {
+        "status": "translation",
+        "text": "41-модда 2-банд (1995 йилги таҳрир). Туғилишидан фуқаро бўлган, қирқ ёшдан кичик бўлмаган, давлат тилини биладиган, Қозоғистонда ўн беш йил яшаган ва олий маълумотли фуқаро Президент этиб сайланиши мумкин"
+      }
+    ],
+    "PresidentialInviolability1995": [
+      {
+        "status": "translation",
+        "text": "46-модда 1-банд (1995 йилги таҳрир). Президент, унинг шаъни ва қадр-қиммати дахлсиздир"
+      }
+    ],
+    "PresidentialInviolabilityImmunity1995": [
+      {
+        "status": "translation",
+        "text": "46-модда 1-банд (1995 йилги таҳрир). Президент, унинг шаъни ва қадр-қиммати дахлсиздир"
+      }
+    ],
+    "PresidentialOfficeIncompatible1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "43-модда 1 ва 3-бандлар (1995 йилги таҳрир). Президент депутат бўлишга, бошқа ҳақ тўланадиган лавозимларни эгаллашга, тадбиркорлик фаолияти юритишга ва сиёсий партия таркибида бўлишга ҳақли эмас"
+      }
+    ],
+    "PresidentialOfficeIncompatible1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "43-модда 1 ва 3-бандлар (1995 йилги таҳрир). Президент депутат бўлишга, бошқа ҳақ тўланадиган лавозимларни эгаллашга, тадбиркорлик фаолияти юритишга ва сиёсий партия таркибида бўлишга ҳақли эмас"
+      }
+    ],
+    "PresidentialOfficeIncompatible1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "43-модда 1 ва 3-бандлар (1995 йилги таҳрир). Президент депутат бўлишга, бошқа ҳақ тўланадиган лавозимларни эгаллашга, тадбиркорлик фаолияти юритишга ва сиёсий партия таркибида бўлишга ҳақли эмас"
+      }
+    ],
+    "PresidentialOfficeIncompatible1995/alt/4": [
+      {
+        "status": "translation",
+        "text": "43-модда 1 ва 3-бандлар (1995 йилги таҳрир). Президент депутат бўлишга, бошқа ҳақ тўланадиган лавозимларни эгаллашга, тадбиркорлик фаолияти юритишга ва сиёсий партия таркибида бўлишга ҳақли эмас"
+      }
+    ],
+    "PresidentialPowersTerminated1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "42-модда 3-банд (1995 йилги таҳрир). Ваколатлар янги сайланган Президентнинг лавозимга киришиши, муддатидан илгари озод қилиниш, лавозимидан четлатилиш ёки вафот этиш билан тугатилади"
+      }
+    ],
+    "PresidentialPowersTerminated1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "42-модда 3-банд (1995 йилги таҳрир). Ваколатлар янги сайланган Президентнинг лавозимга киришиши, муддатидан илгари озод қилиниш, лавозимидан четлатилиш ёки вафот этиш билан тугатилади"
+      }
+    ],
+    "PresidentialPowersTerminated1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "42-модда 3-банд (1995 йилги таҳрир). Ваколатлар янги сайланган Президентнинг лавозимга киришиши, муддатидан илгари озод қилиниш, лавозимидан четлатилиш ёки вафот этиш билан тугатилади"
+      }
+    ],
+    "PresidentialRelativePositionProhibited1995": [
+      {
+        "status": "translation",
+        "text": "43-модда 4-банд (1995 йилги таҳрир). Президентнинг яқин қариндошлари сиёсий давлат хизматчилари лавозимларини ва квазидавлат секторидаги раҳбарлик лавозимларини эгаллашга ҳақли эмас"
+      }
+    ],
+    "PrimeMinisterAssumesPowers1995": [
+      {
+        "status": "translation",
+        "text": "48-модда 1-банд (1995 йилги таҳрир). Мажилис Раисининг имконияти бўлмаганда ваколатлар Республиканинг Бош вазирига ўтади"
+      }
+    ],
+    "PrimeMinisterNomineeAfterFractionConsultations1995": [
+      {
+        "status": "translation",
+        "text": "44-модда 3) кичик банд (1995 йилги таҳрир). Бош вазир номзоди сиёсий партиялар фракциялари билан маслаҳатлашувлардан кейин Мажилис кўригига киритилади"
+      }
+    ],
+    "ProvideStateFundedProtection1995": [
+      {
+        "status": "translation",
+        "text": "46-модда 2 ва 3-бандлар (1995 йилги таҳрир). Президентни ва унинг оиласини таъминлаш, уларга хизмат кўрсатиш ва уларни муҳофаза қилиш давлат ҳисобидан амалга оширилади; модда қоидалари экс-Президентларга ҳам тааллуқлидир"
+      }
+    ],
+    "Referendum": [
+      {
+        "status": "translation",
+        "text": "республика референдуми"
+      }
+    ],
+    "ReferendumPower1995": [
+      {
+        "status": "translation",
+        "text": "44-модда 10-кичик банд (1995 йилги таҳрир). Президент республика референдумини ўтказиш тўғрисида қарор қабул қилади"
+      }
+    ],
+    "RegularElectionDateAdmissible1995": [
+      {
+        "status": "translation",
+        "text": "41-модда 3-банд (1995 йилги таҳрир). Навбатдаги сайлов декабрнинг биринчи якшанбасида ўтказилади ва муддатлари бўйича Парламентнинг янги таркиби сайлови билан мос келиши мумкин эмас"
+      }
+    ],
+    "RejectedChargeTerminatesInitiators1995": [
+      {
+        "status": "translation",
+        "text": "47-модда 2-банд (1995 йилги таҳрир). Айбловнинг ҳар қандай босқичда рад этилиши уни ташаббус қилган Мажилис депутатларининг ваколатларини муддатидан илгари тугатишга олиб келади"
+      }
+    ],
+    "RepeatedElectionProhibited1995": [
+      {
+        "status": "translation",
+        "text": "42-модда 5-банд (1995 йилги таҳрир). Бир шахс Президент этиб бир мартадан ортиқ сайланиши мумкин эмас"
+      }
+    ],
+    "ReturnLawForReconsideration1995": [
+      {
+        "status": "translation",
+        "text": "44-модда 2-кичик банд (1995 йилги таҳрир). Президент қонунни ёки унинг айрим моддаларини такроран муҳокама қилиш ва овоз бериш учун қайтаради"
+      }
+    ],
+    "RunoffRequired1995": [
+      {
+        "status": "translation",
+        "text": "41-модда 5-банд (1995 йилги таҳрир). Агар бирорта номзод кўрсатилган миқдордаги овозни тўпламаса, такрорий овоз бериш ўтказилади"
+      }
+    ],
+    "Senate": [
+      {
+        "status": "translation",
+        "text": "Парламент Сенати"
+      }
+    ],
+    "SenateChairAssumesPowers1995": [
+      {
+        "status": "translation",
+        "text": "48-модда 1-банд (1995 йилги таҳрир). Президентнинг қолган муддатдаги ваколатлари Парламент Сенатининг Раисига ўтади"
+      }
+    ],
+    "SenateConsentAppointmentPower1995": [
+      {
+        "status": "translation",
+        "text": "44-модда 4-кичик банд (1995 йилги таҳрир). Сенатнинг розилиги билан Конституциявий суднинг Раиси, Миллий банкнинг Раиси, Олий суд кенгашининг Раиси, Бош прокурор ва Миллий хавфсизлик қўмитасининг Раиси тайинланади"
+      }
+    ],
+    "SignPresentedLaw1995": [
+      {
+        "status": "translation",
+        "text": "44-модда 2-кичик банд (1995 йилги таҳрир). Президент Парламент тақдим этган қонунни бир ой ичида имзолайди"
+      }
+    ],
+    "StateAuthority": [
+      {
+        "status": "translation",
+        "text": "давлат органи ёки мансабдор шахс"
+      }
+    ],
+    "SuccessionEvent": [
+      {
+        "status": "translation",
+        "text": "Президент ваколатларининг ўтиш ҳоли"
+      }
+    ],
+    "SuccessionOathTimely1995": [
+      {
+        "status": "translation",
+        "text": "42-модда 2-банд (1995 йилги таҳрир). Президент ваколатларини қабул қилиб олган шахс томонидан қасамёд бир ой ичида қабул қилинади"
+      }
+    ],
+    "act_countersigned_by_pm_or_chamber_chair": [
+      {
+        "status": "translation",
+        "text": "ҳужжат Бош вазирнинг ёки Парламент Палатаси раисининг имзоси билан мустаҳкамланган"
+      }
+    ],
+    "act_initiated_by_government": [
+      {
+        "status": "translation",
+        "text": "ҳужжат Ҳукуматнинг ташаббуси билан чиқарилган"
+      }
+    ],
+    "acting_president": [
+      {
+        "status": "translation",
+        "text": "шахс Президент вазифасини бажаради"
+      }
+    ],
+    "acting_president_amendment_initiative_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "Президент вазифасини бажарувчига Конституцияни ўзгартиришни ташаббус қилиш тақиқланади"
+      }
+    ],
+    "age_years": [
+      {
+        "status": "translation",
+        "text": "шахснинг тўлган йиллардаги ёши"
+      }
+    ],
+    "aggression_or_immediate_external_threat": [
+      {
+        "status": "translation",
+        "text": "Республикага қарши тажовуз ёки бевосита ташқи таҳдид мавжуд"
+      }
+    ],
+    "appointment_effective_1995": [
+      {
+        "status": "translation",
+        "text": "тайинлов амалга оширилган"
+      }
+    ],
+    "appointment_requires_mazhilis_consent": [
+      {
+        "status": "translation",
+        "text": "тайинлов Мажилиснинг розилиги билан амалга оширилади"
+      }
+    ],
+    "appointment_requires_senate_consent": [
+      {
+        "status": "translation",
+        "text": "тайинлов Сенатнинг розилиги билан амалга оширилади"
+      }
+    ],
+    "assumes_presidential_powers_1995": [
+      {
+        "status": "translation",
+        "text": "шахс Президент ваколатларини ўз зиммасига олади"
+      }
+    ],
+    "candidate_person": [
+      {
+        "status": "translation",
+        "text": "номзод мазкур шахсдир"
+      }
+    ],
+    "charge_rejected": [
+      {
+        "status": "translation",
+        "text": "айблов рад этилган"
+      }
+    ],
+    "citizen_by_birth": [
+      {
+        "status": "translation",
+        "text": "шахс туғилишидан Республика фуқаросидир"
+      }
+    ],
+    "close_relative_of_president": [
+      {
+        "status": "translation",
+        "text": "шахс Президентнинг яқин қариндошидир"
+      }
+    ],
+    "coincides_with_parliament_election": [
+      {
+        "status": "translation",
+        "text": "Президент сайлови муддатлари бўйича Парламентнинг янги таркиби сайлови билан мос келади"
+      }
+    ],
+    "constitutional_amendment_initiative_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент вазифасини бажарувчи Конституцияни ўзгартиришни ташаббус қилади"
+      }
+    ],
+    "constitutional_court_procedure_confirmed": [
+      {
+        "status": "translation",
+        "text": "Конституциявий суд белгиланган конституциявий тартиб-таомилларга риоя этилганини тасдиқлади"
+      }
+    ],
+    "constitutional_organs_functioning_disrupted": [
+      {
+        "status": "translation",
+        "text": "конституциявий органларнинг нормал фаолият кўрсатиши бузилган"
+      }
+    ],
+    "constitutional_petition": [
+      {
+        "status": "translation",
+        "text": "мурожаат Конституциявий судга юборилган"
+      }
+    ],
+    "constitutional_review_petition_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент Конституциявий судга мурожаат қилади"
+      }
+    ],
+    "constitutional_review_requested_1995": [
+      {
+        "status": "translation",
+        "text": "конституциявий назорат қонуний равишда ташаббус қилинган"
+      }
+    ],
+    "countersignatory_bears_legal_responsibility_1995": [
+      {
+        "status": "translation",
+        "text": "ҳужжатни имзо билан мустаҳкамлаган шахс унинг қонунийлиги учун юридик жавобгарликни зиммасига олади"
+      }
+    ],
+    "early_release_or_removal": [
+      {
+        "status": "translation",
+        "text": "Президент муддатидан илгари озод қилинган ёки лавозимидан четлатилган"
+      }
+    ],
+    "elected_president_1995": [
+      {
+        "status": "translation",
+        "text": "шахс Президент этиб сайланган ҳисобланади"
+      }
+    ],
+    "election_majority_percent_1995": [
+      {
+        "status": "translation",
+        "text": "Президентни сайлаш бўсағаси — овозларнинг эллик фоизидан кўпи"
+      }
+    ],
+    "eligible_presidential_candidate_1995": [
+      {
+        "status": "translation",
+        "text": "шахс Президентликка номзодга қўйиладиган талабларга жавоб беради"
+      }
+    ],
+    "emergency_consultations_with_pm_and_chairs_completed": [
+      {
+        "status": "translation",
+        "text": "Бош вазир ва Парламент Палаталарининг раислари билан маслаҳатлашувлар ўтказилган"
+      }
+    ],
+    "emergency_measure": [
+      {
+        "status": "translation",
+        "text": "чора фавқулодда ҳолат чорасидир"
+      }
+    ],
+    "emergency_measure_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент фавқулодда ҳолат чораларини жорий этади"
+      }
+    ],
+    "emergency_measure_in_force_1995": [
+      {
+        "status": "translation",
+        "text": "фавқулодда ҳолат чоралари қонуний равишда жорий этилган"
+      }
+    ],
+    "final_decision_within_two_months": [
+      {
+        "status": "translation",
+        "text": "якуний қарор икки ойлик муддатда қабул қилинган"
+      }
+    ],
+    "fluent_in_state_language": [
+      {
+        "status": "translation",
+        "text": "шахс давлат тилини эркин билади"
+      }
+    ],
+    "former_president": [
+      {
+        "status": "translation",
+        "text": "шахс Республиканинг собиқ Президентидир"
+      }
+    ],
+    "former_president_title_held_1995": [
+      {
+        "status": "translation",
+        "text": "собиқ Президентга Республика Президенти унвони сақлаб қолинади"
+      }
+    ],
+    "fraction_consultations_completed": [
+      {
+        "status": "translation",
+        "text": "сиёсий партиялар фракциялари билан маслаҳатлашувлар ўтказилган"
+      }
+    ],
+    "higher_education": [
+      {
+        "status": "translation",
+        "text": "шахс олий маълумотга эга"
+      }
+    ],
+    "highest_vote_in_runoff": [
+      {
+        "status": "translation",
+        "text": "номзод такрорий овоз беришда кўпроқ овоз тўплади"
+      }
+    ],
+    "impeachment_case": [
+      {
+        "status": "translation",
+        "text": "иш юритув Президентни лавозимидан четлатиш тўғрисидаги иш юритувдир"
+      }
+    ],
+    "impeachment_charge_brought_1995": [
+      {
+        "status": "translation",
+        "text": "айблов қўйиш тўғрисидаги қарор Мажилис депутатларининг умумий сонидан кўпчилик билан қабул қилинган"
+      }
+    ],
+    "impeachment_deadline_months_1995": [
+      {
+        "status": "translation",
+        "text": "лавозимидан четлатиш тўғрисида якуний қарор қабул қилиш муддати — икки ой"
+      }
+    ],
+    "impeachment_final_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "лавозимидан четлатиш бўсағасининг махражи — тўртдан уч"
+      }
+    ],
+    "impeachment_final_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "лавозимидан четлатиш бўсағасининг сурати — тўртдан уч"
+      }
+    ],
+    "impeachment_initiative_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "лавозимидан четлатиш ташаббуси бўсағасининг махражи — учдан бир"
+      }
+    ],
+    "impeachment_initiative_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "лавозимидан четлатиш ташаббуси бўсағасининг сурати — учдан бир"
+      }
+    ],
+    "impeachment_initiative_valid_1995": [
+      {
+        "status": "translation",
+        "text": "лавозимидан четлатиш ташаббуси ваколатли миқдордаги депутатлар томонидан билдирилган"
+      }
+    ],
+    "impeachment_investigation_valid_1995": [
+      {
+        "status": "translation",
+        "text": "айбловни текшириш қонуний равишда юклатилган"
+      }
+    ],
+    "impeachment_may_not_be_initiated_1995": [
+      {
+        "status": "translation",
+        "text": "Президентни лавозимидан четлатиш масаласи қўзғатилиши мумкин эмас"
+      }
+    ],
+    "incapacity_case": [
+      {
+        "status": "translation",
+        "text": "иш юритув Президентни соғлиғи ҳолатига кўра озод қилиш тўғрисидаги иш юритувдир"
+      }
+    ],
+    "incapacity_release_denominator_1995": [
+      {
+        "status": "translation",
+        "text": "соғлиғи ҳолатига кўра озод қилиш бўсағасининг махражи — тўртдан уч"
+      }
+    ],
+    "incapacity_release_numerator_1995": [
+      {
+        "status": "translation",
+        "text": "соғлиғи ҳолатига кўра озод қилиш бўсағасининг сурати — тўртдан уч"
+      }
+    ],
+    "initiating_mazhilis_deputies_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "айбловни ташаббус қилган Мажилис депутатларининг ваколатлари тугатилади"
+      }
+    ],
+    "law_presented": [
+      {
+        "status": "translation",
+        "text": "қонун Президентга имзолашга тақдим этилган"
+      }
+    ],
+    "law_returned_for_reconsideration_1995": [
+      {
+        "status": "translation",
+        "text": "қонун такроран муҳокама қилиш ва овоз бериш учун қайтарилган"
+      }
+    ],
+    "law_signature_months_1995": [
+      {
+        "status": "translation",
+        "text": "тақдим этилган қонунни имзолаш муддати — бир ой"
+      }
+    ],
+    "law_signed_1995": [
+      {
+        "status": "translation",
+        "text": "қонун Президент томонидан имзоланган"
+      }
+    ],
+    "martial_measure_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент ҳарбий ҳолатни жорий этади"
+      }
+    ],
+    "martial_measure_in_force_1995": [
+      {
+        "status": "translation",
+        "text": "ҳарбий ҳолат қонуний равишда жорий этилган"
+      }
+    ],
+    "mazhilis_accusation_votes": [
+      {
+        "status": "translation",
+        "text": "айблов қўйиш учун берилган Мажилис овозларининг сони"
+      }
+    ],
+    "mazhilis_chair": [
+      {
+        "status": "translation",
+        "text": "шахс Мажилис Раисидир"
+      }
+    ],
+    "mazhilis_chair_unable": [
+      {
+        "status": "translation",
+        "text": "Мажилис Раиси Президент ваколатларини ўз зиммасига ола олмайди"
+      }
+    ],
+    "mazhilis_consent_given": [
+      {
+        "status": "translation",
+        "text": "Мажилис тайинлашга розилик берди"
+      }
+    ],
+    "mazhilis_final_votes": [
+      {
+        "status": "translation",
+        "text": "якуний қарор қабул қилишдаги Мажилис овозларининг сони"
+      }
+    ],
+    "mazhilis_initiating_votes": [
+      {
+        "status": "translation",
+        "text": "лавозимидан четлатишни ташаббус қилган Мажилис депутатларининг сони"
+      }
+    ],
+    "mazhilis_release_votes": [
+      {
+        "status": "translation",
+        "text": "соғлиғи ҳолатига кўра озод қилиш учун берилган Мажилис овозларининг сони"
+      }
+    ],
+    "mazhilis_total_deputies": [
+      {
+        "status": "translation",
+        "text": "Мажилис депутатларининг умумий сони"
+      }
+    ],
+    "medical_commission_conclusion": [
+      {
+        "status": "translation",
+        "text": "тиббий комиссиянинг хулосаси мавжуд"
+      }
+    ],
+    "new_president_assumed_office": [
+      {
+        "status": "translation",
+        "text": "янги Президент лавозимга киришди"
+      }
+    ],
+    "no_candidate_reached_majority": [
+      {
+        "status": "translation",
+        "text": "бирорта номзод овозларнинг ярмидан кўпини тўпламади"
+      }
+    ],
+    "oath_taken": [
+      {
+        "status": "translation",
+        "text": "шахс Қозоғистон халқига қасамёд қилди"
+      }
+    ],
+    "parliament_dissolution_under_consideration": [
+      {
+        "status": "translation",
+        "text": "Парламентни ёки Мажилисни тарқатиб юбориш масаласи кўриб чиқилмоқда"
+      }
+    ],
+    "parliament_immediately_informed": [
+      {
+        "status": "translation",
+        "text": "Парламент кўрилган чоралар тўғрисида зудлик билан хабардор қилинган"
+      }
+    ],
+    "participating_voters": [
+      {
+        "status": "translation",
+        "text": "овоз беришда иштирок этган сайловчиларнинг сони"
+      }
+    ],
+    "petition_protects_rights_or_security": [
+      {
+        "status": "translation",
+        "text": "мурожаат инсоннинг ҳуқуқ ва эркинликларини ёки давлат хавфсизлигини ҳимоя қилишга қаратилган"
+      }
+    ],
+    "pm_appointment_consultations_completed_1995": [
+      {
+        "status": "translation",
+        "text": "Бош вазир номзоди сиёсий партиялар фракциялари билан маслаҳатлашувлардан кейин киритилган"
+      }
+    ],
+    "president": [
+      {
+        "status": "translation",
+        "text": "шахс Республиканинг Президентидир"
+      }
+    ],
+    "president_addresses_annual_message_1995": [
+      {
+        "status": "translation",
+        "text": "Президент мамлакатдаги вазият тўғрисида йиллик мурожаатнома билан чиқади"
+      }
+    ],
+    "president_assumed_office_1995": [
+      {
+        "status": "translation",
+        "text": "шахс Президент лавозимига киришди"
+      }
+    ],
+    "president_conducts_business": [
+      {
+        "status": "translation",
+        "text": "Президент тадбиркорлик фаолиятини амалга оширади"
+      }
+    ],
+    "president_deceased": [
+      {
+        "status": "translation",
+        "text": "Президент вафот этди"
+      }
+    ],
+    "president_decides_citizenship_and_asylum_1995": [
+      {
+        "status": "translation",
+        "text": "Президент фуқаролик ва сиёсий бошпана бериш масалаларини ҳал этади"
+      }
+    ],
+    "president_ensures_concerted_branch_functioning_1995": [
+      {
+        "status": "translation",
+        "text": "Президент давлат ҳокимияти тармоқларининг келишилган ҳолда фаолият кўрсатишини таъминлайди"
+      }
+    ],
+    "president_exercises_pardon_1995": [
+      {
+        "status": "translation",
+        "text": "Президент фуқароларни авфга олишни амалга оширади"
+      }
+    ],
+    "president_forms_security_council_and_assembly_1995": [
+      {
+        "status": "translation",
+        "text": "Президент Хавфсизлик кенгашини ва Қозоғистон халқи Ассамблеясини тузади"
+      }
+    ],
+    "president_forms_state_guard_service_1995": [
+      {
+        "status": "translation",
+        "text": "Президент Давлат муҳофазаси хизматини тузади"
+      }
+    ],
+    "president_holds_other_paid_office": [
+      {
+        "status": "translation",
+        "text": "Президент бошқа ҳақ тўланадиган лавозимни эгаллайди"
+      }
+    ],
+    "president_holds_representative_mandate": [
+      {
+        "status": "translation",
+        "text": "Президент вакиллик органининг депутатидир"
+      }
+    ],
+    "president_is_head_of_state_1995": [
+      {
+        "status": "translation",
+        "text": "Президент — давлат бошлиғи, Республиканинг олий мансабдор шахси"
+      }
+    ],
+    "president_is_supreme_commander_1995": [
+      {
+        "status": "translation",
+        "text": "Президент — Қуролли Кучларнинг Олий Бош қўмондони"
+      }
+    ],
+    "president_is_symbol_and_guarantor_of_unity_1995": [
+      {
+        "status": "translation",
+        "text": "Президент — халқ ва давлат ҳокимияти бирлигининг рамзи ва кафили"
+      }
+    ],
+    "president_minimum_age_1995": [
+      {
+        "status": "translation",
+        "text": "Президентнинг энг кам ёши — қирқ"
+      }
+    ],
+    "president_party_member": [
+      {
+        "status": "translation",
+        "text": "Президент сиёсий партия таркибида"
+      }
+    ],
+    "president_person": [
+      {
+        "status": "translation",
+        "text": "Президент мазкур жисмоний шахсдир"
+      }
+    ],
+    "president_released_for_incapacity_1995": [
+      {
+        "status": "translation",
+        "text": "Президент соғлиғи ҳолатига кўра лавозимидан муддатидан илгари озод қилинган"
+      }
+    ],
+    "president_removed_by_impeachment_1995": [
+      {
+        "status": "translation",
+        "text": "Президент лавозимидан четлатилган"
+      }
+    ],
+    "president_residence_years_1995": [
+      {
+        "status": "translation",
+        "text": "Қозоғистонда яшаш талаб қилинадиган муддат — ўн беш йил"
+      }
+    ],
+    "president_term_years_1995": [
+      {
+        "status": "translation",
+        "text": "Президент ваколатларининг муддати — етти йил"
+      }
+    ],
+    "presidential_act": [
+      {
+        "status": "translation",
+        "text": "ҳужжат мазкур Президент томонидан чиқарилган"
+      }
+    ],
+    "presidential_act_based_on_constitution_and_law": [
+      {
+        "status": "translation",
+        "text": "ҳужжат Конституция ва қонунлар асосида ҳамда уларни ижро этиш юзасидан чиқарилган"
+      }
+    ],
+    "presidential_act_binding_nationwide_1995": [
+      {
+        "status": "translation",
+        "text": "Президентнинг ҳужжати Республиканинг бутун ҳудудида мажбурий"
+      }
+    ],
+    "presidential_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент тайинловни амалга оширади"
+      }
+    ],
+    "presidential_election": [
+      {
+        "status": "translation",
+        "text": "воқеа Президент сайловидир"
+      }
+    ],
+    "presidential_inviolability_infringement": [
+      {
+        "status": "translation",
+        "text": "Президентнинг дахлсизлиги бузилган"
+      }
+    ],
+    "presidential_office_incompatible_1995": [
+      {
+        "status": "translation",
+        "text": "Президент лавозими эгалланган лавозим ёки фаолият билан сиғишмайди"
+      }
+    ],
+    "presidential_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "Президентнинг ваколатлари тугатилган"
+      }
+    ],
+    "presidential_relative_position_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "Президент қариндошининг бундай лавозимни эгаллашига йўл қўйилмайди"
+      }
+    ],
+    "presidential_return_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент қонунни такроран муҳокама қилиш учун қайтаради"
+      }
+    ],
+    "presidential_signature_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент тақдим этилган қонунни имзолайди"
+      }
+    ],
+    "presidential_vacancy": [
+      {
+        "status": "translation",
+        "text": "Президентнинг муддатидан илгари озод қилиниши, лавозимидан четлатилиши ёки вафоти юз берган"
+      }
+    ],
+    "presidential_vote": [
+      {
+        "status": "translation",
+        "text": "номзод учун берилган овозларнинг сони"
+      }
+    ],
+    "previously_elected_president": [
+      {
+        "status": "translation",
+        "text": "шахс илгари Республика Президенти этиб сайланган"
+      }
+    ],
+    "prime_minister": [
+      {
+        "status": "translation",
+        "text": "шахс Бош вазирдир"
+      }
+    ],
+    "referendum_called_1995": [
+      {
+        "status": "translation",
+        "text": "республика референдуми тайинланган"
+      }
+    ],
+    "referendum_decision_attempt": [
+      {
+        "status": "translation",
+        "text": "Президент референдум ўтказиш тўғрисида қарор қабул қилади"
+      }
+    ],
+    "referendum_proposal": [
+      {
+        "status": "translation",
+        "text": "республика референдумини ўтказиш тўғрисида таклиф билдирилган"
+      }
+    ],
+    "regular_election_date_admissible_1995": [
+      {
+        "status": "translation",
+        "text": "Президентнинг навбатдаги сайлови муддатига йўл қўйилади"
+      }
+    ],
+    "regular_election_on_first_december_sunday": [
+      {
+        "status": "translation",
+        "text": "навбатдаги сайлов декабрнинг биринчи якшанбасига тайинланган"
+      }
+    ],
+    "relative_holds_political_office_or_quasistate_leadership": [
+      {
+        "status": "translation",
+        "text": "қариндош сиёсий давлат лавозимини эгаллайди ёки квазидавлат секторидаги ташкилотга раҳбарлик қилади"
+      }
+    ],
+    "removed_from_office": [
+      {
+        "status": "translation",
+        "text": "шахс Президент лавозимидан четлатилган"
+      }
+    ],
+    "repeated_election_attempt": [
+      {
+        "status": "translation",
+        "text": "шахсни такроран Президент этиб сайлашга уриниб кўрилган"
+      }
+    ],
+    "repeated_election_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "бир шахсни такроран Президент этиб сайлашга йўл қўйилмайди"
+      }
+    ],
+    "resides_last_years": [
+      {
+        "status": "translation",
+        "text": "Қозоғистонда яшашнинг сўнгги йиллари сони"
+      }
+    ],
+    "runoff_ballot": [
+      {
+        "status": "translation",
+        "text": "овоз бериш такрорийдир"
+      }
+    ],
+    "runoff_required_1995": [
+      {
+        "status": "translation",
+        "text": "такрорий овоз бериш ўтказилмоқда"
+      }
+    ],
+    "senate_chair": [
+      {
+        "status": "translation",
+        "text": "шахс Сенат Раисидир"
+      }
+    ],
+    "senate_chair_unable": [
+      {
+        "status": "translation",
+        "text": "Сенат Раиси Президент ваколатларини ўз зиммасига ола олмайди"
+      }
+    ],
+    "senate_consent_given": [
+      {
+        "status": "translation",
+        "text": "Сенат тайинлашга розилик берди"
+      }
+    ],
+    "senate_final_votes": [
+      {
+        "status": "translation",
+        "text": "якуний қарор қабул қилишдаги Сенат овозларининг сони"
+      }
+    ],
+    "senate_investigation_votes": [
+      {
+        "status": "translation",
+        "text": "текширишни юклатиш учун берилган Сенат овозларининг сони"
+      }
+    ],
+    "senate_release_votes": [
+      {
+        "status": "translation",
+        "text": "соғлиғи ҳолатига кўра озод қилиш учун берилган Сенат овозларининг сони"
+      }
+    ],
+    "senate_total_deputies": [
+      {
+        "status": "translation",
+        "text": "Сенат депутатларининг умумий сони"
+      }
+    ],
+    "serious_and_immediate_threat": [
+      {
+        "status": "translation",
+        "text": "хавфсизликка, конституциявий тузумга ёки жамоат тартибига жиддий ва бевосита таҳдид мавжуд"
+      }
+    ],
+    "signature_within_one_month": [
+      {
+        "status": "translation",
+        "text": "қонун бир ойлик муддатда имзоланган"
+      }
+    ],
+    "state_authority": [
+      {
+        "status": "translation",
+        "text": "субъект давлат органи ёки мансабдор шахсдир"
+      }
+    ],
+    "state_funded_protection_provided": [
+      {
+        "status": "translation",
+        "text": "собиқ Президентга давлат ҳисобидан муҳофаза таъминланган"
+      }
+    ],
+    "succession_event": [
+      {
+        "status": "translation",
+        "text": "Президентнинг ваколатлари мазкур шахсга ўтади"
+      }
+    ],
+    "succession_oath_months_1995": [
+      {
+        "status": "translation",
+        "text": "ваколатлар ўтганда қасамёд қилиш муддати — бир ой"
+      }
+    ],
+    "succession_oath_timely_1995": [
+      {
+        "status": "translation",
+        "text": "ваколатлар ўтганда қасамёд муддатида қабул қилинган"
+      }
+    ],
+    "succession_oath_within_one_month": [
+      {
+        "status": "translation",
+        "text": "қасамёд ваколатлар қабул қилиб олинган кундан эътиборан бир ой ичида қабул қилинган"
+      }
+    ],
+    "supreme_court_charge_supported": [
+      {
+        "status": "translation",
+        "text": "Олий суд айбловнинг асослилигини тасдиқлади"
+      }
+    ],
+    "treason_charge": [
+      {
+        "status": "translation",
+        "text": "Президентга давлатга хиёнат қилишда айблов қўйилган"
+      }
+    ]
+  },
+  "language": "uz",
+  "package": "kz.constitution1995.president"
+}

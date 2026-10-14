@@ -1,0 +1,2526 @@
+// Конституция РК 2026, разделы VII–IX (ст. 72–91): конституционный
+// контроль, правосудие, прокуратура, правозащитные и местные институты.
+
+language "law.core" version "0.2";
+package kz.constitution.court version "0.1.0";
+namespace "urn:kz:constitution:court";
+
+
+// Политика счёта §86 — узел права, а не запись дела (DECISION-0111 §2.9):
+// до 0.2 её возило дело, и две копии одной политики могли разойтись между
+// `case` и профилем, ничем не будучи пойманы. Дело несёт только StableId.
+//
+// Срок полномочий считается календарным шагом (`calendar_year`, errata
+// E-0026). `no_roll` и `include_end` выбраны по тексту: при них шаг не
+// спрашивает снимок §85 вовсе, и срок не требует календаря праздников,
+// которого норма не читает. `month_end` обязателен календарной единице.
+deadline policy KZ_CONSTITUTION_TERMS {
+    start_count same_day;
+    include_end true;
+    roll no_roll;
+    month_end last_day_of_month;
+}
+
+entity Person {
+    label ru-KZ official "физическое лицо";
+}
+entity ConstitutionalCourt {
+    label ru-KZ official "Конституционный Суд Республики Казахстан";
+}
+entity ConstitutionalJudge {
+    label ru-KZ official "судья Конституционного Суда";
+}
+entity Court {
+    label ru-KZ official "суд";
+}
+entity Judge {
+    label ru-KZ official "судья";
+}
+entity Case {
+    label ru-KZ official "судебное дело";
+}
+pub entity LegalAct {
+    label ru-KZ official "нормативный правовой акт либо судебное решение";
+}
+entity Treaty {
+    label ru-KZ official "международный договор Республики";
+}
+entity Petition {
+    label ru-KZ official "обращение в Конституционный Суд";
+}
+entity ProsecutorGeneral {
+    label ru-KZ official "Генеральный Прокурор Республики Казахстан";
+}
+entity Ombudsman {
+    label ru-KZ official "Уполномоченный по правам человека";
+}
+entity Maslikhat {
+    label ru-KZ official "маслихат — местный представительный орган";
+}
+entity MaslikhatDeputy {
+    label ru-KZ official "депутат маслихата";
+}
+entity Akim {
+    label ru-KZ official "аким — глава местного исполнительного органа";
+}
+entity Candidate {
+    label ru-KZ official "кандидат на судейскую либо иную названную должность";
+}
+entity LocalDecision {
+    label ru-KZ official "решение маслихата либо органа местного самоуправления";
+}
+entity SupremeCourt {
+    label ru-KZ official "Верховный Суд Республики Казахстан";
+}
+entity Advocate {
+    label ru-KZ official "адвокат либо иной субъект оказания юридической помощи";
+}
+entity LegalAid {
+    label ru-KZ official "случай оказания юридической помощи";
+}
+
+relation constitutional_court(organ: ConstitutionalCourt) kind empirical {
+    label ru-KZ official "орган является Конституционным Судом";
+}
+relation constitutional_judge(judge: ConstitutionalJudge) kind empirical {
+    label ru-KZ official "лицо является судьёй Конституционного Суда";
+}
+relation constitutional_judge_count(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "число судей Конституционного Суда — одиннадцать";
+}
+// Срок закреплён КАК QUANTITY: единица §84.4 обязана оставаться видимой, а
+// грамматика допускает её только у литерала — из переменной Quantity не
+// собрать. Величина едет с единицей, и правило истечения читает её целиком.
+relation constitutional_judge_term(length: Quantity) kind institutional {
+    key(length);
+    label ru-KZ official "срок полномочий судьи Конституционного Суда — восемь лет";
+}
+relation previously_appointed_constitutional_judge(judge: ConstitutionalJudge) kind empirical {
+    label ru-KZ official "лицо ранее назначалось судьёй Конституционного Суда";
+}
+relation constitutional_judge_appointment_attempt(judge: ConstitutionalJudge) kind empirical {
+    label ru-KZ official "производится назначение судьи Конституционного Суда";
+}
+relation constitutional_judge_reappointment_prohibited(judge: ConstitutionalJudge) kind institutional {
+    label ru-KZ official "повторное назначение судьёй Конституционного Суда не допускается";
+}
+
+relation petition_to_constitutional_court(petition: Petition) kind empirical {
+    label ru-KZ official "обращение направлено в Конституционный Суд";
+}
+relation petition_by_president(petition: Petition) kind empirical {
+    label ru-KZ official "обращение внесено Президентом Республики";
+}
+relation petition_by_kurultai_chair(petition: Petition) kind empirical {
+    label ru-KZ official "обращение внесено Председателем Курултая";
+}
+relation petition_by_prime_minister(petition: Petition) kind empirical {
+    label ru-KZ official "обращение внесено Премьер-Министром";
+}
+relation petition_by_one_fifth_of_deputies(petition: Petition) kind empirical {
+    label ru-KZ official "обращение внесено не менее чем одной пятой депутатов Курултая";
+}
+relation petition_by_citizen_affecting_constitutional_rights(petition: Petition) kind empirical {
+    label ru-KZ official "обращение внесено гражданином по вопросу его конституционных прав и свобод";
+}
+relation petition_by_prosecutor_general(petition: Petition) kind empirical {
+    label ru-KZ official "обращение внесено Генеральным Прокурором";
+}
+relation petition_by_ombudsman_affecting_rights(petition: Petition) kind empirical {
+    label ru-KZ official "обращение внесено Уполномоченным по правам человека по вопросу прав и свобод";
+}
+relation petition_by_court_under_article_79(petition: Petition) kind empirical {
+    label ru-KZ official "обращение внесено судом в порядке статьи 79 Конституции";
+}
+relation petition_admissible(petition: Petition) kind institutional {
+    label ru-KZ official "обращение в Конституционный Суд принято к рассмотрению";
+}
+
+relation election_dispute_petition(petition: Petition) kind empirical {
+    label ru-KZ official "обращение оспаривает правильность выборов";
+}
+relation pre_signature_law_petition(petition: Petition, act: LegalAct) kind empirical {
+    label ru-KZ official "обращение внесено до подписания закона Президентом";
+}
+relation pre_ratification_treaty_petition(petition: Petition, treaty: Treaty) kind empirical {
+    label ru-KZ official "обращение внесено до ратификации международного договора";
+}
+relation presidential_inauguration_suspended(petition: Petition) kind institutional {
+    label ru-KZ official "вступление в должность Президента приостановлено до решения Конституционного Суда";
+}
+relation deputy_registration_suspended(petition: Petition) kind institutional {
+    label ru-KZ official "регистрация избранного депутата приостановлена до решения Конституционного Суда";
+}
+relation referendum_results_suspended(petition: Petition) kind institutional {
+    label ru-KZ official "итоги референдума не подводятся до решения Конституционного Суда";
+}
+relation signature_deadline_suspended(act: LegalAct) kind institutional {
+    label ru-KZ official "течение срока подписания закона приостановлено";
+}
+relation ratification_deadline_suspended(treaty: Treaty) kind institutional {
+    label ru-KZ official "течение срока ратификации международного договора приостановлено";
+}
+
+relation declared_unconstitutional(act: LegalAct) kind empirical {
+    label ru-KZ official "акт признан неконституционным";
+}
+relation decision_date(act: LegalAct, date: Date) kind empirical {
+    label ru-KZ official "день принятия решения Конституционным Судом";
+}
+relation court_specified_termination_date(act: LegalAct, date: Date) kind empirical {
+    label ru-KZ official "день, с которого суд определил прекращение действия акта";
+}
+relation assessment_date(act: LegalAct, date: Date) kind empirical {
+    label ru-KZ official "день, на который оценивается действие акта";
+}
+relation act_ceased_to_apply(act: LegalAct) kind institutional {
+    label ru-KZ official "акт утратил силу и не подлежит применению";
+}
+relation declared_constitutional_in_interpretation(act: LegalAct) kind empirical {
+    label ru-KZ official "акт признан конституционным в данном Судом истолковании";
+}
+// `pub`: вывод статьи 75 читает отраслевой пакет. Первый потребитель —
+// `kz.corpus.peacefulassembly`: нормативное постановление № 61-НП признало
+// подпункт 10) пункта 1 статьи 14 Закона о мирных собраниях конституционным
+// В ИСТОЛКОВАНИИ, и условие применения этого подпункта живёт в отраслевом
+// акте, а обязательность истолкования — здесь.
+pub relation required_constitutional_interpretation_applied(act: LegalAct) kind institutional {
+    label ru-KZ official "акт применяется только в истолковании, при котором он признан конституционным";
+}
+
+relation justice_act(actor: Person, legal_case: Case) kind empirical {
+    label ru-KZ official "субъект осуществляет правосудие";
+}
+relation court(court: Court) kind empirical {
+    label ru-KZ official "орган является судом";
+}
+relation court_handles(court: Court, legal_case: Case) kind empirical {
+    label ru-KZ official "дело рассматривается данным судом";
+}
+relation justice_lawful(legal_case: Case) kind institutional {
+    label ru-KZ official "правосудие осуществлено правомерно";
+}
+relation special_or_emergency_court(court: Court) kind empirical {
+    label ru-KZ official "суд является специальным либо чрезвычайным";
+}
+relation special_court_prohibited(court: Court) kind institutional {
+    label ru-KZ official "учреждение специальных и чрезвычайных судов не допускается";
+}
+
+relation applicable_act(legal_case: Case, act: LegalAct) kind empirical {
+    label ru-KZ official "по делу подлежит применению данный акт";
+}
+relation act_infringes_constitutional_rights(act: LegalAct) kind empirical {
+    label ru-KZ official "акт ущемляет закреплённые Конституцией права и свободы";
+}
+relation proceeding_suspended(legal_case: Case) kind institutional {
+    label ru-KZ official "производство по делу приостановлено";
+}
+relation constitutional_referral_required(legal_case: Case, act: LegalAct) kind institutional {
+    label ru-KZ official "суд обязан обратиться в Конституционный Суд";
+}
+
+relation judge(judge: Judge) kind empirical {
+    label ru-KZ official "лицо является судьёй";
+}
+relation judge_independent_and_subject_only_to_law(judge: Judge, legal_case: Case) kind institutional {
+    label ru-KZ official "судья при отправлении правосудия независим и подчиняется только Конституции и закону";
+}
+relation judicial_interference(judge: Judge, legal_case: Case) kind empirical {
+    label ru-KZ official "имеет место вмешательство в деятельность судьи по отправлению правосудия";
+}
+relation interference_unlawful(judge: Judge, legal_case: Case) kind institutional {
+    label ru-KZ official "вмешательство в отправление правосудия недопустимо";
+}
+relation judge_detention_attempt(judge: Judge) kind empirical {
+    label ru-KZ official "предпринята попытка задержания судьи";
+}
+relation judge_detention_ground(judge: Judge) kind institutional {
+    label ru-KZ official "налицо основание, при котором задержание судьи допустимо";
+}
+relation judge_inviolability_applies(judge: Judge) kind institutional {
+    label ru-KZ official "защита судьи от задержания действует";
+}
+relation judge_detained(judge: Judge) kind institutional {
+    label ru-KZ official "судья задержан";
+}
+relation judge_caught_at_crime_scene(judge: Judge) kind empirical {
+    label ru-KZ official "судья задержан на месте преступления";
+}
+relation judge_grave_or_especially_grave_offence(judge: Judge) kind empirical {
+    label ru-KZ official "судьёй совершено тяжкое либо особо тяжкое преступление";
+}
+relation required_judge_detention_consent(judge: Judge) kind empirical {
+    label ru-KZ official "получено согласие, требуемое для задержания судьи";
+}
+
+// Срок закреплён КАК QUANTITY: единица §84.4 обязана оставаться видимой, а
+// грамматика допускает её только у литерала — из переменной Quantity не
+// собрать. Величина едет с единицей, и правило истечения читает её целиком.
+relation supreme_court_chair_term(length: Quantity) kind institutional {
+    key(length);
+    label ru-KZ official "срок полномочий Председателя Верховного Суда — шесть лет";
+}
+// Срок закреплён КАК QUANTITY: единица §84.4 обязана оставаться видимой, а
+// грамматика допускает её только у литерала — из переменной Quantity не
+// собрать. Величина едет с единицей, и правило истечения читает её целиком.
+relation prosecutor_general_term(length: Quantity) kind institutional {
+    key(length);
+    label ru-KZ official "срок полномочий Генерального Прокурора — шесть лет";
+}
+relation prior_supreme_court_chair_term(person: Person) kind empirical {
+    label ru-KZ official "лицо ранее занимало должность Председателя Верховного Суда";
+}
+relation supreme_court_chair_reappointment_attempt(person: Person) kind empirical {
+    label ru-KZ official "предпринята попытка повторного назначения Председателем Верховного Суда";
+}
+relation supreme_court_chair_reappointment_prohibited(person: Person) kind institutional {
+    label ru-KZ official "повторное назначение Председателем Верховного Суда не допускается";
+}
+relation prior_prosecutor_general_term(person: Person) kind empirical {
+    label ru-KZ official "лицо ранее занимало должность Генерального Прокурора";
+}
+relation prosecutor_general_reappointment_attempt(person: Person) kind empirical {
+    label ru-KZ official "предпринята попытка повторного назначения Генеральным Прокурором";
+}
+relation prosecutor_general_reappointment_prohibited(person: Person) kind institutional {
+    label ru-KZ official "повторное назначение Генеральным Прокурором не допускается";
+}
+
+// Срок закреплён КАК QUANTITY: единица §84.4 обязана оставаться видимой, а
+// грамматика допускает её только у литерала — из переменной Quantity не
+// собрать. Величина едет с единицей, и правило истечения читает её целиком.
+relation maslikhat_term(length: Quantity) kind institutional {
+    key(length);
+    label ru-KZ official "срок полномочий маслихата — пять лет";
+}
+relation maslikhat_deputy_minimum_age(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "минимальный возраст депутата маслихата — двадцать лет";
+}
+relation akim_candidate_minimum(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "минимальное число внесённых кандидатур акима — две";
+}
+relation akim_consent_numerator(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "числитель порога согласия маслихата на назначение акима — одна вторая";
+}
+relation akim_consent_denominator(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "знаменатель порога согласия маслихата на назначение акима — одна вторая";
+}
+relation akim_no_confidence_initiative_numerator(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "числитель порога инициативы о вотуме недоверия акиму — одна пятая";
+}
+relation akim_no_confidence_initiative_denominator(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "знаменатель порога инициативы о вотуме недоверия акиму — одна пятая";
+}
+relation akim_no_confidence_numerator(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "числитель порога выражения вотума недоверия акиму — одна вторая";
+}
+relation akim_no_confidence_denominator(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "знаменатель порога выражения вотума недоверия акиму — одна вторая";
+}
+relation maslikhat_candidate(candidate: Candidate, person: Person) kind empirical {
+    label ru-KZ official "кандидат в депутаты маслихата является данным лицом";
+}
+relation citizen(person: Person) kind empirical {
+    label ru-KZ official "лицо является гражданином Республики Казахстан";
+}
+relation age_years(person: Person, years: Integer) kind empirical {
+    label ru-KZ official "возраст лица в полных годах";
+}
+relation already_member_of_other_maslikhat(person: Person) kind empirical {
+    label ru-KZ official "лицо уже является депутатом другого маслихата";
+}
+relation eligible_maslikhat_candidate(candidate: Candidate) kind institutional {
+    label ru-KZ official "лицо отвечает требованиям к депутату маслихата";
+}
+
+relation akim_candidate_set(maslikhat: Maslikhat, count: Integer) kind empirical {
+    label ru-KZ official "число кандидатур акима, внесённых на рассмотрение маслихата";
+}
+relation akim_candidate_vote(candidate: Candidate, votes: Integer) kind empirical {
+    label ru-KZ official "число голосов депутатов маслихата, поданных за кандидата в акимы";
+}
+relation participating_maslikhat_deputies(candidate: Candidate, total: Integer) kind empirical {
+    label ru-KZ official "число депутатов маслихата, принявших участие в голосовании";
+}
+relation akim_candidate_consented(candidate: Candidate) kind institutional {
+    label ru-KZ official "маслихат дал согласие на назначение кандидата акимом";
+}
+relation akim_no_confidence_initiating_votes(akim: Akim, votes: Integer) kind empirical {
+    label ru-KZ official "число депутатов маслихата, инициировавших вотум недоверия акиму";
+}
+relation akim_no_confidence_votes(akim: Akim, votes: Integer) kind empirical {
+    label ru-KZ official "число голосов, поданных за вотум недоверия акиму";
+}
+relation total_maslikhat_deputies(akim: Akim, total: Integer) kind empirical {
+    label ru-KZ official "общее число депутатов маслихата";
+}
+relation akim_no_confidence(akim: Akim) kind institutional {
+    label ru-KZ official "маслихат выразил вотум недоверия акиму";
+}
+
+relation local_revenue_reducing_or_spending_increasing(local_act: LocalDecision) kind empirical {
+    label ru-KZ official "решение предусматривает сокращение местных доходов либо увеличение расходов";
+}
+relation positive_akim_opinion(local_act: LocalDecision) kind empirical {
+    label ru-KZ official "по решению имеется положительное заключение акима";
+}
+relation local_decision_admissible(local_act: LocalDecision) kind institutional {
+    label ru-KZ official "решение маслихата обязательно на соответствующей территории";
+}
+relation local_self_government_action(local_act: LocalDecision) kind empirical {
+    label ru-KZ official "акт принят органом местного самоуправления";
+}
+relation within_statutory_local_power(local_act: LocalDecision) kind empirical {
+    label ru-KZ official "решение принято в пределах компетенции, установленной законом";
+}
+relation local_self_government_autonomy(local_act: LocalDecision) kind institutional {
+    label ru-KZ official "самостоятельность местного самоуправления в решении вопросов местного значения гарантирована";
+}
+
+// Ст. 77, 85, 86: судебная власть, Уполномоченный и адвокатура.
+relation legal_application_case(legal_case: Case) kind empirical {
+    label ru-KZ official "по делу применяется закон";
+}
+relation within_judicial_power(legal_case: Case) kind institutional {
+    label ru-KZ official "дело относится к судебной власти";
+}
+relation judicial_decision(act: LegalAct, court: Court) kind empirical {
+    label ru-KZ official "акт является решением данного суда";
+}
+relation judicial_decision_binding_nationwide(act: LegalAct) kind institutional {
+    label ru-KZ official "решение суда обязательно на всей территории Республики";
+}
+
+relation ombudsman(ombudsman: Ombudsman) kind empirical {
+    label ru-KZ official "лицо является Уполномоченным по правам человека";
+}
+relation ombudsman_appointment_attempt(ombudsman: Ombudsman) kind empirical {
+    label ru-KZ official "производится назначение Уполномоченного по правам человека";
+}
+relation presidential_appointment_of_ombudsman(ombudsman: Ombudsman) kind empirical {
+    label ru-KZ official "Уполномоченный назначается Президентом Республики";
+}
+relation ombudsman_appointed(ombudsman: Ombudsman) kind institutional {
+    label ru-KZ official "Уполномоченный по правам человека назначен";
+}
+relation ombudsman_independent_and_unaccountable(ombudsman: Ombudsman) kind institutional {
+    label ru-KZ official "Уполномоченный независим и не подотчётен государственным органам";
+}
+relation rights_restoration_case(person: Person) kind empirical {
+    label ru-KZ official "лицо обратилось за восстановлением нарушенных прав";
+}
+relation ombudsman_rights_assistance(ombudsman: Ombudsman, person: Person) kind empirical {
+    label ru-KZ official "Уполномоченный оказывает лицу содействие в восстановлении прав";
+}
+relation ombudsman_assistance_authorized(ombudsman: Ombudsman, person: Person) kind institutional {
+    label ru-KZ official "содействие Уполномоченного правомерно";
+}
+relation ombudsman_coercive_measure_attempt(ombudsman: Ombudsman) kind empirical {
+    label ru-KZ official "к Уполномоченному применяется мера принуждения";
+}
+relation ombudsman_caught_at_crime_scene(ombudsman: Ombudsman) kind empirical {
+    label ru-KZ official "Уполномоченный задержан на месте преступления";
+}
+relation ombudsman_grave_or_especially_grave_offence(ombudsman: Ombudsman) kind empirical {
+    label ru-KZ official "Уполномоченным совершено тяжкое либо особо тяжкое преступление";
+}
+relation presidential_consent_to_ombudsman_measure(ombudsman: Ombudsman) kind empirical {
+    label ru-KZ official "получено согласие Президента на применение меры к Уполномоченному";
+}
+relation ombudsman_measure_ground(ombudsman: Ombudsman) kind institutional {
+    label ru-KZ official "налицо основание, при котором мера принуждения к Уполномоченному допустима";
+}
+relation ombudsman_inviolability_applies(ombudsman: Ombudsman) kind institutional {
+    label ru-KZ official "защита Уполномоченного от мер принуждения действует";
+}
+relation ombudsman_coercive_measure_applied(ombudsman: Ombudsman) kind institutional {
+    label ru-KZ official "мера принуждения к Уполномоченному применена";
+}
+
+relation legal_aid(aid: LegalAid, person: Person) kind empirical {
+    label ru-KZ official "юридическая помощь оказывается данному лицу";
+}
+relation legal_aid_provider(provider: Advocate, aid: LegalAid) kind empirical {
+    label ru-KZ official "юридическая помощь оказывается данным субъектом";
+}
+relation aid_provider_authorized_by_law(provider: Advocate) kind empirical {
+    label ru-KZ official "субъект уполномочен законом оказывать юридическую помощь";
+}
+relation legal_aid_constitutionally_provided(aid: LegalAid, person: Person) kind institutional {
+    label ru-KZ official "юридическая помощь оказана в конституционном порядке";
+}
+pub relation courts_financed_from_republican_budget() kind institutional {
+    label ru-KZ official "суды финансируются из республиканского бюджета";
+}
+relation supreme_court(organ: SupremeCourt) kind empirical {
+    label ru-KZ official "орган является Верховным Судом";
+}
+relation case_assigned_by_law_to_supreme_court(organ: SupremeCourt, legal_case: Case) kind empirical {
+    label ru-KZ official "дело отнесено законом к ведению Верховного Суда";
+}
+relation supreme_court_case_authorized(organ: SupremeCourt, legal_case: Case) kind institutional {
+    label ru-KZ official "Верховный Суд правомочен рассматривать дело";
+}
+relation judicial_practice_explanation_authorized_by_law(organ: SupremeCourt) kind empirical {
+    label ru-KZ official "дача разъяснений по вопросам судебной практики отнесена к ведению Верховного Суда законом";
+}
+relation supreme_court_explanation_authorized(organ: SupremeCourt) kind institutional {
+    label ru-KZ official "Верховный Суд правомочен давать разъяснения по вопросам судебной практики";
+}
+relation local_representative_body(maslikhat: Maslikhat) kind empirical {
+    label ru-KZ official "орган является маслихатом";
+}
+relation local_executive_body(akim: Akim) kind empirical {
+    label ru-KZ official "орган является местным исполнительным органом";
+}
+relation maslikhat_responsible_for_territorial_affairs(maslikhat: Maslikhat) kind institutional {
+    label ru-KZ official "маслихат отвечает за состояние дел на соответствующей территории";
+}
+relation akim_responsible_for_territorial_affairs(akim: Akim) kind institutional {
+    label ru-KZ official "аким отвечает за состояние дел на соответствующей территории";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART81_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART81_KK")
+assert courts_financed_from_republican_budget();
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART72_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART72_KK")
+assert constitutional_judge_count(11);
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART72_RU")
+assert constitutional_judge_term(8 calendar_year);
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART83_RU")
+assert supreme_court_chair_term(6 calendar_year);
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART84_RU")
+assert prosecutor_general_term(6 calendar_year);
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART88_RU") {
+    assert maslikhat_term(5 calendar_year);
+    assert maslikhat_deputy_minimum_age(20);
+}
+// Ст. 89: «Президент… предлагает не менее двух кандидатур»; «Кандидат,
+// набравший большинство голосов депутатов маслихатов, принявших участие в
+// голосовании, считается получившим согласие»; «По инициативе не менее одной
+// пятой от общего числа депутатов маслихата может быть поставлен вопрос о
+// выражении вотума недоверия акиму… маслихат большинством голосов от общего
+// числа его депутатов вправе выразить недоверие акиму».
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART89_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART89_KK")
+assert akim_candidate_minimum(2);
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART89_RU") {
+    assert akim_consent_numerator(1);
+    assert akim_consent_denominator(2);
+    assert akim_no_confidence_initiative_numerator(1);
+    assert akim_no_confidence_initiative_denominator(5);
+    assert akim_no_confidence_numerator(1);
+    assert akim_no_confidence_denominator(2);
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART72_RU")
+rule ConstitutionalJudgeOneTerm(judge: ConstitutionalJudge) strict {
+    when constitutional_judge_appointment_attempt(judge);
+    when previously_appointed_constitutional_judge(judge);
+    then constitutional_judge_reappointment_prohibited(judge);
+    label ru-KZ official "Статья 72 пункт 2. Одно и то же лицо не может быть назначено судьёй Конституционного Суда более одного раза";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART73_RU") {
+    rule ConstitutionalPetitionInstitutionalApplicants(petition: Petition) strict {
+        when petition_to_constitutional_court(petition)
+            and (petition_by_president(petition)
+                or petition_by_kurultai_chair(petition)
+                or petition_by_prime_minister(petition)
+                or petition_by_one_fifth_of_deputies(petition));
+        then petition_admissible(petition);
+        label ru-KZ official "Статья 73 пункт 1. Конституционный Суд рассматривает обращения Президента, Председателя Курултая, не менее одной пятой депутатов Курултая, Премьер-Министра и Генерального Прокурора";
+    }
+
+    rule ConstitutionalPetitionRightsApplicants(petition: Petition) strict {
+        when petition_to_constitutional_court(petition)
+            and (petition_by_citizen_affecting_constitutional_rights(petition)
+                or petition_by_prosecutor_general(petition)
+                or petition_by_ombudsman_affecting_rights(petition)
+                or petition_by_court_under_article_79(petition));
+        then petition_admissible(petition);
+        label ru-KZ official "Статья 73 пункты 2–3. Конституционный Суд рассматривает обращения граждан, Уполномоченного по правам человека и судов по вопросам конституционных прав и свобод";
+    }
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART74_RU") {
+    rule PresidentialElectionDisputeSuspendsInauguration(petition: Petition) strict {
+        when petition_admissible(petition);
+        when election_dispute_petition(petition);
+        then presidential_inauguration_suspended(petition);
+        label ru-KZ official "Статья 74 пункт 1. При обращении в Конституционный Суд по спору о выборах вступление в должность Президента приостанавливается";
+    }
+
+    rule DeputyElectionDisputeSuspendsRegistration(petition: Petition) strict {
+        when petition_admissible(petition);
+        when election_dispute_petition(petition);
+        then deputy_registration_suspended(petition);
+        label ru-KZ official "Статья 74 пункт 1. При обращении в Конституционный Суд по спору о выборах регистрация избранных депутатов Курултая приостанавливается";
+    }
+
+    rule ReferendumDisputeSuspendsResults(petition: Petition) strict {
+        when petition_admissible(petition);
+        when election_dispute_petition(petition);
+        then referendum_results_suspended(petition);
+        label ru-KZ official "Статья 74 пункт 1. При обращении в Конституционный Суд по спору о референдуме подведение его итогов приостанавливается";
+    }
+
+    rule PreSignatureReviewSuspendsDeadline(petition: Petition, act: LegalAct) strict {
+        when petition_admissible(petition);
+        when pre_signature_law_petition(petition, act);
+        then signature_deadline_suspended(act);
+        label ru-KZ official "Статья 74 пункт 2. При обращении в Конституционный Суд течение срока подписания акта приостанавливается";
+    }
+
+    rule PreRatificationReviewSuspendsDeadline(petition: Petition, treaty: Treaty) strict {
+        when petition_admissible(petition);
+        when pre_ratification_treaty_petition(petition, treaty);
+        then ratification_deadline_suspended(treaty);
+        label ru-KZ official "Статья 74 пункт 2. При обращении в Конституционный Суд течение срока ратификации договора приостанавливается";
+    }
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART75_RU") {
+    rule UnconstitutionalActCeasesOnDecision(act: LegalAct, date: Date) strict {
+        when declared_unconstitutional(act);
+        when decision_date(act, date);
+        then act_ceased_to_apply(act);
+        label ru-KZ official "Статья 75 пункт 2. Акт, признанный неконституционным, прекращает действие со дня принятия решения Конституционным Судом";
+    }
+
+    rule UnconstitutionalActCeasesOnSpecifiedDate(
+        act: LegalAct,
+        termination: Date,
+        as_of: Date,
+    ) strict {
+        when declared_unconstitutional(act)
+            and court_specified_termination_date(act, termination)
+            and assessment_date(act, as_of)
+            and (termination <= as_of);
+        then act_ceased_to_apply(act);
+        label ru-KZ official "Статья 75 пункт 2. Акт, признанный неконституционным, прекращает действие с даты, установленной Конституционным Судом";
+    }
+
+    rule ConstitutionConformingInterpretationRequired(act: LegalAct) strict {
+        when declared_constitutional_in_interpretation(act);
+        then required_constitutional_interpretation_applied(act);
+        label ru-KZ official "Статья 75 пункт 2. Акт, признанный конституционным в истолковании Конституционного Суда, подлежит применению в данном истолковании";
+    }
+}
+
+// Ст. 72 п. 1 и ст. 76 п. 1 — две нормы, чьи предикаты были ОБЪЯВЛЕНЫ и не
+// читались ни одним правилом (`constitutional_court`, `non_court_justice_attempt`).
+// Первая называет компетенцию Суда, вторая запрещает правосудие вне суда:
+// `JusticeOnlyByCourt` ниже выводит правомерность СУДЕБНОГО правосудия, но
+// обратной стороны — запрета — у неё нет, и дело о внесудебном «правосудии»
+// не получало ответа вовсе.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART72_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART72_KK")
+rule ConstitutionalReviewCompetence(organ: ConstitutionalCourt) strict {
+    when constitutional_court(organ);
+    then constitutional_review_exercised(organ);
+    label ru-KZ official "Статья 72 пункт 1. Конституционный Суд — независимый государственный орган, осуществляющий конституционный контроль и обеспечивающий верховенство Конституции на всей территории страны";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART76_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART76_KK")
+rule NonCourtJusticeProhibition(actor: Person, legal_case: Case) strict {
+    when justice_act(actor, legal_case);
+    when non_court_justice_attempt(legal_case);
+    then prohibition RefrainFromNonCourtJustice {
+        bearer actor;
+        action justice_act(actor, legal_case);
+        window [@2026-07-01, infinity);
+    };
+    label ru-KZ official "Статья 76 пункт 1. Правосудие в Республике Казахстан осуществляется только судом";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART76_RU") {
+    rule JusticeOnlyByCourt(actor: Person, court: Court, legal_case: Case) strict {
+        when justice_act(actor, legal_case);
+        when court(court);
+        when court_handles(court, legal_case);
+        then justice_lawful(legal_case);
+        label ru-KZ official "Статья 76 пункт 1. Правосудие в Республике Казахстан осуществляется только судом";
+    }
+
+    rule SpecialCourtsProhibited(court: Court) strict {
+        when special_or_emergency_court(court);
+        then special_court_prohibited(court);
+        label ru-KZ official "Статья 76 пункт 4. Учреждение специальных и чрезвычайных судов под каким-либо названием не допускается";
+    }
+}
+
+// Ст. 78 п. 1 не была выражена: предикат `judge_applies_law` объявлен и не
+// читался ничем, а п. 2 (недопустимость вмешательства) стоял без п. 1, из
+// которого он следует.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART78_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART78_KK")
+rule JudicialIndependence(judge: Judge, legal_case: Case) strict {
+    when judge(judge);
+    when judge_applies_law(judge, legal_case);
+    then judge_independent_and_subject_only_to_law(judge, legal_case);
+    label ru-KZ official "Статья 78 пункт 1. Судья при отправлении правосудия независим и подчиняется только Конституции и закону";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART78_RU")
+rule JudicialInterferenceUnlawful(judge: Judge, legal_case: Case) strict {
+    when judge(judge);
+    when judicial_interference(judge, legal_case);
+    then interference_unlawful(judge, legal_case);
+    label ru-KZ official "Статья 78 пункт 2. Какое-либо вмешательство в деятельность суда по отправлению правосудия недопустимо";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART79_RU") {
+    rule CourtSuspendsRightsInfringingActProceeding(legal_case: Case, act: LegalAct) strict {
+        when applicable_act(legal_case, act);
+        when act_infringes_constitutional_rights(act);
+        then proceeding_suspended(legal_case);
+        label ru-KZ official "Статья 79. Усмотрев, что подлежащий применению акт ущемляет конституционные права, суд обязан приостановить производство по делу";
+    }
+
+    rule CourtRefersRightsInfringingActToConstitutionalCourt(
+        legal_case: Case,
+        act: LegalAct,
+    ) strict {
+        when applicable_act(legal_case, act);
+        when act_infringes_constitutional_rights(act);
+        then constitutional_referral_required(legal_case, act);
+        label ru-KZ official "Статья 79. Усмотрев, что подлежащий применению акт ущемляет конституционные права, суд обязан обратиться в Конституционный Суд";
+    }
+}
+
+// Ст. 80 п. 2 — защита судьи и три её изъятия. Изъятия живут на предикате с
+// ЛИТЕРАЛЬНОЙ головой, а не на норм-голове: `unless` при норм-голове компилятор
+// ОТБРАСЫВАЕТ (LDC-E1302), и иммунитет выводился бы безусловно. Тот же приём,
+// что у ст. 11 закона о Конституционном Суде (`inviolability_applies`).
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART80_RU") {
+    rule JudgeDetentionGroundInTheAct(judge: Judge) defeasible {
+        when judge_caught_at_crime_scene(judge);
+        then judge_detention_ground(judge);
+        label ru-KZ official "Статья 80 пункт 2. Задержание на месте преступления — основание, снимающее защиту судьи";
+    }
+
+    rule JudgeDetentionGroundGraveOffence(judge: Judge) defeasible {
+        when judge_grave_or_especially_grave_offence(judge);
+        then judge_detention_ground(judge);
+        label ru-KZ official "Статья 80 пункт 2. Совершение тяжкого или особо тяжкого преступления — основание, снимающее защиту судьи";
+    }
+
+    rule JudgeDetentionGroundConsent(judge: Judge) defeasible {
+        when required_judge_detention_consent(judge);
+        then judge_detention_ground(judge);
+        label ru-KZ official "Статья 80 пункт 2. Требуемое согласие — основание, снимающее защиту судьи";
+    }
+
+    rule JudgeInviolabilityApplies(judge: Judge) defeasible {
+        when judge(judge);
+        unless judge_detention_ground(judge);
+        then judge_inviolability_applies(judge);
+        label ru-KZ official "Статья 80 пункт 2. Защита судьи от задержания действует, пока нет ни одного из трёх названных оснований";
+    }
+
+    rule JudgeDetentionImmunity(judge: Judge) defeasible {
+        when judge_inviolability_applies(judge);
+        then immunity JudgePersonalImmunity {
+            holder judge;
+            protected_effect judge_detained(judge);
+        };
+        label ru-KZ official "Статья 80 пункт 2. Судья не может быть задержан без требуемого согласия, кроме задержания на месте преступления либо совершения тяжких и особо тяжких преступлений";
+    }
+
+    rule JudgeDetentionConstitutionalException(judge: Judge) defeasible {
+        when judge_detention_attempt(judge);
+        when judge_detention_ground(judge);
+        then judge_detained(judge);
+        label ru-KZ official "Статья 80 пункт 2. Задержание судьи допустимо при задержании на месте преступления, совершении тяжких и особо тяжких преступлений либо при наличии требуемого согласия";
+    }
+}
+
+// Приоритета между исключением и иммунитетом здесь БОЛЬШЕ НЕТ: ребро
+// `prefer JudgeDetentionConstitutionalException over JudgeDetentionImmunity`
+// не консультировалось никогда (LDC-E4111, §192) — исключение выводит ЛИТЕРАЛ,
+// иммунитет НОРМУ, и стороны играют в разных механизмах.
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART83_RU")
+rule SupremeCourtChairOneTerm(person: Person) strict {
+    when supreme_court_chair_reappointment_attempt(person);
+    when prior_supreme_court_chair_term(person);
+    then supreme_court_chair_reappointment_prohibited(person);
+    label ru-KZ official "Статья 83 пункт 1. Одно и то же лицо не может быть назначено Председателем Верховного Суда более одного раза";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART84_RU")
+rule ProsecutorGeneralOneTerm(person: Person) strict {
+    when prosecutor_general_reappointment_attempt(person);
+    when prior_prosecutor_general_term(person);
+    then prosecutor_general_reappointment_prohibited(person);
+    label ru-KZ official "Статья 84 пункт 3. Одно и то же лицо не может быть назначено Генеральным Прокурором более одного раза";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART88_RU")
+rule MaslikhatCandidateEligibility(
+    candidate: Candidate,
+    person: Person,
+    age: Integer,
+    min_age: Integer,
+) strict {
+    when maslikhat_candidate(candidate, person)
+        and citizen(person)
+        and age_years(person, age)
+        and maslikhat_deputy_minimum_age(min_age)
+        and (age >= min_age)
+        and not already_member_of_other_maslikhat(person);
+    then eligible_maslikhat_candidate(candidate);
+    label ru-KZ official "Статья 88. Депутатом маслихата может быть гражданин Республики, достигший двадцати лет и не являющийся депутатом другого маслихата";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART89_RU") {
+    rule AkimCandidateAtLeastTwoAndMajority(
+        maslikhat: Maslikhat,
+        candidate: Candidate,
+        count: Integer,
+        votes: Integer,
+        total: Integer,
+        minimum: Integer,
+        num: Integer,
+        den: Integer,
+    ) strict {
+        when akim_candidate_set(maslikhat, count)
+            and akim_candidate_vote(candidate, votes)
+            and participating_maslikhat_deputies(candidate, total)
+            and akim_candidate_minimum(minimum)
+            and akim_consent_numerator(num)
+            and akim_consent_denominator(den)
+            and (count >= minimum)
+            and (votes * den > total * num);
+        then akim_candidate_consented(candidate);
+        label ru-KZ official "Статья 89. Аким назначается при внесении на рассмотрение маслихата не менее двух кандидатур и получении согласия большинства участвовавших в голосовании депутатов";
+    }
+
+    rule AkimNoConfidence(
+        akim: Akim,
+        initiating: Integer,
+        votes: Integer,
+        total: Integer,
+        init_num: Integer,
+        init_den: Integer,
+        num: Integer,
+        den: Integer,
+    ) strict {
+        when akim_no_confidence_initiating_votes(akim, initiating)
+            and akim_no_confidence_votes(akim, votes)
+            and total_maslikhat_deputies(akim, total)
+            and akim_no_confidence_initiative_numerator(init_num)
+            and akim_no_confidence_initiative_denominator(init_den)
+            and akim_no_confidence_numerator(num)
+            and akim_no_confidence_denominator(den)
+            and (initiating * init_den >= total * init_num)
+            and (votes * den > total * num);
+        then akim_no_confidence(akim);
+        label ru-KZ official "Статья 89. По инициативе не менее одной пятой депутатов маслихат большинством голосов вправе выразить вотум недоверия акиму";
+    }
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART90_RU")
+rule LocalFinancialDecisionWithAkimOpinion(local_act: LocalDecision) strict {
+    when local_revenue_reducing_or_spending_increasing(local_act);
+    when positive_akim_opinion(local_act);
+    then local_decision_admissible(local_act);
+    label ru-KZ official "Статья 90. Решение, сокращающее местные доходы либо увеличивающее расходы, принимается лишь при положительном заключении акима";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART91_RU")
+rule LocalSelfGovernmentAutonomy(local_act: LocalDecision) strict {
+    when local_self_government_action(local_act);
+    when within_statutory_local_power(local_act);
+    then local_self_government_autonomy(local_act);
+    label ru-KZ official "Статья 91. Самостоятельность органов местного самоуправления в решении вопросов местного значения гарантируется";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART77_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART77_KK")
+rule JudicialPowerCoversLegalApplicationCases(legal_case: Case) strict {
+    when legal_application_case(legal_case);
+    then within_judicial_power(legal_case);
+    label ru-KZ official "Статья 77 пункт 2. Судебная власть охватывает дела и споры из применения норм права";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART77_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART77_KK")
+rule JudicialDecisionBindingNationwide(act: LegalAct, court: Court) strict {
+    when judicial_decision(act, court);
+    when court(court);
+    then judicial_decision_binding_nationwide(act);
+    label ru-KZ official "Статья 77 пункт 3. Решения, приговоры и иные постановления судов обязательны по всей территории Казахстана";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART85_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART85_KK")
+rule OmbudsmanAppointmentByPresident(ombudsman: Ombudsman) strict {
+    when ombudsman_appointment_attempt(ombudsman);
+    when presidential_appointment_of_ombudsman(ombudsman);
+    then ombudsman_appointed(ombudsman);
+    label ru-KZ official "Статья 85 пункт 2. Уполномоченный по правам человека назначается Президентом";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART85_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART85_KK")
+rule OmbudsmanIndependent(ombudsman: Ombudsman) strict {
+    when ombudsman(ombudsman);
+    then ombudsman_independent_and_unaccountable(ombudsman);
+    label ru-KZ official "Статья 85 пункт 3. Уполномоченный независим и неподотчётен";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART85_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART85_KK")
+rule OmbudsmanRightsAssistance(ombudsman: Ombudsman, person: Person) strict {
+    when ombudsman(ombudsman);
+    when rights_restoration_case(person);
+    when ombudsman_rights_assistance(ombudsman, person);
+    then ombudsman_assistance_authorized(ombudsman, person);
+    label ru-KZ official "Статья 85 пункт 1. Содействие восстановлению и продвижению прав и свобод";
+}
+
+// Ст. 85 п. 4 — та же тройка «основание → защита → иммунитет», что у судьи.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART85_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART85_KK")
+rule OmbudsmanMeasureGroundInTheAct(ombudsman: Ombudsman) defeasible {
+    when ombudsman_caught_at_crime_scene(ombudsman);
+    then ombudsman_measure_ground(ombudsman);
+    label ru-KZ official "Статья 85 пункт 4. Задержание на месте преступления — основание, снимающее защиту Уполномоченного";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART85_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART85_KK")
+rule OmbudsmanMeasureGroundGraveOffence(ombudsman: Ombudsman) defeasible {
+    when ombudsman_grave_or_especially_grave_offence(ombudsman);
+    then ombudsman_measure_ground(ombudsman);
+    label ru-KZ official "Статья 85 пункт 4. Совершение тяжкого или особо тяжкого преступления — основание, снимающее защиту Уполномоченного";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART85_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART85_KK")
+rule OmbudsmanMeasureGroundConsent(ombudsman: Ombudsman) defeasible {
+    when presidential_consent_to_ombudsman_measure(ombudsman);
+    then ombudsman_measure_ground(ombudsman);
+    label ru-KZ official "Статья 85 пункт 4. Согласие Президента — основание, снимающее защиту Уполномоченного";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART85_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART85_KK")
+rule OmbudsmanInviolabilityApplies(ombudsman: Ombudsman) defeasible {
+    when ombudsman(ombudsman);
+    unless ombudsman_measure_ground(ombudsman);
+    then ombudsman_inviolability_applies(ombudsman);
+    label ru-KZ official "Статья 85 пункт 4. Защита Уполномоченного от мер принуждения действует, пока нет ни одного из трёх названных оснований";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART85_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART85_KK")
+rule OmbudsmanCoerciveMeasureImmunityRule(ombudsman: Ombudsman) defeasible {
+    when ombudsman_inviolability_applies(ombudsman);
+    then immunity OmbudsmanCoerciveMeasureImmunity {
+        holder ombudsman;
+        protected_effect ombudsman_coercive_measure_applied(ombudsman);
+    };
+    label ru-KZ official "Статья 85 пункт 4. Иммунитет Уполномоченного от мер принуждения без согласия Президента";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART85_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART85_KK")
+rule OmbudsmanCoerciveMeasureException(ombudsman: Ombudsman) defeasible {
+    when ombudsman_coercive_measure_attempt(ombudsman);
+    when ombudsman_measure_ground(ombudsman);
+    then ombudsman_coercive_measure_applied(ombudsman);
+    label ru-KZ official "Статья 85 пункт 4. Конституционные исключения из иммунитета Уполномоченного";
+}
+
+// Приоритета между исключением и иммунитетом здесь БОЛЬШЕ НЕТ по той же
+// причине, что у ст. 80: ребро не консультировалось никогда (LDC-E4111).
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART86_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART86_KK")
+rule LegalAidByAuthorizedProvider(aid: LegalAid, person: Person, provider: Advocate) strict {
+    when legal_aid(aid, person);
+    when legal_aid_provider(provider, aid);
+    when aid_provider_authorized_by_law(provider);
+    then legal_aid_constitutionally_provided(aid, person);
+    label ru-KZ official "Статья 86. Юридическая помощь оказывается адвокатами и иными лицами в соответствии с законом";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART82_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART82_KK")
+rule SupremeCourtHearsCasesAssignedByLaw(organ: SupremeCourt, legal_case: Case) strict {
+    when supreme_court(organ);
+    when case_assigned_by_law_to_supreme_court(organ, legal_case);
+    then supreme_court_case_authorized(organ, legal_case);
+    label ru-KZ official "Статья 82. Верховный Суд рассматривает дела, отнесённые к его подсудности законом";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART82_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART82_KK")
+rule SupremeCourtExplainsPracticeWhenAuthorizedByLaw(organ: SupremeCourt) strict {
+    when supreme_court(organ);
+    when judicial_practice_explanation_authorized_by_law(organ);
+    then supreme_court_explanation_authorized(organ);
+    label ru-KZ official "Статья 82. Верховный Суд даёт разъяснения по вопросам судебной практики в предусмотренных законом случаях";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART87_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART87_KK")
+rule LocalRepresentativeBodyResponsibility(maslikhat: Maslikhat) strict {
+    when local_representative_body(maslikhat);
+    then maslikhat_responsible_for_territorial_affairs(maslikhat);
+    label ru-KZ official "Статья 87. Местный представительный орган ответствен за состояние дел на своей территории";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART87_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART87_KK")
+rule LocalExecutiveBodyResponsibility(akim: Akim) strict {
+    when local_executive_body(akim);
+    then akim_responsible_for_territorial_affairs(akim);
+    label ru-KZ official "Статья 87. Местный исполнительный орган ответствен за состояние дел на своей территории";
+}
+
+// =========================================================================
+// РЕДАКЦИЯ 1995 ГОДА, РАЗДЕЛЫ VI–VIII (ст. 71–89):
+// Конституционный Суд; суды и правосудие, прокуратура, Уполномоченный по
+// правам человека; местное государственное управление и самоуправление.
+//
+// Институты сохранены, поэтому слой живёт в этом же пакете (DECISION-0026,
+// вариант «а»). Разводит редакции проекция as-of §31 по якорям 1995.
+//
+// РАСХОЖДЕНИЯ, найденные чтением закреплённого текста:
+//   1) ст. 71 п. 3 — состав Конституционного Суда 1995 набирается ТРЕМЯ
+//      субъектами: четверо судей от Президента, по трое от Сената и от
+//      Мажилиса. В однопалатной редакции 2026 такого деления нет;
+//   2) ст. 71 п. 5 — неприкосновенность судьи Конституционного Суда снимается
+//      согласием ПАРЛАМЕНТА (двухпалатного);
+//   3) ст. 72 п. 1 — обращение вправе подать не менее одной пятой от общего
+//      числа депутатов ПАРЛАМЕНТА, а также Председатель Сената и Председатель
+//      Мажилиса раздельно;
+//   4) ст. 79 п. 2 — арест судьи требует согласия Президента на основании
+//      заключения Высшего Судебного Совета либо согласия СЕНАТА;
+//   5) ст. 82 п. 1 — Председатель и судьи Верховного Суда ИЗБИРАЮТСЯ СЕНАТОМ
+//      по представлению Президента;
+//   6) ст. 83 п. 3 — срок полномочий Генерального Прокурора пять лет, снятие
+//      неприкосновенности — согласием Сената;
+//   7) ст. 86 п. 3 — депутатом маслихата может быть гражданин, достигший
+//      ДВАДЦАТИ лет;
+//   8) ст. 87 п. 4 — акимы областей назначаются с согласия депутатов
+//      маслихатов, причём Президент предлагает НЕ МЕНЕЕ ДВУХ кандидатур;
+//   9) ст. 87 п. 5 — вотум недоверия акиму по инициативе не менее одной пятой
+//      депутатов маслихата.
+//
+// ОБЪЯВЛЕННАЯ ГРАНИЦА (DECISION-0012). Ст. 84 в закреплённой консолидации
+// НЕ СОДЕРЖИТ ТЕКСТА: она исключена изменяющим законом, и после снятия
+// редакционного аппарата Adilet от неё остался только заголовок. Правила из
+// пустой статьи не выводятся, и это измеряется как SOURCE_ONLY, а не
+// выдаётся за формализованное.
+
+entity Mazhilis1995 {
+    label ru-KZ official "Мажилис Парламента (редакция 1995)";
+}
+entity Senate1995 {
+    label ru-KZ official "Сенат Парламента (редакция 1995)";
+}
+entity Parliament1995 {
+    label ru-KZ official "Парламент Республики Казахстан (редакция 1995)";
+}
+
+// --- Ст. 71. Состав Конституционного Суда --------------------------------
+
+relation constitutional_judges_appointed_by_president_1995(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "число судей Конституционного Суда, назначаемых Президентом, — четверо (редакция 1995)";
+}
+relation constitutional_judges_appointed_by_senate_1995(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "число судей Конституционного Суда, назначаемых Сенатом, — трое (редакция 1995)";
+}
+relation constitutional_judges_appointed_by_mazhilis_1995(value: Integer) kind institutional {
+    key(value);
+    label ru-KZ official "число судей Конституционного Суда, назначаемых Мажилисом, — трое (редакция 1995)";
+}
+relation constitutional_judge_arrest_attempt(judge: ConstitutionalJudge) kind empirical {
+    label ru-KZ official "предпринята попытка ареста судьи Конституционного Суда";
+}
+relation parliament_consent_for_judge(judge: ConstitutionalJudge) kind empirical {
+    label ru-KZ official "получено согласие представительного органа на назначение судьи";
+}
+relation judge_caught_in_act_or_grave_crime(judge: ConstitutionalJudge) kind empirical {
+    label ru-KZ official "судья Конституционного Суда задержан на месте преступления либо совершил тяжкое преступление";
+}
+relation constitutional_judge_immunity_infringed_1995(judge: ConstitutionalJudge) kind institutional {
+    label ru-KZ official "нарушена неприкосновенность судьи Конституционного Суда (редакция 1995)";
+}
+relation constitutional_judge_deputy_mandate(judge: ConstitutionalJudge) kind empirical {
+    label ru-KZ official "судья Конституционного Суда является депутатом представительного органа";
+}
+relation constitutional_judge_paid_office(judge: ConstitutionalJudge) kind empirical {
+    label ru-KZ official "судья Конституционного Суда занимает иную оплачиваемую должность";
+}
+relation constitutional_judge_permitted_activity(judge: ConstitutionalJudge) kind empirical {
+    label ru-KZ official "занятие относится к разрешённой преподавательской, научной либо творческой деятельности";
+}
+relation constitutional_judge_business(judge: ConstitutionalJudge) kind empirical {
+    label ru-KZ official "судья Конституционного Суда осуществляет предпринимательскую деятельность";
+}
+relation constitutional_judge_office_incompatible_1995(judge: ConstitutionalJudge) kind institutional {
+    label ru-KZ official "должность судьи Конституционного Суда несовместима с занимаемой должностью либо деятельностью (редакция 1995)";
+}
+
+// --- Ст. 72. Обращения в Конституционный Суд -----------------------------
+
+relation petition_by_senate_chair_1995(petition: Petition) kind empirical {
+    label ru-KZ official "обращение внесено Председателем Сената (редакция 1995)";
+}
+relation petition_by_mazhilis_chair_1995(petition: Petition) kind empirical {
+    label ru-KZ official "обращение внесено Председателем Мажилиса (редакция 1995)";
+}
+relation petition_by_one_fifth_of_parliament_1995(petition: Petition) kind empirical {
+    label ru-KZ official "обращение внесено не менее чем одной пятой депутатов Парламента (редакция 1995)";
+}
+relation petition_admissible_1995(petition: Petition) kind institutional {
+    label ru-KZ official "обращение в Конституционный Суд принято к рассмотрению (редакция 1995)";
+}
+
+// --- Ст. 77. Принципы правосудия -----------------------------------------
+
+relation judge_applies_law(judge: Judge, legal_case: Case) kind empirical {
+    label ru-KZ official "судья применяет закон по делу";
+}
+relation interference_with_justice(legal_case: Case) kind empirical {
+    label ru-KZ official "по делу имело место вмешательство в отправление правосудия";
+}
+relation interference_liability_arises_1995(legal_case: Case) kind institutional {
+    label ru-KZ official "вмешательство в отправление правосудия влечёт ответственность по закону (редакция 1995)";
+}
+relation jurisdiction_changed_without_consent(legal_case: Case) kind empirical {
+    label ru-KZ official "подсудность дела изменена без согласия лица";
+}
+relation jurisdiction_change_prohibited_1995(legal_case: Case) kind institutional {
+    label ru-KZ official "изменение подсудности дела без согласия лица не допускается (редакция 1995)";
+}
+relation right_to_be_heard_denied(legal_case: Case) kind empirical {
+    label ru-KZ official "лицу отказано в праве быть выслушанным в суде";
+}
+relation hearing_right_violated_1995(legal_case: Case) kind institutional {
+    label ru-KZ official "нарушено право быть выслушанным в суде (редакция 1995)";
+}
+relation evidence_obtained_unlawfully(legal_case: Case) kind empirical {
+    label ru-KZ official "доказательства получены незаконным способом";
+}
+relation evidence_without_legal_force_1995(legal_case: Case) kind institutional {
+    label ru-KZ official "доказательства не имеют юридической силы (редакция 1995)";
+}
+relation conviction_only_on_own_confession(legal_case: Case) kind empirical {
+    label ru-KZ official "обвинительный приговор основан лишь на собственном признании обвиняемого";
+}
+relation conviction_impermissible_1995(legal_case: Case) kind institutional {
+    label ru-KZ official "такой обвинительный приговор недопустим (редакция 1995)";
+}
+relation doubt_about_guilt(legal_case: Case) kind empirical {
+    label ru-KZ official "имеются сомнения в виновности лица";
+}
+relation doubt_resolved_for_accused_1995(legal_case: Case) kind institutional {
+    label ru-KZ official "сомнения в виновности толкуются в пользу обвиняемого (редакция 1995)";
+}
+relation criminal_law_applied_by_analogy(legal_case: Case) kind empirical {
+    label ru-KZ official "уголовный закон применён по аналогии";
+}
+relation analogy_prohibited_1995(legal_case: Case) kind institutional {
+    label ru-KZ official "применение уголовного закона по аналогии не допускается (редакция 1995)";
+}
+relation repeated_liability_for_same_offence(legal_case: Case) kind empirical {
+    label ru-KZ official "лицо повторно привлекается к ответственности за одно и то же правонарушение";
+}
+relation repeated_liability_prohibited_1995(legal_case: Case) kind institutional {
+    label ru-KZ official "повторное привлечение к ответственности за одно и то же правонарушение не допускается (редакция 1995)";
+}
+
+// --- Ст. 79, 82, 83, 83-1. Судьи, Верховный Суд, прокуратура, Уполномоченный
+
+relation judge_arrest_attempt(judge: Judge) kind empirical {
+    label ru-KZ official "предпринята попытка ареста судьи";
+}
+relation presidential_consent_on_council_conclusion(judge: Judge) kind empirical {
+    label ru-KZ official "получено решение Президента по заключению Высшего Судебного Совета";
+}
+relation senate_consent_for_judge(judge: Judge) kind empirical {
+    label ru-KZ official "Сенат дал согласие на назначение судьи";
+}
+relation ordinary_judge_caught_in_act_or_grave_crime(judge: Judge) kind empirical {
+    label ru-KZ official "судья задержан на месте преступления либо совершил тяжкое преступление";
+}
+relation judge_immunity_infringed_1995(judge: Judge) kind institutional {
+    label ru-KZ official "нарушена неприкосновенность судьи (редакция 1995)";
+}
+relation judge_deputy_mandate(judge: Judge) kind empirical {
+    label ru-KZ official "судья является депутатом представительного органа";
+}
+relation judge_paid_office(judge: Judge) kind empirical {
+    label ru-KZ official "судья занимает иную оплачиваемую должность";
+}
+relation judge_permitted_activity(judge: Judge) kind empirical {
+    label ru-KZ official "занятие относится к разрешённой преподавательской, научной либо творческой деятельности";
+}
+relation judge_business(judge: Judge) kind empirical {
+    label ru-KZ official "судья осуществляет предпринимательскую деятельность";
+}
+relation judge_office_incompatible_1995(judge: Judge) kind institutional {
+    label ru-KZ official "должность судьи несовместима с занимаемой должностью либо деятельностью (редакция 1995)";
+}
+
+relation supreme_court_appointment(candidate: Candidate) kind empirical {
+    label ru-KZ official "производится назначение на должность судьи Верховного Суда";
+}
+relation presidential_submission_on_council_recommendation(candidate: Candidate) kind empirical {
+    label ru-KZ official "Президент внёс представление по рекомендации Высшего Судебного Совета";
+}
+relation senate_elected(candidate: Candidate) kind empirical {
+    label ru-KZ official "кандидат избран Сенатом (редакция 1995)";
+}
+relation supreme_court_appointment_valid_1995(candidate: Candidate) kind institutional {
+    label ru-KZ official "назначение судьи Верховного Суда состоялось (редакция 1995)";
+}
+relation local_court_appointment(candidate: Candidate) kind empirical {
+    label ru-KZ official "производится назначение на должность судьи местного суда";
+}
+relation council_recommendation(candidate: Candidate) kind empirical {
+    label ru-KZ official "имеется рекомендация Высшего Судебного Совета";
+}
+relation local_court_appointment_valid_1995(candidate: Candidate) kind institutional {
+    label ru-KZ official "назначение судьи местного суда состоялось (редакция 1995)";
+}
+
+relation prosecutor_general_term_years_1995(years: Integer) kind institutional {
+    key(years);
+    label ru-KZ official "срок полномочий Генерального Прокурора — пять лет (редакция 1995)";
+}
+relation prosecutor_general_arrest_attempt(officer: ProsecutorGeneral) kind empirical {
+    label ru-KZ official "предпринята попытка ареста Генерального Прокурора";
+}
+relation senate_consent_for_prosecutor(officer: ProsecutorGeneral) kind empirical {
+    label ru-KZ official "Сенат дал согласие на арест Генерального Прокурора";
+}
+relation prosecutor_caught_in_act_or_grave_crime(officer: ProsecutorGeneral) kind empirical {
+    label ru-KZ official "Генеральный Прокурор задержан на месте преступления либо совершил тяжкое преступление";
+}
+relation prosecutor_immunity_infringed_1995(officer: ProsecutorGeneral) kind institutional {
+    label ru-KZ official "нарушена неприкосновенность Генерального Прокурора (редакция 1995)";
+}
+relation ombudsman_arrest_attempt(officer: Ombudsman) kind empirical {
+    label ru-KZ official "предпринята попытка ареста Уполномоченного";
+}
+relation senate_consent_for_ombudsman(officer: Ombudsman) kind empirical {
+    label ru-KZ official "Сенат дал согласие на назначение Уполномоченного";
+}
+relation ombudsman_caught_in_act_or_grave_crime(officer: Ombudsman) kind empirical {
+    label ru-KZ official "Уполномоченный задержан на месте преступления либо совершил тяжкое преступление";
+}
+relation ombudsman_immunity_infringed_1995(officer: Ombudsman) kind institutional {
+    label ru-KZ official "нарушена неприкосновенность Уполномоченного (редакция 1995)";
+}
+pub relation ombudsman_independent_1995() kind institutional {
+    label ru-KZ official "Уполномоченный по правам человека независим (редакция 1995)";
+}
+
+// --- Ст. 86–89. Маслихаты, акимы, местное самоуправление ------------------
+
+// Ст. 86–89 повторяют предикаты редакции 2026 там, где антецедент тот же
+// (маслихат, аким, местный акт): свой предикат заводится ТОЛЬКО под
+// расхождение. Ниже — только то, чего в слое 2026 нет.
+relation eligible_maslikhat_deputy_1995(candidate: Candidate) kind institutional {
+    label ru-KZ official "лицо отвечает требованиям к депутату маслихата (редакция 1995)";
+}
+relation maslikhat_self_dissolution(maslikhat: Maslikhat) kind empirical {
+    label ru-KZ official "маслихат принял решение о самороспуске";
+}
+relation presidential_maslikhat_termination(maslikhat: Maslikhat) kind empirical {
+    label ru-KZ official "Президент прекратил полномочия маслихата";
+}
+relation termination_consultations_completed(maslikhat: Maslikhat) kind empirical {
+    label ru-KZ official "проведены консультации, требуемые для прекращения полномочий маслихата";
+}
+relation maslikhat_powers_terminated_1995(maslikhat: Maslikhat) kind institutional {
+    label ru-KZ official "полномочия маслихата прекращены (редакция 1995)";
+}
+
+relation regional_akim_appointment(candidate: Candidate) kind empirical {
+    label ru-KZ official "производится назначение акима";
+}
+relation akim_appointment_valid_1995(candidate: Candidate) kind institutional {
+    label ru-KZ official "назначение акима состоялось (редакция 1995)";
+}
+relation akim_no_confidence_initiative_valid_1995(akim: Akim) kind institutional {
+    label ru-KZ official "инициатива о вотуме недоверия акиму заявлена управомоченным числом депутатов (редакция 1995)";
+}
+relation akim_no_confidence_expressed_1995(akim: Akim) kind institutional {
+    label ru-KZ official "маслихату выражен вотум недоверия акиму (редакция 1995)";
+}
+relation new_president_assumed_office_1995() kind empirical {
+    label ru-KZ official "новый Президент вступил в должность (редакция 1995)";
+}
+relation regional_akim(akim: Akim) kind empirical {
+    label ru-KZ official "аким является акимом области, города республиканского значения либо столицы";
+}
+relation akim_powers_terminated_1995(akim: Akim) kind institutional {
+    label ru-KZ official "полномочия акима прекращены (редакция 1995)";
+}
+
+relation maslikhat_ruling(local_act: LocalDecision) kind empirical {
+    label ru-KZ official "акт является решением маслихата";
+}
+relation maslikhat_decision_admissible_1995(local_act: LocalDecision) kind institutional {
+    label ru-KZ official "решение маслихата обязательно на соответствующей территории (редакция 1995)";
+}
+relation ruling_contrary_to_constitution_or_law(local_act: LocalDecision) kind empirical {
+    label ru-KZ official "решение противоречит Конституции либо законодательству";
+}
+relation ruling_annullable_in_court_1995(local_act: LocalDecision) kind institutional {
+    label ru-KZ official "решение может быть отменено в судебном порядке (редакция 1995)";
+}
+pub relation local_self_government_recognized_1995() kind institutional {
+    label ru-KZ official "в Республике признаётся местное самоуправление (редакция 1995)";
+}
+pub relation local_self_government_autonomy_guaranteed_1995() kind institutional {
+    label ru-KZ official "самостоятельность органов местного самоуправления гарантируется (редакция 1995)";
+}
+
+// --- Конституционные числа редакции 1995 ---------------------------------
+// Состав и срок Конституционного Суда (11 судей, 8 лет), срок маслихата и
+// возраст его депутата совпадают с редакцией 2026 — проверено по тексту,
+// поэтому keyed-факты не дублируются. РАСХОЖДЕНИЕ одно: срок полномочий
+// Генерального Прокурора — ПЯТЬ лет в 1995 против шести в 2026.
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART71_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART71_KK")
+assert constitutional_judges_appointed_by_president_1995(4);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART71_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART71_KK")
+assert constitutional_judges_appointed_by_senate_1995(3);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART71_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART71_KK")
+assert constitutional_judges_appointed_by_mazhilis_1995(3);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART83_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART83_KK")
+assert prosecutor_general_term_years_1995(5);
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART83_1_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART83_1_KK")
+assert ombudsman_independent_1995();
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART89_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART89_KK")
+assert local_self_government_recognized_1995();
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART89_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART89_KK")
+assert local_self_government_autonomy_guaranteed_1995();
+
+// --- Ст. 71. Конституционный Суд ------------------------------------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART71_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART71_KK")
+rule ConstitutionalJudgeReappointmentProhibited1995(judge: ConstitutionalJudge) strict {
+    when previously_appointed_constitutional_judge(judge);
+    when constitutional_judge_appointment_attempt(judge);
+    then constitutional_judge_reappointment_prohibited(judge);
+    label ru-KZ official "Статья 71 пункт 1 (ред. 1995). Одно и то же лицо не может быть назначено судьёй Конституционного Суда более одного раза";
+}
+
+// РАСХОЖДЕНИЕ 2. Неприкосновенность снимается согласием ПАРЛАМЕНТА.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART71_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART71_KK")
+rule ConstitutionalJudgeImmunity1995(judge: ConstitutionalJudge) strict {
+    when constitutional_judge(judge);
+    when constitutional_judge_arrest_attempt(judge);
+    when not parliament_consent_for_judge(judge);
+    when not judge_caught_in_act_or_grave_crime(judge);
+    then immunity ConstitutionalJudgeInviolability1995 {
+        holder judge;
+        protected_effect constitutional_judge_immunity_infringed_1995(judge);
+    };
+    label ru-KZ official "Статья 71 пункт 5 (ред. 1995). Судьи Конституционного Суда не могут быть арестованы или привлечены к уголовной ответственности без согласия Парламента, кроме задержания на месте преступления и тяжких преступлений";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART71_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART71_KK")
+rule ConstitutionalJudgeIncompatible1995(judge: ConstitutionalJudge) strict {
+    when constitutional_judge_deputy_mandate(judge)
+        or constitutional_judge_business(judge)
+        or (constitutional_judge_paid_office(judge)
+            and not constitutional_judge_permitted_activity(judge));
+    then constitutional_judge_office_incompatible_1995(judge);
+    label ru-KZ official "Статья 71 пункт 4 (ред. 1995). Должность судьи Конституционного Суда несовместима с депутатским мандатом, иной оплачиваемой должностью и предпринимательской деятельностью";
+}
+
+// --- Ст. 72. Обращения ----------------------------------------------------
+// РАСХОЖДЕНИЕ 3. Субъекты обращения 1995 — двухпалатные: Председатель Сената
+// и Председатель Мажилиса раздельно, одна пятая депутатов ПАРЛАМЕНТА.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART72_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART72_KK")
+rule PetitionAdmissible1995(petition: Petition) strict {
+    when petition_to_constitutional_court(petition)
+        and (petition_by_president(petition)
+             or petition_by_senate_chair_1995(petition)
+             or petition_by_mazhilis_chair_1995(petition)
+             or petition_by_one_fifth_of_parliament_1995(petition)
+             or petition_by_prime_minister(petition)
+             or petition_by_citizen_affecting_constitutional_rights(petition)
+             or petition_by_prosecutor_general(petition)
+             or petition_by_ombudsman_affecting_rights(petition));
+    then petition_admissible_1995(petition);
+    label ru-KZ official "Статья 72 (ред. 1995). Конституционный Суд рассматривает обращения Президента, Председателя Сената, Председателя Мажилиса, не менее одной пятой депутатов Парламента, Премьер-Министра, граждан, Генерального Прокурора и Уполномоченного по правам человека";
+}
+
+// --- Ст. 77. Принципы правосудия ------------------------------------------
+// Десять принципов п. 3 — прямые нормы, адресованные судье. Формализованы
+// те, у которых есть проверяемый антецедент и последствие; принципы 1 и 5
+// (презумпция невиновности, обратная сила) уже выражены в пакетах прав и
+// источников — здесь они не дублируются.
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART77_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART77_KK")
+rule InterferenceWithJusticeLiability1995(legal_case: Case) strict {
+    when interference_with_justice(legal_case);
+    then interference_liability_arises_1995(legal_case);
+    label ru-KZ official "Статья 77 пункт 2 (ред. 1995). Вмешательство в деятельность суда по отправлению правосудия недопустимо и влечёт ответственность по закону";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART77_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART77_KK")
+rule RepeatedLiabilityProhibited1995(legal_case: Case) strict {
+    when repeated_liability_for_same_offence(legal_case);
+    then repeated_liability_prohibited_1995(legal_case);
+    label ru-KZ official "Статья 77 пункт 3 подпункт 2 (ред. 1995). Никто не может быть подвергнут повторно уголовной или административной ответственности за одно и то же правонарушение";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART77_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART77_KK")
+rule JurisdictionChangeProhibited1995(legal_case: Case) strict {
+    when jurisdiction_changed_without_consent(legal_case);
+    then jurisdiction_change_prohibited_1995(legal_case);
+    label ru-KZ official "Статья 77 пункт 3 подпункт 3 (ред. 1995). Никому не может быть без его согласия изменена подсудность, предусмотренная для него законом";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART77_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART77_KK")
+rule HearingRightViolated1995(legal_case: Case) strict {
+    when right_to_be_heard_denied(legal_case);
+    then hearing_right_violated_1995(legal_case);
+    label ru-KZ official "Статья 77 пункт 3 подпункт 4 (ред. 1995). В суде каждый имеет право быть выслушанным";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART77_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART77_KK")
+rule UnlawfulEvidenceHasNoForce1995(legal_case: Case) strict {
+    when evidence_obtained_unlawfully(legal_case);
+    then evidence_without_legal_force_1995(legal_case);
+    label ru-KZ official "Статья 77 пункт 3 подпункт 9 (ред. 1995). Не имеют юридической силы доказательства, полученные незаконным способом";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART77_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART77_KK")
+rule ConvictionOnConfessionAloneImpermissible1995(legal_case: Case) strict {
+    when conviction_only_on_own_confession(legal_case);
+    then conviction_impermissible_1995(legal_case);
+    label ru-KZ official "Статья 77 пункт 3 подпункт 9 (ред. 1995). Никто не может быть осуждён лишь на основе его собственного признания";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART77_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART77_KK")
+rule DoubtResolvedForAccused1995(legal_case: Case) strict {
+    when doubt_about_guilt(legal_case);
+    then doubt_resolved_for_accused_1995(legal_case);
+    label ru-KZ official "Статья 77 пункт 3 подпункт 8 (ред. 1995). Любые сомнения в виновности лица толкуются в пользу обвиняемого";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART77_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART77_KK")
+rule CriminalAnalogyProhibited1995(legal_case: Case) strict {
+    when criminal_law_applied_by_analogy(legal_case);
+    then analogy_prohibited_1995(legal_case);
+    label ru-KZ official "Статья 77 пункт 3 подпункт 10 (ред. 1995). Применение уголовного закона по аналогии не допускается";
+}
+
+// --- Ст. 79, 82, 83, 83-1 -------------------------------------------------
+
+// РАСХОЖДЕНИЕ 4. Два альтернативных пути снятия неприкосновенности судьи.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART79_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART79_KK")
+rule JudgeImmunity1995(judge: Judge) strict {
+    when judge_arrest_attempt(judge);
+    when not presidential_consent_on_council_conclusion(judge);
+    when not senate_consent_for_judge(judge);
+    when not ordinary_judge_caught_in_act_or_grave_crime(judge);
+    then immunity JudicialInviolability1995 {
+        holder judge;
+        protected_effect judge_immunity_infringed_1995(judge);
+    };
+    label ru-KZ official "Статья 79 пункт 2 (ред. 1995). Судья не может быть арестован или привлечён к уголовной ответственности без согласия Президента на основании заключения Высшего Судебного Совета либо без согласия Сената";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART79_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART79_KK")
+rule JudgeOfficeIncompatible1995(judge: Judge) strict {
+    when judge_deputy_mandate(judge)
+        or judge_business(judge)
+        or (judge_paid_office(judge) and not judge_permitted_activity(judge));
+    then judge_office_incompatible_1995(judge);
+    label ru-KZ official "Статья 79 пункт 4 (ред. 1995). Должность судьи несовместима с депутатским мандатом, иной оплачиваемой должностью и предпринимательской деятельностью";
+}
+
+// РАСХОЖДЕНИЕ 5. Верховный Суд формируется ИЗБРАНИЕМ СЕНАТОМ.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART82_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART82_KK")
+rule SupremeCourtAppointmentBySenate1995(candidate: Candidate) strict {
+    when supreme_court_appointment(candidate);
+    when presidential_submission_on_council_recommendation(candidate);
+    when senate_elected(candidate);
+    then supreme_court_appointment_valid_1995(candidate);
+    label ru-KZ official "Статья 82 пункт 1 (ред. 1995). Председатель и судьи Верховного Суда избираются Сенатом по представлению Президента, основанному на рекомендации Высшего Судебного Совета";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART82_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART82_KK")
+rule LocalCourtAppointment1995(candidate: Candidate) strict {
+    when local_court_appointment(candidate);
+    when council_recommendation(candidate);
+    then local_court_appointment_valid_1995(candidate);
+    label ru-KZ official "Статья 82 пункт 2 (ред. 1995). Председатели и судьи местных и других судов назначаются Президентом по рекомендации Высшего Судебного Совета";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART83_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART83_KK")
+rule ProsecutorGeneralImmunity1995(officer: ProsecutorGeneral) strict {
+    when prosecutor_general_arrest_attempt(officer);
+    when not senate_consent_for_prosecutor(officer);
+    when not prosecutor_caught_in_act_or_grave_crime(officer);
+    then immunity ProsecutorGeneralInviolability1995 {
+        holder officer;
+        protected_effect prosecutor_immunity_infringed_1995(officer);
+    };
+    label ru-KZ official "Статья 83 пункт 3 (ред. 1995). Генеральный Прокурор не может быть арестован или привлечён к уголовной ответственности без согласия Сената";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART83_1_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART83_1_KK")
+rule OmbudsmanImmunity1995(officer: Ombudsman) strict {
+    when ombudsman_arrest_attempt(officer);
+    when not senate_consent_for_ombudsman(officer);
+    when not ombudsman_caught_in_act_or_grave_crime(officer);
+    then immunity OmbudsmanInviolability1995 {
+        holder officer;
+        protected_effect ombudsman_immunity_infringed_1995(officer);
+    };
+    label ru-KZ official "Статья 83-1 пункт 3 (ред. 1995). Уполномоченный по правам человека не может быть арестован или привлечён к уголовной ответственности без согласия Сената";
+}
+
+// --- Ст. 86–89. Маслихаты, акимы, местное самоуправление ------------------
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART86_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART86_KK")
+rule EligibleMaslikhatDeputy1995(candidate: Candidate, person: Person, age: Integer) strict {
+    when maslikhat_candidate(candidate, person)
+        and citizen(person)
+        and age_years(person, age)
+        and (age >= 20)
+        and not already_member_of_other_maslikhat(person);
+    then eligible_maslikhat_deputy_1995(candidate);
+    label ru-KZ official "Статья 86 пункт 3 (ред. 1995). Депутатом маслихата может быть избран гражданин, достигший двадцати лет; гражданин может быть депутатом только одного маслихата";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART86_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART86_KK")
+rule MaslikhatPowersTerminated1995(maslikhat: Maslikhat) strict {
+    when maslikhat_self_dissolution(maslikhat)
+        or (presidential_maslikhat_termination(maslikhat)
+            and termination_consultations_completed(maslikhat));
+    then maslikhat_powers_terminated_1995(maslikhat);
+    label ru-KZ official "Статья 86 пункт 5 (ред. 1995). Полномочия маслихата прекращаются досрочно Президентом после консультаций с Премьер-Министром и председателями Палат Парламента либо при самороспуске";
+}
+
+// РАСХОЖДЕНИЕ 8. Президент предлагает НЕ МЕНЕЕ ДВУХ кандидатур.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART87_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART87_KK")
+rule RegionalAkimAppointmentValid1995(
+    candidate: Candidate,
+    maslikhat: Maslikhat,
+    offered: Integer,
+) strict {
+    when regional_akim_appointment(candidate)
+        and akim_candidate_set(maslikhat, offered)
+        and (offered >= 2)
+        and akim_candidate_consented(candidate);
+    then akim_appointment_valid_1995(candidate);
+    label ru-KZ official "Статья 87 пункт 4 (ред. 1995). Акимы областей назначаются с согласия депутатов маслихатов; Президент предлагает не менее двух кандидатур";
+}
+
+// РАСХОЖДЕНИЕ 9. Инициатива вотума недоверия акиму — одна пятая депутатов.
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART87_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART87_KK")
+rule AkimNoConfidenceInitiativeValid1995(akim: Akim, votes: Integer, total: Integer) strict {
+    when akim_no_confidence_initiating_votes(akim, votes)
+        and total_maslikhat_deputies(akim, total)
+        and (votes * 5 >= total);
+    then akim_no_confidence_initiative_valid_1995(akim);
+    label ru-KZ official "Статья 87 пункт 5 (ред. 1995). Вопрос о вотуме недоверия акиму ставится по инициативе не менее одной пятой от общего числа депутатов маслихата";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART87_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART87_KK")
+rule AkimNoConfidenceExpressed1995(akim: Akim, votes: Integer, total: Integer) strict {
+    when akim_no_confidence_initiative_valid_1995(akim)
+        and akim_no_confidence_votes(akim, votes)
+        and total_maslikhat_deputies(akim, total)
+        and (votes * 2 > total);
+    then akim_no_confidence_expressed_1995(akim);
+    label ru-KZ official "Статья 87 пункт 5 (ред. 1995). Маслихат большинством голосов от общего числа депутатов вправе выразить недоверие акиму";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART87_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART87_KK")
+rule RegionalAkimPowersEndWithNewPresident1995(akim: Akim) strict {
+    when regional_akim(akim);
+    when new_president_assumed_office_1995();
+    then akim_powers_terminated_1995(akim);
+    label ru-KZ official "Статья 87 пункт 5 (ред. 1995). Полномочия акимов областей, городов республиканского значения и столицы прекращаются при вступлении в должность вновь избранного Президента";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART88_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART88_KK")
+rule MaslikhatFiscalRulingRequiresAkimOpinion1995(local_act: LocalDecision) strict {
+    when maslikhat_ruling(local_act);
+    when local_revenue_reducing_or_spending_increasing(local_act);
+    when positive_akim_opinion(local_act);
+    then maslikhat_decision_admissible_1995(local_act);
+    label ru-KZ official "Статья 88 пункт 2 (ред. 1995). Проекты решений маслихатов, сокращающие местные доходы или увеличивающие расходы, вносятся лишь при положительном заключении акима";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART88_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART88_KK")
+rule MaslikhatRulingAnnullable1995(local_act: LocalDecision) strict {
+    when maslikhat_ruling(local_act);
+    when ruling_contrary_to_constitution_or_law(local_act);
+    then ruling_annullable_in_court_1995(local_act);
+    label ru-KZ official "Статья 88 пункт 3 (ред. 1995). Решения маслихатов, не соответствующие Конституции и законодательству, могут быть отменены в судебном порядке";
+}
+
+// --- Ст. 73–76, 78, 80, 81, 85 редакции 1995 -------------------------------
+
+relation election_dispute_petition_1995(petition: Petition) kind empirical {
+    label ru-KZ official "обращение оспаривает правильность выборов (редакция 1995)";
+}
+relation pre_signature_petition_1995(petition: Petition, act: LegalAct) kind empirical {
+    label ru-KZ official "обращение внесено до подписания акта (редакция 1995)";
+}
+relation pre_ratification_petition_1995(petition: Petition, treaty: Treaty) kind empirical {
+    label ru-KZ official "обращение внесено до ратификации договора (редакция 1995)";
+}
+relation inauguration_suspended_1995(petition: Petition) kind institutional {
+    label ru-KZ official "вступление в должность приостановлено до решения Конституционного Суда (редакция 1995)";
+}
+relation signature_deadline_suspended_1995(act: LegalAct) kind institutional {
+    label ru-KZ official "течение срока подписания акта приостановлено (редакция 1995)";
+}
+relation ratification_deadline_suspended_1995(treaty: Treaty) kind institutional {
+    label ru-KZ official "течение срока ратификации договора приостановлено (редакция 1995)";
+}
+
+relation declared_unconstitutional_1995(act: LegalAct) kind empirical {
+    label ru-KZ official "акт признан неконституционным (редакция 1995)";
+}
+relation treaty_declared_unconstitutional_1995(treaty: Treaty) kind empirical {
+    label ru-KZ official "международный договор признан неконституционным (редакция 1995)";
+}
+relation act_may_not_be_signed_1995(act: LegalAct) kind institutional {
+    label ru-KZ official "акт не может быть подписан (редакция 1995)";
+}
+relation treaty_may_not_be_ratified_1995(treaty: Treaty) kind institutional {
+    label ru-KZ official "международный договор не может быть ратифицирован (редакция 1995)";
+}
+relation act_ceased_to_apply_1995(act: LegalAct) kind institutional {
+    label ru-KZ official "акт утратил силу и не подлежит применению (редакция 1995)";
+}
+// Двойник `declared_constitutional_in_interpretation` для редакции 1995.
+// Заведён не для симметрии: без него отраслевой акт, читающий обязательность
+// истолкования, при ВКЛЮЧЁННОЙ проекции §31 остаётся без нормы на любую дату
+// до 01.07.2026 — а нормативные постановления Конституционного Суда с этим
+// механизмом принимаются с 2023 года и на редакцию 1995 ссылаются прямо
+// (НП от 20.01.2025 № 61-НП: «руководствуясь пунктом 3 статьи 72 и пунктом 3
+// статьи 74 Конституции»). Якорь — статья 74 редакции 1995 с поправками
+// 2022 года: её пункт 2 даёт утрату силы со дня решения либо с даты, судом
+// установленной, пункт 3 — вступление решения в силу со дня принятия и его
+// общеобязательность. Пока двойника не было, единственное правило механизма
+// стояло в редакции 2026, и потребитель получал верный исход по норме,
+// которой на дату дела не существует.
+relation declared_constitutional_in_interpretation_1995(act: LegalAct) kind empirical {
+    label ru-KZ official "акт признан соответствующим Конституции в истолковании (редакция 1995)";
+}
+pub relation required_constitutional_interpretation_applied_1995(act: LegalAct) kind institutional {
+    label ru-KZ official "истолкование, при котором акт признан конституционным, обязательно к применению (редакция 1995)";
+}
+pub relation constitutional_court_decisions_final_1995() kind institutional {
+    label ru-KZ official "решения Конституционного Суда окончательны и обжалованию не подлежат (редакция 1995)";
+}
+
+relation justice_by_court_only_1995(legal_case: Case) kind institutional {
+    label ru-KZ official "правосудие осуществляется только судом (редакция 1995)";
+}
+relation constitutional_review_exercised(organ: ConstitutionalCourt) kind institutional {
+    label ru-KZ official "орган осуществляет конституционный контроль и обеспечивает верховенство Конституции";
+}
+relation non_court_justice_attempt(legal_case: Case) kind empirical {
+    label ru-KZ official "правосудие осуществляется вне суда";
+}
+relation special_court_prohibited_1995(court: Court) kind institutional {
+    label ru-KZ official "учреждение специальных и чрезвычайных судов не допускается (редакция 1995)";
+}
+relation court_ruling_binding_1995(legal_case: Case) kind institutional {
+    label ru-KZ official "решение суда обязательно на всей территории Республики (редакция 1995)";
+}
+relation court_ruling_issued(legal_case: Case) kind empirical {
+    label ru-KZ official "судом вынесено решение по делу";
+}
+relation judicial_power_covers_case_1995(legal_case: Case) kind institutional {
+    label ru-KZ official "дело относится к судебной власти (редакция 1995)";
+}
+
+relation court_finds_act_infringing_rights(legal_case: Case, act: LegalAct) kind empirical {
+    label ru-KZ official "суд усмотрел, что подлежащий применению акт ущемляет конституционные права";
+}
+relation proceeding_suspended_1995(legal_case: Case) kind institutional {
+    label ru-KZ official "производство по делу приостановлено (редакция 1995)";
+}
+relation constitutional_court_referral_required_1995(legal_case: Case) kind institutional {
+    label ru-KZ official "суд обязан обратиться в Конституционный Суд (редакция 1995)";
+}
+
+pub relation courts_financed_from_republican_budget_1995() kind institutional {
+    label ru-KZ official "суды финансируются из республиканского бюджета (редакция 1995)";
+}
+pub relation supreme_court_is_highest_judicial_body_1995() kind institutional {
+    label ru-KZ official "Верховный Суд — высший судебный орган по гражданским, уголовным и иным делам (редакция 1995)";
+}
+pub relation local_state_administration_established_1995() kind institutional {
+    label ru-KZ official "местное государственное управление осуществляется местными представительными и исполнительными органами (редакция 1995)";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART73_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART73_KK")
+rule InaugurationSuspendedOnElectionPetition1995(petition: Petition) strict {
+    when election_dispute_petition_1995(petition);
+    then inauguration_suspended_1995(petition);
+    label ru-KZ official "Статья 73 пункт 1 (ред. 1995). При обращении по вопросу правильности выборов вступление в должность Президента, регистрация депутатов либо подведение итогов референдума приостанавливаются";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART73_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART73_KK")
+rule SignatureDeadlineSuspended1995(petition: Petition, act: LegalAct) strict {
+    when pre_signature_petition_1995(petition, act);
+    then signature_deadline_suspended_1995(act);
+    label ru-KZ official "Статья 73 пункт 2 (ред. 1995). При обращении по принятому закону течение срока подписания приостанавливается";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART73_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART73_KK")
+rule RatificationDeadlineSuspended1995(petition: Petition, treaty: Treaty) strict {
+    when pre_ratification_petition_1995(petition, treaty);
+    then ratification_deadline_suspended_1995(treaty);
+    label ru-KZ official "Статья 73 пункт 2 (ред. 1995). При обращении по международному договору течение срока ратификации приостанавливается";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART74_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART74_KK")
+rule UnconstitutionalActMayNotBeSigned1995(act: LegalAct) strict {
+    when declared_unconstitutional_1995(act);
+    then act_may_not_be_signed_1995(act);
+    label ru-KZ official "Статья 74 пункт 1 (ред. 1995). Законы, признанные несоответствующими Конституции, не могут быть подписаны";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART74_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART74_KK")
+rule UnconstitutionalTreatyMayNotBeRatified1995(treaty: Treaty) strict {
+    when treaty_declared_unconstitutional_1995(treaty);
+    then treaty_may_not_be_ratified_1995(treaty);
+    label ru-KZ official "Статья 74 пункт 1 (ред. 1995). Международные договоры, признанные несоответствующими Конституции, не могут быть ратифицированы и введены в действие";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART74_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART74_KK")
+rule UnconstitutionalActCeasesToApply1995(act: LegalAct) strict {
+    when declared_unconstitutional_1995(act);
+    then act_ceased_to_apply_1995(act);
+    label ru-KZ official "Статья 74 пункт 2 (ред. 1995). Признанные неконституционными акты отменяются и не подлежат применению со дня принятия решения Конституционным Судом или с установленной им даты";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART74_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART74_KK")
+rule ConstitutionConformingInterpretationRequired1995(act: LegalAct) strict {
+    when declared_constitutional_in_interpretation_1995(act);
+    then required_constitutional_interpretation_applied_1995(act);
+    label ru-KZ official "Статья 74 пункты 2 и 3 (ред. 1995). Истолкование, при котором норма признана конституционной, общеобязательно со дня принятия решения";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART74_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART74_KK")
+assert constitutional_court_decisions_final_1995();
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART75_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART75_KK")
+rule JusticeByCourtOnly1995(legal_case: Case, court: Court) strict {
+    when court(court);
+    when court_handles(court, legal_case);
+    then justice_by_court_only_1995(legal_case);
+    label ru-KZ official "Статья 75 пункт 1 (ред. 1995). Правосудие в Республике Казахстан осуществляется только судом";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART75_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART75_KK")
+rule SpecialCourtProhibited1995(court: Court) strict {
+    when special_or_emergency_court(court);
+    then special_court_prohibited_1995(court);
+    label ru-KZ official "Статья 75 пункт 4 (ред. 1995). Учреждение специальных и чрезвычайных судов под каким-либо названием не допускается";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART76_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART76_KK")
+rule JudicialPowerCoversCase1995(legal_case: Case) strict {
+    when legal_application_case(legal_case);
+    then judicial_power_covers_case_1995(legal_case);
+    label ru-KZ official "Статья 76 пункт 2 (ред. 1995). Судебная власть распространяется на все дела и споры, возникающие на основе Конституции, законов и международных договоров";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART76_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART76_KK")
+rule CourtRulingBinding1995(legal_case: Case) strict {
+    when court_ruling_issued(legal_case);
+    then court_ruling_binding_1995(legal_case);
+    label ru-KZ official "Статья 76 пункт 3 (ред. 1995). Решения, приговоры и иные постановления судов имеют обязательную силу на всей территории Республики";
+}
+
+// Ст. 78 — не декларация, а ОБЯЗАННОСТЬ суда: приостановить производство и
+// обратиться в Конституционный Суд. Два следствия из одного антецедента,
+// поэтому два правила (§206: несколько top-level then в одном правиле
+// теряют все головы, кроме последней).
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART78_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART78_KK")
+rule ProceedingSuspendedOnRightsInfringement1995(legal_case: Case, act: LegalAct) strict {
+    when court_finds_act_infringing_rights(legal_case, act);
+    then proceeding_suspended_1995(legal_case);
+    label ru-KZ official "Статья 78 (ред. 1995). Усмотрев ущемление конституционных прав подлежащим применению актом, суд обязан приостановить производство по делу";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART78_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART78_KK")
+rule ConstitutionalCourtReferralRequired1995(legal_case: Case, act: LegalAct) strict {
+    when court_finds_act_infringing_rights(legal_case, act);
+    then constitutional_court_referral_required_1995(legal_case);
+    label ru-KZ official "Статья 78 (ред. 1995). Суд обязан обратиться в Конституционный Суд с представлением о признании акта неконституционным";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART80_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART80_KK")
+assert courts_financed_from_republican_budget_1995();
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART81_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART81_KK")
+assert supreme_court_is_highest_judicial_body_1995();
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART85_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_1995_ART85_KK")
+assert local_state_administration_established_1995();
+
+relation constitutional_judge_term_started_on(holder: Judge, day: Date) kind empirical {
+    label ru-KZ official "день начала полномочий судьи Конституционного Суда";
+}
+relation constitutional_judge_term_expires_on(holder: Judge, day: Date) kind institutional {
+    key(holder);
+    label ru-KZ official "день окончания полномочий судьи Конституционного Суда";
+}
+
+// Статья даёт ДЛИНУ срока; СОБЫТИЕ начала (назначение, избрание) приходит
+// фактом дела — Конституция называет его не для всех должностей одинаково, и
+// выдумывать общее событие значило бы дописать за неё. Дата истечения
+// считается календарным шагом §86 (единица calendar_year, errata E-0026).
+rule ConstitutionalJudgeTermExpiry(holder: Judge, start: Date, length: Quantity) strict {
+    when constitutional_judge_term_started_on(holder, start);
+    when constitutional_judge_term(length);
+    then constitutional_judge_term_expires_on(holder, add_calendar_period(start, length));
+    label ru-KZ official "Статья 72. Срок полномочий судьи Конституционного Суда — восемь лет со дня назначения";
+}
+
+relation supreme_court_chair_term_started_on(holder: Judge, day: Date) kind empirical {
+    label ru-KZ official "день начала полномочий Председателя Верховного Суда";
+}
+relation supreme_court_chair_term_expires_on(holder: Judge, day: Date) kind institutional {
+    key(holder);
+    label ru-KZ official "день окончания полномочий Председателя Верховного Суда";
+}
+
+// Статья даёт ДЛИНУ срока; СОБЫТИЕ начала (назначение, избрание) приходит
+// фактом дела — Конституция называет его не для всех должностей одинаково, и
+// выдумывать общее событие значило бы дописать за неё. Дата истечения
+// считается календарным шагом §86 (единица calendar_year, errata E-0026).
+rule SupremeCourtChairTermExpiry(holder: Judge, start: Date, length: Quantity) strict {
+    when supreme_court_chair_term_started_on(holder, start);
+    when supreme_court_chair_term(length);
+    then supreme_court_chair_term_expires_on(holder, add_calendar_period(start, length));
+    label ru-KZ official "Статья 83. Срок полномочий Председателя Верховного Суда — шесть лет со дня назначения";
+}
+
+relation prosecutor_general_term_started_on(holder: ProsecutorGeneral, day: Date) kind empirical {
+    label ru-KZ official "день начала полномочий Генерального Прокурора";
+}
+relation prosecutor_general_term_expires_on(holder: ProsecutorGeneral, day: Date) kind institutional {
+    key(holder);
+    label ru-KZ official "день окончания полномочий Генерального Прокурора";
+}
+
+// Статья даёт ДЛИНУ срока; СОБЫТИЕ начала (назначение, избрание) приходит
+// фактом дела — Конституция называет его не для всех должностей одинаково, и
+// выдумывать общее событие значило бы дописать за неё. Дата истечения
+// считается календарным шагом §86 (единица calendar_year, errata E-0026).
+rule ProsecutorGeneralTermExpiry(holder: ProsecutorGeneral, start: Date, length: Quantity) strict {
+    when prosecutor_general_term_started_on(holder, start);
+    when prosecutor_general_term(length);
+    then prosecutor_general_term_expires_on(holder, add_calendar_period(start, length));
+    label ru-KZ official "Статья 84. Срок полномочий Генерального Прокурора — шесть лет со дня назначения";
+}
+
+relation maslikhat_term_started_on(holder: Maslikhat, day: Date) kind empirical {
+    label ru-KZ official "день начала полномочий маслихата";
+}
+relation maslikhat_term_expires_on(holder: Maslikhat, day: Date) kind institutional {
+    key(holder);
+    label ru-KZ official "день окончания полномочий маслихата";
+}
+
+// Статья даёт ДЛИНУ срока; СОБЫТИЕ начала (назначение, избрание) приходит
+// фактом дела — Конституция называет его не для всех должностей одинаково, и
+// выдумывать общее событие значило бы дописать за неё. Дата истечения
+// считается календарным шагом §86 (единица calendar_year, errata E-0026).
+rule MaslikhatTermExpiry(holder: Maslikhat, start: Date, length: Quantity) strict {
+    when maslikhat_term_started_on(holder, start);
+    when maslikhat_term(length);
+    then maslikhat_term_expires_on(holder, add_calendar_period(start, length));
+    label ru-KZ official "Статья 88 пункт 2. Маслихаты избираются сроком на пять лет";
+}
+
+// --- Ст. 80 п. 3 и ст. 83 п. 3: бланкетные отсылки к конституционному закону ---
+//
+// ДВЕ отсылки, и обе не о деле, а О КОМПЕТЕНЦИИ: Конституция не устанавливает
+// требований к судьям и не создаёт коллегий — она НАЗЫВАЕТ ВИД АКТА, которому
+// это отдано, и молчит обо всём остальном. Записать их правилом о факте
+// значило бы приписать Конституции содержание, которого в ней нет; записать
+// полномочием §127 значит сказать ровно то, что она говорит: кто вправе,
+// каким актом и в каком предмете.
+//
+// ПРЕДМЕТ (`subject`) назван у каждой отдельно и словарём самой Конституции:
+// адресат отсылки объявляет его же в своём `regulates` §27.1, и цепочка
+// делегации сверяет ВКЛЮЧЕНИЕ двух перечислений, а не «полномочие охватывает
+// эту норму вообще» (§105.1 это запрещает).
+//
+// ДЕРЖАТЕЛЬ — Парламент: конституционный закон принимает он (ст. 62 п. 4
+// Конституции), и это ЕДИНСТВЕННОЕ имя, которое корпус даёт этому органу.
+// Общереестрового URN органов в корпусе нет, и заводить его здесь значило бы
+// дать тому же органу второе имя.
+
+entity StateOrgan {
+    label ru-KZ official "государственный орган";
+}
+
+const Parliament: StateOrgan = entity_ref("urn:kz:constitution:court#Parliament") {
+    label ru-KZ official "Парламент Республики Казахстан";
+}
+
+relation constitutional_law(act: LegalAct) kind empirical {
+    label ru-KZ official "конституционный закон Республики Казахстан";
+}
+relation constitutional_law_adopted(act: LegalAct) kind empirical {
+    label ru-KZ official "конституционный закон принят";
+}
+relation judge_requirements_determined(act: LegalAct) kind institutional {
+    label ru-KZ official "требования, предъявляемые к судьям судов Республики Казахстан, определены";
+}
+relation judicial_collegia_established(act: LegalAct) kind institutional {
+    label ru-KZ official "в судах созданы судебные коллегии";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART80_RU")
+rule JudgeRequirementsDelegated(act: LegalAct) strict {
+    when constitutional_law(act);
+    then power DetermineJudgeRequirements {
+        holder Parliament;
+        over act;
+        exercise constitutional_law_adopted(act);
+        valid_when constitutional_law(act);
+        subject JudgeRequirementsSubject;
+        effect judge_requirements_determined(act);
+        window [@2026-01-01, infinity);
+    };
+    label ru-KZ official "Статья 80 пункт 3. Требования, предъявляемые к судьям судов Республики Казахстан, определяются конституционным законом";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART83_RU")
+rule JudicialCollegiaDelegated(act: LegalAct) strict {
+    when constitutional_law(act);
+    then power EstablishJudicialCollegia {
+        holder Parliament;
+        over act;
+        exercise constitutional_law_adopted(act);
+        valid_when constitutional_law(act);
+        subject JudicialCollegiaSubject;
+        effect judicial_collegia_established(act);
+        window [@2026-01-01, infinity);
+    };
+    label ru-KZ official "Статья 83 пункт 3. В судах в соответствии с конституционным законом могут создаваться судебные коллегии";
+}
+
+// === Достройка действующей редакции по аудиту 12.09.2026 ====================
+//
+// `docs/audits/2026-09-12/KZ-CONSTITUTION-GRAMMAR-AUDIT.ru.md`: 268 правил пакета имели
+// якорь ТОЛЬКО в редакции 1995, чьё окно закрылось 01.07.2026, и часть из них
+// выражала содержание, действующее и сегодня. Дело после этой даты не получало
+// вывода вовсе, тогда как `lawc check` был зелен, а §33.1 засчитывала статью
+// EXECUTABLE по соседнему тонкому правилу. Ниже — недостающая половина: те же
+// нормы для редакции 2026, теми же формами, что уже отработаны в пакете.
+//
+// Эмпирические посылки НЕ дублируются: они с самого начала объявлены без
+// суффикса редакции (`doubt_about_guilt`, `judge_deputy_mandate`, …) и годны
+// обеим. Новые здесь только те, чего в тексте 1995 не было вовсе.
+
+// --- Ст. 78 п. 2–3. Ответственность за вмешательство и принципы правосудия ---
+//
+// В редакции 1995 эти нормы стояли в ст. 77 п. 3 и были записаны семью
+// правилами `…1995`. Редакция 2026 перенесла их в ст. 78 п. 3 и сократила
+// перечень до шести подпунктов: запрет повторного привлечения ушёл в ст. 19
+// п. 3 (он записан там же, в пакете `rights`), а «обвиняемый не обязан
+// доказывать свою невиновность» — новый подпункт, посылки для него не было.
+
+relation innocence_proof_demanded_from_accused(legal_case: Case) kind empirical {
+    label ru-KZ official "от обвиняемого потребовано доказывание собственной невиновности";
+}
+relation interference_liability_arises(legal_case: Case) kind institutional {
+    label ru-KZ official "вмешательство в отправление правосудия влечёт ответственность по закону";
+}
+relation jurisdiction_change_prohibited(legal_case: Case) kind institutional {
+    label ru-KZ official "изменение подсудности дела без согласия лица не допускается";
+}
+relation hearing_right_violated(legal_case: Case) kind institutional {
+    label ru-KZ official "нарушено право человека быть выслушанным в суде";
+}
+relation innocence_proof_demand_impermissible(legal_case: Case) kind institutional {
+    label ru-KZ official "требование к обвиняемому доказывать свою невиновность недопустимо";
+}
+relation doubt_resolved_for_accused(legal_case: Case) kind institutional {
+    label ru-KZ official "сомнения в виновности лица толкуются в пользу обвиняемого";
+}
+relation evidence_without_legal_force(legal_case: Case) kind institutional {
+    label ru-KZ official "доказательства не имеют юридической силы";
+}
+relation conviction_impermissible(legal_case: Case) kind institutional {
+    label ru-KZ official "обвинительный приговор лишь на основе собственного признания недопустим";
+}
+relation analogy_prohibited(legal_case: Case) kind institutional {
+    label ru-KZ official "применение уголовного закона по аналогии не допускается";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART78_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART78_KK")
+rule InterferenceWithJusticeLiability(legal_case: Case) strict {
+    when interference_with_justice(legal_case);
+    then interference_liability_arises(legal_case);
+    label ru-KZ official "Статья 78 пункт 2. Вмешательство в деятельность суда по отправлению правосудия влечёт ответственность по закону";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART78_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART78_KK")
+rule JurisdictionChangeProhibited(legal_case: Case) strict {
+    when jurisdiction_changed_without_consent(legal_case);
+    then jurisdiction_change_prohibited(legal_case);
+    label ru-KZ official "Статья 78 пункт 3 подпункт 1). Никому не может быть без его согласия изменена подсудность, предусмотренная для него законом";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART78_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART78_KK")
+rule HearingRightViolated(legal_case: Case) strict {
+    when right_to_be_heard_denied(legal_case);
+    then hearing_right_violated(legal_case);
+    label ru-KZ official "Статья 78 пункт 3 подпункт 2). В суде каждый человек имеет право быть выслушанным";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART78_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART78_KK")
+rule InnocenceProofDemandImpermissible(legal_case: Case) strict {
+    when innocence_proof_demanded_from_accused(legal_case);
+    then innocence_proof_demand_impermissible(legal_case);
+    label ru-KZ official "Статья 78 пункт 3 подпункт 3). Обвиняемый не обязан доказывать свою невиновность";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART78_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART78_KK")
+rule DoubtResolvedForAccused(legal_case: Case) strict {
+    when doubt_about_guilt(legal_case);
+    then doubt_resolved_for_accused(legal_case);
+    label ru-KZ official "Статья 78 пункт 3 подпункт 4). Любые сомнения в виновности лица толкуются в пользу обвиняемого";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART78_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART78_KK")
+rule UnlawfulEvidenceHasNoForce(legal_case: Case) strict {
+    when evidence_obtained_unlawfully(legal_case);
+    then evidence_without_legal_force(legal_case);
+    label ru-KZ official "Статья 78 пункт 3 подпункт 5). Не имеют юридической силы доказательства, полученные незаконным способом";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART78_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART78_KK")
+rule ConvictionOnConfessionAloneImpermissible(legal_case: Case) strict {
+    when conviction_only_on_own_confession(legal_case);
+    then conviction_impermissible(legal_case);
+    label ru-KZ official "Статья 78 пункт 3 подпункт 5). Никто не может быть осуждён лишь на основе его собственного признания";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART78_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART78_KK")
+rule CriminalAnalogyProhibited(legal_case: Case) strict {
+    when criminal_law_applied_by_analogy(legal_case);
+    then analogy_prohibited(legal_case);
+    label ru-KZ official "Статья 78 пункт 3 подпункт 6). Применение уголовного закона по аналогии не допускается";
+}
+
+// --- Ст. 72 п. 3. Председатель Конституционного Суда -----------------------
+
+relation constitutional_court_chair_appointed(person: Person) kind empirical {
+    label ru-KZ official "лицо назначено Председателем Конституционного Суда";
+}
+relation constitutional_court_chair_is_judge(person: Person) kind institutional {
+    label ru-KZ official "Председатель Конституционного Суда одновременно является судьёй Конституционного Суда в течение срока полномочий";
+}
+relation prior_constitutional_court_chair_term(person: Person) kind empirical {
+    label ru-KZ official "лицо ранее занимало должность Председателя Конституционного Суда";
+}
+relation constitutional_court_chair_reappointment_attempt(person: Person) kind empirical {
+    label ru-KZ official "предпринята попытка повторного назначения Председателем Конституционного Суда";
+}
+relation constitutional_court_chair_reappointment_prohibited(person: Person) kind institutional {
+    label ru-KZ official "повторное назначение Председателем Конституционного Суда не допускается";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART72_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART72_KK")
+rule ConstitutionalCourtChairIsJudge(person: Person) strict {
+    when constitutional_court_chair_appointed(person);
+    then constitutional_court_chair_is_judge(person);
+    label ru-KZ official "Статья 72 пункт 3. Председатель Конституционного Суда одновременно является судьёй Конституционного Суда в течение срока полномочий";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART72_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART72_KK")
+rule ConstitutionalCourtChairOneTerm(person: Person) strict {
+    when constitutional_court_chair_reappointment_attempt(person);
+    when prior_constitutional_court_chair_term(person);
+    then constitutional_court_chair_reappointment_prohibited(person);
+    label ru-KZ official "Статья 72 пункт 3. Одно и то же лицо не может быть назначено Председателем Конституционного Суда более одного раза";
+}
+
+// --- Ст. 72 п. 5 и ст. 80 п. 4. Несовместимость должности ------------------
+//
+// Форма ОТЛИЧАЕТСЯ от близнецов редакции 1995 намеренно. Там изъятие для
+// преподавательской, научной и творческой деятельности записано
+// `and not …_permitted_activity(judge)`, а классическое отрицание без
+// негативного продюсера не срабатывает никогда (замер kz-credit-bureau
+// 04.09.2026): ветвь оплачиваемой должности мертва, пока дело не подаст
+// `assert not …`. Здесь изъятие — `unless` поражаемого правила, как у члена
+// Правительства (ст. 67 п. 2), и работает на обычном деле.
+//
+// Редакция 2026 добавила к перечню четвёртую позицию — вхождение в
+// руководящий орган либо наблюдательный совет коммерческой организации;
+// в тексте 1995 её не было, поэтому посылки заводятся здесь.
+
+relation constitutional_judge_commercial_board(judge: ConstitutionalJudge) kind empirical {
+    label ru-KZ official "судья Конституционного Суда входит в состав руководящего органа либо наблюдательного совета коммерческой организации";
+}
+relation constitutional_judge_office_incompatible(judge: ConstitutionalJudge) kind institutional {
+    label ru-KZ official "должность судьи Конституционного Суда несовместима с занимаемой должностью либо деятельностью";
+}
+relation judge_commercial_board(judge: Judge) kind empirical {
+    label ru-KZ official "судья входит в состав руководящего органа либо наблюдательного совета коммерческой организации";
+}
+relation judge_office_incompatible(judge: Judge) kind institutional {
+    label ru-KZ official "должность судьи несовместима с занимаемой должностью либо деятельностью";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART72_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART72_KK")
+rule ConstitutionalJudgeDeputyMandateIncompatible(judge: ConstitutionalJudge) strict {
+    when constitutional_judge_deputy_mandate(judge);
+    then constitutional_judge_office_incompatible(judge);
+    label ru-KZ official "Статья 72 пункт 5. Должность судьи Конституционного Суда несовместима с депутатским мандатом";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART72_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART72_KK")
+rule ConstitutionalJudgePaidOfficeIncompatible(judge: ConstitutionalJudge) defeasible {
+    when constitutional_judge_paid_office(judge);
+    then constitutional_judge_office_incompatible(judge);
+    unless constitutional_judge_permitted_activity(judge);
+    label ru-KZ official "Статья 72 пункт 5. Должность судьи Конституционного Суда несовместима с занятием иных оплачиваемых должностей, кроме преподавательской, научной, творческой деятельности";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART72_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART72_KK")
+rule ConstitutionalJudgeBusinessIncompatible(judge: ConstitutionalJudge) strict {
+    when constitutional_judge_business(judge);
+    then constitutional_judge_office_incompatible(judge);
+    label ru-KZ official "Статья 72 пункт 5. Должность судьи Конституционного Суда несовместима с осуществлением предпринимательской деятельности";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART72_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART72_KK")
+rule ConstitutionalJudgeBoardIncompatible(judge: ConstitutionalJudge) strict {
+    when constitutional_judge_commercial_board(judge);
+    then constitutional_judge_office_incompatible(judge);
+    label ru-KZ official "Статья 72 пункт 5. Должность судьи Конституционного Суда несовместима с вхождением в состав руководящего органа или наблюдательного совета коммерческой организации";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART80_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART80_KK")
+rule JudgeDeputyMandateIncompatible(judge: Judge) strict {
+    when judge_deputy_mandate(judge);
+    then judge_office_incompatible(judge);
+    label ru-KZ official "Статья 80 пункт 4. Должность судьи несовместима с депутатским мандатом";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART80_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART80_KK")
+rule JudgePaidOfficeIncompatible(judge: Judge) defeasible {
+    when judge_paid_office(judge);
+    then judge_office_incompatible(judge);
+    unless judge_permitted_activity(judge);
+    label ru-KZ official "Статья 80 пункт 4. Должность судьи несовместима с занятием иной оплачиваемой должности, кроме преподавательской, научной, творческой деятельности";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART80_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART80_KK")
+rule JudgeBusinessIncompatible(judge: Judge) strict {
+    when judge_business(judge);
+    then judge_office_incompatible(judge);
+    label ru-KZ official "Статья 80 пункт 4. Должность судьи несовместима с осуществлением предпринимательской деятельности";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART80_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART80_KK")
+rule JudgeBoardIncompatible(judge: Judge) strict {
+    when judge_commercial_board(judge);
+    then judge_office_incompatible(judge);
+    label ru-KZ official "Статья 80 пункт 4. Должность судьи несовместима с вхождением в состав руководящего органа или наблюдательного совета коммерческой организации";
+}
+
+// --- Ст. 72 п. 6 и ст. 84 п. 4. Неприкосновенность ------------------------
+//
+// Та же пятиправильная форма, что у судьи (ст. 80 п. 2) и депутата
+// (ст. 55 п. 3): три основания снятия защиты выводят ОДИН литеральный
+// предикат, защита стоит поражаемым правилом с `unless` над ним, и только
+// затем читается норм-головой. `unless` при норм-голове компилятор
+// ОТБРАСЫВАЕТ (LDC-E1302), поэтому промежуточный литерал обязателен.
+
+relation constitutional_judge_detention_attempt(judge: ConstitutionalJudge) kind empirical {
+    label ru-KZ official "предпринята попытка задержания судьи либо Председателя Конституционного Суда";
+}
+relation constitutional_judge_caught_at_crime_scene(judge: ConstitutionalJudge) kind empirical {
+    label ru-KZ official "судья Конституционного Суда задержан на месте преступления";
+}
+relation constitutional_judge_grave_or_especially_grave_offence(judge: ConstitutionalJudge) kind empirical {
+    label ru-KZ official "судьёй Конституционного Суда совершено тяжкое либо особо тяжкое преступление";
+}
+relation required_constitutional_judge_detention_consent(judge: ConstitutionalJudge) kind empirical {
+    label ru-KZ official "получено согласие Президента либо Курултая, требуемое для задержания судьи Конституционного Суда";
+}
+relation constitutional_judge_detention_ground(judge: ConstitutionalJudge) kind institutional {
+    label ru-KZ official "налицо основание, при котором задержание судьи Конституционного Суда допустимо";
+}
+relation constitutional_judge_inviolability_applies(judge: ConstitutionalJudge) kind institutional {
+    label ru-KZ official "защита судьи Конституционного Суда от задержания действует";
+}
+relation constitutional_judge_detained(judge: ConstitutionalJudge) kind institutional {
+    label ru-KZ official "судья Конституционного Суда задержан";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART72_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART72_KK")
+rule ConstitutionalJudgeDetentionGroundInTheAct(judge: ConstitutionalJudge) defeasible {
+    when constitutional_judge_caught_at_crime_scene(judge);
+    then constitutional_judge_detention_ground(judge);
+    label ru-KZ official "Статья 72 пункт 6. Задержание на месте преступления — основание, снимающее защиту судьи Конституционного Суда";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART72_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART72_KK")
+rule ConstitutionalJudgeDetentionGroundGraveOffence(judge: ConstitutionalJudge) defeasible {
+    when constitutional_judge_grave_or_especially_grave_offence(judge);
+    then constitutional_judge_detention_ground(judge);
+    label ru-KZ official "Статья 72 пункт 6. Совершение тяжкого или особо тяжкого преступления — основание, снимающее защиту судьи Конституционного Суда";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART72_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART72_KK")
+rule ConstitutionalJudgeDetentionGroundConsent(judge: ConstitutionalJudge) defeasible {
+    when required_constitutional_judge_detention_consent(judge);
+    then constitutional_judge_detention_ground(judge);
+    label ru-KZ official "Статья 72 пункт 6. Согласие Президента либо Курултая — основание, снимающее защиту судьи Конституционного Суда";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART72_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART72_KK")
+rule ConstitutionalJudgeInviolabilityApplies(judge: ConstitutionalJudge) defeasible {
+    when constitutional_judge(judge);
+    unless constitutional_judge_detention_ground(judge);
+    then constitutional_judge_inviolability_applies(judge);
+    label ru-KZ official "Статья 72 пункт 6. Защита судьи Конституционного Суда от задержания действует, пока нет ни одного из трёх названных оснований";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART72_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART72_KK")
+rule ConstitutionalJudgeDetentionImmunity(judge: ConstitutionalJudge) defeasible {
+    when constitutional_judge_inviolability_applies(judge);
+    then immunity ConstitutionalJudgePersonalImmunity {
+        holder judge;
+        protected_effect constitutional_judge_detained(judge);
+    };
+    label ru-KZ official "Статья 72 пункт 6. Председатель и судьи Конституционного Суда в течение срока своих полномочий не могут быть задержаны без согласия Президента либо Курултая, кроме задержания на месте преступления либо совершения тяжких и особо тяжких преступлений";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART72_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART72_KK")
+rule ConstitutionalJudgeDetentionConstitutionalException(judge: ConstitutionalJudge) defeasible {
+    when constitutional_judge_detention_attempt(judge);
+    when constitutional_judge_detention_ground(judge);
+    then constitutional_judge_detained(judge);
+    label ru-KZ official "Статья 72 пункт 6. Задержание судьи Конституционного Суда допустимо при задержании на месте преступления, совершении тяжких и особо тяжких преступлений либо при наличии требуемого согласия";
+}
+
+relation prosecutor_general(officer: ProsecutorGeneral) kind empirical {
+    label ru-KZ official "лицо занимает должность Генерального Прокурора Республики Казахстан";
+}
+relation prosecutor_general_detention_attempt(officer: ProsecutorGeneral) kind empirical {
+    label ru-KZ official "предпринята попытка задержания Генерального Прокурора";
+}
+relation prosecutor_general_caught_at_crime_scene(officer: ProsecutorGeneral) kind empirical {
+    label ru-KZ official "Генеральный Прокурор задержан на месте преступления";
+}
+relation prosecutor_general_grave_or_especially_grave_offence(officer: ProsecutorGeneral) kind empirical {
+    label ru-KZ official "Генеральным Прокурором совершено тяжкое либо особо тяжкое преступление";
+}
+relation required_prosecutor_general_detention_consent(officer: ProsecutorGeneral) kind empirical {
+    label ru-KZ official "получено согласие Президента, требуемое для задержания Генерального Прокурора";
+}
+relation prosecutor_general_detention_ground(officer: ProsecutorGeneral) kind institutional {
+    label ru-KZ official "налицо основание, при котором задержание Генерального Прокурора допустимо";
+}
+relation prosecutor_general_inviolability_applies(officer: ProsecutorGeneral) kind institutional {
+    label ru-KZ official "защита Генерального Прокурора от задержания действует";
+}
+relation prosecutor_general_detained(officer: ProsecutorGeneral) kind institutional {
+    label ru-KZ official "Генеральный Прокурор задержан";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART84_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART84_KK")
+rule ProsecutorGeneralDetentionGroundInTheAct(officer: ProsecutorGeneral) defeasible {
+    when prosecutor_general_caught_at_crime_scene(officer);
+    then prosecutor_general_detention_ground(officer);
+    label ru-KZ official "Статья 84 пункт 4. Задержание на месте преступления — основание, снимающее защиту Генерального Прокурора";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART84_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART84_KK")
+rule ProsecutorGeneralDetentionGroundGraveOffence(officer: ProsecutorGeneral) defeasible {
+    when prosecutor_general_grave_or_especially_grave_offence(officer);
+    then prosecutor_general_detention_ground(officer);
+    label ru-KZ official "Статья 84 пункт 4. Совершение тяжкого или особо тяжкого преступления — основание, снимающее защиту Генерального Прокурора";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART84_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART84_KK")
+rule ProsecutorGeneralDetentionGroundConsent(officer: ProsecutorGeneral) defeasible {
+    when required_prosecutor_general_detention_consent(officer);
+    then prosecutor_general_detention_ground(officer);
+    label ru-KZ official "Статья 84 пункт 4. Согласие Президента — основание, снимающее защиту Генерального Прокурора";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART84_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART84_KK")
+rule ProsecutorGeneralInviolabilityApplies(officer: ProsecutorGeneral) defeasible {
+    when prosecutor_general(officer);
+    unless prosecutor_general_detention_ground(officer);
+    then prosecutor_general_inviolability_applies(officer);
+    label ru-KZ official "Статья 84 пункт 4. Защита Генерального Прокурора от задержания действует, пока нет ни одного из трёх названных оснований";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART84_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART84_KK")
+rule ProsecutorGeneralDetentionImmunity(officer: ProsecutorGeneral) defeasible {
+    when prosecutor_general_inviolability_applies(officer);
+    then immunity ProsecutorGeneralPersonalImmunity {
+        holder officer;
+        protected_effect prosecutor_general_detained(officer);
+    };
+    label ru-KZ official "Статья 84 пункт 4. Генеральный Прокурор в течение срока своих полномочий не может быть задержан без согласия Президента, кроме задержания на месте преступления либо совершения тяжких и особо тяжких преступлений";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART84_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART84_KK")
+rule ProsecutorGeneralDetentionConstitutionalException(officer: ProsecutorGeneral) defeasible {
+    when prosecutor_general_detention_attempt(officer);
+    when prosecutor_general_detention_ground(officer);
+    then prosecutor_general_detained(officer);
+    label ru-KZ official "Статья 84 пункт 4. Задержание Генерального Прокурора допустимо при задержании на месте преступления, совершении тяжких и особо тяжких преступлений либо при наличии требуемого согласия";
+}
+
+// --- Ст. 75 пп. 1, 3, 4. Последствия решений Конституционного Суда --------
+//
+// Был записан только пункт 2. Пункты 1, 3 и 4 существовали двойниками
+// редакции 1995 (`UnconstitutionalActMayNotBeSigned1995`,
+// `UnconstitutionalTreatyMayNotBeRatified1995`, `CourtRulingBinding1995`) и
+// после 01.07.2026 не выводились ни на одном деле.
+
+entity InternationalDecision {
+    label ru-KZ official "решение международной организации либо её органа";
+}
+entity ConstitutionalCourtDecision {
+    label ru-KZ official "решение Конституционного Суда Республики Казахстан";
+}
+
+relation treaty_declared_unconstitutional(treaty: Treaty) kind empirical {
+    label ru-KZ official "международный договор признан не соответствующим Конституции";
+}
+relation act_may_not_be_signed(act: LegalAct) kind institutional {
+    label ru-KZ official "закон не может быть подписан и введён в действие";
+}
+relation treaty_may_not_be_ratified(treaty: Treaty) kind institutional {
+    label ru-KZ official "международный договор не может быть ратифицирован и введён в действие";
+}
+relation international_decision_execution_unconstitutional(ruling: InternationalDecision) kind empirical {
+    label ru-KZ official "исполнение решения международной организации признано Конституционным Судом не соответствующим Конституции";
+}
+relation international_decision_not_enforceable(ruling: InternationalDecision) kind institutional {
+    label ru-KZ official "решение международной организации исполнению не подлежит";
+}
+relation constitutional_court_decision_adopted(ruling: ConstitutionalCourtDecision) kind empirical {
+    label ru-KZ official "решение Конституционного Суда принято";
+}
+pub relation constitutional_court_decision_binding(ruling: ConstitutionalCourtDecision) kind institutional {
+    label ru-KZ official "решение Конституционного Суда вступило в силу и является общеобязательным на всей территории Республики Казахстан";
+}
+relation constitutional_court_decision_final(ruling: ConstitutionalCourtDecision) kind institutional {
+    label ru-KZ official "решение Конституционного Суда окончательно и обжалованию не подлежит";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART75_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART75_KK")
+rule UnconstitutionalActMayNotBeSigned(act: LegalAct) strict {
+    when declared_unconstitutional(act);
+    then act_may_not_be_signed(act);
+    label ru-KZ official "Статья 75 пункт 1. Законы, признанные не соответствующими Конституции, не могут быть подписаны и введены в действие";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART75_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART75_KK")
+rule UnconstitutionalTreatyMayNotBeRatified(treaty: Treaty) strict {
+    when treaty_declared_unconstitutional(treaty);
+    then treaty_may_not_be_ratified(treaty);
+    label ru-KZ official "Статья 75 пункт 1. Международные договоры, признанные не соответствующими Конституции, не могут быть ратифицированы и введены в действие";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART75_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART75_KK")
+rule UnconstitutionalInternationalDecisionNotEnforceable(
+    ruling: InternationalDecision,
+) strict {
+    when international_decision_execution_unconstitutional(ruling);
+    then international_decision_not_enforceable(ruling);
+    label ru-KZ official "Статья 75 пункт 3. Решения международных организаций и их органов, исполнение которых признано Конституционным Судом не соответствующим Конституции, исполнению не подлежат";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART75_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART75_KK")
+rule ConstitutionalCourtDecisionBinding(ruling: ConstitutionalCourtDecision) strict {
+    when constitutional_court_decision_adopted(ruling);
+    then constitutional_court_decision_binding(ruling);
+    label ru-KZ official "Статья 75 пункт 4. Решения Конституционного Суда вступают в силу со дня их принятия и являются общеобязательными на всей территории Республики Казахстан";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART75_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART75_KK")
+rule ConstitutionalCourtDecisionFinal(ruling: ConstitutionalCourtDecision) strict {
+    when constitutional_court_decision_adopted(ruling);
+    then constitutional_court_decision_final(ruling);
+    label ru-KZ official "Статья 75 пункт 4. Решения Конституционного Суда окончательны и обжалованию не подлежат";
+}
+
+// --- Ст. 88 п. 5 и ст. 89 п. 5. Прекращение полномочий на местах ----------
+//
+// Редакция 2026 сменила круг лиц, с которыми Президент проводит консультации
+// (Премьер-Министр и Председатель Курултая вместо председателей Палат), но
+// саму норму сохранила; двойник 1995 (`MaslikhatPowersTerminated1995`,
+// `RegionalAkimPowersEndWithNewPresident1995`) остался единственным.
+//
+// Дизъюнкция ветвей записана ОТДЕЛЬНЫМИ правилами, а не `or` в теле: §206
+// расщепляет её всё равно, а раздельная запись даёт каждой ветви собственную
+// метку §218 и собственный адрес в доказательстве.
+
+relation new_president_assumed_office() kind empirical {
+    label ru-KZ official "вновь избранный Президент вступил в должность";
+}
+relation maslikhat_powers_terminated(maslikhat: Maslikhat) kind institutional {
+    label ru-KZ official "полномочия маслихата прекращены досрочно";
+}
+relation akim_powers_terminated(akim: Akim) kind institutional {
+    label ru-KZ official "полномочия акима прекращены";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART88_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART88_KK")
+rule MaslikhatPowersTerminatedBySelfDissolution(maslikhat: Maslikhat) strict {
+    when maslikhat_self_dissolution(maslikhat);
+    then maslikhat_powers_terminated(maslikhat);
+    label ru-KZ official "Статья 88 пункт 5. Полномочия маслихата прекращаются досрочно в случае принятия маслихатом решения о самороспуске";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART88_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART88_KK")
+rule MaslikhatPowersTerminatedByPresident(maslikhat: Maslikhat) strict {
+    when presidential_maslikhat_termination(maslikhat);
+    when termination_consultations_completed(maslikhat);
+    then maslikhat_powers_terminated(maslikhat);
+    label ru-KZ official "Статья 88 пункт 5. Полномочия маслихата прекращаются досрочно Президентом Республики Казахстан после консультаций с Премьер-Министром и Председателем Курултая";
+}
+
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART89_RU")
+@source("urn:kz:constitution:sources#KZ_CONSTITUTION_2026_ART89_KK")
+rule RegionalAkimPowersEndWithNewPresident(akim: Akim) strict {
+    when regional_akim(akim);
+    when new_president_assumed_office();
+    then akim_powers_terminated(akim);
+    label ru-KZ official "Статья 89 пункт 5. Полномочия акимов столицы, областей, городов республиканского значения прекращаются при вступлении в должность вновь избранного Президента Республики Казахстан";
+}

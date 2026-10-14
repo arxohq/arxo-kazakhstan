@@ -1,0 +1,24 @@
+name: Reader replay and publication inventory
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  reader:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install the exact published CLI
+        run: npm install -g @arxo/cli@0.2.5
+      - name: Replay only the documented reader examples
+        run: node tools/check.mjs
+# The 141 historical source cases and their 3 expectation mismatches are
+# separate evidence in reports/source-checks.json; this job is not full acceptance.

@@ -1,0 +1,388 @@
+language "law.core" version "0.2";
+package kz.constitution.court version "0.1.0";
+namespace "urn:kz:constitution:court";
+
+// ПОЗИЦИИ §§122–137 ПАКЕТА «КОНСТИТУЦИОННЫЙ СУД, СУДЫ И МЕСТНОЕ УПРАВЛЕНИЕ».
+//
+// В пакете девять норм-шаблонов: шесть иммунитетов §128, два полномочия §127
+// и один запрет §130 (десахарен в duty с goal.kind = forbearance). Набор
+// наблюдает каждый.
+//
+// ПРОЕКЦИЯ РЕДАКЦИЙ (13.09.2026). Мир сценария склеен с пакетом источников
+// `kz.constitution.sources` (`concat` в law.toml). Якоря редакций теперь
+// разрешаются, и условие 3 §92 (E-0095) исключает узлы неприменимой редакции
+// с info EDITION_NOT_APPLICABLE. Следствие, перевернувшее четыре ожидания:
+// на дате дела @2026-09-01 иммунитеты редакции 1995 ОТСУТСТВУЮТ. Прежнее
+// «иммунитет 1995 ACTIVE на дате 2026» было артефактом мира без редакций.
+// Живая сторона всех четырёх наблюдается делом kzcc-22 на @2020-01-01.
+//
+// ЧЕТЫРЕ ИММУНИТЕТА РЕДАКЦИИ 1995 ГОДА (`*1995`) стоят на КЛАССИЧЕСКОМ
+// отрицании (`when not parliament_consent_for_judge(judge)` и т. п.). У этих
+// предикатов в пакете нет негативного продюсера, поэтому отсутствие факта
+// согласия позицию НЕ создаёт: дело обязано ОТРИЦАТЬ согласие явно
+// (`assert not …`). Это измерено здесь, а не предположено, и объясняет,
+// почему сценарий каждого из них подаёт отрицательные факты поимённо.
+//
+// ЗАЩИЩЁННЫЙ ЭФФЕКТ ЧЕТЫРЁХ ИММУНИТЕТОВ 1995 ГОДА (`*_immunity_infringed_1995`)
+// не производится в пакете ничем: ни power §127, ни правилом. Внутри пакета
+// они НЕАТАКУЕМЫ, и наблюдаемое у них — только существование позиции.
+// Поэтому issue EFFECT_BLOCKED_BY_IMMUNITY не ожидается ни в одном деле
+// этого набора.
+
+// --- ст. 76 п. 1: запрет внесудебного правосудия (§130) -----------------
+
+// Запрет активен, пока открыто окно нормы.
+test "urn:query:kzcc-1" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+        assert "c1-1": justice_act(entity_ref("urn:kz:constitution:court:test:actor1"), entity_ref("urn:kz:constitution:court:test:case1")) { origin case_input; }
+        assert "c1-2": non_court_justice_attempt(entity_ref("urn:kz:constitution:court:test:case1")) { origin case_input; }
+    }
+    evaluate positions();
+    expect issues_within(info);
+    expect position(RefrainFromNonCourtJustice, ACTIVE);
+    // СТОРОЖ ГРАНИЦЫ §130: акт «правосудия» вне суда уже совершён, и запрет
+    // всё равно остаётся ACTIVE — forbearance-цель в Core 0.1 не получает
+    // VIOLATED. Тест обязан упасть, если однажды придёт VIOLATED.
+    expect not position(RefrainFromNonCourtJustice, VIOLATED);
+}
+
+// Дело разбирает суд: внесудебной попытки нет, запрет не создаётся.
+test "urn:query:kzcc-2" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+        assert "c2-1": justice_act(entity_ref("urn:kz:constitution:court:test:judge1"), entity_ref("urn:kz:constitution:court:test:case2")) { origin case_input; }
+        assert "c2-2": court(entity_ref("urn:kz:constitution:court:test:court1")) { origin case_input; }
+        assert "c2-3": court_handles(entity_ref("urn:kz:constitution:court:test:court1"), entity_ref("urn:kz:constitution:court:test:case2")) { origin case_input; }
+    }
+    evaluate positions();
+    expect not position(RefrainFromNonCourtJustice, ACTIVE);
+
+    evaluate truth(justice_lawful(entity_ref("urn:kz:constitution:court:test:case2")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// --- ст. 80 п. 2: неприкосновенность судьи (§128) ------------------------
+
+// Оснований нет — защита действует, задержания нет.
+test "urn:query:kzcc-3" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+        assert "c3-1": judge(entity_ref("urn:kz:constitution:court:test:judge2")) { origin case_input; }
+        assert "c3-2": judge_detention_attempt(entity_ref("urn:kz:constitution:court:test:judge2")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(JudgePersonalImmunity, ACTIVE);
+
+    evaluate truth(judge_detained(entity_ref("urn:kz:constitution:court:test:judge2")));
+    expect truth_status == NEITHER;
+}
+
+// Задержание на месте преступления снимает защиту.
+test "urn:query:kzcc-4" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+        assert "c4-1": judge(entity_ref("urn:kz:constitution:court:test:judge3")) { origin case_input; }
+        assert "c4-2": judge_detention_attempt(entity_ref("urn:kz:constitution:court:test:judge3")) { origin case_input; }
+        assert "c4-3": judge_caught_at_crime_scene(entity_ref("urn:kz:constitution:court:test:judge3")) { origin case_input; }
+    }
+    evaluate positions();
+    expect not position(JudgePersonalImmunity, ACTIVE);
+
+    evaluate truth(judge_detained(entity_ref("urn:kz:constitution:court:test:judge3")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// Тяжкое или особо тяжкое преступление — второе основание.
+test "urn:query:kzcc-5" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+        assert "c5-1": judge(entity_ref("urn:kz:constitution:court:test:judge4")) { origin case_input; }
+        assert "c5-2": judge_detention_attempt(entity_ref("urn:kz:constitution:court:test:judge4")) { origin case_input; }
+        assert "c5-3": judge_grave_or_especially_grave_offence(entity_ref("urn:kz:constitution:court:test:judge4")) { origin case_input; }
+    }
+    evaluate positions();
+    expect not position(JudgePersonalImmunity, ACTIVE);
+
+    evaluate truth(judge_detained(entity_ref("urn:kz:constitution:court:test:judge4")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// Требуемое согласие — третье основание.
+test "urn:query:kzcc-6" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+        assert "c6-1": judge(entity_ref("urn:kz:constitution:court:test:judge5")) { origin case_input; }
+        assert "c6-2": judge_detention_attempt(entity_ref("urn:kz:constitution:court:test:judge5")) { origin case_input; }
+        assert "c6-3": required_judge_detention_consent(entity_ref("urn:kz:constitution:court:test:judge5")) { origin case_input; }
+    }
+    evaluate positions();
+    expect not position(JudgePersonalImmunity, ACTIVE);
+
+    evaluate truth(judge_detained(entity_ref("urn:kz:constitution:court:test:judge5")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// --- ст. 85 п. 4: иммунитет Уполномоченного по правам человека (§128) ----
+
+test "urn:query:kzcc-7" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+        assert "c7-1": ombudsman(entity_ref("urn:kz:constitution:court:test:ombudsman1")) { origin case_input; }
+        assert "c7-2": ombudsman_coercive_measure_attempt(entity_ref("urn:kz:constitution:court:test:ombudsman1")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(OmbudsmanCoerciveMeasureImmunity, ACTIVE);
+
+    evaluate truth(ombudsman_coercive_measure_applied(entity_ref("urn:kz:constitution:court:test:ombudsman1")));
+    expect truth_status == NEITHER;
+}
+
+// Согласие Президента снимает защиту, и мера применяется.
+test "urn:query:kzcc-8" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+        assert "c8-1": ombudsman(entity_ref("urn:kz:constitution:court:test:ombudsman2")) { origin case_input; }
+        assert "c8-2": ombudsman_coercive_measure_attempt(entity_ref("urn:kz:constitution:court:test:ombudsman2")) { origin case_input; }
+        assert "c8-3": presidential_consent_to_ombudsman_measure(entity_ref("urn:kz:constitution:court:test:ombudsman2")) { origin case_input; }
+    }
+    evaluate positions();
+    expect not position(OmbudsmanCoerciveMeasureImmunity, ACTIVE);
+
+    evaluate truth(ombudsman_coercive_measure_applied(entity_ref("urn:kz:constitution:court:test:ombudsman2")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// Тяжкое или особо тяжкое преступление — второе основание ст. 85 п. 4.
+test "urn:query:kzcc-9" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+        assert "c9-1": ombudsman(entity_ref("urn:kz:constitution:court:test:ombudsman3")) { origin case_input; }
+        assert "c9-2": ombudsman_coercive_measure_attempt(entity_ref("urn:kz:constitution:court:test:ombudsman3")) { origin case_input; }
+        assert "c9-3": ombudsman_grave_or_especially_grave_offence(entity_ref("urn:kz:constitution:court:test:ombudsman3")) { origin case_input; }
+    }
+    evaluate positions();
+    expect not position(OmbudsmanCoerciveMeasureImmunity, ACTIVE);
+
+    evaluate truth(ombudsman_coercive_measure_applied(entity_ref("urn:kz:constitution:court:test:ombudsman3")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// --- ст. 80 п. 3: делегирование требований к судьям (§127) ---------------
+
+// Полномочие создано конституционным законом; осуществления (принятия закона)
+// нет — позиция ACTIVE, эффекта нет.
+test "urn:query:kzcc-10" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+        assert "c10-1": constitutional_law(entity_ref("urn:kz:constitution:court:test:act1")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(DetermineJudgeRequirements, ACTIVE);
+    expect position(EstablishJudicialCollegia, ACTIVE);
+
+    evaluate truth(judge_requirements_determined(entity_ref("urn:kz:constitution:court:test:act1")));
+    expect truth_status == NEITHER;
+}
+
+// Закон принят: осуществление состоялось, `valid_when` выполнено, оба эффекта
+// наступают.
+//
+// ГРАНИЦА, ИЗМЕРЕННАЯ ЗДЕСЬ: `valid_when` обоих полномочий читает тот же
+// предикат `constitutional_law(act)`, что и посылка правила. Пара
+// «действительное / недействительное осуществление» для них поэтому
+// НЕВЫРАЗИМА: где полномочие есть, там условие действительности выполнено
+// всегда. Наблюдаемая пара — наличие и отсутствие осуществления.
+test "urn:query:kzcc-11" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+        assert "c11-1": constitutional_law(entity_ref("urn:kz:constitution:court:test:act2")) { origin case_input; }
+        assert "c11-2": constitutional_law_adopted(entity_ref("urn:kz:constitution:court:test:act2")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(DetermineJudgeRequirements, ACTIVE);
+
+    evaluate truth(judge_requirements_determined(entity_ref("urn:kz:constitution:court:test:act2")));
+    expect truth_status == TRUE_ONLY;
+
+    evaluate truth(judicial_collegia_established(entity_ref("urn:kz:constitution:court:test:act2")));
+    expect truth_status == TRUE_ONLY;
+}
+
+// Акт не является конституционным законом: полномочия нет вовсе, и принятие
+// акта эффекта не создаёт.
+test "urn:query:kzcc-12" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+        assert "c12-1": constitutional_law_adopted(entity_ref("urn:kz:constitution:court:test:act3")) { origin case_input; }
+    }
+    evaluate positions();
+    expect not position(DetermineJudgeRequirements, ACTIVE);
+    expect not position(EstablishJudicialCollegia, ACTIVE);
+
+    evaluate truth(judicial_collegia_established(entity_ref("urn:kz:constitution:court:test:act3")));
+    expect truth_status == NEITHER;
+}
+
+// --- ст. 71 п. 5 (ред. 1995): неприкосновенность судьи КС ----------------
+
+test "urn:query:kzcc-13" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+        assert "c13-1": constitutional_judge(entity_ref("urn:kz:constitution:court:test:cjudge1")) { origin case_input; }
+        assert "c13-2": constitutional_judge_arrest_attempt(entity_ref("urn:kz:constitution:court:test:cjudge1")) { origin case_input; }
+        assert "c13-3": not parliament_consent_for_judge(entity_ref("urn:kz:constitution:court:test:cjudge1")) { origin case_input; }
+        assert "c13-4": not judge_caught_in_act_or_grave_crime(entity_ref("urn:kz:constitution:court:test:cjudge1")) { origin case_input; }
+    }
+    evaluate positions();
+    // ПЕРЕВЁРНУТО 13.09.2026 вместе с включением пакета источников в мир
+    // сценария: на legal_time @2026-09-01 редакция 1995 не применима, узел
+    // исключён условием 3 §92, и позиции нет. Прежнее ожидание «иммунитет
+    // 1995 ACTIVE на дате 2026» было следствием мира БЕЗ редакций, а не
+    // прочтения нормы. Живая сторона нормы наблюдается делом kzcc-22.
+    expect not position(ConstitutionalJudgeInviolability1995, ACTIVE);
+    expect issue(EDITION_NOT_APPLICABLE);
+}
+
+// Согласие Парламента дано: позиции нет.
+test "urn:query:kzcc-14" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+        assert "c14-1": constitutional_judge(entity_ref("urn:kz:constitution:court:test:cjudge2")) { origin case_input; }
+        assert "c14-2": constitutional_judge_arrest_attempt(entity_ref("urn:kz:constitution:court:test:cjudge2")) { origin case_input; }
+        assert "c14-3": parliament_consent_for_judge(entity_ref("urn:kz:constitution:court:test:cjudge2")) { origin case_input; }
+        assert "c14-4": not judge_caught_in_act_or_grave_crime(entity_ref("urn:kz:constitution:court:test:cjudge2")) { origin case_input; }
+    }
+    evaluate positions();
+    expect not position(ConstitutionalJudgeInviolability1995, ACTIVE);
+}
+
+// ИЗМЕРЕНИЕ ГРАНИЦЫ КЛАССИЧЕСКОГО ОТРИЦАНИЯ: согласие не отрицается, а просто
+// не подано. Позиции нет — молчание факта не есть его отрицание.
+test "urn:query:kzcc-15" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+        assert "c15-1": constitutional_judge(entity_ref("urn:kz:constitution:court:test:cjudge3")) { origin case_input; }
+        assert "c15-2": constitutional_judge_arrest_attempt(entity_ref("urn:kz:constitution:court:test:cjudge3")) { origin case_input; }
+    }
+    evaluate positions();
+    expect not position(ConstitutionalJudgeInviolability1995, ACTIVE);
+}
+
+// --- ст. 79 п. 2 (ред. 1995): неприкосновенность судьи -------------------
+
+test "urn:query:kzcc-16" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+        assert "c16-1": judge_arrest_attempt(entity_ref("urn:kz:constitution:court:test:judge6")) { origin case_input; }
+        assert "c16-2": not presidential_consent_on_council_conclusion(entity_ref("urn:kz:constitution:court:test:judge6")) { origin case_input; }
+        assert "c16-3": not senate_consent_for_judge(entity_ref("urn:kz:constitution:court:test:judge6")) { origin case_input; }
+        assert "c16-4": not ordinary_judge_caught_in_act_or_grave_crime(entity_ref("urn:kz:constitution:court:test:judge6")) { origin case_input; }
+    }
+    evaluate positions();
+    // Перевёрнуто 13.09.2026 по той же причине (см. kzcc-13).
+    expect not position(JudicialInviolability1995, ACTIVE);
+    expect issue(EDITION_NOT_APPLICABLE);
+}
+
+// Согласие Сената снимает защиту редакции 1995 года.
+test "urn:query:kzcc-17" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+        assert "c17-1": judge_arrest_attempt(entity_ref("urn:kz:constitution:court:test:judge7")) { origin case_input; }
+        assert "c17-2": not presidential_consent_on_council_conclusion(entity_ref("urn:kz:constitution:court:test:judge7")) { origin case_input; }
+        assert "c17-3": senate_consent_for_judge(entity_ref("urn:kz:constitution:court:test:judge7")) { origin case_input; }
+        assert "c17-4": not ordinary_judge_caught_in_act_or_grave_crime(entity_ref("urn:kz:constitution:court:test:judge7")) { origin case_input; }
+    }
+    evaluate positions();
+    expect not position(JudicialInviolability1995, ACTIVE);
+}
+
+// --- ст. 83 п. 3 (ред. 1995): неприкосновенность Генерального Прокурора ---
+
+test "urn:query:kzcc-18" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+        assert "c18-1": prosecutor_general_arrest_attempt(entity_ref("urn:kz:constitution:court:test:prosecutor1")) { origin case_input; }
+        assert "c18-2": not senate_consent_for_prosecutor(entity_ref("urn:kz:constitution:court:test:prosecutor1")) { origin case_input; }
+        assert "c18-3": not prosecutor_caught_in_act_or_grave_crime(entity_ref("urn:kz:constitution:court:test:prosecutor1")) { origin case_input; }
+    }
+    evaluate positions();
+    // Перевёрнуто 13.09.2026 по той же причине (см. kzcc-13).
+    expect not position(ProsecutorGeneralInviolability1995, ACTIVE);
+    expect issue(EDITION_NOT_APPLICABLE);
+}
+
+test "urn:query:kzcc-19" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+        assert "c19-1": prosecutor_general_arrest_attempt(entity_ref("urn:kz:constitution:court:test:prosecutor2")) { origin case_input; }
+        assert "c19-2": senate_consent_for_prosecutor(entity_ref("urn:kz:constitution:court:test:prosecutor2")) { origin case_input; }
+        assert "c19-3": not prosecutor_caught_in_act_or_grave_crime(entity_ref("urn:kz:constitution:court:test:prosecutor2")) { origin case_input; }
+    }
+    evaluate positions();
+    expect not position(ProsecutorGeneralInviolability1995, ACTIVE);
+}
+
+// --- ст. 83-1 п. 3 (ред. 1995): неприкосновенность Уполномоченного --------
+
+test "urn:query:kzcc-20" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+        assert "c20-1": ombudsman_arrest_attempt(entity_ref("urn:kz:constitution:court:test:ombudsman4")) { origin case_input; }
+        assert "c20-2": not senate_consent_for_ombudsman(entity_ref("urn:kz:constitution:court:test:ombudsman4")) { origin case_input; }
+        assert "c20-3": not ombudsman_caught_in_act_or_grave_crime(entity_ref("urn:kz:constitution:court:test:ombudsman4")) { origin case_input; }
+    }
+    evaluate positions();
+    // Перевёрнуто 13.09.2026 по той же причине (см. kzcc-13).
+    expect not position(OmbudsmanInviolability1995, ACTIVE);
+    expect issue(EDITION_NOT_APPLICABLE);
+}
+
+test "urn:query:kzcc-21" {
+    given {
+        context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; }
+        assert "c21-1": ombudsman_arrest_attempt(entity_ref("urn:kz:constitution:court:test:ombudsman5")) { origin case_input; }
+        assert "c21-2": not senate_consent_for_ombudsman(entity_ref("urn:kz:constitution:court:test:ombudsman5")) { origin case_input; }
+        assert "c21-3": ombudsman_caught_in_act_or_grave_crime(entity_ref("urn:kz:constitution:court:test:ombudsman5")) { origin case_input; }
+    }
+    evaluate positions();
+    expect not position(OmbudsmanInviolability1995, ACTIVE);
+}
+
+// --- Живая сторона четырёх близнецов 1995 года ---------------------------
+//
+// ЗАЧЕМ ЭТО ДЕЛО. С 13.09.2026 мир сценария склеен с пакетом источников, и
+// четыре иммунитета редакции 1995 на дате 2026 исчезли (kzcc-13, kzcc-16,
+// kzcc-18, kzcc-20). Само по себе исчезновение не доказывает, что нормы
+// работают: их точно так же не было бы, будь они мертвы. Дело ниже ведётся
+// на @2020-01-01 — внутри окна in_force [@1995-09-05, @2026-07-01) — и
+// показывает все четыре позиции сразу.
+//
+// ЗДЕСЬ ЖЕ СОХРАНЕНО ИЗМЕРЕНИЕ КЛАССИЧЕСКОГО ОТРИЦАНИЯ: у предикатов
+// согласия в пакете нет негативного продюсера, поэтому дело обязано ОТРИЦАТЬ
+// согласие поимённо. Молчание факта позицию не создаёт.
+test "urn:query:kzcc-22" {
+    given {
+        context { decision_time @2020-01-01T12:00:00+06:00; knowledge_time @2020-01-01T12:00:00+06:00; legal_time @2020-01-01; timezone "Asia/Almaty"; }
+        assert "c22-1": constitutional_judge(entity_ref("urn:kz:constitution:court:test:cjudge4")) { origin case_input; }
+        assert "c22-2": constitutional_judge_arrest_attempt(entity_ref("urn:kz:constitution:court:test:cjudge4")) { origin case_input; }
+        assert "c22-3": not parliament_consent_for_judge(entity_ref("urn:kz:constitution:court:test:cjudge4")) { origin case_input; }
+        assert "c22-4": not judge_caught_in_act_or_grave_crime(entity_ref("urn:kz:constitution:court:test:cjudge4")) { origin case_input; }
+        assert "c22-5": judge_arrest_attempt(entity_ref("urn:kz:constitution:court:test:judge8")) { origin case_input; }
+        assert "c22-6": not presidential_consent_on_council_conclusion(entity_ref("urn:kz:constitution:court:test:judge8")) { origin case_input; }
+        assert "c22-7": not senate_consent_for_judge(entity_ref("urn:kz:constitution:court:test:judge8")) { origin case_input; }
+        assert "c22-8": not ordinary_judge_caught_in_act_or_grave_crime(entity_ref("urn:kz:constitution:court:test:judge8")) { origin case_input; }
+        assert "c22-9": prosecutor_general_arrest_attempt(entity_ref("urn:kz:constitution:court:test:prosecutor3")) { origin case_input; }
+        assert "c22-10": not senate_consent_for_prosecutor(entity_ref("urn:kz:constitution:court:test:prosecutor3")) { origin case_input; }
+        assert "c22-11": not prosecutor_caught_in_act_or_grave_crime(entity_ref("urn:kz:constitution:court:test:prosecutor3")) { origin case_input; }
+        assert "c22-12": ombudsman_arrest_attempt(entity_ref("urn:kz:constitution:court:test:ombudsman6")) { origin case_input; }
+        assert "c22-13": not senate_consent_for_ombudsman(entity_ref("urn:kz:constitution:court:test:ombudsman6")) { origin case_input; }
+        assert "c22-14": not ombudsman_caught_in_act_or_grave_crime(entity_ref("urn:kz:constitution:court:test:ombudsman6")) { origin case_input; }
+    }
+    evaluate positions();
+    expect position(ConstitutionalJudgeInviolability1995, ACTIVE);
+    expect position(JudicialInviolability1995, ACTIVE);
+    expect position(ProsecutorGeneralInviolability1995, ACTIVE);
+    expect position(OmbudsmanInviolability1995, ACTIVE);
+}

@@ -1,0 +1,33 @@
+language "law.core" version "0.2";
+package kz.constitution.amendment version "0.1.0";
+namespace "urn:kz:constitution:amendment";
+
+// Reader fixtures derived from retained source rules; facts are fictional.
+
+test "referendum-passes" {
+ given {
+  context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; interpretation ListItselfEntrenchedReading; }
+  assert "referendum-passes-0": referendum_for_amendment(entity_ref("urn:demo:kz:referendum"), entity_ref("urn:demo:kz:amendment")) { origin case_input; }
+  assert "referendum-passes-1": eligible_referendum_citizens(entity_ref("urn:demo:kz:referendum"), 10) { origin case_input; }
+  assert "referendum-passes-2": referendum_participants(entity_ref("urn:demo:kz:referendum"), 6) { origin case_input; }
+  assert "referendum-passes-3": votes_for_amendment(entity_ref("urn:demo:kz:referendum"), 4) { origin case_input; }
+  assert "referendum-passes-4": approving_regions_cities_and_capital(entity_ref("urn:demo:kz:referendum"), 14) { origin case_input; }
+  assert "referendum-passes-5": total_regions_cities_and_capital(entity_ref("urn:demo:kz:referendum"), 21) { origin case_input; }
+ }
+ evaluate truth(amendment_approved_by_referendum(entity_ref("urn:demo:kz:amendment")));
+ expect truth_status == TRUE_ONLY;
+}
+
+test "referendum-half-turnout" {
+ given {
+  context { decision_time @2026-09-01T12:00:00+05:00; knowledge_time @2026-09-01T12:00:00+05:00; legal_time @2026-09-01; timezone "Asia/Almaty"; interpretation ListItselfEntrenchedReading; }
+  assert "referendum-half-turnout-0": referendum_for_amendment(entity_ref("urn:demo:kz:referendum"), entity_ref("urn:demo:kz:amendment")) { origin case_input; }
+  assert "referendum-half-turnout-1": eligible_referendum_citizens(entity_ref("urn:demo:kz:referendum"), 10) { origin case_input; }
+  assert "referendum-half-turnout-2": referendum_participants(entity_ref("urn:demo:kz:referendum"), 5) { origin case_input; }
+  assert "referendum-half-turnout-3": votes_for_amendment(entity_ref("urn:demo:kz:referendum"), 4) { origin case_input; }
+  assert "referendum-half-turnout-4": approving_regions_cities_and_capital(entity_ref("urn:demo:kz:referendum"), 14) { origin case_input; }
+  assert "referendum-half-turnout-5": total_regions_cities_and_capital(entity_ref("urn:demo:kz:referendum"), 21) { origin case_input; }
+ }
+ evaluate truth(amendment_approved_by_referendum(entity_ref("urn:demo:kz:amendment")));
+ expect truth_status == NEITHER;
+}

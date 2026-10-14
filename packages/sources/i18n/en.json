@@ -1,0 +1,716 @@
+{
+  "$comment": "English display overlay for the labels (§218) of this package of the Constitution of the Republic of Kazakhstan (DECISION-0070). The file is not compiled into the CLIR and is read only by the presentation layer (verbalize --labels, the MCP resource law://<package>/verbalized/en, the workbench). The translation is a working one made by the formaliser from the Russian labels of the package, checked against the authentic Russian and Kazakh texts of the Constitution; it is not an official publication, hence the status \"translation\" for every entry. Spelling is British. A key is the local name of the declaration (the part of the node id after \"#\").",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "Association": [
+      {
+        "status": "translation",
+        "text": "Public association"
+      }
+    ],
+    "AssociationUnlawfulInterferenceProhibited/alt/1": [
+      {
+        "status": "translation",
+        "text": "Article 6, paragraph 2. Unlawful mutual interference is prohibited"
+      }
+    ],
+    "AssociationUnlawfulInterferenceProhibited/alt/2": [
+      {
+        "status": "translation",
+        "text": "Article 6, paragraph 2. Unlawful mutual interference is prohibited"
+      }
+    ],
+    "AssociationUnlawfulInterferenceProhibited1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "Article 5, paragraph 2 (1995 version). Unlawful mutual interference of the state and associations is not permitted"
+      }
+    ],
+    "AssociationUnlawfulInterferenceProhibited1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "Article 5, paragraph 2 (1995 version). Unlawful mutual interference of the state and associations is not permitted"
+      }
+    ],
+    "AssociationWithProhibitedGoalProhibited": [
+      {
+        "status": "translation",
+        "text": "Article 6, paragraph 3. Associations whose aims or actions are expressly prohibited are prohibited"
+      }
+    ],
+    "AssociationWithProhibitedGoalProhibited1995": [
+      {
+        "status": "translation",
+        "text": "Article 5, paragraph 3 (1995 version). Associations pursuing prohibited aims are prohibited"
+      }
+    ],
+    "AuthorityUsurpationProhibited": [
+      {
+        "status": "translation",
+        "text": "Article 4, paragraph 3. Usurpation of power is prohibited"
+      }
+    ],
+    "AuthorityUsurpationProhibited1995": [
+      {
+        "status": "translation",
+        "text": "Article 3, paragraph 3 (1995 version). Usurpation of power is prohibited"
+      }
+    ],
+    "ConductForbiddenByStatute1995": [
+      {
+        "status": "translation",
+        "text": "Article 4, paragraph 3 (1995 version). Inference from a norm of a statute of the Republic"
+      }
+    ],
+    "ConductPermittedByTreaty1995": [
+      {
+        "status": "translation",
+        "text": "Article 4, paragraph 3 (1995 version). Inference from a norm of a ratified international treaty"
+      }
+    ],
+    "ConstitutionalActor": [
+      {
+        "status": "translation",
+        "text": "Participant in constitutional relations"
+      }
+    ],
+    "ForeignAssetDisclosureRequired": [
+      {
+        "status": "translation",
+        "text": "Article 6, paragraph 5. Information about foreign funds and assets must be open"
+      }
+    ],
+    "ForeignPartyActivityOrFinancingProhibited/alt/1": [
+      {
+        "status": "translation",
+        "text": "Article 6, paragraph 4. Foreign activity and financing of parties and trade unions are prohibited"
+      }
+    ],
+    "ForeignPartyActivityOrFinancingProhibited/alt/2": [
+      {
+        "status": "translation",
+        "text": "Article 6, paragraph 4. Foreign activity and financing of parties and trade unions are prohibited"
+      }
+    ],
+    "ForeignPartyActivityOrFinancingProhibited1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "Article 5, paragraph 4 (1995 version). Activity and financing by foreign persons are prohibited"
+      }
+    ],
+    "ForeignPartyActivityOrFinancingProhibited1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "Article 5, paragraph 4 (1995 version). Activity and financing by foreign persons are prohibited"
+      }
+    ],
+    "ForeignReligiousActivityRequiresAgreement1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "Article 5, paragraph 5 (1995 version). The activity of foreign religious associations and the appointment of their leaders by foreign centres are carried out in agreement with the relevant state bodies"
+      }
+    ],
+    "ForeignReligiousActivityRequiresAgreement1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "Article 5, paragraph 5 (1995 version). The activity of foreign religious associations and the appointment of their leaders by foreign centres are carried out in agreement with the relevant state bodies"
+      }
+    ],
+    "ForeignReligiousBody": [
+      {
+        "status": "translation",
+        "text": "Foreign religious association"
+      }
+    ],
+    "IncreasedLiabilityNoRetroactivity": [
+      {
+        "status": "translation",
+        "text": "Article 5, paragraph 5. An increase of liability has no retroactive effect"
+      }
+    ],
+    "IncreasedLiabilityNoRetroactivity1995": [
+      {
+        "status": "translation",
+        "text": "Article 77, paragraph 3, sub-paragraph 5 (1995 version). An increase of liability has no retroactive effect"
+      }
+    ],
+    "KZ_CONSTITUTION_1995": [
+      {
+        "status": "translation",
+        "text": "Constitution of the Republic of Kazakhstan (1995)"
+      }
+    ],
+    "KZ_CONSTITUTION_1995_KK": [
+      {
+        "status": "translation",
+        "text": "Consolidated Kazakh version, no longer in force"
+      }
+    ],
+    "KZ_CONSTITUTION_1995_RU": [
+      {
+        "status": "translation",
+        "text": "Consolidated Russian version, no longer in force"
+      }
+    ],
+    "KZ_CONSTITUTION_2026": [
+      {
+        "status": "translation",
+        "text": "Constitution of the Republic of Kazakhstan"
+      }
+    ],
+    "KZ_CONSTITUTION_2026_KK": [
+      {
+        "status": "translation",
+        "text": "Authentic Kazakh version"
+      }
+    ],
+    "KZ_CONSTITUTION_2026_RU": [
+      {
+        "status": "translation",
+        "text": "Authentic Russian version"
+      }
+    ],
+    "LandHolding": [
+      {
+        "status": "translation",
+        "text": "Land plot"
+      }
+    ],
+    "LegalAct": [
+      {
+        "status": "translation",
+        "text": "Regulatory legal act"
+      }
+    ],
+    "MitigatingLawAppliesToPriorOffence": [
+      {
+        "status": "translation",
+        "text": "Article 5, paragraph 5. A statute abolishing or mitigating liability applies to an act committed earlier"
+      }
+    ],
+    "MitigatingLawAppliesToPriorOffence1995": [
+      {
+        "status": "translation",
+        "text": "Article 77, paragraph 3, sub-paragraph 5 (1995 version). A mitigating statute applies to an offence committed earlier"
+      }
+    ],
+    "NewDutiesAndWorsePositionNoRetroactivity": [
+      {
+        "status": "translation",
+        "text": "Article 5, paragraph 5. New duties and a worsening of position have no retroactive effect"
+      }
+    ],
+    "NewDutiesAndWorsePositionNoRetroactivity1995": [
+      {
+        "status": "translation",
+        "text": "Article 77, paragraph 3, sub-paragraph 5 (1995 version). New duties and a worsening of position have no retroactive effect"
+      }
+    ],
+    "OfficialPublicationRequiredForApplication": [
+      {
+        "status": "translation",
+        "text": "Article 5, paragraph 4. Official publication as a condition of application"
+      }
+    ],
+    "OfficialPublicationRequiredForApplication1995": [
+      {
+        "status": "translation",
+        "text": "Article 4, paragraph 4 (1995 version). Official publication as a condition of application"
+      }
+    ],
+    "PrivateLandHoldingWithinStatutoryLimits": [
+      {
+        "status": "translation",
+        "text": "Article 8, paragraph 3. Private ownership of land is permitted on the grounds, on the conditions and within the limits laid down by statute"
+      }
+    ],
+    "PrivateLandHoldingWithinStatutoryLimits1995": [
+      {
+        "status": "translation",
+        "text": "Article 6, paragraph 3 (1995 version). Private ownership of land is permitted on the grounds, on the conditions and within the limits laid down by statute"
+      }
+    ],
+    "PropertyUse": [
+      {
+        "status": "translation",
+        "text": "Use of property"
+      }
+    ],
+    "PropertyUseConstitutionallyCompliant": [
+      {
+        "status": "translation",
+        "text": "Article 8, paragraph 2. Constitutional conditions for the use of property"
+      }
+    ],
+    "PropertyUseConstitutionallyCompliant1995": [
+      {
+        "status": "translation",
+        "text": "Article 6, paragraph 2 (1995 version). The use of property must serve the public good"
+      }
+    ],
+    "RatifiedTreatyOverStatuteInInference1995": [
+      {
+        "status": "translation",
+        "text": "Article 4, paragraph 3 (1995 version). Where the inferences conflict, the inference from the ratified international treaty prevails over the inference from the statute"
+      }
+    ],
+    "RatifiedTreatyPrevailsOverStatute1995": [
+      {
+        "status": "translation",
+        "text": "Article 4, paragraph 3 (1995 version). International treaties ratified by the Republic prevail over its statutes"
+      }
+    ],
+    "RegulatedConduct": [
+      {
+        "status": "translation",
+        "text": "Conduct whose admissibility is assessed differently by a treaty and by a statute"
+      }
+    ],
+    "ReligiousActivity": [
+      {
+        "status": "translation",
+        "text": "Activity of a religious organisation"
+      }
+    ],
+    "ReligiousRestriction": [
+      {
+        "status": "translation",
+        "text": "Restriction of the activity of a religious organisation"
+      }
+    ],
+    "ReligiousRestrictionRequiresLawAndConstitutionalGoal": [
+      {
+        "status": "translation",
+        "text": "Article 7, paragraph 2. A restriction of religious activity requires a statute and a constitutional aim"
+      }
+    ],
+    "RuleApplication": [
+      {
+        "status": "translation",
+        "text": "Application of a norm"
+      }
+    ],
+    "Statute": [
+      {
+        "status": "translation",
+        "text": "Statute of the Republic"
+      }
+    ],
+    "Treaty": [
+      {
+        "status": "translation",
+        "text": "International treaty"
+      }
+    ],
+    "agreed_with_state_bodies": [
+      {
+        "status": "translation",
+        "text": "the activity has been agreed with the relevant state bodies"
+      }
+    ],
+    "association_activity_prohibited": [
+      {
+        "status": "translation",
+        "text": "the creation and activity of the public association are prohibited"
+      }
+    ],
+    "association_has_prohibited_constitutional_goal": [
+      {
+        "status": "translation",
+        "text": "the aims or actions of the public association are directed at the violent change of the foundations of the constitutional order, the violation of the integrity of the Republic or of public order, the undermining of national security or the incitement of discord"
+      }
+    ],
+    "astana_special_financial_regime_1995": [
+      {
+        "status": "translation",
+        "text": "a special legal regime in the financial sphere may be established within the city of Astana (1995 version)"
+      }
+    ],
+    "authority_usurpation_attempt": [
+      {
+        "status": "translation",
+        "text": "an attempt has been made to usurp power in the Republic"
+      }
+    ],
+    "authority_usurpation_prohibited": [
+      {
+        "status": "translation",
+        "text": "the usurpation of power is prohibited and prosecuted by law"
+      }
+    ],
+    "capital_is_astana_1995": [
+      {
+        "status": "translation",
+        "text": "the capital of Kazakhstan is the city of Astana (1995 version)"
+      }
+    ],
+    "conduct_admissible_1995": [
+      {
+        "status": "translation",
+        "text": "the conduct is admissible (conflict between treaty and statute, 1995 version)"
+      }
+    ],
+    "constitutional_activity_principles_declared": [
+      {
+        "status": "translation",
+        "text": "the fundamental principles of the activity of the Republic are established by the Constitution"
+      }
+    ],
+    "environmental_requirements_observed": [
+      {
+        "status": "translation",
+        "text": "the established environmental protection requirements are observed"
+      }
+    ],
+    "foreign_asset_disclosure_required": [
+      {
+        "status": "translation",
+        "text": "information about the movement of funds and assets received from foreign sources must be open and accessible"
+      }
+    ],
+    "foreign_asset_information_disclosed": [
+      {
+        "status": "translation",
+        "text": "information about the movement of funds and assets received from foreign sources is open and accessible"
+      }
+    ],
+    "foreign_centre_appoints_leader": [
+      {
+        "status": "translation",
+        "text": "the leaders of the religious association are appointed by a foreign religious centre"
+      }
+    ],
+    "foreign_financing_of_party_or_union": [
+      {
+        "status": "translation",
+        "text": "the political party or trade union is financed by foreign persons, states or international organisations"
+      }
+    ],
+    "foreign_party_or_union_activity": [
+      {
+        "status": "translation",
+        "text": "the activity is carried on by a political party or trade union of another state or by a political party on a religious basis"
+      }
+    ],
+    "foreign_religious_activity_admissible_1995": [
+      {
+        "status": "translation",
+        "text": "the activity of the foreign religious association is admissible (1995 version)"
+      }
+    ],
+    "foreign_religious_body_activity": [
+      {
+        "status": "translation",
+        "text": "a foreign religious association operates in the territory of the Republic"
+      }
+    ],
+    "fundamental_principles_declared_1995": [
+      {
+        "status": "translation",
+        "text": "the fundamental principles of the activity of the Republic are established by the Constitution (1995 version)"
+      }
+    ],
+    "human_capital_education_science_innovation_strategic_direction": [
+      {
+        "status": "translation",
+        "text": "the development of human capital, education, science and innovation is recognised as a strategic direction of the activity of the state"
+      }
+    ],
+    "human_life_rights_freedoms_highest_state_values": [
+      {
+        "status": "translation",
+        "text": "the highest values of the state are the individual, his life, rights and freedoms"
+      }
+    ],
+    "kazakhstan_democratic_secular_legal_social_state": [
+      {
+        "status": "translation",
+        "text": "The Republic of Kazakhstan is a democratic, secular, legal and social state"
+      }
+    ],
+    "kazakhstan_democratic_secular_legal_social_state_1995": [
+      {
+        "status": "translation",
+        "text": "The Republic affirms itself to be a democratic, secular, legal and social state (1995 version)"
+      }
+    ],
+    "law_creates_or_increases_liability": [
+      {
+        "status": "translation",
+        "text": "the statute establishes or increases liability"
+      }
+    ],
+    "law_imposes_new_citizen_duties_or_worsens_position": [
+      {
+        "status": "translation",
+        "text": "the statute imposes new duties on citizens or worsens their position"
+      }
+    ],
+    "legal_act_affects_citizen_rights_or_duties": [
+      {
+        "status": "translation",
+        "text": "the regulatory legal act concerns the rights, freedoms and duties of citizens"
+      }
+    ],
+    "legal_act_application_condition_satisfied": [
+      {
+        "status": "translation",
+        "text": "the mandatory condition for applying the regulatory legal act is satisfied"
+      }
+    ],
+    "legal_act_officially_published": [
+      {
+        "status": "translation",
+        "text": "the regulatory legal act has been officially published"
+      }
+    ],
+    "new_law_applies_to_prior_offence": [
+      {
+        "status": "translation",
+        "text": "the new statute applies to an offence committed earlier"
+      }
+    ],
+    "new_law_cancels_or_mitigates_liability": [
+      {
+        "status": "translation",
+        "text": "the new statute abolishes or mitigates liability for an offence committed earlier"
+      }
+    ],
+    "nonprofit_receives_foreign_assets": [
+      {
+        "status": "translation",
+        "text": "the non-profit organisation receives funds and assets from foreign states, international and foreign legal entities, foreign citizens and stateless persons"
+      }
+    ],
+    "party_or_union_activity_prohibited": [
+      {
+        "status": "translation",
+        "text": "the activity of the political party or trade union is not permitted"
+      }
+    ],
+    "peaceful_cooperative_foreign_policy_1995": [
+      {
+        "status": "translation",
+        "text": "The Republic pursues a policy of cooperation and good-neighbourly relations between states (1995 version)"
+      }
+    ],
+    "peaceful_cooperative_foreign_policy_declared": [
+      {
+        "status": "translation",
+        "text": "The Republic pursues a foreign policy of peace and cooperation with interested states"
+      }
+    ],
+    "private_land_basis_conditions_limits_established_by_law": [
+      {
+        "status": "translation",
+        "text": "the grounds, conditions and limits of private ownership of land are established by statute"
+      }
+    ],
+    "private_land_holding": [
+      {
+        "status": "translation",
+        "text": "the land is in private ownership"
+      }
+    ],
+    "private_land_holding_constitutionally_allowed": [
+      {
+        "status": "translation",
+        "text": "private ownership of the land is constitutionally admissible"
+      }
+    ],
+    "property_use": [
+      {
+        "status": "translation",
+        "text": "there is a use of property"
+      }
+    ],
+    "property_use_constitutionally_compliant": [
+      {
+        "status": "translation",
+        "text": "the use of property meets the constitutional conditions"
+      }
+    ],
+    "property_use_serves_public_and_state_interests": [
+      {
+        "status": "translation",
+        "text": "the use of property serves the interests of society and the state"
+      }
+    ],
+    "property_use_serves_public_good": [
+      {
+        "status": "translation",
+        "text": "the use of property serves the public good (1995 version)"
+      }
+    ],
+    "protected_rights_not_infringed": [
+      {
+        "status": "translation",
+        "text": "the rights and interests of other persons protected by law are not infringed"
+      }
+    ],
+    "religious_activity": [
+      {
+        "status": "translation",
+        "text": "the activity is the activity of a religious organisation"
+      }
+    ],
+    "religious_restriction_constitutionally_authorized": [
+      {
+        "status": "translation",
+        "text": "the restriction of the activity of the religious organisation is constitutionally admissible"
+      }
+    ],
+    "religious_restriction_established_by_law": [
+      {
+        "status": "translation",
+        "text": "the restriction is established by statute"
+      }
+    ],
+    "religious_restriction_has_constitutional_goal": [
+      {
+        "status": "translation",
+        "text": "the restriction has been introduced in order to protect the foundations of the constitutional order, human and civil rights and freedoms, to ensure national security, to safeguard public order, the health of citizens and the morals of society"
+      }
+    ],
+    "renounces_first_use_of_armed_force_1995": [
+      {
+        "status": "translation",
+        "text": "The Republic renounces the first use of armed force (1995 version)"
+      }
+    ],
+    "republic_names_equivalent_1995": [
+      {
+        "status": "translation",
+        "text": "the names \"Republic of Kazakhstan\" and \"Kazakhstan\" are equivalent (1995 version)"
+      }
+    ],
+    "restriction_of_religious_activity": [
+      {
+        "status": "translation",
+        "text": "the restriction relates to the activity of a religious organisation"
+      }
+    ],
+    "retroactive_application_attempt": [
+      {
+        "status": "translation",
+        "text": "the statute is applied to relations that arose before it came into force"
+      }
+    ],
+    "retroactive_application_prohibited": [
+      {
+        "status": "translation",
+        "text": "the statute has no retroactive effect"
+      }
+    ],
+    "rule_reads_statute": [
+      {
+        "status": "translation",
+        "text": "the norm is inferred from this statute of the Republic"
+      }
+    ],
+    "rule_reads_treaty": [
+      {
+        "status": "translation",
+        "text": "the norm is inferred from this international treaty"
+      }
+    ],
+    "russian_used_officially_1995": [
+      {
+        "status": "translation",
+        "text": "in state organisations and local self-government bodies the Russian language is officially used on an equal footing with Kazakh (1995 version)"
+      }
+    ],
+    "sovereignty_covers_whole_territory_1995": [
+      {
+        "status": "translation",
+        "text": "the sovereignty of the Republic extends to the whole of its territory (1995 version)"
+      }
+    ],
+    "state_anthem_established": [
+      {
+        "status": "translation",
+        "text": "the State Anthem is established"
+      }
+    ],
+    "state_cares_for_language_development_1995": [
+      {
+        "status": "translation",
+        "text": "the state takes care to create conditions for the study and development of the languages of the people of Kazakhstan (1995 version)"
+      }
+    ],
+    "state_emblem_established": [
+      {
+        "status": "translation",
+        "text": "the State Emblem is established"
+      }
+    ],
+    "state_flag_established": [
+      {
+        "status": "translation",
+        "text": "the State Flag is established"
+      }
+    ],
+    "state_language_is_kazakh_1995": [
+      {
+        "status": "translation",
+        "text": "the state language is Kazakh (1995 version)"
+      }
+    ],
+    "state_symbols_established_1995": [
+      {
+        "status": "translation",
+        "text": "The Republic has state symbols — the Flag, the Emblem and the Anthem (1995 version)"
+      }
+    ],
+    "statute_norm_forbids": [
+      {
+        "status": "translation",
+        "text": "a norm of a statute of the Republic prohibits this conduct"
+      }
+    ],
+    "treaty_conflicts_with_statute": [
+      {
+        "status": "translation",
+        "text": "the international treaty and the statute of the Republic diverge"
+      }
+    ],
+    "treaty_norm_permits": [
+      {
+        "status": "translation",
+        "text": "a norm of the ratified international treaty permits this conduct"
+      }
+    ],
+    "treaty_prevails_over_statute": [
+      {
+        "status": "translation",
+        "text": "the international treaty prevails over the statute of the Republic (1995 version)"
+      }
+    ],
+    "treaty_ratified_by_republic": [
+      {
+        "status": "translation",
+        "text": "the international treaty has been ratified by the Republic"
+      }
+    ],
+    "unitary_state_presidential_form_1995": [
+      {
+        "status": "translation",
+        "text": "The Republic is a unitary state with a presidential form of government (1995 version)"
+      }
+    ],
+    "unlawful_association_interference_with_state": [
+      {
+        "status": "translation",
+        "text": "there is unlawful interference by the public association in the affairs of the state"
+      }
+    ],
+    "unlawful_state_interference_with_association": [
+      {
+        "status": "translation",
+        "text": "there is unlawful interference by the state in the affairs of the public association"
+      }
+    ]
+  },
+  "language": "en",
+  "package": "kz.constitution.sources"
+}

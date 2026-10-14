@@ -1,0 +1,349 @@
+{
+  "format": "arxo.kazakhstan-reader-worlds/1",
+  "method": "native law engine link --merge concat over exact own snapshots and the sources package; no linked_audit additions",
+  "semanticVersion": "0.2.11",
+  "cli": "0.2.5",
+  "worlds": {
+    "sources": {
+      "path": "registry/worlds/sources.json",
+      "packages": [
+        "sources"
+      ],
+      "sha256": "sha256:fab1e83d7d5b2d0517ce121353df534a561f6aca5be797827a6421d5e3b4a1d9",
+      "size": 933764,
+      "identity": {
+        "name": "demo.kz.constitution.reader",
+        "namespace": "urn:demo:kz:constitution:reader",
+        "semanticHash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "version": "0.1.0"
+      },
+      "artifactHash": "sha256:12b1640e9f8aa48cc4037eb57d23f9c5f0ae54914fa3da7e06fa42d42e0395a5",
+      "packageInputs": [
+        {
+          "path": "registry/packages/kz-constitution-sources.lawir.json",
+          "sha256": "sha256:9383ae769e7d9474a681a68ce57196c5dd575a5fc4f7a23bffb58378923f46fa"
+        }
+      ]
+    },
+    "rights": {
+      "path": "registry/worlds/rights.json",
+      "packages": [
+        "sources",
+        "rights"
+      ],
+      "sha256": "sha256:dc28e655705f498308d6944d1f5aba25e0047bfb563b3d84cc7403d930be7e6c",
+      "size": 1482671,
+      "identity": {
+        "name": "demo.kz.constitution.reader",
+        "namespace": "urn:demo:kz:constitution:reader",
+        "semanticHash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "version": "0.1.0"
+      },
+      "artifactHash": "sha256:ea7f0edd8c913ecea548a537797e320d9e8b7409458d9f5cf4115337ef2f4c2d",
+      "packageInputs": [
+        {
+          "path": "registry/packages/kz-constitution-sources.lawir.json",
+          "sha256": "sha256:9383ae769e7d9474a681a68ce57196c5dd575a5fc4f7a23bffb58378923f46fa"
+        },
+        {
+          "path": "registry/packages/kz-constitution-rights.lawir.json",
+          "sha256": "sha256:9250a68ea993d3520c853f17263be910bc9f92c266f6be9c33b939b3483544ed"
+        }
+      ]
+    },
+    "president": {
+      "path": "registry/worlds/president.json",
+      "packages": [
+        "sources",
+        "president"
+      ],
+      "sha256": "sha256:ebe3e439e3b5e87e64fdab039e9eb172b3bef88ef3ef291fd483b8d7d5e7f046",
+      "size": 1388275,
+      "identity": {
+        "name": "demo.kz.constitution.reader",
+        "namespace": "urn:demo:kz:constitution:reader",
+        "semanticHash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "version": "0.1.0"
+      },
+      "artifactHash": "sha256:6e6816790fce78ee505247af7985532aff38bdef9101132071a5917f9fcc7b52",
+      "packageInputs": [
+        {
+          "path": "registry/packages/kz-constitution-sources.lawir.json",
+          "sha256": "sha256:9383ae769e7d9474a681a68ce57196c5dd575a5fc4f7a23bffb58378923f46fa"
+        },
+        {
+          "path": "registry/packages/kz-constitution-president.lawir.json",
+          "sha256": "sha256:29ce41ec2827c6f3f009545d7e1eb584a0797fad0a1a3574ca9b84363218feac"
+        }
+      ]
+    },
+    "kurultai": {
+      "path": "registry/worlds/kurultai.json",
+      "packages": [
+        "sources",
+        "kurultai"
+      ],
+      "sha256": "sha256:8392c12f4c99c0ab798a566dc07aebf224ae58ca81f6e9883298dbcaf945c2d1",
+      "size": 1135655,
+      "identity": {
+        "name": "demo.kz.constitution.reader",
+        "namespace": "urn:demo:kz:constitution:reader",
+        "semanticHash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "version": "0.1.0"
+      },
+      "artifactHash": "sha256:97f97a3b0f26e9f5df1746cdf20e35fe3076adf788320234bd9043164531f085",
+      "packageInputs": [
+        {
+          "path": "registry/packages/kz-constitution-sources.lawir.json",
+          "sha256": "sha256:9383ae769e7d9474a681a68ce57196c5dd575a5fc4f7a23bffb58378923f46fa"
+        },
+        {
+          "path": "registry/packages/kz-constitution-kurultai.lawir.json",
+          "sha256": "sha256:ab722fc36c909a5373b5f26c56cc727469a021a84926d04e97cc6a16cf344e59"
+        }
+      ]
+    },
+    "government": {
+      "path": "registry/worlds/government.json",
+      "packages": [
+        "sources",
+        "government"
+      ],
+      "sha256": "sha256:de9fcfd2648c1cfa42dfa0091783f4d6a810a3070161b7628922c14ebed57e41",
+      "size": 1072011,
+      "identity": {
+        "name": "demo.kz.constitution.reader",
+        "namespace": "urn:demo:kz:constitution:reader",
+        "semanticHash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "version": "0.1.0"
+      },
+      "artifactHash": "sha256:965e78f432de44d36b3b620ee38718091b65d29fc156505fd0bdb5e3c5c4725f",
+      "packageInputs": [
+        {
+          "path": "registry/packages/kz-constitution-sources.lawir.json",
+          "sha256": "sha256:9383ae769e7d9474a681a68ce57196c5dd575a5fc4f7a23bffb58378923f46fa"
+        },
+        {
+          "path": "registry/packages/kz-constitution-government.lawir.json",
+          "sha256": "sha256:fb931008104e0bdae0919ff1121fa9a22678989613cd9290b7fe59e95a5f1f20"
+        }
+      ]
+    },
+    "court": {
+      "path": "registry/worlds/court.json",
+      "packages": [
+        "sources",
+        "court"
+      ],
+      "sha256": "sha256:50323d7dcfcb867a79269931bef9f940fcdbf48437fe289c37c7a729a1e1f3f2",
+      "size": 1360128,
+      "identity": {
+        "name": "demo.kz.constitution.reader",
+        "namespace": "urn:demo:kz:constitution:reader",
+        "semanticHash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "version": "0.1.0"
+      },
+      "artifactHash": "sha256:5957ba5b716f0a21ca0ff3416b73ecf1dbc4c30acb25a7147817e2bf640ce983",
+      "packageInputs": [
+        {
+          "path": "registry/packages/kz-constitution-sources.lawir.json",
+          "sha256": "sha256:9383ae769e7d9474a681a68ce57196c5dd575a5fc4f7a23bffb58378923f46fa"
+        },
+        {
+          "path": "registry/packages/kz-constitution-court.lawir.json",
+          "sha256": "sha256:24add4ad8c6625840c3e7d4926323baa2db4990f9761709688cb0bc5656e2ed6"
+        }
+      ]
+    },
+    "amendment": {
+      "path": "registry/worlds/amendment.json",
+      "packages": [
+        "sources",
+        "amendment"
+      ],
+      "sha256": "sha256:ec23f3d335d5104a7f984a62f89741d5495698ed96191bcadd3bf71ffbae2240",
+      "size": 1046058,
+      "identity": {
+        "name": "demo.kz.constitution.reader",
+        "namespace": "urn:demo:kz:constitution:reader",
+        "semanticHash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "version": "0.1.0"
+      },
+      "artifactHash": "sha256:90864c1e9ea7ea89319e483193e39b6dde0366efb372788822b59df6412b9e7e",
+      "packageInputs": [
+        {
+          "path": "registry/packages/kz-constitution-sources.lawir.json",
+          "sha256": "sha256:9383ae769e7d9474a681a68ce57196c5dd575a5fc4f7a23bffb58378923f46fa"
+        },
+        {
+          "path": "registry/packages/kz-constitution-amendment.lawir.json",
+          "sha256": "sha256:352adfe37226bbdae7312a67a622670ee1a3edd4c8154b0f9e3024b8d8160ecd"
+        }
+      ]
+    },
+    "president1995": {
+      "path": "registry/worlds/president1995.json",
+      "packages": [
+        "sources",
+        "president1995"
+      ],
+      "sha256": "sha256:e64de4cd8c98eaf8ed8b16cb10e977acee42d901868b6ed2d88f0bc3a412fbcb",
+      "size": 1167073,
+      "identity": {
+        "name": "demo.kz.constitution.reader",
+        "namespace": "urn:demo:kz:constitution:reader",
+        "semanticHash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "version": "0.1.0"
+      },
+      "artifactHash": "sha256:e2fecc705793bb0741e1347ba2a87c46f93c089821cbf43da78a5bb8a04d9eba",
+      "packageInputs": [
+        {
+          "path": "registry/packages/kz-constitution-sources.lawir.json",
+          "sha256": "sha256:9383ae769e7d9474a681a68ce57196c5dd575a5fc4f7a23bffb58378923f46fa"
+        },
+        {
+          "path": "registry/packages/kz-constitution-president1995.lawir.json",
+          "sha256": "sha256:eefc477e25d6c5dad3097039439eeb023b66206caa3587f785aebecc216c7561"
+        }
+      ]
+    },
+    "parliament1995": {
+      "path": "registry/worlds/parliament1995.json",
+      "packages": [
+        "sources",
+        "parliament1995"
+      ],
+      "sha256": "sha256:a14a8330a12173e79a35ae006845a06d307146b72c3aa06ff28b6a599a7ecc7a",
+      "size": 1247784,
+      "identity": {
+        "name": "demo.kz.constitution.reader",
+        "namespace": "urn:demo:kz:constitution:reader",
+        "semanticHash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "version": "0.1.0"
+      },
+      "artifactHash": "sha256:f05d4d35b1cbfdae1c659531b300ca2372d01dc3aaebf478a739c51c4030f9d7",
+      "packageInputs": [
+        {
+          "path": "registry/packages/kz-constitution-sources.lawir.json",
+          "sha256": "sha256:9383ae769e7d9474a681a68ce57196c5dd575a5fc4f7a23bffb58378923f46fa"
+        },
+        {
+          "path": "registry/packages/kz-constitution-parliament1995.lawir.json",
+          "sha256": "sha256:486349323066d0d8f9eb4dc255cc123f14e80d334c013d73c930eba533435551"
+        }
+      ]
+    },
+    "constitution-2026": {
+      "path": "registry/worlds/constitution-2026.json",
+      "packages": [
+        "sources",
+        "rights",
+        "president",
+        "kurultai",
+        "government",
+        "court",
+        "amendment"
+      ],
+      "sha256": "sha256:62c93e9abe482baeb3a96ec70239ed131ee7666578b04887765161c3203cd763",
+      "size": 2815978,
+      "identity": {
+        "name": "demo.kz.constitution.reader",
+        "namespace": "urn:demo:kz:constitution:reader",
+        "semanticHash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "version": "0.1.0"
+      },
+      "artifactHash": "sha256:9c83887c00d408b5426fc0553819c7e106986c8b6160c7ade4c2f33a32221672",
+      "packageInputs": [
+        {
+          "path": "registry/packages/kz-constitution-sources.lawir.json",
+          "sha256": "sha256:9383ae769e7d9474a681a68ce57196c5dd575a5fc4f7a23bffb58378923f46fa"
+        },
+        {
+          "path": "registry/packages/kz-constitution-rights.lawir.json",
+          "sha256": "sha256:9250a68ea993d3520c853f17263be910bc9f92c266f6be9c33b939b3483544ed"
+        },
+        {
+          "path": "registry/packages/kz-constitution-president.lawir.json",
+          "sha256": "sha256:29ce41ec2827c6f3f009545d7e1eb584a0797fad0a1a3574ca9b84363218feac"
+        },
+        {
+          "path": "registry/packages/kz-constitution-kurultai.lawir.json",
+          "sha256": "sha256:ab722fc36c909a5373b5f26c56cc727469a021a84926d04e97cc6a16cf344e59"
+        },
+        {
+          "path": "registry/packages/kz-constitution-government.lawir.json",
+          "sha256": "sha256:fb931008104e0bdae0919ff1121fa9a22678989613cd9290b7fe59e95a5f1f20"
+        },
+        {
+          "path": "registry/packages/kz-constitution-court.lawir.json",
+          "sha256": "sha256:24add4ad8c6625840c3e7d4926323baa2db4990f9761709688cb0bc5656e2ed6"
+        },
+        {
+          "path": "registry/packages/kz-constitution-amendment.lawir.json",
+          "sha256": "sha256:352adfe37226bbdae7312a67a622670ee1a3edd4c8154b0f9e3024b8d8160ecd"
+        }
+      ]
+    },
+    "constitution-1995": {
+      "path": "registry/worlds/constitution-1995.json",
+      "packages": [
+        "sources",
+        "rights",
+        "president",
+        "kurultai",
+        "government",
+        "court",
+        "amendment",
+        "president1995",
+        "parliament1995"
+      ],
+      "sha256": "sha256:cedffd1bb325eddfa990a01eac13ce1fd8be92f1e01e29b34eaa755e0cad1da3",
+      "size": 3363307,
+      "identity": {
+        "name": "demo.kz.constitution.reader",
+        "namespace": "urn:demo:kz:constitution:reader",
+        "semanticHash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "version": "0.1.0"
+      },
+      "artifactHash": "sha256:4dbb04d57ee30213fe706eaaedb3574c2917bd6835469a2850392e51622d3ba5",
+      "packageInputs": [
+        {
+          "path": "registry/packages/kz-constitution-sources.lawir.json",
+          "sha256": "sha256:9383ae769e7d9474a681a68ce57196c5dd575a5fc4f7a23bffb58378923f46fa"
+        },
+        {
+          "path": "registry/packages/kz-constitution-rights.lawir.json",
+          "sha256": "sha256:9250a68ea993d3520c853f17263be910bc9f92c266f6be9c33b939b3483544ed"
+        },
+        {
+          "path": "registry/packages/kz-constitution-president.lawir.json",
+          "sha256": "sha256:29ce41ec2827c6f3f009545d7e1eb584a0797fad0a1a3574ca9b84363218feac"
+        },
+        {
+          "path": "registry/packages/kz-constitution-kurultai.lawir.json",
+          "sha256": "sha256:ab722fc36c909a5373b5f26c56cc727469a021a84926d04e97cc6a16cf344e59"
+        },
+        {
+          "path": "registry/packages/kz-constitution-government.lawir.json",
+          "sha256": "sha256:fb931008104e0bdae0919ff1121fa9a22678989613cd9290b7fe59e95a5f1f20"
+        },
+        {
+          "path": "registry/packages/kz-constitution-court.lawir.json",
+          "sha256": "sha256:24add4ad8c6625840c3e7d4926323baa2db4990f9761709688cb0bc5656e2ed6"
+        },
+        {
+          "path": "registry/packages/kz-constitution-amendment.lawir.json",
+          "sha256": "sha256:352adfe37226bbdae7312a67a622670ee1a3edd4c8154b0f9e3024b8d8160ecd"
+        },
+        {
+          "path": "registry/packages/kz-constitution-president1995.lawir.json",
+          "sha256": "sha256:eefc477e25d6c5dad3097039439eeb023b66206caa3587f785aebecc216c7561"
+        },
+        {
+          "path": "registry/packages/kz-constitution-parliament1995.lawir.json",
+          "sha256": "sha256:486349323066d0d8f9eb4dc255cc123f14e80d334c013d73c930eba533435551"
+        }
+      ]
+    }
+  }
+}

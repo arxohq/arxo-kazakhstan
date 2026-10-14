@@ -1,0 +1,15 @@
+{
+  "kind": "truth",
+  "literal": {
+    "args": [
+      {
+        "id": "urn:demo:kz:amendment",
+        "kind": "entity_ref"
+      }
+    ],
+    "kind": "literal",
+    "polarity": "positive",
+    "predicate": "urn:kz:constitution:amendment#amendment_approved_by_referendum"
+  },
+  "queryId": "urn:kz:constitution:amendment#test/referendum-passes/query/0"
+}

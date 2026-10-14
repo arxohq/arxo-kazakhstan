@@ -1,0 +1,2606 @@
+{
+  "$comment": "طبقة عرض عربية لحزم دستور جمهورية كازاخستان (DECISION-0070). الملف خارج CLIR ولا يقرأه المصرف، وإنما تقرأه طبقة العرض وحدها (verbalize --labels وخادم MCP وسطح المكتب). مصدر الترجمة هو تسمية العقدة الروسية ru-KZ في CLIR، ومصطلحاتها موافقة لحزمة law.verb.ar؛ والحالة translation أي ترجمة عمل غير رسمية لا نص رسمي. المفتاح هو الاسم المحلي للعقدة. النص غير مشكول.",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "AccessToAffectingDocumentsDuty": [
+      {
+        "status": "translation",
+        "text": "المادة 21 الفقرة 3. تلتزم أجهزة الدولة والجمعيات والموظفون ووسائل الإعلام بتمكين كل شخص من الاطلاع على الوثائق التي تمس حقوقه ومصالحه"
+      }
+    ],
+    "AdultChildParentCareDuty": [
+      {
+        "status": "translation",
+        "text": "المادة 30 الفقرة 4. يلتزم الأبناء البالغون القادرون على العمل برعاية والديهم العاجزين عن العمل"
+      }
+    ],
+    "AdultChildParentCareDuty1995": [
+      {
+        "status": "translation",
+        "text": "المادة 27 الفقرة 3 (طبعة 1995). يلتزم الأبناء البالغون القادرون على العمل برعاية والديهم العاجزين عن العمل"
+      }
+    ],
+    "AffordableStateHousingDuty1995": [
+      {
+        "status": "translation",
+        "text": "المادة 25 الفقرة 2 (طبعة 1995). يوفر السكن بأجر ميسور من صناديق الإسكان الحكومية للفئات المحددة في القانون"
+      }
+    ],
+    "AnnualPaidLeaveDuty1995": [
+      {
+        "status": "translation",
+        "text": "المادة 24 الفقرة 4 (طبعة 1995). تكفل إجازة سنوية مدفوعة للعاملين بعقد عمل"
+      }
+    ],
+    "ArrestRequiresCourtDecisionAndAppeal": [
+      {
+        "status": "translation",
+        "text": "المادة 18 الفقرة 2. لا يجوز الحبس الاحتياطي إلا بقرار من المحكمة مع كفالة حق الطعن"
+      }
+    ],
+    "ArrestRequiresCourtSanctionAndAppeal1995": [
+      {
+        "status": "translation",
+        "text": "المادة 16 الفقرة 2 (طبعة 1995). لا يكون القبض والحبس الاحتياطي إلا بإذن المحكمة ومع حق الطعن"
+      }
+    ],
+    "Assembly": [
+      {
+        "status": "translation",
+        "text": "تجمع سلمي"
+      }
+    ],
+    "AssemblyRestrictionRequiresLawAndGoal": [
+      {
+        "status": "translation",
+        "text": "المادة 34. يستلزم تقييد التجمعات السلمية قانونا وغاية دستورية"
+      }
+    ],
+    "AssemblyRestrictionRequiresLawAndGoal1995": [
+      {
+        "status": "translation",
+        "text": "المادة 32 (طبعة 1995). يجوز تقييد الحق في التجمع بقانون تحقيقا للأغراض الدستورية المعددة"
+      }
+    ],
+    "Association": [
+      {
+        "status": "translation",
+        "text": "تجمع المواطنين"
+      }
+    ],
+    "CandidateDisqualification/alt/1": [
+      {
+        "status": "translation",
+        "text": "المادة 35 الفقرة 3. قائمة حاصرة لأسباب عدم الأهلية للترشح"
+      }
+    ],
+    "CandidateDisqualification/alt/2": [
+      {
+        "status": "translation",
+        "text": "المادة 35 الفقرة 3. قائمة حاصرة لأسباب عدم الأهلية للترشح"
+      }
+    ],
+    "CandidateDisqualification/alt/3": [
+      {
+        "status": "translation",
+        "text": "المادة 35 الفقرة 3. قائمة حاصرة لأسباب عدم الأهلية للترشح"
+      }
+    ],
+    "CandidateDisqualification1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "المادة 33 الفقرة 3 (طبعة 1995). لا يحق الترشح لمن حكمت المحكمة بعدم أهليته ولمن كان في أماكن الحرمان من الحرية"
+      }
+    ],
+    "CandidateDisqualification1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "المادة 33 الفقرة 3 (طبعة 1995). لا يحق الترشح لمن حكمت المحكمة بعدم أهليته ولمن كان في أماكن الحرمان من الحرية"
+      }
+    ],
+    "CareForChild": [
+      {
+        "status": "translation",
+        "text": "المادة 30 الفقرة 3. رعاية الأبناء وتربيتهم حق طبيعي للوالدين وواجب عليهما"
+      }
+    ],
+    "CareForChild1995": [
+      {
+        "status": "translation",
+        "text": "المادة 27 الفقرة 2 (طبعة 1995). رعاية الأبناء وتربيتهم حق طبيعي للوالدين وواجب عليهما"
+      }
+    ],
+    "CareForIncapacitatedParent": [
+      {
+        "status": "translation",
+        "text": "المادة 30 الفقرة 4. يلتزم الأبناء البالغون القادرون على العمل برعاية والديهم العاجزين عن العمل"
+      }
+    ],
+    "CareForIncapacitatedParent1995": [
+      {
+        "status": "translation",
+        "text": "المادة 27 الفقرة 3 (طبعة 1995). يلتزم الأبناء البالغون القادرون على العمل برعاية والديهم العاجزين عن العمل"
+      }
+    ],
+    "CensorshipImmunity": [
+      {
+        "status": "translation",
+        "text": "المادة 23 الفقرة 5. الرقابة على المصنفات محظورة"
+      }
+    ],
+    "CensorshipImmunity1995": [
+      {
+        "status": "translation",
+        "text": "المادة 20 الفقرة 1 (طبعة 1995). تحظر الرقابة على المصنفات"
+      }
+    ],
+    "CensorshipProhibition": [
+      {
+        "status": "translation",
+        "text": "المادة 23 الفقرة 5. الرقابة على المصنفات محظورة"
+      }
+    ],
+    "Child": [
+      {
+        "status": "translation",
+        "text": "طفل"
+      }
+    ],
+    "ChooseOccupationFreely": [
+      {
+        "status": "translation",
+        "text": "المادة 27 الفقرة 1. الحق في العمل وحرية اختيار نوع النشاط والمهنة"
+      }
+    ],
+    "ChooseOccupationFreely1995": [
+      {
+        "status": "translation",
+        "text": "المادة 24 الفقرة 1 (طبعة 1995). الحق في حرية العمل وحرية اختيار نوع النشاط والمهنة"
+      }
+    ],
+    "CitizenAccessToAffectingDocumentsDuty1995": [
+      {
+        "status": "translation",
+        "text": "المادة 18 الفقرة 3 (طبعة 1995). يكفل لكل مواطن الاطلاع على الوثائق التي تمسه"
+      }
+    ],
+    "CitizenNonExtraditionImmunity": [
+      {
+        "status": "translation",
+        "text": "المادة 14 الفقرة 1. لا يجوز تسليم مواطن جمهورية كازاخستان إلى دولة أجنبية"
+      }
+    ],
+    "CitizenNonExtraditionImmunity1995": [
+      {
+        "status": "translation",
+        "text": "المادة 11 الفقرة 1 (طبعة 1995). لا يجوز تسليم مواطن الجمهورية إلى دولة أجنبية"
+      }
+    ],
+    "CitizenReturnImmunity": [
+      {
+        "status": "translation",
+        "text": "المادة 24 الفقرة 2. للمواطن أن يعود إلى كازاخستان دون عائق"
+      }
+    ],
+    "CitizenReturnImmunity1995": [
+      {
+        "status": "translation",
+        "text": "المادة 21 الفقرة 2 (طبعة 1995). للمواطنين حق العودة إلى الجمهورية دون عائق"
+      }
+    ],
+    "CitizenshipDeprivationPower": [
+      {
+        "status": "translation",
+        "text": "المادة 13 الفقرة 2. لا يجوز إسقاط الجنسية إلا بقرار من المحكمة عن جرائم إرهابية أو عن ضرر جسيم آخر بالمصالح الوطنية للجمهورية"
+      }
+    ],
+    "CitizenshipDeprivationPower1995": [
+      {
+        "status": "translation",
+        "text": "المادة 10 الفقرة 2 (طبعة 1995). لا يكون إسقاط الجنسية إلا بقرار من المحكمة عن جرائم إرهابية أو عن ضرر جسيم آخر بالمصالح الحيوية"
+      }
+    ],
+    "CivilServiceRequirement": [
+      {
+        "status": "translation",
+        "text": "شرط مطلوب فيمن يلتحق بالخدمة العامة"
+      }
+    ],
+    "CivilServiceRequirementMustReflectOfficialDuties": [
+      {
+        "status": "translation",
+        "text": "المادة 35 الفقرة 4. شروط الموظف العام مقصورة على طبيعة واجبات الوظيفة"
+      }
+    ],
+    "CivilServiceRequirementMustReflectOfficialDuties1995": [
+      {
+        "status": "translation",
+        "text": "المادة 33 الفقرة 4 (طبعة 1995). لا تتحدد شروط المترشح لوظيفة عامة إلا بطبيعة واجبات الوظيفة"
+      }
+    ],
+    "CompensateUnlawfulStateHarm": [
+      {
+        "status": "translation",
+        "text": "المادة 15 الفقرة 6. تعوض الدولة الضرر الناشئ عن الأعمال غير المشروعة لأجهزتها"
+      }
+    ],
+    "CompensatedExpropriationOnly": [
+      {
+        "status": "translation",
+        "text": "المادة 29 الفقرة 3. لا يجوز نزع الملكية جبرا للحاجات العامة إلا بشرط تعويض معادل عنها"
+      }
+    ],
+    "CompensatedExpropriationOnly1995": [
+      {
+        "status": "translation",
+        "text": "المادة 26 الفقرة 3 (طبعة 1995). لا يكون النزع الجبري إلا بتعويض معادل"
+      }
+    ],
+    "ConductEnterprise": [
+      {
+        "status": "translation",
+        "text": "المادة 29 الفقرة 4. تكفل جمهورية كازاخستان الحق في حرية النشاط الريادي"
+      }
+    ],
+    "ConductEnterprise1995": [
+      {
+        "status": "translation",
+        "text": "المادة 26 الفقرة 4 (طبعة 1995). الحق في حرية النشاط الريادي"
+      }
+    ],
+    "ConstitutionComplianceDuty": [
+      {
+        "status": "translation",
+        "text": "المادة 36 الفقرة 1. على كل شخص أن يلتزم الدستور وتشريعات الجمهورية وأن يحترم حقوق الغير وحرياتهم وشرفهم وكرامتهم"
+      }
+    ],
+    "ConstitutionComplianceDuty1995": [
+      {
+        "status": "translation",
+        "text": "المادة 34 الفقرة 1 (طبعة 1995). على كل شخص أن يلتزم الدستور والتشريعات وأن يحترم حقوق الغير وكرامتهم"
+      }
+    ],
+    "ContinuedDetentionBarredWithoutCourtDecision": [
+      {
+        "status": "translation",
+        "text": "المادة 18 الفقرة 2. يحظر الاحتجاز بعد المدة المقررة قانونا ما لم يصدر قرار من المحكمة"
+      }
+    ],
+    "ContinuedDetentionBarredWithoutCourtDecision/unless/0": [
+      {
+        "status": "translation",
+        "text": "المادة 18 الفقرة 2. يحظر الاحتجاز بعد المدة المقررة قانونا ما لم يصدر قرار من المحكمة"
+      }
+    ],
+    "ContinuedDetentionProhibition": [
+      {
+        "status": "translation",
+        "text": "المادة 18 الفقرة 2. لا يجوز احتجاز الإنسان بعد المدد المقررة قانونا بغير قرار من المحكمة"
+      }
+    ],
+    "CoreRight": [
+      {
+        "status": "translation",
+        "text": "حق أو حرية لا يجيز دستور سنة 2026 تقييدهما"
+      }
+    ],
+    "CoreRight1995": [
+      {
+        "status": "translation",
+        "text": "حق أو حرية لم يكن دستور سنة 1995 يجيز تقييدهما"
+      }
+    ],
+    "CoreRightsRestrictionImmunity": [
+      {
+        "status": "translation",
+        "text": "المادة 41 الفقرة 3. نواة الحقوق غير القابلة للتقييد"
+      }
+    ],
+    "CoreRightsRestrictionImmunity1995": [
+      {
+        "status": "translation",
+        "text": "المادة 39 الفقرة 3 (طبعة 1995). لا تقيد بحال من الأحوال حقوق المواد 11 و13–15 والفقرة 1 من المادة 16 والمواد 17 و19 و22 والفقرة 2 من المادة 26"
+      }
+    ],
+    "CounselFromDetentionDuty": [
+      {
+        "status": "translation",
+        "text": "المادة 18 الفقرة 4. للمحتجز والمشتبه فيه والمتهم حق الاستعانة بمحام منذ لحظة الاحتجاز"
+      }
+    ],
+    "CounselFromDetentionDuty1995": [
+      {
+        "status": "translation",
+        "text": "المادة 16 الفقرة 3 (طبعة 1995). حق الاستعانة بمحام منذ لحظة الاحتجاز أو القبض أو توجيه الاتهام"
+      }
+    ],
+    "CourtOrderRequiredForContinuedDetention": [
+      {
+        "status": "translation",
+        "text": "المادة 18 الفقرة 2. لا يجوز احتجاز الإنسان بعد المدد المقررة قانونا بغير قرار من المحكمة"
+      }
+    ],
+    "DeathPenaltyImmunity": [
+      {
+        "status": "translation",
+        "text": "المادة 17 الفقرة 3. عقوبة الإعدام محظورة"
+      }
+    ],
+    "DeathPenaltyImmunity1995": [
+      {
+        "status": "translation",
+        "text": "المادة 15 الفقرة 2 (طبعة 1995). تحظر عقوبة الإعدام"
+      }
+    ],
+    "DeathPenaltyProhibition": [
+      {
+        "status": "translation",
+        "text": "المادة 17 الفقرة 3. عقوبة الإعدام محظورة"
+      }
+    ],
+    "DeclareNationalIdentity": [
+      {
+        "status": "translation",
+        "text": "المادة 22 الفقرة 1. لكل إنسان أن يحدد انتماءه القومي وأن يذكره أو لا يذكره"
+      }
+    ],
+    "DeclareNationalPartyReligiousIdentity1995": [
+      {
+        "status": "translation",
+        "text": "المادة 19 الفقرة 1 (طبعة 1995). لكل شخص أن يحدد انتماءه القومي والحزبي والديني وأن يذكره أو لا يذكره"
+      }
+    ],
+    "DefenceDuty": [
+      {
+        "status": "translation",
+        "text": "المادة 39 الفقرة 1. الدفاع عن جمهورية كازاخستان واجب مقدس على كل مواطن من مواطنيها"
+      }
+    ],
+    "DefenceDuty1995": [
+      {
+        "status": "translation",
+        "text": "المادة 36 (طبعة 1995). الدفاع عن الجمهورية واجب مقدس على كل مواطن من مواطنيها"
+      }
+    ],
+    "DefendKazakhstan": [
+      {
+        "status": "translation",
+        "text": "المادة 39 الفقرة 1. الدفاع عن جمهورية كازاخستان واجب مقدس على كل مواطن من مواطنيها"
+      }
+    ],
+    "DefendKazakhstan1995": [
+      {
+        "status": "translation",
+        "text": "المادة 36 (طبعة 1995). الدفاع عن الجمهورية واجب مقدس على كل مواطن من مواطنيها"
+      }
+    ],
+    "DepriveCitizenship": [
+      {
+        "status": "translation",
+        "text": "المادة 13 الفقرة 2. لا يجوز إسقاط الجنسية إلا بقرار من المحكمة عن جرائم إرهابية أو عن ضرر جسيم آخر بالمصالح الوطنية للجمهورية"
+      }
+    ],
+    "DepriveCitizenship1995": [
+      {
+        "status": "translation",
+        "text": "المادة 10 الفقرة 2 (طبعة 1995). لا يكون إسقاط الجنسية إلا بقرار من المحكمة عن جرائم إرهابية أو عن ضرر جسيم آخر بالمصالح الحيوية"
+      }
+    ],
+    "Detention": [
+      {
+        "status": "translation",
+        "text": "احتجاز أو قبض أو حبس احتياطي"
+      }
+    ],
+    "DetentionBeyond72HoursImmunity1995": [
+      {
+        "status": "translation",
+        "text": "المادة 16 الفقرة 2 (طبعة 1995). لا يجاوز الاحتجاز بغير إذن المحكمة اثنتين وسبعين ساعة"
+      }
+    ],
+    "DetentionBeyondStatutoryLimitImmunity": [
+      {
+        "status": "translation",
+        "text": "المادة 18 الفقرة 2. لا يجوز احتجاز الإنسان بعد المدد المقررة قانونا بغير قرار من المحكمة"
+      }
+    ],
+    "DignityImmunity": [
+      {
+        "status": "translation",
+        "text": "المادة 20 الفقرة 1. شرف الإنسان وكرامته مصونان ويحميهما القانون"
+      }
+    ],
+    "DignityImmunity1995": [
+      {
+        "status": "translation",
+        "text": "المادة 17 الفقرة 1 (طبعة 1995). كرامة الإنسان مصونة"
+      }
+    ],
+    "DignityInfringementProhibition": [
+      {
+        "status": "translation",
+        "text": "المادة 20 الفقرة 1. شرف الإنسان وكرامته مصونان ويحميهما القانون"
+      }
+    ],
+    "DignityInviolable": [
+      {
+        "status": "translation",
+        "text": "المادة 20 الفقرة 1. شرف الإنسان وكرامته مصونان ويحميهما القانون"
+      }
+    ],
+    "DignityInviolable1995": [
+      {
+        "status": "translation",
+        "text": "المادة 17 الفقرة 1 (طبعة 1995). كرامة الإنسان مصونة"
+      }
+    ],
+    "DiscriminationProhibition": [
+      {
+        "status": "translation",
+        "text": "المادة 16 الفقرة 2. لا يجوز التمييز ضد أحد للأسباب المعددة ولا لأي سبب آخر"
+      }
+    ],
+    "Document": [
+      {
+        "status": "translation",
+        "text": "وثيقة تمس حقوق الشخص ومصالحه"
+      }
+    ],
+    "EducationInstitution": [
+      {
+        "status": "translation",
+        "text": "مؤسسة تعليمية"
+      }
+    ],
+    "EducationStandardsCompliance": [
+      {
+        "status": "translation",
+        "text": "المادة 33 الفقرة 4. نشاط المؤسسات التعليمية مطابق للمعايير الملزمة للكافة"
+      }
+    ],
+    "EducationStandardsCompliance1995": [
+      {
+        "status": "translation",
+        "text": "المادة 30 الفقرة 4 (طبعة 1995). يجب أن يطابق نشاط أي مؤسسة تعليمية المعايير الملزمة للكافة"
+      }
+    ],
+    "EqualityImmunity": [
+      {
+        "status": "translation",
+        "text": "المادة 16 الفقرة 2. لا يجوز التمييز ضد أحد بسبب الأصل أو المركز أو الجنس أو العرق أو القومية أو اللغة أو الموقف من الدين أو المعتقد أو محل الإقامة أو أي سبب آخر"
+      }
+    ],
+    "EqualityImmunity1995": [
+      {
+        "status": "translation",
+        "text": "المادة 14 (طبعة 1995). الناس سواء أمام القانون والقضاء؛ ولا يجوز التمييز"
+      }
+    ],
+    "ExerciseFreedomOfConscience": [
+      {
+        "status": "translation",
+        "text": "المادة 25 الفقرة 1. لكل إنسان الحق في حرية الوجدان"
+      }
+    ],
+    "ExerciseFreedomOfConscience1995": [
+      {
+        "status": "translation",
+        "text": "المادة 22 الفقرة 1 (طبعة 1995). لكل شخص الحق في حرية الوجدان"
+      }
+    ],
+    "ExitKazakhstan": [
+      {
+        "status": "translation",
+        "text": "المادة 24 الفقرة 2. لكل إنسان الحق في مغادرة حدود جمهورية كازاخستان"
+      }
+    ],
+    "ExitKazakhstan1995": [
+      {
+        "status": "translation",
+        "text": "المادة 21 الفقرة 2 (طبعة 1995). لكل شخص الحق في مغادرة حدود الجمهورية"
+      }
+    ],
+    "ExitKazakhstanLiberty": [
+      {
+        "status": "translation",
+        "text": "المادة 24 الفقرة 2. لكل إنسان الحق في مغادرة حدود جمهورية كازاخستان"
+      }
+    ],
+    "ExitKazakhstanLiberty1995": [
+      {
+        "status": "translation",
+        "text": "المادة 21 الفقرة 2 (طبعة 1995). لكل شخص الحق في مغادرة حدود الجمهورية"
+      }
+    ],
+    "ExtraditeUnderTreaty": [
+      {
+        "status": "translation",
+        "text": "المادة 14 الفقرة 1. يجوز تسليم المواطن إذا قررت ذلك معاهدة دولية للجمهورية"
+      }
+    ],
+    "ExtraditeUnderTreaty1995": [
+      {
+        "status": "translation",
+        "text": "المادة 11 الفقرة 1 (طبعة 1995). يجوز التسليم إذا قررت ذلك معاهدة دولية للجمهورية"
+      }
+    ],
+    "ForcedLabourBarredWithoutBasis": [
+      {
+        "status": "translation",
+        "text": "المادة 27 الفقرة 1. يحظر الإكراه على العمل ما لم يصدر حكم قضائي بالإدانة أو تعلن حالة الطوارئ أو الأحكام العرفية"
+      }
+    ],
+    "ForcedLabourBarredWithoutBasis/unless/0": [
+      {
+        "status": "translation",
+        "text": "المادة 27 الفقرة 1. يحظر الإكراه على العمل ما لم يصدر حكم قضائي بالإدانة أو تعلن حالة الطوارئ أو الأحكام العرفية"
+      }
+    ],
+    "ForcedLabourOnJudicialOrEmergencyBasis": [
+      {
+        "status": "translation",
+        "text": "المادة 27 الفقرة 1. يجوز العمل الجبري بناء على حكم قضائي بالإدانة أو في ظل حالة الطوارئ أو الأحكام العرفية"
+      }
+    ],
+    "ForcedLabourOnlyOnJudicialOrEmergencyBasis1995": [
+      {
+        "status": "translation",
+        "text": "المادة 24 الفقرة 1 (طبعة 1995). لا يجوز العمل الجبري إلا بحكم قضائي أو في ظل حالة الطوارئ أو الأحكام العرفية"
+      }
+    ],
+    "ForcedLabourProhibition": [
+      {
+        "status": "translation",
+        "text": "المادة 27 الفقرة 1. لا يجوز العمل الجبري خارج الأسباب التي عددها الدستور"
+      }
+    ],
+    "ForeignCitizenshipNotRecognized": [
+      {
+        "status": "translation",
+        "text": "المادة 13 الفقرة 3. لا يجوز لمواطن جمهورية كازاخستان أن يحمل جنسية مزدوجة أو متعددة"
+      }
+    ],
+    "ForeignCitizenshipNotRecognized1995": [
+      {
+        "status": "translation",
+        "text": "المادة 10 الفقرة 3 (طبعة 1995). لا يعترف لمواطن الجمهورية بجنسية دولة أخرى"
+      }
+    ],
+    "ForeignCitizenshipTerminatesCitizenship": [
+      {
+        "status": "translation",
+        "text": "المادة 13 الفقرة 3. حمل جنسية أخرى سبب لزوال جنسية جمهورية كازاخستان"
+      }
+    ],
+    "ForeignerEnjoysCitizenRightsOnlyWhereProvided": [
+      {
+        "status": "translation",
+        "text": "المادة 15 الفقرة 4. يتمتع الأجانب وعديمو الجنسية بحقوق المواطنين في الحالات التي يقررها الدستور والقوانين والمعاهدات"
+      }
+    ],
+    "ForeignerEnjoysCitizenRightsUnlessOtherwise1995": [
+      {
+        "status": "translation",
+        "text": "المادة 12 الفقرة 4 (طبعة 1995). يتمتع الأجانب وعديمو الجنسية بحقوق المواطنين ما لم يقرر خلاف ذلك"
+      }
+    ],
+    "FreeCompetitiveHigherEducationDuty1995": [
+      {
+        "status": "translation",
+        "text": "المادة 30 الفقرة 2 (طبعة 1995). الحق في الحصول على التعليم العالي المجاني في جامعة حكومية على أساس المسابقة"
+      }
+    ],
+    "FreeLegalAidDuty1995": [
+      {
+        "status": "translation",
+        "text": "المادة 13 الفقرة 3 (طبعة 1995). تقدم المساعدة القانونية مجانا في الحالات التي يقررها القانون"
+      }
+    ],
+    "FreeSecondaryEducationDuty": [
+      {
+        "status": "translation",
+        "text": "المادة 33 الفقرة 1. التعليم الثانوي مجاني في المؤسسة التعليمية الحكومية"
+      }
+    ],
+    "FreeSecondaryEducationDuty1995": [
+      {
+        "status": "translation",
+        "text": "المادة 30 الفقرة 1 (طبعة 1995). يكفل للمواطنين التعليم الثانوي المجاني في المؤسسات التعليمية الحكومية"
+      }
+    ],
+    "FreedomOfAssociation": [
+      {
+        "status": "translation",
+        "text": "المادة 26 الفقرة 1. حرية تكوين الجمعيات"
+      }
+    ],
+    "FreedomOfAssociation1995": [
+      {
+        "status": "translation",
+        "text": "المادة 23 الفقرة 1 (طبعة 1995). للمواطنين الحق في حرية تكوين الجمعيات"
+      }
+    ],
+    "FreedomOfConscienceLiberty": [
+      {
+        "status": "translation",
+        "text": "المادة 25 الفقرة 1. لكل إنسان الحق في حرية الوجدان"
+      }
+    ],
+    "FreedomOfConscienceLiberty1995": [
+      {
+        "status": "translation",
+        "text": "المادة 22 الفقرة 1 (طبعة 1995). لكل شخص الحق في حرية الوجدان"
+      }
+    ],
+    "FreedomOfEnterpriseLiberty": [
+      {
+        "status": "translation",
+        "text": "المادة 29 الفقرة 4. تكفل جمهورية كازاخستان الحق في حرية النشاط الريادي"
+      }
+    ],
+    "FreedomOfEnterpriseLiberty1995": [
+      {
+        "status": "translation",
+        "text": "المادة 26 الفقرة 4 (طبعة 1995). الحق في حرية النشاط الريادي"
+      }
+    ],
+    "FreedomOfLabourLiberty": [
+      {
+        "status": "translation",
+        "text": "المادة 27 الفقرة 1. الحق في العمل وحرية اختيار نوع النشاط والمهنة"
+      }
+    ],
+    "FreedomOfLabourLiberty1995": [
+      {
+        "status": "translation",
+        "text": "المادة 24 الفقرة 1 (طبعة 1995). الحق في حرية العمل وحرية اختيار نوع النشاط والمهنة"
+      }
+    ],
+    "FreedomOfMovement": [
+      {
+        "status": "translation",
+        "text": "المادة 24 الفقرة 1. حرية تنقل الشخص الموجود في كازاخستان بصفة مشروعة"
+      }
+    ],
+    "FreedomOfMovement1995": [
+      {
+        "status": "translation",
+        "text": "المادة 21 الفقرة 1 (طبعة 1995). حرية التنقل واختيار محل الإقامة لمن يوجد في الجمهورية بصفة مشروعة"
+      }
+    ],
+    "GuaranteeAnnualPaidLeave1995": [
+      {
+        "status": "translation",
+        "text": "المادة 24 الفقرة 4 (طبعة 1995). تكفل إجازة سنوية مدفوعة للعاملين بعقد عمل"
+      }
+    ],
+    "GuaranteedFreeMedicalCareDuty1995": [
+      {
+        "status": "translation",
+        "text": "المادة 29 الفقرة 2 (طبعة 1995). للمواطنين أن يتلقوا مجانا القدر المكفول من الرعاية الطبية"
+      }
+    ],
+    "HeritageProtectionDuty": [
+      {
+        "status": "translation",
+        "text": "المادة 40. على مواطني الجمهورية أن يعنوا بحفظ التراث التاريخي والثقافي"
+      }
+    ],
+    "HeritageProtectionDuty1995": [
+      {
+        "status": "translation",
+        "text": "المادة 37 (طبعة 1995). على المواطنين أن يعنوا بحفظ التراث التاريخي والثقافي"
+      }
+    ],
+    "HomeEntryProhibition": [
+      {
+        "status": "translation",
+        "text": "المادة 28 الفقرة 1. المسكن مصون؛ ولا يجوز دخوله ومعاينته وتفتيشه إلا في الأحوال والأوضاع المقررة قانونا"
+      }
+    ],
+    "HomeImmunity": [
+      {
+        "status": "translation",
+        "text": "المادة 28 الفقرة 1. المسكن مصون؛ ولا يجوز دخوله إلا في الأحوال والأوضاع المقررة قانونا"
+      }
+    ],
+    "HomeImmunity1995": [
+      {
+        "status": "translation",
+        "text": "المادة 25 الفقرة 1 (طبعة 1995). المسكن مصون؛ ولا يكون الحرمان منه إلا بقرار من المحكمة"
+      }
+    ],
+    "HomeInviolability": [
+      {
+        "status": "translation",
+        "text": "المادة 28 الفقرة 1. المسكن مصون؛ ولا يجوز دخوله إلا في الأحوال والأوضاع المقررة قانونا"
+      }
+    ],
+    "HomeInviolability1995": [
+      {
+        "status": "translation",
+        "text": "المادة 25 الفقرة 1 (طبعة 1995). المسكن مصون؛ ولا يكون الحرمان منه إلا بقرار من المحكمة"
+      }
+    ],
+    "HousingNeed": [
+      {
+        "status": "translation",
+        "text": "الحاجة إلى مسكن"
+      }
+    ],
+    "InterethnicAccordViolationUnconstitutional": [
+      {
+        "status": "translation",
+        "text": "المادة 41 الفقرة 2. تعد غير دستورية الأعمال التي من شأنها الإخلال بالوئام بين الإثنيات وبين الأديان"
+      }
+    ],
+    "InterethnicAccordViolationUnconstitutional1995": [
+      {
+        "status": "translation",
+        "text": "المادة 39 الفقرة 2 (طبعة 1995). تعد غير دستورية أي أعمال من شأنها الإخلال بالوئام بين القوميات وبين الأديان"
+      }
+    ],
+    "JoinAssociation": [
+      {
+        "status": "translation",
+        "text": "المادة 26 الفقرة 1. حرية تكوين الجمعيات"
+      }
+    ],
+    "JoinAssociation1995": [
+      {
+        "status": "translation",
+        "text": "المادة 23 الفقرة 1 (طبعة 1995). للمواطنين الحق في حرية تكوين الجمعيات"
+      }
+    ],
+    "LabourDisputeLiberty": [
+      {
+        "status": "translation",
+        "text": "المادة 27 الفقرة 3. يعترف بالحق في منازعات العمل الفردية والجماعية باستعمال طرق تسويتها المقررة قانونا"
+      }
+    ],
+    "LegalAidCase": [
+      {
+        "status": "translation",
+        "text": "حالة من حالات تقديم المساعدة القانونية"
+      }
+    ],
+    "Legislature": [
+      {
+        "status": "translation",
+        "text": "جهاز تشريعي"
+      }
+    ],
+    "MoveWithinKazakhstan": [
+      {
+        "status": "translation",
+        "text": "المادة 24 الفقرة 1. حرية تنقل الشخص الموجود في كازاخستان بصفة مشروعة"
+      }
+    ],
+    "MoveWithinKazakhstan1995": [
+      {
+        "status": "translation",
+        "text": "المادة 21 الفقرة 1 (طبعة 1995). حرية التنقل واختيار محل الإقامة لمن يوجد في الجمهورية بصفة مشروعة"
+      }
+    ],
+    "MovementRestriction": [
+      {
+        "status": "translation",
+        "text": "تقييد حرية التنقل"
+      }
+    ],
+    "NationalIdentityLiberty": [
+      {
+        "status": "translation",
+        "text": "المادة 22 الفقرة 1. لكل إنسان أن يحدد انتماءه القومي وأن يذكره أو لا يذكره"
+      }
+    ],
+    "NationalPartyAndReligiousIdentityLiberty1995": [
+      {
+        "status": "translation",
+        "text": "المادة 19 الفقرة 1 (طبعة 1995). لكل شخص أن يحدد انتماءه القومي والحزبي والديني وأن يذكره أو لا يذكره"
+      }
+    ],
+    "NativeLanguageAndCultureLiberty": [
+      {
+        "status": "translation",
+        "text": "المادة 22 الفقرة 2. الحق في استعمال اللغة الأم والثقافة الأم وحرية اختيار لغة التخاطب والتربية والتعليم والإبداع"
+      }
+    ],
+    "NativeLanguageAndCultureLiberty1995": [
+      {
+        "status": "translation",
+        "text": "المادة 19 الفقرة 2 (طبعة 1995). الحق في استعمال اللغة الأم والثقافة الأم وحرية اختيار لغة التخاطب"
+      }
+    ],
+    "NatureProtectionDuty": [
+      {
+        "status": "translation",
+        "text": "المادة 37 الفقرة 1. على مواطني الجمهورية أن يحفظوا الطبيعة وأن يحسنوا رعاية الثروات الطبيعية"
+      }
+    ],
+    "NatureProtectionDuty1995": [
+      {
+        "status": "translation",
+        "text": "المادة 38 (طبعة 1995). على المواطنين أن يحفظوا الطبيعة وأن يحسنوا رعاية الثروات الطبيعية"
+      }
+    ],
+    "NoCensorship": [
+      {
+        "status": "translation",
+        "text": "المادة 23 الفقرة 5. الرقابة على المصنفات محظورة"
+      }
+    ],
+    "NoCensorship1995": [
+      {
+        "status": "translation",
+        "text": "المادة 20 الفقرة 1 (طبعة 1995). تحظر الرقابة على المصنفات"
+      }
+    ],
+    "NoDeathPenalty": [
+      {
+        "status": "translation",
+        "text": "المادة 17 الفقرة 3. عقوبة الإعدام محظورة"
+      }
+    ],
+    "NoDeathPenalty1995": [
+      {
+        "status": "translation",
+        "text": "المادة 15 الفقرة 2 (طبعة 1995). تحظر عقوبة الإعدام"
+      }
+    ],
+    "NoDiscrimination": [
+      {
+        "status": "translation",
+        "text": "المادة 16 الفقرة 2. لا يجوز التمييز ضد أحد بسبب الأصل أو المركز أو الجنس أو العرق أو القومية أو اللغة أو الموقف من الدين أو المعتقد أو محل الإقامة أو أي سبب آخر"
+      }
+    ],
+    "NoDiscrimination1995": [
+      {
+        "status": "translation",
+        "text": "المادة 14 (طبعة 1995). الناس سواء أمام القانون والقضاء؛ ولا يجوز التمييز"
+      }
+    ],
+    "NoTorture": [
+      {
+        "status": "translation",
+        "text": "المادة 20 الفقرة 2. لا يجوز إخضاع أحد للتعذيب أو العنف أو غير ذلك من ضروب المعاملة أو العقوبة القاسية أو الحاطة بكرامة الإنسان"
+      }
+    ],
+    "NoTorture1995": [
+      {
+        "status": "translation",
+        "text": "المادة 17 الفقرة 2 (طبعة 1995). لا يجوز إخضاع أحد للتعذيب والمعاملة القاسية"
+      }
+    ],
+    "NonDerogableCore": [
+      {
+        "status": "translation",
+        "text": "المادة 41 الفقرة 3. نواة الحقوق غير القابلة للتقييد"
+      }
+    ],
+    "NonDerogableCore1995": [
+      {
+        "status": "translation",
+        "text": "المادة 39 الفقرة 3 (طبعة 1995). لا تقيد بحال من الأحوال حقوق المواد 11 و13–15 والفقرة 1 من المادة 16 والمواد 17 و19 و22 والفقرة 2 من المادة 26"
+      }
+    ],
+    "NonExtradition": [
+      {
+        "status": "translation",
+        "text": "المادة 14 الفقرة 1. لا يجوز تسليم مواطن جمهورية كازاخستان إلى دولة أجنبية"
+      }
+    ],
+    "NonExtradition1995": [
+      {
+        "status": "translation",
+        "text": "المادة 11 الفقرة 1 (طبعة 1995). لا يجوز تسليم مواطن الجمهورية إلى دولة أجنبية"
+      }
+    ],
+    "Official": [
+      {
+        "status": "translation",
+        "text": "موظف عام"
+      }
+    ],
+    "OfficialConcealmentLiability": [
+      {
+        "status": "translation",
+        "text": "المادة 37 الفقرة 3. يرتب إخفاء الموظفين العامين وقائع وظروفا تهدد حياة الناس وصحتهم أو تهدد البيئة مسؤولية"
+      }
+    ],
+    "OfficialConcealmentLiability1995": [
+      {
+        "status": "translation",
+        "text": "المادة 31 الفقرة 2 (طبعة 1995). يرتب إخفاء الموظفين العامين وقائع تهدد حياة الناس وصحتهم مسؤولية"
+      }
+    ],
+    "Parent": [
+      {
+        "status": "translation",
+        "text": "والد"
+      }
+    ],
+    "ParentCareDuty": [
+      {
+        "status": "translation",
+        "text": "المادة 30 الفقرة 3. رعاية الأبناء وتربيتهم حق طبيعي للوالدين وواجب عليهما"
+      }
+    ],
+    "ParentCareDuty1995": [
+      {
+        "status": "translation",
+        "text": "المادة 27 الفقرة 2 (طبعة 1995). رعاية الأبناء وتربيتهم حق طبيعي للوالدين وواجب عليهما"
+      }
+    ],
+    "ParticipateInPeacefulAssembly": [
+      {
+        "status": "translation",
+        "text": "المادة 34. حق المواطنين في التجمعات السلمية"
+      }
+    ],
+    "ParticipateInStateGovernance": [
+      {
+        "status": "translation",
+        "text": "المادة 35 الفقرة 1. الحق في المشاركة في إدارة شؤون الدولة"
+      }
+    ],
+    "ParticipateInStateGovernance1995": [
+      {
+        "status": "translation",
+        "text": "المادة 33 الفقرة 1 (طبعة 1995). الحق في المشاركة في إدارة شؤون الدولة وفي مخاطبة أجهزة الدولة"
+      }
+    ],
+    "ParticipateInUnarmedAssembly1995": [
+      {
+        "status": "translation",
+        "text": "المادة 32 (طبعة 1995). للمواطنين أن يتجمعوا سلميا وبغير سلاح وأن ينظموا الاجتماعات والتجمعات والمظاهرات والمسيرات والاعتصامات"
+      }
+    ],
+    "PayLawfulTaxes": [
+      {
+        "status": "translation",
+        "text": "المادة 38. أداء الضرائب والرسوم وسائر المدفوعات الإلزامية المقررة قانونا واجب على كل شخص"
+      }
+    ],
+    "PayLawfulTaxes1995": [
+      {
+        "status": "translation",
+        "text": "المادة 35 (طبعة 1995). أداء الضرائب والرسوم وسائر المدفوعات الإلزامية المقررة قانونا واجب على كل شخص"
+      }
+    ],
+    "PeacefulAssemblyLiberty": [
+      {
+        "status": "translation",
+        "text": "المادة 34. حق المواطنين في التجمعات السلمية"
+      }
+    ],
+    "PeacefulAssemblyLiberty1995": [
+      {
+        "status": "translation",
+        "text": "المادة 32 (طبعة 1995). للمواطنين أن يتجمعوا سلميا وبغير سلاح وأن ينظموا الاجتماعات والتجمعات والمظاهرات والمسيرات والاعتصامات"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "شخص طبيعي"
+      }
+    ],
+    "PoliticalMotiveRestrictionProhibited": [
+      {
+        "status": "translation",
+        "text": "المادة 41 الفقرة 3. لا يجوز تقييد حقوق المواطنين وحرياتهم لأسباب سياسية"
+      }
+    ],
+    "PoliticalMotiveRestrictionProhibited1995": [
+      {
+        "status": "translation",
+        "text": "المادة 39 الفقرة 3 (طبعة 1995). لا يجوز بأي صورة تقييد حقوق المواطنين وحرياتهم لأسباب سياسية"
+      }
+    ],
+    "PreserveHeritage": [
+      {
+        "status": "translation",
+        "text": "المادة 40. على مواطني الجمهورية أن يعنوا بحفظ التراث التاريخي والثقافي"
+      }
+    ],
+    "PreserveHeritage1995": [
+      {
+        "status": "translation",
+        "text": "المادة 37 (طبعة 1995). على المواطنين أن يعنوا بحفظ التراث التاريخي والثقافي"
+      }
+    ],
+    "PresumptionOfInnocence/R2": [
+      {
+        "status": "translation",
+        "text": "المادة 19 الفقرة 1. كل شخص بريء حتى تثبت إدانته بحكم قضائي حائز قوة الأمر المقضي"
+      }
+    ],
+    "PrimaryAndBasicEducationCompulsory": [
+      {
+        "status": "translation",
+        "text": "المادة 33 الفقرة 1. التعليم الابتدائي والثانوي الأساسي إلزامي"
+      }
+    ],
+    "PrivacyImmunity": [
+      {
+        "status": "translation",
+        "text": "المادة 21 الفقرة 1. يكفل القانون الحق في حرمة الحياة الخاصة وسر الشخص وسر الأسرة وحماية البيانات الشخصية"
+      }
+    ],
+    "PrivacyImmunity1995": [
+      {
+        "status": "translation",
+        "text": "المادة 18 الفقرة 1 (طبعة 1995). حرمة الحياة الخاصة وسر الشخص وسر الأسرة"
+      }
+    ],
+    "PrivacyInterferenceProhibition": [
+      {
+        "status": "translation",
+        "text": "المادة 21 الفقرتان 1 و2. يحمي القانون حرمة الحياة الخاصة وسر المراسلات؛ ولا يجوز التقييد إلا في الأحوال والأوضاع المقررة قانونا"
+      }
+    ],
+    "PrivacyProtection": [
+      {
+        "status": "translation",
+        "text": "المادة 21 الفقرة 1. يكفل القانون الحق في حرمة الحياة الخاصة وسر الشخص وسر الأسرة وحماية البيانات الشخصية"
+      }
+    ],
+    "PrivacyProtection1995": [
+      {
+        "status": "translation",
+        "text": "المادة 18 الفقرة 1 (طبعة 1995). حرمة الحياة الخاصة وسر الشخص وسر الأسرة"
+      }
+    ],
+    "ProhibitedPropaganda": [
+      {
+        "status": "translation",
+        "text": "المادة 23 الفقرة 6. لا تجوز الدعاية إلى تغيير أسس النظام الدستوري بالقوة أو المساس بوحدة الإقليم أو إلى الحرب والفتنة ولا الدعوة إلى تلك الأعمال"
+      }
+    ],
+    "ProhibitedPropaganda1995": [
+      {
+        "status": "translation",
+        "text": "المادة 20 الفقرة 3 (طبعة 1995). لا تجوز الدعاية أو التحريض على تغيير النظام الدستوري بالقوة وسائر ما عدد"
+      }
+    ],
+    "PropertyImmunity": [
+      {
+        "status": "translation",
+        "text": "المادة 29 الفقرة 3. لا يجوز نزع الملكية جبرا للحاجات العامة إلا بشرط تعويض معادل عنها"
+      }
+    ],
+    "PropertyImmunity1995": [
+      {
+        "status": "translation",
+        "text": "المادة 26 الفقرة 3 (طبعة 1995). لا يكون النزع الجبري إلا بتعويض معادل"
+      }
+    ],
+    "ProtectAndPatroniseAbroad": [
+      {
+        "status": "translation",
+        "text": "المادة 14 الفقرة 2. تكفل جمهورية كازاخستان لمواطنيها الحماية خارج حدودها"
+      }
+    ],
+    "ProtectAndPatroniseAbroad1995": [
+      {
+        "status": "translation",
+        "text": "المادة 11 الفقرة 2 (طبعة 1995). تكفل الجمهورية لمواطنيها الحماية والرعاية خارج حدودها"
+      }
+    ],
+    "ProtectNature": [
+      {
+        "status": "translation",
+        "text": "المادة 37 الفقرة 1. على مواطني الجمهورية أن يحفظوا الطبيعة وأن يحسنوا رعاية الثروات الطبيعية"
+      }
+    ],
+    "ProtectNature1995": [
+      {
+        "status": "translation",
+        "text": "المادة 38 (طبعة 1995). على المواطنين أن يحفظوا الطبيعة وأن يحسنوا رعاية الثروات الطبيعية"
+      }
+    ],
+    "ProtectionAndPatronageAbroadDuty": [
+      {
+        "status": "translation",
+        "text": "المادة 14 الفقرة 2. تكفل جمهورية كازاخستان لمواطنيها الحماية خارج حدودها"
+      }
+    ],
+    "ProtectionAndPatronageAbroadDuty1995": [
+      {
+        "status": "translation",
+        "text": "المادة 11 الفقرة 2 (طبعة 1995). تكفل الجمهورية لمواطنيها الحماية والرعاية خارج حدودها"
+      }
+    ],
+    "ProvideAccess": [
+      {
+        "status": "translation",
+        "text": "المادة 21 الفقرة 3. تلتزم أجهزة الدولة والجمعيات والموظفون ووسائل الإعلام بتمكين كل شخص من الاطلاع على الوثائق التي تمس حقوقه ومصالحه"
+      }
+    ],
+    "ProvideAffordableStateHousing1995": [
+      {
+        "status": "translation",
+        "text": "المادة 25 الفقرة 2 (طبعة 1995). يوفر السكن بأجر ميسور من صناديق الإسكان الحكومية للفئات المحددة في القانون"
+      }
+    ],
+    "ProvideCitizenAccess1995": [
+      {
+        "status": "translation",
+        "text": "المادة 18 الفقرة 3 (طبعة 1995). يكفل لكل مواطن الاطلاع على الوثائق التي تمسه"
+      }
+    ],
+    "ProvideCounselAccess": [
+      {
+        "status": "translation",
+        "text": "المادة 18 الفقرة 4. للمحتجز والمشتبه فيه والمتهم حق الاستعانة بمحام منذ لحظة الاحتجاز"
+      }
+    ],
+    "ProvideCounselAccess1995": [
+      {
+        "status": "translation",
+        "text": "المادة 16 الفقرة 3 (طبعة 1995). حق الاستعانة بمحام منذ لحظة الاحتجاز أو القبض أو توجيه الاتهام"
+      }
+    ],
+    "ProvideFreeHigherEducation1995": [
+      {
+        "status": "translation",
+        "text": "المادة 30 الفقرة 2 (طبعة 1995). الحق في الحصول على التعليم العالي المجاني في جامعة حكومية على أساس المسابقة"
+      }
+    ],
+    "ProvideFreeLegalAid1995": [
+      {
+        "status": "translation",
+        "text": "المادة 13 الفقرة 3 (طبعة 1995). تقدم المساعدة القانونية مجانا في الحالات التي يقررها القانون"
+      }
+    ],
+    "ProvideFreeSecondaryEducation": [
+      {
+        "status": "translation",
+        "text": "المادة 33 الفقرة 1. التعليم الثانوي مجاني في المؤسسة التعليمية الحكومية"
+      }
+    ],
+    "ProvideFreeSecondaryEducation1995": [
+      {
+        "status": "translation",
+        "text": "المادة 30 الفقرة 1 (طبعة 1995). يكفل للمواطنين التعليم الثانوي المجاني في المؤسسات التعليمية الحكومية"
+      }
+    ],
+    "ProvideGuaranteedFreeMedicalCare1995": [
+      {
+        "status": "translation",
+        "text": "المادة 29 الفقرة 2 (طبعة 1995). للمواطنين أن يتلقوا مجانا القدر المكفول من الرعاية الطبية"
+      }
+    ],
+    "ProvideSocialSecurity": [
+      {
+        "status": "translation",
+        "text": "المادة 31 الفقرة 1. الضمان الاجتماعي بسبب مقرر قانونا"
+      }
+    ],
+    "ProvideSocialSecurity1995": [
+      {
+        "status": "translation",
+        "text": "المادة 28 الفقرة 1 (طبعة 1995). يكفل الحد الأدنى للأجر والمعاش والضمان الاجتماعي بالأسباب المقررة قانونا"
+      }
+    ],
+    "ProvideStatutoryHousing": [
+      {
+        "status": "translation",
+        "text": "المادة 28 الفقرة 2. يوفر المسكن لفئات المواطنين المحددة في القانون المحتاجين إليه وفق المعايير المقررة قانونا"
+      }
+    ],
+    "ProvideUnemploymentProtection1995": [
+      {
+        "status": "translation",
+        "text": "المادة 24 الفقرة 2 (طبعة 1995). الحق في الحماية الاجتماعية من البطالة"
+      }
+    ],
+    "ProvideUnpaidMedicalCare": [
+      {
+        "status": "translation",
+        "text": "المادة 32 الفقرة 2. لمواطني جمهورية كازاخستان أن يتلقوا الرعاية الطبية المقررة قانونا دون أن يؤدوا مقابلها"
+      }
+    ],
+    "RefrainFromBlockingReturn": [
+      {
+        "status": "translation",
+        "text": "المادة 24 الفقرة 2. لمواطني جمهورية كازاخستان حق العودة إلى جمهورية كازاخستان دون عائق"
+      }
+    ],
+    "RefrainFromCensorship": [
+      {
+        "status": "translation",
+        "text": "المادة 23 الفقرة 5. الرقابة على المصنفات محظورة"
+      }
+    ],
+    "RefrainFromDeathPenalty": [
+      {
+        "status": "translation",
+        "text": "المادة 17 الفقرة 3. عقوبة الإعدام محظورة"
+      }
+    ],
+    "RefrainFromDetentionBeyondStatutoryPeriod": [
+      {
+        "status": "translation",
+        "text": "المادة 18 الفقرة 2. لا يجوز احتجاز الإنسان بعد المدد المقررة قانونا بغير قرار من المحكمة"
+      }
+    ],
+    "RefrainFromDignityInfringement": [
+      {
+        "status": "translation",
+        "text": "المادة 20 الفقرة 1. شرف الإنسان وكرامته مصونان ويحميهما القانون"
+      }
+    ],
+    "RefrainFromDiscrimination": [
+      {
+        "status": "translation",
+        "text": "المادة 16 الفقرة 2. لا يجوز التمييز ضد أحد للأسباب المعددة ولا لأي سبب آخر"
+      }
+    ],
+    "RefrainFromForcedLabour": [
+      {
+        "status": "translation",
+        "text": "المادة 27 الفقرة 1. لا يجوز العمل الجبري خارج الأسباب التي عددها الدستور"
+      }
+    ],
+    "RefrainFromPrivacyInterference": [
+      {
+        "status": "translation",
+        "text": "المادة 21 الفقرتان 1 و2. يحمي القانون حرمة الحياة الخاصة وسر المراسلات؛ ولا يجوز التقييد إلا في الأحوال والأوضاع المقررة قانونا"
+      }
+    ],
+    "RefrainFromTorture": [
+      {
+        "status": "translation",
+        "text": "المادة 20 الفقرة 2. لا يجوز إخضاع أحد للتعذيب أو العنف أو غير ذلك من ضروب المعاملة أو العقوبة القاسية أو الحاطة بكرامة الإنسان"
+      }
+    ],
+    "RefrainFromUncompensatedExpropriation": [
+      {
+        "status": "translation",
+        "text": "المادة 29 الفقرة 3. لا يجوز نزع الملكية جبرا للحاجات العامة إلا بشرط تعويض معادل عنها"
+      }
+    ],
+    "RefrainFromUnlawfulHomeEntry": [
+      {
+        "status": "translation",
+        "text": "المادة 28 الفقرة 1. المسكن مصون؛ ولا يجوز دخوله ومعاينته وتفتيشه إلا في الأحوال والأوضاع المقررة قانونا"
+      }
+    ],
+    "ResolveLabourDispute": [
+      {
+        "status": "translation",
+        "text": "المادة 27 الفقرة 3. يعترف بالحق في منازعات العمل الفردية والجماعية باستعمال طرق تسويتها المقررة قانونا"
+      }
+    ],
+    "RespectConstitutionAndLaw": [
+      {
+        "status": "translation",
+        "text": "المادة 36 الفقرة 1. على كل شخص أن يلتزم الدستور وتشريعات الجمهورية وأن يحترم حقوق الغير وحرياتهم وشرفهم وكرامتهم"
+      }
+    ],
+    "RespectConstitutionAndLaw1995": [
+      {
+        "status": "translation",
+        "text": "المادة 34 الفقرة 1 (طبعة 1995). على كل شخص أن يلتزم الدستور والتشريعات وأن يحترم حقوق الغير وكرامتهم"
+      }
+    ],
+    "RespectStateSymbols": [
+      {
+        "status": "translation",
+        "text": "المادة 36 الفقرة 2. على كل إنسان أن يحترم رموز جمهورية كازاخستان الوطنية"
+      }
+    ],
+    "RespectStateSymbols1995": [
+      {
+        "status": "translation",
+        "text": "المادة 34 الفقرة 2 (طبعة 1995). على كل شخص أن يحترم رموز الجمهورية الوطنية"
+      }
+    ],
+    "RestrictDerogableRight": [
+      {
+        "status": "translation",
+        "text": "المادة 41 الفقرة 1. لا تقيد الحقوق والحريات إلا بقوانين وبالقدر اللازم لحماية النظام الدستوري والحقوق والحريات والأمن القومي والنظام العام والصحة والأخلاق"
+      }
+    ],
+    "RestrictedOfficePoliticalMembershipIncompatible": [
+      {
+        "status": "translation",
+        "text": "المادة 26 الفقرة 2. العضوية الحزبية والنقابية لا تجتمع مع الوظائف المعددة"
+      }
+    ],
+    "RestrictedOfficePoliticalMembershipIncompatible1995": [
+      {
+        "status": "translation",
+        "text": "المادة 23 الفقرة 2 (طبعة 1995). لا يجوز للموظفين المعددين الانتماء إلى الأحزاب والنقابات"
+      }
+    ],
+    "Restriction": [
+      {
+        "status": "translation",
+        "text": "تقييد للحقوق والحريات يفرضه القانون"
+      }
+    ],
+    "ReturnBlockProhibition": [
+      {
+        "status": "translation",
+        "text": "المادة 24 الفقرة 2. لمواطني جمهورية كازاخستان حق العودة إلى جمهورية كازاخستان دون عائق"
+      }
+    ],
+    "ReturnToKazakhstan": [
+      {
+        "status": "translation",
+        "text": "المادة 24 الفقرة 2. لمواطني جمهورية كازاخستان حق العودة إلى جمهورية كازاخستان دون عائق"
+      }
+    ],
+    "ReturnToKazakhstanLiberty": [
+      {
+        "status": "translation",
+        "text": "المادة 24 الفقرة 2. لمواطني جمهورية كازاخستان حق العودة إلى جمهورية كازاخستان دون عائق"
+      }
+    ],
+    "RightToStrikeLiberty1995": [
+      {
+        "status": "translation",
+        "text": "المادة 24 الفقرة 3 (طبعة 1995). يعترف بالحق في منازعات العمل بما فيه الحق في الإضراب"
+      }
+    ],
+    "RightsExerciseBoundary": [
+      {
+        "status": "translation",
+        "text": "المادة 15 الفقرة 5. ممارسة الحقوق مقيدة بحقوق الغير وبالغايات الدستورية"
+      }
+    ],
+    "RightsExerciseBoundary1995": [
+      {
+        "status": "translation",
+        "text": "المادة 12 الفقرة 5 (طبعة 1995). لا يجوز أن تخل ممارسة الحقوق بحقوق الغير أو تمس النظام الدستوري وأخلاق المجتمع"
+      }
+    ],
+    "RightsLimitationPower": [
+      {
+        "status": "translation",
+        "text": "المادة 41 الفقرة 1. لا تقيد الحقوق والحريات إلا بقوانين وبالقدر اللازم لحماية النظام الدستوري والحقوق والحريات والأمن القومي والنظام العام والصحة والأخلاق"
+      }
+    ],
+    "SecondaryEducationCompulsory1995": [
+      {
+        "status": "translation",
+        "text": "المادة 30 الفقرة 1 (طبعة 1995). التعليم الثانوي إلزامي"
+      }
+    ],
+    "SeventyTwoHourDetentionLimit1995": [
+      {
+        "status": "translation",
+        "text": "المادة 16 الفقرة 2 (طبعة 1995). لا يجاوز الاحتجاز بغير إذن المحكمة اثنتين وسبعين ساعة"
+      }
+    ],
+    "SocialSecurityDuty": [
+      {
+        "status": "translation",
+        "text": "المادة 31 الفقرة 1. الضمان الاجتماعي بسبب مقرر قانونا"
+      }
+    ],
+    "SocialSecurityDuty1995": [
+      {
+        "status": "translation",
+        "text": "المادة 28 الفقرة 1 (طبعة 1995). يكفل الحد الأدنى للأجر والمعاش والضمان الاجتماعي بالأسباب المقررة قانونا"
+      }
+    ],
+    "StateAct": [
+      {
+        "status": "translation",
+        "text": "صك صادر عن جهاز الدولة"
+      }
+    ],
+    "StateAuthority": [
+      {
+        "status": "translation",
+        "text": "جهاز الدولة أو الموظف العام"
+      }
+    ],
+    "StateCompensationForUnlawfulHarm": [
+      {
+        "status": "translation",
+        "text": "المادة 15 الفقرة 6. تعوض الدولة الضرر الناشئ عن الأعمال غير المشروعة لأجهزتها"
+      }
+    ],
+    "StateGovernanceParticipationLiberty": [
+      {
+        "status": "translation",
+        "text": "المادة 35 الفقرة 1. الحق في المشاركة في إدارة شؤون الدولة"
+      }
+    ],
+    "StateGovernanceParticipationLiberty1995": [
+      {
+        "status": "translation",
+        "text": "المادة 33 الفقرة 1 (طبعة 1995). الحق في المشاركة في إدارة شؤون الدولة وفي مخاطبة أجهزة الدولة"
+      }
+    ],
+    "StateSymbolsRespectDuty": [
+      {
+        "status": "translation",
+        "text": "المادة 36 الفقرة 2. على كل إنسان أن يحترم رموز جمهورية كازاخستان الوطنية"
+      }
+    ],
+    "StateSymbolsRespectDuty1995": [
+      {
+        "status": "translation",
+        "text": "المادة 34 الفقرة 2 (طبعة 1995). على كل شخص أن يحترم رموز الجمهورية الوطنية"
+      }
+    ],
+    "StatutoryHousingProvisionDuty": [
+      {
+        "status": "translation",
+        "text": "المادة 28 الفقرة 2. يوفر المسكن لفئات المواطنين المحددة في القانون المحتاجين إليه وفق المعايير المقررة قانونا"
+      }
+    ],
+    "StatutoryMovementRestriction": [
+      {
+        "status": "translation",
+        "text": "المادة 24. لا يجوز تقييد التنقل أو المغادرة إلا بقانون"
+      }
+    ],
+    "StatutoryMovementRestriction1995": [
+      {
+        "status": "translation",
+        "text": "المادة 21 الفقرة 1 (طبعة 1995). لا يجوز تقييد التنقل إلا في الحالات المنصوص عليها في القانون"
+      }
+    ],
+    "Strike": [
+      {
+        "status": "translation",
+        "text": "إضراب"
+      }
+    ],
+    "Strike1995": [
+      {
+        "status": "translation",
+        "text": "المادة 24 الفقرة 3 (طبعة 1995). يعترف بالحق في منازعات العمل بما فيه الحق في الإضراب"
+      }
+    ],
+    "TaxPaymentDuty": [
+      {
+        "status": "translation",
+        "text": "المادة 38. أداء الضرائب والرسوم وسائر المدفوعات الإلزامية المقررة قانونا واجب على كل شخص"
+      }
+    ],
+    "TaxPaymentDuty1995": [
+      {
+        "status": "translation",
+        "text": "المادة 35 (طبعة 1995). أداء الضرائب والرسوم وسائر المدفوعات الإلزامية المقررة قانونا واجب على كل شخص"
+      }
+    ],
+    "TortureImmunity": [
+      {
+        "status": "translation",
+        "text": "المادة 20 الفقرة 2. لا يجوز إخضاع أحد للتعذيب أو العنف أو غير ذلك من ضروب المعاملة أو العقوبة القاسية أو الحاطة بكرامة الإنسان"
+      }
+    ],
+    "TortureImmunity1995": [
+      {
+        "status": "translation",
+        "text": "المادة 17 الفقرة 2 (طبعة 1995). لا يجوز إخضاع أحد للتعذيب والمعاملة القاسية"
+      }
+    ],
+    "TortureProhibition": [
+      {
+        "status": "translation",
+        "text": "المادة 20 الفقرة 2. لا يجوز إخضاع أحد للتعذيب أو العنف أو غير ذلك من ضروب المعاملة أو العقوبة القاسية أو الحاطة بكرامة الإنسان"
+      }
+    ],
+    "TreatyExtraditionPower": [
+      {
+        "status": "translation",
+        "text": "المادة 14 الفقرة 1. يجوز تسليم المواطن إذا قررت ذلك معاهدة دولية للجمهورية"
+      }
+    ],
+    "TreatyExtraditionPower1995": [
+      {
+        "status": "translation",
+        "text": "المادة 11 الفقرة 1 (طبعة 1995). يجوز التسليم إذا قررت ذلك معاهدة دولية للجمهورية"
+      }
+    ],
+    "UncompensatedExpropriationProhibition": [
+      {
+        "status": "translation",
+        "text": "المادة 29 الفقرة 3. لا يجوز نزع الملكية جبرا للحاجات العامة إلا بشرط تعويض معادل عنها"
+      }
+    ],
+    "UnemploymentProtectionDuty1995": [
+      {
+        "status": "translation",
+        "text": "المادة 24 الفقرة 2 (طبعة 1995). الحق في الحماية الاجتماعية من البطالة"
+      }
+    ],
+    "UnfairCompetitionProhibited": [
+      {
+        "status": "translation",
+        "text": "المادة 29 الفقرة 4. تحظر المنافسة غير المشروعة"
+      }
+    ],
+    "UnfairCompetitionProhibited1995": [
+      {
+        "status": "translation",
+        "text": "المادة 26 الفقرة 4 (طبعة 1995). تحظر المنافسة غير المشروعة"
+      }
+    ],
+    "UnobstructedReturnToKazakhstan": [
+      {
+        "status": "translation",
+        "text": "المادة 24 الفقرة 2. للمواطن أن يعود إلى كازاخستان دون عائق"
+      }
+    ],
+    "UnobstructedReturnToKazakhstan1995": [
+      {
+        "status": "translation",
+        "text": "المادة 21 الفقرة 2 (طبعة 1995). للمواطنين حق العودة إلى الجمهورية دون عائق"
+      }
+    ],
+    "UnpaidMedicalCareDuty": [
+      {
+        "status": "translation",
+        "text": "المادة 32 الفقرة 2. لمواطني جمهورية كازاخستان أن يتلقوا الرعاية الطبية المقررة قانونا دون أن يؤدوا مقابلها"
+      }
+    ],
+    "UseNativeLanguageAndCulture": [
+      {
+        "status": "translation",
+        "text": "المادة 22 الفقرة 2. الحق في استعمال اللغة الأم والثقافة الأم وحرية اختيار لغة التخاطب والتربية والتعليم والإبداع"
+      }
+    ],
+    "UseNativeLanguageAndCulture1995": [
+      {
+        "status": "translation",
+        "text": "المادة 19 الفقرة 2 (طبعة 1995). الحق في استعمال اللغة الأم والثقافة الأم وحرية اختيار لغة التخاطب"
+      }
+    ],
+    "VotingAndReferendumDisqualification/alt/1": [
+      {
+        "status": "translation",
+        "text": "المادة 35 الفقرة 3. قائمة حاصرة لأسباب عدم المشاركة في الانتخابات والاستفتاء"
+      }
+    ],
+    "VotingAndReferendumDisqualification/alt/2": [
+      {
+        "status": "translation",
+        "text": "المادة 35 الفقرة 3. قائمة حاصرة لأسباب عدم المشاركة في الانتخابات والاستفتاء"
+      }
+    ],
+    "VotingAndReferendumDisqualification1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "المادة 33 الفقرة 3 (طبعة 1995). لا يحق التصويت والمشاركة في الاستفتاء لمن حكمت المحكمة بعدم أهليته ولمن كان في أماكن الحرمان من الحرية"
+      }
+    ],
+    "VotingAndReferendumDisqualification1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "المادة 33 الفقرة 3 (طبعة 1995). لا يحق التصويت والمشاركة في الاستفتاء لمن حكمت المحكمة بعدم أهليته ولمن كان في أماكن الحرمان من الحرية"
+      }
+    ],
+    "abroad": [
+      {
+        "status": "translation",
+        "text": "الشخص موجود خارج حدود الجمهورية"
+      }
+    ],
+    "access_provided": [
+      {
+        "status": "translation",
+        "text": "كفل للشخص الاطلاع على الوثائق التي تمسه"
+      }
+    ],
+    "accused": [
+      {
+        "status": "translation",
+        "text": "الشخص متهم بارتكاب جريمة"
+      }
+    ],
+    "action_harms_interethnic_or_interconfessional_accord": [
+      {
+        "status": "translation",
+        "text": "الفعل يضر بالوئام بين القوميات وبين الأديان"
+      }
+    ],
+    "action_unconstitutional": [
+      {
+        "status": "translation",
+        "text": "الفعل غير جائز دستوريا"
+      }
+    ],
+    "adult_capable_child_of": [
+      {
+        "status": "translation",
+        "text": "ابن بالغ قادر على العمل لهذا الوالد"
+      }
+    ],
+    "affordable_state_housing_provided": [
+      {
+        "status": "translation",
+        "text": "وفر للشخص مسكن من صناديق الإسكان الحكومية بأجر ميسور"
+      }
+    ],
+    "annual_paid_leave_provided": [
+      {
+        "status": "translation",
+        "text": "منحت للشخص إجازة سنوية مدفوعة"
+      }
+    ],
+    "appeal_right_granted": [
+      {
+        "status": "translation",
+        "text": "كفل للمحتجز حق الطعن"
+      }
+    ],
+    "arrest_constitutionally_admissible": [
+      {
+        "status": "translation",
+        "text": "القبض أو الحبس الاحتياطي جائز دستوريا"
+      }
+    ],
+    "arrest_or_custody": [
+      {
+        "status": "translation",
+        "text": "طبق القبض أو الحبس الاحتياطي"
+      }
+    ],
+    "assembly_participation_action": [
+      {
+        "status": "translation",
+        "text": "الشخص مشارك في تجمع"
+      }
+    ],
+    "assembly_restriction": [
+      {
+        "status": "translation",
+        "text": "التقييد يتعلق بهذا التجمع"
+      }
+    ],
+    "assembly_restriction_constitutionally_valid": [
+      {
+        "status": "translation",
+        "text": "تقييد الحق في التجمعات السلمية جائز دستوريا"
+      }
+    ],
+    "assembly_restriction_established_by_law": [
+      {
+        "status": "translation",
+        "text": "تقييد الحق في التجمعات السلمية مقرر بقانون"
+      }
+    ],
+    "assembly_restriction_has_constitutional_goal": [
+      {
+        "status": "translation",
+        "text": "تقييد الحق في التجمعات السلمية يتوخى غاية دستورية"
+      }
+    ],
+    "association": [
+      {
+        "status": "translation",
+        "text": "الجمعية جمعية مواطنين"
+      }
+    ],
+    "association_membership_action": [
+      {
+        "status": "translation",
+        "text": "الشخص عضو في الجمعية"
+      }
+    ],
+    "censorship_attempt": [
+      {
+        "status": "translation",
+        "text": "جهاز الدولة يمارس الرقابة على المصنفات"
+      }
+    ],
+    "censorship_imposed": [
+      {
+        "status": "translation",
+        "text": "طبقت الرقابة على المصنفات"
+      }
+    ],
+    "child_care_provided": [
+      {
+        "status": "translation",
+        "text": "الوالدان يرعيان الطفل ويربيانه"
+      }
+    ],
+    "citizen": [
+      {
+        "status": "translation",
+        "text": "الشخص من مواطني جمهورية كازاخستان"
+      }
+    ],
+    "citizen_access_provided": [
+      {
+        "status": "translation",
+        "text": "كفل للمواطن الاطلاع على الوثائق التي تمسه"
+      }
+    ],
+    "citizenship_deprivation_decision": [
+      {
+        "status": "translation",
+        "text": "جهاز الدولة يصدر قرارا بإسقاط الجنسية"
+      }
+    ],
+    "citizenship_deprived": [
+      {
+        "status": "translation",
+        "text": "أسقطت عن الشخص جنسية الجمهورية"
+      }
+    ],
+    "civil_service_requirement": [
+      {
+        "status": "translation",
+        "text": "الشرط مطلوب فيمن يلتحق بالخدمة العامة"
+      }
+    ],
+    "civil_service_requirement_admissible": [
+      {
+        "status": "translation",
+        "text": "شرط الالتحاق بالخدمة العامة جائز دستوريا"
+      }
+    ],
+    "collective_labour_dispute": [
+      {
+        "status": "translation",
+        "text": "قامت منازعة عمل جماعية"
+      }
+    ],
+    "compulsory_education_applies": [
+      {
+        "status": "translation",
+        "text": "تلقي التعليم في هذه المرحلة إلزامي"
+      }
+    ],
+    "concealed_life_threatening_facts": [
+      {
+        "status": "translation",
+        "text": "الموظف العام أخفى وقائع وظروفا تهدد حياة الناس وصحتهم"
+      }
+    ],
+    "conscience_action": [
+      {
+        "status": "translation",
+        "text": "الشخص يمارس حرية الوجدان"
+      }
+    ],
+    "constitution_or_law_violated": [
+      {
+        "status": "translation",
+        "text": "خالف الشخص الدستور أو قوانين الجمهورية"
+      }
+    ],
+    "constitutional_health_guarantee": [
+      {
+        "status": "translation",
+        "text": "الدستور يكفل حماية الصحة"
+      }
+    ],
+    "constitutional_health_guarantee_1995": [
+      {
+        "status": "translation",
+        "text": "دستور سنة 1995 كان يكفل حماية الصحة"
+      }
+    ],
+    "constitutional_labor_guarantee": [
+      {
+        "status": "translation",
+        "text": "الدستور يكفل ظروف العمل والأجر والراحة"
+      }
+    ],
+    "constitutional_marriage_protection": [
+      {
+        "status": "translation",
+        "text": "الدستور يحمي الزواج والأسرة والأمومة والأبوة والطفولة"
+      }
+    ],
+    "constitutional_marriage_protection_1995": [
+      {
+        "status": "translation",
+        "text": "دستور سنة 1995 كان يحمي الزواج والأسرة والأمومة والأبوة والطفولة"
+      }
+    ],
+    "constitutional_personal_data_guarantee": [
+      {
+        "status": "translation",
+        "text": "الدستور يكفل حماية البيانات الشخصية"
+      }
+    ],
+    "constitutional_personal_data_guarantee_1995": [
+      {
+        "status": "translation",
+        "text": "دستور سنة 1995 كان يكفل حماية البيانات الشخصية"
+      }
+    ],
+    "continued_detention_attempt": [
+      {
+        "status": "translation",
+        "text": "جهاز الدولة يواصل حبس الشخص احتياطيا"
+      }
+    ],
+    "continued_detention_barred": [
+      {
+        "status": "translation",
+        "text": "الاحتجاز بعد المدة المقررة قانونا محظور: لا قرار من المحكمة"
+      }
+    ],
+    "corruption_offence_confirmed_by_court": [
+      {
+        "status": "translation",
+        "text": "ثبت للمحكمة ارتكاب الشخص مخالفة فساد"
+      }
+    ],
+    "counsel_access_provided": [
+      {
+        "status": "translation",
+        "text": "كفل للمحتجز الاتصال بمحام"
+      }
+    ],
+    "court_declared_incapable": [
+      {
+        "status": "translation",
+        "text": "حكمت المحكمة بعدم أهلية الشخص"
+      }
+    ],
+    "court_ordered_citizenship_deprivation": [
+      {
+        "status": "translation",
+        "text": "تم إسقاط الجنسية بقرار من المحكمة"
+      }
+    ],
+    "court_sanction_obtained": [
+      {
+        "status": "translation",
+        "text": "صدر إذن المحكمة"
+      }
+    ],
+    "death_penalty_attempt": [
+      {
+        "status": "translation",
+        "text": "جهاز الدولة يوقع عقوبة الإعدام"
+      }
+    ],
+    "death_penalty_imposed": [
+      {
+        "status": "translation",
+        "text": "وقعت عقوبة الإعدام"
+      }
+    ],
+    "defence_duty_unperformed": [
+      {
+        "status": "translation",
+        "text": "لم يؤد المواطن واجب الدفاع عن الجمهورية"
+      }
+    ],
+    "derogable_right_target": [
+      {
+        "status": "translation",
+        "text": "الحق محل التقييد يقبل التقييد"
+      }
+    ],
+    "detention_exceeds_72_hours": [
+      {
+        "status": "translation",
+        "text": "جاوزت مدة الاحتجاز اثنتين وسبعين ساعة"
+      }
+    ],
+    "detention_exceeds_statutory_period": [
+      {
+        "status": "translation",
+        "text": "جاوزت مدة الاحتجاز الحد المقرر قانونا"
+      }
+    ],
+    "detention_has_court_decision": [
+      {
+        "status": "translation",
+        "text": "يوجد قرار من المحكمة بمد الاحتجاز"
+      }
+    ],
+    "detention_of": [
+      {
+        "status": "translation",
+        "text": "الاحتجاز يتعلق بهذا الشخص"
+      }
+    ],
+    "detention_without_court_sanction": [
+      {
+        "status": "translation",
+        "text": "تم الاحتجاز بغير إذن المحكمة"
+      }
+    ],
+    "detention_without_court_sanction_limit_hours_1995": [
+      {
+        "status": "translation",
+        "text": "الحد الأقصى للاحتجاز بغير إذن المحكمة اثنتان وسبعون ساعة (طبعة 1995)"
+      }
+    ],
+    "different_regime_established_for_foreigners": [
+      {
+        "status": "translation",
+        "text": "قرر القانون أو المعاهدة للأجانب نظاما آخر"
+      }
+    ],
+    "dignity_infringed": [
+      {
+        "status": "translation",
+        "text": "مست كرامة الشخص"
+      }
+    ],
+    "dignity_infringement_attempt": [
+      {
+        "status": "translation",
+        "text": "جهاز الدولة يمس كرامة الشخص"
+      }
+    ],
+    "discriminated": [
+      {
+        "status": "translation",
+        "text": "وقع تمييز ضد الشخص"
+      }
+    ],
+    "discriminatory_treatment_attempt": [
+      {
+        "status": "translation",
+        "text": "جهاز الدولة يجري تفرقة في المعاملة"
+      }
+    ],
+    "document_affects": [
+      {
+        "status": "translation",
+        "text": "الوثيقة تمس حقوق الشخص ومصالحه"
+      }
+    ],
+    "education_institution": [
+      {
+        "status": "translation",
+        "text": "المنظمة مؤسسة تعليمية"
+      }
+    ],
+    "education_institution_constitutionally_compliant": [
+      {
+        "status": "translation",
+        "text": "نشاط المؤسسة التعليمية جائز دستوريا"
+      }
+    ],
+    "education_standards_met": [
+      {
+        "status": "translation",
+        "text": "المؤسسة التعليمية تراعي المعايير الملزمة للكافة"
+      }
+    ],
+    "electoral_candidate_ineligible": [
+      {
+        "status": "translation",
+        "text": "لا يحق للشخص الترشح"
+      }
+    ],
+    "employed_under_labour_contract": [
+      {
+        "status": "translation",
+        "text": "الشخص يعمل بعقد عمل"
+      }
+    ],
+    "enjoys_citizen_rights_and_duties": [
+      {
+        "status": "translation",
+        "text": "يتمتع الشخص بالحقوق ويتحمل الواجبات على قدم المساواة مع المواطنين"
+      }
+    ],
+    "entrepreneurial_action": [
+      {
+        "status": "translation",
+        "text": "الشخص يمارس نشاطا رياديا"
+      }
+    ],
+    "exit_action": [
+      {
+        "status": "translation",
+        "text": "الشخص يغادر حدود الجمهورية"
+      }
+    ],
+    "exit_kazakhstan_action_1995": [
+      {
+        "status": "translation",
+        "text": "الشخص يغادر حدود الجمهورية (طبعة 1995)"
+      }
+    ],
+    "extradited": [
+      {
+        "status": "translation",
+        "text": "سلم الشخص إلى دولة أجنبية"
+      }
+    ],
+    "extradition_decision": [
+      {
+        "status": "translation",
+        "text": "جهاز الدولة يصدر قرارا بتسليم الشخص"
+      }
+    ],
+    "final_conviction": [
+      {
+        "status": "translation",
+        "text": "صدر بحق الشخص حكم بالإدانة حائز قوة الأمر المقضي"
+      }
+    ],
+    "forced_labour_attempt": [
+      {
+        "status": "translation",
+        "text": "جهاز الدولة يستعمل العمل الجبري"
+      }
+    ],
+    "forced_labour_barred": [
+      {
+        "status": "translation",
+        "text": "الإكراه على العمل محظور: لا يوجد السبب الذي عدده الدستور"
+      }
+    ],
+    "forced_labour_constitutionally_admissible": [
+      {
+        "status": "translation",
+        "text": "العمل الجبري جائز دستوريا"
+      }
+    ],
+    "foreign_citizenship_is_termination_ground": [
+      {
+        "status": "translation",
+        "text": "حمل جنسية أخرى سبب لزوال جنسية الجمهورية"
+      }
+    ],
+    "foreign_citizenship_not_recognized": [
+      {
+        "status": "translation",
+        "text": "لا يعترف لمواطن الجمهورية بجنسية دولة أخرى"
+      }
+    ],
+    "foreigner_or_stateless": [
+      {
+        "status": "translation",
+        "text": "الشخص أجنبي أو عديم الجنسية"
+      }
+    ],
+    "free_higher_education_provided": [
+      {
+        "status": "translation",
+        "text": "كفل للشخص التعليم العالي المجاني في مؤسسة تعليمية حكومية"
+      }
+    ],
+    "free_legal_aid_provided": [
+      {
+        "status": "translation",
+        "text": "قدمت للشخص مساعدة قانونية مجانية"
+      }
+    ],
+    "free_secondary_education_eligible": [
+      {
+        "status": "translation",
+        "text": "للشخص الحق في التعليم الثانوي المجاني"
+      }
+    ],
+    "free_secondary_education_provided": [
+      {
+        "status": "translation",
+        "text": "كفل للشخص التعليم الثانوي المجاني"
+      }
+    ],
+    "guaranteed_free_medical_care_provided": [
+      {
+        "status": "translation",
+        "text": "وفر للشخص القدر المكفول من الرعاية الطبية المجانية"
+      }
+    ],
+    "heritage_harmed": [
+      {
+        "status": "translation",
+        "text": "ألحق الشخص ضررا بالتراث التاريخي والثقافي"
+      }
+    ],
+    "higher_education_competition_won": [
+      {
+        "status": "translation",
+        "text": "حصل الشخص على أساس المسابقة على حق التعليم العالي المجاني"
+      }
+    ],
+    "holds_foreign_citizenship": [
+      {
+        "status": "translation",
+        "text": "يحمل الشخص جنسية دولة أخرى"
+      }
+    ],
+    "home_unlawfully_entered": [
+      {
+        "status": "translation",
+        "text": "انتهكت حرمة المسكن"
+      }
+    ],
+    "identity_declaration_action": [
+      {
+        "status": "translation",
+        "text": "الشخص يحدد انتماءه القومي والحزبي والديني ويذكره"
+      }
+    ],
+    "imprisoned_by_court_sentence": [
+      {
+        "status": "translation",
+        "text": "الشخص محبوس في أماكن الحرمان من الحرية بحكم من المحكمة"
+      }
+    ],
+    "innocent": [
+      {
+        "status": "translation",
+        "text": "الشخص يعد بريئا"
+      }
+    ],
+    "judicial_act_or_emergency_basis": [
+      {
+        "status": "translation",
+        "text": "طبق العمل الجبري بحكم من المحكمة أو في ظل حالة الطوارئ أو الأحكام العرفية"
+      }
+    ],
+    "labour_action": [
+      {
+        "status": "translation",
+        "text": "الشخص يمارس حرية العمل"
+      }
+    ],
+    "labour_dispute": [
+      {
+        "status": "translation",
+        "text": "الشخص طرف في منازعة عمل فردية أو جماعية"
+      }
+    ],
+    "labour_dispute_action": [
+      {
+        "status": "translation",
+        "text": "الشخص يستعمل طرق تسوية منازعة العمل المقررة قانونا"
+      }
+    ],
+    "lawful_social_security_ground": [
+      {
+        "status": "translation",
+        "text": "تحقق سبب الضمان الاجتماعي المقرر قانونا"
+      }
+    ],
+    "lawful_tax_unpaid": [
+      {
+        "status": "translation",
+        "text": "لم يؤد الشخص الضرائب والرسوم وسائر المدفوعات الإلزامية المقررة قانونا"
+      }
+    ],
+    "lawfully_in_kazakhstan": [
+      {
+        "status": "translation",
+        "text": "الشخص موجود في كازاخستان بسبب مشروع"
+      }
+    ],
+    "legal_aid_case": [
+      {
+        "status": "translation",
+        "text": "حالة تقديم مساعدة قانونية لهذا الشخص"
+      }
+    ],
+    "legislature": [
+      {
+        "status": "translation",
+        "text": "الجهاز جهاز تشريعي"
+      }
+    ],
+    "movement_action": [
+      {
+        "status": "translation",
+        "text": "الشخص يمارس حرية التنقل"
+      }
+    ],
+    "movement_restriction": [
+      {
+        "status": "translation",
+        "text": "تقييد حرية التنقل يتعلق بهذا الشخص"
+      }
+    ],
+    "movement_restriction_constitutionally_valid": [
+      {
+        "status": "translation",
+        "text": "تقييد حرية التنقل جائز دستوريا"
+      }
+    ],
+    "movement_restriction_established_by_law": [
+      {
+        "status": "translation",
+        "text": "تقييد حرية التنقل مقرر بقانون"
+      }
+    ],
+    "native_language_and_culture_action": [
+      {
+        "status": "translation",
+        "text": "الشخص يستعمل لغته الأم وثقافته الأم"
+      }
+    ],
+    "nature_harmed": [
+      {
+        "status": "translation",
+        "text": "ألحق الشخص ضررا بالطبيعة"
+      }
+    ],
+    "official": [
+      {
+        "status": "translation",
+        "text": "الشخص موظف عام"
+      }
+    ],
+    "official_liability_arises": [
+      {
+        "status": "translation",
+        "text": "الموظف العام يتحمل المسؤولية وفقا للقانون"
+      }
+    ],
+    "parent_care_provided": [
+      {
+        "status": "translation",
+        "text": "الأبناء البالغون يرعون والديهم العاجزين عن العمل"
+      }
+    ],
+    "parent_incapacitated": [
+      {
+        "status": "translation",
+        "text": "الوالد عاجز عن العمل"
+      }
+    ],
+    "parent_of": [
+      {
+        "status": "translation",
+        "text": "الشخص والد لهذا الطفل"
+      }
+    ],
+    "peaceful_assembly": [
+      {
+        "status": "translation",
+        "text": "الشخص مشارك في تجمع سلمي"
+      }
+    ],
+    "person": [
+      {
+        "status": "translation",
+        "text": "الكيان شخص طبيعي"
+      }
+    ],
+    "political_party_or_union_membership": [
+      {
+        "status": "translation",
+        "text": "الشخص عضو في حزب سياسي أو نقابة مهنية"
+      }
+    ],
+    "primary_or_basic_secondary_education": [
+      {
+        "status": "translation",
+        "text": "الشخص يتلقى التعليم الابتدائي أو الثانوي الأساسي"
+      }
+    ],
+    "privacy_unlawfully_interfered": [
+      {
+        "status": "translation",
+        "text": "انتهكت حرمة الحياة الخاصة"
+      }
+    ],
+    "propaganda_constitutionally_prohibited": [
+      {
+        "status": "translation",
+        "text": "هذه الدعاية محظورة دستوريا"
+      }
+    ],
+    "propaganda_of_prohibited_content": [
+      {
+        "status": "translation",
+        "text": "الشخص يمارس الدعاية إلى تغيير النظام الدستوري بالقوة أو إلى الحرب أو إلى التفوق الاجتماعي أو العرقي أو القومي أو الديني أو الطبقي أو النسبي"
+      }
+    ],
+    "property_uncompensatedly_expropriated": [
+      {
+        "status": "translation",
+        "text": "نزع المال دون تعويض معادل"
+      }
+    ],
+    "proportionality_confirmed": [
+      {
+        "status": "translation",
+        "text": "ثبت تناسب التقييد"
+      }
+    ],
+    "proportionality_disproved": [
+      {
+        "status": "translation",
+        "text": "انتفى تناسب التقييد"
+      }
+    ],
+    "protection_and_patronage_provided": [
+      {
+        "status": "translation",
+        "text": "كفلت للمواطن خارج حدود الجمهورية حماية الدولة ورعايتها"
+      }
+    ],
+    "requirement_only_reflects_official_duties": [
+      {
+        "status": "translation",
+        "text": "الشرط مقتضى بطبيعة واجبات الوظيفة"
+      }
+    ],
+    "restricted_office_membership_incompatible": [
+      {
+        "status": "translation",
+        "text": "العضوية في حزب أو نقابة لا تجتمع مع الوظيفة المشغولة"
+      }
+    ],
+    "restricted_political_officeholder": [
+      {
+        "status": "translation",
+        "text": "الشخص يشغل وظيفة قيدت فيها العضوية في حزب أو نقابة"
+      }
+    ],
+    "restriction_affects": [
+      {
+        "status": "translation",
+        "text": "التقييد يمس هذا الشخص"
+      }
+    ],
+    "restriction_attempt": [
+      {
+        "status": "translation",
+        "text": "الجهاز التشريعي يفرض التقييد"
+      }
+    ],
+    "restriction_constitutionally_justified": [
+      {
+        "status": "translation",
+        "text": "التقييد مبرر دستوريا"
+      }
+    ],
+    "restriction_enacted_by_law": [
+      {
+        "status": "translation",
+        "text": "التقييد مقرر بقانون"
+      }
+    ],
+    "restriction_has_constitutional_goal": [
+      {
+        "status": "translation",
+        "text": "التقييد يتوخى غاية معترفا بها دستوريا"
+      }
+    ],
+    "restriction_has_legal_effect": [
+      {
+        "status": "translation",
+        "text": "للتقييد أثر قانوني"
+      }
+    ],
+    "restriction_on_political_grounds": [
+      {
+        "status": "translation",
+        "text": "فرض التقييد لأسباب سياسية"
+      }
+    ],
+    "restriction_prohibited": [
+      {
+        "status": "translation",
+        "text": "لا يجوز فرض مثل هذا التقييد"
+      }
+    ],
+    "restriction_targets": [
+      {
+        "status": "translation",
+        "text": "التقييد موجه إلى هذا الحق أو هذه الحرية"
+      }
+    ],
+    "restriction_targets_1995": [
+      {
+        "status": "translation",
+        "text": "التقييد موجه إلى هذا الحق أو هذه الحرية (طبعة 1995)"
+      }
+    ],
+    "return_block_attempt": [
+      {
+        "status": "translation",
+        "text": "جهاز الدولة يحول دون عودة المواطن"
+      }
+    ],
+    "return_blocked": [
+      {
+        "status": "translation",
+        "text": "عودة المواطن إلى الجمهورية مقيدة"
+      }
+    ],
+    "return_to_kazakhstan_action": [
+      {
+        "status": "translation",
+        "text": "المواطن يعود إلى الجمهورية"
+      }
+    ],
+    "rights_exercise_constitutionally_limited": [
+      {
+        "status": "translation",
+        "text": "ممارسة الحقوق والحريات مقيدة بحد دستوري"
+      }
+    ],
+    "rights_exercise_harms_others_or_constitutional_order": [
+      {
+        "status": "translation",
+        "text": "ممارسة الحقوق تخل بحقوق الغير أو تمس النظام الدستوري"
+      }
+    ],
+    "rights_exercise_harms_others_order_or_morality": [
+      {
+        "status": "translation",
+        "text": "ممارسة الحقوق تخل بحقوق الغير أو تمس النظام الدستوري أو أخلاق المجتمع"
+      }
+    ],
+    "russian_used_officially_in_state_bodies": [
+      {
+        "status": "translation",
+        "text": "تستعمل اللغة الروسية رسميا في مؤسسات الدولة وأجهزة الحكم المحلي على قدم المساواة مع الكازاخية"
+      }
+    ],
+    "secondary_education_stage": [
+      {
+        "status": "translation",
+        "text": "الشخص يتلقى التعليم الثانوي"
+      }
+    ],
+    "social_security_provided": [
+      {
+        "status": "translation",
+        "text": "وفر للشخص الضمان الاجتماعي"
+      }
+    ],
+    "state_authority": [
+      {
+        "status": "translation",
+        "text": "الكيان جهاز دولة أو موظف عام"
+      }
+    ],
+    "state_governance_participation_action": [
+      {
+        "status": "translation",
+        "text": "المواطن يشارك في إدارة شؤون الدولة"
+      }
+    ],
+    "state_harm_compensated": [
+      {
+        "status": "translation",
+        "text": "عوضت الدولة الضرر الواقع"
+      }
+    ],
+    "state_language_is_kazakh": [
+      {
+        "status": "translation",
+        "text": "اللغة الكازاخية هي لغة الدولة في جمهورية كازاخستان"
+      }
+    ],
+    "state_symbols_disrespected": [
+      {
+        "status": "translation",
+        "text": "الشخص لا يحترم رموز الدولة الوطنية"
+      }
+    ],
+    "statutory_free_legal_aid_ground": [
+      {
+        "status": "translation",
+        "text": "تحقق سبب المساعدة القانونية المجانية المقرر قانونا"
+      }
+    ],
+    "statutory_housing_need": [
+      {
+        "status": "translation",
+        "text": "عد الشخص بحكم القانون من المحتاجين إلى مسكن"
+      }
+    ],
+    "strike_action": [
+      {
+        "status": "translation",
+        "text": "الشخص مشارك في إضراب"
+      }
+    ],
+    "terrorism_or_grave_national_harm": [
+      {
+        "status": "translation",
+        "text": "ارتكب الشخص جريمة إرهابية أو ألحق ضررا جسيما آخر بالمصالح الحيوية للجمهورية"
+      }
+    ],
+    "terrorism_or_grave_vital_interest_harm": [
+      {
+        "status": "translation",
+        "text": "ارتكب الشخص جريمة إرهابية أو ألحق ضررا جسيما آخر بالمصالح الحيوية للجمهورية"
+      }
+    ],
+    "torture_attempt": [
+      {
+        "status": "translation",
+        "text": "جهاز الدولة يستعمل التعذيب أو المعاملة القاسية"
+      }
+    ],
+    "tortured": [
+      {
+        "status": "translation",
+        "text": "أخضع الشخص للتعذيب أو لمعاملة قاسية أو لا إنسانية أو حاطة بالكرامة"
+      }
+    ],
+    "treaty_allows_extradition": [
+      {
+        "status": "translation",
+        "text": "التسليم جائز بموجب معاهدة دولية للجمهورية"
+      }
+    ],
+    "unarmed_peaceful_assembly": [
+      {
+        "status": "translation",
+        "text": "التجمع سلمي ويجري بغير سلاح"
+      }
+    ],
+    "uncompensated_expropriation_attempt": [
+      {
+        "status": "translation",
+        "text": "جهاز الدولة ينزع المال دون تعويض معادل"
+      }
+    ],
+    "unemployment_social_protection_ground": [
+      {
+        "status": "translation",
+        "text": "تحقق سبب الحماية الاجتماعية من البطالة"
+      }
+    ],
+    "unemployment_social_protection_provided": [
+      {
+        "status": "translation",
+        "text": "وفرت للشخص حماية اجتماعية من البطالة"
+      }
+    ],
+    "unexpunged_conviction": [
+      {
+        "status": "translation",
+        "text": "للشخص سابقة جنائية لم ترد ولم يمح أثرها"
+      }
+    ],
+    "unfair_competition": [
+      {
+        "status": "translation",
+        "text": "النشاط موجه إلى منافسة غير مشروعة"
+      }
+    ],
+    "unfair_competition_prohibited": [
+      {
+        "status": "translation",
+        "text": "المنافسة غير المشروعة محظورة"
+      }
+    ],
+    "unlawful_continued_detention": [
+      {
+        "status": "translation",
+        "text": "مواصلة الحبس الاحتياطي غير مشروعة"
+      }
+    ],
+    "unlawful_home_entry_attempt": [
+      {
+        "status": "translation",
+        "text": "جهاز الدولة يدخل مسكن الشخص"
+      }
+    ],
+    "unlawful_privacy_interference_attempt": [
+      {
+        "status": "translation",
+        "text": "جهاز الدولة يتدخل في الحياة الخاصة للشخص"
+      }
+    ],
+    "unlawful_state_action_harmed": [
+      {
+        "status": "translation",
+        "text": "لحق الشخص ضرر من أعمال غير مشروعة لأجهزة الدولة"
+      }
+    ],
+    "voting_or_referendum_ineligible": [
+      {
+        "status": "translation",
+        "text": "لا يحق للشخص التصويت والمشاركة في الاستفتاء"
+      }
+    ]
+  },
+  "language": "ar",
+  "package": "kz.constitution.rights"
+}

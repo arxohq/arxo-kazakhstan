@@ -1,0 +1,2318 @@
+{
+  "$comment": "طبقة عرض عربية لحزم دستور جمهورية كازاخستان (DECISION-0070). الملف خارج CLIR ولا يقرأه المصرف، وإنما تقرأه طبقة العرض وحدها (verbalize --labels وخادم MCP وسطح المكتب). مصدر الترجمة هو تسمية العقدة الروسية ru-KZ في CLIR، ومصطلحاتها موافقة لحزمة law.verb.ar؛ والحالة translation أي ترجمة عمل غير رسمية لا نص رسمي. المفتاح هو الاسم المحلي للعقدة. النص غير مشكول.",
+  "formatVersion": "law.i18n/0.1",
+  "labels": {
+    "Advocate": [
+      {
+        "status": "translation",
+        "text": "محام أو جهة أخرى تقدم المساعدة القانونية"
+      }
+    ],
+    "Akim": [
+      {
+        "status": "translation",
+        "text": "الأكيم — رئيس الجهاز التنفيذي المحلي"
+      }
+    ],
+    "AkimCandidateAtLeastTwoAndMajority": [
+      {
+        "status": "translation",
+        "text": "المادة 89. يعين الأكيم عند عرض مرشحين اثنين على الأقل على المسليخات وحصولهما على موافقة أغلبية النواب المشاركين في الاقتراع"
+      }
+    ],
+    "AkimNoConfidence": [
+      {
+        "status": "translation",
+        "text": "المادة 89. بمبادرة خمس النواب على الأقل يجوز للمسليخات بأغلبية الأصوات أن يحجب الثقة عن الأكيم"
+      }
+    ],
+    "AkimNoConfidenceExpressed1995": [
+      {
+        "status": "translation",
+        "text": "المادة 87 الفقرة 5 (طبعة 1995). للمسليخات بأغلبية أصوات مجموع النواب أن يحجب الثقة عن الأكيم"
+      }
+    ],
+    "AkimNoConfidenceInitiativeValid1995": [
+      {
+        "status": "translation",
+        "text": "المادة 87 الفقرة 5 (طبعة 1995). تطرح مسألة حجب الثقة عن الأكيم بمبادرة خمس مجموع نواب المسليخات على الأقل"
+      }
+    ],
+    "Candidate": [
+      {
+        "status": "translation",
+        "text": "مترشح لمنصب قضائي أو لمنصب آخر مسمى"
+      }
+    ],
+    "Case": [
+      {
+        "status": "translation",
+        "text": "دعوى قضائية"
+      }
+    ],
+    "ConstitutionConformingInterpretationRequired": [
+      {
+        "status": "translation",
+        "text": "المادة 75 الفقرة 2. الصك الذي يعد دستوريا بالتفسير الذي قررته المحكمة الدستورية يطبق بذلك التفسير"
+      }
+    ],
+    "ConstitutionConformingInterpretationRequired1995": [
+      {
+        "status": "translation",
+        "text": "المادة 74 الفقرتان 2 و3 (طبعة 1995). التفسير الذي عدت به القاعدة دستورية ملزم للكافة من يوم صدور القرار"
+      }
+    ],
+    "ConstitutionalCourt": [
+      {
+        "status": "translation",
+        "text": "المحكمة الدستورية لجمهورية كازاخستان"
+      }
+    ],
+    "ConstitutionalCourtReferralRequired1995": [
+      {
+        "status": "translation",
+        "text": "المادة 78 (طبعة 1995). على المحكمة أن تخاطب المحكمة الدستورية بطلب الحكم بعدم دستورية الصك"
+      }
+    ],
+    "ConstitutionalJudge": [
+      {
+        "status": "translation",
+        "text": "قاضي المحكمة الدستورية"
+      }
+    ],
+    "ConstitutionalJudgeImmunity1995": [
+      {
+        "status": "translation",
+        "text": "المادة 71 الفقرة 5 (طبعة 1995). لا يجوز القبض على قضاة المحكمة الدستورية ولا مساءلتهم جنائيا بغير موافقة البرلمان عدا حالتي التلبس والجرائم الجسيمة"
+      }
+    ],
+    "ConstitutionalJudgeIncompatible1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "المادة 71 الفقرة 4 (طبعة 1995). منصب قاضي المحكمة الدستورية لا يجتمع مع النيابة البرلمانية ولا مع منصب آخر بأجر ولا مع النشاط الريادي"
+      }
+    ],
+    "ConstitutionalJudgeIncompatible1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "المادة 71 الفقرة 4 (طبعة 1995). منصب قاضي المحكمة الدستورية لا يجتمع مع النيابة البرلمانية ولا مع منصب آخر بأجر ولا مع النشاط الريادي"
+      }
+    ],
+    "ConstitutionalJudgeIncompatible1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "المادة 71 الفقرة 4 (طبعة 1995). منصب قاضي المحكمة الدستورية لا يجتمع مع النيابة البرلمانية ولا مع منصب آخر بأجر ولا مع النشاط الريادي"
+      }
+    ],
+    "ConstitutionalJudgeInviolability1995": [
+      {
+        "status": "translation",
+        "text": "المادة 71 الفقرة 5 (طبعة 1995). لا يجوز القبض على قضاة المحكمة الدستورية ولا مساءلتهم جنائيا بغير موافقة البرلمان عدا حالتي التلبس والجرائم الجسيمة"
+      }
+    ],
+    "ConstitutionalJudgeOneTerm": [
+      {
+        "status": "translation",
+        "text": "المادة 72 الفقرة 2. لا يجوز تعيين الشخص الواحد قاضيا في المحكمة الدستورية أكثر من مرة واحدة"
+      }
+    ],
+    "ConstitutionalJudgeReappointmentProhibited1995": [
+      {
+        "status": "translation",
+        "text": "المادة 71 الفقرة 1 (طبعة 1995). لا يجوز تعيين الشخص الواحد قاضيا في المحكمة الدستورية أكثر من مرة واحدة"
+      }
+    ],
+    "ConstitutionalJudgeTermExpiry": [
+      {
+        "status": "translation",
+        "text": "المادة 72. مدة صلاحيات قاضي المحكمة الدستورية ثماني سنوات من يوم التعيين"
+      }
+    ],
+    "ConstitutionalPetitionInstitutionalApplicants/alt/1": [
+      {
+        "status": "translation",
+        "text": "المادة 73 الفقرة 1. تنظر المحكمة الدستورية في مخاطبات الرئيس ورئيس القورولتاي وخمس نواب القورولتاي على الأقل ورئيس الوزراء والمدعي العام"
+      }
+    ],
+    "ConstitutionalPetitionInstitutionalApplicants/alt/2": [
+      {
+        "status": "translation",
+        "text": "المادة 73 الفقرة 1. تنظر المحكمة الدستورية في مخاطبات الرئيس ورئيس القورولتاي وخمس نواب القورولتاي على الأقل ورئيس الوزراء والمدعي العام"
+      }
+    ],
+    "ConstitutionalPetitionInstitutionalApplicants/alt/3": [
+      {
+        "status": "translation",
+        "text": "المادة 73 الفقرة 1. تنظر المحكمة الدستورية في مخاطبات الرئيس ورئيس القورولتاي وخمس نواب القورولتاي على الأقل ورئيس الوزراء والمدعي العام"
+      }
+    ],
+    "ConstitutionalPetitionInstitutionalApplicants/alt/4": [
+      {
+        "status": "translation",
+        "text": "المادة 73 الفقرة 1. تنظر المحكمة الدستورية في مخاطبات الرئيس ورئيس القورولتاي وخمس نواب القورولتاي على الأقل ورئيس الوزراء والمدعي العام"
+      }
+    ],
+    "ConstitutionalPetitionRightsApplicants/alt/1": [
+      {
+        "status": "translation",
+        "text": "المادة 73 الفقرتان 2–3. تنظر المحكمة الدستورية في مخاطبات المواطنين ومفوض حقوق الإنسان والمحاكم في مسائل الحقوق والحريات الدستورية"
+      }
+    ],
+    "ConstitutionalPetitionRightsApplicants/alt/2": [
+      {
+        "status": "translation",
+        "text": "المادة 73 الفقرتان 2–3. تنظر المحكمة الدستورية في مخاطبات المواطنين ومفوض حقوق الإنسان والمحاكم في مسائل الحقوق والحريات الدستورية"
+      }
+    ],
+    "ConstitutionalPetitionRightsApplicants/alt/3": [
+      {
+        "status": "translation",
+        "text": "المادة 73 الفقرتان 2–3. تنظر المحكمة الدستورية في مخاطبات المواطنين ومفوض حقوق الإنسان والمحاكم في مسائل الحقوق والحريات الدستورية"
+      }
+    ],
+    "ConstitutionalPetitionRightsApplicants/alt/4": [
+      {
+        "status": "translation",
+        "text": "المادة 73 الفقرتان 2–3. تنظر المحكمة الدستورية في مخاطبات المواطنين ومفوض حقوق الإنسان والمحاكم في مسائل الحقوق والحريات الدستورية"
+      }
+    ],
+    "ConstitutionalReviewCompetence": [
+      {
+        "status": "translation",
+        "text": "المادة 72 الفقرة 1. المحكمة الدستورية جهاز دولة مستقل يمارس الرقابة الدستورية ويكفل سمو الدستور في جميع أنحاء البلاد"
+      }
+    ],
+    "ConvictionOnConfessionAloneImpermissible1995": [
+      {
+        "status": "translation",
+        "text": "المادة 77 الفقرة 3 البند 9 (طبعة 1995). لا يجوز إدانة أحد استنادا إلى اعترافه وحده"
+      }
+    ],
+    "Court": [
+      {
+        "status": "translation",
+        "text": "محكمة"
+      }
+    ],
+    "CourtRefersRightsInfringingActToConstitutionalCourt": [
+      {
+        "status": "translation",
+        "text": "المادة 79. إذا رأت المحكمة أن الصك الواجب التطبيق يمس الحقوق الدستورية وجب عليها أن تخاطب المحكمة الدستورية"
+      }
+    ],
+    "CourtRulingBinding1995": [
+      {
+        "status": "translation",
+        "text": "المادة 76 الفقرة 3 (طبعة 1995). لقرارات المحاكم وأحكامها وسائر ما تصدره قوة ملزمة في جميع أنحاء إقليم الجمهورية"
+      }
+    ],
+    "CourtSuspendsRightsInfringingActProceeding": [
+      {
+        "status": "translation",
+        "text": "المادة 79. إذا رأت المحكمة أن الصك الواجب التطبيق يمس الحقوق الدستورية وجب عليها وقف السير في الدعوى"
+      }
+    ],
+    "CriminalAnalogyProhibited1995": [
+      {
+        "status": "translation",
+        "text": "المادة 77 الفقرة 3 البند 10 (طبعة 1995). لا يجوز تطبيق القانون الجنائي بطريق القياس"
+      }
+    ],
+    "DeputyElectionDisputeSuspendsRegistration": [
+      {
+        "status": "translation",
+        "text": "المادة 74 الفقرة 1. عند مخاطبة المحكمة الدستورية في منازعة انتخابية يوقف تسجيل نواب القورولتاي المنتخبين"
+      }
+    ],
+    "DetermineJudgeRequirements": [
+      {
+        "status": "translation",
+        "text": "المادة 80 الفقرة 3. يحدد القانون الدستوري الشروط المطلوبة في قضاة محاكم جمهورية كازاخستان"
+      }
+    ],
+    "DoubtResolvedForAccused1995": [
+      {
+        "status": "translation",
+        "text": "المادة 77 الفقرة 3 البند 8 (طبعة 1995). يفسر كل شك في إدانة الشخص لمصلحة المتهم"
+      }
+    ],
+    "EligibleMaslikhatDeputy1995": [
+      {
+        "status": "translation",
+        "text": "المادة 86 الفقرة 3 (طبعة 1995). يجوز أن ينتخب نائبا في المسليخات المواطن البالغ عشرين سنة؛ ولا يكون المواطن نائبا إلا في مسليخات واحد"
+      }
+    ],
+    "EstablishJudicialCollegia": [
+      {
+        "status": "translation",
+        "text": "المادة 83 الفقرة 3. يجوز أن تنشأ في المحاكم دوائر قضائية وفقا للقانون الدستوري"
+      }
+    ],
+    "HearingRightViolated1995": [
+      {
+        "status": "translation",
+        "text": "المادة 77 الفقرة 3 البند 4 (طبعة 1995). لكل شخص أمام المحكمة الحق في أن يسمع"
+      }
+    ],
+    "InaugurationSuspendedOnElectionPetition1995": [
+      {
+        "status": "translation",
+        "text": "المادة 73 الفقرة 1 (طبعة 1995). عند المخاطبة في مسألة صحة الانتخابات يوقف تولي الرئيس منصبه أو تسجيل النواب أو إعلان نتائج الاستفتاء"
+      }
+    ],
+    "InterferenceWithJusticeLiability1995": [
+      {
+        "status": "translation",
+        "text": "المادة 77 الفقرة 2 (طبعة 1995). لا يجوز التدخل في نشاط المحكمة في إقامة العدل ويرتب ذلك مسؤولية بحكم القانون"
+      }
+    ],
+    "Judge": [
+      {
+        "status": "translation",
+        "text": "قاض"
+      }
+    ],
+    "JudgeDetentionConstitutionalException": [
+      {
+        "status": "translation",
+        "text": "المادة 80 الفقرة 2. يجوز احتجاز القاضي في حال ضبطه متلبسا أو ارتكابه جرائم جسيمة وجسيمة بوجه خاص أو عند صدور الموافقة المطلوبة"
+      }
+    ],
+    "JudgeDetentionGroundConsent": [
+      {
+        "status": "translation",
+        "text": "المادة 80 الفقرة 2. الموافقة المطلوبة سبب يرفع الحماية عن القاضي"
+      }
+    ],
+    "JudgeDetentionGroundGraveOffence": [
+      {
+        "status": "translation",
+        "text": "المادة 80 الفقرة 2. ارتكاب جريمة جسيمة أو جسيمة بوجه خاص سبب يرفع الحماية عن القاضي"
+      }
+    ],
+    "JudgeDetentionGroundInTheAct": [
+      {
+        "status": "translation",
+        "text": "المادة 80 الفقرة 2. الضبط في حال التلبس سبب يرفع الحماية عن القاضي"
+      }
+    ],
+    "JudgeDetentionImmunity": [
+      {
+        "status": "translation",
+        "text": "المادة 80 الفقرة 2. لا يجوز احتجاز القاضي بغير الموافقة المطلوبة عدا الضبط في حال التلبس أو ارتكاب جرائم جسيمة وجسيمة بوجه خاص"
+      }
+    ],
+    "JudgeImmunity1995": [
+      {
+        "status": "translation",
+        "text": "المادة 79 الفقرة 2 (طبعة 1995). لا يجوز القبض على القاضي ولا مساءلته جنائيا بغير موافقة الرئيس بناء على رأي المجلس الأعلى للقضاء أو بغير موافقة مجلس الشيوخ"
+      }
+    ],
+    "JudgeInviolabilityApplies": [
+      {
+        "status": "translation",
+        "text": "المادة 80 الفقرة 2. تظل حماية القاضي من الاحتجاز قائمة ما لم يتحقق سبب من الأسباب الثلاثة المسماة"
+      }
+    ],
+    "JudgeInviolabilityApplies/unless/0": [
+      {
+        "status": "translation",
+        "text": "المادة 80 الفقرة 2. تظل حماية القاضي من الاحتجاز قائمة ما لم يتحقق سبب من الأسباب الثلاثة المسماة"
+      }
+    ],
+    "JudgeOfficeIncompatible1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "المادة 79 الفقرة 4 (طبعة 1995). منصب القاضي لا يجتمع مع النيابة البرلمانية ولا مع منصب آخر بأجر ولا مع النشاط الريادي"
+      }
+    ],
+    "JudgeOfficeIncompatible1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "المادة 79 الفقرة 4 (طبعة 1995). منصب القاضي لا يجتمع مع النيابة البرلمانية ولا مع منصب آخر بأجر ولا مع النشاط الريادي"
+      }
+    ],
+    "JudgeOfficeIncompatible1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "المادة 79 الفقرة 4 (طبعة 1995). منصب القاضي لا يجتمع مع النيابة البرلمانية ولا مع منصب آخر بأجر ولا مع النشاط الريادي"
+      }
+    ],
+    "JudgePersonalImmunity": [
+      {
+        "status": "translation",
+        "text": "المادة 80 الفقرة 2. لا يجوز احتجاز القاضي بغير الموافقة المطلوبة عدا الضبط في حال التلبس أو ارتكاب جرائم جسيمة وجسيمة بوجه خاص"
+      }
+    ],
+    "JudgeRequirementsDelegated": [
+      {
+        "status": "translation",
+        "text": "المادة 80 الفقرة 3. يحدد القانون الدستوري الشروط المطلوبة في قضاة محاكم جمهورية كازاخستان"
+      }
+    ],
+    "JudicialCollegiaDelegated": [
+      {
+        "status": "translation",
+        "text": "المادة 83 الفقرة 3. يجوز أن تنشأ في المحاكم دوائر قضائية وفقا للقانون الدستوري"
+      }
+    ],
+    "JudicialDecisionBindingNationwide": [
+      {
+        "status": "translation",
+        "text": "المادة 77 الفقرة 3. قرارات المحاكم وأحكامها وسائر ما تصدره ملزمة في جميع أنحاء إقليم كازاخستان"
+      }
+    ],
+    "JudicialIndependence": [
+      {
+        "status": "translation",
+        "text": "المادة 78 الفقرة 1. القاضي مستقل في إقامة العدل ولا يخضع إلا للدستور والقانون"
+      }
+    ],
+    "JudicialInterferenceUnlawful": [
+      {
+        "status": "translation",
+        "text": "المادة 78 الفقرة 2. لا يجوز أي تدخل في نشاط المحكمة في إقامة العدل"
+      }
+    ],
+    "JudicialInviolability1995": [
+      {
+        "status": "translation",
+        "text": "المادة 79 الفقرة 2 (طبعة 1995). لا يجوز القبض على القاضي ولا مساءلته جنائيا بغير موافقة الرئيس بناء على رأي المجلس الأعلى للقضاء أو بغير موافقة مجلس الشيوخ"
+      }
+    ],
+    "JudicialPowerCoversCase1995": [
+      {
+        "status": "translation",
+        "text": "المادة 76 الفقرة 2 (طبعة 1995). تشمل السلطة القضائية جميع الدعاوى والمنازعات الناشئة على أساس الدستور والقوانين والمعاهدات الدولية"
+      }
+    ],
+    "JudicialPowerCoversLegalApplicationCases": [
+      {
+        "status": "translation",
+        "text": "المادة 77 الفقرة 2. تشمل السلطة القضائية الدعاوى والمنازعات الناشئة عن تطبيق قواعد القانون"
+      }
+    ],
+    "JurisdictionChangeProhibited1995": [
+      {
+        "status": "translation",
+        "text": "المادة 77 الفقرة 3 البند 3 (طبعة 1995). لا يجوز تغيير الاختصاص القضائي المقرر لأحد بالقانون بغير رضاه"
+      }
+    ],
+    "JusticeByCourtOnly1995": [
+      {
+        "status": "translation",
+        "text": "المادة 75 الفقرة 1 (طبعة 1995). لا يقيم العدل في جمهورية كازاخستان إلا القضاء"
+      }
+    ],
+    "JusticeOnlyByCourt": [
+      {
+        "status": "translation",
+        "text": "المادة 76 الفقرة 1. لا يقيم العدل في جمهورية كازاخستان إلا القضاء"
+      }
+    ],
+    "LegalAct": [
+      {
+        "status": "translation",
+        "text": "صك قانوني معياري أو حكم قضائي"
+      }
+    ],
+    "LegalAid": [
+      {
+        "status": "translation",
+        "text": "حالة من حالات تقديم المساعدة القانونية"
+      }
+    ],
+    "LegalAidByAuthorizedProvider": [
+      {
+        "status": "translation",
+        "text": "المادة 86. يقدم المساعدة القانونية المحامون وغيرهم وفقا للقانون"
+      }
+    ],
+    "LocalCourtAppointment1995": [
+      {
+        "status": "translation",
+        "text": "المادة 82 الفقرة 2 (طبعة 1995). يعين الرئيس رؤساء المحاكم المحلية وغيرها وقضاتها بناء على توصية المجلس الأعلى للقضاء"
+      }
+    ],
+    "LocalDecision": [
+      {
+        "status": "translation",
+        "text": "قرار المسليخات أو جهاز الحكم المحلي"
+      }
+    ],
+    "LocalExecutiveBodyResponsibility": [
+      {
+        "status": "translation",
+        "text": "المادة 87. الجهاز التنفيذي المحلي مسؤول عن حال الأمور في إقليمه"
+      }
+    ],
+    "LocalFinancialDecisionWithAkimOpinion": [
+      {
+        "status": "translation",
+        "text": "المادة 90. لا يتخذ القرار الذي يقلل الإيرادات المحلية أو يزيد النفقات إلا برأي إيجابي من الأكيم"
+      }
+    ],
+    "LocalRepresentativeBodyResponsibility": [
+      {
+        "status": "translation",
+        "text": "المادة 87. الجهاز التمثيلي المحلي مسؤول عن حال الأمور في إقليمه"
+      }
+    ],
+    "LocalSelfGovernmentAutonomy": [
+      {
+        "status": "translation",
+        "text": "المادة 91. يكفل استقلال أجهزة الحكم المحلي في تدبير المسائل ذات الشأن المحلي"
+      }
+    ],
+    "Maslikhat": [
+      {
+        "status": "translation",
+        "text": "المسليخات — الجهاز التمثيلي المحلي"
+      }
+    ],
+    "MaslikhatCandidateEligibility": [
+      {
+        "status": "translation",
+        "text": "المادة 88. يجوز أن يكون نائبا في المسليخات مواطن الجمهورية البالغ عشرين سنة الذي ليس نائبا في مسليخات آخر"
+      }
+    ],
+    "MaslikhatDeputy": [
+      {
+        "status": "translation",
+        "text": "نائب في المسليخات"
+      }
+    ],
+    "MaslikhatFiscalRulingRequiresAkimOpinion1995": [
+      {
+        "status": "translation",
+        "text": "المادة 88 الفقرة 2 (طبعة 1995). لا تقدم مشروعات قرارات المسليخات التي تقلل الإيرادات المحلية أو تزيد النفقات إلا برأي إيجابي من الأكيم"
+      }
+    ],
+    "MaslikhatPowersTerminated1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "المادة 86 الفقرة 5 (طبعة 1995). ينهي الرئيس صلاحيات المسليخات مبكرا بعد مشاورات مع رئيس الوزراء ورئيسي مجلسي البرلمان أو عند حله نفسه"
+      }
+    ],
+    "MaslikhatPowersTerminated1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "المادة 86 الفقرة 5 (طبعة 1995). ينهي الرئيس صلاحيات المسليخات مبكرا بعد مشاورات مع رئيس الوزراء ورئيسي مجلسي البرلمان أو عند حله نفسه"
+      }
+    ],
+    "MaslikhatRulingAnnullable1995": [
+      {
+        "status": "translation",
+        "text": "المادة 88 الفقرة 3 (طبعة 1995). يجوز إلغاء قرارات المسليخات المخالفة للدستور والتشريعات بطريق القضاء"
+      }
+    ],
+    "MaslikhatTermExpiry": [
+      {
+        "status": "translation",
+        "text": "المادة 88 الفقرة 2. تنتخب المسليخات لمدة خمس سنوات"
+      }
+    ],
+    "Mazhilis1995": [
+      {
+        "status": "translation",
+        "text": "مجلس النواب في البرلمان (طبعة 1995)"
+      }
+    ],
+    "NonCourtJusticeProhibition": [
+      {
+        "status": "translation",
+        "text": "المادة 76 الفقرة 1. لا يقيم العدل في جمهورية كازاخستان إلا القضاء"
+      }
+    ],
+    "Ombudsman": [
+      {
+        "status": "translation",
+        "text": "مفوض حقوق الإنسان"
+      }
+    ],
+    "OmbudsmanAppointmentByPresident": [
+      {
+        "status": "translation",
+        "text": "المادة 85 الفقرة 2. يعين الرئيس مفوض حقوق الإنسان"
+      }
+    ],
+    "OmbudsmanCoerciveMeasureException": [
+      {
+        "status": "translation",
+        "text": "المادة 85 الفقرة 4. الاستثناءات الدستورية من حصانة المفوض"
+      }
+    ],
+    "OmbudsmanCoerciveMeasureImmunity": [
+      {
+        "status": "translation",
+        "text": "المادة 85 الفقرة 4. حصانة المفوض من تدابير الجبر بغير موافقة الرئيس"
+      }
+    ],
+    "OmbudsmanCoerciveMeasureImmunityRule": [
+      {
+        "status": "translation",
+        "text": "المادة 85 الفقرة 4. حصانة المفوض من تدابير الجبر بغير موافقة الرئيس"
+      }
+    ],
+    "OmbudsmanImmunity1995": [
+      {
+        "status": "translation",
+        "text": "المادة 83-1 الفقرة 3 (طبعة 1995). لا يجوز القبض على مفوض حقوق الإنسان ولا مساءلته جنائيا بغير موافقة مجلس الشيوخ"
+      }
+    ],
+    "OmbudsmanIndependent": [
+      {
+        "status": "translation",
+        "text": "المادة 85 الفقرة 3. المفوض مستقل وغير مسؤول أمام أحد"
+      }
+    ],
+    "OmbudsmanInviolability1995": [
+      {
+        "status": "translation",
+        "text": "المادة 83-1 الفقرة 3 (طبعة 1995). لا يجوز القبض على مفوض حقوق الإنسان ولا مساءلته جنائيا بغير موافقة مجلس الشيوخ"
+      }
+    ],
+    "OmbudsmanInviolabilityApplies": [
+      {
+        "status": "translation",
+        "text": "المادة 85 الفقرة 4. تظل حماية المفوض من تدابير الجبر قائمة ما لم يتحقق سبب من الأسباب الثلاثة المسماة"
+      }
+    ],
+    "OmbudsmanInviolabilityApplies/unless/0": [
+      {
+        "status": "translation",
+        "text": "المادة 85 الفقرة 4. تظل حماية المفوض من تدابير الجبر قائمة ما لم يتحقق سبب من الأسباب الثلاثة المسماة"
+      }
+    ],
+    "OmbudsmanMeasureGroundConsent": [
+      {
+        "status": "translation",
+        "text": "المادة 85 الفقرة 4. موافقة الرئيس سبب يرفع الحماية عن المفوض"
+      }
+    ],
+    "OmbudsmanMeasureGroundGraveOffence": [
+      {
+        "status": "translation",
+        "text": "المادة 85 الفقرة 4. ارتكاب جريمة جسيمة أو جسيمة بوجه خاص سبب يرفع الحماية عن المفوض"
+      }
+    ],
+    "OmbudsmanMeasureGroundInTheAct": [
+      {
+        "status": "translation",
+        "text": "المادة 85 الفقرة 4. الضبط في حال التلبس سبب يرفع الحماية عن المفوض"
+      }
+    ],
+    "OmbudsmanRightsAssistance": [
+      {
+        "status": "translation",
+        "text": "المادة 85 الفقرة 1. الإسهام في رد الحقوق والحريات والنهوض بها"
+      }
+    ],
+    "Parliament": [
+      {
+        "status": "translation",
+        "text": "برلمان جمهورية كازاخستان"
+      }
+    ],
+    "Parliament1995": [
+      {
+        "status": "translation",
+        "text": "برلمان جمهورية كازاخستان (طبعة 1995)"
+      }
+    ],
+    "Person": [
+      {
+        "status": "translation",
+        "text": "شخص طبيعي"
+      }
+    ],
+    "Petition": [
+      {
+        "status": "translation",
+        "text": "مخاطبة المحكمة الدستورية"
+      }
+    ],
+    "PetitionAdmissible1995/alt/1": [
+      {
+        "status": "translation",
+        "text": "المادة 72 (طبعة 1995). تنظر المحكمة الدستورية في مخاطبات الرئيس ورئيس مجلس الشيوخ ورئيس مجلس النواب وخمس نواب البرلمان على الأقل ورئيس الوزراء والمواطنين والمدعي العام ومفوض حقوق الإنسان"
+      }
+    ],
+    "PetitionAdmissible1995/alt/2": [
+      {
+        "status": "translation",
+        "text": "المادة 72 (طبعة 1995). تنظر المحكمة الدستورية في مخاطبات الرئيس ورئيس مجلس الشيوخ ورئيس مجلس النواب وخمس نواب البرلمان على الأقل ورئيس الوزراء والمواطنين والمدعي العام ومفوض حقوق الإنسان"
+      }
+    ],
+    "PetitionAdmissible1995/alt/3": [
+      {
+        "status": "translation",
+        "text": "المادة 72 (طبعة 1995). تنظر المحكمة الدستورية في مخاطبات الرئيس ورئيس مجلس الشيوخ ورئيس مجلس النواب وخمس نواب البرلمان على الأقل ورئيس الوزراء والمواطنين والمدعي العام ومفوض حقوق الإنسان"
+      }
+    ],
+    "PetitionAdmissible1995/alt/4": [
+      {
+        "status": "translation",
+        "text": "المادة 72 (طبعة 1995). تنظر المحكمة الدستورية في مخاطبات الرئيس ورئيس مجلس الشيوخ ورئيس مجلس النواب وخمس نواب البرلمان على الأقل ورئيس الوزراء والمواطنين والمدعي العام ومفوض حقوق الإنسان"
+      }
+    ],
+    "PetitionAdmissible1995/alt/5": [
+      {
+        "status": "translation",
+        "text": "المادة 72 (طبعة 1995). تنظر المحكمة الدستورية في مخاطبات الرئيس ورئيس مجلس الشيوخ ورئيس مجلس النواب وخمس نواب البرلمان على الأقل ورئيس الوزراء والمواطنين والمدعي العام ومفوض حقوق الإنسان"
+      }
+    ],
+    "PetitionAdmissible1995/alt/6": [
+      {
+        "status": "translation",
+        "text": "المادة 72 (طبعة 1995). تنظر المحكمة الدستورية في مخاطبات الرئيس ورئيس مجلس الشيوخ ورئيس مجلس النواب وخمس نواب البرلمان على الأقل ورئيس الوزراء والمواطنين والمدعي العام ومفوض حقوق الإنسان"
+      }
+    ],
+    "PetitionAdmissible1995/alt/7": [
+      {
+        "status": "translation",
+        "text": "المادة 72 (طبعة 1995). تنظر المحكمة الدستورية في مخاطبات الرئيس ورئيس مجلس الشيوخ ورئيس مجلس النواب وخمس نواب البرلمان على الأقل ورئيس الوزراء والمواطنين والمدعي العام ومفوض حقوق الإنسان"
+      }
+    ],
+    "PetitionAdmissible1995/alt/8": [
+      {
+        "status": "translation",
+        "text": "المادة 72 (طبعة 1995). تنظر المحكمة الدستورية في مخاطبات الرئيس ورئيس مجلس الشيوخ ورئيس مجلس النواب وخمس نواب البرلمان على الأقل ورئيس الوزراء والمواطنين والمدعي العام ومفوض حقوق الإنسان"
+      }
+    ],
+    "PreRatificationReviewSuspendsDeadline": [
+      {
+        "status": "translation",
+        "text": "المادة 74 الفقرة 2. عند مخاطبة المحكمة الدستورية يوقف سريان ميعاد التصديق على المعاهدة"
+      }
+    ],
+    "PreSignatureReviewSuspendsDeadline": [
+      {
+        "status": "translation",
+        "text": "المادة 74 الفقرة 2. عند مخاطبة المحكمة الدستورية يوقف سريان ميعاد التوقيع على الصك"
+      }
+    ],
+    "PresidentialElectionDisputeSuspendsInauguration": [
+      {
+        "status": "translation",
+        "text": "المادة 74 الفقرة 1. عند مخاطبة المحكمة الدستورية في منازعة انتخابية يوقف تولي الرئيس منصبه"
+      }
+    ],
+    "ProceedingSuspendedOnRightsInfringement1995": [
+      {
+        "status": "translation",
+        "text": "المادة 78 (طبعة 1995). إذا رأت المحكمة أن الصك الواجب التطبيق يمس الحقوق الدستورية وجب عليها وقف السير في الدعوى"
+      }
+    ],
+    "ProsecutorGeneral": [
+      {
+        "status": "translation",
+        "text": "المدعي العام لجمهورية كازاخستان"
+      }
+    ],
+    "ProsecutorGeneralImmunity1995": [
+      {
+        "status": "translation",
+        "text": "المادة 83 الفقرة 3 (طبعة 1995). لا يجوز القبض على المدعي العام ولا مساءلته جنائيا بغير موافقة مجلس الشيوخ"
+      }
+    ],
+    "ProsecutorGeneralInviolability1995": [
+      {
+        "status": "translation",
+        "text": "المادة 83 الفقرة 3 (طبعة 1995). لا يجوز القبض على المدعي العام ولا مساءلته جنائيا بغير موافقة مجلس الشيوخ"
+      }
+    ],
+    "ProsecutorGeneralOneTerm": [
+      {
+        "status": "translation",
+        "text": "المادة 84 الفقرة 3. لا يجوز تعيين الشخص الواحد مدعيا عاما أكثر من مرة واحدة"
+      }
+    ],
+    "ProsecutorGeneralTermExpiry": [
+      {
+        "status": "translation",
+        "text": "المادة 84. مدة صلاحيات المدعي العام ست سنوات من يوم التعيين"
+      }
+    ],
+    "RatificationDeadlineSuspended1995": [
+      {
+        "status": "translation",
+        "text": "المادة 73 الفقرة 2 (طبعة 1995). عند المخاطبة بشأن معاهدة دولية يوقف سريان ميعاد التصديق"
+      }
+    ],
+    "ReferendumDisputeSuspendsResults": [
+      {
+        "status": "translation",
+        "text": "المادة 74 الفقرة 1. عند مخاطبة المحكمة الدستورية في منازعة تتعلق بالاستفتاء يوقف إعلان نتائجه"
+      }
+    ],
+    "RefrainFromNonCourtJustice": [
+      {
+        "status": "translation",
+        "text": "المادة 76 الفقرة 1. لا يقيم العدل في جمهورية كازاخستان إلا القضاء"
+      }
+    ],
+    "RegionalAkimAppointmentValid1995": [
+      {
+        "status": "translation",
+        "text": "المادة 87 الفقرة 4 (طبعة 1995). يعين أكماء الولايات بموافقة نواب المسليخات؛ ويقترح الرئيس مرشحين اثنين على الأقل"
+      }
+    ],
+    "RegionalAkimPowersEndWithNewPresident1995": [
+      {
+        "status": "translation",
+        "text": "المادة 87 الفقرة 5 (طبعة 1995). تنتهي صلاحيات أكماء الولايات ومدن الشأن الجمهوري والعاصمة عند تولي الرئيس المنتخب الجديد منصبه"
+      }
+    ],
+    "RepeatedLiabilityProhibited1995": [
+      {
+        "status": "translation",
+        "text": "المادة 77 الفقرة 3 البند 2 (طبعة 1995). لا يجوز مساءلة أحد جنائيا أو إداريا مرتين عن المخالفة الواحدة"
+      }
+    ],
+    "Senate1995": [
+      {
+        "status": "translation",
+        "text": "مجلس الشيوخ في البرلمان (طبعة 1995)"
+      }
+    ],
+    "SignatureDeadlineSuspended1995": [
+      {
+        "status": "translation",
+        "text": "المادة 73 الفقرة 2 (طبعة 1995). عند المخاطبة بشأن قانون أقر يوقف سريان ميعاد التوقيع"
+      }
+    ],
+    "SpecialCourtProhibited1995": [
+      {
+        "status": "translation",
+        "text": "المادة 75 الفقرة 4 (طبعة 1995). لا يجوز إنشاء محاكم خاصة واستثنائية بأي تسمية كانت"
+      }
+    ],
+    "SpecialCourtsProhibited": [
+      {
+        "status": "translation",
+        "text": "المادة 76 الفقرة 4. لا يجوز إنشاء محاكم خاصة واستثنائية بأي تسمية كانت"
+      }
+    ],
+    "StateOrgan": [
+      {
+        "status": "translation",
+        "text": "جهاز دولة"
+      }
+    ],
+    "SupremeCourt": [
+      {
+        "status": "translation",
+        "text": "المحكمة العليا لجمهورية كازاخستان"
+      }
+    ],
+    "SupremeCourtAppointmentBySenate1995": [
+      {
+        "status": "translation",
+        "text": "المادة 82 الفقرة 1 (طبعة 1995). ينتخب مجلس الشيوخ رئيس المحكمة العليا وقضاتها بترشيح من الرئيس مبني على توصية المجلس الأعلى للقضاء"
+      }
+    ],
+    "SupremeCourtChairOneTerm": [
+      {
+        "status": "translation",
+        "text": "المادة 83 الفقرة 1. لا يجوز تعيين الشخص الواحد رئيسا للمحكمة العليا أكثر من مرة واحدة"
+      }
+    ],
+    "SupremeCourtChairTermExpiry": [
+      {
+        "status": "translation",
+        "text": "المادة 83. مدة صلاحيات رئيس المحكمة العليا ست سنوات من يوم التعيين"
+      }
+    ],
+    "SupremeCourtExplainsPracticeWhenAuthorizedByLaw": [
+      {
+        "status": "translation",
+        "text": "المادة 82. تصدر المحكمة العليا إيضاحات في مسائل العمل القضائي في الحالات التي يقررها القانون"
+      }
+    ],
+    "SupremeCourtHearsCasesAssignedByLaw": [
+      {
+        "status": "translation",
+        "text": "المادة 82. تنظر المحكمة العليا في الدعاوى التي يجعلها القانون من اختصاصها"
+      }
+    ],
+    "Treaty": [
+      {
+        "status": "translation",
+        "text": "معاهدة دولية للجمهورية"
+      }
+    ],
+    "UnconstitutionalActCeasesOnDecision": [
+      {
+        "status": "translation",
+        "text": "المادة 75 الفقرة 2. الصك الذي يقضى بعدم دستوريته ينتهي نفاذه من يوم صدور قرار المحكمة الدستورية"
+      }
+    ],
+    "UnconstitutionalActCeasesOnSpecifiedDate": [
+      {
+        "status": "translation",
+        "text": "المادة 75 الفقرة 2. الصك الذي يقضى بعدم دستوريته ينتهي نفاذه من التاريخ الذي تحدده المحكمة الدستورية"
+      }
+    ],
+    "UnconstitutionalActCeasesToApply1995": [
+      {
+        "status": "translation",
+        "text": "المادة 74 الفقرة 2 (طبعة 1995). تلغى الصكوك المقضي بعدم دستوريتها ولا تطبق من يوم صدور قرار المحكمة الدستورية أو من التاريخ الذي تحدده"
+      }
+    ],
+    "UnconstitutionalActMayNotBeSigned1995": [
+      {
+        "status": "translation",
+        "text": "المادة 74 الفقرة 1 (طبعة 1995). لا يجوز التوقيع على القوانين المقضي بعدم مطابقتها للدستور"
+      }
+    ],
+    "UnconstitutionalTreatyMayNotBeRatified1995": [
+      {
+        "status": "translation",
+        "text": "المادة 74 الفقرة 1 (طبعة 1995). لا يجوز التصديق على المعاهدات الدولية المقضي بعدم مطابقتها للدستور ولا إنفاذها"
+      }
+    ],
+    "UnlawfulEvidenceHasNoForce1995": [
+      {
+        "status": "translation",
+        "text": "المادة 77 الفقرة 3 البند 9 (طبعة 1995). لا حجية للأدلة المتحصلة بطريق غير مشروع"
+      }
+    ],
+    "act_ceased_to_apply": [
+      {
+        "status": "translation",
+        "text": "انتهى نفاذ الصك ولا يطبق"
+      }
+    ],
+    "act_ceased_to_apply_1995": [
+      {
+        "status": "translation",
+        "text": "انتهى نفاذ الصك ولا يطبق (طبعة 1995)"
+      }
+    ],
+    "act_infringes_constitutional_rights": [
+      {
+        "status": "translation",
+        "text": "الصك يمس الحقوق والحريات المقررة في الدستور"
+      }
+    ],
+    "act_may_not_be_signed_1995": [
+      {
+        "status": "translation",
+        "text": "لا يجوز التوقيع على الصك (طبعة 1995)"
+      }
+    ],
+    "age_years": [
+      {
+        "status": "translation",
+        "text": "عمر الشخص بالسنين التامة"
+      }
+    ],
+    "aid_provider_authorized_by_law": [
+      {
+        "status": "translation",
+        "text": "الجهة مخولة قانونا بتقديم المساعدة القانونية"
+      }
+    ],
+    "akim_appointment_valid_1995": [
+      {
+        "status": "translation",
+        "text": "تم تعيين الأكيم (طبعة 1995)"
+      }
+    ],
+    "akim_candidate_consented": [
+      {
+        "status": "translation",
+        "text": "وافق المسليخات على تعيين المرشح أكيما"
+      }
+    ],
+    "akim_candidate_minimum": [
+      {
+        "status": "translation",
+        "text": "الحد الأدنى لعدد مرشحي منصب الأكيم اثنان"
+      }
+    ],
+    "akim_candidate_set": [
+      {
+        "status": "translation",
+        "text": "عدد مرشحي منصب الأكيم المعروضين على المسليخات"
+      }
+    ],
+    "akim_candidate_vote": [
+      {
+        "status": "translation",
+        "text": "عدد أصوات نواب المسليخات المؤيدة للمرشح لمنصب الأكيم"
+      }
+    ],
+    "akim_consent_denominator": [
+      {
+        "status": "translation",
+        "text": "مقام عتبة موافقة المسليخات على تعيين الأكيم النصف"
+      }
+    ],
+    "akim_consent_numerator": [
+      {
+        "status": "translation",
+        "text": "بسط عتبة موافقة المسليخات على تعيين الأكيم النصف"
+      }
+    ],
+    "akim_no_confidence": [
+      {
+        "status": "translation",
+        "text": "حجب المسليخات الثقة عن الأكيم"
+      }
+    ],
+    "akim_no_confidence_denominator": [
+      {
+        "status": "translation",
+        "text": "مقام عتبة حجب الثقة عن الأكيم النصف"
+      }
+    ],
+    "akim_no_confidence_expressed_1995": [
+      {
+        "status": "translation",
+        "text": "حجبت الثقة عن الأكيم في المسليخات (طبعة 1995)"
+      }
+    ],
+    "akim_no_confidence_initiating_votes": [
+      {
+        "status": "translation",
+        "text": "عدد نواب المسليخات الذين بادروا بحجب الثقة عن الأكيم"
+      }
+    ],
+    "akim_no_confidence_initiative_denominator": [
+      {
+        "status": "translation",
+        "text": "مقام عتبة المبادرة بحجب الثقة عن الأكيم الخمس"
+      }
+    ],
+    "akim_no_confidence_initiative_numerator": [
+      {
+        "status": "translation",
+        "text": "بسط عتبة المبادرة بحجب الثقة عن الأكيم الخمس"
+      }
+    ],
+    "akim_no_confidence_initiative_valid_1995": [
+      {
+        "status": "translation",
+        "text": "قدمت المبادرة بحجب الثقة عن الأكيم من العدد المخول من النواب (طبعة 1995)"
+      }
+    ],
+    "akim_no_confidence_numerator": [
+      {
+        "status": "translation",
+        "text": "بسط عتبة حجب الثقة عن الأكيم النصف"
+      }
+    ],
+    "akim_no_confidence_votes": [
+      {
+        "status": "translation",
+        "text": "عدد الأصوات المؤيدة لحجب الثقة عن الأكيم"
+      }
+    ],
+    "akim_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "انتهت صلاحيات الأكيم (طبعة 1995)"
+      }
+    ],
+    "akim_responsible_for_territorial_affairs": [
+      {
+        "status": "translation",
+        "text": "الأكيم مسؤول عن حال الأمور في الإقليم المعني"
+      }
+    ],
+    "already_member_of_other_maslikhat": [
+      {
+        "status": "translation",
+        "text": "الشخص نائب بالفعل في مسليخات آخر"
+      }
+    ],
+    "analogy_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "لا يجوز تطبيق القانون الجنائي بطريق القياس (طبعة 1995)"
+      }
+    ],
+    "applicable_act": [
+      {
+        "status": "translation",
+        "text": "هذا الصك واجب التطبيق في الدعوى"
+      }
+    ],
+    "assessment_date": [
+      {
+        "status": "translation",
+        "text": "اليوم الذي يقدر فيه نفاذ الصك"
+      }
+    ],
+    "case_assigned_by_law_to_supreme_court": [
+      {
+        "status": "translation",
+        "text": "الدعوى من اختصاص المحكمة العليا بحكم القانون"
+      }
+    ],
+    "citizen": [
+      {
+        "status": "translation",
+        "text": "الشخص من مواطني جمهورية كازاخستان"
+      }
+    ],
+    "constitutional_court": [
+      {
+        "status": "translation",
+        "text": "الجهاز هو المحكمة الدستورية"
+      }
+    ],
+    "constitutional_court_decisions_final_1995": [
+      {
+        "status": "translation",
+        "text": "قرارات المحكمة الدستورية نهائية وغير قابلة للطعن (طبعة 1995)"
+      }
+    ],
+    "constitutional_court_referral_required_1995": [
+      {
+        "status": "translation",
+        "text": "على المحكمة أن تخاطب المحكمة الدستورية (طبعة 1995)"
+      }
+    ],
+    "constitutional_judge": [
+      {
+        "status": "translation",
+        "text": "الشخص قاض في المحكمة الدستورية"
+      }
+    ],
+    "constitutional_judge_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "يجري تعيين قاض في المحكمة الدستورية"
+      }
+    ],
+    "constitutional_judge_arrest_attempt": [
+      {
+        "status": "translation",
+        "text": "جرت محاولة للقبض على قاضي المحكمة الدستورية"
+      }
+    ],
+    "constitutional_judge_business": [
+      {
+        "status": "translation",
+        "text": "قاضي المحكمة الدستورية يمارس نشاطا رياديا"
+      }
+    ],
+    "constitutional_judge_count": [
+      {
+        "status": "translation",
+        "text": "عدد قضاة المحكمة الدستورية أحد عشر"
+      }
+    ],
+    "constitutional_judge_deputy_mandate": [
+      {
+        "status": "translation",
+        "text": "قاضي المحكمة الدستورية نائب في جهاز تمثيلي"
+      }
+    ],
+    "constitutional_judge_immunity_infringed_1995": [
+      {
+        "status": "translation",
+        "text": "انتهكت حصانة قاضي المحكمة الدستورية (طبعة 1995)"
+      }
+    ],
+    "constitutional_judge_office_incompatible_1995": [
+      {
+        "status": "translation",
+        "text": "منصب قاضي المحكمة الدستورية لا يجتمع مع المنصب المشغول أو النشاط الممارس (طبعة 1995)"
+      }
+    ],
+    "constitutional_judge_paid_office": [
+      {
+        "status": "translation",
+        "text": "قاضي المحكمة الدستورية يشغل منصبا آخر بأجر"
+      }
+    ],
+    "constitutional_judge_permitted_activity": [
+      {
+        "status": "translation",
+        "text": "الاشتغال داخل في التدريس أو البحث أو النشاط الإبداعي المأذون فيه"
+      }
+    ],
+    "constitutional_judge_reappointment_prohibited": [
+      {
+        "status": "translation",
+        "text": "لا يجوز إعادة تعيين القاضي في المحكمة الدستورية"
+      }
+    ],
+    "constitutional_judge_term": [
+      {
+        "status": "translation",
+        "text": "مدة صلاحيات قاضي المحكمة الدستورية ثماني سنوات"
+      }
+    ],
+    "constitutional_judge_term_expires_on": [
+      {
+        "status": "translation",
+        "text": "يوم انتهاء صلاحيات قاضي المحكمة الدستورية"
+      }
+    ],
+    "constitutional_judge_term_started_on": [
+      {
+        "status": "translation",
+        "text": "يوم بدء صلاحيات قاضي المحكمة الدستورية"
+      }
+    ],
+    "constitutional_judges_appointed_by_mazhilis_1995": [
+      {
+        "status": "translation",
+        "text": "عدد قضاة المحكمة الدستورية الذين يعينهم مجلس النواب ثلاثة (طبعة 1995)"
+      }
+    ],
+    "constitutional_judges_appointed_by_president_1995": [
+      {
+        "status": "translation",
+        "text": "عدد قضاة المحكمة الدستورية الذين يعينهم الرئيس أربعة (طبعة 1995)"
+      }
+    ],
+    "constitutional_judges_appointed_by_senate_1995": [
+      {
+        "status": "translation",
+        "text": "عدد قضاة المحكمة الدستورية الذين يعينهم مجلس الشيوخ ثلاثة (طبعة 1995)"
+      }
+    ],
+    "constitutional_law": [
+      {
+        "status": "translation",
+        "text": "قانون دستوري لجمهورية كازاخستان"
+      }
+    ],
+    "constitutional_law_adopted": [
+      {
+        "status": "translation",
+        "text": "أقر القانون الدستوري"
+      }
+    ],
+    "constitutional_referral_required": [
+      {
+        "status": "translation",
+        "text": "على المحكمة أن تخاطب المحكمة الدستورية"
+      }
+    ],
+    "constitutional_review_exercised": [
+      {
+        "status": "translation",
+        "text": "الجهاز يمارس الرقابة الدستورية ويكفل سمو الدستور"
+      }
+    ],
+    "conviction_impermissible_1995": [
+      {
+        "status": "translation",
+        "text": "مثل هذا الحكم بالإدانة غير جائز (طبعة 1995)"
+      }
+    ],
+    "conviction_only_on_own_confession": [
+      {
+        "status": "translation",
+        "text": "حكم الإدانة مبني على اعتراف المتهم وحده"
+      }
+    ],
+    "council_recommendation": [
+      {
+        "status": "translation",
+        "text": "توجد توصية من المجلس الأعلى للقضاء"
+      }
+    ],
+    "court": [
+      {
+        "status": "translation",
+        "text": "الجهاز محكمة"
+      }
+    ],
+    "court_finds_act_infringing_rights": [
+      {
+        "status": "translation",
+        "text": "رأت المحكمة أن الصك الواجب التطبيق يمس الحقوق الدستورية"
+      }
+    ],
+    "court_handles": [
+      {
+        "status": "translation",
+        "text": "تنظر هذه المحكمة الدعوى"
+      }
+    ],
+    "court_ruling_binding_1995": [
+      {
+        "status": "translation",
+        "text": "حكم المحكمة ملزم في جميع أنحاء إقليم الجمهورية (طبعة 1995)"
+      }
+    ],
+    "court_ruling_issued": [
+      {
+        "status": "translation",
+        "text": "أصدرت المحكمة حكمها في الدعوى"
+      }
+    ],
+    "court_specified_termination_date": [
+      {
+        "status": "translation",
+        "text": "اليوم الذي حددته المحكمة لانتهاء نفاذ الصك"
+      }
+    ],
+    "courts_financed_from_republican_budget": [
+      {
+        "status": "translation",
+        "text": "تمول المحاكم من الموازنة الجمهورية"
+      }
+    ],
+    "courts_financed_from_republican_budget_1995": [
+      {
+        "status": "translation",
+        "text": "تمول المحاكم من الموازنة الجمهورية (طبعة 1995)"
+      }
+    ],
+    "criminal_law_applied_by_analogy": [
+      {
+        "status": "translation",
+        "text": "طبق القانون الجنائي بطريق القياس"
+      }
+    ],
+    "decision_date": [
+      {
+        "status": "translation",
+        "text": "يوم صدور قرار المحكمة الدستورية"
+      }
+    ],
+    "declared_constitutional_in_interpretation": [
+      {
+        "status": "translation",
+        "text": "قضي بدستورية الصك بالتفسير الذي قررته المحكمة"
+      }
+    ],
+    "declared_constitutional_in_interpretation_1995": [
+      {
+        "status": "translation",
+        "text": "قضي بمطابقة الصك للدستور بالتفسير المقرر (طبعة 1995)"
+      }
+    ],
+    "declared_unconstitutional": [
+      {
+        "status": "translation",
+        "text": "قضي بعدم دستورية الصك"
+      }
+    ],
+    "declared_unconstitutional_1995": [
+      {
+        "status": "translation",
+        "text": "قضي بعدم دستورية الصك (طبعة 1995)"
+      }
+    ],
+    "deputy_registration_suspended": [
+      {
+        "status": "translation",
+        "text": "أوقف تسجيل النائب المنتخب إلى حين صدور قرار المحكمة الدستورية"
+      }
+    ],
+    "doubt_about_guilt": [
+      {
+        "status": "translation",
+        "text": "توجد شكوك في إدانة الشخص"
+      }
+    ],
+    "doubt_resolved_for_accused_1995": [
+      {
+        "status": "translation",
+        "text": "تفسر الشكوك في الإدانة لمصلحة المتهم (طبعة 1995)"
+      }
+    ],
+    "election_dispute_petition": [
+      {
+        "status": "translation",
+        "text": "المخاطبة تنازع صحة الانتخابات"
+      }
+    ],
+    "election_dispute_petition_1995": [
+      {
+        "status": "translation",
+        "text": "المخاطبة تنازع صحة الانتخابات (طبعة 1995)"
+      }
+    ],
+    "eligible_maslikhat_candidate": [
+      {
+        "status": "translation",
+        "text": "الشخص مستوف لشروط النائب في المسليخات"
+      }
+    ],
+    "eligible_maslikhat_deputy_1995": [
+      {
+        "status": "translation",
+        "text": "الشخص مستوف لشروط النائب في المسليخات (طبعة 1995)"
+      }
+    ],
+    "evidence_obtained_unlawfully": [
+      {
+        "status": "translation",
+        "text": "تحصلت الأدلة بطريق غير مشروع"
+      }
+    ],
+    "evidence_without_legal_force_1995": [
+      {
+        "status": "translation",
+        "text": "لا حجية للأدلة (طبعة 1995)"
+      }
+    ],
+    "hearing_right_violated_1995": [
+      {
+        "status": "translation",
+        "text": "انتهك الحق في أن يسمع الشخص أمام المحكمة (طبعة 1995)"
+      }
+    ],
+    "inauguration_suspended_1995": [
+      {
+        "status": "translation",
+        "text": "أوقف تولي المنصب إلى حين صدور قرار المحكمة الدستورية (طبعة 1995)"
+      }
+    ],
+    "interference_liability_arises_1995": [
+      {
+        "status": "translation",
+        "text": "التدخل في إقامة العدل يرتب مسؤولية بحكم القانون (طبعة 1995)"
+      }
+    ],
+    "interference_unlawful": [
+      {
+        "status": "translation",
+        "text": "لا يجوز التدخل في إقامة العدل"
+      }
+    ],
+    "interference_with_justice": [
+      {
+        "status": "translation",
+        "text": "وقع في الدعوى تدخل في إقامة العدل"
+      }
+    ],
+    "judge": [
+      {
+        "status": "translation",
+        "text": "الشخص قاض"
+      }
+    ],
+    "judge_applies_law": [
+      {
+        "status": "translation",
+        "text": "القاضي يطبق القانون في الدعوى"
+      }
+    ],
+    "judge_arrest_attempt": [
+      {
+        "status": "translation",
+        "text": "جرت محاولة للقبض على القاضي"
+      }
+    ],
+    "judge_business": [
+      {
+        "status": "translation",
+        "text": "القاضي يمارس نشاطا رياديا"
+      }
+    ],
+    "judge_caught_at_crime_scene": [
+      {
+        "status": "translation",
+        "text": "ضبط القاضي في حال التلبس"
+      }
+    ],
+    "judge_caught_in_act_or_grave_crime": [
+      {
+        "status": "translation",
+        "text": "ضبط قاضي المحكمة الدستورية في حال التلبس أو ارتكب جريمة جسيمة"
+      }
+    ],
+    "judge_deputy_mandate": [
+      {
+        "status": "translation",
+        "text": "القاضي نائب في جهاز تمثيلي"
+      }
+    ],
+    "judge_detained": [
+      {
+        "status": "translation",
+        "text": "احتجز القاضي"
+      }
+    ],
+    "judge_detention_attempt": [
+      {
+        "status": "translation",
+        "text": "جرت محاولة لاحتجاز القاضي"
+      }
+    ],
+    "judge_detention_ground": [
+      {
+        "status": "translation",
+        "text": "تحقق السبب الذي يجوز معه احتجاز القاضي"
+      }
+    ],
+    "judge_grave_or_especially_grave_offence": [
+      {
+        "status": "translation",
+        "text": "ارتكب القاضي جريمة جسيمة أو جسيمة بوجه خاص"
+      }
+    ],
+    "judge_immunity_infringed_1995": [
+      {
+        "status": "translation",
+        "text": "انتهكت حصانة القاضي (طبعة 1995)"
+      }
+    ],
+    "judge_independent_and_subject_only_to_law": [
+      {
+        "status": "translation",
+        "text": "القاضي مستقل في إقامة العدل ولا يخضع إلا للدستور والقانون"
+      }
+    ],
+    "judge_inviolability_applies": [
+      {
+        "status": "translation",
+        "text": "حماية القاضي من الاحتجاز قائمة"
+      }
+    ],
+    "judge_office_incompatible_1995": [
+      {
+        "status": "translation",
+        "text": "منصب القاضي لا يجتمع مع المنصب المشغول أو النشاط الممارس (طبعة 1995)"
+      }
+    ],
+    "judge_paid_office": [
+      {
+        "status": "translation",
+        "text": "القاضي يشغل منصبا آخر بأجر"
+      }
+    ],
+    "judge_permitted_activity": [
+      {
+        "status": "translation",
+        "text": "الاشتغال داخل في التدريس أو البحث أو النشاط الإبداعي المأذون فيه"
+      }
+    ],
+    "judge_requirements_determined": [
+      {
+        "status": "translation",
+        "text": "حددت الشروط المطلوبة في قضاة محاكم جمهورية كازاخستان"
+      }
+    ],
+    "judicial_collegia_established": [
+      {
+        "status": "translation",
+        "text": "أنشئت في المحاكم دوائر قضائية"
+      }
+    ],
+    "judicial_decision": [
+      {
+        "status": "translation",
+        "text": "الصك حكم صادر عن هذه المحكمة"
+      }
+    ],
+    "judicial_decision_binding_nationwide": [
+      {
+        "status": "translation",
+        "text": "حكم المحكمة ملزم في جميع أنحاء إقليم الجمهورية"
+      }
+    ],
+    "judicial_interference": [
+      {
+        "status": "translation",
+        "text": "وقع تدخل في نشاط القاضي في إقامة العدل"
+      }
+    ],
+    "judicial_power_covers_case_1995": [
+      {
+        "status": "translation",
+        "text": "الدعوى داخلة في السلطة القضائية (طبعة 1995)"
+      }
+    ],
+    "judicial_practice_explanation_authorized_by_law": [
+      {
+        "status": "translation",
+        "text": "إصدار الإيضاحات في مسائل العمل القضائي من اختصاص المحكمة العليا بحكم القانون"
+      }
+    ],
+    "jurisdiction_change_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "لا يجوز تغيير الاختصاص القضائي للدعوى بغير رضا الشخص (طبعة 1995)"
+      }
+    ],
+    "jurisdiction_changed_without_consent": [
+      {
+        "status": "translation",
+        "text": "غير الاختصاص القضائي للدعوى بغير رضا الشخص"
+      }
+    ],
+    "justice_act": [
+      {
+        "status": "translation",
+        "text": "الكيان يقيم العدل"
+      }
+    ],
+    "justice_by_court_only_1995": [
+      {
+        "status": "translation",
+        "text": "لا يقيم العدل إلا القضاء (طبعة 1995)"
+      }
+    ],
+    "justice_lawful": [
+      {
+        "status": "translation",
+        "text": "أقيم العدل بصورة مشروعة"
+      }
+    ],
+    "legal_aid": [
+      {
+        "status": "translation",
+        "text": "تقدم المساعدة القانونية لهذا الشخص"
+      }
+    ],
+    "legal_aid_constitutionally_provided": [
+      {
+        "status": "translation",
+        "text": "قدمت المساعدة القانونية بالأوضاع الدستورية"
+      }
+    ],
+    "legal_aid_provider": [
+      {
+        "status": "translation",
+        "text": "تقدم المساعدة القانونية من هذه الجهة"
+      }
+    ],
+    "legal_application_case": [
+      {
+        "status": "translation",
+        "text": "يطبق القانون في الدعوى"
+      }
+    ],
+    "local_court_appointment": [
+      {
+        "status": "translation",
+        "text": "يجري التعيين في منصب قاض في محكمة محلية"
+      }
+    ],
+    "local_court_appointment_valid_1995": [
+      {
+        "status": "translation",
+        "text": "تم تعيين قاضي المحكمة المحلية (طبعة 1995)"
+      }
+    ],
+    "local_decision_admissible": [
+      {
+        "status": "translation",
+        "text": "قرار المسليخات ملزم في الإقليم المعني"
+      }
+    ],
+    "local_executive_body": [
+      {
+        "status": "translation",
+        "text": "الجهاز جهاز تنفيذي محلي"
+      }
+    ],
+    "local_representative_body": [
+      {
+        "status": "translation",
+        "text": "الجهاز مسليخات"
+      }
+    ],
+    "local_revenue_reducing_or_spending_increasing": [
+      {
+        "status": "translation",
+        "text": "القرار ينص على تقليل الإيرادات المحلية أو زيادة النفقات"
+      }
+    ],
+    "local_self_government_action": [
+      {
+        "status": "translation",
+        "text": "اتخذ الصك من جهاز الحكم المحلي"
+      }
+    ],
+    "local_self_government_autonomy": [
+      {
+        "status": "translation",
+        "text": "كفل استقلال الحكم المحلي في تدبير المسائل ذات الشأن المحلي"
+      }
+    ],
+    "local_self_government_autonomy_guaranteed_1995": [
+      {
+        "status": "translation",
+        "text": "يكفل استقلال أجهزة الحكم المحلي (طبعة 1995)"
+      }
+    ],
+    "local_self_government_recognized_1995": [
+      {
+        "status": "translation",
+        "text": "يعترف في الجمهورية بالحكم المحلي (طبعة 1995)"
+      }
+    ],
+    "local_state_administration_established_1995": [
+      {
+        "status": "translation",
+        "text": "تمارس الإدارة الحكومية المحلية بأجهزة تمثيلية وتنفيذية محلية (طبعة 1995)"
+      }
+    ],
+    "maslikhat_candidate": [
+      {
+        "status": "translation",
+        "text": "المترشح للنيابة في المسليخات هو هذا الشخص"
+      }
+    ],
+    "maslikhat_decision_admissible_1995": [
+      {
+        "status": "translation",
+        "text": "قرار المسليخات ملزم في الإقليم المعني (طبعة 1995)"
+      }
+    ],
+    "maslikhat_deputy_minimum_age": [
+      {
+        "status": "translation",
+        "text": "الحد الأدنى لسن النائب في المسليخات عشرون سنة"
+      }
+    ],
+    "maslikhat_powers_terminated_1995": [
+      {
+        "status": "translation",
+        "text": "انتهت صلاحيات المسليخات (طبعة 1995)"
+      }
+    ],
+    "maslikhat_responsible_for_territorial_affairs": [
+      {
+        "status": "translation",
+        "text": "المسليخات مسؤول عن حال الأمور في الإقليم المعني"
+      }
+    ],
+    "maslikhat_ruling": [
+      {
+        "status": "translation",
+        "text": "الصك قرار صادر عن المسليخات"
+      }
+    ],
+    "maslikhat_self_dissolution": [
+      {
+        "status": "translation",
+        "text": "اتخذ المسليخات قرارا بحل نفسه"
+      }
+    ],
+    "maslikhat_term": [
+      {
+        "status": "translation",
+        "text": "مدة صلاحيات المسليخات خمس سنوات"
+      }
+    ],
+    "maslikhat_term_expires_on": [
+      {
+        "status": "translation",
+        "text": "يوم انتهاء صلاحيات المسليخات"
+      }
+    ],
+    "maslikhat_term_started_on": [
+      {
+        "status": "translation",
+        "text": "يوم بدء صلاحيات المسليخات"
+      }
+    ],
+    "new_president_assumed_office_1995": [
+      {
+        "status": "translation",
+        "text": "تولى الرئيس الجديد منصبه (طبعة 1995)"
+      }
+    ],
+    "non_court_justice_attempt": [
+      {
+        "status": "translation",
+        "text": "أقيم العدل خارج القضاء"
+      }
+    ],
+    "ombudsman": [
+      {
+        "status": "translation",
+        "text": "الشخص مفوض حقوق الإنسان"
+      }
+    ],
+    "ombudsman_appointed": [
+      {
+        "status": "translation",
+        "text": "عين مفوض حقوق الإنسان"
+      }
+    ],
+    "ombudsman_appointment_attempt": [
+      {
+        "status": "translation",
+        "text": "يجري تعيين مفوض حقوق الإنسان"
+      }
+    ],
+    "ombudsman_arrest_attempt": [
+      {
+        "status": "translation",
+        "text": "جرت محاولة للقبض على المفوض"
+      }
+    ],
+    "ombudsman_assistance_authorized": [
+      {
+        "status": "translation",
+        "text": "إسهام المفوض مشروع"
+      }
+    ],
+    "ombudsman_caught_at_crime_scene": [
+      {
+        "status": "translation",
+        "text": "ضبط المفوض في حال التلبس"
+      }
+    ],
+    "ombudsman_caught_in_act_or_grave_crime": [
+      {
+        "status": "translation",
+        "text": "ضبط المفوض في حال التلبس أو ارتكب جريمة جسيمة"
+      }
+    ],
+    "ombudsman_coercive_measure_applied": [
+      {
+        "status": "translation",
+        "text": "طبق على المفوض تدبير جبر"
+      }
+    ],
+    "ombudsman_coercive_measure_attempt": [
+      {
+        "status": "translation",
+        "text": "يطبق على المفوض تدبير جبر"
+      }
+    ],
+    "ombudsman_grave_or_especially_grave_offence": [
+      {
+        "status": "translation",
+        "text": "ارتكب المفوض جريمة جسيمة أو جسيمة بوجه خاص"
+      }
+    ],
+    "ombudsman_immunity_infringed_1995": [
+      {
+        "status": "translation",
+        "text": "انتهكت حصانة المفوض (طبعة 1995)"
+      }
+    ],
+    "ombudsman_independent_1995": [
+      {
+        "status": "translation",
+        "text": "مفوض حقوق الإنسان مستقل (طبعة 1995)"
+      }
+    ],
+    "ombudsman_independent_and_unaccountable": [
+      {
+        "status": "translation",
+        "text": "المفوض مستقل وغير مسؤول أمام أجهزة الدولة"
+      }
+    ],
+    "ombudsman_inviolability_applies": [
+      {
+        "status": "translation",
+        "text": "حماية المفوض من تدابير الجبر قائمة"
+      }
+    ],
+    "ombudsman_measure_ground": [
+      {
+        "status": "translation",
+        "text": "تحقق السبب الذي يجوز معه تطبيق تدبير جبر على المفوض"
+      }
+    ],
+    "ombudsman_rights_assistance": [
+      {
+        "status": "translation",
+        "text": "المفوض يسهم في رد حقوق الشخص إليه"
+      }
+    ],
+    "ordinary_judge_caught_in_act_or_grave_crime": [
+      {
+        "status": "translation",
+        "text": "ضبط القاضي في حال التلبس أو ارتكب جريمة جسيمة"
+      }
+    ],
+    "parliament_consent_for_judge": [
+      {
+        "status": "translation",
+        "text": "صدرت موافقة الجهاز التمثيلي على تعيين القاضي"
+      }
+    ],
+    "participating_maslikhat_deputies": [
+      {
+        "status": "translation",
+        "text": "عدد نواب المسليخات المشاركين في الاقتراع"
+      }
+    ],
+    "petition_admissible": [
+      {
+        "status": "translation",
+        "text": "قبلت المخاطبة الموجهة إلى المحكمة الدستورية للنظر"
+      }
+    ],
+    "petition_admissible_1995": [
+      {
+        "status": "translation",
+        "text": "قبلت المخاطبة الموجهة إلى المحكمة الدستورية للنظر (طبعة 1995)"
+      }
+    ],
+    "petition_by_citizen_affecting_constitutional_rights": [
+      {
+        "status": "translation",
+        "text": "قدم المواطن المخاطبة في مسألة حقوقه وحرياته الدستورية"
+      }
+    ],
+    "petition_by_court_under_article_79": [
+      {
+        "status": "translation",
+        "text": "قدمت المحكمة المخاطبة وفقا للمادة 79 من الدستور"
+      }
+    ],
+    "petition_by_kurultai_chair": [
+      {
+        "status": "translation",
+        "text": "قدم رئيس القورولتاي المخاطبة"
+      }
+    ],
+    "petition_by_mazhilis_chair_1995": [
+      {
+        "status": "translation",
+        "text": "قدم رئيس مجلس النواب المخاطبة (طبعة 1995)"
+      }
+    ],
+    "petition_by_ombudsman_affecting_rights": [
+      {
+        "status": "translation",
+        "text": "قدم مفوض حقوق الإنسان المخاطبة في مسألة الحقوق والحريات"
+      }
+    ],
+    "petition_by_one_fifth_of_deputies": [
+      {
+        "status": "translation",
+        "text": "قدم المخاطبة خمس نواب القورولتاي على الأقل"
+      }
+    ],
+    "petition_by_one_fifth_of_parliament_1995": [
+      {
+        "status": "translation",
+        "text": "قدم المخاطبة خمس نواب البرلمان على الأقل (طبعة 1995)"
+      }
+    ],
+    "petition_by_president": [
+      {
+        "status": "translation",
+        "text": "قدم رئيس الجمهورية المخاطبة"
+      }
+    ],
+    "petition_by_prime_minister": [
+      {
+        "status": "translation",
+        "text": "قدم رئيس الوزراء المخاطبة"
+      }
+    ],
+    "petition_by_prosecutor_general": [
+      {
+        "status": "translation",
+        "text": "قدم المدعي العام المخاطبة"
+      }
+    ],
+    "petition_by_senate_chair_1995": [
+      {
+        "status": "translation",
+        "text": "قدم رئيس مجلس الشيوخ المخاطبة (طبعة 1995)"
+      }
+    ],
+    "petition_to_constitutional_court": [
+      {
+        "status": "translation",
+        "text": "وجهت المخاطبة إلى المحكمة الدستورية"
+      }
+    ],
+    "positive_akim_opinion": [
+      {
+        "status": "translation",
+        "text": "للقرار رأي إيجابي من الأكيم"
+      }
+    ],
+    "pre_ratification_petition_1995": [
+      {
+        "status": "translation",
+        "text": "قدمت المخاطبة قبل التصديق على المعاهدة (طبعة 1995)"
+      }
+    ],
+    "pre_ratification_treaty_petition": [
+      {
+        "status": "translation",
+        "text": "قدمت المخاطبة قبل التصديق على المعاهدة الدولية"
+      }
+    ],
+    "pre_signature_law_petition": [
+      {
+        "status": "translation",
+        "text": "قدمت المخاطبة قبل توقيع الرئيس على القانون"
+      }
+    ],
+    "pre_signature_petition_1995": [
+      {
+        "status": "translation",
+        "text": "قدمت المخاطبة قبل التوقيع على الصك (طبعة 1995)"
+      }
+    ],
+    "presidential_appointment_of_ombudsman": [
+      {
+        "status": "translation",
+        "text": "يعين رئيس الجمهورية المفوض"
+      }
+    ],
+    "presidential_consent_on_council_conclusion": [
+      {
+        "status": "translation",
+        "text": "صدر قرار الرئيس بناء على رأي المجلس الأعلى للقضاء"
+      }
+    ],
+    "presidential_consent_to_ombudsman_measure": [
+      {
+        "status": "translation",
+        "text": "صدرت موافقة الرئيس على تطبيق التدبير على المفوض"
+      }
+    ],
+    "presidential_inauguration_suspended": [
+      {
+        "status": "translation",
+        "text": "أوقف تولي الرئيس منصبه إلى حين صدور قرار المحكمة الدستورية"
+      }
+    ],
+    "presidential_maslikhat_termination": [
+      {
+        "status": "translation",
+        "text": "أنهى الرئيس صلاحيات المسليخات"
+      }
+    ],
+    "presidential_submission_on_council_recommendation": [
+      {
+        "status": "translation",
+        "text": "قدم الرئيس الترشيح بناء على توصية المجلس الأعلى للقضاء"
+      }
+    ],
+    "previously_appointed_constitutional_judge": [
+      {
+        "status": "translation",
+        "text": "سبق تعيين الشخص قاضيا في المحكمة الدستورية"
+      }
+    ],
+    "prior_prosecutor_general_term": [
+      {
+        "status": "translation",
+        "text": "سبق أن شغل الشخص منصب المدعي العام"
+      }
+    ],
+    "prior_supreme_court_chair_term": [
+      {
+        "status": "translation",
+        "text": "سبق أن شغل الشخص منصب رئيس المحكمة العليا"
+      }
+    ],
+    "proceeding_suspended": [
+      {
+        "status": "translation",
+        "text": "أوقف السير في الدعوى"
+      }
+    ],
+    "proceeding_suspended_1995": [
+      {
+        "status": "translation",
+        "text": "أوقف السير في الدعوى (طبعة 1995)"
+      }
+    ],
+    "prosecutor_caught_in_act_or_grave_crime": [
+      {
+        "status": "translation",
+        "text": "ضبط المدعي العام في حال التلبس أو ارتكب جريمة جسيمة"
+      }
+    ],
+    "prosecutor_general_arrest_attempt": [
+      {
+        "status": "translation",
+        "text": "جرت محاولة للقبض على المدعي العام"
+      }
+    ],
+    "prosecutor_general_reappointment_attempt": [
+      {
+        "status": "translation",
+        "text": "جرت محاولة لإعادة تعيين المدعي العام"
+      }
+    ],
+    "prosecutor_general_reappointment_prohibited": [
+      {
+        "status": "translation",
+        "text": "لا يجوز إعادة تعيين المدعي العام"
+      }
+    ],
+    "prosecutor_general_term": [
+      {
+        "status": "translation",
+        "text": "مدة صلاحيات المدعي العام ست سنوات"
+      }
+    ],
+    "prosecutor_general_term_expires_on": [
+      {
+        "status": "translation",
+        "text": "يوم انتهاء صلاحيات المدعي العام"
+      }
+    ],
+    "prosecutor_general_term_started_on": [
+      {
+        "status": "translation",
+        "text": "يوم بدء صلاحيات المدعي العام"
+      }
+    ],
+    "prosecutor_general_term_years_1995": [
+      {
+        "status": "translation",
+        "text": "مدة صلاحيات المدعي العام خمس سنوات (طبعة 1995)"
+      }
+    ],
+    "prosecutor_immunity_infringed_1995": [
+      {
+        "status": "translation",
+        "text": "انتهكت حصانة المدعي العام (طبعة 1995)"
+      }
+    ],
+    "ratification_deadline_suspended": [
+      {
+        "status": "translation",
+        "text": "أوقف سريان ميعاد التصديق على المعاهدة الدولية"
+      }
+    ],
+    "ratification_deadline_suspended_1995": [
+      {
+        "status": "translation",
+        "text": "أوقف سريان ميعاد التصديق على المعاهدة (طبعة 1995)"
+      }
+    ],
+    "referendum_results_suspended": [
+      {
+        "status": "translation",
+        "text": "لا تعلن نتائج الاستفتاء إلى حين صدور قرار المحكمة الدستورية"
+      }
+    ],
+    "regional_akim": [
+      {
+        "status": "translation",
+        "text": "الأكيم أكيم ولاية أو مدينة ذات شأن جمهوري أو العاصمة"
+      }
+    ],
+    "regional_akim_appointment": [
+      {
+        "status": "translation",
+        "text": "يجري تعيين الأكيم"
+      }
+    ],
+    "repeated_liability_for_same_offence": [
+      {
+        "status": "translation",
+        "text": "يساءل الشخص مرتين عن المخالفة الواحدة"
+      }
+    ],
+    "repeated_liability_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "لا يجوز المساءلة مرتين عن المخالفة الواحدة (طبعة 1995)"
+      }
+    ],
+    "required_constitutional_interpretation_applied": [
+      {
+        "status": "translation",
+        "text": "لا يطبق الصك إلا بالتفسير الذي قضي معه بدستوريته"
+      }
+    ],
+    "required_constitutional_interpretation_applied_1995": [
+      {
+        "status": "translation",
+        "text": "التفسير الذي قضي معه بدستورية الصك ملزم في التطبيق (طبعة 1995)"
+      }
+    ],
+    "required_judge_detention_consent": [
+      {
+        "status": "translation",
+        "text": "صدرت الموافقة اللازمة لاحتجاز القاضي"
+      }
+    ],
+    "right_to_be_heard_denied": [
+      {
+        "status": "translation",
+        "text": "حرم الشخص من حقه في أن يسمع أمام المحكمة"
+      }
+    ],
+    "rights_restoration_case": [
+      {
+        "status": "translation",
+        "text": "خاطب الشخص الجهة المختصة طالبا رد حقوقه المنتهكة"
+      }
+    ],
+    "ruling_annullable_in_court_1995": [
+      {
+        "status": "translation",
+        "text": "يجوز إلغاء القرار بطريق القضاء (طبعة 1995)"
+      }
+    ],
+    "ruling_contrary_to_constitution_or_law": [
+      {
+        "status": "translation",
+        "text": "القرار يخالف الدستور أو التشريعات"
+      }
+    ],
+    "senate_consent_for_judge": [
+      {
+        "status": "translation",
+        "text": "وافق مجلس الشيوخ على تعيين القاضي"
+      }
+    ],
+    "senate_consent_for_ombudsman": [
+      {
+        "status": "translation",
+        "text": "وافق مجلس الشيوخ على تعيين المفوض"
+      }
+    ],
+    "senate_consent_for_prosecutor": [
+      {
+        "status": "translation",
+        "text": "وافق مجلس الشيوخ على القبض على المدعي العام"
+      }
+    ],
+    "senate_elected": [
+      {
+        "status": "translation",
+        "text": "انتخب مجلس الشيوخ المترشح (طبعة 1995)"
+      }
+    ],
+    "signature_deadline_suspended": [
+      {
+        "status": "translation",
+        "text": "أوقف سريان ميعاد التوقيع على القانون"
+      }
+    ],
+    "signature_deadline_suspended_1995": [
+      {
+        "status": "translation",
+        "text": "أوقف سريان ميعاد التوقيع على الصك (طبعة 1995)"
+      }
+    ],
+    "special_court_prohibited": [
+      {
+        "status": "translation",
+        "text": "لا يجوز إنشاء محاكم خاصة واستثنائية"
+      }
+    ],
+    "special_court_prohibited_1995": [
+      {
+        "status": "translation",
+        "text": "لا يجوز إنشاء محاكم خاصة واستثنائية (طبعة 1995)"
+      }
+    ],
+    "special_or_emergency_court": [
+      {
+        "status": "translation",
+        "text": "المحكمة خاصة أو استثنائية"
+      }
+    ],
+    "supreme_court": [
+      {
+        "status": "translation",
+        "text": "الجهاز هو المحكمة العليا"
+      }
+    ],
+    "supreme_court_appointment": [
+      {
+        "status": "translation",
+        "text": "يجري التعيين في منصب قاض في المحكمة العليا"
+      }
+    ],
+    "supreme_court_appointment_valid_1995": [
+      {
+        "status": "translation",
+        "text": "تم تعيين قاضي المحكمة العليا (طبعة 1995)"
+      }
+    ],
+    "supreme_court_case_authorized": [
+      {
+        "status": "translation",
+        "text": "المحكمة العليا مختصة بنظر الدعوى"
+      }
+    ],
+    "supreme_court_chair_reappointment_attempt": [
+      {
+        "status": "translation",
+        "text": "جرت محاولة لإعادة تعيين رئيس المحكمة العليا"
+      }
+    ],
+    "supreme_court_chair_reappointment_prohibited": [
+      {
+        "status": "translation",
+        "text": "لا يجوز إعادة تعيين رئيس المحكمة العليا"
+      }
+    ],
+    "supreme_court_chair_term": [
+      {
+        "status": "translation",
+        "text": "مدة صلاحيات رئيس المحكمة العليا ست سنوات"
+      }
+    ],
+    "supreme_court_chair_term_expires_on": [
+      {
+        "status": "translation",
+        "text": "يوم انتهاء صلاحيات رئيس المحكمة العليا"
+      }
+    ],
+    "supreme_court_chair_term_started_on": [
+      {
+        "status": "translation",
+        "text": "يوم بدء صلاحيات رئيس المحكمة العليا"
+      }
+    ],
+    "supreme_court_explanation_authorized": [
+      {
+        "status": "translation",
+        "text": "المحكمة العليا مختصة بإصدار الإيضاحات في مسائل العمل القضائي"
+      }
+    ],
+    "supreme_court_is_highest_judicial_body_1995": [
+      {
+        "status": "translation",
+        "text": "المحكمة العليا هي الجهاز القضائي الأعلى في الدعاوى المدنية والجنائية وغيرها (طبعة 1995)"
+      }
+    ],
+    "termination_consultations_completed": [
+      {
+        "status": "translation",
+        "text": "أجريت المشاورات اللازمة لإنهاء صلاحيات المسليخات"
+      }
+    ],
+    "total_maslikhat_deputies": [
+      {
+        "status": "translation",
+        "text": "مجموع نواب المسليخات"
+      }
+    ],
+    "treaty_declared_unconstitutional_1995": [
+      {
+        "status": "translation",
+        "text": "قضي بعدم دستورية المعاهدة الدولية (طبعة 1995)"
+      }
+    ],
+    "treaty_may_not_be_ratified_1995": [
+      {
+        "status": "translation",
+        "text": "لا يجوز التصديق على المعاهدة الدولية (طبعة 1995)"
+      }
+    ],
+    "within_judicial_power": [
+      {
+        "status": "translation",
+        "text": "الدعوى داخلة في السلطة القضائية"
+      }
+    ],
+    "within_statutory_local_power": [
+      {
+        "status": "translation",
+        "text": "اتخذ القرار في حدود الاختصاص المقرر قانونا"
+      }
+    ]
+  },
+  "language": "ar",
+  "package": "kz.constitution.court"
+}

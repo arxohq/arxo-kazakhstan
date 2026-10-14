@@ -1,0 +1,667 @@
+{
+  "format": "arxo.kazakhstan-source-pin/1",
+  "repository": "https://github.com/arxohq/arxo-corpus",
+  "observedCommit": "11a1d0f7b12de8e95326b3167b21a471c8939a87",
+  "snapshotTree": "9f20b7024094594ef1631ad644f5feb4f40a0009",
+  "snapshotState": "c1ca300aa1861015e93eaed80517c78e55c5d91a32f1cb54deaff2c5ab62e39b",
+  "capture": "Selected working-tree bytes retained by git_scope; files are authoritative, independent of concurrent commits",
+  "modelVersion": "0.1.0",
+  "semanticVersion": "0.2.11",
+  "irSchema": "law.core.ir/0.7",
+  "files": [
+    {
+      "path": "packages/sources/constitution.law",
+      "sourcePath": "corpus/laws/kz/constitution/text/constitution.law",
+      "size": 778765,
+      "sha256": "sha256:28cfb3606344c01ee197eaed8a170b0a163698cedc38aeae8a541951e431a602"
+    },
+    {
+      "path": "packages/sources/i18n/ar.json",
+      "sourcePath": "corpus/laws/kz/constitution/text/i18n/ar.json",
+      "size": 26111,
+      "sha256": "sha256:57d5b298baaedf23377638ea18ac2583a9cd14418432fe21d56e5a31c1a3659e"
+    },
+    {
+      "path": "packages/sources/i18n/en.json",
+      "sourcePath": "corpus/laws/kz/constitution/text/i18n/en.json",
+      "size": 24127,
+      "sha256": "sha256:18567a12b6658fc4d8ee030f7eb5e9c1a50ada85bf4063dd885302bef7a4ae1f"
+    },
+    {
+      "path": "packages/sources/i18n/kk.json",
+      "sourcePath": "corpus/laws/kz/constitution/text/i18n/kk.json",
+      "size": 30777,
+      "sha256": "sha256:2e321a745681588b5112c92840f71e8628e1baf2d306cc62af935cd104b226ae"
+    },
+    {
+      "path": "packages/sources/i18n/ky.json",
+      "sourcePath": "corpus/laws/kz/constitution/text/i18n/ky.json",
+      "size": 31611,
+      "sha256": "sha256:a9b9d45e8b48e7c060f1d097abfc4104375a9581786b7352ea06c37dac0e3be1"
+    },
+    {
+      "path": "packages/sources/i18n/la.json",
+      "sourcePath": "corpus/laws/kz/constitution/text/i18n/la.json",
+      "size": 23415,
+      "sha256": "sha256:2f8a45e59f50aa27b15109b21e42f1311950b409bf1e5ece2d37a148d315d338"
+    },
+    {
+      "path": "packages/sources/i18n/uz.json",
+      "sourcePath": "corpus/laws/kz/constitution/text/i18n/uz.json",
+      "size": 31391,
+      "sha256": "sha256:752b8963c6fa2a61c842a2fdde78ea2b7afd63e0d2a2ba169224b7897687dd29"
+    },
+    {
+      "path": "packages/sources/i18n/zh.json",
+      "sourcePath": "corpus/laws/kz/constitution/text/i18n/zh.json",
+      "size": 21288,
+      "sha256": "sha256:9281233a6c44274c8063cfb98fef36e7e8c05796dc5bc5ae34d105d65590d4ad"
+    },
+    {
+      "path": "packages/sources/law.toml",
+      "sourcePath": "corpus/laws/kz/constitution/text/law.toml",
+      "size": 1458,
+      "sha256": "sha256:7ef0891da9ed4574e67ef3b6bc89b0b54fe94ee1094c6b16e3c8f948c68332e2"
+    },
+    {
+      "path": "packages/sources/sources/constitution/README.md",
+      "sourcePath": "corpus/laws/kz/constitution/text/sources/constitution/README.md",
+      "size": 7475,
+      "sha256": "sha256:a25706848208f1402b2abf0c00183ca757ed9cf9946d1f25e7f57a7c3e7a5815"
+    },
+    {
+      "path": "packages/sources/sources/constitution/articles.json",
+      "sourcePath": "corpus/laws/kz/constitution/text/sources/constitution/articles.json",
+      "size": 1784,
+      "sha256": "sha256:99f2482440ef2a44b4a8000877c280f4c88420b14b2ca7257c7b8c1e7fd3dd23"
+    },
+    {
+      "path": "packages/sources/sources/constitution/constitution-1995-kk.html",
+      "sourcePath": "corpus/laws/kz/constitution/text/sources/constitution/constitution-1995-kk.html",
+      "size": 280644,
+      "sha256": "sha256:0815c8d566ec8726fcc872a122d2235841e4e403ebc2dc722a78b3ab241694ff"
+    },
+    {
+      "path": "packages/sources/sources/constitution/constitution-1995-kk.txt",
+      "sourcePath": "corpus/laws/kz/constitution/text/sources/constitution/constitution-1995-kk.txt",
+      "size": 161843,
+      "sha256": "sha256:88e4c7f210b555b0790bada686ad596e29472514e6babe8bb0d6b7dd4836e7a7"
+    },
+    {
+      "path": "packages/sources/sources/constitution/constitution-1995-ru.html",
+      "sourcePath": "corpus/laws/kz/constitution/text/sources/constitution/constitution-1995-ru.html",
+      "size": 280978,
+      "sha256": "sha256:90ca5b80b145a9f329f29d634183235d9a614083606c658791a5d59cce1f59b4"
+    },
+    {
+      "path": "packages/sources/sources/constitution/constitution-1995-ru.txt",
+      "sourcePath": "corpus/laws/kz/constitution/text/sources/constitution/constitution-1995-ru.txt",
+      "size": 160730,
+      "sha256": "sha256:46ac24be6f699f2fce4497b231f012d8b8c990afb3f55f45beccbb260bff4739"
+    },
+    {
+      "path": "packages/sources/sources/constitution/constitution-2026-kk.html",
+      "sourcePath": "corpus/laws/kz/constitution/text/sources/constitution/constitution-2026-kk.html",
+      "size": 220411,
+      "sha256": "sha256:fd6c72701246566d9b7d25e2c7294131db20c875e4fa83bf7971154cff1b2a9e"
+    },
+    {
+      "path": "packages/sources/sources/constitution/constitution-2026-kk.txt",
+      "sourcePath": "corpus/laws/kz/constitution/text/sources/constitution/constitution-2026-kk.txt",
+      "size": 156858,
+      "sha256": "sha256:a94257309b7a9ba60f8d018b7e56fdee82235d708e0e82b4541e6969d3502835"
+    },
+    {
+      "path": "packages/sources/sources/constitution/constitution-2026-ru.html",
+      "sourcePath": "corpus/laws/kz/constitution/text/sources/constitution/constitution-2026-ru.html",
+      "size": 222599,
+      "sha256": "sha256:9b99db956e0894a62d8c920eec98744488e782c84253241b79b9ae8d3a80efb4"
+    },
+    {
+      "path": "packages/sources/sources/constitution/constitution-2026-ru.txt",
+      "sourcePath": "corpus/laws/kz/constitution/text/sources/constitution/constitution-2026-ru.txt",
+      "size": 159400,
+      "sha256": "sha256:3673d5be9474ab9dc23500f42d24b2482b45e65181506a56910e8e4a2b03c2af"
+    },
+    {
+      "path": "registry/packages/kz-constitution-sources.lawir.json",
+      "sourcePath": "corpus/clir/kz-constitution-sources.lawir.json",
+      "size": 934200,
+      "sha256": "sha256:9383ae769e7d9474a681a68ce57196c5dd575a5fc4f7a23bffb58378923f46fa"
+    },
+    {
+      "path": "packages/rights/i18n/ar.json",
+      "sourcePath": "corpus/laws/kz/constitution/rights/i18n/ar.json",
+      "size": 96919,
+      "sha256": "sha256:e92554fbc2527a486f48d5bd13eb65e62e3538cff3c243d25afa879df4f931be"
+    },
+    {
+      "path": "packages/rights/i18n/en.json",
+      "sourcePath": "corpus/laws/kz/constitution/rights/i18n/en.json",
+      "size": 88844,
+      "sha256": "sha256:2158b2f6f024538d546d77d3cf4c004adef1588162b33c94407c19748c6d7e1e"
+    },
+    {
+      "path": "packages/rights/i18n/kk.json",
+      "sourcePath": "corpus/laws/kz/constitution/rights/i18n/kk.json",
+      "size": 110135,
+      "sha256": "sha256:1e00a44cba2e2eafe7888e25a4109273153397b81c532b186763ca7f1333a437"
+    },
+    {
+      "path": "packages/rights/i18n/ky.json",
+      "sourcePath": "corpus/laws/kz/constitution/rights/i18n/ky.json",
+      "size": 114216,
+      "sha256": "sha256:747a927e1978a522df79b124e9596692c7e2542b5aa12d3074f33104621523e7"
+    },
+    {
+      "path": "packages/rights/i18n/la.json",
+      "sourcePath": "corpus/laws/kz/constitution/rights/i18n/la.json",
+      "size": 85195,
+      "sha256": "sha256:4b939c4b2b373b3d693714104ec589be6c4649d5c4fe2e859044e3ef3ae4e71a"
+    },
+    {
+      "path": "packages/rights/i18n/uz.json",
+      "sourcePath": "corpus/laws/kz/constitution/rights/i18n/uz.json",
+      "size": 114642,
+      "sha256": "sha256:d3de0b93041b4011370613d2d207b83a11f10d31cba8595ba58c1c45a7703f6a"
+    },
+    {
+      "path": "packages/rights/i18n/zh.json",
+      "sourcePath": "corpus/laws/kz/constitution/rights/i18n/zh.json",
+      "size": 78859,
+      "sha256": "sha256:d83e1266e4b2fb0fa77584eb0c0cf928a1c8b46e781e5f278ce45163c6b20a0d"
+    },
+    {
+      "path": "packages/rights/law.toml",
+      "sourcePath": "corpus/laws/kz/constitution/rights/law.toml",
+      "size": 3020,
+      "sha256": "sha256:242547fb550c828e5cc4bb65a221a4a2c68b42924cb47a986e52b11d8788a1f4"
+    },
+    {
+      "path": "packages/rights/rights.law",
+      "sourcePath": "corpus/laws/kz/constitution/rights/rights.law",
+      "size": 238878,
+      "sha256": "sha256:5b553b876154b114d58f0e3c5d9cdd8faeef758d08c52b182032891b059e0cde"
+    },
+    {
+      "path": "packages/rights/tests/01-duties-positions.lawtest",
+      "sourcePath": "corpus/laws/kz/constitution/rights/tests/01-duties-positions.lawtest",
+      "size": 23206,
+      "sha256": "sha256:69ea15e8b72294d920a6b292a84b4efbb0a70531039786112a1c49429c574e33"
+    },
+    {
+      "path": "packages/rights/tests/02-liberties-immunities-positions.lawtest",
+      "sourcePath": "corpus/laws/kz/constitution/rights/tests/02-liberties-immunities-positions.lawtest",
+      "size": 12473,
+      "sha256": "sha256:02ffaf825800f969c71c3489ed48e1903f46281cf6f64f2bb970a924ce871b26"
+    },
+    {
+      "path": "packages/rights/tests/03-prohibitions-powers-positions.lawtest",
+      "sourcePath": "corpus/laws/kz/constitution/rights/tests/03-prohibitions-powers-positions.lawtest",
+      "size": 24709,
+      "sha256": "sha256:fa229d715b4032b6fcad460cecae6aae6309510dcc18f36c2e6dc3358d76b110"
+    },
+    {
+      "path": "packages/rights/tests/04-editions-1995-positions.lawtest",
+      "sourcePath": "corpus/laws/kz/constitution/rights/tests/04-editions-1995-positions.lawtest",
+      "size": 12784,
+      "sha256": "sha256:542a68f42064eee9a66d491fd57763c1b77c0ac28680e0d2e76d003a15790480"
+    },
+    {
+      "path": "registry/packages/kz-constitution-rights.lawir.json",
+      "sourcePath": "corpus/clir/kz-constitution-rights.lawir.json",
+      "size": 549506,
+      "sha256": "sha256:9250a68ea993d3520c853f17263be910bc9f92c266f6be9c33b939b3483544ed"
+    },
+    {
+      "path": "packages/president/i18n/ar.json",
+      "sourcePath": "corpus/laws/kz/constitution/president/i18n/ar.json",
+      "size": 97672,
+      "sha256": "sha256:7b65337d8e8a06e8e0a062bf3fc7f46aca31bd02b7e9165dfbb67473dfb16fa2"
+    },
+    {
+      "path": "packages/president/i18n/en.json",
+      "sourcePath": "corpus/laws/kz/constitution/president/i18n/en.json",
+      "size": 86446,
+      "sha256": "sha256:fe3c847858a210b537317711fb63a798f007cb9002c7f12ec1a5f270e63902bc"
+    },
+    {
+      "path": "packages/president/i18n/kk.json",
+      "sourcePath": "corpus/laws/kz/constitution/president/i18n/kk.json",
+      "size": 114906,
+      "sha256": "sha256:6db1621093e75789267a70d5dd532a4a770bcec77e32efe354d96d34072486ab"
+    },
+    {
+      "path": "packages/president/i18n/ky.json",
+      "sourcePath": "corpus/laws/kz/constitution/president/i18n/ky.json",
+      "size": 118625,
+      "sha256": "sha256:262fa97559576d986f31a77deb65cbaa39ed797ae7895b0a6d4115a9d1461431"
+    },
+    {
+      "path": "packages/president/i18n/la.json",
+      "sourcePath": "corpus/laws/kz/constitution/president/i18n/la.json",
+      "size": 86158,
+      "sha256": "sha256:025ecd817e55554710275f90ad1e76fd844c2b5ebe86140446735e57a065a59a"
+    },
+    {
+      "path": "packages/president/i18n/uz.json",
+      "sourcePath": "corpus/laws/kz/constitution/president/i18n/uz.json",
+      "size": 117966,
+      "sha256": "sha256:93919e3b47dddc2442ae8e056d50344a3dd7bed8374ed44b910ebf866e1f348e"
+    },
+    {
+      "path": "packages/president/i18n/zh.json",
+      "sourcePath": "corpus/laws/kz/constitution/president/i18n/zh.json",
+      "size": 79706,
+      "sha256": "sha256:2eef15d3f0fa673b2faf687042cd132fde171d77376258244a5dc9dab81d39bd"
+    },
+    {
+      "path": "packages/president/law.toml",
+      "sourcePath": "corpus/laws/kz/constitution/president/law.toml",
+      "size": 2012,
+      "sha256": "sha256:58e8a65fdc9a958335cd3d4454407dab6d687ebb993cdc943ee80c68f06de689"
+    },
+    {
+      "path": "packages/president/president.law",
+      "sourcePath": "corpus/laws/kz/constitution/president/president.law",
+      "size": 183024,
+      "sha256": "sha256:33cd285ee7772f04a50f3b398ff57f857abfac1e6a13b8a33d225ce49a5adacb"
+    },
+    {
+      "path": "packages/president/tests/01-positions.lawtest",
+      "sourcePath": "corpus/laws/kz/constitution/president/tests/01-positions.lawtest",
+      "size": 61552,
+      "sha256": "sha256:c8d4f879604b03872d81e1f0d44688bea8a1be753b0b2409d6b9ee8ed89c60bd"
+    },
+    {
+      "path": "registry/packages/kz-constitution-president.lawir.json",
+      "sourcePath": "corpus/clir/kz-constitution-president.lawir.json",
+      "size": 455116,
+      "sha256": "sha256:29ce41ec2827c6f3f009545d7e1eb584a0797fad0a1a3574ca9b84363218feac"
+    },
+    {
+      "path": "packages/kurultai/i18n/ar.json",
+      "sourcePath": "corpus/laws/kz/constitution/kurultai/i18n/ar.json",
+      "size": 34782,
+      "sha256": "sha256:241593856b9c26d7e2ae4dcf15caf72d24e5ca552ea7b998913891b62d68cdc5"
+    },
+    {
+      "path": "packages/kurultai/i18n/en.json",
+      "sourcePath": "corpus/laws/kz/constitution/kurultai/i18n/en.json",
+      "size": 33161,
+      "sha256": "sha256:0ec3449b63c832b8458bebd928594f5f0454aaf013a1c51038df6d7f3ed0790c"
+    },
+    {
+      "path": "packages/kurultai/i18n/kk.json",
+      "sourcePath": "corpus/laws/kz/constitution/kurultai/i18n/kk.json",
+      "size": 40167,
+      "sha256": "sha256:a08c08f4d6ec449834d1035fb044e289f1c68dc2e6150e8141013a42add75812"
+    },
+    {
+      "path": "packages/kurultai/i18n/ky.json",
+      "sourcePath": "corpus/laws/kz/constitution/kurultai/i18n/ky.json",
+      "size": 41327,
+      "sha256": "sha256:66bfb4fa5c7a0a72e31b4b6a3419dd3d2a3da7f832189660b97bce54d3a8e2ed"
+    },
+    {
+      "path": "packages/kurultai/i18n/la.json",
+      "sourcePath": "corpus/laws/kz/constitution/kurultai/i18n/la.json",
+      "size": 30473,
+      "sha256": "sha256:66ed74d0638e6fe084fd9b5e055ee41d3d4b42f1b0c1c0722bd469a2d15d1894"
+    },
+    {
+      "path": "packages/kurultai/i18n/uz.json",
+      "sourcePath": "corpus/laws/kz/constitution/kurultai/i18n/uz.json",
+      "size": 41330,
+      "sha256": "sha256:cc7715fa43fce47571a32e39141566ee10714ae76d693ce6ff79e867830026e9"
+    },
+    {
+      "path": "packages/kurultai/i18n/zh.json",
+      "sourcePath": "corpus/laws/kz/constitution/kurultai/i18n/zh.json",
+      "size": 28718,
+      "sha256": "sha256:0268a49cbd20c3e31278510d68948d0da5f1e12659506814e4e0b26043bb5e2d"
+    },
+    {
+      "path": "packages/kurultai/kurultai.law",
+      "sourcePath": "corpus/laws/kz/constitution/kurultai/kurultai.law",
+      "size": 78859,
+      "sha256": "sha256:cc7e899481d52609ac61cdc60d4fc82bbb15861b77863f8c9c89695f15c7e6dd"
+    },
+    {
+      "path": "packages/kurultai/law.toml",
+      "sourcePath": "corpus/laws/kz/constitution/kurultai/law.toml",
+      "size": 2040,
+      "sha256": "sha256:85e9cd625414ab260bb412b97135a9ac38de9fa9a16b131a843b3864c4b32235"
+    },
+    {
+      "path": "packages/kurultai/tests/01-positions.lawtest",
+      "sourcePath": "corpus/laws/kz/constitution/kurultai/tests/01-positions.lawtest",
+      "size": 7073,
+      "sha256": "sha256:dd3d79371ef895519d6ea098b77aef66c43a29ffce55062b38267f32230300f9"
+    },
+    {
+      "path": "registry/packages/kz-constitution-kurultai.lawir.json",
+      "sourcePath": "corpus/clir/kz-constitution-kurultai.lawir.json",
+      "size": 202494,
+      "sha256": "sha256:ab722fc36c909a5373b5f26c56cc727469a021a84926d04e97cc6a16cf344e59"
+    },
+    {
+      "path": "packages/government/government.law",
+      "sourcePath": "corpus/laws/kz/constitution/government/government.law",
+      "size": 55364,
+      "sha256": "sha256:117ef1e662bb09c3c6dc1ff869f6b91d09ac75da96b21a0486dcabe586aed4d6"
+    },
+    {
+      "path": "packages/government/i18n/ar.json",
+      "sourcePath": "corpus/laws/kz/constitution/government/i18n/ar.json",
+      "size": 33931,
+      "sha256": "sha256:7159ede85099d22bb6bb090674d7507d7ef81b854074ad9386411c6d9c6e4225"
+    },
+    {
+      "path": "packages/government/i18n/en.json",
+      "sourcePath": "corpus/laws/kz/constitution/government/i18n/en.json",
+      "size": 31929,
+      "sha256": "sha256:bf2494436c9203e12b0378a1090806461fe4b9348626c2fdd54047e4fde11314"
+    },
+    {
+      "path": "packages/government/i18n/kk.json",
+      "sourcePath": "corpus/laws/kz/constitution/government/i18n/kk.json",
+      "size": 39748,
+      "sha256": "sha256:536a503dda439c553175a324bbe62d15ff5ad0d3171df9f1fb1aad31be2344a0"
+    },
+    {
+      "path": "packages/government/i18n/ky.json",
+      "sourcePath": "corpus/laws/kz/constitution/government/i18n/ky.json",
+      "size": 40612,
+      "sha256": "sha256:91a8eb13637637448cb8cb3c79dc585246932b59331e832e571fcbce702a532f"
+    },
+    {
+      "path": "packages/government/i18n/la.json",
+      "sourcePath": "corpus/laws/kz/constitution/government/i18n/la.json",
+      "size": 29734,
+      "sha256": "sha256:8ad6de11259ff1ddbf3e6216a95f8ffb3f880777ef0e4bafb5a30bc771fd0b7d"
+    },
+    {
+      "path": "packages/government/i18n/uz.json",
+      "sourcePath": "corpus/laws/kz/constitution/government/i18n/uz.json",
+      "size": 40329,
+      "sha256": "sha256:d1241436dfc73a8da80f1fc775ed5ff7b53807a3f5c95acf3c59beb05083b928"
+    },
+    {
+      "path": "packages/government/i18n/zh.json",
+      "sourcePath": "corpus/laws/kz/constitution/government/i18n/zh.json",
+      "size": 27609,
+      "sha256": "sha256:2aa4d5e6081ba6c2b87fe535c0f4bebb1480dd68c54fdd54047124d2b853f3b1"
+    },
+    {
+      "path": "packages/government/law.toml",
+      "sourcePath": "corpus/laws/kz/constitution/government/law.toml",
+      "size": 1404,
+      "sha256": "sha256:f2141d8b1a6f25b5514b80aea9fe2af4784ab31d241d7117155e8afba40c3e61"
+    },
+    {
+      "path": "registry/packages/kz-constitution-government.lawir.json",
+      "sourcePath": "corpus/clir/kz-constitution-government.lawir.json",
+      "size": 138854,
+      "sha256": "sha256:fb931008104e0bdae0919ff1121fa9a22678989613cd9290b7fe59e95a5f1f20"
+    },
+    {
+      "path": "packages/court/court.law",
+      "sourcePath": "corpus/laws/kz/constitution/court/court.law",
+      "size": 173037,
+      "sha256": "sha256:6b1ce1c259202de7695551441a13ea88aefa84175ac75eecc5d469c2ae255d1d"
+    },
+    {
+      "path": "packages/court/i18n/ar.json",
+      "sourcePath": "corpus/laws/kz/constitution/court/i18n/ar.json",
+      "size": 85567,
+      "sha256": "sha256:73b5614d1e1c07c5558842d161b57ea777ac6e27d8044531cad811ed2e82b067"
+    },
+    {
+      "path": "packages/court/i18n/en.json",
+      "sourcePath": "corpus/laws/kz/constitution/court/i18n/en.json",
+      "size": 80666,
+      "sha256": "sha256:49f264cb1d5a6731c1d786b75e05628e1c221fed2d276f0b752554bfc1e83263"
+    },
+    {
+      "path": "packages/court/i18n/kk.json",
+      "sourcePath": "corpus/laws/kz/constitution/court/i18n/kk.json",
+      "size": 99083,
+      "sha256": "sha256:70d874ecc46d76346fc2a66a79698eed01e04ebd7602cb26b9352fe154971ac7"
+    },
+    {
+      "path": "packages/court/i18n/ky.json",
+      "sourcePath": "corpus/laws/kz/constitution/court/i18n/ky.json",
+      "size": 104715,
+      "sha256": "sha256:982d318c7a8e82b29c6cf52685e433729837f4b3c6300025431313df38042cc1"
+    },
+    {
+      "path": "packages/court/i18n/la.json",
+      "sourcePath": "corpus/laws/kz/constitution/court/i18n/la.json",
+      "size": 76116,
+      "sha256": "sha256:546e8dec9bbf91d54b76fb994b9669a174089ff25c577654acaececcbf5994e0"
+    },
+    {
+      "path": "packages/court/i18n/uz.json",
+      "sourcePath": "corpus/laws/kz/constitution/court/i18n/uz.json",
+      "size": 103124,
+      "sha256": "sha256:3fc7abdb78d3757bfe18da4c0d1c7ae73803610446edf34c91c298b11349e535"
+    },
+    {
+      "path": "packages/court/i18n/zh.json",
+      "sourcePath": "corpus/laws/kz/constitution/court/i18n/zh.json",
+      "size": 69772,
+      "sha256": "sha256:54077cc4ea47933a3c713b44cafe0fdb610b8d82254ec046334465321a74f836"
+    },
+    {
+      "path": "packages/court/law.toml",
+      "sourcePath": "corpus/laws/kz/constitution/court/law.toml",
+      "size": 2045,
+      "sha256": "sha256:37df9ae5e67e16572f526a53a400a6e74a1949e7058005b10f333bdcbfeb32b6"
+    },
+    {
+      "path": "packages/court/tests/01-positions.lawtest",
+      "sourcePath": "corpus/laws/kz/constitution/court/tests/01-positions.lawtest",
+      "size": 26331,
+      "sha256": "sha256:9a61971363e175df876932f1a33cc9916cc39ae355abcdb52f922ed15cdd718b"
+    },
+    {
+      "path": "registry/packages/kz-constitution-court.lawir.json",
+      "sourcePath": "corpus/clir/kz-constitution-court.lawir.json",
+      "size": 426961,
+      "sha256": "sha256:24add4ad8c6625840c3e7d4926323baa2db4990f9761709688cb0bc5656e2ed6"
+    },
+    {
+      "path": "packages/amendment/amendment.law",
+      "sourcePath": "corpus/laws/kz/constitution/amendment/amendment.law",
+      "size": 48090,
+      "sha256": "sha256:87a472fb47e50ea15551f5b41b6ec97222c2206062b21f63b90097ba13fe931d"
+    },
+    {
+      "path": "packages/amendment/i18n/ar.json",
+      "sourcePath": "corpus/laws/kz/constitution/amendment/i18n/ar.json",
+      "size": 24648,
+      "sha256": "sha256:46f3ffd7dda568412e613f61a373296f41302513e38825e2333b880befc93a53"
+    },
+    {
+      "path": "packages/amendment/i18n/en.json",
+      "sourcePath": "corpus/laws/kz/constitution/amendment/i18n/en.json",
+      "size": 23472,
+      "sha256": "sha256:3f3501a63539672431e767a4cb586dcc7e023770da556364ede9282a72df89a4"
+    },
+    {
+      "path": "packages/amendment/i18n/kk.json",
+      "sourcePath": "corpus/laws/kz/constitution/amendment/i18n/kk.json",
+      "size": 29508,
+      "sha256": "sha256:6e3365842feebd2d4614a68dbdb1f5bf9f36dad8981169dd23e5212711ec650d"
+    },
+    {
+      "path": "packages/amendment/i18n/ky.json",
+      "sourcePath": "corpus/laws/kz/constitution/amendment/i18n/ky.json",
+      "size": 30160,
+      "sha256": "sha256:088834d3f974bddcbd746ba9b5512e36f2334c2a8158b9a61be0c7aac3d3d7eb"
+    },
+    {
+      "path": "packages/amendment/i18n/la.json",
+      "sourcePath": "corpus/laws/kz/constitution/amendment/i18n/la.json",
+      "size": 21970,
+      "sha256": "sha256:7cbfc8a840fa3b34def36fe302cb109c9acab4328ba46167210d2cdcac270a57"
+    },
+    {
+      "path": "packages/amendment/i18n/uz.json",
+      "sourcePath": "corpus/laws/kz/constitution/amendment/i18n/uz.json",
+      "size": 29665,
+      "sha256": "sha256:3f1c43b86db13792ac61ca6086813c1a3f33e9610cb7a61fdaa4bdf26fbf2594"
+    },
+    {
+      "path": "packages/amendment/i18n/zh.json",
+      "sourcePath": "corpus/laws/kz/constitution/amendment/i18n/zh.json",
+      "size": 20308,
+      "sha256": "sha256:1f4f75ad0f470ad6af9ef3b19299f5570dba6260b3069224d13d4b2c5eec4384"
+    },
+    {
+      "path": "packages/amendment/law.toml",
+      "sourcePath": "corpus/laws/kz/constitution/amendment/law.toml",
+      "size": 1412,
+      "sha256": "sha256:d9ea87b426e039acdd2cf4ed72c5c508476da14fe656648c0a910acf910a0e19"
+    },
+    {
+      "path": "registry/packages/kz-constitution-amendment.lawir.json",
+      "sourcePath": "corpus/clir/kz-constitution-amendment.lawir.json",
+      "size": 112899,
+      "sha256": "sha256:352adfe37226bbdae7312a67a622670ee1a3edd4c8154b0f9e3024b8d8160ecd"
+    },
+    {
+      "path": "historical/president-1995/i18n/ar.json",
+      "sourcePath": "corpus/laws/kz/constitution/president-1995/i18n/ar.json",
+      "size": 44406,
+      "sha256": "sha256:6b2daf1b8ad9fb7a6f31764d0056f8daded735a7bbe474b44898bdbd1060ecb2"
+    },
+    {
+      "path": "historical/president-1995/i18n/en.json",
+      "sourcePath": "corpus/laws/kz/constitution/president-1995/i18n/en.json",
+      "size": 42108,
+      "sha256": "sha256:125057c0bee0bee1f5ae04da5a8724a39d863747452a2b832e4070a733d3a93a"
+    },
+    {
+      "path": "historical/president-1995/i18n/kk.json",
+      "sourcePath": "corpus/laws/kz/constitution/president-1995/i18n/kk.json",
+      "size": 52932,
+      "sha256": "sha256:b7c57ee58f8607e10fba05f0c0d73c552625b96f5ab882784d432a85563c411a"
+    },
+    {
+      "path": "historical/president-1995/i18n/ky.json",
+      "sourcePath": "corpus/laws/kz/constitution/president-1995/i18n/ky.json",
+      "size": 53436,
+      "sha256": "sha256:ff75025d9314b7d733851c2c5bfb8b7d9a7b00306542660e2a6ba9a40d71df50"
+    },
+    {
+      "path": "historical/president-1995/i18n/la.json",
+      "sourcePath": "corpus/laws/kz/constitution/president-1995/i18n/la.json",
+      "size": 39749,
+      "sha256": "sha256:69086366b987c8c2480e3e06e0bdeaff5a4731206f65afaf40d69d3b0944cb2b"
+    },
+    {
+      "path": "historical/president-1995/i18n/uz.json",
+      "sourcePath": "corpus/laws/kz/constitution/president-1995/i18n/uz.json",
+      "size": 54303,
+      "sha256": "sha256:f6b98869efa13dd0605698ab495bd6c9e9f9c092195f987367a5733e65e4470f"
+    },
+    {
+      "path": "historical/president-1995/i18n/zh.json",
+      "sourcePath": "corpus/laws/kz/constitution/president-1995/i18n/zh.json",
+      "size": 36483,
+      "sha256": "sha256:05c333761e711b5232f93732bb76362bfa5a92d1686005176373b8481ad58639"
+    },
+    {
+      "path": "historical/president-1995/law.toml",
+      "sourcePath": "corpus/laws/kz/constitution/president-1995/law.toml",
+      "size": 2395,
+      "sha256": "sha256:daaae3d2e2250035b7d87ffaa2136c89bbb1e88f5b960874b8ac4a79da7cc379"
+    },
+    {
+      "path": "historical/president-1995/president-1995.law",
+      "sourcePath": "corpus/laws/kz/constitution/president-1995/president-1995.law",
+      "size": 92164,
+      "sha256": "sha256:a673fe4d85a3ef75a2520ed8038d55a8ce011bde3cb5ea8255a0b9924cd9da80"
+    },
+    {
+      "path": "historical/president-1995/tests/01-positions.lawtest",
+      "sourcePath": "corpus/laws/kz/constitution/president-1995/tests/01-positions.lawtest",
+      "size": 44016,
+      "sha256": "sha256:05418cd87eb0e1b7b219eb7fd726a6051ae8d693fae57daef3e6f1fe7126fac0"
+    },
+    {
+      "path": "registry/packages/kz-constitution-president1995.lawir.json",
+      "sourcePath": "corpus/clir/kz-constitution-president1995.lawir.json",
+      "size": 233922,
+      "sha256": "sha256:eefc477e25d6c5dad3097039439eeb023b66206caa3587f785aebecc216c7561"
+    },
+    {
+      "path": "historical/parliament-1995/i18n/ar.json",
+      "sourcePath": "corpus/laws/kz/constitution/parliament-1995/i18n/ar.json",
+      "size": 58319,
+      "sha256": "sha256:4e306d49f6d57cb6adf34e7c7866246643348e24a3fdd62aab3b7da5911ea7be"
+    },
+    {
+      "path": "historical/parliament-1995/i18n/en.json",
+      "sourcePath": "corpus/laws/kz/constitution/parliament-1995/i18n/en.json",
+      "size": 55031,
+      "sha256": "sha256:44d0f4c6b0a846bd4a68214f5f010a8dc0060d93bbb716200e461f89a0596919"
+    },
+    {
+      "path": "historical/parliament-1995/i18n/kk.json",
+      "sourcePath": "corpus/laws/kz/constitution/parliament-1995/i18n/kk.json",
+      "size": 67333,
+      "sha256": "sha256:cdc57fb9162234a0a2bc8a6ebbee1518b264b35808b6dcfb623b388ff2ddd87d"
+    },
+    {
+      "path": "historical/parliament-1995/i18n/ky.json",
+      "sourcePath": "corpus/laws/kz/constitution/parliament-1995/i18n/ky.json",
+      "size": 69971,
+      "sha256": "sha256:d754e6aacd7491eecb8f70a2ef2309a10b6b0d654313c85f8ea8ddccf6252f7b"
+    },
+    {
+      "path": "historical/parliament-1995/i18n/la.json",
+      "sourcePath": "corpus/laws/kz/constitution/parliament-1995/i18n/la.json",
+      "size": 51675,
+      "sha256": "sha256:df794b4b13a4b4baef86c4b8ee31ead3ef3c45cccf45445db4487f61140533e5"
+    },
+    {
+      "path": "historical/parliament-1995/i18n/uz.json",
+      "sourcePath": "corpus/laws/kz/constitution/parliament-1995/i18n/uz.json",
+      "size": 70645,
+      "sha256": "sha256:b80b449a06cb0d6d0e409222f0072c7e07f5ad4c4dc54997f9ae4226d918446a"
+    },
+    {
+      "path": "historical/parliament-1995/i18n/zh.json",
+      "sourcePath": "corpus/laws/kz/constitution/parliament-1995/i18n/zh.json",
+      "size": 47292,
+      "sha256": "sha256:682219b374a194bb3c114f1030cef3faffa3d7110fb5bfaa7654e90229df45b4"
+    },
+    {
+      "path": "historical/parliament-1995/law.toml",
+      "sourcePath": "corpus/laws/kz/constitution/parliament-1995/law.toml",
+      "size": 2223,
+      "sha256": "sha256:139284e9f1a02b3e8a118417c9dffeb007533fa34016f620a5d86bab079083a2"
+    },
+    {
+      "path": "historical/parliament-1995/parliament-1995.law",
+      "sourcePath": "corpus/laws/kz/constitution/parliament-1995/parliament-1995.law",
+      "size": 115647,
+      "sha256": "sha256:a2a7a6215dfbf93d43b464a01ddf7129bbb670d2a125eea257d97a20f1850149"
+    },
+    {
+      "path": "historical/parliament-1995/tests/01-positions.lawtest",
+      "sourcePath": "corpus/laws/kz/constitution/parliament-1995/tests/01-positions.lawtest",
+      "size": 30920,
+      "sha256": "sha256:096dfb4fd52d89cfca85ae85a4dbea868123512c6d47b6cb49d990c977fb9a26"
+    },
+    {
+      "path": "registry/packages/kz-constitution-parliament1995.lawir.json",
+      "sourcePath": "corpus/clir/kz-constitution-parliament1995.lawir.json",
+      "size": 314635,
+      "sha256": "sha256:486349323066d0d8f9eb4dc255cc123f14e80d334c013d73c930eba533435551"
+    }
+  ]
+}
